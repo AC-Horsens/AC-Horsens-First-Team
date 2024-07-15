@@ -263,17 +263,41 @@ def Dashboard():
         df_matchstats['rolling_openPlayPass'] = df_matchstats.groupby('team_name')['openPlayPass'].transform(lambda x: x.rolling(3, min_periods=1).mean())
         df_matchstats['rolling_successfulOpenPlayPass'] = df_matchstats.groupby('team_name')['successfulOpenPlayPass'].transform(lambda x: x.rolling(3, min_periods=1).mean())
 
+        segments = []
+        segment_start = None
+
+        for i, date in enumerate(df_matchstats['date']):
+            if i == 0 or (date - df_matchstats['date'][i-1]).days > 1:  # Check for a gap greater than 1 day
+                if segment_start is not None:
+                    segments.append(df_matchstats.iloc[segment_start:i])
+                segment_start = i
+
+        if segment_start is not None:
+            segments.append(df_matchstats.iloc[segment_start:])
+
+        # Plotting using Plotly
         fig1 = go.Figure()
 
-        for team in df_matchstats['team_name'].unique():
-            team_data = df_matchstats[df_matchstats['team_name'] == team]
+        for segment in segments:
+            team_data = segment
+            team = team_data['team_name'].iloc[0]  # Assuming team_name is the same for the entire segment
             line_size = 5 if team == 'Horsens' else 1  # Larger line for Horsens
+
             fig1.add_trace(go.Scatter(
                 x=team_data['date'],
                 y=team_data['rolling_openPlayPass'],
                 mode='lines',
                 name=team,
                 line=dict(width=line_size)
+            ))
+
+            # Add a gap in the line plot for the segments
+            fig1.add_trace(go.Scatter(
+                x=[None],
+                y=[None],
+                mode='lines',
+                line=dict(color='rgba(0,0,0,0)'),  # Transparent line for the gap
+                showlegend=False
             ))
 
         fig1.update_layout(
