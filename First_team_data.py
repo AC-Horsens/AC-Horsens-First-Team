@@ -263,33 +263,18 @@ def Dashboard():
         df_matchstats['rolling_openPlayPass'] = df_matchstats.groupby('team_name')['openPlayPass'].transform(lambda x: x.rolling(3, min_periods=1).mean())
         df_matchstats['rolling_successfulOpenPlayPass'] = df_matchstats.groupby('team_name')['successfulOpenPlayPass'].transform(lambda x: x.rolling(3, min_periods=1).mean())
 
-    # Plotting using Plotly
         fig1 = go.Figure()
 
         for team in df_matchstats['team_name'].unique():
             team_data = df_matchstats[df_matchstats['team_name'] == team]
-
-            # Plot each game separately with lines connecting within each segment
-            for i in range(len(team_data) - 1):
-                date_diff = (team_data.iloc[i+1]['date'] - team_data.iloc[i]['date']).days
-                if date_diff > 1:
-                    # Add trace for first point of next segment with reduced spacing
-                    fig1.add_trace(go.Scatter(
-                        x=[team_data.iloc[i]['date'], team_data.iloc[i]['date'] + pd.DateOffset(days=20), None],
-                        y=[team_data.iloc[i]['rolling_openPlayPass'], team_data.iloc[i]['rolling_openPlayPass'], None],
-                        mode='lines',
-                        name=team if i == 0 else '',
-                        line=dict(width=1 if i == 0 else 0.5),
-                        connectgaps=False  # Ensure no lines across missing dates
-                    ))
-                else:
-                    fig1.add_trace(go.Scatter(
-                        x=[team_data.iloc[i]['date'], team_data.iloc[i+1]['date']],
-                        y=[team_data.iloc[i]['rolling_openPlayPass'], team_data.iloc[i+1]['rolling_openPlayPass']],
-                        mode='lines',
-                        name=team if i == 0 else '',
-                        line=dict(width=1 if i == 0 else 0.5)
-                    ))
+            line_size = 5 if team == 'Horsens' else 1  # Larger line for Horsens
+            fig1.add_trace(go.Scatter(
+                x=team_data['date'],
+                y=team_data['rolling_openPlayPass'],
+                mode='lines',
+                name=team,
+                line=dict(width=line_size)
+            ))
 
         fig1.update_layout(
             title='3-Game Rolling Average of Open Play Passes',
@@ -297,7 +282,6 @@ def Dashboard():
             yaxis_title='3-Game Rolling Average Open Play Passes',
             template='plotly_white'
         )
-
 
         # Plot for successfulOpenPlayPass med rullende gennemsnit
         fig2 = go.Figure()
