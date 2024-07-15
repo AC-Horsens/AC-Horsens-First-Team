@@ -843,6 +843,7 @@ def League_stats():
         'fwdPass': 'sum',
         'finalThirdEntries': 'sum',
         'successfulFinalThirdPasses': 'sum',
+        'totalFinalThirdPasses': 'sum',
         'attAssistOpenplay': 'sum',
         'totalAttAssist': 'sum',
         'Total Control Area %': 'mean',
@@ -850,6 +851,7 @@ def League_stats():
         'Penalty Area Control %': 'mean',
         'PPDA': 'mean',
         }).reset_index()
+    
     st.dataframe(matchstats_df)
     matchstats_df = matchstats_df.rename(columns={'label': 'matches'})
     matchstats_df['PenAreaEntries per match'] = matchstats_df['penAreaEntries'] / matchstats_df['matches']
