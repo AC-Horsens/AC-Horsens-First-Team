@@ -825,7 +825,31 @@ def League_stats():
     matchstats_df = df_spacecontrol.merge(matchstats_df)
     matchstats_df = matchstats_df.drop(columns='date')
     # Perform aggregation
-    matchstats_df = matchstats_df.groupby(['contestantId', 'team_name']).sum().reset_index()
+    matchstats_df = matchstats_df.groupby(['contestantId', 'team_name']).agg({
+        'label': 'sum',  # Example of a column to sum
+        'penAreaEntries': 'sum',  # Example of another column to sum
+        'open play xG': 'sum',  # Example of a column to average
+        'duelLost': 'sum',
+        'duelWon': 'sum',
+        'openPlayPass': 'sum',
+        'successfulOpenPlayPass': 'sum',
+        'accurateBackZonePass': 'sum',
+        'totalBackZonePass': 'sum',
+        'accurateFwdZonePass': 'sum',
+        'totalFwdZonePass': 'sum',
+        'possWonDef3rd': 'sum',
+        'possWonMid3rd': 'sum',
+        'possWonAtt3rd': 'sum',
+        'fwdPass': 'sum',
+        'finalThirdEntries': 'sum',
+        'successfulFinalThirdPasses': 'sum',
+        'attAssistOpenplay': 'sum',
+        'totalAttAssist': 'sum',
+        'Total Control Area %': 'mean',
+        'Center Control Area %': 'mean',
+        'Penalty Area Control %': 'mean',
+        'PPDA': 'mean',
+        }).reset_index()
     st.dataframe(matchstats_df)
     matchstats_df = matchstats_df.rename(columns={'label': 'matches'})
     matchstats_df['PenAreaEntries per match'] = matchstats_df['penAreaEntries'] / matchstats_df['matches']
