@@ -265,7 +265,7 @@ def Dashboard():
         df_matchstats['rolling_openPlayPass'] = df_matchstats.groupby('team_name')['openPlayPass'].transform(lambda x: x.rolling(3, min_periods=1).mean())
         df_matchstats['rolling_successfulOpenPlayPass'] = df_matchstats.groupby('team_name')['successfulOpenPlayPass'].transform(lambda x: x.rolling(3, min_periods=1).mean())
 
-        df_matchstats = df_matchstats.dropna(subset=['rolling_openPlayPass', 'rolling_successfulOpenPlayPass'])
+        df_matchstats = df_matchstats.dropna(subset=['rolling_openPlayPass', 'rolling_successfulOpenPlayPass','date'])
 
         fig1 = go.Figure()
 
