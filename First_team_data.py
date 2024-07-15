@@ -275,7 +275,7 @@ def Dashboard():
                 if date_diff > 1:
                     # Add trace for first point of next segment with reduced spacing
                     fig1.add_trace(go.Scatter(
-                        x=[team_data.iloc[i]['date'], team_data.iloc[i]['date'] + pd.DateOffset(days=1), None],
+                        x=[team_data.iloc[i]['date'], team_data.iloc[i]['date'] + pd.DateOffset(days=20), None],
                         y=[team_data.iloc[i]['rolling_openPlayPass'], team_data.iloc[i]['rolling_openPlayPass'], None],
                         mode='lines',
                         name=team if i == 0 else '',
