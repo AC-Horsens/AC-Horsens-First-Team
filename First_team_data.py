@@ -269,15 +269,28 @@ def Dashboard():
 
         fig1 = go.Figure()
 
-        for team in df_matchstats['team_name'].unique():
+        teams = df_matchstats['team_name'].unique()
+
+        for team in teams:
             team_data = df_matchstats[df_matchstats['team_name'] == team]
             line_size = 5 if team == 'Horsens' else 1  # Larger line for Horsens
-            fig1.add_trace(go.Scattergl(
-                x=team_data['date'],
-                y=team_data['rolling_openPlayPass'],
+            
+            # Extract data points for plotting
+            x = team_data['date']
+            y = team_data['rolling_openPlayPass']
+            
+            # Remove NaNs from data points
+            x = x.dropna()
+            y = y.dropna()
+            
+            # Add trace with gaps handling
+            fig1.add_trace(go.Scatter(
+                x=x,
+                y=y,
                 mode='lines',
                 name=team,
-                line=dict(width=line_size)
+                line=dict(width=line_size),
+                connectgaps=False  # Ensure Plotly doesn't connect gaps
             ))
 
         fig1.update_layout(
@@ -286,6 +299,7 @@ def Dashboard():
             yaxis_title='3-Game Rolling Average Open Play Passes',
             template='plotly_white'
         )
+
 
         # Plot for successfulOpenPlayPass med rullende gennemsnit
         fig2 = go.Figure()
