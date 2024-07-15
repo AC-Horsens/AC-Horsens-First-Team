@@ -807,9 +807,9 @@ def League_stats():
     df_spacecontrol['Center Control Area %'] = df_spacecontrol['CenterControlArea'] / df_spacecontrol['CenterControlArea_match'] * 100
     df_spacecontrol['Penalty Area Control %'] = df_spacecontrol['PenaltyAreaControl'] / df_spacecontrol['PenaltyAreaControl_match'] * 100
 
-    df_spacecontrol['Total Control Area %'] = df_spacecontrol['Total Control Area %'].round(2)
-    df_spacecontrol['Center Control Area %'] = df_spacecontrol['Center Control Area %'].round(2)
-    df_spacecontrol['Penalty Area Control %'] = df_spacecontrol['Penalty Area Control %'].round(2)
+    df_spacecontrol['Total Control Area %'] = df_spacecontrol['Total Control Area %'].astype(float).round(2)
+    df_spacecontrol['Center Control Area %'] = df_spacecontrol['Center Control Area %'].astype(float).round(2)
+    df_spacecontrol['Penalty Area Control %'] = df_spacecontrol['Penalty Area Control %'].astype(float).round(2)
 
     df_spacecontrol = df_spacecontrol[['Team', 'Total Control Area %', 'Center Control Area %', 'Penalty Area Control %']]
     df_spacecontrol = df_spacecontrol.rename(columns={'Team': 'team_name'})
