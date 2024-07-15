@@ -814,7 +814,6 @@ def League_stats():
     df_spacecontrol['Total Control Area %'] = df_spacecontrol['Total Control Area %'].round(2)
     df_spacecontrol['Center Control Area %'] = df_spacecontrol['Center Control Area %'].round(2)
     df_spacecontrol['Penalty Area Control %'] = df_spacecontrol['Penalty Area Control %'].round(2)
-    st.dataframe(df_spacecontrol)
     df_ppda = load_ppda()
     df_ppda = df_ppda.groupby(['team_name','date']).sum().reset_index()
     df_ppda['date'] = pd.to_datetime(df_ppda['date'])
@@ -852,7 +851,6 @@ def League_stats():
         'PPDA': 'mean',
         }).reset_index()
     
-    st.dataframe(matchstats_df)
     matchstats_df = matchstats_df.rename(columns={'label': 'matches'})
     matchstats_df['PenAreaEntries per match'] = matchstats_df['penAreaEntries'] / matchstats_df['matches']
     matchstats_df['Open play xG per match'] = matchstats_df['open play xG'] / matchstats_df['matches']
