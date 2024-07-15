@@ -900,7 +900,7 @@ def League_stats():
             team_rank = team_df[col + '_rank'].values[0]
             if selected_rank in target_ranks and team_rank in target_ranks:
                 count_matches += 1
-            if count_matches >= 4:
+            if count_matches >= 3:
                 similar_teams.append(team)
                 break
 
