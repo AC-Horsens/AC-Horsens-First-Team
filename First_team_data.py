@@ -847,6 +847,7 @@ def League_stats():
         'attAssistOpenplay': 'sum',
         'totalAttAssist': 'sum',
         'totalCrossNocorner': 'sum',
+        'totalLongBalls': 'sum',
         'Total Control Area %': 'mean',
         'Center Control Area %': 'mean',
         'Penalty Area Control %': 'mean',
@@ -869,11 +870,13 @@ def League_stats():
     matchstats_df['Final third entries per match'] = matchstats_df['finalThirdEntries'] / matchstats_df['matches']
     matchstats_df['Final third pass accuracy %'] = matchstats_df['successfulFinalThirdPasses'] / matchstats_df['totalFinalThirdPasses']
     matchstats_df['Open play shot assists share'] = matchstats_df['attAssistOpenplay'] / matchstats_df['totalAttAssist']
+    matchstats_df['Long pass share %'] = matchstats_df['totalLongBalls'] / matchstats_df['openPlayPass']
+    matchstats_df['Crosses'] = matchstats_df['totalCrossNocorner']
     matchstats_df['PPDA per match'] = matchstats_df['PPDA']
     matchstats_df['Total Space control %'] = matchstats_df['Total Control Area %']
     matchstats_df['Center Space control %'] = matchstats_df['Center Control Area %']
     matchstats_df['Penalty Area Space control %'] = matchstats_df['Penalty Area Control %']
-    matchstats_df = matchstats_df[['team_name','matches','PenAreaEntries per match','Open play xG per match','Duels per match','Duels won %','Passes per game','Pass accuracy %','Back zone pass accuracy %','Forward zone pass accuracy %','possWonDef3rd %','possWonMid3rd %','possWonAtt3rd %','Forward pass share %','Final third entries per match','Final third pass accuracy %','Open play shot assists share','PPDA per match','Total Space control %','Center Space control %','Penalty Area Space control %']]
+    matchstats_df = matchstats_df[['team_name','matches','PenAreaEntries per match','Open play xG per match','Duels per match','Duels won %','Passes per game','Pass accuracy %','Back zone pass accuracy %','Forward zone pass accuracy %','possWonDef3rd %','possWonMid3rd %','possWonAtt3rd %','Forward pass share %','Final third entries per match','Final third pass accuracy %','Open play shot assists share','PPDA per match','Total Space control %','Center Space control %','Penalty Area Space control %','Long pass share %']]
 
     cols_to_rank = matchstats_df.drop(columns=['team_name']).columns
     ranked_df = matchstats_df.copy()  # Create a copy of the original DataFrame
