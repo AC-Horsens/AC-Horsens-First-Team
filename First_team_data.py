@@ -277,7 +277,9 @@ def Dashboard():
                 y=team_data['rolling_openPlayPass'],
                 mode='lines',
                 name=team,
-                line=dict(width=line_size)
+                line=dict(width=line_size),
+                connectgaps=False  # Add this line to prevent connecting gaps in the plot
+
             ))
 
         fig1.update_layout(
