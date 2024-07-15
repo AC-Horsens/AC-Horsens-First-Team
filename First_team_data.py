@@ -890,7 +890,7 @@ def League_stats():
     target_ranks_bottom = [9, 10, 11, 12]
 
     filtered_data_df = pd.DataFrame()
-    col1,col2,col3 = st.columns(3)
+    col1, col2, col3 = st.columns(3)
     for col in team_df.columns:
         if col.endswith('_rank'):
             original_col = col[:-5]
@@ -899,6 +899,7 @@ def League_stats():
                 filtered_values = team_df.loc[team_df[col].isin(target_ranks_top + target_ranks_bottom), original_col]
                 filtered_data_df[original_col + '_rank'] = filtered_ranks
                 filtered_data_df[original_col + '_value'] = filtered_values
+
     with col1:
         filtered_data_df = filtered_data_df.T
         st.dataframe(filtered_data_df)
@@ -914,13 +915,17 @@ def League_stats():
         & (matchstats_df['team_name'] != selected_team)
     ]
 
-    with col2:
+    # Filter columns to display
+    relevant_columns_top = ['team_name'] + [col for col in team_df.columns if col.endswith('_rank') and any(team_df[col].isin(target_ranks_top))]
+    relevant_columns_bottom = ['team_name'] + [col for col in team_df.columns if col.endswith('_rank') and any(team_df[col].isin(target_ranks_bottom))]
 
+    with col2:
         st.write("Teams similar to the selected team (top 4 ranks):")
-        st.dataframe(similar_teams_top[['team_name'] + [col for col in similar_teams_top.columns if col.endswith('_rank')]])
+        st.dataframe(similar_teams_top[relevant_columns_top])
+
     with col3:
         st.write("Teams similar to the selected team (bottom 4 ranks):")
-        st.dataframe(similar_teams_bottom[['team_name'] + [col for col in similar_teams_bottom.columns if col.endswith('_rank')]])
+        st.dataframe(similar_teams_bottom[relevant_columns_bottom])
     
 Data_types = {
     'Dashboard': Dashboard,
