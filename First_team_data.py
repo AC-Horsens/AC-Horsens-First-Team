@@ -821,10 +821,9 @@ def League_stats():
     df_ppda['date'] = pd.to_datetime(df_ppda['date'])
     df_ppda['PPDA'] = df_ppda['PPDA'].astype(float).round(2)
     df_ppda = df_ppda[['team_name','date', 'PPDA']]
-    st.dataframe(df_ppda)
-    st.dataframe(matchstats_df)
     matchstats_df = xg_df_openplay.merge(filtered_data)
     matchstats_df = df_ppda.merge(matchstats_df)
+    st.dataframe(matchstats_df)
     matchstats_df = matchstats_df.merge(df_spacecontrol)
 
     matchstats_df = matchstats_df.drop(columns='date')
