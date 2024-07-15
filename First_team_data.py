@@ -917,12 +917,12 @@ def League_stats():
     similar_teams = matchstats_df[matchstats_df['team_name'] != selected_team]
 
     # Get the three teams with the lowest similarity scores
-    similar_teams_sorted = similar_teams.sort_values(by='similarity_score')
+    similar_teams = similar_teams.sort_values(by='similarity_score')
 
     # Display the sorted similar teams
     with col2:
         st.write("Teams similar to the selected team (sorted by similarity score):")
-        st.dataframe(similar_teams_sorted[['team_name'] + rank_columns + ['similarity_score']])
+        st.dataframe(similar_teams[['team_name'] + rank_columns + ['similarity_score']])
     
 Data_types = {
     'Dashboard': Dashboard,
