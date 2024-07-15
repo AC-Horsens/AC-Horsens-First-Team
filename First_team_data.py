@@ -814,7 +814,7 @@ def League_stats():
     df_spacecontrol = df_spacecontrol[['Team', 'Total Control Area %', 'Center Control Area %', 'Penalty Area Control %']]
     df_spacecontrol = df_spacecontrol.rename(columns={'Team': 'team_name'})
     df_spacecontrol = df_spacecontrol.groupby('team_name').mean().reset_index()    
-
+    st.dataframe(df_spacecontrol)
     df_ppda = load_ppda()
     df_ppda = df_ppda.groupby(['team_name','date']).sum().reset_index()
 
