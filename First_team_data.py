@@ -750,7 +750,6 @@ def Dashboard():
         if st.session_state['selected_data3']:
             Data_types[st.session_state['selected_data3']]()
 
-
 def League_stats(df_spacecontrol):
     matchstats_df = pd.read_csv(r'DNK_1_Division_2023_2024/matchstats_all DNK_1_Division_2023_2024.csv')
     matchstats_df = matchstats_df.rename(columns={'player_matchName': 'playerName'})
@@ -849,7 +848,7 @@ def League_stats(df_spacecontrol):
     
 Data_types = {
     'Dashboard': Dashboard,
-    'League stats': League_stats
+    'League stats': League_stats(df_spacecontrol)
 }
 
 st.cache_data(experimental_allow_widgets=True)
