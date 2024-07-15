@@ -751,7 +751,7 @@ def Dashboard():
             Data_types[st.session_state['selected_data3']]()
 
 def League_stats():
-    matchstats_df = pd.read_csv(r'DNK_1_Division_2023_2024/matchstats_all DNK_1_Division_2023_2024.csv')
+    matchstats_df = load_match_stats(columns = any)
     matchstats_df = matchstats_df.rename(columns={'player_matchName': 'playerName'})
     matchstats_df = matchstats_df.groupby(['contestantId','label', 'date']).sum().reset_index()
     matchstats_df['label'] = np.where(matchstats_df['label'].notnull(), 1, matchstats_df['label'])
@@ -805,7 +805,7 @@ def League_stats():
     df_spacecontrol = df_spacecontrol[['Team', 'Total Control Area %', 'Center Control Area %', 'Penalty Area Control %']]
     df_spacecontrol = df_spacecontrol.rename(columns={'Team': 'team_name'})
     df_spacecontrol = df_spacecontrol.groupby('team_name').mean().reset_index()    
-    
+
     matchstats_df = xg_df_openplay.merge(filtered_data)
     matchstats_df = matchstats_df.merge(df_spacecontrol)
     matchstats_df = matchstats_df.drop(columns='date')
