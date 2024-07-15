@@ -272,14 +272,12 @@ def Dashboard():
         for team in df_matchstats['team_name'].unique():
             team_data = df_matchstats[df_matchstats['team_name'] == team]
             line_size = 5 if team == 'Horsens' else 1  # Larger line for Horsens
-            fig1.add_trace(go.Scatter(
+            fig1.add_trace(go.Scattergl(
                 x=team_data['date'],
                 y=team_data['rolling_openPlayPass'],
                 mode='lines',
                 name=team,
-                line=dict(width=line_size),
-                connectgaps=False  # Add this line to prevent connecting gaps in the plot
-
+                line=dict(width=line_size)
             ))
 
         fig1.update_layout(
