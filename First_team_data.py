@@ -879,7 +879,7 @@ def League_stats():
         ranked_df[col + '_rank'] = matchstats_df[col].rank(axis=0, ascending=False)
     matchstats_df = ranked_df.merge(matchstats_df)
     matchstats_df = matchstats_df.set_index('team_name')
-    matchstats_df = matchstats_df.drop(columns=['matches_rank','matches_value'])
+    matchstats_df = matchstats_df.drop(columns=['matches_rank'])
     st.dataframe(matchstats_df)
     matchstats_df = matchstats_df.reset_index()
     selected_team = st.selectbox('Choose team', matchstats_df['team_name'])
