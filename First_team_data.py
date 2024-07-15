@@ -834,7 +834,7 @@ def League_stats():
     }
 
     # Aggregate the rest of the columns by sum
-    sum_cols = matchstats_df.drop(columns=['contestantId', 'team_name']).columns
+    sum_cols = matchstats_df.drop(columns=['contestantId', 'team_name','PPDA','Total Control Area %','Center Control Area %','Penalty Area Control %']).columns
     aggregation_dict.update({col: 'sum' for col in sum_cols})
 
     # Perform aggregation
