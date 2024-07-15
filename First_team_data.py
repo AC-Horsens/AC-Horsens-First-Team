@@ -267,7 +267,7 @@ def Dashboard():
         segment_start = None
 
         for i, date in enumerate(df_matchstats['date']):
-            if i == 0 or (date - df_matchstats['date'][i-1]).days > 1:  # Check for a gap greater than 1 day
+            if i == 0 or (date - df_matchstats['date'][i-1]).days > 20:  # Check for a gap greater than 1 day
                 if segment_start is not None:
                     segments.append(df_matchstats.iloc[segment_start:i])
                 segment_start = i
