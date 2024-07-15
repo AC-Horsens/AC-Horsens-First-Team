@@ -763,7 +763,6 @@ def League_stats():
     matchstats_df['date'] = pd.to_datetime(matchstats_df['date'], format=date_format)
     min_date = matchstats_df['date'].min()
     max_date = matchstats_df['date'].max()
-    st.dataframe(matchstats_df)
 
     date_range = pd.date_range(start=min_date, end=max_date, freq='D')
     date_options = date_range.strftime(date_format)  # Convert dates to the specified format
