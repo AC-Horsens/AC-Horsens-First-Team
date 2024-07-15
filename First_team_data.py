@@ -72,12 +72,16 @@ def load_xA():
     df_xA = pd.read_csv(f'DNK_1_Division_2023_2024/xA_all DNK_1_Division_2023_2024.csv')
     df_xA['label'] = (df_xA['label'] + ' ' + df_xA['date']).astype(str)
     return df_xA
-
 @st.cache_data
 def counterpressing():
     df_counterpressing = pd.read_csv(r'DNK_1_Division_2023_2024/Horsens/Horsens_counterpressing.csv')
     df_counterpressing['label'] = (df_counterpressing['label'] + ' ' + df_counterpressing['date']).astype(str)
     return df_counterpressing
+@st.cache_data
+def load_ppda():
+    df_ppda = pd.read_csv(r'DNK_1_Division_2023_2024/ppda_all DNK_1_Division_2023_2024.csv')
+    df_ppda['label'] = (df_ppda['label'] + ' ' + df_ppda['date']).astype(str)
+    return df_ppda
 
 def Dashboard():
     df_xg = load_xg()
@@ -805,6 +809,13 @@ def League_stats():
     df_spacecontrol = df_spacecontrol[['Team', 'Total Control Area %', 'Center Control Area %', 'Penalty Area Control %']]
     df_spacecontrol = df_spacecontrol.rename(columns={'Team': 'team_name'})
     df_spacecontrol = df_spacecontrol.groupby('team_name').mean().reset_index()    
+    df_spacecontrol['Total Control Area %'] = df_spacecontrol['Total Control Area %'].apply(lambda x: f'{x:.2f}%')
+    df_spacecontrol['Center Control Area %'] = df_spacecontrol['Center Control Area %'].apply(lambda x: f'{x:.2f}%')
+    df_spacecontrol['Penalty Area Control %'] = df_spacecontrol['Penalty Area Control %'].apply(lambda x: f'{x:.2f}%')
+
+    df_ppda = load_ppda()
+    df_ppda = df_ppda.groupby('team_name','date').sum().reset_index()
+
 
     matchstats_df = xg_df_openplay.merge(filtered_data)
     matchstats_df = matchstats_df.merge(df_spacecontrol)
