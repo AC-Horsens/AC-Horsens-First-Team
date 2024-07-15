@@ -884,7 +884,10 @@ def League_stats():
     matchstats_df = matchstats_df.reset_index()
 
     # Select a team
-    selected_team = st.selectbox('Choose team', matchstats_df['team_name'])
+    sorted_teams = matchstats_df['team_name'].sort_values()
+
+    # Select a team
+    selected_team = st.selectbox('Choose team', sorted_teams)
     team_df = matchstats_df.loc[matchstats_df['team_name'] == selected_team]
 
     # Target ranks
