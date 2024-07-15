@@ -884,33 +884,27 @@ def League_stats():
     matchstats_df = matchstats_df.reset_index()
     selected_team = st.selectbox('Choose team',matchstats_df['team_name'])  # Replace 'Team A' with the selected team name
 
-    selected_team_df = matchstats_df.loc[matchstats_df['team_name'] == selected_team]
+    team_df = matchstats_df.loc[matchstats_df['team_name'] == selected_team]
+
     target_ranks = [1, 2, 3, 4, 9, 10, 11, 12]
 
-    col1,col2 = st.columns(2)
-    # Identify similar teams
-    similar_teams = []
-    for team in matchstats_df['team_name'].unique():
-        if team == selected_team:
-            continue
-        team_df = matchstats_df.loc[matchstats_df['team_name'] == team]
-        count_matches = 0
-        for col in cols_to_rank:
-            selected_rank = selected_team_df[col + '_rank'].values[0]
-            team_rank = team_df[col + '_rank'].values[0]
-            if selected_rank in target_ranks and team_rank in target_ranks:
-                count_matches += 1
-            if count_matches >= 5:
-                similar_teams.append(team)
-                break
+    filtered_data_df = pd.DataFrame()
 
-    with col1:
-        selected_team_df = selected_team_df.transpose()
-        st.dataframe(selected_team_df)
-
-    with col2:
-        st.write("Teams similar to", selected_team, "based on rank criteria:")
-        st.write(similar_teams)
+    for col in team_df.columns:
+        # Check if the column ends with '_rank' and if any element in the series satisfies the condition
+        if col.endswith('_rank') and any(team_df[col].isin(target_ranks)):
+            # Extract the corresponding column name without the '_rank' suffix
+            original_col = col[:-5]
+            # Filter the ranks based on the target ranks
+            filtered_ranks = team_df.loc[team_df[col].isin(target_ranks), col]
+            # Filter the corresponding values based on the filtered ranks
+            filtered_values = team_df.loc[team_df[col].isin(target_ranks), original_col]
+            # Add both the filtered ranks and values to the filtered_data_df DataFrame
+            filtered_data_df[original_col + '_rank'] = filtered_ranks
+            filtered_data_df[original_col + '_value'] = filtered_values
+    filtered_data_df = filtered_data_df.T
+    filtered_data_df = filtered_data_df.rename(columns={'6': 'value'})
+    st.dataframe(filtered_data_df)
     
 Data_types = {
     'Dashboard': Dashboard,
