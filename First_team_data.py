@@ -265,6 +265,9 @@ def Dashboard():
         df_matchstats['rolling_openPlayPass'] = df_matchstats.groupby('team_name')['openPlayPass'].transform(lambda x: x.rolling(3, min_periods=1).mean())
         df_matchstats['rolling_successfulOpenPlayPass'] = df_matchstats.groupby('team_name')['successfulOpenPlayPass'].transform(lambda x: x.rolling(3, min_periods=1).mean())
 
+        df_matchstats = df_matchstats[df_matchstats['date'].isin(df_matchstats['date'].unique())]
+
+
         fig1 = go.Figure()
 
         for team in df_matchstats['team_name'].unique():
