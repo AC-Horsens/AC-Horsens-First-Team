@@ -782,7 +782,7 @@ def League_stats():
         (matchstats_df['date'] >= selected_start_date) & (matchstats_df['date'] <= selected_end_date)
     ]    
     
-    xg_df = pd.read_csv(r'DNK_1_Division_2023_2024/xg_all DNK_1_Division_2023_2024.csv')
+    xg_df = load_all_xg()
     xg_df_openplay = xg_df[xg_df['321'] > 0]
 
     xg_df_openplay = xg_df_openplay.groupby(['contestantId', 'team_name', 'date'])['321'].sum().reset_index()
@@ -804,10 +804,7 @@ def League_stats():
     df_spacecontrol['Penalty Area Control %'] = df_spacecontrol['PenaltyAreaControl'] / df_spacecontrol['PenaltyAreaControl_match'] * 100
     df_spacecontrol = df_spacecontrol[['Team', 'Total Control Area %', 'Center Control Area %', 'Penalty Area Control %']]
     df_spacecontrol = df_spacecontrol.rename(columns={'Team': 'team_name'})
-    df_spacecontrol = df_spacecontrol.groupby('team_name').mean().reset_index()
-
-    st.dataframe(df_spacecontrol)
-    
+    df_spacecontrol = df_spacecontrol.groupby('team_name').mean().reset_index()    
     
     matchstats_df = xg_df_openplay.merge(filtered_data)
     matchstats_df = matchstats_df.merge(df_spacecontrol)
