@@ -798,7 +798,7 @@ def League_stats():
     df_spacecontrol = df_spacecontrol[['Team','date','TotalControlArea','CenterControlArea','PenaltyAreaControl','label']]
     df_spacecontrol[['TotalControlArea', 'CenterControlArea', 'PenaltyAreaControl']] = df_spacecontrol[['TotalControlArea', 'CenterControlArea', 'PenaltyAreaControl']].astype(float).round(2)
     
-    df_spacecontrol = df_spacecontrol.groupby(['Team','date']).sum().reset_index()
+    df_spacecontrol = df_spacecontrol.groupby(['Team','label','date']).sum().reset_index()
     df_spacecontrol['date'] = pd.to_datetime(df_spacecontrol['date'])
     df_spacecontrol['TotalControlArea_match'] = df_spacecontrol.groupby('label')['TotalControlArea'].transform('sum')
     df_spacecontrol['CenterControlArea_match'] = df_spacecontrol.groupby('label')['CenterControlArea'].transform('sum')
