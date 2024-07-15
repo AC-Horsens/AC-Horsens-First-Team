@@ -839,7 +839,6 @@ def League_stats():
     matchstats_df['Final third entries per match'] = matchstats_df['finalThirdEntries'] / matchstats_df['matches']
     matchstats_df['Final third pass accuracy %'] = matchstats_df['successfulFinalThirdPasses'] / matchstats_df['totalFinalThirdPasses']
     matchstats_df['Open play shot assists share'] = matchstats_df['attAssistOpenplay'] / matchstats_df['totalAttAssist']
-    st.dataframe(matchstats_df)
     matchstats_df = matchstats_df[['team_name','matches','PenAreaEntries per match','Open play xG per match','Duels per match','Duels won %','Passes per game','Pass accuracy %','Back zone pass accuracy %','Forward zone pass accuracy %','possWonDef3rd %','possWonMid3rd %','possWonAtt3rd %','Forward pass share %','Final third entries per match','Final third pass accuracy %','Open play shot assists share','Total Control Area %', 'Center Control Area %', 'Penalty Area Control %']]
     
     cols_to_rank = matchstats_df.drop(columns=['team_name']).columns
@@ -855,7 +854,7 @@ def League_stats():
 
     team_df = matchstats_df.loc[matchstats_df['team_name'] == selected_team]
 
-    target_ranks = [1, 2, 3, 10, 11, 12]
+    target_ranks = [1, 2, 3, 4, 9, 10, 11, 12]
 
     filtered_data_df = pd.DataFrame()
 
