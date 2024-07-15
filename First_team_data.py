@@ -823,6 +823,7 @@ def League_stats():
     matchstats_df = df_ppda.merge(matchstats_df)
     matchstats_df = df_spacecontrol.merge(matchstats_df)
     matchstats_df = matchstats_df.drop(columns='date')
+    st.dataframe(matchstats_df)
     # Perform aggregation
     matchstats_df = matchstats_df.groupby(['contestantId', 'team_name']).agg({
         'label': 'sum',  # Example of a column to sum
