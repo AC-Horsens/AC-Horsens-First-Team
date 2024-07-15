@@ -756,6 +756,7 @@ def Dashboard():
 
 def League_stats():
     matchstats_df = load_match_stats(columns = any)
+    st.dataframe(matchstats_df)
     matchstats_df = matchstats_df.rename(columns={'player_matchName': 'playerName'})
     matchstats_df = matchstats_df.groupby(['contestantId','label', 'date']).sum().reset_index()
     matchstats_df['label'] = np.where(matchstats_df['label'].notnull(), 1, matchstats_df['label'])
