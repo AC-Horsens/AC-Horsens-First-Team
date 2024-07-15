@@ -882,28 +882,45 @@ def League_stats():
 
     st.dataframe(matchstats_df)
     matchstats_df = matchstats_df.reset_index()
-    selected_team = st.selectbox('Choose team',matchstats_df['team_name'])  # Replace 'Team A' with the selected team name
+    selected_team = st.selectbox('Choose team', matchstats_df['team_name'])
 
     team_df = matchstats_df.loc[matchstats_df['team_name'] == selected_team]
 
-    target_ranks = [1, 2, 3, 4, 9, 10, 11, 12]
+    target_ranks_top = [1, 2, 3, 4]
+    target_ranks_bottom = [9, 10, 11, 12]
 
     filtered_data_df = pd.DataFrame()
-
+    col1,col2,col3 = st.columns(3)
     for col in team_df.columns:
-        # Check if the column ends with '_rank' and if any element in the series satisfies the condition
-        if col.endswith('_rank') and any(team_df[col].isin(target_ranks)):
-            # Extract the corresponding column name without the '_rank' suffix
+        if col.endswith('_rank'):
             original_col = col[:-5]
-            # Filter the ranks based on the target ranks
-            filtered_ranks = team_df.loc[team_df[col].isin(target_ranks), col]
-            # Filter the corresponding values based on the filtered ranks
-            filtered_values = team_df.loc[team_df[col].isin(target_ranks), original_col]
-            # Add both the filtered ranks and values to the filtered_data_df DataFrame
-            filtered_data_df[original_col + '_rank'] = filtered_ranks
-            filtered_data_df[original_col + '_value'] = filtered_values
-    filtered_data_df = filtered_data_df.T
-    st.dataframe(filtered_data_df)
+            if any(team_df[col].isin(target_ranks_top + target_ranks_bottom)):
+                filtered_ranks = team_df.loc[team_df[col].isin(target_ranks_top + target_ranks_bottom), col]
+                filtered_values = team_df.loc[team_df[col].isin(target_ranks_top + target_ranks_bottom), original_col]
+                filtered_data_df[original_col + '_rank'] = filtered_ranks
+                filtered_data_df[original_col + '_value'] = filtered_values
+    with col1:
+        filtered_data_df = filtered_data_df.T
+        st.dataframe(filtered_data_df)
+
+    # Find similar teams
+    similar_teams_top = matchstats_df[
+        (matchstats_df[[col for col in matchstats_df.columns if col.endswith('_rank')]].isin(target_ranks_top).sum(axis=1) >= 4)
+        & (matchstats_df['team_name'] != selected_team)
+    ]
+
+    similar_teams_bottom = matchstats_df[
+        (matchstats_df[[col for col in matchstats_df.columns if col.endswith('_rank')]].isin(target_ranks_bottom).sum(axis=1) >= 4)
+        & (matchstats_df['team_name'] != selected_team)
+    ]
+
+    with col2:
+
+        st.write("Teams similar to the selected team (top 4 ranks):")
+        st.dataframe(similar_teams_top[['team_name'] + [col for col in similar_teams_top.columns if col.endswith('_rank')]])
+    with col3:
+        st.write("Teams similar to the selected team (bottom 4 ranks):")
+        st.dataframe(similar_teams_bottom[['team_name'] + [col for col in similar_teams_bottom.columns if col.endswith('_rank')]])
     
 Data_types = {
     'Dashboard': Dashboard,
