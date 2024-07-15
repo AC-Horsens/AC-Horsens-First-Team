@@ -905,7 +905,7 @@ def League_stats():
                 break
 
     with col1:
-        st.dataframe(team_df)
+        st.dataframe(selected_team_df)
 
     with col2:
         st.write("Teams similar to", selected_team, "based on rank criteria:")
