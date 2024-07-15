@@ -827,7 +827,7 @@ def League_stats():
 
     matchstats_df = matchstats_df.drop(columns='date')
     # Perform aggregation
-    matchstats_df = matchstats_df.groupby(['contestantId', 'team_name']).sum.reset_index()
+    matchstats_df = matchstats_df.groupby(['contestantId', 'team_name']).sum().reset_index()
     
     matchstats_df = matchstats_df.rename(columns={'label': 'matches'})
     matchstats_df['PenAreaEntries per match'] = matchstats_df['penAreaEntries'] / matchstats_df['matches']
