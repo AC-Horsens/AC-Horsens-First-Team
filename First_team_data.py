@@ -820,6 +820,7 @@ def League_stats():
 
 
     matchstats_df = xg_df_openplay.merge(filtered_data)
+    st.dataframe(matchstats_df)
     matchstats_df = matchstats_df.drop(columns='date')
     matchstats_df = matchstats_df.groupby(['contestantId', 'team_name']).sum().reset_index()
     matchstats_df = matchstats_df.rename(columns={'label': 'matches'})
