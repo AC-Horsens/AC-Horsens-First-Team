@@ -823,12 +823,10 @@ def League_stats():
     matchstats_df = matchstats_df.drop(columns='date')
     matchstats_df = matchstats_df.groupby(['contestantId', 'team_name']).sum().reset_index()
     matchstats_df = matchstats_df.rename(columns={'label': 'matches'})
-    matchstats_df = matchstats_df.merge(df_spacecontrol)
     matchstats_df['PenAreaEntries per match'] = matchstats_df['penAreaEntries'] / matchstats_df['matches']
     matchstats_df['Open play xG per match'] = matchstats_df['open play xG'] / matchstats_df['matches']
     matchstats_df['Duels per match'] = (matchstats_df['duelLost'] + matchstats_df['duelWon']) /matchstats_df['matches']
     matchstats_df['Duels won %'] = (matchstats_df['duelLost'] + matchstats_df['duelWon']) / matchstats_df['duelWon']
-    st.dataframe(matchstats_df)
     matchstats_df['Passes per game'] = matchstats_df['openPlayPass'] / matchstats_df['matches']
     matchstats_df['Pass accuracy %'] = matchstats_df['successfulOpenPlayPass'] / matchstats_df['openPlayPass']
     matchstats_df['Back zone pass accuracy %'] = matchstats_df['accurateBackZonePass'] / matchstats_df['totalBackZonePass']
@@ -840,6 +838,8 @@ def League_stats():
     matchstats_df['Final third entries per match'] = matchstats_df['finalThirdEntries'] / matchstats_df['matches']
     matchstats_df['Final third pass accuracy %'] = matchstats_df['successfulFinalThirdPasses'] / matchstats_df['totalFinalThirdPasses']
     matchstats_df['Open play shot assists share'] = matchstats_df['attAssistOpenplay'] / matchstats_df['totalAttAssist']
+    matchstats_df = matchstats_df.merge(df_spacecontrol)
+
     matchstats_df = matchstats_df[['team_name','matches','PenAreaEntries per match','Open play xG per match','Duels per match','Duels won %','Passes per game','Pass accuracy %','Back zone pass accuracy %','Forward zone pass accuracy %','possWonDef3rd %','possWonMid3rd %','possWonAtt3rd %','Forward pass share %','Final third entries per match','Final third pass accuracy %','Open play shot assists share','Total Control Area %', 'Center Control Area %', 'Penalty Area Control %']]
     
     cols_to_rank = matchstats_df.drop(columns=['team_name']).columns
