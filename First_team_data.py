@@ -820,14 +820,15 @@ def League_stats():
     df_ppda = df_ppda.groupby(['team_name','date']).sum().reset_index()
     df_ppda['date'] = pd.to_datetime(df_ppda['date'])
     df_ppda['PPDA'] = df_ppda['PPDA'].astype(float).round(2)
+    df_ppda = df_ppda[['team_name','date', 'PPDA']]
     st.dataframe(df_ppda)
     st.dataframe(matchstats_df)
     matchstats_df = xg_df_openplay.merge(filtered_data)
     matchstats_df = df_ppda.merge(matchstats_df)
+    matchstats_df = matchstats_df.merge(df_spacecontrol)
 
     matchstats_df = matchstats_df.drop(columns='date')
     matchstats_df = matchstats_df.groupby(['contestantId', 'team_name']).sum().reset_index()
-    matchstats_df = matchstats_df.merge(df_spacecontrol)
 
     matchstats_df = matchstats_df.rename(columns={'label': 'matches'})
     matchstats_df['PenAreaEntries per match'] = matchstats_df['penAreaEntries'] / matchstats_df['matches']
