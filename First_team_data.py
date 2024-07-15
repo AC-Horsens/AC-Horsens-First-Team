@@ -906,12 +906,12 @@ def League_stats():
 
     # Find similar teams
     similar_teams_top = matchstats_df[
-        (matchstats_df[[col for col in matchstats_df.columns if col.endswith('_rank')]].isin(target_ranks_top).sum(axis=1) >= 5)
+        (matchstats_df[[col for col in matchstats_df.columns if col.endswith('_rank')]].isin(target_ranks_top).sum(axis=1) >= 6)
         & (matchstats_df['team_name'] != selected_team)
     ]
 
     similar_teams_bottom = matchstats_df[
-        (matchstats_df[[col for col in matchstats_df.columns if col.endswith('_rank')]].isin(target_ranks_bottom).sum(axis=1) >= 5)
+        (matchstats_df[[col for col in matchstats_df.columns if col.endswith('_rank')]].isin(target_ranks_bottom).sum(axis=1) >= 6)
         & (matchstats_df['team_name'] != selected_team)
     ]
 
