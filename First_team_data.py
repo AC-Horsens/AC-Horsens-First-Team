@@ -259,6 +259,9 @@ def Dashboard():
         st.header('Whole season')
         st.dataframe(df_matchstats_tabel, hide_index=True)
         # Beregn 3-kamps rullende gennemsnit for hver team
+        
+        df_matchstats = df_matchstats[df_matchstats['openPlayPass'] > 0]
+
         df_matchstats['rolling_openPlayPass'] = df_matchstats.groupby('team_name')['openPlayPass'].transform(lambda x: x.rolling(3, min_periods=1).mean())
         df_matchstats['rolling_successfulOpenPlayPass'] = df_matchstats.groupby('team_name')['successfulOpenPlayPass'].transform(lambda x: x.rolling(3, min_periods=1).mean())
 

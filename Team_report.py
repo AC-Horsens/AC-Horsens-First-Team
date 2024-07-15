@@ -47,7 +47,13 @@ def load_data():
 
     squads = pd.read_csv('C:/Users/SéamusPeareBartholdy/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2023_2024/squads DNK_1_Division_2023_2024.csv')
     
-    return df_xg, df_xa, df_pv, df_possession_stats, df_xa_agg, df_possession_data, df_xg_agg, df_pv_agg, df_xg_all, df_possession_xa, df_pv_all, df_matchstats, squads
+    packing_df = pd.read_csv('C:/Users/SéamusPeareBartholdy/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2023_2024/packing_all DNK_1_Division_2023_2024.csv')
+    packing_df['label'] = packing_df['label'] + ' ' + packing_df['date']
+    
+    space_control_df = pd.read_csv('C:/Users/SéamusPeareBartholdy/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2023_2024/Space_control_all DNK_1_Division_2023_2024.csv')
+    space_control_df['label'] = space_control_df['label'] + ' ' + space_control_df['date']
+    
+    return df_xg, df_xa, df_pv, df_possession_stats, df_xa_agg, df_possession_data, df_xg_agg, df_pv_agg, df_xg_all, df_possession_xa, df_pv_all, df_matchstats, squads, packing_df, space_control_df
 
 def create_stacked_bar_chart(win_prob, draw_prob, loss_prob, title, filename):
     fig, ax = plt.subplots(figsize=(8, 2))
@@ -311,13 +317,23 @@ def calculate_ppda(df_possession_data):
     df_ppda = df_ppdabeyond40[['label', 'team_name', 'PPDA']]
     return df_ppda
 
-def create_holdsummary(df_possession_stats_summary, df_xg, df_xa,df_matchstats,df_ppda):
+def create_holdsummary(df_possession_stats_summary, df_xg, df_xa,df_matchstats,df_ppda,packing_df,space_control_df):
     df_possession_stats_summary = pd.melt(df_possession_stats_summary, id_vars=['home_team', 'away_team', 'label'], value_vars=['home_possession', 'away_possession'], var_name='possession_type', value_name='terr_poss')
     df_possession_stats_summary['team_name'] = df_possession_stats_summary.apply(lambda x: x['home_team'] if x['possession_type'] == 'home_possession' else x['away_team'], axis=1)
     df_possession_stats_summary.drop(['home_team', 'away_team', 'possession_type'], axis=1, inplace=True)
     df_possession_stats_summary = df_possession_stats_summary[['team_name', 'label', 'terr_poss']]
     df_xg_hold = df_xg.groupby(['team_name','contestantId', 'label'])['321'].sum().reset_index()
     df_xg_hold = df_xg_hold.rename(columns={'321': 'xG'})
+
+    packing_df_hold = packing_df.groupby(['teamName','label'])['bypassed_opponents'].sum().reset_index()
+    packing_df_hold = packing_df_hold.rename(columns={'teamName': 'team_name'})
+
+    space_control_df = space_control_df.groupby(['Team', 'label']).sum().reset_index()    
+    space_control_df['TotalControlArea_match'] = space_control_df.groupby('label')['TotalControlArea'].transform('sum')
+    space_control_df['Total Control Area %'] = space_control_df['TotalControlArea'] / space_control_df['TotalControlArea_match'] * 100
+    space_control_df = space_control_df[['Team','label','Total Control Area %']]
+    space_control_df = space_control_df.rename(columns={'Team': 'team_name'})
+
 
     df_xa_hold = df_xa.groupby(['team_name','contestantId', 'label'])['318.0'].sum().reset_index()
     df_xa_hold = df_xa_hold.rename(columns={'318.0': 'xA'})
@@ -327,7 +343,10 @@ def create_holdsummary(df_possession_stats_summary, df_xg, df_xa,df_matchstats,d
     df_holdsummary = df_holdsummary.merge(paentries)
     df_holdsummary = df_holdsummary.merge(df_possession_stats_summary)
     df_holdsummary = df_holdsummary.merge(df_ppda)
-    df_holdsummary = df_holdsummary[['team_name', 'label', 'xA', 'xG', 'terr_poss','penAreaEntries','PPDA']]
+    df_holdsummary = df_holdsummary.merge(packing_df_hold)
+    df_holdsummary = df_holdsummary.merge(space_control_df)
+    
+    df_holdsummary = df_holdsummary[['team_name', 'label', 'xA', 'xG', 'terr_poss','penAreaEntries','PPDA','bypassed_opponents','Total Control Area %']]
     
     return df_holdsummary
 
@@ -443,6 +462,7 @@ def Process_data_spillere(df_possession_xa,df_pv_all,df_matchstats,df_xg_all,squ
         df_spillende_stoppertotal = df_spillende_stoppertotal[['playerName','team_name','player_position','age_today','minsPlayed total','Passing','Forward passing','Defending','Possession value added score','Total score']]
         df_spillende_stoppertotal = df_spillende_stoppertotal[df_spillende_stoppertotal['minsPlayed total'].astype(int) >= minutter_total]
         df_spillende_stoppertotal = df_spillende_stoppertotal.sort_values('Total score',ascending = False)
+        df_spillende_stoppertotal['Total score rank'] = df_spillende_stoppertotal['Total score'].rank(method='dense', ascending=False)
         return df_spillende_stopper
   
     def defending_central_defender():
@@ -507,6 +527,7 @@ def Process_data_spillere(df_possession_xa,df_pv_all,df_matchstats,df_xg_all,squ
         df_balanced_central_defendertotal = df_balanced_central_defendertotal[['playerName','team_name','player_position','age_today','minsPlayed total','Defending','Possession value added','Passing','Total score']]
         df_balanced_central_defendertotal = df_balanced_central_defendertotal[df_balanced_central_defendertotal['minsPlayed total'].astype(int) >= minutter_total]
         df_balanced_central_defendertotal = df_balanced_central_defendertotal.sort_values('Total score',ascending = False)
+
         return df_balanced_central_defender
     
     def fullbacks():
@@ -546,6 +567,7 @@ def Process_data_spillere(df_possession_xa,df_pv_all,df_matchstats,df_xg_all,squ
         df_backstotal = df_backstotal[['playerName','team_name','player_position','player_positionSide','age_today','minsPlayed total','Defending_','Passing_','Chance_creation','Possession_value_added','Total score']]
         df_backstotal = df_backstotal[df_backstotal['minsPlayed total'].astype(int) >= minutter_total]
         df_backstotal = df_backstotal.sort_values('Total score',ascending = False)
+
         return df_backs
     
     def number6():
@@ -586,6 +608,7 @@ def Process_data_spillere(df_possession_xa,df_pv_all,df_matchstats,df_xg_all,squ
         df_seksertotal = df_seksertotal[['playerName','team_name','player_position','age_today','minsPlayed total','Defending_','Passing_','Progressive_ball_movement','Possession_value_added','Total score']]
         df_seksertotal= df_seksertotal[df_seksertotal['minsPlayed total'].astype(int) >= minutter_total]
         df_seksertotal = df_seksertotal.sort_values('Total score',ascending = False)
+
         return df_sekser
 
     def number6_destroyer():
@@ -711,6 +734,7 @@ def Process_data_spillere(df_possession_xa,df_pv_all,df_matchstats,df_xg_all,squ
         df_ottertotal = df_ottertotal[['playerName','team_name','player_position','age_today','minsPlayed total','Defending_','Passing_','Progressive_ball_movement','Possession_value','Total score']]
         df_ottertotal= df_ottertotal[df_ottertotal['minsPlayed total'].astype(int) >= minutter_total]
         df_ottertotal = df_ottertotal.sort_values('Total score',ascending = False)
+
         return df_otter
         
     def number10():
@@ -760,6 +784,7 @@ def Process_data_spillere(df_possession_xa,df_pv_all,df_matchstats,df_xg_all,squ
         df_10total = df_10total[['playerName','team_name','age_today','minsPlayed total','Passing_','Chance_creation','Goalscoring_','Possession_value','Total score']]
         df_10total= df_10total[df_10total['minsPlayed total'].astype(int) >= minutter_total]
         df_10total = df_10total.sort_values('Total score',ascending = False)
+
         return df_10
     
     def winger():
@@ -815,6 +840,7 @@ def Process_data_spillere(df_possession_xa,df_pv_all,df_matchstats,df_xg_all,squ
         df_10total = df_10total[['playerName','team_name','age_today','minsPlayed total','Passing_','Chance_creation','Goalscoring_','Possession_value','Total score']]
         df_10total= df_10total[df_10total['minsPlayed total'].astype(int) >= minutter_total]
         df_10total = df_10total.sort_values('Total score',ascending = False)
+
         return df_kant
     
     def Classic_striker():
@@ -975,7 +1001,7 @@ def Process_data_spillere(df_possession_xa,df_pv_all,df_matchstats,df_xg_all,squ
         'Classic striker': Classic_striker(),
     }
 
-df_xg, df_xa, df_pv, df_possession_stats, df_xa_agg, df_possession_data, df_xg_agg, df_pv_agg, df_xg_all, df_possession_xa, df_pv_all, df_matchstats, squads = load_data()
+df_xg, df_xa, df_pv, df_possession_stats, df_xa_agg, df_possession_data, df_xg_agg, df_pv_agg, df_xg_all, df_possession_xa, df_pv_all, df_matchstats, squads, packing_df, space_control_df = load_data()
 
 position_dataframes = Process_data_spillere(df_possession_xa, df_pv_all, df_matchstats, df_xg_all, squads)
 
@@ -1000,7 +1026,7 @@ def process_data():
     # Calculate expected points based on xA
     expected_points_xa, total_expected_points_xa = calculate_expected_points(df_xa, '318.0')
 
-    df_holdsummary = create_holdsummary(df_possession_stats_summary, df_xg, df_xa, df_matchstats,df_ppda)
+    df_holdsummary = create_holdsummary(df_possession_stats_summary, df_xg, df_xa, df_matchstats,df_ppda, packing_df,space_control_df)
     # Merge the expected points from both xG and xA simulations
     merged_df = expected_points_xg.merge(expected_points_xa, on=['label','date', 'team_name'], suffixes=('_xg', '_xa'))
     merged_df['expected_points'] = (merged_df['expected_points_xg'] + merged_df['expected_points_xa']) / 2
@@ -1073,6 +1099,8 @@ def create_pdf_game_report(game_data, df_xg_agg, df_xa_agg, merged_df, df_posses
     pdf.cell(30, 5, 'Territorial possession', 1)
     pdf.cell(25, 5, 'Penalty area entries', 1)
     pdf.cell(20, 5, 'PPDA', 1)
+    pdf.cell(20, 5, 'Packing', 1)
+    pdf.cell(20, 5, 'Space control %', 1)
 
     pdf.ln()
 
@@ -1084,6 +1112,8 @@ def create_pdf_game_report(game_data, df_xg_agg, df_xa_agg, merged_df, df_posses
         pdf.cell(30, 5, f"{row['terr_poss']:.2f}", 1)
         pdf.cell(25, 5, f"{row['penAreaEntries']:.0f}", 1)
         pdf.cell(20, 5, f"{row['PPDA']:.2f}", 1)
+        pdf.cell(20, 5, f"{row['bypassed_opponents']:.0f}", 1)
+        pdf.cell(20, 5, f"{row['Total Control Area %']:.2f}", 1)
 
         pdf.ln()
         
@@ -1229,6 +1259,7 @@ def create_pdf_progress_report(horsens_df, total_expected_points_combined, posit
 
     pdf.output(f"Progress reports/Progress_report_{today}.pdf")
     print(f'{today} progress report created')
+
 
 
 create_pdf_progress_report(horsens_df,total_expected_points_combined,position_dataframes)
