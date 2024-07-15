@@ -811,7 +811,7 @@ def League_stats():
     matchstats_df['Open play shot assists share'] = matchstats_df['attAssistOpenplay'] / matchstats_df['totalAttAssist']
     matchstats_df = matchstats_df[['team_name','PenAreaEntries per match','Open play xG per match','Duels per match','Duels won %','Passes per game','Pass accuracy %','Back zone pass accuracy %','Forward zone pass accuracy %','possWonDef3rd %','possWonMid3rd %','possWonAtt3rd %','Forward pass share %','Final third entries per match','Final third pass accuracy %','Open play shot assists share']]
     
-    cols_to_rank = matchstats_df.drop(columns=['team_name','matches','minsPlayed']).columns
+    cols_to_rank = matchstats_df.drop(columns=['team_name']).columns
     ranked_df = matchstats_df.copy()  # Create a copy of the original DataFrame
     for col in cols_to_rank:
         ranked_df[col + '_rank'] = matchstats_df[col].rank(axis=0, ascending=False)
