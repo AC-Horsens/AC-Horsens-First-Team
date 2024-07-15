@@ -267,9 +267,6 @@ def Dashboard():
 
         df_matchstats = df_matchstats.dropna(subset=['rolling_openPlayPass', 'rolling_successfulOpenPlayPass'])
 
-        df_matchstats['month'] = df_matchstats['date'].dt.to_period('M')
-        months_with_games = df_matchstats['month'].unique()
-
         fig1 = go.Figure()
 
         for team in df_matchstats['team_name'].unique():
@@ -287,13 +284,8 @@ def Dashboard():
             title='3-Game Rolling Average of Open Play Passes',
             xaxis_title='Date',
             yaxis_title='3-Game Rolling Average Open Play Passes',
-            template='plotly_white',
-            xaxis=dict(
-                tickvals=pd.date_range(start=df_matchstats['date'].min(), end=df_matchstats['date'].max(), freq='MS'),
-                ticktext=[d.strftime('%b %Y') for d in pd.date_range(start=df_matchstats['date'].min(), end=df_matchstats['date'].max(), freq='MS') if d.to_period('M') in months_with_games]
-            )
+            template='plotly_white'
         )
-
 
         # Plot for successfulOpenPlayPass med rullende gennemsnit
         fig2 = go.Figure()
