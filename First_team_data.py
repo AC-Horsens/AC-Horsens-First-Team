@@ -816,6 +816,7 @@ def League_stats():
     df_spacecontrol['Penalty Area Control %'] = df_spacecontrol['Penalty Area Control %'].round(2)
     
     df_ppda = load_ppda()
+    df_ppda = df_ppda[['team_name','label','PPDA']]
     df_ppda = df_ppda.groupby(['team_name','label']).sum().reset_index()
     df_ppda['PPDA'] = df_ppda['PPDA'].astype(float).round(2)
     st.dataframe(df_ppda)
