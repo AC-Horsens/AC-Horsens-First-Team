@@ -789,7 +789,6 @@ def League_stats(df_spacecontrol):
     xg_df_openplay = xg_df_openplay.rename(columns={'321': 'open play xG'})
     xg_df_openplay['date'] = pd.to_datetime(xg_df_openplay['date'])
     
-    df_spacecontrol = df_spacecontrol
     st.dataframe(df_spacecontrol)
     
     matchstats_df = xg_df_openplay.merge(filtered_data)
@@ -848,7 +847,7 @@ def League_stats(df_spacecontrol):
     
 Data_types = {
     'Dashboard': Dashboard,
-    'League stats': League_stats(df_spacecontrol)
+    'League stats': League_stats
 }
 
 st.cache_data(experimental_allow_widgets=True)
