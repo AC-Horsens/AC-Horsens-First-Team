@@ -806,12 +806,13 @@ def League_stats():
     df_spacecontrol['Total Control Area %'] = df_spacecontrol['TotalControlArea'] / df_spacecontrol['TotalControlArea_match'] * 100
     df_spacecontrol['Center Control Area %'] = df_spacecontrol['CenterControlArea'] / df_spacecontrol['CenterControlArea_match'] * 100
     df_spacecontrol['Penalty Area Control %'] = df_spacecontrol['PenaltyAreaControl'] / df_spacecontrol['PenaltyAreaControl_match'] * 100
-    df_spacecontrol = df_spacecontrol[['Team', 'Total Control Area %', 'Center Control Area %', 'Penalty Area Control %']]
-    df_spacecontrol = df_spacecontrol.rename(columns={'Team': 'team_name'})
-    df_spacecontrol = df_spacecontrol.groupby('team_name').mean().reset_index()    
     df_spacecontrol['Total Control Area %'] = df_spacecontrol['Total Control Area %'].apply(lambda x: f'{x:.2f}%')
     df_spacecontrol['Center Control Area %'] = df_spacecontrol['Center Control Area %'].apply(lambda x: f'{x:.2f}%')
     df_spacecontrol['Penalty Area Control %'] = df_spacecontrol['Penalty Area Control %'].apply(lambda x: f'{x:.2f}%')
+
+    df_spacecontrol = df_spacecontrol[['Team', 'Total Control Area %', 'Center Control Area %', 'Penalty Area Control %']]
+    df_spacecontrol = df_spacecontrol.rename(columns={'Team': 'team_name'})
+    df_spacecontrol = df_spacecontrol.groupby('team_name').mean().reset_index()    
 
     df_ppda = load_ppda()
     df_ppda = df_ppda.groupby(['team_name','date']).sum().reset_index()
