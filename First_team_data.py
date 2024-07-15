@@ -905,6 +905,7 @@ def League_stats():
                 break
 
     with col1:
+        selected_team_df = selected_team_df.transpose()
         st.dataframe(selected_team_df)
 
     with col2:
