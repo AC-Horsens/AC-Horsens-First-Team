@@ -260,8 +260,8 @@ def Dashboard():
         st.dataframe(df_matchstats_tabel, hide_index=True)
         # Beregn 3-kamps rullende gennemsnit for hver team
         
+        df_matchstats = df_matchstats[df_matchstats['openPlayPass'] > 0]
 
-        
         df_matchstats['rolling_openPlayPass'] = df_matchstats.groupby('team_name')['openPlayPass'].transform(lambda x: x.rolling(3, min_periods=1).mean())
         df_matchstats['rolling_successfulOpenPlayPass'] = df_matchstats.groupby('team_name')['successfulOpenPlayPass'].transform(lambda x: x.rolling(3, min_periods=1).mean())
 
@@ -284,8 +284,13 @@ def Dashboard():
             title='3-Game Rolling Average of Open Play Passes',
             xaxis_title='Date',
             yaxis_title='3-Game Rolling Average Open Play Passes',
-            template='plotly_white'
+            template='plotly_white',
+            xaxis=dict(
+                tickvals=pd.date_range(start=df_matchstats['date'].min(), end=df_matchstats['date'].max(), freq='MS'),
+                ticktext=[d.strftime('%b %Y') for d in pd.date_range(start=df_matchstats['date'].min(), end=df_matchstats['date'].max(), freq='MS') if d.to_period('M') in months_with_games]
+            )
         )
+
 
         # Plot for successfulOpenPlayPass med rullende gennemsnit
         fig2 = go.Figure()
