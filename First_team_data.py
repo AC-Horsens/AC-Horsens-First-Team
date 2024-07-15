@@ -795,10 +795,10 @@ def League_stats():
     
     df_spacecontrol = load_spacecontrol_data()
     df_spacecontrol = df_spacecontrol[df_spacecontrol['Type'] == 'Player']
-    df_spacecontrol = df_spacecontrol[['Team','TotalControlArea','CenterControlArea','PenaltyAreaControl','label']]
+    df_spacecontrol = df_spacecontrol[['Team','date','TotalControlArea','CenterControlArea','PenaltyAreaControl','label']]
     df_spacecontrol[['TotalControlArea', 'CenterControlArea', 'PenaltyAreaControl']] = df_spacecontrol[['TotalControlArea', 'CenterControlArea', 'PenaltyAreaControl']].astype(float).round(2)
     
-    df_spacecontrol = df_spacecontrol.groupby(['Team','date', 'label']).sum().reset_index()
+    df_spacecontrol = df_spacecontrol.groupby(['Team','date']).sum().reset_index()
     df_spacecontrol['date'] = pd.to_datetime(df_spacecontrol['date'])
     df_spacecontrol['TotalControlArea_match'] = df_spacecontrol.groupby('label')['TotalControlArea'].transform('sum')
     df_spacecontrol['CenterControlArea_match'] = df_spacecontrol.groupby('label')['CenterControlArea'].transform('sum')
@@ -817,7 +817,7 @@ def League_stats():
     df_spacecontrol['Penalty Area Control %'] = df_spacecontrol['Penalty Area Control %'].round(2)
     
     df_ppda = load_ppda()
-    df_ppda = df_ppda.groupby(['team_name','date','label']).sum().reset_index()
+    df_ppda = df_ppda.groupby(['team_name','date']).sum().reset_index()
     df_ppda['date'] = pd.to_datetime(df_ppda['date'])
     df_ppda['PPDA'] = df_ppda['PPDA'].astype(float).round(2)
     st.dataframe(df_ppda)
