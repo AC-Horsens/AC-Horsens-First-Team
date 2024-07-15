@@ -816,13 +816,13 @@ def League_stats():
     df_spacecontrol['Penalty Area Control %'] = df_spacecontrol['Penalty Area Control %'].round(2)
     
     df_ppda = load_ppda()
-    df_ppda = df_ppda[['team_name','date','label','PPDA']]
+    df_ppda = df_ppda[['team_name','label','PPDA']]
     df_ppda = df_ppda.groupby(['team_name','label']).sum().reset_index()
     df_ppda['PPDA'] = df_ppda['PPDA'].astype(float).round(2)
     st.dataframe(df_ppda)
 
     matchstats_df = xg_df_openplay.merge(filtered_data)
-    matchstats_df = matchstats_df.merge(df_ppda)
+    matchstats_df = df_ppda.merge(matchstats_df)
 
     matchstats_df = matchstats_df.drop(columns='date')
     matchstats_df = matchstats_df.groupby(['contestantId', 'team_name']).sum().reset_index()
