@@ -811,7 +811,6 @@ def League_stats():
 
     df_spacecontrol = df_spacecontrol[['Team','date', 'Total Control Area %', 'Center Control Area %', 'Penalty Area Control %']]
     df_spacecontrol = df_spacecontrol.rename(columns={'Team': 'team_name'})
-    df_spacecontrol = df_spacecontrol.groupby(['team_name','date']).mean().reset_index()
     df_spacecontrol['Total Control Area %'] = df_spacecontrol['Total Control Area %'].round(2)
     df_spacecontrol['Center Control Area %'] = df_spacecontrol['Center Control Area %'].round(2)
     df_spacecontrol['Penalty Area Control %'] = df_spacecontrol['Penalty Area Control %'].round(2)
