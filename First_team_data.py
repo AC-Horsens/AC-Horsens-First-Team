@@ -882,50 +882,43 @@ def League_stats():
     matchstats_df = matchstats_df.drop(columns=['matches_rank'])
     st.dataframe(matchstats_df)
     matchstats_df = matchstats_df.reset_index()
-    selected_team = st.selectbox('Choose team', matchstats_df['team_name'])
 
+    # Select a team
+    selected_team = st.selectbox('Choose team', matchstats_df['team_name'])
     team_df = matchstats_df.loc[matchstats_df['team_name'] == selected_team]
 
-    target_ranks_top = [1, 2, 3, 4]
-    target_ranks_bottom = [9, 10, 11, 12]
+    # Find similar teams
+    rank_columns = [col for col in matchstats_df.columns if col.endswith('_rank')]
+    matchstats_df['similarity_score'] = matchstats_df.apply(
+        lambda row: sum(abs(row[rank_col] - team_df[rank_col].values[0]) for rank_col in rank_columns if not pd.isna(row[rank_col])),
+        axis=1
+    )
 
+    # Exclude the selected team from the similarity search
+    similar_teams = matchstats_df[matchstats_df['team_name'] != selected_team]
+
+    # Get the three teams with the lowest similarity scores
+    top_3_similar_teams = similar_teams.nsmallest(3, 'similarity_score')
+
+    # Display the selected team's ranks
     filtered_data_df = pd.DataFrame()
-    col1, col2, col3 = st.columns(3)
+    col1, col2 = st.columns(2)
     for col in team_df.columns:
         if col.endswith('_rank'):
             original_col = col[:-5]
-            if any(team_df[col].isin(target_ranks_top + target_ranks_bottom)):
-                filtered_ranks = team_df.loc[team_df[col].isin(target_ranks_top + target_ranks_bottom), col]
-                filtered_values = team_df.loc[team_df[col].isin(target_ranks_top + target_ranks_bottom), original_col]
-                filtered_data_df[original_col + '_rank'] = filtered_ranks
-                filtered_data_df[original_col + '_value'] = filtered_values
+            filtered_ranks = team_df[col]
+            filtered_values = team_df[original_col]
+            filtered_data_df[original_col + '_rank'] = filtered_ranks
+            filtered_data_df[original_col + '_value'] = filtered_values
 
     with col1:
         filtered_data_df = filtered_data_df.T
         st.dataframe(filtered_data_df)
 
-    # Find similar teams
-    similar_teams_top = matchstats_df[
-        (matchstats_df[[col for col in matchstats_df.columns if col.endswith('_rank')]].isin(target_ranks_top).sum(axis=1) >= 6)
-        & (matchstats_df['team_name'] != selected_team)
-    ]
-
-    similar_teams_bottom = matchstats_df[
-        (matchstats_df[[col for col in matchstats_df.columns if col.endswith('_rank')]].isin(target_ranks_bottom).sum(axis=1) >= 6)
-        & (matchstats_df['team_name'] != selected_team)
-    ]
-
-    # Filter columns to display
-    relevant_columns_top = ['team_name'] + [col for col in team_df.columns if col.endswith('_rank') and any(team_df[col].isin(target_ranks_top))]
-    relevant_columns_bottom = ['team_name'] + [col for col in team_df.columns if col.endswith('_rank') and any(team_df[col].isin(target_ranks_bottom))]
-
+    # Display the similar teams
     with col2:
-        st.write("Teams similar to the selected team (top 4 ranks):")
-        st.dataframe(similar_teams_top[relevant_columns_top])
-
-    with col3:
-        st.write("Teams similar to the selected team (bottom 4 ranks):")
-        st.dataframe(similar_teams_bottom[relevant_columns_bottom])
+        st.write("Teams similar to the selected team:")
+        st.dataframe(top_3_similar_teams[['team_name'] + rank_columns + ['similarity_score']])
     
 Data_types = {
     'Dashboard': Dashboard,
