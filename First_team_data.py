@@ -267,24 +267,10 @@ def Dashboard():
 
         df_matchstats = df_matchstats.dropna(subset=['rolling_openPlayPass', 'rolling_successfulOpenPlayPass'])
 
-        # Create gaps in data where there are large date differences
-        def insert_gaps(df):
-            df = df.sort_values(by='date').reset_index(drop=True)
-            gaps = [0]
-            for i in range(1, len(df)):
-                if (df.loc[i, 'date'] - df.loc[i-1, 'date']).days > 1:
-                    gaps.append(i)
-            for gap in reversed(gaps):
-                df = pd.concat([df.iloc[:gap], pd.DataFrame([{'date': None, 'rolling_openPlayPass': None, 'rolling_successfulOpenPlayPass': None}]), df.iloc[gap:]]).reset_index(drop=True)
-            return df
-
-        df_matchstats_with_gaps = df_matchstats.groupby('team_name').apply(insert_gaps).reset_index(drop=True)
-
-        # Plot for openPlayPass with rolling averages
         fig1 = go.Figure()
 
-        for team in df_matchstats_with_gaps['team_name'].unique():
-            team_data = df_matchstats_with_gaps[df_matchstats_with_gaps['team_name'] == team]
+        for team in df_matchstats['team_name'].unique():
+            team_data = df_matchstats[df_matchstats['team_name'] == team]
             line_size = 5 if team == 'Horsens' else 1  # Larger line for Horsens
             fig1.add_trace(go.Scatter(
                 x=team_data['date'],
@@ -301,11 +287,11 @@ def Dashboard():
             template='plotly_white'
         )
 
-        # Plot for successfulOpenPlayPass with rolling averages
+        # Plot for successfulOpenPlayPass med rullende gennemsnit
         fig2 = go.Figure()
 
-        for team in df_matchstats_with_gaps['team_name'].unique():
-            team_data = df_matchstats_with_gaps[df_matchstats_with_gaps['team_name'] == team]
+        for team in df_matchstats['team_name'].unique():
+            team_data = df_matchstats[df_matchstats['team_name'] == team]
             line_size = 5 if team == 'Horsens' else 1  # Larger line for Horsens
             fig2.add_trace(go.Scatter(
                 x=team_data['date'],
@@ -322,10 +308,9 @@ def Dashboard():
             template='plotly_white'
         )
 
-        # Display plots in Streamlit
+        # Vis plots i Streamlit
         st.plotly_chart(fig1)
         st.plotly_chart(fig2)
-
 
         df_possession = df_possession[~(df_possession[['6.0','107.0']] == True).any(axis=1)]
         df_possession = df_possession[df_possession['label'].isin(match_choice)]
