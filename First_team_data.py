@@ -905,7 +905,7 @@ def League_stats():
 
     # Filter the selected team's ranks and values
     filtered_data_df = pd.DataFrame()
-    col1, col2 = st.columns(2)
+    col1, col2 = st.columns([1, 2])
     for col in team_df.columns:
         if col.endswith('_rank'):
             original_col = col[:-5]
