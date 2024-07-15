@@ -903,7 +903,6 @@ def League_stats():
             filtered_data_df[original_col + '_rank'] = filtered_ranks
             filtered_data_df[original_col + '_value'] = filtered_values
     filtered_data_df = filtered_data_df.T
-    filtered_data_df = filtered_data_df.rename(columns={'6': 'value'})
     st.dataframe(filtered_data_df)
     
 Data_types = {
