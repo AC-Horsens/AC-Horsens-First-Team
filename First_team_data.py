@@ -817,7 +817,7 @@ def League_stats():
     
     df_ppda = load_ppda()
     df_ppda = df_ppda.groupby(['team_name','date']).sum().reset_index()
-
+    st.dataframe(df_ppda)
 
     matchstats_df = xg_df_openplay.merge(filtered_data)
     matchstats_df = matchstats_df.drop(columns='date')
