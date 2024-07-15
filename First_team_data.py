@@ -803,9 +803,9 @@ def League_stats():
     df_spacecontrol['CenterControlArea_match'] = df_spacecontrol.groupby('label')['CenterControlArea'].transform('sum')
     df_spacecontrol['PenaltyAreaControl_match'] = df_spacecontrol.groupby('label')['PenaltyAreaControl'].transform('sum')
 
-    df_spacecontrol['Total Control Area %'] = (df_spacecontrol['TotalControlArea'] / df_spacecontrol['TotalControlArea_match'] * 100).apply(lambda x: f'{x:.2f}%')
-    df_spacecontrol['Center Control Area %'] = (df_spacecontrol['CenterControlArea'] / df_spacecontrol['CenterControlArea_match'] * 100).apply(lambda x: f'{x:.2f}%')
-    df_spacecontrol['Penalty Area Control %'] = (df_spacecontrol['PenaltyAreaControl'] / df_spacecontrol['PenaltyAreaControl_match'] * 100).apply(lambda x: f'{x:.2f}%')
+    df_spacecontrol['Total Control Area %'] = df_spacecontrol['TotalControlArea'] / df_spacecontrol['TotalControlArea_match'] * 100
+    df_spacecontrol['Center Control Area %'] = df_spacecontrol['CenterControlArea'] / df_spacecontrol['CenterControlArea_match'] * 100
+    df_spacecontrol['Penalty Area Control %'] = df_spacecontrol['PenaltyAreaControl'] / df_spacecontrol['PenaltyAreaControl_match'] * 100
 
     df_spacecontrol = df_spacecontrol[['Team', 'Total Control Area %', 'Center Control Area %', 'Penalty Area Control %']]
     df_spacecontrol = df_spacecontrol.rename(columns={'Team': 'team_name'})
