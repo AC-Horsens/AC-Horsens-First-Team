@@ -817,7 +817,8 @@ def League_stats():
     
     df_ppda = load_ppda()
     df_ppda = df_ppda.groupby(['team_name','label']).sum().reset_index()
-    df_ppda = df_ppda[['team_name','label','PPDA']]
+    df_ppda = df_ppda.groupby('team_name').mean().reset_index()
+    df_ppda = df_ppda[['team_name','PPDA']]
     st.dataframe(df_ppda)
 
     matchstats_df = xg_df_openplay.merge(filtered_data)
