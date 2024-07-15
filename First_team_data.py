@@ -872,14 +872,14 @@ def League_stats():
     matchstats_df['Center Space control %'] = matchstats_df['Center Control Area %']
     matchstats_df['Penalty Area Space control %'] = matchstats_df['Penalty Area Control %']
     matchstats_df = matchstats_df[['team_name','matches','PenAreaEntries per match','Open play xG per match','Duels per match','Duels won %','Passes per game','Pass accuracy %','Back zone pass accuracy %','Forward zone pass accuracy %','possWonDef3rd %','possWonMid3rd %','possWonAtt3rd %','Forward pass share %','Final third entries per match','Final third pass accuracy %','Open play shot assists share','PPDA per match','Total Space control %','Center Space control %','Penalty Area Space control %']]
-    
+
     cols_to_rank = matchstats_df.drop(columns=['team_name']).columns
     ranked_df = matchstats_df.copy()  # Create a copy of the original DataFrame
     for col in cols_to_rank:
         ranked_df[col + '_rank'] = matchstats_df[col].rank(axis=0, ascending=False)
     matchstats_df = ranked_df.merge(matchstats_df)
     matchstats_df = matchstats_df.set_index('team_name')
-
+    matchstats_df = matchstats_df.drop(columns=['matches_rank','matches_value'])
     st.dataframe(matchstats_df)
     matchstats_df = matchstats_df.reset_index()
     selected_team = st.selectbox('Choose team', matchstats_df['team_name'])
@@ -905,12 +905,12 @@ def League_stats():
 
     # Find similar teams
     similar_teams_top = matchstats_df[
-        (matchstats_df[[col for col in matchstats_df.columns if col.endswith('_rank')]].isin(target_ranks_top).sum(axis=1) >= 4)
+        (matchstats_df[[col for col in matchstats_df.columns if col.endswith('_rank')]].isin(target_ranks_top).sum(axis=1) >= 5)
         & (matchstats_df['team_name'] != selected_team)
     ]
 
     similar_teams_bottom = matchstats_df[
-        (matchstats_df[[col for col in matchstats_df.columns if col.endswith('_rank')]].isin(target_ranks_bottom).sum(axis=1) >= 4)
+        (matchstats_df[[col for col in matchstats_df.columns if col.endswith('_rank')]].isin(target_ranks_bottom).sum(axis=1) >= 5)
         & (matchstats_df['team_name'] != selected_team)
     ]
 
