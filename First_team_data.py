@@ -798,7 +798,8 @@ def League_stats():
     df_spacecontrol = df_spacecontrol[['Team','TotalControlArea','CenterControlArea','PenaltyAreaControl','label']]
     df_spacecontrol[['TotalControlArea', 'CenterControlArea', 'PenaltyAreaControl']] = df_spacecontrol[['TotalControlArea', 'CenterControlArea', 'PenaltyAreaControl']].astype(float).round(2)
     
-    df_spacecontrol = df_spacecontrol.groupby(['Team', 'label']).sum().reset_index()    
+    df_spacecontrol = df_spacecontrol.groupby(['Team','date', 'label']).sum().reset_index()
+    df_spacecontrol['date'] = pd.to_datetime(df_spacecontrol['date'])
     df_spacecontrol['TotalControlArea_match'] = df_spacecontrol.groupby('label')['TotalControlArea'].transform('sum')
     df_spacecontrol['CenterControlArea_match'] = df_spacecontrol.groupby('label')['CenterControlArea'].transform('sum')
     df_spacecontrol['PenaltyAreaControl_match'] = df_spacecontrol.groupby('label')['PenaltyAreaControl'].transform('sum')
@@ -808,7 +809,7 @@ def League_stats():
     df_spacecontrol['Penalty Area Control %'] = df_spacecontrol['PenaltyAreaControl'] / df_spacecontrol['PenaltyAreaControl_match'] * 100
 
 
-    df_spacecontrol = df_spacecontrol[['Team', 'Total Control Area %', 'Center Control Area %', 'Penalty Area Control %']]
+    df_spacecontrol = df_spacecontrol[['Team','date', 'Total Control Area %', 'Center Control Area %', 'Penalty Area Control %']]
     df_spacecontrol = df_spacecontrol.rename(columns={'Team': 'team_name'})
     df_spacecontrol = df_spacecontrol.groupby('team_name').mean().reset_index()
     df_spacecontrol['Total Control Area %'] = df_spacecontrol['Total Control Area %'].round(2)
@@ -816,8 +817,8 @@ def League_stats():
     df_spacecontrol['Penalty Area Control %'] = df_spacecontrol['Penalty Area Control %'].round(2)
     
     df_ppda = load_ppda()
-    df_ppda = df_ppda[['team_name','label','PPDA']]
-    df_ppda = df_ppda.groupby(['team_name','label']).sum().reset_index()
+    df_ppda = df_ppda.groupby(['team_name','date','label']).sum().reset_index()
+    df_ppda['date'] = pd.to_datetime(df_ppda['date'])
     df_ppda['PPDA'] = df_ppda['PPDA'].astype(float).round(2)
     st.dataframe(df_ppda)
     st.dataframe(matchstats_df)
