@@ -820,10 +820,11 @@ def League_stats():
 
 
     matchstats_df = xg_df_openplay.merge(filtered_data)
-    matchstats_df = matchstats_df.merge(df_spacecontrol)
     matchstats_df = matchstats_df.drop(columns='date')
     matchstats_df = matchstats_df.groupby(['contestantId', 'team_name']).sum().reset_index()
     matchstats_df = matchstats_df.rename(columns={'label': 'matches'})
+    matchstats_df = matchstats_df.merge(df_spacecontrol)
+
     matchstats_df['PenAreaEntries per match'] = matchstats_df['penAreaEntries'] / matchstats_df['matches']
     matchstats_df['Open play xG per match'] = matchstats_df['open play xG'] / matchstats_df['matches']
     matchstats_df['Duels per match'] = (matchstats_df['duelLost'] + matchstats_df['duelWon']) /matchstats_df['matches']
