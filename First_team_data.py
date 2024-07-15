@@ -267,6 +267,9 @@ def Dashboard():
 
         df_matchstats = df_matchstats.dropna(subset=['rolling_openPlayPass', 'rolling_successfulOpenPlayPass'])
 
+        df_matchstats['month'] = df_matchstats['date'].dt.to_period('M')
+        months_with_games = df_matchstats['month'].unique()
+
         fig1 = go.Figure()
 
         for team in df_matchstats['team_name'].unique():
