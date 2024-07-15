@@ -826,19 +826,8 @@ def League_stats():
     matchstats_df = matchstats_df.merge(df_spacecontrol)
 
     matchstats_df = matchstats_df.drop(columns='date')
-    aggregation_dict = {
-        'PPDA': 'mean',
-        'Total Control Area %': 'mean',
-        'Center Control Area %': 'mean',
-        'Penalty Area Control %': 'mean'
-    }
-
-    # Aggregate the rest of the columns by sum
-    sum_cols = matchstats_df.drop(columns=['contestantId', 'team_name','PPDA','Total Control Area %','Center Control Area %','Penalty Area Control %']).columns
-    aggregation_dict.update({col: 'sum' for col in sum_cols})
-
     # Perform aggregation
-    matchstats_df = matchstats_df.groupby(['contestantId', 'team_name']).agg(aggregation_dict).reset_index()
+    matchstats_df = matchstats_df.groupby(['contestantId', 'team_name']).sum.reset_index()
     
     matchstats_df = matchstats_df.rename(columns={'label': 'matches'})
     matchstats_df['PenAreaEntries per match'] = matchstats_df['penAreaEntries'] / matchstats_df['matches']
