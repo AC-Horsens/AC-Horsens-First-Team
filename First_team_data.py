@@ -640,16 +640,16 @@ def Dashboard():
             
             if playerName in data['start_homePlayers']:
                 team = 'home'
-                player_list = data['start_homeplayers']
+                player_list = data['start_homePlayers']
             elif playerName in data['start_awayPlayers']:
                 team = 'away'
-                player_list = data['start_awayplayers']
+                player_list = data['start_awayPlayers']
             elif playerName in data['end_homePlayers']:
                 team = 'home'
-                player_list = data['end_homeplayers']
+                player_list = data['end_homePlayers']
             elif playerName in data['end_awayPlayers']:
                 team = 'away'
-                player_list = data['end_awayplayers']
+                player_list = data['end_awayPlayers']
             
             if player_list is None:
                 return "Player not found."
@@ -666,19 +666,24 @@ def Dashboard():
             
             # Count teammates within 20 meters of opponents' goal
             count = 0
-            opponents_goal_x = data['pass_end_x']  # Assuming this is how you define opponents' goal x-coordinate
+            opponents_goal_x = player_of_interest['pass_end_x']  # Assuming this is how you define opponents' goal x-coordinate
             
             for player in player_list:
                 if player['playerName'] != playerName:  # Exclude the player of interest
-                    distance_to_opponents_goal = abs(player['x'] - opponents_goal_x)
+                    distance_to_opponents_goal = abs(player['pass_end_x'] - opponents_goal_x)
                     if distance_to_opponents_goal <= 20:
                         count += 1
             
             return count
 
-        playerName = row['playerName']
-        count = count_teammates_near_opponents_goal(df_early_crosses, playerName)
-        st.write(f"Number of teammates near opponents' goal: {count}")
+        # Assuming df_early_crosses is your DataFrame containing player data
+        # Example usage within your script
+        for index, row in df_early_crosses.iterrows():
+            playerName = row['playerName']
+            count = count_teammates_near_opponents_goal(row, playerName)
+            st.write(f"Number of teammates near opponents' goal for {playerName}: {count}")
+        
+        
     def pressing():
         df_possession_data = load_possession_data()
         def calculate_ppda(df_possession_data):
