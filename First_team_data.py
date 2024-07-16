@@ -625,7 +625,7 @@ def Dashboard():
 
         # Add labels for players (optional)
         for _, row in df_early_crosses.iterrows():
-            ax.text(row['x'], row['y'], row['playerName'], fontsize=12, color='white')
+            ax.text(row['x'], row['y'], row['playerName'], fontsize=12, color='grass')
 
         plt.title('Early Crosses', fontsize=20)
 
