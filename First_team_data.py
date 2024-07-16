@@ -640,7 +640,7 @@ def Dashboard():
             except (ValueError, SyntaxError):
                 return []  # Return an empty list if parsing fails
 
-        def count_teammates_near_goal(teammates, distance_threshold=18):
+        def count_teammates_near_goal(teammates, distance_threshold=20):
             count = 0
             for teammate in teammates:
                 distance_to_opponents_goal = teammate.get('distance_to_opponents_goal', None)
@@ -649,7 +649,8 @@ def Dashboard():
                         count += 1
             return count
 
-        # Initialize the new column with default values (e.g., 0)
+# Assuming df_early_crosses is a pandas DataFrame
+# Initialize the new column with default values (e.g., 0)
         df_early_crosses['#players in box'] = 0
 
         # Loop through the DataFrame
@@ -659,14 +660,23 @@ def Dashboard():
             start_awayPlayers = parse_players(row['start_awayPlayers'])
             end_homePlayers = parse_players(row['end_homePlayers'])
             end_awayPlayers = parse_players(row['end_awayPlayers'])
+            
+            # Ensure end_homePlayers is set to start_homePlayers if None or empty
+            if not end_homePlayers:
+                end_homePlayers = start_homePlayers
+            
+            # Ensure end_awayPlayers is set to start_awayPlayers if None or empty
+            if not end_awayPlayers:
+                end_awayPlayers = start_awayPlayers
+
             teammates = None
 
             # Determine if the player is in homePlayers or awayPlayers
             if isinstance(start_homePlayers, list) and player_name in [player['name'] for player in start_homePlayers]:
-                teammates = end_homePlayers
+                teammates = end_homePlayers  # Use end_homePlayers here
             elif isinstance(start_awayPlayers, list) and player_name in [player['name'] for player in start_awayPlayers]:
-                teammates = end_awayPlayers
-            
+                teammates = end_awayPlayers  # Use end_awayPlayers here
+
             if teammates:
                 # Count teammates near opponents' goal
                 num_teammates_near_goal = count_teammates_near_goal(teammates)
