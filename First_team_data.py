@@ -661,27 +661,33 @@ def Dashboard():
             end_homePlayers = parse_players(row['end_homePlayers'])
             end_awayPlayers = parse_players(row['end_awayPlayers'])
             
+            if end_homePlayers is None:
+                df_early_crosses.at[idx, 'end_homePlayers'] = start_homePlayers  # Update DataFrame
+            
+            # Ensure end_awayPlayers is set to start_awayPlayers if None or empty
+            if end_awayPlayers is None:
+                df_early_crosses.at[idx, 'end_awayPlayers'] = start_awayPlayers  # Update DataFrame
 
             # Ensure teammates is always a list
             teammates = []
 
             # Determine if the player is in homePlayers or awayPlayers
-            if isinstance(start_homePlayers, list) and player_name in [player['name'] for player in start_homePlayers]:
-                if end_homePlayers is not None and not pd.isna(end_homePlayers) and len(end_homePlayers) > 0:
-                    teammates = end_homePlayers
-                else:
-                    teammates = start_homePlayers
-            elif isinstance(start_awayPlayers, list) and player_name in [player['name'] for player in start_awayPlayers]:
-                if end_awayPlayers is not None and not pd.isna(end_awayPlayers) and len(end_awayPlayers) > 0:
-                    teammates = end_awayPlayers
-                else:
-                    teammates = start_awayPlayers
+        if isinstance(start_homePlayers, list) and player_name in [player['name'] for player in start_homePlayers]:
+            if end_homePlayers is not None and not pd.isna(end_homePlayers) and len(end_homePlayers) > 0:
+                teammates = end_homePlayers
+            else:
+                teammates = start_homePlayers
+        elif isinstance(start_awayPlayers, list) and player_name in [player['name'] for player in start_awayPlayers]:
+            if end_awayPlayers is not None and not pd.isna(end_awayPlayers) and len(end_awayPlayers) > 0:
+                teammates = end_awayPlayers
+            else:
+                teammates = start_awayPlayers
 
+            # Count teammates near opponents' goal
+            if isinstance(teammates, list):
                 # Count teammates near opponents' goal
-                if isinstance(teammates, list):
-                    # Count teammates near opponents' goal
-                    num_teammates_near_goal = count_teammates_near_goal(teammates)
-                    df_early_crosses.at[idx, '#players in box'] = num_teammates_near_goal
+                num_teammates_near_goal = count_teammates_near_goal(teammates)
+                df_early_crosses.at[idx, '#players in box'] = num_teammates_near_goal
 
         st.dataframe(df_early_crosses, hide_index=True)
                 
