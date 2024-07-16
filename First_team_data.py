@@ -654,13 +654,12 @@ def Dashboard():
                 return 0  # If player not found in any player list, return 0
             
             # Calculate opponents' goal x-coordinate (adjust as per your data structure)
-            opponents_goal_x = 100  # Adjust this according to your actual data structure
             
             # Count teammates within 20 meters of opponents' goal
             count = 0
             for player in player_list:
                 if player['name'] != playerName:  # Exclude the player of interest
-                    distance_to_opponents_goal = abs(player['distance_to_opponents_goal'] - opponents_goal_x)
+                    distance_to_opponents_goal = abs(player['distance_to_opponents_goal'])
                     if distance_to_opponents_goal < 20:
                         count += 1
             
