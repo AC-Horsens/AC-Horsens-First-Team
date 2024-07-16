@@ -932,7 +932,7 @@ def League_stats():
     # Get the three teams with the lowest similarity scores
     top_3_similar_teams = similar_teams.nsmallest(3, 'similarity_score')
 
-    top_3_similar_teams = top_3_similar_teams.sort_values(by='similarity_score',ascending=False)
+    top_3_similar_teams = top_3_similar_teams.sort_values(by='similarity_score',ascending=True)
     
     # Display the similar teams
     with col2:
