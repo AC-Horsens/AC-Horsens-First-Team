@@ -5,6 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import plotly.graph_objs as go
 import plotly.express as px
+import ast
 
 st.set_page_config(layout='wide')
 
@@ -633,34 +634,42 @@ def Dashboard():
         st.pyplot(fig)
 
         st.dataframe(df_early_crosses, hide_index=True)
+        def parse_players(players):
+            try:
+                return ast.literal_eval(players) if isinstance(players, str) else players
+            except (ValueError, SyntaxError):
+                return []  # Return an empty list if parsing fails
+
         def count_teammates_near_goal(teammates, distance_threshold=20):
             count = 0
             for teammate in teammates:
-                distance_to_opponents_goal = teammate['distance_to_opponents_goal']
-                if distance_to_opponents_goal <= distance_threshold:
-                    count += 1
+                distance_to_opponents_goal = teammate.get('distance_to_opponents_goal', None)
+                if distance_to_opponents_goal is not None:
+                    print(f"Teammate: {teammate['name']}, Distance to opponent's goal: {distance_to_opponents_goal}")  # Debug
+                    if distance_to_opponents_goal <= distance_threshold:
+                        count += 1
             return count
 
-        # Assuming df_early_crosses is a pandas DataFrame
         # Initialize the new column with default values (e.g., 0)
         df_early_crosses['#players in box'] = 0
 
         # Loop through the DataFrame
         for idx, row in df_early_crosses.iterrows():
             player_name = row['playerName']
+            start_homePlayers = parse_players(row['start_homePlayers'])
+            start_awayPlayers = parse_players(row['start_awayPlayers'])
+            teammates = None
 
-            # Check if row['start_homePlayers'] and row['start_awayPlayers'] are lists
-            if isinstance(row['start_homePlayers'], list) and isinstance(row['start_awayPlayers'], list):
-                # Determine if the player is in homePlayers or awayPlayers and get their position
-                if player_name in [player['name'] for player in row['start_homePlayers']]:
-                    teammates = row['start_homePlayers']
-                elif player_name in [player['name'] for player in row['start_awayPlayers']]:
-                    teammates = row['start_awayPlayers']
-                
-                if teammates:
-                    # Count teammates near opponents' goal
-                    num_teammates_near_goal = count_teammates_near_goal(teammates)
-                    df_early_crosses.at[idx, '#players in box'] = num_teammates_near_goal
+            # Determine if the player is in homePlayers or awayPlayers
+            if isinstance(start_homePlayers, list) and player_name in [player['name'] for player in start_homePlayers]:
+                teammates = start_homePlayers
+            elif isinstance(start_awayPlayers, list) and player_name in [player['name'] for player in start_awayPlayers]:
+                teammates = start_awayPlayers
+            
+            if teammates:
+                # Count teammates near opponents' goal
+                num_teammates_near_goal = count_teammates_near_goal(teammates)
+                df_early_crosses.at[idx, '#players in box'] = num_teammates_near_goal
 
         st.dataframe(df_early_crosses, hide_index=True)
                 
