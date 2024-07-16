@@ -672,22 +672,17 @@ def Dashboard():
             teammates = []
 
             # Determine if the player is in homePlayers or awayPlayers
-        if isinstance(start_homePlayers, list) and player_name in [player['name'] for player in start_homePlayers]:
-            if end_homePlayers is not None and not pd.isna(end_homePlayers) and len(end_homePlayers) > 0:
-                teammates = end_homePlayers
-            else:
-                teammates = start_homePlayers
-        elif isinstance(start_awayPlayers, list) and player_name in [player['name'] for player in start_awayPlayers]:
-            if end_awayPlayers is not None and not pd.isna(end_awayPlayers) and len(end_awayPlayers) > 0:
-                teammates = end_awayPlayers
-            else:
-                teammates = start_awayPlayers
+            if isinstance(start_homePlayers, list) and player_name in [player['name'] for player in start_homePlayers]:
+                teammates = end_homePlayers  # Use end_homePlayers here
+            elif isinstance(start_awayPlayers, list) and player_name in [player['name'] for player in start_awayPlayers]:
+                teammates = end_awayPlayers  # Use end_awayPlayers here
 
-            # Count teammates near opponents' goal
             if isinstance(teammates, list):
                 # Count teammates near opponents' goal
                 num_teammates_near_goal = count_teammates_near_goal(teammates)
                 df_early_crosses.at[idx, '#players in box'] = num_teammates_near_goal
+            else:
+                print(f"Unexpected type for teammates at index {idx}: {type(teammates)}")
 
         st.dataframe(df_early_crosses, hide_index=True)
                 
