@@ -701,7 +701,7 @@ def Dashboard():
         df_player_counts = df_player_counts.sort_values(by=['Times in Box'], ascending=False)
         df_player_counts = df_player_counts[df_player_counts['Player'] != '']
         st.dataframe(df_player_counts, hide_index=True)
-        fig_histogram = px.histogram(df_early_crosses, x='closest_opponent_distance', nbins=30, title='#Players in box')
+        fig_histogram = px.histogram(df_early_crosses, x='#players in box', nbins=30, title='#Players in box')
         st.plotly_chart(fig_histogram)
                
     def pressing():
