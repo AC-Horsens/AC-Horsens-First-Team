@@ -83,6 +83,12 @@ def load_ppda():
     df_ppda['label'] = (df_ppda['label'] + ' ' + df_ppda['date']).astype(str)
     return df_ppda
 
+@st.cache_data
+def load_crosses():
+    df_crosses = pd.read_csv(r'DNK_1_Division_2023_2024/Horsens/Horsens_crosses.csv')
+    df_crosses['label'] = (df_crosses['label'] + ' ' + df_crosses['date']).astype(str)
+    return df_crosses
+
 def Dashboard():
     df_xg = load_xg()
     df_pv = load_pv()
@@ -489,6 +495,7 @@ def Dashboard():
         df_matchstats = load_match_stats(columns=['contestantId','date', 'label', 'touchesInOppBox'])
         df_matchstats['date'] = pd.to_datetime(df_matchstats['date'])
         df_xA = load_xA()
+        df_crosses = load_crosses()
         xA_map = df_xA[['contestantId', 'team_name']].drop_duplicates()
         df_matchstats = df_matchstats.merge(xA_map, on='contestantId')
         
@@ -601,6 +608,9 @@ def Dashboard():
         st.dataframe(touches_in_box_team_period, hide_index=True)
         st.dataframe(touches_in_box_player, hide_index=True)      
 
+        st.header('Crosses')
+        st.write('Early crosses')
+        st.dataframe(df_crosses, hide_index=True)
     def pressing():
         df_possession_data = load_possession_data()
         def calculate_ppda(df_possession_data):
