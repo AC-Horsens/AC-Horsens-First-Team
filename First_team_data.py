@@ -611,7 +611,7 @@ def Dashboard():
         st.header('Crosses')
         st.write('Early crosses')
         df_crosses = df_crosses[df_crosses['label'].isin(match_choice)]
-        df_early_crosses = df_crosses[df_crosses['x'].astype(float) <= 88.5] & (df_crosses['y'].astype(float) >= 78.9 | df_crosses['y'].astype(float) <= 21.1)
+        df_early_crosses = df_crosses[(df_crosses['x'].astype(float) <= 88.5) & ((df_crosses['y'].astype(float) >= 78.9) | (df_crosses['y'].astype(float) <= 21.1))]
         st.dataframe(df_early_crosses, hide_index=True)
     def pressing():
         df_possession_data = load_possession_data()
