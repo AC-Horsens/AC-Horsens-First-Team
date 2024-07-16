@@ -637,40 +637,35 @@ def Dashboard():
         def count_teammates_near_opponents_goal(row):
             playerName = row['playerName']
             
-            # Determine which team and player list to use based on your actual DataFrame structure
-            if playerName in row['start_homePlayers']:
-                player_list = row['start_homePlayers']
-            elif playerName in row['start_awayPlayers']:
-                player_list = row['start_awayPlayers']
-            elif playerName in row['end_homePlayers']:
+            # Determine which player list to use based on end_ and start_ columns
+            player_list = None
+            
+            if row['end_homePlayers'] is not None and any(player['name'] == playerName for player in row['end_homePlayers']):
                 player_list = row['end_homePlayers']
-            elif playerName in row['end_awayPlayers']:
+            elif row['end_awayPlayers'] is not None and any(player['name'] == playerName for player in row['end_awayPlayers']):
                 player_list = row['end_awayPlayers']
-            else:
-                return "Player not found."
+            elif row['start_homePlayers'] is not None and any(player['name'] == playerName for player in row['start_homePlayers']):
+                player_list = row['start_homePlayers']
+            elif row['start_awayPlayers'] is not None and any(player['name'] == playerName for player in row['start_awayPlayers']):
+                player_list = row['start_awayPlayers']
             
-            # Find the player of interest
-            player_of_interest = None
-            for player in player_list:
-                if player['playerName'] == playerName:
-                    player_of_interest = player
-                    break
+            if player_list is None:
+                return 0  # If player not found in any player list, return 0
             
-            if player_of_interest is None:
-                return "Player not found."
+            # Calculate opponents' goal x-coordinate (adjust as per your data structure)
+            opponents_goal_x = 100  # Adjust this according to your actual data structure
             
             # Count teammates within 20 meters of opponents' goal
             count = 0
-            opponents_goal_x = player_of_interest['pass_end_x']  # Assuming this is how you define opponents' goal x-coordinate
-            
             for player in player_list:
-                if player['playerName'] != playerName:  # Exclude the player of interest
-                    distance_to_opponents_goal = abs(player['pass_end_x'] - opponents_goal_x)
-                    if distance_to_opponents_goal <= 20:
+                if player['name'] != playerName:  # Exclude the player of interest
+                    distance_to_opponents_goal = abs(player['distance_to_opponents_goal'] - opponents_goal_x)
+                    if distance_to_opponents_goal < 20:
                         count += 1
             
             return count
-                
+
+        # Apply the function to each row in the DataFrame
         df_early_crosses['# players in box'] = df_early_crosses.apply(count_teammates_near_opponents_goal, axis=1)
         st.dataframe(df_early_crosses, hide_index=True)
                 
