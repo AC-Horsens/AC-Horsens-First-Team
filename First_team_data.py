@@ -664,11 +664,10 @@ def Dashboard():
             # Ensure teammates is always a list
             teammates = []
 
-            # Determine if the player is in homePlayers or awayPlayers
             if isinstance(start_homePlayers, list) and player_name in [player['name'] for player in start_homePlayers]:
-                teammates = end_homePlayers  # Use end_homePlayers here
+                teammates = end_homePlayers if end_homePlayers else start_homePlayers
             elif isinstance(start_awayPlayers, list) and player_name in [player['name'] for player in start_awayPlayers]:
-                teammates = end_awayPlayers  # Use end_awayPlayers here
+                teammates = end_awayPlayers if end_awayPlayers else start_awayPlayers
 
             if isinstance(teammates, list):
                 # Count teammates near opponents' goal
