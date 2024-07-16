@@ -662,12 +662,10 @@ def Dashboard():
             end_awayPlayers = parse_players(row['end_awayPlayers'])
             
             if not end_homePlayers:
-                end_homePlayers = start_homePlayers
                 df_early_crosses.at[idx, 'end_homePlayers'] = start_homePlayers  # Update DataFrame
             
             # Ensure end_awayPlayers is set to start_awayPlayers if None or empty
             if not end_awayPlayers:
-                end_awayPlayers = start_awayPlayers
                 df_early_crosses.at[idx, 'end_awayPlayers'] = start_awayPlayers  # Update DataFrame
 
             # Ensure teammates is always a list
