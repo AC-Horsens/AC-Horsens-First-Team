@@ -652,19 +652,28 @@ def Dashboard():
         # Initialize the new column with default values (e.g., 0)
         df_early_crosses['#players in box'] = 0
 
-        # Loop through the DataFrame
+            # Loop through the DataFrame
         for idx, row in df_early_crosses.iterrows():
             player_name = row['playerName']
             start_homePlayers = parse_players(row['start_homePlayers'])
             start_awayPlayers = parse_players(row['start_awayPlayers'])
+            end_homePlayers = parse_players(row['end_homePlayers'])
+            end_awayPlayers = parse_players(row['end_awayPlayers'])
+            
+            # Ensure end_homePlayers is set to start_homePlayers if None
+            if not end_homePlayers:
+                end_homePlayers = start_homePlayers
+            if not end_awayPlayers:
+                end_awayPlayers = start_awayPlayers
+
             teammates = None
 
             # Determine if the player is in homePlayers or awayPlayers
             if isinstance(start_homePlayers, list) and player_name in [player['name'] for player in start_homePlayers]:
-                teammates = start_homePlayers
+                teammates = end_homePlayers  # Use end_homePlayers here
             elif isinstance(start_awayPlayers, list) and player_name in [player['name'] for player in start_awayPlayers]:
-                teammates = start_awayPlayers
-            
+                teammates = end_awayPlayers  # Use end_awayPlayers here
+
             if teammates:
                 # Count teammates near opponents' goal
                 num_teammates_near_goal = count_teammates_near_goal(teammates)
