@@ -610,7 +610,9 @@ def Dashboard():
 
         st.header('Crosses')
         st.write('Early crosses')
-        st.dataframe(df_crosses, hide_index=True)
+        df_crosses = df_crosses[df_crosses['label'].isin(match_choice)]
+        df_early_crosses = df_crosses[df_crosses['x'].astype(float) <= 88.5]
+        st.dataframe(df_early_crosses, hide_index=True)
     def pressing():
         df_possession_data = load_possession_data()
         def calculate_ppda(df_possession_data):
