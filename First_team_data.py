@@ -104,6 +104,7 @@ def Dashboard():
     
     st.title('AC Horsens First Team Dashboard')
     df_possession['date'] = pd.to_datetime(df_possession['date'])
+    df_possession = df_possession.sort_values(by='date')
     matches = df_possession['label'].unique()
     matches = matches[::-1]
     match_choice = st.multiselect('Choose a match', matches)
