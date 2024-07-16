@@ -657,7 +657,7 @@ def Dashboard():
             count = 0
             for player in player_list:
                 if player['name'] != playerName:  # Exclude the player of interest
-                    if player['distance_to_opponents_goal'] < 20:
+                    if player['distance_to_opponents_goal'].astype(float) < 20:
                         count += 1
             
             return count
