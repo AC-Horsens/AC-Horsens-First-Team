@@ -648,7 +648,6 @@ def Dashboard():
         # Loop through the DataFrame
         for idx, row in df_early_crosses.iterrows():
             player_name = row['playerName']
-            teammates = None
 
             # Check if row['start_homePlayers'] and row['start_awayPlayers'] are lists
             if isinstance(row['start_homePlayers'], list) and isinstance(row['start_awayPlayers'], list):
