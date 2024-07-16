@@ -657,7 +657,7 @@ def Dashboard():
                 if teammates:
                     # Count teammates near opponents' goal
                     num_teammates_near_goal = count_teammates_near_goal(teammates)
-                    df_early_crosses.at[idx, '#players near opponents goal'] = num_teammates_near_goal
+                    df_early_crosses.at[idx, '#players in box'] = num_teammates_near_goal
 
 
         st.dataframe(df_early_crosses, hide_index=True)
