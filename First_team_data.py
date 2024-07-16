@@ -699,7 +699,7 @@ def Dashboard():
         st.write("Player Counts in the Box:")
         df_player_counts = pd.DataFrame(player_counts.items(), columns=['Player', 'Times in Box'])
         df_player_counts = df_player_counts.sort_values(by=['Times in Box'], ascending=False)
-        df_player_counts['Player'] = df_player_counts['Player'].dropna()
+        df_player_counts = df_player_counts[df_player_counts['Player'] != ' ']
         st.dataframe(df_player_counts)
 
                
