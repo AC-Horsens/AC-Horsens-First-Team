@@ -642,6 +642,10 @@ def Dashboard():
             return count
 
         # Assuming df_early_crosses is a pandas DataFrame
+        # Initialize the new column with default values (e.g., 0)
+        df_early_crosses['#players in box'] = 0
+
+        # Loop through the DataFrame
         for idx, row in df_early_crosses.iterrows():
             player_name = row['playerName']
             teammates = None
@@ -658,7 +662,6 @@ def Dashboard():
                     # Count teammates near opponents' goal
                     num_teammates_near_goal = count_teammates_near_goal(teammates)
                     df_early_crosses.at[idx, '#players in box'] = num_teammates_near_goal
-
 
         st.dataframe(df_early_crosses, hide_index=True)
                 
