@@ -644,23 +644,22 @@ def Dashboard():
 
         # Example usage within your loop
         for idx, row in df_early_crosses.iterrows():
-            if row['typeId'] == 1:  # Check if the event is a pass
-                player_name = row['playerName']
-                passer_position = None
+            player_name = row['playerName']
+            passer_position = None
 
-                # Check if row['start_homePlayers'] and row['start_awayPlayers'] are lists
-                if isinstance(row['start_homePlayers'], list) and isinstance(row['start_awayPlayers'], list):
-                    # Determine if the player is in homePlayers or awayPlayers and get their position
-                    if player_name in [player['name'] for player in row['start_homePlayers']]:
-                        passer_position = next((player['xyz'] for player in row['start_homePlayers'] if player['name'] == player_name), None)
-                        teammates = row['start_homePlayers']
-                    elif player_name in [player['name'] for player in row['start_awayPlayers']]:
-                        passer_position = next((player['xyz'] for player in row['start_awayPlayers'] if player['name'] == player_name), None)
-                        teammates = row['start_awayPlayers']
-                    
-                    if passer_position:
-                        # Count teammates near their own goal or opponents' goal
-                        df_early_crosses['#players in box'] = count_teammates_near_goal(passer_position, teammates)
+            # Check if row['start_homePlayers'] and row['start_awayPlayers'] are lists
+            if isinstance(row['start_homePlayers'], list) and isinstance(row['start_awayPlayers'], list):
+                # Determine if the player is in homePlayers or awayPlayers and get their position
+                if player_name in [player['name'] for player in row['start_homePlayers']]:
+                    passer_position = next((player['xyz'] for player in row['start_homePlayers'] if player['name'] == player_name), None)
+                    teammates = row['start_homePlayers']
+                elif player_name in [player['name'] for player in row['start_awayPlayers']]:
+                    passer_position = next((player['xyz'] for player in row['start_awayPlayers'] if player['name'] == player_name), None)
+                    teammates = row['start_awayPlayers']
+                
+                if passer_position:
+                    # Count teammates near their own goal or opponents' goal
+                    df_early_crosses['#players in box'] = count_teammates_near_goal(passer_position, teammates)
         st.dataframe(df_early_crosses, hide_index=True)
                 
     def pressing():
