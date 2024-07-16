@@ -642,16 +642,21 @@ def Dashboard():
 
         def count_teammates_near_goal(teammates, distance_threshold=20):
             count = 0
+            player_names_near_goal = []
+            
             for teammate in teammates:
                 distance_to_opponents_goal = teammate.get('distance_to_opponents_goal', None)
                 if distance_to_opponents_goal is not None:
                     if distance_to_opponents_goal <= distance_threshold:
                         count += 1
-            return count
+                        player_names_near_goal.append(teammate['name'])
+            
+            return count, player_names_near_goal
 
         # Assuming df_early_crosses is a pandas DataFrame
         # Initialize the new column with default values (e.g., 0)
         df_early_crosses['#players in box'] = 0
+        df_early_crosses['players in box'] = ''
 
         # Loop through the DataFrame
         for idx, row in df_early_crosses.iterrows():
@@ -664,19 +669,17 @@ def Dashboard():
             # Ensure teammates is always a list
             teammates = []
 
-            if isinstance(end_homePlayers, list) and player_name in [player['name'] for player in end_homePlayers]:
-                teammates = end_homePlayers
-            elif isinstance(start_homePlayers, list) and player_name in [player['name'] for player in start_homePlayers]:
-                teammates = start_homePlayers
-            elif isinstance(end_awayPlayers, list) and player_name in [player['name'] for player in end_awayPlayers]:
-                teammates = end_awayPlayers
+            # Determine if the player is in homePlayers or awayPlayers
+            if isinstance(start_homePlayers, list) and player_name in [player['name'] for player in start_homePlayers]:
+                teammates = end_homePlayers if end_homePlayers else start_homePlayers
             elif isinstance(start_awayPlayers, list) and player_name in [player['name'] for player in start_awayPlayers]:
-                teammates = start_awayPlayers
+                teammates = end_awayPlayers if end_awayPlayers else start_awayPlayers
 
             if isinstance(teammates, list):
-                # Count teammates near opponents' goal
-                num_teammates_near_goal = count_teammates_near_goal(teammates)
+                # Count teammates near opponents' goal and get their names
+                num_teammates_near_goal, player_names_near_goal = count_teammates_near_goal(teammates)
                 df_early_crosses.at[idx, '#players in box'] = num_teammates_near_goal
+                df_early_crosses.at[idx, 'players in box'] = ', '.join(player_names_near_goal)
 
         st.dataframe(df_early_crosses, hide_index=True)
                 
