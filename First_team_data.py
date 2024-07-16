@@ -614,6 +614,24 @@ def Dashboard():
         df_crosses = df_crosses[df_crosses['label'].isin(match_choice)]
         df_early_crosses = df_crosses[(df_crosses['x'].astype(float) <= 88.5) & ((df_crosses['y'].astype(float) >= 78.9) | (df_crosses['y'].astype(float) <= 21.1))]
         st.write(df_early_crosses.columns)
+        
+        pitch = Pitch(pitch_type='opta', half=True)  # Create a half-pitch plot
+        fig, ax = pitch.draw(figsize=(10, 8))
+
+        # Plot arrows from x,y to pass_end_x,pass_end_y
+        for _, row in df_early_crosses.iterrows():
+            pitch.arrows(row['x'], row['y'], row['pass_end_x'], row['pass_end_y'],
+                        color='blue', ax=ax, width=2, headwidth=5, headlength=5, headaxislength=4.5)
+
+        # Add labels for players (optional)
+        for _, row in df_early_crosses.iterrows():
+            ax.text(row['x'], row['y'], row['playerName'], fontsize=12, color='white')
+
+        plt.title('Early Crosses', fontsize=20)
+
+        # Display the plot in Streamlit
+        st.pyplot(fig)
+
         st.dataframe(df_early_crosses, hide_index=True)
     def pressing():
         df_possession_data = load_possession_data()
