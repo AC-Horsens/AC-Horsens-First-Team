@@ -640,13 +640,14 @@ def Dashboard():
             # Determine which player list to use based on end_ and start_ columns
             player_list = None
             
-            if row['end_homePlayers'] is not None and any(player['name'] == playerName for player in row['end_homePlayers']):
+            # Check for NaN values and type errors
+            if isinstance(row['end_homePlayers'], list) and any(player['name'] == playerName for player in row['end_homePlayers']):
                 player_list = row['end_homePlayers']
-            elif row['end_awayPlayers'] is not None and any(player['name'] == playerName for player in row['end_awayPlayers']):
+            elif isinstance(row['end_awayPlayers'], list) and any(player['name'] == playerName for player in row['end_awayPlayers']):
                 player_list = row['end_awayPlayers']
-            elif row['start_homePlayers'] is not None and any(player['name'] == playerName for player in row['start_homePlayers']):
+            elif isinstance(row['start_homePlayers'], list) and any(player['name'] == playerName for player in row['start_homePlayers']):
                 player_list = row['start_homePlayers']
-            elif row['start_awayPlayers'] is not None and any(player['name'] == playerName for player in row['start_awayPlayers']):
+            elif isinstance(row['start_awayPlayers'], list) and any(player['name'] == playerName for player in row['start_awayPlayers']):
                 player_list = row['start_awayPlayers']
             
             if player_list is None:
