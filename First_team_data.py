@@ -657,8 +657,6 @@ def Dashboard():
                     passer_position = next((player['xyz'] for player in row['start_awayPlayers'] if player['name'] == player_name), None)
                     teammates = row['start_awayPlayers']
                 
-                if passer_position:
-                    # Count teammates near their own goal or opponents' goal
                     df_early_crosses['#players in box'] = count_teammates_near_goal(passer_position, teammates)
         st.dataframe(df_early_crosses, hide_index=True)
                 
