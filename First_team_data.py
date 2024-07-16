@@ -615,7 +615,6 @@ def Dashboard():
         df_crosses = df_crosses[df_crosses['label'].isin(match_choice)]
         df_crosses = df_crosses[df_crosses['y'] < 100]
         df_early_crosses = df_crosses[(df_crosses['x'].astype(float) <= 88.5) & ((df_crosses['y'].astype(float) >= 78.9) | (df_crosses['y'].astype(float) <= 21.1))]
-        st.write(df_early_crosses.columns)
         
         pitch = Pitch(pitch_type='opta', half=True,pitch_color='grass')  # Create a half-pitch plot
         fig, ax = pitch.draw(figsize=(10, 8))
