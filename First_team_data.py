@@ -661,13 +661,6 @@ def Dashboard():
             end_homePlayers = parse_players(row['end_homePlayers'])
             end_awayPlayers = parse_players(row['end_awayPlayers'])
             
-            if end_homePlayers is None:
-                df_early_crosses.at[idx, 'end_homePlayers'] = start_homePlayers  # Update DataFrame
-            
-            # Ensure end_awayPlayers is set to start_awayPlayers if None or empty
-            if end_awayPlayers is None:
-                df_early_crosses.at[idx, 'end_awayPlayers'] = start_awayPlayers  # Update DataFrame
-
             # Ensure teammates is always a list
             teammates = []
 
@@ -681,8 +674,6 @@ def Dashboard():
                 # Count teammates near opponents' goal
                 num_teammates_near_goal = count_teammates_near_goal(teammates)
                 df_early_crosses.at[idx, '#players in box'] = num_teammates_near_goal
-            else:
-                print(f"Unexpected type for teammates at index {idx}: {type(teammates)}")
 
         st.dataframe(df_early_crosses, hide_index=True)
                 
