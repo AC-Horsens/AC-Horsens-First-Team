@@ -641,9 +641,6 @@ def Dashboard():
                     count += 1
             return count
 
-        # Example usage within your loop
-        import pandas as pd
-
         # Assuming df_early_crosses is a pandas DataFrame
         for idx, row in df_early_crosses.iterrows():
             player_name = row['playerName']
