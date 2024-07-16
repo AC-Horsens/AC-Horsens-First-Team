@@ -655,11 +655,7 @@ def Dashboard():
             
             if player_list is None:
                 return 0  # Player not found in any player list
-            
-            # Calculate distance to goal for the player of interest
-            player_distance_to_goal = calculate_distance_to_goal(row['x'], row['y'])
-            
-            # Count teammates within 20 meters of the opponents' goal
+                        
             count_teammates = 0
             for player in player_list:
                 if player['name'] != playerName:  # Exclude the player of interest
