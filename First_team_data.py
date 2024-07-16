@@ -649,8 +649,8 @@ def Dashboard():
                         count += 1
             return count
 
-# Assuming df_early_crosses is a pandas DataFrame
-# Initialize the new column with default values (e.g., 0)
+        # Assuming df_early_crosses is a pandas DataFrame
+        # Initialize the new column with default values (e.g., 0)
         df_early_crosses['#players in box'] = 0
 
         # Loop through the DataFrame
@@ -669,7 +669,8 @@ def Dashboard():
             if not end_awayPlayers:
                 end_awayPlayers = start_awayPlayers
 
-            teammates = None
+            # Ensure teammates is always a list
+            teammates = []
 
             # Determine if the player is in homePlayers or awayPlayers
             if isinstance(start_homePlayers, list) and player_name in [player['name'] for player in start_homePlayers]:
@@ -677,10 +678,12 @@ def Dashboard():
             elif isinstance(start_awayPlayers, list) and player_name in [player['name'] for player in start_awayPlayers]:
                 teammates = end_awayPlayers  # Use end_awayPlayers here
 
-            if teammates:
+            if isinstance(teammates, list):
                 # Count teammates near opponents' goal
                 num_teammates_near_goal = count_teammates_near_goal(teammates)
                 df_early_crosses.at[idx, '#players in box'] = num_teammates_near_goal
+            else:
+                print(f"Unexpected type for teammates at index {idx}: {type(teammates)}")
 
         st.dataframe(df_early_crosses, hide_index=True)
                 
