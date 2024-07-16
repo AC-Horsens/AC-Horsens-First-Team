@@ -674,16 +674,11 @@ def Dashboard():
                     if distance_to_opponents_goal <= 20:
                         count += 1
             
-            return count
-
-        # Assuming df_early_crosses is your DataFrame containing player data
-        # Example usage within your script
-        for index, row in df_early_crosses.iterrows():
-            playerName = row['playerName']
-            count = count_teammates_near_opponents_goal(row, playerName)
-            st.write(f"Number of teammates near opponents' goal for {playerName}: {count}")
-        
-        
+            return count        
+                
+        df_early_crosses['# players in box'] = df_early_crosses.apply(lambda row: count_teammates_near_opponents_goal(row, row['playerName']), axis=1)
+        st.dataframe(df_early_crosses, hide_index=True)                
+                
     def pressing():
         df_possession_data = load_possession_data()
         def calculate_ppda(df_possession_data):
