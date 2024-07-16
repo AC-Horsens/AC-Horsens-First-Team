@@ -634,36 +634,46 @@ def Dashboard():
 
         st.dataframe(df_early_crosses, hide_index=True)
 
-        def count_teammates_near_opponents_goal(row):
+        def count_teammates_near_goal(row):
             playerName = row['playerName']
-            
-            # Determine which player list to use based on end_ and start_ columns
+            team = None
             player_list = None
             
-            # Check for NaN values and type errors
-            if isinstance(row['end_homePlayers'], list) and any(player['name'] == playerName for player in row['end_homePlayers']):
+            # Determine which player list to use
+            if row['end_homePlayers'] is not None and any(player['name'] == playerName for player in row['end_homePlayers']):
+                team = 'home'
                 player_list = row['end_homePlayers']
-            elif isinstance(row['end_awayPlayers'], list) and any(player['name'] == playerName for player in row['end_awayPlayers']):
+            elif row['end_awayPlayers'] is not None and any(player['name'] == playerName for player in row['end_awayPlayers']):
+                team = 'away'
                 player_list = row['end_awayPlayers']
-            elif isinstance(row['start_homePlayers'], list) and any(player['name'] == playerName for player in row['start_homePlayers']):
+            elif row['start_homePlayers'] is not None and any(player['name'] == playerName for player in row['start_homePlayers']):
+                team = 'home'
                 player_list = row['start_homePlayers']
-            elif isinstance(row['start_awayPlayers'], list) and any(player['name'] == playerName for player in row['start_awayPlayers']):
+            elif row['start_awayPlayers'] is not None and any(player['name'] == playerName for player in row['start_awayPlayers']):
+                team = 'away'
                 player_list = row['start_awayPlayers']
             
             if player_list is None:
-                return 0  # If player not found in any player list, return 0
+                return 0  # Player not found in any player list
             
-            # Count teammates within 20 meters of opponents' goal
-            count = 0
+            # Calculate distance to goal for the player of interest
+            player_distance_to_goal = calculate_distance_to_goal(row['x'], row['y'])
+            
+            # Count teammates within 20 meters of the opponents' goal
+            count_teammates = 0
             for player in player_list:
                 if player['name'] != playerName:  # Exclude the player of interest
-                    if player['distance_to_opponents_goal'].astype(float) < 20:
-                        count += 1
+                    # Calculate distance to goal for teammate
+                    teammate_distance_to_goal = player['distance_to_opponents_goal']
+                    
+                    # Check if teammate is within 20 meters of the goal
+                    if teammate_distance_to_goal < 20:
+                        count_teammates += 1
             
-            return count
+            return count_teammates
 
         # Apply the function to each row in the DataFrame
-        df_early_crosses['# players in box'] = df_early_crosses.apply(count_teammates_near_opponents_goal, axis=1)
+        df_early_crosses['# teammates_near_goal'] = df_early_crosses.apply(count_teammates_near_goal, axis=1)
         st.dataframe(df_early_crosses, hide_index=True)
                 
     def pressing():
