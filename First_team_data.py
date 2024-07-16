@@ -661,17 +661,17 @@ def Dashboard():
             end_homePlayers = parse_players(row['end_homePlayers'])
             end_awayPlayers = parse_players(row['end_awayPlayers'])
             
+
             # Ensure teammates is always a list
             teammates = []
 
             # Determine if the player is in homePlayers or awayPlayers
-            if isinstance(start_homePlayers, list) and any(player_name == player['name'] for player in start_homePlayers):
+            if isinstance(start_homePlayers, list) and player_name in [player['name'] for player in start_homePlayers]:
                 if end_homePlayers is not None and not pd.isna(end_homePlayers) and len(end_homePlayers) > 0:
                     teammates = end_homePlayers
                 else:
                     teammates = start_homePlayers
-            # Then check start_awayPlayers
-            elif isinstance(start_awayPlayers, list) and any(player_name == player['name'] for player in start_awayPlayers):
+            elif isinstance(start_awayPlayers, list) and player_name in [player['name'] for player in start_awayPlayers]:
                 if end_awayPlayers is not None and not pd.isna(end_awayPlayers) and len(end_awayPlayers) > 0:
                     teammates = end_awayPlayers
                 else:
