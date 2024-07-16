@@ -640,12 +640,11 @@ def Dashboard():
             except (ValueError, SyntaxError):
                 return []  # Return an empty list if parsing fails
 
-        def count_teammates_near_goal(teammates, distance_threshold=20):
+        def count_teammates_near_goal(teammates, distance_threshold=16):
             count = 0
             for teammate in teammates:
                 distance_to_opponents_goal = teammate.get('distance_to_opponents_goal', None)
                 if distance_to_opponents_goal is not None:
-                    print(f"Teammate: {teammate['name']}, Distance to opponent's goal: {distance_to_opponents_goal}")  # Debug
                     if distance_to_opponents_goal <= distance_threshold:
                         count += 1
             return count
