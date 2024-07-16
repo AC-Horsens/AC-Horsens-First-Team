@@ -633,6 +633,52 @@ def Dashboard():
         st.pyplot(fig)
 
         st.dataframe(df_early_crosses, hide_index=True)
+
+        def count_teammates_near_opponents_goal(data, playerName):
+            # Determine which team and player list to use
+            team, player_list = None, None
+            
+            if playerName in data['start_homePlayers']:
+                team = 'home'
+                player_list = data['start_homeplayers']
+            elif playerName in data['start_awayPlayers']:
+                team = 'away'
+                player_list = data['start_awayplayers']
+            elif playerName in data['end_homePlayers']:
+                team = 'home'
+                player_list = data['end_homeplayers']
+            elif playerName in data['end_awayPlayers']:
+                team = 'away'
+                player_list = data['end_awayplayers']
+            
+            if player_list is None:
+                return "Player not found."
+            
+            # Find the player of interest
+            player_of_interest = None
+            for player in player_list:
+                if player['playerName'] == playerName:
+                    player_of_interest = player
+                    break
+            
+            if player_of_interest is None:
+                return "Player not found."
+            
+            # Count teammates within 20 meters of opponents' goal
+            count = 0
+            opponents_goal_x = data['pass_end_x']  # Assuming this is how you define opponents' goal x-coordinate
+            
+            for player in player_list:
+                if player['playerName'] != playerName:  # Exclude the player of interest
+                    distance_to_opponents_goal = abs(player['x'] - opponents_goal_x)
+                    if distance_to_opponents_goal <= 20:
+                        count += 1
+            
+            return count
+
+        playerName = row['playerName']
+        count = count_teammates_near_opponents_goal(df_early_crosses, playerName)
+        st.write(f"Number of teammates near opponents' goal: {count}")
     def pressing():
         df_possession_data = load_possession_data()
         def calculate_ppda(df_possession_data):
