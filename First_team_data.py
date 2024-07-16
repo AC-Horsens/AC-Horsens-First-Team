@@ -634,24 +634,19 @@ def Dashboard():
 
         st.dataframe(df_early_crosses, hide_index=True)
 
-        def count_teammates_near_opponents_goal(data, playerName):
-            # Determine which team and player list to use
-            team, player_list = None, None
+        def count_teammates_near_opponents_goal(row):
+            playerName = row['playerName']
             
-            if playerName in data['start_homePlayers']:
-                team = 'home'
-                player_list = data['start_homePlayers']
-            elif playerName in data['start_awayPlayers']:
-                team = 'away'
-                player_list = data['start_awayPlayers']
-            elif playerName in data['end_homePlayers']:
-                team = 'home'
-                player_list = data['end_homePlayers']
-            elif playerName in data['end_awayPlayers']:
-                team = 'away'
-                player_list = data['end_awayPlayers']
-            
-            if player_list is None:
+            # Determine which team and player list to use based on your actual DataFrame structure
+            if playerName in row['start_homePlayers']:
+                player_list = row['start_homePlayers']
+            elif playerName in row['start_awayPlayers']:
+                player_list = row['start_awayPlayers']
+            elif playerName in row['end_homePlayers']:
+                player_list = row['end_homePlayers']
+            elif playerName in row['end_awayPlayers']:
+                player_list = row['end_awayPlayers']
+            else:
                 return "Player not found."
             
             # Find the player of interest
@@ -674,10 +669,10 @@ def Dashboard():
                     if distance_to_opponents_goal <= 20:
                         count += 1
             
-            return count        
+            return count
                 
-        df_early_crosses['# players in box'] = df_early_crosses.apply(lambda row: count_teammates_near_opponents_goal(row, row['playerName']), axis=1)
-        st.dataframe(df_early_crosses, hide_index=True)                
+        df_early_crosses['# players in box'] = df_early_crosses.apply(count_teammates_near_opponents_goal, axis=1)
+        st.dataframe(df_early_crosses, hide_index=True)
                 
     def pressing():
         df_possession_data = load_possession_data()
