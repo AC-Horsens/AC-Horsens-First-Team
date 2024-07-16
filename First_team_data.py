@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 import plotly.graph_objs as go
 import plotly.express as px
 import ast
+from collections import Counter
 
 st.set_page_config(layout='wide')
 
@@ -652,7 +653,6 @@ def Dashboard():
             
             return count, player_names_near_goal
 
-        # Assuming df_early_crosses is a pandas DataFrame
         # Initialize the new column with default values (e.g., 0)
         df_early_crosses['#players in box'] = 0
         df_early_crosses['players in box'] = ''
@@ -685,7 +685,22 @@ def Dashboard():
                 df_early_crosses.at[idx, 'players in box'] = ', '.join(player_names_near_goal)
 
         st.dataframe(df_early_crosses, hide_index=True)
-                
+        def count_players_in_box(player_lists):
+            # Flatten the list of strings into a single list of player names
+            all_players = [player.strip() for sublist in player_lists for player in sublist.split(",")]
+            
+            # Count the occurrences of each player's name
+            player_counts = Counter(all_players)
+            
+            return player_counts
+
+        player_lists = df_early_crosses['players in box'].tolist()
+        player_counts = count_players_in_box(player_lists)
+        st.write("Player Counts in the Box:")
+        df_player_counts = pd.DataFrame(player_counts.items(), columns=['Player', 'Times in Box'])
+        st.dataframe(df_player_counts)
+
+               
     def pressing():
         df_possession_data = load_possession_data()
         def calculate_ppda(df_possession_data):
