@@ -698,6 +698,8 @@ def Dashboard():
         player_counts = count_players_in_box(player_lists)
         st.write("Player Counts in the Box:")
         df_player_counts = pd.DataFrame(player_counts.items(), columns=['Player', 'Times in Box'])
+        df_player_counts = df_player_counts.sort_values(by=['Times in Box'], ascending=False)
+        df_player_counts['Player'] = df_player_counts['Player'].dropna()
         st.dataframe(df_player_counts)
 
                
