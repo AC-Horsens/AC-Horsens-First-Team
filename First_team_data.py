@@ -633,43 +633,34 @@ def Dashboard():
         st.pyplot(fig)
 
         st.dataframe(df_early_crosses, hide_index=True)
+        def count_teammates_near_goal(passer_position, teammates, distance_threshold=20):
+            count = 0
+            for teammate in teammates:
+                distance_to_opponents_goal = teammate['distance_to_opponents_goal']
+                # Determine the minimum distance to either own goal or opponents' goal
+                if distance_to_opponents_goal <=20:
+                    count += 1
+            return count
 
-        def count_teammates_near_goal(row):
-            playerName = row['playerName']
-            team = None
-            player_list = None
-            
-            # Determine which player list to use
-            if row['end_homePlayers'] is not None and any(player['name'] == playerName for player in row['end_homePlayers']):
-                team = 'home'
-                player_list = row['end_homePlayers']
-            elif row['end_awayPlayers'] is not None and any(player['name'] == playerName for player in row['end_awayPlayers']):
-                team = 'away'
-                player_list = row['end_awayPlayers']
-            elif row['start_homePlayers'] is not None and any(player['name'] == playerName for player in row['start_homePlayers']):
-                team = 'home'
-                player_list = row['start_homePlayers']
-            elif row['start_awayPlayers'] is not None and any(player['name'] == playerName for player in row['start_awayPlayers']):
-                team = 'away'
-                player_list = row['start_awayPlayers']
-            
-            if player_list is None:
-                return 0  # Player not found in any player list
-                        
-            count_teammates = 0
-            for player in player_list:
-                if player['name'] != playerName:  # Exclude the player of interest
-                    # Calculate distance to goal for teammate
-                    teammate_distance_to_goal = player['distance_to_opponents_goal']
+        # Example usage within your loop
+        for idx, row in df_early_crosses.iterrows():
+            if row['typeId'] == 1:  # Check if the event is a pass
+                player_name = row['playerName']
+                passer_position = None
+
+                # Check if row['start_homePlayers'] and row['start_awayPlayers'] are lists
+                if isinstance(row['start_homePlayers'], list) and isinstance(row['start_awayPlayers'], list):
+                    # Determine if the player is in homePlayers or awayPlayers and get their position
+                    if player_name in [player['name'] for player in row['start_homePlayers']]:
+                        passer_position = next((player['xyz'] for player in row['start_homePlayers'] if player['name'] == player_name), None)
+                        teammates = row['start_homePlayers']
+                    elif player_name in [player['name'] for player in row['start_awayPlayers']]:
+                        passer_position = next((player['xyz'] for player in row['start_awayPlayers'] if player['name'] == player_name), None)
+                        teammates = row['start_awayPlayers']
                     
-                    # Check if teammate is within 20 meters of the goal
-                    if teammate_distance_to_goal < 20:
-                        count_teammates += 1
-            
-            return count_teammates
-
-        # Apply the function to each row in the DataFrame
-        df_early_crosses['# teammates_near_goal'] = df_early_crosses.apply(count_teammates_near_goal, axis=1)
+                    if passer_position:
+                        # Count teammates near their own goal or opponents' goal
+                        df_early_crosses['#players in box'] = count_teammates_near_goal(passer_position, teammates)
         st.dataframe(df_early_crosses, hide_index=True)
                 
     def pressing():
