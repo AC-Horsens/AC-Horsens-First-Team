@@ -610,7 +610,7 @@ def Dashboard():
         st.write('Chosen matches')
         st.dataframe(touches_in_box_team_period, hide_index=True)
         st.dataframe(touches_in_box_player, hide_index=True)      
-
+    def crosses():
         st.header('Crosses')
         df_crosses = df_crosses[df_crosses['label'].isin(match_choice)]
         df_crosses = df_crosses[df_crosses['y'] < 100]
@@ -817,6 +817,7 @@ def Dashboard():
         'Packing': packing,
         'Chance Creation': chance_creation,
         'Pressing': pressing,
+        'Crosses': crosses
     }
 
     if 'selected_data1' not in st.session_state:
