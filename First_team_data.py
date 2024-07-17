@@ -702,7 +702,6 @@ def Dashboard():
         df_player_counts = df_player_counts[df_player_counts['Player'] != '']
         st.dataframe(df_player_counts, hide_index=True)
 
-               
     def pressing():
         df_possession_data = load_possession_data()
         def calculate_ppda(df_possession_data):
