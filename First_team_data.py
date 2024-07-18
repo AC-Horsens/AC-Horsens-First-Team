@@ -614,6 +614,18 @@ def Dashboard():
         st.header('Early crosses')
         df_crosses = load_crosses()
         df_crosses = df_crosses[df_crosses['label'].isin(match_choice)]
+        df_crosses['qualifier'] = df_crosses['qualifier'].apply(ast.literal_eval)
+
+        # List of qualifierIds to filter out
+        filter_qualifier_ids = [5, 6, 24, 25, 26, 107]
+
+        # Function to check if any dictionary in the list has a qualifierId in the filter list
+        def filter_qualifiers(qualifier_list):
+            return not any(d['qualifierId'] in filter_qualifier_ids for d in qualifier_list)
+
+        # Filter the DataFrame
+        df_crosses = df_crosses[df_crosses['qualifier'].apply(filter_qualifiers)]
+
         st.dataframe(df_crosses, hide_index=True)
         df_early_crosses = df_crosses[(df_crosses['x'].astype(float) <= 88.5) & ((df_crosses['y'].astype(float) >= 78.9) | (df_crosses['y'].astype(float) <= 21.1))]
         
