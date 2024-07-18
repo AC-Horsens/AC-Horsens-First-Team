@@ -1041,29 +1041,25 @@ def Dashboard():
         'Crosses': crosses
     }
 
-    if 'selected_data1' not in st.session_state:
-        st.session_state['selected_data1'] = ''
-    if 'selected_data2' not in st.session_state:
-        st.session_state['selected_data2'] = ''
-    if 'selected_data3' not in st.session_state:
-        st.session_state['selected_data3'] = ''
+    for i in range(1, 4):
+        if f'selected_data{i}' not in st.session_state:
+            st.session_state[f'selected_data{i}'] = ''
 
+    # Create three columns for select boxes
     col1, col2, col3 = st.columns(3)
 
-    with col1:
-        selected_data1 = st.selectbox('Choose data type 1', [''] + list(Data_types.keys()), key='selected_data1_selectbox')
-        if selected_data1 and selected_data1 != st.session_state['selected_data1']:
-            st.session_state['selected_data1'] = selected_data1
+    # Function to create selectbox and update session state without rerunning entire page
+    def create_selectbox(column, key):
+        with column:
+            selected_data = st.selectbox(f'Choose data type {key[-1]}', [''] + list(Data_types.keys()), key=key)
+            if selected_data and selected_data != st.session_state[key]:
+                st.session_state[key] = selected_data
+                st.experimental_rerun()
 
-    with col2:
-        selected_data2 = st.selectbox('Choose data type 2', [''] + list(Data_types.keys()), key='selected_data2_selectbox')
-        if selected_data2 and selected_data2 != st.session_state['selected_data2']:
-            st.session_state['selected_data2'] = selected_data2
-
-    with col3:
-        selected_data3 = st.selectbox('Choose data type 3', [''] + list(Data_types.keys()), key='selected_data3_selectbox')
-        if selected_data3 and selected_data3 != st.session_state['selected_data3']:
-            st.session_state['selected_data3'] = selected_data3
+    # Create select boxes for each column
+    create_selectbox(col1, 'selected_data1')
+    create_selectbox(col2, 'selected_data2')
+    create_selectbox(col3, 'selected_data3')
 
     # Display the current selection results in columns
     with col1:
