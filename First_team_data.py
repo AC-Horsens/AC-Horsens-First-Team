@@ -560,7 +560,7 @@ def Dashboard():
         )
 
         # Initialize the pitch
-        pitch = Pitch(pitch_type='opta', pitch_color='grass', line_color='white')
+        pitch = Pitch(pitch_type='opta',line_zorder=2, pitch_color='grass', line_color='white')
         fig, ax = pitch.draw()
 
         # Extract coordinates based on user selection
@@ -572,6 +572,7 @@ def Dashboard():
             y_coords = assistzone_pass_ends['141.0']
 
         # Plot the heatmap
+        fig.set_facecolor('#22312b')
         bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50)) # Adjust bins as needed
         bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
         pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='#22312b')
