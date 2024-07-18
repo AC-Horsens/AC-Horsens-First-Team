@@ -611,7 +611,6 @@ def Dashboard():
         st.dataframe(touches_in_box_team_period, hide_index=True)
         st.dataframe(touches_in_box_player, hide_index=True)      
     def crosses():
-        st.header('Early crosses')
         df_crosses = load_crosses()
         df_crosses = df_crosses[df_crosses['label'].isin(match_choice)]
         df_crosses['qualifier'] = df_crosses['qualifier'].apply(ast.literal_eval)
