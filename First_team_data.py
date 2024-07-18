@@ -581,8 +581,7 @@ def Dashboard():
         cbar.ax.yaxis.set_tick_params(color='#efefef')
         ticks = plt.setp(plt.getp(cbar.ax.axes, 'yticklabels'), color='#efefef')
 
-
-        pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='white')
+        pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
 
         # Display the plot in Streamlit
         st.pyplot(fig)
