@@ -626,7 +626,7 @@ def Dashboard():
         # Filter the DataFrame
         df_crosses = df_crosses[df_crosses['qualifier'].apply(filter_qualifiers)]
         def early_crosses(df_crosses):
-            df_early_crosses = df_crosses[(df_crosses['x'].astype(float) <= 88.5) & ((df_crosses['y'].astype(float) >= 78.9) | (df_crosses['y'].astype(float) <= 21.1))]
+            df_early_crosses = df_crosses[(df_crosses['x'].astype(float) <= 88.5) &(df_crosses['x'].astype(float) >= 70.0) & ((df_crosses['y'].astype(float) >= 78.9) | (df_crosses['y'].astype(float) <= 21.1))]
             
             pitch = Pitch(pitch_type='opta', half=True,pitch_color='grass')  # Create a half-pitch plot
             fig, ax = pitch.draw(figsize=(10, 8))
@@ -714,6 +714,8 @@ def Dashboard():
             df_player_counts = df_player_counts[df_player_counts['Player'] != '']
             st.dataframe(df_player_counts, hide_index=True)
         early_crosses(df_crosses)
+        
+        def late_crosses(df_crosses):
         df_early_crosses = df_crosses[(df_crosses['x'].astype(float) <= 88.5) & ((df_crosses['y'].astype(float) >= 78.9) | (df_crosses['y'].astype(float) <= 21.1))]
         
         pitch = Pitch(pitch_type='opta', half=True,pitch_color='grass')  # Create a half-pitch plot
