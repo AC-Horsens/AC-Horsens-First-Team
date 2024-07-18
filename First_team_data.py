@@ -579,6 +579,8 @@ def Dashboard():
         cbar = fig.colorbar(pcm, ax=ax, shrink=0.6)
         cbar.outline.set_edgecolor('#efefef')
         cbar.ax.yaxis.set_tick_params(color='#efefef')
+        ticks = plt.setp(plt.getp(cbar.ax.axes, 'yticklabels'), color='#efefef')
+
 
         pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='white')
 
