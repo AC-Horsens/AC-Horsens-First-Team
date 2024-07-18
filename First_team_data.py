@@ -553,14 +553,30 @@ def Dashboard():
         st.dataframe(team_counts,hide_index=True)
 
         
+        option = st.selectbox(
+            'Select the position to display',
+            ('Start', 'End')
+        )
+
+        # Initialize the pitch
         pitch = Pitch(pitch_type='opta', pitch_color='grass', line_color='white')
         fig, ax = pitch.draw()
 
-        # Plotting the arrows
-        for index, row in assistzone_pass_ends.iterrows():
-            pitch.arrows(row['x'], row['y'], row['140.0'], row['141.0'], ax=ax, width=2, headwidth=3, color='black')
+        # Extract coordinates based on user selection
+        if option == 'Start':
+            x_coords = assistzone_pass_ends['x']
+            y_coords = assistzone_pass_ends['y']
+        else:
+            x_coords = assistzone_pass_ends['140.0']
+            y_coords = assistzone_pass_ends['141.0']
 
+        # Plot the heatmap
+        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50)) # Adjust bins as needed
+        pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='white')
+
+        # Display the plot in Streamlit
         st.pyplot(fig)
+
         st.header('Touches in zone 14')
         df_zone14 = df_possession[(df_possession['x'].astype(float) >= 66) & ((df_possession['y'].astype(float) >= 21.1) & (df_possession['y'].astype(float) <= 78.9))]
         
