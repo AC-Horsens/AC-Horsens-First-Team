@@ -83,8 +83,7 @@ def plot_heatmap_end_location(data, title):
     
 def plot_arrows(df):
     df_passes = df[(df['140.0'].notna())]
-    df_duels = df[df['type.primary'] != None]
-
+    
     pitch = Pitch(pitch_type='opta', pitch_color='grass', line_color='white')
     fig, ax = pitch.draw()
 
@@ -103,9 +102,6 @@ def plot_arrows(df):
         # Plot arrow
         ax.arrow(start_x, start_y, end_x - start_x, end_y - start_y, color=arrow_color,
                  length_includes_head=True, head_width=0.5, head_length=0.5)
-
-    # Plot duels as yellow dots
-    ax.scatter(df_duels['location.x'], df_duels['location.y'], color='yellow', zorder=3)
 
     st.pyplot(fig)
     
