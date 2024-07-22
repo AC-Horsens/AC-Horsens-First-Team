@@ -784,20 +784,20 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
     df_matchstats_player = df_matchstats[(df_matchstats['player_matchName'] == player_name) & (df_matchstats['label'].isin(kampvalg))]
     df_matchstats_player['date'] = pd.to_datetime(df_matchstats_player['date'])
     df_matchstats_player = df_matchstats_player.sort_values(by='date')
-    balanced_central_defender_df = balanced_central_defender_df[(balanced_central_defender_df['label'].isin(kampvalg)) & (balanced_central_defender_df['player.name'] == player_name)]
-    fullbacks_df = fullbacks_df[(fullbacks_df['label'].isin(kampvalg)) & (fullbacks_df['player.name'] == player_name)]
-    number6_df = number6_df[(number6_df['label'].isin(kampvalg)) & (number6_df['player.name'] == player_name)]
-    number8_df = number8_df[(number8_df['label'].isin(kampvalg)) & (number8_df['player.name'] == player_name)]
-    number10_df = number10_df[(number10_df['label'].isin(kampvalg)) & (number10_df['player.name'] == player_name)]
-    winger_df = winger_df[(winger_df['label'].isin(kampvalg)) & (winger_df['player.name'] == player_name)]
-    classic_striker_df = classic_striker_df[(classic_striker_df['label'].isin(kampvalg)) & (classic_striker_df['player.name'] == player_name)]
-    balanced_central_defender_df = balanced_central_defender_df.drop(columns=['player.name', 'team.name', 'position_codes'],errors = 'ignore')
-    fullbacks_df = fullbacks_df.drop(columns=['player.name', 'team.name', 'position_codes'],errors = 'ignore')
-    number6_df = number6_df.drop(columns=['player.name','team.name','position_codes'],errors = 'ignore')
-    number8_df = number8_df.drop(columns=['player.name','team.name','position_codes'],errors = 'ignore')
-    number10_df = number10_df.drop(columns=['player.name', 'team.name', 'position_codes'],errors = 'ignore')
-    winger_df = winger_df.drop(columns=['player.name', 'team.name', 'position_codes'],errors = 'ignore')
-    classic_striker_df = classic_striker_df.drop(columns=['player.name', 'team.name', 'position_codes'],errors = 'ignore')
+    balanced_central_defender_df = balanced_central_defender_df[(balanced_central_defender_df['label'].isin(kampvalg)) & (balanced_central_defender_df['playerName'] == player_name)]
+    fullbacks_df = fullbacks_df[(fullbacks_df['label'].isin(kampvalg)) & (fullbacks_df['playerName'] == player_name)]
+    number6_df = number6_df[(number6_df['label'].isin(kampvalg)) & (number6_df['playerName'] == player_name)]
+    number8_df = number8_df[(number8_df['label'].isin(kampvalg)) & (number8_df['playerName'] == player_name)]
+    number10_df = number10_df[(number10_df['label'].isin(kampvalg)) & (number10_df['playerName'] == player_name)]
+    winger_df = winger_df[(winger_df['label'].isin(kampvalg)) & (winger_df['playerName'] == player_name)]
+    classic_striker_df = classic_striker_df[(classic_striker_df['label'].isin(kampvalg)) & (classic_striker_df['playerName'] == player_name)]
+    balanced_central_defender_df = balanced_central_defender_df.drop(columns=['playerName', 'team.name', 'position_codes'],errors = 'ignore')
+    fullbacks_df = fullbacks_df.drop(columns=['playerName', 'team.name', 'position_codes'],errors = 'ignore')
+    number6_df = number6_df.drop(columns=['playerName','team.name','position_codes'],errors = 'ignore')
+    number8_df = number8_df.drop(columns=['playerName','team.name','position_codes'],errors = 'ignore')
+    number10_df = number10_df.drop(columns=['playerName', 'team.name', 'position_codes'],errors = 'ignore')
+    winger_df = winger_df.drop(columns=['playerName', 'team.name', 'position_codes'],errors = 'ignore')
+    classic_striker_df = classic_striker_df.drop(columns=['playerName', 'team.name', 'position_codes'],errors = 'ignore')
         
     if not balanced_central_defender_df.empty:
         st.write('As central defender')
