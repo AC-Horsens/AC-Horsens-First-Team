@@ -27,7 +27,18 @@ def load_data():
 
     df_possession_data = pd.read_csv('C:/Users/SéamusPeareBartholdy/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2024_2025/Horsens/Horsens_possession_data.csv')
     df_possession_data['label'] = df_possession_data['label'] + ' ' + df_possession_data['date']
+    df_possession_data['pass_receiver'] = None
 
+    for i in range(len(df_possession_data) - 1):
+        current_event = df_possession_data.loc[i]
+        if current_event['typeId'] == 1 and current_event['outcome'] == 1:
+            next_event_id = current_event['eventId'] + 1
+            next_event = df_possession_data[(df_possession_data['eventId'] == next_event_id) & (df_possession_data['contestantId'] == current_event['contestantId'])]
+
+            if not next_event.empty:
+                pass_receiver = next_event.iloc[0]['playerName']
+                df_possession_data.at[i, 'pass_receiver'] = pass_receiver
+                
     df_xg_agg = pd.read_csv('C:/Users/SéamusPeareBartholdy/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2024_2025/Horsens/Horsens_xg_data.csv')
     df_xg_agg['label'] = df_xg_agg['label'] + ' ' + df_xg_agg['date']
 
@@ -826,14 +837,14 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
         st.dataframe(classic_striker_df, hide_index=True)
 
 
-    Bolde_modtaget = df[df['pass.recipient.name'] == player_name]
-    Bolde_modtaget_til = Bolde_modtaget[['pass.endLocation.x','pass.endLocation.y']]
+    Bolde_modtaget = df[df['pass_receiver'] == player_name]
+    Bolde_modtaget_til = Bolde_modtaget[['140','141']]
 
-    Pasninger_spillet = df[(df['type.primary'] == 'pass') & (df['pass.accurate'] == True)]
-    Pasninger_spillet_til = Pasninger_spillet[['pass.endLocation.x','pass.endLocation.y']]
+    Pasninger_spillet = df[(df['typeId'] == 1) & (df['outcome'] == 1)]
+    Pasninger_spillet_til = Pasninger_spillet[['140','141']]
 
-    Defensive_aktioner = df[(df['type.primary'] == 'interception') | (df['type.primary'] == 'duel') | (df['type.primary'] == 'clearance') | (df['type.primary'] == 'infraction')]
-    Defensive_aktioner = Defensive_aktioner[['location.x','location.y']]
+    Defensive_aktioner = df[(df['typeId'] == 8) | (df['typeId'] == 45) | (df['typeId'] == 12) | (df['typeId'] == 4)]
+    Defensive_aktioner = Defensive_aktioner[['x','y']]
     
     col1,col2,col3 = st.columns(3)
 
