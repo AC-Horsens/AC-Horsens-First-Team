@@ -769,7 +769,7 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
     horsens = df_possession_data[df_possession_data['team_name'].str.contains('Horsens')]
     horsens = horsens.sort_values(by='playerName')
     player_name = st.selectbox('Choose player', horsens['playerName'].unique())
-    st.title(f'{player_name} dashboard')    
+    st.title(f'{player_name}')    
     df = df_possession_data[(df_possession_data['playerName'] == player_name)|(df_possession_data['pass_receiver'] == player_name)]
     df['date'] = pd.to_datetime(df['date'])
     df = df.sort_values(by='date',ascending=False)
