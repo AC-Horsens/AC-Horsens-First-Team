@@ -109,7 +109,6 @@ def plot_arrows(df):
 
     st.pyplot(fig)
     
-
 def Process_data_spillere(df_possession_xa,df_pv_all,df_matchstats,df_xg_all,squads):
 
     def calculate_score(df, column, score_column):
@@ -829,10 +828,10 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
 
 
     Bolde_modtaget = df[df['pass_receiver'] == player_name]
-    Bolde_modtaget_til = Bolde_modtaget[['140','141']]
+    Bolde_modtaget_til = Bolde_modtaget[['140.0','141.0']]
 
     Pasninger_spillet = df[(df['typeId'] == 1) & (df['outcome'] == 1)]
-    Pasninger_spillet_til = Pasninger_spillet[['140','141']]
+    Pasninger_spillet_til = Pasninger_spillet[['140.0','141.0']]
 
     Defensive_aktioner = df[(df['typeId'] == 8) | (df['typeId'] == 45) | (df['typeId'] == 12) | (df['typeId'] == 4)]
     Defensive_aktioner = Defensive_aktioner[['x','y']]
@@ -849,7 +848,7 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
         plot_heatmap_end_location(Pasninger_spillet_til, f'Passes {player_name}')
 
     if '140' in df.columns:
-        Alle_off_aktioner = df[(df['140'] > 0) & (df['playerName'] == player_name)]
+        Alle_off_aktioner = df[(df['140.0'] > 0) & (df['playerName'] == player_name)]
     else:
         st.error("'140' column does not exist in the DataFrame.")
     plot_arrows(Alle_off_aktioner)
