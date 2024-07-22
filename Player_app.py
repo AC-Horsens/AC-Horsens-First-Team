@@ -14,18 +14,18 @@ def load_data():
     df_xg = pd.read_csv(r'DNK_1_Division_2024_2025/xg_all DNK_1_Division_2024_2025.csv')
     df_xg['label'] = df_xg['label'] + ' ' + df_xg['date']
 
-    df_xa = pd.read_csv('C:/Users/SéamusPeareBartholdy/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2024_2025/xA_all DNK_1_Division_2024_2025.csv')
+    df_xa = pd.read_csv(r'DNK_1_Division_2024_2025/xA_all DNK_1_Division_2024_2025.csv')
     df_xa['label'] = df_xa['label'] + ' ' + df_xa['date']
 
-    df_pv = pd.read_csv('C:/Users/SéamusPeareBartholdy/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2024_2025/pv_all DNK_1_Division_2024_2025.csv')
+    df_pv = pd.read_csv(r'DNK_1_Division_2024_2025/pv_all DNK_1_Division_2024_2025.csv')
 
-    df_possession_stats = pd.read_csv('C:/Users/SéamusPeareBartholdy/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2024_2025/possession_stats_all DNK_1_Division_2024_2025.csv')
+    df_possession_stats = pd.read_csv(r'DNK_1_Division_2024_2025/possession_stats_all DNK_1_Division_2024_2025.csv')
     df_possession_stats['label'] = df_possession_stats['label'] + ' ' + df_possession_stats['date']
 
-    df_xa_agg = pd.read_csv('C:/Users/SéamusPeareBartholdy/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2024_2025/Horsens/Horsens_possession_data.csv')
+    df_xa_agg = pd.read_csv(r'DNK_1_Division_2024_2025/Horsens/Horsens_possession_data.csv')
     df_xa_agg['label'] = df_xa_agg['label'] + ' ' + df_xa_agg['date']
 
-    df_possession_data = pd.read_csv('C:/Users/SéamusPeareBartholdy/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2024_2025/Horsens/Horsens_possession_data.csv')
+    df_possession_data = pd.read_csv(r'DNK_1_Division_2024_2025/Horsens/Horsens_possession_data.csv')
     df_possession_data['label'] = df_possession_data['label'] + ' ' + df_possession_data['date']
     df_possession_data['pass_receiver'] = None
 
@@ -39,25 +39,25 @@ def load_data():
                 pass_receiver = next_event.iloc[0]['playerName']
                 df_possession_data.at[i, 'pass_receiver'] = pass_receiver
                 
-    df_xg_agg = pd.read_csv('C:/Users/SéamusPeareBartholdy/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2024_2025/Horsens/Horsens_xg_data.csv')
+    df_xg_agg = pd.read_csv(r'DNK_1_Division_2024_2025/Horsens/Horsens_xg_data.csv')
     df_xg_agg['label'] = df_xg_agg['label'] + ' ' + df_xg_agg['date']
 
-    df_pv_agg = pd.read_csv('C:/Users/SéamusPeareBartholdy/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2024_2025/Horsens/Horsens_pv_data.csv')
+    df_pv_agg = pd.read_csv(r'DNK_1_Division_2024_2025/Horsens/Horsens_pv_data.csv')
     df_pv_agg['label'] = df_pv_agg['label'] + ' ' + df_pv_agg['date']
 
-    df_possession_xa = pd.read_csv('C:/Users/SéamusPeareBartholdy/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2024_2025/xA_all DNK_1_Division_2024_2025.csv')
+    df_possession_xa = pd.read_csv(r'DNK_1_Division_2024_2025/xA_all DNK_1_Division_2024_2025.csv')
     df_possession_xa['label'] = df_possession_xa['label'] + ' ' + df_possession_xa['date']
 
-    df_xg_all = pd.read_csv('C:/Users/SéamusPeareBartholdy/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2024_2025/xg_all DNK_1_Division_2024_2025.csv')
+    df_xg_all = pd.read_csv(r'DNK_1_Division_2024_2025/xg_all DNK_1_Division_2024_2025.csv')
     df_xg_all['label'] = df_xg_all['label'] + ' ' + df_xg_all['date']
 
-    df_pv_all = pd.read_csv('C:/Users/SéamusPeareBartholdy/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2024_2025/xA_all DNK_1_Division_2024_2025.csv')
+    df_pv_all = pd.read_csv(r'DNK_1_Division_2024_2025/xA_all DNK_1_Division_2024_2025.csv')
     df_pv_all['label'] = df_pv_all['label'] + ' ' + df_pv_all['date']
 
-    df_matchstats = pd.read_csv('C:/Users/SéamusPeareBartholdy/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2024_2025/matchstats_all DNK_1_Division_2024_2025.csv')
+    df_matchstats = pd.read_csv(r'DNK_1_Division_2024_2025/matchstats_all DNK_1_Division_2024_2025.csv')
     df_matchstats['label'] = df_matchstats['label'] + ' ' + df_matchstats['date']
 
-    squads = pd.read_csv('C:/Users/SéamusPeareBartholdy/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2024_2025/squads DNK_1_Division_2024_2025.csv')
+    squads = pd.read_csv(r'DNK_1_Division_2024_2025/squads DNK_1_Division_2024_2025.csv')
         
     return df_xg, df_xa, df_pv, df_possession_stats, df_xa_agg, df_possession_data, df_xg_agg, df_pv_agg, df_xg_all, df_possession_xa, df_pv_all, df_matchstats, squads
 
