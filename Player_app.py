@@ -611,8 +611,6 @@ def Process_data_spillere(df_possession_xa,df_pv_all,df_matchstats,df_xg_all,squ
         df_striker = calculate_score(df_striker, 'attAssistOpenplay_per90','attAssistOpenplay_per90 score')
         df_striker = calculate_score(df_striker, 'penAreaEntries_per90','penAreaEntries_per90 score')
         df_striker = calculate_score(df_striker, 'finalThird passes %','finalThird passes % score')
-        df_striker = calculate_score(df_striker, 'shotFastbreak_per90','shotFastbreak_per90 score')
-        df_striker = calculate_score(df_striker, 'bigChanceCreated_per90','bigChanceCreated_per90 score')
         df_striker = calculate_score(df_striker, 'dribble %','dribble % score')
         df_striker = calculate_score(df_striker, 'touches_in_box_per90','touches_in_box_per90 score')
         df_striker = calculate_score(df_striker, 'xA_per90','xA_per90 score')
@@ -621,7 +619,7 @@ def Process_data_spillere(df_possession_xa,df_pv_all,df_matchstats,df_xg_all,squ
 
 
         df_striker['Linkup_play'] = df_striker[['Forward zone pass % score','Passing % score','Possession value score','penAreaEntries_per90 score','finalThirdEntries_per90 score']].mean(axis=1)
-        df_striker['Chance_creation'] = df_striker[['penAreaEntries_per90 score','Possession value total score','bigChanceCreated_per90 score','touches_in_box_per90 score','finalThirdEntries_per90 score']].mean(axis=1)
+        df_striker['Chance_creation'] = df_striker[['penAreaEntries_per90 score','Possession value total score','touches_in_box_per90 score','finalThirdEntries_per90 score']].mean(axis=1)
         df_striker['Goalscoring_'] = df_striker[['attemptsIbox_per90 score','xg_per90 score','xg_per90 score','xg_per90 score','xg_per90 score']].mean(axis=1)
         df_striker['Possession_value'] = df_striker[['Possession value total score','Possession value score','Possession value score','Possession value score']].mean(axis=1)
 
