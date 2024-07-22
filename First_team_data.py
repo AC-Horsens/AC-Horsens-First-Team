@@ -1264,6 +1264,7 @@ Data_types = {
     'League stats': League_stats
 }
 
+
 st.cache_data(experimental_allow_widgets=True)
 st.cache_resource(experimental_allow_widgets=True)
 selected_data = st.sidebar.radio('Choose data type',list(Data_types.keys()))
