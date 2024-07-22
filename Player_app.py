@@ -781,7 +781,7 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
     kampe = df['label'].unique()
     kampvalg = st.multiselect('Choose matches', kampe, kampe[0:3])
     df = df[df['label'].isin(kampvalg)]
-    df_matchstats_player = df_matchstats[(df_matchstats['playerName'] == player_name) & (df_matchstats['label'].isin(kampvalg))]
+    df_matchstats_player = df_matchstats[(df_matchstats['player_matchName'] == player_name) & (df_matchstats['label'].isin(kampvalg))]
     df_matchstats_player['date'] = pd.to_datetime(df_matchstats_player['date'])
     df_matchstats_player = df_matchstats_player.sort_values(by='date')
     balanced_central_defender_df = balanced_central_defender_df[(balanced_central_defender_df['label'].isin(kampvalg)) & (balanced_central_defender_df['player.name'] == player_name)]
