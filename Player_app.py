@@ -847,7 +847,7 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
     with col3:
         plot_heatmap_end_location(Pasninger_spillet_til, f'Passes {player_name}')
 
-    if '140' in df.columns:
+    if '140.0' in df.columns:
         Alle_off_aktioner = df[(df['140.0'] > 0) & (df['playerName'] == player_name)]
     else:
         st.error("'140' column does not exist in the DataFrame.")
