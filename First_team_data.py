@@ -13,7 +13,7 @@ st.set_page_config(layout='wide')
 
 @st.cache_data
 def load_packing_data():
-    df_packing = pd.read_csv(r'DNK_1_Division_2023_2024/packing_all DNK_1_Division_2023_2024.csv')
+    df_packing = pd.read_csv(r'DNK_1_Division_2024_2025/packing_all DNK_1_Division_2024_2025.csv')
     df_packing['label'] = (df_packing['label'] + ' ' + df_packing['date']).astype(str)
     df_packing = df_packing.rename(columns={'teamName': 'team_name'})
     df_packing['pass_receiver'] = df_packing['pass_receiver'].astype(str)
@@ -24,18 +24,18 @@ def load_packing_data():
     return df_packing    
 @st.cache_data
 def load_spacecontrol_data():
-    df_spacecontrol = pd.read_csv(r'DNK_1_Division_2023_2024/Space_control_all DNK_1_Division_2023_2024.csv')
+    df_spacecontrol = pd.read_csv(r'DNK_1_Division_2024_2025/Space_control_all DNK_1_Division_2024_2025.csv')
     df_spacecontrol['label'] = (df_spacecontrol['label'] + ' ' + df_spacecontrol['date']).astype(str)
     df_spacecontrol = df_spacecontrol.rename(columns={'teamName': 'team_name'})
     return df_spacecontrol   
 @st.cache_data
 def load_match_stats(columns=None):
-    match_stats = pd.read_csv(r'DNK_1_Division_2023_2024/matchstats_all DNK_1_Division_2023_2024.csv')
+    match_stats = pd.read_csv(r'DNK_1_Division_2024_2025/matchstats_all DNK_1_Division_2024_2025.csv')
     match_stats['label'] = (match_stats['label'] + ' ' + match_stats['date'])
     return match_stats
 @st.cache_data
 def load_possession_data():
-    df_possession = pd.read_csv(r'DNK_1_Division_2023_2024/Horsens/Horsens_possession_data.csv')
+    df_possession = pd.read_csv(r'DNK_1_Division_2024_2025/Horsens/Horsens_possession_data.csv')
     df_possession['label'] = (df_possession['label'] + ' ' + df_possession['date']).astype(str)
     #df_possession['team_name'].str.replace(' ', '_')
     return df_possession
@@ -46,49 +46,49 @@ def load_modstander():
     return Modstander
 @st.cache_data
 def load_possession_stats():
-    df_possession_stats = pd.read_csv(r'DNK_1_Division_2023_2024/possession_stats_all DNK_1_Division_2023_2024.csv')
+    df_possession_stats = pd.read_csv(r'DNK_1_Division_2024_2025/possession_stats_all DNK_1_Division_2024_2025.csv')
     df_possession_stats['label'] = (df_possession_stats['label'] + ' ' + df_possession_stats['date'])
     return df_possession_stats
 @st.cache_data
 def load_xg():
-    df_xg = pd.read_csv(r'DNK_1_Division_2023_2024/Horsens/Horsens_xg_data.csv')
+    df_xg = pd.read_csv(r'DNK_1_Division_2024_2025/Horsens/Horsens_xg_data.csv')
     df_xg['label'] = (df_xg['label'] + ' ' + df_xg['date'])
     df_xg['team_name'].str.replace(' ', '_')
     df_xg = df_xg[['playerName','label','team_name','x','y','321','periodId','timeMin','timeSec','9','24','25','26']]
     return df_xg
 @st.cache_data
 def load_all_xg():
-    xg = pd.read_csv(r'DNK_1_Division_2023_2024/xg_all DNK_1_Division_2023_2024.csv')
+    xg = pd.read_csv(r'DNK_1_Division_2024_2025/xg_all DNK_1_Division_2024_2025.csv')
     xg['label'] = (xg['label'] + ' ' + xg['date'])
     xg['team_name'].str.replace(' ', '_')
 
     return xg
 @st.cache_data
 def load_pv():
-    df_pv = pd.read_csv(r'DNK_1_Division_2023_2024/Horsens/Horsens_pv_data.csv')
+    df_pv = pd.read_csv(r'DNK_1_Division_2024_2025/Horsens/Horsens_pv_data.csv')
     df_pv['label'] = (df_pv['label'] + ' ' + df_pv['date'])
     df_pv['id'] = df_pv['id'].astype(str)
     df_pv['team_name'].str.replace(' ', '_')
     return df_pv
 @st.cache_data
 def load_xA():
-    df_xA = pd.read_csv(f'DNK_1_Division_2023_2024/xA_all DNK_1_Division_2023_2024.csv')
+    df_xA = pd.read_csv(f'DNK_1_Division_2024_2025/xA_all DNK_1_Division_2024_2025.csv')
     df_xA['label'] = (df_xA['label'] + ' ' + df_xA['date']).astype(str)
     return df_xA
 @st.cache_data
 def counterpressing():
-    df_counterpressing = pd.read_csv(r'DNK_1_Division_2023_2024/Horsens/Horsens_counterpressing.csv')
+    df_counterpressing = pd.read_csv(r'DNK_1_Division_2024_2025/Horsens/Horsens_counterpressing.csv')
     df_counterpressing['label'] = (df_counterpressing['label'] + ' ' + df_counterpressing['date']).astype(str)
     return df_counterpressing
 @st.cache_data
 def load_ppda():
-    df_ppda = pd.read_csv(r'DNK_1_Division_2023_2024/ppda_all DNK_1_Division_2023_2024.csv')
+    df_ppda = pd.read_csv(r'DNK_1_Division_2024_2025/ppda_all DNK_1_Division_2024_2025.csv')
     df_ppda['label'] = (df_ppda['label'] + ' ' + df_ppda['date']).astype(str)
     return df_ppda
 
 @st.cache_data
 def load_crosses():
-    df_crosses = pd.read_csv(r'DNK_1_Division_2023_2024/Horsens/Horsens_crosses.csv')
+    df_crosses = pd.read_csv(r'DNK_1_Division_2024_2025/Horsens/Horsens_crosses.csv')
     df_crosses['label'] = (df_crosses['label'] + ' ' + df_crosses['date']).astype(str)
     return df_crosses
 
