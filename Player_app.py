@@ -784,7 +784,7 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
     horsens = horsens.sort_values(by='player.name')
     player_name = st.selectbox('Choose player', horsens['player.name'].unique())
     st.title(f'{player_name} dashboard')    
-    df = df_possession_data[(df_possession_data['player.name'] == player_name)|(df_possession_data['pass.recipient.name'] == player_name)]
+    df = df_possession_data[(df_possession_data['player.name'] == player_name)|(df_possession_data['pass_receiver'] == player_name)]
     df['date'] = pd.to_datetime(df['date'])
     df = df.sort_values(by='date',ascending=False)
     kampe = df['label'].unique()
