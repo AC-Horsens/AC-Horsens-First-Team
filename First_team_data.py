@@ -1090,7 +1090,7 @@ def League_stats():
     default_end_date = date_options[-1]
 
     default_end_date_dt = pd.to_datetime(default_end_date, format=date_format)
-    default_start_date_dt = default_end_date_dt - pd.Timedelta(days=3)  # Subtract 14 days
+    default_start_date_dt = default_end_date_dt - pd.Timedelta(days=2)  # Subtract 14 days
     default_start_date = default_start_date_dt.strftime(date_format)  # Convert to string
 
     # Set the default start and end date values for the select_slider
