@@ -829,7 +829,7 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
     Pasninger_spillet = df[(df['typeId'] == 1) & (df['outcome'] == 1)]
     Pasninger_spillet_til = Pasninger_spillet[['140.0','141.0']]
 
-    Defensive_aktioner = df[(df['typeId'] == 8) | (df['typeId'] == 7) | (df['typeId'] == 45) | (df['typeId'] == 12) | (df['typeId'] == 4) | (df['typeId'] == 44)| (df['typeId'] == 49)| (df['typeId'] == 74)| (df['typeId'] == 83)]
+    Defensive_aktioner = df[(df['typeId'] == 8) | (df['typeId'] == 7) | (df['typeId'] == 45) | (df['typeId'] == 12) | (df['typeId'] == 4) | (df['typeId'] == 44)| (df['typeId'] == 49)| (df['typeId'] == 74)| (df['typeId'] == 83)| (df['typeId'] == 67)]
     Defensive_aktioner = Defensive_aktioner[['x','y']]
     
     col1,col2,col3 = st.columns(3)
