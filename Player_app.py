@@ -75,14 +75,14 @@ def plot_heatmap_end_location(data, title):
     pitch = Pitch(pitch_type='opta', line_zorder=2, pitch_color='grass', line_color='white')
     fig, ax = pitch.draw(figsize=(6.6, 4.125))
     fig.set_facecolor('#22312b')
-    bin_statistic = pitch.bin_statistic(data['140'], data['141'], statistic='count', bins=(50, 25))
+    bin_statistic = pitch.bin_statistic(data['140.0'], data['141.0'], statistic='count', bins=(50, 25))
     bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
     pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
     st.write(title)  # Use st.title() instead of plt.title()
     st.pyplot(fig)
     
 def plot_arrows(df):
-    df_passes = df[(df['140'].notna())]
+    df_passes = df[(df['140.0'].notna())]
     df_duels = df[df['type.primary'] != None]
 
     pitch = Pitch(pitch_type='opta', pitch_color='grass', line_color='white')
@@ -94,8 +94,8 @@ def plot_arrows(df):
         start_y = row['y']
 
         # End point
-        end_x = row['140']
-        end_y = row['141']
+        end_x = row['140.0']
+        end_y = row['141.0']
 
         # Determine arrow color
         arrow_color = 'red' if not row['outcome'] ==1 else '#0dff00'
