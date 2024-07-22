@@ -11,7 +11,7 @@ st.set_page_config(layout="wide")
 
 @st.cache_data()
 def load_data():
-    df_xg = pd.read_csv('C:/Users/SéamusPeareBartholdy/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2024_2025/xg_all DNK_1_Division_2024_2025.csv')
+    df_xg = pd.read_csv(r'DNK_1_Division_2024_2025/xg_all DNK_1_Division_2024_2025.csv')
     df_xg['label'] = df_xg['label'] + ' ' + df_xg['date']
 
     df_xa = pd.read_csv('C:/Users/SéamusPeareBartholdy/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2024_2025/xA_all DNK_1_Division_2024_2025.csv')
