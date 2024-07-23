@@ -390,9 +390,6 @@ def Dashboard():
         bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50)) # Adjust bins as needed
         bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
         pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='#22312b')
-        cbar = fig.colorbar(pcm, ax=ax, shrink=0.6)
-        cbar.outline.set_edgecolor('#efefef')
-        cbar.ax.yaxis.set_tick_params(color='#efefef')
 
         pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
 
