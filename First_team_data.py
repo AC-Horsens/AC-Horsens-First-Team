@@ -368,7 +368,7 @@ def Dashboard():
         st.write('Passes from side to halfspace/centerspace')
         st.dataframe(player_counts,hide_index=True)
         st.dataframe(team_counts,hide_index=True)
-        option = st.selectbox(
+        option2 = st.selectbox(
             'Select the position to display',
             ('Start', 'End')
         )
@@ -378,7 +378,7 @@ def Dashboard():
         fig, ax = pitch.draw()
 
         # Extract coordinates based on user selection
-        if option == 'Start':
+        if option2 == 'Start':
             x_coords = mid_third_pass_ends['x']
             y_coords = mid_third_pass_ends['y']
         else:
