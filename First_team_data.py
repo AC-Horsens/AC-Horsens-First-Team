@@ -369,7 +369,7 @@ def Dashboard():
         st.dataframe(player_counts,hide_index=True)
         st.dataframe(team_counts,hide_index=True)
         option2 = st.selectbox(
-            'Select the position to display',
+            'Select the position',
             ('Start', 'End')
         )
 
