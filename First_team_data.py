@@ -368,14 +368,37 @@ def Dashboard():
         st.write('Passes from side to halfspace/centerspace')
         st.dataframe(player_counts,hide_index=True)
         st.dataframe(team_counts,hide_index=True)
-        pitch = Pitch(pitch_type='opta', pitch_color='grass', line_color='white')
+        option = st.selectbox(
+            'Select the position to display',
+            ('Start', 'End')
+        )
+
+        # Initialize the pitch
+        pitch = Pitch(pitch_type='opta',line_zorder=2, pitch_color='grass', line_color='white')
         fig, ax = pitch.draw()
 
-        # Plotting the arrows
-        for index, row in mid_third_pass_ends.iterrows():
-            pitch.arrows(row['x'], row['y'], row['140.0'], row['141.0'], ax=ax, width=2, headwidth=3, color='black')
+        # Extract coordinates based on user selection
+        if option == 'Start':
+            x_coords = mid_third_pass_ends['x']
+            y_coords = mid_third_pass_ends['y']
+        else:
+            x_coords = mid_third_pass_ends['140.0']
+            y_coords = mid_third_pass_ends['141.0']
 
+        # Plot the heatmap
+        fig.set_facecolor('#22312b')
+        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50)) # Adjust bins as needed
+        bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
+        pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='#22312b')
+        cbar = fig.colorbar(pcm, ax=ax, shrink=0.6)
+        cbar.outline.set_edgecolor('#efefef')
+        cbar.ax.yaxis.set_tick_params(color='#efefef')
+
+        pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
+
+        # Display the plot in Streamlit
         st.pyplot(fig)
+
         
         st.write('Passes from center to side/halfspace on last third')
         final_third_pass_ends = df_passes_horsens[
