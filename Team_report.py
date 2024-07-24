@@ -15,7 +15,7 @@ def load_data():
     df_xa['label'] = df_xa['label'] + ' ' + df_xa['date']
 
     df_pv = pd.read_csv('C:/Users/SéamusPeareBartholdy/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2024_2025/pv_all DNK_1_Division_2024_2025.csv')
-
+    df_pv['label'] = df_pv['label'] + ' ' + df_pv['date']
 
     df_possession_stats = pd.read_csv('C:/Users/SéamusPeareBartholdy/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2024_2025/possession_stats_all DNK_1_Division_2024_2025.csv')
     df_possession_stats['label'] = df_possession_stats['label'] + ' ' + df_possession_stats['date']
@@ -25,7 +25,6 @@ def load_data():
 
     df_possession_data = pd.read_csv('C:/Users/SéamusPeareBartholdy/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2024_2025/Horsens/Horsens_possession_data.csv')
     df_possession_data['label'] = df_possession_data['label'] + ' ' + df_possession_data['date']
-
 
     df_xg_agg = pd.read_csv('C:/Users/SéamusPeareBartholdy/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2024_2025/Horsens/Horsens_xg_data.csv')
     df_xg_agg['label'] = df_xg_agg['label'] + ' ' + df_xg_agg['date']
@@ -350,7 +349,7 @@ def create_holdsummary(df_possession_stats_summary, df_xg, df_xa,df_matchstats,d
     
     return df_holdsummary
 
-def Process_data_spillere(df_possession_xa,df_pv_all,df_matchstats,df_xg_all,squads):
+def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads):
 
     def calculate_score(df, column, score_column):
         df_unique = df.drop_duplicates(column).copy()
@@ -363,18 +362,11 @@ def Process_data_spillere(df_possession_xa,df_pv_all,df_matchstats,df_xg_all,squ
     df_possession_xa = df_possession_xa.rename(columns={'318.0': 'xA'})
     df_possession_xa_summed = df_possession_xa.groupby(['playerName','label'])['xA'].sum().reset_index()
 
-    try:
-        df_pv = df_pv_all[['playerName', 'team_name', 'label', 'possessionValue.pvValue', 'possessionValue.pvAdded']]
-        df_pv['possessionValue.pvValue'] = df_pv['possessionValue.pvValue'].astype(float)
-        df_pv['possessionValue.pvAdded'] = df_pv['possessionValue.pvAdded'].astype(float)
-        df_pv['possessionValue'] = df_pv['possessionValue.pvValue'] + df_pv['possessionValue.pvAdded']
-        df_kamp = df_pv.groupby(['playerName', 'label', 'team_name']).sum()
-    except KeyError:
-        df_pv = df_possession_xa[['playerName', 'team_name', 'label', 'xA']]
-        df_pv['possessionValue.pvValue'] = df_pv['xA'].astype(float)
-        df_pv['possessionValue.pvAdded'] = df_pv['xA'].astype(float)
-        df_pv['possessionValue'] = df_pv['xA'] + df_pv['xA']
-        df_kamp = df_pv.groupby(['playerName', 'label', 'team_name']).sum()
+    df_pv = df_pv[['playerName', 'team_name', 'label', 'possessionValue.pvValue', 'possessionValue.pvAdded']]
+    df_pv['possessionValue.pvValue'] = df_pv['possessionValue.pvValue'].astype(float)
+    df_pv['possessionValue.pvAdded'] = df_pv['possessionValue.pvAdded'].astype(float)
+    df_pv['possessionValue'] = df_pv['possessionValue.pvValue'] + df_pv['possessionValue.pvAdded']
+    df_kamp = df_pv.groupby(['playerName', 'label', 'team_name']).sum()
 
     df_kamp = df_kamp.reset_index()
     df_matchstats = df_matchstats[['player_matchName','player_playerId','contestantId','duelLost','aerialLost','player_position','player_positionSide','successfulOpenPlayPass','totalContest','duelWon','penAreaEntries','accurateBackZonePass','possWonDef3rd','wonContest','accurateFwdZonePass','openPlayPass','totalBackZonePass','minsPlayed','fwdPass','finalThirdEntries','ballRecovery','totalFwdZonePass','successfulFinalThirdPasses','totalFinalThirdPasses','attAssistOpenplay','aerialWon','totalAttAssist','possWonMid3rd','interception','totalCrossNocorner','interceptionWon','attOpenplay','touchesInOppBox','attemptsIbox','totalThroughBall','possWonAtt3rd','accurateCrossNocorner','bigChanceCreated','accurateThroughBall','totalLayoffs','accurateLayoffs','totalFastbreak','shotFastbreak','formationUsed','label','match_id','date']]
@@ -755,13 +747,12 @@ def Process_data_spillere(df_possession_xa,df_pv_all,df_matchstats,df_xg_all,squ
         df_10 = calculate_score(df_10, 'dribble %','dribble % score')
         df_10 = calculate_score(df_10, 'touches_in_box_per90','touches_in_box_per90 score')
         df_10 = calculate_score(df_10, 'xA_per90','xA_per90 score')
-        df_10 = calculate_score(df_10, 'attemptsIbox_per90','attemptsIbox_per90 score')
         df_10 = calculate_score(df_10, 'xg_per90','xg_per90 score')
 
 
         df_10['Passing'] = df_10[['Forward zone pass % score','Passing % score']].mean(axis=1)
         df_10['Chance creation'] = df_10[['attAssistOpenplay_per90 score','penAreaEntries_per90 score','Forward zone pass % score','finalThird passes % score','Possession value total score','Possession value score','dribble % score','touches_in_box_per90 score','xA_per90 score']].mean(axis=1)
-        df_10['Goalscoring'] = df_10[['attemptsIbox_per90 score','xg_per90 score','xg_per90 score']].mean(axis=1)
+        df_10['Goalscoring'] = df_10[['xg_per90 score','xg_per90 score']].mean(axis=1)
         df_10['Possession value'] = df_10[['Possession value total score','Possession value total score','Possession value added score','Possession value score','Possession value score','Possession value score']].mean(axis=1)
                 
         df_10 = calculate_score(df_10, 'Passing', 'Passing_')
@@ -997,7 +988,7 @@ def Process_data_spillere(df_possession_xa,df_pv_all,df_matchstats,df_xg_all,squ
 
 df_xg, df_xa, df_pv, df_possession_stats, df_xa_agg, df_possession_data, df_xg_agg, df_pv_agg, df_xg_all, df_possession_xa, df_pv_all, df_matchstats, squads, packing_df, space_control_df = load_data()
 
-position_dataframes = Process_data_spillere(df_possession_xa, df_pv_all, df_matchstats, df_xg_all, squads)
+position_dataframes = Process_data_spillere(df_possession_xa, df_pv, df_matchstats, df_xg_all, squads)
 
 #defending_central_defender_df = position_dataframes['defending_central_defender']
 #ball_playing_central_defender_df = position_dataframes['ball_playing_central_defender']
