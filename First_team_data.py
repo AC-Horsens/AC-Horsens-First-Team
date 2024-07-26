@@ -362,6 +362,7 @@ def Dashboard():
         pass_receiver_counts.columns = ['pass_receiver', 'Received']
         pass_receiver_counts.rename(columns={'pass_receiver': 'playerName'}, inplace=True)
         player_counts = player_counts.merge(pass_receiver_counts, on='playerName', how='outer')
+        player_counts = player_counts.fillna(0)
         player_counts['Total'] = player_counts['Passed'] + player_counts['Received']
         player_counts = player_counts.sort_values(by=['Total'], ascending=False)
         st.header('Chosen matches')
@@ -651,6 +652,7 @@ def Dashboard():
         st.write('Chosen matches')
         st.dataframe(touches_in_box_team_period, hide_index=True)
         st.dataframe(touches_in_box_player, hide_index=True)      
+
     def crosses():
         df_crosses = load_crosses()
         df_crosses = df_crosses[df_crosses['label'].isin(match_choice)]
