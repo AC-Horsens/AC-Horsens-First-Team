@@ -901,7 +901,7 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         df_striker = calculate_score(df_striker, 'Possession_value', 'Possession value')
 
         
-        df_striker['Total score'] = df_striker[['Linkup play','Chance creation','Goalscoring','Possession value']].mean(axis=1)
+        df_striker['Total score'] = df_striker[['Linkup play','Chance creation','Goalscoring','Goalscoring','Goalscoring','Possession value']].mean(axis=1)
         df_striker = df_striker[['playerName','team_name','label','minsPlayed','age_today','Linkup play','Chance creation','Goalscoring','Possession value','Total score']]
         df_striker = df_striker.dropna()
 
