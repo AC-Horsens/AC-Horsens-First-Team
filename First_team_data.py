@@ -1269,6 +1269,8 @@ def League_stats():
         'Long pass share %_rank', 'Crosses_rank', 'Cross accuracy %_rank'
     ]
 
+    rank_columns = [col for col in matchstats_df.columns if col.endswith('_rank')]
+
     matchstats_df['similarity_score'] = matchstats_df.apply(
         lambda row: sum(abs(row[rank_col] - team_df[rank_col].values[0]) for rank_col in selected_columns if not pd.isna(row[rank_col])),
         axis=1
