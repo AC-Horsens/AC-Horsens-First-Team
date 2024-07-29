@@ -562,7 +562,7 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         df_backs = calculate_score(df_backs, 'Chance creation','Chance_creation')
         df_backs = calculate_score(df_backs, 'Possession value added', 'Possession_value_added')
         
-        df_backs['Total score'] = (df_backs['Defending_'] + df_backs['Defending_'] + df_backs['Defending_'] + df_backs['Defending_'] + df_backs['Passing_']+ df_backs['Passing_'] + df_backs['Chance_creation'] + df_backs['Chance_creation'] + df_backs['Chance_creation'] + df_backs['Possession_value_added'] + df_backs['Possession_value_added'] + df_backs['Possession_value_added'] + df_backs['Possession_value_added']) / 13
+        df_backs['Total score'] = df_backs[['Defending_','Defending_','Defending_','Defending_','Passing_','Passing_','Chance_creation','Chance_creation','Chance_creation','Possession_value_added','Possession_value_added','Possession_value_added','Possession_value_added']].mean(axis=1)
         df_backs = df_backs[['playerName','team_name','player_position','player_positionSide','label','minsPlayed','age_today','Defending_','Passing_','Chance_creation','Possession_value_added','Total score']]
         df_backs = df_backs.dropna()
         df_backstotal = df_backs[['playerName','team_name','player_position','player_positionSide','minsPlayed','age_today','Defending_','Passing_','Chance_creation','Possession_value_added','Total score']]
