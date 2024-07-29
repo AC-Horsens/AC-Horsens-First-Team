@@ -7555,3 +7555,701 @@ x,y,playerName,teamName,pass_receiver,period,gameClock,label,date,bypassed_oppon
 37.0,22.4,Theo Hansen,Hobro,M. Nielsen,2,2993.0,Hobro vs Esbjerg,2024-07-26,0,0,9.89
 87.5,14.1,M. Nielsen,Hobro,V. Rasmussen,2,3003.0,Hobro vs Esbjerg,2024-07-26,1,1,6.11
 87.6,26.5,V. Rasmussen,Hobro,J. Sneftrup,2,3007.0,Hobro vs Esbjerg,2024-07-26,6,2,2.45
+50.0,49.5,L. Steffensen,Vendsyssel,K. Kusk,1,0.0,Fredericia vs Vendsyssel,2024-07-27,-4,0,7.72
+99.5,0.5,K. Kusk,Vendsyssel,L. Steffensen,1,31.0,Fredericia vs Vendsyssel,2024-07-27,2,0,27.2
+5.0,63.0,M. Lamhauge,Fredericia,F. Rieper,1,43.0,Fredericia vs Vendsyssel,2024-07-27,0,0,10.36
+4.7,40.4,F. Rieper,Fredericia,J. Kudsk,1,45.0,Fredericia vs Vendsyssel,2024-07-27,0,0,14.9
+3.6,52.8,M. Lamhauge,Fredericia,F. Rieper,1,69.0,Fredericia vs Vendsyssel,2024-07-27,0,0,11.73
+67.2,101.6,G. Mortensen,Vendsyssel,K. Kusk,1,81.0,Fredericia vs Vendsyssel,2024-07-27,3,0,5.81
+18.9,18.9,J. Lindekilde,Fredericia,G. Marcussen,1,95.0,Fredericia vs Vendsyssel,2024-07-27,2,0,1.22
+45.7,101.9,G. Mortensen,Vendsyssel,L. Steffensen,1,106.0,Fredericia vs Vendsyssel,2024-07-27,4,0,10.27
+34.2,-1.9,A. Dahl,Fredericia,F. Rieper,1,116.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,4.96
+12.2,16.5,F. Rieper,Fredericia,M. Lamhauge,1,118.0,Fredericia vs Vendsyssel,2024-07-27,0,0,8.59
+10.9,51.8,M. Lamhauge,Fredericia,J. Jessen,1,123.0,Fredericia vs Vendsyssel,2024-07-27,2,0,12.21
+27.9,92.0,J. Jessen,Fredericia,A. Mucolli,1,126.0,Fredericia vs Vendsyssel,2024-07-27,3,1,4.33
+36.4,90.8,A. Mucolli,Fredericia,J. Jessen,1,128.0,Fredericia vs Vendsyssel,2024-07-27,-2,-1,1.03
+60.7,9.1,A. Simon Okosun,Vendsyssel,L. Jensen,1,133.0,Fredericia vs Vendsyssel,2024-07-27,3,1,0.73
+79.7,32.5,K. Kusk,Vendsyssel,L. Jensen,1,144.0,Fredericia vs Vendsyssel,2024-07-27,-1,-1,2.6
+86.0,13.4,L. Jensen,Vendsyssel,M. Lassen,1,146.0,Fredericia vs Vendsyssel,2024-07-27,0,0,6.33
+50.2,94.5,G. Marcussen,Fredericia,A. Mucolli,1,183.0,Fredericia vs Vendsyssel,2024-07-27,1,0,2.76
+50.3,101.7,J. Jessen,Fredericia,G. Marcussen,1,191.0,Fredericia vs Vendsyssel,2024-07-27,1,0,2.75
+30.1,94.2,G. Marcussen,Fredericia,M. Lamhauge,1,193.0,Fredericia vs Vendsyssel,2024-07-27,0,0,1.02
+17.8,64.0,M. Lamhauge,Fredericia,F. Rieper,1,197.0,Fredericia vs Vendsyssel,2024-07-27,0,0,16.52
+32.5,35.4,F. Rieper,Fredericia,O. Buch,1,203.0,Fredericia vs Vendsyssel,2024-07-27,8,2,9.21
+68.3,10.0,J. Lindekilde,Fredericia,F. Rieper,1,227.0,Fredericia vs Vendsyssel,2024-07-27,0,0,0.87
+59.8,11.6,F. Rieper,Fredericia,A. Bondergaard,1,228.0,Fredericia vs Vendsyssel,2024-07-27,6,2,4.05
+3.6,51.6,L. Schulz,Vendsyssel,O. Jebali,1,237.0,Fredericia vs Vendsyssel,2024-07-27,0,0,15.34
+15.7,69.3,O. Jebali,Vendsyssel,G. Mortensen,1,239.0,Fredericia vs Vendsyssel,2024-07-27,2,0,15.02
+26.4,92.9,G. Mortensen,Vendsyssel,O. Jebali,1,241.0,Fredericia vs Vendsyssel,2024-07-27,-2,0,5.06
+10.8,89.1,O. Jebali,Vendsyssel,M. Kaastrup,1,243.0,Fredericia vs Vendsyssel,2024-07-27,5,0,5.74
+45.3,22.5,A. Dahl,Fredericia,J. Kudsk,1,253.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,4.82
+36.2,42.1,J. Kudsk,Fredericia,G. Marcussen,1,254.0,Fredericia vs Vendsyssel,2024-07-27,4,0,2.83
+44.0,74.1,O. Ohlenschlaeger,Vendsyssel,M. Greve,1,262.0,Fredericia vs Vendsyssel,2024-07-27,-3,0,0.82
+33.6,51.0,M. Greve,Vendsyssel,K. Kusk,1,263.0,Fredericia vs Vendsyssel,2024-07-27,3,0,7.84
+33.9,72.0,G. Marcussen,Fredericia,G. Marcussen,1,271.0,Fredericia vs Vendsyssel,2024-07-27,0,0,3.44
+37.3,69.6,J. Kudsk,Fredericia,W. Madsen,1,272.0,Fredericia vs Vendsyssel,2024-07-27,3,1,3.23
+37.3,57.5,W. Madsen,Fredericia,G. Marcussen,1,274.0,Fredericia vs Vendsyssel,2024-07-27,0,0,1.04
+41.7,56.7,G. Marcussen,Fredericia,O. Buch,1,277.0,Fredericia vs Vendsyssel,2024-07-27,2,1,4.43
+57.2,64.5,G. Mortensen,Vendsyssel,M. Kaastrup,1,283.0,Fredericia vs Vendsyssel,2024-07-27,4,1,2.37
+32.5,92.4,G. Marcussen,Fredericia,A. Mucolli,1,294.0,Fredericia vs Vendsyssel,2024-07-27,0,0,1.38
+54.3,49.0,O. Jebali,Vendsyssel,O. Jebali,1,300.0,Fredericia vs Vendsyssel,2024-07-27,0,0,3.81
+67.3,47.2,M. Kaastrup,Vendsyssel,G. Mortensen,1,303.0,Fredericia vs Vendsyssel,2024-07-27,-3,0,6.49
+70.8,77.9,G. Mortensen,Vendsyssel,M. Kaastrup,1,306.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,7.97
+65.1,70.0,M. Kaastrup,Vendsyssel,O. Jebali,1,310.0,Fredericia vs Vendsyssel,2024-07-27,0,0,6.14
+49.4,60.0,O. Jebali,Vendsyssel,A. Simon Okosun,1,312.0,Fredericia vs Vendsyssel,2024-07-27,1,0,7.64
+55.9,44.8,A. Simon Okosun,Vendsyssel,O. Jebali,1,313.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,4.85
+48.4,51.3,O. Jebali,Vendsyssel,O. Ohlenschlaeger,1,314.0,Fredericia vs Vendsyssel,2024-07-27,0,0,5.34
+46.9,71.4,O. Ohlenschlaeger,Vendsyssel,O. Jebali,1,315.0,Fredericia vs Vendsyssel,2024-07-27,0,0,5.7
+27.9,75.0,O. Jebali,Vendsyssel,L. Schulz,1,319.0,Fredericia vs Vendsyssel,2024-07-27,0,0,2.78
+11.8,49.7,L. Schulz,Vendsyssel,A. Simon Okosun,1,325.0,Fredericia vs Vendsyssel,2024-07-27,2,0,16.23
+35.8,36.0,A. Simon Okosun,Vendsyssel,M. Kaastrup,1,327.0,Fredericia vs Vendsyssel,2024-07-27,4,0,3.45
+50.6,45.1,M. Kaastrup,Vendsyssel,M. Lassen,1,330.0,Fredericia vs Vendsyssel,2024-07-27,-5,0,4.28
+73.4,5.9,M. Lassen,Vendsyssel,L. Jensen,1,339.0,Fredericia vs Vendsyssel,2024-07-27,1,0,6.22
+78.2,6.2,L. Jensen,Vendsyssel,M. Lassen,1,340.0,Fredericia vs Vendsyssel,2024-07-27,0,0,4.12
+99.5,99.3,K. Kusk,Vendsyssel,A. Simon Okosun,1,386.0,Fredericia vs Vendsyssel,2024-07-27,1,0,30.74
+10.9,49.1,M. Lamhauge,Fredericia,J. Lindekilde,1,394.0,Fredericia vs Vendsyssel,2024-07-27,2,0,3.61
+26.9,46.1,J. Lindekilde,Fredericia,A. Dahl,1,396.0,Fredericia vs Vendsyssel,2024-07-27,-2,-2,4.77
+68.2,23.9,A. Dahl,Fredericia,O. Buch,1,402.0,Fredericia vs Vendsyssel,2024-07-27,0,0,6.79
+75.8,22.1,O. Buch,Fredericia,J. Lindekilde,1,405.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,1.88
+71.2,15.6,J. Lindekilde,Fredericia,F. Rieper,1,408.0,Fredericia vs Vendsyssel,2024-07-27,-2,0,4.66
+45.1,26.2,F. Rieper,Fredericia,G. Marcussen,1,410.0,Fredericia vs Vendsyssel,2024-07-27,4,0,12.05
+43.7,49.0,W. Madsen,Fredericia,M. Lamhauge,1,417.0,Fredericia vs Vendsyssel,2024-07-27,0,0,1.22
+13.2,69.6,M. Lamhauge,Fredericia,F. Rieper,1,422.0,Fredericia vs Vendsyssel,2024-07-27,0,0,23.42
+21.2,32.5,F. Rieper,Fredericia,M. Lamhauge,1,425.0,Fredericia vs Vendsyssel,2024-07-27,0,0,9.2
+32.9,13.8,M. Lassen,Vendsyssel,L. Schulz,1,437.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,3.16
+14.9,42.2,L. Schulz,Vendsyssel,O. Ohlenschlaeger,1,440.0,Fredericia vs Vendsyssel,2024-07-27,1,0,12.68
+42.9,74.7,O. Ohlenschlaeger,Vendsyssel,G. Mortensen,1,449.0,Fredericia vs Vendsyssel,2024-07-27,0,0,7.8
+45.8,-2.0,A. Dahl,Fredericia,F. Rieper,1,465.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,6.31
+23.1,17.6,F. Rieper,Fredericia,M. Lamhauge,1,468.0,Fredericia vs Vendsyssel,2024-07-27,0,0,3.62
+19.5,49.3,M. Lamhauge,Fredericia,J. Kudsk,1,473.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,3.54
+13.0,74.5,J. Kudsk,Fredericia,J. Jessen,1,479.0,Fredericia vs Vendsyssel,2024-07-27,2,0,4.8
+27.8,91.5,J. Jessen,Fredericia,J. Kudsk,1,480.0,Fredericia vs Vendsyssel,2024-07-27,-2,0,9.25
+10.3,73.8,J. Kudsk,Fredericia,A. Dahl,1,485.0,Fredericia vs Vendsyssel,2024-07-27,2,0,5.27
+20.3,12.8,A. Dahl,Fredericia,F. Rieper,1,488.0,Fredericia vs Vendsyssel,2024-07-27,-2,0,5.56
+15.0,-0.8,A. Dahl,Fredericia,W. Madsen,1,499.0,Fredericia vs Vendsyssel,2024-07-27,0,0,10.96
+23.1,64.6,A. Mucolli,Fredericia,A. Bondergaard,1,546.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,1.87
+73.0,-2.0,M. Lassen,Vendsyssel,L. Jensen,1,567.0,Fredericia vs Vendsyssel,2024-07-27,1,0,4.36
+59.6,-2.0,M. Lassen,Vendsyssel,L. Jensen,1,595.0,Fredericia vs Vendsyssel,2024-07-27,3,0,3.18
+77.7,8.6,L. Jensen,Vendsyssel,M. Lassen,1,597.0,Fredericia vs Vendsyssel,2024-07-27,-3,0,2.36
+14.9,42.7,O. Buch,Fredericia,A. Dahl,1,604.0,Fredericia vs Vendsyssel,2024-07-27,-2,0,2.17
+10.5,13.5,A. Dahl,Fredericia,F. Rieper,1,607.0,Fredericia vs Vendsyssel,2024-07-27,-2,-1,3.3
+40.1,55.4,M. Greve,Vendsyssel,O. Ohlenschlaeger,1,615.0,Fredericia vs Vendsyssel,2024-07-27,1,0,14.67
+49.8,45.7,O. Ohlenschlaeger,Vendsyssel,M. Greve,1,616.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,4.54
+32.1,35.8,M. Greve,Vendsyssel,O. Jebali,1,620.0,Fredericia vs Vendsyssel,2024-07-27,0,0,4.14
+37.7,64.9,O. Jebali,Vendsyssel,A. Simon Okosun,1,624.0,Fredericia vs Vendsyssel,2024-07-27,0,0,13.52
+55.2,80.8,A. Simon Okosun,Vendsyssel,O. Jebali,1,628.0,Fredericia vs Vendsyssel,2024-07-27,0,0,2.3
+39.0,67.0,O. Jebali,Vendsyssel,M. Greve,1,633.0,Fredericia vs Vendsyssel,2024-07-27,0,0,13.64
+42.8,30.7,M. Greve,Vendsyssel,O. Jebali,1,638.0,Fredericia vs Vendsyssel,2024-07-27,0,0,6.5
+39.0,67.3,O. Jebali,Vendsyssel,M. Kaastrup,1,641.0,Fredericia vs Vendsyssel,2024-07-27,5,0,13.15
+67.1,67.8,M. Kaastrup,Vendsyssel,K. Kusk,1,645.0,Fredericia vs Vendsyssel,2024-07-27,0,0,7.5
+70.6,59.6,K. Kusk,Vendsyssel,G. Mortensen,1,648.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,6.14
+74.5,7.0,O. Ohlenschlaeger,Vendsyssel,A. Simon Okosun,1,677.0,Fredericia vs Vendsyssel,2024-07-27,3,1,3.36
+30.0,102.0,J. Jessen,Fredericia,A. Mucolli,1,685.0,Fredericia vs Vendsyssel,2024-07-27,1,0,4.41
+30.3,93.0,A. Mucolli,Fredericia,F. Rieper,1,688.0,Fredericia vs Vendsyssel,2024-07-27,-3,0,2.51
+24.2,63.3,F. Rieper,Fredericia,A. Dahl,1,690.0,Fredericia vs Vendsyssel,2024-07-27,2,0,3.7
+64.1,21.9,A. Dahl,Fredericia,O. Buch,1,697.0,Fredericia vs Vendsyssel,2024-07-27,0,0,11.73
+30.0,81.1,M. Kaastrup,Vendsyssel,G. Mortensen,1,707.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,9.35
+7.8,86.0,G. Mortensen,Vendsyssel,L. Schulz,1,709.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,2.66
+21.6,90.6,M. Kaastrup,Vendsyssel,A. Simon Okosun,1,710.0,Fredericia vs Vendsyssel,2024-07-27,0,0,4.74
+13.8,81.2,A. Simon Okosun,Vendsyssel,O. Jebali,1,711.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,8.4
+11.5,58.4,O. Jebali,Vendsyssel,M. Lassen,1,714.0,Fredericia vs Vendsyssel,2024-07-27,2,0,2.98
+37.2,8.3,M. Lassen,Vendsyssel,L. Jensen,1,718.0,Fredericia vs Vendsyssel,2024-07-27,1,0,12.12
+43.8,19.4,L. Jensen,Vendsyssel,A. Simon Okosun,1,721.0,Fredericia vs Vendsyssel,2024-07-27,-2,0,6.55
+37.1,30.9,A. Simon Okosun,Vendsyssel,O. Ohlenschlaeger,1,722.0,Fredericia vs Vendsyssel,2024-07-27,2,0,2.74
+42.0,24.4,O. Ohlenschlaeger,Vendsyssel,M. Greve,1,723.0,Fredericia vs Vendsyssel,2024-07-27,-2,0,3.93
+29.3,26.5,M. Greve,Vendsyssel,O. Ohlenschlaeger,1,725.0,Fredericia vs Vendsyssel,2024-07-27,0,0,14.33
+36.8,20.9,O. Ohlenschlaeger,Vendsyssel,M. Greve,1,726.0,Fredericia vs Vendsyssel,2024-07-27,0,0,3.66
+31.9,34.3,M. Greve,Vendsyssel,O. Jebali,1,732.0,Fredericia vs Vendsyssel,2024-07-27,0,0,4.29
+22.3,47.0,O. Jebali,Vendsyssel,M. Greve,1,737.0,Fredericia vs Vendsyssel,2024-07-27,0,0,4.41
+27.0,30.6,M. Greve,Vendsyssel,G. Mortensen,1,744.0,Fredericia vs Vendsyssel,2024-07-27,1,0,8.25
+71.5,90.3,G. Mortensen,Vendsyssel,A. Simon Okosun,1,752.0,Fredericia vs Vendsyssel,2024-07-27,-2,0,4.58
+59.5,82.4,A. Simon Okosun,Vendsyssel,M. Lassen,1,756.0,Fredericia vs Vendsyssel,2024-07-27,1,0,10.58
+29.1,70.2,G. Marcussen,Fredericia,J. Kudsk,1,764.0,Fredericia vs Vendsyssel,2024-07-27,-4,-1,4.92
+22.3,74.2,J. Kudsk,Fredericia,G. Marcussen,1,764.0,Fredericia vs Vendsyssel,2024-07-27,3,0,7.56
+21.3,72.6,J. Kudsk,Fredericia,W. Madsen,1,766.0,Fredericia vs Vendsyssel,2024-07-27,2,0,5.78
+24.9,57.9,W. Madsen,Fredericia,A. Dahl,1,768.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,5.19
+22.9,27.0,A. Dahl,Fredericia,O. Buch,1,772.0,Fredericia vs Vendsyssel,2024-07-27,0,0,10.13
+30.6,4.6,O. Buch,Fredericia,F. Rieper,1,773.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,8.69
+26.0,23.6,F. Rieper,Fredericia,M. Lamhauge,1,780.0,Fredericia vs Vendsyssel,2024-07-27,0,0,5.38
+15.5,53.4,M. Lamhauge,Fredericia,F. Rieper,1,787.0,Fredericia vs Vendsyssel,2024-07-27,0,0,12.5
+18.0,31.2,F. Rieper,Fredericia,J. Jessen,1,790.0,Fredericia vs Vendsyssel,2024-07-27,0,0,10.15
+39.5,92.7,J. Jessen,Fredericia,W. Madsen,1,798.0,Fredericia vs Vendsyssel,2024-07-27,0,0,9.85
+33.8,83.8,W. Madsen,Fredericia,J. Jessen,1,800.0,Fredericia vs Vendsyssel,2024-07-27,0,0,4.74
+38.1,93.3,J. Jessen,Fredericia,W. Madsen,1,801.0,Fredericia vs Vendsyssel,2024-07-27,0,0,7.28
+36.1,86.5,W. Madsen,Fredericia,J. Jessen,1,805.0,Fredericia vs Vendsyssel,2024-07-27,0,0,5.41
+44.4,95.7,J. Jessen,Fredericia,J. Kudsk,1,806.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,4.89
+27.7,81.2,J. Kudsk,Fredericia,F. Rieper,1,814.0,Fredericia vs Vendsyssel,2024-07-27,0,0,8.35
+26.1,31.0,F. Rieper,Fredericia,O. Buch,1,816.0,Fredericia vs Vendsyssel,2024-07-27,7,1,7.67
+58.1,15.5,O. Buch,Fredericia,J. Lindekilde,1,821.0,Fredericia vs Vendsyssel,2024-07-27,0,0,4.43
+56.8,29.2,J. Lindekilde,Fredericia,J. Jessen,1,823.0,Fredericia vs Vendsyssel,2024-07-27,0,0,5.14
+60.8,78.2,J. Jessen,Fredericia,A. Mucolli,1,827.0,Fredericia vs Vendsyssel,2024-07-27,1,0,5.76
+66.5,87.4,A. Mucolli,Fredericia,J. Jessen,1,828.0,Fredericia vs Vendsyssel,2024-07-27,2,1,7.36
+74.1,76.9,J. Jessen,Fredericia,A. Bondergaard,1,829.0,Fredericia vs Vendsyssel,2024-07-27,2,1,6.28
+79.7,63.1,A. Bondergaard,Fredericia,G. Marcussen,1,830.0,Fredericia vs Vendsyssel,2024-07-27,-4,-2,2.6
+4.6,55.2,L. Schulz,Vendsyssel,M. Kaastrup,1,860.0,Fredericia vs Vendsyssel,2024-07-27,5,1,12.76
+88.3,86.0,G. Mortensen,Vendsyssel,L. Jensen,1,866.0,Fredericia vs Vendsyssel,2024-07-27,3,2,10.51
+75.8,39.1,K. Kusk,Vendsyssel,M. Greve,1,935.0,Fredericia vs Vendsyssel,2024-07-27,-4,0,1.74
+90.5,48.4,L. Steffensen,Vendsyssel,K. Kusk,1,936.0,Fredericia vs Vendsyssel,2024-07-27,-3,-1,0.59
+78.3,69.4,G. Mortensen,Vendsyssel,M. Kaastrup,1,945.0,Fredericia vs Vendsyssel,2024-07-27,2,0,6.14
+92.2,70.6,G. Mortensen,Vendsyssel,M. Kaastrup,1,953.0,Fredericia vs Vendsyssel,2024-07-27,-2,-1,1.61
+27.2,62.0,J. Jessen,Fredericia,A. Bondergaard,1,961.0,Fredericia vs Vendsyssel,2024-07-27,4,2,2.14
+88.0,69.1,A. Bondergaard,Fredericia,G. Marcussen,1,968.0,Fredericia vs Vendsyssel,2024-07-27,0,0,5.11
+15.5,31.9,O. Jebali,Vendsyssel,A. Simon Okosun,1,973.0,Fredericia vs Vendsyssel,2024-07-27,4,0,2.75
+30.2,34.6,A. Simon Okosun,Vendsyssel,K. Kusk,1,974.0,Fredericia vs Vendsyssel,2024-07-27,2,2,6.89
+66.2,28.9,O. Ohlenschlaeger,Vendsyssel,L. Jensen,1,1022.0,Fredericia vs Vendsyssel,2024-07-27,0,0,4.16
+65.7,23.0,L. Jensen,Vendsyssel,M. Greve,1,1025.0,Fredericia vs Vendsyssel,2024-07-27,0,0,2.24
+47.2,32.4,M. Greve,Vendsyssel,O. Jebali,1,1027.0,Fredericia vs Vendsyssel,2024-07-27,0,0,9.55
+47.4,52.8,O. Jebali,Vendsyssel,A. Simon Okosun,1,1029.0,Fredericia vs Vendsyssel,2024-07-27,1,0,14.79
+50.2,48.4,A. Simon Okosun,Vendsyssel,M. Kaastrup,1,1032.0,Fredericia vs Vendsyssel,2024-07-27,0,0,2.22
+63.7,70.9,M. Kaastrup,Vendsyssel,M. Lassen,1,1041.0,Fredericia vs Vendsyssel,2024-07-27,3,0,3.87
+24.8,102.0,G. Mortensen,Vendsyssel,L. Steffensen,1,1098.0,Fredericia vs Vendsyssel,2024-07-27,4,0,2.58
+41.1,81.7,L. Steffensen,Vendsyssel,K. Kusk,1,1100.0,Fredericia vs Vendsyssel,2024-07-27,0,0,4.36
+40.4,69.1,K. Kusk,Vendsyssel,A. Simon Okosun,1,1103.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,1.96
+37.6,78.1,A. Simon Okosun,Vendsyssel,G. Mortensen,1,1104.0,Fredericia vs Vendsyssel,2024-07-27,2,0,4.15
+42.9,-1.3,A. Dahl,Fredericia,W. Madsen,1,1110.0,Fredericia vs Vendsyssel,2024-07-27,1,0,4.91
+41.4,11.6,W. Madsen,Fredericia,A. Dahl,1,1111.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,4.46
+34.6,19.1,A. Dahl,Fredericia,J. Kudsk,1,1114.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,4.87
+25.4,52.7,J. Kudsk,Fredericia,F. Rieper,1,1117.0,Fredericia vs Vendsyssel,2024-07-27,0,0,9.96
+25.4,28.3,F. Rieper,Fredericia,G. Marcussen,1,1120.0,Fredericia vs Vendsyssel,2024-07-27,4,0,14.7
+42.9,32.2,J. Lindekilde,Fredericia,O. Buch,1,1124.0,Fredericia vs Vendsyssel,2024-07-27,3,0,2.89
+53.1,50.4,O. Buch,Fredericia,A. Mucolli,1,1134.0,Fredericia vs Vendsyssel,2024-07-27,-2,0,1.89
+74.5,62.1,G. Marcussen,Fredericia,W. Madsen,1,1139.0,Fredericia vs Vendsyssel,2024-07-27,-3,0,5.94
+67.3,77.5,W. Madsen,Fredericia,J. Jessen,1,1143.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,4.23
+69.7,96.2,J. Jessen,Fredericia,A. Mucolli,1,1145.0,Fredericia vs Vendsyssel,2024-07-27,0,0,5.58
+60.4,82.1,W. Madsen,Fredericia,F. Rieper,1,1156.0,Fredericia vs Vendsyssel,2024-07-27,0,0,7.36
+52.3,51.0,F. Rieper,Fredericia,J. Kudsk,1,1158.0,Fredericia vs Vendsyssel,2024-07-27,0,0,8.54
+51.7,60.9,J. Kudsk,Fredericia,O. Buch,1,1163.0,Fredericia vs Vendsyssel,2024-07-27,6,0,5.79
+85.6,12.2,O. Buch,Fredericia,A. Dahl,1,1168.0,Fredericia vs Vendsyssel,2024-07-27,-2,0,3.9
+76.0,23.1,A. Dahl,Fredericia,W. Madsen,1,1169.0,Fredericia vs Vendsyssel,2024-07-27,2,0,7.67
+75.8,29.1,W. Madsen,Fredericia,O. Buch,1,1171.0,Fredericia vs Vendsyssel,2024-07-27,-4,0,4.83
+87.7,10.4,O. Buch,Fredericia,F. Rieper,1,1174.0,Fredericia vs Vendsyssel,2024-07-27,0,0,10.36
+62.6,27.9,F. Rieper,Fredericia,W. Madsen,1,1176.0,Fredericia vs Vendsyssel,2024-07-27,1,0,12.35
+69.7,34.5,W. Madsen,Fredericia,G. Marcussen,1,1177.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,4.18
+67.8,12.2,G. Marcussen,Fredericia,O. Buch,1,1179.0,Fredericia vs Vendsyssel,2024-07-27,0,0,6.37
+80.3,6.7,O. Buch,Fredericia,G. Marcussen,1,1181.0,Fredericia vs Vendsyssel,2024-07-27,0,0,3.18
+65.5,11.1,G. Marcussen,Fredericia,J. Kudsk,1,1183.0,Fredericia vs Vendsyssel,2024-07-27,2,0,4.73
+67.4,41.6,J. Kudsk,Fredericia,A. Mucolli,1,1189.0,Fredericia vs Vendsyssel,2024-07-27,0,0,2.77
+4.1,59.4,O. Jebali,Vendsyssel,L. Schulz,1,1215.0,Fredericia vs Vendsyssel,2024-07-27,0,0,19.97
+4.5,49.7,L. Schulz,Vendsyssel,O. Jebali,1,1218.0,Fredericia vs Vendsyssel,2024-07-27,0,0,16.28
+14.5,68.8,O. Jebali,Vendsyssel,L. Schulz,1,1223.0,Fredericia vs Vendsyssel,2024-07-27,0,0,1.29
+4.4,59.4,L. Schulz,Vendsyssel,O. Jebali,1,1225.0,Fredericia vs Vendsyssel,2024-07-27,1,0,11.8
+52.8,35.1,F. Rieper,Fredericia,W. Madsen,1,1233.0,Fredericia vs Vendsyssel,2024-07-27,3,0,1.7
+59.2,33.6,W. Madsen,Fredericia,F. Rieper,1,1239.0,Fredericia vs Vendsyssel,2024-07-27,-2,0,3.57
+44.3,30.3,F. Rieper,Fredericia,J. Kudsk,1,1242.0,Fredericia vs Vendsyssel,2024-07-27,0,0,11.67
+44.5,57.2,J. Kudsk,Fredericia,F. Rieper,1,1247.0,Fredericia vs Vendsyssel,2024-07-27,0,0,8.7
+46.0,27.9,F. Rieper,Fredericia,G. Marcussen,1,1250.0,Fredericia vs Vendsyssel,2024-07-27,6,0,13.65
+69.6,46.9,G. Marcussen,Fredericia,W. Madsen,1,1255.0,Fredericia vs Vendsyssel,2024-07-27,-4,0,3.64
+63.9,42.8,W. Madsen,Fredericia,A. Dahl,1,1256.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,4.01
+92.3,12.6,A. Dahl,Fredericia,G. Marcussen,1,1263.0,Fredericia vs Vendsyssel,2024-07-27,0,0,2.95
+83.0,9.1,G. Marcussen,Fredericia,F. Rieper,1,1266.0,Fredericia vs Vendsyssel,2024-07-27,0,0,5.31
+59.3,21.2,F. Rieper,Fredericia,J. Kudsk,1,1270.0,Fredericia vs Vendsyssel,2024-07-27,0,0,9.15
+59.1,80.0,J. Kudsk,Fredericia,J. Jessen,1,1276.0,Fredericia vs Vendsyssel,2024-07-27,0,0,4.2
+16.4,65.5,M. Lamhauge,Fredericia,F. Rieper,1,1326.0,Fredericia vs Vendsyssel,2024-07-27,0,0,13.06
+71.1,17.0,O. Buch,Fredericia,A. Dahl,1,1336.0,Fredericia vs Vendsyssel,2024-07-27,0,0,3.06
+72.0,16.7,A. Dahl,Fredericia,G. Marcussen,1,1338.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,2.53
+64.7,35.8,G. Marcussen,Fredericia,J. Jessen,1,1339.0,Fredericia vs Vendsyssel,2024-07-27,-2,0,7.61
+37.2,40.3,O. Jebali,Vendsyssel,K. Kusk,1,1376.0,Fredericia vs Vendsyssel,2024-07-27,6,0,4.41
+44.4,78.1,J. Lindekilde,Fredericia,A. Mucolli,1,1381.0,Fredericia vs Vendsyssel,2024-07-27,1,0,0.77
+43.9,32.1,O. Ohlenschlaeger,Vendsyssel,M. Greve,1,1386.0,Fredericia vs Vendsyssel,2024-07-27,-2,0,1.85
+34.4,39.1,M. Greve,Vendsyssel,O. Ohlenschlaeger,1,1387.0,Fredericia vs Vendsyssel,2024-07-27,3,0,2.7
+61.8,86.9,J. Lindekilde,Fredericia,A. Mucolli,1,1392.0,Fredericia vs Vendsyssel,2024-07-27,2,0,3.75
+11.2,15.9,M. Lassen,Vendsyssel,L. Steffensen,1,1395.0,Fredericia vs Vendsyssel,2024-07-27,5,0,1.93
+95.7,16.7,F. Rieper,Fredericia,J. Lindekilde,1,1440.0,Fredericia vs Vendsyssel,2024-07-27,6,1,6.08
+68.6,69.6,G. Marcussen,Fredericia,J. Lindekilde,1,1467.0,Fredericia vs Vendsyssel,2024-07-27,1,0,3.4
+73.7,39.2,A. Dahl,Fredericia,J. Lindekilde,1,1471.0,Fredericia vs Vendsyssel,2024-07-27,1,0,1.42
+85.7,35.5,J. Lindekilde,Fredericia,O. Buch,1,1472.0,Fredericia vs Vendsyssel,2024-07-27,-2,0,3.83
+77.7,21.9,O. Buch,Fredericia,F. Rieper,1,1476.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,8.4
+65.4,34.9,F. Rieper,Fredericia,J. Lindekilde,1,1478.0,Fredericia vs Vendsyssel,2024-07-27,5,1,11.38
+77.3,33.1,J. Lindekilde,Fredericia,A. Dahl,1,1481.0,Fredericia vs Vendsyssel,2024-07-27,-4,-1,2.29
+80.2,7.6,A. Dahl,Fredericia,F. Rieper,1,1484.0,Fredericia vs Vendsyssel,2024-07-27,0,0,5.77
+65.1,30.7,F. Rieper,Fredericia,J. Kudsk,1,1486.0,Fredericia vs Vendsyssel,2024-07-27,0,0,13.92
+44.3,56.3,J. Kudsk,Fredericia,F. Rieper,1,1489.0,Fredericia vs Vendsyssel,2024-07-27,0,0,8.21
+37.4,26.4,F. Rieper,Fredericia,A. Dahl,1,1492.0,Fredericia vs Vendsyssel,2024-07-27,1,0,10.19
+62.0,8.2,A. Dahl,Fredericia,W. Madsen,1,1495.0,Fredericia vs Vendsyssel,2024-07-27,1,0,5.72
+57.7,-1.0,A. Dahl,Fredericia,O. Buch,1,1512.0,Fredericia vs Vendsyssel,2024-07-27,5,0,5.3
+23.6,92.4,A. Simon Okosun,Vendsyssel,M. Hannesbo,1,1515.0,Fredericia vs Vendsyssel,2024-07-27,9,4,2.33
+31.5,91.0,M. Kaastrup,Vendsyssel,A. Simon Okosun,1,1516.0,Fredericia vs Vendsyssel,2024-07-27,-3,-1,1.35
+22.7,88.0,A. Simon Okosun,Vendsyssel,A. Simon Okosun,1,1518.0,Fredericia vs Vendsyssel,2024-07-27,0,0,2.21
+27.9,55.1,M. Greve,Vendsyssel,L. Jensen,1,1520.0,Fredericia vs Vendsyssel,2024-07-27,2,0,6.26
+69.6,8.8,L. Jensen,Vendsyssel,O. Ohlenschlaeger,1,1531.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,2.85
+62.0,18.5,O. Ohlenschlaeger,Vendsyssel,K. Kusk,1,1532.0,Fredericia vs Vendsyssel,2024-07-27,3,0,7.8
+64.7,28.5,K. Kusk,Vendsyssel,O. Ohlenschlaeger,1,1535.0,Fredericia vs Vendsyssel,2024-07-27,-3,0,3.01
+60.9,20.6,O. Ohlenschlaeger,Vendsyssel,M. Lassen,1,1536.0,Fredericia vs Vendsyssel,2024-07-27,3,0,3.61
+42.2,18.6,M. Lassen,Vendsyssel,L. Schulz,1,1542.0,Fredericia vs Vendsyssel,2024-07-27,0,0,-1.0
+15.5,49.0,L. Schulz,Vendsyssel,A. Simon Okosun,1,1545.0,Fredericia vs Vendsyssel,2024-07-27,2,0,19.42
+32.3,36.4,A. Simon Okosun,Vendsyssel,L. Schulz,1,1546.0,Fredericia vs Vendsyssel,2024-07-27,-2,0,2.07
+15.5,50.4,L. Schulz,Vendsyssel,M. Kaastrup,1,1551.0,Fredericia vs Vendsyssel,2024-07-27,4,0,13.98
+38.2,69.3,M. Kaastrup,Vendsyssel,G. Mortensen,1,1557.0,Fredericia vs Vendsyssel,2024-07-27,2,1,2.51
+57.8,88.1,G. Mortensen,Vendsyssel,M. Kaastrup,1,1559.0,Fredericia vs Vendsyssel,2024-07-27,-5,-1,7.4
+46.0,87.1,M. Kaastrup,Vendsyssel,A. Simon Okosun,1,1560.0,Fredericia vs Vendsyssel,2024-07-27,0,0,6.14
+47.4,69.4,A. Simon Okosun,Vendsyssel,M. Lassen,1,1563.0,Fredericia vs Vendsyssel,2024-07-27,1,0,7.85
+70.3,10.4,M. Lassen,Vendsyssel,O. Ohlenschlaeger,1,1568.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,4.69
+59.5,26.4,O. Ohlenschlaeger,Vendsyssel,A. Simon Okosun,1,1570.0,Fredericia vs Vendsyssel,2024-07-27,2,0,3.32
+56.4,46.6,A. Simon Okosun,Vendsyssel,M. Lassen,1,1585.0,Fredericia vs Vendsyssel,2024-07-27,2,0,3.09
+81.6,9.1,M. Lassen,Vendsyssel,L. Jensen,1,1587.0,Fredericia vs Vendsyssel,2024-07-27,1,0,3.4
+85.6,27.9,M. Kaastrup,Vendsyssel,K. Kusk,1,1626.0,Fredericia vs Vendsyssel,2024-07-27,1,0,2.85
+42.0,102.0,J. Jessen,Fredericia,F. Rieper,1,1695.0,Fredericia vs Vendsyssel,2024-07-27,0,0,-1.0
+28.8,55.8,F. Rieper,Fredericia,J. Kudsk,1,1703.0,Fredericia vs Vendsyssel,2024-07-27,0,0,9.97
+53.7,66.9,J. Kudsk,Fredericia,J. Lindekilde,1,1709.0,Fredericia vs Vendsyssel,2024-07-27,1,0,5.21
+62.4,91.2,J. Lindekilde,Fredericia,A. Mucolli,1,1711.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,4.25
+67.8,102.0,J. Jessen,Fredericia,A. Mucolli,1,1722.0,Fredericia vs Vendsyssel,2024-07-27,1,0,2.24
+69.4,102.0,J. Jessen,Fredericia,A. Mucolli,1,1732.0,Fredericia vs Vendsyssel,2024-07-27,3,0,7.63
+7.9,50.4,L. Schulz,Vendsyssel,O. Jebali,1,1747.0,Fredericia vs Vendsyssel,2024-07-27,0,0,9.58
+19.4,86.0,O. Jebali,Vendsyssel,M. Kaastrup,1,1752.0,Fredericia vs Vendsyssel,2024-07-27,4,0,6.25
+31.1,81.5,M. Kaastrup,Vendsyssel,K. Kusk,1,1755.0,Fredericia vs Vendsyssel,2024-07-27,1,0,4.31
+61.7,69.3,K. Kusk,Vendsyssel,L. Steffensen,1,1758.0,Fredericia vs Vendsyssel,2024-07-27,4,4,6.18
+79.2,27.1,O. Ohlenschlaeger,Vendsyssel,L. Steffensen,1,1883.0,Fredericia vs Vendsyssel,2024-07-27,6,2,6.09
+85.0,59.6,L. Steffensen,Vendsyssel,L. Steffensen,1,1888.0,Fredericia vs Vendsyssel,2024-07-27,0,0,1.96
+87.7,-2.0,O. Ohlenschlaeger,Vendsyssel,L. Jensen,1,1901.0,Fredericia vs Vendsyssel,2024-07-27,0,0,11.19
+92.2,11.7,L. Jensen,Vendsyssel,O. Ohlenschlaeger,1,1903.0,Fredericia vs Vendsyssel,2024-07-27,-3,0,2.74
+90.1,5.6,O. Ohlenschlaeger,Vendsyssel,M. Lassen,1,1908.0,Fredericia vs Vendsyssel,2024-07-27,0,0,1.08
+79.1,8.9,M. Lassen,Vendsyssel,L. Steffensen,1,1910.0,Fredericia vs Vendsyssel,2024-07-27,7,2,6.26
+26.2,57.0,G. Marcussen,Fredericia,A. Dahl,1,1949.0,Fredericia vs Vendsyssel,2024-07-27,0,0,2.07
+94.5,67.6,J. Lindekilde,Fredericia,O. Buch,1,1959.0,Fredericia vs Vendsyssel,2024-07-27,7,2,6.31
+49.7,49.6,L. Steffensen,Vendsyssel,O. Ohlenschlaeger,1,2028.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,8.07
+43.1,35.4,O. Ohlenschlaeger,Vendsyssel,K. Kusk,1,2029.0,Fredericia vs Vendsyssel,2024-07-27,6,1,6.57
+62.8,41.7,K. Kusk,Vendsyssel,M. Lassen,1,2030.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,1.7
+60.0,8.5,M. Lassen,Vendsyssel,O. Ohlenschlaeger,1,2034.0,Fredericia vs Vendsyssel,2024-07-27,0,0,2.28
+36.4,27.0,M. Greve,Vendsyssel,A. Simon Okosun,1,2035.0,Fredericia vs Vendsyssel,2024-07-27,0,0,10.91
+50.1,19.8,O. Ohlenschlaeger,Vendsyssel,M. Greve,1,2035.0,Fredericia vs Vendsyssel,2024-07-27,0,0,-1.0
+43.1,43.9,A. Simon Okosun,Vendsyssel,O. Jebali,1,2037.0,Fredericia vs Vendsyssel,2024-07-27,0,0,5.58
+37.2,73.3,O. Jebali,Vendsyssel,G. Mortensen,1,2043.0,Fredericia vs Vendsyssel,2024-07-27,1,0,13.27
+67.8,92.7,G. Mortensen,Vendsyssel,M. Kaastrup,1,2045.0,Fredericia vs Vendsyssel,2024-07-27,1,0,11.49
+70.1,64.0,M. Kaastrup,Vendsyssel,M. Lassen,1,2050.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,5.86
+89.9,17.6,M. Lassen,Vendsyssel,O. Ohlenschlaeger,1,2055.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,5.1
+75.3,62.0,M. Greve,Vendsyssel,G. Mortensen,1,2063.0,Fredericia vs Vendsyssel,2024-07-27,0,0,7.66
+10.8,34.6,A. Simon Okosun,Vendsyssel,A. Simon Okosun,2,750.0,Fredericia vs Vendsyssel,2024-07-27,0,0,-1.0
+32.2,19.1,J. Lindekilde,Fredericia,W. Madsen,1,2115.0,Fredericia vs Vendsyssel,2024-07-27,-3,0,2.46
+75.8,59.9,K. Kusk,Vendsyssel,M. Greve,1,2119.0,Fredericia vs Vendsyssel,2024-07-27,-5,-1,2.58
+29.4,74.8,J. Jessen,Fredericia,A. Mucolli,1,2124.0,Fredericia vs Vendsyssel,2024-07-27,0,0,8.42
+32.4,92.4,A. Mucolli,Fredericia,J. Kudsk,1,2128.0,Fredericia vs Vendsyssel,2024-07-27,-2,0,6.15
+34.7,15.6,M. Greve,Vendsyssel,A. Simon Okosun,1,2134.0,Fredericia vs Vendsyssel,2024-07-27,3,0,2.76
+51.2,15.0,A. Simon Okosun,Vendsyssel,O. Ohlenschlaeger,1,2136.0,Fredericia vs Vendsyssel,2024-07-27,0,0,6.57
+53.5,24.4,O. Ohlenschlaeger,Vendsyssel,A. Simon Okosun,1,2137.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,5.86
+47.1,28.2,A. Simon Okosun,Vendsyssel,O. Jebali,1,2138.0,Fredericia vs Vendsyssel,2024-07-27,-2,0,3.37
+40.4,-1.4,M. Lassen,Vendsyssel,L. Steffensen,1,2167.0,Fredericia vs Vendsyssel,2024-07-27,4,0,7.52
+57.1,18.9,A. Simon Okosun,Vendsyssel,M. Greve,1,2183.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,4.18
+36.0,30.0,M. Greve,Vendsyssel,O. Jebali,1,2186.0,Fredericia vs Vendsyssel,2024-07-27,0,0,11.85
+35.9,67.9,O. Jebali,Vendsyssel,O. Ohlenschlaeger,1,2189.0,Fredericia vs Vendsyssel,2024-07-27,1,0,12.12
+46.5,50.4,O. Ohlenschlaeger,Vendsyssel,M. Greve,1,2192.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,4.17
+22.8,89.1,J. Jessen,Fredericia,J. Lindekilde,1,2201.0,Fredericia vs Vendsyssel,2024-07-27,4,1,3.79
+64.1,28.3,A. Simon Okosun,Vendsyssel,O. Ohlenschlaeger,1,2209.0,Fredericia vs Vendsyssel,2024-07-27,0,0,4.37
+56.5,47.6,O. Ohlenschlaeger,Vendsyssel,M. Kaastrup,1,2212.0,Fredericia vs Vendsyssel,2024-07-27,3,0,6.62
+72.5,57.9,M. Kaastrup,Vendsyssel,K. Kusk,1,2215.0,Fredericia vs Vendsyssel,2024-07-27,0,0,4.57
+10.1,61.2,J. Jessen,Fredericia,J. Lindekilde,1,2224.0,Fredericia vs Vendsyssel,2024-07-27,3,1,3.24
+22.7,79.4,A. Mucolli,Fredericia,J. Lindekilde,1,2225.0,Fredericia vs Vendsyssel,2024-07-27,1,1,0.87
+33.6,70.9,J. Lindekilde,Fredericia,A. Mucolli,1,2228.0,Fredericia vs Vendsyssel,2024-07-27,-3,-2,1.33
+28.1,42.7,L. Schulz,Vendsyssel,M. Greve,1,2243.0,Fredericia vs Vendsyssel,2024-07-27,0,0,21.67
+40.8,27.4,M. Greve,Vendsyssel,L. Jensen,1,2244.0,Fredericia vs Vendsyssel,2024-07-27,2,0,10.1
+11.6,45.4,M. Lamhauge,Fredericia,J. Kudsk,1,2282.0,Fredericia vs Vendsyssel,2024-07-27,0,0,4.23
+18.7,69.3,J. Kudsk,Fredericia,W. Madsen,1,2287.0,Fredericia vs Vendsyssel,2024-07-27,1,0,12.15
+26.1,79.0,W. Madsen,Fredericia,J. Jessen,1,2289.0,Fredericia vs Vendsyssel,2024-07-27,0,0,5.27
+28.9,94.5,J. Jessen,Fredericia,A. Mucolli,1,2291.0,Fredericia vs Vendsyssel,2024-07-27,3,0,6.5
+37.3,93.2,A. Mucolli,Fredericia,J. Jessen,1,2293.0,Fredericia vs Vendsyssel,2024-07-27,0,0,2.58
+39.4,31.9,L. Jensen,Vendsyssel,L. Steffensen,1,2305.0,Fredericia vs Vendsyssel,2024-07-27,4,1,1.49
+45.7,-1.7,A. Dahl,Fredericia,F. Rieper,1,2317.0,Fredericia vs Vendsyssel,2024-07-27,0,0,7.87
+27.3,23.6,F. Rieper,Fredericia,G. Marcussen,1,2320.0,Fredericia vs Vendsyssel,2024-07-27,0,0,15.58
+38.4,28.6,G. Marcussen,Fredericia,J. Kudsk,1,2323.0,Fredericia vs Vendsyssel,2024-07-27,0,0,9.15
+35.0,67.3,J. Kudsk,Fredericia,W. Madsen,1,2327.0,Fredericia vs Vendsyssel,2024-07-27,3,0,14.11
+52.3,-0.5,M. Lassen,Vendsyssel,L. Steffensen,1,2343.0,Fredericia vs Vendsyssel,2024-07-27,4,0,3.83
+68.9,10.9,L. Jensen,Vendsyssel,O. Ohlenschlaeger,1,2355.0,Fredericia vs Vendsyssel,2024-07-27,0,0,-1.0
+84.4,11.6,O. Ohlenschlaeger,Vendsyssel,K. Kusk,1,2358.0,Fredericia vs Vendsyssel,2024-07-27,0,0,1.0
+73.4,14.9,K. Kusk,Vendsyssel,O. Ohlenschlaeger,1,2361.0,Fredericia vs Vendsyssel,2024-07-27,2,0,6.22
+99.2,0.1,K. Kusk,Vendsyssel,M. Greve,1,2389.0,Fredericia vs Vendsyssel,2024-07-27,1,0,26.38
+28.8,40.3,G. Mortensen,Vendsyssel,O. Jebali,1,2409.0,Fredericia vs Vendsyssel,2024-07-27,0,0,24.7
+32.8,45.4,O. Jebali,Vendsyssel,M. Greve,1,2411.0,Fredericia vs Vendsyssel,2024-07-27,0,0,14.19
+33.8,30.0,L. Schulz,Vendsyssel,L. Steffensen,1,2460.0,Fredericia vs Vendsyssel,2024-07-27,10,4,5.47
+86.0,40.3,L. Steffensen,Vendsyssel,A. Simon Okosun,1,2463.0,Fredericia vs Vendsyssel,2024-07-27,-6,-2,2.9
+3.7,57.3,M. Lamhauge,Fredericia,F. Rieper,1,2479.0,Fredericia vs Vendsyssel,2024-07-27,0,0,13.69
+8.5,27.0,F. Rieper,Fredericia,O. Buch,1,2483.0,Fredericia vs Vendsyssel,2024-07-27,5,0,4.52
+39.7,37.3,O. Buch,Fredericia,J. Lindekilde,1,2486.0,Fredericia vs Vendsyssel,2024-07-27,2,1,3.09
+22.8,53.4,L. Schulz,Vendsyssel,M. Greve,1,2500.0,Fredericia vs Vendsyssel,2024-07-27,0,0,8.88
+40.1,27.1,M. Greve,Vendsyssel,L. Jensen,1,2509.0,Fredericia vs Vendsyssel,2024-07-27,4,0,7.48
+66.1,24.0,L. Jensen,Vendsyssel,M. Lassen,1,2512.0,Fredericia vs Vendsyssel,2024-07-27,1,0,2.24
+64.0,-1.6,M. Lassen,Vendsyssel,K. Kusk,1,2539.0,Fredericia vs Vendsyssel,2024-07-27,2,0,3.54
+83.1,10.9,M. Lassen,Vendsyssel,M. Kaastrup,1,2548.0,Fredericia vs Vendsyssel,2024-07-27,6,1,5.03
+49.5,49.9,A. Bondergaard,Fredericia,W. Madsen,1,2613.0,Fredericia vs Vendsyssel,2024-07-27,-3,0,7.48
+31.9,59.9,W. Madsen,Fredericia,J. Kudsk,1,2615.0,Fredericia vs Vendsyssel,2024-07-27,0,0,6.36
+22.5,67.8,J. Kudsk,Fredericia,M. Lamhauge,1,2617.0,Fredericia vs Vendsyssel,2024-07-27,0,0,5.83
+4.2,47.8,M. Lamhauge,Fredericia,F. Rieper,1,2620.0,Fredericia vs Vendsyssel,2024-07-27,0,0,9.55
+11.8,17.6,F. Rieper,Fredericia,M. Lamhauge,1,2622.0,Fredericia vs Vendsyssel,2024-07-27,0,0,10.37
+47.1,83.3,G. Mortensen,Vendsyssel,O. Ohlenschlaeger,1,2628.0,Fredericia vs Vendsyssel,2024-07-27,2,0,2.92
+68.7,64.8,K. Kusk,Vendsyssel,G. Mortensen,1,2637.0,Fredericia vs Vendsyssel,2024-07-27,-3,-1,2.11
+81.0,87.8,G. Mortensen,Vendsyssel,M. Kaastrup,1,2638.0,Fredericia vs Vendsyssel,2024-07-27,2,0,10.17
+74.1,84.7,M. Kaastrup,Vendsyssel,O. Ohlenschlaeger,1,2642.0,Fredericia vs Vendsyssel,2024-07-27,-3,0,1.86
+70.8,90.8,O. Ohlenschlaeger,Vendsyssel,A. Simon Okosun,1,2644.0,Fredericia vs Vendsyssel,2024-07-27,0,0,8.85
+64.9,75.1,A. Simon Okosun,Vendsyssel,O. Ohlenschlaeger,1,2646.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,4.71
+46.8,79.1,O. Ohlenschlaeger,Vendsyssel,M. Kaastrup,1,2651.0,Fredericia vs Vendsyssel,2024-07-27,1,0,3.87
+55.7,52.8,M. Kaastrup,Vendsyssel,M. Lassen,1,2656.0,Fredericia vs Vendsyssel,2024-07-27,-2,0,4.89
+62.4,12.9,M. Lassen,Vendsyssel,L. Jensen,1,2659.0,Fredericia vs Vendsyssel,2024-07-27,2,0,12.45
+13.4,5.6,A. Dahl,Fredericia,J. Lindekilde,1,2671.0,Fredericia vs Vendsyssel,2024-07-27,4,0,6.6
+38.4,90.6,G. Mortensen,Vendsyssel,O. Jebali,1,2680.0,Fredericia vs Vendsyssel,2024-07-27,0,0,11.59
+30.8,67.9,O. Jebali,Vendsyssel,M. Greve,1,2684.0,Fredericia vs Vendsyssel,2024-07-27,0,0,15.46
+54.4,24.0,M. Greve,Vendsyssel,L. Jensen,1,2691.0,Fredericia vs Vendsyssel,2024-07-27,3,0,7.48
+41.0,81.1,A. Bondergaard,Fredericia,G. Marcussen,1,2696.0,Fredericia vs Vendsyssel,2024-07-27,0,0,2.76
+55.2,84.8,G. Marcussen,Fredericia,A. Mucolli,1,2699.0,Fredericia vs Vendsyssel,2024-07-27,1,0,2.68
+75.9,82.4,A. Mucolli,Fredericia,J. Lindekilde,1,2704.0,Fredericia vs Vendsyssel,2024-07-27,3,2,2.34
+90.6,42.8,J. Lindekilde,Fredericia,O. Buch,1,2704.0,Fredericia vs Vendsyssel,2024-07-27,0,0,2.48
+49.9,50.4,L. Steffensen,Vendsyssel,K. Kusk,1,2763.0,Fredericia vs Vendsyssel,2024-07-27,-3,0,7.12
+44.5,53.7,K. Kusk,Vendsyssel,L. Jensen,1,2767.0,Fredericia vs Vendsyssel,2024-07-27,5,0,10.16
+42.9,34.5,J. Kudsk,Fredericia,A. Bondergaard,1,2803.0,Fredericia vs Vendsyssel,2024-07-27,5,0,4.07
+64.8,32.1,A. Bondergaard,Fredericia,O. Buch,1,2806.0,Fredericia vs Vendsyssel,2024-07-27,-2,0,1.36
+99.5,0.5,J. Jessen,Fredericia,A. Mucolli,1,2836.0,Fredericia vs Vendsyssel,2024-07-27,0,0,32.13
+50.2,49.9,A. Bondergaard,Fredericia,G. Marcussen,2,0.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,8.39
+8.2,48.8,L. Schulz,Vendsyssel,M. Greve,2,18.0,Fredericia vs Vendsyssel,2024-07-27,0,0,17.27
+13.9,18.2,M. Greve,Vendsyssel,L. Schulz,2,21.0,Fredericia vs Vendsyssel,2024-07-27,0,0,8.94
+8.7,53.6,L. Schulz,Vendsyssel,G. Mortensen,2,25.0,Fredericia vs Vendsyssel,2024-07-27,3,0,9.16
+23.0,93.0,G. Mortensen,Vendsyssel,M. Kaastrup,2,28.0,Fredericia vs Vendsyssel,2024-07-27,3,1,5.12
+55.7,92.3,M. Kaastrup,Vendsyssel,O. Ohlenschlaeger,2,43.0,Fredericia vs Vendsyssel,2024-07-27,0,0,5.36
+41.5,87.1,O. Ohlenschlaeger,Vendsyssel,L. Schulz,2,44.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,3.41
+23.9,67.9,L. Schulz,Vendsyssel,K. Kusk,2,46.0,Fredericia vs Vendsyssel,2024-07-27,5,0,16.1
+53.8,101.6,G. Mortensen,Vendsyssel,O. Ohlenschlaeger,2,61.0,Fredericia vs Vendsyssel,2024-07-27,-2,0,4.94
+33.6,81.8,O. Ohlenschlaeger,Vendsyssel,M. Greve,2,66.0,Fredericia vs Vendsyssel,2024-07-27,0,0,7.61
+26.1,41.5,M. Greve,Vendsyssel,O. Jebali,2,73.0,Fredericia vs Vendsyssel,2024-07-27,0,0,8.2
+33.0,67.2,O. Jebali,Vendsyssel,G. Mortensen,2,76.0,Fredericia vs Vendsyssel,2024-07-27,1,0,10.33
+41.0,11.4,G. Marcussen,Fredericia,A. Bondergaard,2,83.0,Fredericia vs Vendsyssel,2024-07-27,0,0,9.28
+34.0,60.9,A. Simon Okosun,Vendsyssel,L. Jensen,2,85.0,Fredericia vs Vendsyssel,2024-07-27,1,0,8.04
+74.3,18.6,L. Jensen,Vendsyssel,K. Kusk,2,94.0,Fredericia vs Vendsyssel,2024-07-27,0,0,3.68
+68.5,31.8,K. Kusk,Vendsyssel,M. Kaastrup,2,96.0,Fredericia vs Vendsyssel,2024-07-27,5,0,7.51
+4.8,42.8,M. Lamhauge,Fredericia,J. Kudsk,2,117.0,Fredericia vs Vendsyssel,2024-07-27,0,0,11.29
+31.4,56.4,J. Kudsk,Fredericia,J. Jessen,2,118.0,Fredericia vs Vendsyssel,2024-07-27,0,0,5.25
+43.5,78.1,A. Mucolli,Fredericia,F. Rieper,2,120.0,Fredericia vs Vendsyssel,2024-07-27,-4,0,1.08
+32.0,34.3,M. Greve,Vendsyssel,K. Kusk,2,123.0,Fredericia vs Vendsyssel,2024-07-27,4,1,1.88
+55.4,47.9,K. Kusk,Vendsyssel,L. Steffensen,2,124.0,Fredericia vs Vendsyssel,2024-07-27,0,0,1.35
+4.5,45.7,F. Rieper,Fredericia,P. Egelund,2,131.0,Fredericia vs Vendsyssel,2024-07-27,4,0,1.86
+32.8,5.6,P. Egelund,Fredericia,F. Rieper,2,137.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,0.31
+12.6,22.4,F. Rieper,Fredericia,A. Mucolli,2,140.0,Fredericia vs Vendsyssel,2024-07-27,4,0,12.05
+26.4,89.3,A. Mucolli,Fredericia,J. Jessen,2,144.0,Fredericia vs Vendsyssel,2024-07-27,-4,0,4.97
+58.1,24.8,M. Greve,Vendsyssel,M. Lassen,2,154.0,Fredericia vs Vendsyssel,2024-07-27,2,0,9.06
+46.0,49.6,O. Ohlenschlaeger,Vendsyssel,L. Schulz,2,156.0,Fredericia vs Vendsyssel,2024-07-27,-2,0,1.4
+12.3,39.2,L. Schulz,Vendsyssel,L. Jensen,2,169.0,Fredericia vs Vendsyssel,2024-07-27,7,1,9.48
+63.1,68.2,G. Mortensen,Vendsyssel,M. Kaastrup,2,211.0,Fredericia vs Vendsyssel,2024-07-27,0,0,6.91
+71.2,88.0,M. Kaastrup,Vendsyssel,K. Kusk,2,216.0,Fredericia vs Vendsyssel,2024-07-27,1,1,3.25
+69.7,73.0,K. Kusk,Vendsyssel,L. Jensen,2,218.0,Fredericia vs Vendsyssel,2024-07-27,7,2,8.1
+50.2,50.0,A. Bondergaard,Fredericia,W. Madsen,2,311.0,Fredericia vs Vendsyssel,2024-07-27,-2,0,8.83
+44.6,60.8,W. Madsen,Fredericia,J. Jessen,2,317.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,8.19
+37.7,77.2,J. Jessen,Fredericia,F. Rieper,2,318.0,Fredericia vs Vendsyssel,2024-07-27,0,0,13.09
+32.4,48.4,J. Kudsk,Fredericia,M. Lamhauge,2,332.0,Fredericia vs Vendsyssel,2024-07-27,0,0,8.68
+35.6,27.6,F. Rieper,Fredericia,J. Kudsk,2,332.0,Fredericia vs Vendsyssel,2024-07-27,0,0,5.44
+19.4,45.7,M. Lamhauge,Fredericia,J. Kudsk,2,335.0,Fredericia vs Vendsyssel,2024-07-27,0,0,14.91
+42.0,65.7,J. Kudsk,Fredericia,A. Mucolli,2,340.0,Fredericia vs Vendsyssel,2024-07-27,2,0,3.89
+56.8,80.9,A. Mucolli,Fredericia,F. Rieper,2,345.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,1.22
+36.6,32.7,F. Rieper,Fredericia,M. Lamhauge,2,347.0,Fredericia vs Vendsyssel,2024-07-27,0,0,4.96
+19.8,52.5,M. Lamhauge,Fredericia,F. Rieper,2,349.0,Fredericia vs Vendsyssel,2024-07-27,0,0,18.69
+30.6,23.4,F. Rieper,Fredericia,A. Dahl,2,353.0,Fredericia vs Vendsyssel,2024-07-27,1,0,17.61
+54.7,4.0,A. Dahl,Fredericia,F. Rieper,2,356.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,4.4
+38.2,12.2,F. Rieper,Fredericia,W. Madsen,2,359.0,Fredericia vs Vendsyssel,2024-07-27,1,0,9.92
+56.0,11.7,W. Madsen,Fredericia,A. Dahl,2,361.0,Fredericia vs Vendsyssel,2024-07-27,2,0,1.03
+73.8,1.6,A. Dahl,Fredericia,A. Bondergaard,2,364.0,Fredericia vs Vendsyssel,2024-07-27,6,3,4.55
+77.2,27.6,J. Lindekilde,Fredericia,W. Madsen,2,369.0,Fredericia vs Vendsyssel,2024-07-27,-2,0,1.21
+79.2,23.1,P. Egelund,Fredericia,F. Rieper,2,370.0,Fredericia vs Vendsyssel,2024-07-27,-4,0,1.61
+76.8,33.7,W. Madsen,Fredericia,G. Marcussen,2,371.0,Fredericia vs Vendsyssel,2024-07-27,1,0,4.68
+3.4,42.4,M. Greve,Vendsyssel,L. Schulz,2,394.0,Fredericia vs Vendsyssel,2024-07-27,0,0,11.17
+4.6,56.0,L. Schulz,Vendsyssel,O. Jebali,2,396.0,Fredericia vs Vendsyssel,2024-07-27,0,0,11.44
+15.1,72.1,O. Jebali,Vendsyssel,G. Mortensen,2,399.0,Fredericia vs Vendsyssel,2024-07-27,2,0,13.63
+19.0,89.6,G. Mortensen,Vendsyssel,O. Jebali,2,402.0,Fredericia vs Vendsyssel,2024-07-27,-2,0,4.87
+42.6,8.5,F. Rieper,Fredericia,W. Madsen,2,409.0,Fredericia vs Vendsyssel,2024-07-27,1,0,5.06
+49.7,13.2,W. Madsen,Fredericia,J. Kudsk,2,411.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,4.6
+44.9,45.2,J. Kudsk,Fredericia,J. Jessen,2,415.0,Fredericia vs Vendsyssel,2024-07-27,0,0,10.24
+47.2,73.6,J. Jessen,Fredericia,J. Kudsk,2,417.0,Fredericia vs Vendsyssel,2024-07-27,0,0,10.38
+45.4,47.8,J. Kudsk,Fredericia,F. Rieper,2,421.0,Fredericia vs Vendsyssel,2024-07-27,0,0,13.19
+38.9,12.2,F. Rieper,Fredericia,A. Dahl,2,424.0,Fredericia vs Vendsyssel,2024-07-27,2,0,7.95
+58.7,3.2,A. Dahl,Fredericia,J. Lindekilde,2,427.0,Fredericia vs Vendsyssel,2024-07-27,1,0,6.1
+58.6,10.0,J. Lindekilde,Fredericia,A. Bondergaard,2,429.0,Fredericia vs Vendsyssel,2024-07-27,7,3,4.26
+99.5,0.5,J. Jessen,Fredericia,J. Kudsk,2,462.0,Fredericia vs Vendsyssel,2024-07-27,2,0,24.88
+71.4,25.3,A. Dahl,Fredericia,A. Mucolli,2,472.0,Fredericia vs Vendsyssel,2024-07-27,2,0,17.84
+99.5,0.5,J. Jessen,Fredericia,A. Mucolli,2,503.0,Fredericia vs Vendsyssel,2024-07-27,0,0,27.0
+71.7,49.9,A. Bondergaard,Fredericia,A. Mucolli,2,548.0,Fredericia vs Vendsyssel,2024-07-27,-4,-2,0.45
+75.2,63.3,A. Mucolli,Fredericia,A. Dahl,2,549.0,Fredericia vs Vendsyssel,2024-07-27,0,0,6.5
+81.5,24.3,A. Dahl,Fredericia,P. Egelund,2,554.0,Fredericia vs Vendsyssel,2024-07-27,2,1,7.65
+45.7,59.4,W. Madsen,Fredericia,J. Kudsk,2,598.0,Fredericia vs Vendsyssel,2024-07-27,6,1,4.93
+77.3,26.2,J. Kudsk,Fredericia,A. Bondergaard,2,601.0,Fredericia vs Vendsyssel,2024-07-27,0,0,-1.0
+4.9,48.5,L. Schulz,Vendsyssel,O. Jebali,2,612.0,Fredericia vs Vendsyssel,2024-07-27,0,0,7.58
+21.6,60.8,O. Jebali,Vendsyssel,G. Mortensen,2,615.0,Fredericia vs Vendsyssel,2024-07-27,3,0,2.21
+43.8,8.6,A. Dahl,Fredericia,P. Egelund,2,619.0,Fredericia vs Vendsyssel,2024-07-27,4,1,4.74
+64.7,13.5,P. Egelund,Fredericia,G. Marcussen,2,623.0,Fredericia vs Vendsyssel,2024-07-27,2,0,8.19
+70.0,37.7,G. Marcussen,Fredericia,J. Lindekilde,2,624.0,Fredericia vs Vendsyssel,2024-07-27,0,0,3.95
+26.2,61.5,O. Ohlenschlaeger,Vendsyssel,K. Kusk,2,627.0,Fredericia vs Vendsyssel,2024-07-27,3,1,4.54
+24.5,59.6,O. Ohlenschlaeger,Vendsyssel,L. Jensen,2,628.0,Fredericia vs Vendsyssel,2024-07-27,1,0,5.14
+29.4,54.9,K. Kusk,Vendsyssel,O. Ohlenschlaeger,2,628.0,Fredericia vs Vendsyssel,2024-07-27,0,0,-1.0
+28.9,31.8,L. Jensen,Vendsyssel,A. Simon Okosun,2,633.0,Fredericia vs Vendsyssel,2024-07-27,-2,-1,3.76
+30.0,35.2,A. Simon Okosun,Vendsyssel,M. Lassen,2,637.0,Fredericia vs Vendsyssel,2024-07-27,0,0,5.18
+44.7,7.9,M. Lassen,Vendsyssel,M. Greve,2,640.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,6.39
+26.6,35.7,M. Greve,Vendsyssel,O. Jebali,2,644.0,Fredericia vs Vendsyssel,2024-07-27,0,0,16.1
+27.4,66.1,O. Jebali,Vendsyssel,O. Ohlenschlaeger,2,647.0,Fredericia vs Vendsyssel,2024-07-27,1,0,12.14
+38.1,62.6,O. Ohlenschlaeger,Vendsyssel,O. Jebali,2,648.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,3.59
+27.4,62.7,O. Jebali,Vendsyssel,M. Greve,2,650.0,Fredericia vs Vendsyssel,2024-07-27,0,0,8.55
+32.5,33.1,M. Greve,Vendsyssel,M. Lassen,2,653.0,Fredericia vs Vendsyssel,2024-07-27,1,0,12.0
+9.5,93.5,J. Jessen,Fredericia,W. Madsen,2,661.0,Fredericia vs Vendsyssel,2024-07-27,3,1,3.34
+38.0,45.8,W. Madsen,Fredericia,P. Egelund,2,667.0,Fredericia vs Vendsyssel,2024-07-27,2,0,4.6
+74.3,13.7,P. Egelund,Fredericia,A. Dahl,2,674.0,Fredericia vs Vendsyssel,2024-07-27,0,0,2.23
+95.0,12.8,A. Dahl,Fredericia,P. Egelund,2,678.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,8.76
+80.1,13.4,P. Egelund,Fredericia,F. Rieper,2,681.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,5.5
+65.5,17.6,F. Rieper,Fredericia,W. Madsen,2,684.0,Fredericia vs Vendsyssel,2024-07-27,3,0,6.78
+73.0,20.6,W. Madsen,Fredericia,A. Dahl,2,686.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,5.72
+99.5,99.5,W. Madsen,Fredericia,G. Marcussen,2,724.0,Fredericia vs Vendsyssel,2024-07-27,0,0,28.99
+87.4,101.3,W. Madsen,Fredericia,J. Jessen,2,739.0,Fredericia vs Vendsyssel,2024-07-27,1,0,9.7
+88.0,101.0,J. Jessen,Fredericia,W. Madsen,2,745.0,Fredericia vs Vendsyssel,2024-07-27,1,0,5.86
+21.1,30.0,K. Kusk,Vendsyssel,M. Kaastrup,2,751.0,Fredericia vs Vendsyssel,2024-07-27,1,0,5.36
+30.4,68.7,O. Jebali,Vendsyssel,M. Greve,2,769.0,Fredericia vs Vendsyssel,2024-07-27,0,0,13.07
+23.8,35.5,M. Greve,Vendsyssel,M. Lassen,2,776.0,Fredericia vs Vendsyssel,2024-07-27,1,0,10.94
+52.9,9.5,M. Lassen,Vendsyssel,L. Jensen,2,780.0,Fredericia vs Vendsyssel,2024-07-27,2,0,2.1
+60.5,7.0,L. Jensen,Vendsyssel,M. Lassen,2,781.0,Fredericia vs Vendsyssel,2024-07-27,0,0,0.89
+25.9,82.9,J. Jessen,Fredericia,J. Kudsk,2,823.0,Fredericia vs Vendsyssel,2024-07-27,0,0,13.22
+23.8,29.7,F. Rieper,Fredericia,J. Kudsk,2,824.0,Fredericia vs Vendsyssel,2024-07-27,0,0,11.26
+23.5,57.2,J. Kudsk,Fredericia,F. Rieper,2,824.0,Fredericia vs Vendsyssel,2024-07-27,0,0,15.52
+28.1,55.1,J. Kudsk,Fredericia,J. Jessen,2,826.0,Fredericia vs Vendsyssel,2024-07-27,0,0,11.57
+38.5,76.9,J. Jessen,Fredericia,J. Kudsk,2,831.0,Fredericia vs Vendsyssel,2024-07-27,0,0,8.59
+27.5,51.3,J. Kudsk,Fredericia,F. Rieper,2,835.0,Fredericia vs Vendsyssel,2024-07-27,0,0,11.7
+34.5,10.0,F. Rieper,Fredericia,A. Dahl,2,838.0,Fredericia vs Vendsyssel,2024-07-27,4,0,12.81
+68.4,3.5,A. Dahl,Fredericia,J. Lindekilde,2,841.0,Fredericia vs Vendsyssel,2024-07-27,2,0,7.58
+2.9,58.1,L. Schulz,Vendsyssel,A. Simon Okosun,2,848.0,Fredericia vs Vendsyssel,2024-07-27,1,0,5.29
+27.7,65.5,A. Simon Okosun,Vendsyssel,O. Ohlenschlaeger,2,853.0,Fredericia vs Vendsyssel,2024-07-27,0,0,3.05
+24.2,101.9,G. Mortensen,Vendsyssel,K. Kusk,2,866.0,Fredericia vs Vendsyssel,2024-07-27,0,0,-1.0
+37.8,88.9,K. Kusk,Vendsyssel,O. Ohlenschlaeger,2,868.0,Fredericia vs Vendsyssel,2024-07-27,-4,0,2.08
+27.6,94.4,O. Ohlenschlaeger,Vendsyssel,A. Simon Okosun,2,871.0,Fredericia vs Vendsyssel,2024-07-27,1,0,4.84
+28.3,93.2,A. Simon Okosun,Vendsyssel,O. Jebali,2,878.0,Fredericia vs Vendsyssel,2024-07-27,-2,0,2.54
+16.6,84.8,O. Jebali,Vendsyssel,M. Lassen,2,879.0,Fredericia vs Vendsyssel,2024-07-27,1,0,4.12
+23.7,65.8,J. Kudsk,Fredericia,M. Lamhauge,2,884.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,0.77
+56.8,51.0,F. Borsting,Vendsyssel,L. Jensen,2,897.0,Fredericia vs Vendsyssel,2024-07-27,0,0,4.07
+82.5,17.3,L. Jensen,Vendsyssel,M. Lassen,2,900.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,6.01
+99.3,0.2,K. Kusk,Vendsyssel,O. Ohlenschlaeger,2,926.0,Fredericia vs Vendsyssel,2024-07-27,1,0,4.54
+90.0,25.0,O. Ohlenschlaeger,Vendsyssel,K. Kusk,2,928.0,Fredericia vs Vendsyssel,2024-07-27,0,0,2.78
+81.5,10.1,K. Kusk,Vendsyssel,A. Simon Okosun,2,930.0,Fredericia vs Vendsyssel,2024-07-27,6,1,0.68
+5.0,37.0,M. Lamhauge,Fredericia,F. Rieper,2,941.0,Fredericia vs Vendsyssel,2024-07-27,0,0,15.15
+21.5,21.6,F. Rieper,Fredericia,A. Dahl,2,942.0,Fredericia vs Vendsyssel,2024-07-27,2,0,9.68
+30.9,4.7,A. Dahl,Fredericia,F. Rieper,2,947.0,Fredericia vs Vendsyssel,2024-07-27,0,0,1.48
+24.8,19.2,F. Rieper,Fredericia,J. Kudsk,2,949.0,Fredericia vs Vendsyssel,2024-07-27,0,0,13.08
+31.5,54.0,J. Kudsk,Fredericia,J. Jessen,2,953.0,Fredericia vs Vendsyssel,2024-07-27,0,0,13.91
+38.6,89.6,J. Jessen,Fredericia,J. Kudsk,2,955.0,Fredericia vs Vendsyssel,2024-07-27,0,0,7.74
+27.7,62.4,J. Kudsk,Fredericia,M. Lamhauge,2,957.0,Fredericia vs Vendsyssel,2024-07-27,0,0,10.78
+15.1,43.7,M. Lamhauge,Fredericia,F. Rieper,2,961.0,Fredericia vs Vendsyssel,2024-07-27,0,0,14.29
+20.6,22.5,F. Rieper,Fredericia,A. Dahl,2,964.0,Fredericia vs Vendsyssel,2024-07-27,1,0,9.95
+39.3,4.6,A. Dahl,Fredericia,G. Marcussen,2,969.0,Fredericia vs Vendsyssel,2024-07-27,0,0,11.7
+49.4,50.6,G. Marcussen,Fredericia,A. Mucolli,2,974.0,Fredericia vs Vendsyssel,2024-07-27,6,1,8.25
+64.9,49.0,A. Mucolli,Fredericia,A. Bondergaard,2,978.0,Fredericia vs Vendsyssel,2024-07-27,2,2,0.97
+72.1,36.1,A. Bondergaard,Fredericia,A. Dahl,2,979.0,Fredericia vs Vendsyssel,2024-07-27,-3,-1,3.6
+77.4,8.8,A. Dahl,Fredericia,A. Mucolli,2,981.0,Fredericia vs Vendsyssel,2024-07-27,3,1,9.6
+81.6,42.7,G. Marcussen,Fredericia,J. Jessen,2,991.0,Fredericia vs Vendsyssel,2024-07-27,5,1,4.29
+86.2,47.2,J. Jessen,Fredericia,A. Mucolli,2,992.0,Fredericia vs Vendsyssel,2024-07-27,-2,-1,0.35
+87.9,37.0,A. Mucolli,Fredericia,A. Dahl,2,995.0,Fredericia vs Vendsyssel,2024-07-27,-4,0,2.18
+74.6,34.5,W. Madsen,Fredericia,F. Rieper,2,1006.0,Fredericia vs Vendsyssel,2024-07-27,0,0,4.49
+65.8,19.5,F. Rieper,Fredericia,W. Madsen,2,1007.0,Fredericia vs Vendsyssel,2024-07-27,0,0,6.6
+69.5,62.1,J. Kudsk,Fredericia,J. Jessen,2,1062.0,Fredericia vs Vendsyssel,2024-07-27,1,0,7.81
+68.1,29.4,J. Jessen,Fredericia,A. Dahl,2,1064.0,Fredericia vs Vendsyssel,2024-07-27,0,0,2.83
+80.2,62.6,A. Mucolli,Fredericia,J. Kudsk,2,1083.0,Fredericia vs Vendsyssel,2024-07-27,-3,0,1.59
+70.0,60.5,J. Kudsk,Fredericia,A. Dahl,2,1085.0,Fredericia vs Vendsyssel,2024-07-27,4,0,5.92
+87.0,20.3,A. Dahl,Fredericia,A. Bondergaard,2,1092.0,Fredericia vs Vendsyssel,2024-07-27,7,3,2.62
+57.2,33.9,O. Jebali,Vendsyssel,K. Kusk,2,1209.0,Fredericia vs Vendsyssel,2024-07-27,4,2,2.19
+75.6,71.6,O. Ohlenschlaeger,Vendsyssel,K. Kusk,2,1216.0,Fredericia vs Vendsyssel,2024-07-27,-2,-1,4.64
+74.1,70.6,K. Kusk,Vendsyssel,G. Mortensen,2,1217.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,1.86
+81.5,89.9,F. Borsting,Vendsyssel,K. Kusk,2,1227.0,Fredericia vs Vendsyssel,2024-07-27,1,0,1.29
+73.8,90.0,G. Mortensen,Vendsyssel,O. Ohlenschlaeger,2,1242.0,Fredericia vs Vendsyssel,2024-07-27,0,0,5.85
+79.9,96.0,O. Ohlenschlaeger,Vendsyssel,G. Mortensen,2,1243.0,Fredericia vs Vendsyssel,2024-07-27,1,0,6.68
+73.1,88.9,G. Mortensen,Vendsyssel,G. Mortensen,2,1244.0,Fredericia vs Vendsyssel,2024-07-27,0,0,3.81
+99.5,0.5,K. Kusk,Vendsyssel,L. Jensen,2,1283.0,Fredericia vs Vendsyssel,2024-07-27,6,2,27.49
+5.0,37.0,M. Lamhauge,Fredericia,F. Rieper,2,1299.0,Fredericia vs Vendsyssel,2024-07-27,0,0,13.93
+9.3,31.2,F. Rieper,Fredericia,A. Dahl,2,1300.0,Fredericia vs Vendsyssel,2024-07-27,2,0,13.49
+25.9,7.9,A. Dahl,Fredericia,G. Marcussen,2,1301.0,Fredericia vs Vendsyssel,2024-07-27,2,0,7.87
+32.6,8.5,G. Marcussen,Fredericia,P. Egelund,2,1304.0,Fredericia vs Vendsyssel,2024-07-27,2,0,7.73
+55.2,73.2,A. Simon Okosun,Vendsyssel,M. Hannesbo,2,1309.0,Fredericia vs Vendsyssel,2024-07-27,0,0,0.3
+10.2,30.3,W. Madsen,Fredericia,P. Egelund,2,1319.0,Fredericia vs Vendsyssel,2024-07-27,1,1,2.55
+55.5,88.0,O. Jebali,Vendsyssel,L. Schulz,2,1327.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,1.34
+22.0,55.5,L. Schulz,Vendsyssel,M. Greve,2,1329.0,Fredericia vs Vendsyssel,2024-07-27,0,0,26.12
+45.4,49.9,M. Greve,Vendsyssel,M. Lassen,2,1337.0,Fredericia vs Vendsyssel,2024-07-27,1,0,7.17
+70.9,8.2,M. Lassen,Vendsyssel,L. Jensen,2,1339.0,Fredericia vs Vendsyssel,2024-07-27,0,0,10.32
+71.0,10.7,L. Jensen,Vendsyssel,M. Lassen,2,1340.0,Fredericia vs Vendsyssel,2024-07-27,1,0,6.61
+78.6,25.9,M. Lassen,Vendsyssel,A. Simon Okosun,2,1347.0,Fredericia vs Vendsyssel,2024-07-27,-2,0,2.8
+66.5,18.9,A. Simon Okosun,Vendsyssel,M. Greve,2,1349.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,6.78
+49.2,51.6,M. Greve,Vendsyssel,O. Jebali,2,1353.0,Fredericia vs Vendsyssel,2024-07-27,0,0,3.59
+45.7,63.9,O. Jebali,Vendsyssel,O. Ohlenschlaeger,2,1355.0,Fredericia vs Vendsyssel,2024-07-27,1,0,7.69
+56.2,36.4,O. Ohlenschlaeger,Vendsyssel,M. Lassen,2,1359.0,Fredericia vs Vendsyssel,2024-07-27,2,0,4.04
+27.1,91.7,A. Mucolli,Fredericia,G. Marcussen,2,1371.0,Fredericia vs Vendsyssel,2024-07-27,1,0,6.49
+32.9,-0.7,M. Lassen,Vendsyssel,O. Ohlenschlaeger,2,1407.0,Fredericia vs Vendsyssel,2024-07-27,1,0,7.64
+22.2,62.6,F. Rieper,Fredericia,M. Lamhauge,2,1413.0,Fredericia vs Vendsyssel,2024-07-27,0,0,11.51
+12.4,58.1,M. Lamhauge,Fredericia,J. Kudsk,2,1417.0,Fredericia vs Vendsyssel,2024-07-27,0,0,12.74
+21.9,68.7,J. Kudsk,Fredericia,F. Rieper,2,1418.0,Fredericia vs Vendsyssel,2024-07-27,0,0,10.95
+26.5,33.6,F. Rieper,Fredericia,A. Dahl,2,1422.0,Fredericia vs Vendsyssel,2024-07-27,3,0,13.85
+61.0,8.9,A. Dahl,Fredericia,J. Jessen,2,1426.0,Fredericia vs Vendsyssel,2024-07-27,0,0,8.34
+58.4,19.8,J. Jessen,Fredericia,G. Marcussen,2,1430.0,Fredericia vs Vendsyssel,2024-07-27,3,0,4.05
+79.7,62.0,G. Marcussen,Fredericia,A. Mucolli,2,1433.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,5.66
+90.9,80.6,A. Mucolli,Fredericia,A. Bondergaard,2,1435.0,Fredericia vs Vendsyssel,2024-07-27,7,4,5.49
+49.8,49.7,M. Hannesbo,Vendsyssel,O. Ohlenschlaeger,2,1515.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,8.51
+35.1,56.1,O. Ohlenschlaeger,Vendsyssel,M. Greve,2,1518.0,Fredericia vs Vendsyssel,2024-07-27,0,0,8.82
+24.0,36.9,M. Greve,Vendsyssel,O. Jebali,2,1522.0,Fredericia vs Vendsyssel,2024-07-27,0,0,14.16
+26.2,66.9,O. Jebali,Vendsyssel,G. Mortensen,2,1523.0,Fredericia vs Vendsyssel,2024-07-27,0,0,15.05
+55.8,79.3,G. Mortensen,Vendsyssel,O. Ohlenschlaeger,2,1534.0,Fredericia vs Vendsyssel,2024-07-27,0,0,2.5
+48.7,70.3,O. Ohlenschlaeger,Vendsyssel,M. Greve,2,1535.0,Fredericia vs Vendsyssel,2024-07-27,0,0,5.37
+46.9,26.5,M. Greve,Vendsyssel,M. Lassen,2,1536.0,Fredericia vs Vendsyssel,2024-07-27,0,0,6.96
+56.2,10.6,M. Lassen,Vendsyssel,M. Lassen,2,1537.0,Fredericia vs Vendsyssel,2024-07-27,0,0,4.84
+82.8,-1.7,L. Jensen,Vendsyssel,M. Lassen,2,1552.0,Fredericia vs Vendsyssel,2024-07-27,1,0,4.63
+5.2,55.8,M. Lamhauge,Fredericia,D. Kristjansson,2,1584.0,Fredericia vs Vendsyssel,2024-07-27,0,0,14.38
+14.0,89.9,D. Kristjansson,Fredericia,J. Kudsk,2,1586.0,Fredericia vs Vendsyssel,2024-07-27,0,0,6.86
+19.4,64.8,J. Kudsk,Fredericia,J. Jessen,2,1591.0,Fredericia vs Vendsyssel,2024-07-27,6,1,11.65
+37.1,50.4,J. Jessen,Fredericia,P. Egelund,2,1596.0,Fredericia vs Vendsyssel,2024-07-27,0,0,-1.0
+79.8,94.8,P. Egelund,Fredericia,G. Marcussen,2,1600.0,Fredericia vs Vendsyssel,2024-07-27,2,1,1.7
+19.0,11.9,A. Simon Okosun,Vendsyssel,O. Jebali,2,1613.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,0.61
+25.6,60.5,O. Jebali,Vendsyssel,M. Greve,2,1621.0,Fredericia vs Vendsyssel,2024-07-27,0,0,8.76
+23.7,38.5,M. Greve,Vendsyssel,O. Jebali,2,1625.0,Fredericia vs Vendsyssel,2024-07-27,0,0,8.13
+24.4,60.6,O. Jebali,Vendsyssel,M. Greve,2,1627.0,Fredericia vs Vendsyssel,2024-07-27,0,0,10.96
+37.2,35.1,M. Greve,Vendsyssel,F. Borsting,2,1633.0,Fredericia vs Vendsyssel,2024-07-27,9,3,9.51
+73.7,63.3,F. Borsting,Vendsyssel,G. Mortensen,2,1636.0,Fredericia vs Vendsyssel,2024-07-27,-6,-3,1.78
+63.0,75.9,G. Mortensen,Vendsyssel,O. Ohlenschlaeger,2,1638.0,Fredericia vs Vendsyssel,2024-07-27,-2,0,1.63
+58.5,70.3,O. Ohlenschlaeger,Vendsyssel,O. Jebali,2,1640.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,2.51
+41.7,59.7,O. Jebali,Vendsyssel,M. Greve,2,1644.0,Fredericia vs Vendsyssel,2024-07-27,0,0,9.23
+54.5,33.0,M. Greve,Vendsyssel,M. Lassen,2,1647.0,Fredericia vs Vendsyssel,2024-07-27,0,0,7.74
+72.0,8.6,M. Lassen,Vendsyssel,L. Jensen,2,1662.0,Fredericia vs Vendsyssel,2024-07-27,4,0,2.4
+63.1,-1.6,M. Lassen,Vendsyssel,L. Jensen,2,1772.0,Fredericia vs Vendsyssel,2024-07-27,2,0,6.55
+79.4,8.9,M. Lassen,Vendsyssel,L. Jensen,2,1784.0,Fredericia vs Vendsyssel,2024-07-27,1,0,2.77
+89.9,12.6,L. Jensen,Vendsyssel,O. Ohlenschlaeger,2,1785.0,Fredericia vs Vendsyssel,2024-07-27,2,0,0.49
+89.3,94.8,F. Borsting,Vendsyssel,M. Hannesbo,2,1853.0,Fredericia vs Vendsyssel,2024-07-27,1,1,3.32
+14.1,-2.0,A. Dahl,Fredericia,F. Rieper,2,1860.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,1.78
+5.6,42.2,F. Rieper,Fredericia,D. Kristjansson,2,1864.0,Fredericia vs Vendsyssel,2024-07-27,0,0,8.31
+14.4,101.3,A. Mucolli,Fredericia,G. Marcussen,2,1873.0,Fredericia vs Vendsyssel,2024-07-27,0,0,2.57
+26.3,71.2,G. Marcussen,Fredericia,D. Kristjansson,2,1877.0,Fredericia vs Vendsyssel,2024-07-27,0,0,5.24
+28.8,82.7,D. Kristjansson,Fredericia,G. Marcussen,2,1878.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,2.64
+61.4,79.4,M. Hannesbo,Vendsyssel,O. Ohlenschlaeger,2,1888.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,2.58
+52.7,67.3,O. Ohlenschlaeger,Vendsyssel,F. Borsting,2,1893.0,Fredericia vs Vendsyssel,2024-07-27,5,2,3.69
+62.8,92.0,F. Borsting,Vendsyssel,O. Ohlenschlaeger,2,1895.0,Fredericia vs Vendsyssel,2024-07-27,0,0,-1.0
+53.0,75.3,O. Ohlenschlaeger,Vendsyssel,A. Simon Okosun,2,1899.0,Fredericia vs Vendsyssel,2024-07-27,0,0,7.3
+57.6,28.9,A. Simon Okosun,Vendsyssel,L. Jensen,2,1905.0,Fredericia vs Vendsyssel,2024-07-27,3,0,2.73
+70.9,27.1,L. Jensen,Vendsyssel,M. Lassen,2,1908.0,Fredericia vs Vendsyssel,2024-07-27,-2,-1,4.9
+99.6,0.4,L. Jensen,Vendsyssel,A. Simon Okosun,2,1947.0,Fredericia vs Vendsyssel,2024-07-27,2,0,31.26
+88.6,74.7,A. Simon Okosun,Vendsyssel,A. Ahmad,2,1955.0,Fredericia vs Vendsyssel,2024-07-27,-2,0,2.58
+71.2,84.7,A. Ahmad,Vendsyssel,M. Haarup,2,1959.0,Fredericia vs Vendsyssel,2024-07-27,0,0,3.19
+45.0,20.1,W. Madsen,Fredericia,F. Rieper,2,1996.0,Fredericia vs Vendsyssel,2024-07-27,0,0,4.25
+5.3,61.4,L. Schulz,Vendsyssel,A. Simon Okosun,2,2005.0,Fredericia vs Vendsyssel,2024-07-27,0,0,13.38
+14.1,37.7,A. Simon Okosun,Vendsyssel,V. Mpindi,2,2008.0,Fredericia vs Vendsyssel,2024-07-27,3,0,9.58
+66.0,8.9,L. Jensen,Vendsyssel,A. Simon Okosun,2,2036.0,Fredericia vs Vendsyssel,2024-07-27,0,0,4.6
+41.1,21.3,A. Simon Okosun,Vendsyssel,O. Jebali,2,2037.0,Fredericia vs Vendsyssel,2024-07-27,0,0,8.96
+34.6,64.8,O. Jebali,Vendsyssel,A. Simon Okosun,2,2041.0,Fredericia vs Vendsyssel,2024-07-27,0,0,11.06
+33.6,33.0,A. Simon Okosun,Vendsyssel,O. Jebali,2,2045.0,Fredericia vs Vendsyssel,2024-07-27,0,0,5.87
+30.4,59.4,O. Jebali,Vendsyssel,V. Mpindi,2,2047.0,Fredericia vs Vendsyssel,2024-07-27,2,0,3.53
+36.8,44.0,V. Mpindi,Vendsyssel,F. Borsting,2,2050.0,Fredericia vs Vendsyssel,2024-07-27,3,1,3.09
+46.3,27.1,F. Borsting,Vendsyssel,V. Mpindi,2,2052.0,Fredericia vs Vendsyssel,2024-07-27,-2,-1,5.86
+46.6,41.0,V. Mpindi,Vendsyssel,L. Jensen,2,2053.0,Fredericia vs Vendsyssel,2024-07-27,3,1,2.62
+62.7,33.9,L. Jensen,Vendsyssel,M. Lassen,2,2056.0,Fredericia vs Vendsyssel,2024-07-27,-4,-1,3.12
+66.3,23.4,M. Lassen,Vendsyssel,V. Mpindi,2,2060.0,Fredericia vs Vendsyssel,2024-07-27,-2,0,2.17
+58.8,25.0,V. Mpindi,Vendsyssel,L. Jensen,2,2061.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,6.74
+12.3,43.1,M. Lamhauge,Fredericia,F. Rieper,2,2085.0,Fredericia vs Vendsyssel,2024-07-27,0,0,6.33
+70.7,101.6,M. Haarup,Vendsyssel,O. Ohlenschlaeger,2,2099.0,Fredericia vs Vendsyssel,2024-07-27,0,0,6.46
+12.6,49.0,M. Lamhauge,Fredericia,J. Kudsk,2,2118.0,Fredericia vs Vendsyssel,2024-07-27,0,0,9.02
+83.2,62.7,A. Ahmad,Vendsyssel,V. Mpindi,2,2141.0,Fredericia vs Vendsyssel,2024-07-27,-2,-1,2.08
+28.1,63.9,D. Kristjansson,Fredericia,A. Mucolli,2,2151.0,Fredericia vs Vendsyssel,2024-07-27,0,0,3.9
+48.1,89.0,A. Mucolli,Fredericia,D. Kristjansson,2,2156.0,Fredericia vs Vendsyssel,2024-07-27,-2,0,6.52
+48.5,80.0,D. Kristjansson,Fredericia,A. Mucolli,2,2158.0,Fredericia vs Vendsyssel,2024-07-27,0,0,3.9
+48.2,88.6,A. Mucolli,Fredericia,D. Kristjansson,2,2159.0,Fredericia vs Vendsyssel,2024-07-27,1,0,3.26
+47.0,71.8,D. Kristjansson,Fredericia,J. Kudsk,2,2161.0,Fredericia vs Vendsyssel,2024-07-27,-3,0,4.28
+85.1,-1.6,M. Haarup,Vendsyssel,A. Simon Okosun,2,2198.0,Fredericia vs Vendsyssel,2024-07-27,4,0,22.75
+7.4,47.6,M. Lamhauge,Fredericia,J. Jessen,2,2232.0,Fredericia vs Vendsyssel,2024-07-27,4,0,38.89
+63.0,22.5,J. Jessen,Fredericia,P. Egelund,2,2237.0,Fredericia vs Vendsyssel,2024-07-27,3,0,1.41
+68.5,-2.0,A. Dahl,Fredericia,E. Dall,2,2251.0,Fredericia vs Vendsyssel,2024-07-27,7,1,3.69
+76.0,79.0,J. Kudsk,Fredericia,P. Egelund,2,2278.0,Fredericia vs Vendsyssel,2024-07-27,4,1,3.23
+82.0,69.9,P. Egelund,Fredericia,E. Dall,2,2279.0,Fredericia vs Vendsyssel,2024-07-27,1,1,2.91
+49.8,49.9,A. Ahmad,Vendsyssel,V. Mpindi,2,2338.0,Fredericia vs Vendsyssel,2024-07-27,0,0,-1.0
+31.0,47.9,V. Mpindi,Vendsyssel,A. Simon Okosun,2,2343.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,6.14
+23.1,33.6,A. Simon Okosun,Vendsyssel,L. Schulz,2,2344.0,Fredericia vs Vendsyssel,2024-07-27,0,0,2.62
+12.9,37.3,L. Schulz,Vendsyssel,M. Lassen,2,2348.0,Fredericia vs Vendsyssel,2024-07-27,3,0,17.39
+56.2,15.6,M. Lassen,Vendsyssel,F. Borsting,2,2351.0,Fredericia vs Vendsyssel,2024-07-27,2,1,2.61
+34.1,83.6,D. Kristjansson,Fredericia,W. Madsen,2,2355.0,Fredericia vs Vendsyssel,2024-07-27,2,0,3.07
+44.8,74.5,W. Madsen,Fredericia,D. Kristjansson,2,2358.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,1.31
+36.3,72.1,D. Kristjansson,Fredericia,J. Jessen,2,2359.0,Fredericia vs Vendsyssel,2024-07-27,2,0,4.96
+41.4,15.2,A. Dahl,Fredericia,F. Rieper,2,2369.0,Fredericia vs Vendsyssel,2024-07-27,-2,0,4.45
+26.8,32.4,F. Rieper,Fredericia,J. Kudsk,2,2370.0,Fredericia vs Vendsyssel,2024-07-27,0,0,5.87
+32.9,60.0,J. Kudsk,Fredericia,A. Mucolli,2,2374.0,Fredericia vs Vendsyssel,2024-07-27,4,0,4.54
+43.5,64.3,A. Mucolli,Fredericia,W. Madsen,2,2381.0,Fredericia vs Vendsyssel,2024-07-27,-5,0,3.54
+31.4,64.2,W. Madsen,Fredericia,J. Kudsk,2,2381.0,Fredericia vs Vendsyssel,2024-07-27,0,0,-1.0
+59.9,37.6,G. Marcussen,Fredericia,D. Kristjansson,2,2394.0,Fredericia vs Vendsyssel,2024-07-27,-2,0,6.6
+72.6,64.5,D. Kristjansson,Fredericia,A. Mucolli,2,2397.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,6.88
+82.7,72.4,A. Mucolli,Fredericia,P. Egelund,2,2398.0,Fredericia vs Vendsyssel,2024-07-27,5,1,3.57
+79.5,55.5,P. Egelund,Fredericia,J. Jessen,2,2399.0,Fredericia vs Vendsyssel,2024-07-27,-3,-1,2.24
+76.3,38.3,J. Jessen,Fredericia,A. Dahl,2,2400.0,Fredericia vs Vendsyssel,2024-07-27,-2,0,3.59
+73.6,23.1,A. Dahl,Fredericia,E. Dall,2,2403.0,Fredericia vs Vendsyssel,2024-07-27,4,0,6.65
+92.8,11.9,E. Dall,Fredericia,G. Marcussen,2,2410.0,Fredericia vs Vendsyssel,2024-07-27,-3,0,0.71
+78.8,10.7,G. Marcussen,Fredericia,J. Jessen,2,2412.0,Fredericia vs Vendsyssel,2024-07-27,0,0,7.74
+3.9,43.3,L. Schulz,Vendsyssel,F. Borsting,2,2436.0,Fredericia vs Vendsyssel,2024-07-27,6,1,40.43
+72.2,23.7,F. Borsting,Vendsyssel,L. Jensen,2,2441.0,Fredericia vs Vendsyssel,2024-07-27,-2,-1,2.55
+29.9,30.9,A. Simon Okosun,Vendsyssel,M. Lassen,2,2446.0,Fredericia vs Vendsyssel,2024-07-27,3,0,2.51
+4.6,43.6,M. Lamhauge,Fredericia,J. Jessen,2,2497.0,Fredericia vs Vendsyssel,2024-07-27,3,0,39.85
+64.7,13.7,J. Jessen,Fredericia,E. Dall,2,2501.0,Fredericia vs Vendsyssel,2024-07-27,3,0,1.57
+32.2,70.6,V. Mpindi,Vendsyssel,F. Borsting,2,2506.0,Fredericia vs Vendsyssel,2024-07-27,0,0,-1.0
+40.5,74.7,F. Borsting,Vendsyssel,M. Hannesbo,2,2507.0,Fredericia vs Vendsyssel,2024-07-27,-4,-2,3.95
+31.1,88.7,M. Hannesbo,Vendsyssel,M. Haarup,2,2508.0,Fredericia vs Vendsyssel,2024-07-27,-2,0,2.97
+24.3,86.6,M. Haarup,Vendsyssel,O. Jebali,2,2510.0,Fredericia vs Vendsyssel,2024-07-27,0,0,5.58
+7.7,64.8,O. Jebali,Vendsyssel,L. Schulz,2,2514.0,Fredericia vs Vendsyssel,2024-07-27,0,0,14.97
+3.0,53.6,L. Schulz,Vendsyssel,M. Lassen,2,2517.0,Fredericia vs Vendsyssel,2024-07-27,4,0,6.82
+28.5,10.1,M. Lassen,Vendsyssel,L. Jensen,2,2520.0,Fredericia vs Vendsyssel,2024-07-27,2,1,1.64
+57.4,28.3,A. Ahmad,Vendsyssel,V. Mpindi,2,2583.0,Fredericia vs Vendsyssel,2024-07-27,-4,0,2.25
+54.7,38.9,V. Mpindi,Vendsyssel,M. Haarup,2,2584.0,Fredericia vs Vendsyssel,2024-07-27,0,0,3.99
+58.7,88.0,M. Haarup,Vendsyssel,V. Mpindi,2,2590.0,Fredericia vs Vendsyssel,2024-07-27,0,0,6.82
+51.5,71.7,V. Mpindi,Vendsyssel,O. Jebali,2,2591.0,Fredericia vs Vendsyssel,2024-07-27,0,0,3.8
+46.6,49.7,O. Jebali,Vendsyssel,A. Simon Okosun,2,2594.0,Fredericia vs Vendsyssel,2024-07-27,0,0,9.62
+58.5,30.0,A. Simon Okosun,Vendsyssel,O. Jebali,2,2601.0,Fredericia vs Vendsyssel,2024-07-27,0,0,11.44
+46.5,49.6,O. Jebali,Vendsyssel,V. Mpindi,2,2603.0,Fredericia vs Vendsyssel,2024-07-27,0,0,13.06
+53.7,71.2,V. Mpindi,Vendsyssel,M. Haarup,2,2606.0,Fredericia vs Vendsyssel,2024-07-27,0,0,10.85
+71.9,93.9,M. Haarup,Vendsyssel,M. Hannesbo,2,2609.0,Fredericia vs Vendsyssel,2024-07-27,4,1,4.94
+22.1,-1.7,J. Brinch,Fredericia,J. Jessen,2,2618.0,Fredericia vs Vendsyssel,2024-07-27,3,0,7.09
+31.9,11.7,J. Jessen,Fredericia,D. Thogersen,2,2623.0,Fredericia vs Vendsyssel,2024-07-27,0,0,6.01
+40.4,51.5,D. Thogersen,Fredericia,J. Kudsk,2,2624.0,Fredericia vs Vendsyssel,2024-07-27,-3,0,6.23
+29.6,57.9,J. Kudsk,Fredericia,D. Kristjansson,2,2628.0,Fredericia vs Vendsyssel,2024-07-27,0,0,15.03
+35.1,73.6,D. Kristjansson,Fredericia,J. Kudsk,2,2629.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,7.26
+13.4,12.2,A. Simon Okosun,Vendsyssel,L. Schulz,2,2640.0,Fredericia vs Vendsyssel,2024-07-27,0,0,2.16
+44.8,45.1,F. Rieper,Fredericia,E. Dall,2,2646.0,Fredericia vs Vendsyssel,2024-07-27,3,1,3.46
+63.9,88.1,O. Ohlenschlaeger,Vendsyssel,V. Mpindi,2,2660.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,4.05
+57.6,76.0,V. Mpindi,Vendsyssel,F. Borsting,2,2663.0,Fredericia vs Vendsyssel,2024-07-27,2,0,9.4
+67.4,72.6,F. Borsting,Vendsyssel,M. Haarup,2,2665.0,Fredericia vs Vendsyssel,2024-07-27,-2,0,2.65
+59.6,91.4,M. Haarup,Vendsyssel,F. Borsting,2,2668.0,Fredericia vs Vendsyssel,2024-07-27,2,0,7.92
+87.4,71.8,F. Borsting,Vendsyssel,V. Mpindi,2,2675.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,9.87
+68.7,74.8,V. Mpindi,Vendsyssel,O. Ohlenschlaeger,2,2688.0,Fredericia vs Vendsyssel,2024-07-27,-2,0,6.8
+64.1,84.4,O. Ohlenschlaeger,Vendsyssel,O. Jebali,2,2690.0,Fredericia vs Vendsyssel,2024-07-27,0,0,5.34
+51.2,68.7,O. Jebali,Vendsyssel,V. Mpindi,2,2691.0,Fredericia vs Vendsyssel,2024-07-27,0,0,13.35
+60.0,59.4,V. Mpindi,Vendsyssel,O. Ohlenschlaeger,2,2693.0,Fredericia vs Vendsyssel,2024-07-27,0,0,2.89
+61.2,77.2,O. Ohlenschlaeger,Vendsyssel,M. Haarup,2,2696.0,Fredericia vs Vendsyssel,2024-07-27,0,0,12.42
+73.3,93.6,M. Haarup,Vendsyssel,M. Hannesbo,2,2700.0,Fredericia vs Vendsyssel,2024-07-27,3,1,6.44
+76.4,95.4,M. Hannesbo,Vendsyssel,O. Ohlenschlaeger,2,2705.0,Fredericia vs Vendsyssel,2024-07-27,-1,-1,2.08
+65.8,69.1,O. Ohlenschlaeger,Vendsyssel,F. Borsting,2,2712.0,Fredericia vs Vendsyssel,2024-07-27,0,0,2.34
+64.4,79.6,F. Borsting,Vendsyssel,M. Haarup,2,2713.0,Fredericia vs Vendsyssel,2024-07-27,0,0,6.63
+99.4,0.1,L. Jensen,Vendsyssel,A. Simon Okosun,2,2740.0,Fredericia vs Vendsyssel,2024-07-27,2,0,27.62
+31.1,70.3,O. Ohlenschlaeger,Vendsyssel,V. Mpindi,2,2786.0,Fredericia vs Vendsyssel,2024-07-27,2,1,1.52
+36.5,17.0,J. Brinch,Fredericia,W. Madsen,2,2789.0,Fredericia vs Vendsyssel,2024-07-27,3,0,1.71
+33.9,24.7,W. Madsen,Fredericia,G. Marcussen,2,2791.0,Fredericia vs Vendsyssel,2024-07-27,0,0,7.69
+39.3,31.0,G. Marcussen,Fredericia,J. Brinch,2,2791.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,4.99
+40.9,15.5,J. Brinch,Fredericia,F. Rieper,2,2794.0,Fredericia vs Vendsyssel,2024-07-27,-3,0,1.35
+28.3,18.3,F. Rieper,Fredericia,G. Marcussen,2,2797.0,Fredericia vs Vendsyssel,2024-07-27,4,0,8.08
+66.8,59.1,G. Marcussen,Fredericia,D. Kristjansson,2,2804.0,Fredericia vs Vendsyssel,2024-07-27,0,0,3.22
+89.1,86.9,D. Kristjansson,Fredericia,G. Marcussen,2,2807.0,Fredericia vs Vendsyssel,2024-07-27,-3,0,9.52
+79.9,85.4,G. Marcussen,Fredericia,A. Dahl,2,2810.0,Fredericia vs Vendsyssel,2024-07-27,9,2,7.72
+64.2,74.5,W. Madsen,Fredericia,J. Kudsk,2,2815.0,Fredericia vs Vendsyssel,2024-07-27,0,0,0.54
+54.5,47.0,J. Kudsk,Fredericia,F. Rieper,2,2818.0,Fredericia vs Vendsyssel,2024-07-27,0,0,9.53
+7.3,17.0,L. Jensen,Vendsyssel,M. Lassen,2,2827.0,Fredericia vs Vendsyssel,2024-07-27,0,0,0.96
+40.6,39.5,F. Rieper,Fredericia,M. Lamhauge,2,2837.0,Fredericia vs Vendsyssel,2024-07-27,0,0,4.52
+24.7,47.6,M. Lamhauge,Fredericia,F. Rieper,2,2838.0,Fredericia vs Vendsyssel,2024-07-27,0,0,16.85
+33.3,23.4,F. Rieper,Fredericia,M. Lamhauge,2,2841.0,Fredericia vs Vendsyssel,2024-07-27,0,0,8.02
+13.2,45.2,M. Lamhauge,Fredericia,J. Kudsk,2,2848.0,Fredericia vs Vendsyssel,2024-07-27,0,0,11.7
+25.7,69.6,J. Kudsk,Fredericia,D. Kristjansson,2,2851.0,Fredericia vs Vendsyssel,2024-07-27,1,0,9.32
+32.4,84.7,D. Kristjansson,Fredericia,G. Marcussen,2,2854.0,Fredericia vs Vendsyssel,2024-07-27,2,0,5.29
+44.6,90.3,G. Marcussen,Fredericia,D. Kristjansson,2,2856.0,Fredericia vs Vendsyssel,2024-07-27,1,1,4.42
+55.4,67.3,D. Kristjansson,Fredericia,W. Madsen,2,2860.0,Fredericia vs Vendsyssel,2024-07-27,-4,-1,4.32
+46.3,51.0,W. Madsen,Fredericia,E. Dall,2,2864.0,Fredericia vs Vendsyssel,2024-07-27,1,0,8.38
+62.0,3.2,E. Dall,Fredericia,J. Jessen,2,2868.0,Fredericia vs Vendsyssel,2024-07-27,0,0,6.04
+63.8,7.7,J. Jessen,Fredericia,E. Dall,2,2869.0,Fredericia vs Vendsyssel,2024-07-27,-2,0,6.27
+56.4,2.9,E. Dall,Fredericia,F. Rieper,2,2870.0,Fredericia vs Vendsyssel,2024-07-27,0,0,4.85
+41.6,8.6,F. Rieper,Fredericia,J. Kudsk,2,2872.0,Fredericia vs Vendsyssel,2024-07-27,0,0,11.61
+44.7,62.3,J. Kudsk,Fredericia,D. Kristjansson,2,2875.0,Fredericia vs Vendsyssel,2024-07-27,2,0,12.14
+56.3,62.1,D. Kristjansson,Fredericia,D. Thogersen,2,2879.0,Fredericia vs Vendsyssel,2024-07-27,2,0,4.93
+66.8,67.5,D. Thogersen,Fredericia,D. Kristjansson,2,2880.0,Fredericia vs Vendsyssel,2024-07-27,-3,0,2.14
+59.1,65.7,D. Kristjansson,Fredericia,J. Jessen,2,2882.0,Fredericia vs Vendsyssel,2024-07-27,2,0,5.09
+21.1,43.0,L. Schulz,Vendsyssel,A. Simon Okosun,2,2908.0,Fredericia vs Vendsyssel,2024-07-27,6,1,27.87
+15.3,52.8,F. Rieper,Fredericia,J. Jessen,2,2912.0,Fredericia vs Vendsyssel,2024-07-27,3,0,1.38
+32.7,44.0,W. Madsen,Fredericia,F. Rieper,2,2932.0,Fredericia vs Vendsyssel,2024-07-27,-2,0,1.0
+24.5,23.3,F. Rieper,Fredericia,W. Madsen,2,2933.0,Fredericia vs Vendsyssel,2024-07-27,2,0,5.18
+66.1,-1.7,J. Brinch,Fredericia,P. Egelund,2,2958.0,Fredericia vs Vendsyssel,2024-07-27,4,1,6.49
+19.8,73.2,V. Mpindi,Vendsyssel,A. Simon Okosun,2,2966.0,Fredericia vs Vendsyssel,2024-07-27,-1,0,5.27
+19.2,41.5,A. Simon Okosun,Vendsyssel,O. Ohlenschlaeger,2,2967.0,Fredericia vs Vendsyssel,2024-07-27,0,0,5.51
+22.9,62.7,O. Ohlenschlaeger,Vendsyssel,A. Simon Okosun,2,2970.0,Fredericia vs Vendsyssel,2024-07-27,0,0,8.29
+20.6,31.0,A. Simon Okosun,Vendsyssel,L. Schulz,2,2972.0,Fredericia vs Vendsyssel,2024-07-27,0,0,6.22
+44.9,44.6,F. Rieper,Fredericia,J. Jessen,2,2979.0,Fredericia vs Vendsyssel,2024-07-27,4,1,1.4
+56.2,48.5,J. Jessen,Fredericia,G. Marcussen,2,2981.0,Fredericia vs Vendsyssel,2024-07-27,-1,-1,2.55
+59.2,75.3,G. Marcussen,Fredericia,F. Rieper,2,2986.0,Fredericia vs Vendsyssel,2024-07-27,-2,0,1.32
+65.0,17.0,F. Rieper,Fredericia,J. Brinch,2,2993.0,Fredericia vs Vendsyssel,2024-07-27,1,0,9.42
+71.4,5.0,J. Brinch,Fredericia,J. Jessen,2,2995.0,Fredericia vs Vendsyssel,2024-07-27,0,0,7.29

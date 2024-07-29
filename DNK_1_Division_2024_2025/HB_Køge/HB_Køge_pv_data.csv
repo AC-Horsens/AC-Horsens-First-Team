@@ -1645,7 +1645,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703403269,7,10,1,0,23,1,6.8,38.1,619s1phj5bkgkug3aszc1y9cl,M. Jensen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703403261,6,6,1,0,23,0,3.6,38.5,619s1phj5bkgkug3aszc1y9cl,M. Jensen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703403345,8,12,1,0,55,1,9.9,44.0,5nved2kta2hk8103hkyhq33hm,M. Jakobsen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703403351,9,5,1,1,1,1,-1.2,59.8,5nved2kta2hk8103hkyhq33hm,M. Jakobsen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703403351,9,5,1,0,59,1,-1.2,59.8,5nved2kta2hk8103hkyhq33hm,M. Jakobsen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703403403,10,1,1,1,21,0,4.2,50.9,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.0009369,0.0001945,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703403431,11,1,1,1,29,0,37.4,37.7,5nved2kta2hk8103hkyhq33hm,M. Jakobsen,0.0044757,0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703403449,12,7,1,1,33,1,55.0,74.1,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.0042373,-0.0002384,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -1668,6 +1668,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703403881,29,5,1,3,9,0,92.2,-1.4,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703403991,30,1,1,3,30,1,58.3,10.6,5nved2kta2hk8103hkyhq33hm,M. Jakobsen,0.0251661,0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703403995,31,3,1,3,31,0,75.6,38.0,bmvcofmie6om4muxij4kdkro4,I. Dorgu,0.0058933,-0.0192728,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703885657,843,7,1,3,35,0,88.7,9.2,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703404017,32,83,1,3,36,0,78.8,13.1,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703451785,840,43,1,3,37,1,0.0,0.0,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703404079,33,4,1,3,42,0,71.2,9.6,5nved2kta2hk8103hkyhq33hm,M. Jakobsen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -1695,7 +1696,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703404699,55,1,1,5,35,1,4.2,38.8,am3509ake84cde1xhb9264i22,M. Gudmann,0.0003383,-0.0004041,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703404719,56,1,1,5,41,1,8.0,51.9,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.0003328,-5.5e-06,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703404723,57,1,1,5,44,0,8.1,27.4,am3509ake84cde1xhb9264i22,M. Gudmann,0.0004614,0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703404733,58,8,1,5,47,1,14.3,19.1,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,0.01035,0.01035,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703404733,58,1,1,5,47,0,16.9,18.0,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,0.01035,0.01035,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703404815,59,4,1,5,59,1,23.4,28.0,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703404863,60,1,1,6,11,1,27.7,21.9,619s1phj5bkgkug3aszc1y9cl,M. Jensen,0.0002836,-0.0004585,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703404873,61,1,1,6,13,1,23.3,63.0,2pm5oqzyonn0dysa5nszgq3xm,H. Bonnesen,0.0003233,3.97e-05,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -1717,7 +1718,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703405201,78,1,1,7,27,0,45.5,27.6,am3509ake84cde1xhb9264i22,M. Gudmann,0.0011737,-0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703405207,79,44,1,7,30,0,42.6,53.3,2pm5oqzyonn0dysa5nszgq3xm,H. Bonnesen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703405211,80,61,1,7,31,1,38.8,48.7,2pm5oqzyonn0dysa5nszgq3xm,H. Bonnesen,0.004052,0.004052,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703405277,81,1,1,7,37,1,43.6,80.9,e2aqcawslcbpp88nia8eko2y1,J. Rothmann,0.0002811,-0.0037709,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703405277,81,1,1,7,37,1,42.4,80.5,e2aqcawslcbpp88nia8eko2y1,J. Rothmann,0.0002811,-0.0037709,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703405285,82,1,1,7,47,1,34.0,30.4,am3509ake84cde1xhb9264i22,M. Gudmann,0.0006929,0.0004118,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703405301,83,1,1,7,48,1,35.6,65.1,2pm5oqzyonn0dysa5nszgq3xm,H. Bonnesen,0.0012794,0.0005865,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703405313,84,1,1,7,53,1,42.8,92.7,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.0003106,-0.0009688,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -1760,14 +1761,15 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703406927,121,1,1,13,16,1,25.6,36.0,am3509ake84cde1xhb9264i22,M. Gudmann,0.001331,0.0010531,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703406945,122,1,1,13,19,1,46.3,9.1,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,0.0002714,-0.0010596,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703406955,123,1,1,13,23,0,24.7,27.7,am3509ake84cde1xhb9264i22,M. Gudmann,0.0011561,-0.0002714,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703912813,844,83,1,13,26,1,76.9,74.6,e2aqcawslcbpp88nia8eko2y1,J. Rothmann,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703407035,124,1,1,13,34,1,60.6,57.6,5nved2kta2hk8103hkyhq33hm,M. Jakobsen,0.0042373,0.0042373,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703407041,125,1,1,13,41,1,63.8,31.5,e2aqcawslcbpp88nia8eko2y1,J. Rothmann,0.008386,0.0041487,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703407045,126,1,1,13,43,0,75.8,20.3,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0049066,-0.0034794,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703412215,298,61,1,13,50,1,33.9,18.0,am3509ake84cde1xhb9264i22,M. Gudmann,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703412215,298,61,1,13,50,0,33.9,18.0,am3509ake84cde1xhb9264i22,M. Gudmann,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703407161,127,12,1,14,3,1,8.1,43.6,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703407163,128,6,1,14,3,0,3.4,37.7,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703407261,129,44,1,14,35,0,3.8,49.7,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703407273,130,5,1,14,38,1,-1.4,56.4,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703407261,129,44,1,14,32,0,3.8,49.7,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703407273,130,5,1,14,34,1,-1.4,56.4,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703407387,131,1,1,14,58,1,3.7,38.5,am3509ake84cde1xhb9264i22,M. Gudmann,0.0003383,-0.0004041,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703407395,132,1,1,15,5,1,5.0,55.5,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.0003397,1.4e-06,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703407401,133,1,1,15,8,1,12.1,26.1,am3509ake84cde1xhb9264i22,M. Gudmann,0.0007186,0.0003789,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -1776,6 +1778,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703407459,136,8,1,15,24,1,25.6,36.0,am3509ake84cde1xhb9264i22,M. Gudmann,0.000967,0.000967,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703407485,137,49,1,15,27,1,34.8,29.4,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0030069,0.0020399,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703407487,138,61,1,15,29,0,34.9,30.6,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0014224,0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703917861,845,44,1,15,58,1,10.2,51.3,am3509ake84cde1xhb9264i22,M. Gudmann,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703407693,139,12,1,15,58,1,7.8,54.2,am3509ake84cde1xhb9264i22,M. Gudmann,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703407739,140,12,1,16,6,1,9.0,44.3,am3509ake84cde1xhb9264i22,M. Gudmann,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703407769,141,10,1,16,11,1,1.7,49.9,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -1833,10 +1836,10 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703409217,193,1,1,21,28,1,9.3,27.3,am3509ake84cde1xhb9264i22,M. Gudmann,0.0006929,0.0003532,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703409227,194,1,1,21,30,1,35.7,33.3,3mcj3wypzq3lno1ehc0vif1sl,J. Arias,0.0002807,-0.0004122,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703409233,195,1,1,21,32,1,28.8,15.0,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.001312,0.0010313,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703409247,196,1,1,21,33,1,54.1,10.4,bmvcofmie6om4muxij4kdkro4,I. Dorgu,0.000271,-0.001041,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703409247,196,1,1,21,33,1,51.6,8.4,bmvcofmie6om4muxij4kdkro4,I. Dorgu,0.000271,-0.001041,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703409265,197,1,1,21,36,1,22.1,11.3,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,0.0003089,3.79e-05,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703409271,198,1,1,21,39,1,19.1,30.7,am3509ake84cde1xhb9264i22,M. Gudmann,0.0003397,3.08e-05,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703409299,199,1,1,21,42,1,23.3,81.1,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.0003362,-3.5e-06,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703409271,198,1,1,21,39,1,23.1,32.1,am3509ake84cde1xhb9264i22,M. Gudmann,0.0003397,3.08e-05,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703409299,199,1,1,21,42,1,27.2,77.1,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.0003362,-3.5e-06,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703409313,200,1,1,21,47,1,27.9,27.1,am3509ake84cde1xhb9264i22,M. Gudmann,0.0008688,0.0005326,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703409327,201,1,1,21,49,1,36.9,33.0,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0002708,-0.000598,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703409351,202,1,1,21,51,1,23.5,26.5,am3509ake84cde1xhb9264i22,M. Gudmann,0.0002681,-2.7e-06,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -1853,7 +1856,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703409489,213,1,1,22,28,1,39.3,73.5,619s1phj5bkgkug3aszc1y9cl,M. Jensen,0.0083183,0.0071942,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703409493,214,1,1,22,33,0,80.1,8.9,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,0.0066207,-0.0016976,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703409505,215,61,1,22,36,1,86.2,30.9,e2aqcawslcbpp88nia8eko2y1,J. Rothmann,0.1069492,-0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703409541,216,83,1,22,49,0,56.7,4.7,619s1phj5bkgkug3aszc1y9cl,M. Jensen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703409541,216,83,1,22,47,0,56.7,4.7,619s1phj5bkgkug3aszc1y9cl,M. Jensen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703409635,217,7,1,23,11,1,26.0,72.8,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.0104563,0.0104563,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703409637,218,50,1,23,13,1,21.8,75.2,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.0,-0.0104563,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703409647,219,52,1,23,16,1,0.8,59.4,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -1886,7 +1889,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703410151,246,1,1,25,16,1,29.3,53.4,2pm5oqzyonn0dysa5nszgq3xm,H. Bonnesen,0.0007114,0.0003796,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703410203,247,1,1,25,19,1,37.3,85.6,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.0103975,0.0096861,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703410211,248,3,1,25,27,0,80.6,15.2,bmvcofmie6om4muxij4kdkro4,I. Dorgu,0.0045938,-0.0058037,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703410229,249,61,1,25,30,0,77.6,13.7,bmvcofmie6om4muxij4kdkro4,I. Dorgu,0.0017411,0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703410229,249,61,1,25,29,0,77.6,13.7,bmvcofmie6om4muxij4kdkro4,I. Dorgu,0.0017411,0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703410275,250,83,1,25,42,0,18.5,87.7,e2aqcawslcbpp88nia8eko2y1,J. Rothmann,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703410305,251,44,1,25,47,1,6.7,49.2,am3509ake84cde1xhb9264i22,M. Gudmann,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703410315,252,12,1,25,47,1,7.1,47.2,am3509ake84cde1xhb9264i22,M. Gudmann,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -1894,7 +1897,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703410425,254,1,1,26,16,1,3.5,38.6,am3509ake84cde1xhb9264i22,M. Gudmann,0.0003684,-0.000374,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703410429,255,1,1,26,18,1,3.7,52.5,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.0003417,-2.67e-05,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703410459,256,1,1,26,20,1,6.6,34.5,am3509ake84cde1xhb9264i22,M. Gudmann,0.000325,-1.67e-05,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703410461,257,50,1,26,25,1,2.6,44.7,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.0,-0.000325,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703410461,257,1,1,26,25,0,2.3,44.4,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.0,-0.000325,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703410485,258,10,1,26,29,1,5.8,37.5,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703410491,259,6,1,26,30,0,3.1,51.3,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703410625,260,10,1,27,4,1,0.2,52.1,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -1904,7 +1907,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703410709,264,2,1,27,23,1,4.6,60.6,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.001037,0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703410721,265,43,1,27,27,1,0.0,0.0,3mcj3wypzq3lno1ehc0vif1sl,J. Arias,0.0042373,-0.001037,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703410925,266,45,1,28,0,0,9.8,10.8,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703410967,267,5,1,28,6,1,-1.0,42.5,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703410967,267,5,1,28,4,1,-1.0,42.5,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703411131,268,1,1,28,25,0,4.6,58.8,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.0012845,0.0005421,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703411177,269,1,1,28,33,1,75.1,23.3,bmvcofmie6om4muxij4kdkro4,I. Dorgu,0.0481035,0.046819,NaN,1.0,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703411181,270,15,1,28,37,1,74.3,34.6,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -1922,10 +1925,11 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703411629,282,1,1,30,11,1,8.2,68.5,2pm5oqzyonn0dysa5nszgq3xm,H. Bonnesen,0.0003261,-1.91e-05,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703411641,283,1,1,30,12,1,7.0,45.7,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.0003481,2.2e-05,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703411657,284,1,1,30,14,1,23.3,47.6,5nved2kta2hk8103hkyhq33hm,M. Jakobsen,0.001331,0.0009829,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703921949,846,1,1,30,14,0,43.8,63.7,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703411679,287,3,1,30,16,1,36.2,63.0,5nved2kta2hk8103hkyhq33hm,M. Jakobsen,0.0031211,0.002286,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703411673,285,1,1,30,17,1,41.9,73.6,e2aqcawslcbpp88nia8eko2y1,J. Rothmann,0.0008351,-0.0004959,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703411673,285,43,1,30,17,1,0.0,0.0,e2aqcawslcbpp88nia8eko2y1,J. Rothmann,0.0008351,-0.0004959,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703411675,286,43,1,30,19,1,0.0,0.0,5nved2kta2hk8103hkyhq33hm,M. Jakobsen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703411709,288,1,1,30,20,1,36.7,64.0,5nved2kta2hk8103hkyhq33hm,M. Jakobsen,0.0013998,-0.0017213,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703411709,288,1,1,30,20,1,40.0,63.2,5nved2kta2hk8103hkyhq33hm,M. Jakobsen,0.0013998,-0.0017213,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703411719,289,1,1,30,25,1,55.5,97.7,e2aqcawslcbpp88nia8eko2y1,J. Rothmann,0.0005247,-0.0008751,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703411747,290,1,1,30,26,1,37.8,91.7,619s1phj5bkgkug3aszc1y9cl,M. Jensen,0.0009914,0.0004667,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703411769,291,1,1,30,31,1,38.8,67.9,5nved2kta2hk8103hkyhq33hm,M. Jakobsen,0.0003985,-0.0005929,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -1948,10 +1952,10 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703412665,308,7,1,33,4,0,15.0,13.2,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703412723,309,43,1,33,21,1,0.0,0.0,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703412751,310,3,1,33,22,1,15.4,78.5,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.0104052,0.0104052,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703412763,312,49,1,33,25,1,22.3,79.1,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.0008419,0.0003805,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703412757,311,1,1,33,26,0,23.5,82.8,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.0004614,-0.0099438,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703412763,312,49,1,33,23,1,22.3,79.1,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.0008419,0.0003805,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703412757,311,1,1,33,23,0,23.5,82.8,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.0004614,-0.0099438,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703412863,314,5,1,33,26,0,47.0,101.6,e2aqcawslcbpp88nia8eko2y1,J. Rothmann,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703412781,313,43,1,33,28,1,0.0,0.0,e2aqcawslcbpp88nia8eko2y1,J. Rothmann,0.0014411,0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703412863,314,5,1,33,29,0,47.0,101.6,e2aqcawslcbpp88nia8eko2y1,J. Rothmann,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703412979,315,83,1,34,1,0,22.7,20.9,5nved2kta2hk8103hkyhq33hm,M. Jakobsen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703413171,316,45,1,34,35,0,36.7,8.2,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703413271,317,52,1,34,55,1,4.3,47.5,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -1969,7 +1973,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703414153,328,1,1,37,25,1,19.6,65.8,2pm5oqzyonn0dysa5nszgq3xm,H. Bonnesen,0.0003452,4.79e-05,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703414163,329,1,1,37,28,1,27.2,83.8,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.001378,0.0010328,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703414175,330,1,1,37,31,0,48.7,78.8,619s1phj5bkgkug3aszc1y9cl,M. Jensen,0.0012005,-0.001378,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703414333,331,44,1,38,1,0,13.6,41.6,am3509ake84cde1xhb9264i22,M. Gudmann,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703414333,331,44,1,38,1,0,13.6,41.6,2pm5oqzyonn0dysa5nszgq3xm,H. Bonnesen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703414335,332,43,1,38,1,1,0.0,0.0,am3509ake84cde1xhb9264i22,M. Gudmann,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703414355,333,1,1,38,4,0,14.7,67.8,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.0009187,0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703414369,334,44,1,38,7,0,50.2,38.7,3mcj3wypzq3lno1ehc0vif1sl,J. Arias,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -1986,7 +1990,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703414555,345,1,1,38,37,1,4.7,50.9,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.0003397,7.16e-05,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703414575,346,1,1,38,41,0,21.2,54.6,619s1phj5bkgkug3aszc1y9cl,M. Jensen,0.0004006,-0.0003397,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703414583,347,45,1,38,44,0,30.2,9.3,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703414695,348,5,1,38,57,1,-0.9,59.8,5nved2kta2hk8103hkyhq33hm,M. Jakobsen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703414695,348,5,1,38,55,1,-0.9,59.8,5nved2kta2hk8103hkyhq33hm,M. Jakobsen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703414819,349,1,1,39,18,1,4.3,40.9,am3509ake84cde1xhb9264i22,M. Gudmann,0.0003987,-0.0003437,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703414845,350,1,1,39,19,1,5.5,54.3,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.0003223,-7.64e-05,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703414875,351,1,1,39,22,1,3.5,28.3,am3509ake84cde1xhb9264i22,M. Gudmann,0.000902,0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -1997,7 +2001,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703415109,356,1,1,40,7,1,74.7,5.6,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,0.0083183,0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703415127,357,1,1,40,9,1,80.4,10.3,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0072579,-0.0010604,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703415135,358,1,1,40,12,1,68.6,21.2,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,0.0042373,-0.0030206,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703415143,359,1,1,40,12,0,60.7,29.5,5nved2kta2hk8103hkyhq33hm,M. Jakobsen,0.0016784,-0.0042373,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703415143,359,1,1,40,12,0,72.1,36.8,5nved2kta2hk8103hkyhq33hm,M. Jakobsen,0.0016784,-0.0042373,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703415181,360,1,1,40,19,0,72.3,38.0,5nved2kta2hk8103hkyhq33hm,M. Jakobsen,0.0062283,-0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703415183,361,5,1,40,20,0,84.7,101.8,5nved2kta2hk8103hkyhq33hm,M. Jakobsen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703415297,362,7,1,40,36,0,74.5,91.2,3mcj3wypzq3lno1ehc0vif1sl,J. Arias,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -2006,8 +2010,8 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703415505,365,1,1,40,47,1,42.9,62.0,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.0012162,-0.0030764,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703415507,366,27,1,41,0,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703415523,367,28,1,41,5,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703415529,368,68,1,41,14,1,35.1,26.4,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703415565,369,1,1,41,15,1,30.2,25.0,am3509ake84cde1xhb9264i22,M. Gudmann,0.0002714,-0.0009448,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703415529,368,68,1,41,6,1,35.1,26.4,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703415565,369,1,1,41,10,1,30.2,25.0,am3509ake84cde1xhb9264i22,M. Gudmann,0.0002714,-0.0009448,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703415813,375,1,1,41,16,1,19.2,59.1,2pm5oqzyonn0dysa5nszgq3xm,H. Bonnesen,0.0002774,6e-06,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703415819,376,1,1,41,17,1,15.8,36.6,am3509ake84cde1xhb9264i22,M. Gudmann,0.0003397,6.23e-05,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703415825,377,1,1,41,18,1,31.8,9.6,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,0.0010383,0.0006986,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -2016,7 +2020,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703415637,372,1,1,41,24,1,65.1,53.1,3mcj3wypzq3lno1ehc0vif1sl,J. Arias,0.006988,0.0027507,NaN,1.0,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703415641,373,13,1,41,29,1,74.8,71.5,619s1phj5bkgkug3aszc1y9cl,M. Jensen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703415647,374,5,1,41,30,0,101.5,52.7,619s1phj5bkgkug3aszc1y9cl,M. Jensen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703415877,379,8,1,42,16,1,29.9,89.1,619s1phj5bkgkug3aszc1y9cl,M. Jensen,0.0011571,0.0011571,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703415877,379,49,1,42,16,1,29.9,89.1,619s1phj5bkgkug3aszc1y9cl,M. Jensen,0.0011571,0.0011571,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703415895,380,4,1,42,19,1,27.4,93.6,619s1phj5bkgkug3aszc1y9cl,M. Jensen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703415977,381,1,1,42,31,1,29.3,92.7,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.0002714,-0.0003651,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703415981,382,1,1,42,33,1,21.3,65.1,2pm5oqzyonn0dysa5nszgq3xm,H. Bonnesen,0.0002736,2.2e-06,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -2032,7 +2036,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703416235,392,1,1,43,13,1,20.4,32.1,am3509ake84cde1xhb9264i22,M. Gudmann,0.0002714,-5.19e-05,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703416251,393,1,1,43,14,1,13.4,65.2,2pm5oqzyonn0dysa5nszgq3xm,H. Bonnesen,0.0003426,7.12e-05,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703416267,394,1,1,43,18,1,27.0,87.4,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.0004912,0.0001486,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703416293,395,1,1,43,20,1,32.5,70.5,bmvcofmie6om4muxij4kdkro4,I. Dorgu,0.0002681,-0.0002231,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703416293,395,1,1,43,20,1,32.5,70.5,619s1phj5bkgkug3aszc1y9cl,M. Jensen,0.0002681,-0.0002231,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703416341,396,1,1,43,25,1,20.1,59.7,2pm5oqzyonn0dysa5nszgq3xm,H. Bonnesen,0.0002745,6.4e-06,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703416349,397,1,1,43,30,1,20.7,30.0,am3509ake84cde1xhb9264i22,M. Gudmann,0.0004662,0.0001917,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703416355,398,1,1,43,31,1,31.3,38.8,5nved2kta2hk8103hkyhq33hm,M. Jakobsen,0.0002736,-0.0001926,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -2054,7 +2058,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703417061,414,12,1,45,41,1,4.4,47.2,3mcj3wypzq3lno1ehc0vif1sl,J. Arias,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703417267,417,44,1,45,54,0,4.0,79.8,2pm5oqzyonn0dysa5nszgq3xm,H. Bonnesen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703417165,415,10,1,45,54,1,1.5,54.8,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703417171,416,6,1,45,59,0,3.5,59.9,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703417171,416,6,1,45,55,0,3.5,59.9,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703417355,418,10,1,46,35,1,3.3,44.2,5nved2kta2hk8103hkyhq33hm,M. Jakobsen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703417363,419,43,1,46,40,1,0.0,0.0,am3509ake84cde1xhb9264i22,M. Gudmann,0.01035,0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703417793,420,30,1,47,0,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -2106,8 +2110,9 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703422325,468,27,2,50,51,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703422501,469,28,2,51,14,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703422507,470,68,2,51,25,1,9.6,57.8,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703422553,471,1,2,51,28,0,12.2,59.0,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.0013429,-0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703422685,472,83,2,51,52,0,17.2,33.3,619s1phj5bkgkug3aszc1y9cl,M. Jensen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703422553,471,61,2,51,28,1,12.2,59.0,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.0013429,-0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703422685,472,83,2,51,52,0,17.2,33.3,am3509ake84cde1xhb9264i22,M. Gudmann,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703443821,831,30,2,95,9,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703425789,530,61,2,51,53,1,8.0,35.2,2pm5oqzyonn0dysa5nszgq3xm,H. Bonnesen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703422753,473,12,2,51,55,1,9.2,63.4,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703425081,514,1,2,51,56,1,27.6,22.3,619s1phj5bkgkug3aszc1y9cl,M. Jensen,0.0009637,-5.24e-05,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -2149,7 +2154,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703424599,509,49,2,56,9,1,39.0,45.8,619s1phj5bkgkug3aszc1y9cl,M. Jensen,0.0,0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703424625,510,1,2,56,10,1,39.0,45.8,619s1phj5bkgkug3aszc1y9cl,M. Jensen,0.0,0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703424629,511,1,2,56,11,0,26.9,35.2,5nved2kta2hk8103hkyhq33hm,M. Jakobsen,0.0012109,-0.0002838,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703424659,512,83,2,56,15,0,36.3,22.2,bmvcofmie6om4muxij4kdkro4,I. Dorgu,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703424659,512,43,2,56,15,1,0.0,0.0,bmvcofmie6om4muxij4kdkro4,I. Dorgu,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703425077,513,5,2,56,52,1,28.1,101.6,619s1phj5bkgkug3aszc1y9cl,M. Jensen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703425307,515,1,2,57,39,1,37.1,100.0,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.0002681,-0.001591,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703425317,516,1,2,57,43,1,15.7,75.1,2pm5oqzyonn0dysa5nszgq3xm,H. Bonnesen,0.0003328,6.47e-05,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -2167,6 +2172,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703425763,528,1,2,58,26,1,58.7,23.9,5nved2kta2hk8103hkyhq33hm,M. Jakobsen,0.0079567,0.0039086,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703425769,529,1,2,58,31,0,71.3,9.2,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,0.0029225,-0.0079567,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703426093,531,45,2,59,11,0,31.6,86.8,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703743289,842,83,2,59,12,1,27.3,77.2,e0u730to91qqtvvx16uhajz10,S. Jalaei,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703426125,532,49,2,59,14,1,21.3,66.3,5nved2kta2hk8103hkyhq33hm,M. Jakobsen,0.0104052,0.0104052,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703426139,533,1,2,59,15,0,21.3,66.3,5nved2kta2hk8103hkyhq33hm,M. Jakobsen,0.0006875,-0.0104052,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703426249,534,12,2,59,32,1,10.7,44.8,am3509ake84cde1xhb9264i22,M. Gudmann,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -2199,7 +2205,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703427717,561,1,2,62,41,1,63.5,39.1,5nved2kta2hk8103hkyhq33hm,M. Jakobsen,0.0253661,0.0211288,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703427761,562,1,2,62,44,1,75.3,65.2,e0u730to91qqtvvx16uhajz10,S. Jalaei,0.054316,0.0289499,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703427769,563,1,2,62,49,0,92.0,74.5,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0224554,-0.0318606,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703427803,564,15,2,62,54,1,73.6,56.9,5nved2kta2hk8103hkyhq33hm,M. Jakobsen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703427803,564,15,2,62,54,1,72.6,60.3,5nved2kta2hk8103hkyhq33hm,M. Jakobsen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703427851,565,5,2,62,59,1,70.9,-1.5,619s1phj5bkgkug3aszc1y9cl,M. Jensen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703427891,566,1,2,63,3,1,70.5,0.0,619s1phj5bkgkug3aszc1y9cl,M. Jensen,0.0037945,0.0027529,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703427915,567,1,2,63,7,1,57.0,8.9,am3509ake84cde1xhb9264i22,M. Gudmann,0.0,-0.0037945,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -2207,7 +2213,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703427935,569,1,2,63,12,0,74.6,5.0,619s1phj5bkgkug3aszc1y9cl,M. Jensen,0.0019344,-0.0023029,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703427959,570,61,2,63,16,1,68.7,19.1,5nved2kta2hk8103hkyhq33hm,M. Jakobsen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703427969,571,3,2,63,18,0,69.8,23.3,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,0.001296,0.001296,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703430699,628,61,2,63,19,1,68.7,30.5,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703430699,628,61,2,63,18,1,68.7,30.5,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703428021,572,49,2,63,25,1,32.6,9.7,am3509ake84cde1xhb9264i22,M. Gudmann,0.0012264,0.0012264,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703428065,573,1,2,63,26,1,32.5,9.5,am3509ake84cde1xhb9264i22,M. Gudmann,0.0002681,-0.0009583,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703428097,574,1,2,63,30,1,25.4,50.4,2pm5oqzyonn0dysa5nszgq3xm,H. Bonnesen,0.0003233,5.52e-05,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -2262,7 +2268,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703430453,622,43,2,68,55,1,0.0,0.0,am3509ake84cde1xhb9264i22,M. Gudmann,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703430457,623,12,2,68,55,1,7.4,50.7,am3509ake84cde1xhb9264i22,M. Gudmann,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703430471,624,6,2,68,57,0,1.4,31.2,am3509ake84cde1xhb9264i22,M. Gudmann,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703430607,625,12,2,69,22,1,6.7,45.2,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703430607,625,41,2,69,22,0,5.4,45.0,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703430613,626,10,2,69,23,1,14.0,43.3,3mgrufy83uhzs9liw8pwxi784,G. Larsen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703430627,627,10,2,69,24,1,12.3,50.4,am3509ake84cde1xhb9264i22,M. Gudmann,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703430859,629,7,2,70,0,0,62.4,17.1,11ngumxajbizagbzpm5kompxx,M. Chacón,0.0042373,0.0042373,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -2306,7 +2312,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703433415,667,1,2,75,22,1,27.1,7.4,18g25rcpd99fe1gvr48uoqmtw,E. Villumsen,0.0002681,0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703433439,668,1,2,75,27,1,24.5,24.0,am3509ake84cde1xhb9264i22,M. Gudmann,0.0013751,0.001107,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703433451,669,1,2,75,30,1,46.3,43.6,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0003829,-0.0009922,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703433511,670,1,2,75,32,1,30.6,54.9,619s1phj5bkgkug3aszc1y9cl,M. Jensen,0.007728,0.0073451,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703433511,670,1,2,75,32,1,36.5,52.1,619s1phj5bkgkug3aszc1y9cl,M. Jensen,0.007728,0.0073451,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703433527,671,1,2,75,37,1,53.5,79.0,3mcj3wypzq3lno1ehc0vif1sl,J. Arias,0.0083183,0.0005903,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703433537,672,50,2,75,40,1,76.8,88.8,e0u730to91qqtvvx16uhajz10,S. Jalaei,0.0,-0.0083183,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703433639,673,4,2,75,47,0,56.4,75.4,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -2348,7 +2354,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703434949,711,1,2,78,27,0,79.9,66.0,3mcj3wypzq3lno1ehc0vif1sl,J. Arias,0.0029413,-0.0374215,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703434951,712,5,2,78,30,0,101.2,70.7,3mcj3wypzq3lno1ehc0vif1sl,J. Arias,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703435295,713,83,2,79,11,0,64.7,97.7,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703441407,782,83,2,79,12,0,60.3,96.7,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703441407,782,7,2,79,11,0,64.8,96.9,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703446371,838,83,2,79,12,0,65.1,95.7,3mgrufy83uhzs9liw8pwxi784,G. Larsen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703435303,714,43,2,79,12,1,0.0,0.0,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703435323,715,7,2,79,12,1,65.8,96.6,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.0042373,-0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -2404,7 +2410,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703438529,763,12,2,85,58,1,13.8,68.2,2pm5oqzyonn0dysa5nszgq3xm,H. Bonnesen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703438533,764,6,2,85,59,0,4.1,65.7,2pm5oqzyonn0dysa5nszgq3xm,H. Bonnesen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703440223,780,44,2,86,35,0,6.1,42.5,11ngumxajbizagbzpm5kompxx,M. Chacón,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703439321,766,1,2,87,27,1,50.1,49.7,98zlz2sscsf6vb7d52ici074k,Y. Dhaflaoui,0.0004085,0.0004085,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703439321,766,1,2,87,27,1,50.1,49.7,3mcj3wypzq3lno1ehc0vif1sl,J. Arias,0.0004085,0.0004085,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703439339,767,1,2,87,28,1,32.8,41.8,619s1phj5bkgkug3aszc1y9cl,M. Jensen,0.0003392,-6.93e-05,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703439457,768,1,2,87,31,1,30.6,15.2,am3509ake84cde1xhb9264i22,M. Gudmann,0.0010782,0.000739,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703439541,769,3,2,87,42,1,72.9,4.2,98zlz2sscsf6vb7d52ici074k,Y. Dhaflaoui,0.0042373,0.0031591,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -2431,7 +2437,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703441881,792,4,2,91,31,1,36.8,8.4,98zlz2sscsf6vb7d52ici074k,Y. Dhaflaoui,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703441923,793,1,2,91,34,1,41.5,11.6,98zlz2sscsf6vb7d52ici074k,Y. Dhaflaoui,0.0004227,-0.0010797,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703442019,794,1,2,91,36,1,34.0,25.6,619s1phj5bkgkug3aszc1y9cl,M. Jensen,0.0020596,0.0016369,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703442035,795,1,2,91,43,1,53.8,88.9,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0007378,-0.0013218,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703442035,795,1,2,91,43,1,53.8,88.9,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.0007378,-0.0013218,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703442053,796,1,2,91,44,1,39.6,42.2,619s1phj5bkgkug3aszc1y9cl,M. Jensen,0.0007159,-2.19e-05,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703442095,797,1,2,91,46,1,38.4,16.7,am3509ake84cde1xhb9264i22,M. Gudmann,0.0012123,0.0004964,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703442097,798,50,2,91,49,1,41.7,5.8,98zlz2sscsf6vb7d52ici074k,Y. Dhaflaoui,0.0,-0.0012123,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -2464,14 +2470,13 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703443391,823,43,2,94,10,1,0.0,0.0,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703447165,839,49,2,94,12,1,27.4,78.5,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703443405,824,1,2,94,13,1,27.9,83.0,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.0004024,5.98e-05,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703444457,835,1,2,94,14,1,39.9,59.0,3mcj3wypzq3lno1ehc0vif1sl,J. Arias,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703443455,829,50,2,94,14,1,37.0,83.6,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.0,-0.0004024,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703444457,835,1,2,94,14,0,39.3,58.7,3mcj3wypzq3lno1ehc0vif1sl,J. Arias,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703443455,829,50,2,94,15,1,37.0,83.6,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.0,-0.0004024,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703443409,826,61,2,94,15,1,29.0,71.1,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703443411,827,5,2,94,16,0,21.6,101.7,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703443407,825,43,2,94,17,1,0.0,0.0,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.0004998,0.0004998,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703443425,828,4,2,94,19,0,13.0,93.4,3mgrufy83uhzs9liw8pwxi784,G. Larsen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703443809,830,12,2,94,59,1,8.6,54.0,3mcj3wypzq3lno1ehc0vif1sl,J. Arias,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703443821,831,30,2,95,9,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703444171,833,30,14,0,0,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2703444177,834,37,14,0,0,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703392831,1,34,16,0,0,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -2481,15 +2486,15 @@ dbl7ir1qugqz8nvp1vzn8im50,OB,2703403197,4,1,1,0,5,1,32.9,37.0,dqtarwrqvkopmzbt2o
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703403201,5,43,1,0,7,1,0.0,0.0,axyrfq1u8nwcj2ss5498u8qhg,L. Kjerrumgaard,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703403215,6,1,1,0,7,0,74.1,69.0,axyrfq1u8nwcj2ss5498u8qhg,L. Kjerrumgaard,0.0434153,0.0330178,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703403219,7,44,1,0,11,0,80.8,67.0,axyrfq1u8nwcj2ss5498u8qhg,L. Kjerrumgaard,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-dbl7ir1qugqz8nvp1vzn8im50,OB,2703403223,8,13,1,0,12,1,83.5,69.7,5wmik73cqursg7sv3w14ue5pm,L. Deedson,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703403223,8,13,1,0,12,1,82.8,70.3,5wmik73cqursg7sv3w14ue5pm,L. Deedson,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703403235,9,1,1,0,14,1,86.4,85.0,1mml4inucvyomv1dcog3c1pt5,N. Mickelson,0.0110178,0.0110178,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703403239,10,1,1,0,16,1,78.9,86.5,2z8u8kyv91shp0la8alkn6kus,M. Ejdum,0.0122239,0.0012061,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703403245,11,1,1,0,19,0,84.3,94.7,1mml4inucvyomv1dcog3c1pt5,N. Mickelson,0.0055955,-0.0066284,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703403257,12,15,1,0,23,1,91.5,64.9,5wmik73cqursg7sv3w14ue5pm,L. Deedson,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703403265,13,6,1,0,23,1,96.4,61.5,5wmik73cqursg7sv3w14ue5pm,L. Deedson,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703403323,14,1,1,0,53,0,99.5,99.5,97xbmht3t4t1p9iu6598oq7l5,A. Manneh,0.0075128,-0.0217832,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-dbl7ir1qugqz8nvp1vzn8im50,OB,2703403333,15,13,1,0,59,1,82.1,44.0,5wmik73cqursg7sv3w14ue5pm,L. Deedson,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-dbl7ir1qugqz8nvp1vzn8im50,OB,2703403335,16,5,1,1,1,0,101.2,40.2,5wmik73cqursg7sv3w14ue5pm,L. Deedson,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703403333,15,13,1,0,57,1,82.1,44.0,5wmik73cqursg7sv3w14ue5pm,L. Deedson,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703403335,16,5,1,0,59,0,101.2,40.2,5wmik73cqursg7sv3w14ue5pm,L. Deedson,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703403405,17,8,1,1,25,1,40.0,58.7,ev2s21ogvpjtata4fndi868ve,J. Gomez,0.0041087,0.0041087,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703403435,18,1,1,1,31,1,27.4,35.7,dqtarwrqvkopmzbt2ovp2dln9,B. Paulsen,0.0012824,-0.0041087,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703403437,19,50,1,1,33,1,45.0,25.9,5wmik73cqursg7sv3w14ue5pm,L. Deedson,0.001297,0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -2506,6 +2511,7 @@ dbl7ir1qugqz8nvp1vzn8im50,OB,2703403903,29,5,1,3,9,1,7.8,101.4,80s55a7uw8kypoike
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703403969,30,1,1,3,23,0,10.9,100.0,1mml4inucvyomv1dcog3c1pt5,N. Mickelson,0.0004926,-0.0023934,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703403989,31,7,1,3,31,1,24.4,62.0,dqtarwrqvkopmzbt2ovp2dln9,B. Paulsen,0.0104563,0.0104563,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703404031,32,1,1,3,32,1,20.0,72.0,dqtarwrqvkopmzbt2ovp2dln9,B. Paulsen,0.0003233,-0.010133,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703885597,885,50,1,3,35,1,11.3,90.8,1mml4inucvyomv1dcog3c1pt5,N. Mickelson,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703404049,33,1,1,3,38,1,14.7,97.1,1mml4inucvyomv1dcog3c1pt5,N. Mickelson,0.0004022,7.89e-05,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703404069,34,1,1,3,39,1,23.5,95.9,80s55a7uw8kypoikefwhtdm5m,M. Fenger,0.0004509,4.87e-05,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703404071,35,4,1,3,42,1,28.8,90.4,2z8u8kyv91shp0la8alkn6kus,M. Ejdum,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -2616,13 +2622,13 @@ dbl7ir1qugqz8nvp1vzn8im50,OB,2703407141,136,1,1,13,58,1,77.9,81.4,80s55a7uw8kypo
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703407147,137,1,1,14,0,0,98.2,86.8,1mml4inucvyomv1dcog3c1pt5,N. Mickelson,0.0070648,-0.0561137,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703407157,138,6,1,14,3,1,96.6,62.3,1mml4inucvyomv1dcog3c1pt5,N. Mickelson,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703407251,139,1,1,14,28,1,99.5,99.5,1mml4inucvyomv1dcog3c1pt5,N. Mickelson,0.2265792,0.1972832,NaN,1.0,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-dbl7ir1qugqz8nvp1vzn8im50,OB,2703407255,140,44,1,14,35,1,96.2,50.3,dqtarwrqvkopmzbt2ovp2dln9,B. Paulsen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-dbl7ir1qugqz8nvp1vzn8im50,OB,2703407265,141,13,1,14,36,1,97.9,50.6,dqtarwrqvkopmzbt2ovp2dln9,B. Paulsen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-dbl7ir1qugqz8nvp1vzn8im50,OB,2703407275,142,5,1,14,38,0,101.4,43.6,dqtarwrqvkopmzbt2ovp2dln9,B. Paulsen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703407255,140,44,1,14,32,1,96.2,50.3,dqtarwrqvkopmzbt2ovp2dln9,B. Paulsen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703407265,141,13,1,14,33,1,97.9,50.6,dqtarwrqvkopmzbt2ovp2dln9,B. Paulsen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703407275,142,5,1,14,34,0,101.4,43.6,dqtarwrqvkopmzbt2ovp2dln9,B. Paulsen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703407437,143,8,1,15,19,1,49.0,42.5,5wmik73cqursg7sv3w14ue5pm,L. Deedson,0.0041292,0.0041292,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703407443,144,49,1,15,20,1,40.2,39.5,dqtarwrqvkopmzbt2ovp2dln9,B. Paulsen,0.0042926,0.0001634,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703407463,145,1,1,15,22,0,45.6,36.3,dqtarwrqvkopmzbt2ovp2dln9,B. Paulsen,0.0013025,-0.0029901,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-dbl7ir1qugqz8nvp1vzn8im50,OB,2703407483,146,83,1,15,28,0,65.5,66.4,2z8u8kyv91shp0la8alkn6kus,M. Ejdum,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703407483,146,43,1,15,28,1,0.0,0.0,2z8u8kyv91shp0la8alkn6kus,M. Ejdum,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703407517,149,49,1,15,30,1,47.9,60.8,e9o7q10wnhex4e8eo47mobbvt,J. Bonde,0.0042926,0.0006467,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703407489,147,1,1,15,31,1,56.5,46.4,e9o7q10wnhex4e8eo47mobbvt,J. Bonde,0.0040715,0.0040715,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703407513,148,1,1,15,32,1,56.2,58.5,80s55a7uw8kypoikefwhtdm5m,M. Fenger,0.0036459,-0.0004256,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -2634,8 +2640,9 @@ dbl7ir1qugqz8nvp1vzn8im50,OB,2703407605,154,1,1,15,39,1,47.3,44.5,e9o7q10wnhex4e
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703407619,155,1,1,15,44,1,62.5,7.0,e42jh6bbwn4aybdnysonrvutx,L. Owusu,0.0083183,0.0044584,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703407625,156,1,1,15,47,1,68.0,5.5,5wmik73cqursg7sv3w14ue5pm,L. Deedson,0.0083183,0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703407665,157,1,1,15,49,1,73.3,3.1,e42jh6bbwn4aybdnysonrvutx,L. Owusu,0.0,-0.0083183,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-dbl7ir1qugqz8nvp1vzn8im50,OB,2703407673,158,1,1,15,56,1,92.1,21.5,5wmik73cqursg7sv3w14ue5pm,L. Deedson,0.0,0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703407673,158,1,1,15,56,0,92.1,21.5,5wmik73cqursg7sv3w14ue5pm,L. Deedson,0.0,0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703407681,159,1,1,15,57,0,89.6,64.0,2z8u8kyv91shp0la8alkn6kus,M. Ejdum,0.0113782,-0.052786,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703918543,886,44,1,15,58,0,89.8,48.7,80s55a7uw8kypoikefwhtdm5m,M. Fenger,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703407715,160,1,1,16,0,1,83.6,64.6,97xbmht3t4t1p9iu6598oq7l5,A. Manneh,0.0638728,0.0638728,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703407727,161,1,1,16,3,1,79.1,67.2,2z8u8kyv91shp0la8alkn6kus,M. Ejdum,0.0242765,-0.0395963,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703407747,162,1,1,16,5,0,83.0,74.7,97xbmht3t4t1p9iu6598oq7l5,A. Manneh,0.0069361,-0.0173404,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -2713,10 +2720,12 @@ dbl7ir1qugqz8nvp1vzn8im50,OB,2703409827,233,1,1,24,1,0,87.7,68.7,80s55a7uw8kypoi
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703409869,234,1,1,24,11,1,44.9,42.5,dqtarwrqvkopmzbt2ovp2dln9,B. Paulsen,0.0080558,0.0080558,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703409903,235,1,1,24,16,1,70.2,10.7,e9o7q10wnhex4e8eo47mobbvt,J. Bonde,0.0083183,0.0002625,NaN,1.0,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703409909,236,15,1,24,22,1,86.1,33.0,e42jh6bbwn4aybdnysonrvutx,L. Owusu,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703920203,887,8,1,24,45,1,54.6,19.0,e9o7q10wnhex4e8eo47mobbvt,J. Bonde,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703410025,237,49,1,24,47,1,45.1,7.4,e42jh6bbwn4aybdnysonrvutx,L. Owusu,0.0041783,0.0041783,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703410033,238,1,1,24,48,0,43.6,8.2,e42jh6bbwn4aybdnysonrvutx,L. Owusu,0.0012165,-0.0041783,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703410207,239,7,1,25,27,0,19.4,84.8,2z8u8kyv91shp0la8alkn6kus,M. Ejdum,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-dbl7ir1qugqz8nvp1vzn8im50,OB,2703410227,240,83,1,25,30,0,21.6,79.3,2z8u8kyv91shp0la8alkn6kus,M. Ejdum,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703410227,240,83,1,25,28,0,21.6,79.3,2z8u8kyv91shp0la8alkn6kus,M. Ejdum,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703920371,888,83,1,25,28,1,24.7,74.3,80s55a7uw8kypoikefwhtdm5m,M. Fenger,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703410249,241,49,1,25,34,1,29.5,85.3,97xbmht3t4t1p9iu6598oq7l5,A. Manneh,0.0107104,0.0107104,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703410263,242,1,1,25,36,1,34.0,75.4,97xbmht3t4t1p9iu6598oq7l5,A. Manneh,0.0013605,-0.0093499,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703410279,243,1,1,25,38,1,45.0,48.5,e9o7q10wnhex4e8eo47mobbvt,J. Bonde,0.0083183,0.0069578,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -2725,7 +2734,7 @@ dbl7ir1qugqz8nvp1vzn8im50,OB,2703410301,245,44,1,25,47,0,93.3,50.8,axyrfq1u8nwcj
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703411031,268,61,1,25,49,1,94.7,49.6,axyrfq1u8nwcj2ss5498u8qhg,L. Kjerrumgaard,NaN,NaN,NaN,1.0,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703410319,246,13,1,25,50,1,92.3,33.4,5wmik73cqursg7sv3w14ue5pm,L. Deedson,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703410321,247,5,1,25,51,0,101.4,41.8,5wmik73cqursg7sv3w14ue5pm,L. Deedson,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-dbl7ir1qugqz8nvp1vzn8im50,OB,2703410467,248,7,1,26,25,1,97.4,55.3,axyrfq1u8nwcj2ss5498u8qhg,L. Kjerrumgaard,0.2393867,0.2393867,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703410467,248,83,1,26,24,0,96.7,58.9,axyrfq1u8nwcj2ss5498u8qhg,L. Kjerrumgaard,0.2393867,0.2393867,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703410471,249,49,1,26,27,1,98.2,67.6,axyrfq1u8nwcj2ss5498u8qhg,L. Kjerrumgaard,0.1753424,0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703410479,250,1,1,26,27,1,98.2,67.6,axyrfq1u8nwcj2ss5498u8qhg,L. Kjerrumgaard,0.0536999,-0.1216425,NaN,1.0,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703410481,251,15,1,26,29,1,90.8,62.6,80s55a7uw8kypoikefwhtdm5m,M. Fenger,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -2744,7 +2753,7 @@ dbl7ir1qugqz8nvp1vzn8im50,OB,2703410899,263,1,1,27,53,1,79.7,95.3,1mml4inucvyomv
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703410917,264,1,1,27,57,1,92.2,90.6,80s55a7uw8kypoikefwhtdm5m,M. Fenger,0.0091908,0.0006893,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703410939,265,3,1,28,0,1,90.2,89.2,1mml4inucvyomv1dcog3c1pt5,N. Mickelson,0.0327374,0.0235466,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703410959,266,1,1,28,3,0,97.2,92.6,1mml4inucvyomv1dcog3c1pt5,N. Mickelson,0.0021433,-0.0327374,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-dbl7ir1qugqz8nvp1vzn8im50,OB,2703410969,267,5,1,28,6,0,101.0,57.5,1mml4inucvyomv1dcog3c1pt5,N. Mickelson,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703410969,267,5,1,28,4,0,101.0,57.5,1mml4inucvyomv1dcog3c1pt5,N. Mickelson,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703411139,269,61,1,28,32,1,24.1,63.6,1mml4inucvyomv1dcog3c1pt5,N. Mickelson,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703411175,270,10,1,28,37,1,20.2,65.5,97xbmht3t4t1p9iu6598oq7l5,A. Manneh,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703411179,271,6,1,28,37,0,12.2,52.4,97xbmht3t4t1p9iu6598oq7l5,A. Manneh,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -2755,6 +2764,7 @@ dbl7ir1qugqz8nvp1vzn8im50,OB,2703411451,276,49,1,29,38,1,16.6,22.1,e42jh6bbwn4ay
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703411491,277,1,1,29,40,1,24.7,26.4,e42jh6bbwn4aybdnysonrvutx,L. Owusu,0.0007272,-0.0001886,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703411535,278,1,1,29,44,1,38.3,5.2,axyrfq1u8nwcj2ss5498u8qhg,L. Kjerrumgaard,0.0062362,0.005509,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703411541,279,1,1,29,54,0,75.7,82.0,80s55a7uw8kypoikefwhtdm5m,M. Fenger,0.0130854,-0.0062362,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703922055,889,74,1,30,14,1,57.2,32.6,e42jh6bbwn4aybdnysonrvutx,L. Owusu,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703411665,280,45,1,30,16,0,63.8,37.0,e9o7q10wnhex4e8eo47mobbvt,J. Bonde,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703419695,439,43,1,30,17,1,0.0,0.0,97xbmht3t4t1p9iu6598oq7l5,A. Manneh,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703411819,281,49,1,30,43,1,19.8,63.3,4clmd8g8jogdfvauhijd7n55h,V. Myhra,0.0009158,0.0009158,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -2765,7 +2775,7 @@ dbl7ir1qugqz8nvp1vzn8im50,OB,2703411885,285,1,1,30,52,1,40.8,95.0,1mml4inucvyomv
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703411905,286,1,1,30,55,1,29.3,69.6,ev2s21ogvpjtata4fndi868ve,J. Gomez,0.0,0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703411923,287,1,1,30,58,1,31.1,31.8,dqtarwrqvkopmzbt2ovp2dln9,B. Paulsen,0.0006969,0.0002697,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703411945,288,1,1,31,3,1,39.4,4.1,e42jh6bbwn4aybdnysonrvutx,L. Owusu,0.0002681,-0.0004288,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-dbl7ir1qugqz8nvp1vzn8im50,OB,2703411949,289,1,1,31,8,1,26.4,16.2,dqtarwrqvkopmzbt2ovp2dln9,B. Paulsen,0.0002681,0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703411949,289,1,1,31,8,1,22.5,18.0,dqtarwrqvkopmzbt2ovp2dln9,B. Paulsen,0.0002681,0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703411963,290,1,1,31,10,1,8.5,55.8,4clmd8g8jogdfvauhijd7n55h,V. Myhra,0.0003426,7.45e-05,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703411971,291,1,1,31,13,1,24.4,35.5,97xbmht3t4t1p9iu6598oq7l5,A. Manneh,0.0003397,-2.9e-06,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703411977,292,1,1,31,15,1,26.7,8.8,dqtarwrqvkopmzbt2ovp2dln9,B. Paulsen,0.0006619,0.0003222,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -2774,7 +2784,7 @@ dbl7ir1qugqz8nvp1vzn8im50,OB,2703412017,294,1,1,31,25,1,74.4,22.7,e42jh6bbwn4ayb
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703412037,295,1,1,31,27,0,81.2,20.1,5wmik73cqursg7sv3w14ue5pm,L. Deedson,0.0015803,-0.0456413,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703412039,296,5,1,31,30,0,101.0,70.7,5wmik73cqursg7sv3w14ue5pm,L. Deedson,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703419113,438,44,1,32,1,1,33.9,65.1,ev2s21ogvpjtata4fndi868ve,J. Gomez,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-dbl7ir1qugqz8nvp1vzn8im50,OB,2703412179,297,8,1,32,2,1,33.5,63.4,ev2s21ogvpjtata4fndi868ve,J. Gomez,0.0025411,0.0025411,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703412179,297,61,1,32,2,1,33.5,63.4,ev2s21ogvpjtata4fndi868ve,J. Gomez,0.0025411,0.0025411,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703412187,298,49,1,32,4,1,39.2,62.6,97xbmht3t4t1p9iu6598oq7l5,A. Manneh,0.0040668,0.0040668,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703412199,299,1,1,32,4,1,39.2,62.6,97xbmht3t4t1p9iu6598oq7l5,A. Manneh,0.0003862,-0.0036806,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703412247,300,1,1,32,7,1,34.4,30.7,dqtarwrqvkopmzbt2ovp2dln9,B. Paulsen,0.0013391,0.0009529,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -2791,7 +2801,7 @@ dbl7ir1qugqz8nvp1vzn8im50,OB,2703412629,310,1,1,33,8,1,77.2,96.8,97xbmht3t4t1p9i
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703412681,311,1,1,33,8,1,75.8,81.1,2z8u8kyv91shp0la8alkn6kus,M. Ejdum,0.0120192,0.0036332,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703412719,312,1,1,33,15,0,93.7,95.0,1mml4inucvyomv1dcog3c1pt5,N. Mickelson,0.0051952,-0.0120192,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703412733,313,45,1,33,22,0,84.6,21.5,e42jh6bbwn4aybdnysonrvutx,L. Owusu,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-dbl7ir1qugqz8nvp1vzn8im50,OB,2703412821,314,5,1,33,29,1,53.0,-1.6,e42jh6bbwn4aybdnysonrvutx,L. Owusu,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703412821,314,5,1,33,26,1,53.0,-1.6,e42jh6bbwn4aybdnysonrvutx,L. Owusu,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703412895,315,1,1,33,41,1,65.0,0.0,e42jh6bbwn4aybdnysonrvutx,L. Owusu,0.0030091,0.0018632,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703412911,316,1,1,33,43,1,55.1,7.7,dqtarwrqvkopmzbt2ovp2dln9,B. Paulsen,0.0068958,0.0038867,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703412915,317,1,1,33,46,1,65.9,3.2,e42jh6bbwn4aybdnysonrvutx,L. Owusu,0.0040481,-0.0028477,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -2818,7 +2828,7 @@ dbl7ir1qugqz8nvp1vzn8im50,OB,2703413437,337,44,1,35,23,1,52.8,42.8,dqtarwrqvkopm
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703413447,338,1,1,35,23,1,54.0,43.3,dqtarwrqvkopmzbt2ovp2dln9,B. Paulsen,0.0007629,0.0007629,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703413449,339,49,1,35,25,1,45.6,43.4,e9o7q10wnhex4e8eo47mobbvt,J. Bonde,0.0042926,0.0035297,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703413453,340,1,1,35,25,1,45.6,43.4,e9o7q10wnhex4e8eo47mobbvt,J. Bonde,0.0002746,-0.004018,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-dbl7ir1qugqz8nvp1vzn8im50,OB,2703413469,341,1,1,35,27,1,24.4,46.0,4clmd8g8jogdfvauhijd7n55h,V. Myhra,0.0006362,0.0003616,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703413469,341,1,1,35,27,1,24.9,50.9,4clmd8g8jogdfvauhijd7n55h,V. Myhra,0.0006362,0.0003616,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703413503,342,1,1,35,31,1,34.5,91.5,1mml4inucvyomv1dcog3c1pt5,N. Mickelson,0.0002929,-0.0003433,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703413523,343,1,1,35,35,1,28.3,60.0,ev2s21ogvpjtata4fndi868ve,J. Gomez,0.001377,0.0010841,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703413551,344,1,1,35,38,1,56.6,54.9,e9o7q10wnhex4e8eo47mobbvt,J. Bonde,0.0083183,0.0069413,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -2832,7 +2842,7 @@ dbl7ir1qugqz8nvp1vzn8im50,OB,2703413659,349,1,1,36,3,1,32.1,60.0,97xbmht3t4t1p9i
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703413699,350,1,1,36,4,1,44.9,66.4,2z8u8kyv91shp0la8alkn6kus,M. Ejdum,0.0012848,-0.0001088,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703413709,351,1,1,36,9,1,69.6,98.0,1mml4inucvyomv1dcog3c1pt5,N. Mickelson,0.0085015,0.0072167,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703413911,354,1,1,36,11,1,74.7,87.5,2z8u8kyv91shp0la8alkn6kus,M. Ejdum,0.0251661,0.0166646,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-dbl7ir1qugqz8nvp1vzn8im50,OB,2703413737,352,1,1,36,12,1,78.7,72.0,80s55a7uw8kypoikefwhtdm5m,M. Fenger,0.0513937,0.0262276,1.0,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703413737,352,1,1,36,12,1,78.1,74.4,80s55a7uw8kypoikefwhtdm5m,M. Fenger,0.0513937,0.0262276,1.0,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703413739,353,16,1,36,14,1,87.9,58.1,axyrfq1u8nwcj2ss5498u8qhg,L. Kjerrumgaard,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703414165,355,49,1,37,31,1,37.8,14.4,dqtarwrqvkopmzbt2ovp2dln9,B. Paulsen,0.0030327,0.0030327,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703414173,356,1,1,37,31,1,37.8,14.4,dqtarwrqvkopmzbt2ovp2dln9,B. Paulsen,0.0014052,-0.0016275,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -2856,8 +2866,8 @@ dbl7ir1qugqz8nvp1vzn8im50,OB,2703414609,372,1,1,38,46,1,75.6,85.7,80s55a7uw8kypo
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703414633,373,1,1,38,47,1,70.7,95.9,2z8u8kyv91shp0la8alkn6kus,M. Ejdum,0.008744,0.0006456,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703414681,374,1,1,38,49,1,79.3,59.0,e9o7q10wnhex4e8eo47mobbvt,J. Bonde,0.059737,-0.008744,NaN,1.0,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703414685,375,14,1,38,53,1,86.6,45.7,axyrfq1u8nwcj2ss5498u8qhg,L. Kjerrumgaard,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-dbl7ir1qugqz8nvp1vzn8im50,OB,2703414701,376,13,1,38,57,1,90.4,54.6,5wmik73cqursg7sv3w14ue5pm,L. Deedson,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-dbl7ir1qugqz8nvp1vzn8im50,OB,2703414703,377,5,1,38,57,0,100.9,40.2,80s55a7uw8kypoikefwhtdm5m,M. Fenger,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703414701,376,13,1,38,54,1,90.4,54.6,5wmik73cqursg7sv3w14ue5pm,L. Deedson,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703414703,377,5,1,38,55,0,100.9,40.2,80s55a7uw8kypoikefwhtdm5m,M. Fenger,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703414871,378,4,1,39,27,0,44.3,70.6,ev2s21ogvpjtata4fndi868ve,J. Gomez,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703415151,380,1,1,40,15,0,15.5,49.7,dqtarwrqvkopmzbt2ovp2dln9,B. Paulsen,0.0003546,-0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703415257,381,5,1,40,20,1,15.3,-1.8,dqtarwrqvkopmzbt2ovp2dln9,B. Paulsen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -2870,7 +2880,7 @@ dbl7ir1qugqz8nvp1vzn8im50,OB,2703415333,386,44,1,40,40,1,48.1,38.8,80s55a7uw8kyp
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703415335,387,1,1,40,41,0,44.7,34.0,80s55a7uw8kypoikefwhtdm5m,M. Fenger,0.0010445,-0.0013062,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703415495,388,27,1,41,0,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703415503,389,28,1,41,5,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-dbl7ir1qugqz8nvp1vzn8im50,OB,2703415519,390,68,1,41,12,0,69.4,66.4,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703415519,390,68,1,41,6,0,69.4,66.4,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703415639,391,5,1,41,30,1,-1.5,47.3,e42jh6bbwn4aybdnysonrvutx,L. Owusu,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703415773,392,1,1,41,58,1,4.8,38.3,dqtarwrqvkopmzbt2ovp2dln9,B. Paulsen,0.0004301,-0.0003123,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703415793,393,1,1,42,2,1,3.4,51.6,4clmd8g8jogdfvauhijd7n55h,V. Myhra,0.0003452,-8.49e-05,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -2909,13 +2919,13 @@ dbl7ir1qugqz8nvp1vzn8im50,OB,2703417121,425,1,1,45,44,1,74.8,73.5,97xbmht3t4t1p9
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703417159,426,1,1,45,51,1,91.4,94.8,1mml4inucvyomv1dcog3c1pt5,N. Mickelson,0.0,-0.0711152,NaN,1.0,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703417245,429,44,1,45,54,1,96.0,20.2,axyrfq1u8nwcj2ss5498u8qhg,L. Kjerrumgaard,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703417163,427,15,1,45,54,1,89.6,38.7,axyrfq1u8nwcj2ss5498u8qhg,L. Kjerrumgaard,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-dbl7ir1qugqz8nvp1vzn8im50,OB,2703417167,428,6,1,45,59,1,96.5,40.1,axyrfq1u8nwcj2ss5498u8qhg,L. Kjerrumgaard,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703417167,428,6,1,45,55,1,96.5,40.1,axyrfq1u8nwcj2ss5498u8qhg,L. Kjerrumgaard,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703417339,430,1,1,46,32,1,99.5,0.5,97xbmht3t4t1p9iu6598oq7l5,A. Manneh,0.1265576,0.0972616,NaN,1.0,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-dbl7ir1qugqz8nvp1vzn8im50,OB,2703417341,431,15,1,46,35,1,94.9,57.2,dqtarwrqvkopmzbt2ovp2dln9,B. Paulsen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703417341,431,15,1,46,35,1,92.9,57.7,dqtarwrqvkopmzbt2ovp2dln9,B. Paulsen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703417377,432,16,1,46,37,1,96.1,48.2,e9o7q10wnhex4e8eo47mobbvt,J. Bonde,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703417789,434,30,1,47,0,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703419881,440,32,2,45,0,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-dbl7ir1qugqz8nvp1vzn8im50,OB,2703419961,441,1,2,45,9,1,29.8,70.9,ev2s21ogvpjtata4fndi868ve,J. Gomez,0.0012123,0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703419961,441,1,2,45,9,1,31.6,73.6,ev2s21ogvpjtata4fndi868ve,J. Gomez,0.0012123,0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703420707,467,61,2,45,10,0,43.1,68.1,97xbmht3t4t1p9iu6598oq7l5,A. Manneh,0.001297,0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703419963,442,7,2,45,11,1,38.6,69.6,97xbmht3t4t1p9iu6598oq7l5,A. Manneh,0.0039508,0.0039508,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703419967,443,49,2,45,14,1,45.8,71.4,2z8u8kyv91shp0la8alkn6kus,M. Ejdum,0.0042926,0.0003418,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -2940,7 +2950,7 @@ dbl7ir1qugqz8nvp1vzn8im50,OB,2703420357,461,1,2,46,10,1,72.9,96.0,1mml4inucvyomv
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703420395,462,1,2,46,13,1,68.6,89.0,2z8u8kyv91shp0la8alkn6kus,M. Ejdum,0.0083183,0.0002199,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703420437,463,1,2,46,21,1,92.4,87.7,1mml4inucvyomv1dcog3c1pt5,N. Mickelson,0.1234061,0.1150878,NaN,1.0,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703420443,464,44,2,46,26,1,90.7,43.6,axyrfq1u8nwcj2ss5498u8qhg,L. Kjerrumgaard,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-dbl7ir1qugqz8nvp1vzn8im50,OB,2703420447,465,13,2,46,26,1,92.1,45.8,axyrfq1u8nwcj2ss5498u8qhg,L. Kjerrumgaard,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703420447,465,13,2,46,26,1,92.7,45.6,axyrfq1u8nwcj2ss5498u8qhg,L. Kjerrumgaard,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703420451,466,5,2,46,28,0,101.2,51.4,axyrfq1u8nwcj2ss5498u8qhg,L. Kjerrumgaard,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703421001,468,12,2,47,46,1,27.2,19.7,e42jh6bbwn4aybdnysonrvutx,L. Owusu,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703421119,469,52,2,48,8,1,5.0,29.4,4clmd8g8jogdfvauhijd7n55h,V. Myhra,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -2952,6 +2962,7 @@ dbl7ir1qugqz8nvp1vzn8im50,OB,2703421333,474,1,2,48,35,1,29.6,72.1,ev2s21ogvpjtat
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703421375,475,1,2,48,38,1,32.2,93.9,97xbmht3t4t1p9iu6598oq7l5,A. Manneh,0.0013792,0.0008087,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703421407,476,1,2,48,42,1,46.5,96.6,1mml4inucvyomv1dcog3c1pt5,N. Mickelson,0.0004378,-0.0009414,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703421431,477,1,2,48,45,0,36.5,95.7,97xbmht3t4t1p9iu6598oq7l5,A. Manneh,0.0012288,-0.0004378,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703738223,881,56,2,48,53,1,60.6,95.1,1mml4inucvyomv1dcog3c1pt5,N. Mickelson,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703421481,478,5,2,48,55,1,55.4,101.5,1mml4inucvyomv1dcog3c1pt5,N. Mickelson,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703421503,479,1,2,48,57,0,59.3,100.0,1mml4inucvyomv1dcog3c1pt5,N. Mickelson,0.0011673,-9.77e-05,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703421543,480,5,2,49,3,1,81.2,101.6,1mml4inucvyomv1dcog3c1pt5,N. Mickelson,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -2970,14 +2981,14 @@ dbl7ir1qugqz8nvp1vzn8im50,OB,2703421853,492,1,2,49,46,1,76.0,88.0,80s55a7uw8kypo
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703421871,493,1,2,49,48,1,58.8,71.7,ev2s21ogvpjtata4fndi868ve,J. Gomez,0.0080984,0.004039,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703421887,494,1,2,49,50,1,70.6,92.6,80s55a7uw8kypoikefwhtdm5m,M. Fenger,0.0083183,0.0002199,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703421921,495,1,2,49,54,1,83.2,98.3,1mml4inucvyomv1dcog3c1pt5,N. Mickelson,0.0258083,0.01749,NaN,1.0,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-dbl7ir1qugqz8nvp1vzn8im50,OB,2703421923,496,15,2,49,56,1,85.6,54.6,e9o7q10wnhex4e8eo47mobbvt,J. Bonde,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703421923,496,15,2,49,56,1,87.0,55.6,e9o7q10wnhex4e8eo47mobbvt,J. Bonde,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703421927,497,6,2,49,58,1,93.2,56.0,e9o7q10wnhex4e8eo47mobbvt,J. Bonde,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703422161,498,1,2,50,26,0,99.5,99.5,1mml4inucvyomv1dcog3c1pt5,N. Mickelson,0.0073928,-0.0219032,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703422163,499,44,2,50,29,0,93.2,40.6,dqtarwrqvkopmzbt2ovp2dln9,B. Paulsen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703422461,500,27,2,50,51,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703422467,501,28,2,51,14,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703422511,502,68,2,51,26,0,90.1,54.8,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-dbl7ir1qugqz8nvp1vzn8im50,OB,2703422557,503,49,2,51,33,1,25.0,34.6,4clmd8g8jogdfvauhijd7n55h,V. Myhra,0.0009848,0.0009848,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703422557,503,43,2,51,33,1,0.0,0.0,4clmd8g8jogdfvauhijd7n55h,V. Myhra,0.0009848,0.0009848,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703422581,504,1,2,51,34,1,23.9,35.5,4clmd8g8jogdfvauhijd7n55h,V. Myhra,0.0005077,-0.0004771,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703422645,505,1,2,51,39,1,28.8,32.1,dqtarwrqvkopmzbt2ovp2dln9,B. Paulsen,0.00031,-0.0001977,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703422669,506,1,2,51,46,1,34.4,74.2,ev2s21ogvpjtata4fndi868ve,J. Gomez,0.0021508,0.0018408,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -3047,6 +3058,7 @@ dbl7ir1qugqz8nvp1vzn8im50,OB,2703424957,569,1,2,56,47,1,51.6,85.0,ev2s21ogvpjtat
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703424971,570,1,2,56,50,0,56.3,29.5,dqtarwrqvkopmzbt2ovp2dln9,B. Paulsen,0.0011427,-0.0029072,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703424977,571,5,2,56,52,0,71.9,-1.6,dqtarwrqvkopmzbt2ovp2dln9,B. Paulsen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703425777,572,52,2,58,33,1,0.7,63.6,4clmd8g8jogdfvauhijd7n55h,V. Myhra,0.0,0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703441721,832,28,2,91,5,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703425889,573,1,2,58,45,1,11.7,45.2,4clmd8g8jogdfvauhijd7n55h,V. Myhra,0.0003397,-0.000335,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703425925,574,1,2,58,50,1,29.0,3.4,e42jh6bbwn4aybdnysonrvutx,L. Owusu,0.0002681,-7.16e-05,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703425937,575,1,2,58,53,1,14.8,15.2,dqtarwrqvkopmzbt2ovp2dln9,B. Paulsen,0.0003397,7.16e-05,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -3087,7 +3099,7 @@ dbl7ir1qugqz8nvp1vzn8im50,OB,2703426713,609,1,2,60,34,1,70.5,31.3,80s55a7uw8kypo
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703426729,610,1,2,60,37,1,86.5,6.8,e42jh6bbwn4aybdnysonrvutx,L. Owusu,0.0283675,0.0146163,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703426745,611,1,2,60,40,1,90.4,17.7,80s55a7uw8kypoikefwhtdm5m,M. Fenger,0.0247276,-0.0036399,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703426759,612,1,2,60,43,1,77.3,31.9,e9o7q10wnhex4e8eo47mobbvt,J. Bonde,0.0279619,0.0032343,NaN,1.0,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-dbl7ir1qugqz8nvp1vzn8im50,OB,2703426775,613,13,2,60,47,1,87.9,75.9,1mml4inucvyomv1dcog3c1pt5,N. Mickelson,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703426775,613,13,2,60,47,1,92.6,71.4,1mml4inucvyomv1dcog3c1pt5,N. Mickelson,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703426777,614,5,2,60,47,0,101.2,61.5,1mml4inucvyomv1dcog3c1pt5,N. Mickelson,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703426937,615,1,2,61,11,1,55.0,35.4,dqtarwrqvkopmzbt2ovp2dln9,B. Paulsen,0.0,0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703426945,616,49,2,61,12,1,62.2,35.4,e9o7q10wnhex4e8eo47mobbvt,J. Bonde,0.0,0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -3096,7 +3108,7 @@ dbl7ir1qugqz8nvp1vzn8im50,OB,2703426985,618,1,2,61,14,1,68.0,60.5,2z8u8kyv91shp0
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703427007,619,1,2,61,17,1,68.3,77.9,80s55a7uw8kypoikefwhtdm5m,M. Fenger,0.0083183,-0.0006965,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703427063,620,1,2,61,20,1,79.9,95.7,1mml4inucvyomv1dcog3c1pt5,N. Mickelson,0.0113288,0.0030105,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703427091,621,1,2,61,25,1,73.6,57.3,2z8u8kyv91shp0la8alkn6kus,M. Ejdum,0.0277664,0.0164376,NaN,1.0,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-dbl7ir1qugqz8nvp1vzn8im50,OB,2703427103,622,15,2,61,28,1,84.3,40.1,5wmik73cqursg7sv3w14ue5pm,L. Deedson,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703427103,622,15,2,61,28,1,82.7,37.6,5wmik73cqursg7sv3w14ue5pm,L. Deedson,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703427205,623,1,2,61,32,1,75.2,65.8,e9o7q10wnhex4e8eo47mobbvt,J. Bonde,0.0185866,0.0185866,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703427221,624,1,2,61,38,1,85.9,79.1,1mml4inucvyomv1dcog3c1pt5,N. Mickelson,0.0213427,0.0027561,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703427263,625,1,2,61,40,1,76.3,71.4,e9o7q10wnhex4e8eo47mobbvt,J. Bonde,0.0501663,0.0288236,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -3106,9 +3118,10 @@ dbl7ir1qugqz8nvp1vzn8im50,OB,2703427809,628,10,2,62,54,1,17.6,44.9,ev2s21ogvpjta
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703427853,629,5,2,62,59,0,29.1,101.5,ev2s21ogvpjtata4fndi868ve,J. Gomez,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703427921,630,45,2,63,11,0,28.1,95.6,80s55a7uw8kypoikefwhtdm5m,M. Fenger,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703427945,631,8,2,63,15,1,21.7,90.5,2z8u8kyv91shp0la8alkn6kus,M. Ejdum,0.01035,0.01035,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-dbl7ir1qugqz8nvp1vzn8im50,OB,2703427953,632,49,2,63,16,1,24.0,90.6,2z8u8kyv91shp0la8alkn6kus,M. Ejdum,0.0009065,0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703427953,632,43,2,63,16,1,0.0,0.0,2z8u8kyv91shp0la8alkn6kus,M. Ejdum,0.0009065,0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703427963,633,1,2,63,16,0,24.0,90.6,2z8u8kyv91shp0la8alkn6kus,M. Ejdum,0.0004574,-0.0009065,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703427973,634,7,2,63,18,0,30.2,76.7,axyrfq1u8nwcj2ss5498u8qhg,L. Kjerrumgaard,0.0106917,0.0106917,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703746239,882,49,2,63,19,1,31.5,74.9,axyrfq1u8nwcj2ss5498u8qhg,L. Kjerrumgaard,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703428003,635,1,2,63,20,0,28.1,84.1,axyrfq1u8nwcj2ss5498u8qhg,L. Kjerrumgaard,0.0010325,-0.0106917,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703428183,636,8,2,63,43,1,24.3,38.9,dqtarwrqvkopmzbt2ovp2dln9,B. Paulsen,0.0009456,0.0009456,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703428199,637,49,2,63,45,1,24.4,37.9,e42jh6bbwn4aybdnysonrvutx,L. Owusu,0.0010007,5.51e-05,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -3132,10 +3145,10 @@ dbl7ir1qugqz8nvp1vzn8im50,OB,2703428949,654,1,2,65,23,1,31.3,95.7,1mml4inucvyomv
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703428963,655,49,2,65,25,1,46.9,95.6,2z8u8kyv91shp0la8alkn6kus,M. Ejdum,0.0042179,0.0030681,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703429023,656,3,2,65,30,1,71.3,85.8,2z8u8kyv91shp0la8alkn6kus,M. Ejdum,0.0042373,1.94e-05,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703429053,657,1,2,65,33,1,88.5,77.3,2z8u8kyv91shp0la8alkn6kus,M. Ejdum,0.0652169,0.0609796,NaN,1.0,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-dbl7ir1qugqz8nvp1vzn8im50,OB,2703429057,658,13,2,65,35,1,85.3,58.2,axyrfq1u8nwcj2ss5498u8qhg,L. Kjerrumgaard,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703429057,658,13,2,65,35,1,86.4,55.6,axyrfq1u8nwcj2ss5498u8qhg,L. Kjerrumgaard,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703429077,659,1,2,65,41,0,94.8,9.2,e9o7q10wnhex4e8eo47mobbvt,J. Bonde,0.0070135,-0.0582034,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703429121,660,4,2,65,48,0,69.4,19.2,5wmik73cqursg7sv3w14ue5pm,L. Deedson,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-dbl7ir1qugqz8nvp1vzn8im50,OB,2703429453,661,8,2,66,29,1,57.2,71.4,97xbmht3t4t1p9iu6598oq7l5,A. Manneh,0.0042373,0.0042373,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703429453,661,1,2,66,29,0,57.0,71.4,97xbmht3t4t1p9iu6598oq7l5,A. Manneh,0.0042373,0.0042373,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703429479,662,45,2,66,33,0,68.4,88.4,80s55a7uw8kypoikefwhtdm5m,M. Fenger,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703429505,663,49,2,66,37,1,23.1,91.8,ev2s21ogvpjtata4fndi868ve,J. Gomez,0.0008812,0.0008812,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703429523,664,1,2,66,37,1,23.1,91.8,ev2s21ogvpjtata4fndi868ve,J. Gomez,0.0002681,-0.0006131,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -3241,6 +3254,7 @@ dbl7ir1qugqz8nvp1vzn8im50,OB,2703435197,762,1,2,78,57,1,29.2,10.7,e42jh6bbwn4ayb
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703435211,763,1,2,79,0,1,15.7,17.7,dqtarwrqvkopmzbt2ovp2dln9,B. Paulsen,0.0002708,-2.8e-06,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703435267,764,1,2,79,1,1,4.9,33.0,4clmd8g8jogdfvauhijd7n55h,V. Myhra,0.0003463,0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703435305,765,1,2,79,8,1,29.6,6.4,e42jh6bbwn4aybdnysonrvutx,L. Owusu,0.0,-0.0003463,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703761533,883,50,2,79,11,1,35.2,3.1,5wmik73cqursg7sv3w14ue5pm,L. Deedson,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703435309,766,3,2,79,12,0,34.2,3.4,5wmik73cqursg7sv3w14ue5pm,L. Deedson,0.0011712,0.0006091,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703435329,767,5,2,79,13,1,33.5,-1.2,5wmik73cqursg7sv3w14ue5pm,L. Deedson,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703435361,768,1,2,79,17,1,35.6,0.0,e42jh6bbwn4aybdnysonrvutx,L. Owusu,0.0013116,-0.0005964,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -3249,13 +3263,13 @@ dbl7ir1qugqz8nvp1vzn8im50,OB,2703435393,770,4,2,79,21,0,62.4,14.3,axyrfq1u8nwcj2
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703435687,771,18,2,79,59,1,0.0,0.0,2z8u8kyv91shp0la8alkn6kus,M. Ejdum,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703435695,772,19,2,79,59,1,0.0,0.0,15jhbyn4wsbd865fd9djcwaok,W. Martin,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703440847,831,83,2,80,35,0,50.0,50.0,dqtarwrqvkopmzbt2ovp2dln9,B. Paulsen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-dbl7ir1qugqz8nvp1vzn8im50,OB,2703435997,773,7,2,80,36,1,40.5,24.4,97xbmht3t4t1p9iu6598oq7l5,A. Manneh,0.0039615,0.0039615,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703435997,773,1,2,80,36,1,39.3,26.0,97xbmht3t4t1p9iu6598oq7l5,A. Manneh,0.0039615,0.0039615,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703436001,774,49,2,80,38,1,23.1,21.9,e42jh6bbwn4aybdnysonrvutx,L. Owusu,0.0009158,0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703436013,775,1,2,80,38,1,23.1,21.9,e42jh6bbwn4aybdnysonrvutx,L. Owusu,0.0003582,-0.0005576,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703436033,776,1,2,80,43,1,25.5,66.4,ev2s21ogvpjtata4fndi868ve,J. Gomez,0.0002681,-9.01e-05,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703436077,777,1,2,80,44,1,7.7,46.4,4clmd8g8jogdfvauhijd7n55h,V. Myhra,0.0009475,-0.0002681,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703436081,778,61,2,80,51,1,52.2,71.2,15jhbyn4wsbd865fd9djcwaok,W. Martin,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-dbl7ir1qugqz8nvp1vzn8im50,OB,2703436131,779,83,2,80,57,0,49.6,67.2,15jhbyn4wsbd865fd9djcwaok,W. Martin,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703436131,779,43,2,80,57,1,0.0,0.0,15jhbyn4wsbd865fd9djcwaok,W. Martin,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703436163,780,7,2,81,0,1,41.4,32.0,e42jh6bbwn4aybdnysonrvutx,L. Owusu,0.0041292,0.0041292,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703436197,782,1,2,81,3,1,47.2,35.1,97xbmht3t4t1p9iu6598oq7l5,A. Manneh,0.004143,1.38e-05,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703436235,783,1,2,81,9,1,59.2,8.9,e42jh6bbwn4aybdnysonrvutx,L. Owusu,0.0,-0.004143,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -3264,7 +3278,7 @@ dbl7ir1qugqz8nvp1vzn8im50,OB,2703436301,785,1,2,81,18,1,54.5,59.4,e9o7q10wnhex4e
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703436341,786,1,2,81,21,1,72.2,97.5,2uw6m0yavlvkkiob73hoywb56,G. Grubbe,0.0258083,0.01749,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703436601,787,1,2,81,24,1,98.9,83.3,1b32j0lqi7ggcabdra4tygxzo,M. Jensen,0.3353982,0.3095899,1.0,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703436695,789,44,2,81,27,1,96.2,46.8,axyrfq1u8nwcj2ss5498u8qhg,L. Kjerrumgaard,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-dbl7ir1qugqz8nvp1vzn8im50,OB,2703436609,788,16,2,81,28,1,96.7,47.2,axyrfq1u8nwcj2ss5498u8qhg,L. Kjerrumgaard,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703436609,788,16,2,81,28,1,98.2,48.1,axyrfq1u8nwcj2ss5498u8qhg,L. Kjerrumgaard,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703437029,790,83,2,82,37,0,75.9,9.2,e9o7q10wnhex4e8eo47mobbvt,J. Bonde,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703437111,791,49,2,82,45,1,33.6,44.8,2uw6m0yavlvkkiob73hoywb56,G. Grubbe,0.0029965,0.0029965,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703437143,792,1,2,82,45,1,33.6,44.8,2uw6m0yavlvkkiob73hoywb56,G. Grubbe,0.0002779,-0.0027186,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -3288,7 +3302,7 @@ dbl7ir1qugqz8nvp1vzn8im50,OB,2703437907,809,5,2,84,29,1,81.3,101.4,1b32j0lqi7ggc
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703438085,810,18,2,85,3,1,0.0,0.0,5wmik73cqursg7sv3w14ue5pm,L. Deedson,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703438097,811,19,2,85,3,1,0.0,0.0,ewh6t7yo6clfewu89uznll9uc,E. Hansborg-Sørensen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703438215,812,1,2,85,17,1,82.5,100.0,2uw6m0yavlvkkiob73hoywb56,G. Grubbe,0.0258083,0.0249625,NaN,1.0,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-dbl7ir1qugqz8nvp1vzn8im50,OB,2703438217,813,13,2,85,21,1,95.1,70.1,axyrfq1u8nwcj2ss5498u8qhg,L. Kjerrumgaard,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703438217,813,13,2,85,21,1,96.5,68.9,axyrfq1u8nwcj2ss5498u8qhg,L. Kjerrumgaard,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703438221,814,5,2,85,23,0,101.6,50.1,axyrfq1u8nwcj2ss5498u8qhg,L. Kjerrumgaard,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703438359,815,49,2,85,43,1,26.8,29.4,e42jh6bbwn4aybdnysonrvutx,L. Owusu,0.0011824,0.0011824,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703438409,816,1,2,85,44,1,36.3,13.4,e42jh6bbwn4aybdnysonrvutx,L. Owusu,0.0020785,0.0008961,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -3298,7 +3312,7 @@ dbl7ir1qugqz8nvp1vzn8im50,OB,2703438517,819,1,2,85,57,0,88.9,18.3,e42jh6bbwn4ayb
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703438545,820,6,2,85,59,1,95.9,34.3,e42jh6bbwn4aybdnysonrvutx,L. Owusu,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703438915,821,1,2,86,33,1,99.5,0.5,97xbmht3t4t1p9iu6598oq7l5,A. Manneh,0.1329397,0.1036437,1.0,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703440207,829,44,2,86,35,1,93.9,57.5,dqtarwrqvkopmzbt2ovp2dln9,B. Paulsen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-dbl7ir1qugqz8nvp1vzn8im50,OB,2703438931,822,16,2,86,36,1,96.5,57.9,dqtarwrqvkopmzbt2ovp2dln9,B. Paulsen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703438931,822,16,2,86,36,1,93.9,53.8,dqtarwrqvkopmzbt2ovp2dln9,B. Paulsen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703439451,823,45,2,87,42,0,27.1,95.8,2uw6m0yavlvkkiob73hoywb56,G. Grubbe,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703439601,824,8,2,87,52,1,15.5,92.3,2uw6m0yavlvkkiob73hoywb56,G. Grubbe,0.01035,0.01035,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703439613,825,49,2,87,53,1,21.1,93.0,2uw6m0yavlvkkiob73hoywb56,G. Grubbe,0.000897,0.0,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -3306,7 +3320,6 @@ dbl7ir1qugqz8nvp1vzn8im50,OB,2703439659,826,1,2,87,53,1,21.1,93.0,2uw6m0yavlvkki
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703439699,827,1,2,87,58,0,36.2,85.1,axyrfq1u8nwcj2ss5498u8qhg,L. Kjerrumgaard,0.001446,-0.0003582,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703439873,828,4,2,88,16,0,57.7,66.2,1b32j0lqi7ggcabdra4tygxzo,M. Jensen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703440249,830,27,2,88,46,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-dbl7ir1qugqz8nvp1vzn8im50,OB,2703441721,832,28,2,91,5,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703441743,833,68,2,91,9,0,67.3,57.6,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703441873,834,4,2,91,31,0,63.2,91.6,15jhbyn4wsbd865fd9djcwaok,W. Martin,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703442099,835,7,2,91,49,1,58.3,94.2,15jhbyn4wsbd865fd9djcwaok,W. Martin,0.0041292,0.0041292,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
@@ -3342,9 +3355,10 @@ dbl7ir1qugqz8nvp1vzn8im50,OB,2703443277,864,1,2,93,55,0,87.5,59.0,axyrfq1u8nwcj2
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703443295,865,1,2,93,59,1,80.2,60.9,e9o7q10wnhex4e8eo47mobbvt,J. Bonde,0.0205846,-0.0486392,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703443305,866,1,2,94,1,1,84.9,82.9,2uw6m0yavlvkkiob73hoywb56,G. Grubbe,0.0503262,0.0503262,NaN,1.0,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703443311,867,44,2,94,5,1,86.8,36.6,ewh6t7yo6clfewu89uznll9uc,E. Hansborg-Sørensen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-dbl7ir1qugqz8nvp1vzn8im50,OB,2703444077,879,15,2,94,5,1,89.4,47.9,ewh6t7yo6clfewu89uznll9uc,E. Hansborg-Sørensen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703444077,879,15,2,94,5,1,90.5,43.8,ewh6t7yo6clfewu89uznll9uc,E. Hansborg-Sørensen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703443331,868,1,2,94,8,0,86.5,17.1,e42jh6bbwn4aybdnysonrvutx,L. Owusu,0.003181,-0.0471452,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
-dbl7ir1qugqz8nvp1vzn8im50,OB,2703443401,869,7,2,94,14,0,63.0,16.4,ewh6t7yo6clfewu89uznll9uc,E. Hansborg-Sørensen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703766993,884,61,2,94,14,1,63.7,18.2,ewh6t7yo6clfewu89uznll9uc,E. Hansborg-Sørensen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
+dbl7ir1qugqz8nvp1vzn8im50,OB,2703443401,869,7,2,94,15,0,63.0,16.4,ewh6t7yo6clfewu89uznll9uc,E. Hansborg-Sørensen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703443403,870,5,2,94,16,1,78.4,-1.7,ewh6t7yo6clfewu89uznll9uc,E. Hansborg-Sørensen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703443413,871,1,2,94,17,1,76.3,0.0,e42jh6bbwn4aybdnysonrvutx,L. Owusu,0.0085015,-0.0009419,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
 dbl7ir1qugqz8nvp1vzn8im50,OB,2703443415,872,4,2,94,19,1,87.0,6.6,ewh6t7yo6clfewu89uznll9uc,E. Hansborg-Sørensen,NaN,NaN,NaN,NaN,HB Køge vs OB,5wthrebrhplwhwm4qwy9xpgr8,2024-07-26
