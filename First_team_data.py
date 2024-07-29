@@ -1279,6 +1279,8 @@ def League_stats():
     with col2:
         st.write("Teams similar to the selected team:")
         st.dataframe(top_3_similar_teams[['team_name'] + rank_columns + ['similarity_score']],hide_index=True)
+
+
     
 Data_types = {
     'Dashboard': Dashboard,
