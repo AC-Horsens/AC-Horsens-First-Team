@@ -1220,22 +1220,31 @@ def League_stats():
     matchstats_df['Penalty Area Space control %'] = matchstats_df['Penalty Area Control %']
     matchstats_df = matchstats_df[['team_name','matches','PenAreaEntries per match','Open play xG per match','Duels per match','Duels won %','Passes per game','Pass accuracy %','Back zone pass accuracy %','Forward zone pass accuracy %','possWonDef3rd %','possWonMid3rd %','possWonAtt3rd %','Forward pass share %','Final third entries per match','Final third pass accuracy %','Open play shot assists share','PPDA per match','Total Space control %','Center Space control %','Penalty Area Space control %','Long pass share %','Crosses','Cross accuracy %']]
 
+    ranked_df = matchstats_df[['team_name']].copy()
+
+    # Define the columns to rank
     cols_to_rank = matchstats_df.drop(columns=['team_name']).columns
-    ranked_df = matchstats_df.copy()  # Create a copy of the original DataFrame
+
+    # Rank the columns appropriately
     for col in cols_to_rank:
-        # Special case for 'PPDA per match' to rank in descending order
         if col == 'PPDA per match':
             ranked_df[col + '_rank'] = matchstats_df[col].rank(axis=0, ascending=True)
         else:
             ranked_df[col + '_rank'] = matchstats_df[col].rank(axis=0, ascending=False)
-    
-    ranked_only_df = ranked_df[['team_name'] + [col + '_rank' for col in cols_to_rank]]
 
-    # Merge ranks with the original data
-    matchstats_df = matchstats_df.merge(ranked_only_df, on='team_name')
-    matchstats_df = matchstats_df.set_index('team_name')
-    matchstats_df = matchstats_df.drop(columns=['matches_rank'])
+    # Add the ranks back to the original dataframe without causing duplicates
+    matchstats_df = matchstats_df.merge(ranked_df, on='team_name', suffixes=('', '_ranked'))
+
+    # Ensure only one set of columns
+    matchstats_df = matchstats_df.drop(columns=[col for col in matchstats_df.columns if col.endswith('_ranked')])
+
+    # Drop 'matches_rank' if it exists (it's not needed for ranking)
+    if 'matches_rank' in matchstats_df.columns:
+        matchstats_df = matchstats_df.drop(columns=['matches_rank'])
+
     st.dataframe(matchstats_df)
+
+    # Reset index for further operations
     matchstats_df = matchstats_df.reset_index()
 
     # Select a team
