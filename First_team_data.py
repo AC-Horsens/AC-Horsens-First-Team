@@ -85,7 +85,6 @@ def load_ppda():
     df_ppda = pd.read_csv(r'DNK_1_Division_2024_2025/ppda_all DNK_1_Division_2024_2025.csv')
     df_ppda['label'] = (df_ppda['label'] + ' ' + df_ppda['date']).astype(str)
     return df_ppda
-
 @st.cache_data
 def load_crosses():
     df_crosses = pd.read_csv(r'DNK_1_Division_2024_2025/Horsens/Horsens_crosses.csv')
