@@ -1260,24 +1260,28 @@ def League_stats():
         st.dataframe(filtered_data_df)
 
     # Find similar teams
-    rank_columns = [col for col in matchstats_df.columns if col.endswith('_rank')]
+    selected_columns = [
+        'PenAreaEntries per match_rank', 'Open play xG per match_rank', 'Duels per match_rank', 
+        'Duels won %_rank', 'Passes per game_rank', 'Pass accuracy %_rank', 'Back zone pass accuracy %_rank',
+        'Forward zone pass accuracy %_rank', 'possWonDef3rd %_rank', 'possWonMid3rd %_rank', 
+        'possWonAtt3rd %_rank', 'Forward pass share %_rank', 'Final third entries per match_rank', 
+        'Final third pass accuracy %_rank', 'Open play shot assists share_rank', 'PPDA per match_rank', 
+        'Long pass share %_rank', 'Crosses_rank', 'Cross accuracy %_rank'
+    ]
+
     matchstats_df['similarity_score'] = matchstats_df.apply(
-        lambda row: sum(abs(row[rank_col] - team_df[rank_col].values[0]) for rank_col in rank_columns if not pd.isna(row[rank_col])),
+        lambda row: sum(abs(row[rank_col] - team_df[rank_col].values[0]) for rank_col in selected_columns if not pd.isna(row[rank_col])),
         axis=1
     )
 
-    # Exclude the selected team from the similarity search
+
     similar_teams = matchstats_df[matchstats_df['team_name'] != selected_team]
-
-    # Get the three teams with the lowest similarity scores
     top_3_similar_teams = similar_teams.nsmallest(3, 'similarity_score')
+    top_3_similar_teams = top_3_similar_teams.sort_values(by='similarity_score', ascending=False)
 
-    top_3_similar_teams = top_3_similar_teams.sort_values(by='similarity_score',ascending=False)
-    
-    # Display the similar teams
     with col2:
         st.write("Teams similar to the selected team:")
-        st.dataframe(top_3_similar_teams[['team_name'] + rank_columns + ['similarity_score']],hide_index=True)
+        st.dataframe(top_3_similar_teams[['team_name'] + rank_columns + ['similarity_score']], hide_index=True)
 
 
 Data_types = {
