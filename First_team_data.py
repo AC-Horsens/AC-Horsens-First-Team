@@ -1261,7 +1261,7 @@ def League_stats():
         st.dataframe(filtered_data_df)
 
     # Find similar teams
-    rank_columns = ['Duels per match_rank','Passes per game_rank','possWonDef3rd %_rank','possWonMid3rd %_rank','possWonAtt3rd %_rank','Forward pass share %_rank','Open play shot assists share_rank','PPDA per match_rank','Long pass share %_rank','Crosses_rank','Open play shot assists share_rank']
+    rank_columns = [col for col in matchstats_df.columns if col.endswith('_rank')]
     matchstats_df['similarity_score'] = matchstats_df.apply(
         lambda row: sum(abs(row[rank_col] - team_df[rank_col].values[0]) for rank_col in rank_columns if not pd.isna(row[rank_col])),
         axis=1
