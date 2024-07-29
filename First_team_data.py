@@ -870,7 +870,7 @@ def Dashboard():
             for _, row in df_early_crosses.iterrows():
                 ax.text(row['x'], row['y'], row['playerName'], fontsize=12, color='black')
 
-            plt.title('Early Crosses', fontsize=20)
+            plt.title('Cutbacks', fontsize=20)
 
             # Display the plot in Streamlit
             st.pyplot(fig)
