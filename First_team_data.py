@@ -1228,7 +1228,11 @@ def League_stats():
             ranked_df[col + '_rank'] = matchstats_df[col].rank(axis=0, ascending=True)
         else:
             ranked_df[col + '_rank'] = matchstats_df[col].rank(axis=0, ascending=False)
-    matchstats_df = ranked_df.merge(matchstats_df)
+    
+    ranked_only_df = ranked_df[['team_name'] + [col + '_rank' for col in cols_to_rank]]
+
+    # Merge ranks with the original data
+    matchstats_df = matchstats_df.merge(ranked_only_df, on='team_name')
     matchstats_df = matchstats_df.set_index('team_name')
     matchstats_df = matchstats_df.drop(columns=['matches_rank'])
     st.dataframe(matchstats_df)
@@ -1261,7 +1265,13 @@ def League_stats():
         st.dataframe(filtered_data_df)
 
     # Find similar teams
-    rank_columns = ['Duels per match_rank','Passes per game_rank','possWonDef3rd %_rank','possWonMid3rd %_rank','possWonAtt3rd %_rank','Forward pass share %_rank','Open play shot assists share_rank','PPDA per match_rank','Long pass share %_rank','Crosses_rank','Open play shot assists share_rank']
+    rank_columns = [
+        'Duels per match_rank', 'Passes per game_rank', 'possWonDef3rd %_rank',
+        'possWonMid3rd %_rank', 'possWonAtt3rd %_rank', 'Forward pass share %_rank',
+        'Open play shot assists share_rank', 'PPDA per match_rank', 'Long pass share %_rank',
+        'Crosses_rank', 'Open play shot assists share_rank'
+    ]
+
     matchstats_df['similarity_score'] = matchstats_df.apply(
         lambda row: sum(abs(row[rank_col] - team_df[rank_col].values[0]) for rank_col in rank_columns if not pd.isna(row[rank_col])),
         axis=1
@@ -1273,12 +1283,13 @@ def League_stats():
     # Get the three teams with the lowest similarity scores
     top_3_similar_teams = similar_teams.nsmallest(3, 'similarity_score')
 
-    top_3_similar_teams = top_3_similar_teams.sort_values(by='similarity_score',ascending=False)
-    
+    # Sort the similar teams by similarity score
+    top_3_similar_teams = top_3_similar_teams.sort_values(by='similarity_score', ascending=False)
+
     # Display the similar teams
     with col2:
         st.write("Teams similar to the selected team:")
-        st.dataframe(top_3_similar_teams[['team_name'] + rank_columns + ['similarity_score']],hide_index=True)
+        st.dataframe(top_3_similar_teams[['team_name'] + rank_columns + ['similarity_score']], hide_index=True)
     
 Data_types = {
     'Dashboard': Dashboard,
