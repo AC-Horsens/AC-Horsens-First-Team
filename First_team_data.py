@@ -1261,7 +1261,7 @@ def League_stats():
 
     # Find similar teams
     selected_columns = [
-        'PenAreaEntries per match_rank', 'Duels per match_rank', 
+        'Duels per match_rank', 
         'Duels won %_rank', 'Passes per game_rank', 'Pass accuracy %_rank', 'Back zone pass accuracy %_rank',
         'Forward zone pass accuracy %_rank', 'possWonDef3rd %_rank', 'possWonMid3rd %_rank', 
         'possWonAtt3rd %_rank', 'Forward pass share %_rank', 'Final third entries per match_rank', 
@@ -1284,7 +1284,6 @@ def League_stats():
     with col2:
         st.write("Teams similar to the selected team:")
         st.dataframe(top_3_similar_teams[['team_name'] + rank_columns + ['similarity_score']], hide_index=True)
-
 
 Data_types = {
     'Dashboard': Dashboard,
