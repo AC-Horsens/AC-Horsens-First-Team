@@ -1280,7 +1280,6 @@ def League_stats():
         st.dataframe(top_3_similar_teams[['team_name'] + rank_columns + ['similarity_score']],hide_index=True)
 
 
-    
 Data_types = {
     'Dashboard': Dashboard,
     'League stats': League_stats
