@@ -27,6 +27,7 @@ def load_data():
 
     df_possession_data = pd.read_csv(r'DNK_1_Division_2024_2025/Horsens/Horsens_possession_data.csv')
     df_possession_data['label'] = df_possession_data['label'] + ' ' + df_possession_data['date']
+    df_possession_data = df_possession_data.sort_values(by='eventId').reset_index(drop=True)
     df_possession_data['pass_receiver'] = None
 
     for i in range(len(df_possession_data) - 1):
