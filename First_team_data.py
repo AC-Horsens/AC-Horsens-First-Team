@@ -292,7 +292,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
     
     def fullbacks():
         df_backs = df_scouting[((df_scouting['player_position'] == 'Defender') | (df_scouting['player_position'] == 'Wing Back')) & ((df_scouting['player_positionSide'] == 'Right') | (df_scouting['player_positionSide'] == 'Left'))]
-        df_backs['minsPlayed'] = df_backs['minsPlayed'].astype(int)
+        df_backs.loc[:,'minsPlayed'] = df_backs['minsPlayed'].astype(int)
         df_backs = df_backs[df_backs['minsPlayed'].astype(int) >= minutter_kamp]
 
         df_backs = calculate_score(df_backs,'possessionValue.pvAdded_per90', 'Possession value added score')
@@ -338,7 +338,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         df_sekser = df_scouting[
             ((df_scouting['player_position'] == 'Defensive Midfielder') & df_scouting['player_positionSide'].str.contains('Centre')) |
             ((df_scouting['player_position'] == 'Midfielder') & df_scouting['player_positionSide'].str.contains('Centre'))]
-        df_sekser['minsPlayed'] = df_sekser['minsPlayed'].astype(int)
+        df_sekser.loc[:,'minsPlayed'] = df_sekser['minsPlayed'].astype(int)
         df_sekser = df_sekser[df_sekser['minsPlayed'].astype(int) >= minutter_kamp]
 
         df_sekser = calculate_score(df_sekser,'possessionValue.pvAdded_per90', 'Possession value added score')
@@ -464,7 +464,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
     
     def number8():
         df_otter = df_scouting[(df_scouting['player_position'] == 'Midfielder') & df_scouting['player_positionSide'].str.contains('Centre')]
-        df_otter['minsPlayed'] = df_otter['minsPlayed'].astype(int)
+        df_otter[:,'minsPlayed'] = df_otter['minsPlayed'].astype(int)
         df_otter = df_otter[df_otter['minsPlayed'].astype(int) >= minutter_kamp]
 
         df_otter = calculate_score(df_otter,'Possession value total per_90','Possession value total score')
@@ -515,7 +515,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         df_10 = df_scouting[
             ((df_scouting['player_position'] == 'Attacking Midfielder') & df_scouting['player_positionSide'].str.contains('Centre')) |
             ((df_scouting['player_position'] == 'Midfielder') & df_scouting['player_positionSide'].str.contains('Centre'))]
-        df_10['minsPlayed'] = df_10['minsPlayed'].astype(int)
+        df_10[:,'minsPlayed'] = df_10['minsPlayed'].astype(int)
         df_10 = df_10[df_10['minsPlayed'].astype(int) >= minutter_kamp]
 
         df_10 = calculate_score(df_10,'Possession value total per_90','Possession value total score')
@@ -574,7 +574,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
                 (df_scouting['player_positionSide'].isin(['Right', 'Left']))
             )
         ]        
-        df_10['minsPlayed'] = df_10['minsPlayed'].astype(int)
+        df_10[:,'minsPlayed'] = df_10['minsPlayed'].astype(int)
         df_10 = df_10[df_10['minsPlayed'].astype(int) >= minutter_kamp]
 
         df_10 = calculate_score(df_10,'Possession value total per_90','Possession value total score')
@@ -625,7 +625,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
     
     def Classic_striker():
         df_striker = df_scouting[(df_scouting['player_position'] == 'Striker') & (df_scouting['player_positionSide'].str.contains('Centre'))]
-        df_striker['minsPlayed'] = df_striker['minsPlayed'].astype(int)
+        df_striker.loc[:,'minsPlayed'] = df_striker['minsPlayed'].astype(int)
         df_striker = df_striker[df_striker['minsPlayed'].astype(int) >= minutter_kamp]
 
         df_striker = calculate_score(df_striker,'Possession value total per_90','Possession value total score')
