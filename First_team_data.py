@@ -515,7 +515,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         df_10 = df_scouting[
             ((df_scouting['player_position'] == 'Attacking Midfielder') & df_scouting['player_positionSide'].str.contains('Centre')) |
             ((df_scouting['player_position'] == 'Midfielder') & df_scouting['player_positionSide'].str.contains('Centre'))]
-        df_10[:,'minsPlayed'] = df_10['minsPlayed'].astype(int)
+        df_10.loc[:,'minsPlayed'] = df_10['minsPlayed'].astype(int)
         df_10 = df_10[df_10['minsPlayed'].astype(int) >= minutter_kamp]
 
         df_10 = calculate_score(df_10,'Possession value total per_90','Possession value total score')
