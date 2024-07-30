@@ -565,12 +565,15 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
     
     def winger():
         df_10 = df_scouting[
-            ((df_scouting['player_position'] == 'Midfielder') & 
-            (df_scouting['player_positionSide'].isin(['Right', 'Left']))) |
-            (((df_scouting['player_position'] == 'Attacking Midfielder') | 
-            (df_scouting['player_position'] == 'Striker')) & 
-            (df_scouting['player_positionSide'] =='Right') | (df_scouting['player_positionSide'] =='Left')
-        ]
+            (
+                (df_scouting['player_position'] == 'Midfielder') & 
+                (df_scouting['player_positionSide'].isin(['Right', 'Left']))
+            ) |
+            (
+                (df_scouting['player_position'].isin(['Attacking Midfielder', 'Striker'])) &
+                (df_scouting['player_positionSide'].isin(['Right', 'Left']))
+            )
+        ]        
         df_10['minsPlayed'] = df_10['minsPlayed'].astype(int)
         df_10 = df_10[df_10['minsPlayed'].astype(int) >= minutter_kamp]
 
