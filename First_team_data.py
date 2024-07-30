@@ -1869,7 +1869,6 @@ def League_stats():
     matchstats_df = df_ppda.merge(matchstats_df)
 
     matchstats_df = matchstats_df.merge(df_spacecontrol,how='left')
-    st.dataframe(matchstats_df)
 
     matchstats_df = matchstats_df.drop(columns='date')
     # Perform aggregation
