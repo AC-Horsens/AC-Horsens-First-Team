@@ -1803,12 +1803,12 @@ def Dashboard():
 def League_stats():
     
     
-    #balanced_central_defender_df = position_dataframes['Central defender']
-    #fullbacks_df = position_dataframes['Fullbacks']
-    #number6_df = position_dataframes['Number 6']
-    #number8_df = position_dataframes['Number 8']
-    #number10_df = position_dataframes['Number 10']
-    #winger_df = position_dataframes['Winger']
+    balanced_central_defender_df = position_dataframes['Central defender']
+    fullbacks_df = position_dataframes['Fullbacks']
+    number6_df = position_dataframes['Number 6']
+    number8_df = position_dataframes['Number 8']
+    number10_df = position_dataframes['Number 10']
+    winger_df = position_dataframes['Winger']
     classic_striker_df = position_dataframes['Classic striker']
 
     matchstats_df = load_match_stats(columns = any)
