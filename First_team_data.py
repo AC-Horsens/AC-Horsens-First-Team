@@ -2033,12 +2033,12 @@ def League_stats():
     combined_df = combined_df.drop(columns=['player_position'])
 
     st.dataframe(combined_df, hide_index=True)
-    combined_df = combined_df.groupby(['playerName', 'team_name', 'label']).agg({
+    agg_df = combined_df.groupby(['playerName', 'team_name', 'label']).agg({
         'minsPlayed': 'sum',
         
         **{col: 'mean' for col in combined_df.columns if col not in ['minsPlayed', 'playerName', 'team_name', 'label']}
     }).reset_index()
-    st.dataframe(combined_df, hide_index=True)
+    st.dataframe(agg_df, hide_index=True)
     
     st.header('Fullbacks')
     fullbacks_df = fullbacks_df[fullbacks_df['team_name'] == 'Horsens']
