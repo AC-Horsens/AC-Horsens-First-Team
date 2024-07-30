@@ -2044,7 +2044,7 @@ def League_stats():
     
     st.header('Fullbacks')
     fullbacks_df = fullbacks_df[fullbacks_df['team_name'] == 'Horsens']
-    fullbacks_df['match_date'] = pd.to_datetime(fullbacks_df['label'].str.extract(r'(\d{4}-\d{2}-\d{2})')[0])
+    fullbacks_df.loc[:, 'match_date'] = pd.to_datetime(fullbacks_df['label'].str.extract(r'(\d{4}-\d{2}-\d{2})')[0])
     fullbacks_df = fullbacks_df.dropna(subset=['match_date'])
     recent_matches_df = fullbacks_df[fullbacks_df['match_date'].isin(latest_dates)]
     matches_with_teams_df = fullbacks_df[fullbacks_df['label'].str.contains('|'.join(teams_list))]
@@ -2064,7 +2064,7 @@ def League_stats():
 
     st.header('Number 6')
     fullbacks_df = number6_df[number6_df['team_name'] == 'Horsens']
-    fullbacks_df['match_date'] = pd.to_datetime(fullbacks_df['label'].str.extract(r'(\d{4}-\d{2}-\d{2})')[0])
+    fullbacks_df.loc[:, 'match_date'] = pd.to_datetime(fullbacks_df['label'].str.extract(r'(\d{4}-\d{2}-\d{2})')[0])
     fullbacks_df = fullbacks_df.dropna(subset=['match_date'])
     recent_matches_df = fullbacks_df[fullbacks_df['match_date'].isin(latest_dates)]
     matches_with_teams_df = fullbacks_df[fullbacks_df['label'].str.contains('|'.join(teams_list))]
@@ -2084,7 +2084,7 @@ def League_stats():
 
     st.header('Number 8')
     fullbacks_df = number8_df[number8_df['team_name'] == 'Horsens']
-    fullbacks_df['match_date'] = pd.to_datetime(fullbacks_df['label'].str.extract(r'(\d{4}-\d{2}-\d{2})')[0])
+    fullbacks_df.loc[:, 'match_date'] = pd.to_datetime(fullbacks_df['label'].str.extract(r'(\d{4}-\d{2}-\d{2})')[0])
     fullbacks_df = fullbacks_df.dropna(subset=['match_date'])
     recent_matches_df = fullbacks_df[fullbacks_df['match_date'].isin(latest_dates)]
     matches_with_teams_df = fullbacks_df[fullbacks_df['label'].str.contains('|'.join(teams_list))]
@@ -2104,7 +2104,7 @@ def League_stats():
 
     st.header('Number 10')
     fullbacks_df = number10_df[number10_df['team_name'] == 'Horsens']
-    fullbacks_df['match_date'] = pd.to_datetime(fullbacks_df['label'].str.extract(r'(\d{4}-\d{2}-\d{2})')[0])
+    fullbacks_df.loc[:, 'match_date'] = pd.to_datetime(fullbacks_df['label'].str.extract(r'(\d{4}-\d{2}-\d{2})')[0])
     fullbacks_df = fullbacks_df.dropna(subset=['match_date'])
     recent_matches_df = fullbacks_df[fullbacks_df['match_date'].isin(latest_dates)]
     matches_with_teams_df = fullbacks_df[fullbacks_df['label'].str.contains('|'.join(teams_list))]
@@ -2124,7 +2124,7 @@ def League_stats():
 
     st.header('Winger')
     fullbacks_df = winger_df[winger_df['team_name'] == 'Horsens']
-    fullbacks_df['match_date'] = pd.to_datetime(fullbacks_df['label'].str.extract(r'(\d{4}-\d{2}-\d{2})')[0])
+    fullbacks_df.loc[:, 'match_date'] = pd.to_datetime(fullbacks_df['label'].str.extract(r'(\d{4}-\d{2}-\d{2})')[0])
     fullbacks_df = fullbacks_df.dropna(subset=['match_date'])
     recent_matches_df = fullbacks_df[fullbacks_df['match_date'].isin(latest_dates)]
     matches_with_teams_df = fullbacks_df[fullbacks_df['label'].str.contains('|'.join(teams_list))]
@@ -2143,7 +2143,7 @@ def League_stats():
     
     st.header('Striker')
     fullbacks_df = classic_striker_df[classic_striker_df['team_name'] == 'Horsens']
-    fullbacks_df['match_date'] = pd.to_datetime(fullbacks_df['label'].str.extract(r'(\d{4}-\d{2}-\d{2})')[0])
+    fullbacks_df.loc[:, 'match_date'] = pd.to_datetime(fullbacks_df['label'].str.extract(r'(\d{4}-\d{2}-\d{2})')[0])
     fullbacks_df = fullbacks_df.dropna(subset=['match_date'])
     recent_matches_df = fullbacks_df[fullbacks_df['match_date'].isin(latest_dates)]
     matches_with_teams_df = fullbacks_df[fullbacks_df['label'].str.contains('|'.join(teams_list))]
