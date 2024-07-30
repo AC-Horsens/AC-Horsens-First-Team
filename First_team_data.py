@@ -2038,6 +2038,7 @@ def League_stats():
         
         **{col: 'mean' for col in combined_df.columns if col not in ['minsPlayed', 'playerName', 'team_name', 'label']}
     }).reset_index()
+    st.dataframe(combined_df)
     
     st.header('Fullbacks')
     fullbacks_df = fullbacks_df[fullbacks_df['team_name'] == 'Horsens']
