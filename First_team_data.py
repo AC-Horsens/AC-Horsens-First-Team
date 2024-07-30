@@ -2027,7 +2027,7 @@ def League_stats():
     combined_df = combined_df.sort_values(by='Total score', ascending=False)
     combined_df = combined_df.drop(columns=['match_date'])
     # Display the filtered DataFrame
-    st.dataframe(combined_df)
+    st.dataframe(combined_df, hide_index=True)
 
     st.header('Fullbacks')
     fullbacks_df = fullbacks_df[fullbacks_df['team_name'] == 'Horsens']
@@ -2038,7 +2038,7 @@ def League_stats():
     combined_df = pd.merge(recent_matches_df, matches_with_teams_df, how='outer')
     combined_df = combined_df.sort_values(by='Total score', ascending=False)
     combined_df = combined_df.drop(columns=['match_date'])
-    st.dataframe(combined_df)
+    st.dataframe(combined_df, hide_index=True)
 
 
     st.header('Number 6')
@@ -2050,9 +2050,52 @@ def League_stats():
     combined_df = pd.merge(recent_matches_df, matches_with_teams_df, how='outer')
     combined_df = combined_df.sort_values(by='Total score', ascending=False)
     combined_df = combined_df.drop(columns=['match_date'])
-    st.dataframe(combined_df)
+    st.dataframe(combined_df, hide_index=True)
 
+    st.header('Number 8')
+    fullbacks_df = number8_df[number8_df['team_name'] == 'Horsens']
+    fullbacks_df['match_date'] = pd.to_datetime(fullbacks_df['label'].str.extract(r'(\d{4}-\d{2}-\d{2})')[0])
+    fullbacks_df = fullbacks_df.dropna(subset=['match_date'])
+    recent_matches_df = fullbacks_df[fullbacks_df['match_date'].isin(latest_dates)]
+    matches_with_teams_df = fullbacks_df[fullbacks_df['label'].str.contains('|'.join(teams_list))]
+    combined_df = pd.merge(recent_matches_df, matches_with_teams_df, how='outer')
+    combined_df = combined_df.sort_values(by='Total score', ascending=False)
+    combined_df = combined_df.drop(columns=['match_date'])
+    st.dataframe(combined_df, hide_index=True)
 
+    st.header('Number 10')
+    fullbacks_df = number10_df[number10_df['team_name'] == 'Horsens']
+    fullbacks_df['match_date'] = pd.to_datetime(fullbacks_df['label'].str.extract(r'(\d{4}-\d{2}-\d{2})')[0])
+    fullbacks_df = fullbacks_df.dropna(subset=['match_date'])
+    recent_matches_df = fullbacks_df[fullbacks_df['match_date'].isin(latest_dates)]
+    matches_with_teams_df = fullbacks_df[fullbacks_df['label'].str.contains('|'.join(teams_list))]
+    combined_df = pd.merge(recent_matches_df, matches_with_teams_df, how='outer')
+    combined_df = combined_df.sort_values(by='Total score', ascending=False)
+    combined_df = combined_df.drop(columns=['match_date'])
+    st.dataframe(combined_df, hide_index=True)
+    
+    st.header('Winger')
+    fullbacks_df = winger_df[winger_df['team_name'] == 'Horsens']
+    fullbacks_df['match_date'] = pd.to_datetime(fullbacks_df['label'].str.extract(r'(\d{4}-\d{2}-\d{2})')[0])
+    fullbacks_df = fullbacks_df.dropna(subset=['match_date'])
+    recent_matches_df = fullbacks_df[fullbacks_df['match_date'].isin(latest_dates)]
+    matches_with_teams_df = fullbacks_df[fullbacks_df['label'].str.contains('|'.join(teams_list))]
+    combined_df = pd.merge(recent_matches_df, matches_with_teams_df, how='outer')
+    combined_df = combined_df.sort_values(by='Total score', ascending=False)
+    combined_df = combined_df.drop(columns=['match_date'])
+    st.dataframe(combined_df, hide_index=True)
+    
+    st.header('Striker')
+    fullbacks_df = classic_striker_df[classic_striker_df['team_name'] == 'Horsens']
+    fullbacks_df['match_date'] = pd.to_datetime(fullbacks_df['label'].str.extract(r'(\d{4}-\d{2}-\d{2})')[0])
+    fullbacks_df = fullbacks_df.dropna(subset=['match_date'])
+    recent_matches_df = fullbacks_df[fullbacks_df['match_date'].isin(latest_dates)]
+    matches_with_teams_df = fullbacks_df[fullbacks_df['label'].str.contains('|'.join(teams_list))]
+    combined_df = pd.merge(recent_matches_df, matches_with_teams_df, how='outer')
+    combined_df = combined_df.sort_values(by='Total score', ascending=False)
+    combined_df = combined_df.drop(columns=['match_date'])
+    st.dataframe(combined_df, hide_index=True)
+    
 
 Data_types = {
     'Dashboard': Dashboard,
