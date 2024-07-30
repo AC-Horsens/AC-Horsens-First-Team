@@ -1995,7 +1995,7 @@ def League_stats():
         st.dataframe(top_3_similar_teams[['team_name'] + rank_columns + ['similarity_score']], hide_index=True)
     st.header('Central defenders')
     st.write(balanced_central_defender_df['team_name'])
-#    balanced_central_defender_df = balanced_central_defender_df[balanced_central_defender_df['team_name'].str.contains('Horsens')]
+    balanced_central_defender_df = balanced_central_defender_df[balanced_central_defender_df['team_name'] == 'Horsens']
 
 Data_types = {
     'Dashboard': Dashboard,
