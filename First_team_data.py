@@ -1999,7 +1999,7 @@ def League_stats(balanced_central_defender_df):
 
 Data_types = {
     'Dashboard': Dashboard,
-    'League stats': League_stats
+    'League stats': League_stats(balanced_central_defender_df)
 }
 
 
