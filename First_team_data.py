@@ -115,14 +115,14 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
 
     try:
         df_pv = df_pv_all[['playerName', 'team_name', 'label', 'possessionValue.pvValue', 'possessionValue.pvAdded']]
-        df_pv['possessionValue.pvValue'] = df_pv['possessionValue.pvValue'].astype(float)
-        df_pv['possessionValue.pvAdded'] = df_pv['possessionValue.pvAdded'].astype(float)
+        df_pv.loc[:, 'possessionValue.pvValue'] = df_pv['possessionValue.pvValue'].astype(float)
+        df_pv.loc[:, 'possessionValue.pvAdded'] = df_pv['possessionValue.pvAdded'].astype(float)
         df_pv['possessionValue'] = df_pv['possessionValue.pvValue'] + df_pv['possessionValue.pvAdded']
         df_kamp = df_pv.groupby(['playerName', 'label', 'team_name']).sum()
     except KeyError:
         df_pv = df_possession_xa[['playerName', 'team_name', 'label', 'xA']]
-        df_pv['possessionValue.pvValue'] = df_pv['xA'].astype(float)
-        df_pv['possessionValue.pvAdded'] = df_pv['xA'].astype(float)
+        df_pv.loc[:, 'possessionValue.pvValue'] = df_pv['xA'].astype(float)
+        df_pv.loc[:, 'possessionValue.pvAdded'] = df_pv['xA'].astype(float)
         df_pv['possessionValue'] = df_pv['xA'] + df_pv['xA']
         df_kamp = df_pv.groupby(['playerName', 'label', 'team_name']).sum()
 
