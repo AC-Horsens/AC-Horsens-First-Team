@@ -2011,13 +2011,13 @@ def League_stats():
 
     # Filter for rows where 'label' contains one of the top 3 similar teams
     teams_list = top_3_similar_teams['team_name'].tolist()
-    recent_matches_df = recent_matches_df[recent_matches_df['label'].str.contains('|'.join(teams_list))]
+    matches_with_teams_df = balanced_central_defender_df[balanced_central_defender_df['label'].str.contains('|'.join(teams_list))]
 
+    # Combine both filters: recent matches and matches involving top teams
+    combined_df = pd.merge(recent_matches_df, matches_with_teams_df, how='inner')
+    
     # Display the filtered DataFrame
-    st.header('Filtered Central Defenders')
-    st.dataframe(recent_matches_df)
-
-    st.dataframe(balanced_central_defender_df)
+    st.dataframe(combined_df)
 
 Data_types = {
     'Dashboard': Dashboard,
