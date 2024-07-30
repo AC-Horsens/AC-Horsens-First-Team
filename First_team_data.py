@@ -1996,8 +1996,8 @@ def League_stats():
     st.header('Central defenders')
     st.dataframe(balanced_central_defender_df)
 
-    balanced_central_defender_df['team_name'] = balanced_central_defender_df['team_name'].astype(str)
-    balanced_central_defender_df = balanced_central_defender_df[balanced_central_defender_df['team_name'].str.contains('Horsens')]
+#    balanced_central_defender_df['team_name'] = balanced_central_defender_df['team_name'].astype(str)
+#    balanced_central_defender_df = balanced_central_defender_df[balanced_central_defender_df['team_name'].str.contains('Horsens')]
 
 Data_types = {
     'Dashboard': Dashboard,
