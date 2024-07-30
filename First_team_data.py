@@ -2030,6 +2030,8 @@ def League_stats():
     combined_df = combined_df.sort_values(by='Total score', ascending=False)
     combined_df = combined_df.drop(columns=['match_date'])
     # Display the filtered DataFrame
+    combined_df = combined_df.drop(columns=['player_position'])
+
     st.dataframe(combined_df, hide_index=True)
 
     st.header('Fullbacks')
@@ -2076,6 +2078,7 @@ def League_stats():
     combined_df = combined_df.sort_values(by='Total score', ascending=False)
     combined_df = combined_df.drop(columns=['match_date'])
     st.dataframe(combined_df, hide_index=True)
+    combined_df = combined_df.drop(columns=['player_position'])
     
     st.header('Winger')
     fullbacks_df = winger_df[winger_df['team_name'] == 'Horsens']
