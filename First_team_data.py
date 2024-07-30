@@ -464,7 +464,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
     
     def number8():
         df_otter = df_scouting[(df_scouting['player_position'] == 'Midfielder') & df_scouting['player_positionSide'].str.contains('Centre')]
-        df_otter[:,'minsPlayed'] = df_otter['minsPlayed'].astype(int)
+        df_otter.loc[:,'minsPlayed'] = df_otter['minsPlayed'].astype(int)
         df_otter = df_otter[df_otter['minsPlayed'].astype(int) >= minutter_kamp]
 
         df_otter = calculate_score(df_otter,'Possession value total per_90','Possession value total score')
