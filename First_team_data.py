@@ -1996,6 +1996,25 @@ def League_stats():
         st.dataframe(top_3_similar_teams[['team_name'] + rank_columns + ['similarity_score']], hide_index=True)
     st.header('Central defenders')
     balanced_central_defender_df = balanced_central_defender_df[balanced_central_defender_df['team_name'] == 'Horsens']
+    balanced_central_defender_df['match_date'] = pd.to_datetime(balanced_central_defender_df['label'].str.extract(r'(\d{4}-\d{2}-\d{2})')[0])
+
+    # Ensure 'match_date' column is not null
+    balanced_central_defender_df = balanced_central_defender_df.dropna(subset=['match_date'])
+
+    # Get the latest 3 match dates
+    latest_dates = balanced_central_defender_df['match_date'].nlargest(3)
+
+    # Filter for rows with the latest match dates
+    recent_matches_df = balanced_central_defender_df[balanced_central_defender_df['match_date'].isin(latest_dates)]
+
+    # Filter for rows where 'label' contains one of the top 3 similar teams
+    teams_list = top_3_similar_teams['team_name'].tolist()
+    recent_matches_df = recent_matches_df[recent_matches_df['label'].str.contains('|'.join(teams_list))]
+
+    # Display the filtered DataFrame
+    st.header('Filtered Central Defenders')
+    st.dataframe(recent_matches_df)
+
     st.dataframe(balanced_central_defender_df)
 
 Data_types = {
