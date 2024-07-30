@@ -2014,7 +2014,7 @@ def League_stats():
     matches_with_teams_df = balanced_central_defender_df[balanced_central_defender_df['label'].str.contains('|'.join(teams_list))]
 
     # Combine both filters: recent matches and matches involving top teams
-    combined_df = pd.merge(recent_matches_df, matches_with_teams_df, how='inner')
+    combined_df = pd.merge(recent_matches_df, matches_with_teams_df, how='outer')
     
     # Display the filtered DataFrame
     st.dataframe(combined_df)
