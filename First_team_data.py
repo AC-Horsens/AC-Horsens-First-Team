@@ -2005,7 +2005,6 @@ def League_stats():
 
     # Get the latest 3 match dates
     latest_dates = pd.Series(unique_dates).nlargest(3)
-    st.write(latest_dates)
     # Filter for rows with the latest match dates
     recent_matches_df = balanced_central_defender_df[balanced_central_defender_df['match_date'].isin(latest_dates)]
 
@@ -2015,7 +2014,8 @@ def League_stats():
 
     # Combine both filters: recent matches and matches involving top teams
     combined_df = pd.merge(recent_matches_df, matches_with_teams_df, how='outer')
-    
+    combined_df = combined_df.sort_values(by='Total score', ascending=False)
+    combined_df = combined_df.drop(columns=['match_date'])
     # Display the filtered DataFrame
     st.dataframe(combined_df)
 
