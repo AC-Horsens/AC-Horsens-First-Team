@@ -2036,7 +2036,7 @@ def League_stats():
     agg_df = combined_df.groupby(['playerName', 'team_name', 'label']).agg({
         'minsPlayed': 'sum',
         
-        **{col: 'mean' for col in combined_df.columns if col not in ['minsPlayed', 'playerName', 'team_name', 'label']}
+        **{col: 'mean' for col in combined_df.columns if col not in ['minsPlayed', 'playerName', 'team_name']}
     }).reset_index()
     st.dataframe(agg_df, hide_index=True)
     
