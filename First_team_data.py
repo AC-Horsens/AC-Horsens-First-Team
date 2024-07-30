@@ -254,7 +254,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
 
     def balanced_central_defender():
         df_balanced_central_defender = df_scouting[(df_scouting['player_position'] == 'Defender') & (df_scouting['player_positionSide'].str.contains('Centre'))]
-        df_balanced_central_defender['minsPlayed'] = df_balanced_central_defender['minsPlayed'].astype(int)
+        df_balanced_central_defender.loc[:,'minsPlayed'] = df_balanced_central_defender['minsPlayed'].astype(int)
         df_balanced_central_defender = df_balanced_central_defender[df_balanced_central_defender['minsPlayed'].astype(int) >= minutter_kamp]
         
         df_balanced_central_defender = calculate_score(df_balanced_central_defender, 'duels won %', 'duels won % score')
