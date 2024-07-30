@@ -1880,6 +1880,7 @@ def League_stats():
 
     matchstats_df = matchstats_df.merge(df_spacecontrol,how='left')
 
+
     matchstats_df = matchstats_df.drop(columns='date')
     # Perform aggregation
     matchstats_df = matchstats_df.groupby(['contestantId', 'team_name']).agg({
