@@ -1831,7 +1831,6 @@ def League_stats():
     filtered_data = matchstats_df[
         (matchstats_df['date'] >= selected_start_date) & (matchstats_df['date'] <= selected_end_date)
     ]    
-    st.dataframe(matchstats_df)
     
     xg_df = load_all_xg()
     xg_df_openplay = xg_df[xg_df['321'] > 0]
@@ -1868,6 +1867,8 @@ def League_stats():
     df_ppda = df_ppda[['team_name','date', 'PPDA']]
     matchstats_df = xg_df_openplay.merge(filtered_data)
     matchstats_df = df_ppda.merge(matchstats_df)
+    st.dataframe(matchstats_df)
+
     matchstats_df = df_spacecontrol.merge(matchstats_df)
     matchstats_df = matchstats_df.drop(columns='date')
     # Perform aggregation
