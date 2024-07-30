@@ -2016,14 +2016,13 @@ def League_stats():
     latest_dates = pd.Series(unique_dates).nlargest(3)
     # Filter for rows with the latest match dates
     recent_matches_df = balanced_central_defender_df[balanced_central_defender_df['match_date'].isin(latest_dates)]
-    recent_matches_df = recent_matches_df['match_date']
-    st.dataframe(recent_matches_df)
+    
     # Filter for rows where 'label' contains one of the top 3 similar teams
     teams_list = top_3_similar_teams['team_name'].tolist()
     matches_with_teams_df = balanced_central_defender_df[balanced_central_defender_df['label'].str.contains('|'.join(teams_list))]
 
     # Combine both filters: recent matches and matches involving top teams
-    combined_df = pd.merge(recent_matches_df, matches_with_teams_df, how='inner')
+    combined_df = pd.merge(recent_matches_df, matches_with_teams_df, how='outer')
     combined_df = combined_df.sort_values(by='Total score', ascending=False)
     combined_df = combined_df.drop(columns=['match_date'])
     # Display the filtered DataFrame
@@ -2035,7 +2034,7 @@ def League_stats():
     fullbacks_df = fullbacks_df.dropna(subset=['match_date'])
     fullbacks_df = fullbacks_df[fullbacks_df['match_date'].isin(latest_dates)]
     matches_with_teams_df = fullbacks_df[fullbacks_df['label'].str.contains('|'.join(teams_list))]
-    combined_df = pd.merge(recent_matches_df, matches_with_teams_df, how='inner')
+    combined_df = pd.merge(recent_matches_df, matches_with_teams_df, how='right')
     combined_df = combined_df.sort_values(by='Total score', ascending=False)
     combined_df = combined_df.drop(columns=['match_date'])
     st.dataframe(combined_df)
