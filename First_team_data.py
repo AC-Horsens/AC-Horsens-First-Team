@@ -1802,14 +1802,23 @@ def Dashboard():
 
 def League_stats():
     
+    position_dataframes = {
+        'Central defender': position_dataframes['Central defender'],
+        'Fullbacks': position_dataframes['Fullbacks'],
+        'Number 6': position_dataframes['Number 6'],
+        'Number 8': position_dataframes['Number 8'],
+        'Number 10': position_dataframes['Number 10'],
+        'Winger': position_dataframes['Winger'],
+        'Classic striker': position_dataframes['Classic striker']
+    }
     
-    balanced_central_defender_df = position_dataframes['Central defender']
-    fullbacks_df = position_dataframes['Fullbacks']
-    number6_df = position_dataframes['Number 6']
-    number8_df = position_dataframes['Number 8']
-    number10_df = position_dataframes['Number 10']
-    winger_df = position_dataframes['Winger']
-    classic_striker_df = position_dataframes['Classic striker']
+    #balanced_central_defender_df = position_dataframes['Central defender']
+    #fullbacks_df = position_dataframes['Fullbacks']
+    #number6_df = position_dataframes['Number 6']
+    #number8_df = position_dataframes['Number 8']
+    #number10_df = position_dataframes['Number 10']
+    #winger_df = position_dataframes['Winger']
+    #classic_striker_df = position_dataframes['Classic striker']
 
     matchstats_df = load_match_stats(columns = any)
     matchstats_df = matchstats_df.rename(columns={'player_matchName': 'playerName'})
@@ -2039,15 +2048,6 @@ def League_stats():
     combined_df = combined_df.drop(columns=['match_date'])
     st.dataframe(combined_df)
 
-    position_dataframes = {
-        'Central defender': position_dataframes['Central defender'],
-        'Fullbacks': position_dataframes['Fullbacks'],
-        'Number 6': position_dataframes['Number 6'],
-        'Number 8': position_dataframes['Number 8'],
-        'Number 10': position_dataframes['Number 10'],
-        'Winger': position_dataframes['Winger'],
-        'Classic striker': position_dataframes['Classic striker']
-    }
 
     def process_position_df(df, position_name):
         st.header(position_name)
