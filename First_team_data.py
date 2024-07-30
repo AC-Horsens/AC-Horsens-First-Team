@@ -145,7 +145,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
     squads = squads[['id','matchName','nationality','dateOfBirth','age_today']]
     squads = squads.rename(columns={'id': 'playerId'})
     squads = squads.rename(columns={'matchName': 'playerName'})
-    squads.fillna(0,inplace=True)
+    #squads.fillna(0,inplace=True)
 
     df_scouting = df_scouting.merge(squads,how='outer')
     df_scouting = df_scouting.drop_duplicates(subset=['playerName', 'team_name', 'player_position', 'player_positionSide', 'label'])
