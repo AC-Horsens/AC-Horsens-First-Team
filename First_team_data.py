@@ -2034,7 +2034,7 @@ def League_stats():
     fullbacks_df = fullbacks_df.dropna(subset=['match_date'])
     fullbacks_df = fullbacks_df[fullbacks_df['match_date'].isin(latest_dates)]
     matches_with_teams_df = fullbacks_df[fullbacks_df['label'].str.contains('|'.join(teams_list))]
-    combined_df = pd.merge(recent_matches_df, matches_with_teams_df, how='inner')
+    combined_df = pd.merge(recent_matches_df, matches_with_teams_df, how='left')
     combined_df = combined_df.sort_values(by='Total score', ascending=False)
     combined_df = combined_df.drop(columns=['match_date'])
     st.dataframe(combined_df)
