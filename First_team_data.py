@@ -1994,9 +1994,10 @@ def League_stats():
         st.write("Teams similar to the selected team:")
         st.dataframe(top_3_similar_teams[['team_name'] + rank_columns + ['similarity_score']], hide_index=True)
     st.header('Central defenders')
+    st.dataframe(balanced_central_defender_df)
+
     balanced_central_defender_df['team_name'] = balanced_central_defender_df['team_name'].astype(str)
     balanced_central_defender_df = balanced_central_defender_df[balanced_central_defender_df['team_name'].str.contains('Horsens')]
-    st.dataframe(balanced_central_defender_df)
 
 Data_types = {
     'Dashboard': Dashboard,
