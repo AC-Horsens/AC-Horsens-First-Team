@@ -2052,7 +2052,13 @@ def League_stats():
     combined_df = combined_df.sort_values(by='Total score', ascending=False)
     combined_df = combined_df.drop(columns=['match_date', 'player_position','player_positionSide'])
     st.dataframe(combined_df, hide_index=True)
-
+    agg_df = combined_df.groupby(['playerName', 'team_name']).agg({
+        'minsPlayed': 'sum',
+        
+        **{col: 'mean' for col in combined_df.columns if col not in ['minsPlayed', 'playerName', 'team_name']}
+    }).reset_index()
+    agg_df = agg_df.sort_values(by='Total score', ascending=False)
+    st.dataframe(agg_df, hide_index=True)
 
     st.header('Number 6')
     fullbacks_df = number6_df[number6_df['team_name'] == 'Horsens']
@@ -2064,6 +2070,13 @@ def League_stats():
     combined_df = combined_df.sort_values(by='Total score', ascending=False)
     combined_df = combined_df.drop(columns=['match_date','player_position'])
     st.dataframe(combined_df, hide_index=True)
+    agg_df = combined_df.groupby(['playerName', 'team_name']).agg({
+        'minsPlayed': 'sum',
+        
+        **{col: 'mean' for col in combined_df.columns if col not in ['minsPlayed', 'playerName', 'team_name']}
+    }).reset_index()
+    agg_df = agg_df.sort_values(by='Total score', ascending=False)
+    st.dataframe(agg_df, hide_index=True)
 
     st.header('Number 8')
     fullbacks_df = number8_df[number8_df['team_name'] == 'Horsens']
@@ -2075,6 +2088,13 @@ def League_stats():
     combined_df = combined_df.sort_values(by='Total score', ascending=False)
     combined_df = combined_df.drop(columns=['match_date','player_position'])
     st.dataframe(combined_df, hide_index=True)
+    agg_df = combined_df.groupby(['playerName', 'team_name']).agg({
+        'minsPlayed': 'sum',
+        
+        **{col: 'mean' for col in combined_df.columns if col not in ['minsPlayed', 'playerName', 'team_name']}
+    }).reset_index()
+    agg_df = agg_df.sort_values(by='Total score', ascending=False)
+    st.dataframe(agg_df, hide_index=True)
 
     st.header('Number 10')
     fullbacks_df = number10_df[number10_df['team_name'] == 'Horsens']
@@ -2086,7 +2106,14 @@ def League_stats():
     combined_df = combined_df.sort_values(by='Total score', ascending=False)
     combined_df = combined_df.drop(columns=['match_date'])
     st.dataframe(combined_df, hide_index=True)
-    
+    agg_df = combined_df.groupby(['playerName', 'team_name']).agg({
+        'minsPlayed': 'sum',
+        
+        **{col: 'mean' for col in combined_df.columns if col not in ['minsPlayed', 'playerName', 'team_name']}
+    }).reset_index()
+    agg_df = agg_df.sort_values(by='Total score', ascending=False)
+    st.dataframe(agg_df, hide_index=True)
+
     st.header('Winger')
     fullbacks_df = winger_df[winger_df['team_name'] == 'Horsens']
     fullbacks_df['match_date'] = pd.to_datetime(fullbacks_df['label'].str.extract(r'(\d{4}-\d{2}-\d{2})')[0])
@@ -2097,6 +2124,14 @@ def League_stats():
     combined_df = combined_df.sort_values(by='Total score', ascending=False)
     combined_df = combined_df.drop(columns=['match_date'])
     st.dataframe(combined_df, hide_index=True)
+    agg_df = combined_df.groupby(['playerName', 'team_name']).agg({
+        'minsPlayed': 'sum',
+        
+        **{col: 'mean' for col in combined_df.columns if col not in ['minsPlayed', 'playerName', 'team_name']}
+    }).reset_index()
+    agg_df = agg_df.sort_values(by='Total score', ascending=False)
+    st.dataframe(agg_df, hide_index=True)
+
     
     st.header('Striker')
     fullbacks_df = classic_striker_df[classic_striker_df['team_name'] == 'Horsens']
@@ -2108,6 +2143,13 @@ def League_stats():
     combined_df = combined_df.sort_values(by='Total score', ascending=False)
     combined_df = combined_df.drop(columns=['match_date'])
     st.dataframe(combined_df, hide_index=True)
+    agg_df = combined_df.groupby(['playerName', 'team_name']).agg({
+        'minsPlayed': 'sum',
+        
+        **{col: 'mean' for col in combined_df.columns if col not in ['minsPlayed', 'playerName', 'team_name']}
+    }).reset_index()
+    agg_df = agg_df.sort_values(by='Total score', ascending=False)
+    st.dataframe(agg_df, hide_index=True)
     
 
 Data_types = {
