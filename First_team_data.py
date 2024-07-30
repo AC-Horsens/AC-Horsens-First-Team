@@ -2042,7 +2042,7 @@ def League_stats():
     matches_with_teams_df = fullbacks_df[fullbacks_df['label'].str.contains('|'.join(teams_list))]
     combined_df = pd.merge(recent_matches_df, matches_with_teams_df, how='outer')
     combined_df = combined_df.sort_values(by='Total score', ascending=False)
-    combined_df = combined_df.drop(columns=['match_date'])
+    combined_df = combined_df.drop(columns=['match_date', 'player_position','player_positionSide'])
     st.dataframe(combined_df, hide_index=True)
 
 
@@ -2054,7 +2054,7 @@ def League_stats():
     matches_with_teams_df = fullbacks_df[fullbacks_df['label'].str.contains('|'.join(teams_list))]
     combined_df = pd.merge(recent_matches_df, matches_with_teams_df, how='outer')
     combined_df = combined_df.sort_values(by='Total score', ascending=False)
-    combined_df = combined_df.drop(columns=['match_date'])
+    combined_df = combined_df.drop(columns=['match_date','player_position'])
     st.dataframe(combined_df, hide_index=True)
 
     st.header('Number 8')
@@ -2065,7 +2065,7 @@ def League_stats():
     matches_with_teams_df = fullbacks_df[fullbacks_df['label'].str.contains('|'.join(teams_list))]
     combined_df = pd.merge(recent_matches_df, matches_with_teams_df, how='outer')
     combined_df = combined_df.sort_values(by='Total score', ascending=False)
-    combined_df = combined_df.drop(columns=['match_date'])
+    combined_df = combined_df.drop(columns=['match_date','player_position'])
     st.dataframe(combined_df, hide_index=True)
 
     st.header('Number 10')
