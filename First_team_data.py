@@ -2017,6 +2017,7 @@ def League_stats():
     # Filter for rows with the latest match dates
     recent_matches_df = balanced_central_defender_df[balanced_central_defender_df['match_date'].isin(latest_dates)]
     recent_matches_df = recent_matches_df['match_date']
+    st.dataframe(recent_matches_df)
     # Filter for rows where 'label' contains one of the top 3 similar teams
     teams_list = top_3_similar_teams['team_name'].tolist()
     matches_with_teams_df = balanced_central_defender_df[balanced_central_defender_df['label'].str.contains('|'.join(teams_list))]
