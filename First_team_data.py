@@ -1986,12 +1986,14 @@ def League_stats():
 
 
     similar_teams = matchstats_df[matchstats_df['team_name'] != selected_team]
+    similar_teams = similar_teams[similar_teams['team_name']!='Horsens']
     top_3_similar_teams = similar_teams.nsmallest(3, 'similarity_score')
     top_3_similar_teams = top_3_similar_teams.sort_values(by='similarity_score', ascending=False)
 
     with col2:
         st.write("Teams similar to the selected team:")
         st.dataframe(top_3_similar_teams[['team_name'] + rank_columns + ['similarity_score']], hide_index=True)
+    st.header('Central defenders')
     st.dataframe(balanced_central_defender_df)
 
 Data_types = {
