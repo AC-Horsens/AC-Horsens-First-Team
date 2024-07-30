@@ -1800,7 +1800,8 @@ def Dashboard():
         if st.session_state['selected_data3']:
             Data_types[st.session_state['selected_data3']]()
 
-def League_stats(balanced_central_defender_df):
+def League_stats():
+    balanced_central_defender_df = balanced_central_defender_df
     matchstats_df = load_match_stats(columns = any)
     matchstats_df = matchstats_df.rename(columns={'player_matchName': 'playerName'})
     matchstats_df = matchstats_df.groupby(['contestantId','label', 'date']).sum().reset_index()
@@ -1999,7 +2000,7 @@ def League_stats(balanced_central_defender_df):
 
 Data_types = {
     'Dashboard': Dashboard,
-    'League stats': League_stats(balanced_central_defender_df)
+    'League stats': League_stats
 }
 
 
