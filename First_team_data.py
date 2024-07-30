@@ -2038,7 +2038,44 @@ def League_stats():
     combined_df = combined_df.sort_values(by='Total score', ascending=False)
     combined_df = combined_df.drop(columns=['match_date'])
     st.dataframe(combined_df)
-    
+
+    position_dataframes = {
+        'Central defender': position_dataframes['Central defender'],
+        'Fullbacks': position_dataframes['Fullbacks'],
+        'Number 6': position_dataframes['Number 6'],
+        'Number 8': position_dataframes['Number 8'],
+        'Number 10': position_dataframes['Number 10'],
+        'Winger': position_dataframes['Winger'],
+        'Classic striker': position_dataframes['Classic striker']
+    }
+
+    def process_position_df(df, position_name):
+        st.header(position_name)
+        
+        # Filter for team 'Horsens'
+        df = df[df['team_name'] == 'Horsens']
+        
+        # Extract and convert match dates
+        df['match_date'] = pd.to_datetime(df['label'].str.extract(r'(\d{4}-\d{2}-\d{2})')[0])
+        df = df.dropna(subset=['match_date'])
+        
+        # Filter for latest dates
+        df = df[df['match_date'].isin(latest_dates)]
+        
+        # Filter for matches involving top teams
+        matches_with_teams_df = df[df['label'].str.contains('|'.join(teams_list))]
+        
+        # Combine both filters: recent matches and matches involving top teams
+        combined_df = pd.merge(df, matches_with_teams_df, how='outer')
+        combined_df = combined_df.sort_values(by='Total score', ascending=False)
+        combined_df = combined_df.drop(columns=['match_date'])
+        
+        # Display the filtered DataFrame
+        st.dataframe(combined_df)
+    for position_name, df in position_dataframes.items():
+        process_position_df(df, position_name)
+
+
 Data_types = {
     'Dashboard': Dashboard,
     'League stats': League_stats
