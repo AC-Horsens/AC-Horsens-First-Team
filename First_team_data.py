@@ -569,7 +569,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
             (df_scouting['player_positionSide'].isin(['Right', 'Left']))) |
             (((df_scouting['player_position'] == 'Attacking Midfielder') | 
             (df_scouting['player_position'] == 'Striker')) & 
-            (df_scouting['player_positionSide'].str.contains('Right|Left')))
+            (df_scouting['player_positionSide'] =='Right') | (df_scouting['player_positionSide'] =='Left')
         ]
         df_10['minsPlayed'] = df_10['minsPlayed'].astype(int)
         df_10 = df_10[df_10['minsPlayed'].astype(int) >= minutter_kamp]
