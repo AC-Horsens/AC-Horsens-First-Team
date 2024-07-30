@@ -1807,6 +1807,7 @@ def League_stats():
     matchstats_df['label'] = np.where(matchstats_df['label'].notnull(), 1, matchstats_df['label'])
     date_format = '%Y-%m-%d'
     matchstats_df['date'] = pd.to_datetime(matchstats_df['date'], format=date_format)
+    st.dataframe(matchstats_df)
     min_date = matchstats_df['date'].min()
     max_date = matchstats_df['date'].max()
 
