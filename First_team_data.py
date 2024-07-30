@@ -2039,6 +2039,7 @@ def League_stats():
         
         **{col: 'mean' for col in combined_df.columns if col not in ['minsPlayed', 'playerName', 'team_name']}
     }).reset_index()
+    agg_df = agg_df.sort_values(by='Total score', ascending=False)
     st.dataframe(agg_df, hide_index=True)
     
     st.header('Fullbacks')
