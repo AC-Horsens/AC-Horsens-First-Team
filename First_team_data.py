@@ -2183,7 +2183,6 @@ def Physical_data():
 
     # Create bar charts for each specified column using Plotly
     for column in columns_to_plot:
-        st.subheader(f'{column} - Sorted by Value')
         
         # Sort the DataFrame by the current column
         sorted_df = df.sort_values(by=column, ascending=False)
