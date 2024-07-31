@@ -2174,7 +2174,7 @@ def Physical_data():
 
     # Format columns to remove thousand separators and ensure proper decimal formatting for display
     formatted_df = df.applymap(lambda x: f"{x:.2f}" if isinstance(x, float) else f"{x}")
-    st.dataframe(numeric_df)
+    st.dataframe(formatted_df)
 
     # Create ranks for the metrics
     for column in numeric_df.columns:
