@@ -2169,6 +2169,7 @@ def League_stats():
 def Physical_data():
     df = load_physical_data()
     df.set_index('Team', inplace=True)
+    df = df.applymap(lambda x: f"{x:,.2f}".replace(',', ' ') if isinstance(x, float) else f"{x:,}".replace(',', ' '))
 
     st.dataframe(df)
 
