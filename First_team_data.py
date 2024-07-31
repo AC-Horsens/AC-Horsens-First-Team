@@ -2168,9 +2168,14 @@ def League_stats():
 def Physical_data():
     df = load_physical_data()
     df.set_index('Team', inplace=True)
-    df = df.applymap(lambda x: f"{x:.2f}" if isinstance(x, float))
 
-    st.dataframe(df)
+    # Format columns to remove thousand separators and ensure proper decimal formatting
+    df = df.applymap(lambda x: f"{x:.2f}" if isinstance(x, float) else f"{x}")
+
+    # Create ranks for the metrics
+    for column in df.columns:
+        rank_col = f"Rank_{column}"
+        df[rank_col] = df[column].astype(float if 'Distance' in column else int).rank(ascending=False).astype(int)
 
     st.title("Team Performance Metrics")
 
@@ -2182,16 +2187,18 @@ def Physical_data():
         'Sprinting Distance',
         'Total Distance'
     ]
+    st.dataframe(df)
 
     # Create bar charts for each specified column using Plotly
     for column in columns_to_plot:
+        st.subheader(f'{column} - Sorted by Value')
         
         # Sort the DataFrame by the current column
         sorted_df = df.sort_values(by=column, ascending=False)
         
         # Plotting
         fig = go.Figure(data=[
-            go.Bar(x=sorted_df.index, y=sorted_df[column], marker_color='skyblue')
+            go.Bar(x=sorted_df.index, y=sorted_df[column].astype(float), marker_color='skyblue')
         ])
         fig.update_layout(
             title=f'{column} - Sorted by Value',
@@ -2202,6 +2209,9 @@ def Physical_data():
         
         # Display the plot in Streamlit
         st.plotly_chart(fig)
+
+# Display the DataFrame with ranks
+
 
 Data_types = {
     'Dashboard': Dashboard,
