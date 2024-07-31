@@ -2169,7 +2169,6 @@ def Physical_data():
     df = load_physical_data()
     df.set_index('Team', inplace=True)
 
-    st.dataframe(df)
     st.title("Team Performance Metrics")
 
     # Specify the columns to visualize
@@ -2181,7 +2180,7 @@ def Physical_data():
         'Total Distance'
     ]
 
-    # Create bar charts for each specified column
+    # Create bar charts for each specified column using Plotly
     for column in columns_to_plot:
         st.subheader(f'{column} - Sorted by Value')
         
@@ -2189,16 +2188,18 @@ def Physical_data():
         sorted_df = df.sort_values(by=column, ascending=False)
         
         # Plotting
-        fig, ax = plt.subplots(figsize=(10, 6))
-        sorted_df[column].plot(kind='bar', color='skyblue', ax=ax)
-        ax.set_title(f'{column} - Sorted by Value')
-        ax.set_xlabel('Team')
-        ax.set_ylabel(column)
-        ax.set_xticklabels(sorted_df.index, rotation=45, ha='right')
-        plt.tight_layout()
+        fig = go.Figure(data=[
+            go.Bar(x=sorted_df.index, y=sorted_df[column], marker_color='skyblue')
+        ])
+        fig.update_layout(
+            title=f'{column} - Sorted by Value',
+            xaxis_title='Team',
+            yaxis_title=column,
+            xaxis_tickangle=-45
+        )
         
         # Display the plot in Streamlit
-        st.pyplot(fig)
+        st.plotly_chart(fig)
 
 Data_types = {
     'Dashboard': Dashboard,
