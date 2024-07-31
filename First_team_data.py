@@ -2168,6 +2168,7 @@ def League_stats():
 def Physical_data():
     df = load_physical_data()
     st.dataframe(df, hide_index=True)
+    st.write(df.columns)
     for column in df.columns:
         st.subheader(f'{column} - Sorted by Value')
         
