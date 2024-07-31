@@ -101,8 +101,7 @@ def load_squads():
     return squads
 @st.cache_data
 def load_physical_data():
-    physical_data = pd.read_csv(r'DNK_1_Division_2024_2025/physical_summary.csv',decimal='.')
-    physical_data['High Speed Running Distance'] = physical_data['High Speed Running Distance'].astype(float)
+    physical_data = pd.read_csv(r'DNK_1_Division_2024_2025/physical_summary.csv')
     return physical_data
 
 def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
@@ -2169,8 +2168,7 @@ def League_stats():
 def Physical_data():
     df = load_physical_data()
     df.set_index('Team', inplace=True)
-    df = df.applymap(lambda x: f"{x:,.2f}".replace(',', ' ') if isinstance(x, float) else f"{x:,}".replace(',', ' '))
-
+    st.write(df.dtypes)
     st.dataframe(df)
 
     st.title("Team Performance Metrics")
