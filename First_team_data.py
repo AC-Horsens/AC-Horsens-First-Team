@@ -2168,6 +2168,7 @@ def League_stats():
 def Physical_data():
     df = load_physical_data()
     df.set_index('Team', inplace=True)
+    st.dataframe(df)
 
     st.title("Team Performance Metrics")
 
