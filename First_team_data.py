@@ -2174,6 +2174,7 @@ def Physical_data():
 
     # Format columns to remove thousand separators and ensure proper decimal formatting for display
     formatted_df = df.applymap(lambda x: f"{x:.2f}" if isinstance(x, float) else f"{x}")
+    st.dataframe(formatted_df)
 
     # Create ranks for the metrics
     for column in numeric_df.columns:
@@ -2193,7 +2194,6 @@ def Physical_data():
 
     # Create bar charts for each specified column using Plotly
     for column in columns_to_plot:
-        st.subheader(f'{column} - Sorted by Value')
         
         # Sort the DataFrame by the current column
         sorted_df = numeric_df.sort_values(by=column, ascending=False)
@@ -2213,10 +2213,8 @@ def Physical_data():
         st.plotly_chart(fig)
 
     # Combine formatted and rank data
-    combined_df = pd.concat([formatted_df, numeric_df[[f"Rank_{col}" for col in columns_to_plot]]], axis=1)
 
     # Display the combined DataFrame with ranks
-    st.dataframe(combined_df)
 
 Data_types = {
     'Dashboard': Dashboard,
