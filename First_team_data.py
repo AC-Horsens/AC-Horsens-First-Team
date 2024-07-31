@@ -1840,9 +1840,9 @@ def League_stats():
     selected_start_date, selected_end_date = st.select_slider(
         'Choose dates',
         options=date_options,
-        value=(min_date, max_date)
+        value=(min_date.strftime(date_format), max_date.strftime(date_format))
     )
-
+    
     selected_start_date = pd.to_datetime(selected_start_date, format=date_format)
     selected_end_date = pd.to_datetime(selected_end_date, format=date_format)
     filtered_data = matchstats_df[
