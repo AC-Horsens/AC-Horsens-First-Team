@@ -99,6 +99,10 @@ def load_pv_all():
 def load_squads():
     squads = pd.read_csv(r'DNK_1_Division_2024_2025/squads DNK_1_Division_2024_2025.csv')
     return squads
+@st.cache_data
+def load_physical_data():
+    physical_data = pd.read_csv(r'DNK_1_Division_2024_2025/physical_summary.csv')
+    return physical_data
 
 def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
 
@@ -2161,10 +2165,14 @@ def League_stats():
     agg_df = agg_df.sort_values(by='Total score', ascending=False)
     st.dataframe(agg_df, hide_index=True)
     
+def Physical_data():
+    Physical_data = load_physical_data()
+    st.dataframe(Physical_data, hide_index=True)
 
 Data_types = {
     'Dashboard': Dashboard,
-    'League stats': League_stats
+    'League stats': League_stats,
+    'Physical data': Physical_data
 }
 
 
