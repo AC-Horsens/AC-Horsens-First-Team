@@ -101,7 +101,7 @@ def load_squads():
     return squads
 @st.cache_data
 def load_physical_data():
-    physical_data = pd.read_csv(r'DNK_1_Division_2024_2025/physical_summary.csv')
+    physical_data = pd.read_csv(r'physical_summary.csv')
     return physical_data
 
 def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
