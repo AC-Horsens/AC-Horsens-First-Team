@@ -2167,9 +2167,23 @@ def League_stats():
     
 def Physical_data():
     df = load_physical_data()
-    st.dataframe(df, hide_index=True)
+    df.set_index('Team', inplace=True)
+
+    st.dataframe(df)
     st.write(df.columns)
-    for column in df.columns:
+    st.title("Team Performance Metrics")
+
+    # Specify the columns to visualize
+    columns_to_plot = [
+        'High Speed Running Count',
+        'High Speed Running Distance',
+        'Sprinting Count',
+        'Sprinting Distance',
+        'Total Distance'
+    ]
+
+    # Create bar charts for each specified column
+    for column in columns_to_plot:
         st.subheader(f'{column} - Sorted by Value')
         
         # Sort the DataFrame by the current column
