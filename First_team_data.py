@@ -1840,7 +1840,7 @@ def League_stats():
     selected_start_date, selected_end_date = st.select_slider(
         'Choose dates',
         options=date_options,
-        value=(default_start_date, default_end_date)
+
     )
 
     selected_start_date = pd.to_datetime(selected_start_date, format=date_format)
