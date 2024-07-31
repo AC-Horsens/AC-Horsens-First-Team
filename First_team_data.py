@@ -2166,8 +2166,25 @@ def League_stats():
     st.dataframe(agg_df, hide_index=True)
     
 def Physical_data():
-    Physical_data = load_physical_data()
-    st.dataframe(Physical_data, hide_index=True)
+    df = load_physical_data()
+    st.dataframe(df, hide_index=True)
+    for column in df.columns:
+        st.subheader(f'{column} - Sorted by Value')
+        
+        # Sort the DataFrame by the current column
+        sorted_df = df.sort_values(by=column, ascending=False)
+        
+        # Plotting
+        fig, ax = plt.subplots(figsize=(10, 6))
+        sorted_df[column].plot(kind='bar', color='skyblue', ax=ax)
+        ax.set_title(f'{column} - Sorted by Value')
+        ax.set_xlabel('Team')
+        ax.set_ylabel(column)
+        ax.set_xticklabels(sorted_df.index, rotation=45, ha='right')
+        plt.tight_layout()
+        
+        # Display the plot in Streamlit
+        st.pyplot(fig)
 
 Data_types = {
     'Dashboard': Dashboard,
