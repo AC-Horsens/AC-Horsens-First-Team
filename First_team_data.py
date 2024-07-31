@@ -2170,7 +2170,6 @@ def Physical_data():
     df.set_index('Team', inplace=True)
 
     st.dataframe(df)
-    st.write(df.columns)
     st.title("Team Performance Metrics")
 
     # Specify the columns to visualize
