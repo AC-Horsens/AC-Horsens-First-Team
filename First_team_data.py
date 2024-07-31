@@ -2168,8 +2168,7 @@ def League_stats():
 def Physical_data():
     df = load_physical_data()
     df.set_index('Team', inplace=True)
-    df = df.applymap(lambda x: f"{x:.2f}" if isinstance(x, float) else f"{x}")
-
+    
     st.dataframe(df)
 
     st.title("Team Performance Metrics")
