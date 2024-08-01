@@ -2234,14 +2234,24 @@ def Physical_data():
     Total_distance = Total_distance.sort_values(by='per 90', ascending = False)
     
     with col1: 
+        st.write('High speed running count')
+        highspeed_count = highspeed_count[['Player','per 90']]
         st.dataframe(highspeed_count)
     with col2:
+        st.write('High speed distance')
+        highspeed_distance = highspeed_distance[['Player','per 90']]
         st.dataframe(highspeed_distance)
     with col3:
+        st.write('Sprint count')
+        sprint_count = sprint_count[['Player','per 90']]
         st.dataframe(sprint_count)
     with col4:
+        st.write('Sprint distance')
+        Sprint_distance = Sprint_distance[['Player','per 90']]
         st.dataframe(Sprint_distance)
     with col5:
+        st.write('Total distance')
+        Total_distance = Total_distance[['Player','per 90']]
         st.dataframe(Total_distance)
     
     # Display the combined DataFrame with ranks
