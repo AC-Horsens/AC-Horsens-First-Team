@@ -104,6 +104,11 @@ def load_physical_data():
     physical_data = pd.read_csv(r'DNK_1_Division_2024_2025/physical_summary.csv')
     return physical_data
 
+@st.cache_data
+def load_physical_player_data():
+    physical_player_data = pd.read_csv(r'DNK_1_Division_2024_2025/player_data.csv')
+    return physical_player_data
+
 def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
 
     def calculate_score(df, column, score_column):
@@ -2167,6 +2172,7 @@ def League_stats():
     
 def Physical_data():
     df = load_physical_data()
+    physical_player_data = load_physical_player_data()
     df.set_index('Team', inplace=True)
 
     # Preserve the original numeric data for sorting
@@ -2213,6 +2219,30 @@ def Physical_data():
         st.plotly_chart(fig)
 
     # Combine formatted and rank data
+    st.header('Player Performance Metrics')
+    col1,col2,col3,col4,col5 = st.columns(5)
+    highspeed_count = physical_player_data[physical_player_data['Metric'] == 'High Speed Running Count']
+    highspeed_count = highspeed_count.sort_values(by='per 90',ascending = False)
+    highspeed_distance = physical_player_data[physical_player_data['Metric'] == 'High Speed Running Distance']
+    highspeed_distance = highspeed_distance.sort_values(by='per 90',ascending = False)
+    
+    sprint_count = physical_player_data[physical_player_data['Metric'] == 'Sprinting Count']
+    sprint_count = sprint_count.sort_values(by='per 90', ascending = False)
+    Sprint_distance = physical_player_data[physical_player_data['Metric'] == 'Sprinting Distance']
+    Sprint_distance = Sprint_distance.sort_values(by='per 90', ascending = False)
+    Total_distance = physical_player_data[physical_player_data['Metric'] == 'Total Distance']
+    Total_distance = Total_distance.sort_values(by='per 90', ascending = False)
+    
+    with col1: 
+        st.dataframe(highspeed_count)
+    with col2:
+        st.dataframe(highspeed_distance)
+    with col3:
+        st.dataframe(sprint_count)
+    with col4:
+        st.dataframe(Sprint_distance)
+    with col5:
+        st.dataframe(Total_distance)
     
     # Display the combined DataFrame with ranks
 
