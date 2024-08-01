@@ -2213,7 +2213,7 @@ def Physical_data():
         st.plotly_chart(fig)
 
     # Combine formatted and rank data
-
+    
     # Display the combined DataFrame with ranks
 
 Data_types = {
