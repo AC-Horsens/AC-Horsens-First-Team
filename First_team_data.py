@@ -2236,23 +2236,23 @@ def Physical_data():
     with col1: 
         st.write('High speed running count')
         highspeed_count = highspeed_count[['Player','per 90']]
-        st.dataframe(highspeed_count)
+        st.dataframe(highspeed_count,hide_index=True)
     with col2:
         st.write('High speed distance')
         highspeed_distance = highspeed_distance[['Player','per 90']]
-        st.dataframe(highspeed_distance)
+        st.dataframe(highspeed_distance,hide_index=True)
     with col3:
         st.write('Sprint count')
         sprint_count = sprint_count[['Player','per 90']]
-        st.dataframe(sprint_count)
+        st.dataframe(sprint_count,hide_index=True)
     with col4:
         st.write('Sprint distance')
         Sprint_distance = Sprint_distance[['Player','per 90']]
-        st.dataframe(Sprint_distance)
+        st.dataframe(Sprint_distance,hide_index=True)
     with col5:
         st.write('Total distance')
         Total_distance = Total_distance[['Player','per 90']]
-        st.dataframe(Total_distance)
+        st.dataframe(Total_distance,hide_index=True)
     
     # Display the combined DataFrame with ranks
 
