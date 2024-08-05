@@ -356,8 +356,8 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         df_unique.loc[:, score_column] = pd.qcut(df_unique[column], q=10, labels=False, duplicates='raise') + 1
         return df.merge(df_unique[[column, score_column]], on=column, how='left')
     
-    minutter_kamp = 45
-    minutter_total = 300
+    minutter_kamp = 0
+    minutter_total = 100
         
     df_possession_xa = df_possession_xa.rename(columns={'318.0': 'xA'})
     df_possession_xa_summed = df_possession_xa.groupby(['playerName','label'])['xA'].sum().reset_index()
