@@ -1283,8 +1283,6 @@ def create_pdf_progress_report(horsens_df, total_expected_points_combined, posit
     pdf.output(f"Progress reports/Progress_report_{today}.pdf")
     print(f'{today} progress report created')
 
-
-
 create_pdf_progress_report(horsens_df,total_expected_points_combined,position_dataframes)
 
 folder_path = 'C:/Users/SéamusPeareBartholdy/Documents/GitHub/AC-Horsens-First-Team/'
