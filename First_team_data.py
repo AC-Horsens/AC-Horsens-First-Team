@@ -888,7 +888,7 @@ def Dashboard():
         df_xg = df_xg[['playerName', 'label', 'team_name', 'x', 'y', '321', 'periodId', 'timeMin', 'timeSec', '9', '24', '25', '26']]
         df_xg = df_xg[df_xg['label'].isin(match_choice)]
         df_xg = df_xg[~(df_xg[['9','24', '25', '26']] == True).any(axis=1)]
-
+    
         xg_period = df_xg[['team_name','321','label']]
         xg_period = xg_period.groupby(['team_name', 'label']).sum().reset_index()
         xg_period['xG_match'] = xg_period.groupby('label')['321'].transform('sum')
