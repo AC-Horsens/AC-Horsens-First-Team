@@ -888,7 +888,7 @@ def Dashboard():
         df_xg = df_xg[['playerName', 'label', 'team_name', 'x', 'y', '321', 'periodId', 'timeMin', 'timeSec', '9', '24', '25', '26']]
         df_xg = df_xg[df_xg['label'].isin(match_choice)]
         df_xg = df_xg[~(df_xg[['9','24', '25', '26']] == True).any(axis=1)]
-    
+
         xg_period = df_xg[['team_name','321','label']]
         xg_period = xg_period.groupby(['team_name', 'label']).sum().reset_index()
         xg_period['xG_match'] = xg_period.groupby('label')['321'].transform('sum')
@@ -963,7 +963,7 @@ def Dashboard():
     
         df_xg_plot = df_xg[['playerName','team_name','x','y', '321']]
         df_xg_plot = df_xg_plot[df_xg_plot['team_name'] == 'Horsens']
-        pitch = Pitch(pitch_type='wyscout',half=True,line_color='white', pitch_color='grass')
+        pitch = Pitch(pitch_type='opta',half=True,line_color='white', pitch_color='grass')
         fig, ax = pitch.draw(figsize=(10, 6))
         
         sc = ax.scatter(df_xg_plot['x'], df_xg_plot['y'], s=df_xg_plot['321'] * 100, c='red', edgecolors='black', alpha=0.6)
