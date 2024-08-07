@@ -1993,10 +1993,8 @@ def League_stats():
     # Find similar teams
     selected_columns = [
         'Duels per match_rank', 
-        'Duels won %_rank', 'Passes per game_rank', 'Pass accuracy %_rank', 'Back zone pass accuracy %_rank',
-        'Forward zone pass accuracy %_rank', 'possWonDef3rd %_rank', 'possWonMid3rd %_rank', 
-        'possWonAtt3rd %_rank', 'Forward pass share %_rank', 
-        'Final third pass accuracy %_rank', 'Open play shot assists share_rank', 'PPDA per match_rank', 
+        'Duels won %_rank', 'Passes per game_rank', 'Pass accuracy %_rank', 'possWonDef3rd %_rank', 'possWonMid3rd %_rank', 
+        'possWonAtt3rd %_rank', 'Forward pass share %_rank', 'Open play shot assists share_rank', 'PPDA per match_rank', 
         'Long pass share %_rank', 'Crosses_rank', 'Cross accuracy %_rank'
     ]
 
