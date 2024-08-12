@@ -143,6 +143,20 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
     df_matchstats = df_match_stats[['player_matchName','player_playerId','contestantId','duelLost','aerialLost','player_position','player_positionSide','successfulOpenPlayPass','totalContest','duelWon','penAreaEntries','accurateBackZonePass','possWonDef3rd','wonContest','accurateFwdZonePass','openPlayPass','totalBackZonePass','minsPlayed','fwdPass','finalThirdEntries','ballRecovery','totalFwdZonePass','successfulFinalThirdPasses','totalFinalThirdPasses','attAssistOpenplay','aerialWon','totalAttAssist','possWonMid3rd','interception','totalCrossNocorner','interceptionWon','attOpenplay','touchesInOppBox','attemptsIbox','totalThroughBall','possWonAtt3rd','accurateCrossNocorner','bigChanceCreated','accurateThroughBall','totalLayoffs','accurateLayoffs','totalFastbreak','shotFastbreak','formationUsed','label','match_id','date']]
     df_matchstats = df_matchstats.rename(columns={'player_matchName': 'playerName'})
     df_scouting = df_matchstats.merge(df_kamp)
+    df_scouting = df_matchstats.merge(df_kamp)
+    def calculate_match_pv(df_scouting):
+        # Calculate the total match_xg for each match_id
+        df_scouting['match_pv'] = df_scouting.groupby('match_id')['possessionValue.pvValue'].transform('sum')
+        
+        # Calculate the total team_xg for each team in each match
+        df_scouting['team_pv'] = df_scouting.groupby(['contestantId', 'match_id'])['possessionValue.pvValue'].transform('sum')
+        
+        # Calculate opponents_xg as match_xg - team_xg
+        df_scouting['opponents_pv'] = df_scouting['match_pv'] - df_scouting['team_pv']
+        df_scouting['opponents_pv'] = pd.to_numeric(df_scouting['opponents_pv'], errors='coerce')
+        return df_scouting
+    df_scouting = calculate_match_pv(df_scouting)
+
     df_xg = df_xg_all[['contestantId','team_name','playerName','playerId','321','match_id','label','date']]
     df_xg = df_xg.rename(columns={'321': 'xg'})
     df_xg['xg'] = df_xg['xg'].astype(float)
@@ -150,7 +164,36 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
     df_xg = df_xg.reset_index()
     df_scouting = df_scouting.rename(columns={'player_playerId': 'playerId'})
     df_scouting = df_scouting.merge(df_xg, how='left', on=['playerName', 'playerId', 'match_id', 'contestantId', 'team_name', 'label', 'date']).reset_index()
+    def calculate_match_xg(df_scouting):
+        # Calculate the total match_xg for each match_id
+        df_scouting['match_xg'] = df_scouting.groupby('match_id')['xg'].transform('sum')
+        
+        # Calculate the total team_xg for each team in each match
+        df_scouting['team_xg'] = df_scouting.groupby(['contestantId', 'match_id'])['xg'].transform('sum')
+        
+        # Calculate opponents_xg as match_xg - team_xg
+        df_scouting['opponents_xg'] = df_scouting['match_xg'] - df_scouting['team_xg']
+        df_scouting['opponents_xg'] = pd.to_numeric(df_scouting['opponents_xg'], errors='coerce')
+       
+        return df_scouting
+
+    df_scouting = calculate_match_xg(df_scouting)
+
     df_scouting = df_scouting.merge(df_possession_xa_summed, how='left')
+    def calculate_match_xa(df_scouting):
+        # Calculate the total match_xg for each match_id
+        df_scouting['match_xA'] = df_scouting.groupby('match_id')['xA'].transform('sum')
+        
+        # Calculate the total team_xg for each team in each match
+        df_scouting['team_xA'] = df_scouting.groupby(['contestantId', 'match_id'])['xA'].transform('sum')
+        
+        # Calculate opponents_xg as match_xg - team_xg
+        df_scouting['opponents_xA'] = df_scouting['match_xA'] - df_scouting['team_xA']
+        df_scouting['opponents_xA'] = pd.to_numeric(df_scouting['opponents_xA'], errors='coerce')
+        
+        return df_scouting
+    df_scouting = calculate_match_xa(df_scouting)
+
     df_scouting.fillna(0, inplace=True)
     squads['dateOfBirth'] = pd.to_datetime(squads['dateOfBirth'])
     today = datetime.today()
