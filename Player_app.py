@@ -889,5 +889,4 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
     else:
         st.error("'140' column does not exist in the DataFrame.")
     plot_arrows(Alle_off_aktioner)
-    st.dataframe(Alle_off_aktioner)
 player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fullbacks_df,number8_df,number6_df,number10_df,winger_df,classic_striker_df)
