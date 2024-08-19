@@ -800,7 +800,6 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
     horsens = horsens.sort_values(by='playerName')
     player_name = st.selectbox('Choose player', horsens['playerName'].unique())
     st.title(f'{player_name}')    
-    st.dataframe(df)
     df['date'] = pd.to_datetime(df['date'])
     df = df.sort_values(by='date',ascending=False)
     kampe = df['label'].unique()
@@ -818,6 +817,7 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
                 pass_receiver = next_event.iloc[0]['playerName']
                 df.at[i, 'pass_receiver'] = pass_receiver
     df = df_possession_data[(df['playerName'] == player_name)|(df['pass_receiver'] == player_name)]
+    st.dataframe(df)
 
     df_matchstats_player = df_matchstats[(df_matchstats['player_matchName'] == player_name) & (df_matchstats['label'].isin(kampvalg))]
     df_matchstats_player['date'] = pd.to_datetime(df_matchstats_player['date'])
