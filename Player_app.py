@@ -28,17 +28,6 @@ def load_data():
     df_possession_data = pd.read_csv(r'DNK_1_Division_2024_2025/Horsens/Horsens_possession_data.csv')
     df_possession_data['label'] = df_possession_data['label'] + ' ' + df_possession_data['date']
     df_possession_data = df_possession_data.sort_values(by='eventId').reset_index(drop=True)
-    df_possession_data['pass_receiver'] = None
-
-    for i in range(len(df_possession_data) - 1):
-        current_event = df_possession_data.loc[i]
-        if current_event['typeId'] == 1 and current_event['outcome'] == 1:
-            next_event_id = current_event['eventId'] + 1
-            next_event = df_possession_data[(df_possession_data['eventId'] == next_event_id) & (df_possession_data['team_name'] == current_event['team_name'])]
-
-            if not next_event.empty:
-                pass_receiver = next_event.iloc[0]['playerName']
-                df_possession_data.at[i, 'pass_receiver'] = pass_receiver
                 
     df_xg_agg = pd.read_csv(r'DNK_1_Division_2024_2025/Horsens/Horsens_xg_data.csv')
     df_xg_agg['label'] = df_xg_agg['label'] + ' ' + df_xg_agg['date']
@@ -811,13 +800,25 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
     horsens = horsens.sort_values(by='playerName')
     player_name = st.selectbox('Choose player', horsens['playerName'].unique())
     st.title(f'{player_name}')    
-    df = df_possession_data[(df_possession_data['playerName'] == player_name)|(df_possession_data['pass_receiver'] == player_name)]
     st.dataframe(df)
     df['date'] = pd.to_datetime(df['date'])
     df = df.sort_values(by='date',ascending=False)
     kampe = df['label'].unique()
     kampvalg = st.multiselect('Choose matches', kampe, kampe[0:3])
     df = df[df['label'].isin(kampvalg)]
+    df['pass_receiver'] = None
+
+    for i in range(len(df) - 1):
+        current_event = df.loc[i]
+        if current_event['typeId'] == 1 and current_event['outcome'] == 1:
+            next_event_id = current_event['eventId'] + 1
+            next_event = df[(df['eventId'] == next_event_id) & (df['team_name'] == current_event['team_name'])]
+
+            if not next_event.empty:
+                pass_receiver = next_event.iloc[0]['playerName']
+                df.at[i, 'pass_receiver'] = pass_receiver
+    df = df_possession_data[(df['playerName'] == player_name)|(df['pass_receiver'] == player_name)]
+
     df_matchstats_player = df_matchstats[(df_matchstats['player_matchName'] == player_name) & (df_matchstats['label'].isin(kampvalg))]
     df_matchstats_player['date'] = pd.to_datetime(df_matchstats_player['date'])
     df_matchstats_player = df_matchstats_player.sort_values(by='date')
