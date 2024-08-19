@@ -34,7 +34,7 @@ def load_data():
         current_event = df_possession_data.loc[i]
         if current_event['typeId'] == 1 and current_event['outcome'] == 1:
             next_event_id = current_event['eventId'] + 1
-            next_event = df_possession_data[(df_possession_data['eventId'] == next_event_id) & (df_possession_data['team_name'] == current_event['team_name'])]
+            next_event = df_possession_data[(df_possession_data['eventId'] == next_event_id) & (next_event['team_name'] == current_event['team_name'])]
 
             if not next_event.empty:
                 pass_receiver = next_event.iloc[0]['playerName']
