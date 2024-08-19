@@ -8,6 +8,7 @@ from datetime import datetime
 
 
 st.set_page_config(layout="wide")
+team_name = st.selectbox('Choose team', ['B_93','Esbjerg','Fredericia','HB_Køge','Hillerød','Hobro','Horsens','Hvidovre','Kolding','OB','Roskilde','Vendsyssel'])
 
 @st.cache_data()
 def load_data(team_name):
@@ -788,7 +789,7 @@ def Process_data_spillere(df_possession_xa,df_pv_all,df_matchstats,df_xg_all,squ
         'Classic striker': Classic_striker(),
     }
 
-df_xg, df_xa, df_pv, df_possession_stats, df_xa_agg, df_possession_data, df_xg_agg, df_pv_agg, df_xg_all, df_possession_xa, df_pv_all, df_matchstats, squads = load_data()
+df_xg, df_xa, df_pv, df_possession_stats, df_xa_agg, df_possession_data, df_xg_agg, df_pv_agg, df_xg_all, df_possession_xa, df_pv_all, df_matchstats, squads = load_data(team_name)
 
 position_dataframes = Process_data_spillere(df_possession_xa, df_pv_all, df_matchstats, df_xg_all, squads)
 
@@ -807,7 +808,6 @@ classic_striker_df = position_dataframes['Classic striker']
 #box_striker_df = position_dataframes['Boxstriker']    
     
 def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fullbacks_df,number8_df,number6_df,number10_df,winger_df,classic_striker_df):
-    team_name = st.selectbox('Choose team', ['B_93','Esbjerg','Fredericia','HB_Køge','Hillerød','Hobro','Horsens','Hvidovre','Kolding','OB','Roskilde','Vendsyssel'])
     horsens = df_possession_data.copy()
     horsens = df_possession_data[df_possession_data['team_name'].str.contains(team_name)]
     horsens = horsens.sort_values(by='playerName')
