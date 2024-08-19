@@ -10,7 +10,7 @@ from datetime import datetime
 st.set_page_config(layout="wide")
 
 @st.cache_data()
-def load_data():
+def load_data(team_name):
     df_xg = pd.read_csv(r'DNK_1_Division_2024_2025/xg_all DNK_1_Division_2024_2025.csv')
     df_xg['label'] = df_xg['label'] + ' ' + df_xg['date']
 
@@ -25,7 +25,7 @@ def load_data():
     df_xa_agg = pd.read_csv(r'DNK_1_Division_2024_2025/Horsens/Horsens_possession_data.csv')
     df_xa_agg['label'] = df_xa_agg['label'] + ' ' + df_xa_agg['date']
 
-    df_possession_data = pd.read_csv(r'DNK_1_Division_2024_2025/Horsens/Horsens_possession_data.csv')
+    df_possession_data = pd.read_csv(f'DNK_1_Division_2024_2025/{team_name}/{team_name}_possession_data.csv')
     df_possession_data['label'] = df_possession_data['label'] + ' ' + df_possession_data['date']
     df_possession_data = df_possession_data.sort_values(by='eventId').reset_index(drop=True)
     df_possession_data['pass_receiver'] = None
@@ -807,7 +807,9 @@ classic_striker_df = position_dataframes['Classic striker']
 #box_striker_df = position_dataframes['Boxstriker']    
     
 def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fullbacks_df,number8_df,number6_df,number10_df,winger_df,classic_striker_df):
-    horsens = df_possession_data[df_possession_data['team_name'].str.contains('Horsens')]
+    team_name = st.selectbox('Choose team', team_names = ['B_93','Esbjerg','Fredericia','HB_Køge','Hillerød','Hobro','Horsens','Hvidovre','Kolding','OB','Roskilde','Vendsyssel'])
+    horsens = df_possession_data.copy
+    horsens = df_possession_data[df_possession_data['team_name'].str.contains(team_name)]
     horsens = horsens.sort_values(by='playerName')
     player_name = st.selectbox('Choose player', horsens['playerName'].unique())
     st.title(f'{player_name}')    
