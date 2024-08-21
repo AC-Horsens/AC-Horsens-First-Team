@@ -661,7 +661,7 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         df_sekser = calculate_score(df_sekser, 'Progressive ball movement','Progressive_ball_movement')
         df_sekser = calculate_score(df_sekser, 'Possession value added', 'Possession_value_added')
         
-        df_sekser['Total score'] = df_sekser[['Defending_','Passing_','Progressive_ball_movement','Possession_value_added']].mean(axis=1)
+        df_sekser['Total score'] = df_sekser[['Defending_','Defending_','Defending_','Passing_','Passing_','Passing_','Progressive_ball_movement','Possession_value_added']].mean(axis=1)
         df_sekser = df_sekser[['playerName','team_name','player_position','label','minsPlayed','age_today','Defending_','Passing_','Progressive_ball_movement','Possession_value_added','Total score']]
         df_sekser = df_sekser.dropna()
         df_seksertotal = df_sekser[['playerName','team_name','player_position','minsPlayed','age_today','Defending_','Passing_','Progressive_ball_movement','Possession_value_added','Total score']]
@@ -955,7 +955,7 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         df_striker = calculate_score(df_striker, 'Goalscoring_','Goalscoring')        
         df_striker = calculate_score(df_striker, 'Possession_value', 'Possession value')
 
-        df_striker['Total score'] = df_striker[['Linkup play','Chance creation','Goalscoring','Goalscoring','Goalscoring','Possession value']].mean(axis=1)
+        df_striker['Total score'] = df_striker[['Linkup play','Chance creation','Goalscoring','Possession value']].mean(axis=1)
         df_striker = df_striker[['playerName','team_name','label','minsPlayed','age_today','Linkup play','Chance creation','Goalscoring','Possession value','Total score']]
         df_striker = df_striker.dropna()
 
