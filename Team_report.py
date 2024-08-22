@@ -384,7 +384,7 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         return df.merge(df_unique[[column, score_column]], on=column, how='left')
  
     minutter_kamp = 0
-    minutter_total = 100
+    minutter_total = 200
         
     df_possession_xa = df_possession_xa.rename(columns={'318.0': 'xA'})
     df_possession_xa_summed = df_possession_xa.groupby(['playerName','label'])['xA'].sum().reset_index()
@@ -1273,8 +1273,8 @@ def create_pdf_game_report(game_data, df_xg_agg, df_xa_agg, merged_df, df_posses
     pdf.output(f"Match reports/Match_Report_{label}.pdf")
     print(f'{label} report created')
 # Generate a PDF report for each game involving Horsens
-for index, row in horsens_df.iterrows():
-    create_pdf_game_report(row, df_xg_agg, df_xa_agg, merged_df, df_possession_stats, position_dataframes)
+#for index, row in horsens_df.iterrows():
+    #create_pdf_game_report(row, df_xg_agg, df_xa_agg, merged_df, df_possession_stats, position_dataframes)
 
 def create_pdf_progress_report(horsens_df, total_expected_points_combined, position_dataframes):
     today = date.today()
@@ -1324,7 +1324,7 @@ def create_pdf_progress_report(horsens_df, total_expected_points_combined, posit
         aggregation_dict['minsPlayed'] = 'sum'
         
         filtered_df = filtered_df.groupby('playerName').agg(aggregation_dict).reset_index()
-        filtered_df = filtered_df[filtered_df['minsPlayed'] > 100]
+        filtered_df = filtered_df[filtered_df['minsPlayed'] > 160]
         filtered_df = filtered_df.round(2)
         filtered_df['Total score'] = filtered_df['Total score'].astype(float)        
         reordered_columns = ['playerName', 'minsPlayed'] + numeric_columns
