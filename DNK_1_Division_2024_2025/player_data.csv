@@ -32,28 +32,28 @@ Adam Herdonsson,Sprinting Distance,346.21
 Adam Herdonsson,Total Distance,9882.11
 Adam Herdonsson,Walking Count,366.04
 Adam Herdonsson,Walking Distance,2664.47
-Adrian Justinussen,High Speed Running Count,71.49
-Adrian Justinussen,High Speed Running Distance,628.01
-Adrian Justinussen,Jogging Count,483.67
-Adrian Justinussen,Jogging Distance,4459.35
-Adrian Justinussen,Low Speed Running Count,202.06
-Adrian Justinussen,Low Speed Running Distance,1495.29
-Adrian Justinussen,Sprinting Count,25.48
-Adrian Justinussen,Sprinting Distance,296.71
-Adrian Justinussen,Total Distance,9574.43
-Adrian Justinussen,Walking Count,351.56
-Adrian Justinussen,Walking Distance,2864.29
-Adrian Kappenberger,High Speed Running Count,19.5
-Adrian Kappenberger,High Speed Running Distance,56.45
-Adrian Kappenberger,Jogging Count,142.43
-Adrian Kappenberger,Jogging Distance,935.13
-Adrian Kappenberger,Low Speed Running Count,28.15
-Adrian Kappenberger,Low Speed Running Distance,169.7
+Adrian Justinussen,High Speed Running Count,71.15
+Adrian Justinussen,High Speed Running Distance,623.77
+Adrian Justinussen,Jogging Count,480.7
+Adrian Justinussen,Jogging Distance,4463.32
+Adrian Justinussen,Low Speed Running Count,201.48
+Adrian Justinussen,Low Speed Running Distance,1479.0
+Adrian Justinussen,Sprinting Count,26.12
+Adrian Justinussen,Sprinting Distance,296.31
+Adrian Justinussen,Total Distance,9580.74
+Adrian Justinussen,Walking Count,350.08
+Adrian Justinussen,Walking Distance,2873.37
+Adrian Kappenberger,High Speed Running Count,19.2
+Adrian Kappenberger,High Speed Running Distance,72.43
+Adrian Kappenberger,Jogging Count,142.66
+Adrian Kappenberger,Jogging Distance,951.33
+Adrian Kappenberger,Low Speed Running Count,30.56
+Adrian Kappenberger,Low Speed Running Distance,162.38
 Adrian Kappenberger,Sprinting Count,18.0
 Adrian Kappenberger,Sprinting Distance,43.09
-Adrian Kappenberger,Total Distance,4041.55
-Adrian Kappenberger,Walking Count,111.82
-Adrian Kappenberger,Walking Distance,3021.61
+Adrian Kappenberger,Total Distance,4063.6
+Adrian Kappenberger,Walking Count,112.62
+Adrian Kappenberger,Walking Distance,3024.52
 Agon Mucolli,High Speed Running Count,73.83
 Agon Mucolli,High Speed Running Distance,661.35
 Agon Mucolli,Jogging Count,439.79
@@ -98,17 +98,17 @@ Albert Norager,Sprinting Distance,243.87
 Albert Norager,Total Distance,8750.5
 Albert Norager,Walking Count,348.38
 Albert Norager,Walking Distance,3001.9
-Alessio Alicino,High Speed Running Count,72.76
-Alessio Alicino,High Speed Running Distance,688.82
-Alessio Alicino,Jogging Count,481.65
-Alessio Alicino,Jogging Distance,4900.43
-Alessio Alicino,Low Speed Running Count,233.76
-Alessio Alicino,Low Speed Running Distance,2008.45
-Alessio Alicino,Sprinting Count,25.84
-Alessio Alicino,Sprinting Distance,279.12
-Alessio Alicino,Total Distance,9558.34
-Alessio Alicino,Walking Count,345.71
-Alessio Alicino,Walking Distance,2038.46
+Alessio Alicino,High Speed Running Count,70.08
+Alessio Alicino,High Speed Running Distance,674.99
+Alessio Alicino,Jogging Count,487.66
+Alessio Alicino,Jogging Distance,4979.54
+Alessio Alicino,Low Speed Running Count,233.06
+Alessio Alicino,Low Speed Running Distance,2040.97
+Alessio Alicino,Sprinting Count,25.08
+Alessio Alicino,Sprinting Distance,266.39
+Alessio Alicino,Total Distance,9722.16
+Alessio Alicino,Walking Count,346.29
+Alessio Alicino,Walking Distance,2076.82
 Alexander Ludwig,High Speed Running Count,51.75
 Alexander Ludwig,High Speed Running Distance,528.62
 Alexander Ludwig,Jogging Count,410.86
@@ -142,17 +142,28 @@ Anders Dahl,Sprinting Distance,426.44
 Anders Dahl,Total Distance,10067.15
 Anders Dahl,Walking Count,371.42
 Anders Dahl,Walking Distance,2884.75
-Andreas Heimer Hansen,High Speed Running Count,60.0
-Andreas Heimer Hansen,High Speed Running Distance,538.38
-Andreas Heimer Hansen,Jogging Count,492.0
-Andreas Heimer Hansen,Jogging Distance,5517.36
-Andreas Heimer Hansen,Low Speed Running Count,282.0
-Andreas Heimer Hansen,Low Speed Running Distance,2548.08
+Andreas Bredahl,High Speed Running Count,93.6
+Andreas Bredahl,High Speed Running Distance,623.82
+Andreas Bredahl,Jogging Count,483.43
+Andreas Bredahl,Jogging Distance,4643.92
+Andreas Bredahl,Low Speed Running Count,228.86
+Andreas Bredahl,Low Speed Running Distance,1543.53
+Andreas Bredahl,Sprinting Count,32.4
+Andreas Bredahl,Sprinting Distance,308.7
+Andreas Bredahl,Total Distance,9659.93
+Andreas Bredahl,Walking Count,326.57
+Andreas Bredahl,Walking Distance,2717.36
+Andreas Heimer Hansen,High Speed Running Count,48.0
+Andreas Heimer Hansen,High Speed Running Distance,438.93
+Andreas Heimer Hansen,Jogging Count,426.0
+Andreas Heimer Hansen,Jogging Distance,4769.24
+Andreas Heimer Hansen,Low Speed Running Count,235.5
+Andreas Heimer Hansen,Low Speed Running Distance,2101.23
 Andreas Heimer Hansen,Sprinting Count,54.0
-Andreas Heimer Hansen,Sprinting Distance,292.95
-Andreas Heimer Hansen,Total Distance,10692.42
-Andreas Heimer Hansen,Walking Count,348.0
-Andreas Heimer Hansen,Walking Distance,1893.36
+Andreas Heimer Hansen,Sprinting Distance,149.26
+Andreas Heimer Hansen,Total Distance,9047.1
+Andreas Heimer Hansen,Walking Count,313.5
+Andreas Heimer Hansen,Walking Distance,1638.69
 Andreas Maarup Hansen,High Speed Running Count,73.98
 Andreas Maarup Hansen,High Speed Running Distance,591.15
 Andreas Maarup Hansen,Jogging Count,581.34
@@ -231,6 +242,17 @@ Ari Leifsson,Sprinting Distance,164.12
 Ari Leifsson,Total Distance,9030.24
 Ari Leifsson,Walking Count,383.98
 Ari Leifsson,Walking Distance,2837.72
+Aris Vaporakis,High Speed Running Count,18.0
+Aris Vaporakis,High Speed Running Distance,88.11
+Aris Vaporakis,Jogging Count,148.5
+Aris Vaporakis,Jogging Distance,1106.46
+Aris Vaporakis,Low Speed Running Count,30.0
+Aris Vaporakis,Low Speed Running Distance,268.08
+Aris Vaporakis,Sprinting Count,
+Aris Vaporakis,Sprinting Distance,
+Aris Vaporakis,Total Distance,3341.25
+Aris Vaporakis,Walking Count,117.0
+Aris Vaporakis,Walking Distance,1989.63
 Armann Taranis,High Speed Running Count,91.14
 Armann Taranis,High Speed Running Distance,711.28
 Armann Taranis,Jogging Count,448.81
@@ -309,18 +331,18 @@ Bertram Kvist,Sprinting Distance,258.76
 Bertram Kvist,Total Distance,10353.31
 Bertram Kvist,Walking Count,415.8
 Bertram Kvist,Walking Distance,2484.43
-Berzan Kucukylidiz,High Speed Running Count,55.88
-Berzan Kucukylidiz,High Speed Running Distance,560.72
-Berzan Kucukylidiz,Jogging Count,511.51
-Berzan Kucukylidiz,Jogging Distance,5330.28
-Berzan Kucukylidiz,Low Speed Running Count,255.9
-Berzan Kucukylidiz,Low Speed Running Distance,2138.2
+Berzan Kucukylidiz,High Speed Running Count,57.3
+Berzan Kucukylidiz,High Speed Running Distance,588.09
+Berzan Kucukylidiz,Jogging Count,527.11
+Berzan Kucukylidiz,Jogging Distance,5455.41
+Berzan Kucukylidiz,Low Speed Running Count,260.82
+Berzan Kucukylidiz,Low Speed Running Distance,2186.31
 Berzan Kucukylidiz,Minute Splits,942.86
-Berzan Kucukylidiz,Sprinting Count,28.25
-Berzan Kucukylidiz,Sprinting Distance,124.85
-Berzan Kucukylidiz,Total Distance,9870.91
-Berzan Kucukylidiz,Walking Count,348.09
-Berzan Kucukylidiz,Walking Distance,2289.82
+Berzan Kucukylidiz,Sprinting Count,25.69
+Berzan Kucukylidiz,Sprinting Distance,127.99
+Berzan Kucukylidiz,Total Distance,10143.8
+Berzan Kucukylidiz,Walking Count,355.87
+Berzan Kucukylidiz,Walking Distance,2256.08
 Bjorn Paulsen,High Speed Running Count,41.61
 Bjorn Paulsen,High Speed Running Distance,352.47
 Bjorn Paulsen,Jogging Count,422.96
@@ -422,17 +444,17 @@ Christoffer Palm,Sprinting Distance,557.92
 Christoffer Palm,Total Distance,10192.77
 Christoffer Palm,Walking Count,350.52
 Christoffer Palm,Walking Distance,2182.46
-Chukwuemeka Nnamani,High Speed Running Count,70.3
-Chukwuemeka Nnamani,High Speed Running Distance,570.38
-Chukwuemeka Nnamani,Jogging Count,403.0
-Chukwuemeka Nnamani,Jogging Distance,3290.66
-Chukwuemeka Nnamani,Low Speed Running Count,163.5
-Chukwuemeka Nnamani,Low Speed Running Distance,1045.35
-Chukwuemeka Nnamani,Sprinting Count,27.26
-Chukwuemeka Nnamani,Sprinting Distance,384.4
-Chukwuemeka Nnamani,Total Distance,8584.38
-Chukwuemeka Nnamani,Walking Count,275.11
-Chukwuemeka Nnamani,Walking Distance,3470.93
+Chukwuemeka Nnamani,High Speed Running Count,68.07
+Chukwuemeka Nnamani,High Speed Running Distance,563.48
+Chukwuemeka Nnamani,Jogging Count,419.34
+Chukwuemeka Nnamani,Jogging Distance,3478.04
+Chukwuemeka Nnamani,Low Speed Running Count,167.83
+Chukwuemeka Nnamani,Low Speed Running Distance,1094.33
+Chukwuemeka Nnamani,Sprinting Count,27.21
+Chukwuemeka Nnamani,Sprinting Distance,358.82
+Chukwuemeka Nnamani,Total Distance,8666.33
+Chukwuemeka Nnamani,Walking Count,286.57
+Chukwuemeka Nnamani,Walking Distance,3358.4
 Cornelius Allen,High Speed Running Count,72.58
 Cornelius Allen,High Speed Running Distance,570.38
 Cornelius Allen,Jogging Count,452.78
@@ -467,17 +489,17 @@ Daniel Haarbo,Sprinting Distance,190.69
 Daniel Haarbo,Total Distance,10689.49
 Daniel Haarbo,Walking Count,388.74
 Daniel Haarbo,Walking Distance,2280.04
-Daniel Johansen,High Speed Running Count,75.0
-Daniel Johansen,High Speed Running Distance,581.5
-Daniel Johansen,Jogging Count,488.57
-Daniel Johansen,Jogging Distance,4436.05
-Daniel Johansen,Low Speed Running Count,204.3
-Daniel Johansen,Low Speed Running Distance,1700.06
-Daniel Johansen,Sprinting Count,30.0
-Daniel Johansen,Sprinting Distance,367.05
-Daniel Johansen,Total Distance,9668.67
-Daniel Johansen,Walking Count,359.14
-Daniel Johansen,Walking Distance,2768.99
+Daniel Johansen,High Speed Running Count,82.5
+Daniel Johansen,High Speed Running Distance,615.04
+Daniel Johansen,Jogging Count,472.89
+Daniel Johansen,Jogging Distance,4253.79
+Daniel Johansen,Low Speed Running Count,249.75
+Daniel Johansen,Low Speed Running Distance,2037.81
+Daniel Johansen,Sprinting Count,28.5
+Daniel Johansen,Sprinting Distance,284.11
+Daniel Johansen,Total Distance,9439.0
+Daniel Johansen,Walking Count,332.57
+Daniel Johansen,Walking Distance,2340.76
 Daniel Kristjansson,High Speed Running Count,106.72
 Daniel Kristjansson,High Speed Running Distance,869.99
 Daniel Kristjansson,Jogging Count,511.88
@@ -590,17 +612,17 @@ Emil Holten,Sprinting Distance,577.66
 Emil Holten,Total Distance,10443.11
 Emil Holten,Walking Count,361.84
 Emil Holten,Walking Distance,2797.83
-Emil Normark Christensen,High Speed Running Count,42.67
-Emil Normark Christensen,High Speed Running Distance,325.5
-Emil Normark Christensen,Jogging Count,419.32
-Emil Normark Christensen,Jogging Distance,4236.47
-Emil Normark Christensen,Low Speed Running Count,123.26
-Emil Normark Christensen,Low Speed Running Distance,959.03
-Emil Normark Christensen,Sprinting Count,21.0
-Emil Normark Christensen,Sprinting Distance,196.64
-Emil Normark Christensen,Total Distance,8331.79
-Emil Normark Christensen,Walking Count,326.12
-Emil Normark Christensen,Walking Distance,2799.67
+Emil Normark Christensen,High Speed Running Count,43.26
+Emil Normark Christensen,High Speed Running Distance,356.69
+Emil Normark Christensen,Jogging Count,428.03
+Emil Normark Christensen,Jogging Distance,4325.9
+Emil Normark Christensen,Low Speed Running Count,126.15
+Emil Normark Christensen,Low Speed Running Distance,965.48
+Emil Normark Christensen,Sprinting Count,20.25
+Emil Normark Christensen,Sprinting Distance,182.0
+Emil Normark Christensen,Total Distance,8492.21
+Emil Normark Christensen,Walking Count,330.67
+Emil Normark Christensen,Walking Distance,2845.02
 Emil Sogaard Jensen,High Speed Running Count,77.17
 Emil Sogaard Jensen,High Speed Running Distance,669.46
 Emil Sogaard Jensen,Jogging Count,515.16
@@ -656,18 +678,18 @@ Filip Djukic,Sprinting Distance,112.32
 Filip Djukic,Total Distance,4678.77
 Filip Djukic,Walking Count,134.0
 Filip Djukic,Walking Distance,3497.43
-Fisnik Isaki,High Speed Running Count,86.85
-Fisnik Isaki,High Speed Running Distance,819.75
-Fisnik Isaki,Jogging Count,457.48
-Fisnik Isaki,Jogging Distance,4968.09
-Fisnik Isaki,Low Speed Running Count,224.55
-Fisnik Isaki,Low Speed Running Distance,1866.09
+Fisnik Isaki,High Speed Running Count,86.45
+Fisnik Isaki,High Speed Running Distance,780.72
+Fisnik Isaki,Jogging Count,481.66
+Fisnik Isaki,Jogging Distance,4902.71
+Fisnik Isaki,Low Speed Running Count,237.24
+Fisnik Isaki,Low Speed Running Distance,1919.09
 Fisnik Isaki,Minute Splits,942.86
-Fisnik Isaki,Sprinting Count,26.06
-Fisnik Isaki,Sprinting Distance,355.63
-Fisnik Isaki,Total Distance,10057.59
-Fisnik Isaki,Walking Count,322.65
-Fisnik Isaki,Walking Distance,2294.72
+Fisnik Isaki,Sprinting Count,29.59
+Fisnik Isaki,Sprinting Distance,353.64
+Fisnik Isaki,Total Distance,10076.3
+Fisnik Isaki,Walking Count,335.4
+Fisnik Isaki,Walking Distance,2368.07
 Frederik Borsting,High Speed Running Count,106.95
 Frederik Borsting,High Speed Running Distance,971.15
 Frederik Borsting,Jogging Count,511.56
@@ -801,17 +823,17 @@ Gabriel M. Larsen,Sprinting Distance,322.48
 Gabriel M. Larsen,Total Distance,9569.11
 Gabriel M. Larsen,Walking Count,309.82
 Gabriel M. Larsen,Walking Distance,2292.08
-Gregers Arndal-Lauritzen,High Speed Running Count,42.27
-Gregers Arndal-Lauritzen,High Speed Running Distance,326.74
-Gregers Arndal-Lauritzen,Jogging Count,365.03
-Gregers Arndal-Lauritzen,Jogging Distance,3222.57
-Gregers Arndal-Lauritzen,Low Speed Running Count,96.83
-Gregers Arndal-Lauritzen,Low Speed Running Distance,740.56
-Gregers Arndal-Lauritzen,Sprinting Count,27.0
-Gregers Arndal-Lauritzen,Sprinting Distance,147.63
-Gregers Arndal-Lauritzen,Total Distance,7415.86
-Gregers Arndal-Lauritzen,Walking Count,271.17
-Gregers Arndal-Lauritzen,Walking Distance,3152.58
+Gregers Arndal-Lauritzen,High Speed Running Count,45.12
+Gregers Arndal-Lauritzen,High Speed Running Distance,333.82
+Gregers Arndal-Lauritzen,Jogging Count,391.92
+Gregers Arndal-Lauritzen,Jogging Distance,3419.97
+Gregers Arndal-Lauritzen,Low Speed Running Count,114.27
+Gregers Arndal-Lauritzen,Low Speed Running Distance,843.38
+Gregers Arndal-Lauritzen,Sprinting Count,22.5
+Gregers Arndal-Lauritzen,Sprinting Distance,156.07
+Gregers Arndal-Lauritzen,Total Distance,7726.13
+Gregers Arndal-Lauritzen,Walking Count,293.92
+Gregers Arndal-Lauritzen,Walking Distance,3124.8
 Gustav Grubbe,High Speed Running Count,62.81
 Gustav Grubbe,High Speed Running Distance,647.47
 Gustav Grubbe,Jogging Count,453.84
@@ -901,17 +923,17 @@ Isak Frederik Tannander,Sprinting Distance,398.94
 Isak Frederik Tannander,Total Distance,9852.24
 Isak Frederik Tannander,Walking Count,387.23
 Isak Frederik Tannander,Walking Distance,2152.98
-Jacob Egeris Pedersen,High Speed Running Count,39.38
-Jacob Egeris Pedersen,High Speed Running Distance,313.07
-Jacob Egeris Pedersen,Jogging Count,446.93
-Jacob Egeris Pedersen,Jogging Distance,3974.0
-Jacob Egeris Pedersen,Low Speed Running Count,135.32
-Jacob Egeris Pedersen,Low Speed Running Distance,977.31
-Jacob Egeris Pedersen,Sprinting Count,20.4
-Jacob Egeris Pedersen,Sprinting Distance,176.82
-Jacob Egeris Pedersen,Total Distance,8173.56
-Jacob Egeris Pedersen,Walking Count,344.63
-Jacob Egeris Pedersen,Walking Distance,2863.87
+Jacob Egeris Pedersen,High Speed Running Count,38.71
+Jacob Egeris Pedersen,High Speed Running Distance,316.14
+Jacob Egeris Pedersen,Jogging Count,454.4
+Jacob Egeris Pedersen,Jogging Distance,4110.78
+Jacob Egeris Pedersen,Low Speed Running Count,138.77
+Jacob Egeris Pedersen,Low Speed Running Distance,978.01
+Jacob Egeris Pedersen,Sprinting Count,19.92
+Jacob Egeris Pedersen,Sprinting Distance,165.23
+Jacob Egeris Pedersen,Total Distance,8269.78
+Jacob Egeris Pedersen,Walking Count,352.34
+Jacob Egeris Pedersen,Walking Distance,2823.82
 Jacob Vetter Laursen,High Speed Running Count,86.82
 Jacob Vetter Laursen,High Speed Running Distance,615.02
 Jacob Vetter Laursen,Jogging Count,431.57
@@ -1202,17 +1224,17 @@ Julius Madsen,Sprinting Distance,411.68
 Julius Madsen,Total Distance,9765.65
 Julius Madsen,Walking Count,358.56
 Julius Madsen,Walking Distance,2818.55
-Kasper Enghardt,High Speed Running Count,95.4
-Kasper Enghardt,High Speed Running Distance,528.4
-Kasper Enghardt,Jogging Count,407.06
-Kasper Enghardt,Jogging Distance,2954.61
-Kasper Enghardt,Low Speed Running Count,164.24
-Kasper Enghardt,Low Speed Running Distance,1135.73
-Kasper Enghardt,Sprinting Count,29.14
-Kasper Enghardt,Sprinting Distance,513.69
-Kasper Enghardt,Total Distance,7593.25
-Kasper Enghardt,Walking Count,284.91
-Kasper Enghardt,Walking Distance,2897.06
+Kasper Enghardt,High Speed Running Count,81.39
+Kasper Enghardt,High Speed Running Distance,483.21
+Kasper Enghardt,Jogging Count,402.79
+Kasper Enghardt,Jogging Distance,3125.32
+Kasper Enghardt,Low Speed Running Count,155.54
+Kasper Enghardt,Low Speed Running Distance,1138.64
+Kasper Enghardt,Sprinting Count,30.86
+Kasper Enghardt,Sprinting Distance,477.24
+Kasper Enghardt,Total Distance,7755.11
+Kasper Enghardt,Walking Count,286.97
+Kasper Enghardt,Walking Distance,2948.64
 Kasper Kristensen,High Speed Running Count,18.0
 Kasper Kristensen,High Speed Running Distance,91.8
 Kasper Kristensen,Jogging Count,126.0
@@ -1358,17 +1380,17 @@ Luca Kjerrumgaard,Sprinting Distance,296.46
 Luca Kjerrumgaard,Total Distance,9165.31
 Luca Kjerrumgaard,Walking Count,338.96
 Luca Kjerrumgaard,Walking Distance,2934.05
-Lucas Boje-Larsen,High Speed Running Count,68.31
-Lucas Boje-Larsen,High Speed Running Distance,567.85
-Lucas Boje-Larsen,Jogging Count,472.95
-Lucas Boje-Larsen,Jogging Distance,4271.87
-Lucas Boje-Larsen,Low Speed Running Count,182.74
-Lucas Boje-Larsen,Low Speed Running Distance,1438.96
-Lucas Boje-Larsen,Sprinting Count,24.57
-Lucas Boje-Larsen,Sprinting Distance,283.62
-Lucas Boje-Larsen,Total Distance,9225.57
-Lucas Boje-Larsen,Walking Count,347.39
-Lucas Boje-Larsen,Walking Distance,2839.05
+Lucas Boje-Larsen,High Speed Running Count,68.18
+Lucas Boje-Larsen,High Speed Running Distance,595.0
+Lucas Boje-Larsen,Jogging Count,475.3
+Lucas Boje-Larsen,Jogging Distance,4272.46
+Lucas Boje-Larsen,Low Speed Running Count,186.6
+Lucas Boje-Larsen,Low Speed Running Distance,1459.85
+Lucas Boje-Larsen,Sprinting Count,26.48
+Lucas Boje-Larsen,Sprinting Distance,265.64
+Lucas Boje-Larsen,Total Distance,9244.72
+Lucas Boje-Larsen,Walking Count,346.85
+Lucas Boje-Larsen,Walking Distance,2815.75
 Lucas Jensen,High Speed Running Count,100.21
 Lucas Jensen,High Speed Running Distance,838.26
 Lucas Jensen,Jogging Count,539.26
@@ -1391,17 +1413,17 @@ Lucas Skjoldberg From,Sprinting Distance,512.23
 Lucas Skjoldberg From,Total Distance,10455.57
 Lucas Skjoldberg From,Walking Count,329.81
 Lucas Skjoldberg From,Walking Distance,2818.68
-Ludvig Fagersted Henriksen,High Speed Running Count,70.79
-Ludvig Fagersted Henriksen,High Speed Running Distance,613.08
-Ludvig Fagersted Henriksen,Jogging Count,461.57
-Ludvig Fagersted Henriksen,Jogging Distance,4389.38
-Ludvig Fagersted Henriksen,Low Speed Running Count,198.14
-Ludvig Fagersted Henriksen,Low Speed Running Distance,1581.34
-Ludvig Fagersted Henriksen,Sprinting Count,27.04
-Ludvig Fagersted Henriksen,Sprinting Distance,336.91
-Ludvig Fagersted Henriksen,Total Distance,9693.04
-Ludvig Fagersted Henriksen,Walking Count,329.38
-Ludvig Fagersted Henriksen,Walking Distance,2921.4
+Ludvig Fagersted Henriksen,High Speed Running Count,72.23
+Ludvig Fagersted Henriksen,High Speed Running Distance,654.62
+Ludvig Fagersted Henriksen,Jogging Count,464.57
+Ludvig Fagersted Henriksen,Jogging Distance,4388.54
+Ludvig Fagersted Henriksen,Low Speed Running Count,204.28
+Ludvig Fagersted Henriksen,Low Speed Running Distance,1604.36
+Ludvig Fagersted Henriksen,Sprinting Count,26.58
+Ludvig Fagersted Henriksen,Sprinting Distance,329.54
+Ludvig Fagersted Henriksen,Total Distance,9775.4
+Ludvig Fagersted Henriksen,Walking Count,331.73
+Ludvig Fagersted Henriksen,Walking Distance,2923.31
 Lukas Klitten,High Speed Running Count,119.36
 Lukas Klitten,High Speed Running Distance,1000.53
 Lukas Klitten,Jogging Count,530.47
@@ -1501,18 +1523,18 @@ Marc Winkel,Sprinting Distance,452.73
 Marc Winkel,Total Distance,7609.5
 Marc Winkel,Walking Count,284.7
 Marc Winkel,Walking Distance,1973.4
-Marco Bruhn,High Speed Running Count,66.58
-Marco Bruhn,High Speed Running Distance,494.31
-Marco Bruhn,Jogging Count,457.69
-Marco Bruhn,Jogging Distance,4680.14
-Marco Bruhn,Low Speed Running Count,181.49
-Marco Bruhn,Low Speed Running Distance,1240.12
+Marco Bruhn,High Speed Running Count,67.21
+Marco Bruhn,High Speed Running Distance,537.49
+Marco Bruhn,Jogging Count,439.96
+Marco Bruhn,Jogging Distance,4588.15
+Marco Bruhn,Low Speed Running Count,181.65
+Marco Bruhn,Low Speed Running Distance,1216.53
 Marco Bruhn,Minute Splits,942.86
-Marco Bruhn,Sprinting Count,25.93
-Marco Bruhn,Sprinting Distance,295.23
-Marco Bruhn,Total Distance,9221.42
-Marco Bruhn,Walking Count,331.43
-Marco Bruhn,Walking Distance,2745.71
+Marco Bruhn,Sprinting Count,24.94
+Marco Bruhn,Sprinting Distance,289.69
+Marco Bruhn,Total Distance,9184.94
+Marco Bruhn,Walking Count,322.29
+Marco Bruhn,Walking Distance,2747.0
 Marco Brylov,High Speed Running Count,20.4
 Marco Brylov,High Speed Running Distance,70.61
 Marco Brylov,Jogging Count,172.15
@@ -1623,17 +1645,17 @@ Markus Jensen,Sprinting Distance,421.71
 Markus Jensen,Total Distance,8741.75
 Markus Jensen,Walking Count,313.05
 Markus Jensen,Walking Distance,2660.42
-Markus Strom Bay,High Speed Running Count,59.76
-Markus Strom Bay,High Speed Running Distance,535.65
-Markus Strom Bay,Jogging Count,507.35
-Markus Strom Bay,Jogging Distance,5054.06
-Markus Strom Bay,Low Speed Running Count,215.82
-Markus Strom Bay,Low Speed Running Distance,1615.89
-Markus Strom Bay,Sprinting Count,22.42
-Markus Strom Bay,Sprinting Distance,170.2
-Markus Strom Bay,Total Distance,10141.61
-Markus Strom Bay,Walking Count,372.26
-Markus Strom Bay,Walking Distance,2814.57
+Markus Strom Bay,High Speed Running Count,59.41
+Markus Strom Bay,High Speed Running Distance,518.09
+Markus Strom Bay,Jogging Count,513.73
+Markus Strom Bay,Jogging Distance,5117.59
+Markus Strom Bay,Low Speed Running Count,218.42
+Markus Strom Bay,Low Speed Running Distance,1698.8
+Markus Strom Bay,Sprinting Count,23.5
+Markus Strom Bay,Sprinting Distance,192.53
+Markus Strom Bay,Total Distance,10222.91
+Markus Strom Bay,Walking Count,372.66
+Markus Strom Bay,Walking Distance,2761.02
 Martin Hansen,High Speed Running Count,18.0
 Martin Hansen,High Speed Running Distance,73.08
 Martin Hansen,Jogging Count,111.43
@@ -1723,17 +1745,17 @@ Mathias Kristensen,Sprinting Distance,407.85
 Mathias Kristensen,Total Distance,10531.31
 Mathias Kristensen,Walking Count,371.47
 Mathias Kristensen,Walking Distance,2714.47
-Mathias Veltz,High Speed Running Count,110.62
-Mathias Veltz,High Speed Running Distance,959.29
-Mathias Veltz,Jogging Count,428.0
-Mathias Veltz,Jogging Distance,3337.28
-Mathias Veltz,Low Speed Running Count,229.12
-Mathias Veltz,Low Speed Running Distance,1599.27
-Mathias Veltz,Sprinting Count,33.75
-Mathias Veltz,Sprinting Distance,474.87
-Mathias Veltz,Total Distance,8339.72
-Mathias Veltz,Walking Count,295.43
-Mathias Veltz,Walking Distance,2391.14
+Mathias Veltz,High Speed Running Count,97.08
+Mathias Veltz,High Speed Running Distance,817.46
+Mathias Veltz,Jogging Count,439.53
+Mathias Veltz,Jogging Distance,3943.19
+Mathias Veltz,Low Speed Running Count,232.55
+Mathias Veltz,Low Speed Running Distance,1781.14
+Mathias Veltz,Sprinting Count,29.5
+Mathias Veltz,Sprinting Distance,382.12
+Mathias Veltz,Total Distance,8883.23
+Mathias Veltz,Walking Count,297.15
+Mathias Veltz,Walking Distance,2260.36
 Matti Olsen,High Speed Running Count,48.32
 Matti Olsen,High Speed Running Distance,408.48
 Matti Olsen,Jogging Count,454.53
@@ -1811,17 +1833,17 @@ Michael Chacon,Sprinting Distance,280.64
 Michael Chacon,Total Distance,8736.9
 Michael Chacon,Walking Count,352.26
 Michael Chacon,Walking Distance,2470.52
-Michael Falkesgaard,High Speed Running Count,21.0
-Michael Falkesgaard,High Speed Running Distance,81.13
-Michael Falkesgaard,Jogging Count,114.78
-Michael Falkesgaard,Jogging Distance,643.86
-Michael Falkesgaard,Low Speed Running Count,35.38
-Michael Falkesgaard,Low Speed Running Distance,117.76
+Michael Falkesgaard,High Speed Running Count,20.25
+Michael Falkesgaard,High Speed Running Distance,82.92
+Michael Falkesgaard,Jogging Count,129.31
+Michael Falkesgaard,Jogging Distance,732.22
+Michael Falkesgaard,Low Speed Running Count,35.5
+Michael Falkesgaard,Low Speed Running Distance,119.89
 Michael Falkesgaard,Sprinting Count,18.0
-Michael Falkesgaard,Sprinting Distance,144.81
-Michael Falkesgaard,Total Distance,3501.84
-Michael Falkesgaard,Walking Count,80.57
-Michael Falkesgaard,Walking Distance,2784.53
+Michael Falkesgaard,Sprinting Distance,109.38
+Michael Falkesgaard,Total Distance,3655.62
+Michael Falkesgaard,Walking Count,94.74
+Michael Falkesgaard,Walking Distance,2853.73
 Mihajlo Ivancevic,High Speed Running Count,63.0
 Mihajlo Ivancevic,High Speed Running Distance,501.98
 Mihajlo Ivancevic,Jogging Count,385.2
@@ -1901,28 +1923,29 @@ Mikkel Lassen,Sprinting Distance,453.94
 Mikkel Lassen,Total Distance,9952.4
 Mikkel Lassen,Walking Count,401.4
 Mikkel Lassen,Walking Distance,2556.12
-Mikkel Mouritz Jensen,High Speed Running Count,61.22
-Mikkel Mouritz Jensen,High Speed Running Distance,562.42
-Mikkel Mouritz Jensen,Jogging Count,513.41
-Mikkel Mouritz Jensen,Jogging Distance,5113.92
-Mikkel Mouritz Jensen,Low Speed Running Count,220.2
-Mikkel Mouritz Jensen,Low Speed Running Distance,2038.91
-Mikkel Mouritz Jensen,Sprinting Count,22.84
-Mikkel Mouritz Jensen,Sprinting Distance,193.98
-Mikkel Mouritz Jensen,Total Distance,10378.49
-Mikkel Mouritz Jensen,Walking Count,355.5
-Mikkel Mouritz Jensen,Walking Distance,2604.67
-Mikkel Wohlgemuth,High Speed Running Count,59.81
-Mikkel Wohlgemuth,High Speed Running Distance,508.63
-Mikkel Wohlgemuth,Jogging Count,529.47
-Mikkel Wohlgemuth,Jogging Distance,4414.62
-Mikkel Wohlgemuth,Low Speed Running Count,216.8
-Mikkel Wohlgemuth,Low Speed Running Distance,1756.73
-Mikkel Wohlgemuth,Sprinting Count,21.97
-Mikkel Wohlgemuth,Sprinting Distance,185.29
-Mikkel Wohlgemuth,Total Distance,9336.13
-Mikkel Wohlgemuth,Walking Count,376.54
-Mikkel Wohlgemuth,Walking Distance,2730.88
+Mikkel Mouritz Jensen,High Speed Running Count,59.76
+Mikkel Mouritz Jensen,High Speed Running Distance,572.19
+Mikkel Mouritz Jensen,Jogging Count,531.63
+Mikkel Mouritz Jensen,Jogging Distance,5361.31
+Mikkel Mouritz Jensen,Low Speed Running Count,235.54
+Mikkel Mouritz Jensen,Low Speed Running Distance,2214.06
+Mikkel Mouritz Jensen,Minute Splits,942.86
+Mikkel Mouritz Jensen,Sprinting Count,21.63
+Mikkel Mouritz Jensen,Sprinting Distance,174.9
+Mikkel Mouritz Jensen,Total Distance,10721.89
+Mikkel Mouritz Jensen,Walking Count,362.09
+Mikkel Mouritz Jensen,Walking Distance,2528.55
+Mikkel Wohlgemuth,High Speed Running Count,60.45
+Mikkel Wohlgemuth,High Speed Running Distance,539.24
+Mikkel Wohlgemuth,Jogging Count,519.75
+Mikkel Wohlgemuth,Jogging Distance,4491.88
+Mikkel Wohlgemuth,Low Speed Running Count,212.35
+Mikkel Wohlgemuth,Low Speed Running Distance,1718.19
+Mikkel Wohlgemuth,Sprinting Count,21.18
+Mikkel Wohlgemuth,Sprinting Distance,187.64
+Mikkel Wohlgemuth,Total Distance,9465.64
+Mikkel Wohlgemuth,Walking Count,372.71
+Mikkel Wohlgemuth,Walking Distance,2747.97
 Molik Khan,High Speed Running Count,60.17
 Molik Khan,High Speed Running Distance,515.8
 Molik Khan,Jogging Count,513.27
@@ -1945,17 +1968,17 @@ Momodou Sarr,Sprinting Distance,597.41
 Momodou Sarr,Total Distance,10518.68
 Momodou Sarr,Walking Count,369.43
 Momodou Sarr,Walking Distance,2499.55
-Monday Bassey Etim,High Speed Running Count,77.1
-Monday Bassey Etim,High Speed Running Distance,677.28
-Monday Bassey Etim,Jogging Count,458.0
-Monday Bassey Etim,Jogging Distance,4056.08
-Monday Bassey Etim,Low Speed Running Count,192.38
-Monday Bassey Etim,Low Speed Running Distance,1306.53
-Monday Bassey Etim,Sprinting Count,24.97
-Monday Bassey Etim,Sprinting Distance,295.67
-Monday Bassey Etim,Total Distance,8971.49
-Monday Bassey Etim,Walking Count,329.09
-Monday Bassey Etim,Walking Distance,2731.47
+Monday Bassey Etim,High Speed Running Count,76.97
+Monday Bassey Etim,High Speed Running Distance,668.88
+Monday Bassey Etim,Jogging Count,465.3
+Monday Bassey Etim,Jogging Distance,4118.73
+Monday Bassey Etim,Low Speed Running Count,195.16
+Monday Bassey Etim,Low Speed Running Distance,1317.98
+Monday Bassey Etim,Sprinting Count,23.97
+Monday Bassey Etim,Sprinting Distance,285.37
+Monday Bassey Etim,Total Distance,8986.08
+Monday Bassey Etim,Walking Count,334.61
+Monday Bassey Etim,Walking Distance,2708.89
 Moses Opondo,High Speed Running Count,41.4
 Moses Opondo,High Speed Running Distance,435.44
 Moses Opondo,Jogging Count,479.57
@@ -2011,17 +2034,17 @@ Nicholas Mickelson,Sprinting Distance,347.53
 Nicholas Mickelson,Total Distance,9390.4
 Nicholas Mickelson,Walking Count,338.41
 Nicholas Mickelson,Walking Distance,2813.8
-Nicklas Bjerre Schmidt,High Speed Running Count,61.35
-Nicklas Bjerre Schmidt,High Speed Running Distance,490.17
-Nicklas Bjerre Schmidt,Jogging Count,469.84
-Nicklas Bjerre Schmidt,Jogging Distance,4805.47
-Nicklas Bjerre Schmidt,Low Speed Running Count,192.37
-Nicklas Bjerre Schmidt,Low Speed Running Distance,1548.45
-Nicklas Bjerre Schmidt,Sprinting Count,28.2
-Nicklas Bjerre Schmidt,Sprinting Distance,224.64
-Nicklas Bjerre Schmidt,Total Distance,9041.88
-Nicklas Bjerre Schmidt,Walking Count,352.04
-Nicklas Bjerre Schmidt,Walking Distance,2145.38
+Nicklas Bjerre Schmidt,High Speed Running Count,70.31
+Nicklas Bjerre Schmidt,High Speed Running Distance,566.3
+Nicklas Bjerre Schmidt,Jogging Count,464.88
+Nicklas Bjerre Schmidt,Jogging Distance,4404.27
+Nicklas Bjerre Schmidt,Low Speed Running Count,200.53
+Nicklas Bjerre Schmidt,Low Speed Running Distance,1524.8
+Nicklas Bjerre Schmidt,Sprinting Count,30.8
+Nicklas Bjerre Schmidt,Sprinting Distance,271.72
+Nicklas Bjerre Schmidt,Total Distance,8867.14
+Nicklas Bjerre Schmidt,Walking Count,336.03
+Nicklas Bjerre Schmidt,Walking Distance,2229.23
 Nicklas Halse,High Speed Running Count,62.11
 Nicklas Halse,High Speed Running Distance,564.85
 Nicklas Halse,Jogging Count,531.38
@@ -2033,17 +2056,17 @@ Nicklas Halse,Sprinting Distance,251.1
 Nicklas Halse,Total Distance,9457.65
 Nicklas Halse,Walking Count,379.0
 Nicklas Halse,Walking Distance,2851.4
-Nicklas Mouritsen,High Speed Running Count,77.72
-Nicklas Mouritsen,High Speed Running Distance,690.9
-Nicklas Mouritsen,Jogging Count,530.65
-Nicklas Mouritsen,Jogging Distance,4499.45
-Nicklas Mouritsen,Low Speed Running Count,225.13
-Nicklas Mouritsen,Low Speed Running Distance,1711.84
+Nicklas Mouritsen,High Speed Running Count,76.4
+Nicklas Mouritsen,High Speed Running Distance,702.9
+Nicklas Mouritsen,Jogging Count,526.17
+Nicklas Mouritsen,Jogging Distance,4547.21
+Nicklas Mouritsen,Low Speed Running Count,220.56
+Nicklas Mouritsen,Low Speed Running Distance,1693.98
 Nicklas Mouritsen,Sprinting Count,28.62
-Nicklas Mouritsen,Sprinting Distance,367.75
-Nicklas Mouritsen,Total Distance,9799.6
-Nicklas Mouritsen,Walking Count,373.24
-Nicklas Mouritsen,Walking Distance,2616.35
+Nicklas Mouritsen,Sprinting Distance,379.24
+Nicklas Mouritsen,Total Distance,9866.65
+Nicklas Mouritsen,Walking Count,372.99
+Nicklas Mouritsen,Walking Distance,2624.81
 Nicklas Strunck,High Speed Running Count,100.9
 Nicklas Strunck,High Speed Running Distance,900.34
 Nicklas Strunck,Jogging Count,530.58
@@ -2067,28 +2090,28 @@ Nicolai Clausen,Sprinting Distance,337.96
 Nicolai Clausen,Total Distance,8211.6
 Nicolai Clausen,Walking Count,288.02
 Nicolai Clausen,Walking Distance,2710.25
-Nicolaj Thomsen,High Speed Running Count,77.3
-Nicolaj Thomsen,High Speed Running Distance,836.41
-Nicolaj Thomsen,Jogging Count,513.9
-Nicolaj Thomsen,Jogging Distance,5263.44
-Nicolaj Thomsen,Low Speed Running Count,251.75
-Nicolaj Thomsen,Low Speed Running Distance,2234.15
-Nicolaj Thomsen,Sprinting Count,22.9
-Nicolaj Thomsen,Sprinting Distance,233.79
-Nicolaj Thomsen,Total Distance,11059.75
-Nicolaj Thomsen,Walking Count,349.39
-Nicolaj Thomsen,Walking Distance,2613.78
-Niels Henrik Melsaether Morberg,High Speed Running Count,74.5
-Niels Henrik Melsaether Morberg,High Speed Running Distance,715.75
-Niels Henrik Melsaether Morberg,Jogging Count,530.12
-Niels Henrik Melsaether Morberg,Jogging Distance,5631.96
-Niels Henrik Melsaether Morberg,Low Speed Running Count,265.3
-Niels Henrik Melsaether Morberg,Low Speed Running Distance,2154.98
-Niels Henrik Melsaether Morberg,Sprinting Count,23.8
-Niels Henrik Melsaether Morberg,Sprinting Distance,235.75
-Niels Henrik Melsaether Morberg,Total Distance,11123.41
-Niels Henrik Melsaether Morberg,Walking Count,371.02
-Niels Henrik Melsaether Morberg,Walking Distance,2534.79
+Nicolaj Thomsen,High Speed Running Count,79.62
+Nicolaj Thomsen,High Speed Running Distance,879.67
+Nicolaj Thomsen,Jogging Count,511.43
+Nicolaj Thomsen,Jogging Distance,5247.1
+Nicolaj Thomsen,Low Speed Running Count,256.74
+Nicolaj Thomsen,Low Speed Running Distance,2246.6
+Nicolaj Thomsen,Sprinting Count,23.18
+Nicolaj Thomsen,Sprinting Distance,225.52
+Nicolaj Thomsen,Total Distance,11134.44
+Nicolaj Thomsen,Walking Count,344.97
+Nicolaj Thomsen,Walking Distance,2634.09
+Niels Henrik Melsaether Morberg,High Speed Running Count,71.06
+Niels Henrik Melsaether Morberg,High Speed Running Distance,722.06
+Niels Henrik Melsaether Morberg,Jogging Count,519.09
+Niels Henrik Melsaether Morberg,Jogging Distance,5446.27
+Niels Henrik Melsaether Morberg,Low Speed Running Count,250.16
+Niels Henrik Melsaether Morberg,Low Speed Running Distance,2133.75
+Niels Henrik Melsaether Morberg,Sprinting Count,22.35
+Niels Henrik Melsaether Morberg,Sprinting Distance,211.16
+Niels Henrik Melsaether Morberg,Total Distance,10786.86
+Niels Henrik Melsaether Morberg,Walking Count,374.7
+Niels Henrik Melsaether Morberg,Walking Distance,2470.01
 Niklas Jakobsen,High Speed Running Count,140.0
 Niklas Jakobsen,High Speed Running Distance,1066.99
 Niklas Jakobsen,Jogging Count,423.4
@@ -2235,17 +2258,17 @@ Oskar Ohlenschlaeger,Sprinting Distance,355.1
 Oskar Ohlenschlaeger,Total Distance,10060.17
 Oskar Ohlenschlaeger,Walking Count,333.78
 Oskar Ohlenschlaeger,Walking Distance,2845.87
-Osman Abdulkadir Addo,High Speed Running Count,87.24
-Osman Abdulkadir Addo,High Speed Running Distance,769.1
-Osman Abdulkadir Addo,Jogging Count,486.71
-Osman Abdulkadir Addo,Jogging Distance,4269.82
-Osman Abdulkadir Addo,Low Speed Running Count,217.95
-Osman Abdulkadir Addo,Low Speed Running Distance,1569.31
-Osman Abdulkadir Addo,Sprinting Count,30.08
-Osman Abdulkadir Addo,Sprinting Distance,370.36
-Osman Abdulkadir Addo,Total Distance,9673.76
-Osman Abdulkadir Addo,Walking Count,338.27
-Osman Abdulkadir Addo,Walking Distance,2805.97
+Osman Abdulkadir Addo,High Speed Running Count,88.36
+Osman Abdulkadir Addo,High Speed Running Distance,804.25
+Osman Abdulkadir Addo,Jogging Count,490.55
+Osman Abdulkadir Addo,Jogging Distance,4344.78
+Osman Abdulkadir Addo,Low Speed Running Count,223.24
+Osman Abdulkadir Addo,Low Speed Running Distance,1635.34
+Osman Abdulkadir Addo,Sprinting Count,29.97
+Osman Abdulkadir Addo,Sprinting Distance,363.11
+Osman Abdulkadir Addo,Total Distance,9751.66
+Osman Abdulkadir Addo,Walking Count,338.83
+Osman Abdulkadir Addo,Walking Distance,2781.09
 Osvald Gabriel Soe,High Speed Running Count,29.4
 Osvald Gabriel Soe,High Speed Running Distance,196.26
 Osvald Gabriel Soe,Jogging Count,570.0
@@ -2437,17 +2460,17 @@ Sebastian Pingel,Sprinting Distance,276.27
 Sebastian Pingel,Total Distance,9655.55
 Sebastian Pingel,Walking Count,350.33
 Sebastian Pingel,Walking Distance,2807.21
-Sebastian Senna Clemmensen,High Speed Running Count,68.46
-Sebastian Senna Clemmensen,High Speed Running Distance,669.73
-Sebastian Senna Clemmensen,Jogging Count,452.93
-Sebastian Senna Clemmensen,Jogging Distance,4760.57
-Sebastian Senna Clemmensen,Low Speed Running Count,207.15
-Sebastian Senna Clemmensen,Low Speed Running Distance,1437.07
-Sebastian Senna Clemmensen,Sprinting Count,24.5
-Sebastian Senna Clemmensen,Sprinting Distance,269.29
-Sebastian Senna Clemmensen,Total Distance,9582.35
-Sebastian Senna Clemmensen,Walking Count,345.19
-Sebastian Senna Clemmensen,Walking Distance,2611.79
+Sebastian Senna Clemmensen,High Speed Running Count,73.8
+Sebastian Senna Clemmensen,High Speed Running Distance,674.97
+Sebastian Senna Clemmensen,Jogging Count,461.6
+Sebastian Senna Clemmensen,Jogging Distance,4799.38
+Sebastian Senna Clemmensen,Low Speed Running Count,214.58
+Sebastian Senna Clemmensen,Low Speed Running Distance,1473.94
+Sebastian Senna Clemmensen,Sprinting Count,26.8
+Sebastian Senna Clemmensen,Sprinting Distance,291.76
+Sebastian Senna Clemmensen,Total Distance,9653.8
+Sebastian Senna Clemmensen,Walking Count,353.81
+Sebastian Senna Clemmensen,Walking Distance,2557.54
 Selim Baskaya,High Speed Running Count,90.92
 Selim Baskaya,High Speed Running Distance,879.44
 Selim Baskaya,Jogging Count,488.69
@@ -2481,28 +2504,28 @@ Simon Makienok,Sprinting Distance,170.93
 Simon Makienok,Total Distance,7499.38
 Simon Makienok,Walking Count,254.61
 Simon Makienok,Walking Distance,2968.08
-Simon Peter Friis Sharif,High Speed Running Count,65.62
-Simon Peter Friis Sharif,High Speed Running Distance,522.98
-Simon Peter Friis Sharif,Jogging Count,456.25
-Simon Peter Friis Sharif,Jogging Distance,3901.54
-Simon Peter Friis Sharif,Low Speed Running Count,196.31
-Simon Peter Friis Sharif,Low Speed Running Distance,1417.7
-Simon Peter Friis Sharif,Sprinting Count,23.94
-Simon Peter Friis Sharif,Sprinting Distance,313.18
-Simon Peter Friis Sharif,Total Distance,8746.48
-Simon Peter Friis Sharif,Walking Count,330.94
-Simon Peter Friis Sharif,Walking Distance,2853.24
-Solomon Opoku,High Speed Running Count,69.52
-Solomon Opoku,High Speed Running Distance,617.07
-Solomon Opoku,Jogging Count,469.62
-Solomon Opoku,Jogging Distance,4321.36
-Solomon Opoku,Low Speed Running Count,190.59
-Solomon Opoku,Low Speed Running Distance,1390.74
-Solomon Opoku,Sprinting Count,21.2
-Solomon Opoku,Sprinting Distance,255.54
-Solomon Opoku,Total Distance,8690.99
-Solomon Opoku,Walking Count,328.13
-Solomon Opoku,Walking Distance,2369.73
+Simon Peter Friis Sharif,High Speed Running Count,65.42
+Simon Peter Friis Sharif,High Speed Running Distance,533.61
+Simon Peter Friis Sharif,Jogging Count,464.35
+Simon Peter Friis Sharif,Jogging Distance,3988.07
+Simon Peter Friis Sharif,Low Speed Running Count,196.45
+Simon Peter Friis Sharif,Low Speed Running Distance,1446.88
+Simon Peter Friis Sharif,Sprinting Count,23.28
+Simon Peter Friis Sharif,Sprinting Distance,298.62
+Simon Peter Friis Sharif,Total Distance,8916.95
+Simon Peter Friis Sharif,Walking Count,335.36
+Simon Peter Friis Sharif,Walking Distance,2885.45
+Solomon Opoku,High Speed Running Count,66.53
+Solomon Opoku,High Speed Running Distance,614.78
+Solomon Opoku,Jogging Count,458.59
+Solomon Opoku,Jogging Distance,4389.56
+Solomon Opoku,Low Speed Running Count,185.73
+Solomon Opoku,Low Speed Running Distance,1367.71
+Solomon Opoku,Sprinting Count,21.26
+Solomon Opoku,Sprinting Distance,250.27
+Solomon Opoku,Total Distance,8722.18
+Solomon Opoku,Walking Count,325.48
+Solomon Opoku,Walking Distance,2338.16
 Soren Reese,High Speed Running Count,60.63
 Soren Reese,High Speed Running Distance,577.55
 Soren Reese,Jogging Count,432.0
@@ -2547,17 +2570,17 @@ Tim Freriks,Sprinting Distance,326.08
 Tim Freriks,Total Distance,8558.94
 Tim Freriks,Walking Count,316.01
 Tim Freriks,Walking Distance,2616.59
-Tobias Arndal,High Speed Running Count,79.37
-Tobias Arndal,High Speed Running Distance,649.98
-Tobias Arndal,Jogging Count,533.55
-Tobias Arndal,Jogging Distance,4950.52
-Tobias Arndal,Low Speed Running Count,241.69
-Tobias Arndal,Low Speed Running Distance,1915.37
-Tobias Arndal,Sprinting Count,25.87
-Tobias Arndal,Sprinting Distance,275.72
-Tobias Arndal,Total Distance,10430.31
-Tobias Arndal,Walking Count,383.82
-Tobias Arndal,Walking Distance,2852.71
+Tobias Arndal,High Speed Running Count,78.53
+Tobias Arndal,High Speed Running Distance,654.46
+Tobias Arndal,Jogging Count,535.12
+Tobias Arndal,Jogging Distance,4965.64
+Tobias Arndal,Low Speed Running Count,243.38
+Tobias Arndal,Low Speed Running Distance,1949.77
+Tobias Arndal,Sprinting Count,25.85
+Tobias Arndal,Sprinting Distance,264.44
+Tobias Arndal,Total Distance,10478.07
+Tobias Arndal,Walking Count,383.84
+Tobias Arndal,Walking Distance,2831.86
 Tobias Slotsager,High Speed Running Count,36.98
 Tobias Slotsager,High Speed Running Distance,292.3
 Tobias Slotsager,Jogging Count,395.06
