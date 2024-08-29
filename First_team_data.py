@@ -887,7 +887,6 @@ def Dashboard():
     df_packing = load_packing_data()
     df_xA = load_xA()
     df_spacecontrol = load_spacecontrol_data()
-    st.dataframe(df_xA)
     st.title('AC Horsens First Team Dashboard')
     df_possession['date'] = pd.to_datetime(df_possession['date'])
     df_possession = df_possession.sort_values(by='date')
@@ -925,7 +924,7 @@ def Dashboard():
     df_passes = df_matchstats[['team_name','label','openPlayPass','successfulOpenPlayPass']]
 
     df_passes = df_passes.groupby(['team_name','label']).sum().reset_index()
-
+    st.dataframe(df_possession)
     df_xA_summary = df_possession.groupby(['team_name','label'])['318.0'].sum().reset_index()
     df_xA_summary = df_xA_summary.rename(columns={'318.0': 'xA'})
 
