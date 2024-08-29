@@ -2293,7 +2293,6 @@ def League_stats_superliga():
         'totalAttAssist': 'sum',
         'totalCrossNocorner': 'sum',
         'accurateCrossNocorner': 'sum',
-        'totalLongBalls': 'sum',
         }).reset_index()
     
     matchstats_df = matchstats_df.rename(columns={'label': 'matches'})
@@ -2312,7 +2311,6 @@ def League_stats_superliga():
     matchstats_df['Final third entries per match'] = matchstats_df['finalThirdEntries'] / matchstats_df['matches']
     matchstats_df['Final third pass accuracy %'] = matchstats_df['successfulFinalThirdPasses'] / matchstats_df['totalFinalThirdPasses']
     matchstats_df['Open play shot assists share'] = matchstats_df['attAssistOpenplay'] / matchstats_df['totalAttAssist']
-    matchstats_df['Long pass share %'] = matchstats_df['totalLongBalls'] / matchstats_df['openPlayPass']
     matchstats_df['Crosses'] = matchstats_df['totalCrossNocorner']
     matchstats_df['Cross accuracy %'] = matchstats_df['accurateCrossNocorner'] / matchstats_df['totalCrossNocorner']
     matchstats_df = matchstats_df[['team_name','matches','PenAreaEntries per match','Open play xG per match','Duels per match','Duels won %','Passes per game','Pass accuracy %','Back zone pass accuracy %','Forward zone pass accuracy %','possWonDef3rd %','possWonMid3rd %','possWonAtt3rd %','Forward pass share %','Final third entries per match','Final third pass accuracy %','Open play shot assists share','Long pass share %','Crosses','Cross accuracy %']]
