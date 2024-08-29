@@ -2303,7 +2303,7 @@ def League_stats():
     df_corners_for = df_corners_for.merge(df_set_pieces, on=['sequenceId','team_name','label'], suffixes=('_corner', '_full'), how='outer')
     df_corners_for = df_corners_for[df_corners_for['team_name'] == selected_team]
 
-
+    st.dataframe(df_corners_for)
     # Group by sequenceId and assign the xG value to all rows within the sequence
     df_corners_for['sequence_xg'] = df_corners_for.groupby(['sequenceId','team_name','label'])['321.0_corner'].transform('first')
 
