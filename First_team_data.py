@@ -1890,6 +1890,7 @@ def Dashboard():
 
         # Display the DataFrame in Streamlit
         st.dataframe(corner_xg[['Set piece xg', 'xG per corner', 'xG per freekick', 'xG per set piece']])
+        
     Data_types = {
         'xG': xg,
         'Passing':passes,
@@ -2312,18 +2313,12 @@ def League_stats():
     # Display the DataFrame in Streamlit
     st.dataframe(df_corners_for)
 
-    df_corners_for['inswingers'] = df_corners_for['223.0'].astype(int)
-    df_corners_for['outswingers'] = df_corners_for['224.0'].astype(int)
+    inswingers = df_corners_for[df_corners_for['223.0'] == True].groupby(['team_name','playerName']).size()
+    outswingers = df_set_pieces[df_set_pieces['224.0'] == True].groupby(['team_name','playerName']).size()
 
     # Sum up inswingers and outswingers, and calculate average sequence_xg per player
-    df_summary = df_corners_for.groupby(['playerName']).agg(
-        inswingers=('inswingers', 'sum'),
-        outswingers=('outswingers', 'sum'),
-        average_sequence_xg=('sequence_xg', 'mean')
-    ).reset_index()
+    st.write(inswingers)
 
-    # Display the DataFrame in Streamlit
-    st.dataframe(df_summary)
 
 
 def League_stats_superliga():
