@@ -1847,7 +1847,6 @@ def Dashboard():
 
         # Calculate xG for free kicks
         freekick_xg = df_set_pieces[df_set_pieces['24.0'] == True]
-        st.dataframe(freekick_xg)
         freekick_xg = freekick_xg.groupby(['team_name', 'label'])['321.0'].sum().reset_index()
         freekick_xg = freekick_xg[['team_name', '321.0']]
         freekick_xg = freekick_xg.groupby('team_name').sum()
