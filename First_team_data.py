@@ -2289,13 +2289,29 @@ def League_stats():
 
     st.header('Set pieces')
     df_set_pieces = load_set_piece_data()
+
+    # Filter the data for the selected team
     df_set_pieces = df_set_pieces[df_set_pieces['label'].str.contains(selected_team)]
+
+    # Filter the data for corners
     df_corners_for = df_set_pieces[df_set_pieces['25.0'] == True]
     df_corners_for = df_corners_for[df_corners_for['team_name'] == selected_team]
-    df_corners_for = df_corners_for[['sequenceId']]
-    df_corners_for = df_corners_for.merge(df_set_pieces,on='sequenceId')
+
+    # Select relevant columns
+    df_corners_for = df_corners_for[['sequenceId', '321.0']]
+
+    # Merge with the original set pieces data to get the full sequence details
+    df_corners_for = df_corners_for.merge(df_set_pieces, on='sequenceId', suffixes=('_corner', '_full'))
+
+    # Group by sequenceId and assign the xG value to all rows within the sequence
+    df_corners_for['sequence_xg'] = df_corners_for.groupby('sequenceId')['321.0_corner'].transform('first')
+
+    # Optional: Remove the duplicate xG column if you only need the sequence_xg
+    df_corners_for = df_corners_for.drop(columns=['321.0_corner'])
+
+    # Display the DataFrame in Streamlit
+    st.dataframe(df_corners_for)
     
-    st.dataframe(df_corners_for, hide_index=True)
 def League_stats_superliga():
     matchstats_df = pd.read_csv(r'matchstats_all DNK_Superliga_2024_2025.csv')
     matchstats_df = matchstats_df.rename(columns={'player_matchName': 'playerName'})
