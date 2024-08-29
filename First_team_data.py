@@ -2306,14 +2306,10 @@ def League_stats():
 
     # Group by sequenceId and assign the xG value to all rows within the sequence
     df_corners_for['sequence_xg'] = df_corners_for.groupby(['sequenceId','team_name','label'])['321.0_corner'].transform('first')
-    inswingers = df_corners_for[df_corners_for['223.0'] == True]
 
     # Optional: Remove the duplicate xG column if you only need the sequence_xg
     df_corners_for = df_corners_for.drop(columns=['321.0_corner'])
-    outswingers = df_corners_for[df_corners_for['224.0'] == True].groupby(['team_name', 'playerName']).size().reset_index(name='outswingers')
-    st.dataframe(inswingers)
-    df_corners_for = pd.merge(df_corners_for, inswingers, on=['team_name', 'playerName'])
-    df_corners_for = pd.merge(df_corners_for, outswingers, on=['team_name', 'playerName']).fillna(0)
+    st.dataframe(df_corners_for)
 
     # Fill NaN values with 0 for cases where a player might not have inswingers or outswingers
     df_corners_for = df_corners_for.fillna(0)
