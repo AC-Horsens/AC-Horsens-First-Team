@@ -2290,7 +2290,10 @@ def League_stats():
     st.header('Set pieces')
     df_set_pieces = load_set_piece_data()
     df_set_pieces = df_set_pieces[df_set_pieces['label'].str.contains(selected_team)]
-    st.dataframe(df_set_pieces, hide_index=True)
+    df_corners_for = df_set_pieces[df_set_pieces['25.0'] == True]
+    df_corners_for = df_corners_for[df_corners_for['team_name'] == selected_team]
+    
+    st.dataframe(df_corners_for, hide_index=True)
 def League_stats_superliga():
     matchstats_df = pd.read_csv(r'matchstats_all DNK_Superliga_2024_2025.csv')
     matchstats_df = matchstats_df.rename(columns={'player_matchName': 'playerName'})
