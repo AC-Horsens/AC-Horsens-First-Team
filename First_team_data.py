@@ -2292,6 +2292,7 @@ def League_stats():
     df_set_pieces = df_set_pieces[df_set_pieces['label'].str.contains(selected_team)]
     df_corners_for = df_set_pieces[df_set_pieces['25.0'] == True]
     df_corners_for = df_corners_for[df_corners_for['team_name'] == selected_team]
+    df_corners_for = df_corners_for[['sequenceId', 'label', 'date']]
     df_corners_for = df_corners_for.merge(df_set_pieces,on='sequenceId')
     
     st.dataframe(df_corners_for, hide_index=True)
