@@ -1856,10 +1856,7 @@ def Dashboard():
         # Merge corner xG and free kick xG
         corner_xg = corner_xg.merge(freekick_xg, on='team_name', how='left')
 
-        # Calculate total xG for set pieces and total number of set pieces for each team
-        corner_xg['Set piece xg'] = corner_xg['corner xg'] + corner_xg['freekick xg']
-
-        # Calculate the number of set pieces (corners and free kicks) for each team
+        # Calculate the number of corners and free kicks for each team
         num_corners = df_set_pieces[df_set_pieces['25.0'] == True].groupby('team_name').size()
         num_freekicks = df_set_pieces[df_set_pieces['24.0'] == True].groupby('team_name').size()
 
@@ -1875,14 +1872,25 @@ def Dashboard():
         # Merge number of set pieces with xG data
         corner_xg = corner_xg.merge(num_set_pieces, left_index=True, right_index=True)
 
+        # Calculate xG per corner and xG per freekick
+        corner_xg['xG per corner'] = corner_xg['corner xg'] / corner_xg['num_corners']
+        corner_xg['xG per freekick'] = corner_xg['freekick xg'] / corner_xg['num_freekicks']
+
+        # Calculate Set piece xg
+        corner_xg['Set piece xg'] = corner_xg['corner xg'] + corner_xg['freekick xg']
+
         # Calculate xG per set piece
         corner_xg['xG per set piece'] = corner_xg['Set piece xg'] / corner_xg['total_set_pieces']
+
+        # Fill NaN values for xG per corner and xG per freekick (in case of zero set pieces) with zero
+        corner_xg['xG per corner'] = corner_xg['xG per corner'].fillna(0)
+        corner_xg['xG per freekick'] = corner_xg['xG per freekick'].fillna(0)
 
         # Sort the DataFrame by xG per set piece
         corner_xg = corner_xg.sort_values('xG per set piece', ascending=False)
 
         # Display the DataFrame in Streamlit
-        st.dataframe(corner_xg)
+        st.dataframe(corner_xg[['Set piece xg', 'xG per corner', 'xG per freekick', 'xG per set piece']])
     Data_types = {
         'xG': xg,
         'Passing':passes,
