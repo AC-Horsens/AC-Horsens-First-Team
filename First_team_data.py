@@ -2227,7 +2227,134 @@ def League_stats():
     }).reset_index()
     agg_df = agg_df.sort_values(by='Total score', ascending=False)
     st.dataframe(agg_df, hide_index=True)
+
+def League_stats_superliga():
+    matchstats_df = pd.read_csv('C:\Users\SéamusPeareBartholdy\Documents\GitHub\AC-Horsens-First-Team\matchstats_all DNK_Superliga_2024_2025.csv')
+    matchstats_df = matchstats_df.rename(columns={'player_matchName': 'playerName'})
+    matchstats_df = matchstats_df.groupby(['contestantId','label', 'date']).sum().reset_index()
+    matchstats_df['label'] = np.where(matchstats_df['label'].notnull(), 1, matchstats_df['label'])
+    date_format = '%Y-%m-%d'
+    matchstats_df['date'] = pd.to_datetime(matchstats_df['date'], format=date_format)
+    min_date = matchstats_df['date'].min()
+    max_date = matchstats_df['date'].max()
+
+    date_range = pd.date_range(start=min_date, end=max_date, freq='D')
+    date_options = date_range.strftime(date_format)  # Convert dates to the specified format
+
+    default_end_date = date_options[-1]
+
+    default_end_date_dt = pd.to_datetime(default_end_date, format=date_format)
+    default_start_date_dt = default_end_date_dt - pd.Timedelta(days=2)  # Subtract 14 days
+    default_start_date = default_start_date_dt.strftime(date_format)  # Convert to string
+
+    # Set the default start and end date values for the select_slider
+    selected_start_date, selected_end_date = st.select_slider(
+        'Choose dates',
+        options=date_options,
+        value=(min_date.strftime(date_format), max_date.strftime(date_format))
+    )
     
+    selected_start_date = pd.to_datetime(selected_start_date, format=date_format)
+    selected_end_date = pd.to_datetime(selected_end_date, format=date_format)
+    filtered_data = matchstats_df[
+        (matchstats_df['date'] >= selected_start_date) & (matchstats_df['date'] <= selected_end_date)
+    ]    
+    
+    xg_df = load_all_xg()
+    xg_df_openplay = xg_df[xg_df['321'] > 0]
+
+    xg_df_openplay = xg_df_openplay.groupby(['contestantId', 'team_name', 'date'])['321'].sum().reset_index()
+    xg_df_openplay = xg_df_openplay.rename(columns={'321': 'open play xG'})
+    xg_df_openplay['date'] = pd.to_datetime(xg_df_openplay['date'])
+
+    matchstats_df = matchstats_df.drop(columns='date')
+    # Perform aggregation
+    matchstats_df = matchstats_df.groupby(['contestantId', 'team_name']).agg({
+        'label': 'sum',  # Example of a column to sum
+        'penAreaEntries': 'sum',  # Example of another column to sum
+        'open play xG': 'sum',  # Example of a column to average
+        'duelLost': 'sum',
+        'duelWon': 'sum',
+        'openPlayPass': 'sum',
+        'successfulOpenPlayPass': 'sum',
+        'accurateBackZonePass': 'sum',
+        'totalBackZonePass': 'sum',
+        'accurateFwdZonePass': 'sum',
+        'totalFwdZonePass': 'sum',
+        'possWonDef3rd': 'sum',
+        'possWonMid3rd': 'sum',
+        'possWonAtt3rd': 'sum',
+        'fwdPass': 'sum',
+        'finalThirdEntries': 'sum',
+        'successfulFinalThirdPasses': 'sum',
+        'totalFinalThirdPasses': 'sum',
+        'attAssistOpenplay': 'sum',
+        'totalAttAssist': 'sum',
+        'totalCrossNocorner': 'sum',
+        'accurateCrossNocorner': 'sum',
+        'totalLongBalls': 'sum',
+        'Total Control Area %': 'mean',
+        'Center Control Area %': 'mean',
+        'Penalty Area Control %': 'mean',
+        'PPDA': 'mean',
+        }).reset_index()
+    
+    matchstats_df = matchstats_df.rename(columns={'label': 'matches'})
+    matchstats_df['PenAreaEntries per match'] = matchstats_df['penAreaEntries'] / matchstats_df['matches']
+    matchstats_df['Open play xG per match'] = matchstats_df['open play xG'] / matchstats_df['matches']
+    matchstats_df['Duels per match'] = (matchstats_df['duelLost'] + matchstats_df['duelWon']) /matchstats_df['matches']
+    matchstats_df['Duels won %'] = matchstats_df['duelWon'] / (matchstats_df['duelWon'] + matchstats_df['duelLost'])	
+    matchstats_df['Passes per game'] = matchstats_df['openPlayPass'] / matchstats_df['matches']
+    matchstats_df['Pass accuracy %'] = matchstats_df['successfulOpenPlayPass'] / matchstats_df['openPlayPass']
+    matchstats_df['Back zone pass accuracy %'] = matchstats_df['accurateBackZonePass'] / matchstats_df['totalBackZonePass']
+    matchstats_df['Forward zone pass accuracy %'] = matchstats_df['accurateFwdZonePass'] / matchstats_df['totalFwdZonePass']
+    matchstats_df['possWonDef3rd %'] = matchstats_df['possWonDef3rd'] / (matchstats_df['possWonDef3rd'] + matchstats_df['possWonMid3rd'] + matchstats_df['possWonAtt3rd'])    
+    matchstats_df['possWonMid3rd %'] = matchstats_df['possWonMid3rd'] / (matchstats_df['possWonDef3rd'] + matchstats_df['possWonMid3rd'] + matchstats_df['possWonAtt3rd'])    
+    matchstats_df['possWonAtt3rd %'] = matchstats_df['possWonAtt3rd'] / (matchstats_df['possWonDef3rd'] + matchstats_df['possWonMid3rd'] + matchstats_df['possWonAtt3rd'])    
+    matchstats_df['Forward pass share %'] = matchstats_df['fwdPass'] / matchstats_df['openPlayPass']
+    matchstats_df['Final third entries per match'] = matchstats_df['finalThirdEntries'] / matchstats_df['matches']
+    matchstats_df['Final third pass accuracy %'] = matchstats_df['successfulFinalThirdPasses'] / matchstats_df['totalFinalThirdPasses']
+    matchstats_df['Open play shot assists share'] = matchstats_df['attAssistOpenplay'] / matchstats_df['totalAttAssist']
+    matchstats_df['Long pass share %'] = matchstats_df['totalLongBalls'] / matchstats_df['openPlayPass']
+    matchstats_df['Crosses'] = matchstats_df['totalCrossNocorner']
+    matchstats_df['Cross accuracy %'] = matchstats_df['accurateCrossNocorner'] / matchstats_df['totalCrossNocorner']
+    matchstats_df = matchstats_df[['team_name','matches','PenAreaEntries per match','Open play xG per match','Duels per match','Duels won %','Passes per game','Pass accuracy %','Back zone pass accuracy %','Forward zone pass accuracy %','possWonDef3rd %','possWonMid3rd %','possWonAtt3rd %','Forward pass share %','Final third entries per match','Final third pass accuracy %','Open play shot assists share','Long pass share %','Crosses','Cross accuracy %']]
+
+    cols_to_rank = matchstats_df.drop(columns=['team_name']).columns
+    ranked_df = matchstats_df.copy()  # Create a copy of the original DataFrame
+    ranked_df[col + '_rank'] = matchstats_df[col].rank(axis=0, ascending=False)
+    matchstats_df = ranked_df.merge(matchstats_df)
+    matchstats_df = matchstats_df.set_index('team_name')
+    matchstats_df = matchstats_df.drop(columns=['matches_rank'])
+    st.dataframe(matchstats_df)
+    matchstats_df = matchstats_df.reset_index()
+
+    # Select a team
+    sorted_teams = matchstats_df['team_name'].sort_values()
+
+    # Select a team
+    selected_team = st.selectbox('Choose team', sorted_teams)
+    team_df = matchstats_df.loc[matchstats_df['team_name'] == selected_team]
+
+    # Target ranks
+    target_ranks = [1, 2, 3, 4, 9, 10, 11, 12]
+
+    # Filter the selected team's ranks and values
+    filtered_data_df = pd.DataFrame()
+    col1, col2 = st.columns([1, 2])
+    for col in team_df.columns:
+        if col.endswith('_rank'):
+            original_col = col[:-5]
+            if any(team_df[col].isin(target_ranks)):
+                filtered_ranks = team_df.loc[team_df[col].isin(target_ranks), col]
+                filtered_values = team_df.loc[team_df[col].isin(target_ranks), original_col]
+                filtered_data_df[original_col + '_rank'] = filtered_ranks.values
+                filtered_data_df[original_col + '_value'] = filtered_values.values
+
+    with col1:
+        filtered_data_df = filtered_data_df.T
+        st.dataframe(filtered_data_df)
+
 def Physical_data():
     df = load_physical_data()
     physical_player_data = load_physical_player_data()
@@ -2318,6 +2445,7 @@ Data_types = {
     'Dashboard': Dashboard,
     'League stats': League_stats,
     'Physical data': Physical_data
+    'Superliga': League_stats_superliga
 }
 
 
