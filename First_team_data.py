@@ -2294,10 +2294,6 @@ def League_stats_superliga():
         'totalCrossNocorner': 'sum',
         'accurateCrossNocorner': 'sum',
         'totalLongBalls': 'sum',
-        'Total Control Area %': 'mean',
-        'Center Control Area %': 'mean',
-        'Penalty Area Control %': 'mean',
-        'PPDA': 'mean',
         }).reset_index()
     
     matchstats_df = matchstats_df.rename(columns={'label': 'matches'})
