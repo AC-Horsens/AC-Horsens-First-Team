@@ -2311,7 +2311,7 @@ def League_stats():
     df_corners_for = df_corners_for.drop(columns=['321.0_corner'])
     inswingers = df_corners_for[df_corners_for['223.0'] == True]
     outswingers = df_corners_for[df_corners_for['224.0'] == True].groupby(['team_name', 'playerName']).size().reset_index(name='outswingers')
-    inswingers = inswingers.groupby(['team_name', 'playerName']).mean('sequence_xg').reset_index(name='inswingers')
+    inswingers = inswingers.groupby(['team_name', 'playerName']).mean('sequence_xg').reset_index()
     st.dataframe(inswingers)
     df_corners_for = pd.merge(df_corners_for, inswingers, on=['team_name', 'playerName'])
     df_corners_for = pd.merge(df_corners_for, outswingers, on=['team_name', 'playerName']).fillna(0)
