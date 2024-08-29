@@ -2311,7 +2311,21 @@ def League_stats():
 
     # Display the DataFrame in Streamlit
     st.dataframe(df_corners_for)
-    
+
+    df_corners_for['inswingers'] = df_corners_for['223.0'].astype(int)
+    df_corners_for['outswingers'] = df_corners_for['224.0'].astype(int)
+
+    # Sum up inswingers and outswingers, and calculate average sequence_xg per player
+    df_summary = df_corners_for.groupby(['playerName']).agg(
+        inswingers=('inswingers', 'sum'),
+        outswingers=('outswingers', 'sum'),
+        average_sequence_xg=('sequence_xg', 'mean')
+    ).reset_index()
+
+    # Display the DataFrame in Streamlit
+    st.dataframe(df_summary)
+
+
 def League_stats_superliga():
     matchstats_df = pd.read_csv(r'matchstats_all DNK_Superliga_2024_2025.csv')
     matchstats_df = matchstats_df.rename(columns={'player_matchName': 'playerName'})
