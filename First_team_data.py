@@ -2301,7 +2301,7 @@ def League_stats():
     df_corners_for = df_corners_for[['sequenceId','team_name','label', '321.0']]
 
     # Merge with the original set pieces data to get the full sequence details
-    df_corners_for = df_corners_for.merge(df_set_pieces, on=['sequenceId','team_name','label'], suffixes=('_corner', '_full'), how='left')
+    df_corners_for = df_corners_for.merge(df_set_pieces, on=['sequenceId','team_name','label'], suffixes=('_corner', '_full'), how='outer')
     inswingers = df_corners_for[df_corners_for['223.0'] == True]
 
     # Group by sequenceId and assign the xG value to all rows within the sequence
