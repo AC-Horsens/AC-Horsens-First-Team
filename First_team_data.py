@@ -2298,7 +2298,7 @@ def League_stats():
     df_corners_for = df_corners_for[df_corners_for['team_name'] == selected_team]
 
     # Select relevant columns
-    df_corners_for = df_corners_for[['sequenceId', '321.0']]
+    df_corners_for = df_corners_for[['sequenceId','team_name','label', '321.0']]
 
     # Merge with the original set pieces data to get the full sequence details
     df_corners_for = df_corners_for.merge(df_set_pieces, on=['sequenceId','team_name','label'], suffixes=('_corner', '_full'))
