@@ -1859,6 +1859,7 @@ def Dashboard():
         # Display the DataFrame in Streamlit
         corner_xg = corner_xg.merge(freekick_xg, on='team_name', how='left')
         corner_xg['Set piece xg'] = corner_xg['corner xg'] + corner_xg['freekick xg']
+        corner_xg = corner_xg.sort_values('Set piece xg')
         st.dataframe(corner_xg)
         df_xg = load_all_xg()
     Data_types = {
