@@ -1842,7 +1842,7 @@ def Dashboard():
         corner_xg = corner_xg[['team_name','321.0']]
         corner_xg = corner_xg.groupby('team_name').mean()
         corner_xg = corner_xg.rename(columns={'321.0': 'corner xg'})
-        freekick_xg = df_set_pieces[df_set_pieces['5.0'] == True]
+        freekick_xg = df_set_pieces[df_set_pieces['24.0'] == True]
         st.dataframe(freekick_xg)
         # Group by team_name and label, then sum the xG values ('321.0') for each match
         freekick_xg = freekick_xg.groupby(['team_name', 'label'])['321.0'].sum().reset_index()
