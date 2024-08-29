@@ -2322,33 +2322,6 @@ def League_stats_superliga():
     matchstats_df = matchstats_df.set_index('team_name')
     matchstats_df = matchstats_df.drop(columns=['matches_rank'])
     st.dataframe(matchstats_df)
-    matchstats_df = matchstats_df.reset_index()
-
-    # Select a team
-    sorted_teams = matchstats_df['team_name'].sort_values()
-
-    # Select a team
-    selected_team = st.selectbox('Choose team', sorted_teams)
-    team_df = matchstats_df.loc[matchstats_df['team_name'] == selected_team]
-
-    # Target ranks
-    target_ranks = [1, 2, 3, 4, 9, 10, 11, 12]
-
-    # Filter the selected team's ranks and values
-    filtered_data_df = pd.DataFrame()
-    col1, col2 = st.columns([1, 2])
-    for col in team_df.columns:
-        if col.endswith('_rank'):
-            original_col = col[:-5]
-            if any(team_df[cols_to_rank].isin(target_ranks)):
-                filtered_ranks = team_df.loc[team_df[cols_to_rank].isin(target_ranks), cols_to_rank]
-                filtered_values = team_df.loc[team_df[cols_to_rank].isin(target_ranks), original_col]
-                filtered_data_df[original_col + '_rank'] = filtered_ranks.values
-                filtered_data_df[original_col + '_value'] = filtered_values.values
-
-    with col1:
-        filtered_data_df = filtered_data_df.T
-        st.dataframe(filtered_data_df)
 
 def Physical_data():
     df = load_physical_data()
