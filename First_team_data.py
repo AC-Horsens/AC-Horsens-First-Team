@@ -2315,9 +2315,9 @@ def League_stats():
 
     inswingers = df_corners_for[df_corners_for['223.0'] == True].groupby(['team_name','playerName']).size()
     outswingers = df_set_pieces[df_set_pieces['224.0'] == True].groupby(['team_name','playerName']).size()
-
+    df_corners = inswingers.merge(outswingers, on=['team_name','playerName'], how='outer')
     # Sum up inswingers and outswingers, and calculate average sequence_xg per player
-    st.write(inswingers)
+    st.write(df_corners)
 
 
 
