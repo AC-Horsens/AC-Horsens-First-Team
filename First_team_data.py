@@ -1840,6 +1840,8 @@ def Dashboard():
         st.dataframe(df_set_pieces)
         corner_xg = df_set_pieces[df_set_pieces['25.0'] == True]
         corner_xg = corner_xg.groupby(['team_name','label'])['321.0'].sum().reset_index()
+        corner_xg = corner_xg[['team_name','321.0']]
+        corner_xg = corner_xg.groupby('team_name').mean()
         corner_xg = corner_xg.rename(columns={'321.0': 'corner xg'})
         st.dataframe(corner_xg)
         df_xg = load_all_xg()
