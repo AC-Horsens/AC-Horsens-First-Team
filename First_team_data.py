@@ -887,7 +887,7 @@ def Dashboard():
     df_packing = load_packing_data()
     df_xA = load_xA()
     df_spacecontrol = load_spacecontrol_data()
-    
+    st.dataframe(df_xA)
     st.title('AC Horsens First Team Dashboard')
     df_possession['date'] = pd.to_datetime(df_possession['date'])
     df_possession = df_possession.sort_values(by='date')
