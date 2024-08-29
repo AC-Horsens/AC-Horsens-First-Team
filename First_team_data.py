@@ -1872,7 +1872,6 @@ def Dashboard():
     with col3:
         if st.session_state['selected_data3']:
             Data_types[st.session_state['selected_data3']]()
-
 def League_stats():
     
     
@@ -2316,8 +2315,9 @@ def League_stats_superliga():
     matchstats_df = matchstats_df[['team_name','matches','PenAreaEntries per match','Open play xG per match','Duels per match','Duels won %','Passes per game','Pass accuracy %','Back zone pass accuracy %','Forward zone pass accuracy %','possWonDef3rd %','possWonMid3rd %','possWonAtt3rd %','Forward pass share %','Final third entries per match','Final third pass accuracy %','Open play shot assists share','Crosses','Cross accuracy %']]
 
     cols_to_rank = matchstats_df.drop(columns=['team_name']).columns
+
     ranked_df = matchstats_df.copy()  # Create a copy of the original DataFrame
-    ranked_df[col + '_rank'] = matchstats_df[col].rank(axis=0, ascending=False)
+    ranked_df[cols_to_rank + '_rank'] = matchstats_df[col].rank(axis=0, ascending=False)
     matchstats_df = ranked_df.merge(matchstats_df)
     matchstats_df = matchstats_df.set_index('team_name')
     matchstats_df = matchstats_df.drop(columns=['matches_rank'])
@@ -2340,9 +2340,9 @@ def League_stats_superliga():
     for col in team_df.columns:
         if col.endswith('_rank'):
             original_col = col[:-5]
-            if any(team_df[col].isin(target_ranks)):
-                filtered_ranks = team_df.loc[team_df[col].isin(target_ranks), col]
-                filtered_values = team_df.loc[team_df[col].isin(target_ranks), original_col]
+            if any(team_df[cols_to_rank].isin(target_ranks)):
+                filtered_ranks = team_df.loc[team_df[cols_to_rank].isin(target_ranks), col]
+                filtered_values = team_df.loc[team_df[cols_to_rank].isin(target_ranks), original_col]
                 filtered_data_df[original_col + '_rank'] = filtered_ranks.values
                 filtered_data_df[original_col + '_value'] = filtered_values.values
 
