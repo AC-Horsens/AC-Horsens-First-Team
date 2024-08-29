@@ -1840,7 +1840,7 @@ def Dashboard():
         st.dataframe(df_set_pieces)
         corner_xg = df_set_pieces[df_set_pieces['25.0'] == True]
         corner_xg = corner_xg.groupby('team_name')['321.0'].sum()
-        corner_xg = corner_xg.rename(column = '321.0':'corner xg')
+        corner_xg = corner_xg.rename(columns={'321.0': 'corner xg'})
         st.dataframe(corner_xg)
         df_xg = load_all_xg()
     Data_types = {
