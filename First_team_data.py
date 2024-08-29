@@ -2303,18 +2303,19 @@ def League_stats():
     # Group by sequenceId and assign the xG value to all rows within the sequence
     df_corners_for['sequence_xg'] = df_corners_for.groupby(['sequenceId'])['321.0'].transform('first')
 
-    # Count inswingers and outswingers
+    # Calculate inswingers' stats
     inswingers = df_corners_for[df_corners_for['223.0'] == True].groupby(['team_name', 'playerName']).agg(
         inswingers_count=('sequence_xg', 'count'),
         avg_sequence_xg_inswing=('sequence_xg', 'mean')
     ).reset_index()
 
+    # Calculate outswingers' stats
     outswingers = df_corners_for[df_corners_for['224.0'] == True].groupby(['team_name', 'playerName']).agg(
         outswingers_count=('sequence_xg', 'count'),
         avg_sequence_xg_outswing=('sequence_xg', 'mean')
     ).reset_index()
 
-    # Merge counts and average xG for inswingers and outswingers
+    # Merge inswingers and outswingers stats
     df_summary = pd.merge(inswingers, outswingers, on=['team_name', 'playerName'], how='outer')
 
     # Fill NaN values with 0 for counts and with appropriate values for average xG
@@ -2325,7 +2326,6 @@ def League_stats():
     st.header('Set pieces')
     st.write('Summary of inswingers and outswingers with average xG:')
     st.dataframe(df_summary)
-
 
 def League_stats_superliga():
     matchstats_df = pd.read_csv(r'matchstats_all DNK_Superliga_2024_2025.csv')
