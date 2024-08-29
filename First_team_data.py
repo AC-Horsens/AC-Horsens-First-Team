@@ -2288,55 +2288,52 @@ def League_stats():
     agg_df = agg_df.sort_values(by='Total score', ascending=False)
     st.dataframe(agg_df, hide_index=True)
 
-import pandas as pd
-import streamlit as st
+    # Load the set piece data
+    df_set_pieces = load_set_piece_data()
 
-# Load the set piece data
-df_set_pieces = load_set_piece_data()
+    # Filter the data for the selected team
+    df_set_pieces = df_set_pieces[df_set_pieces['label'].str.contains(selected_team)]
 
-# Filter the data for the selected team
-df_set_pieces = df_set_pieces[df_set_pieces['label'].str.contains(selected_team)]
+    # Filter the data for corners
+    df_corners_for = df_set_pieces[df_set_pieces['25.0'] == True]
+    df_corners_for = df_corners_for[df_corners_for['team_name'] == selected_team]
 
-# Filter the data for corners
-df_corners_for = df_set_pieces[df_set_pieces['25.0'] == True]
-df_corners_for = df_corners_for[df_corners_for['team_name'] == selected_team]
+    # Select relevant columns
+    df_corners_for = df_corners_for[['sequenceId', 'team_name', 'playerName', '223.0', '224.0', '321.0']]
 
-# Select relevant columns
-df_corners_for = df_corners_for[['sequenceId', 'team_name', 'playerName', '223.0', '224.0', '321.0']]
+    # Group by sequenceId and assign the xG value to all rows within the sequence
+    df_corners_for['sequence_xg'] = df_corners_for.groupby(['sequenceId'])['321.0'].transform('first')
 
-# Group by sequenceId and assign the xG value to all rows within the sequence
-df_corners_for['sequence_xg'] = df_corners_for.groupby(['sequenceId'])['321.0'].transform('first')
+    # Count inswingers and outswingers
+    inswingers = df_corners_for[df_corners_for['223.0'] == True].groupby(['team_name', 'playerName']).agg(
+        inswingers=('sequence_xg', 'count')
+    ).reset_index()
 
-# Count inswingers and outswingers
-inswingers = df_corners_for[df_corners_for['223.0'] == True].groupby(['team_name', 'playerName']).agg(
-    inswingers=('sequence_xg', 'count')
-).reset_index()
+    outswingers = df_corners_for[df_corners_for['224.0'] == True].groupby(['team_name', 'playerName']).agg(
+        outswingers=('sequence_xg', 'count')
+    ).reset_index()
 
-outswingers = df_corners_for[df_corners_for['224.0'] == True].groupby(['team_name', 'playerName']).agg(
-    outswingers=('sequence_xg', 'count')
-).reset_index()
+    # Calculate average sequence_xg for inswingers and outswingers
+    inswingers_xg = df_corners_for[df_corners_for['223.0'] == True].groupby(['team_name', 'playerName']).agg(
+        avg_sequence_xg_inswing=('sequence_xg', 'mean')
+    ).reset_index()
 
-# Calculate average sequence_xg for inswingers and outswingers
-inswingers_xg = df_corners_for[df_corners_for['223.0'] == True].groupby(['team_name', 'playerName']).agg(
-    avg_sequence_xg_inswing=('sequence_xg', 'mean')
-).reset_index()
+    outswingers_xg = df_corners_for[df_corners_for['224.0'] == True].groupby(['team_name', 'playerName']).agg(
+        avg_sequence_xg_outswing=('sequence_xg', 'mean')
+    ).reset_index()
 
-outswingers_xg = df_corners_for[df_corners_for['224.0'] == True].groupby(['team_name', 'playerName']).agg(
-    avg_sequence_xg_outswing=('sequence_xg', 'mean')
-).reset_index()
+    # Merge the counts and average xG
+    df_summary = pd.merge(inswingers, inswingers_xg, on=['team_name', 'playerName'], how='outer')
+    df_summary = pd.merge(df_summary, outswingers, on=['team_name', 'playerName'], how='outer')
+    df_summary = pd.merge(df_summary, outswingers_xg, on=['team_name', 'playerName'], how='outer')
 
-# Merge the counts and average xG
-df_summary = pd.merge(inswingers, inswingers_xg, on=['team_name', 'playerName'], how='outer')
-df_summary = pd.merge(df_summary, outswingers, on=['team_name', 'playerName'], how='outer')
-df_summary = pd.merge(df_summary, outswingers_xg, on=['team_name', 'playerName'], how='outer')
+    # Fill NaN values with 0 for counts and with appropriate values for average xG
+    df_summary = df_summary.fillna({'inswingers': 0, 'outswingers': 0})
+    df_summary = df_summary.fillna({'avg_sequence_xg_inswing': 0, 'avg_sequence_xg_outswing': 0})
 
-# Fill NaN values with 0 for counts and with appropriate values for average xG
-df_summary = df_summary.fillna({'inswingers': 0, 'outswingers': 0})
-df_summary = df_summary.fillna({'avg_sequence_xg_inswing': 0, 'avg_sequence_xg_outswing': 0})
-
-# Display the DataFrame in Streamlit
-st.header('Set pieces')
-st.write(df_summary)
+    # Display the DataFrame in Streamlit
+    st.header('Set pieces')
+    st.write(df_summary)
 
 
 
