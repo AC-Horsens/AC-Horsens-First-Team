@@ -1843,6 +1843,22 @@ def Dashboard():
         corner_xg = corner_xg[['team_name','321.0']]
         corner_xg = corner_xg.groupby('team_name').mean()
         corner_xg = corner_xg.rename(columns={'321.0': 'corner xg'})
+        freekick_xg = df_set_pieces[df_set_pieces['5.0'] == True]
+
+        # Group by team_name and label, then sum the xG values ('321.0') for each match
+        freekick_xg = freekick_xg.groupby(['team_name', 'label'])['321.0'].sum().reset_index()
+
+        # Select the relevant columns (team_name and xG)
+        freekick_xg = freekick_xg[['team_name', '321.0']]
+
+        # Group by team_name and calculate the mean xG per team
+        freekick_xg = freekick_xg.groupby('team_name').mean()
+
+        # Rename the xG column for clarity
+        freekick_xg = freekick_xg.rename(columns={'321.0': 'freekick xg'})
+
+        # Display the DataFrame in Streamlit
+        corner_xg = corner_xg.merge(freekick_xg, on='team_name', how='left')
         st.dataframe(corner_xg)
         df_xg = load_all_xg()
     Data_types = {
