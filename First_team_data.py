@@ -2229,7 +2229,7 @@ def League_stats():
     st.dataframe(agg_df, hide_index=True)
 
 def League_stats_superliga():
-    matchstats_df = pd.read_csv('C:\Users\SéamusPeareBartholdy\Documents\GitHub\AC-Horsens-First-Team\matchstats_all DNK_Superliga_2024_2025.csv')
+    matchstats_df = pd.read_csv(r'C:\Users\SéamusPeareBartholdy\Documents\GitHub\AC-Horsens-First-Team\matchstats_all DNK_Superliga_2024_2025.csv')
     matchstats_df = matchstats_df.rename(columns={'player_matchName': 'playerName'})
     matchstats_df = matchstats_df.groupby(['contestantId','label', 'date']).sum().reset_index()
     matchstats_df['label'] = np.where(matchstats_df['label'].notnull(), 1, matchstats_df['label'])
