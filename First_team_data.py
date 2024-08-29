@@ -2444,7 +2444,7 @@ def Physical_data():
 Data_types = {
     'Dashboard': Dashboard,
     'League stats': League_stats,
-    'Physical data': Physical_data
+    'Physical data': Physical_data,
     'Superliga': League_stats_superliga
 }
 
