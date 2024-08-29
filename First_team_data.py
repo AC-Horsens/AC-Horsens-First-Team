@@ -110,7 +110,7 @@ def load_physical_player_data():
 
 @st.cache_data
 def load_set_piece_data():
-    df_set_piece = pd.read_csv(r'DNK_1_Division_2024_2025\set_piece DNK_1_Division_2024_2025.csv')
+    df_set_piece = pd.read_csv(r'DNK_1_Division_2024_2025/set_piece DNK_1_Division_2024_2025.csv')
     df_set_piece['label'] = (df_set_piece['label'] + ' ' + df_set_piece['date']).astype(str)
     return df_set_piece
  
