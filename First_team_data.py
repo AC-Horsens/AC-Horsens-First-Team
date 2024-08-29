@@ -2317,7 +2317,7 @@ def League_stats_superliga():
     cols_to_rank = matchstats_df.drop(columns=['team_name']).columns
 
     ranked_df = matchstats_df.copy()  # Create a copy of the original DataFrame
-    ranked_df[cols_to_rank + '_rank'] = matchstats_df[col].rank(axis=0, ascending=False)
+    ranked_df[cols_to_rank + '_rank'] = matchstats_df[cols_to_rank].rank(axis=0, ascending=False)
     matchstats_df = ranked_df.merge(matchstats_df)
     matchstats_df = matchstats_df.set_index('team_name')
     matchstats_df = matchstats_df.drop(columns=['matches_rank'])
