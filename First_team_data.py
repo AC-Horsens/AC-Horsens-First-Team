@@ -2310,14 +2310,24 @@ def League_stats():
     # Optional: Remove the duplicate xG column if you only need the sequence_xg
     df_corners_for = df_corners_for.drop(columns=['321.0_corner'])
 
-    # Display the DataFrame in Streamlit
-    st.dataframe(df_corners_for)
+    inswingers = df_corners_for[df_corners_for['223.0'] == True].groupby(['team_name', 'playerName']).size().reset_index(name='inswingers')
+    outswingers = df_corners_for[df_corners_for['224.0'] == True].groupby(['team_name', 'playerName']).size().reset_index(name='outswingers')
 
-    inswingers = df_corners_for[df_corners_for['223.0'] == True].groupby(['team_name','playerName']).size()
-    outswingers = df_set_pieces[df_set_pieces['224.0'] == True].groupby(['team_name','playerName']).size()
-    df_corners = inswingers.merge(outswingers, on=['team_name','playerName'], how='outer')
-    # Sum up inswingers and outswingers, and calculate average sequence_xg per player
-    st.write(df_corners)
+    # Merge inswingers and outswingers counts
+    df_corners = pd.merge(inswingers, outswingers, on=['team_name', 'playerName'], how='outer')
+
+    # Fill NaN values with 0 for cases where a player might not have inswingers or outswingers
+    df_corners = df_corners.fillna(0)
+
+    # Calculate sequence_xg and average sequence_xg per player
+    df_corners_for['sequence_xg'] = df_corners_for.groupby(['sequenceId'])['321.0'].transform('first')
+    average_sequence_xg = df_corners_for.groupby(['team_name', 'playerName'])['sequence_xg'].mean().reset_index(name='average_sequence_xg')
+
+    # Merge average_sequence_xg with the inswingers and outswingers DataFrame
+    df_summary = pd.merge(df_corners, average_sequence_xg, on=['team_name', 'playerName'], how='outer')
+
+    # Display the DataFrame in Streamlit
+    st.write(df_summary)
 
 
 
