@@ -1847,7 +1847,8 @@ def Dashboard():
         'Packing': packing,
         'Chance Creation': chance_creation,
         'Pressing': pressing,
-        'Crosses': crosses
+        'Crosses': crosses,
+        'Set pieces': set_pieces
     }
 
     for i in range(1, 4):
