@@ -2314,17 +2314,17 @@ def League_stats():
     outswingers = df_corners_for[df_corners_for['224.0'] == True].groupby(['team_name', 'playerName']).size().reset_index(name='outswingers')
 
     # Merge inswingers and outswingers counts
-    df_corners = pd.merge(inswingers, outswingers, on=['team_name', 'playerName'], how='outer')
+    df_corners_for = pd.merge(inswingers, outswingers, on=['team_name', 'playerName'], how='outer')
 
     # Fill NaN values with 0 for cases where a player might not have inswingers or outswingers
-    df_corners = df_corners.fillna(0)
+    df_corners_for = df_corners_for.fillna(0)
 
     # Calculate sequence_xg and average sequence_xg per player
     df_corners_for['sequence_xg'] = df_corners_for.groupby(['playerName'])['sequence_xg'].transform('first')
     average_sequence_xg = df_corners_for.groupby(['team_name', 'playerName'])['sequence_xg'].mean().reset_index(name='average_sequence_xg')
 
     # Merge average_sequence_xg with the inswingers and outswingers DataFrame
-    df_summary = pd.merge(df_corners, average_sequence_xg, on=['team_name', 'playerName'], how='outer')
+    df_summary = pd.merge(df_corners_for, average_sequence_xg, on=['team_name', 'playerName'], how='outer')
 
     # Display the DataFrame in Streamlit
     st.write(df_summary)
