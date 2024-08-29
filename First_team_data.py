@@ -2314,7 +2314,7 @@ def League_stats():
     outswingers = df_corners_for[df_corners_for['224.0'] == True].groupby(['team_name', 'playerName']).size().reset_index(name='outswingers')
 
     # Merge inswingers and outswingers counts
-    df_corners_for = pd.merge(inswingers, outswingers, on=['team_name', 'playerName'], how='inner')
+    df_corners_for = pd.merge(inswingers, outswingers, on=['team_name', 'playerName'])
 
     # Fill NaN values with 0 for cases where a player might not have inswingers or outswingers
     df_corners_for = df_corners_for.fillna(0)
