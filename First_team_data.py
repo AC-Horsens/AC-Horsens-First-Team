@@ -2301,10 +2301,10 @@ def League_stats():
     df_corners_for = df_corners_for[['sequenceId', '321.0']]
 
     # Merge with the original set pieces data to get the full sequence details
-    df_corners_for = df_corners_for.merge(df_set_pieces, on='sequenceId', suffixes=('_corner', '_full'))
+    df_corners_for = df_corners_for.merge(df_set_pieces, on=['sequenceId','team_name','label'], suffixes=('_corner', '_full'))
 
     # Group by sequenceId and assign the xG value to all rows within the sequence
-    df_corners_for['sequence_xg'] = df_corners_for.groupby(['sequenceId','team_name','label'])['321.0_corner'].transform('sum')
+    df_corners_for['sequence_xg'] = df_corners_for.groupby(['sequenceId','team_name','label'])['321.0_corner'].transform('first')
 
     # Optional: Remove the duplicate xG column if you only need the sequence_xg
     df_corners_for = df_corners_for.drop(columns=['321.0_corner'])
