@@ -2320,7 +2320,7 @@ def League_stats():
     df_corners = df_corners.fillna(0)
 
     # Calculate sequence_xg and average sequence_xg per player
-    df_corners_for['sequence_xg'] = df_corners_for.groupby(['sequenceId'])['321.0'].transform('first')
+    df_corners_for['sequence_xg'] = df_corners_for.groupby(['sequenceId'])['sequence_xg'].transform('first')
     average_sequence_xg = df_corners_for.groupby(['team_name', 'playerName'])['sequence_xg'].mean().reset_index(name='average_sequence_xg')
 
     # Merge average_sequence_xg with the inswingers and outswingers DataFrame
