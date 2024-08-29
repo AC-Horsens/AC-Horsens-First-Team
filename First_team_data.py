@@ -2341,7 +2341,7 @@ def League_stats_superliga():
         if col.endswith('_rank'):
             original_col = col[:-5]
             if any(team_df[cols_to_rank].isin(target_ranks)):
-                filtered_ranks = team_df.loc[team_df[cols_to_rank].isin(target_ranks), col]
+                filtered_ranks = team_df.loc[team_df[cols_to_rank].isin(target_ranks), cols_to_rank]
                 filtered_values = team_df.loc[team_df[cols_to_rank].isin(target_ranks), original_col]
                 filtered_data_df[original_col + '_rank'] = filtered_ranks.values
                 filtered_data_df[original_col + '_value'] = filtered_values.values
