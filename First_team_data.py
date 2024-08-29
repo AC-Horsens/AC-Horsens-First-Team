@@ -2309,7 +2309,7 @@ def League_stats():
 
     # Optional: Remove the duplicate xG column if you only need the sequence_xg
     df_corners_for = df_corners_for.drop(columns=['321.0_corner'])
-    inswingers = df_corners_for[(df_corners_for['223.0'] == True & df_corners_for['6.0'] == True)]
+    inswingers = df_corners_for[(df_corners_for['223.0'] == True) & (df_corners_for['6.0'] == True)]
     inswingers_count = inswingers.groupby('playerName').size().reset_index(name='inswingers_count')
 
     st.dataframe(inswingers, hide_index=True)
