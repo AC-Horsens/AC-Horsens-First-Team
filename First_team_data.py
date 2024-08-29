@@ -2287,6 +2287,10 @@ def League_stats():
     agg_df = agg_df.sort_values(by='Total score', ascending=False)
     st.dataframe(agg_df, hide_index=True)
 
+    st.header('Set pieces')
+    df_set_pieces = load_set_piece_data()
+    df_set_pieces = df_set_pieces[df_set_pieces['label'].str.contains(selected_team)]
+    st.dataframe(df_set_pieces, hide_index=True)
 def League_stats_superliga():
     matchstats_df = pd.read_csv(r'matchstats_all DNK_Superliga_2024_2025.csv')
     matchstats_df = matchstats_df.rename(columns={'player_matchName': 'playerName'})
