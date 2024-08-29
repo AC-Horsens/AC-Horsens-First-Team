@@ -1838,6 +1838,8 @@ def Dashboard():
     def set_pieces():
         df_set_pieces = load_set_piece_data()
         st.dataframe(df_set_pieces)
+        corner_xg = df_set_pieces[df_set_pieces['25.0'] == True]
+        st.dataframe(corner_xg)
         df_xg = load_all_xg()
     Data_types = {
         'xG': xg,
