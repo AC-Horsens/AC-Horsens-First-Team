@@ -1839,6 +1839,7 @@ def Dashboard():
         df_set_pieces = load_set_piece_data()
         st.dataframe(df_set_pieces)
         corner_xg = df_set_pieces[df_set_pieces['25.0'] == True]
+        corner_xg = corner_xg.groupby('team_name')['321.0'].sum()
         st.dataframe(corner_xg)
         df_xg = load_all_xg()
     Data_types = {
