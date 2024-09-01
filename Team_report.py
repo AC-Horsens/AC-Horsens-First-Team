@@ -412,8 +412,8 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         return df_scouting
     df_scouting = calculate_match_pv(df_scouting)
     
-    df_xg = df_xg_all[['contestantId','team_name','playerName','playerId','321','match_id','label','date']]
-
+    df_xg = df_xg_all[['contestantId','team_name','playerName','playerId','321','9','match_id','label','date']]
+    df_xg = df_xg[df_xg['9']!= True]
     df_xg = df_xg.rename(columns={'321': 'xg'})
     df_xg['xg'] = df_xg['xg'].astype(float)
     df_xg = df_xg.groupby(['playerName','playerId','match_id','contestantId','team_name','label','date']).sum()
@@ -987,7 +987,7 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         df_striker = calculate_score(df_striker, 'Goalscoring_','Goalscoring')        
         df_striker = calculate_score(df_striker, 'Possession_value', 'Possession value')
 
-        df_striker['Total score'] = df_striker[['Linkup play','Chance creation','Goalscoring','Possession value']].mean(axis=1)
+        df_striker['Total score'] = df_striker[['Linkup play','Chance creation','Goalscoring','Goalscoring','Goalscoring','Possession value']].mean(axis=1)
         df_striker = df_striker[['playerName','team_name','label','minsPlayed','age_today','Linkup play','Chance creation','Goalscoring','Possession value','Total score']]
         df_striker = df_striker.dropna()
 
@@ -1334,7 +1334,7 @@ def create_pdf_progress_report(horsens_df, total_expected_points_combined, posit
         aggregation_dict['minsPlayed'] = 'sum'
         
         filtered_df = filtered_df.groupby('playerName').agg(aggregation_dict).reset_index()
-        filtered_df = filtered_df[filtered_df['minsPlayed'] > 160]
+        filtered_df = filtered_df[filtered_df['minsPlayed'] > 200]
         filtered_df = filtered_df.round(2)
         filtered_df['Total score'] = filtered_df['Total score'].astype(float)        
         reordered_columns = ['playerName', 'minsPlayed'] + numeric_columns
