@@ -107,7 +107,6 @@ def load_physical_data():
 def load_physical_player_data():
     physical_player_data = pd.read_csv(r'DNK_1_Division_2024_2025/player_data.csv')
     return physical_player_data
-
 @st.cache_data
 def load_set_piece_data():
     df_set_piece = pd.read_csv(r'DNK_1_Division_2024_2025/set_piece DNK_1_Division_2024_2025.csv')
@@ -1854,7 +1853,6 @@ def Dashboard():
 
         # Merge corner xG and free kick xG
         corner_xg = corner_xg.merge(freekick_xg, on='team_name', how='left')
-
         # Calculate the number of corners and free kicks for each team
         num_corners = df_set_pieces[df_set_pieces['25.0'] == True].groupby('team_name').size()
         num_freekicks = df_set_pieces[df_set_pieces['24.0'] == True].groupby('team_name').size()
@@ -1933,6 +1931,7 @@ def Dashboard():
     with col3:
         if st.session_state['selected_data3']:
             Data_types[st.session_state['selected_data3']]()
+
 def League_stats():
     
     
@@ -2312,14 +2311,12 @@ def League_stats():
     inswingers = df_corners_for[(df_corners_for['223.0'] == True) & (df_corners_for['6.0'] == True)]
     inswingers_count = inswingers.groupby('playerName').size().reset_index(name='inswingers_count')
 
-    st.dataframe(inswingers, hide_index=True)
+    st.dataframe(inswingers_count, hide_index=True)
     # Fill NaN values with 0 for cases where a player might not have inswingers or outswingers
     df_corners_for = df_corners_for.fillna(0)
 
 
     # Display the DataFrame in Streamlit
-
-
 
 def League_stats_superliga():
     matchstats_df = pd.read_csv(r'matchstats_all DNK_Superliga_2024_2025.csv')
