@@ -2432,10 +2432,12 @@ def League_stats():
 
     # Optionally, adjust layout to avoid overlap
     plt.tight_layout()
-    st.dataframe(df_inswingers_for_plot_right)
+    st.pyplot(fig)
+    col1,col2,col3,col4 = st.columns(4)
+    with col1:
+        st.dataframe(df_inswingers_for)
     
     # Display the plots in Streamlit
-    st.pyplot(fig)
     #inswingers = df_corners_for[(df_corners_for['223.0'] == True) & (df_corners_for['6.0'] == True)]
     #inswingers_count = inswingers.groupby('playerName').size().reset_index(name='inswingers_count')
 
