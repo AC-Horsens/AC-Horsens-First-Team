@@ -2326,34 +2326,53 @@ def League_stats():
     fig, axs = plt.subplots(2, 2, figsize=(14, 14))  # 2 rows, 2 columns
 
     # Plot for inswingers
-    pitch_inswinger = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
-    pitch_inswinger.draw(ax=axs[0, 0])
-    for _, row in df_inswingers_for_plot.iterrows():
+    pitch_inswinger_right = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
+    pitch_inswinger_left = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
+
+    pitch_inswinger_right.draw(ax=axs[0, 0])
+    pitch_inswinger_left.draw(ax=axs[1, 0])
+
+    df_inswingers_for_plot_right = df_inswingers_for_plot[df_inswingers_for_plot['y'] > 70]
+    df_inswingers_for_plot_left = df_inswingers_for_plot[df_inswingers_for_plot['y'] < 30]
+
+    for _, row in df_inswingers_for_plot_right.iterrows():
         x_start, y_start = row['x'], row['y']
         x_end, y_end = row['140.0'], row['141.0']
-        pitch_inswinger.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='blue', ax=axs[0, 0])
-    axs[0, 0].set_title("Inswingers")
+        pitch_inswinger_right.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='blue', ax=axs[0, 0])
+
+    for _, row in df_inswingers_for_plot_left.iterrows():
+        x_start, y_start = row['x'], row['y']
+        x_end, y_end = row['140.0'], row['141.0']
+        pitch_inswinger_left.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='blue', ax=axs[1, 0])
+
+    axs[0, 0].set_title("Inswingers - Right Side (y > 70)")
+    axs[1, 0].set_title("Inswingers - Left Side (y < 30)")
 
     # Plot for outswingers
-    pitch_outswinger = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
-    pitch_outswinger.draw(ax=axs[0, 1])
-    for _, row in df_outswingers_for_plot.iterrows():
+    pitch_outswinger_right = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
+    pitch_outswinger_left = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
+
+    pitch_outswinger_right.draw(ax=axs[0, 1])
+    pitch_outswinger_left.draw(ax=axs[1, 1])
+
+    df_outswingers_for_plot_right = df_outswingers_for_plot[df_outswingers_for_plot['y'] > 70]
+    df_outswingers_for_plot_left = df_outswingers_for_plot[df_outswingers_for_plot['y'] < 30]
+
+    for _, row in df_outswingers_for_plot_right.iterrows():
         x_start, y_start = row['x'], row['y']
         x_end, y_end = row['140.0'], row['141.0']
-        pitch_outswinger.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='red', ax=axs[0, 1])
-    axs[0, 1].set_title("Outswingers")
+        pitch_outswinger_right.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='red', ax=axs[0, 1])
 
-    # Plot for straight set pieces
-    pitch_straight = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
-    pitch_straight.draw(ax=axs[1, 0])
-    for _, row in df_straight_for_plot.iterrows():
+    for _, row in df_outswingers_for_plot_left.iterrows():
         x_start, y_start = row['x'], row['y']
         x_end, y_end = row['140.0'], row['141.0']
-        pitch_straight.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='green', ax=axs[1, 0])
-    axs[1, 0].set_title("Straight Set Pieces")
+        pitch_outswinger_left.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='red', ax=axs[1, 1])
 
-    # Optionally, leave the last subplot empty or add additional information
-    axs[1, 1].axis('off')
+    axs[0, 1].set_title("Outswingers - Right Side (y > 70)")
+    axs[1, 1].set_title("Outswingers - Left Side (y < 30)")
+
+    # Optionally, add the straight set pieces to the figure
+    # You can use similar plotting logic as shown above for straight set pieces if desired
 
     # Display the plots in Streamlit
     st.pyplot(fig)
