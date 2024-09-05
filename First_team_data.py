@@ -2342,7 +2342,7 @@ def League_stats():
     df_straight_for_plot_right, df_straight_for_plot_left = split_data(df_straight_for_plot)
     df_short_for_plot_right, df_short_for_plot_left = split_data(df_short_for_plot)
     # Create a figure with six subplots (2 rows, 3 columns)
-    fig, axs = plt.subplots(4, 2, figsize=(20, 10))  # 2 rows, 3 columns
+    fig, axs = plt.subplots(4, 2, figsize=(20, 16))  # 2 rows, 3 columns
 
     # Plot for inswingers
     pitch_inswinger_right = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
@@ -2354,7 +2354,7 @@ def League_stats():
     for _, row in df_inswingers_for_plot_right.iterrows():
         x_start, y_start = row['x'], row['y']
         x_end, y_end = row['140.0'], row['141.0']
-        pitch_inswinger_right.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='blue', ax=axs[0, 0])
+        pitch_inswinger_right.arrows(x_start, y_start, x_end, y_end, width=1, headwidth=3, headlength=3, color='blue', ax=axs[0, 0])
 
     for _, row in df_inswingers_for_plot_left.iterrows():
         x_start, y_start = row['x'], row['y']
