@@ -2300,7 +2300,7 @@ def League_stats():
     df_inswingers_for['sequence_xg'] = df_inswingers_for.groupby(['sequenceId', 'team_name', 'label'])['321.0_full'].transform('first')
     df_inswingers_for['sequence_xg'] = df_inswingers_for['sequence_xg'].fillna(0)
     df_inswingers_for_plot = df_inswingers_for[(df_inswingers_for['223.0'] == True) & df_inswingers_for['6.0'] == True]
-    df_inswingers_for_plot = df_inswingers_for_plot[['playerName', 'x', 'y', '140.0', '141.0']]
+    df_inswingers_for_plot = df_inswingers_for_plot[['playerName','sequenceId', 'x', 'y', '140.0', '141.0','321.0_full','sequence_xg']]
 
     # Filter for outswingers
     df_outswingers_for = df_set_pieces[(df_set_pieces['224.0'] == True) & (df_set_pieces['6.0'] == True)]
@@ -2310,7 +2310,7 @@ def League_stats():
     df_outswingers_for['sequence_xg'] = df_outswingers_for.groupby(['sequenceId', 'team_name', 'label'])['321.0_full'].transform('first')
     df_outswingers_for['sequence_xg'] = df_outswingers_for['sequence_xg'].fillna(0)
     df_outswingers_for_plot = df_outswingers_for[(df_outswingers_for['224.0'] == True) & df_outswingers_for['6.0'] == True]
-    df_outswingers_for_plot = df_outswingers_for_plot[['playerName', 'x', 'y', '140.0', '141.0']]
+    df_outswingers_for_plot = df_outswingers_for_plot[['playerName','sequenceId', 'x', 'y', '140.0', '141.0','321.0_full','sequence_xg']]
 
     # Filter for straight set pieces
     df_straight_for = df_set_pieces[(df_set_pieces['225.0'] == True) & (df_set_pieces['6.0'] == True)]
@@ -2320,7 +2320,7 @@ def League_stats():
     df_straight_for['sequence_xg'] = df_straight_for.groupby(['sequenceId', 'team_name', 'label'])['321.0_full'].transform('first')
     df_straight_for['sequence_xg'] = df_straight_for['sequence_xg'].fillna(0)
     df_straight_for_plot = df_straight_for[(df_straight_for['225.0'] == True) & df_straight_for['6.0'] == True]
-    df_straight_for_plot = df_straight_for_plot[['playerName', 'x', 'y', '140.0', '141.0']]
+    df_straight_for_plot = df_straight_for_plot[['playerName','sequenceId', 'x', 'y', '140.0', '141.0','321.0_full','sequence_xg']]
 
     # Split data based on y-coordinate
     def split_data(df):
@@ -2385,7 +2385,7 @@ def League_stats():
         x_end, y_end = row['140.0'], row['141.0']
         pitch_straight_right.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='green', ax=axs[0, 2])
 
-    for _, row in df_straight_for_plot_right.iterrows():
+    for _, row in df_straight_for_plot_left.iterrows():
         x_start, y_start = row['x'], row['y']
         x_end, y_end = row['140.0'], row['141.0']
         pitch_straight_left.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='green', ax=axs[0, 2])
