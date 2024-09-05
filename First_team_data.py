@@ -2307,7 +2307,7 @@ def League_stats():
     df_inswingers_for['sequence_xg'] = df_inswingers_for['sequence_xg'].fillna(0)
     df_inswingers_for_plot = df_inswingers_for[(df_inswingers_for['223.0'] == True) & df_inswingers_for['6.0'] == True]
     df_inswingers_for_plot = df_inswingers_for_plot[['playerName','x','y','140.0','141.0']] 
-    pitch = Pitch(pitch_type='opta', line_color='black', pitch_color='white')
+    pitch = Pitch(pitch_type='opta', line_color='white', pitch_color='grass')
     fig, ax = pitch.draw(figsize=(10, 7))
 
     # Step 4: Plot arrows on the pitch
