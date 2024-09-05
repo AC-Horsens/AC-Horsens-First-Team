@@ -2309,7 +2309,7 @@ def League_stats():
     inswingers = df_corners_for[(df_corners_for['223.0'] == True) & (df_corners_for['6.0'] == True)]
     inswingers_count = inswingers.groupby('playerName').size().reset_index(name='inswingers_count')
 
-    st.dataframe(inswingers_count, hide_index=True)
+    st.dataframe(inswingers, hide_index=True)
     # Fill NaN values with 0 for cases where a player might not have inswingers or outswingers
     df_corners_for = df_corners_for.fillna(0)
 
