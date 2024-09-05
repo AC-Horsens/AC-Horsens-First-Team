@@ -2322,7 +2322,7 @@ def League_stats():
     df_straight_for_plot = df_straight_for[(df_straight_for['225.0'] == True) & df_straight_for['6.0'] == True]
     df_straight_for_plot = df_straight_for_plot[['playerName','sequenceId', 'x', 'y', '140.0', '141.0','321.0_full','sequence_xg']]
 
-    df_short = df_set_pieces[(df_set_pieces['6.0'] == True) & df_set_pieces['212.0'] < 15]
+    df_short = df_set_pieces[df_set_pieces['6.0'] == True]
     st.dataframe(df_short)
     df_short = df_short[['sequenceId', 'team_name', 'label', '321.0']]
     df_short = df_short.merge(df_set_pieces, on=['sequenceId', 'team_name','label'], suffixes=('_corner', '_full'), how='inner')
