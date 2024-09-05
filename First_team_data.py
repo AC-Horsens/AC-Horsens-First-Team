@@ -2292,6 +2292,10 @@ def League_stats():
     st.header('Set pieces')
     df_set_pieces = load_team_set_piece_data(selected_team)
     df_set_pieces['team_name'] = df_set_pieces['team_name'].str.replace(" ", "_")
+    df_set_pieces = df_set_pieces[
+        (df_set_pieces['date'] >= selected_start_date) & (df_set_pieces['date'] <= selected_end_date)
+    ]    
+
     # Filter the data for corners
     df_inswingers_for = df_set_pieces[(df_set_pieces['223.0'] == True) & (df_set_pieces['6.0'] == True)]
     df_inswingers_for = df_inswingers_for[['sequenceId', 'team_name', 'label', '321.0']]
