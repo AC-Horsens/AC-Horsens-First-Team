@@ -2432,7 +2432,8 @@ def League_stats():
 
     # Optionally, adjust layout to avoid overlap
     plt.tight_layout()
-    st.dataframe(df_inswingers_for)
+    st.dataframe(df_inswingers_for_plot_right)
+    
     # Display the plots in Streamlit
     st.pyplot(fig)
     #inswingers = df_corners_for[(df_corners_for['223.0'] == True) & (df_corners_for['6.0'] == True)]
