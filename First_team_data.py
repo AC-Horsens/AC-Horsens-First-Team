@@ -1836,7 +1836,7 @@ def Dashboard():
 
     def set_pieces():
         df_set_pieces = load_set_piece_data()
-
+        df_set_pieces = df_set_pieces.fillna(0)
         # Calculate xG for corners
         corner_xg = df_set_pieces[df_set_pieces['25.0'] == True]
         corner_xg = corner_xg.groupby(['team_name', 'label'])['321.0'].sum().reset_index()
