@@ -2293,7 +2293,7 @@ def League_stats():
     df_set_pieces = load_team_set_piece_data(selected_team)
     df_set_pieces['team_name'] = df_set_pieces['team_name'].str.replace(" ", "_")
     # Filter the data for corners
-    df_inswingers_for = df_set_pieces[df_set_pieces['25.0'] == True] & df_set_pieces['223.0'] == True
+    df_inswingers_for = df_set_pieces[(df_set_pieces['25.0'] == True) & (df_set_pieces['223.0'] == True)]
     # Select relevant columns
     df_inswingers_for = df_inswingers_for[['sequenceId','team_name','label', '321.0']]
 
