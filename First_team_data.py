@@ -2293,27 +2293,27 @@ def League_stats():
     df_set_pieces = load_team_set_piece_data(selected_team)
     df_set_pieces['team_name'] = df_set_pieces['team_name'].str.replace(" ", "_")
     # Filter the data for corners
-    df_corners_for = df_set_pieces[df_set_pieces['25.0'] == True]
+    df_inswingers_for = df_set_pieces[df_set_pieces['25.0'] == True] & df_set_pieces['223.0'] == True
     # Select relevant columns
-    df_corners_for = df_corners_for[['sequenceId','team_name','label', '321.0']]
+    df_inswingers_for = df_inswingers_for[['sequenceId','team_name','label', '321.0']]
 
     # Merge with the original set pieces data to get the full sequence details
-    df_corners_for = df_corners_for.merge(df_set_pieces, on=['sequenceId','team_name','label'], suffixes=('_corner', '_full'), how='outer')
-    df_corners_for = df_corners_for[df_corners_for['team_name'] == selected_team]
+    df_inswingers_for = df_inswingers_for.merge(df_set_pieces, on=['sequenceId','team_name','label'], suffixes=('_corner', '_full'), how='outer')
+    df_inswingers_for = df_inswingers_for[df_inswingers_for['team_name'] == selected_team]
 
 
     # Group by sequenceId and assign the xG value to all rows within the sequence
-    df_corners_for['sequence_xg'] = df_corners_for.groupby(['sequenceId','team_name','label'])['321.0_corner'].transform('first')
+    df_inswingers_for['sequence_xg'] = df_inswingers_for.groupby(['sequenceId','team_name','label'])['321.0_corner'].transform('first')
 
     # Optional: Remove the duplicate xG column if you only need the sequence_xg
-    df_corners_for = df_corners_for.drop(columns=['321.0_corner'])
-    st.dataframe(df_corners_for)
-    inswingers = df_corners_for[(df_corners_for['223.0'] == True) & (df_corners_for['6.0'] == True)]
-    inswingers_count = inswingers.groupby('playerName').size().reset_index(name='inswingers_count')
+    df_inswingers_for = df_inswingers_for.drop(columns=['321.0_corner'])
+    st.dataframe(df_inswingers_for)
+    #inswingers = df_corners_for[(df_corners_for['223.0'] == True) & (df_corners_for['6.0'] == True)]
+    #inswingers_count = inswingers.groupby('playerName').size().reset_index(name='inswingers_count')
 
-    st.dataframe(inswingers, hide_index=True)
+    #st.dataframe(inswingers, hide_index=True)
     # Fill NaN values with 0 for cases where a player might not have inswingers or outswingers
-    df_corners_for = df_corners_for.fillna(0)
+    #df_corners_for = df_corners_for.fillna(0)
 
 
     # Display the DataFrame in Streamlit
