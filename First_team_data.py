@@ -2416,13 +2416,13 @@ def League_stats():
         x_end, y_end = row['140.0'], row['141.0']
         pitch_short_right.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='blue', ax=axs[0, 0])
 
-    for _, row in df_inswingers_for_plot_left.iterrows():
+    for _, row in df_short_for_plot_left.iterrows():
         x_start, y_start = row['x'], row['y']
         x_end, y_end = row['140.0'], row['141.0']
         pitch_short_left.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='blue', ax=axs[1, 0])
 
-    axs[0, 2].set_title("Short - Left Side")
-    axs[1, 2].set_title("Short - Right Side")
+    axs[0, 3].set_title("Short - Left Side")
+    axs[1, 3].set_title("Short - Right Side")
 
 
     # Optionally, adjust layout to avoid overlap
