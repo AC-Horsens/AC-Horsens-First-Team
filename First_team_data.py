@@ -2322,6 +2322,16 @@ def League_stats():
     df_straight_for_plot = df_straight_for[(df_straight_for['225.0'] == True) & df_straight_for['6.0'] == True]
     df_straight_for_plot = df_straight_for_plot[['playerName','sequenceId', 'x', 'y', '140.0', '141.0','321.0_full','sequence_xg']]
 
+    df_short = df_set_pieces[(df_set_pieces['6.0'] == True) & df_set_pieces['212'] < 15]
+    df_short = df_short[['playerName', 'sequenceId', 'x', 'y', '321.0']]
+    df_short = df_short.merge(df_set_pieces, on=['sequenceId', 'playerName'], suffixes=('_corner', '_full'), how='inner')
+    df_short = df_short[df_short['team_name'] == selected_team]
+    df_short['sequence_xg'] = df_short.groupby(['sequenceId', 'playerName'])['321.0_full'].transform('first')
+    df_short['sequence_xg'] = df_short['sequence_xg'].fillna(0)
+    df_short_for_plot = df_short[(df_short['6.0'] == True) & df_short['212'] < 15]
+    df_short_for_plot = df_short_for_plot[['playerName','sequenceId', 'x', 'y', '140.0', '141.0','321.0_full','sequence_xg']]
+    
+    
     # Split data based on y-coordinate
     def split_data(df):
         return df[df['y'] > 70], df[df['y'] < 30]
@@ -2329,9 +2339,9 @@ def League_stats():
     df_inswingers_for_plot_right, df_inswingers_for_plot_left = split_data(df_inswingers_for_plot)
     df_outswingers_for_plot_right, df_outswingers_for_plot_left = split_data(df_outswingers_for_plot)
     df_straight_for_plot_right, df_straight_for_plot_left = split_data(df_straight_for_plot)
-
+    df_short_for_plot_right, df_short_for_plot_left = split_data(df_short_for_plot)
     # Create a figure with six subplots (2 rows, 3 columns)
-    fig, axs = plt.subplots(2, 3, figsize=(18, 12))  # 2 rows, 3 columns
+    fig, axs = plt.subplots(2, 4, figsize=(18, 12))  # 2 rows, 3 columns
 
     # Plot for inswingers
     pitch_inswinger_right = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
@@ -2393,6 +2403,26 @@ def League_stats():
 
     axs[0, 2].set_title("Straight - Left side")
     axs[1, 2].set_title("Straight - Right side")
+
+    pitch_short_right = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
+    pitch_short_left = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
+
+    pitch_short_right.draw(ax=axs[0, 3])
+    pitch_short_left.draw(ax=axs[1, 3])
+
+    for _, row in df_short_for_plot_right.iterrows():
+        x_start, y_start = row['x'], row['y']
+        x_end, y_end = row['140.0'], row['141.0']
+        pitch_short_right.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='blue', ax=axs[0, 0])
+
+    for _, row in df_inswingers_for_plot_left.iterrows():
+        x_start, y_start = row['x'], row['y']
+        x_end, y_end = row['140.0'], row['141.0']
+        pitch_short_left.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='blue', ax=axs[1, 0])
+
+    axs[0, 2].set_title("Short - Left Side")
+    axs[1, 2].set_title("Short - Right Side")
+
 
     # Optionally, adjust layout to avoid overlap
     plt.tight_layout()
