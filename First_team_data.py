@@ -2298,7 +2298,7 @@ def League_stats():
     df_inswingers_for = df_inswingers_for[['sequenceId','team_name','label', '321.0']]
 
     # Merge with the original set pieces data to get the full sequence details
-    df_inswingers_for = df_inswingers_for.merge(df_set_pieces, on=['sequenceId','team_name','label'], suffixes=('_corner', '_full'), how='outer')
+    df_inswingers_for = df_inswingers_for.merge(df_set_pieces, on=['sequenceId','team_name','label'], suffixes=('_corner', '_full'), how='inner')
     df_inswingers_for = df_inswingers_for[df_inswingers_for['team_name'] == selected_team]
 
 
