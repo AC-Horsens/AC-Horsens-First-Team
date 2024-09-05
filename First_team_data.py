@@ -1854,7 +1854,6 @@ def Dashboard():
         corner_xg = corner_xg.merge(freekick_xg, on='team_name', how='outer')
         # Calculate the number of corners and free kicks for each team
         num_corners = df_set_pieces[df_set_pieces['6.0'] == True].groupby('team_name').size()
-        st.dataframe(df_set_pieces)
         num_freekicks = df_set_pieces[df_set_pieces['5.0'] == True].groupby('team_name').size()
 
         # Combine the number of set pieces into one DataFrame
@@ -1885,7 +1884,6 @@ def Dashboard():
 
         # Sort the DataFrame by xG per set piece
         corner_xg = corner_xg.sort_values('xG per set piece', ascending=False)
-        st.dataframe(corner_xg)
         # Display the DataFrame in Streamlit
         st.dataframe(corner_xg[['Set piece xg', 'xG per corner', 'xG per freekick', 'xG per set piece']])
         
