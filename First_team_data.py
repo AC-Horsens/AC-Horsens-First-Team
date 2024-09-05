@@ -2315,7 +2315,7 @@ def League_stats():
     fig, axs = plt.subplots(1, 2, figsize=(14, 7))  # 1 row, 2 columns
 
     # Plot for right side (y > 70)
-    pitch_right = Pitch(pitch_type='opta', line_color='white', pitch_color='grass', orientation='vertical',half=True)
+    pitch_right = Pitch(pitch_type='opta', line_color='white', pitch_color='grass',half=True)
     pitch_right.draw(ax=axs[0])  # Draw on the first subplot
 
     for _, row in df_right_side.iterrows():
@@ -2327,7 +2327,7 @@ def League_stats():
     axs[0].set_xlim(-5, 50)  # Adjust x limits to fit the vertical pitch
 
     # Plot for left side (y < 30)
-    pitch_left = Pitch(pitch_type='opta', line_color='white', pitch_color='grass', orientation='vertical',half=True)
+    pitch_left = Pitch(pitch_type='opta', line_color='white', pitch_color='grass',half=True)
     pitch_left.draw(ax=axs[1])  # Draw on the second subplot
 
     for _, row in df_left_side.iterrows():
