@@ -2307,21 +2307,35 @@ def League_stats():
     df_inswingers_for['sequence_xg'] = df_inswingers_for['sequence_xg'].fillna(0)
     df_inswingers_for_plot = df_inswingers_for[(df_inswingers_for['223.0'] == True) & df_inswingers_for['6.0'] == True]
     df_inswingers_for_plot = df_inswingers_for_plot[['playerName','x','y','140.0','141.0']] 
-    pitch = Pitch(pitch_type='opta', line_color='white', pitch_color='grass')
-    fig, ax = pitch.draw(figsize=(10, 7))
+    df_right_side = df_inswingers_for_plot[df_inswingers_for_plot['y'] > 70]
+    df_left_side = df_inswingers_for_plot[df_inswingers_for_plot['y'] < 30]
 
-    # Step 4: Plot arrows on the pitch
-    for _, row in df_inswingers_for_plot.iterrows():
-        # Extract the starting and ending points
+    # Create a figure with two vertical subplots
+    fig, axs = plt.subplots(2, 1, figsize=(7, 14))  # 2 rows, 1 column, adjust figsize for vertical plots
+
+    # Step 1: Plot for right side (y > 70)
+    pitch_right = Pitch(pitch_type='opta', line_color='white', pitch_color='grass')
+    pitch_right.draw(ax=axs[0])  # Draw on the first subplot
+
+    for _, row in df_right_side.iterrows():
         x_start, y_start = row['x'], row['y']
         x_end, y_end = row['140.0'], row['141.0']
+        pitch_right.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=10, headlength=10, color='blue', ax=axs[0])
 
-        # Draw the arrow from (x, y) to (140.0, 141.0)
-        pitch.arrows(x_start, y_start, x_end, y_end,
-                    width=2, headwidth=10, headlength=10,
-                    color='blue', ax=ax)
+    axs[0].set_title("Right Side (y > 70)")
 
-    # Step 5: Display the plot in Streamlit
+    # Step 2: Plot for left side (y < 30)
+    pitch_left = Pitch(pitch_type='opta', line_color='white', pitch_color='grass')
+    pitch_left.draw(ax=axs[1])  # Draw on the second subplot
+
+    for _, row in df_left_side.iterrows():
+        x_start, y_start = row['x'], row['y']
+        x_end, y_end = row['140.0'], row['141.0']
+        pitch_left.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=10, headlength=10, color='red', ax=axs[1])
+
+    axs[1].set_title("Left Side (y < 30)")
+
+    # Step 3: Display the plots in Streamlit
     st.pyplot(fig)
     
     st.dataframe(df_inswingers_for)
