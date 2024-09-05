@@ -1853,9 +1853,9 @@ def Dashboard():
         # Merge corner xG and free kick xG
         corner_xg = corner_xg.merge(freekick_xg, on='team_name', how='outer')
         # Calculate the number of corners and free kicks for each team
-        num_corners = df_set_pieces[df_set_pieces['25.0'] == True].groupby('team_name').size()
-        st.dataframe(num_corners)
-        num_freekicks = df_set_pieces[df_set_pieces['24.0'] == True].groupby('team_name').size()
+        num_corners = df_set_pieces[df_set_pieces['6.0'] == True].groupby('team_name').size()
+        st.dataframe(df_set_pieces)
+        num_freekicks = df_set_pieces[df_set_pieces['5.0'] == True].groupby('team_name').size()
 
         # Combine the number of set pieces into one DataFrame
         num_set_pieces = pd.DataFrame({
