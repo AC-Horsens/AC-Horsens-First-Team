@@ -2323,10 +2323,10 @@ def League_stats():
     df_straight_for_plot = df_straight_for_plot[['playerName','sequenceId', 'x', 'y', '140.0', '141.0','321.0_full','sequence_xg']]
 
     df_short = df_set_pieces[(df_set_pieces['6.0'] == True) & df_set_pieces['212.0'] < 15]
-    df_short = df_short[['playerName', 'sequenceId', 'x', 'y', '321.0']]
-    df_short = df_short.merge(df_set_pieces, on=['sequenceId', 'playerName'], suffixes=('_corner', '_full'), how='inner')
+    df_short = df_short[['sequenceId', 'team_name', 'label', '321.0']]
+    df_short = df_short.merge(df_set_pieces, on=['sequenceId', 'team_name','label'], suffixes=('_corner', '_full'), how='inner')
     df_short = df_short[df_short['team_name'] == selected_team]
-    df_short['sequence_xg'] = df_short.groupby(['sequenceId', 'playerName'])['321.0_full'].transform('first')
+    df_short['sequence_xg'] = df_short.groupby(['sequenceId', 'team_name','label'])['321.0_full'].transform('first')
     df_short['sequence_xg'] = df_short['sequence_xg'].fillna(0)
     df_short_for_plot = df_short[(df_short['6.0'] == True) & df_short['212.0'] < 15]
     st.dataframe(df_short_for_plot)
