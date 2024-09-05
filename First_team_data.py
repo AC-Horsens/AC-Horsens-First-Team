@@ -2324,7 +2324,6 @@ def League_stats():
         pitch_right.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=10, headlength=10, color='blue', ax=axs[0])
 
     axs[0].set_title("Right Side (y > 70)")
-    axs[0].set_xlim(-5, 50)  # Adjust x limits to fit the vertical pitch
 
     # Plot for left side (y < 30)
     pitch_left = Pitch(pitch_type='opta', line_color='white', pitch_color='grass',half=True)
@@ -2336,7 +2335,6 @@ def League_stats():
         pitch_left.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=10, headlength=10, color='red', ax=axs[1])
 
     axs[1].set_title("Left Side (y < 30)")
-    axs[1].set_xlim(-5, 50)  # Adjust x limits to fit the vertical pitch
 
     # Display the plots in Streamlit
     st.pyplot(fig)
