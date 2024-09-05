@@ -2402,8 +2402,8 @@ def League_stats():
         pitch_straight_left.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='black', ax=axs[2, 1])
 
 
-    axs[3, 0].set_title("Straight - Left side")
-    axs[3, 1].set_title("Straight - Right side")
+    axs[2, 0].set_title("Straight - Left side")
+    axs[2, 1].set_title("Straight - Right side")
 
     pitch_short_right = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
     pitch_short_left = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
