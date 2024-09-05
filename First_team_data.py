@@ -2349,7 +2349,7 @@ def League_stats():
     pitch_inswinger_left = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
 
     pitch_inswinger_right.draw(ax=axs[0, 0])
-    pitch_inswinger_left.draw(ax=axs[1, 0])
+    pitch_inswinger_left.draw(ax=axs[0, 1])
 
     for _, row in df_inswingers_for_plot_right.iterrows():
         x_start, y_start = row['x'], row['y']
