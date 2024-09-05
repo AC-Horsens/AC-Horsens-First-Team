@@ -2442,6 +2442,8 @@ def League_stats():
         st.dataframe(average_xg_inswingers,hide_index=True)
         average_player_xg_inswingers = df_inswingers_for.groupby('playerName')['321.0_full'].mean().reset_index()
         average_player_xg_inswingers = average_player_xg_inswingers.rename(columns={'321.0_full': 'average_player_xg'})
+        average_player_xg_inswingers = average_player_xg_inswingers[average_player_xg_inswingers['average_player_xg'] > 0]
+        average_player_xg_inswingers = average_player_xg_inswingers.sort_values(by='average_player_xg', ascending=False)
         st.dataframe(average_player_xg_inswingers)
     # Display the plots in Streamlit
     #inswingers = df_corners_for[(df_corners_for['223.0'] == True) & (df_corners_for['6.0'] == True)]
