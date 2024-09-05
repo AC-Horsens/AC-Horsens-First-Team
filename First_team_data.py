@@ -2342,7 +2342,7 @@ def League_stats():
     df_straight_for_plot_right, df_straight_for_plot_left = split_data(df_straight_for_plot)
     df_short_for_plot_right, df_short_for_plot_left = split_data(df_short_for_plot)
     # Create a figure with six subplots (2 rows, 3 columns)
-    fig, axs = plt.subplots(2, 4, figsize=(18, 12))  # 2 rows, 3 columns
+    fig, axs = plt.subplots(4, 2, figsize=(18, 12))  # 2 rows, 3 columns
 
     # Plot for inswingers
     pitch_inswinger_right = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
@@ -2354,75 +2354,75 @@ def League_stats():
     for _, row in df_inswingers_for_plot_right.iterrows():
         x_start, y_start = row['x'], row['y']
         x_end, y_end = row['140.0'], row['141.0']
-        pitch_inswinger_right.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='blue', ax=axs[0, 0])
+        pitch_inswinger_right.arrows(x_start, y_start, x_end, y_end, width=1, headwidth=3, headlength=3, color='blue', ax=axs[0, 0])
 
     for _, row in df_inswingers_for_plot_left.iterrows():
         x_start, y_start = row['x'], row['y']
         x_end, y_end = row['140.0'], row['141.0']
-        pitch_inswinger_left.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='blue', ax=axs[1, 0])
+        pitch_inswinger_left.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='blue', ax=axs[0, 1])
 
     axs[0, 0].set_title("Inswingers - Left Side")
-    axs[1, 0].set_title("Inswingers - Right Side")
+    axs[0, 1].set_title("Inswingers - Right Side")
 
     # Plot for outswingers
     pitch_outswinger_right = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
     pitch_outswinger_left = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
 
-    pitch_outswinger_right.draw(ax=axs[0, 1])
+    pitch_outswinger_right.draw(ax=axs[1, 0])
     pitch_outswinger_left.draw(ax=axs[1, 1])
 
     for _, row in df_outswingers_for_plot_right.iterrows():
         x_start, y_start = row['x'], row['y']
         x_end, y_end = row['140.0'], row['141.0']
-        pitch_outswinger_right.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='red', ax=axs[0, 1])
+        pitch_outswinger_right.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='red', ax=axs[1, 0])
 
     for _, row in df_outswingers_for_plot_left.iterrows():
         x_start, y_start = row['x'], row['y']
         x_end, y_end = row['140.0'], row['141.0']
         pitch_outswinger_left.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='red', ax=axs[1, 1])
 
-    axs[0, 1].set_title("Outswingers - Left Side")
+    axs[1, 0].set_title("Outswingers - Left Side")
     axs[1, 1].set_title("Outswingers - Right Side")
 
     # Plot for straight set pieces
     pitch_straight_right = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
     pitch_straight_left = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
 
-    pitch_straight_right.draw(ax=axs[0, 2])
-    pitch_straight_left.draw(ax=axs[1,2])
+    pitch_straight_right.draw(ax=axs[2, 0])
+    pitch_straight_left.draw(ax=axs[2,1])
 
     for _, row in df_straight_for_plot_right.iterrows():
         x_start, y_start = row['x'], row['y']
         x_end, y_end = row['140.0'], row['141.0']
-        pitch_straight_right.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='black', ax=axs[0, 2])
+        pitch_straight_right.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='black', ax=axs[2, 0])
 
     for _, row in df_straight_for_plot_left.iterrows():
         x_start, y_start = row['x'], row['y']
         x_end, y_end = row['140.0'], row['141.0']
-        pitch_straight_left.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='black', ax=axs[1, 2])
+        pitch_straight_left.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='black', ax=axs[2, 1])
 
 
-    axs[0, 2].set_title("Straight - Left side")
-    axs[1, 2].set_title("Straight - Right side")
+    axs[3, 0].set_title("Straight - Left side")
+    axs[3, 1].set_title("Straight - Right side")
 
     pitch_short_right = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
     pitch_short_left = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
 
-    pitch_short_right.draw(ax=axs[0, 3])
-    pitch_short_left.draw(ax=axs[1, 3])
+    pitch_short_right.draw(ax=axs[3, 0])
+    pitch_short_left.draw(ax=axs[3, 1])
 
     for _, row in df_short_for_plot_right.iterrows():
         x_start, y_start = row['x'], row['y']
         x_end, y_end = row['140.0'], row['141.0']
-        pitch_short_right.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='blue', ax=axs[0, 3])
+        pitch_short_right.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='blue', ax=axs[3, 0])
 
     for _, row in df_short_for_plot_left.iterrows():
         x_start, y_start = row['x'], row['y']
         x_end, y_end = row['140.0'], row['141.0']
-        pitch_short_left.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='blue', ax=axs[1, 3])
+        pitch_short_left.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='blue', ax=axs[3, 1])
 
-    axs[0, 3].set_title("Short - Left Side")
-    axs[1, 3].set_title("Short - Right Side")
+    axs[3, 0].set_title("Short - Left Side")
+    axs[3, 1].set_title("Short - Right Side")
 
 
     # Optionally, adjust layout to avoid overlap
