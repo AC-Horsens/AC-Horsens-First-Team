@@ -1885,7 +1885,7 @@ def Dashboard():
 
         # Sort the DataFrame by xG per set piece
         corner_xg = corner_xg.sort_values('xG per set piece', ascending=False)
-
+        st.dataframe(corner_xg)
         # Display the DataFrame in Streamlit
         st.dataframe(corner_xg[['Set piece xg', 'xG per corner', 'xG per freekick', 'xG per set piece']])
         
