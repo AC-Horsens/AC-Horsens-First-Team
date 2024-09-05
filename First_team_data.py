@@ -113,6 +113,11 @@ def load_set_piece_data():
     df_set_piece['label'] = (df_set_piece['label'] + ' ' + df_set_piece['date']).astype(str)
     return df_set_piece
  
+@st.cache_data
+def load_team_set_piece_data(team_name):
+    df_team_set_pieces = pd.read_csv(f'DNK_1_Division_2024_2025/{team_name}/{team_name}_set_piece_data.csv')
+    return df_team_set_pieces
+
 def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
 
     def calculate_score(df, column, score_column):
@@ -1932,7 +1937,6 @@ def Dashboard():
 
 def League_stats():
     
-    
     balanced_central_defender_df = position_dataframes['Central defender']
     fullbacks_df = position_dataframes['Fullbacks']
     number6_df = position_dataframes['Number 6']
@@ -2286,10 +2290,7 @@ def League_stats():
     st.dataframe(agg_df, hide_index=True)
 
     st.header('Set pieces')
-    df_set_pieces = load_set_piece_data()
-
-    # Filter the data for the selected team
-    df_set_pieces = df_set_pieces[df_set_pieces['label'].str.contains(selected_team)]
+    df_set_pieces = load_team_set_piece_data(selected_team)
 
     # Filter the data for corners
     df_corners_for = df_set_pieces[df_set_pieces['25.0'] == True]
