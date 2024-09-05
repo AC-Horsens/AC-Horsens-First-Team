@@ -2358,7 +2358,7 @@ def League_stats():
     for _, row in df_inswingers_for_plot_left.iterrows():
         x_start, y_start = row['x'], row['y']
         x_end, y_end = row['140.0'], row['141.0']
-        pitch_inswinger_left.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='blue', ax=axs[0, 1])
+        pitch_inswinger_left.arrows(x_start, y_start, x_end, y_end, width=1, headwidth=2, headlength=2, color='blue', ax=axs[0, 1])
 
     axs[0, 0].set_title("Inswingers - Left Side")
     axs[0, 1].set_title("Inswingers - Right Side")
@@ -2373,12 +2373,12 @@ def League_stats():
     for _, row in df_outswingers_for_plot_right.iterrows():
         x_start, y_start = row['x'], row['y']
         x_end, y_end = row['140.0'], row['141.0']
-        pitch_outswinger_right.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='red', ax=axs[1, 0])
+        pitch_outswinger_right.arrows(x_start, y_start, x_end, y_end, width=1, headwidth=2, headlength=2, color='red', ax=axs[1, 0])
 
     for _, row in df_outswingers_for_plot_left.iterrows():
         x_start, y_start = row['x'], row['y']
         x_end, y_end = row['140.0'], row['141.0']
-        pitch_outswinger_left.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='red', ax=axs[1, 1])
+        pitch_outswinger_left.arrows(x_start, y_start, x_end, y_end, width=1, headwidth=2, headlength=2, color='red', ax=axs[1, 1])
 
     axs[1, 0].set_title("Outswingers - Left Side")
     axs[1, 1].set_title("Outswingers - Right Side")
@@ -2393,12 +2393,12 @@ def League_stats():
     for _, row in df_straight_for_plot_right.iterrows():
         x_start, y_start = row['x'], row['y']
         x_end, y_end = row['140.0'], row['141.0']
-        pitch_straight_right.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='black', ax=axs[2, 0])
+        pitch_straight_right.arrows(x_start, y_start, x_end, y_end, width=1, headwidth=2, headlength=2, color='black', ax=axs[2, 0])
 
     for _, row in df_straight_for_plot_left.iterrows():
         x_start, y_start = row['x'], row['y']
         x_end, y_end = row['140.0'], row['141.0']
-        pitch_straight_left.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='black', ax=axs[2, 1])
+        pitch_straight_left.arrows(x_start, y_start, x_end, y_end, width=1, headwidth=2, headlength=2, color='black', ax=axs[2, 1])
 
 
     axs[2, 0].set_title("Straight - Left side")
