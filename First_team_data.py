@@ -2293,7 +2293,7 @@ def League_stats():
     df_set_pieces = load_team_set_piece_data(selected_team)
     df_set_pieces['team_name'] = df_set_pieces['team_name'].str.replace(" ", "_")
     # Filter the data for corners
-    df_inswingers_for = df_set_pieces[df_set_pieces['223.0'] == True]
+    df_inswingers_for = df_set_pieces[(df_set_pieces['223.0'] == True) & (df_set_pieces['6.0'] == True)]
     # Select relevant columns
     df_inswingers_for = df_inswingers_for[['sequenceId','team_name','label', '321.0']]
 
@@ -2305,7 +2305,7 @@ def League_stats():
     # Group by sequenceId and assign the xG value to all rows within the sequence
     df_inswingers_for['sequence_xg'] = df_inswingers_for.groupby(['sequenceId','team_name','label'])['321.0_full'].transform('first')
     df_inswingers_for['sequence_xg'] = df_inswingers_for['sequence_xg'].fillna(0)
-
+    df_inswingers_for_plot = df_inswingers_for
     # Optional: Remove the duplicate xG column if you only need the sequence_xg
     st.dataframe(df_inswingers_for)
     #inswingers = df_corners_for[(df_corners_for['223.0'] == True) & (df_corners_for['6.0'] == True)]
