@@ -2322,8 +2322,16 @@ def League_stats():
     df_straight_for_plot = df_straight_for[(df_straight_for['225.0'] == True) & df_straight_for['6.0'] == True]
     df_straight_for_plot = df_straight_for_plot[['playerName', 'x', 'y', '140.0', '141.0']]
 
-    # Create a figure with four subplots (2 rows, 2 columns)
-    fig, axs = plt.subplots(2, 2, figsize=(14, 14))  # 2 rows, 2 columns
+    # Split data based on y-coordinate
+    def split_data(df):
+        return df[df['y'] > 70], df[df['y'] < 30]
+
+    df_inswingers_for_plot_right, df_inswingers_for_plot_left = split_data(df_inswingers_for_plot)
+    df_outswingers_for_plot_right, df_outswingers_for_plot_left = split_data(df_outswingers_for_plot)
+    df_straight_for_plot_right, df_straight_for_plot_left = split_data(df_straight_for_plot)
+
+    # Create a figure with six subplots (2 rows, 3 columns)
+    fig, axs = plt.subplots(2, 3, figsize=(18, 12))  # 2 rows, 3 columns
 
     # Plot for inswingers
     pitch_inswinger_right = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
@@ -2331,9 +2339,6 @@ def League_stats():
 
     pitch_inswinger_right.draw(ax=axs[0, 0])
     pitch_inswinger_left.draw(ax=axs[1, 0])
-
-    df_inswingers_for_plot_right = df_inswingers_for_plot[df_inswingers_for_plot['y'] > 70]
-    df_inswingers_for_plot_left = df_inswingers_for_plot[df_inswingers_for_plot['y'] < 30]
 
     for _, row in df_inswingers_for_plot_right.iterrows():
         x_start, y_start = row['x'], row['y']
@@ -2355,9 +2360,6 @@ def League_stats():
     pitch_outswinger_right.draw(ax=axs[0, 1])
     pitch_outswinger_left.draw(ax=axs[1, 1])
 
-    df_outswingers_for_plot_right = df_outswingers_for_plot[df_outswingers_for_plot['y'] > 70]
-    df_outswingers_for_plot_left = df_outswingers_for_plot[df_outswingers_for_plot['y'] < 30]
-
     for _, row in df_outswingers_for_plot_right.iterrows():
         x_start, y_start = row['x'], row['y']
         x_end, y_end = row['140.0'], row['141.0']
@@ -2371,8 +2373,19 @@ def League_stats():
     axs[0, 1].set_title("Outswingers - Right Side (y > 70)")
     axs[1, 1].set_title("Outswingers - Left Side (y < 30)")
 
-    # Optionally, add the straight set pieces to the figure
-    # You can use similar plotting logic as shown above for straight set pieces if desired
+    # Plot for straight set pieces
+    pitch_straight = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
+    pitch_straight.draw(ax=axs[0, 2])
+
+    for _, row in df_straight_for_plot_right.iterrows():
+        x_start, y_start = row['x'], row['y']
+        x_end, y_end = row['140.0'], row['141.0']
+        pitch_straight.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='green', ax=axs[0, 2])
+
+    axs[0, 2].set_title("Straight Set Pieces")
+
+    # Optionally, adjust layout to avoid overlap
+    plt.tight_layout()
 
     # Display the plots in Streamlit
     st.pyplot(fig)
