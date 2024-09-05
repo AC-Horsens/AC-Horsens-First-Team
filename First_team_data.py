@@ -1852,7 +1852,7 @@ def Dashboard():
         freekick_xg = freekick_xg.rename(columns={'321.0': 'freekick xg'})
 
         # Merge corner xG and free kick xG
-        corner_xg = corner_xg.merge(freekick_xg, on='team_name', how='left')
+        corner_xg = corner_xg.merge(freekick_xg, on='team_name', how='outer')
         # Calculate the number of corners and free kicks for each team
         num_corners = df_set_pieces[df_set_pieces['25.0'] == True].groupby('team_name').size()
         num_freekicks = df_set_pieces[df_set_pieces['24.0'] == True].groupby('team_name').size()
