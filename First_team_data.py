@@ -2350,8 +2350,8 @@ def League_stats():
         x_end, y_end = row['140.0'], row['141.0']
         pitch_inswinger_left.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='blue', ax=axs[1, 0])
 
-    axs[0, 0].set_title("Inswingers - Right Side")
-    axs[1, 0].set_title("Inswingers - Left Side")
+    axs[0, 0].set_title("Inswingers - Left Side")
+    axs[1, 0].set_title("Inswingers - Right Side")
 
     # Plot for outswingers
     pitch_outswinger_right = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
@@ -2370,8 +2370,8 @@ def League_stats():
         x_end, y_end = row['140.0'], row['141.0']
         pitch_outswinger_left.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='red', ax=axs[1, 1])
 
-    axs[0, 1].set_title("Outswingers - Right Side")
-    axs[1, 1].set_title("Outswingers - Left Side")
+    axs[0, 1].set_title("Outswingers - Left Side")
+    axs[1, 1].set_title("Outswingers - Right Side")
 
     # Plot for straight set pieces
     pitch_straight_right = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
@@ -2391,8 +2391,8 @@ def League_stats():
         pitch_straight_left.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='green', ax=axs[0, 2])
 
 
-    axs[0, 2].set_title("Straight - Right side")
-    axs[1, 2].set_title("Straight - Left side")
+    axs[0, 2].set_title("Straight - Left side")
+    axs[1, 2].set_title("Straight - Right side")
 
     # Optionally, adjust layout to avoid overlap
     plt.tight_layout()
