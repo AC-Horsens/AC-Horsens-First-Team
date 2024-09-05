@@ -2303,7 +2303,7 @@ def League_stats():
 
 
     # Group by sequenceId and assign the xG value to all rows within the sequence
-    df_inswingers_for['sequence_xg'] = df_inswingers_for.groupby(['sequenceId','team_name','label'])['321.0_corner'].transform('first')
+    df_inswingers_for['sequence_xg'] = df_inswingers_for.groupby(['sequenceId','team_name','label'])['321.0_full'].transform('first')
 
     # Optional: Remove the duplicate xG column if you only need the sequence_xg
     st.dataframe(df_inswingers_for)
