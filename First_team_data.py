@@ -2305,8 +2305,25 @@ def League_stats():
     # Group by sequenceId and assign the xG value to all rows within the sequence
     df_inswingers_for['sequence_xg'] = df_inswingers_for.groupby(['sequenceId','team_name','label'])['321.0_full'].transform('first')
     df_inswingers_for['sequence_xg'] = df_inswingers_for['sequence_xg'].fillna(0)
-    df_inswingers_for_plot = df_inswingers_for
-    # Optional: Remove the duplicate xG column if you only need the sequence_xg
+    df_inswingers_for_plot = df_inswingers_for[(df_inswingers_for['223.0'] == True) & df_inswingers_for['6.0'] == True]
+    df_inswingers_for_plot = df_inswingers_for_plot[['playerName','x','y','140.0','141.0']] 
+    pitch = Pitch(pitch_type='opta', line_color='black', pitch_color='white')
+    fig, ax = pitch.draw(figsize=(10, 7))
+
+    # Step 4: Plot arrows on the pitch
+    for _, row in df_inswingers_for_plot.iterrows():
+        # Extract the starting and ending points
+        x_start, y_start = row['x'], row['y']
+        x_end, y_end = row['140.0'], row['141.0']
+
+        # Draw the arrow from (x, y) to (140.0, 141.0)
+        pitch.arrows(x_start, y_start, x_end, y_end,
+                    width=2, headwidth=10, headlength=10,
+                    color='blue', ax=ax)
+
+    # Step 5: Display the plot in Streamlit
+    st.pyplot(fig)
+    
     st.dataframe(df_inswingers_for)
     #inswingers = df_corners_for[(df_corners_for['223.0'] == True) & (df_corners_for['6.0'] == True)]
     #inswingers_count = inswingers.groupby('playerName').size().reset_index(name='inswingers_count')
