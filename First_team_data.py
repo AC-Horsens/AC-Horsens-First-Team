@@ -2437,7 +2437,8 @@ def League_stats():
     with col1:
         df_inswingers_for['321.0_full'].fillna(0, inplace=True)
         st.dataframe(df_inswingers_for)
-    
+        average_xg_inswingers = df_inswingers_for.groupby('team_name')['321.0_full'].mean().reset_index()
+        st.dataframe(average_xg_inswingers)
     # Display the plots in Streamlit
     #inswingers = df_corners_for[(df_corners_for['223.0'] == True) & (df_corners_for['6.0'] == True)]
     #inswingers_count = inswingers.groupby('playerName').size().reset_index(name='inswingers_count')
