@@ -2383,12 +2383,12 @@ def League_stats():
     for _, row in df_straight_for_plot_right.iterrows():
         x_start, y_start = row['x'], row['y']
         x_end, y_end = row['140.0'], row['141.0']
-        pitch_straight_right.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='green', ax=axs[0, 2])
+        pitch_straight_right.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='black', ax=axs[0, 2])
 
     for _, row in df_straight_for_plot_left.iterrows():
         x_start, y_start = row['x'], row['y']
         x_end, y_end = row['140.0'], row['141.0']
-        pitch_straight_left.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='green', ax=axs[1, 2])
+        pitch_straight_left.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='black', ax=axs[1, 2])
 
 
     axs[0, 2].set_title("Straight - Left side")
