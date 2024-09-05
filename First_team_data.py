@@ -2444,17 +2444,21 @@ def League_stats():
         average_player_xg_inswingers = average_player_xg_inswingers.rename(columns={'321.0_full': 'average_player_xg'})
         average_player_xg_inswingers = average_player_xg_inswingers[average_player_xg_inswingers['average_player_xg'] > 0]
         average_player_xg_inswingers = average_player_xg_inswingers.sort_values(by='average_player_xg', ascending=False)
-        st.dataframe(average_player_xg_inswingers)
-    # Display the plots in Streamlit
-    #inswingers = df_corners_for[(df_corners_for['223.0'] == True) & (df_corners_for['6.0'] == True)]
-    #inswingers_count = inswingers.groupby('playerName').size().reset_index(name='inswingers_count')
+        st.dataframe(average_player_xg_inswingers,hide_index=True)
 
-    #st.dataframe(inswingers, hide_index=True)
-    # Fill NaN values with 0 for cases where a player might not have inswingers or outswingers
-    #df_corners_for = df_corners_for.fillna(0)
+    with col2:
+        st.write('Outswingers',bold=True)
+        df_outswingers_for['321.0_full'].fillna(0, inplace=True)
+        average_xg_outswingers = df_outswingers_for.groupby('team_name')['321.0_full'].mean().reset_index()
+        average_xg_outswingers = average_xg_outswingers.rename(columns={'321.0_full': 'average_xg_outswingers'})
+        st.dataframe(average_xg_outswingers,hide_index=True)
+        average_player_xg_outswingers = df_outswingers_for.groupby('playerName')['321.0_full'].mean().reset_index()
+        average_player_xg_outswingers = average_player_xg_outswingers.rename(columns={'321.0_full': 'average_player_xg'})
+        average_player_xg_outswingers = average_player_xg_outswingers[average_player_xg_outswingers['average_player_xg'] > 0]
+        average_player_xg_outswingers = average_player_xg_outswingers.sort_values(by='average_player_xg', ascending=False)
+        st.dataframe(average_player_xg_outswingers,hide_index=True)
 
 
-    # Display the DataFrame in Streamlit
 
 def League_stats_superliga():
     matchstats_df = pd.read_csv(r'matchstats_all DNK_Superliga_2024_2025.csv')
