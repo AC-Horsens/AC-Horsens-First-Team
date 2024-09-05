@@ -2458,6 +2458,18 @@ def League_stats():
         average_player_xg_outswingers = average_player_xg_outswingers.sort_values(by='average_player_xg', ascending=False)
         st.dataframe(average_player_xg_outswingers,hide_index=True)
 
+    with col3:
+        st.write('Straight',bold=True)
+        df_straight_for['321.0_full'].fillna(0, inplace=True)
+        average_xg_outswingers = df_straight_for.groupby('team_name')['321.0_full'].mean().reset_index()
+        average_xg_outswingers = average_xg_outswingers.rename(columns={'321.0_full': 'average_xg_straight'})
+        st.dataframe(average_xg_outswingers,hide_index=True)
+        average_player_xg_outswingers = df_outswingers_for.groupby('playerName')['321.0_full'].mean().reset_index()
+        average_player_xg_outswingers = average_player_xg_outswingers.rename(columns={'321.0_full': 'average_player_xg'})
+        average_player_xg_outswingers = average_player_xg_outswingers[average_player_xg_outswingers['average_player_xg'] > 0]
+        average_player_xg_outswingers = average_player_xg_outswingers.sort_values(by='average_player_xg', ascending=False)
+        st.dataframe(average_player_xg_outswingers,hide_index=True)
+
 
 
 def League_stats_superliga():
