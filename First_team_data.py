@@ -2307,14 +2307,15 @@ def League_stats():
     df_inswingers_for['sequence_xg'] = df_inswingers_for['sequence_xg'].fillna(0)
     df_inswingers_for_plot = df_inswingers_for[(df_inswingers_for['223.0'] == True) & df_inswingers_for['6.0'] == True]
     df_inswingers_for_plot = df_inswingers_for_plot[['playerName','x','y','140.0','141.0']] 
+    # Split the DataFrame based on y coordinate
     df_right_side = df_inswingers_for_plot[df_inswingers_for_plot['y'] > 70]
     df_left_side = df_inswingers_for_plot[df_inswingers_for_plot['y'] < 30]
 
-    # Create a figure with two vertical subplots
-    fig, axs = plt.subplots(2, 1, figsize=(7, 14))  # 2 rows, 1 column, adjust figsize for vertical plots
+    # Create a figure with two horizontal subplots (side by side)
+    fig, axs = plt.subplots(1, 2, figsize=(14, 7))  # 1 row, 2 columns
 
-    # Step 1: Plot for right side (y > 70)
-    pitch_right = Pitch(pitch_type='opta', line_color='white', pitch_color='grass')
+    # Plot for right side (y > 70)
+    pitch_right = Pitch(pitch_type='opta', line_color='white', pitch_color='grass', orientation='vertical',half=True)
     pitch_right.draw(ax=axs[0])  # Draw on the first subplot
 
     for _, row in df_right_side.iterrows():
@@ -2323,9 +2324,10 @@ def League_stats():
         pitch_right.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=10, headlength=10, color='blue', ax=axs[0])
 
     axs[0].set_title("Right Side (y > 70)")
+    axs[0].set_xlim(-5, 50)  # Adjust x limits to fit the vertical pitch
 
-    # Step 2: Plot for left side (y < 30)
-    pitch_left = Pitch(pitch_type='opta', line_color='white', pitch_color='grass')
+    # Plot for left side (y < 30)
+    pitch_left = Pitch(pitch_type='opta', line_color='white', pitch_color='grass', orientation='vertical',half=True)
     pitch_left.draw(ax=axs[1])  # Draw on the second subplot
 
     for _, row in df_left_side.iterrows():
@@ -2334,8 +2336,9 @@ def League_stats():
         pitch_left.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=10, headlength=10, color='red', ax=axs[1])
 
     axs[1].set_title("Left Side (y < 30)")
+    axs[1].set_xlim(-5, 50)  # Adjust x limits to fit the vertical pitch
 
-    # Step 3: Display the plots in Streamlit
+    # Display the plots in Streamlit
     st.pyplot(fig)
     
     st.dataframe(df_inswingers_for)
