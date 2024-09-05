@@ -2294,47 +2294,66 @@ def League_stats():
     df_set_pieces['team_name'] = df_set_pieces['team_name'].str.replace(" ", "_")
     # Filter the data for corners
     df_inswingers_for = df_set_pieces[(df_set_pieces['223.0'] == True) & (df_set_pieces['6.0'] == True)]
-    # Select relevant columns
-    df_inswingers_for = df_inswingers_for[['sequenceId','team_name','label', '321.0']]
-
-    # Merge with the original set pieces data to get the full sequence details
-    df_inswingers_for = df_inswingers_for.merge(df_set_pieces, on=['sequenceId','team_name','label'], suffixes=('_corner', '_full'), how='inner')
+    df_inswingers_for = df_inswingers_for[['sequenceId', 'team_name', 'label', '321.0']]
+    df_inswingers_for = df_inswingers_for.merge(df_set_pieces, on=['sequenceId', 'team_name', 'label'], suffixes=('_corner', '_full'), how='inner')
     df_inswingers_for = df_inswingers_for[df_inswingers_for['team_name'] == selected_team]
-
-
-    # Group by sequenceId and assign the xG value to all rows within the sequence
-    df_inswingers_for['sequence_xg'] = df_inswingers_for.groupby(['sequenceId','team_name','label'])['321.0_full'].transform('first')
+    df_inswingers_for['sequence_xg'] = df_inswingers_for.groupby(['sequenceId', 'team_name', 'label'])['321.0_full'].transform('first')
     df_inswingers_for['sequence_xg'] = df_inswingers_for['sequence_xg'].fillna(0)
     df_inswingers_for_plot = df_inswingers_for[(df_inswingers_for['223.0'] == True) & df_inswingers_for['6.0'] == True]
-    df_inswingers_for_plot = df_inswingers_for_plot[['playerName','x','y','140.0','141.0']] 
-    # Split the DataFrame based on y coordinate
-    df_right_side = df_inswingers_for_plot[df_inswingers_for_plot['y'] > 70]
-    df_left_side = df_inswingers_for_plot[df_inswingers_for_plot['y'] < 30]
+    df_inswingers_for_plot = df_inswingers_for_plot[['playerName', 'x', 'y', '140.0', '141.0']]
 
-    # Create a figure with two horizontal subplots (side by side)
-    fig, axs = plt.subplots(1, 2, figsize=(14, 7))  # 1 row, 2 columns
+    # Filter for outswingers
+    df_outswingers_for = df_set_pieces[(df_set_pieces['224.0'] == True) & (df_set_pieces['6.0'] == True)]
+    df_outswingers_for = df_outswingers_for[['sequenceId', 'team_name', 'label', '321.0']]
+    df_outswingers_for = df_outswingers_for.merge(df_set_pieces, on=['sequenceId', 'team_name', 'label'], suffixes=('_corner', '_full'), how='inner')
+    df_outswingers_for = df_outswingers_for[df_outswingers_for['team_name'] == selected_team]
+    df_outswingers_for['sequence_xg'] = df_outswingers_for.groupby(['sequenceId', 'team_name', 'label'])['321.0_full'].transform('first')
+    df_outswingers_for['sequence_xg'] = df_outswingers_for['sequence_xg'].fillna(0)
+    df_outswingers_for_plot = df_outswingers_for[(df_outswingers_for['224.0'] == True) & df_outswingers_for['6.0'] == True]
+    df_outswingers_for_plot = df_outswingers_for_plot[['playerName', 'x', 'y', '140.0', '141.0']]
 
-    # Plot for right side (y > 70)
-    pitch_right = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass',half=True,corner_arcs=True)
-    pitch_right.draw(ax=axs[0])  # Draw on the first subplot
+    # Filter for straight set pieces
+    df_straight_for = df_set_pieces[(df_set_pieces['225.0'] == True) & (df_set_pieces['6.0'] == True)]
+    df_straight_for = df_straight_for[['sequenceId', 'team_name', 'label', '321.0']]
+    df_straight_for = df_straight_for.merge(df_set_pieces, on=['sequenceId', 'team_name', 'label'], suffixes=('_corner', '_full'), how='inner')
+    df_straight_for = df_straight_for[df_straight_for['team_name'] == selected_team]
+    df_straight_for['sequence_xg'] = df_straight_for.groupby(['sequenceId', 'team_name', 'label'])['321.0_full'].transform('first')
+    df_straight_for['sequence_xg'] = df_straight_for['sequence_xg'].fillna(0)
+    df_straight_for_plot = df_straight_for[(df_straight_for['225.0'] == True) & df_straight_for['6.0'] == True]
+    df_straight_for_plot = df_straight_for_plot[['playerName', 'x', 'y', '140.0', '141.0']]
 
-    for _, row in df_right_side.iterrows():
+    # Create a figure with four subplots (2 rows, 2 columns)
+    fig, axs = plt.subplots(2, 2, figsize=(14, 14))  # 2 rows, 2 columns
+
+    # Plot for inswingers
+    pitch_inswinger = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
+    pitch_inswinger.draw(ax=axs[0, 0])
+    for _, row in df_inswingers_for_plot.iterrows():
         x_start, y_start = row['x'], row['y']
         x_end, y_end = row['140.0'], row['141.0']
-        pitch_right.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='blue', ax=axs[0])
+        pitch_inswinger.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='blue', ax=axs[0, 0])
+    axs[0, 0].set_title("Inswingers")
 
-    axs[0].set_title("Right Side")
-
-    # Plot for left side (y < 30)
-    pitch_left = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass',half=True,corner_arcs=True)
-    pitch_left.draw(ax=axs[1])  # Draw on the second subplot
-
-    for _, row in df_left_side.iterrows():
+    # Plot for outswingers
+    pitch_outswinger = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
+    pitch_outswinger.draw(ax=axs[0, 1])
+    for _, row in df_outswingers_for_plot.iterrows():
         x_start, y_start = row['x'], row['y']
         x_end, y_end = row['140.0'], row['141.0']
-        pitch_left.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='blue', ax=axs[1])
+        pitch_outswinger.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='red', ax=axs[0, 1])
+    axs[0, 1].set_title("Outswingers")
 
-    axs[1].set_title("Left Side")
+    # Plot for straight set pieces
+    pitch_straight = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
+    pitch_straight.draw(ax=axs[1, 0])
+    for _, row in df_straight_for_plot.iterrows():
+        x_start, y_start = row['x'], row['y']
+        x_end, y_end = row['140.0'], row['141.0']
+        pitch_straight.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='green', ax=axs[1, 0])
+    axs[1, 0].set_title("Straight Set Pieces")
+
+    # Optionally, leave the last subplot empty or add additional information
+    axs[1, 1].axis('off')
 
     # Display the plots in Streamlit
     st.pyplot(fig)
