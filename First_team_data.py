@@ -2435,6 +2435,7 @@ def League_stats():
     st.pyplot(fig)
     col1,col2,col3,col4 = st.columns(4)
     with col1:
+        df_inswingers_for['321.0_full'].fillna(0, inplace=True)
         st.dataframe(df_inswingers_for)
     
     # Display the plots in Streamlit
