@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-from mplsoccer import Pitch
 import numpy as np
 import matplotlib.pyplot as plt
 import plotly.graph_objs as go
@@ -9,6 +8,7 @@ import ast
 from collections import Counter
 from scipy.ndimage import gaussian_filter
 from datetime import datetime
+from mplsoccer import Pitch, VerticalPitch
 
 st.set_page_config(layout='wide')
 
@@ -2315,26 +2315,26 @@ def League_stats():
     fig, axs = plt.subplots(1, 2, figsize=(14, 7))  # 1 row, 2 columns
 
     # Plot for right side (y > 70)
-    pitch_right = Pitch(pitch_type='opta', line_color='white', pitch_color='grass',half=True)
+    pitch_right = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass',half=True,corner_arcs=True)
     pitch_right.draw(ax=axs[0])  # Draw on the first subplot
 
     for _, row in df_right_side.iterrows():
         x_start, y_start = row['x'], row['y']
         x_end, y_end = row['140.0'], row['141.0']
-        pitch_right.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=10, headlength=10, color='blue', ax=axs[0])
+        pitch_right.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='blue', ax=axs[0])
 
-    axs[0].set_title("Right Side (y > 70)")
+    axs[0].set_title("Right Side")
 
     # Plot for left side (y < 30)
-    pitch_left = Pitch(pitch_type='opta', line_color='white', pitch_color='grass',half=True)
+    pitch_left = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass',half=True,corner_arcs=True)
     pitch_left.draw(ax=axs[1])  # Draw on the second subplot
 
     for _, row in df_left_side.iterrows():
         x_start, y_start = row['x'], row['y']
         x_end, y_end = row['140.0'], row['141.0']
-        pitch_left.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=10, headlength=10, color='red', ax=axs[1])
+        pitch_left.arrows(x_start, y_start, x_end, y_end, width=2, headwidth=5, headlength=5, color='blue', ax=axs[1])
 
-    axs[1].set_title("Left Side (y < 30)")
+    axs[1].set_title("Left Side")
 
     # Display the plots in Streamlit
     st.pyplot(fig)
