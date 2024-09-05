@@ -2292,6 +2292,8 @@ def League_stats():
     st.header('Set pieces')
     df_set_pieces = load_team_set_piece_data(selected_team)
     df_set_pieces['team_name'] = df_set_pieces['team_name'].str.replace(" ", "_")
+    date_format = '%Y-%m-%d'
+    df_set_pieces['date'] = pd.to_datetime(df_set_pieces['date'], format=date_format)
     df_set_pieces = df_set_pieces[
         (df_set_pieces['date'] >= selected_start_date) & (df_set_pieces['date'] <= selected_end_date)
     ]    
