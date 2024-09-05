@@ -1867,7 +1867,7 @@ def Dashboard():
         num_set_pieces['total_set_pieces'] = num_set_pieces['num_corners'] + num_set_pieces['num_freekicks']
 
         # Merge number of set pieces with xG data
-        corner_xg = corner_xg.merge(num_set_pieces, left_index=True, right_index=True)
+        corner_xg = corner_xg.merge(num_set_pieces, left_index=True, right_index=True,how='outer')
 
         # Calculate xG per corner and xG per freekick
         corner_xg['xG per corner'] = corner_xg['corner xg'] / corner_xg['num_corners']
