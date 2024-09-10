@@ -1235,6 +1235,7 @@ def Dashboard():
         packing_teams = df_packing.groupby(['team_name','label'])[['bypassed_opponents','bypassed_defenders']].sum().reset_index()
         packing_teams = packing_teams[['team_name','bypassed_opponents','bypassed_defenders']]
         packing_teams = packing_teams.groupby('team_name').mean().reset_index()
+        packing_teams = packing_teams.round(2)
         packing_teams = packing_teams.sort_values(by='bypassed_opponents', ascending=False)
         st.header('Whole season')
         st.dataframe(packing_teams, hide_index=True)
