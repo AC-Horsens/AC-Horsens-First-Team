@@ -1041,7 +1041,7 @@ def Dashboard():
         st.pyplot(fig)
         df_xg_plot = df_xg_plot[['playerName','321']]
         df_xg_plot = df_xg_plot.groupby('playerName')['321'].sum().reset_index()
-        df_xg_plot = df_xg_plot.sort_values('321')
+        df_xg_plot = df_xg_plot.sort_values('321',ascending=False)
         st.dataframe(df_xg_plot,hide_index=True)
     def passes():
         
