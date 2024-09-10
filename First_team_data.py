@@ -1039,6 +1039,7 @@ def Dashboard():
             ax.text(row['x'], row['y'], f"{row['playerName']}\n{row['321']:.2f}", fontsize=6, ha='center', va='center')
         
         st.pyplot(fig)
+        df_xg_plot = df_xg_plot[['playerName','321']]
         st.dataframe(df_xg_plot)
     def passes():
         
