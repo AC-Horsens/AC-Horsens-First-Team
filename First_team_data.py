@@ -1040,7 +1040,8 @@ def Dashboard():
         
         st.pyplot(fig)
         df_xg_plot = df_xg_plot[['playerName','321']]
-        st.dataframe(df_xg_plot)
+        df_xg_plot = df_xg_plot.groupby('playerName')['321'].sum().reset_index()
+        st.dataframe(df_xg_plot,hide_index=True)
     def passes():
         
         df_matchstats = load_match_stats(columns=['contestantId','date', 'label', 'successfulOpenPlayPass', 'openPlayPass'])
