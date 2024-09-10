@@ -1232,7 +1232,7 @@ def Dashboard():
         df_packing = df_packing[df_packing['pass_receiver'] != None]
         df_packing = df_packing[df_packing['bypassed_opponents'] < 11]
 
-        packing_teams = df_packing.groupby('team_name')[['bypassed_opponents','bypassed_defenders']].sum().reset_index()
+        packing_teams = df_packing.groupby(['team_name','label'])[['bypassed_opponents','bypassed_defenders']].sum().reset_index()
         packing_teams = packing_teams.sort_values(by='bypassed_opponents', ascending=False)
         st.header('Whole season')
         st.dataframe(packing_teams, hide_index=True)
