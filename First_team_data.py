@@ -1039,7 +1039,7 @@ def Dashboard():
             ax.text(row['x'], row['y'], f"{row['playerName']}\n{row['321']:.2f}", fontsize=6, ha='center', va='center')
         
         st.pyplot(fig)
-        
+        st.dataframe(df_xg_plot)
     def passes():
         
         df_matchstats = load_match_stats(columns=['contestantId','date', 'label', 'successfulOpenPlayPass', 'openPlayPass'])
