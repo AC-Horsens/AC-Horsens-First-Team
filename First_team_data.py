@@ -2353,7 +2353,7 @@ def League_stats():
     df_straight_for_plot_right, df_straight_for_plot_left = split_data(df_straight_for_plot)
     df_short_for_plot_right, df_short_for_plot_left = split_data(df_short_for_plot)
     # Create a figure with six subplots (2 rows, 3 columns)
-    fig, axs = plt.subplots(4, 2, figsize=(24, 19))  # 2 rows, 3 columns
+    fig, axs = plt.subplots(4, 2, figsize=(24, 19))  # 4 rows, 2 columns
 
     # Plot for inswingers
     pitch_inswinger_right = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
@@ -2362,15 +2362,13 @@ def League_stats():
     pitch_inswinger_right.draw(ax=axs[0, 0])
     pitch_inswinger_left.draw(ax=axs[0, 1])
 
-    for _, row in df_inswingers_for_plot_right.iterrows():
-        x_start, y_start = row['x'], row['y']
-        x_end, y_end = row['140.0'], row['141.0']
-        pitch_inswinger_right.arrows(x_start, y_start, x_end, y_end, width=1, headwidth=2, headlength=2, color='blue', ax=axs[0, 0])
+    # Extract end locations for inswingers
+    end_locations_right = np.array(df_inswingers_for_plot_right[['140.0', '141.0']])
+    end_locations_left = np.array(df_inswingers_for_plot_left[['140.0', '141.0']])
 
-    for _, row in df_inswingers_for_plot_left.iterrows():
-        x_start, y_start = row['x'], row['y']
-        x_end, y_end = row['140.0'], row['141.0']
-        pitch_inswinger_left.arrows(x_start, y_start, x_end, y_end, width=1, headwidth=2, headlength=2, color='blue', ax=axs[0, 1])
+    # Plot heatmaps for inswingers
+    pitch_inswinger_right.heatmap(end_locations_right, ax=axs[0, 0], cmap='Blues', edgecolors='none')
+    pitch_inswinger_left.heatmap(end_locations_left, ax=axs[0, 1], cmap='Blues', edgecolors='none')
 
     axs[0, 0].set_title("Inswingers - Left Side")
     axs[0, 1].set_title("Inswingers - Right Side")
@@ -2382,15 +2380,13 @@ def League_stats():
     pitch_outswinger_right.draw(ax=axs[1, 0])
     pitch_outswinger_left.draw(ax=axs[1, 1])
 
-    for _, row in df_outswingers_for_plot_right.iterrows():
-        x_start, y_start = row['x'], row['y']
-        x_end, y_end = row['140.0'], row['141.0']
-        pitch_outswinger_right.arrows(x_start, y_start, x_end, y_end, width=1, headwidth=2, headlength=2, color='red', ax=axs[1, 0])
+    # Extract end locations for outswingers
+    end_locations_right = np.array(df_outswingers_for_plot_right[['140.0', '141.0']])
+    end_locations_left = np.array(df_outswingers_for_plot_left[['140.0', '141.0']])
 
-    for _, row in df_outswingers_for_plot_left.iterrows():
-        x_start, y_start = row['x'], row['y']
-        x_end, y_end = row['140.0'], row['141.0']
-        pitch_outswinger_left.arrows(x_start, y_start, x_end, y_end, width=1, headwidth=2, headlength=2, color='red', ax=axs[1, 1])
+    # Plot heatmaps for outswingers
+    pitch_outswinger_right.heatmap(end_locations_right, ax=axs[1, 0], cmap='Reds', edgecolors='none')
+    pitch_outswinger_left.heatmap(end_locations_left, ax=axs[1, 1], cmap='Reds', edgecolors='none')
 
     axs[1, 0].set_title("Outswingers - Left Side")
     axs[1, 1].set_title("Outswingers - Right Side")
@@ -2400,45 +2396,41 @@ def League_stats():
     pitch_straight_left = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
 
     pitch_straight_right.draw(ax=axs[2, 0])
-    pitch_straight_left.draw(ax=axs[2,1])
+    pitch_straight_left.draw(ax=axs[2, 1])
 
-    for _, row in df_straight_for_plot_right.iterrows():
-        x_start, y_start = row['x'], row['y']
-        x_end, y_end = row['140.0'], row['141.0']
-        pitch_straight_right.arrows(x_start, y_start, x_end, y_end, width=1, headwidth=2, headlength=2, color='black', ax=axs[2, 0])
+    # Extract end locations for straight set pieces
+    end_locations_right = np.array(df_straight_for_plot_right[['140.0', '141.0']])
+    end_locations_left = np.array(df_straight_for_plot_left[['140.0', '141.0']])
 
-    for _, row in df_straight_for_plot_left.iterrows():
-        x_start, y_start = row['x'], row['y']
-        x_end, y_end = row['140.0'], row['141.0']
-        pitch_straight_left.arrows(x_start, y_start, x_end, y_end, width=1, headwidth=2, headlength=2, color='black', ax=axs[2, 1])
+    # Plot heatmaps for straight set pieces
+    pitch_straight_right.heatmap(end_locations_right, ax=axs[2, 0], cmap='Greys', edgecolors='none')
+    pitch_straight_left.heatmap(end_locations_left, ax=axs[2, 1], cmap='Greys', edgecolors='none')
 
+    axs[2, 0].set_title("Straight - Left Side")
+    axs[2, 1].set_title("Straight - Right Side")
 
-    axs[2, 0].set_title("Straight - Left side")
-    axs[2, 1].set_title("Straight - Right side")
-
+    # Plot for short set pieces
     pitch_short_right = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
     pitch_short_left = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
 
     pitch_short_right.draw(ax=axs[3, 0])
     pitch_short_left.draw(ax=axs[3, 1])
 
-    for _, row in df_short_for_plot_right.iterrows():
-        x_start, y_start = row['x'], row['y']
-        x_end, y_end = row['140.0'], row['141.0']
-        pitch_short_right.arrows(x_start, y_start, x_end, y_end, width=1, headwidth=2, headlength=2, color='yellow', ax=axs[3, 0])
+    # Extract end locations for short set pieces
+    end_locations_right = np.array(df_short_for_plot_right[['140.0', '141.0']])
+    end_locations_left = np.array(df_short_for_plot_left[['140.0', '141.0']])
 
-    for _, row in df_short_for_plot_left.iterrows():
-        x_start, y_start = row['x'], row['y']
-        x_end, y_end = row['140.0'], row['141.0']
-        pitch_short_left.arrows(x_start, y_start, x_end, y_end, width=1, headwidth=2, headlength=2, color='yellow', ax=axs[3, 1])
+    # Plot heatmaps for short set pieces
+    pitch_short_right.heatmap(end_locations_right, ax=axs[3, 0], cmap='YlOrBr', edgecolors='none')
+    pitch_short_left.heatmap(end_locations_left, ax=axs[3, 1], cmap='YlOrBr', edgecolors='none')
 
     axs[3, 0].set_title("Short - Left Side")
     axs[3, 1].set_title("Short - Right Side")
 
-
-    # Optionally, adjust layout to avoid overlap
+    # Adjust layout to avoid overlap
     plt.tight_layout()
     st.pyplot(fig)
+
     col1,col2,col3,col4 = st.columns(4)
     with col1:
         st.write('Inswingers',bold=True)
