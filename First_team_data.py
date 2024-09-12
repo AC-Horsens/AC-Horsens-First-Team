@@ -2357,7 +2357,7 @@ def League_stats():
 
     with col2:
         st.header('Right side')
-        pitch = Pitch(pitch_type='opta',half=True,line_zorder=2, pitch_color='grass', line_color='white')
+        pitch = VerticalPitch(pitch_type='opta',half=True,line_zorder=2, pitch_color='grass', line_color='white')
         fig, ax = pitch.draw()
 
         # Extract coordinates based on user selection
