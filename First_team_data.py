@@ -2343,14 +2343,6 @@ def League_stats():
     df_short_for_plot = df_short[(df_short['6.0'] == True) & (df_short['212.0'] < 15)]
     df_short_for_plot = df_short_for_plot[['playerName','sequenceId', 'x', 'y', '140.0', '141.0','321.0_full','sequence_xg']]
     
-    df_inswingers_for_plot_right.dropna(subset=['140.0', '141.0'], inplace=True)
-    df_inswingers_for_plot_left.dropna(subset=['140.0', '141.0'], inplace=True)
-    df_outswingers_for_plot_right.dropna(subset=['140.0', '141.0'], inplace=True)
-    df_outswingers_for_plot_left.dropna(subset=['140.0', '141.0'], inplace=True)
-    df_straight_for_plot_right.dropna(subset=['140.0', '141.0'], inplace=True)
-    df_straight_for_plot_left.dropna(subset=['140.0', '141.0'], inplace=True)
-    df_short_for_plot_right.dropna(subset=['140.0', '141.0'], inplace=True)
-    df_short_for_plot_left.dropna(subset=['140.0', '141.0'], inplace=True)
 
     # Split data based on y-coordinate
     def split_data(df):
@@ -2360,6 +2352,16 @@ def League_stats():
     df_outswingers_for_plot_right, df_outswingers_for_plot_left = split_data(df_outswingers_for_plot)
     df_straight_for_plot_right, df_straight_for_plot_left = split_data(df_straight_for_plot)
     df_short_for_plot_right, df_short_for_plot_left = split_data(df_short_for_plot)
+    
+    df_inswingers_for_plot_right.dropna(subset=['140.0', '141.0'], inplace=True)
+    df_inswingers_for_plot_left.dropna(subset=['140.0', '141.0'], inplace=True)
+    df_outswingers_for_plot_right.dropna(subset=['140.0', '141.0'], inplace=True)
+    df_outswingers_for_plot_left.dropna(subset=['140.0', '141.0'], inplace=True)
+    df_straight_for_plot_right.dropna(subset=['140.0', '141.0'], inplace=True)
+    df_straight_for_plot_left.dropna(subset=['140.0', '141.0'], inplace=True)
+    df_short_for_plot_right.dropna(subset=['140.0', '141.0'], inplace=True)
+    df_short_for_plot_left.dropna(subset=['140.0', '141.0'], inplace=True)
+
     # Create a figure with six subplots (2 rows, 3 columns)
     fig, axs = plt.subplots(4, 2, figsize=(24, 19))  # 4 rows, 2 columns
 
