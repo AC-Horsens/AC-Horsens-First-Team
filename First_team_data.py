@@ -2376,7 +2376,6 @@ def League_stats():
         st.write('Inswingers')
         st.pyplot(fig)
 
-        pitch = Pitch(pitch_type='opta',line_zorder=2, pitch_color='grass', line_color='white')
         fig, ax = pitch.draw()
 
         # Extract coordinates based on user selection
@@ -2394,7 +2393,6 @@ def League_stats():
         st.write('Outswingers')
         st.pyplot(fig)
 
-        pitch = Pitch(pitch_type='opta',line_zorder=2, pitch_color='grass', line_color='white')
         fig, ax = pitch.draw()
 
         # Extract coordinates based on user selection
@@ -2412,7 +2410,6 @@ def League_stats():
         st.write('Straights')
         st.pyplot(fig)
 
-        pitch = Pitch(pitch_type='opta',line_zorder=2, pitch_color='grass', line_color='white')
         fig, ax = pitch.draw()
 
         # Extract coordinates based on user selection
@@ -2433,7 +2430,6 @@ def League_stats():
 
     with col1:
         st.header('Left side')
-        pitch = Pitch(pitch_type='opta',line_zorder=2, pitch_color='grass', line_color='white')
         fig, ax = pitch.draw()
 
         # Extract coordinates based on user selection
@@ -2451,7 +2447,6 @@ def League_stats():
         st.write('Inswingers')
         st.pyplot(fig)
 
-        pitch = Pitch(pitch_type='opta',line_zorder=2, pitch_color='grass', line_color='white')
         fig, ax = pitch.draw()
 
         # Extract coordinates based on user selection
@@ -2469,7 +2464,6 @@ def League_stats():
         st.write('Outswingers')
         st.pyplot(fig)
 
-        pitch = Pitch(pitch_type='opta',line_zorder=2, pitch_color='grass', line_color='white')
         fig, ax = pitch.draw()
 
         # Extract coordinates based on user selection
@@ -2487,7 +2481,6 @@ def League_stats():
         st.write('Straights')
         st.pyplot(fig)
 
-        pitch = Pitch(pitch_type='opta',line_zorder=2, pitch_color='grass', line_color='white')
         fig, ax = pitch.draw()
 
         # Extract coordinates based on user selection
