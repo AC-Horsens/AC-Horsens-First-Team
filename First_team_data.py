@@ -2353,12 +2353,11 @@ def League_stats():
     df_straight_for_plot_right, df_straight_for_plot_left = split_data(df_straight_for_plot)
     df_short_for_plot_right, df_short_for_plot_left = split_data(df_short_for_plot)
     # Create a figure with six subplots (2 rows, 3 columns)
-    fig, axs = plt.subplots(4, 2, figsize=(24, 19))  # 2 rows, 3 columns
     col1, col2 = st.columns(2)
 
     with col2:
         st.header('Right side')
-        pitch = Pitch(pitch_type='opta',line_zorder=2, pitch_color='grass', line_color='white')
+        pitch = Pitch(pitch_type='opta',half=True,line_zorder=2, pitch_color='grass', line_color='white')
         fig, ax = pitch.draw()
 
         # Extract coordinates based on user selection
