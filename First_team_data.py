@@ -2354,91 +2354,157 @@ def League_stats():
     df_short_for_plot_right, df_short_for_plot_left = split_data(df_short_for_plot)
     # Create a figure with six subplots (2 rows, 3 columns)
     fig, axs = plt.subplots(4, 2, figsize=(24, 19))  # 2 rows, 3 columns
+    col1, col2 = st.columns(2)
 
-    # Plot for inswingers
-    pitch_inswinger_right = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
-    pitch_inswinger_left = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
+    with col2:
+        st.header('Right side')
+        pitch = Pitch(pitch_type='opta',line_zorder=2, pitch_color='grass', line_color='white')
+        fig, ax = pitch.draw()
 
-    pitch_inswinger_right.draw(ax=axs[0, 0])
-    pitch_inswinger_left.draw(ax=axs[0, 1])
+        # Extract coordinates based on user selection
+        x_coords = df_inswingers_for_plot_right['140.0']
+        y_coords = df_inswingers_for_plot_right['141.0']
 
-    for _, row in df_inswingers_for_plot_right.iterrows():
-        x_start, y_start = row['x'], row['y']
-        x_end, y_end = row['140.0'], row['141.0']
-        pitch_inswinger_right.arrows(x_start, y_start, x_end, y_end, width=1, headwidth=2, headlength=2, color='blue', ax=axs[0, 0])
+        # Plot the heatmap
+        fig.set_facecolor('#22312b')
+        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50)) # Adjust bins as needed
+        bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
+        pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='#22312b')
 
-    for _, row in df_inswingers_for_plot_left.iterrows():
-        x_start, y_start = row['x'], row['y']
-        x_end, y_end = row['140.0'], row['141.0']
-        pitch_inswinger_left.arrows(x_start, y_start, x_end, y_end, width=1, headwidth=2, headlength=2, color='blue', ax=axs[0, 1])
+        pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
 
-    axs[0, 0].set_title("Inswingers - Left Side")
-    axs[0, 1].set_title("Inswingers - Right Side")
+        st.write('Inswingers')
+        st.pyplot(fig)
 
-    # Plot for outswingers
-    pitch_outswinger_right = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
-    pitch_outswinger_left = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
+        pitch = Pitch(pitch_type='opta',line_zorder=2, pitch_color='grass', line_color='white')
+        fig, ax = pitch.draw()
 
-    pitch_outswinger_right.draw(ax=axs[1, 0])
-    pitch_outswinger_left.draw(ax=axs[1, 1])
+        # Extract coordinates based on user selection
+        x_coords = df_outswingers_for_plot_right['140.0']
+        y_coords = df_outswingers_for_plot_right['141.0']
 
-    for _, row in df_outswingers_for_plot_right.iterrows():
-        x_start, y_start = row['x'], row['y']
-        x_end, y_end = row['140.0'], row['141.0']
-        pitch_outswinger_right.arrows(x_start, y_start, x_end, y_end, width=1, headwidth=2, headlength=2, color='red', ax=axs[1, 0])
+        # Plot the heatmap
+        fig.set_facecolor('#22312b')
+        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50)) # Adjust bins as needed
+        bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
+        pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='#22312b')
 
-    for _, row in df_outswingers_for_plot_left.iterrows():
-        x_start, y_start = row['x'], row['y']
-        x_end, y_end = row['140.0'], row['141.0']
-        pitch_outswinger_left.arrows(x_start, y_start, x_end, y_end, width=1, headwidth=2, headlength=2, color='red', ax=axs[1, 1])
+        pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
 
-    axs[1, 0].set_title("Outswingers - Left Side")
-    axs[1, 1].set_title("Outswingers - Right Side")
+        st.write('Outswingers')
+        st.pyplot(fig)
 
-    # Plot for straight set pieces
-    pitch_straight_right = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
-    pitch_straight_left = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
+        pitch = Pitch(pitch_type='opta',line_zorder=2, pitch_color='grass', line_color='white')
+        fig, ax = pitch.draw()
 
-    pitch_straight_right.draw(ax=axs[2, 0])
-    pitch_straight_left.draw(ax=axs[2,1])
+        # Extract coordinates based on user selection
+        x_coords = df_straight_for_plot_right['140.0']
+        y_coords = df_straight_for_plot_right['141.0']
 
-    for _, row in df_straight_for_plot_right.iterrows():
-        x_start, y_start = row['x'], row['y']
-        x_end, y_end = row['140.0'], row['141.0']
-        pitch_straight_right.arrows(x_start, y_start, x_end, y_end, width=1, headwidth=2, headlength=2, color='black', ax=axs[2, 0])
+        # Plot the heatmap
+        fig.set_facecolor('#22312b')
+        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50)) # Adjust bins as needed
+        bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
+        pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='#22312b')
 
-    for _, row in df_straight_for_plot_left.iterrows():
-        x_start, y_start = row['x'], row['y']
-        x_end, y_end = row['140.0'], row['141.0']
-        pitch_straight_left.arrows(x_start, y_start, x_end, y_end, width=1, headwidth=2, headlength=2, color='black', ax=axs[2, 1])
+        pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
 
+        st.write('Straights')
+        st.pyplot(fig)
 
-    axs[2, 0].set_title("Straight - Left side")
-    axs[2, 1].set_title("Straight - Right side")
+        pitch = Pitch(pitch_type='opta',line_zorder=2, pitch_color='grass', line_color='white')
+        fig, ax = pitch.draw()
 
-    pitch_short_right = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
-    pitch_short_left = VerticalPitch(pitch_type='opta', line_color='white', pitch_color='grass', half=True, corner_arcs=True)
+        # Extract coordinates based on user selection
+        x_coords = df_short_for_plot_right['140.0']
+        y_coords = df_short_for_plot_right['141.0']
 
-    pitch_short_right.draw(ax=axs[3, 0])
-    pitch_short_left.draw(ax=axs[3, 1])
+        # Plot the heatmap
+        fig.set_facecolor('#22312b')
+        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50)) # Adjust bins as needed
+        bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
+        pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='#22312b')
 
-    for _, row in df_short_for_plot_right.iterrows():
-        x_start, y_start = row['x'], row['y']
-        x_end, y_end = row['140.0'], row['141.0']
-        pitch_short_right.arrows(x_start, y_start, x_end, y_end, width=1, headwidth=2, headlength=2, color='yellow', ax=axs[3, 0])
+        pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
 
-    for _, row in df_short_for_plot_left.iterrows():
-        x_start, y_start = row['x'], row['y']
-        x_end, y_end = row['140.0'], row['141.0']
-        pitch_short_left.arrows(x_start, y_start, x_end, y_end, width=1, headwidth=2, headlength=2, color='yellow', ax=axs[3, 1])
-
-    axs[3, 0].set_title("Short - Left Side")
-    axs[3, 1].set_title("Short - Right Side")
+        st.write('Short')
+        st.pyplot(fig)
 
 
-    # Optionally, adjust layout to avoid overlap
-    plt.tight_layout()
-    st.pyplot(fig)
+    with col1:
+        st.header('Left side')
+        pitch = Pitch(pitch_type='opta',line_zorder=2, pitch_color='grass', line_color='white')
+        fig, ax = pitch.draw()
+
+        # Extract coordinates based on user selection
+        x_coords = df_inswingers_for_plot_left['140.0']
+        y_coords = df_inswingers_for_plot_left['141.0']
+
+        # Plot the heatmap
+        fig.set_facecolor('#22312b')
+        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50)) # Adjust bins as needed
+        bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
+        pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='#22312b')
+
+        pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
+
+        st.write('Inswingers')
+        st.pyplot(fig)
+
+        pitch = Pitch(pitch_type='opta',line_zorder=2, pitch_color='grass', line_color='white')
+        fig, ax = pitch.draw()
+
+        # Extract coordinates based on user selection
+        x_coords = df_outswingers_for_plot_left['140.0']
+        y_coords = df_outswingers_for_plot_left['141.0']
+
+        # Plot the heatmap
+        fig.set_facecolor('#22312b')
+        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50)) # Adjust bins as needed
+        bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
+        pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='#22312b')
+
+        pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
+
+        st.write('Outswingers')
+        st.pyplot(fig)
+
+        pitch = Pitch(pitch_type='opta',line_zorder=2, pitch_color='grass', line_color='white')
+        fig, ax = pitch.draw()
+
+        # Extract coordinates based on user selection
+        x_coords = df_straight_for_plot_left['140.0']
+        y_coords = df_straight_for_plot_left['141.0']
+
+        # Plot the heatmap
+        fig.set_facecolor('#22312b')
+        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50)) # Adjust bins as needed
+        bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
+        pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='#22312b')
+
+        pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
+
+        st.write('Straights')
+        st.pyplot(fig)
+
+        pitch = Pitch(pitch_type='opta',line_zorder=2, pitch_color='grass', line_color='white')
+        fig, ax = pitch.draw()
+
+        # Extract coordinates based on user selection
+        x_coords = df_short_for_plot_left['140.0']
+        y_coords = df_short_for_plot_left['141.0']
+
+        # Plot the heatmap
+        fig.set_facecolor('#22312b')
+        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50)) # Adjust bins as needed
+        bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
+        pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='#22312b')
+
+        pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
+
+        st.write('Short')
+        st.pyplot(fig)
+
     col1,col2,col3,col4 = st.columns(4)
     with col1:
         st.write('Inswingers',bold=True)
@@ -2487,8 +2553,6 @@ def League_stats():
         average_player_xg_outswingers = average_player_xg_outswingers[average_player_xg_outswingers['player_xg'] > 0]
         average_player_xg_outswingers = average_player_xg_outswingers.sort_values(by='player_xg', ascending=False)
         st.dataframe(average_player_xg_outswingers,hide_index=True)
-
-
 
 def League_stats_superliga():
     matchstats_df = pd.read_csv(r'matchstats_all DNK_Superliga_2024_2025.csv')
