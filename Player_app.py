@@ -935,7 +935,7 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
 
     Bolde_modtaget = df[df['pass_receiver'] == player_name]
 
-    Bolde_modtaget = Bolde_modtaget.count_values('playerName')
+    Bolde_modtaget = Bolde_modtaget['playerName'].value_counts()
     st.dataframe(Bolde_modtaget)
     Bolde_modtaget_til = Bolde_modtaget[['140.0','141.0']]
 
