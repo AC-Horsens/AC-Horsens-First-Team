@@ -3060,195 +3060,280 @@ Hvidovre,2719464435,881,1,90,57,0,92.0,23.7,A. Smed,311.0,200.0,NaN,NaN,Roskilde
 Hvidovre,2719465713,897,1,92,29,1,13.1,86.3,D. Stenderup,318.0,206.0,NaN,NaN,Roskilde vs Hvidovre,2024-09-13,true,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,36.7,0.00000129,NaN
 Hvidovre,2719466841,910,1,93,56,1,45.5,32.8,M. Spelmann,323.0,210.0,NaN,NaN,Roskilde vs Hvidovre,2024-09-13,true,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,16.2,0.00023035,NaN
 Hvidovre,2719468357,923,1,90,32,1,43.6,90.8,A. Smed,310.0,200.0,NaN,NaN,Roskilde vs Hvidovre,2024-09-13,true,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,10.1,0.00000906,NaN
-Vendsyssel,2719762659,13,1,0,56,1,39.0,78.2,O. Øhlenschlæger,4.0,3.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,7.0,0.00000954,NaN
-Hillerød,2719764729,32,1,4,3,0,31.1,90.5,G. Arndal-Lauritzen,13.0,10.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,45.0,NaN,NaN
-Hillerød,2719766967,66,1,6,43,0,99.5,99.5,T. Arndal,22.0,16.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,24.6,NaN,NaN
-Vendsyssel,2719769363,88,1,9,36,1,23.3,15.0,M. Greve,31.0,19.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,45.7,0.00017841,NaN
-Hillerød,2719769827,97,1,10,10,1,22.7,93.6,G. Arndal-Lauritzen,33.0,20.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,30.4,0.00000078,NaN
-Vendsyssel,2719772655,125,1,13,44,0,99.5,99.5,K. Kusk,46.0,29.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,NaN,true,,NaN,true,NaN,NaN,NaN,NaN,33.3,NaN,NaN
-Vendsyssel,2719781035,206,1,27,52,0,32.5,87.7,O. Øhlenschlæger,80.0,57.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,62.1,NaN,NaN
-Hillerød,2719778143,210,1,21,22,0,99.5,0.5,T. Arndal,72.0,52.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,NaN,true,,NaN,true,NaN,NaN,NaN,NaN,26.7,NaN,NaN
-Hillerød,2719778583,217,1,22,14,0,99.5,99.5,T. Arndal,75.0,54.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,45.1,NaN,NaN
-Hillerød,2719781043,239,1,27,57,1,32.4,87.5,L. Bøje-Larsen,81.0,58.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,31.0,0.00000112,NaN
-Vendsyssel,2719782985,241,1,31,53,1,38.3,22.5,O. Øhlenschlæger,96.0,71.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,23.7,0.00014449,NaN
-Vendsyssel,2719787495,266,1,38,5,0,68.6,6.5,K. Kusk,108.0,81.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,39.7,NaN,NaN
-Hillerød,2719782557,269,1,31,11,1,47.2,46.4,J. Witt,90.0,66.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,39.6,0.00354472,NaN
-Hillerød,2719784801,287,1,34,42,0,89.0,11.4,T. Arndal,97.0,72.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,23.6,NaN,NaN
-Vendsyssel,2719790787,292,1,42,7,1,24.3,91.2,G. Mortensen,119.0,85.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,15.3,0.00000064,NaN
-Vendsyssel,2719792339,313,1,43,59,1,39.0,74.1,O. Øhlenschlæger,132.0,91.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,13.2,0.000008,NaN
-Hillerød,2719789645,334,1,40,48,0,99.5,99.5,A. Justinussen,116.0,84.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,26.3,NaN,NaN
-Hillerød,2719790431,340,1,41,41,1,58.0,83.5,G. Arndal-Lauritzen,118.0,84.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,12.7,0.00010019,NaN
-Hillerød,2719794177,377,1,45,58,0,25.0,85.0,A. Kappenberger,137.0,94.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,46.1,NaN,NaN
-Vendsyssel,2719808225,379,1,47,48,0,54.4,41.3,O. Øhlenschlæger,155.0,106.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,39.4,NaN,NaN
-Hillerød,2719795207,389,1,47,0,1,34.8,82.1,G. Arndal-Lauritzen,141.0,96.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,56.3,0.00054563,NaN
-Vendsyssel,2719816227,411,1,54,49,0,99.5,0.5,K. Kusk,166.0,112.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,36.9,NaN,NaN
-Hillerød,2719808963,431,1,48,27,0,26.1,25.9,K. Enghardt,157.0,107.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,33.9,NaN,NaN
-Vendsyssel,2719822121,439,1,59,49,1,24.8,30.7,M. Greve,182.0,120.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,44.1,0.00006651,NaN
-Hillerød,2719815549,459,1,54,15,0,100.0,99.6,A. Justinussen,164.0,111.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,29.4,NaN,NaN
-Hillerød,2719819123,482,1,57,16,0,99.5,99.5,A. Justinussen,173.0,115.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,24.5,NaN,NaN
-Vendsyssel,2719826353,488,1,63,25,0,99.5,99.5,R. Thellufsen,195.0,128.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,28.3,NaN,NaN
-Vendsyssel,2719830227,517,1,67,12,1,35.3,41.2,R. Thellufsen,208.0,136.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,10.1,0.00003095,NaN
-Vendsyssel,2719831765,538,1,68,45,1,33.4,18.3,M. Greve,212.0,138.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,8.0,0.00001112,NaN
-Hillerød,2719827747,539,1,64,39,1,12.9,45.2,A. Kappenberger,198.0,129.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,61.1,0.00023468,NaN
-Vendsyssel,2719836211,575,1,73,41,0,79.5,94.5,K. Kusk,228.0,148.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,25.8,NaN,NaN
-Hillerød,2719834189,592,1,71,25,0,41.2,88.0,N. Schmidt,221.0,145.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,40.5,NaN,NaN
-Vendsyssel,2719842631,602,1,79,32,0,72.9,94.4,M. Kaastrup,241.0,154.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,39.9,NaN,NaN
-Vendsyssel,2719842759,607,13,79,40,1,89.0,63.7,B. Clemmensen,243.0,154.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,NaN,NaN,,true,NaN,NaN,NaN,NaN,NaN,NaN,NaN,0.03413443639874458
-Hillerød,2719838359,616,1,75,43,1,35.1,54.9,J. Witt,233.0,149.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,9.1,0.00002253,NaN
-Vendsyssel,2719845123,634,1,81,49,0,99.5,99.5,K. Kusk,250.0,158.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,35.8,NaN,NaN
-Vendsyssel,2719845205,635,15,81,57,1,86.1,46.1,K. Kusk,251.0,158.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,0.0949048399925232
-Vendsyssel,2719845465,639,13,82,8,1,87.5,53.0,B. Clemmensen,252.0,158.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,0.016904639080166817
-Vendsyssel,2719850025,687,1,86,17,0,81.1,84.1,O. Øhlenschlæger,268.0,168.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,22.0,NaN,NaN
-Hillerød,2719852795,720,1,89,0,0,99.5,99.5,D. Johansen,277.0,173.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,39.0,NaN,NaN
-Hillerød,2719852851,722,15,89,6,1,91.7,43.4,J. Witt,278.0,173.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,0.056
-Hillerød,2719853025,727,15,89,16,1,85.5,47.9,M. Bay,280.0,173.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,0.0455
-Hillerød,2719853405,729,1,89,43,0,99.5,99.5,D. Johansen,281.0,173.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,29.3,NaN,NaN
-Hillerød,2719856637,754,1,93,2,1,26.9,22.8,A. Kappenberger,292.0,179.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,53.2,0.00049676,NaN
-Horsens,2719989829,14,1,1,23,1,32.8,70.2,O. Kolskogen,9.0,6.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,40.4,0.00059205,NaN
-OB,2719989483,20,1,1,12,1,56.1,8.9,A. Manneh,8.0,5.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,13.2,0.00002742,NaN
-Horsens,2719991195,20,1,2,18,0,9.5,10.6,K. Lusavec,11.0,8.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,57.8,NaN,NaN
-Horsens,2719992515,28,1,3,4,1,27.3,88.7,S. Ngabo,16.0,12.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,5.4,0.00000216,NaN
-OB,2719994705,41,1,4,13,1,45.5,91.4,A. Manneh,18.0,13.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,44.4,0.00004974,NaN
-Horsens,2720002965,71,1,7,53,1,99.5,0.5,O. Kjærgaard,28.0,20.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,true,,NaN,NaN,NaN,NaN,NaN,NaN,15.0,0.00128373,NaN
-OB,2720012263,111,1,12,9,0,99.5,99.5,N. Mickelson,43.0,31.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,27.3,NaN,NaN
-OB,2720018613,147,1,14,57,0,99.5,0.5,A. Manneh,52.0,37.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,26.2,NaN,NaN
-OB,2720025489,179,1,18,4,1,70.0,90.3,A. Manneh,63.0,41.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,18.8,0.00018131,NaN
-OB,2720027237,186,1,18,46,1,12.3,83.6,J. Gomez,66.0,43.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,15.8,0.00000042,NaN
-OB,2720039779,231,1,24,43,1,5.6,24.3,B. Paulsen,80.0,55.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,14.9,0.00000025,NaN
-OB,2720042279,244,1,26,0,1,26.7,89.7,A. Manneh,83.0,57.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,10.5,0.000001,NaN
-OB,2720043145,248,1,26,28,1,63.6,36.4,J. Bonde,84.0,57.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,23.7,0.00079208,NaN
-OB,2720053607,295,1,32,5,0,81.7,90.6,A. Manneh,105.0,69.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,26.7,NaN,NaN
-OB,2720064613,339,1,37,44,0,99.5,0.5,A. Manneh,120.0,77.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,32.2,NaN,NaN
-Horsens,2720070873,343,1,40,48,0,99.5,99.5,E. Frederiksen,128.0,82.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,39.8,NaN,NaN
-OB,2720067477,346,1,39,1,1,52.2,95.3,A. Manneh,124.0,79.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,47.2,0.00002723,NaN
-OB,2720077605,373,1,44,4,1,42.1,33.0,J. Bonde,139.0,91.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,6.5,0.00001665,NaN
-OB,2720102321,405,1,46,2,0,99.5,99.5,N. Mickelson,147.0,94.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,29.4,NaN,NaN
-OB,2720103333,407,1,47,2,0,99.6,0.5,A. Manneh,148.0,94.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,34.4,NaN,NaN
-Horsens,2720106059,450,1,49,42,1,99.5,99.5,E. Frederiksen,155.0,97.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,true,,NaN,NaN,NaN,NaN,NaN,NaN,11.8,0.00098345,NaN
-OB,2720114103,457,1,57,17,1,82.0,88.9,A. Manneh,180.0,112.0,NaN,1.0,Horsens vs OB,2024-09-14,true,NaN,,true,NaN,NaN,NaN,NaN,NaN,25.9,0.17525185,NaN
-OB,2720114107,458,16,57,20,1,95.4,56.9,B. Paulsen,180.0,112.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,NaN,,true,NaN,NaN,NaN,NaN,NaN,NaN,NaN,0.1498800814151764
-OB,2720117621,485,1,61,12,1,99.5,0.5,N. Mickelson,187.0,118.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,true,,NaN,true,NaN,NaN,NaN,NaN,35.2,0.18730128,NaN
-OB,2720123817,524,1,67,41,0,11.9,87.8,V. Myhra,203.0,128.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,58.8,NaN,NaN
-OB,2720128295,570,1,72,29,0,75.7,28.6,L. Owusu,225.0,140.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,23.1,NaN,NaN
-Horsens,2720123015,591,1,66,49,1,54.9,77.1,F. Christensen,202.0,127.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,20.9,0.00002802,NaN
-OB,2720134009,599,1,77,24,0,3.9,45.5,V. Myhra,240.0,144.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,60.0,NaN,NaN
-Horsens,2720124843,606,1,68,47,0,9.3,11.0,S. Hausner,206.0,129.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,53.4,NaN,NaN
-OB,2720135767,607,1,78,39,0,9.9,23.0,V. Myhra,244.0,148.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,71.4,NaN,NaN
-OB,2720136621,614,1,79,25,0,99.5,99.5,N. Mickelson,247.0,150.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,33.8,NaN,NaN
-OB,2720137473,618,1,80,8,0,99.6,0.7,N. Mickelson,249.0,150.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,true,,NaN,true,NaN,NaN,NaN,NaN,25.6,NaN,NaN
-Horsens,2720129867,670,1,73,55,1,99.5,99.5,E. Frederiksen,232.0,141.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,true,,NaN,NaN,NaN,NaN,NaN,NaN,11.7,0.00081338,NaN
-Horsens,2720129943,672,13,73,59,1,96.1,39.4,S. Pingel,232.0,141.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,0.0584
-OB,2720145409,677,1,87,8,0,99.5,99.5,N. Mickelson,266.0,162.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,29.0,NaN,NaN
-OB,2720146137,680,1,87,47,1,22.5,25.3,T. Slotsager,268.0,164.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,21.0,0.00001312,NaN
-Horsens,2720131173,682,1,75,3,0,99.5,99.5,E. Frederiksen,236.0,143.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,true,,NaN,true,NaN,NaN,NaN,NaN,38.9,NaN,NaN
-Horsens,2720131657,686,1,75,28,0,99.5,99.5,E. Frederiksen,238.0,143.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,true,,NaN,true,NaN,NaN,NaN,NaN,24.8,NaN,NaN
-OB,2720149813,708,1,91,40,1,66.0,36.9,L. Owusu,280.0,166.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,36.4,0.00724847,NaN
-Horsens,2720138625,717,1,81,4,0,11.4,42.1,M. Delač,250.0,151.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,59.0,NaN,NaN
-Horsens,2720141221,736,1,83,23,1,21.2,36.4,M. Delač,256.0,155.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,51.3,0.00002543,NaN
-Horsens,2720145795,765,1,87,24,1,20.5,28.3,S. Hausner,267.0,163.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,18.0,0.00000399,NaN
-Horsens,2720147429,784,1,89,3,0,99.5,0.5,E. Frederiksen,273.0,165.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,32.2,NaN,NaN
-Horsens,2720147581,787,15,89,11,1,90.4,53.4,C. Tapé,274.0,165.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,0.0537
-Horsens,2720148125,789,1,89,48,1,99.5,99.5,E. Frederiksen,275.0,165.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,true,,NaN,true,NaN,NaN,NaN,NaN,44.0,0.01231358,NaN
-Horsens,2720152181,829,1,94,24,1,99.7,99.2,E. Frederiksen,290.0,173.0,1.0,NaN,Horsens vs OB,2024-09-14,NaN,true,,NaN,true,NaN,NaN,NaN,NaN,33.9,0.02454238,NaN
-Horsens,2720152199,831,13,94,27,1,88.0,52.7,S. Pingel,290.0,173.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,0.0409
-HB Køge,2720168323,80,1,7,53,0,57.2,72.1,M. Jensen,23.0,12.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,,,,NaN,NaN,NaN,NaN,32.6,NaN,NaN
-Kolding,2720171869,92,1,10,44,0,59.3,17.8,M. Vestergård,29.0,15.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,,,,NaN,NaN,NaN,NaN,41.5,NaN,NaN
-Kolding,2720172923,96,1,11,35,1,30.9,11.3,C. Vestergaard,32.0,17.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,,,,NaN,NaN,NaN,NaN,18.5,0.0000054,NaN
-Kolding,2720180257,148,1,17,56,0,9.0,89.1,A. Nørager,46.0,23.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,,,,NaN,NaN,NaN,NaN,64.7,NaN,NaN
-HB Køge,2720179087,160,1,16,55,1,34.2,49.7,J. Arias,45.0,22.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,,,,NaN,NaN,NaN,NaN,14.8,0.00002175,NaN
-HB Køge,2720181305,178,1,18,58,1,55.2,60.9,M. Jensen,50.0,26.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,,,,NaN,NaN,NaN,NaN,14.5,0.00007364,NaN
-Kolding,2720186879,238,1,24,53,0,99.5,0.5,C. Jørgensen,70.0,41.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,NaN,true,,,,true,NaN,NaN,NaN,30.8,NaN,NaN
-HB Køge,2720194617,261,1,33,8,1,24.3,31.8,M. Gudmann,89.0,54.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,,,,NaN,NaN,NaN,NaN,17.7,0.00000125,NaN
-Kolding,2720196439,326,1,34,47,1,99.5,0.5,C. Jørgensen,93.0,55.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,NaN,true,,,,NaN,NaN,NaN,NaN,15.3,0.00187661,NaN
-Kolding,2720196515,329,15,34,52,1,92.2,50.4,S. Yatéké,93.0,55.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,NaN,NaN,,,,NaN,NaN,NaN,true,NaN,NaN,0.11551830917596817
-HB Køge,2720205779,339,1,42,25,1,36.3,21.5,M. Jakobsen,121.0,76.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,,,,NaN,NaN,NaN,NaN,37.9,0.00000778,NaN
-Kolding,2720200167,359,1,38,3,0,69.1,33.7,C. Jørgensen,103.0,61.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,,,,NaN,NaN,NaN,NaN,27.3,NaN,NaN
-Kolding,2720208403,438,1,44,47,0,99.5,0.5,C. Jørgensen,127.0,79.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,NaN,true,,,,true,NaN,NaN,NaN,34.8,NaN,NaN
-Kolding,2720213585,481,1,49,18,0,64.3,11.6,M. Vestergård,147.0,93.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,,,,NaN,NaN,NaN,NaN,39.7,NaN,NaN
-HB Køge,2720237319,484,1,56,9,1,10.8,96.3,H. Bonnesen,172.0,111.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,,,,NaN,NaN,NaN,NaN,27.8,0.00000052,NaN
-Kolding,2720230291,511,1,49,36,0,21.1,78.0,J. Ægidius,156.0,100.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,,,,NaN,NaN,NaN,NaN,49.4,NaN,NaN
-Kolding,2720236615,540,1,55,26,0,29.3,36.5,J. Ægidius,167.0,108.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,,,,NaN,NaN,NaN,NaN,47.8,NaN,NaN
-HB Køge,2720246663,576,1,65,1,1,64.7,82.9,N. Jakobsen,197.0,131.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,,,,NaN,NaN,NaN,NaN,34.2,0.00014867,NaN
-HB Køge,2720250281,626,1,68,56,1,34.7,38.6,H. Bonnesen,210.0,139.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,,,,NaN,NaN,NaN,NaN,11.4,0.00000981,NaN
-Kolding,2720250103,641,1,68,45,1,48.3,57.0,V. Westh,209.0,138.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,,,,NaN,NaN,NaN,NaN,18.4,0.00002623,NaN
-HB Køge,2720254207,669,1,73,3,1,71.7,73.5,M. Jensen,223.0,149.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,,,,NaN,NaN,NaN,NaN,19.2,0.00085813,NaN
-Kolding,2720266007,737,1,84,46,0,29.7,70.4,J. Ægidius,250.0,168.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,,,,NaN,NaN,NaN,NaN,52.4,NaN,NaN
-Kolding,2720267949,748,1,86,37,1,38.5,71.1,J. Vetter,257.0,172.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,,,,NaN,NaN,NaN,NaN,65.9,0.00080455,NaN
-Kolding,2720270651,766,1,89,57,1,83.9,5.9,C. Jørgensen,262.0,174.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,,,,NaN,NaN,NaN,NaN,57.1,0.00098205,NaN
-Kolding,2720271541,773,1,91,25,1,32.6,75.0,J. Ægidius,264.0,176.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,,,,NaN,NaN,NaN,NaN,50.2,0.00187277,NaN
-Kolding,2720272579,786,1,93,9,0,33.9,27.7,J. Vetter,272.0,184.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,,,,NaN,NaN,NaN,NaN,49.9,NaN,NaN
-HB Køge,2720269141,845,1,87,49,0,73.1,94.1,N. Jakobsen,259.0,173.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,,,,NaN,NaN,NaN,NaN,41.1,NaN,NaN
-B 93,2720743711,40,1,3,44,0,99.5,0.5,N. Mouritsen,12.0,9.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,38.0,NaN,NaN
-B 93,2720744307,42,1,4,22,0,99.5,99.5,N. Mouritsen,13.0,9.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,true,,NaN,true,NaN,NaN,NaN,NaN,27.7,NaN,NaN
-Esbjerg,2720745161,43,1,5,8,0,99.5,0.5,A. Lausen,15.0,10.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,true,,NaN,true,NaN,NaN,NaN,NaN,29.9,NaN,NaN
-Esbjerg,2720746231,50,1,6,3,1,24.1,28.8,A. Skipper,21.0,14.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,16.4,0.00000251,NaN
-Esbjerg,2720749757,79,1,8,45,0,99.5,99.5,A. Lausen,31.0,20.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,32.5,NaN,NaN
-Esbjerg,2720750459,83,1,9,23,0,99.5,99.5,A. Lausen,33.0,20.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,30.9,NaN,NaN
-B 93,2720752517,97,1,11,18,1,39.3,43.6,M. Wohlgemuth,40.0,25.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,14.9,0.00001456,NaN
-Esbjerg,2720761395,162,1,19,22,1,22.3,17.1,D. Gadegaard,60.0,42.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,58.7,0.00082829,NaN
-B 93,2720762539,209,1,20,51,1,32.6,60.0,N. Morberg,64.0,45.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,9.7,0.0000042,NaN
-Esbjerg,2720767767,243,1,27,24,1,52.6,69.0,Y. Bourhane,79.0,56.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,21.7,0.00002166,NaN
-B 93,2720769781,295,1,29,43,1,28.9,34.0,J. Egeris,85.0,59.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,19.5,0.00002764,NaN
-B 93,2720772733,325,1,32,34,1,99.5,0.5,N. Mouritsen,93.0,65.0,1.0,NaN,Esbjerg vs B 93,2024-09-15,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,43.0,0.01172089,NaN
-B 93,2720772741,327,15,32,38,1,97.0,63.6,E. Nnamani,93.0,65.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,0.018122557550668716
-B 93,2720773299,329,1,33,7,0,99.5,99.5,N. Mouritsen,94.0,65.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,true,,NaN,true,NaN,NaN,NaN,NaN,34.5,NaN,NaN
-B 93,2720773365,330,13,33,13,1,69.6,46.7,L. Henriksen,95.0,65.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,,NaN,NaN,NaN,NaN,true,true,NaN,NaN,0.00542957941070199
-Esbjerg,2720780801,344,1,39,27,1,69.1,4.7,J. Mortensen,112.0,76.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,29.6,0.00005491,NaN
-Esbjerg,2720784037,374,1,41,59,0,99.5,99.5,A. Lausen,119.0,80.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,39.6,NaN,NaN
-B 93,2720779039,378,1,37,51,1,9.6,90.3,N. Mouritsen,108.0,75.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,24.2,0.00000031,NaN
-B 93,2720779983,386,1,38,47,0,99.5,99.5,N. Mouritsen,110.0,75.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,true,,NaN,true,NaN,NaN,NaN,NaN,35.9,NaN,NaN
-Esbjerg,2720787157,390,1,44,34,1,30.0,91.2,T. Stagaard,126.0,84.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,26.3,0.00000175,NaN
-B 93,2720782597,400,1,40,45,1,36.9,91.2,M. Wohlgemuth,117.0,79.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,10.5,0.0000038,NaN
-Esbjerg,2720811629,443,1,51,3,0,77.7,3.8,A. Lausen,141.0,93.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,31.8,NaN,NaN
-Esbjerg,2720811691,444,13,51,7,1,80.6,31.0,M. Maden,142.0,93.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,,true,NaN,NaN,NaN,NaN,NaN,NaN,NaN,0.015392548404633999
-Esbjerg,2720818507,473,1,55,48,1,99.5,0.5,A. Lausen,159.0,103.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,true,,NaN,true,NaN,NaN,NaN,NaN,56.8,0.00100957,NaN
-Esbjerg,2720821967,499,1,58,30,1,36.1,61.1,N. Strunck,168.0,107.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,14.2,0.00000508,NaN
-Esbjerg,2720823623,507,1,59,48,1,66.6,15.3,J. Mortensen,169.0,107.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,25.7,0.00012408,NaN
-B 93,2720827003,609,1,62,22,1,28.0,15.6,J. Okore,172.0,108.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,14.8,0.00000277,NaN
-B 93,2720828015,617,1,63,21,1,99.5,0.5,N. Mouritsen,173.0,108.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,true,,NaN,NaN,NaN,NaN,NaN,NaN,9.2,0.00061616,NaN
-B 93,2720832467,641,1,67,12,1,62.4,93.0,N. Mouritsen,177.0,110.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,11.9,0.00034638,NaN
-B 93,2720832623,645,16,67,18,1,79.7,34.6,O. Jakobsen,178.0,110.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,,true,NaN,NaN,NaN,NaN,NaN,NaN,NaN,0.03610839694738388
-Esbjerg,2720854011,662,1,86,41,0,99.5,0.5,A. Lausen,235.0,151.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,true,,NaN,true,NaN,NaN,NaN,NaN,36.6,NaN,NaN
-Esbjerg,2720854107,665,15,86,48,1,75.8,48.3,N. Strunck,236.0,151.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,0.029340988025069237
-B 93,2720848641,774,1,81,38,1,55.3,69.6,M. Wohlgemuth,219.0,140.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,15.7,0.00019227,NaN
-B 93,2720851183,801,1,83,59,0,67.0,95.9,N. Mouritsen,226.0,146.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,32.4,NaN,NaN
-B 93,2720852705,815,1,85,16,1,99.5,0.5,N. Mouritsen,230.0,148.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,31.4,0.23720722,NaN
-B 93,2720853003,820,15,85,36,1,84.4,61.8,J. Voldby,232.0,148.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,0.05127672106027603
-B 93,2720858125,873,1,91,40,1,99.5,99.5,O. Jakobsen,255.0,164.0,NaN,1.0,Esbjerg vs B 93,2024-09-15,NaN,true,,NaN,true,NaN,NaN,NaN,true,39.4,0.03673405,NaN
-B 93,2720858175,875,16,91,44,1,92.0,43.1,N. Thomsen,255.0,164.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,0.045149076730012894
-Hobro,2721519959,32,1,2,57,1,61.4,44.6,Z. Hyltoft,13.0,8.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,true,NaN,,NaN,,NaN,NaN,NaN,NaN,24.4,0.00008593,NaN
-Hobro,2721521515,63,1,8,32,1,13.5,7.1,E. Søgaard,27.0,14.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,true,NaN,,NaN,,NaN,NaN,NaN,NaN,16.5,0.00000051,NaN
-Hobro,2721522285,87,1,10,55,0,99.7,99.8,V. Rasmussen,38.0,22.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,true,,NaN,,true,NaN,NaN,NaN,21.5,NaN,NaN
-Hobro,2721522915,113,1,13,9,0,99.5,0.5,L. Klitten,42.0,24.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,true,,NaN,,true,NaN,NaN,NaN,29.7,NaN,NaN
-Hobro,2721522993,117,13,13,21,1,74.9,30.6,L. Klitten,43.0,24.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,NaN,,NaN,,NaN,NaN,NaN,true,NaN,NaN,0.007642068900167942
-Hobro,2721523481,126,1,14,46,1,7.2,50.3,J. Dakir,48.0,28.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,true,NaN,,NaN,,NaN,NaN,NaN,NaN,28.8,0.0000021,NaN
-Fredericia,2721522383,131,1,11,22,1,8.4,51.3,V. Birksø,39.0,23.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,true,NaN,,NaN,,NaN,NaN,NaN,NaN,14.8,0.00000038,NaN
-Hobro,2721524433,151,1,17,51,1,99.4,0.5,L. Klitten,56.0,30.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,true,,NaN,,NaN,NaN,NaN,NaN,19.9,0.00518901,NaN
-Fredericia,2721523425,153,1,14,34,1,99.5,0.5,J. Jessen,47.0,27.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,true,,NaN,,true,NaN,NaN,NaN,28.7,0.06131448,NaN
-Hobro,2721527077,249,1,28,45,1,99.5,0.5,L. Klitten,96.0,56.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,true,,NaN,,true,NaN,NaN,NaN,41.8,0.01866751,NaN
-Hobro,2721528515,272,1,32,33,1,36.9,81.8,F. Dietz,109.0,64.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,true,NaN,,NaN,,NaN,NaN,NaN,NaN,22.7,0.00005744,NaN
-Hobro,2721528967,278,1,33,38,0,99.5,99.5,V. Rasmussen,110.0,64.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,true,,NaN,,true,NaN,NaN,NaN,35.4,NaN,NaN
-Fredericia,2721527223,282,1,29,33,0,11.4,44.3,V. Birksø,97.0,57.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,true,NaN,,NaN,,NaN,NaN,NaN,NaN,62.4,NaN,NaN
-Hobro,2721529497,288,1,34,49,1,27.8,23.3,E. Søgaard,118.0,68.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,true,NaN,,NaN,,NaN,NaN,NaN,NaN,9.4,0.00000423,NaN
-Fredericia,2721529789,336,1,35,34,1,29.8,66.1,W. Madsen,119.0,69.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,true,NaN,,NaN,,NaN,NaN,NaN,NaN,6.5,0.00000323,NaN
-Fredericia,2721532063,369,1,39,31,0,99.5,0.5,J. Jessen,133.0,79.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,true,,NaN,,true,NaN,NaN,NaN,27.8,NaN,NaN
-Hobro,2721535031,401,1,44,55,0,30.8,28.2,M. Jacobsen,149.0,90.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,true,NaN,,NaN,,NaN,NaN,NaN,NaN,66.0,NaN,NaN
-Hobro,2721542141,406,1,45,30,1,63.0,50.9,M. Kristensen,152.0,92.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,true,NaN,,NaN,,NaN,NaN,NaN,NaN,24.2,0.00011282,NaN
-Hobro,2721544097,434,1,49,47,0,45.9,32.7,M. Bruhn,167.0,102.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,true,NaN,,NaN,,NaN,NaN,NaN,NaN,23.2,NaN,NaN
-Fredericia,2721544859,472,1,51,14,1,6.9,54.3,V. Birksø,172.0,107.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,true,NaN,,NaN,,NaN,NaN,NaN,NaN,12.8,0.00000022,NaN
-Hobro,2721547109,499,1,55,38,1,99.5,0.5,L. Klitten,182.0,114.0,1.0,NaN,Fredericia vs Hobro,2024-09-16,NaN,true,,NaN,,true,NaN,NaN,NaN,33.9,0.16038928,NaN
-Hobro,2721547127,500,15,55,42,1,92.4,52.1,J. Cornelius,182.0,114.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,NaN,,NaN,,NaN,NaN,NaN,true,NaN,NaN,0.11913955211639404
-Hobro,2721547423,502,1,56,11,1,99.5,99.5,V. Rasmussen,183.0,114.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,true,,NaN,,NaN,NaN,NaN,NaN,22.6,0.00601109,NaN
-Hobro,2721548313,520,1,57,59,1,68.8,75.3,M. Kristensen,190.0,120.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,true,NaN,,NaN,,NaN,NaN,NaN,NaN,5.1,0.00128178,NaN
-Hobro,2721548669,527,1,58,38,1,99.5,99.5,M. Kristensen,191.0,120.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,true,,NaN,,true,NaN,NaN,NaN,40.8,0.02411333,NaN
-Hobro,2721550031,557,1,62,22,0,74.3,79.0,M. Kristensen,197.0,124.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,true,NaN,,NaN,,NaN,NaN,NaN,NaN,33.4,NaN,NaN
-Hobro,2721550375,572,1,63,33,1,50.9,24.6,M. Kristensen,202.0,126.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,true,NaN,,NaN,,NaN,NaN,NaN,NaN,20.0,0.00008434,NaN
-Fredericia,2721552489,606,1,71,2,1,75.2,21.2,W. Madsen,218.0,139.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,true,NaN,,NaN,,NaN,NaN,NaN,NaN,4.1,0.000971,NaN
-Fredericia,2721552549,608,15,71,11,1,90.8,57.5,J. Lindekilde,218.0,139.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,NaN,,true,,NaN,NaN,NaN,NaN,NaN,NaN,0.0288967564702034
-Fredericia,2721552567,610,1,71,19,1,99.5,99.5,A. Muçolli,219.0,139.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,true,,NaN,,NaN,NaN,NaN,NaN,13.0,0.00131172,NaN
-Fredericia,2721552601,612,15,71,26,1,84.2,74.4,A. Muçolli,219.0,139.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,NaN,,NaN,,NaN,NaN,NaN,true,NaN,NaN,0.022972306236624718
-Fredericia,2721552689,614,1,71,32,1,99.5,99.5,W. Madsen,220.0,139.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,true,,NaN,,NaN,NaN,NaN,NaN,21.1,0.00068015,NaN
-Hobro,2721562413,687,1,87,20,1,99.5,99.5,M. Kristensen,254.0,160.0,1.0,NaN,Fredericia vs Hobro,2024-09-16,NaN,true,,NaN,,true,NaN,NaN,NaN,31.0,0.04607952,NaN
-Hobro,2721562455,689,13,87,23,1,93.2,54.3,Z. Hyltoft,254.0,160.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,NaN,,NaN,,NaN,NaN,NaN,true,NaN,NaN,0.11551931500434875
-Hobro,2721564245,702,1,89,49,0,7.3,54.9,J. Dakir,257.0,162.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,true,NaN,,NaN,,NaN,NaN,NaN,NaN,63.0,NaN,NaN
-Hobro,2721565389,716,1,91,19,0,70.1,75.3,M. Kristensen,263.0,164.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,true,NaN,,NaN,,NaN,NaN,NaN,NaN,29.8,NaN,NaN
+Vendsyssel,2722259021,13,1,0,52,1,38.6,88.0,O. Øhlenschlæger,4.0,3.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,15.4,0.00000348,NaN
+Hillerød,2722261485,29,1,4,2,0,28.0,92.6,G. Arndal-Lauritzen,14.0,10.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,44.2,NaN,NaN
+Hillerød,2722263333,60,1,6,43,0,99.5,99.5,T. Arndal,23.0,16.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,29.9,NaN,NaN
+Vendsyssel,2722265449,86,1,9,35,1,26.3,14.9,M. Greve,32.0,19.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,42.9,0.00019057,NaN
+Hillerød,2722265863,94,1,10,10,1,23.8,95.7,G. Arndal-Lauritzen,34.0,20.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,29.0,0.00000064,NaN
+Vendsyssel,2722268755,124,1,13,42,0,99.5,99.5,K. Kusk,47.0,29.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,NaN,true,,NaN,true,NaN,NaN,NaN,NaN,34.0,NaN,NaN
+Hillerød,2722273721,208,1,21,24,1,99.5,0.5,T. Arndal,75.0,52.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,NaN,true,,NaN,true,NaN,NaN,NaN,NaN,26.3,0.02108736,NaN
+Hillerød,2722273833,213,13,21,37,1,77.7,29.5,A. Justinussen,76.0,52.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,NaN,NaN,,NaN,NaN,NaN,NaN,true,true,NaN,NaN,0.016481705009937286
+Hillerød,2722274227,215,1,22,17,0,99.5,99.5,T. Arndal,77.0,52.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,43.4,NaN,NaN
+Hillerød,2722274249,217,13,22,23,1,91.9,43.1,C. Allen,79.0,52.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,NaN,NaN,,NaN,NaN,NaN,true,NaN,true,NaN,NaN,0.056839536875486374
+Hillerød,2722274261,218,15,22,21,1,91.7,30.4,J. Witt,78.0,52.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,0.026911865919828415
+Vendsyssel,2722277923,227,1,28,15,0,29.3,93.5,G. Mortensen,93.0,59.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,65.1,NaN,NaN
+Hillerød,2722276083,230,1,25,34,1,50.3,10.1,K. Enghardt,84.0,56.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,13.7,0.00003723,NaN
+Hillerød,2722276551,236,1,26,18,1,99.5,99.5,T. Arndal,85.0,56.0,1.0,NaN,Vendsyssel vs Hillerød,2024-09-14,NaN,true,,NaN,NaN,NaN,NaN,NaN,NaN,27.2,0.00464425,NaN
+Hillerød,2722276553,237,15,26,21,1,80.0,70.6,M. Due Grandt,85.0,56.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,0.016800763085484505
+Hillerød,2722277587,242,1,27,45,1,68.2,76.7,L. Bøje-Larsen,91.0,58.0,1.0,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,32.1,0.1341973,NaN
+Hillerød,2722277591,243,15,27,48,1,91.4,45.5,G. Arndal-Lauritzen,91.0,58.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,NaN,NaN,,true,NaN,NaN,NaN,NaN,NaN,NaN,NaN,0.05455196276307106
+Vendsyssel,2722279481,249,1,30,49,1,39.3,79.3,A. Simon Okosun,106.0,69.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,13.1,0.00000555,NaN
+Vendsyssel,2722280453,263,1,32,20,0,36.8,8.8,M. Lassen,113.0,73.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,32.5,NaN,NaN
+Hillerød,2722279955,278,1,31,35,1,48.2,48.5,J. Witt,107.0,70.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,39.1,0.00514473,NaN
+Hillerød,2722281985,297,1,35,7,0,88.0,14.7,T. Arndal,116.0,74.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,27.6,NaN,NaN
+Vendsyssel,2722283453,297,1,38,29,0,63.9,10.0,K. Kusk,127.0,81.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,33.3,NaN,NaN
+Vendsyssel,2722284965,320,1,42,31,1,24.9,90.5,G. Mortensen,137.0,85.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,12.1,0.00000084,NaN
+Vendsyssel,2722285643,344,1,44,23,1,42.3,81.7,O. Øhlenschlæger,147.0,91.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,13.8,0.00001332,NaN
+Hillerød,2722284585,345,1,41,13,0,99.5,99.5,A. Justinussen,134.0,84.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,28.2,NaN,NaN
+Hillerød,2722284851,353,1,42,5,1,61.7,80.9,G. Arndal-Lauritzen,136.0,84.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,11.2,0.00013244,NaN
+Hillerød,2722286077,387,1,45,54,0,22.1,86.9,A. Kappenberger,152.0,94.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,54.8,NaN,NaN
+Hillerød,2722286535,402,1,47,21,1,39.5,85.9,G. Arndal-Lauritzen,159.0,100.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,49.9,0.00044589,NaN
+Vendsyssel,2722311141,432,1,47,50,0,57.9,27.4,M. Greve,174.0,112.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,34.3,NaN,NaN
+Hillerød,2722311285,470,1,48,27,0,25.2,22.9,K. Enghardt,177.0,113.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,47.0,NaN,NaN
+Vendsyssel,2722312385,486,1,54,52,0,99.5,0.5,K. Kusk,192.0,120.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,35.8,NaN,NaN
+Hillerød,2722311999,489,1,51,52,0,29.6,9.5,K. Enghardt,186.0,119.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,20.2,NaN,NaN
+Hillerød,2722312275,505,1,54,9,0,99.5,99.5,A. Justinussen,190.0,119.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,26.8,NaN,NaN
+Vendsyssel,2722312891,513,1,59,51,1,22.7,25.2,M. Greve,205.0,126.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,40.7,0.0000363,NaN
+Hillerød,2722312691,528,1,57,17,0,99.5,99.5,A. Justinussen,198.0,123.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,28.1,NaN,NaN
+Vendsyssel,2722313331,563,1,63,27,0,99.5,99.5,R. Thellufsen,221.0,138.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,31.4,NaN,NaN
+Hillerød,2722313457,586,1,64,44,1,12.9,51.9,A. Kappenberger,224.0,139.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,64.6,0.00038333,NaN
+Vendsyssel,2722313755,592,1,67,14,1,34.5,43.3,R. Thellufsen,234.0,146.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,15.1,0.00004791,NaN
+Vendsyssel,2722313973,613,1,68,47,1,34.9,5.9,M. Greve,238.0,148.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,10.0,0.00001064,NaN
+Hillerød,2722314315,638,1,71,29,0,41.6,86.1,G. Arndal-Lauritzen,246.0,155.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,48.2,NaN,NaN
+Vendsyssel,2722314613,652,1,73,42,0,79.6,92.7,K. Kusk,252.0,158.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,28.6,NaN,NaN
+Hillerød,2722314845,661,1,74,55,1,55.2,37.6,J. Witt,257.0,161.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,15.4,0.00016444,NaN
+Hillerød,2722315009,672,1,75,43,1,28.8,50.4,J. Witt,263.0,165.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,15.0,0.00001279,NaN
+Vendsyssel,2722316121,689,1,79,31,0,74.6,93.0,R. Thellufsen,270.0,170.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,32.2,NaN,NaN
+Vendsyssel,2722316137,694,13,79,36,1,87.5,66.7,B. Clemmensen,271.0,170.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,NaN,NaN,,true,NaN,NaN,NaN,NaN,NaN,NaN,NaN,0.023263834416866302
+Vendsyssel,2722316333,737,1,81,52,0,99.9,99.8,R. Thellufsen,278.0,174.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,32.6,NaN,NaN
+Vendsyssel,2722316349,738,15,81,57,1,82.8,38.3,K. Kusk,279.0,174.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,0.029613960534334183
+Hillerød,2722317973,778,1,88,55,0,99.5,99.5,D. Johansen,307.0,189.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,NaN,true,,NaN,true,NaN,NaN,NaN,NaN,37.1,NaN,NaN
+Hillerød,2722318033,784,13,89,13,1,84.5,48.8,M. Bay,308.0,189.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,NaN,NaN,,NaN,NaN,NaN,NaN,true,true,NaN,NaN,0.07372576743364334
+Hillerød,2722318085,786,15,89,15,1,85.9,52.4,M. Bay,309.0,189.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,0.09340642392635345
+Hillerød,2722318129,787,1,89,41,0,99.8,99.5,D. Johansen,310.0,189.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,32.7,NaN,NaN
+Vendsyssel,2722317347,789,1,86,15,0,78.3,90.6,O. Øhlenschlæger,298.0,184.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,28.2,NaN,NaN
+Hillerød,2722319045,812,1,93,7,1,27.3,26.9,A. Kappenberger,321.0,195.0,NaN,NaN,Vendsyssel vs Hillerød,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,51.8,0.00017505,NaN
+OB,2722313357,19,1,1,14,1,46.7,10.6,A. Manneh,8.0,5.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,7.4,0.00001353,NaN
+Horsens,2722313453,21,1,2,16,0,11.5,9.1,S. Hausner,11.0,8.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,56.2,NaN,NaN
+Horsens,2722313563,28,1,3,6,1,22.1,89.7,S. Ngabo,15.0,12.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,12.2,0.00000159,NaN
+OB,2722313697,44,1,4,14,1,46.1,89.4,A. Manneh,17.0,13.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,46.0,0.00004721,NaN
+Horsens,2722314201,75,1,7,56,1,99.5,0.5,O. Kjærgaard,28.0,22.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,true,,NaN,NaN,NaN,NaN,NaN,NaN,22.5,0.01093648,NaN
+OB,2722314775,113,1,12,9,0,99.5,99.5,N. Mickelson,42.0,31.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,29.6,NaN,NaN
+OB,2722315411,147,1,15,3,0,99.5,0.5,A. Manneh,51.0,37.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,true,,NaN,true,NaN,NaN,NaN,NaN,25.9,NaN,NaN
+OB,2722316037,178,1,18,4,1,69.4,85.7,A. Manneh,62.0,41.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,19.7,0.00017207,NaN
+OB,2722316223,186,1,18,44,1,12.2,82.6,J. Gomez,65.0,43.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,12.2,0.0000004,NaN
+OB,2722317565,234,1,24,40,1,5.6,24.7,B. Paulsen,80.0,55.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,12.3,0.00000024,NaN
+OB,2722317837,245,1,25,57,1,28.8,90.8,A. Manneh,83.0,57.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,12.1,0.00000122,NaN
+OB,2722317937,249,1,26,26,1,61.8,32.7,B. Paulsen,84.0,57.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,25.3,0.00099847,NaN
+OB,2722319355,297,1,32,4,0,87.0,91.1,A. Manneh,106.0,69.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,32.4,NaN,NaN
+OB,2722320775,338,1,37,49,0,99.5,0.5,A. Manneh,123.0,77.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,33.4,NaN,NaN
+OB,2722321127,345,1,39,5,1,55.1,90.0,A. Manneh,127.0,79.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,39.8,0.0000409,NaN
+Horsens,2722321491,352,1,40,49,0,99.7,99.5,E. Frederiksen,131.0,82.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,true,,NaN,true,NaN,NaN,NaN,NaN,38.8,NaN,NaN
+OB,2722322651,371,1,44,7,1,41.5,26.2,J. Bonde,142.0,91.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,6.3,0.00001562,NaN
+OB,2722339567,420,1,46,2,0,99.5,99.5,N. Mickelson,151.0,94.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,30.0,NaN,NaN
+OB,2722339879,422,1,47,4,0,99.5,0.5,A. Manneh,152.0,94.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,32.4,NaN,NaN
+Horsens,2722340925,464,1,49,44,1,99.5,99.5,E. Frederiksen,160.0,99.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,true,,NaN,NaN,NaN,NaN,NaN,NaN,15.0,0.00096531,NaN
+OB,2722343637,480,1,57,17,1,77.5,91.1,A. Manneh,185.0,112.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,28.6,0.12098192,NaN
+OB,2722343645,481,16,57,19,1,93.0,55.6,B. Paulsen,185.0,112.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,NaN,,true,NaN,NaN,NaN,NaN,NaN,NaN,NaN,0.07928784936666489
+OB,2722344637,510,1,61,14,1,99.5,0.5,N. Mickelson,193.0,118.0,1.0,NaN,Horsens vs OB,2024-09-14,NaN,true,,NaN,true,NaN,NaN,NaN,NaN,32.4,0.11615767,NaN
+OB,2722344639,511,13,61,19,1,93.6,47.3,J. Gomez,193.0,118.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,NaN,,NaN,NaN,NaN,NaN,true,true,NaN,NaN,0.1380913108587265
+OB,2722346257,543,1,67,34,0,11.5,73.5,V. Myhra,212.0,132.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,54.1,NaN,NaN
+OB,2722347463,590,1,72,23,0,72.7,23.9,L. Owusu,234.0,146.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,26.4,NaN,NaN
+Horsens,2722345873,601,1,66,14,1,63.7,59.7,K. Lusavec,208.0,129.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,17.8,0.00035365,NaN
+Horsens,2722346007,609,1,66,44,1,59.9,80.9,F. Christensen,211.0,131.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,20.0,0.0000566,NaN
+OB,2722348917,617,1,77,17,0,3.9,45.2,V. Myhra,247.0,150.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,59.5,NaN,NaN
+Horsens,2722346529,625,1,68,44,0,21.8,13.2,S. Hausner,214.0,133.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,49.1,NaN,NaN
+OB,2722349465,625,1,78,35,0,9.6,15.3,V. Myhra,252.0,154.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,68.6,NaN,NaN
+OB,2722349775,632,1,79,20,0,99.7,99.2,N. Mickelson,255.0,156.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,32.8,NaN,NaN
+OB,2722350031,636,1,80,2,0,99.7,0.9,N. Mickelson,257.0,156.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,true,,NaN,true,NaN,NaN,NaN,NaN,28.6,NaN,NaN
+OB,2722352931,703,1,86,57,0,99.5,99.5,N. Mickelson,280.0,168.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,29.4,NaN,NaN
+Horsens,2722347857,703,1,73,46,1,99.5,99.5,E. Frederiksen,240.0,147.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,true,,NaN,NaN,NaN,NaN,NaN,NaN,15.4,0.0010176,NaN
+Horsens,2722347877,705,13,73,51,1,92.3,51.2,S. Pingel,240.0,147.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,0.11913955211639404
+OB,2722353139,706,1,87,34,1,20.7,28.3,T. Slotsager,282.0,170.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,14.9,0.00000586,NaN
+Horsens,2722348145,713,1,74,55,0,99.5,99.5,E. Frederiksen,243.0,149.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,true,,NaN,true,NaN,NaN,NaN,NaN,36.4,NaN,NaN
+Horsens,2722348273,717,1,75,23,0,99.6,99.8,E. Frederiksen,245.0,149.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,true,,NaN,true,NaN,NaN,NaN,NaN,25.0,NaN,NaN
+OB,2722354585,736,1,91,28,1,66.7,38.9,L. Owusu,295.0,176.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,35.4,0.01114937,NaN
+Horsens,2722350381,748,1,80,59,0,13.3,34.2,M. Delač,258.0,157.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,56.1,NaN,NaN
+Horsens,2722351397,769,1,83,15,1,23.0,41.6,M. Delač,267.0,161.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,41.0,0.0000294,NaN
+Horsens,2722353023,801,1,87,11,1,17.1,28.6,S. Hausner,281.0,169.0,NaN,NaN,Horsens vs OB,2024-09-14,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,19.5,0.00000309,NaN
+Horsens,2722353611,820,1,88,50,0,99.5,0.5,E. Frederiksen,286.0,171.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,34.2,NaN,NaN
+Horsens,2722353909,824,1,89,31,1,99.5,99.5,E. Frederiksen,288.0,171.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,true,,NaN,true,NaN,NaN,NaN,NaN,44.2,0.00689232,NaN
+Horsens,2722355603,862,1,94,6,1,99.7,99.6,E. Frederiksen,305.0,183.0,1.0,NaN,Horsens vs OB,2024-09-14,NaN,true,,NaN,true,NaN,NaN,NaN,NaN,36.5,0.05946826,NaN
+Horsens,2722356019,865,13,94,9,1,92.7,50.5,S. Pingel,305.0,183.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,0.10479341447353363
+Kolding,2720159671,14,1,0,37,0,95.0,16.8,A. Beck,4.0,3.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,NaN,NaN,NaN,,true,NaN,NaN,NaN,NaN,25.1,NaN,NaN
+Kolding,2720160441,30,1,1,40,0,94.4,15.7,M. Sarr,7.0,5.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,NaN,NaN,NaN,,true,NaN,NaN,NaN,NaN,21.8,NaN,NaN
+Kolding,2720160689,34,1,1,56,0,90.1,82.4,A. Nørager,9.0,5.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,NaN,NaN,NaN,,true,NaN,NaN,NaN,NaN,8.1,NaN,NaN
+HB Køge,2720168323,80,1,7,29,0,64.1,78.9,M. Jensen,25.0,14.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,true,,NaN,NaN,NaN,NaN,NaN,31.8,NaN,NaN
+Kolding,2720171869,92,1,10,44,0,59.3,17.8,M. Vestergård,32.0,19.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,NaN,NaN,true,,NaN,NaN,NaN,NaN,NaN,41.5,NaN,NaN
+Kolding,2720172923,96,1,11,35,1,30.9,11.3,C. Vestergaard,35.0,21.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,18.5,0.0000054,NaN
+Kolding,2720180257,148,1,17,37,0,9.0,89.1,A. Nørager,50.0,27.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,64.7,NaN,NaN
+HB Køge,2720179087,160,1,16,55,1,34.2,49.7,J. Arias,49.0,26.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,14.8,0.00002175,NaN
+HB Køge,2720181305,178,1,18,28,1,55.2,60.9,M. Jensen,53.0,28.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,14.5,0.00007364,NaN
+Kolding,2720185647,224,1,22,53,0,77.9,77.3,C. Jørgensen,72.0,43.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,NaN,NaN,NaN,,true,NaN,NaN,NaN,NaN,26.1,NaN,NaN
+Kolding,2720186391,235,1,23,47,1,89.4,13.1,M. Sarr,75.0,45.0,1.0,NaN,Kolding vs HB Køge,2024-09-14,NaN,NaN,NaN,,true,NaN,NaN,NaN,NaN,22.8,0.05234167,NaN
+Kolding,2720186879,238,1,24,23,0,99.5,0.5,C. Jørgensen,76.0,45.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,NaN,true,NaN,,NaN,true,NaN,NaN,NaN,30.8,NaN,NaN
+Kolding,2720188195,260,1,25,43,1,94.5,82.2,A. Nørager,80.0,47.0,1.0,NaN,Kolding vs HB Køge,2024-09-14,NaN,NaN,true,,NaN,NaN,NaN,NaN,NaN,15.8,0.03280742,NaN
+HB Køge,2720194617,261,1,32,38,1,24.3,31.8,M. Gudmann,96.0,58.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,17.7,0.00000125,NaN
+Kolding,2720195607,322,1,33,37,1,89.8,17.8,M. Sarr,99.0,59.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,NaN,NaN,NaN,,true,NaN,NaN,NaN,NaN,17.1,0.03803079,NaN
+Kolding,2720195755,324,1,33,43,0,88.5,18.7,M. Sarr,99.0,59.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,NaN,NaN,NaN,,true,NaN,NaN,NaN,NaN,16.9,NaN,NaN
+Kolding,2720196439,326,1,34,17,1,99.5,0.5,C. Jørgensen,100.0,59.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,NaN,true,NaN,,NaN,NaN,NaN,NaN,NaN,15.3,0.00187661,NaN
+Kolding,2720196497,328,1,34,20,1,90.9,9.2,C. Jørgensen,100.0,59.0,1.0,NaN,Kolding vs HB Køge,2024-09-14,NaN,NaN,NaN,,NaN,true,NaN,NaN,NaN,28.0,0.15266284,NaN
+Kolding,2720196515,329,15,34,22,1,92.1,51.5,S. Yatéké,100.0,59.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,true,NaN,NaN,0.11380027234554291
+HB Køge,2720205779,339,1,41,55,1,36.3,21.5,M. Jakobsen,128.0,80.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,37.9,0.00000778,NaN
+Kolding,2720199275,353,1,36,44,0,77.0,81.3,M. Vestergård,108.0,65.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,NaN,NaN,NaN,,true,NaN,NaN,NaN,NaN,31.4,NaN,NaN
+Kolding,2720200167,359,1,37,33,0,69.1,33.7,C. Jørgensen,110.0,65.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,27.3,NaN,NaN
+Kolding,2720206591,423,1,42,46,0,70.7,10.5,M. Sarr,130.0,81.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,NaN,NaN,NaN,,true,NaN,NaN,NaN,NaN,18.6,NaN,NaN
+Kolding,2720208403,438,1,44,17,0,99.5,0.5,C. Jørgensen,134.0,83.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,NaN,true,NaN,,NaN,true,NaN,NaN,NaN,34.8,NaN,NaN
+Kolding,2720209887,458,1,45,36,0,88.3,2.7,M. Sarr,144.0,91.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,NaN,NaN,true,,NaN,NaN,NaN,NaN,NaN,20.8,NaN,NaN
+Kolding,2720213585,481,1,48,46,0,64.3,11.6,M. Vestergård,155.0,97.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,true,,NaN,NaN,NaN,NaN,NaN,39.7,NaN,NaN
+HB Køge,2720237319,484,1,56,1,1,10.8,96.3,H. Bonnesen,178.0,115.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,27.8,0.00000052,NaN
+Kolding,2720230291,511,1,49,36,0,21.1,78.0,J. Ægidius,164.0,104.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,49.4,NaN,NaN
+Kolding,2720236615,540,1,55,24,0,29.3,36.5,J. Ægidius,174.0,112.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,47.8,NaN,NaN
+HB Køge,2720242589,544,1,60,56,0,83.7,5.9,M. Jakobsen,193.0,129.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,NaN,NaN,true,,NaN,NaN,NaN,NaN,NaN,41.4,NaN,NaN
+HB Køge,2720246663,576,1,65,1,1,64.7,82.9,N. Jakobsen,204.0,137.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,34.2,0.00014867,NaN
+HB Køge,2720250281,626,1,69,2,1,34.7,38.6,H. Bonnesen,217.0,145.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,11.4,0.00000981,NaN
+Kolding,2720249239,629,1,68,1,0,83.6,97.7,A. Nørager,210.0,142.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,NaN,NaN,NaN,,true,NaN,NaN,NaN,NaN,7.9,NaN,NaN
+Kolding,2720249341,630,1,68,6,0,86.8,96.1,A. Nørager,211.0,142.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,NaN,NaN,true,,NaN,NaN,NaN,NaN,NaN,28.8,NaN,NaN
+Kolding,2720250103,641,1,68,45,1,48.3,57.0,V. Westh,215.0,144.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,18.4,0.00002623,NaN
+HB Køge,2720254207,669,1,73,10,1,71.7,73.5,M. Jensen,232.0,157.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,19.2,0.00085813,NaN
+Kolding,2720254853,679,1,73,49,0,78.2,93.4,C. Jørgensen,233.0,158.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,NaN,NaN,NaN,,true,NaN,NaN,NaN,NaN,33.3,NaN,NaN
+Kolding,2720266007,737,1,84,53,0,29.7,70.4,J. Ægidius,257.0,172.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,52.4,NaN,NaN
+Kolding,2720267949,748,1,86,44,1,38.5,71.1,J. Vetter,264.0,176.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,65.9,0.00080455,NaN
+Kolding,2720270651,766,1,90,4,1,83.9,5.9,C. Jørgensen,269.0,178.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,NaN,,NaN,true,NaN,NaN,NaN,57.1,0.00098205,NaN
+Kolding,2720270745,768,1,90,12,0,93.0,93.0,J. Vetter,269.0,178.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,NaN,NaN,NaN,,true,NaN,NaN,NaN,NaN,27.9,NaN,NaN
+Kolding,2720271541,773,1,91,32,1,31.2,90.1,J. Ægidius,271.0,180.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,61.0,0.00166026,NaN
+Kolding,2720272579,786,1,93,16,0,33.9,27.7,J. Vetter,279.0,188.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,49.9,NaN,NaN
+Kolding,2721808567,812,1,10,43,1,57.6,21.6,C. Jørgensen,32.0,19.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,2.9,0.0001581,NaN
+HB Køge,2720269141,845,1,87,56,0,73.1,94.1,N. Jakobsen,266.0,177.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,true,NaN,true,,NaN,NaN,NaN,NaN,NaN,41.1,NaN,NaN
+HB Køge,2720272901,891,1,93,45,0,76.4,95.5,N. Jakobsen,281.0,189.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,NaN,NaN,NaN,,true,NaN,NaN,NaN,NaN,36.9,NaN,NaN
+HB Køge,2720273337,901,1,94,27,0,80.6,94.0,C. Jensen,284.0,191.0,NaN,NaN,Kolding vs HB Køge,2024-09-14,NaN,NaN,NaN,,NaN,true,NaN,NaN,NaN,31.7,NaN,NaN
+Esbjerg,2720740265,19,1,0,51,1,98.9,25.1,J. Mortensen,5.0,4.0,NaN,1.0,Esbjerg vs B 93,2024-09-15,NaN,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,17.1,0.05891172,NaN
+B 93,2720743711,40,1,3,43,0,99.5,0.5,N. Mouritsen,12.0,9.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,true,NaN,NaN,NaN,true,NaN,NaN,NaN,38.0,NaN,NaN
+B 93,2720744307,42,1,4,22,0,99.5,99.5,N. Mouritsen,13.0,9.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,true,NaN,NaN,true,NaN,NaN,NaN,NaN,27.7,NaN,NaN
+Esbjerg,2720745161,43,1,5,8,1,99.9,0.9,A. Lausen,15.0,10.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,true,NaN,NaN,true,NaN,NaN,NaN,NaN,32.0,0.08365356,NaN
+Esbjerg,2720745369,44,1,5,19,0,82.8,82.2,L. From,16.0,10.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,NaN,19.8,NaN,NaN
+Esbjerg,2720745493,46,1,5,28,0,66.7,83.5,Y. Bourhane,17.0,10.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,50.6,NaN,NaN
+Esbjerg,2720746231,50,1,6,3,1,24.1,28.8,A. Skipper,21.0,14.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,true,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,16.4,0.00000251,NaN
+Esbjerg,2720749757,79,1,8,45,0,99.5,99.5,A. Lausen,31.0,20.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,true,NaN,NaN,NaN,true,NaN,NaN,NaN,32.5,NaN,NaN
+Esbjerg,2720750459,83,1,9,23,0,99.5,99.5,A. Lausen,33.0,20.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,true,NaN,NaN,NaN,true,NaN,NaN,NaN,30.9,NaN,NaN
+Esbjerg,2720750697,88,1,9,40,0,84.4,9.5,N. Strunck,34.0,20.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,17.1,NaN,NaN
+B 93,2720752517,97,1,11,18,1,39.3,43.6,M. Wohlgemuth,40.0,25.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,true,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,14.9,0.00001456,NaN
+Esbjerg,2720753475,118,1,12,0,0,80.7,17.7,L. From,41.0,26.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,27.2,NaN,NaN
+Esbjerg,2720761395,162,1,19,22,1,22.3,17.1,D. Gadegaard,61.0,40.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,true,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,58.7,0.00082829,NaN
+Esbjerg,2720761773,171,1,19,45,1,90.6,15.1,J. Mortensen,61.0,40.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,55.4,0.00148106,NaN
+Esbjerg,2720761859,173,1,19,55,0,73.4,80.3,Y. Bourhane,61.0,40.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,22.4,NaN,NaN
+Esbjerg,2720763163,192,1,21,42,0,76.2,83.0,Y. Bourhane,66.0,44.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,24.8,NaN,NaN
+B 93,2720762539,209,1,20,51,1,32.6,60.0,N. Morberg,65.0,43.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,true,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,9.7,0.0000042,NaN
+Esbjerg,2720765413,220,1,24,26,1,92.4,20.1,M. Maden,74.0,50.0,1.0,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,24.6,0.0909667,NaN
+Esbjerg,2720767767,243,1,27,24,1,52.6,69.0,Y. Bourhane,80.0,54.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,true,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,21.7,0.00002166,NaN
+Esbjerg,2720770807,278,1,30,46,0,92.0,75.6,A. Lausen,90.0,60.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,2.5,NaN,NaN
+B 93,2720768635,283,1,28,18,0,96.9,9.1,O. Jakobsen,81.0,55.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,23.4,NaN,NaN
+B 93,2720769075,289,1,28,45,1,89.5,4.7,L. Henriksen,83.0,55.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,27.7,0.037336,NaN
+B 93,2720769781,295,1,29,43,1,28.9,34.0,J. Egeris,86.0,57.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,true,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,19.5,0.00002764,NaN
+B 93,2720772059,323,1,31,57,0,96.8,17.4,L. Henriksen,93.0,63.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,9.9,NaN,NaN
+B 93,2720772733,325,1,32,34,1,99.5,0.5,N. Mouritsen,94.0,63.0,1.0,NaN,Esbjerg vs B 93,2024-09-15,NaN,true,NaN,NaN,NaN,true,NaN,NaN,NaN,43.0,0.01172089,NaN
+B 93,2720772741,327,15,32,38,1,96.7,60.7,E. Nnamani,94.0,63.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,0.04554107040166855
+B 93,2720773299,329,1,33,7,0,99.5,99.5,N. Mouritsen,95.0,63.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,true,NaN,NaN,true,NaN,NaN,NaN,NaN,34.5,NaN,NaN
+B 93,2720773365,330,13,33,13,1,69.6,46.7,L. Henriksen,96.0,63.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,NaN,NaN,NaN,NaN,NaN,true,true,NaN,NaN,0.009200102649629116
+Esbjerg,2720780801,344,1,39,27,1,69.1,4.7,J. Mortensen,113.0,74.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,true,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,29.6,0.00005491,NaN
+B 93,2720775185,360,1,34,46,1,92.0,93.9,N. Mouritsen,103.0,69.0,1.0,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,32.5,0.11566541,NaN
+Esbjerg,2720781749,362,1,40,9,0,87.3,19.2,N. Strunck,115.0,76.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,19.7,NaN,NaN
+Esbjerg,2720784037,374,1,41,59,0,99.5,99.5,A. Lausen,120.0,78.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,true,NaN,NaN,NaN,true,NaN,NaN,NaN,39.6,NaN,NaN
+B 93,2720779039,378,1,37,51,1,9.6,90.3,N. Mouritsen,109.0,73.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,true,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,24.2,0.00000031,NaN
+Esbjerg,2720784441,378,1,42,20,0,88.1,82.7,A. Troelsen,121.0,78.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,19.0,NaN,NaN
+B 93,2720779589,384,1,38,18,0,98.2,96.3,N. Mouritsen,110.0,73.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,7.9,NaN,NaN
+B 93,2720779983,386,1,38,47,0,99.5,99.5,N. Mouritsen,111.0,73.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,true,NaN,NaN,true,NaN,NaN,NaN,NaN,35.9,NaN,NaN
+Esbjerg,2720787157,390,1,44,34,1,30.0,91.2,T. Stagaard,127.0,82.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,true,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,26.3,0.00000175,NaN
+B 93,2720782597,400,1,40,45,1,36.9,91.2,M. Wohlgemuth,118.0,77.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,true,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,10.5,0.0000038,NaN
+Esbjerg,2720806243,433,1,47,11,0,94.7,17.9,L. From,137.0,89.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,true,NaN,NaN,NaN,NaN,NaN,NaN,5.1,NaN,NaN
+B 93,2720786743,443,1,44,11,0,68.5,5.6,L. Henriksen,124.0,81.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,32.9,NaN,NaN
+Esbjerg,2720811629,443,1,51,3,1,82.9,4.5,A. Lausen,143.0,91.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,true,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,29.1,0.11428258,NaN
+Esbjerg,2720811691,444,13,51,7,1,81.8,29.3,M. Maden,143.0,91.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,NaN,NaN,NaN,0.01434614323079586
+Esbjerg,2720818507,473,1,55,48,1,99.5,0.5,A. Lausen,160.0,103.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,true,NaN,NaN,true,NaN,NaN,NaN,NaN,56.8,0.00100957,NaN
+Esbjerg,2720818565,474,1,55,55,0,92.9,89.7,Y. Bourhane,160.0,103.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,24.0,NaN,NaN
+Esbjerg,2720819465,482,1,56,33,0,95.2,8.8,J. Mortensen,163.0,105.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,36.5,NaN,NaN
+B 93,2720804181,483,1,45,42,0,79.1,13.9,O. Jakobsen,135.0,88.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,NaN,24.4,NaN,NaN
+Esbjerg,2720821967,499,1,58,27,1,36.1,61.1,N. Strunck,168.0,107.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,true,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,14.2,0.00000508,NaN
+Esbjerg,2720823623,507,1,59,46,1,66.6,15.3,J. Mortensen,169.0,107.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,true,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,25.7,0.00012408,NaN
+Esbjerg,2720824523,521,1,60,26,1,88.0,9.6,M. Maden,169.0,107.0,1.0,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,27.8,0.14466786,NaN
+B 93,2720816349,565,1,54,8,1,91.9,83.4,N. Mouritsen,156.0,100.0,NaN,1.0,Esbjerg vs B 93,2024-09-15,NaN,NaN,true,NaN,NaN,NaN,NaN,NaN,NaN,23.5,0.47591872,NaN
+B 93,2720821431,589,1,58,6,0,79.2,8.4,L. Henriksen,166.0,106.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,3.8,NaN,NaN
+B 93,2720827003,609,1,62,22,1,28.0,15.6,J. Okore,172.0,108.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,true,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,14.8,0.00000277,NaN
+B 93,2720827581,614,1,62,43,0,74.4,92.2,N. Mouritsen,172.0,108.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,38.1,NaN,NaN
+B 93,2720828015,617,1,63,21,1,99.5,0.5,N. Mouritsen,173.0,108.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,true,NaN,NaN,NaN,NaN,NaN,NaN,NaN,9.2,0.00061616,NaN
+B 93,2720828051,618,1,63,23,0,91.6,6.5,O. Jakobsen,173.0,108.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,NaN,50.0,NaN,NaN
+B 93,2720829951,636,1,64,57,0,81.1,75.6,N. Mouritsen,176.0,110.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,5.6,NaN,NaN
+B 93,2720832467,641,1,67,9,1,62.4,93.0,N. Mouritsen,177.0,110.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,true,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,11.9,0.00034638,NaN
+B 93,2720832513,644,1,67,14,0,70.4,88.7,F. Isaki,177.0,110.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,35.5,NaN,NaN
+B 93,2720832623,645,16,67,18,1,81.6,32.5,O. Jakobsen,178.0,110.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,NaN,NaN,NaN,0.027994025498628616
+Esbjerg,2720853411,660,1,86,1,0,98.2,85.2,A. Troelsen,230.0,145.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,true,NaN,NaN,NaN,NaN,NaN,NaN,33.3,NaN,NaN
+Esbjerg,2720854011,662,1,86,41,0,99.5,0.5,A. Lausen,232.0,147.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,true,NaN,NaN,true,NaN,NaN,NaN,NaN,36.6,NaN,NaN
+Esbjerg,2720854107,665,15,86,48,1,75.8,48.3,N. Strunck,233.0,147.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,0.047354791313409805
+B 93,2720835935,674,1,70,19,1,69.1,78.1,N. Mouritsen,186.0,116.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,27.9,0.05385745,NaN
+Esbjerg,2720856245,691,1,89,20,0,88.8,21.3,M. Maden,243.0,153.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,true,NaN,NaN,NaN,NaN,NaN,NaN,20.0,NaN,NaN
+B 93,2720840469,697,1,74,14,1,71.1,25.6,J. Okore,194.0,120.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,28.0,0.03535703,NaN
+B 93,2720848641,774,1,81,38,1,55.3,69.6,M. Wohlgemuth,217.0,138.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,true,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,15.7,0.00019227,NaN
+B 93,2720851183,801,1,83,59,0,67.0,95.9,N. Mouritsen,224.0,144.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,true,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,32.4,NaN,NaN
+B 93,2720852033,812,1,84,42,0,91.9,15.0,O. Jakobsen,226.0,144.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,true,NaN,NaN,NaN,NaN,NaN,NaN,2.8,NaN,NaN
+B 93,2720852705,815,1,85,16,1,99.5,0.5,N. Mouritsen,227.0,144.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,true,NaN,NaN,NaN,true,NaN,NaN,NaN,31.4,0.23720722,NaN
+B 93,2720855253,838,1,88,3,0,91.6,8.3,O. Jakobsen,238.0,150.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,NaN,26.3,NaN,NaN
+B 93,2720858125,873,1,91,40,1,99.5,99.5,O. Jakobsen,253.0,160.0,NaN,1.0,Esbjerg vs B 93,2024-09-15,NaN,true,NaN,NaN,true,NaN,NaN,NaN,true,39.4,0.03673405,NaN
+B 93,2720858175,875,16,91,44,1,92.0,43.1,N. Thomsen,253.0,160.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,0.045149076730012894
+B 93,2720859217,884,1,93,5,0,70.5,92.1,A. Bredahl,259.0,162.0,NaN,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,true,NaN,NaN,NaN,NaN,NaN,NaN,29.7,NaN,NaN
+B 93,2720861293,928,1,96,17,1,92.5,76.9,G. Højbjerg,273.0,170.0,1.0,NaN,Esbjerg vs B 93,2024-09-15,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,NaN,16.9,0.11550024,NaN
+Hobro,2721519417,22,1,1,16,0,93.2,16.2,O. Klitten,6.0,4.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,NaN,NaN,,true,NaN,NaN,NaN,NaN,28.8,NaN,NaN
+Hobro,2721519959,32,1,2,57,1,61.4,44.6,Z. Hyltoft,13.0,8.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,true,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,24.4,0.00008593,NaN
+Hobro,2721520911,53,1,6,26,0,91.9,86.1,L. Klitten,22.0,12.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,NaN,true,,NaN,NaN,NaN,NaN,NaN,28.0,NaN,NaN
+Hobro,2721521515,63,1,8,32,1,13.5,7.1,E. Søgaard,26.0,14.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,true,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,16.5,0.00000051,NaN
+Hobro,2721522285,87,1,10,55,0,99.7,99.8,V. Rasmussen,36.0,20.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,true,NaN,,NaN,true,NaN,NaN,NaN,21.5,NaN,NaN
+Hobro,2721522915,113,1,13,9,0,99.5,0.5,L. Klitten,40.0,22.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,true,NaN,,NaN,true,NaN,NaN,NaN,29.7,NaN,NaN
+Hobro,2721522993,117,13,13,21,1,77.8,32.3,L. Klitten,41.0,22.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,true,NaN,NaN,0.007230521645396948
+Hobro,2721523481,126,1,14,46,1,7.2,50.3,J. Dakir,46.0,26.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,true,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,28.8,0.0000021,NaN
+Fredericia,2721522383,131,1,11,22,1,8.4,51.3,V. Birksø,37.0,21.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,true,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,14.8,0.00000038,NaN
+Hobro,2721523755,132,1,15,40,0,94.2,15.8,M. Bruhn,48.0,26.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,NaN,true,,NaN,NaN,NaN,NaN,NaN,23.5,NaN,NaN
+Hobro,2721524433,151,1,17,51,1,99.4,0.5,L. Klitten,54.0,28.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,true,NaN,,NaN,NaN,NaN,NaN,NaN,19.9,0.00518901,NaN
+Fredericia,2721523425,153,1,14,34,1,99.5,0.5,J. Jessen,45.0,25.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,true,NaN,,NaN,true,NaN,NaN,NaN,28.7,0.06131448,NaN
+Fredericia,2721524541,180,1,18,13,0,98.3,75.4,A. Muçolli,55.0,29.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,NaN,NaN,,true,NaN,NaN,NaN,NaN,17.4,NaN,NaN
+Hobro,2721526405,230,1,25,45,0,92.6,12.7,M. Bruhn,84.0,48.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,NaN,true,,NaN,NaN,NaN,NaN,NaN,25.5,NaN,NaN
+Hobro,2721526927,247,1,28,10,0,94.6,22.8,J. Cornelius,95.0,56.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,NaN,NaN,,true,NaN,NaN,NaN,NaN,3.1,NaN,NaN
+Hobro,2721527077,249,1,28,45,1,99.5,0.5,L. Klitten,96.0,56.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,true,NaN,,NaN,true,NaN,NaN,NaN,41.8,0.01866751,NaN
+Hobro,2721528515,272,1,32,33,1,36.9,81.8,F. Dietz,109.0,64.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,true,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,22.7,0.00005744,NaN
+Hobro,2721528967,278,1,33,38,0,99.5,99.5,V. Rasmussen,110.0,64.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,true,NaN,,NaN,true,NaN,NaN,NaN,35.4,NaN,NaN
+Fredericia,2721527223,282,1,29,33,0,11.4,44.3,V. Birksø,97.0,57.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,true,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,62.4,NaN,NaN
+Hobro,2721529497,288,1,34,49,1,27.8,23.3,E. Søgaard,118.0,68.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,true,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,9.4,0.00000423,NaN
+Fredericia,2721527955,309,1,31,17,1,73.5,81.4,A. Muçolli,104.0,61.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,NaN,NaN,,NaN,true,NaN,NaN,NaN,49.3,0.00295585,NaN
+Fredericia,2721529789,336,1,35,31,1,29.8,66.1,W. Madsen,119.0,69.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,true,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,6.5,0.00000323,NaN
+Hobro,2721531339,336,1,38,15,0,95.7,18.0,O. Klitten,128.0,76.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,NaN,NaN,,true,NaN,NaN,NaN,NaN,23.4,NaN,NaN
+Hobro,2721532517,357,1,40,25,0,78.2,82.3,L. Klitten,136.0,80.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,NaN,NaN,,NaN,true,NaN,NaN,NaN,29.5,NaN,NaN
+Fredericia,2721532063,369,1,39,31,0,99.5,0.5,J. Jessen,133.0,79.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,true,NaN,,NaN,true,NaN,NaN,NaN,27.8,NaN,NaN
+Fredericia,2721533489,390,1,41,55,0,95.6,91.4,A. Muçolli,141.0,85.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,NaN,NaN,,NaN,true,NaN,NaN,NaN,32.3,NaN,NaN
+Fredericia,2721533547,392,1,42,3,0,79.3,26.8,A. Dahl,142.0,85.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,NaN,NaN,,true,NaN,NaN,NaN,NaN,21.3,NaN,NaN
+Hobro,2721534587,396,1,43,54,1,89.7,12.7,E. Søgaard,147.0,88.0,1.0,NaN,Fredericia vs Hobro,2024-09-16,NaN,NaN,NaN,,true,NaN,NaN,NaN,NaN,18.2,0.04706311,NaN
+Hobro,2721535031,401,1,44,55,0,30.8,28.2,M. Jacobsen,149.0,90.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,true,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,66.0,NaN,NaN
+Hobro,2721542141,406,1,45,30,1,63.0,50.9,M. Kristensen,152.0,92.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,true,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,24.2,0.00011282,NaN
+Hobro,2721542565,418,1,46,20,1,92.0,82.4,L. Klitten,157.0,96.0,1.0,NaN,Fredericia vs Hobro,2024-09-16,NaN,NaN,NaN,,true,NaN,NaN,NaN,NaN,27.5,0.06839018,NaN
+Hobro,2721544097,434,1,49,47,0,45.9,32.7,M. Bruhn,167.0,102.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,true,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,23.2,NaN,NaN
+Fredericia,2721543501,453,1,48,26,0,90.0,11.4,O. Buch,163.0,101.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,NaN,NaN,,true,NaN,NaN,NaN,NaN,4.2,NaN,NaN
+Fredericia,2721544859,472,1,51,14,1,6.9,54.3,V. Birksø,172.0,107.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,true,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,12.8,0.00000022,NaN
+Hobro,2721547109,499,1,55,38,1,99.5,0.5,L. Klitten,183.0,116.0,1.0,NaN,Fredericia vs Hobro,2024-09-16,NaN,true,NaN,,NaN,true,NaN,NaN,NaN,33.9,0.16038928,NaN
+Hobro,2721547127,500,15,55,42,1,93.1,49.7,J. Cornelius,183.0,116.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,true,NaN,NaN,0.15090198814868927
+Hobro,2721547423,502,1,56,11,1,99.5,99.5,V. Rasmussen,184.0,116.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,true,NaN,,NaN,NaN,NaN,NaN,NaN,22.6,0.00601109,NaN
+Hobro,2721548313,520,1,57,59,1,68.8,75.3,M. Kristensen,191.0,122.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,true,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,5.1,0.00128178,NaN
+Hobro,2721548669,527,1,58,38,1,99.5,99.5,M. Kristensen,192.0,122.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,true,NaN,,NaN,true,NaN,NaN,NaN,40.8,0.02411333,NaN
+Hobro,2721550031,557,1,62,22,0,74.3,79.0,M. Kristensen,198.0,126.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,true,NaN,NaN,,NaN,true,NaN,NaN,NaN,33.4,NaN,NaN
+Fredericia,2721551307,567,1,66,29,0,74.8,88.9,A. Muçolli,208.0,131.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,NaN,NaN,,NaN,true,NaN,NaN,NaN,4.6,NaN,NaN
+Hobro,2721550375,572,1,63,33,1,50.9,24.6,M. Kristensen,203.0,128.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,true,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,20.0,0.00008434,NaN
+Hobro,2721550429,576,1,63,47,0,76.2,16.2,M. Kristensen,203.0,128.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,NaN,NaN,,true,NaN,NaN,NaN,NaN,22.0,NaN,NaN
+Hobro,2721550483,580,1,63,54,0,86.2,8.2,M. Kristensen,204.0,128.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,NaN,NaN,,true,NaN,NaN,NaN,NaN,4.5,NaN,NaN
+Hobro,2721550599,584,1,64,6,1,88.6,21.0,V. Rasmussen,206.0,130.0,NaN,1.0,Fredericia vs Hobro,2024-09-16,NaN,NaN,true,,NaN,NaN,NaN,NaN,NaN,20.6,0.23463772,NaN
+Fredericia,2721552489,606,1,71,2,1,75.2,21.2,W. Madsen,219.0,141.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,true,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,4.1,0.000971,NaN
+Fredericia,2721552543,607,1,71,4,1,71.4,21.8,D. Kristjánsson,219.0,141.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,NaN,NaN,,NaN,true,NaN,NaN,NaN,31.7,0.07129893,NaN
+Fredericia,2721552567,610,1,71,19,1,99.5,99.5,A. Muçolli,220.0,141.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,true,NaN,,NaN,NaN,NaN,NaN,NaN,13.0,0.00131172,NaN
+Fredericia,2721552601,612,15,71,26,1,84.2,74.4,A. Muçolli,220.0,141.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,true,NaN,NaN,0.04264701530337334
+Fredericia,2721552689,614,1,71,32,1,99.5,99.5,W. Madsen,221.0,141.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,true,NaN,,NaN,NaN,NaN,NaN,NaN,21.1,0.00068015,NaN
+Fredericia,2721552697,615,1,71,40,0,88.2,86.2,A. Muçolli,221.0,141.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,NaN,NaN,,NaN,true,NaN,NaN,NaN,14.7,NaN,NaN
+Fredericia,2721556585,640,1,78,51,0,93.8,20.6,A. Dahl,228.0,145.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,NaN,NaN,,true,NaN,NaN,NaN,NaN,24.8,NaN,NaN
+Hobro,2721562413,687,1,87,20,1,99.5,99.5,M. Kristensen,255.0,162.0,1.0,NaN,Fredericia vs Hobro,2024-09-16,NaN,true,NaN,,NaN,true,NaN,NaN,NaN,31.0,0.04607952,NaN
+Hobro,2721562455,689,13,87,23,1,95.2,53.8,Z. Hyltoft,255.0,162.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,true,NaN,NaN,0.17487983405590057
+Hobro,2721564245,702,1,89,49,0,7.3,54.9,J. Dakir,258.0,164.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,true,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,63.0,NaN,NaN
+Hobro,2721565389,716,1,91,19,0,69.7,75.4,M. Kristensen,265.0,166.0,NaN,NaN,Fredericia vs Hobro,2024-09-16,true,NaN,NaN,,NaN,true,NaN,NaN,NaN,33.4,NaN,NaN
