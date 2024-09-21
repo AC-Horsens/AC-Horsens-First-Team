@@ -3341,7 +3341,7 @@ Kolding,2722757785,32,1,5,4,1,38.7,48.4,J. Vetter,16.0,12.0,NaN,,Hobro vs Koldin
 Hobro,2722757545,39,1,4,32,1,25.2,20.3,E. Søgaard,14.0,11.0,NaN,,Hobro vs Kolding,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,19.6,0.00000318,NaN
 Kolding,2722760355,73,1,10,15,1,99.5,99.5,A. Beck,29.0,18.0,NaN,,Hobro vs Kolding,2024-09-20,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,32.4,0.07930923,NaN
 Hobro,2722759745,80,1,8,51,1,63.8,90.8,M. Kristensen,27.0,17.0,1.0,,Hobro vs Kolding,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,40.9,0.07999492,NaN
-Hobro,2722759757,82,15,8,53,1,90.3,46.7,J. Cornelius,27.0,17.0,NaN,,Hobro vs Kolding,2024-09-20,NaN,NaN,,true,NaN,NaN,NaN,NaN,NaN,NaN,NaN,0.08094672858715057
+Hobro,2722759757,82,15,8,53,1,90.8,48.9,J. Cornelius,27.0,17.0,NaN,,Hobro vs Kolding,2024-09-20,NaN,NaN,,true,NaN,NaN,NaN,NaN,NaN,NaN,NaN,0.08094672858715057
 Hobro,2722760675,90,1,11,13,1,38.8,60.2,M. Jacobsen,31.0,19.0,NaN,,Hobro vs Kolding,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,18.2,0.00001805,NaN
 Kolding,2722761831,96,1,13,23,0,14.4,14.9,J. Ægidius,41.0,26.0,NaN,,Hobro vs Kolding,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,53.9,NaN,NaN
 Kolding,2722764801,202,1,21,1,1,99.5,99.5,C. Jørgensen,69.0,44.0,NaN,,Hobro vs Kolding,2024-09-20,NaN,true,,NaN,true,NaN,NaN,NaN,NaN,38.3,0.02295088,NaN
@@ -3349,7 +3349,7 @@ Kolding,2722765257,210,1,22,28,0,13.8,54.2,J. Ægidius,74.0,48.0,NaN,,Hobro vs K
 Hobro,2722766897,217,1,27,24,1,63.4,17.1,M. Kristensen,88.0,57.0,NaN,,Hobro vs Kolding,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,20.4,0.00076063,NaN
 Hobro,2722767337,228,1,28,27,1,99.5,99.5,M. Kristensen,91.0,57.0,NaN,,Hobro vs Kolding,2024-09-20,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,33.4,0.01909582,NaN
 Kolding,2722765609,230,1,23,43,1,99.5,0.5,C. Jørgensen,76.0,48.0,NaN,,Hobro vs Kolding,2024-09-20,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,27.4,0.02546024,NaN
-Kolding,2722765633,233,15,23,49,1,93.3,55.2,I. Tånnander,77.0,48.0,NaN,,Hobro vs Kolding,2024-09-20,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,0.16316883265972137
+Kolding,2722765633,233,15,23,49,1,93.4,54.6,I. Tånnander,77.0,48.0,NaN,,Hobro vs Kolding,2024-09-20,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,0.16316883265972137
 Hobro,2722767549,233,1,28,54,0,99.5,99.5,M. Kristensen,92.0,57.0,NaN,,Hobro vs Kolding,2024-09-20,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,33.1,NaN,NaN
 Hobro,2722769223,252,1,31,43,1,23.5,69.0,L. Klitten,103.0,63.0,NaN,,Hobro vs Kolding,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,18.2,0.00000856,NaN
 Kolding,2722768103,266,1,29,49,1,63.3,95.7,C. Jørgensen,94.0,58.0,NaN,,Hobro vs Kolding,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,11.6,0.00005962,NaN
@@ -3362,20 +3362,77 @@ Hobro,2722787569,451,1,48,12,1,46.0,15.0,E. Søgaard,163.0,92.0,NaN,,Hobro vs Ko
 Kolding,2722786375,454,15,46,36,1,85.4,66.8,C. Jørgensen,157.0,89.0,NaN,,Hobro vs Kolding,2024-09-20,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,0.024053659290075302
 Kolding,2722786419,456,15,46,40,1,79.2,48.8,M. Sarr,158.0,89.0,NaN,,Hobro vs Kolding,2024-09-20,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,0.029971495270729065
 Kolding,2722788601,476,1,49,42,1,34.4,77.5,J. Vetter,168.0,97.0,NaN,,Hobro vs Kolding,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,33.4,0.00003242,NaN
-Hobro,2722790911,500,1,53,0,1,99.4,1.1,M. Kristensen,178.0,104.0,NaN,,Hobro vs Kolding,2024-09-20,NaN,true,,NaN,NaN,NaN,NaN,NaN,NaN,21.3,0.0016887,NaN
+Hobro,2722790911,500,1,53,0,1,99.7,0.7,M. Kristensen,178.0,104.0,NaN,,Hobro vs Kolding,2024-09-20,NaN,true,,NaN,NaN,NaN,NaN,NaN,NaN,19.2,0.00160557,NaN
 Kolding,2722791801,519,1,54,10,1,35.4,76.0,M. Vestergård,183.0,109.0,NaN,,Hobro vs Kolding,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,10.5,0.00002413,NaN
 Kolding,2722792045,526,1,54,31,1,37.1,67.5,J. Vetter,184.0,109.0,NaN,,Hobro vs Kolding,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,12.7,0.0000138,NaN
 Hobro,2722796901,563,1,61,7,0,11.6,35.4,J. Dakir,206.0,122.0,NaN,,Hobro vs Kolding,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,62.7,NaN,NaN
 Hobro,2722797083,566,1,61,32,1,48.9,28.5,M. Jacobsen,207.0,122.0,NaN,,Hobro vs Kolding,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,28.7,0.00002982,NaN
 Hobro,2722799087,614,1,65,31,1,25.4,13.8,E. Søgaard,222.0,132.0,NaN,,Hobro vs Kolding,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,11.7,0.00000488,NaN
 Hobro,2722799615,622,1,66,56,1,17.7,47.5,J. Dakir,226.0,134.0,NaN,,Hobro vs Kolding,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,2.1,0.00000134,NaN
-Hobro,2722800323,635,1,68,21,1,99.5,0.5,M. Kristensen,229.0,136.0,NaN,,Hobro vs Kolding,2024-09-20,NaN,true,,NaN,true,NaN,NaN,NaN,NaN,31.4,0.02514855,NaN
+Hobro,2722800323,635,1,68,21,1,99.5,0.5,M. Kristensen,229.0,136.0,1.0,,Hobro vs Kolding,2024-09-20,NaN,true,,NaN,true,NaN,NaN,NaN,NaN,31.4,0.02514855,NaN
+Hobro,2722800335,637,15,68,25,1,91.0,47.4,M. Bruhn,229.0,136.0,NaN,,Hobro vs Kolding,2024-09-20,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,0.06727870553731918
 Kolding,2722801357,675,1,70,28,1,12.9,75.6,J. Vetter,239.0,145.0,NaN,,Hobro vs Kolding,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,15.9,0.00000102,NaN
 Hobro,2722808665,691,1,76,53,1,2.8,50.0,J. Dakir,257.0,154.0,NaN,,Hobro vs Kolding,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,6.1,0.00000027,NaN
 Kolding,2722805253,711,1,74,8,1,69.5,93.6,E. Agyiri,249.0,149.0,NaN,,Hobro vs Kolding,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,13.8,0.00073505,NaN
-Hobro,2722813607,719,1,80,29,1,39.9,69.4,F. Dietz,270.0,160.0,NaN,,Hobro vs Kolding,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,13.5,0.00001185,NaN
-Hobro,2722823401,780,1,87,28,1,23.5,74.1,J. Dakir,288.0,172.0,NaN,,Hobro vs Kolding,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,46.4,0.0002435,NaN
-Hobro,2722827595,802,1,90,29,1,99.5,0.5,T. Hansen,300.0,180.0,NaN,,Hobro vs Kolding,2024-09-20,NaN,true,,NaN,NaN,NaN,NaN,NaN,NaN,14.8,0.001227,NaN
-Kolding,2722824143,862,1,87,58,1,25.1,66.1,V. Westh,291.0,175.0,NaN,,Hobro vs Kolding,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,6.9,0.00000234,NaN
-Kolding,2722831855,927,1,93,46,1,34.8,73.8,J. Ægidius,310.0,187.0,NaN,,Hobro vs Kolding,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,54.1,0.00250555,NaN
-Kolding,2722832477,931,1,94,10,1,31.8,92.4,C. Jørgensen,311.0,187.0,NaN,,Hobro vs Kolding,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,7.1,0.00000492,NaN
+Hobro,2722813607,719,1,80,29,1,39.9,69.4,F. Dietz,271.0,162.0,NaN,,Hobro vs Kolding,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,13.5,0.00001185,NaN
+Hobro,2722823401,780,1,87,28,1,23.5,74.1,J. Dakir,289.0,174.0,NaN,,Hobro vs Kolding,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,46.4,0.0002435,NaN
+Hobro,2722827595,802,1,90,29,1,99.5,0.5,T. Hansen,301.0,182.0,NaN,,Hobro vs Kolding,2024-09-20,NaN,true,,NaN,NaN,NaN,NaN,NaN,NaN,14.8,0.001227,NaN
+Kolding,2722824143,862,1,87,58,1,25.1,66.1,V. Westh,292.0,177.0,NaN,,Hobro vs Kolding,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,6.9,0.00000234,NaN
+Kolding,2722831855,927,1,93,46,1,34.8,73.8,J. Ægidius,311.0,189.0,NaN,,Hobro vs Kolding,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,54.1,0.00250555,NaN
+Kolding,2722832477,931,1,94,10,1,31.8,92.4,C. Jørgensen,312.0,189.0,NaN,,Hobro vs Kolding,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,7.1,0.00000492,NaN
+HB Køge,2722767491,6,1,0,24,1,52.2,29.8,M. Jakobsen,3.0,3.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,15.6,0.00003777,NaN
+HB Køge,2722768087,18,1,1,23,1,99.7,0.4,N. Jakobsen,5.0,3.0,1.0,NaN,HB Køge vs Vendsyssel,2024-09-20,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,38.9,0.05551067,NaN
+HB Køge,2722768101,20,13,1,28,1,93.0,56.6,J. Arias,5.0,3.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,0.09406998008489609
+HB Køge,2722768653,24,1,2,15,0,14.1,82.4,B. Bayrak,8.0,5.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,60.7,NaN,NaN
+HB Køge,2722770201,57,1,5,18,0,99.5,99.6,M. Jensen,18.0,13.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,38.1,NaN,NaN
+HB Køge,2722770239,59,13,5,25,1,79.0,40.9,N. Jakobsen,19.0,13.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,0.02574915625154972
+HB Køge,2722770287,61,13,5,29,1,72.2,62.6,C. Jensen,20.0,13.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,NaN,NaN,,NaN,NaN,NaN,true,NaN,true,NaN,NaN,0.015500044450163841
+Vendsyssel,2722772251,73,1,8,48,0,87.4,89.7,K. Kusk,29.0,16.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,24.4,NaN,NaN
+Vendsyssel,2722772351,75,15,8,58,1,92.7,49.9,A. Simon Okosun,30.0,16.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,NaN,NaN,,true,NaN,NaN,NaN,NaN,NaN,NaN,NaN,0.23235827684402466
+Vendsyssel,2722773317,78,1,10,19,1,13.8,35.8,L. Schulz,32.0,18.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,37.3,0.00000419,NaN
+Vendsyssel,2722773849,87,1,11,5,1,36.7,75.6,V. Mpindi,35.0,20.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,6.4,0.0000093,NaN
+Vendsyssel,2722774607,99,1,12,5,1,99.5,99.5,M. Kaastrup,36.0,20.0,NaN,1.0,HB Køge vs Vendsyssel,2024-09-20,NaN,true,,NaN,NaN,true,NaN,NaN,true,32.2,0.25705245,NaN
+Vendsyssel,2722774683,101,16,12,7,1,97.9,49.5,B. Clemmensen,36.0,20.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,0.5394178628921509
+HB Køge,2722776151,123,1,14,28,1,25.3,47.9,M. Jakobsen,40.0,23.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,11.0,0.0000025,NaN
+Vendsyssel,2722778051,143,1,17,33,1,58.2,90.5,M. Lauritsen,52.0,30.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,16.9,0.00004111,NaN
+HB Køge,2722777357,144,1,16,13,1,5.3,44.8,B. Bayrak,45.0,25.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,24.5,0.00000044,NaN
+HB Køge,2722779343,190,1,20,25,1,65.1,24.6,M. Gudmann,62.0,37.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,23.3,0.00013082,NaN
+Vendsyssel,2722782163,203,1,27,38,1,57.2,64.0,B. Clemmensen,76.0,48.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,11.7,0.00019802,NaN
+HB Køge,2722780095,208,1,22,13,1,57.2,23.9,M. Jensen,65.0,39.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,16.3,0.00023846,NaN
+HB Køge,2722781261,240,1,25,6,0,99.5,0.5,N. Jakobsen,72.0,45.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,39.8,NaN,NaN
+HB Køge,2722782247,259,1,27,55,1,21.7,40.4,M. Jakobsen,77.0,49.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,17.9,0.00000229,NaN
+Vendsyssel,2722786799,261,1,35,52,1,99.5,99.5,M. Kaastrup,102.0,68.0,1.0,NaN,HB Køge vs Vendsyssel,2024-09-20,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,35.9,0.24663623,NaN
+Vendsyssel,2722786811,262,15,35,56,1,95.9,41.2,L. Steffensen,102.0,68.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,0.09310363233089447
+Vendsyssel,2722787291,266,1,36,32,1,51.6,50.4,V. Mpindi,104.0,70.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,8.1,0.00011041,NaN
+HB Køge,2722783241,290,1,30,15,1,49.5,61.7,M. Jakobsen,82.0,51.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,15.5,0.0000416,NaN
+HB Køge,2722783521,299,1,30,55,1,43.7,34.3,M. Gudmann,86.0,55.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,8.7,0.0000595,NaN
+HB Køge,2722784087,310,1,32,12,1,67.4,9.1,S. Larsen,92.0,61.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,52.7,0.00004238,NaN
+HB Køge,2722787235,355,1,36,24,1,9.0,51.0,B. Bayrak,103.0,69.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,47.4,0.00004245,NaN
+HB Køge,2722787761,360,1,37,11,1,57.1,87.4,N. Jakobsen,106.0,71.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,22.5,0.00002529,NaN
+Vendsyssel,2722805607,363,1,46,56,0,72.9,20.6,K. Kusk,138.0,91.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,33.6,NaN,NaN
+HB Køge,2722791031,421,1,41,53,1,63.2,24.9,S. Larsen,120.0,81.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,24.4,0.00006394,NaN
+Vendsyssel,2722813985,438,1,53,16,1,31.7,63.1,V. Mpindi,162.0,109.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,6.3,0.00000537,NaN
+Vendsyssel,2722821303,503,1,58,28,1,54.6,17.0,O. Øhlenschlæger,184.0,123.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,15.1,0.00005706,NaN
+HB Køge,2722815513,553,1,54,18,1,23.2,70.5,H. Bonnesen,166.0,112.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,9.5,0.00000283,NaN
+HB Køge,2722815845,556,1,54,30,1,27.7,76.9,H. Bonnesen,167.0,112.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,20.4,0.0000057,NaN
+Vendsyssel,2722835137,587,1,69,10,1,35.6,21.3,A. Simon Okosun,219.0,145.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,23.7,0.00008825,NaN
+HB Køge,2722820045,592,1,57,27,1,69.4,88.1,M. Jakobsen,181.0,122.0,1.0,NaN,HB Køge vs Vendsyssel,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,32.1,0.00135529,NaN
+HB Køge,2722820049,593,13,57,32,1,67.6,40.0,C. Jensen,181.0,122.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,NaN,NaN,,true,NaN,NaN,NaN,NaN,NaN,NaN,NaN,0.010573949664831161
+Vendsyssel,2722837579,606,1,71,24,0,99.7,99.3,M. Kaastrup,225.0,147.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,NaN,true,,NaN,NaN,NaN,NaN,NaN,NaN,12.6,NaN,NaN
+HB Køge,2722821957,606,1,59,0,1,54.2,73.5,M. Jakobsen,187.0,124.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,19.9,0.00003014,NaN
+Vendsyssel,2722838195,609,1,71,59,0,99.6,0.8,M. Kaastrup,227.0,147.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,NaN,true,,NaN,true,NaN,NaN,NaN,NaN,30.1,NaN,NaN
+HB Køge,2722829351,647,1,64,22,1,5.3,60.8,B. Bayrak,200.0,134.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,24.5,0.00000197,NaN
+HB Køge,2722832675,670,1,67,1,1,36.5,22.4,M. Gudmann,211.0,140.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,13.7,0.00001133,NaN
+Vendsyssel,2722850723,684,1,81,58,0,99.3,0.5,R. Thellufsen,254.0,163.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,NaN,true,,NaN,true,NaN,NaN,NaN,NaN,23.8,NaN,NaN
+Vendsyssel,2722851513,689,1,82,27,1,36.6,92.9,M. Lauritsen,259.0,167.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,12.8,0.00000325,NaN
+HB Køge,2722838515,716,1,72,13,1,21.1,78.4,B. Bayrak,228.0,148.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,61.4,0.00027398,NaN
+HB Køge,2722839297,721,1,72,58,0,90.6,96.0,M. Jensen,230.0,148.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,32.1,NaN,NaN
+Vendsyssel,2722856069,724,1,85,44,0,89.9,8.6,R. Thellufsen,271.0,173.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,24.1,NaN,NaN
+Vendsyssel,2722863259,753,1,90,42,1,99.5,0.5,R. Thellufsen,286.0,179.0,1.0,NaN,HB Køge vs Vendsyssel,2024-09-20,NaN,true,,NaN,true,NaN,NaN,NaN,NaN,30.2,0.09824698,NaN
+Vendsyssel,2722863303,755,15,90,48,1,95.5,54.5,M. Hannesbo,286.0,179.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,0.19364763796329498
+HB Køge,2722845487,758,1,78,1,0,99.5,0.5,N. Jakobsen,243.0,156.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,36.7,NaN,NaN
+HB Køge,2722853277,815,1,83,31,0,99.5,99.5,M. Jensen,262.0,168.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,NaN,true,,NaN,NaN,true,NaN,NaN,NaN,37.3,NaN,NaN
+HB Køge,2722853291,816,15,83,39,1,92.7,45.7,H. Bonnesen,263.0,168.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,0.15278801321983337
+HB Køge,2722856527,829,1,86,0,1,18.7,8.5,M. Jensen,272.0,174.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,9.9,0.00000049,NaN
+HB Køge,2722856659,831,1,86,8,0,20.5,6.2,M. Jensen,273.0,174.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,true,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,12.8,NaN,NaN
+HB Køge,2722867175,915,1,94,7,0,99.6,0.4,M. Jakobsen,300.0,186.0,NaN,NaN,HB Køge vs Vendsyssel,2024-09-20,NaN,true,,NaN,true,NaN,NaN,NaN,NaN,35.9,NaN,NaN
