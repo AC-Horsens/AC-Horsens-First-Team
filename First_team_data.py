@@ -2263,17 +2263,19 @@ def League_stats():
     recent_matches_df = fullbacks_df[fullbacks_df['match_date'].isin(latest_dates)]
     matches_with_teams_df = fullbacks_df[fullbacks_df['label'].str.contains('|'.join(teams_list))]
     combined_df = pd.merge(recent_matches_df, matches_with_teams_df, how='outer')
-    st.dataframe(combined_df, hide_index=True)
     combined_df = combined_df.sort_values(by='Total score', ascending=False)
     combined_df = combined_df.drop(columns=['match_date'])
     combined_df['Total score'] = pd.to_numeric(combined_df['Total score'], errors='coerce')
 
     st.dataframe(combined_df, hide_index=True)
+    combined_df = combined_df.drop(columns=['label'])
+
     agg_df = combined_df.groupby(['playerName', 'team_name']).agg({
         'minsPlayed': 'sum',
         
         **{col: 'mean' for col in combined_df.columns if col not in ['minsPlayed', 'playerName', 'team_name']}
     }).reset_index()
+
     agg_df = agg_df.sort_values(by='Total score', ascending=False)
     st.dataframe(agg_df, hide_index=True)
 
