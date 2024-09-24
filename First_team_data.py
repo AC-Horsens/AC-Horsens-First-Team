@@ -2265,7 +2265,7 @@ def League_stats():
     combined_df = pd.merge(recent_matches_df, matches_with_teams_df, how='outer')
     combined_df = combined_df.sort_values(by='Total score', ascending=False)
     combined_df = combined_df.drop(columns=['match_date'])
-    combined_df['Total score'] = pd.to_numeric(combined_df['Total score'], errors='coerce')
+    #combined_df['Total score'] = pd.to_numeric(combined_df['Total score'], errors='coerce')
 
     st.dataframe(combined_df, hide_index=True)
     agg_df = combined_df.groupby(['playerName', 'team_name']).agg({
