@@ -2353,10 +2353,10 @@ def League_stats():
     def split_data(df):
         return df[df['y'] > 70], df[df['y'] < 30]
 
-    df_inswingers_for_plot_right, df_inswingers_for_plot_left = split_data(df_inswingers_for_plot)
-    df_outswingers_for_plot_right, df_outswingers_for_plot_left = split_data(df_outswingers_for_plot)
-    df_straight_for_plot_right, df_straight_for_plot_left = split_data(df_straight_for_plot)
-    df_short_for_plot_right, df_short_for_plot_left = split_data(df_short_for_plot)
+    df_inswingers_for_plot_left, df_inswingers_for_plot_right = split_data(df_inswingers_for_plot)
+    df_outswingers_for_plot_left, df_outswingers_for_plot_right = split_data(df_outswingers_for_plot)
+    df_straight_for_plot_left, df_straight_for_plot_right = split_data(df_straight_for_plot)
+    df_short_for_plot_left, df_short_for_plot_right = split_data(df_short_for_plot)
     # Create a figure with six subplots (2 rows, 3 columns)
     col1, col2 = st.columns(2)
 
