@@ -34,7 +34,6 @@ def load_match_stats(columns=None):
     match_stats = pd.read_csv(r'DNK_1_Division_2024_2025/matchstats_all DNK_1_Division_2024_2025.csv')
     match_stats['label'] = (match_stats['label'] + ' ' + match_stats['date'])
     return match_stats
-
 @st.cache_data
 def load_possession_data():
     df_possession = pd.read_csv(r'DNK_1_Division_2024_2025/Horsens/Horsens_possession_data.csv')
