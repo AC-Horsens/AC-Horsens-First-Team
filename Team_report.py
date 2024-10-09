@@ -1167,7 +1167,7 @@ def create_pdf_game_report(game_data, df_xg_agg, df_xa_agg, merged_df, df_posses
     loss_prob = game_data['loss_probability']
     
     # Add the team logo
-    pdf.image('C:/Users/SéamusPeareBartholdy/Documents/GitHub/AC-Horsens-First-Team/Logo.png', x=165, y=5, w=15, h=15)
+    pdf.image('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/Logo.png', x=165, y=5, w=15, h=15)
     pdf.set_xy(10, 10)
     pdf.cell(140, 5, txt=f"Match Report: {label}", ln=True, align='L')
     
@@ -1292,7 +1292,7 @@ def create_pdf_progress_report(horsens_df, total_expected_points_combined, posit
     pdf.add_page()
     pdf.set_font("Arial", size=12)
     # Add the team logo
-    pdf.image('C:/Users/SéamusPeareBartholdy/Documents/GitHub/AC-Horsens-First-Team/Logo.png', x=165, y=5, w=10, h=10)
+    pdf.image('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/Logo.png', x=165, y=5, w=10, h=10)
     pdf.set_xy(5, 5)
     pdf.cell(140, 5, txt=f"Progress report: {today}", ln=True, align='L')
 
@@ -1380,7 +1380,7 @@ def create_pdf_progress_report(horsens_df, total_expected_points_combined, posit
 
 create_pdf_progress_report(horsens_df,total_expected_points_combined,position_dataframes)
 
-folder_path = 'C:/Users/SéamusPeareBartholdy/Documents/GitHub/AC-Horsens-First-Team/'
+folder_path = 'C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/'
 
 # List all files in the folder
 files = os.listdir(folder_path)
