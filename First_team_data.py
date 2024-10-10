@@ -2539,7 +2539,7 @@ def League_stats():
     with col1:
         st.write('Inswingers',bold=True)
         df_inswingers_for['321.0_full'].fillna(0, inplace=True)
-        average_xg_inswingers = df_inswingers_for.groupby('team_name')['321.0_full'].mean().reset_index()
+        average_xg_inswingers = df_inswingers_for.groupby('team_name')['321.0_full'].sum().reset_index()
         average_xg_inswingers = average_xg_inswingers.rename(columns={'321.0_full': 'xg_inswingers'})
         st.dataframe(average_xg_inswingers,hide_index=True)
         average_player_xg_inswingers = df_inswingers_for.groupby('playerName')['321.0_full'].sum().reset_index()
