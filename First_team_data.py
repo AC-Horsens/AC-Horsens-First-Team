@@ -109,12 +109,12 @@ def load_physical_player_data():
     return physical_player_data
 @st.cache_data
 def load_set_piece_data():
-    df_set_piece = pd.read_csv(r'DNK_1_Division_2024_2025/set_piece DNK_1_Division_2024_2025.csv')
+    df_set_piece = pd.read_csv(r'DNK_1_Division_2024_2025/set_piece_DNK_1_Division_2024_2025.csv')
     df_set_piece['label'] = (df_set_piece['label'] + ' ' + df_set_piece['date']).astype(str)
     return df_set_piece
 @st.cache_data
 def load_team_set_piece_data(team_name):
-    df_team_set_pieces = pd.read_csv(f'DNK_1_Division_2024_2025/{team_name}/{team_name}_set_piece.csv')
+    df_team_set_pieces = pd.read_csv(f'DNK_1_Division_2024_2025/{team_name}/{team_name}_set_piece_data.csv')
     return df_team_set_pieces
 
 def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
