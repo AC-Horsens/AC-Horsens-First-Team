@@ -14,104 +14,137 @@ st.set_page_config(layout='wide')
 
 @st.cache_data
 def load_packing_data():
-    df_packing = pd.read_csv(r'DNK_1_Division_2024_2025/packing_all DNK_1_Division_2024_2025.csv')
+    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/packing_all%20DNK_1_Division_2024_2025.csv'
+    df_packing = pd.read_csv(url)
     df_packing['label'] = (df_packing['label'] + ' ' + df_packing['date']).astype(str)
     df_packing = df_packing.rename(columns={'teamName': 'team_name'})
     df_packing['pass_receiver'] = df_packing['pass_receiver'].astype(str)
     df_packing = df_packing[df_packing['pass_receiver'] != '']
     df_packing = df_packing[df_packing['pass_receiver'] != None]
     df_packing = df_packing[df_packing['bypassed_opponents'] < 11]
+    return df_packing
 
-    return df_packing    
 @st.cache_data
 def load_spacecontrol_data():
-    df_spacecontrol = pd.read_csv(r'DNK_1_Division_2024_2025/Space_control_all DNK_1_Division_2024_2025.csv')
+    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/Space_control_all%20DNK_1_Division_2024_2025.csv'
+    df_spacecontrol = pd.read_csv(url)
     df_spacecontrol['label'] = (df_spacecontrol['label'] + ' ' + df_spacecontrol['date']).astype(str)
     df_spacecontrol = df_spacecontrol.rename(columns={'teamName': 'team_name'})
-    return df_spacecontrol   
+    return df_spacecontrol
+
 @st.cache_data
-def load_match_stats(columns=None):
-    match_stats = pd.read_csv(r'DNK_1_Division_2024_2025/matchstats_all DNK_1_Division_2024_2025.csv')
+def load_match_stats():
+    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/matchstats_all%20DNK_1_Division_2024_2025.csv'
+    match_stats = pd.read_csv(url)
     match_stats['label'] = (match_stats['label'] + ' ' + match_stats['date'])
     return match_stats
+
 @st.cache_data
 def load_possession_data():
-    df_possession = pd.read_csv(r'DNK_1_Division_2024_2025/Horsens/Horsens_possession_data.csv')
+    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/Horsens/Horsens_possession_data.csv'
+    df_possession = pd.read_csv(url)
     df_possession['label'] = (df_possession['label'] + ' ' + df_possession['date']).astype(str)
-    #df_possession['team_name'].str.replace(' ', '_')
     return df_possession
+
 @st.cache_data
 def load_modstander():
-    team_names = ['AaB','B_93','Fredericia','HB_Køge','Helsingør','Hillerød','Hobro','Horsens','Kolding','Næstved','SønderjyskE','Vendsyssel']  # Replace with your list of team names
-    Modstander = st.selectbox('Choose opponent',team_names)
+    team_names = ['AaB','B_93','Fredericia','HB_Køge','Helsingør','Hillerød','Hobro','Horsens','Kolding','Næstved','SønderjyskE','Vendsyssel']  
+    Modstander = st.selectbox('Choose opponent', team_names)
     return Modstander
+
 @st.cache_data
 def load_possession_stats():
-    df_possession_stats = pd.read_csv(r'DNK_1_Division_2024_2025/possession_stats_all DNK_1_Division_2024_2025.csv')
+    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/possession_stats_all%20DNK_1_Division_2024_2025.csv'
+    df_possession_stats = pd.read_csv(url)
     df_possession_stats['label'] = (df_possession_stats['label'] + ' ' + df_possession_stats['date'])
     return df_possession_stats
+
 @st.cache_data
 def load_xg():
-    df_xg = pd.read_csv(r'DNK_1_Division_2024_2025/Horsens/Horsens_xg_data.csv')
+    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/Horsens/Horsens_xg_data.csv'
+    df_xg = pd.read_csv(url)
     df_xg['label'] = (df_xg['label'] + ' ' + df_xg['date'])
     df_xg['team_name'].str.replace(' ', '_')
     df_xg = df_xg[['playerName','label','team_name','x','y','321','periodId','timeMin','timeSec','9','24','25','26']]
     return df_xg
+
 @st.cache_data
 def load_all_xg():
-    df_xg_all = pd.read_csv(r'DNK_1_Division_2024_2025/xg_all DNK_1_Division_2024_2025.csv')
+    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/xg_all%20DNK_1_Division_2024_2025.csv'
+    df_xg_all = pd.read_csv(url)
     df_xg_all['label'] = (df_xg_all['label'] + ' ' + df_xg_all['date'])
     df_xg_all['team_name'].str.replace(' ', '_')
     return df_xg_all
+
 @st.cache_data
 def load_pv():
-    df_pv = pd.read_csv(r'DNK_1_Division_2024_2025/Horsens/Horsens_pv_data.csv')
+    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/Horsens/Horsens_pv_data.csv'
+    df_pv = pd.read_csv(url)
     df_pv['label'] = (df_pv['label'] + ' ' + df_pv['date'])
     df_pv['id'] = df_pv['id'].astype(str)
     df_pv['team_name'].str.replace(' ', '_')
     return df_pv
+
 @st.cache_data
 def load_xA():
-    df_xA = pd.read_csv(f'DNK_1_Division_2024_2025/xA_all DNK_1_Division_2024_2025.csv')
+    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/xA_all%20DNK_1_Division_2024_2025.csv'
+    df_xA = pd.read_csv(url)
     df_xA['label'] = (df_xA['label'] + ' ' + df_xA['date']).astype(str)
     return df_xA
+
 @st.cache_data
 def counterpressing():
-    df_counterpressing = pd.read_csv(r'DNK_1_Division_2024_2025/Horsens/Horsens_counterpressing.csv')
+    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/Horsens/Horsens_counterpressing.csv'
+    df_counterpressing = pd.read_csv(url)
     df_counterpressing['label'] = (df_counterpressing['label'] + ' ' + df_counterpressing['date']).astype(str)
     return df_counterpressing
+
 @st.cache_data
 def load_ppda():
-    df_ppda = pd.read_csv(r'DNK_1_Division_2024_2025/ppda_all DNK_1_Division_2024_2025.csv')
+    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/ppda_all%20DNK_1_Division_2024_2025.csv'
+    df_ppda = pd.read_csv(url)
     df_ppda['label'] = (df_ppda['label'] + ' ' + df_ppda['date']).astype(str)
     return df_ppda
+
 @st.cache_data
 def load_crosses():
-    df_crosses = pd.read_csv(r'DNK_1_Division_2024_2025/Horsens/Horsens_crosses.csv')
+    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/Horsens/Horsens_crosses.csv'
+    df_crosses = pd.read_csv(url)
     df_crosses['label'] = (df_crosses['label'] + ' ' + df_crosses['date']).astype(str)
     return df_crosses
+
 @st.cache_data
 def load_pv_all():
-    df_pv_all = pd.read_csv(r'DNK_1_Division_2024_2025//pv_all DNK_1_Division_2024_2025.csv')
+    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/pv_all%20DNK_1_Division_2024_2025.csv'
+    df_pv_all = pd.read_csv(url)
     df_pv_all['label'] = (df_pv_all['label'] + ' ' + df_pv_all['date']).astype(str)
     return df_pv_all
+
 @st.cache_data
 def load_squads():
-    squads = pd.read_csv(r'DNK_1_Division_2024_2025/squads DNK_1_Division_2024_2025.csv')
+    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/squads%20DNK_1_Division_2024_2025.csv'
+    squads = pd.read_csv(url)
     return squads
+
 @st.cache_data
 def load_physical_data():
-    physical_data = pd.read_csv(r'DNK_1_Division_2024_2025/physical_summary.csv')
+    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/physical_summary.csv'
+    physical_data = pd.read_csv(url)
     return physical_data
+
 @st.cache_data
 def load_physical_player_data():
-    physical_player_data = pd.read_csv(r'DNK_1_Division_2024_2025/player_data.csv')
+    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/player_data.csv'
+    physical_player_data = pd.read_csv(url)
     return physical_player_data
+
 @st.cache_data
 def load_set_piece_data():
-    df_set_piece = pd.read_csv(r'DNK_1_Division_2024_2025/set_piece_DNK_1_Division_2024_2025.csv')
+    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/set_piece_DNK_1_Division_2024_2025.csv'
+    df_set_piece = pd.read_csv(url)
     df_set_piece['label'] = (df_set_piece['label'] + ' ' + df_set_piece['date']).astype(str)
     return df_set_piece
+
 
 def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
 
