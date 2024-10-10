@@ -112,10 +112,6 @@ def load_set_piece_data():
     df_set_piece = pd.read_csv(r'DNK_1_Division_2024_2025/set_piece_DNK_1_Division_2024_2025.csv')
     df_set_piece['label'] = (df_set_piece['label'] + ' ' + df_set_piece['date']).astype(str)
     return df_set_piece
-@st.cache_data
-def load_team_set_piece_data(team_name):
-    df_team_set_pieces = pd.read_csv(f'DNK_1_Division_2024_2025/{team_name}/{team_name}_set_piece_data.csv')
-    return df_team_set_pieces
 
 def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
 
@@ -1045,6 +1041,7 @@ def Dashboard():
         df_xg_plot = df_xg_plot.groupby('playerName')['321'].sum().reset_index()
         df_xg_plot = df_xg_plot.sort_values('321',ascending=False)
         st.dataframe(df_xg_plot,hide_index=True)
+
     def passes():
         
         df_matchstats = load_match_stats(columns=['contestantId','date', 'label', 'successfulOpenPlayPass', 'openPlayPass'])
@@ -2303,8 +2300,9 @@ def League_stats():
     st.dataframe(agg_df, hide_index=True)
 
     st.header('Set pieces')
-    df_set_pieces = load_team_set_piece_data(selected_team)
+    df_set_pieces = load_set_piece_data()
     df_set_pieces['team_name'] = df_set_pieces['team_name'].str.replace(" ", "_")
+    df_set_pieces = df_set_pieces[df_set_pieces['team_name'] == selected_team]
     date_format = '%Y-%m-%d'
     df_set_pieces['date'] = pd.to_datetime(df_set_pieces['date'], format=date_format)
     df_set_pieces = df_set_pieces[
