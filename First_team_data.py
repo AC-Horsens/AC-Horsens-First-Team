@@ -1075,8 +1075,8 @@ def Dashboard():
         st.dataframe(df_xg_plot,hide_index=True)
 
     def passes():
-        
-        df_matchstats = load_match_stats(columns=['contestantId','date', 'label', 'successfulOpenPlayPass', 'openPlayPass'])
+        df_matchstats = load_match_stats()
+        df_matchstats = df_matchstats[['contestantId','date', 'label', 'successfulOpenPlayPass', 'openPlayPass']]
         df_matchstats['date'] = pd.to_datetime(df_matchstats['date'])
         df_possession = load_possession_data()
         df_xA = load_xA()
@@ -1340,7 +1340,8 @@ def Dashboard():
         st.plotly_chart(fig_histogram)
 
     def chance_creation():
-        df_matchstats = load_match_stats(columns=['contestantId','date', 'label', 'touchesInOppBox'])
+        df_matchstats = load_match_stats()
+        df_matchstats = df_match_stats[['contestantId','date', 'label', 'touchesInOppBox']]
         df_matchstats['date'] = pd.to_datetime(df_matchstats['date'])
         df_xA = load_xA()
         df_crosses = load_crosses()
