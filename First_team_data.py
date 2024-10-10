@@ -1972,7 +1972,7 @@ def Dashboard():
         if st.session_state['selected_data3']:
             Data_types[st.session_state['selected_data3']]()
 
-#def League_stats():
+def League_stats():
     
     balanced_central_defender_df = position_dataframes['Central defender']
     fullbacks_df = position_dataframes['Fullbacks']
