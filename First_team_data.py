@@ -1982,7 +1982,7 @@ def League_stats():
     winger_df = position_dataframes['Winger']
     classic_striker_df = position_dataframes['Classic striker']
 
-    matchstats_df = load_match_stats(columns = any)
+    matchstats_df = load_match_stats()
     matchstats_df = matchstats_df.rename(columns={'player_matchName': 'playerName'})
     matchstats_df = matchstats_df.groupby(['contestantId','label', 'date']).sum().reset_index()
     matchstats_df['label'] = np.where(matchstats_df['label'].notnull(), 1, matchstats_df['label'])
