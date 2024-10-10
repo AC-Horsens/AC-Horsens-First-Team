@@ -899,7 +899,6 @@ df_match_stats = load_match_stats()
 df_xg_all = load_all_xg()
 squads = load_squads()
 
-
 position_dataframes = Process_data_spillere(df_xA, df_pv, df_match_stats, df_xg_all, squads)
 balanced_central_defender_df = position_dataframes['Central defender']
 fullbacks_df = position_dataframes['Fullbacks']
