@@ -2172,7 +2172,8 @@ def League_stats():
 
     # Ensure that matches involving the selected team are also considered in the similarity score
     matches_against_selected_team_df = balanced_central_defender_df[balanced_central_defender_df['label'].str.contains(selected_team)]
-
+    st.dataframe(recent_matches_df)
+    st.dataframe(matches_with_teams_df)
     # Combine recent matches, matches involving top teams, and matches against the selected team
     combined_df = pd.merge(recent_matches_df, matches_with_teams_df, how='outer')
     combined_df = pd.merge(combined_df, matches_against_selected_team_df, how='outer')
