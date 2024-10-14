@@ -2462,10 +2462,6 @@ def League_stats():
     ]
     # Filter and process data for each type of set piece (inswingers, outswingers, straight, short)
     
-
-    # Load the set pieces data
-    df_set_pieces = load_set_piece_data()
-
     # Ensure the necessary columns are present in the dataset
     required_columns = ['sequenceId', 'team_name', 'label', '321.0', 'playerName', 'x', 'y', '140.0', '141.0']
     available_columns = df_set_pieces.columns.intersection(required_columns)
@@ -2492,45 +2488,51 @@ def League_stats():
         if corner_type_column not in filtered_df.columns:
             raise ValueError(f"Column {corner_type_column} not found in the dataframe")
 
-        # Filter the dataset to only keep relevant set pieces
-        filtered_df = filtered_df[(filtered_df[corner_type_column] == True) & (filtered_df['6.0'] == True)]
-        
-        # Debug output: Check the shape and columns of the filtered dataframe
-        # First contact (use the first xG in the sequence)
-        if '321.0' in filtered_df.columns:
-            filtered_df['sequence_xg'] = filtered_df.groupby(['sequenceId', 'team_name', 'label'])['321.0'].transform('first')
-            filtered_df['sequence_xg'] = filtered_df['sequence_xg'].fillna(0)
-        else:
-            raise ValueError("'321.0' column is missing from the dataframe after filtering.")
-        
-        # Finisher (use the last xG in the sequence)
-        filtered_df['finisher_xg'] = filtered_df.groupby(['sequenceId', 'team_name', 'label'])['321.0'].transform('last')
-        
-        return filtered_df[['playerName', 'sequenceId', 'sequence_xg', 'finisher_xg', 'x', 'y', '140.0', '141.0']]
+        # Identify the sequenceIds where the corner type column is True
+        sequence_ids_with_true_corner_type = filtered_df[filtered_df[corner_type_column] == True]['sequenceId'].unique()
 
-    # Process each set piece type
-    df_inswingers_for = process_set_pieces(df_set_pieces, '223.0')
-    df_outswingers_for = process_set_pieces(df_set_pieces, '224.0')
-    df_straight_for = process_set_pieces(df_set_pieces, '225.0')
-    df_short_for = process_set_pieces(df_set_pieces, '212.0')
+        # Keep all rows associated with those sequenceIds (whole sequence)
+        filtered_df = filtered_df[filtered_df['sequenceId'].isin(sequence_ids_with_true_corner_type)]
+        
+        # First contact: Get the first touch in each sequence
+        filtered_df['sequence_xg'] = filtered_df.groupby('sequenceId')['321.0'].transform('first')
+
+        # Finisher: Get the last touch in each sequence
+        filtered_df['finisher_xg'] = filtered_df.groupby('sequenceId')['321.0'].transform('last')
+
+        # Now, get the players who had the first contact and who finished
+        first_contact_df = filtered_df.loc[filtered_df.groupby('sequenceId')['sequence_xg'].idxmax(), ['sequenceId', 'playerName', 'sequence_xg']]
+        first_contact_df = first_contact_df.rename(columns={'playerName': 'first_contact_player', 'sequence_xg': 'first_contact_xg'})
+
+        finisher_df = filtered_df.loc[filtered_df.groupby('sequenceId')['finisher_xg'].idxmax(), ['sequenceId', 'playerName', 'finisher_xg']]
+        finisher_df = finisher_df.rename(columns={'playerName': 'finisher_player', 'finisher_xg': 'finisher_xg'})
+
+        # Merge the first contact and finisher information
+        result_df = pd.merge(first_contact_df, finisher_df, on='sequenceId')
+        
+        return result_df, filtered_df  # Return both the result and the filtered data for heatmaps
+
+    # Process each set piece type and get the filtered data for heatmaps
+    df_inswingers_for, df_inswingers_for_heatmap = process_set_pieces(df_set_pieces, '223.0')
+    df_outswingers_for, df_outswingers_for_heatmap = process_set_pieces(df_set_pieces, '224.0')
+    df_straight_for, df_straight_for_heatmap = process_set_pieces(df_set_pieces, '225.0')
+    df_short_for, df_short_for_heatmap = process_set_pieces(df_set_pieces, '212.0')
 
     # Function to summarize the first contact and finisher
     def summarize_xg(df, set_piece_type):
         # First contact summary
-        df['sequence_xg'].fillna(0, inplace=True)
-        player_xg_summary = df.groupby('playerName')['sequence_xg'].sum().reset_index()
-        player_xg_summary = player_xg_summary[player_xg_summary['sequence_xg'] > 0]
-        player_xg_summary = player_xg_summary.rename(columns={'sequence_xg': f'first_contact_xg_{set_piece_type}'})
-        player_xg_summary = player_xg_summary.sort_values(by=f'first_contact_xg_{set_piece_type}', ascending=False)
+        first_contact_summary = df.groupby('first_contact_player')['first_contact_xg'].sum().reset_index()
+        first_contact_summary = first_contact_summary[first_contact_summary['first_contact_xg'] > 0]
+        first_contact_summary = first_contact_summary.rename(columns={'first_contact_xg': f'first_contact_xg_{set_piece_type}'})
+        first_contact_summary = first_contact_summary.sort_values(by=f'first_contact_xg_{set_piece_type}', ascending=False)
         
         # Finisher summary
-        df['finisher_xg'].fillna(0, inplace=True)
-        finisher_xg_summary = df.groupby('playerName')['finisher_xg'].sum().reset_index()
-        finisher_xg_summary = finisher_xg_summary[finisher_xg_summary['finisher_xg'] > 0]
-        finisher_xg_summary = finisher_xg_summary.rename(columns={'finisher_xg': f'finisher_xg_{set_piece_type}'})
-        finisher_xg_summary = finisher_xg_summary.sort_values(by=f'finisher_xg_{set_piece_type}', ascending=False)
+        finisher_summary = df.groupby('finisher_player')['finisher_xg'].sum().reset_index()
+        finisher_summary = finisher_summary[finisher_summary['finisher_xg'] > 0]
+        finisher_summary = finisher_summary.rename(columns={'finisher_xg': f'finisher_xg_{set_piece_type}'})
+        finisher_summary = finisher_summary.sort_values(by=f'finisher_xg_{set_piece_type}', ascending=False)
         
-        return player_xg_summary, finisher_xg_summary
+        return first_contact_summary, finisher_summary
 
     # Summarize xG by player for each set piece type (first contact and finisher)
     summary_inswingers_first, summary_inswingers_finisher = summarize_xg(df_inswingers_for, 'inswingers')
@@ -2538,14 +2540,14 @@ def League_stats():
     summary_straight_first, summary_straight_finisher = summarize_xg(df_straight_for, 'straight')
     summary_short_first, summary_short_finisher = summarize_xg(df_short_for, 'short')
 
-    # Split data based on y-coordinate
+    # Split data for heatmaps based on y-coordinate (left and right side)
     def split_data(df):
         return df[df['y'] > 70], df[df['y'] < 30]
 
-    df_inswingers_for_left, df_inswingers_for_right = split_data(df_inswingers_for)
-    df_outswingers_for_left, df_outswingers_for_right = split_data(df_outswingers_for)
-    df_straight_for_left, df_straight_for_right = split_data(df_straight_for)
-    df_short_for_left, df_short_for_right = split_data(df_short_for)
+    df_inswingers_for_left, df_inswingers_for_right = split_data(df_inswingers_for_heatmap)
+    df_outswingers_for_left, df_outswingers_for_right = split_data(df_outswingers_for_heatmap)
+    df_straight_for_left, df_straight_for_right = split_data(df_straight_for_heatmap)
+    df_short_for_left, df_short_for_right = split_data(df_short_for_heatmap)
 
     # Display the heatmaps and xG summaries
     col1, col2 = st.columns(2)
