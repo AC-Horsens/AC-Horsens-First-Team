@@ -2618,9 +2618,9 @@ def League_stats():
 
     # Filter the actual corner events for inswingers, outswingers, straight, and short set pieces
     df_actual_inswingers = filter_actual_corner_events(df_inswingers_for_heatmap, '223.0')
-    df_actual_outswingers = filter_actual_corner_events(df_inswingers_for_heatmap, '224.0')
-    df_actual_straight = filter_actual_corner_events(df_inswingers_for_heatmap, '225.0')
-    df_actual_short = filter_actual_corner_events(df_inswingers_for_heatmap, '212.0')
+    df_actual_outswingers = filter_actual_corner_events(df_outswingers_for_heatmap, '224.0')
+    df_actual_straight = filter_actual_corner_events(df_straight_for_heatmap, '225.0')
+    df_actual_short = filter_actual_corner_events(df_short_for_heatmap, '212.0')
 
     # Assign first contact and finisher for each set-piece type
     df_inswingers_for_cleaned = assign_first_contact_and_finisher(df_actual_inswingers, '223.0')
