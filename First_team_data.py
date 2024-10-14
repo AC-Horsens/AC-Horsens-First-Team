@@ -2522,21 +2522,6 @@ def League_stats():
     df_short_for, df_short_for_heatmap = process_set_pieces(df_set_pieces, '212.0')
 
     # Function to summarize the first contact and finisher
-    def summarize_xg(df, set_piece_type):
-        # First contact summary
-        first_contact_summary = df.groupby('first_contact_player')['first_contact_xg'].sum().reset_index()
-        first_contact_summary = first_contact_summary[first_contact_summary['first_contact_xg'] > 0]
-        first_contact_summary = first_contact_summary.rename(columns={'first_contact_xg': f'first_contact_xg_{set_piece_type}'})
-        first_contact_summary = first_contact_summary.sort_values(by=f'first_contact_xg_{set_piece_type}', ascending=False)
-        
-        # Finisher summary
-        finisher_summary = df.groupby('finisher_player')['finisher_xg'].sum().reset_index()
-        finisher_summary = finisher_summary[finisher_summary['finisher_xg'] > 0]
-        finisher_summary = finisher_summary.rename(columns={'finisher_xg': f'finisher_xg_{set_piece_type}'})
-        finisher_summary = finisher_summary.sort_values(by=f'finisher_xg_{set_piece_type}', ascending=False)
-        
-        return first_contact_summary, finisher_summary
-
     # Summarize xG by player for each set piece type (first contact and finisher)
     summary_inswingers_first, summary_inswingers_finisher = summarize_xg(df_inswingers_for, 'inswingers')
     summary_outswingers_first, summary_outswingers_finisher = summarize_xg(df_outswingers_for, 'outswingers')
