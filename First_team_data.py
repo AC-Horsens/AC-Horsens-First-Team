@@ -2460,28 +2460,58 @@ def League_stats():
     df_set_pieces = df_set_pieces[
         (df_set_pieces['date'] >= selected_start_date) & (df_set_pieces['date'] <= selected_end_date)
     ]
-    st.dataframe(df_set_pieces)
     # Filter and process data for each type of set piece (inswingers, outswingers, straight, short)
+    st.header('Set pieces')
+
+    # Load the set pieces data
+    df_set_pieces = load_set_piece_data()
+
+    # Ensure the necessary columns are present in the dataset
+    required_columns = ['sequenceId', 'team_name', 'label', '321.0', 'playerName', 'x', 'y', '140.0', '141.0']
+    available_columns = df_set_pieces.columns.intersection(required_columns)
+
+    # Debug output: Print available columns to ensure they exist
+    st.write("Available columns in the dataset:", available_columns)
+
+    if len(available_columns) < len(required_columns):
+        missing_columns = set(required_columns) - set(available_columns)
+        st.write(f"Missing columns in the dataset: {missing_columns}")
+        raise ValueError(f"Missing required columns: {missing_columns}")
+
+    # If columns exist, continue processing
+    df_set_pieces['team_name'] = df_set_pieces['team_name'].str.replace(" ", "_")
+    df_set_pieces = df_set_pieces[df_set_pieces['team_name'] == selected_team]
+    df_set_pieces['date'] = pd.to_datetime(df_set_pieces['date'], format='%Y-%m-%d')
+    df_set_pieces = df_set_pieces[
+        (df_set_pieces['date'] >= selected_start_date) & (df_set_pieces['date'] <= selected_end_date)
+    ]
+
+    # Function to process set pieces based on the type of corner
     def process_set_pieces(df, corner_type_column):
-        # Define the columns to keep
         columns_to_keep = ['sequenceId', 'team_name', 'label', '321.0', 'playerName', 'x', 'y', '140.0', '141.0']
         
-        # Ensure the necessary columns exist in the dataframe before filtering
+        # Ensure that we only use available columns
         available_columns = df.columns.intersection(columns_to_keep + [corner_type_column, '6.0'])
         filtered_df = df[available_columns]
         
+        # Check if the corner type column exists
+        if corner_type_column not in filtered_df.columns:
+            raise ValueError(f"Column {corner_type_column} not found in the dataframe")
+
         # Filter the dataset to only keep relevant set pieces
         filtered_df = filtered_df[(filtered_df[corner_type_column] == True) & (filtered_df['6.0'] == True)]
         
-        # Merge with itself to get both _corner and _full columns, ensuring we keep all necessary columns
-        filtered_df = filtered_df.merge(df, on=['sequenceId', 'team_name', 'label'], suffixes=('_corner', '_full'), how='inner')
-        
-        # After merge, retain only the required columns
-        filtered_df = filtered_df[filtered_df.columns.intersection(columns_to_keep + ['321.0_full'])]
-        
+        # Debug output: Check the shape and columns of the filtered dataframe
+        st.write(f"Filtered dataframe for {corner_type_column}:")
+        st.write(filtered_df.shape)
+        st.write(filtered_df.columns)
+
         # First contact (use the first xG in the sequence)
-        filtered_df['sequence_xg'] = filtered_df.groupby(['sequenceId', 'team_name', 'label'])['321.0_full'].transform('first')
-        filtered_df['sequence_xg'] = filtered_df['sequence_xg'].fillna(0)
+        if '321.0_full' in filtered_df.columns:
+            filtered_df['sequence_xg'] = filtered_df.groupby(['sequenceId', 'team_name', 'label'])['321.0_full'].transform('first')
+            filtered_df['sequence_xg'] = filtered_df['sequence_xg'].fillna(0)
+        else:
+            raise ValueError("'321.0_full' column is missing from the dataframe after filtering.")
         
         # Finisher (use the last xG in the sequence)
         filtered_df['finisher_xg'] = filtered_df.groupby(['sequenceId', 'team_name', 'label'])['321.0_full'].transform('last')
