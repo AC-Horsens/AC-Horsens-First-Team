@@ -2159,11 +2159,36 @@ def League_stats():
 
     rank_columns = [col for col in matchstats_df.columns if col.endswith('_rank')]
 
+    weighted_columns = ['Passes per game_rank', 'Long pass share %_rank', 'Forward pass share %_rank', 'PPDA per match_rank']
+
+    # Update similarity score calculation by giving specific columns a weight of 3
     matchstats_df['similarity_score'] = matchstats_df.apply(
-        lambda row: sum(abs(row[rank_col] - team_df[rank_col].values[0]) for rank_col in selected_columns if not pd.isna(row[rank_col])),
+        lambda row: sum(
+            (3 if rank_col in weighted_columns else 1) * abs(row[rank_col] - team_df[rank_col].values[0])
+            for rank_col in selected_columns if not pd.isna(row[rank_col])
+        ),
         axis=1
     )
 
+    # Ensure that matches involving the selected team are also considered in the similarity score
+    matches_against_selected_team_df = balanced_central_defender_df[balanced_central_defender_df['label'].str.contains(selected_team)]
+
+    # Combine recent matches, matches involving top teams, and matches against the selected team
+    combined_df = pd.merge(recent_matches_df, matches_with_teams_df, how='outer')
+    combined_df = pd.merge(combined_df, matches_against_selected_team_df, how='outer')
+
+    # Sort and clean up combined data
+    combined_df = combined_df.sort_values(by='Total score', ascending=False)
+    combined_df = combined_df.drop(columns=['match_date', 'player_position', 'label'])
+
+    # Aggregate and sort by 'Total score'
+    agg_df = combined_df.groupby(['playerName', 'team_name']).agg({
+        'minsPlayed': 'sum',
+        **{col: 'mean' for col in combined_df.columns if col not in ['minsPlayed', 'playerName', 'team_name']}
+    }).reset_index()
+
+    agg_df = agg_df.sort_values(by='Total score', ascending=False)
+    st.dataframe(agg_df, hide_index=True)
 
     similar_teams = matchstats_df[matchstats_df['team_name'] != selected_team]
     similar_teams = similar_teams[similar_teams['team_name']!='Horsens']
