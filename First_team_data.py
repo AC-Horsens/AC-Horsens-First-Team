@@ -2465,7 +2465,7 @@ def League_stats():
     def process_set_pieces(df, corner_type_column):
         filtered_df = df_set_pieces[(df_set_pieces[corner_type_column] == True) & (df_set_pieces['6.0'] == True)]
         filtered_df = filtered_df[['sequenceId', 'team_name', 'label', '321.0', 'playerName', 'x', 'y', '140.0', '141.0']]
-        filtered_df = filtered_df.merge(df_set_pieces, on=['sequenceId', 'team_name', 'label'], suffixes=('_corner', '_full'), how='inner')
+        filtered_df = filtered_df.merge(df_set_pieces, on=['sequenceId', 'team_name', 'label'], suffixes=('_corner', '_full'), how='outer')
         filtered_df = filtered_df[filtered_df['team_name'] == selected_team]
         
         # First contact
