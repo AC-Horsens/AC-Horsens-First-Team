@@ -2204,9 +2204,9 @@ def League_stats():
 
     # Sort and clean up combined data
     combined_df = combined_df.sort_values(by='Total score', ascending=False)
-    combined_df = combined_df.drop(columns=['match_date', 'player_position', 'label'])
-
-    # Aggregate and sort by 'Total score'
+    combined_df = combined_df.drop(columns=['match_date', 'label'])
+    st.dataframe(combined_df)
+    # Aggregate and sort by 'Total score    '
     agg_df = combined_df.groupby(['playerName', 'team_name']).agg({
         'minsPlayed': 'sum',
         **{col: 'mean' for col in combined_df.columns if col not in ['minsPlayed', 'playerName', 'team_name']}
