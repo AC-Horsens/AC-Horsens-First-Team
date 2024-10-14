@@ -2230,9 +2230,11 @@ def League_stats():
 
     # Filter for matches where 'label' contains one of the top 3 similar teams
     matches_with_teams_df = fullbacks_df[fullbacks_df['label'].str.contains('|'.join(teams_list))]
+    matches_against_selected_team_df = fullbacks_df[fullbacks_df['label'].str.contains(selected_team)]
 
     # Combine recent matches and matches involving similar teams
     combined_df = pd.merge(recent_matches_df, matches_with_teams_df, how='outer')
+    combined_df = pd.merge(combined_df, matches_against_selected_team_df, how='outer')
 
     # Sort by 'Total score' and drop unnecessary columns
     combined_df = combined_df.sort_values(by='Total score', ascending=False)
