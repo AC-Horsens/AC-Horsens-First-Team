@@ -2463,7 +2463,7 @@ def League_stats():
     # Filter and process data for each type of set piece (inswingers, outswingers, straight, short)
     
     # Ensure the necessary columns are present in the dataset
-    required_columns = ['sequenceId','outcome', 'team_name', 'label', '321.0', 'playerName', 'x', 'y', '140.0', '141.0']
+    required_columns = ['sequenceId', 'team_name', 'label', '321.0', 'playerName', 'x', 'y', '140.0', '141.0']
     available_columns = df_set_pieces.columns.intersection(required_columns)
 
     # Debug output: Print available columns to ensure they exist
@@ -2478,7 +2478,7 @@ def League_stats():
 
     # Function to process set pieces based on the type of corner
     def process_set_pieces(df, corner_type_column):
-        columns_to_keep = ['sequenceId','outcome', 'team_name', 'label', 'date', '321.0', 'playerName', 'x', 'y', '140.0', '141.0']
+        columns_to_keep = ['sequenceId', 'team_name', 'label', 'date', '321.0', 'playerName', 'x', 'y', '140.0', '141.0']
         
         # Ensure that we only use available columns
         available_columns = df.columns.intersection(columns_to_keep + [corner_type_column, '6.0'])
@@ -2553,155 +2553,154 @@ def League_stats():
     df_short_for_left, df_short_for_right = split_data(df_short_for_heatmap)
 
     # Display the heatmaps and xG summaries
-    def filter_actual_corner_events(df, corner_type_column):
-        return df[df[corner_type_column] == True]
+def filter_actual_corner_events(df, corner_type_column):
+    return df[df[corner_type_column] == True]
 
-    # Function to process first contact and finisher
-    def assign_first_contact_and_finisher(df, corner_type_column):
-        df = df.copy()
+# Function to process first contact and finisher
+def assign_first_contact_and_finisher(df, corner_type_column):
+    df = df.copy()
 
-        # Skip assigning first contact to the kicker (where corner type is True)
-        # and skip when 'outcome' is 0 (opponent)
-        df['first_contact_player'] = df.groupby(['date', 'label', 'sequenceId'])['playerName'].shift(-1)
-        df['first_contact_xg'] = df.groupby(['date', 'label', 'sequenceId'])['321.0'].shift(-1)
+    # Skip assigning first contact to the kicker (where corner type is True)
+    # and skip when 'outcome' is 0 (opponent)
+    df['first_contact_player'] = df.groupby(['date', 'label', 'sequenceId'])['playerName'].shift(-1)
+    df['first_contact_xg'] = df.groupby(['date', 'label', 'sequenceId'])['321.0'].shift(-1)
 
-        # If 'outcome' is 0, it means the contact was by the opponent, so skip
-        df['first_contact_xg'] = df.apply(
-            lambda row: row['first_contact_xg'] if row['outcome'] != 0 and row[corner_type_column] != True else None, axis=1)
+    # If 'outcome' is 0, it means the contact was by the opponent, so skip
+    df['first_contact_xg'] = df.apply(
+        lambda row: row['first_contact_xg'] if row['outcome'] != 0 and row[corner_type_column] != True else None, axis=1)
 
-        # Finisher (use the last xG in the sequence)
-        df['finisher_player'] = df.groupby(['date', 'label', 'sequenceId'])['playerName'].transform('last')
-        df['finisher_xg'] = df.groupby(['date', 'label', 'sequenceId'])['321.0'].transform('last')
-        
-        return df
+    # Finisher (use the last xG in the sequence)
+    df['finisher_player'] = df.groupby(['date', 'label', 'sequenceId'])['playerName'].transform('last')
+    df['finisher_xg'] = df.groupby(['date', 'label', 'sequenceId'])['321.0'].transform('last')
+    
+    return df
 
-    # Function to create and display heatmaps for actual corner events in Streamlit
-    def plot_heatmap(df, title):
-        pitch = VerticalPitch(pitch_type='opta', half=True, line_zorder=2, pitch_color='grass', line_color='white')
-        fig, ax = pitch.draw()
+# Function to create and display heatmaps for actual corner events in Streamlit
+def plot_heatmap(df, title):
+    pitch = VerticalPitch(pitch_type='opta', half=True, line_zorder=2, pitch_color='grass', line_color='white')
+    fig, ax = pitch.draw()
 
-        # Extract coordinates based on available data
-        x_coords = df['140.0']  # x-coordinate column
-        y_coords = df['141.0']  # y-coordinate column
+    # Extract coordinates based on available data
+    x_coords = df['140.0']  # x-coordinate column
+    y_coords = df['141.0']  # y-coordinate column
 
-        # Generate heatmap based on x and y coordinates
-        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50))  # Adjust bins if needed
-        bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
-        pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
+    # Generate heatmap based on x and y coordinates
+    bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50))  # Adjust bins if needed
+    bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
+    pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
 
-        # Set plot title
-        ax.set_title(title)
+    # Set plot title
+    ax.set_title(title)
 
-        # Display the heatmap in Streamlit
-        st.pyplot(fig)
+    # Display the heatmap in Streamlit
+    st.pyplot(fig)
 
-    # Function to summarize the xG values for first contact and finisher players
-    def summarize_xg(df, set_piece_type):
-        if 'first_contact_player' not in df.columns or 'finisher_player' not in df.columns:
-            st.write(f"Debug: Missing required columns in dataframe for {set_piece_type}")
-            st.write(f"Available columns: {df.columns}")
-            return pd.DataFrame(), pd.DataFrame()  # Return empty dataframes if columns are missing
-        
-        # First contact summary
-        first_contact_summary = df.groupby('first_contact_player')['first_contact_xg'].sum().reset_index()
-        first_contact_summary = first_contact_summary[first_contact_summary['first_contact_xg'] > 0]
-        first_contact_summary = first_contact_summary.rename(columns={'first_contact_xg': f'first_contact_xg_{set_piece_type}'})
-        first_contact_summary = first_contact_summary.sort_values(by=f'first_contact_xg_{set_piece_type}', ascending=False)
-        
-        # Finisher summary
-        finisher_summary = df.groupby('finisher_player')['finisher_xg'].sum().reset_index()
-        finisher_summary = finisher_summary[finisher_summary['finisher_xg'] > 0]
-        finisher_summary = finisher_summary.rename(columns={'finisher_xg': f'finisher_xg_{set_piece_type}'})
-        finisher_summary = finisher_summary.sort_values(by=f'finisher_xg_{set_piece_type}', ascending=False)
-        
-        return first_contact_summary, finisher_summary
+# Function to summarize the xG values for first contact and finisher players
+def summarize_xg(df, set_piece_type):
+    if 'first_contact_player' not in df.columns or 'finisher_player' not in df.columns:
+        st.write(f"Debug: Missing required columns in dataframe for {set_piece_type}")
+        st.write(f"Available columns: {df.columns}")
+        return pd.DataFrame(), pd.DataFrame()  # Return empty dataframes if columns are missing
+    
+    # First contact summary
+    first_contact_summary = df.groupby('first_contact_player')['first_contact_xg'].sum().reset_index()
+    first_contact_summary = first_contact_summary[first_contact_summary['first_contact_xg'] > 0]
+    first_contact_summary = first_contact_summary.rename(columns={'first_contact_xg': f'first_contact_xg_{set_piece_type}'})
+    first_contact_summary = first_contact_summary.sort_values(by=f'first_contact_xg_{set_piece_type}', ascending=False)
+    
+    # Finisher summary
+    finisher_summary = df.groupby('finisher_player')['finisher_xg'].sum().reset_index()
+    finisher_summary = finisher_summary[finisher_summary['finisher_xg'] > 0]
+    finisher_summary = finisher_summary.rename(columns={'finisher_xg': f'finisher_xg_{set_piece_type}'})
+    finisher_summary = finisher_summary.sort_values(by=f'finisher_xg_{set_piece_type}', ascending=False)
+    
+    return first_contact_summary, finisher_summary
 
-    # Filter the actual corner events for inswingers, outswingers, straight, and short set pieces
-    df_actual_inswingers = filter_actual_corner_events(df_inswingers_for_heatmap, '223.0')
-    df_actual_outswingers = filter_actual_corner_events(df_outswingers_for_heatmap, '224.0')
-    df_actual_straight = filter_actual_corner_events(df_straight_for_heatmap, '225.0')
-    df_actual_short = filter_actual_corner_events(df_short_for_heatmap, '212.0')
+# Filter the actual corner events for inswingers, outswingers, straight, and short set pieces
+df_actual_inswingers = filter_actual_corner_events(df_inswingers_for_heatmap, '223.0')
+df_actual_outswingers = filter_actual_corner_events(df_inswingers_for_heatmap, '224.0')
+df_actual_straight = filter_actual_corner_events(df_inswingers_for_heatmap, '225.0')
+df_actual_short = filter_actual_corner_events(df_inswingers_for_heatmap, '212.0')
 
-    # Assign first contact and finisher for each set-piece type
-    df_inswingers_for_cleaned = assign_first_contact_and_finisher(df_actual_inswingers, '223.0')
-    df_outswingers_for_cleaned = assign_first_contact_and_finisher(df_actual_outswingers, '224.0')
-    df_straight_for_cleaned = assign_first_contact_and_finisher(df_actual_straight, '225.0')
-    df_short_for_cleaned = assign_first_contact_and_finisher(df_actual_short, '212.0')
+# Assign first contact and finisher for each set-piece type
+df_inswingers_for_cleaned = assign_first_contact_and_finisher(df_actual_inswingers, '223.0')
+df_outswingers_for_cleaned = assign_first_contact_and_finisher(df_actual_outswingers, '224.0')
+df_straight_for_cleaned = assign_first_contact_and_finisher(df_actual_straight, '225.0')
+df_short_for_cleaned = assign_first_contact_and_finisher(df_actual_short, '212.0')
 
-    # Split the actual corner events data for heatmap based on y-coordinate (left and right sides)
-    df_inswingers_for_left, df_inswingers_for_right = split_data(df_actual_inswingers)
-    df_outswingers_for_left, df_outswingers_for_right = split_data(df_actual_outswingers)
-    df_straight_for_left, df_straight_for_right = split_data(df_actual_straight)
-    df_short_for_left, df_short_for_right = split_data(df_actual_short)
+# Split the actual corner events data for heatmap based on y-coordinate (left and right sides)
+df_inswingers_for_left, df_inswingers_for_right = split_data(df_actual_inswingers)
+df_outswingers_for_left, df_outswingers_for_right = split_data(df_actual_outswingers)
+df_straight_for_left, df_straight_for_right = split_data(df_actual_straight)
+df_short_for_left, df_short_for_right = split_data(df_actual_short)
 
-    # Streamlit layout for displaying heatmaps
-    st.header('Left Side (All Corners)')
-    col1, col2 = st.columns(2)
+# Streamlit layout for displaying heatmaps
+st.header('Left Side (All Corners)')
+col1, col2 = st.columns(2)
 
-    # Display heatmaps for left and right sides in Streamlit
-    with col1:
-        st.subheader('Inswingers')
-        plot_heatmap(df_inswingers_for_left, "Inswingers - Left Side (Actual Corners)")
-        
-        st.subheader('Outswingers')
-        plot_heatmap(df_outswingers_for_left, "Outswingers - Left Side (Actual Corners)")
-        
-        st.subheader('Straights')
-        plot_heatmap(df_straight_for_left, "Straights - Left Side (Actual Corners)")
-        
-        st.subheader('Short Corners')
-        plot_heatmap(df_short_for_left, "Short - Left Side (Actual Corners)")
+# Display heatmaps for left and right sides in Streamlit
+with col1:
+    st.subheader('Inswingers')
+    plot_heatmap(df_inswingers_for_left, "Inswingers - Left Side (Actual Corners)")
+    
+    st.subheader('Outswingers')
+    plot_heatmap(df_outswingers_for_left, "Outswingers - Left Side (Actual Corners)")
+    
+    st.subheader('Straights')
+    plot_heatmap(df_straight_for_left, "Straights - Left Side (Actual Corners)")
+    
+    st.subheader('Short Corners')
+    plot_heatmap(df_short_for_left, "Short - Left Side (Actual Corners)")
 
-    st.header('Right Side (All Corners)')
+st.header('Right Side (All Corners)')
 
-    with col2:
-        st.subheader('Inswingers')
-        plot_heatmap(df_inswingers_for_right, "Inswingers - Right Side (Actual Corners)")
-        
-        st.subheader('Outswingers')
-        plot_heatmap(df_outswingers_for_right, "Outswingers - Right Side (Actual Corners)")
-        
-        st.subheader('Straights')
-        plot_heatmap(df_straight_for_right, "Straights - Right Side (Actual Corners)")
-        
-        st.subheader('Short Corners')
-        plot_heatmap(df_short_for_right, "Short - Right Side (Actual Corners)")
+with col2:
+    st.subheader('Inswingers')
+    plot_heatmap(df_inswingers_for_right, "Inswingers - Right Side (Actual Corners)")
+    
+    st.subheader('Outswingers')
+    plot_heatmap(df_outswingers_for_right, "Outswingers - Right Side (Actual Corners)")
+    
+    st.subheader('Straights')
+    plot_heatmap(df_straight_for_right, "Straights - Right Side (Actual Corners)")
+    
+    st.subheader('Short Corners')
+    plot_heatmap(df_short_for_right, "Short - Right Side (Actual Corners)")
 
-    # Display the xG summaries for first contact and finisher
-    st.header('xG Summaries for First Contact and Finisher')
+# Display the xG summaries for first contact and finisher
+st.header('xG Summaries for First Contact and Finisher')
 
-    # Summarize and display xG for each set piece type
-    summary_inswingers_first, summary_inswingers_finisher = summarize_xg(df_inswingers_for_cleaned, 'inswingers')
-    summary_outswingers_first, summary_outswingers_finisher = summarize_xg(df_outswingers_for_cleaned, 'outswingers')
-    summary_straight_first, summary_straight_finisher = summarize_xg(df_straight_for_cleaned, 'straight')
-    summary_short_first, summary_short_finisher = summarize_xg(df_short_for_cleaned, 'short')
+# Summarize and display xG for each set piece type
+summary_inswingers_first, summary_inswingers_finisher = summarize_xg(df_inswingers_for_cleaned, 'inswingers')
+summary_outswingers_first, summary_outswingers_finisher = summarize_xg(df_outswingers_for_cleaned, 'outswingers')
+summary_straight_first, summary_straight_finisher = summarize_xg(df_straight_for_cleaned, 'straight')
+summary_short_first, summary_short_finisher = summarize_xg(df_short_for_cleaned, 'short')
 
-    col1, col2, col3, col4 = st.columns(4)
+col1, col2, col3, col4 = st.columns(4)
 
-    with col1:
-        st.write('Inswingers, First Contact')
-        st.dataframe(summary_inswingers_first, hide_index=True)
-        st.write('Inswingers, Finisher')
-        st.dataframe(summary_inswingers_finisher, hide_index=True)
+with col1:
+    st.write('Inswingers, First Contact')
+    st.dataframe(summary_inswingers_first, hide_index=True)
+    st.write('Inswingers, Finisher')
+    st.dataframe(summary_inswingers_finisher, hide_index=True)
 
-    with col2:
-        st.write('Outswingers, First Contact')
-        st.dataframe(summary_outswingers_first, hide_index=True)
-        st.write('Outswingers, Finisher')
-        st.dataframe(summary_outswingers_finisher, hide_index=True)
+with col2:
+    st.write('Outswingers, First Contact')
+    st.dataframe(summary_outswingers_first, hide_index=True)
+    st.write('Outswingers, Finisher')
+    st.dataframe(summary_outswingers_finisher, hide_index=True)
 
-    with col3:
-        st.write('Straight, First Contact')
-        st.dataframe(summary_straight_first, hide_index=True)
-        st.write('Straight, Finisher')
-        st.dataframe(summary_straight_finisher, hide_index=True)
+with col3:
+    st.write('Straight, First Contact')
+    st.dataframe(summary_straight_first, hide_index=True)
+    st.write('Straight, Finisher')
+    st.dataframe(summary_straight_finisher, hide_index=True)
 
-    with col4:
-        st.write('Short, First Contact')
-        st.dataframe(summary_short_first, hide_index=True)
-        st.write('Short, Finisher')
-        st.dataframe(summary_short_finisher, hide_index=True)
-
+with col4:
+    st.write('Short, First Contact')
+    st.dataframe(summary_short_first, hide_index=True)
+    st.write('Short, Finisher')
+    st.dataframe(summary_short_finisher, hide_index=True)
 
 
 def Physical_data():
