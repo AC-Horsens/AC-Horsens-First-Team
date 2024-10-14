@@ -2460,31 +2460,10 @@ def League_stats():
     df_set_pieces = df_set_pieces[
         (df_set_pieces['date'] >= selected_start_date) & (df_set_pieces['date'] <= selected_end_date)
     ]
-    # Filter and process data for each type of set piece (inswingers, outswingers, straight, short)
-    st.header('Set pieces')
 
-    # Load the set pieces data
-    df_set_pieces = load_set_piece_data()
-
-    # Ensure the necessary columns are present in the dataset
-    required_columns = ['sequenceId', 'team_name', 'label', '321.0', 'playerName', 'x', 'y', '140.0', '141.0']
-    available_columns = df_set_pieces.columns.intersection(required_columns)
-
-    # Debug output: Print available columns to ensure they exist
-    st.write("Available columns in the dataset:", available_columns)
-
-    if len(available_columns) < len(required_columns):
-        missing_columns = set(required_columns) - set(available_columns)
-        st.write(f"Missing columns in the dataset: {missing_columns}")
-        raise ValueError(f"Missing required columns: {missing_columns}")
-
-    # If columns exist, continue processing
-    df_set_pieces['team_name'] = df_set_pieces['team_name'].str.replace(" ", "_")
-    df_set_pieces = df_set_pieces[df_set_pieces['team_name'] == selected_team]
-    df_set_pieces['date'] = pd.to_datetime(df_set_pieces['date'], format='%Y-%m-%d')
-    df_set_pieces = df_set_pieces[
-        (df_set_pieces['date'] >= selected_start_date) & (df_set_pieces['date'] <= selected_end_date)
-    ]
+    # Debug: Check if there are any set piece data after filtering by team and date
+    st.write("Filtered Set Piece Data:", df_set_pieces.shape)
+    st.write(df_set_pieces.head())
 
     # Function to process set pieces based on the type of corner
     def process_set_pieces(df, corner_type_column):
@@ -2501,11 +2480,10 @@ def League_stats():
         # Filter the dataset to only keep relevant set pieces
         filtered_df = filtered_df[(filtered_df[corner_type_column] == True) & (filtered_df['6.0'] == True)]
         
-        # Debug output: Check the shape and columns of the filtered dataframe
-        st.write(f"Filtered dataframe for {corner_type_column}:")
-        st.write(filtered_df.shape)
-        st.write(filtered_df.columns)
-
+        # Debug: Check if there are any rows left after filtering
+        st.write(f"Filtered data for {corner_type_column}: {filtered_df.shape}")
+        st.write(filtered_df.head())
+        
         # First contact (use the first xG in the sequence)
         if '321.0' in filtered_df.columns:
             filtered_df['sequence_xg'] = filtered_df.groupby(['sequenceId', 'team_name', 'label'])['321.0'].transform('first')
@@ -2533,12 +2511,20 @@ def League_stats():
         player_xg_summary = player_xg_summary.rename(columns={'sequence_xg': f'first_contact_xg_{set_piece_type}'})
         player_xg_summary = player_xg_summary.sort_values(by=f'first_contact_xg_{set_piece_type}', ascending=False)
         
+        # Debug: Check if the first contact summary has data
+        st.write(f"First contact summary for {set_piece_type}: {player_xg_summary.shape}")
+        st.write(player_xg_summary.head())
+        
         # Finisher summary
         df['finisher_xg'].fillna(0, inplace=True)
         finisher_xg_summary = df.groupby('playerName')['finisher_xg'].sum().reset_index()
         finisher_xg_summary = finisher_xg_summary[finisher_xg_summary['finisher_xg'] > 0]
         finisher_xg_summary = finisher_xg_summary.rename(columns={'finisher_xg': f'finisher_xg_{set_piece_type}'})
         finisher_xg_summary = finisher_xg_summary.sort_values(by=f'finisher_xg_{set_piece_type}', ascending=False)
+        
+        # Debug: Check if the finisher summary has data
+        st.write(f"Finisher summary for {set_piece_type}: {finisher_xg_summary.shape}")
+        st.write(finisher_xg_summary.head())
         
         return player_xg_summary, finisher_xg_summary
 
@@ -2547,104 +2533,6 @@ def League_stats():
     summary_outswingers_first, summary_outswingers_finisher = summarize_xg(df_outswingers_for, 'outswingers')
     summary_straight_first, summary_straight_finisher = summarize_xg(df_straight_for, 'straight')
     summary_short_first, summary_short_finisher = summarize_xg(df_short_for, 'short')
-
-    # Split data based on y-coordinate
-    def split_data(df):
-        return df[df['y'] > 70], df[df['y'] < 30]
-
-    df_inswingers_for_left, df_inswingers_for_right = split_data(df_inswingers_for)
-    df_outswingers_for_left, df_outswingers_for_right = split_data(df_outswingers_for)
-    df_straight_for_left, df_straight_for_right = split_data(df_straight_for)
-    df_short_for_left, df_short_for_right = split_data(df_short_for)
-
-    # Display the heatmaps and xG summaries
-    col1, col2 = st.columns(2)
-
-    with col2:
-        st.header('Right side')
-        pitch = VerticalPitch(pitch_type='opta', half=True, line_zorder=2, pitch_color='grass', line_color='white')
-        
-        # Plot inswingers
-        fig, ax = pitch.draw()
-        x_coords = df_inswingers_for_right['140.0']
-        y_coords = df_inswingers_for_right['141.0']
-        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50))
-        bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
-        pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
-        st.write('Inswingers')
-        st.pyplot(fig)
-
-        # Plot outswingers
-        fig, ax = pitch.draw()
-        x_coords = df_outswingers_for_right['140.0']
-        y_coords = df_outswingers_for_right['141.0']
-        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50))
-        bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
-        pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
-        st.write('Outswingers')
-        st.pyplot(fig)
-
-        # Plot straights
-        fig, ax = pitch.draw()
-        x_coords = df_straight_for_right['140.0']
-        y_coords = df_straight_for_right['141.0']
-        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50))
-        bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
-        pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
-        st.write('Straights')
-        st.pyplot(fig)
-
-        # Plot short
-        fig, ax = pitch.draw()
-        x_coords = df_short_for_right['140.0']
-        y_coords = df_short_for_right['141.0']
-        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50))
-        bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
-        pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
-        st.write('Short')
-        st.pyplot(fig)
-
-    with col1:
-        st.header('Left side')
-        # Plot inswingers
-        fig, ax = pitch.draw()
-        x_coords = df_inswingers_for_left['140.0']
-        y_coords = df_inswingers_for_left['141.0']
-        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50))
-        bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
-        pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
-        st.write('Inswingers')
-        st.pyplot(fig)
-
-        # Plot outswingers
-        fig, ax = pitch.draw()
-        x_coords = df_outswingers_for_left['140.0']
-        y_coords = df_outswingers_for_left['141.0']
-        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50))
-        bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
-        pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
-        st.write('Outswingers')
-        st.pyplot(fig)
-
-        # Plot straights
-        fig, ax = pitch.draw()
-        x_coords = df_straight_for_left['140.0']
-        y_coords = df_straight_for_left['141.0']
-        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50))
-        bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
-        pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
-        st.write('Straights')
-        st.pyplot(fig)
-
-        # Plot short
-        fig, ax = pitch.draw()
-        x_coords = df_short_for_left['140.0']
-        y_coords = df_short_for_left['141.0']
-        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50))
-        bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
-        pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
-        st.write('Short')
-        st.pyplot(fig)
 
     # Display the xG summaries for first contact and finisher
     col1, col2, col3, col4 = st.columns(4)
@@ -2672,7 +2560,6 @@ def League_stats():
         st.dataframe(summary_short_first, hide_index=True)
         st.write('Short, Finisher')
         st.dataframe(summary_short_finisher, hide_index=True)
-
 
 def Physical_data():
     df = load_physical_data()
