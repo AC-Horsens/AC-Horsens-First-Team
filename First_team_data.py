@@ -2451,256 +2451,187 @@ def League_stats():
     st.dataframe(agg_df, hide_index=True)
 
     st.header('Set pieces')
+
+    # Load the set pieces data
     df_set_pieces = load_set_piece_data()
     df_set_pieces['team_name'] = df_set_pieces['team_name'].str.replace(" ", "_")
     df_set_pieces = df_set_pieces[df_set_pieces['team_name'] == selected_team]
-    date_format = '%Y-%m-%d'
-    df_set_pieces['date'] = pd.to_datetime(df_set_pieces['date'], format=date_format)
+    df_set_pieces['date'] = pd.to_datetime(df_set_pieces['date'], format='%Y-%m-%d')
     df_set_pieces = df_set_pieces[
         (df_set_pieces['date'] >= selected_start_date) & (df_set_pieces['date'] <= selected_end_date)
-    ]    
+    ]
 
-    # Filter the data for corners
-    df_inswingers_for = df_set_pieces[(df_set_pieces['223.0'] == True) & (df_set_pieces['6.0'] == True)]
-    df_inswingers_for = df_inswingers_for[['sequenceId', 'team_name', 'label', '321.0']]
-    df_inswingers_for = df_inswingers_for.merge(df_set_pieces, on=['sequenceId', 'team_name', 'label'], suffixes=('_corner', '_full'), how='inner')
-    df_inswingers_for = df_inswingers_for[df_inswingers_for['team_name'] == selected_team]
-    df_inswingers_for['sequence_xg'] = df_inswingers_for.groupby(['sequenceId', 'team_name', 'label'])['321.0_full'].transform('first')
-    df_inswingers_for['sequence_xg'] = df_inswingers_for['sequence_xg'].fillna(0)
-    df_inswingers_for_plot = df_inswingers_for[(df_inswingers_for['223.0'] == True) & df_inswingers_for['6.0'] == True]
-    df_inswingers_for_plot = df_inswingers_for_plot[['playerName','sequenceId', 'x', 'y', '140.0', '141.0','321.0_full','sequence_xg']]
+    # Filter and process data for each type of set piece (inswingers, outswingers, straight, short)
+    def process_set_pieces(df, corner_type_column):
+        filtered_df = df_set_pieces[(df_set_pieces[corner_type_column] == True) & (df_set_pieces['6.0'] == True)]
+        filtered_df = filtered_df[['sequenceId', 'team_name', 'label', '321.0', 'playerName', 'x', 'y', '140.0', '141.0']]
+        filtered_df = filtered_df.merge(df_set_pieces, on=['sequenceId', 'team_name', 'label'], suffixes=('_corner', '_full'), how='inner')
+        filtered_df = filtered_df[filtered_df['team_name'] == selected_team]
+        
+        # First contact
+        filtered_df['sequence_xg'] = filtered_df.groupby(['sequenceId', 'team_name', 'label'])['321.0_full'].transform('first')
+        filtered_df['sequence_xg'] = filtered_df['sequence_xg'].fillna(0)
+        
+        # Finisher (last contact)
+        filtered_df['finisher_xg'] = filtered_df.groupby(['sequenceId', 'team_name', 'label'])['321.0_full'].transform('last')
+        
+        return filtered_df[['playerName', 'sequenceId', 'sequence_xg', 'finisher_xg', 'x', 'y', '140.0', '141.0']]
 
-    # Filter for outswingers
-    df_outswingers_for = df_set_pieces[(df_set_pieces['224.0'] == True) & (df_set_pieces['6.0'] == True)]
-    df_outswingers_for = df_outswingers_for[['sequenceId', 'team_name', 'label', '321.0']]
-    df_outswingers_for = df_outswingers_for.merge(df_set_pieces, on=['sequenceId', 'team_name', 'label'], suffixes=('_corner', '_full'), how='inner')
-    df_outswingers_for = df_outswingers_for[df_outswingers_for['team_name'] == selected_team]
-    df_outswingers_for['sequence_xg'] = df_outswingers_for.groupby(['sequenceId', 'team_name', 'label'])['321.0_full'].transform('first')
-    df_outswingers_for['sequence_xg'] = df_outswingers_for['sequence_xg'].fillna(0)
-    df_outswingers_for_plot = df_outswingers_for[(df_outswingers_for['224.0'] == True) & df_outswingers_for['6.0'] == True]
-    df_outswingers_for_plot = df_outswingers_for_plot[['playerName','sequenceId', 'x', 'y', '140.0', '141.0','321.0_full','sequence_xg']]
+    # Process each set piece type
+    df_inswingers_for = process_set_pieces(df_set_pieces, '223.0')
+    df_outswingers_for = process_set_pieces(df_set_pieces, '224.0')
+    df_straight_for = process_set_pieces(df_set_pieces, '225.0')
+    df_short_for = process_set_pieces(df_set_pieces, '212.0')
 
-    # Filter for straight set pieces
-    df_straight_for = df_set_pieces[(df_set_pieces['225.0'] == True) & (df_set_pieces['6.0'] == True)]
-    df_straight_for = df_straight_for[['sequenceId', 'team_name', 'label', '321.0']]
-    df_straight_for = df_straight_for.merge(df_set_pieces, on=['sequenceId', 'team_name', 'label'], suffixes=('_corner', '_full'), how='inner')
-    df_straight_for = df_straight_for[df_straight_for['team_name'] == selected_team]
-    df_straight_for['sequence_xg'] = df_straight_for.groupby(['sequenceId', 'team_name', 'label'])['321.0_full'].transform('first')
-    df_straight_for['sequence_xg'] = df_straight_for['sequence_xg'].fillna(0)
-    df_straight_for_plot = df_straight_for[(df_straight_for['225.0'] == True) & df_straight_for['6.0'] == True]
-    df_straight_for_plot = df_straight_for_plot[['playerName','sequenceId', 'x', 'y', '140.0', '141.0','321.0_full','sequence_xg']]
+    # Function to summarize the first contact and finisher
+    def summarize_xg(df, set_piece_type):
+        # First contact summary
+        df['sequence_xg'].fillna(0, inplace=True)
+        player_xg_summary = df.groupby('playerName')['sequence_xg'].sum().reset_index()
+        player_xg_summary = player_xg_summary[player_xg_summary['sequence_xg'] > 0]
+        player_xg_summary = player_xg_summary.rename(columns={'sequence_xg': f'first_contact_xg_{set_piece_type}'})
+        player_xg_summary = player_xg_summary.sort_values(by=f'first_contact_xg_{set_piece_type}', ascending=False)
+        
+        # Finisher summary
+        df['finisher_xg'].fillna(0, inplace=True)
+        finisher_xg_summary = df.groupby('playerName')['finisher_xg'].sum().reset_index()
+        finisher_xg_summary = finisher_xg_summary[finisher_xg_summary['finisher_xg'] > 0]
+        finisher_xg_summary = finisher_xg_summary.rename(columns={'finisher_xg': f'finisher_xg_{set_piece_type}'})
+        finisher_xg_summary = finisher_xg_summary.sort_values(by=f'finisher_xg_{set_piece_type}', ascending=False)
+        
+        return player_xg_summary, finisher_xg_summary
 
-    df_short = df_set_pieces[(df_set_pieces['6.0'] == True) & (df_set_pieces['212.0'] < 15)]
-    df_short = df_short[['sequenceId', 'team_name', 'label', '321.0']]
-    df_short = df_short.merge(df_set_pieces, on=['sequenceId', 'team_name','label'], suffixes=('_corner', '_full'), how='inner')
-    df_short = df_short[df_short['team_name'] == selected_team]
-    df_short['sequence_xg'] = df_short.groupby(['sequenceId', 'team_name','label'])['321.0_full'].transform('first')
-    df_short['sequence_xg'] = df_short['sequence_xg'].fillna(0)
-    df_short_for_plot = df_short[(df_short['6.0'] == True) & (df_short['212.0'] < 15)]
-    df_short_for_plot = df_short_for_plot[['playerName','sequenceId', 'x', 'y', '140.0', '141.0','321.0_full','sequence_xg']]
-    
-    
+    # Summarize xG by player for each set piece type (first contact and finisher)
+    summary_inswingers_first, summary_inswingers_finisher = summarize_xg(df_inswingers_for, 'inswingers')
+    summary_outswingers_first, summary_outswingers_finisher = summarize_xg(df_outswingers_for, 'outswingers')
+    summary_straight_first, summary_straight_finisher = summarize_xg(df_straight_for, 'straight')
+    summary_short_first, summary_short_finisher = summarize_xg(df_short_for, 'short')
+
     # Split data based on y-coordinate
     def split_data(df):
         return df[df['y'] > 70], df[df['y'] < 30]
 
-    df_inswingers_for_plot_left, df_inswingers_for_plot_right = split_data(df_inswingers_for_plot)
-    df_outswingers_for_plot_left, df_outswingers_for_plot_right = split_data(df_outswingers_for_plot)
-    df_straight_for_plot_left, df_straight_for_plot_right = split_data(df_straight_for_plot)
-    df_short_for_plot_left, df_short_for_plot_right = split_data(df_short_for_plot)
-    # Create a figure with six subplots (2 rows, 3 columns)
+    df_inswingers_for_left, df_inswingers_for_right = split_data(df_inswingers_for)
+    df_outswingers_for_left, df_outswingers_for_right = split_data(df_outswingers_for)
+    df_straight_for_left, df_straight_for_right = split_data(df_straight_for)
+    df_short_for_left, df_short_for_right = split_data(df_short_for)
+
+    # Display the heatmaps and xG summaries
     col1, col2 = st.columns(2)
 
     with col2:
         st.header('Right side')
-        pitch = VerticalPitch(pitch_type='opta',half=True,line_zorder=2, pitch_color='grass', line_color='white')
+        pitch = VerticalPitch(pitch_type='opta', half=True, line_zorder=2, pitch_color='grass', line_color='white')
+        
+        # Plot inswingers
         fig, ax = pitch.draw()
-
-        # Extract coordinates based on user selection
-        x_coords = df_inswingers_for_plot_right['140.0']
-        y_coords = df_inswingers_for_plot_right['141.0']
-
-        # Plot the heatmap
-        fig.set_facecolor('#22312b')
-        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50)) # Adjust bins as needed
+        x_coords = df_inswingers_for_right['140.0']
+        y_coords = df_inswingers_for_right['141.0']
+        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50))
         bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
-        pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='#22312b')
-
         pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
-
         st.write('Inswingers')
         st.pyplot(fig)
 
+        # Plot outswingers
         fig, ax = pitch.draw()
-
-        # Extract coordinates based on user selection
-        x_coords = df_outswingers_for_plot_right['140.0']
-        y_coords = df_outswingers_for_plot_right['141.0']
-
-        # Plot the heatmap
-        fig.set_facecolor('#22312b')
-        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50)) # Adjust bins as needed
+        x_coords = df_outswingers_for_right['140.0']
+        y_coords = df_outswingers_for_right['141.0']
+        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50))
         bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
-        pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='#22312b')
-
         pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
-
         st.write('Outswingers')
         st.pyplot(fig)
 
+        # Plot straights
         fig, ax = pitch.draw()
-
-        # Extract coordinates based on user selection
-        x_coords = df_straight_for_plot_right['140.0']
-        y_coords = df_straight_for_plot_right['141.0']
-
-        # Plot the heatmap
-        fig.set_facecolor('#22312b')
-        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50)) # Adjust bins as needed
+        x_coords = df_straight_for_right['140.0']
+        y_coords = df_straight_for_right['141.0']
+        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50))
         bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
-        pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='#22312b')
-
         pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
-
         st.write('Straights')
         st.pyplot(fig)
 
+        # Plot short
         fig, ax = pitch.draw()
-
-        # Extract coordinates based on user selection
-        x_coords = df_short_for_plot_right['140.0']
-        y_coords = df_short_for_plot_right['141.0']
-
-        # Plot the heatmap
-        fig.set_facecolor('#22312b')
-        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50)) # Adjust bins as needed
+        x_coords = df_short_for_right['140.0']
+        y_coords = df_short_for_right['141.0']
+        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50))
         bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
-        pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='#22312b')
-
         pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
-
         st.write('Short')
         st.pyplot(fig)
-
 
     with col1:
         st.header('Left side')
+        # Plot inswingers
         fig, ax = pitch.draw()
-
-        # Extract coordinates based on user selection
-        x_coords = df_inswingers_for_plot_left['140.0']
-        y_coords = df_inswingers_for_plot_left['141.0']
-
-        # Plot the heatmap
-        fig.set_facecolor('#22312b')
-        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50)) # Adjust bins as needed
+        x_coords = df_inswingers_for_left['140.0']
+        y_coords = df_inswingers_for_left['141.0']
+        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50))
         bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
-        pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='#22312b')
-
         pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
-
         st.write('Inswingers')
         st.pyplot(fig)
 
+        # Plot outswingers
         fig, ax = pitch.draw()
-
-        # Extract coordinates based on user selection
-        x_coords = df_outswingers_for_plot_left['140.0']
-        y_coords = df_outswingers_for_plot_left['141.0']
-
-        # Plot the heatmap
-        fig.set_facecolor('#22312b')
-        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50)) # Adjust bins as needed
+        x_coords = df_outswingers_for_left['140.0']
+        y_coords = df_outswingers_for_left['141.0']
+        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50))
         bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
-        pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='#22312b')
-
         pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
-
         st.write('Outswingers')
         st.pyplot(fig)
 
+        # Plot straights
         fig, ax = pitch.draw()
-
-        # Extract coordinates based on user selection
-        x_coords = df_straight_for_plot_left['140.0']
-        y_coords = df_straight_for_plot_left['141.0']
-
-        # Plot the heatmap
-        fig.set_facecolor('#22312b')
-        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50)) # Adjust bins as needed
+        x_coords = df_straight_for_left['140.0']
+        y_coords = df_straight_for_left['141.0']
+        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50))
         bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
-        pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='#22312b')
-
         pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
-
         st.write('Straights')
         st.pyplot(fig)
 
+        # Plot short
         fig, ax = pitch.draw()
-
-        # Extract coordinates based on user selection
-        x_coords = df_short_for_plot_left['140.0']
-        y_coords = df_short_for_plot_left['141.0']
-
-        # Plot the heatmap
-        fig.set_facecolor('#22312b')
-        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50)) # Adjust bins as needed
+        x_coords = df_short_for_left['140.0']
+        y_coords = df_short_for_left['141.0']
+        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50))
         bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
-        pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='#22312b')
-
         pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
-
         st.write('Short')
         st.pyplot(fig)
 
-    col1,col2,col3,col4 = st.columns(4)
+    # Display the xG summaries for first contact and finisher
+    col1, col2, col3, col4 = st.columns(4)
+
     with col1:
-        st.write('Inswingers, first contact',bold=True)
-        df_inswingers_for['321.0_full'].fillna(0, inplace=True)
-        average_xg_inswingers = df_inswingers_for.groupby('team_name')['321.0_full'].sum().reset_index()
-        average_xg_inswingers = average_xg_inswingers.rename(columns={'321.0_full': 'xg_inswingers'})
-        st.dataframe(average_xg_inswingers,hide_index=True)
-        average_player_xg_inswingers = df_inswingers_for.groupby('playerName')['321.0_full'].sum().reset_index()
-        average_player_xg_inswingers = average_player_xg_inswingers.rename(columns={'321.0_full': 'player_xg'})
-        average_player_xg_inswingers = average_player_xg_inswingers[average_player_xg_inswingers['player_xg'] > 0]
-        average_player_xg_inswingers = average_player_xg_inswingers.sort_values(by='player_xg', ascending=False)
-        st.dataframe(average_player_xg_inswingers,hide_index=True)
+        st.write('Inswingers, First Contact')
+        st.dataframe(summary_inswingers_first, hide_index=True)
+        st.write('Inswingers, Finisher')
+        st.dataframe(summary_inswingers_finisher, hide_index=True)
 
     with col2:
-        st.write('Outswingers, first contact',bold=True)
-        df_outswingers_for['321.0_full'].fillna(0, inplace=True)
-        average_xg_outswingers = df_outswingers_for.groupby('team_name')['321.0_full'].sum().reset_index()
-        average_xg_outswingers = average_xg_outswingers.rename(columns={'321.0_full': 'xg_outswingers'})
-        st.dataframe(average_xg_outswingers,hide_index=True)
-        average_player_xg_outswingers = df_outswingers_for.groupby('playerName')['321.0_full'].sum().reset_index()
-        average_player_xg_outswingers = average_player_xg_outswingers.rename(columns={'321.0_full': 'player_xg'})
-        average_player_xg_outswingers = average_player_xg_outswingers[average_player_xg_outswingers['player_xg'] > 0]
-        average_player_xg_outswingers = average_player_xg_outswingers.sort_values(by='player_xg', ascending=False)
-        st.dataframe(average_player_xg_outswingers,hide_index=True)
+        st.write('Outswingers, First Contact')
+        st.dataframe(summary_outswingers_first, hide_index=True)
+        st.write('Outswingers, Finisher')
+        st.dataframe(summary_outswingers_finisher, hide_index=True)
 
     with col3:
-        st.write('Straight, first contact',bold=True)
-        df_straight_for['321.0_full'].fillna(0, inplace=True)
-        average_xg_outswingers = df_straight_for.groupby('team_name')['321.0_full'].sum().reset_index()
-        average_xg_outswingers = average_xg_outswingers.rename(columns={'321.0_full': 'xg_straight'})
-        st.dataframe(average_xg_outswingers,hide_index=True)
-        average_player_xg_outswingers = df_straight_for.groupby('playerName')['321.0_full'].sum().reset_index()
-        average_player_xg_outswingers = average_player_xg_outswingers.rename(columns={'321.0_full': 'player_xg'})
-        average_player_xg_outswingers = average_player_xg_outswingers[average_player_xg_outswingers['player_xg'] > 0]
-        average_player_xg_outswingers = average_player_xg_outswingers.sort_values(by='player_xg', ascending=False)
-        st.dataframe(average_player_xg_outswingers,hide_index=True)
+        st.write('Straight, First Contact')
+        st.dataframe(summary_straight_first, hide_index=True)
+        st.write('Straight, Finisher')
+        st.dataframe(summary_straight_finisher, hide_index=True)
 
     with col4:
-        st.write('Short, first contact',bold=True)
-        df_short['321.0_full'].fillna(0, inplace=True)
-        average_xg_outswingers = df_short.groupby('team_name')['321.0_full'].sum().reset_index()
-        average_xg_outswingers = average_xg_outswingers.rename(columns={'321.0_full': 'xg_short'})
-        st.dataframe(average_xg_outswingers,hide_index=True)
-        average_player_xg_outswingers = df_short.groupby('playerName')['321.0_full'].sum().reset_index()
-        average_player_xg_outswingers = average_player_xg_outswingers.rename(columns={'321.0_full': 'player_xg'})
-        average_player_xg_outswingers = average_player_xg_outswingers[average_player_xg_outswingers['player_xg'] > 0]
-        average_player_xg_outswingers = average_player_xg_outswingers.sort_values(by='player_xg', ascending=False)
-        st.dataframe(average_player_xg_outswingers,hide_index=True)
+        st.write('Short, First Contact')
+        st.dataframe(summary_short_first, hide_index=True)
+        st.write('Short, Finisher')
+        st.dataframe(summary_short_finisher, hide_index=True)
+
 
 def Physical_data():
     df = load_physical_data()
