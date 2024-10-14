@@ -2278,7 +2278,7 @@ def League_stats():
 
     # Sort by 'Total score' and drop unnecessary columns
     combined_df = combined_df.sort_values(by='Total score', ascending=False)
-    combined_df = combined_df.drop(columns=['match_date', 'player_position', 'player_positionSide'])
+    combined_df = combined_df.drop(columns=['match_date', 'player_position'])
 
     # Display the combined DataFrame in Streamlit
     st.dataframe(combined_df, hide_index=True)
