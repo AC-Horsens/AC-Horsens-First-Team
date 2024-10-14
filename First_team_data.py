@@ -2465,30 +2465,35 @@ def League_stats():
     # Function to process set pieces based on the type of corner
     def process_set_pieces(df, corner_type_column):
         columns_to_keep = ['sequenceId', 'team_name', 'label', '321.0', 'playerName', 'x', 'y', '140.0', '141.0']
-        
+
         # Ensure that we only use available columns
         available_columns = df.columns.intersection(columns_to_keep + [corner_type_column, '6.0'])
         filtered_df = df[available_columns]
-        
+
         # Check if the corner type column exists
         if corner_type_column not in filtered_df.columns:
             raise ValueError(f"Column {corner_type_column} not found in the dataframe")
 
-        # Filter the dataset to only keep relevant set pieces
-        filtered_df = filtered_df[(filtered_df[corner_type_column] == True) & (filtered_df['6.0'] == True)]
-        
+        # Identify the sequenceIds where the corner type column is True
+        sequence_ids_with_true_corner_type = filtered_df[filtered_df[corner_type_column] == True]['sequenceId'].unique()
+
+        # Keep all rows associated with those sequenceIds (whole sequence)
+        filtered_df = filtered_df[filtered_df['sequenceId'].isin(sequence_ids_with_true_corner_type)]
+
         # Debug: Check if there are any rows left after filtering
-        
+        st.write(f"Filtered data for {corner_type_column} (whole sequences): {filtered_df.shape}")
+        st.write(filtered_df.head())
+
         # First contact (use the first xG in the sequence)
         if '321.0' in filtered_df.columns:
-            filtered_df['sequence_xg'] = filtered_df.groupby(['sequenceId', 'team_name', 'label'])['321.0'].transform('sum')
+            filtered_df['sequence_xg'] = filtered_df.groupby(['sequenceId', 'team_name', 'label'])['321.0'].transform('first')
             filtered_df['sequence_xg'] = filtered_df['sequence_xg'].fillna(0)
         else:
             raise ValueError("'321.0' column is missing from the dataframe after filtering.")
-        
+
         # Finisher (use the last xG in the sequence)
         filtered_df['finisher_xg'] = filtered_df.groupby(['sequenceId', 'team_name', 'label'])['321.0'].transform('last')
-        
+
         return filtered_df[['playerName', 'sequenceId', 'sequence_xg', 'finisher_xg', 'x', 'y', '140.0', '141.0']]
 
     # Process each set piece type
@@ -2516,7 +2521,7 @@ def League_stats():
         finisher_xg_summary = finisher_xg_summary[finisher_xg_summary['finisher_xg'] > 0]
         finisher_xg_summary = finisher_xg_summary.rename(columns={'finisher_xg': f'finisher_xg_{set_piece_type}'})
         finisher_xg_summary = finisher_xg_summary.sort_values(by=f'finisher_xg_{set_piece_type}', ascending=False)
-        
+
         # Debug: Check if the finisher summary has data
         st.write(f"Finisher summary for {set_piece_type}: {finisher_xg_summary.shape}")
         st.write(finisher_xg_summary.head())
