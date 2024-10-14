@@ -2576,11 +2576,27 @@ def League_stats():
         # Display the heatmap in Streamlit
         st.pyplot(fig)
 
+    # Function to summarize the xG values for first contact and finisher players
+    def summarize_xg(df, set_piece_type):
+        # First contact summary
+        first_contact_summary = df.groupby('first_contact_player')['first_contact_xg'].sum().reset_index()
+        first_contact_summary = first_contact_summary[first_contact_summary['first_contact_xg'] > 0]
+        first_contact_summary = first_contact_summary.rename(columns={'first_contact_xg': f'first_contact_xg_{set_piece_type}'})
+        first_contact_summary = first_contact_summary.sort_values(by=f'first_contact_xg_{set_piece_type}', ascending=False)
+        
+        # Finisher summary
+        finisher_summary = df.groupby('finisher_player')['finisher_xg'].sum().reset_index()
+        finisher_summary = finisher_summary[finisher_summary['finisher_xg'] > 0]
+        finisher_summary = finisher_summary.rename(columns={'finisher_xg': f'finisher_xg_{set_piece_type}'})
+        finisher_summary = finisher_summary.sort_values(by=f'finisher_xg_{set_piece_type}', ascending=False)
+        
+        return first_contact_summary, finisher_summary
+
     # Filter the actual corner events for inswingers, outswingers, straight, and short set pieces
     df_actual_inswingers = filter_actual_corner_events(df_inswingers_for_heatmap, '223.0')
-    df_actual_outswingers = filter_actual_corner_events(df_outswingers_for_heatmap, '224.0')
-    df_actual_straight = filter_actual_corner_events(df_straight_for_heatmap, '225.0')
-    df_actual_short = filter_actual_corner_events(df_short_for_heatmap, '212.0')
+    df_actual_outswingers = filter_actual_corner_events(df_inswingers_for_heatmap, '224.0')
+    df_actual_straight = filter_actual_corner_events(df_inswingers_for_heatmap, '225.0')
+    df_actual_short = filter_actual_corner_events(df_inswingers_for_heatmap, '212.0')
 
     # Split the actual corner events data for heatmap based on y-coordinate (left and right sides)
     df_inswingers_for_left, df_inswingers_for_right = split_data(df_actual_inswingers)
@@ -2620,6 +2636,41 @@ def League_stats():
         
         st.subheader('Short Corners')
         plot_heatmap(df_short_for_right, "Short - Right Side (Actual Corners)")
+
+    # Display the xG summaries for first contact and finisher
+    st.header('xG Summaries for First Contact and Finisher')
+
+    # Summarize and display xG for each set piece type
+    summary_inswingers_first, summary_inswingers_finisher = summarize_xg(df_actual_inswingers, 'inswingers')
+    summary_outswingers_first, summary_outswingers_finisher = summarize_xg(df_actual_outswingers, 'outswingers')
+    summary_straight_first, summary_straight_finisher = summarize_xg(df_actual_straight, 'straight')
+    summary_short_first, summary_short_finisher = summarize_xg(df_actual_short, 'short')
+
+    col1, col2, col3, col4 = st.columns(4)
+
+    with col1:
+        st.write('Inswingers, First Contact')
+        st.dataframe(summary_inswingers_first, hide_index=True)
+        st.write('Inswingers, Finisher')
+        st.dataframe(summary_inswingers_finisher, hide_index=True)
+
+    with col2:
+        st.write('Outswingers, First Contact')
+        st.dataframe(summary_outswingers_first, hide_index=True)
+        st.write('Outswingers, Finisher')
+        st.dataframe(summary_outswingers_finisher, hide_index=True)
+
+    with col3:
+        st.write('Straight, First Contact')
+        st.dataframe(summary_straight_first, hide_index=True)
+        st.write('Straight, Finisher')
+        st.dataframe(summary_straight_finisher, hide_index=True)
+
+    with col4:
+        st.write('Short, First Contact')
+        st.dataframe(summary_short_first, hide_index=True)
+        st.write('Short, Finisher')
+        st.dataframe(summary_short_finisher, hide_index=True)
 
 
 def Physical_data():
