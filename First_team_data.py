@@ -2578,6 +2578,11 @@ def League_stats():
 
     # Function to summarize the xG values for first contact and finisher players
     def summarize_xg(df, set_piece_type):
+        if 'first_contact_player' not in df.columns or 'finisher_player' not in df.columns:
+            st.write(f"Debug: Missing required columns in dataframe for {set_piece_type}")
+            st.write(f"Available columns: {df.columns}")
+            return pd.DataFrame(), pd.DataFrame()  # Return empty dataframes if columns are missing
+        
         # First contact summary
         first_contact_summary = df.groupby('first_contact_player')['first_contact_xg'].sum().reset_index()
         first_contact_summary = first_contact_summary[first_contact_summary['first_contact_xg'] > 0]
@@ -2594,9 +2599,9 @@ def League_stats():
 
     # Filter the actual corner events for inswingers, outswingers, straight, and short set pieces
     df_actual_inswingers = filter_actual_corner_events(df_inswingers_for_heatmap, '223.0')
-    df_actual_outswingers = filter_actual_corner_events(df_outswingers_for_heatmap, '224.0')
-    df_actual_straight = filter_actual_corner_events(df_straight_for_heatmap, '225.0')
-    df_actual_short = filter_actual_corner_events(df_short_for_heatmap, '212.0')
+    df_actual_outswingers = filter_actual_corner_events(df_inswingers_for_heatmap, '224.0')
+    df_actual_straight = filter_actual_corner_events(df_inswingers_for_heatmap, '225.0')
+    df_actual_short = filter_actual_corner_events(df_inswingers_for_heatmap, '212.0')
 
     # Split the actual corner events data for heatmap based on y-coordinate (left and right sides)
     df_inswingers_for_left, df_inswingers_for_right = split_data(df_actual_inswingers)
@@ -2641,10 +2646,6 @@ def League_stats():
     st.header('xG Summaries for First Contact and Finisher')
 
     # Summarize and display xG for each set piece type
-    summary_inswingers_first, summary_inswingers_finisher = summarize_xg(df_actual_inswingers, 'inswingers')
-    summary_outswingers_first, summary_outswingers_finisher = summarize_xg(df_actual_outswingers, 'outswingers')
-    summary_straight_first, summary_straight_finisher = summarize_xg(df_actual_straight, 'straight')
-    summary_short_first, summary_short_finisher = summarize_xg(df_actual_short, 'short')
 
     col1, col2, col3, col4 = st.columns(4)
 
