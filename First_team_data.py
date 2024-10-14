@@ -2471,12 +2471,6 @@ def League_stats():
     available_columns = df_set_pieces.columns.intersection(required_columns)
 
     # Debug output: Print available columns to ensure they exist
-    st.write("Available columns in the dataset:", available_columns)
-
-    if len(available_columns) < len(required_columns):
-        missing_columns = set(required_columns) - set(available_columns)
-        st.write(f"Missing columns in the dataset: {missing_columns}")
-        raise ValueError(f"Missing required columns: {missing_columns}")
 
     # If columns exist, continue processing
     df_set_pieces['team_name'] = df_set_pieces['team_name'].str.replace(" ", "_")
