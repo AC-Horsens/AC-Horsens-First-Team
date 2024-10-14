@@ -2463,7 +2463,7 @@ def League_stats():
     # Filter and process data for each type of set piece (inswingers, outswingers, straight, short)
     
     # Ensure the necessary columns are present in the dataset
-    required_columns = ['sequenceId', 'team_name', 'label', '321.0', 'playerName', 'x', 'y', '140.0', '141.0']
+    required_columns = ['sequenceId','outcome', 'team_name', 'label', '321.0', 'playerName', 'x', 'y', '140.0', '141.0']
     available_columns = df_set_pieces.columns.intersection(required_columns)
 
     # Debug output: Print available columns to ensure they exist
@@ -2556,6 +2556,25 @@ def League_stats():
     def filter_actual_corner_events(df, corner_type_column):
         return df[df[corner_type_column] == True]
 
+    # Function to process first contact and finisher
+    def assign_first_contact_and_finisher(df, corner_type_column):
+        df = df.copy()
+
+        # Skip assigning first contact to the kicker (where corner type is True)
+        # and skip when 'outcome' is 0 (opponent)
+        df['first_contact_player'] = df.groupby(['date', 'label', 'sequenceId'])['playerName'].shift(-1)
+        df['first_contact_xg'] = df.groupby(['date', 'label', 'sequenceId'])['321.0'].shift(-1)
+
+        # If 'outcome' is 0, it means the contact was by the opponent, so skip
+        df['first_contact_xg'] = df.apply(
+            lambda row: row['first_contact_xg'] if row['outcome'] != 0 and row[corner_type_column] != True else None, axis=1)
+
+        # Finisher (use the last xG in the sequence)
+        df['finisher_player'] = df.groupby(['date', 'label', 'sequenceId'])['playerName'].transform('last')
+        df['finisher_xg'] = df.groupby(['date', 'label', 'sequenceId'])['321.0'].transform('last')
+        
+        return df
+
     # Function to create and display heatmaps for actual corner events in Streamlit
     def plot_heatmap(df, title):
         pitch = VerticalPitch(pitch_type='opta', half=True, line_zorder=2, pitch_color='grass', line_color='white')
@@ -2577,12 +2596,37 @@ def League_stats():
         st.pyplot(fig)
 
     # Function to summarize the xG values for first contact and finisher players
+    def summarize_xg(df, set_piece_type):
+        if 'first_contact_player' not in df.columns or 'finisher_player' not in df.columns:
+            st.write(f"Debug: Missing required columns in dataframe for {set_piece_type}")
+            st.write(f"Available columns: {df.columns}")
+            return pd.DataFrame(), pd.DataFrame()  # Return empty dataframes if columns are missing
+        
+        # First contact summary
+        first_contact_summary = df.groupby('first_contact_player')['first_contact_xg'].sum().reset_index()
+        first_contact_summary = first_contact_summary[first_contact_summary['first_contact_xg'] > 0]
+        first_contact_summary = first_contact_summary.rename(columns={'first_contact_xg': f'first_contact_xg_{set_piece_type}'})
+        first_contact_summary = first_contact_summary.sort_values(by=f'first_contact_xg_{set_piece_type}', ascending=False)
+        
+        # Finisher summary
+        finisher_summary = df.groupby('finisher_player')['finisher_xg'].sum().reset_index()
+        finisher_summary = finisher_summary[finisher_summary['finisher_xg'] > 0]
+        finisher_summary = finisher_summary.rename(columns={'finisher_xg': f'finisher_xg_{set_piece_type}'})
+        finisher_summary = finisher_summary.sort_values(by=f'finisher_xg_{set_piece_type}', ascending=False)
+        
+        return first_contact_summary, finisher_summary
 
     # Filter the actual corner events for inswingers, outswingers, straight, and short set pieces
     df_actual_inswingers = filter_actual_corner_events(df_inswingers_for_heatmap, '223.0')
-    df_actual_outswingers = filter_actual_corner_events(df_outswingers_for_heatmap, '224.0')
-    df_actual_straight = filter_actual_corner_events(df_straight_for_heatmap, '225.0')
-    df_actual_short = filter_actual_corner_events(df_short_for_heatmap, '212.0')
+    df_actual_outswingers = filter_actual_corner_events(df_inswingers_for_heatmap, '224.0')
+    df_actual_straight = filter_actual_corner_events(df_inswingers_for_heatmap, '225.0')
+    df_actual_short = filter_actual_corner_events(df_inswingers_for_heatmap, '212.0')
+
+    # Assign first contact and finisher for each set-piece type
+    df_inswingers_for_cleaned = assign_first_contact_and_finisher(df_actual_inswingers, '223.0')
+    df_outswingers_for_cleaned = assign_first_contact_and_finisher(df_actual_outswingers, '224.0')
+    df_straight_for_cleaned = assign_first_contact_and_finisher(df_actual_straight, '225.0')
+    df_short_for_cleaned = assign_first_contact_and_finisher(df_actual_short, '212.0')
 
     # Split the actual corner events data for heatmap based on y-coordinate (left and right sides)
     df_inswingers_for_left, df_inswingers_for_right = split_data(df_actual_inswingers)
@@ -2627,6 +2671,10 @@ def League_stats():
     st.header('xG Summaries for First Contact and Finisher')
 
     # Summarize and display xG for each set piece type
+    summary_inswingers_first, summary_inswingers_finisher = summarize_xg(df_inswingers_for_cleaned, 'inswingers')
+    summary_outswingers_first, summary_outswingers_finisher = summarize_xg(df_outswingers_for_cleaned, 'outswingers')
+    summary_straight_first, summary_straight_finisher = summarize_xg(df_straight_for_cleaned, 'straight')
+    summary_short_first, summary_short_finisher = summarize_xg(df_short_for_cleaned, 'short')
 
     col1, col2, col3, col4 = st.columns(4)
 
@@ -2653,6 +2701,7 @@ def League_stats():
         st.dataframe(summary_short_first, hide_index=True)
         st.write('Short, Finisher')
         st.dataframe(summary_short_finisher, hide_index=True)
+
 
 
 def Physical_data():
