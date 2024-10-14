@@ -2553,93 +2553,46 @@ def League_stats():
     df_short_for_left, df_short_for_right = split_data(df_short_for_heatmap)
 
     # Display the heatmaps and xG summaries
+    def filter_actual_corner_events(df, corner_type_column):
+        return df[df[corner_type_column] == True]
+
+    # Function to create and display heatmaps for actual corner events in Streamlit
+    def plot_heatmap(df, title):
+        pitch = VerticalPitch(pitch_type='opta', half=True, line_zorder=2, pitch_color='grass', line_color='white')
+        fig, ax = pitch.draw()
+
+        # Extract coordinates based on available data
+        x_coords = df['140.0']  # x-coordinate column
+        y_coords = df['141.0']  # y-coordinate column
+
+        # Generate heatmap based on x and y coordinates
+        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50))  # Adjust bins if needed
+        bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
+        pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
+
+        # Set plot title
+        ax.set_title(title)
+
+        # Display the heatmap in Streamlit
+        st.pyplot(fig)
+
+    # Filter the actual corner events for inswingers (223.0)
+    df_actual_inswingers = filter_actual_corner_events(df_inswingers_for_heatmap, '223.0')
+
+    # Split the actual corner events data for heatmap based on y-coordinate (left and right sides)
+    df_inswingers_for_left, df_inswingers_for_right = split_data(df_actual_inswingers)
+
+    # Streamlit layout for displaying heatmaps
     col1, col2 = st.columns(2)
 
-    with col2:
-        st.header('Right side')
-        pitch = VerticalPitch(pitch_type='opta', half=True, line_zorder=2, pitch_color='grass', line_color='white')
-        
-        # Plot inswingers
-        fig, ax = pitch.draw()
-        x_coords = df_inswingers_for_right['140.0']
-        y_coords = df_inswingers_for_right['141.0']
-        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50))
-        bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
-        pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
-        st.write('Inswingers')
-        st.pyplot(fig)
-
-        # Plot outswingers
-        fig, ax = pitch.draw()
-        x_coords = df_outswingers_for_right['140.0']
-        y_coords = df_outswingers_for_right['141.0']
-        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50))
-        bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
-        pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
-        st.write('Outswingers')
-        st.pyplot(fig)
-
-        # Plot straights
-        fig, ax = pitch.draw()
-        x_coords = df_straight_for_right['140.0']
-        y_coords = df_straight_for_right['141.0']
-        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50))
-        bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
-        pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
-        st.write('Straights')
-        st.pyplot(fig)
-
-        # Plot short
-        fig, ax = pitch.draw()
-        x_coords = df_short_for_right['140.0']
-        y_coords = df_short_for_right['141.0']
-        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50))
-        bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
-        pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
-        st.write('Short')
-        st.pyplot(fig)
-
+    # Display heatmaps for right and left sides in Streamlit
     with col1:
-        st.header('Left side')
-        # Plot inswingers
-        fig, ax = pitch.draw()
-        x_coords = df_inswingers_for_left['140.0']
-        y_coords = df_inswingers_for_left['141.0']
-        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50))
-        bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
-        pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
-        st.write('Inswingers')
-        st.pyplot(fig)
+        st.header('Left Side (Actual Inswinger Corners)')
+        plot_heatmap(df_inswingers_for_left, "Inswingers - Left Side (Actual Corners)")
 
-        # Plot outswingers
-        fig, ax = pitch.draw()
-        x_coords = df_outswingers_for_left['140.0']
-        y_coords = df_outswingers_for_left['141.0']
-        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50))
-        bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
-        pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
-        st.write('Outswingers')
-        st.pyplot(fig)
-
-        # Plot straights
-        fig, ax = pitch.draw()
-        x_coords = df_straight_for_left['140.0']
-        y_coords = df_straight_for_left['141.0']
-        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50))
-        bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
-        pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
-        st.write('Straights')
-        st.pyplot(fig)
-
-        # Plot short
-        fig, ax = pitch.draw()
-        x_coords = df_short_for_left['140.0']
-        y_coords = df_short_for_left['141.0']
-        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50))
-        bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
-        pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
-        st.write('Short')
-        st.pyplot(fig)
+    with col2:
+        st.header('Right Side (Actual Inswinger Corners)')
+        plot_heatmap(df_inswingers_for_right, "Inswingers - Right Side (Actual Corners)")
 
     # Display the xG summaries for first contact and finisher
     col1, col2, col3, col4 = st.columns(4)
