@@ -2481,7 +2481,7 @@ def League_stats():
         
         # First contact (use the first xG in the sequence)
         if '321.0' in filtered_df.columns:
-            filtered_df['sequence_xg'] = filtered_df.groupby(['sequenceId', 'team_name', 'label'])['321.0'].transform('first')
+            filtered_df['sequence_xg'] = filtered_df.groupby(['sequenceId', 'team_name', 'label'])['321.0'].transform('sum')
             filtered_df['sequence_xg'] = filtered_df['sequence_xg'].fillna(0)
         else:
             raise ValueError("'321.0' column is missing from the dataframe after filtering.")
