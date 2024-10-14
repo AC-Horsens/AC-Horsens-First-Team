@@ -2478,7 +2478,7 @@ def League_stats():
 
     # Function to process set pieces based on the type of corner
     def process_set_pieces(df, corner_type_column):
-        columns_to_keep = ['sequenceId', 'team_name', 'label', 'date', '321.0', 'playerName', 'x', 'y', '140.0', '141.0']
+        columns_to_keep = ['sequenceId','outcome', 'team_name', 'label', 'date', '321.0', 'playerName', 'x', 'y', '140.0', '141.0']
         
         # Ensure that we only use available columns
         available_columns = df.columns.intersection(columns_to_keep + [corner_type_column, '6.0'])
