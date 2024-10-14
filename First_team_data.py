@@ -2576,50 +2576,50 @@ def League_stats():
         # Display the heatmap in Streamlit
         st.pyplot(fig)
 
-    # Filter the actual corner events for inswingers (223.0)
+    # Filter the actual corner events for inswingers, outswingers, straight, and short set pieces
     df_actual_inswingers = filter_actual_corner_events(df_inswingers_for_heatmap, '223.0')
+    df_actual_outswingers = filter_actual_corner_events(df_inswingers_for_heatmap, '224.0')
+    df_actual_straight = filter_actual_corner_events(df_inswingers_for_heatmap, '225.0')
+    df_actual_short = filter_actual_corner_events(df_inswingers_for_heatmap, '212.0')
 
     # Split the actual corner events data for heatmap based on y-coordinate (left and right sides)
     df_inswingers_for_left, df_inswingers_for_right = split_data(df_actual_inswingers)
+    df_outswingers_for_left, df_outswingers_for_right = split_data(df_actual_outswingers)
+    df_straight_for_left, df_straight_for_right = split_data(df_actual_straight)
+    df_short_for_left, df_short_for_right = split_data(df_actual_short)
 
     # Streamlit layout for displaying heatmaps
+    st.header('Left Side (All Corners)')
     col1, col2 = st.columns(2)
 
-    # Display heatmaps for right and left sides in Streamlit
+    # Display heatmaps for left and right sides in Streamlit
     with col1:
-        st.header('Left Side (Actual Inswinger Corners)')
+        st.subheader('Inswingers')
         plot_heatmap(df_inswingers_for_left, "Inswingers - Left Side (Actual Corners)")
+        
+        st.subheader('Outswingers')
+        plot_heatmap(df_outswingers_for_left, "Outswingers - Left Side (Actual Corners)")
+        
+        st.subheader('Straights')
+        plot_heatmap(df_straight_for_left, "Straights - Left Side (Actual Corners)")
+        
+        st.subheader('Short Corners')
+        plot_heatmap(df_short_for_left, "Short - Left Side (Actual Corners)")
+
+    st.header('Right Side (All Corners)')
 
     with col2:
-        st.header('Right Side (Actual Inswinger Corners)')
+        st.subheader('Inswingers')
         plot_heatmap(df_inswingers_for_right, "Inswingers - Right Side (Actual Corners)")
-
-    # Display the xG summaries for first contact and finisher
-    col1, col2, col3, col4 = st.columns(4)
-
-    with col1:
-        st.write('Inswingers, First Contact')
-        st.dataframe(summary_inswingers_first, hide_index=True)
-        st.write('Inswingers, Finisher')
-        st.dataframe(summary_inswingers_finisher, hide_index=True)
-
-    with col2:
-        st.write('Outswingers, First Contact')
-        st.dataframe(summary_outswingers_first, hide_index=True)
-        st.write('Outswingers, Finisher')
-        st.dataframe(summary_outswingers_finisher, hide_index=True)
-
-    with col3:
-        st.write('Straight, First Contact')
-        st.dataframe(summary_straight_first, hide_index=True)
-        st.write('Straight, Finisher')
-        st.dataframe(summary_straight_finisher, hide_index=True)
-
-    with col4:
-        st.write('Short, First Contact')
-        st.dataframe(summary_short_first, hide_index=True)
-        st.write('Short, Finisher')
-        st.dataframe(summary_short_finisher, hide_index=True)
+        
+        st.subheader('Outswingers')
+        plot_heatmap(df_outswingers_for_right, "Outswingers - Right Side (Actual Corners)")
+        
+        st.subheader('Straights')
+        plot_heatmap(df_straight_for_right, "Straights - Right Side (Actual Corners)")
+        
+        st.subheader('Short Corners')
+        plot_heatmap(df_short_for_right, "Short - Right Side (Actual Corners)")
 
 
 def Physical_data():
