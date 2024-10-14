@@ -2110,13 +2110,13 @@ def League_stats():
     matchstats_df['team_name'] = matchstats_df['team_name'].str.replace(' ', '_')
 
     cols_to_rank = matchstats_df.drop(columns=['team_name']).columns
-    ranked_df = matchstats_df.copy()  # Create a copy of the original DataFrame
+    ranked_df = matchstats_df.copy()
     for col in cols_to_rank:
-        # Special case for 'PPDA per match' to rank in descending order
         if col == 'PPDA per match':
             ranked_df[col + '_rank'] = matchstats_df[col].rank(axis=0, ascending=True)
         else:
             ranked_df[col + '_rank'] = matchstats_df[col].rank(axis=0, ascending=False)
+
     matchstats_df = ranked_df.merge(matchstats_df)
     matchstats_df = matchstats_df.set_index('team_name')
     matchstats_df = matchstats_df.drop(columns=['matches_rank'])
@@ -2125,8 +2125,6 @@ def League_stats():
 
     # Select a team
     sorted_teams = matchstats_df['team_name'].sort_values()
-
-    # Select a team
     selected_team = st.selectbox('Choose team', sorted_teams)
     team_df = matchstats_df.loc[matchstats_df['team_name'] == selected_team]
 
@@ -2149,16 +2147,16 @@ def League_stats():
         filtered_data_df = filtered_data_df.T
         st.dataframe(filtered_data_df)
 
+    # ------------------------------------
+    # Similar Teams Section (Moved up)
     # Find similar teams
     selected_columns = [
-        'Duels per match_rank', 
-        'Duels won %_rank', 'Passes per game_rank', 'Pass accuracy %_rank', 'possWonDef3rd %_rank', 'possWonMid3rd %_rank', 
-        'possWonAtt3rd %_rank', 'Forward pass share %_rank', 'Open play shot assists share_rank', 'PPDA per match_rank', 
-        'Long pass share %_rank', 'Crosses_rank', 'Cross accuracy %_rank'
+        'Duels per match_rank', 'Duels won %_rank', 'Passes per game_rank', 'Pass accuracy %_rank', 'possWonDef3rd %_rank',
+        'possWonMid3rd %_rank', 'possWonAtt3rd %_rank', 'Forward pass share %_rank', 'Open play shot assists share_rank',
+        'PPDA per match_rank', 'Long pass share %_rank', 'Crosses_rank', 'Cross accuracy %_rank'
     ]
 
     rank_columns = [col for col in matchstats_df.columns if col.endswith('_rank')]
-
     weighted_columns = ['Passes per game_rank', 'Long pass share %_rank', 'Forward pass share %_rank', 'PPDA per match_rank']
 
     # Update similarity score calculation by giving specific columns a weight of 3
@@ -2170,10 +2168,36 @@ def League_stats():
         axis=1
     )
 
+    similar_teams = matchstats_df[matchstats_df['team_name'] != selected_team]
+    similar_teams = similar_teams[similar_teams['team_name'] != 'Horsens']
+    top_3_similar_teams = similar_teams.nsmallest(3, 'similarity_score')
+    top_3_similar_teams = top_3_similar_teams.sort_values(by='similarity_score', ascending=False)
+
+    with col2:
+        st.write("Teams similar to the selected team:")
+        st.dataframe(top_3_similar_teams[['team_name'] + rank_columns + ['similarity_score']], hide_index=True)
+
+    # ------------------------------------
+    # Central Defenders Section (Now comes after similar teams)
+    balanced_central_defender_df = balanced_central_defender_df[balanced_central_defender_df['team_name'] == 'Horsens']
+    balanced_central_defender_df['match_date'] = pd.to_datetime(balanced_central_defender_df['label'].str.extract(r'(\d{4}-\d{2}-\d{2})')[0])
+
+    # Ensure 'match_date' column is not null
+    balanced_central_defender_df = balanced_central_defender_df.dropna(subset=['match_date'])
+    unique_dates = balanced_central_defender_df['match_date'].unique()
+
+    # Get the latest 3 match dates
+    latest_dates = pd.Series(unique_dates).nlargest(3)
+    # Filter for rows with the latest match dates
+    recent_matches_df = balanced_central_defender_df[balanced_central_defender_df['match_date'].isin(latest_dates)]
+
+    # Filter for rows where 'label' contains one of the top 3 similar teams
+    teams_list = top_3_similar_teams['team_name'].tolist()
+    matches_with_teams_df = balanced_central_defender_df[balanced_central_defender_df['label'].str.contains('|'.join(teams_list))]
+
     # Ensure that matches involving the selected team are also considered in the similarity score
     matches_against_selected_team_df = balanced_central_defender_df[balanced_central_defender_df['label'].str.contains(selected_team)]
-    st.dataframe(recent_matches_df)
-    st.dataframe(matches_with_teams_df)
+
     # Combine recent matches, matches involving top teams, and matches against the selected team
     combined_df = pd.merge(recent_matches_df, matches_with_teams_df, how='outer')
     combined_df = pd.merge(combined_df, matches_against_selected_team_df, how='outer')
@@ -2188,49 +2212,6 @@ def League_stats():
         **{col: 'mean' for col in combined_df.columns if col not in ['minsPlayed', 'playerName', 'team_name']}
     }).reset_index()
 
-    agg_df = agg_df.sort_values(by='Total score', ascending=False)
-    st.dataframe(agg_df, hide_index=True)
-
-    similar_teams = matchstats_df[matchstats_df['team_name'] != selected_team]
-    similar_teams = similar_teams[similar_teams['team_name']!='Horsens']
-    top_3_similar_teams = similar_teams.nsmallest(3, 'similarity_score')
-    top_3_similar_teams = top_3_similar_teams.sort_values(by='similarity_score', ascending=False)
-
-    with col2:
-        st.write("Teams similar to the selected team:")
-        st.dataframe(top_3_similar_teams[['team_name'] + rank_columns + ['similarity_score']], hide_index=True)
-    st.header('Central defenders')
-    balanced_central_defender_df = balanced_central_defender_df[balanced_central_defender_df['team_name'] == 'Horsens']
-    balanced_central_defender_df['match_date'] = pd.to_datetime(balanced_central_defender_df['label'].str.extract(r'(\d{4}-\d{2}-\d{2})')[0])
-
-    # Ensure 'match_date' column is not null
-    balanced_central_defender_df = balanced_central_defender_df.dropna(subset=['match_date'])
-
-    unique_dates = balanced_central_defender_df['match_date'].unique()
-
-    # Get the latest 3 match dates
-    latest_dates = pd.Series(unique_dates).nlargest(3)
-    # Filter for rows with the latest match dates
-    recent_matches_df = balanced_central_defender_df[balanced_central_defender_df['match_date'].isin(latest_dates)]
-    
-    # Filter for rows where 'label' contains one of the top 3 similar teams
-    teams_list = top_3_similar_teams['team_name'].tolist()
-    matches_with_teams_df = balanced_central_defender_df[balanced_central_defender_df['label'].str.contains('|'.join(teams_list))]
-
-    # Combine both filters: recent matches and matches involving top teams
-    combined_df = pd.merge(recent_matches_df, matches_with_teams_df, how='outer')
-    combined_df = combined_df.sort_values(by='Total score', ascending=False)
-    combined_df = combined_df.drop(columns=['match_date'])
-    # Display the filtered DataFrame
-    combined_df = combined_df.drop(columns=['player_position'])
-
-    st.dataframe(combined_df, hide_index=True)
-    combined_df = combined_df.drop(columns=['label'])
-    agg_df = combined_df.groupby(['playerName', 'team_name']).agg({
-        'minsPlayed': 'sum',
-        
-        **{col: 'mean' for col in combined_df.columns if col not in ['minsPlayed', 'playerName', 'team_name']}
-    }).reset_index()
     agg_df = agg_df.sort_values(by='Total score', ascending=False)
     st.dataframe(agg_df, hide_index=True)
     
