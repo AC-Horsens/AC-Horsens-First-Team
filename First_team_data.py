@@ -2507,14 +2507,14 @@ def League_stats():
         st.write(filtered_df.columns)
 
         # First contact (use the first xG in the sequence)
-        if '321.0_full' in filtered_df.columns:
-            filtered_df['sequence_xg'] = filtered_df.groupby(['sequenceId', 'team_name', 'label'])['321.0_full'].transform('first')
+        if '321.0' in filtered_df.columns:
+            filtered_df['sequence_xg'] = filtered_df.groupby(['sequenceId', 'team_name', 'label'])['321.0'].transform('first')
             filtered_df['sequence_xg'] = filtered_df['sequence_xg'].fillna(0)
         else:
-            raise ValueError("'321.0_full' column is missing from the dataframe after filtering.")
+            raise ValueError("'321.0' column is missing from the dataframe after filtering.")
         
         # Finisher (use the last xG in the sequence)
-        filtered_df['finisher_xg'] = filtered_df.groupby(['sequenceId', 'team_name', 'label'])['321.0_full'].transform('last')
+        filtered_df['finisher_xg'] = filtered_df.groupby(['sequenceId', 'team_name', 'label'])['321.0'].transform('last')
         
         return filtered_df[['playerName', 'sequenceId', 'sequence_xg', 'finisher_xg', 'x', 'y', '140.0', '141.0']]
 
