@@ -2462,9 +2462,6 @@ def League_stats():
     ]
 
     # Debug: Check if there are any set piece data after filtering by team and date
-    st.write("Filtered Set Piece Data:", df_set_pieces.shape)
-    st.write(df_set_pieces.head())
-    st.dataframe(df_set_pieces)
     # Function to process set pieces based on the type of corner
     def process_set_pieces(df, corner_type_column):
         columns_to_keep = ['sequenceId', 'team_name', 'label', '321.0', 'playerName', 'x', 'y', '140.0', '141.0']
@@ -2481,8 +2478,6 @@ def League_stats():
         filtered_df = filtered_df[(filtered_df[corner_type_column] == True) & (filtered_df['6.0'] == True)]
         
         # Debug: Check if there are any rows left after filtering
-        st.write(f"Filtered data for {corner_type_column}: {filtered_df.shape}")
-        st.write(filtered_df.head())
         
         # First contact (use the first xG in the sequence)
         if '321.0' in filtered_df.columns:
@@ -2501,7 +2496,7 @@ def League_stats():
     df_outswingers_for = process_set_pieces(df_set_pieces, '224.0')
     df_straight_for = process_set_pieces(df_set_pieces, '225.0')
     df_short_for = process_set_pieces(df_set_pieces, '212.0')
-
+    st.dataframe(df_inswingers_for)
     # Function to summarize the first contact and finisher
     def summarize_xg(df, set_piece_type):
         # First contact summary
