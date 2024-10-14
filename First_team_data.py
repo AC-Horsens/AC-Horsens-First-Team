@@ -2464,7 +2464,7 @@ def League_stats():
     # Debug: Check if there are any set piece data after filtering by team and date
     st.write("Filtered Set Piece Data:", df_set_pieces.shape)
     st.write(df_set_pieces.head())
-
+    st.dataframe(df_set_pieces)
     # Function to process set pieces based on the type of corner
     def process_set_pieces(df, corner_type_column):
         columns_to_keep = ['sequenceId', 'team_name', 'label', '321.0', 'playerName', 'x', 'y', '140.0', '141.0']
