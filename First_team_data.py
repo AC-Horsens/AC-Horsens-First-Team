@@ -2463,16 +2463,27 @@ def League_stats():
 
     # Filter and process data for each type of set piece (inswingers, outswingers, straight, short)
     def process_set_pieces(df, corner_type_column):
-        filtered_df = df_set_pieces[(df_set_pieces[corner_type_column] == True) & (df_set_pieces['6.0'] == True)]
-        filtered_df = filtered_df[['sequenceId', 'team_name', 'label', '321.0', 'playerName', 'x', 'y', '140.0', '141.0']]
-        filtered_df = filtered_df.merge(df_set_pieces, on=['sequenceId', 'team_name', 'label'], suffixes=('_corner', '_full'), how='outer')
-        filtered_df = filtered_df[filtered_df['team_name'] == selected_team]
+        # Define the columns to keep
+        columns_to_keep = ['sequenceId', 'team_name', 'label', '321.0', 'playerName', 'x', 'y', '140.0', '141.0']
         
-        # First contact
+        # Ensure the necessary columns exist in the dataframe before filtering
+        available_columns = df.columns.intersection(columns_to_keep + [corner_type_column, '6.0'])
+        filtered_df = df[available_columns]
+        
+        # Filter the dataset to only keep relevant set pieces
+        filtered_df = filtered_df[(filtered_df[corner_type_column] == True) & (filtered_df['6.0'] == True)]
+        
+        # Merge with itself to get both _corner and _full columns, ensuring we keep all necessary columns
+        filtered_df = filtered_df.merge(df, on=['sequenceId', 'team_name', 'label'], suffixes=('_corner', '_full'), how='inner')
+        
+        # After merge, retain only the required columns
+        filtered_df = filtered_df[filtered_df.columns.intersection(columns_to_keep + ['321.0_full'])]
+        
+        # First contact (use the first xG in the sequence)
         filtered_df['sequence_xg'] = filtered_df.groupby(['sequenceId', 'team_name', 'label'])['321.0_full'].transform('first')
         filtered_df['sequence_xg'] = filtered_df['sequence_xg'].fillna(0)
         
-        # Finisher (last contact)
+        # Finisher (use the last xG in the sequence)
         filtered_df['finisher_xg'] = filtered_df.groupby(['sequenceId', 'team_name', 'label'])['321.0_full'].transform('last')
         
         return filtered_df[['playerName', 'sequenceId', 'sequence_xg', 'finisher_xg', 'x', 'y', '140.0', '141.0']]
