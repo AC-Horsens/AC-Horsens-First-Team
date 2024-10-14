@@ -2217,24 +2217,45 @@ def League_stats():
     st.dataframe(agg_df, hide_index=True)
     
     st.header('Fullbacks')
+
+    # Filter the fullbacks data for the 'Horsens' team
     fullbacks_df = fullbacks_df[fullbacks_df['team_name'] == 'Horsens']
-    fullbacks_df.loc[:, 'match_date'] = pd.to_datetime(fullbacks_df['label'].str.extract(r'(\d{4}-\d{2}-\d{2})')[0])
+
+    # Extract and convert 'match_date' from the 'label' column, dropping null values
+    fullbacks_df['match_date'] = pd.to_datetime(fullbacks_df['label'].str.extract(r'(\d{4}-\d{2}-\d{2})')[0])
     fullbacks_df = fullbacks_df.dropna(subset=['match_date'])
+
+    # Use previously calculated 'latest_dates' to filter recent matches
     recent_matches_df = fullbacks_df[fullbacks_df['match_date'].isin(latest_dates)]
+
+    # Filter for matches where 'label' contains one of the top 3 similar teams
     matches_with_teams_df = fullbacks_df[fullbacks_df['label'].str.contains('|'.join(teams_list))]
+
+    # Combine recent matches and matches involving similar teams
     combined_df = pd.merge(recent_matches_df, matches_with_teams_df, how='outer')
+
+    # Sort by 'Total score' and drop unnecessary columns
     combined_df = combined_df.sort_values(by='Total score', ascending=False)
-    combined_df = combined_df.drop(columns=['match_date', 'player_position','player_positionSide'])
+    combined_df = combined_df.drop(columns=['match_date', 'player_position', 'player_positionSide'])
+
+    # Display the combined DataFrame in Streamlit
     st.dataframe(combined_df, hide_index=True)
+
+    # Drop the 'label' column for aggregation
     combined_df = combined_df.drop(columns=['label'])
 
+    # Group by player and team, aggregating with sum and mean as needed
     agg_df = combined_df.groupby(['playerName', 'team_name']).agg({
-        'minsPlayed': 'sum',
-        
-        **{col: 'mean' for col in combined_df.columns if col not in ['minsPlayed', 'playerName', 'team_name']}
+        'minsPlayed': 'sum',  # Sum up the minutes played
+        **{col: 'mean' for col in combined_df.columns if col not in ['minsPlayed', 'playerName', 'team_name']}  # Mean for other columns
     }).reset_index()
+
+    # Sort by 'Total score' in descending order
     agg_df = agg_df.sort_values(by='Total score', ascending=False)
+
+    # Display the aggregated DataFrame in Streamlit
     st.dataframe(agg_df, hide_index=True)
+
 
     st.header('Number 6')
     fullbacks_df = number6_df[number6_df['team_name'] == 'Horsens']
