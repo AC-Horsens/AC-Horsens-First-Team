@@ -2461,7 +2461,7 @@ def League_stats():
         (df_set_pieces['date'] >= selected_start_date) & (df_set_pieces['date'] <= selected_end_date)
     ]
     # Filter and process data for each type of set piece (inswingers, outswingers, straight, short)
-    st.header('Set pieces')
+    
 
     # Load the set pieces data
     df_set_pieces = load_set_piece_data()
