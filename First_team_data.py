@@ -2623,22 +2623,9 @@ def League_stats():
     # Display the xG summaries for first contact and finisher
     st.header('xG Summaries for First Contact and Finisher')
 
-    # Summarize and display xG for each set piece type
-    def calculate_total_xg(df, set_piece_type_column):
-        # Filter only the rows where the set piece type column is True
-        filtered_df = df[df[set_piece_type_column] == True]
-        filtered_df['321.0'] = filtered_df['321.0'].astype(float)
-        # Sum up the total xG ('321.0') for all events
-        total_xg = filtered_df['321.0'].sum()
-        
+    def calculate_total_xg_from_summary(finisher_df, set_piece_type):
+        total_xg = finisher_df[f'finisher_xg_{set_piece_type}'].sum()
         return total_xg
-
-    # Calculate total xG for each set piece type
-    total_xg_inswingers = calculate_total_xg(df_set_pieces, '223.0')
-    total_xg_outswingers = calculate_total_xg(df_set_pieces, '224.0')
-    total_xg_straight = calculate_total_xg(df_set_pieces, '225.0')
-    total_xg_short = calculate_total_xg(df_set_pieces, '212.0')
-
 
     col1, col2, col3, col4 = st.columns(4)
 
@@ -2647,7 +2634,8 @@ def League_stats():
         st.dataframe(summary_inswingers_first, hide_index=True)
         st.write('Inswingers, Finisher')
         st.dataframe(summary_inswingers_finisher, hide_index=True)
-        st.write(total_xg_inswingers)
+        
+
     with col2:
         st.write('Outswingers, First Contact')
         st.dataframe(summary_outswingers_first, hide_index=True)
@@ -2666,6 +2654,21 @@ def League_stats():
         st.write('Short, Finisher')
         st.dataframe(summary_short_finisher, hide_index=True)
 
+
+    total_xg_inswingers = calculate_total_xg_from_summary(summary_inswingers_finisher, 'inswingers')
+    total_xg_outswingers = calculate_total_xg_from_summary(summary_outswingers_finisher, 'outswingers')
+    total_xg_straight = calculate_total_xg_from_summary(summary_straight_finisher, 'straight')
+    total_xg_short = calculate_total_xg_from_summary(summary_short_finisher, 'short')
+
+    # Create a dataframe with the total xG values for each set piece type
+    total_xg_df = pd.DataFrame({
+        'Set Piece Type': ['Inswingers', 'Outswingers', 'Straight', 'Short'],
+        'Total xG': [total_xg_inswingers, total_xg_outswingers, total_xg_straight, total_xg_short]
+    })
+
+    # Display the total xG as a DataFrame in Streamlit
+    st.header('Total xG for Set Pieces')
+    st.dataframe(total_xg_df)
 
 def Physical_data():
     df = load_physical_data()
