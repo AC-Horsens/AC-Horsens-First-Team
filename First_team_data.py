@@ -2466,7 +2466,6 @@ def League_stats():
     required_columns = ['sequenceId','outcome', 'team_name', 'label', '321.0', 'playerName', 'x', 'y', '140.0', '141.0']
     available_columns = df_set_pieces.columns.intersection(required_columns)
 
-    # Debug output: Print available columns to ensure they exist
 
     # If columns exist, continue processing
     df_set_pieces['team_name'] = df_set_pieces['team_name'].str.replace(" ", "_")
@@ -2557,7 +2556,7 @@ def League_stats():
 
     # Display the heatmaps and xG summaries
     def filter_actual_corner_events(df, corner_type_column):
-        return df[df[corner_type_column] == True]
+        return df[df[corner_type_column] == 'true']
 
     # Function to create and display heatmaps for actual corner events in Streamlit
     def plot_heatmap(df, title):
@@ -2592,7 +2591,6 @@ def League_stats():
     df_short_for_left, df_short_for_right = split_data(df_actual_short)
 
     # Streamlit layout for displaying heatmaps
-    st.header('Left Side (All Corners)')
     col1, col2 = st.columns(2)
 
     # Display heatmaps for left and right sides in Streamlit
@@ -2608,8 +2606,6 @@ def League_stats():
         
         st.subheader('Short Corners')
         plot_heatmap(df_short_for_left, "Short - Left Side (Actual Corners)")
-
-    st.header('Right Side (All Corners)')
 
     with col2:
         st.subheader('Inswingers')
