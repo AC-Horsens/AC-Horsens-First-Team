@@ -942,10 +942,10 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
         afslutninger = afslutninger[['playerName', 'x', 'y', '321.0']]
         
         # Create the pitch
-        pitch = VerticalPitch(pitch_type='opta', half=True, line_color='black')
+        pitch = VerticalPitch(pitch_type='opta', half=True, line_color='white',pitch_color='grass')
         
         # Create the figure
-        fig, ax = pitch.draw(figsize=(10, 7))
+        fig, ax = pitch.draw()
         
         # Plot the shots
         sc = pitch.scatter(
@@ -964,7 +964,6 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
         st.pyplot(fig)
 
     # Example call in Streamlit app
-    plot_xg_shots(df, player_name)
 
     Bolde_modtaget = df[df['pass_receiver'] == player_name]
 
@@ -994,4 +993,6 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
     else:
         st.error("'140' column does not exist in the DataFrame.")
     plot_arrows(Alle_off_aktioner)
+    plot_xg_shots(df, player_name)
+
 player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fullbacks_df,number8_df,number6_df,number10_df,winger_df,classic_striker_df)
