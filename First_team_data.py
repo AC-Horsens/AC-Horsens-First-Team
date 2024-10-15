@@ -1921,7 +1921,7 @@ def Dashboard():
         corner_xg = corner_xg.rename(columns={'321.0': 'Set piece xG'})
 
         # Calculate xG per set piece
-        corner_xg['xG per set piece'] = corner_xg['Set piece xG'] / corner_xg['total_set_pieces']
+        corner_xg['xG per set piece'] = corner_xg['Set piece xG'] / (corner_xg['num_corners'] + corner_xg['num_freekicks'])
 
         # Fill NaN values for xG per corner and xG per freekick (in case of zero set pieces) with zero
         corner_xg['xG per corner'] = corner_xg['xG per corner'].fillna(0)
