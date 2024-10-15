@@ -953,10 +953,7 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
             c='red', edgecolors='black', linewidth=1, alpha=0.7, ax=ax
         )
         
-        # Add a colorbar (optional)
-        cbar = fig.colorbar(sc, ax=ax)
-        cbar.set_label('xG (Expected Goals)', rotation=270, labelpad=15)
-        
+        # Add a colorbar (optional)        
         # Set title
         ax.set_title(f'{player_name} Shot xG Map', fontsize=20)
         
@@ -981,10 +978,12 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
 
     with col1:
         plot_heatmap_location(Defensive_aktioner, f'Defensive actions taken by {player_name}')
+        plot_arrows(Alle_off_aktioner)
 
     with col2:
         plot_heatmap_end_location(Bolde_modtaget_til, f'Passes recieved {player_name}')
-                
+        plot_xg_shots(df, player_name)
+       
     with col3:
         plot_heatmap_end_location(Pasninger_spillet_til, f'Passes {player_name}')
 
@@ -992,7 +991,5 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
         Alle_off_aktioner = df[(df['140.0'] > 0) & (df['playerName'] == player_name)]
     else:
         st.error("'140' column does not exist in the DataFrame.")
-    plot_arrows(Alle_off_aktioner)
-    plot_xg_shots(df, player_name)
 
 player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fullbacks_df,number8_df,number6_df,number10_df,winger_df,classic_striker_df)
