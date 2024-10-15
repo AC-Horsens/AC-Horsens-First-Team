@@ -2668,7 +2668,7 @@ def League_stats():
 
     # Display the total xG as a DataFrame in Streamlit
     st.header('Total xG for Set Pieces')
-    st.dataframe(total_xg_df,hide_index)
+    st.dataframe(total_xg_df,hide_index=True)
 
 def Physical_data():
     df = load_physical_data()
