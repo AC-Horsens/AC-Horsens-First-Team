@@ -1936,7 +1936,7 @@ def Dashboard():
         set_piece_xg = set_piece_xg.sort_values('xG per set piece', ascending=False)
         
         # Display the DataFrame in Streamlit
-        st.dataframe(set_piece_xg[['Set piece xG', 'xG per corner', 'xG per freekick', 'xG per set piece']])
+        st.dataframe(set_piece_xg[['team_name','Set piece xG', 'xG per corner', 'xG per freekick', 'xG per set piece']])
         
     Data_types = {
         'xG': xg,
