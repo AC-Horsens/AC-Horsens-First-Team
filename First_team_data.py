@@ -2489,7 +2489,7 @@ def League_stats():
             raise ValueError(f"Column {corner_type_column} not found in the dataframe")
 
         # Identify the sequenceIds where the corner type column is True (corner taker)
-        sequence_ids_with_true_corner_type = filtered_df[filtered_df[corner_type_column] == True]['date','label','sequenceId'].unique()
+        sequence_ids_with_true_corner_type = filtered_df[filtered_df[corner_type_column] == True][('date','label','sequenceId')].unique()
         # Keep all rows associated with those sequenceIds (whole sequence)
         filtered_df = filtered_df[filtered_df['date','label','sequenceId'].isin(sequence_ids_with_true_corner_type)]
 
