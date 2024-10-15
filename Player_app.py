@@ -974,6 +974,12 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
     Defensive_aktioner = df[(df['typeId'] == 8) | (df['typeId'] == 7) | (df['typeId'] == 45) | (df['typeId'] == 12) | (df['typeId'] == 4) | (df['typeId'] == 44)| (df['typeId'] == 49)| (df['typeId'] == 74)| (df['typeId'] == 83)| (df['typeId'] == 67)]
     Defensive_aktioner = Defensive_aktioner[['x','y']]
     
+    if '140.0' in df.columns:
+        Alle_off_aktioner = df[(df['140.0'] > 0) & (df['playerName'] == player_name)]
+    else:
+        st.error("'140' column does not exist in the DataFrame.")
+
+
     col1,col2,col3 = st.columns(3)
 
     with col1:
@@ -987,9 +993,5 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
     with col3:
         plot_heatmap_end_location(Pasninger_spillet_til, f'Passes {player_name}')
 
-    if '140.0' in df.columns:
-        Alle_off_aktioner = df[(df['140.0'] > 0) & (df['playerName'] == player_name)]
-    else:
-        st.error("'140' column does not exist in the DataFrame.")
 
 player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fullbacks_df,number8_df,number6_df,number10_df,winger_df,classic_striker_df)
