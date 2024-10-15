@@ -1879,64 +1879,58 @@ def Dashboard():
     def set_pieces():
         df_set_pieces = load_set_piece_data()
         df_set_pieces = df_set_pieces.fillna(0)
-        
         # Calculate xG for corners
         corner_xg = df_set_pieces[df_set_pieces['25.0'] == True]
         corner_xg = corner_xg.groupby(['team_name', 'label'])['321.0'].sum().reset_index()
         corner_xg = corner_xg[['team_name', '321.0']]
         corner_xg = corner_xg.groupby('team_name').sum()
         corner_xg = corner_xg.rename(columns={'321.0': 'corner xg'})
-        
         # Calculate xG for free kicks
         freekick_xg = df_set_pieces[df_set_pieces['24.0'] == True]
         freekick_xg = freekick_xg.groupby(['team_name', 'label'])['321.0'].sum().reset_index()
         freekick_xg = freekick_xg[['team_name', '321.0']]
         freekick_xg = freekick_xg.groupby('team_name').sum()
         freekick_xg = freekick_xg.rename(columns={'321.0': 'freekick xg'})
-        
+
         # Merge corner xG and free kick xG
-        set_piece_xg = corner_xg.merge(freekick_xg, on='team_name', how='outer')
-        
+        corner_xg = corner_xg.merge(freekick_xg, on='team_name', how='outer')
         # Calculate the number of corners and free kicks for each team
         num_corners = df_set_pieces[df_set_pieces['6.0'] == True].groupby('team_name').size()
         num_freekicks = df_set_pieces[df_set_pieces['5.0'] == True].groupby('team_name').size()
-        
+
         # Combine the number of set pieces into one DataFrame
         num_set_pieces = pd.DataFrame({
             'num_corners': num_corners,
             'num_freekicks': num_freekicks
         }).fillna(0)  # Replace NaN with 0 for teams with no free kicks or corners
-        
+
         # Calculate total number of set pieces for each team
         num_set_pieces['total_set_pieces'] = num_set_pieces['num_corners'] + num_set_pieces['num_freekicks']
-        
+
         # Merge number of set pieces with xG data
-        set_piece_xg = set_piece_xg.merge(num_set_pieces, left_index=True, right_index=True, how='outer')
-        
+        corner_xg = corner_xg.merge(num_set_pieces, left_index=True, right_index=True,how='outer')
+
         # Calculate xG per corner and xG per freekick
-        set_piece_xg['xG per corner'] = set_piece_xg['corner xg'] / set_piece_xg['num_corners']
-        set_piece_xg['xG per freekick'] = set_piece_xg['freekick xg'] / set_piece_xg['num_freekicks']
-        
-        # Calculate total set piece xG
-        total_set_piece_xg = df_set_pieces.groupby('team_name')['321.0'].sum().reset_index()
-        total_set_piece_xg = total_set_piece_xg.rename(columns={'321.0': 'Set piece xG'})
-        
-        # Merge total set piece xG into the main dataframe
-        set_piece_xg = set_piece_xg.merge(total_set_piece_xg, on='team_name', how='outer')
-        
+        corner_xg['xG per corner'] = corner_xg['corner xg'] / corner_xg['num_corners']
+        corner_xg['xG per freekick'] = corner_xg['freekick xg'] / corner_xg['num_freekicks']
+
+        # Calculate Set piece xg
+        corner_xg = df_set_pieces.groupby('team_name')['321.0'].sum().reset_index()
+
+        # Rename the columns to make it clearer
+        corner_xg = corner_xg.rename(columns={'321.0': 'Set piece xG'})
+
         # Calculate xG per set piece
-        set_piece_xg['xG per set piece'] = set_piece_xg['Set piece xG'] / set_piece_xg['total_set_pieces']
-        
-        # Fill NaN values for xG per corner, xG per freekick (in case of zero set pieces)
-        set_piece_xg['xG per corner'] = set_piece_xg['xG per corner'].fillna(0)
-        set_piece_xg['xG per freekick'] = set_piece_xg['xG per freekick'].fillna(0)
-        set_piece_xg['xG per set piece'] = set_piece_xg['xG per set piece'].fillna(0)
-        
+        corner_xg['xG per set piece'] = corner_xg['Set piece xG'] / corner_xg['total_set_pieces']
+
+        # Fill NaN values for xG per corner and xG per freekick (in case of zero set pieces) with zero
+        corner_xg['xG per corner'] = corner_xg['xG per corner'].fillna(0)
+        corner_xg['xG per freekick'] = corner_xg['xG per freekick'].fillna(0)
+
         # Sort the DataFrame by xG per set piece
-        set_piece_xg = set_piece_xg.sort_values('xG per set piece', ascending=False)
-        
+        corner_xg = corner_xg.sort_values('xG per set piece', ascending=False)
         # Display the DataFrame in Streamlit
-        st.dataframe(set_piece_xg[['team_name','Set piece xG', 'xG per corner', 'xG per freekick', 'xG per set piece']])
+        st.dataframe(corner_xg[['Set piece xG', 'xG per corner', 'xG per freekick', 'xG per set piece']])
         
     Data_types = {
         'xG': xg,
