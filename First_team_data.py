@@ -2556,7 +2556,7 @@ def League_stats():
 
     # Display the heatmaps and xG summaries
     def filter_actual_corner_events(df, corner_type_column):
-        return df[df[corner_type_column] == 'true']
+        return df[df[corner_type_column] == True]
 
     # Function to create and display heatmaps for actual corner events in Streamlit
     def plot_heatmap(df, title):
