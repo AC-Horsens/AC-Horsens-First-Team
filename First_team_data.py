@@ -2647,7 +2647,7 @@ def League_stats():
         st.dataframe(summary_inswingers_first, hide_index=True)
         st.write('Inswingers, Finisher')
         st.dataframe(summary_inswingers_finisher, hide_index=True)
-        st.dataframe(total_xg_inswingers)
+        st.write(total_xg_inswingers)
     with col2:
         st.write('Outswingers, First Contact')
         st.dataframe(summary_outswingers_first, hide_index=True)
