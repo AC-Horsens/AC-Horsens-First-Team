@@ -5,6 +5,7 @@ from mplsoccer import Pitch
 from scipy.ndimage import gaussian_filter
 import numpy as np
 from datetime import datetime
+from mplsoccer import VerticalPitch
 
 
 st.set_page_config(layout="wide")
@@ -932,6 +933,38 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
         st.write('As classic striker')
         st.dataframe(classic_striker_df, hide_index=True)
 
+    def plot_xg_shots(df, player_name):
+        # Filter the dataset for shots with xG > 0 and for the specified player
+        afslutninger = df[df['321.0'] > 0]
+        afslutninger = afslutninger[afslutninger['playerName'] == player_name]
+        
+        # Select relevant columns: playerName, x, y, and xG (321.0)
+        afslutninger = afslutninger[['playerName', 'x', 'y', '321.0']]
+        
+        # Create the pitch
+        pitch = VerticalPitch(pitch_type='opta', half=True, line_color='black')
+        
+        # Create the figure
+        fig, ax = pitch.draw(figsize=(10, 7))
+        
+        # Plot the shots
+        sc = pitch.scatter(
+            afslutninger['x'], afslutninger['y'], s=afslutninger['321.0'] * 1000,  # Scale the size of dots by xG
+            c='red', edgecolors='black', linewidth=1, alpha=0.7, ax=ax
+        )
+        
+        # Add a colorbar (optional)
+        cbar = fig.colorbar(sc, ax=ax)
+        cbar.set_label('xG (Expected Goals)', rotation=270, labelpad=15)
+        
+        # Set title
+        ax.set_title(f'{player_name} Shot xG Map', fontsize=20)
+        
+        # Display the plot in Streamlit
+        st.pyplot(fig)
+
+    # Example call in Streamlit app
+    plot_xg_shots(df, player_name)
 
     Bolde_modtaget = df[df['pass_receiver'] == player_name]
 
