@@ -2489,15 +2489,16 @@ def League_stats():
             raise ValueError(f"Column {corner_type_column} not found in the dataframe")
 
         # Identify the sequenceIds where the corner type column is True (corner taker)
-        sequence_ids_with_true_corner_type = filtered_df[filtered_df[corner_type_column] == True]['date','label','sequenceId'].unique()
+        sequence_ids_with_true_corner_type = filtered_df[filtered_df[corner_type_column] == True][['date', 'label', 'sequenceId']].drop_duplicates()
+
         # Keep all rows associated with those sequenceIds (whole sequence)
-        filtered_df = filtered_df[filtered_df['date','label','sequenceId'].isin(sequence_ids_with_true_corner_type)]
+        filtered_df = filtered_df.merge(sequence_ids_with_true_corner_type, on=['date', 'label', 'sequenceId'])
 
         # Drop rows with missing playerName to avoid errors
         filtered_df = filtered_df.dropna(subset=['playerName'])
 
         # Filter out the kicker (corner taker) to find the first touch after them
-        filtered_df_without_kicker = filtered_df[filtered_df[corner_type_column] != 'true']
+        filtered_df_without_kicker = filtered_df[filtered_df[corner_type_column] != True]
 
         # First contact: Get the first touch after the corner
         filtered_df_without_kicker['sequence_xg'] = filtered_df_without_kicker.groupby(['date', 'label', 'sequenceId'])['321.0'].transform('first')
