@@ -2498,7 +2498,7 @@ def League_stats():
         filtered_df = filtered_df.dropna(subset=['playerName'])
 
         # Filter out the kicker (corner taker) to find the first touch after them
-        filtered_df_without_kicker = filtered_df[filtered_df[corner_type_column] != True]
+        filtered_df_without_kicker = filtered_df[filtered_df[corner_type_column] != 'true']
 
         # First contact: Get the first touch after the corner
         filtered_df_without_kicker['sequence_xg'] = filtered_df_without_kicker.groupby(['date', 'label', 'sequenceId'])['321.0'].transform('first')
