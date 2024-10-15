@@ -1915,7 +1915,10 @@ def Dashboard():
         corner_xg['xG per freekick'] = corner_xg['freekick xg'] / corner_xg['num_freekicks']
 
         # Calculate Set piece xg
-        corner_xg['Set piece xg'] = corner_xg['corner xg'] + corner_xg['freekick xg']
+        corner_xg = df_set_pieces.groupby('team_name')['321.0'].sum().reset_index()
+
+        # Rename the columns to make it clearer
+        corner_xg = corner_xg.rename(columns={'321.0': 'Set piece xG'})
 
         # Calculate xG per set piece
         corner_xg['xG per set piece'] = corner_xg['Set piece xg'] / corner_xg['total_set_pieces']
@@ -1927,7 +1930,7 @@ def Dashboard():
         # Sort the DataFrame by xG per set piece
         corner_xg = corner_xg.sort_values('xG per set piece', ascending=False)
         # Display the DataFrame in Streamlit
-        st.dataframe(corner_xg[['Set piece xg', 'xG per corner', 'xG per freekick', 'xG per set piece']])
+        st.dataframe(corner_xg[['Set piece xG', 'xG per corner', 'xG per freekick', 'xG per set piece']])
         
     Data_types = {
         'xG': xg,
