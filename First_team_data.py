@@ -2627,7 +2627,7 @@ def League_stats():
     def calculate_total_xg(df, set_piece_type_column):
         # Filter only the rows where the set piece type column is True
         filtered_df = df[df[set_piece_type_column] == True]
-        
+        filtered_df['321.0'] = filtered_df['321.0'].astype(float)
         # Sum up the total xG ('321.0') for all events
         total_xg = filtered_df['321.0'].sum()
         
