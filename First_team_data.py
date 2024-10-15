@@ -2624,6 +2624,21 @@ def League_stats():
     st.header('xG Summaries for First Contact and Finisher')
 
     # Summarize and display xG for each set piece type
+    def calculate_total_xg(df, set_piece_type_column):
+        # Filter only the rows where the set piece type column is True
+        filtered_df = df[df[set_piece_type_column] == True]
+        
+        # Sum up the total xG ('321.0') for all events
+        total_xg = filtered_df['321.0'].sum()
+        
+        return total_xg
+
+    # Calculate total xG for each set piece type
+    total_xg_inswingers = calculate_total_xg(df_set_pieces, '223.0')
+    total_xg_outswingers = calculate_total_xg(df_set_pieces, '224.0')
+    total_xg_straight = calculate_total_xg(df_set_pieces, '225.0')
+    total_xg_short = calculate_total_xg(df_set_pieces, '212.0')
+
 
     col1, col2, col3, col4 = st.columns(4)
 
@@ -2632,7 +2647,7 @@ def League_stats():
         st.dataframe(summary_inswingers_first, hide_index=True)
         st.write('Inswingers, Finisher')
         st.dataframe(summary_inswingers_finisher, hide_index=True)
-
+        st.dataframe(total_xg_inswingers)
     with col2:
         st.write('Outswingers, First Contact')
         st.dataframe(summary_outswingers_first, hide_index=True)
