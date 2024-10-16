@@ -1879,9 +1879,10 @@ def Dashboard():
     def set_pieces():
         df_set_pieces = load_set_piece_data()
         df_set_pieces = df_set_pieces.fillna(0)
-        # Calculate xG for corners
+
+        st.write(df_set_pieces.columns)
         df_set_pieces = df_set_pieces.groupby('team_name').agg({'321.0': 'sum'})
-    
+        st.dataframe(df_set_pieces)
     Data_types = {
         'xG': xg,
         'Passing':passes,
