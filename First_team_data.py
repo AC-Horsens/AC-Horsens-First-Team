@@ -2420,7 +2420,7 @@ def League_stats():
     # Filter and process data for each type of set piece (inswingers, outswingers, straight, short)
     
     # Ensure the necessary columns are present in the dataset
-    required_columns = ['sequenceId','outcome', 'team_name', 'label', '321.0', 'playerName', 'x', 'y', '140.0', '141.0']
+    required_columns = ['possessionId','outcome', 'team_name', 'label', '321.0', 'playerName', 'x', 'y', '140.0', '141.0']
     available_columns = df_set_pieces.columns.intersection(required_columns)
 
 
@@ -2434,7 +2434,7 @@ def League_stats():
 
     # Function to process set pieces based on the type of corner
     def process_set_pieces(df, corner_type_column):
-        columns_to_keep = ['sequenceId', 'team_name','outcome', 'label', 'date', '321.0', 'playerName', 'x', 'y', '140.0', '141.0']
+        columns_to_keep = ['possessionId', 'team_name','outcome', 'label', 'date', '321.0', 'playerName', 'x', 'y', '140.0', '141.0']
 
         # Ensure that we only use available columns
         available_columns = df.columns.intersection(columns_to_keep + [corner_type_column, '6.0'])
@@ -2445,10 +2445,10 @@ def League_stats():
             raise ValueError(f"Column {corner_type_column} not found in the dataframe")
 
         # Identify the sequenceIds where the corner type column is True (corner taker)
-        sequence_ids_with_true_corner_type = filtered_df[filtered_df[corner_type_column] == True][['date', 'label', 'sequenceId']].drop_duplicates()
+        sequence_ids_with_true_corner_type = filtered_df[filtered_df[corner_type_column] == True][['date', 'label', 'possessionId']].drop_duplicates()
 
         # Keep all rows associated with those sequenceIds (whole sequence)
-        filtered_df = filtered_df.merge(sequence_ids_with_true_corner_type, on=['date', 'label', 'sequenceId'])
+        filtered_df = filtered_df.merge(sequence_ids_with_true_corner_type, on=['date', 'label', 'possessionId'])
 
         # Drop rows with missing playerName to avoid errors
         filtered_df = filtered_df.dropna(subset=['playerName'])
@@ -2457,20 +2457,20 @@ def League_stats():
         filtered_df_without_kicker = filtered_df[filtered_df[corner_type_column] != True]
 
         # First contact: Get the first touch after the corner
-        filtered_df_without_kicker['sequence_xg'] = filtered_df_without_kicker.groupby(['date', 'label', 'sequenceId'])['321.0'].transform('first')
+        filtered_df_without_kicker['sequence_xg'] = filtered_df_without_kicker.groupby(['date', 'label', 'possessionId'])['321.0'].transform('first')
 
         # Finisher: Get the last touch in each sequence
-        filtered_df['finisher_xg'] = filtered_df.groupby(['date', 'label', 'sequenceId'])['321.0'].transform('last')
+        filtered_df['finisher_xg'] = filtered_df.groupby(['date', 'label', 'possessionId'])['321.0'].transform('last')
 
         # Now, get the players who had the first contact and who finished
-        first_contact_df = filtered_df_without_kicker.groupby(['date', 'label', 'sequenceId']).first().reset_index()[['date', 'label', 'sequenceId', 'playerName', 'sequence_xg']]
+        first_contact_df = filtered_df_without_kicker.groupby(['date', 'label', 'possessionId']).first().reset_index()[['date', 'label', 'possessionId', 'playerName', 'sequence_xg']]
         first_contact_df = first_contact_df.rename(columns={'playerName': 'first_contact_player', 'sequence_xg': 'first_contact_xg'})
 
-        finisher_df = filtered_df.groupby(['date', 'label', 'sequenceId']).last().reset_index()[['date', 'label', 'sequenceId', 'playerName', 'finisher_xg']]
+        finisher_df = filtered_df.groupby(['date', 'label', 'possessionId']).last().reset_index()[['date', 'label', 'possessionId', 'playerName', 'finisher_xg']]
         finisher_df = finisher_df.rename(columns={'playerName': 'finisher_player', 'finisher_xg': 'finisher_xg'})
 
         # Merge the first contact and finisher information
-        result_df = pd.merge(first_contact_df, finisher_df, on=['date', 'label', 'sequenceId'])
+        result_df = pd.merge(first_contact_df, finisher_df, on=['date', 'label', 'possessionId'])
 
         return result_df, filtered_df  # Return both the result and the filtered data for heatmaps
 
