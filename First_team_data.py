@@ -1882,6 +1882,7 @@ def Dashboard():
 
         st.write(df_set_pieces.columns)
         df_set_pieces = df_set_pieces.groupby('team_name').agg({'321.0': 'sum'})
+        df_set_pieces = df_set_pieces.rename(columns={321.0: 'xG'})
         st.dataframe(df_set_pieces)
     Data_types = {
         'xG': xg,
