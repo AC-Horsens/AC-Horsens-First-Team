@@ -1881,8 +1881,9 @@ def Dashboard():
         df_set_pieces = df_set_pieces.fillna(0)
         df_set_pieces = df_set_pieces.groupby('team_name').agg({'321.0': 'sum'})
         df_set_pieces = df_set_pieces.rename(columns={321.0: 'xG'})
+        df_set_pieces = df_set_pieces.sort_values(by='xG')
         st.dataframe(df_set_pieces)
-        
+
     Data_types = {
         'xG': xg,
         'Passing':passes,
