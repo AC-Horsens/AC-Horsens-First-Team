@@ -2099,6 +2099,25 @@ OB,2724341669,403,15,27,41,1,95.9,47.9,M. Fenger,77.0,48.0,NaN,NaN,OB vs Roskild
 OB,2724382809,629,1,72,26,0,99.5,99.5,N. Mickelson,196.0,131.0,NaN,NaN,OB vs Roskilde,2024-09-22,90.8,59.1,NaN,NaN,NaN,NaN,29.0,4.4,true,NaN,NaN,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
 Roskilde,2724390911,630,1,78,59,0,69.3,49.9,M. Lysholm,215.0,142.0,NaN,NaN,OB vs Roskilde,2024-09-22,88.5,48.8,NaN,NaN,NaN,NaN,20.2,6.2,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,3
 Roskilde,2724279607,95,49,10,39,1,28.9,46.0,A. Maarup,37.0,23.0,NaN,NaN,OB vs Roskilde,2024-09-22,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,2
+Roskilde,2734774661,21,1,2,39,0,99.5,0.5,O. Juul,13.0,7.0,NaN,NaN,Roskilde vs OB,2024-10-18,95.0,42.4,NaN,NaN,NaN,NaN,28.9,1.7,true,NaN,,NaN,NaN,NaN,true,,,NaN,,NaN,1
+Roskilde,2734774717,22,6,2,47,1,101.3,8.2,O. Juul,NaN,7.0,NaN,NaN,Roskilde vs OB,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,,NaN,2
+Roskilde,2734774993,23,1,3,7,0,99.5,0.5,O. Juul,14.0,7.0,NaN,NaN,Roskilde vs OB,2024-10-18,97.3,52.8,NaN,NaN,NaN,NaN,35.6,1.6,true,NaN,,NaN,NaN,NaN,true,,,NaN,,NaN,1
+Roskilde,2734792087,240,1,34,39,1,88.8,74.6,K. Nyegaard,100.0,61.0,NaN,NaN,Roskilde vs OB,2024-10-18,92.2,48.5,0.34795284,NaN,NaN,NaN,18.1,4.9,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,,NaN,2
+OB,2734787365,284,1,25,31,0,99.5,99.5,N. Mickelson,79.0,48.0,NaN,NaN,Roskilde vs OB,2024-10-18,93.6,43.0,NaN,NaN,NaN,NaN,38.9,4.6,true,NaN,,NaN,NaN,NaN,true,,,NaN,,NaN,1
+OB,2734787413,285,15,25,38,1,85.1,33.7,L. Deedson,80.0,48.0,NaN,NaN,Roskilde vs OB,2024-10-18,NaN,NaN,NaN,0.02215597592294216,0.0,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,,true,,NaN,2
+Roskilde,2734810815,329,28,45,0,1,49.7,49.1,NaN,NaN,73.0,NaN,NaN,Roskilde vs OB,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,,NaN,2
+Roskilde,2734827255,513,1,67,25,0,99.5,0.5,R. Arabaci,190.0,109.0,NaN,NaN,Roskilde vs OB,2024-10-18,90.2,29.9,NaN,NaN,NaN,NaN,22.2,2.0,NaN,true,,NaN,NaN,NaN,true,,,NaN,,NaN,1
+Roskilde,2734827337,514,5,67,33,1,77.4,-1.8,A. Taranis,NaN,109.0,NaN,NaN,Roskilde vs OB,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,,NaN,2
+Roskilde,2734827355,515,1,67,38,1,79.8,-1.4,M. Juhl,191.0,109.0,NaN,NaN,Roskilde vs OB,2024-10-18,73.6,6.7,0.00011834,NaN,NaN,NaN,8.5,2.4,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,,true,3
+Roskilde,2734827367,516,1,67,40,1,73.6,6.7,G. Fraulo,191.0,109.0,NaN,NaN,Roskilde vs OB,2024-10-18,79.6,5.2,0.00059494,NaN,NaN,NaN,6.4,6.1,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,,NaN,4
+Roskilde,2734827371,517,1,67,41,0,79.6,5.2,M. Juhl,191.0,109.0,NaN,NaN,Roskilde vs OB,2024-10-18,88.8,37.1,NaN,NaN,NaN,NaN,23.7,1.2,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,,NaN,5
+Roskilde,2734837325,591,1,79,9,0,99.5,99.5,R. Arabaci,226.0,135.0,NaN,NaN,Roskilde vs OB,2024-10-18,92.5,47.9,NaN,NaN,NaN,NaN,35.8,4.5,true,NaN,,NaN,NaN,NaN,true,,,NaN,,NaN,1
+Roskilde,2734837585,592,1,79,18,1,60.1,68.1,O. Skolnik,227.0,135.0,NaN,NaN,Roskilde vs OB,2024-10-18,79.9,92.7,0.00101193,NaN,NaN,NaN,26.7,0.7,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,,NaN,2
+Roskilde,2734839769,596,1,79,49,1,99.5,0.5,A. Maarup,228.0,135.0,NaN,NaN,Roskilde vs OB,2024-10-18,87.2,16.1,0.00162931,NaN,NaN,NaN,16.7,2.5,NaN,NaN,,NaN,NaN,NaN,true,,,NaN,,NaN,1
+Roskilde,2734839871,597,1,79,55,1,88.9,15.1,A. Taranis,228.0,135.0,NaN,1.0,Roskilde vs OB,2024-10-18,93.7,44.5,0.17309545,NaN,NaN,16,20.6,1.3,NaN,NaN,,NaN,NaN,NaN,NaN,,,true,,NaN,2
+OB,2734829001,714,1,71,25,0,99.5,0.5,A. Manneh,200.0,114.0,NaN,NaN,Roskilde vs OB,2024-10-18,89.0,44.0,NaN,NaN,NaN,NaN,31.6,1.9,true,NaN,,NaN,NaN,NaN,true,,,NaN,,NaN,1
+OB,2734773539,8,1,0,51,0,99.5,99.5,N. Mickelson,6.0,4.0,NaN,NaN,Roskilde vs OB,2024-10-18,92.2,52.1,NaN,NaN,NaN,NaN,33.1,4.5,true,NaN,,NaN,NaN,NaN,true,,,NaN,,NaN,1
+OB,2734773643,9,1,0,59,1,65.2,30.4,L. Owusu,7.0,4.0,NaN,NaN,Roskilde vs OB,2024-10-18,86.0,49.0,0.06032051,NaN,NaN,NaN,25.2,0.5,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,,NaN,2
 Roskilde,2701845539,144,1,13,58,1,99.6,0.5,R. Arabaci,52.0,33.0,NaN,NaN,Vendsyssel vs Roskilde,2024-07-19,91.5,21.6,0.00255145,NaN,NaN,NaN,16.7,2.1,NaN,NaN,NaN,NaN,NaN,NaN,true,,NaN,NaN,,NaN,1
 Roskilde,2701845541,145,1,14,3,1,88.1,14.4,S. Baskaya,52.0,33.0,NaN,NaN,Vendsyssel vs Roskilde,2024-07-19,95.1,28.2,0.01048409,NaN,NaN,NaN,11.9,0.9,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,2
 Roskilde,2701845545,146,1,14,4,0,95.2,28.2,R. Arabaci,52.0,33.0,NaN,NaN,Vendsyssel vs Roskilde,2024-07-19,93.9,32.8,NaN,NaN,NaN,NaN,3.4,2.0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,3
