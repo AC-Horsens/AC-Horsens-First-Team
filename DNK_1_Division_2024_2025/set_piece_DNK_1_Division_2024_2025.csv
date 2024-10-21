@@ -329,6 +329,50 @@ B 93,2730092025,666,4,54,52,0,91.1,48.0,J. Egeris,191.0,122.0,NaN,NaN,B 93 vs Es
 B 93,2730130423,894,1,85,14,0,99.5,99.5,M. Mouritz,259.0,164.0,NaN,NaN,B 93 vs Esbjerg,2024-10-04,97.0,51.3,NaN,NaN,NaN,NaN,32.9,4.6,true,NaN,,NaN,NaN,NaN,true,,NaN,NaN,NaN,NaN,1
 B 93,2730136755,920,1,90,13,0,99.5,99.5,M. Mouritz,269.0,170.0,NaN,NaN,B 93 vs Esbjerg,2024-10-04,94.7,50.3,NaN,NaN,NaN,NaN,33.8,4.6,true,NaN,,NaN,NaN,NaN,true,,NaN,NaN,NaN,NaN,1
 B 93,2730136955,921,1,90,24,0,84.6,26.4,M. Secka,270.0,170.0,NaN,NaN,B 93 vs Esbjerg,2024-10-04,74.4,33.9,NaN,NaN,NaN,NaN,11.9,2.7,NaN,NaN,,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Vendsyssel,2734805637,173,1,22,40,0,99.6,0.5,K. Kusk,71.0,34.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,91.7,56.1,NaN,NaN,NaN,NaN,38.7,1.8,NaN,NaN,true,NaN,NaN,NaN,true,,NaN,NaN,NaN,NaN,1
+Vendsyssel,2734805649,174,6,22,43,1,98.6,37.6,K. Kusk,NaN,34.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Vendsyssel,2734805935,175,1,22,44,0,99.5,0.5,K. Kusk,72.0,34.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,95.9,34.3,NaN,NaN,NaN,NaN,23.3,1.7,NaN,NaN,true,NaN,NaN,NaN,true,,NaN,NaN,NaN,NaN,1
+Vendsyssel,2734805945,176,6,23,13,1,99.4,30.6,K. Kusk,NaN,34.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Vendsyssel,2734811571,258,1,32,54,0,99.5,0.5,K. Kusk,104.0,54.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,93.8,42.5,NaN,NaN,NaN,NaN,29.2,1.8,NaN,NaN,true,NaN,NaN,NaN,true,,NaN,NaN,NaN,NaN,1
+B 93,2734812767,292,44,34,37,1,90.8,55.3,A. Heimer,115.0,63.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,2
+B 93,2734812773,293,15,34,38,1,92.4,48.8,A. Heimer,115.0,63.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,NaN,NaN,NaN,0.11698608845472336,0.43663331866264343,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,true,NaN,NaN,3
+B 93,2734791533,45,1,3,50,0,99.5,99.5,M. Mouritz,16.0,11.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,93.1,45.4,NaN,NaN,NaN,NaN,37.4,4.5,true,NaN,NaN,NaN,NaN,NaN,true,,NaN,NaN,NaN,NaN,1
+B 93,2734791543,46,44,3,55,0,92.0,48.7,A. Heimer,NaN,11.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,2
+B 93,2734791579,47,6,3,57,1,97.6,35.0,J. Egeris,NaN,11.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,3
+B 93,2734791845,48,1,4,17,0,99.5,0.5,O. Jakobsen,17.0,11.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,91.3,59.1,NaN,NaN,NaN,NaN,40.8,1.8,true,NaN,NaN,NaN,NaN,NaN,true,,NaN,NaN,NaN,NaN,1
+B 93,2734791959,49,13,4,26,1,84.8,62.7,M. Mouritz,18.0,11.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,NaN,NaN,NaN,0.044527363032102585,0.0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,true,NaN,NaN,2
+Vendsyssel,2734846451,510,1,51,30,0,96.5,93.2,M. Kaastrup,192.0,103.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,90.4,45.4,NaN,NaN,NaN,NaN,33.1,4.5,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Vendsyssel,2734846737,511,1,51,37,1,74.4,8.5,K. Kusk,193.0,103.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,75.0,37.9,0.00472542,NaN,NaN,NaN,20.0,1.5,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,3
+Vendsyssel,2734846861,512,1,51,43,1,65.8,50.3,O. Øhlenschlæger,193.0,103.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,84.2,88.4,0.00241973,NaN,NaN,NaN,32.3,0.9,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,4
+B 93,2734855071,534,1,57,32,0,99.5,99.5,M. Mouritz,210.0,114.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,88.1,50.6,NaN,NaN,NaN,NaN,35.3,4.4,NaN,true,NaN,NaN,NaN,NaN,true,,NaN,NaN,NaN,NaN,1
+B 93,2734855149,535,1,57,37,1,87.6,67.8,O. Addo,211.0,114.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,79.1,71.2,0.00766234,NaN,NaN,NaN,9.2,2.9,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,2
+B 93,2734855181,536,1,57,38,1,79.1,71.2,M. Wohlgemuth,211.0,114.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,86.7,87.2,0.00262496,NaN,NaN,NaN,13.5,0.9,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,3
+B 93,2734855207,537,1,57,40,1,87.2,87.8,M. Mouritz,211.0,114.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,77.5,75.9,0.0030511,NaN,NaN,NaN,13.0,3.8,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,4
+B 93,2734855307,538,1,57,41,1,77.5,75.9,M. Wohlgemuth,211.0,114.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,90.8,88.6,0.00226123,NaN,NaN,NaN,16.4,0.6,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,5
+B 93,2734855333,539,1,57,46,1,83.5,88.1,M. Mouritz,211.0,114.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,94.4,90.3,0.0014597,NaN,NaN,NaN,11.5,0.1,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,6
+B 93,2734855373,540,1,57,48,0,94.6,90.6,M. Wohlgemuth,211.0,114.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,92.2,38.2,NaN,NaN,NaN,NaN,35.7,4.6,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,7
+B 93,2734855409,541,44,57,51,0,91.6,34.6,N. Thomsen,NaN,114.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,8
+B 93,2734855489,542,61,57,54,0,90.3,35.5,N. Thomsen,212.0,114.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,9
+B 93,2734861703,581,1,61,58,1,99.5,99.5,M. Mouritz,223.0,124.0,NaN,1.0,Vendsyssel vs B 93,2024-10-18,94.7,56.4,0.09640601,NaN,NaN,16,29.7,4.5,NaN,true,NaN,NaN,NaN,NaN,true,,NaN,true,NaN,NaN,1
+B 93,2734861711,582,16,62,4,1,94.7,56.4,J. Egeris,223.0,124.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,NaN,NaN,NaN,0.11881416290998459,0.7009299993515015,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,true,NaN,NaN,2
+B 93,2734864003,595,44,62,3,1,94.2,56.4,J. Egeris,223.0,124.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,3
+Vendsyssel,2734794805,64,1,7,48,0,99.5,99.5,M. Kaastrup,28.0,16.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,92.2,51.2,NaN,NaN,NaN,NaN,33.7,4.5,NaN,NaN,true,NaN,NaN,NaN,true,,NaN,NaN,NaN,NaN,1
+Vendsyssel,2734795105,65,5,7,54,1,83.2,101.0,M. Kaastrup,NaN,16.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Vendsyssel,2734795241,66,1,8,15,1,87.0,101.6,S. Borgelin,29.0,16.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,86.1,60.8,0.00617055,NaN,NaN,NaN,27.8,4.7,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,true,3
+Vendsyssel,2734795267,67,1,8,22,0,86.1,60.8,M. Lassen,29.0,16.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,96.2,37.6,NaN,NaN,NaN,NaN,19.0,5.3,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,4
+B 93,2734876053,693,1,73,5,0,99.5,0.5,M. Mouritz,262.0,150.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,91.7,56.3,NaN,NaN,NaN,NaN,38.8,1.8,NaN,true,NaN,NaN,NaN,NaN,true,,NaN,NaN,NaN,NaN,1
+B 93,2734876103,694,15,73,10,1,81.0,55.4,F. Isaki,263.0,150.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,NaN,NaN,NaN,0.026134731248021126,0.0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,true,NaN,NaN,2
+B 93,2734876155,695,1,73,12,1,87.9,30.9,S. Koch,264.0,150.0,1.0,NaN,Vendsyssel vs B 93,2024-10-18,80.0,43.6,0.02101804,NaN,NaN,15,12.0,2.3,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,3
+B 93,2734876169,696,15,73,14,1,79.9,43.6,F. Isaki,264.0,150.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,NaN,NaN,NaN,0.03186310455203056,0.0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,true,NaN,NaN,4
+B 93,2734876315,697,1,73,17,1,78.3,49.1,F. Isaki,265.0,150.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,72.8,60.0,0.00538136,NaN,NaN,NaN,9.4,2.2,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,5
+B 93,2734876397,698,1,73,20,1,72.8,60.2,M. Wohlgemuth,265.0,150.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,90.1,90.3,0.00250481,NaN,NaN,NaN,27.4,0.8,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,6
+B 93,2734876421,699,1,73,23,0,90.1,90.3,N. Thomsen,265.0,150.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,89.0,43.7,NaN,NaN,NaN,NaN,31.7,4.7,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,7
+B 93,2734876611,700,1,73,28,1,97.5,68.1,S. Koch,266.0,150.0,1.0,NaN,Vendsyssel vs B 93,2024-10-18,91.9,67.9,0.02747262,NaN,NaN,15,5.9,3.2,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,8
+B 93,2734876629,701,15,73,31,1,88.9,63.7,O. Addo,266.0,150.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,NaN,NaN,NaN,0.08835001289844513,0.0,NaN,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,9
+B 93,2734876777,702,1,73,35,0,77.2,42.8,M. Mouritz,267.0,150.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,90.9,65.8,NaN,NaN,NaN,NaN,21.2,0.8,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,10
+B 93,2734885533,752,1,79,44,0,99.5,99.5,M. Mouritz,282.0,158.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,81.7,37.3,NaN,NaN,NaN,NaN,46.2,4.3,NaN,true,NaN,NaN,NaN,NaN,true,,NaN,NaN,NaN,NaN,1
+Vendsyssel,2734896573,785,1,87,35,0,99.5,99.5,M. Kaastrup,306.0,169.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,92.5,52.4,NaN,NaN,NaN,NaN,32.9,4.5,NaN,NaN,true,NaN,NaN,NaN,true,,NaN,NaN,NaN,NaN,1
+Vendsyssel,2735135819,844,17,86,47,1,50.0,50.0,NaN,NaN,169.0,NaN,NaN,Vendsyssel vs B 93,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,2
 OB,2702056339,112,1,9,13,1,99.5,0.5,L. Deedson,41.0,25.0,NaN,NaN,Esbjerg vs OB,2024-07-20,90.0,9.1,0.00081027,NaN,NaN,NaN,11.6,2.6,NaN,NaN,NaN,NaN,,NaN,true,,NaN,NaN,NaN,NaN,1
 OB,2702056345,113,1,9,14,0,90.0,11.3,A. Manneh,41.0,25.0,NaN,NaN,Esbjerg vs OB,2024-07-20,91.3,35.8,NaN,NaN,NaN,NaN,16.7,1.5,true,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,2
 OB,2702056357,114,6,9,16,1,98.9,29.8,A. Manneh,NaN,25.0,NaN,NaN,Esbjerg vs OB,2024-07-20,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,3
@@ -584,7 +628,6 @@ Esbjerg,2715011433,486,1,52,30,1,99.5,99.5,A. Lausen,169.0,110.0,NaN,NaN,Roskild
 Esbjerg,2715011441,487,44,52,34,1,91.2,56.6,T. Stagaard,169.0,110.0,NaN,NaN,Roskilde vs Esbjerg,2024-08-30,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,2
 Esbjerg,2715011491,488,1,52,35,1,89.2,56.1,T. Stagaard,169.0,110.0,1.0,NaN,Roskilde vs Esbjerg,2024-08-30,94.2,32.0,0.03443275,NaN,NaN,15,17.2,5.0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,3
 Esbjerg,2715011513,489,15,52,37,1,94.9,40.1,P. Bjur,169.0,110.0,NaN,NaN,Roskilde vs Esbjerg,2024-08-30,NaN,NaN,NaN,0.057742442935705185,0.4983702600002289,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,true,NaN,NaN,4
-Esbjerg,2715011539,490,6,52,39,1,100.8,38.7,P. Bjur,NaN,110.0,NaN,NaN,Roskilde vs Esbjerg,2024-08-30,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,5
 Esbjerg,2715011975,491,1,52,53,1,99.5,0.5,P. Bjur,170.0,110.0,1.0,NaN,Roskilde vs Esbjerg,2024-08-30,92.3,42.4,0.04774199,NaN,NaN,15,29.5,1.8,true,NaN,NaN,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
 Esbjerg,2715019621,540,1,58,9,0,99.5,99.5,A. Lausen,189.0,122.0,NaN,NaN,Roskilde vs Esbjerg,2024-08-30,90.3,41.9,NaN,NaN,NaN,NaN,40.3,4.5,true,NaN,NaN,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
 Esbjerg,2715019871,541,1,58,14,1,80.4,28.1,N. Strunck,190.0,122.0,NaN,NaN,Roskilde vs Esbjerg,2024-08-30,90.0,11.6,0.00229374,NaN,NaN,NaN,15.1,5.4,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,2
@@ -654,6 +697,37 @@ Esbjerg,2727888773,597,1,72,33,1,60.0,35.1,M. Maden,243.0,143.0,NaN,NaN,Esbjerg 
 Hillerød,2727907735,992,1,87,35,1,99.5,99.5,L. Bøje-Larsen,297.0,180.0,NaN,NaN,Esbjerg vs Hillerød,2024-09-29,93.4,52.5,0.1107656,NaN,NaN,NaN,32.6,4.5,NaN,true,NaN,NaN,NaN,NaN,true,,NaN,,,NaN,1
 Hillerød,2727907809,993,44,87,10,0,91.6,50.0,J. Witt,NaN,180.0,NaN,NaN,Esbjerg vs Hillerød,2024-09-29,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,,,NaN,2
 Hillerød,2727907829,994,4,87,40,0,92.0,51.9,K. Enghardt,297.0,180.0,NaN,NaN,Esbjerg vs Hillerød,2024-09-29,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,,,NaN,3
+Fredericia,2735195221,179,1,15,15,1,99.5,99.5,W. Madsen,43.0,28.0,NaN,NaN,Esbjerg vs Fredericia,2024-10-19,82.4,82.3,0.00182706,NaN,NaN,NaN,21.4,3.7,NaN,NaN,,NaN,NaN,NaN,true,,NaN,NaN,NaN,NaN,1
+Fredericia,2735195283,182,61,15,21,0,88.4,76.9,G. Marcussen,43.0,28.0,NaN,NaN,Esbjerg vs Fredericia,2024-10-19,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,4
+Esbjerg,2735215891,329,1,40,33,1,99.5,99.5,M. Maden,114.0,71.0,NaN,NaN,Esbjerg vs Fredericia,2024-10-19,95.8,70.5,0.00474251,NaN,NaN,NaN,20.1,4.5,NaN,NaN,,NaN,NaN,NaN,true,,NaN,NaN,NaN,NaN,1
+Esbjerg,2735215955,330,1,40,34,1,94.2,74.0,L. From,114.0,71.0,1.0,NaN,Esbjerg vs Fredericia,2024-10-19,75.7,75.5,0.00382317,NaN,NaN,15,19.5,3.1,NaN,NaN,,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Esbjerg,2735215989,331,15,40,38,1,75.8,69.8,A. Lausen,114.0,71.0,NaN,NaN,Esbjerg vs Fredericia,2024-10-19,NaN,NaN,NaN,0.015154522843658924,0.0,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,NaN,true,NaN,NaN,3
+Esbjerg,2735216093,332,3,40,43,1,64.4,45.6,N. Strunck,115.0,71.0,NaN,NaN,Esbjerg vs Fredericia,2024-10-19,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,4
+Esbjerg,2735240843,447,1,51,4,1,99.5,0.5,M. Maden,151.0,92.0,NaN,NaN,Esbjerg vs Fredericia,2024-10-19,92.3,38.3,0.02528806,NaN,NaN,NaN,26.8,1.9,NaN,true,,NaN,NaN,NaN,true,,NaN,NaN,NaN,NaN,1
+Esbjerg,2735240853,448,1,51,8,0,92.3,38.3,T. Stagaard,151.0,92.0,NaN,NaN,Esbjerg vs Fredericia,2024-10-19,94.1,42.2,NaN,NaN,NaN,NaN,3.3,1.0,NaN,NaN,,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Esbjerg,2735240883,449,6,51,10,1,92.5,42.2,T. Stagaard,NaN,92.0,NaN,NaN,Esbjerg vs Fredericia,2024-10-19,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,3
+Esbjerg,2735241035,450,1,51,17,1,99.5,0.5,M. Maden,152.0,92.0,NaN,NaN,Esbjerg vs Fredericia,2024-10-19,79.9,9.5,0.0009047,NaN,NaN,NaN,21.5,2.9,NaN,NaN,,NaN,NaN,NaN,true,,NaN,NaN,NaN,NaN,1
+Esbjerg,2735241055,451,1,51,18,1,79.9,9.5,N. Strunck,152.0,92.0,NaN,NaN,Esbjerg vs Fredericia,2024-10-19,73.7,22.1,0.00156937,NaN,NaN,NaN,10.8,2.2,NaN,NaN,,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Esbjerg,2735241137,452,1,51,20,1,73.7,22.1,A. Lausen,152.0,92.0,NaN,NaN,Esbjerg vs Fredericia,2024-10-19,85.0,7.0,0.00126065,NaN,NaN,NaN,15.7,5.6,NaN,NaN,,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,3
+Esbjerg,2735241193,453,1,51,23,0,85.0,7.0,M. Maden,152.0,92.0,NaN,NaN,Esbjerg vs Fredericia,2024-10-19,91.2,41.3,NaN,NaN,NaN,NaN,24.2,1.3,NaN,NaN,,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,4
+Esbjerg,2735241203,454,44,51,25,0,92.0,41.8,A. Troelsen,NaN,92.0,NaN,NaN,Esbjerg vs Fredericia,2024-10-19,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,5
+Esbjerg,2735241339,455,1,51,29,1,68.6,76.4,J. Mortensen,153.0,92.0,NaN,NaN,Esbjerg vs Fredericia,2024-10-19,83.0,89.7,0.00146649,NaN,NaN,NaN,17.6,0.5,NaN,NaN,,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,6
+Fredericia,2735230757,490,1,18,10,1,99.6,0.7,J. Jessen,50.0,32.0,NaN,NaN,Esbjerg vs Fredericia,2024-10-19,95.6,15.0,0.00094703,NaN,NaN,NaN,10.6,2.0,NaN,NaN,,NaN,NaN,NaN,true,,NaN,NaN,NaN,NaN,1
+Fredericia,2735235537,504,1,46,9,1,99.5,99.5,G. Marcussen,141.0,87.0,NaN,NaN,Esbjerg vs Fredericia,2024-10-19,90.7,93.2,0.00065642,NaN,NaN,NaN,10.2,3.6,NaN,NaN,,NaN,NaN,NaN,true,,NaN,NaN,NaN,NaN,1
+Fredericia,2735235567,505,1,46,10,1,91.3,93.3,W. Madsen,141.0,87.0,NaN,NaN,Esbjerg vs Fredericia,2024-10-19,71.6,81.4,0.00124668,NaN,NaN,NaN,22.2,3.5,NaN,NaN,,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Fredericia,2735235609,506,2,46,14,1,71.6,81.4,D. Kristjánsson,141.0,87.0,NaN,NaN,Esbjerg vs Fredericia,2024-10-19,90.1,41.6,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,3
+Esbjerg,2735253855,575,44,64,13,0,88.4,57.8,A. Troelsen,NaN,122.0,NaN,NaN,Esbjerg vs Fredericia,2024-10-19,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Fredericia,2735244867,590,1,54,29,0,99.5,0.5,J. Jessen,161.0,97.0,NaN,NaN,Esbjerg vs Fredericia,2024-10-19,95.0,51.2,NaN,NaN,NaN,NaN,34.8,1.7,true,NaN,,NaN,NaN,NaN,true,,NaN,NaN,NaN,NaN,1
+Fredericia,2735251211,633,1,60,50,0,99.5,99.5,W. Madsen,179.0,111.0,NaN,NaN,Esbjerg vs Fredericia,2024-10-19,94.4,53.0,NaN,NaN,NaN,NaN,32.1,4.5,true,NaN,,NaN,NaN,NaN,true,,NaN,NaN,NaN,NaN,1
+Esbjerg,2735264967,714,1,77,46,1,93.5,83.6,P. Bjur,237.0,150.0,NaN,NaN,Esbjerg vs Fredericia,2024-10-19,79.2,89.3,0.00139105,NaN,NaN,NaN,15.5,2.9,NaN,NaN,,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Esbjerg,2735265009,715,1,77,48,1,79.2,89.3,N. Strunck,237.0,150.0,NaN,NaN,Esbjerg vs Fredericia,2024-10-19,69.3,63.5,0.00221341,NaN,NaN,NaN,20.4,4.2,NaN,NaN,,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,3
+Esbjerg,2735265031,716,1,77,49,0,69.3,63.5,J. Mortensen,237.0,150.0,NaN,NaN,Esbjerg vs Fredericia,2024-10-19,101.1,40.0,NaN,NaN,NaN,NaN,37.0,5.8,NaN,NaN,,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,4
+Fredericia,2735259497,725,15,71,39,1,90.1,53.4,O. Buch,219.0,137.0,NaN,NaN,Esbjerg vs Fredericia,2024-10-19,NaN,NaN,NaN,0.09064146876335144,0.0,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,NaN,true,NaN,NaN,2
+Fredericia,2735273961,818,1,85,22,1,64.7,78.5,W. Madsen,248.0,157.0,1.0,NaN,Esbjerg vs Fredericia,2024-10-19,85.2,38.2,0.03018623,NaN,NaN,15,34.8,5.4,NaN,NaN,,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Fredericia,2735274263,823,1,85,40,1,99.5,99.5,A. Muçolli,250.0,157.0,NaN,NaN,Esbjerg vs Fredericia,2024-10-19,66.2,82.3,0.00080326,NaN,NaN,NaN,36.9,3.5,NaN,NaN,,NaN,NaN,NaN,true,,NaN,NaN,NaN,NaN,1
+Fredericia,2735274287,824,1,85,41,1,66.2,82.3,W. Madsen,250.0,157.0,NaN,NaN,Esbjerg vs Fredericia,2024-10-19,78.5,83.8,0.00149158,NaN,NaN,NaN,13.0,0.1,NaN,NaN,,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Esbjerg,2735191731,88,1,10,16,1,99.5,99.5,M. Maden,31.0,21.0,NaN,NaN,Esbjerg vs Fredericia,2024-10-19,95.8,73.2,0.00317073,NaN,NaN,NaN,18.3,4.5,NaN,NaN,,NaN,NaN,NaN,true,,NaN,NaN,NaN,NaN,1
+Esbjerg,2735191743,89,1,10,18,0,91.5,73.2,L. From,31.0,21.0,NaN,NaN,Esbjerg vs Fredericia,2024-10-19,94.7,74.3,NaN,NaN,NaN,NaN,3.4,0.2,NaN,NaN,,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,2
 Fredericia,2702475705,508,1,56,56,0,99.8,0.4,J. Jessen,179.0,125.0,NaN,NaN,Horsens vs Fredericia,2024-07-21,96.9,44.5,NaN,NaN,NaN,NaN,30.1,1.7,true,,NaN,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
 Fredericia,2702475747,509,1,57,2,1,67.2,32.2,O. Buch,180.0,125.0,NaN,NaN,Horsens vs Fredericia,2024-07-21,53.5,36.0,0.00011414,NaN,NaN,NaN,14.6,3.0,NaN,,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,2
 Fredericia,2702477629,545,1,63,13,0,99.7,99.5,W. Madsen,196.0,135.0,NaN,NaN,Horsens vs Fredericia,2024-07-21,92.7,63.6,NaN,NaN,NaN,NaN,25.5,4.4,true,,NaN,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
@@ -1240,6 +1314,18 @@ OB,2730112671,811,1,71,39,0,99.5,99.5,N. Mickelson,222.0,155.0,NaN,NaN,OB vs HB 
 OB,2730112913,812,1,71,50,0,69.6,93.9,N. Mickelson,223.0,155.0,NaN,NaN,OB vs HB Køge,2024-10-04,86.5,51.2,NaN,NaN,NaN,NaN,34.0,5.3,true,NaN,,NaN,,NaN,NaN,,,NaN,,NaN,2
 OB,2730124735,924,1,80,55,0,99.5,0.5,A. Manneh,251.0,167.0,NaN,NaN,OB vs HB Køge,2024-10-04,96.2,45.2,NaN,NaN,NaN,NaN,30.6,1.7,true,NaN,,NaN,,NaN,true,,,NaN,,NaN,1
 OB,2730125043,925,1,81,10,0,91.5,96.9,L. Deedson,252.0,167.0,NaN,NaN,OB vs HB Køge,2024-10-04,90.4,89.1,NaN,NaN,NaN,NaN,5.4,4.5,NaN,true,,NaN,,NaN,NaN,,,NaN,,NaN,2
+Hobro,2734890817,1017,1,86,7,0,99.5,99.5,M. Kristensen,282.0,209.0,NaN,NaN,HB Køge vs Hobro,2024-10-18,91.2,61.8,NaN,NaN,NaN,NaN,27.1,4.4,true,NaN,,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,NaN,1
+Hobro,2734890955,1018,44,86,13,1,88.4,47.2,O. Dorph,283.0,209.0,NaN,NaN,HB Køge vs Hobro,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,2
+Hobro,2734891019,1019,1,86,13,1,86.2,51.2,O. Dorph,283.0,209.0,1.0,NaN,HB Køge vs Hobro,2024-10-18,87.2,61.2,0.02606376,NaN,NaN,15,6.9,1.4,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,3
+Hobro,2734891031,1020,15,86,16,1,88.3,49.8,M. Nielsen,283.0,209.0,NaN,NaN,HB Køge vs Hobro,2024-10-18,NaN,NaN,NaN,0.12430653721094131,0.17371538281440735,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,4
+Hobro,2734814911,403,1,35,36,0,99.5,99.5,M. Kristensen,111.0,86.0,NaN,NaN,HB Køge vs Hobro,2024-10-18,91.3,60.0,NaN,NaN,NaN,NaN,28.2,4.4,true,NaN,,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,NaN,1
+Hobro,2734815051,404,5,35,45,1,55.2,101.6,M. Kristensen,NaN,86.0,NaN,NaN,HB Køge vs Hobro,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,2
+Hobro,2734839795,639,1,49,22,0,99.5,0.5,M. Kristensen,168.0,121.0,NaN,NaN,HB Køge vs Hobro,2024-10-18,83.1,65.2,NaN,NaN,NaN,NaN,47.2,1.9,NaN,true,,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,NaN,1
+Hobro,2734844963,682,1,53,11,1,99.5,0.5,M. Kristensen,179.0,129.0,1.0,NaN,HB Køge vs Hobro,2024-10-18,88.6,45.2,0.02645423,NaN,NaN,15,32.5,1.9,NaN,true,,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,NaN,1
+Hobro,2734844981,683,15,53,14,1,90.0,40.0,M. Bruhn,179.0,129.0,NaN,NaN,HB Køge vs Hobro,2024-10-18,NaN,NaN,NaN,0.04138321429491043,0.061921313405036926,NaN,NaN,NaN,NaN,NaN,,true,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,2
+Hobro,2734855339,779,1,48,56,0,65.2,16.6,M. Kristensen,167.0,121.0,NaN,NaN,HB Køge vs Hobro,2024-10-18,88.9,16.4,NaN,NaN,NaN,NaN,24.9,6.3,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,2
+Hobro,2734882863,957,1,80,35,1,99.5,0.5,M. Kristensen,263.0,193.0,1.0,NaN,HB Køge vs Hobro,2024-10-18,84.7,41.8,0.00983191,NaN,NaN,13,32.1,2.1,NaN,true,,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,NaN,1
+Hobro,2734882877,958,13,80,40,1,91.2,66.0,O. Dorph,263.0,193.0,NaN,NaN,HB Køge vs Hobro,2024-10-18,NaN,NaN,NaN,0.01452480535954237,0.0,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,2
 Hobro,2702476229,121,1,12,29,0,99.7,0.6,L. Klitten,44.0,29.0,NaN,NaN,Hillerød vs Hobro,2024-07-21,100.5,64.2,NaN,NaN,NaN,NaN,43.3,1.6,true,NaN,NaN,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
 Hobro,2702476731,144,1,11,20,1,30.9,53.0,M. Kristensen,42.0,29.0,NaN,NaN,Hillerød vs Hobro,2024-07-21,22.1,55.3,0.00000262,NaN,NaN,NaN,9.4,3.0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,2
 Hillerød,2702481729,338,1,29,20,1,99.5,99.5,L. Bøje-Larsen,97.0,66.0,NaN,NaN,Hillerød vs Hobro,2024-07-21,93.7,34.8,0.01097253,NaN,NaN,NaN,44.4,4.6,NaN,true,NaN,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
@@ -1280,7 +1366,6 @@ Hillerød,2703428313,535,1,66,9,0,99.5,0.5,A. Justinussen,213.0,125.0,NaN,NaN,Ho
 Hillerød,2703431659,604,1,74,2,0,99.5,99.5,A. Justinussen,239.0,143.0,NaN,NaN,Horsens vs Hillerød,2024-07-26,97.4,55.6,NaN,NaN,NaN,NaN,29.9,4.6,true,NaN,NaN,NaN,,NaN,true,,NaN,NaN,NaN,NaN,1
 Hillerød,2703431707,605,1,74,9,1,64.4,84.7,S. Opoku,240.0,143.0,NaN,NaN,Horsens vs Hillerød,2024-07-26,73.4,94.6,0.00042556,NaN,NaN,NaN,11.6,0.6,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,2
 Hillerød,2703431995,609,1,74,43,0,99.5,0.5,A. Justinussen,241.0,143.0,NaN,NaN,Horsens vs Hillerød,2024-07-26,89.0,49.2,NaN,NaN,NaN,NaN,34.9,1.9,NaN,true,NaN,NaN,,NaN,true,,NaN,NaN,NaN,NaN,1
-Hillerød,2703432053,613,4,74,56,1,78.2,36.8,J. Witt,NaN,143.0,NaN,NaN,Horsens vs Hillerød,2024-07-26,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,4
 Hillerød,2703432557,614,13,75,58,1,80.0,37.0,A. Justinussen,242.0,143.0,NaN,NaN,Horsens vs Hillerød,2024-07-26,NaN,NaN,NaN,0.09619423002004623,0.0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,true,NaN,5
 Horsens,2703403685,64,1,5,3,0,99.5,99.5,M. Larsen,19.0,11.0,NaN,NaN,Horsens vs Hillerød,2024-07-26,92.4,39.2,NaN,NaN,NaN,NaN,41.7,4.5,true,NaN,NaN,NaN,,NaN,true,,NaN,NaN,NaN,NaN,1
 Horsens,2703403701,65,13,5,9,1,73.7,57.7,J. Ankersen,20.0,11.0,NaN,NaN,Horsens vs Hillerød,2024-07-26,NaN,NaN,NaN,0.0253895353525877,0.0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,true,NaN,NaN,2
@@ -1425,6 +1510,47 @@ Vendsyssel,2730140443,874,1,93,43,0,99.5,99.5,K. Kusk,341.0,218.0,NaN,NaN,Hiller
 Vendsyssel,2730140481,876,16,93,50,1,94.9,54.2,L. Schulz,342.0,218.0,NaN,NaN,Hillerød vs Vendsyssel,2024-10-04,NaN,NaN,NaN,0.18493811786174774,0.9116358757019043,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,true,NaN,NaN,2
 Vendsyssel,2730140675,877,61,93,46,1,90.7,60.0,G. Mortensen,NaN,218.0,NaN,NaN,Hillerød vs Vendsyssel,2024-10-04,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,3
 Vendsyssel,2732336157,891,49,9,31,1,11.0,72.9,G. Mortensen,39.0,27.0,NaN,NaN,Hillerød vs Vendsyssel,2024-10-04,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Kolding,2734805075,185,1,21,8,0,99.5,99.5,A. Beck,77.0,51.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,96.2,50.9,NaN,NaN,NaN,NaN,33.2,4.6,true,NaN,,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
+Kolding,2734805177,186,1,21,19,0,91.0,82.6,A. Beck,78.0,51.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,89.7,72.9,NaN,NaN,NaN,NaN,6.7,4.5,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,2
+Kolding,2734809425,254,1,28,59,1,99.9,0.7,C. Jørgensen,103.0,69.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,86.5,5.2,0.0006664,NaN,NaN,NaN,14.4,2.9,NaN,NaN,,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
+Kolding,2734809439,255,1,29,0,1,85.3,7.3,M. Vestergård,103.0,69.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,94.1,9.8,0.00133461,NaN,NaN,NaN,9.4,0.2,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,2
+Kolding,2734809457,256,1,29,2,0,94.6,9.8,C. Jørgensen,103.0,69.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,94.7,50.3,NaN,NaN,NaN,NaN,27.5,1.6,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,3
+Kolding,2734816531,327,1,38,26,0,99.5,0.5,C. Jørgensen,134.0,85.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,91.9,57.9,NaN,NaN,NaN,NaN,39.8,1.8,true,NaN,,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
+Kolding,2734817601,332,1,39,38,0,99.5,99.5,A. Beck,136.0,85.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,94.5,43.1,NaN,NaN,NaN,NaN,38.7,4.6,true,NaN,,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
+Hillerød,2734813155,333,13,34,33,1,94.8,54.0,G. Arndal-Lauritzen,119.0,78.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,NaN,NaN,NaN,0.1811700463294983,0.0,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,,true,NaN,NaN,2
+Kolding,2734817629,334,1,39,48,1,86.4,18.3,S. Jalal,137.0,85.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,91.2,65.5,0.02980172,NaN,NaN,NaN,32.5,1.4,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,3
+Kolding,2734817641,335,44,39,50,1,90.9,67.6,A. Leifsson,137.0,85.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,4
+Kolding,2734817679,336,1,39,50,1,91.2,65.5,A. Leifsson,137.0,85.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,93.1,57.6,0.08854866,NaN,NaN,NaN,5.7,5.1,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,5
+Kolding,2734817687,337,50,39,53,1,94.4,62.2,J. Musbaudeen,137.0,85.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,6
+Kolding,2734817791,339,1,39,58,1,68.9,76.1,M. Vestergård,139.0,85.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,77.2,90.6,0.00091534,NaN,NaN,NaN,13.2,0.8,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,8
+Kolding,2734822497,394,1,45,50,0,99.5,99.5,A. Beck,157.0,95.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,95.0,57.0,NaN,NaN,NaN,NaN,29.3,4.6,true,NaN,,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
+Kolding,2734822535,395,6,45,54,1,98.7,66.4,A. Beck,NaN,95.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,2
+Kolding,2734822855,396,1,46,16,0,99.5,99.5,A. Beck,158.0,95.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,96.4,53.9,NaN,NaN,NaN,NaN,31.2,4.6,true,NaN,,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
+Kolding,2734824507,398,1,44,41,1,68.6,80.8,C. Jørgensen,155.0,95.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,63.3,95.6,0.0001973,NaN,NaN,NaN,11.5,2.1,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,2
+Kolding,2734828671,401,44,21,12,0,95.2,56.0,J. Musbaudeen,NaN,51.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,3
+Kolding,2734837145,430,1,47,36,1,99.5,0.5,A. Beck,169.0,99.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,91.0,52.7,0.05130302,NaN,NaN,NaN,36.6,1.8,NaN,true,,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
+Kolding,2734837167,431,44,47,38,1,92.2,55.2,J. Musbaudeen,169.0,99.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,2
+Kolding,2734837269,432,1,47,39,1,91.0,52.7,J. Musbaudeen,169.0,99.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,89.7,45.5,0.07723254,NaN,NaN,NaN,5.1,4.4,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,3
+Kolding,2734837285,433,1,47,40,0,89.7,45.5,M. Sarr,169.0,99.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,92.0,36.1,NaN,NaN,NaN,NaN,6.8,5.1,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,4
+Kolding,2734837315,434,1,47,43,0,92.0,32.7,A. Beck,170.0,99.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,94.3,47.3,NaN,NaN,NaN,NaN,10.2,1.3,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,5
+Kolding,2734837715,435,5,47,46,1,85.2,-1.7,A. Beck,NaN,99.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,6
+Kolding,2734837787,436,1,48,4,1,84.8,-2.0,C. Vestergaard,171.0,99.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,74.9,8.5,0.00016335,NaN,NaN,NaN,12.6,2.5,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,true,7
+Kolding,2734837895,437,1,48,7,0,74.9,12.6,A. Nørager,171.0,99.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,98.9,56.3,NaN,NaN,NaN,NaN,39.0,0.9,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,8
+Kolding,2734793119,48,1,5,7,0,99.5,99.5,A. Beck,24.0,15.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,92.4,62.6,NaN,NaN,NaN,NaN,26.2,4.4,true,NaN,,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
+Kolding,2734793123,49,44,5,9,0,91.4,61.2,S. Yatéké,NaN,15.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,2
+Kolding,2734793179,51,1,5,13,1,65.0,46.1,C. Jørgensen,NaN,15.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,68.3,56.9,0.00124821,NaN,NaN,NaN,8.1,1.1,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,3
+Kolding,2734862671,565,1,65,56,0,99.5,99.5,A. Beck,227.0,141.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,96.9,50.6,NaN,NaN,NaN,NaN,33.4,4.6,true,NaN,,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
+Hillerød,2734864269,611,1,67,5,0,99.5,0.5,D. Johansen,230.0,142.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,94.4,52.7,NaN,NaN,NaN,NaN,35.9,1.7,true,NaN,,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
+Hillerød,2734864449,612,5,67,15,1,86.0,101.7,M. Etim,NaN,142.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,2
+Hillerød,2734864863,613,1,67,36,1,85.7,101.7,G. Arndal-Lauritzen,231.0,142.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,93.1,68.1,0.00311951,NaN,NaN,NaN,24.1,5.0,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,true,3
+Hillerød,2734864877,614,1,67,38,0,94.1,69.1,A. Justinussen,231.0,142.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,95.0,58.4,NaN,NaN,NaN,NaN,7.3,4.8,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,4
+Hillerød,2734865005,615,5,67,42,1,65.1,101.8,A. Justinussen,NaN,142.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,5
+Kolding,2734876063,661,1,75,57,0,99.7,99.3,A. Beck,257.0,159.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,93.9,55.2,NaN,NaN,NaN,NaN,30.6,4.5,true,NaN,,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
+Kolding,2734876143,662,5,76,0,1,91.4,101.0,A. Beck,NaN,159.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,2
+Kolding,2734876939,664,1,76,31,0,90.8,100.7,C. Vestergaard,258.0,159.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,93.9,68.2,NaN,NaN,NaN,NaN,22.3,4.9,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,true,3
+Kolding,2734877123,665,1,76,37,1,63.6,69.6,C. Enemark,259.0,159.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,89.3,86.5,0.00269246,NaN,NaN,NaN,29.3,0.4,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,4
+Kolding,2734795253,77,1,7,44,1,99.5,99.5,A. Beck,33.0,19.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,96.7,39.2,0.0260262,NaN,NaN,NaN,41.1,4.6,true,NaN,,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
+Kolding,2734795265,78,44,7,48,1,94.3,40.4,C. Vestergaard,33.0,19.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,2
 Hobro,2707215605,272,1,29,13,0,99.7,0.4,M. Kristensen,102.0,61.0,NaN,NaN,Roskilde vs Hobro,2024-08-10,92.6,43.7,NaN,NaN,NaN,NaN,30.4,1.8,NaN,NaN,,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,NaN,1
 Hobro,2707215685,274,1,29,23,1,59.0,38.9,J. Bøge,103.0,61.0,NaN,NaN,Roskilde vs Hobro,2024-08-10,23.8,55.5,0.00001035,NaN,NaN,NaN,38.6,2.8,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,2
 Roskilde,2707223809,413,1,41,20,1,99.5,99.5,R. Arabaci,136.0,78.0,NaN,NaN,Roskilde vs Hobro,2024-08-10,91.3,88.7,0.00092034,NaN,NaN,NaN,11.3,3.8,NaN,NaN,,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,NaN,1
@@ -1850,6 +1976,48 @@ Horsens,2722356019,865,13,94,9,1,93.9,50.3,S. Pingel,305.0,185.0,NaN,NaN,Horsens
 Horsens,2722359089,875,1,73,15,1,85.9,97.1,J. Madsen,239.0,151.0,NaN,NaN,Horsens vs OB,2024-09-14,82.1,96.1,0.00060802,NaN,NaN,NaN,4.0,3.3,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,NaN,5
 Horsens,2722361213,876,44,73,0,0,90.1,47.6,S. Pingel,NaN,151.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,NaN,6
 Horsens,2725392603,888,49,74,28,1,68.5,70.0,S. Pingel,243.0,153.0,NaN,NaN,Horsens vs OB,2024-09-14,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,NaN,4
+Hvidovre,2736398087,128,1,12,32,0,99.4,99.3,J. Singh,48.0,33.0,NaN,NaN,Horsens vs Hvidovre,2024-10-20,93.6,47.5,NaN,NaN,NaN,NaN,35.7,4.5,true,,,NaN,NaN,NaN,true,,NaN,NaN,,NaN,1
+Hvidovre,2736398211,129,44,12,37,0,88.6,71.6,A. Iljazovski,NaN,33.0,NaN,NaN,Horsens vs Hvidovre,2024-10-20,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,2
+Hvidovre,2736398471,130,1,12,40,1,68.9,66.4,F. Krogstad,49.0,33.0,NaN,NaN,Horsens vs Hvidovre,2024-10-20,87.6,81.5,0.00595964,NaN,NaN,NaN,22.2,0.5,NaN,,,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,3
+Hvidovre,2736399045,133,1,13,13,0,99.6,0.7,N. Clausen,50.0,33.0,NaN,NaN,Horsens vs Hvidovre,2024-10-20,95.3,35.0,NaN,NaN,NaN,NaN,23.8,1.8,true,,,NaN,NaN,NaN,true,,NaN,NaN,,NaN,1
+Hvidovre,2736399155,134,1,13,17,0,90.3,10.1,N. Clausen,51.0,33.0,NaN,NaN,Horsens vs Hvidovre,2024-10-20,92.6,30.0,NaN,NaN,NaN,NaN,13.7,1.4,NaN,,,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,2
+Hvidovre,2736399507,136,1,13,29,1,46.2,45.5,M. Spelmann,52.0,33.0,NaN,NaN,Horsens vs Hvidovre,2024-10-20,50.4,22.7,0.00008384,NaN,NaN,NaN,16.1,5.0,NaN,,,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,3
+Horsens,2736407859,171,1,18,56,0,99.7,0.9,E. Frederiksen,75.0,50.0,NaN,NaN,Horsens vs Hvidovre,2024-10-20,95.3,56.6,NaN,NaN,NaN,NaN,38.2,1.7,true,,,NaN,NaN,NaN,true,,NaN,NaN,,NaN,1
+Horsens,2736408063,173,6,19,7,1,100.4,79.5,E. Frederiksen,NaN,50.0,NaN,NaN,Horsens vs Hvidovre,2024-10-20,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,2
+Horsens,2736408993,174,1,19,38,1,99.5,99.5,M. Kallesøe,76.0,50.0,1.0,NaN,Horsens vs Hvidovre,2024-10-20,93.4,37.3,0.01772673,NaN,NaN,13,42.8,4.6,true,,,NaN,NaN,NaN,true,,NaN,NaN,,NaN,1
+Horsens,2736409001,175,13,19,39,1,93.4,37.3,E. Frederiksen,76.0,50.0,NaN,NaN,Horsens vs Hvidovre,2024-10-20,NaN,NaN,NaN,0.04793470725417137,0.0,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,NaN,,NaN,true,,NaN,2
+Hvidovre,2736410553,208,1,20,57,0,99.9,99.8,J. Singh,78.0,51.0,NaN,NaN,Horsens vs Hvidovre,2024-10-20,94.2,45.7,NaN,NaN,NaN,NaN,37.3,4.6,true,,,NaN,NaN,NaN,true,,NaN,NaN,,NaN,1
+Hvidovre,2736410889,209,50,21,12,1,91.6,85.2,A. Smed,NaN,51.0,NaN,NaN,Horsens vs Hvidovre,2024-10-20,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,2
+Hvidovre,2736411075,210,5,21,15,1,93.4,101.5,A. Smed,NaN,51.0,NaN,NaN,Horsens vs Hvidovre,2024-10-20,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,3
+Hvidovre,2736411383,212,1,21,32,1,80.1,95.1,A. Iljazovski,79.0,51.0,NaN,NaN,Horsens vs Hvidovre,2024-10-20,80.8,78.4,0.00280109,NaN,NaN,NaN,11.4,4.8,NaN,,,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,5
+Hvidovre,2736411411,213,1,21,37,1,75.2,76.1,F. Krogstad,79.0,51.0,NaN,NaN,Horsens vs Hvidovre,2024-10-20,90.1,89.4,0.00206508,NaN,NaN,NaN,18.1,0.5,NaN,,,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,6
+Hvidovre,2736411457,214,1,21,39,1,90.2,89.7,N. Clausen,79.0,51.0,1.0,NaN,Horsens vs Hvidovre,2024-10-20,91.2,38.3,0.04040633,NaN,NaN,15,35.0,4.7,NaN,,,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,7
+Hvidovre,2736411597,216,44,21,44,1,91.8,44.8,C. Jakobsen,79.0,51.0,NaN,NaN,Horsens vs Hvidovre,2024-10-20,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,8
+Hvidovre,2736411685,217,6,21,45,1,97.1,45.5,C. Jakobsen,NaN,51.0,NaN,NaN,Horsens vs Hvidovre,2024-10-20,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,9
+Hvidovre,2736412367,218,1,22,12,1,99.9,0.5,N. Clausen,80.0,51.0,NaN,NaN,Horsens vs Hvidovre,2024-10-20,97.2,41.2,0.05729588,NaN,NaN,NaN,27.8,1.7,true,,,NaN,NaN,NaN,true,,NaN,NaN,,NaN,1
+Hvidovre,2736412431,219,44,22,22,1,95.2,41.4,A. Iljazovski,81.0,51.0,NaN,NaN,Horsens vs Hvidovre,2024-10-20,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,2
+Hvidovre,2736412453,220,1,22,23,0,93.0,33.1,A. Iljazovski,81.0,51.0,NaN,NaN,Horsens vs Hvidovre,2024-10-20,93.9,36.8,NaN,NaN,NaN,NaN,2.7,1.2,NaN,,,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,3
+Hvidovre,2736412485,221,6,22,24,1,95.2,41.4,A. Iljazovski,NaN,51.0,NaN,NaN,Horsens vs Hvidovre,2024-10-20,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,4
+Hvidovre,2736412625,222,1,22,33,1,99.4,99.8,J. Singh,82.0,51.0,NaN,NaN,Horsens vs Hvidovre,2024-10-20,90.7,67.8,0.01206536,NaN,NaN,NaN,23.6,4.3,NaN,,,NaN,NaN,NaN,true,,NaN,NaN,,NaN,1
+Hvidovre,2736412629,223,1,22,35,1,90.7,67.8,A. Smed,82.0,51.0,NaN,NaN,Horsens vs Hvidovre,2024-10-20,81.1,76.9,0.00648312,NaN,NaN,NaN,11.8,2.6,NaN,,,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,2
+Hvidovre,2736412689,224,61,22,37,0,81.1,76.9,J. Singh,82.0,51.0,NaN,NaN,Horsens vs Hvidovre,2024-10-20,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,3
+Hvidovre,2736413457,227,15,21,44,1,91.8,39.8,C. Jakobsen,79.0,51.0,NaN,NaN,Horsens vs Hvidovre,2024-10-20,NaN,NaN,NaN,0.0390157587826252,0.0,NaN,NaN,NaN,NaN,,,true,NaN,NaN,NaN,,NaN,NaN,,NaN,4
+Hvidovre,2736425155,324,1,33,30,0,99.7,99.5,J. Singh,124.0,77.0,NaN,NaN,Horsens vs Hvidovre,2024-10-20,93.3,37.2,NaN,NaN,NaN,NaN,42.9,4.6,true,,,NaN,NaN,NaN,true,,NaN,NaN,,NaN,1
+Horsens,2736459291,448,15,48,54,1,82.8,51.5,J. Madsen,180.0,115.0,NaN,NaN,Horsens vs Hvidovre,2024-10-20,NaN,NaN,NaN,0.06325510144233704,0.0,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,NaN,,NaN,true,,NaN,2
+Horsens,2736459375,449,15,48,54,1,91.8,45.6,F. Christensen,181.0,115.0,NaN,NaN,Horsens vs Hvidovre,2024-10-20,NaN,NaN,NaN,0.08790694177150726,0.0,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,NaN,,NaN,true,,NaN,3
+Horsens,2736463097,474,1,51,42,1,99.5,0.5,E. Frederiksen,195.0,123.0,NaN,NaN,Horsens vs Hvidovre,2024-10-20,95.9,58.7,0.05349652,NaN,NaN,NaN,39.8,1.7,true,,,NaN,NaN,NaN,true,,NaN,NaN,,NaN,1
+Horsens,2736463123,475,44,51,45,1,90.4,64.6,S. Hausner,195.0,123.0,NaN,NaN,Horsens vs Hvidovre,2024-10-20,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,2
+Horsens,2736463149,476,1,51,45,0,95.9,58.7,S. Hausner,195.0,123.0,NaN,NaN,Horsens vs Hvidovre,2024-10-20,95.6,49.0,NaN,NaN,NaN,NaN,6.6,4.7,NaN,,,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,3
+Horsens,2736470647,507,1,56,36,1,99.5,0.5,E. Frederiksen,208.0,131.0,NaN,NaN,Horsens vs Hvidovre,2024-10-20,92.9,41.6,0.04736782,NaN,NaN,NaN,28.8,1.8,true,,,NaN,NaN,NaN,true,,NaN,NaN,,NaN,1
+Horsens,2736470669,508,4,56,43,0,93.2,42.4,F. Christensen,208.0,131.0,NaN,NaN,Horsens vs Hvidovre,2024-10-20,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,2
+Horsens,2736500757,695,15,48,59,1,91.7,43.4,S. Hausner,182.0,115.0,NaN,NaN,Horsens vs Hvidovre,2024-10-20,NaN,NaN,NaN,0.06620766222476959,0.0,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,NaN,,NaN,true,,NaN,4
+Hvidovre,2736499433,716,1,76,57,1,99.6,0.4,J. Adjei-Broni,278.0,184.0,1.0,NaN,Horsens vs Hvidovre,2024-10-20,85.6,27.4,0.00530565,NaN,NaN,15,23.5,2.2,NaN,,,NaN,NaN,NaN,true,,NaN,NaN,,NaN,1
+Hvidovre,2736499443,717,15,77,0,1,85.6,27.4,A. Smed,278.0,184.0,NaN,NaN,Horsens vs Hvidovre,2024-10-20,NaN,NaN,NaN,0.025536073371767998,0.0608099140226841,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,NaN,,NaN,true,,NaN,2
+Hvidovre,2736499467,718,6,77,3,1,96.6,32.2,A. Smed,NaN,184.0,NaN,NaN,Horsens vs Hvidovre,2024-10-20,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,3
+Hvidovre,2736499639,719,1,77,8,1,99.5,0.5,J. Adjei-Broni,279.0,184.0,NaN,NaN,Horsens vs Hvidovre,2024-10-20,95.8,13.7,0.00083096,NaN,NaN,NaN,9.8,2.0,NaN,,,NaN,NaN,NaN,true,,NaN,NaN,,NaN,1
+Hvidovre,2736499651,720,1,77,10,1,95.7,13.8,A. Smed,279.0,184.0,1.0,NaN,Horsens vs Hvidovre,2024-10-20,94.8,35.7,0.02087557,NaN,NaN,15,14.9,1.6,NaN,,,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,2
+Hvidovre,2736499691,721,15,77,12,1,94.8,35.7,F. Høgh,279.0,184.0,NaN,NaN,Horsens vs Hvidovre,2024-10-20,NaN,NaN,NaN,0.1298789530992508,0.0,NaN,NaN,NaN,NaN,,,true,NaN,NaN,NaN,,NaN,NaN,,NaN,3
+Hvidovre,2736530883,883,61,76,24,1,93.0,43.1,F. Høgh,277.0,184.0,NaN,NaN,Horsens vs Hvidovre,2024-10-20,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,4
 Hvidovre,2703410129,251,1,26,34,0,99.5,0.5,A. Smed,106.0,70.0,NaN,,Kolding vs Hvidovre,2024-07-26,95.4,48.2,NaN,NaN,NaN,NaN,32.7,1.7,NaN,true,,NaN,,NaN,true,,NaN,NaN,NaN,NaN,1
 Kolding,2703403355,30,15,2,26,1,94.3,51.4,A. Leifsson,16.0,11.0,NaN,,Kolding vs Hvidovre,2024-07-26,NaN,NaN,NaN,0.14756396412849426,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,,NaN,NaN,,NaN,true,NaN,NaN,2
 Kolding,2703403361,31,1,2,32,1,68.5,16.7,C. Jørgensen,17.0,11.0,NaN,,Kolding vs Hvidovre,2024-07-26,72.9,6.1,0.0003246,NaN,NaN,NaN,8.6,5.3,NaN,NaN,,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,3
@@ -2100,22 +2268,27 @@ OB,2724382809,629,1,72,26,0,99.5,99.5,N. Mickelson,196.0,131.0,NaN,NaN,OB vs Ros
 Roskilde,2724390911,630,1,78,59,0,69.3,49.9,M. Lysholm,215.0,142.0,NaN,NaN,OB vs Roskilde,2024-09-22,88.5,48.8,NaN,NaN,NaN,NaN,20.2,6.2,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,3
 Roskilde,2724279607,95,49,10,39,1,28.9,46.0,A. Maarup,37.0,23.0,NaN,NaN,OB vs Roskilde,2024-09-22,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,2
 Roskilde,2734774661,21,1,2,39,0,99.5,0.5,O. Juul,13.0,7.0,NaN,NaN,Roskilde vs OB,2024-10-18,95.0,42.4,NaN,NaN,NaN,NaN,28.9,1.7,true,NaN,,NaN,NaN,NaN,true,,,NaN,,NaN,1
-Roskilde,2734774717,22,6,2,47,1,101.3,8.2,O. Juul,NaN,7.0,NaN,NaN,Roskilde vs OB,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,,NaN,2
+Roskilde,2734774717,22,6,2,47,1,101.2,7.7,O. Juul,NaN,7.0,NaN,NaN,Roskilde vs OB,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,,NaN,2
 Roskilde,2734774993,23,1,3,7,0,99.5,0.5,O. Juul,14.0,7.0,NaN,NaN,Roskilde vs OB,2024-10-18,97.3,52.8,NaN,NaN,NaN,NaN,35.6,1.6,true,NaN,,NaN,NaN,NaN,true,,,NaN,,NaN,1
+Roskilde,2734792081,239,1,34,36,0,99.5,99.5,A. Taranis,99.0,61.0,NaN,NaN,Roskilde vs OB,2024-10-18,87.9,60.3,NaN,NaN,NaN,NaN,29.3,4.3,true,NaN,,NaN,NaN,NaN,true,,,NaN,,NaN,1
 Roskilde,2734792087,240,1,34,39,1,88.8,74.6,K. Nyegaard,100.0,61.0,NaN,NaN,Roskilde vs OB,2024-10-18,92.2,48.5,0.34795284,NaN,NaN,NaN,18.1,4.9,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,,NaN,2
+Roskilde,2734792093,241,61,34,39,0,92.9,42.7,E. Nielsen,100.0,61.0,NaN,NaN,Roskilde vs OB,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,,NaN,3
+Roskilde,2734792153,243,1,34,41,1,65.1,40.6,G. Fraulo,101.0,61.0,NaN,NaN,Roskilde vs OB,2024-10-18,80.7,87.6,0.00223431,NaN,NaN,NaN,35.9,1.1,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,,NaN,4
+OB,2734786975,274,1,24,27,0,99.5,99.5,N. Mickelson,77.0,48.0,NaN,NaN,Roskilde vs OB,2024-10-18,98.5,59.1,NaN,NaN,NaN,NaN,27.5,4.7,true,NaN,,NaN,NaN,NaN,true,,,NaN,,NaN,1
+OB,2734787073,276,1,24,39,1,47.2,63.3,L. Owusu,78.0,48.0,NaN,NaN,Roskilde vs OB,2024-10-18,59.6,91.2,0.00014838,NaN,NaN,NaN,23.0,1.0,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,,NaN,3
 OB,2734787365,284,1,25,31,0,99.5,99.5,N. Mickelson,79.0,48.0,NaN,NaN,Roskilde vs OB,2024-10-18,93.6,43.0,NaN,NaN,NaN,NaN,38.9,4.6,true,NaN,,NaN,NaN,NaN,true,,,NaN,,NaN,1
-OB,2734787413,285,15,25,38,1,85.1,33.7,L. Deedson,80.0,48.0,NaN,NaN,Roskilde vs OB,2024-10-18,NaN,NaN,NaN,0.02215597592294216,0.0,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,,true,,NaN,2
-Roskilde,2734810815,329,28,45,0,1,49.7,49.1,NaN,NaN,73.0,NaN,NaN,Roskilde vs OB,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,,NaN,2
-Roskilde,2734827255,513,1,67,25,0,99.5,0.5,R. Arabaci,190.0,109.0,NaN,NaN,Roskilde vs OB,2024-10-18,90.2,29.9,NaN,NaN,NaN,NaN,22.2,2.0,NaN,true,,NaN,NaN,NaN,true,,,NaN,,NaN,1
-Roskilde,2734827337,514,5,67,33,1,77.4,-1.8,A. Taranis,NaN,109.0,NaN,NaN,Roskilde vs OB,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,,NaN,2
-Roskilde,2734827355,515,1,67,38,1,79.8,-1.4,M. Juhl,191.0,109.0,NaN,NaN,Roskilde vs OB,2024-10-18,73.6,6.7,0.00011834,NaN,NaN,NaN,8.5,2.4,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,,true,3
-Roskilde,2734827367,516,1,67,40,1,73.6,6.7,G. Fraulo,191.0,109.0,NaN,NaN,Roskilde vs OB,2024-10-18,79.6,5.2,0.00059494,NaN,NaN,NaN,6.4,6.1,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,,NaN,4
-Roskilde,2734827371,517,1,67,41,0,79.6,5.2,M. Juhl,191.0,109.0,NaN,NaN,Roskilde vs OB,2024-10-18,88.8,37.1,NaN,NaN,NaN,NaN,23.7,1.2,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,,NaN,5
-Roskilde,2734837325,591,1,79,9,0,99.5,99.5,R. Arabaci,226.0,135.0,NaN,NaN,Roskilde vs OB,2024-10-18,92.5,47.9,NaN,NaN,NaN,NaN,35.8,4.5,true,NaN,,NaN,NaN,NaN,true,,,NaN,,NaN,1
-Roskilde,2734837585,592,1,79,18,1,60.1,68.1,O. Skolnik,227.0,135.0,NaN,NaN,Roskilde vs OB,2024-10-18,79.9,92.7,0.00101193,NaN,NaN,NaN,26.7,0.7,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,,NaN,2
-Roskilde,2734839769,596,1,79,49,1,99.5,0.5,A. Maarup,228.0,135.0,NaN,NaN,Roskilde vs OB,2024-10-18,87.2,16.1,0.00162931,NaN,NaN,NaN,16.7,2.5,NaN,NaN,,NaN,NaN,NaN,true,,,NaN,,NaN,1
-Roskilde,2734839871,597,1,79,55,1,88.9,15.1,A. Taranis,228.0,135.0,NaN,1.0,Roskilde vs OB,2024-10-18,93.7,44.5,0.17309545,NaN,NaN,16,20.6,1.3,NaN,NaN,,NaN,NaN,NaN,NaN,,,true,,NaN,2
-OB,2734829001,714,1,71,25,0,99.5,0.5,A. Manneh,200.0,114.0,NaN,NaN,Roskilde vs OB,2024-10-18,89.0,44.0,NaN,NaN,NaN,NaN,31.6,1.9,true,NaN,,NaN,NaN,NaN,true,,,NaN,,NaN,1
+OB,2734787413,285,15,25,37,1,85.1,33.7,L. Deedson,80.0,48.0,NaN,NaN,Roskilde vs OB,2024-10-18,NaN,NaN,NaN,0.0203724168241024,0.0,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,,true,,NaN,2
+Roskilde,2734827255,513,1,67,25,0,99.5,0.5,R. Arabaci,192.0,109.0,NaN,NaN,Roskilde vs OB,2024-10-18,90.2,29.9,NaN,NaN,NaN,NaN,22.2,2.0,NaN,true,,NaN,NaN,NaN,true,,,NaN,,NaN,1
+Roskilde,2734827337,514,5,67,33,1,77.8,-1.7,A. Taranis,NaN,109.0,NaN,NaN,Roskilde vs OB,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,,NaN,2
+Roskilde,2734827355,515,1,67,38,1,79.8,-1.4,M. Juhl,193.0,109.0,NaN,NaN,Roskilde vs OB,2024-10-18,73.6,6.7,0.00011834,NaN,NaN,NaN,8.5,2.4,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,,true,3
+Roskilde,2734827367,516,1,67,40,1,73.6,6.7,G. Fraulo,193.0,109.0,NaN,NaN,Roskilde vs OB,2024-10-18,79.6,5.2,0.00059494,NaN,NaN,NaN,6.4,6.1,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,,NaN,4
+Roskilde,2734827371,517,1,67,41,0,79.6,5.2,M. Juhl,193.0,109.0,NaN,NaN,Roskilde vs OB,2024-10-18,88.8,37.1,NaN,NaN,NaN,NaN,23.7,1.2,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,,NaN,5
+OB,2734818485,555,1,54,12,0,99.5,0.7,A. Manneh,155.0,90.0,NaN,NaN,Roskilde vs OB,2024-10-18,87.7,47.3,NaN,NaN,NaN,NaN,34.0,1.9,true,NaN,,NaN,NaN,NaN,true,,,NaN,,NaN,1
+Roskilde,2734837325,591,1,79,9,0,99.5,99.5,R. Arabaci,229.0,135.0,NaN,NaN,Roskilde vs OB,2024-10-18,92.5,47.9,NaN,NaN,NaN,NaN,35.8,4.5,true,NaN,,NaN,NaN,NaN,true,,,NaN,,NaN,1
+Roskilde,2734837585,592,1,79,18,1,60.1,68.1,O. Skolnik,230.0,135.0,NaN,NaN,Roskilde vs OB,2024-10-18,79.9,92.7,0.00101193,NaN,NaN,NaN,26.7,0.7,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,,NaN,2
+Roskilde,2734839871,597,1,79,55,1,88.9,15.1,A. Taranis,231.0,135.0,NaN,1.0,Roskilde vs OB,2024-10-18,93.7,44.5,0.17309545,NaN,NaN,16,20.6,1.3,NaN,NaN,,NaN,NaN,NaN,NaN,,,true,,NaN,2
+Roskilde,2734840107,598,16,79,56,1,95.2,46.3,R. Arabaci,231.0,135.0,NaN,NaN,Roskilde vs OB,2024-10-18,NaN,NaN,NaN,0.21768711507320404,0.6312558054924011,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,,true,,NaN,3
+OB,2734829001,714,1,71,25,0,99.5,0.5,A. Manneh,202.0,114.0,NaN,NaN,Roskilde vs OB,2024-10-18,89.0,44.0,NaN,NaN,NaN,NaN,31.6,1.9,true,NaN,,NaN,NaN,NaN,true,,,NaN,,NaN,1
 OB,2734773539,8,1,0,51,0,99.5,99.5,N. Mickelson,6.0,4.0,NaN,NaN,Roskilde vs OB,2024-10-18,92.2,52.1,NaN,NaN,NaN,NaN,33.1,4.5,true,NaN,,NaN,NaN,NaN,true,,,NaN,,NaN,1
 OB,2734773643,9,1,0,59,1,65.2,30.4,L. Owusu,7.0,4.0,NaN,NaN,Roskilde vs OB,2024-10-18,86.0,49.0,0.06032051,NaN,NaN,NaN,25.2,0.5,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,,NaN,2
 Roskilde,2701845539,144,1,13,58,1,99.6,0.5,R. Arabaci,52.0,33.0,NaN,NaN,Vendsyssel vs Roskilde,2024-07-19,91.5,21.6,0.00255145,NaN,NaN,NaN,16.7,2.1,NaN,NaN,NaN,NaN,NaN,NaN,true,,NaN,NaN,,NaN,1
