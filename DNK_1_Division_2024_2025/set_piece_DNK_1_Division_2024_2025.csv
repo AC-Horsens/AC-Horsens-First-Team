@@ -628,6 +628,7 @@ Esbjerg,2715011433,486,1,52,30,1,99.5,99.5,A. Lausen,169.0,110.0,NaN,NaN,Roskild
 Esbjerg,2715011441,487,44,52,34,1,91.2,56.6,T. Stagaard,169.0,110.0,NaN,NaN,Roskilde vs Esbjerg,2024-08-30,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,2
 Esbjerg,2715011491,488,1,52,35,1,89.2,56.1,T. Stagaard,169.0,110.0,1.0,NaN,Roskilde vs Esbjerg,2024-08-30,94.2,32.0,0.03443275,NaN,NaN,15,17.2,5.0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,3
 Esbjerg,2715011513,489,15,52,37,1,94.9,40.1,P. Bjur,169.0,110.0,NaN,NaN,Roskilde vs Esbjerg,2024-08-30,NaN,NaN,NaN,0.057742442935705185,0.4983702600002289,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,true,NaN,NaN,4
+Esbjerg,2715011539,490,6,52,39,1,100.8,38.7,P. Bjur,NaN,110.0,NaN,NaN,Roskilde vs Esbjerg,2024-08-30,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,5
 Esbjerg,2715011975,491,1,52,53,1,99.5,0.5,P. Bjur,170.0,110.0,1.0,NaN,Roskilde vs Esbjerg,2024-08-30,92.3,42.4,0.04774199,NaN,NaN,15,29.5,1.8,true,NaN,NaN,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
 Esbjerg,2715019621,540,1,58,9,0,99.5,99.5,A. Lausen,189.0,122.0,NaN,NaN,Roskilde vs Esbjerg,2024-08-30,90.3,41.9,NaN,NaN,NaN,NaN,40.3,4.5,true,NaN,NaN,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
 Esbjerg,2715019871,541,1,58,14,1,80.4,28.1,N. Strunck,190.0,122.0,NaN,NaN,Roskilde vs Esbjerg,2024-08-30,90.0,11.6,0.00229374,NaN,NaN,NaN,15.1,5.4,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,2
@@ -1314,18 +1315,17 @@ OB,2730112671,811,1,71,39,0,99.5,99.5,N. Mickelson,222.0,155.0,NaN,NaN,OB vs HB 
 OB,2730112913,812,1,71,50,0,69.6,93.9,N. Mickelson,223.0,155.0,NaN,NaN,OB vs HB Køge,2024-10-04,86.5,51.2,NaN,NaN,NaN,NaN,34.0,5.3,true,NaN,,NaN,,NaN,NaN,,,NaN,,NaN,2
 OB,2730124735,924,1,80,55,0,99.5,0.5,A. Manneh,251.0,167.0,NaN,NaN,OB vs HB Køge,2024-10-04,96.2,45.2,NaN,NaN,NaN,NaN,30.6,1.7,true,NaN,,NaN,,NaN,true,,,NaN,,NaN,1
 OB,2730125043,925,1,81,10,0,91.5,96.9,L. Deedson,252.0,167.0,NaN,NaN,OB vs HB Køge,2024-10-04,90.4,89.1,NaN,NaN,NaN,NaN,5.4,4.5,NaN,true,,NaN,,NaN,NaN,,,NaN,,NaN,2
-Hobro,2734890817,1017,1,86,7,0,99.5,99.5,M. Kristensen,282.0,209.0,NaN,NaN,HB Køge vs Hobro,2024-10-18,91.2,61.8,NaN,NaN,NaN,NaN,27.1,4.4,true,NaN,,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,NaN,1
-Hobro,2734890955,1018,44,86,13,1,88.4,47.2,O. Dorph,283.0,209.0,NaN,NaN,HB Køge vs Hobro,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,2
-Hobro,2734891019,1019,1,86,13,1,86.2,51.2,O. Dorph,283.0,209.0,1.0,NaN,HB Køge vs Hobro,2024-10-18,87.2,61.2,0.02606376,NaN,NaN,15,6.9,1.4,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,3
-Hobro,2734891031,1020,15,86,16,1,88.3,49.8,M. Nielsen,283.0,209.0,NaN,NaN,HB Køge vs Hobro,2024-10-18,NaN,NaN,NaN,0.12430653721094131,0.17371538281440735,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,4
-Hobro,2734814911,403,1,35,36,0,99.5,99.5,M. Kristensen,111.0,86.0,NaN,NaN,HB Køge vs Hobro,2024-10-18,91.3,60.0,NaN,NaN,NaN,NaN,28.2,4.4,true,NaN,,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,NaN,1
-Hobro,2734815051,404,5,35,45,1,55.2,101.6,M. Kristensen,NaN,86.0,NaN,NaN,HB Køge vs Hobro,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,2
-Hobro,2734839795,639,1,49,22,0,99.5,0.5,M. Kristensen,168.0,121.0,NaN,NaN,HB Køge vs Hobro,2024-10-18,83.1,65.2,NaN,NaN,NaN,NaN,47.2,1.9,NaN,true,,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,NaN,1
-Hobro,2734844963,682,1,53,11,1,99.5,0.5,M. Kristensen,179.0,129.0,1.0,NaN,HB Køge vs Hobro,2024-10-18,88.6,45.2,0.02645423,NaN,NaN,15,32.5,1.9,NaN,true,,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,NaN,1
-Hobro,2734844981,683,15,53,14,1,90.0,40.0,M. Bruhn,179.0,129.0,NaN,NaN,HB Køge vs Hobro,2024-10-18,NaN,NaN,NaN,0.04138321429491043,0.061921313405036926,NaN,NaN,NaN,NaN,NaN,,true,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,2
-Hobro,2734855339,779,1,48,56,0,65.2,16.6,M. Kristensen,167.0,121.0,NaN,NaN,HB Køge vs Hobro,2024-10-18,88.9,16.4,NaN,NaN,NaN,NaN,24.9,6.3,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,2
-Hobro,2734882863,957,1,80,35,1,99.5,0.5,M. Kristensen,263.0,193.0,1.0,NaN,HB Køge vs Hobro,2024-10-18,84.7,41.8,0.00983191,NaN,NaN,13,32.1,2.1,NaN,true,,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,NaN,1
-Hobro,2734882877,958,13,80,40,1,91.2,66.0,O. Dorph,263.0,193.0,NaN,NaN,HB Køge vs Hobro,2024-10-18,NaN,NaN,NaN,0.01452480535954237,0.0,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,2
+Hobro,2734890817,1017,1,86,7,0,99.5,99.5,M. Kristensen,283.0,211.0,NaN,NaN,HB Køge vs Hobro,2024-10-18,91.2,61.8,NaN,NaN,NaN,NaN,27.1,4.4,true,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,NaN,1
+Hobro,2734890955,1018,44,86,10,1,88.4,47.2,O. Dorph,284.0,211.0,NaN,NaN,HB Køge vs Hobro,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,2
+Hobro,2734891019,1019,1,86,11,1,86.2,51.2,O. Dorph,284.0,211.0,1.0,NaN,HB Køge vs Hobro,2024-10-18,87.2,61.2,0.02606376,NaN,NaN,15,6.9,1.4,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,3
+Hobro,2734891031,1020,15,86,16,1,91.2,53.6,M. Nielsen,284.0,211.0,NaN,NaN,HB Køge vs Hobro,2024-10-18,NaN,NaN,NaN,0.15715934336185455,0.14625124633312225,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,4
+Hobro,2734814911,403,1,35,36,0,99.5,99.5,M. Kristensen,110.0,84.0,NaN,NaN,HB Køge vs Hobro,2024-10-18,91.3,60.0,NaN,NaN,NaN,NaN,28.2,4.4,true,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,NaN,1
+Hobro,2734815051,404,5,35,45,1,55.2,101.6,M. Kristensen,NaN,84.0,NaN,NaN,HB Køge vs Hobro,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,2
+Hobro,2734839795,639,1,49,22,0,99.5,0.5,M. Kristensen,169.0,123.0,NaN,NaN,HB Køge vs Hobro,2024-10-18,83.1,65.2,NaN,NaN,NaN,NaN,47.2,1.9,NaN,true,NaN,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,NaN,1
+Hobro,2734844963,682,1,53,11,1,99.5,0.5,M. Kristensen,180.0,131.0,1.0,NaN,HB Køge vs Hobro,2024-10-18,88.6,45.2,0.02645423,NaN,NaN,15,32.5,1.9,NaN,true,NaN,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,NaN,1
+Hobro,2734855339,779,1,48,53,0,65.2,16.6,M. Kristensen,168.0,123.0,NaN,NaN,HB Køge vs Hobro,2024-10-18,88.9,16.4,NaN,NaN,NaN,NaN,24.9,6.3,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,2
+Hobro,2734882863,957,1,80,35,1,99.5,0.5,M. Kristensen,264.0,195.0,NaN,NaN,HB Køge vs Hobro,2024-10-18,84.7,41.8,0.00983191,NaN,NaN,NaN,32.1,2.1,NaN,NaN,true,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,NaN,1
+Hobro,2734882877,958,1,80,37,0,84.2,63.6,O. Dorph,264.0,195.0,NaN,NaN,HB Køge vs Hobro,2024-10-18,92.0,63.4,NaN,NaN,NaN,NaN,8.2,6.3,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,2
 Hobro,2702476229,121,1,12,29,0,99.7,0.6,L. Klitten,44.0,29.0,NaN,NaN,Hillerød vs Hobro,2024-07-21,100.5,64.2,NaN,NaN,NaN,NaN,43.3,1.6,true,NaN,NaN,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
 Hobro,2702476731,144,1,11,20,1,30.9,53.0,M. Kristensen,42.0,29.0,NaN,NaN,Hillerød vs Hobro,2024-07-21,22.1,55.3,0.00000262,NaN,NaN,NaN,9.4,3.0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,2
 Hillerød,2702481729,338,1,29,20,1,99.5,99.5,L. Bøje-Larsen,97.0,66.0,NaN,NaN,Hillerød vs Hobro,2024-07-21,93.7,34.8,0.01097253,NaN,NaN,NaN,44.4,4.6,NaN,true,NaN,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
@@ -1366,6 +1366,7 @@ Hillerød,2703428313,535,1,66,9,0,99.5,0.5,A. Justinussen,213.0,125.0,NaN,NaN,Ho
 Hillerød,2703431659,604,1,74,2,0,99.5,99.5,A. Justinussen,239.0,143.0,NaN,NaN,Horsens vs Hillerød,2024-07-26,97.4,55.6,NaN,NaN,NaN,NaN,29.9,4.6,true,NaN,NaN,NaN,,NaN,true,,NaN,NaN,NaN,NaN,1
 Hillerød,2703431707,605,1,74,9,1,64.4,84.7,S. Opoku,240.0,143.0,NaN,NaN,Horsens vs Hillerød,2024-07-26,73.4,94.6,0.00042556,NaN,NaN,NaN,11.6,0.6,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,2
 Hillerød,2703431995,609,1,74,43,0,99.5,0.5,A. Justinussen,241.0,143.0,NaN,NaN,Horsens vs Hillerød,2024-07-26,89.0,49.2,NaN,NaN,NaN,NaN,34.9,1.9,NaN,true,NaN,NaN,,NaN,true,,NaN,NaN,NaN,NaN,1
+Hillerød,2703432053,613,4,74,56,1,78.2,36.8,J. Witt,NaN,143.0,NaN,NaN,Horsens vs Hillerød,2024-07-26,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,4
 Hillerød,2703432557,614,13,75,58,1,80.0,37.0,A. Justinussen,242.0,143.0,NaN,NaN,Horsens vs Hillerød,2024-07-26,NaN,NaN,NaN,0.09619423002004623,0.0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,true,NaN,5
 Horsens,2703403685,64,1,5,3,0,99.5,99.5,M. Larsen,19.0,11.0,NaN,NaN,Horsens vs Hillerød,2024-07-26,92.4,39.2,NaN,NaN,NaN,NaN,41.7,4.5,true,NaN,NaN,NaN,,NaN,true,,NaN,NaN,NaN,NaN,1
 Horsens,2703403701,65,13,5,9,1,73.7,57.7,J. Ankersen,20.0,11.0,NaN,NaN,Horsens vs Hillerød,2024-07-26,NaN,NaN,NaN,0.0253895353525877,0.0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,true,NaN,NaN,2
@@ -1510,47 +1511,47 @@ Vendsyssel,2730140443,874,1,93,43,0,99.5,99.5,K. Kusk,341.0,218.0,NaN,NaN,Hiller
 Vendsyssel,2730140481,876,16,93,50,1,94.9,54.2,L. Schulz,342.0,218.0,NaN,NaN,Hillerød vs Vendsyssel,2024-10-04,NaN,NaN,NaN,0.18493811786174774,0.9116358757019043,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,true,NaN,NaN,2
 Vendsyssel,2730140675,877,61,93,46,1,90.7,60.0,G. Mortensen,NaN,218.0,NaN,NaN,Hillerød vs Vendsyssel,2024-10-04,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,3
 Vendsyssel,2732336157,891,49,9,31,1,11.0,72.9,G. Mortensen,39.0,27.0,NaN,NaN,Hillerød vs Vendsyssel,2024-10-04,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,2
-Kolding,2734805075,185,1,21,8,0,99.5,99.5,A. Beck,77.0,51.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,96.2,50.9,NaN,NaN,NaN,NaN,33.2,4.6,true,NaN,,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
-Kolding,2734805177,186,1,21,19,0,91.0,82.6,A. Beck,78.0,51.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,89.7,72.9,NaN,NaN,NaN,NaN,6.7,4.5,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,2
-Kolding,2734809425,254,1,28,59,1,99.9,0.7,C. Jørgensen,103.0,69.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,86.5,5.2,0.0006664,NaN,NaN,NaN,14.4,2.9,NaN,NaN,,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
-Kolding,2734809439,255,1,29,0,1,85.3,7.3,M. Vestergård,103.0,69.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,94.1,9.8,0.00133461,NaN,NaN,NaN,9.4,0.2,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,2
-Kolding,2734809457,256,1,29,2,0,94.6,9.8,C. Jørgensen,103.0,69.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,94.7,50.3,NaN,NaN,NaN,NaN,27.5,1.6,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,3
-Kolding,2734816531,327,1,38,26,0,99.5,0.5,C. Jørgensen,134.0,85.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,91.9,57.9,NaN,NaN,NaN,NaN,39.8,1.8,true,NaN,,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
-Kolding,2734817601,332,1,39,38,0,99.5,99.5,A. Beck,136.0,85.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,94.5,43.1,NaN,NaN,NaN,NaN,38.7,4.6,true,NaN,,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
-Hillerød,2734813155,333,13,34,33,1,94.8,54.0,G. Arndal-Lauritzen,119.0,78.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,NaN,NaN,NaN,0.1811700463294983,0.0,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,,true,NaN,NaN,2
-Kolding,2734817629,334,1,39,48,1,86.4,18.3,S. Jalal,137.0,85.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,91.2,65.5,0.02980172,NaN,NaN,NaN,32.5,1.4,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,3
-Kolding,2734817641,335,44,39,50,1,90.9,67.6,A. Leifsson,137.0,85.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,4
-Kolding,2734817679,336,1,39,50,1,91.2,65.5,A. Leifsson,137.0,85.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,93.1,57.6,0.08854866,NaN,NaN,NaN,5.7,5.1,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,5
-Kolding,2734817687,337,50,39,53,1,94.4,62.2,J. Musbaudeen,137.0,85.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,6
-Kolding,2734817791,339,1,39,58,1,68.9,76.1,M. Vestergård,139.0,85.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,77.2,90.6,0.00091534,NaN,NaN,NaN,13.2,0.8,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,8
-Kolding,2734822497,394,1,45,50,0,99.5,99.5,A. Beck,157.0,95.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,95.0,57.0,NaN,NaN,NaN,NaN,29.3,4.6,true,NaN,,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
-Kolding,2734822535,395,6,45,54,1,98.7,66.4,A. Beck,NaN,95.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,2
-Kolding,2734822855,396,1,46,16,0,99.5,99.5,A. Beck,158.0,95.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,96.4,53.9,NaN,NaN,NaN,NaN,31.2,4.6,true,NaN,,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
-Kolding,2734824507,398,1,44,41,1,68.6,80.8,C. Jørgensen,155.0,95.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,63.3,95.6,0.0001973,NaN,NaN,NaN,11.5,2.1,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,2
-Kolding,2734828671,401,44,21,12,0,95.2,56.0,J. Musbaudeen,NaN,51.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,3
-Kolding,2734837145,430,1,47,36,1,99.5,0.5,A. Beck,169.0,99.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,91.0,52.7,0.05130302,NaN,NaN,NaN,36.6,1.8,NaN,true,,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
-Kolding,2734837167,431,44,47,38,1,92.2,55.2,J. Musbaudeen,169.0,99.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,2
-Kolding,2734837269,432,1,47,39,1,91.0,52.7,J. Musbaudeen,169.0,99.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,89.7,45.5,0.07723254,NaN,NaN,NaN,5.1,4.4,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,3
-Kolding,2734837285,433,1,47,40,0,89.7,45.5,M. Sarr,169.0,99.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,92.0,36.1,NaN,NaN,NaN,NaN,6.8,5.1,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,4
-Kolding,2734837315,434,1,47,43,0,92.0,32.7,A. Beck,170.0,99.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,94.3,47.3,NaN,NaN,NaN,NaN,10.2,1.3,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,5
-Kolding,2734837715,435,5,47,46,1,85.2,-1.7,A. Beck,NaN,99.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,6
-Kolding,2734837787,436,1,48,4,1,84.8,-2.0,C. Vestergaard,171.0,99.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,74.9,8.5,0.00016335,NaN,NaN,NaN,12.6,2.5,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,true,7
-Kolding,2734837895,437,1,48,7,0,74.9,12.6,A. Nørager,171.0,99.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,98.9,56.3,NaN,NaN,NaN,NaN,39.0,0.9,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,8
-Kolding,2734793119,48,1,5,7,0,99.5,99.5,A. Beck,24.0,15.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,92.4,62.6,NaN,NaN,NaN,NaN,26.2,4.4,true,NaN,,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
-Kolding,2734793123,49,44,5,9,0,91.4,61.2,S. Yatéké,NaN,15.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,2
-Kolding,2734793179,51,1,5,13,1,65.0,46.1,C. Jørgensen,NaN,15.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,68.3,56.9,0.00124821,NaN,NaN,NaN,8.1,1.1,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,3
-Kolding,2734862671,565,1,65,56,0,99.5,99.5,A. Beck,227.0,141.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,96.9,50.6,NaN,NaN,NaN,NaN,33.4,4.6,true,NaN,,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
-Hillerød,2734864269,611,1,67,5,0,99.5,0.5,D. Johansen,230.0,142.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,94.4,52.7,NaN,NaN,NaN,NaN,35.9,1.7,true,NaN,,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
-Hillerød,2734864449,612,5,67,15,1,86.0,101.7,M. Etim,NaN,142.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,2
-Hillerød,2734864863,613,1,67,36,1,85.7,101.7,G. Arndal-Lauritzen,231.0,142.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,93.1,68.1,0.00311951,NaN,NaN,NaN,24.1,5.0,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,true,3
-Hillerød,2734864877,614,1,67,38,0,94.1,69.1,A. Justinussen,231.0,142.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,95.0,58.4,NaN,NaN,NaN,NaN,7.3,4.8,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,4
-Hillerød,2734865005,615,5,67,42,1,65.1,101.8,A. Justinussen,NaN,142.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,5
-Kolding,2734876063,661,1,75,57,0,99.7,99.3,A. Beck,257.0,159.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,93.9,55.2,NaN,NaN,NaN,NaN,30.6,4.5,true,NaN,,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
-Kolding,2734876143,662,5,76,0,1,91.4,101.0,A. Beck,NaN,159.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,2
-Kolding,2734876939,664,1,76,31,0,90.8,100.7,C. Vestergaard,258.0,159.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,93.9,68.2,NaN,NaN,NaN,NaN,22.3,4.9,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,true,3
-Kolding,2734877123,665,1,76,37,1,63.6,69.6,C. Enemark,259.0,159.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,89.3,86.5,0.00269246,NaN,NaN,NaN,29.3,0.4,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,4
-Kolding,2734795253,77,1,7,44,1,99.5,99.5,A. Beck,33.0,19.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,96.7,39.2,0.0260262,NaN,NaN,NaN,41.1,4.6,true,NaN,,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
-Kolding,2734795265,78,44,7,48,1,94.3,40.4,C. Vestergaard,33.0,19.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,2
+Kolding,2734805075,185,1,21,8,0,99.5,99.5,A. Beck,77.0,51.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,96.2,50.9,NaN,NaN,NaN,NaN,33.2,4.6,true,NaN,NaN,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
+Kolding,2734805177,186,1,21,19,0,91.0,82.6,A. Beck,78.0,51.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,89.7,72.9,NaN,NaN,NaN,NaN,6.7,4.5,true,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,2
+Kolding,2734809425,254,1,28,59,1,99.9,0.7,C. Jørgensen,104.0,69.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,86.5,5.2,0.0006664,NaN,NaN,NaN,14.4,2.9,NaN,NaN,NaN,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
+Kolding,2734809439,255,1,29,0,1,85.3,7.3,M. Vestergård,104.0,69.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,94.1,9.8,0.00133461,NaN,NaN,NaN,9.4,0.2,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,2
+Kolding,2734816531,327,1,38,26,0,99.5,0.5,C. Jørgensen,135.0,85.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,91.9,57.9,NaN,NaN,NaN,NaN,39.8,1.8,true,NaN,NaN,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
+Kolding,2734816913,328,5,38,28,1,76.2,101.6,C. Jørgensen,NaN,85.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,2
+Kolding,2734816981,329,1,38,58,0,77.5,102.0,C. Vestergaard,136.0,85.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,90.5,68.4,NaN,NaN,NaN,NaN,26.6,5.3,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,true,3
+Kolding,2734816999,330,44,39,3,0,90.4,69.2,A. Leifsson,NaN,85.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,4
+Kolding,2734817019,331,6,39,6,1,97.1,79.1,C. Vestergaard,NaN,85.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,5
+Hillerød,2734813147,332,1,34,29,1,99.5,0.5,D. Johansen,120.0,78.0,1.0,NaN,Kolding vs Hillerød,2024-10-18,94.7,53.3,0.14336003,NaN,NaN,13,36.3,1.7,true,NaN,NaN,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
+Hillerød,2734813155,333,13,34,31,1,94.8,54.0,G. Arndal-Lauritzen,120.0,78.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,NaN,NaN,NaN,0.14663125574588776,0.0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,true,NaN,NaN,2
+Kolding,2734817629,334,1,39,48,1,86.4,18.3,S. Jalal,138.0,85.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,91.2,65.5,0.02980172,NaN,NaN,NaN,32.5,1.4,NaN,true,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,3
+Kolding,2734817641,335,44,39,50,1,90.9,67.6,A. Leifsson,138.0,85.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,4
+Kolding,2734817679,336,1,39,50,1,91.2,65.5,A. Leifsson,138.0,85.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,93.1,57.6,0.08854866,NaN,NaN,NaN,5.7,5.1,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,5
+Kolding,2734817687,337,50,39,53,1,94.4,62.2,J. Musbaudeen,138.0,85.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,6
+Kolding,2734817725,338,1,39,56,0,93.3,72.7,A. Leifsson,139.0,85.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,93.6,67.2,NaN,NaN,NaN,NaN,3.8,4.8,NaN,NaN,true,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,7
+Kolding,2734817791,339,1,39,58,1,68.9,76.1,M. Vestergård,140.0,85.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,77.2,90.6,0.00091534,NaN,NaN,NaN,13.2,0.8,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,8
+Kolding,2734822497,394,1,45,50,0,99.5,99.5,A. Beck,159.0,97.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,95.0,57.0,NaN,NaN,NaN,NaN,29.3,4.6,true,NaN,NaN,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
+Kolding,2734822535,395,6,45,54,1,98.7,66.4,A. Beck,NaN,97.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,2
+Kolding,2734822855,396,1,46,10,0,99.5,99.5,A. Beck,160.0,97.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,96.4,53.9,NaN,NaN,NaN,NaN,31.2,4.6,true,NaN,NaN,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
+Kolding,2734824507,398,1,44,41,1,68.6,80.8,C. Jørgensen,157.0,97.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,63.3,95.6,0.0001973,NaN,NaN,NaN,11.5,2.1,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,2
+Kolding,2734828671,401,44,21,12,0,95.2,56.0,J. Musbaudeen,NaN,51.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,3
+Kolding,2734837145,430,1,47,36,1,99.5,0.5,A. Beck,172.0,101.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,91.0,52.7,0.05130302,NaN,NaN,NaN,36.6,1.8,NaN,true,NaN,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
+Kolding,2734837315,434,1,47,43,0,92.0,32.7,A. Beck,173.0,101.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,94.3,47.3,NaN,NaN,NaN,NaN,10.2,1.3,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,5
+Kolding,2734837787,436,1,48,4,1,84.8,-2.0,C. Vestergaard,174.0,101.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,74.9,8.5,0.00016335,NaN,NaN,NaN,12.6,2.5,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,true,7
+Kolding,2734837895,437,1,48,7,0,74.9,12.6,A. Nørager,174.0,101.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,98.9,56.3,NaN,NaN,NaN,NaN,39.0,0.9,true,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,8
+Kolding,2734793119,48,1,5,7,0,99.5,99.5,A. Beck,24.0,15.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,92.4,62.6,NaN,NaN,NaN,NaN,26.2,4.4,true,NaN,NaN,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
+Kolding,2734793123,49,44,5,9,0,91.4,61.2,S. Yatéké,NaN,15.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,2
+Kolding,2734793179,51,1,5,13,1,65.0,46.1,C. Jørgensen,NaN,15.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,68.3,56.9,0.00124821,NaN,NaN,NaN,8.1,1.1,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,3
+Kolding,2734862671,565,1,65,56,0,99.5,99.5,A. Beck,230.0,143.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,96.9,50.6,NaN,NaN,NaN,NaN,33.4,4.6,true,NaN,NaN,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
+Hillerød,2734864269,611,1,67,5,0,99.5,0.5,D. Johansen,233.0,144.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,94.4,52.7,NaN,NaN,NaN,NaN,35.9,1.7,true,NaN,NaN,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
+Hillerød,2734864449,612,5,67,15,1,86.0,101.7,M. Etim,NaN,144.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,2
+Hillerød,2734864863,613,1,67,36,1,85.7,101.7,G. Arndal-Lauritzen,234.0,144.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,93.1,68.1,0.00311951,NaN,NaN,NaN,24.1,5.0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,true,3
+Hillerød,2734864877,614,1,67,38,0,94.1,69.1,A. Justinussen,234.0,144.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,95.0,58.4,NaN,NaN,NaN,NaN,7.3,4.8,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,4
+Hillerød,2734865005,615,5,67,42,1,65.1,101.8,A. Justinussen,NaN,144.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,5
+Kolding,2734876063,661,1,75,57,0,99.7,99.3,A. Beck,259.0,159.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,93.9,55.2,NaN,NaN,NaN,NaN,30.6,4.5,NaN,NaN,true,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
+Kolding,2734876143,662,5,76,0,1,91.4,101.0,A. Beck,NaN,159.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,2
+Kolding,2734876939,664,1,76,31,0,90.8,100.7,C. Vestergaard,260.0,159.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,93.9,68.2,NaN,NaN,NaN,NaN,22.3,4.9,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,true,3
+Kolding,2734795253,77,1,7,44,1,99.5,99.5,A. Beck,33.0,19.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,96.7,39.2,0.0260262,NaN,NaN,NaN,41.1,4.6,true,NaN,NaN,NaN,NaN,NaN,true,,,NaN,NaN,NaN,1
+Kolding,2734795265,78,44,7,48,1,94.3,40.4,C. Vestergaard,33.0,19.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,2
+Kolding,2734795279,79,1,7,48,0,96.7,39.2,C. Vestergaard,33.0,19.0,NaN,NaN,Kolding vs Hillerød,2024-10-18,97.1,50.9,NaN,NaN,NaN,NaN,8.0,1.5,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,3
 Hobro,2707215605,272,1,29,13,0,99.7,0.4,M. Kristensen,102.0,61.0,NaN,NaN,Roskilde vs Hobro,2024-08-10,92.6,43.7,NaN,NaN,NaN,NaN,30.4,1.8,NaN,NaN,,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,NaN,1
 Hobro,2707215685,274,1,29,23,1,59.0,38.9,J. Bøge,103.0,61.0,NaN,NaN,Roskilde vs Hobro,2024-08-10,23.8,55.5,0.00001035,NaN,NaN,NaN,38.6,2.8,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,2
 Roskilde,2707223809,413,1,41,20,1,99.5,99.5,R. Arabaci,136.0,78.0,NaN,NaN,Roskilde vs Hobro,2024-08-10,91.3,88.7,0.00092034,NaN,NaN,NaN,11.3,3.8,NaN,NaN,,NaN,NaN,NaN,true,NaN,NaN,NaN,NaN,NaN,1
