@@ -1356,7 +1356,7 @@ def Dashboard():
 
     def chance_creation():
         df_matchstats = load_match_stats()
-        df_matchstats = df_match_stats[['contestantId','date', 'label', 'touchesInOppBox']]
+        df_matchstats = df_match_stats[['contestantId','player_matchName','date', 'label', 'touchesInOppBox']]
         df_matchstats['date'] = pd.to_datetime(df_matchstats['date'])
         df_xA = load_xA()
         df_crosses = load_crosses()
