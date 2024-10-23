@@ -2449,8 +2449,8 @@ def League_stats():
     ]
 
     # Function to process set pieces based on the type of corner
-    def process_set_pieces(df, corner_type_column, corner_types):
-        columns_to_keep = ['possessionId', 'team_name', 'outcome', 'label', 'date', '321.0', 'playerName', 'x', 'y', '140.0', '141.0']
+    def process_set_pieces(df, corner_type_column):
+        columns_to_keep = ['possessionId', 'team_name','outcome', 'label', 'date', '321.0', 'playerName', 'x', 'y', '140.0', '141.0']
 
         # Ensure that we only use available columns
         available_columns = df.columns.intersection(columns_to_keep + [corner_type_column, '6.0'])
@@ -2460,8 +2460,8 @@ def League_stats():
         if corner_type_column not in filtered_df.columns:
             raise ValueError(f"Column {corner_type_column} not found in the dataframe")
 
-        # Identify the sequenceIds where the corner type column matches one of the corner types
-        sequence_ids_with_true_corner_type = filtered_df[filtered_df[corner_type_column].isin(corner_types)][['date', 'label', 'possessionId']].drop_duplicates()
+        # Identify the sequenceIds where the corner type column is True (corner taker)
+        sequence_ids_with_true_corner_type = filtered_df[filtered_df[corner_type_column] == True][['date', 'label', 'possessionId']].drop_duplicates()
 
         # Keep all rows associated with those sequenceIds (whole sequence)
         filtered_df = filtered_df.merge(sequence_ids_with_true_corner_type, on=['date', 'label', 'possessionId'])
@@ -2470,7 +2470,7 @@ def League_stats():
         filtered_df = filtered_df.dropna(subset=['playerName'])
 
         # Filter out the kicker (corner taker) to find the first touch after them
-        filtered_df_without_kicker = filtered_df[~filtered_df[corner_type_column].isin(corner_types)]
+        filtered_df_without_kicker = filtered_df[filtered_df[corner_type_column] != True]
 
         # First contact: Get the first touch after the corner
         filtered_df_without_kicker['sequence_xg'] = filtered_df_without_kicker.groupby(['date', 'label', 'possessionId'])['321.0'].transform('first')
@@ -2491,10 +2491,10 @@ def League_stats():
         return result_df, filtered_df  # Return both the result and the filtered data for heatmaps
 
     # Process each set piece type and get the filtered data for heatmaps
-    df_inswingers_for, df_inswingers_for_heatmap = process_set_pieces(df_set_pieces, 'corner_type_column_name', [223.0, 225.0])
-    df_outswingers_for, df_outswingers_for_heatmap = process_set_pieces(df_set_pieces, 'corner_type_column_name', [224.0])
-    df_straight_for, df_straight_for_heatmap = process_set_pieces(df_set_pieces, 'corner_type_column_name', [225.0])
-    df_short_for, df_short_for_heatmap = process_set_pieces(df_set_pieces, 'corner_type_column_name', [212.0])
+    df_inswingers_for, df_inswingers_for_heatmap = process_set_pieces(df_set_pieces, (['223.0','225.0']))
+    df_outswingers_for, df_outswingers_for_heatmap = process_set_pieces(df_set_pieces, '224.0')
+    df_straight_for, df_straight_for_heatmap = process_set_pieces(df_set_pieces, '225.0')
+    df_short_for, df_short_for_heatmap = process_set_pieces(df_set_pieces, '212.0')
 
     # Function to summarize the first contact and finisher
     def summarize_xg(df, set_piece_type):
