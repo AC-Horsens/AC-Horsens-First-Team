@@ -1458,7 +1458,6 @@ def Dashboard():
         touches_in_box_player = df_matchstats[df_matchstats['team_name'] == 'Horsens']
 
         touches_in_box_player = touches_in_box_player[touches_in_box_player['label'].isin(match_choice)]
-        st.write(touches_in_box_player)
         touches_in_box_player = touches_in_box_player.groupby(['player_matchName'])['touchesInOppBox'].sum().reset_index()
         touches_in_box_player = touches_in_box_player.sort_values(by=['touchesInOppBox'], ascending=False)
         touches_in_box_team = df_matchstats.groupby(['team_name','date', 'label'])['touchesInOppBox'].sum().reset_index()
