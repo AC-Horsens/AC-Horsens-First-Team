@@ -2491,11 +2491,13 @@ def League_stats():
         return result_df, filtered_df  # Return both the result and the filtered data for heatmaps
 
     # Process each set piece type and get the filtered data for heatmaps
-    df_inswingers_for, df_inswingers_for_heatmap = process_set_pieces(df_set_pieces, (['223.0','225.0']))
+    df_inswingers_for, df_inswingers_for_heatmap = process_set_pieces(df_set_pieces, '223.0')
     df_outswingers_for, df_outswingers_for_heatmap = process_set_pieces(df_set_pieces, '224.0')
     df_straight_for, df_straight_for_heatmap = process_set_pieces(df_set_pieces, '225.0')
     df_short_for, df_short_for_heatmap = process_set_pieces(df_set_pieces, '212.0')
-
+    
+    df_inswingers_for_heatmap = df_inswingers_for_heatmap.merge(df_straight_for_heatmap)
+    df_inswingers_for = df_inswingers_for.merge(df_straight_for)
     # Function to summarize the first contact and finisher
     def summarize_xg(df, set_piece_type):
         # First contact summary
@@ -2515,7 +2517,6 @@ def League_stats():
     # Summarize xG by player for each set piece type (first contact and finisher)
     summary_inswingers_first, summary_inswingers_finisher = summarize_xg(df_inswingers_for, 'inswingers')
     summary_outswingers_first, summary_outswingers_finisher = summarize_xg(df_outswingers_for, 'outswingers')
-    summary_straight_first, summary_straight_finisher = summarize_xg(df_straight_for, 'straight')
     summary_short_first, summary_short_finisher = summarize_xg(df_short_for, 'short')
 
     # Split data for heatmaps based on y-coordinate (left and right side)
@@ -2524,7 +2525,6 @@ def League_stats():
 
     df_inswingers_for_left, df_inswingers_for_right = split_data(df_inswingers_for_heatmap)
     df_outswingers_for_left, df_outswingers_for_right = split_data(df_outswingers_for_heatmap)
-    df_straight_for_left, df_straight_for_right = split_data(df_straight_for_heatmap)
     df_short_for_left, df_short_for_right = split_data(df_short_for_heatmap)
 
     # Display the heatmaps and xG summaries
@@ -2556,11 +2556,11 @@ def League_stats():
     df_actual_outswingers = filter_actual_corner_events(df_outswingers_for_heatmap, '224.0')
     df_actual_straight = filter_actual_corner_events(df_straight_for_heatmap, '225.0')
     df_actual_short = filter_actual_corner_events(df_short_for_heatmap, '212.0')
-
+    
+    df_actual_inswingers = df_actual_inswingers.merge(df_actual_straight)
     # Split the actual corner events data for heatmap based on y-coordinate (left and right sides)
     df_inswingers_for_left, df_inswingers_for_right = split_data(df_actual_inswingers)
     df_outswingers_for_left, df_outswingers_for_right = split_data(df_actual_outswingers)
-    df_straight_for_left, df_straight_for_right = split_data(df_actual_straight)
     df_short_for_left, df_short_for_right = split_data(df_actual_short)
 
     # Streamlit layout for displaying heatmaps
@@ -2573,10 +2573,7 @@ def League_stats():
         
         st.subheader('Outswingers')
         plot_heatmap(df_outswingers_for_left, "Outswingers - Left Side (Actual Corners)")
-        
-        st.subheader('Straights')
-        plot_heatmap(df_straight_for_left, "Straights - Left Side (Actual Corners)")
-        
+                
         st.subheader('Short Corners')
         plot_heatmap(df_short_for_left, "Short - Left Side (Actual Corners)")
 
@@ -2586,10 +2583,7 @@ def League_stats():
         
         st.subheader('Outswingers')
         plot_heatmap(df_outswingers_for_right, "Outswingers - Right Side (Actual Corners)")
-        
-        st.subheader('Straights')
-        plot_heatmap(df_straight_for_right, "Straights - Right Side (Actual Corners)")
-        
+                
         st.subheader('Short Corners')
         plot_heatmap(df_short_for_right, "Short - Right Side (Actual Corners)")
 
@@ -2600,7 +2594,7 @@ def League_stats():
         total_xg = finisher_df[f'finisher_xg_{set_piece_type}'].sum()
         return total_xg
 
-    col1, col2, col3, col4 = st.columns(4)
+    col1, col2, col3 = st.columns(3)
 
     with col1:
         st.write('Inswingers, First Contact')
@@ -2615,11 +2609,6 @@ def League_stats():
         st.write('Outswingers, Finisher')
         st.dataframe(summary_outswingers_finisher, hide_index=True)
 
-    with col3:
-        st.write('Straight, First Contact')
-        st.dataframe(summary_straight_first, hide_index=True)
-        st.write('Straight, Finisher')
-        st.dataframe(summary_straight_finisher, hide_index=True)
 
     with col4:
         st.write('Short, First Contact')
@@ -2630,13 +2619,12 @@ def League_stats():
 
     total_xg_inswingers = calculate_total_xg_from_summary(summary_inswingers_finisher, 'inswingers')
     total_xg_outswingers = calculate_total_xg_from_summary(summary_outswingers_finisher, 'outswingers')
-    total_xg_straight = calculate_total_xg_from_summary(summary_straight_finisher, 'straight')
     total_xg_short = calculate_total_xg_from_summary(summary_short_finisher, 'short')
 
     # Create a dataframe with the total xG values for each set piece type
     total_xg_df = pd.DataFrame({
-        'Set Piece Type': ['Inswingers', 'Outswingers', 'Straight', 'Short'],
-        'Total xG': [total_xg_inswingers, total_xg_outswingers, total_xg_straight, total_xg_short]
+        'Set Piece Type': ['Inswingers', 'Outswingers', 'Short'],
+        'Total xG': [total_xg_inswingers, total_xg_outswingers, total_xg_short]
     })
 
     # Display the total xG as a DataFrame in Streamlit
