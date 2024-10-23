@@ -2496,8 +2496,11 @@ def League_stats():
     df_straight_for, df_straight_for_heatmap = process_set_pieces(df_set_pieces, '225.0')
     df_short_for, df_short_for_heatmap = process_set_pieces(df_set_pieces, '212.0')
     
-    df_inswingers_for_heatmap = df_inswingers_for_heatmap.merge(df_straight_for_heatmap)
-    df_inswingers_for = df_inswingers_for.merge(df_straight_for)
+    df_inswingers_for_heatmap = pd.concat([df_inswingers_for_heatmap, df_straight_for_heatmap], axis=0)
+
+    # Concatenate df_inswingers_for and df_straight_for
+    df_inswingers_for = pd.concat([df_inswingers_for, df_straight_for], axis=0)
+
     # Function to summarize the first contact and finisher
     def summarize_xg(df, set_piece_type):
         # First contact summary
@@ -2557,7 +2560,7 @@ def League_stats():
     df_actual_straight = filter_actual_corner_events(df_straight_for_heatmap, '225.0')
     df_actual_short = filter_actual_corner_events(df_short_for_heatmap, '212.0')
     
-    df_actual_inswingers = df_actual_inswingers.merge(df_actual_straight)
+    df_actual_inswingers = pd.concat([df_actual_inswingers, df_actual_straight], axis=0)
     # Split the actual corner events data for heatmap based on y-coordinate (left and right sides)
     df_inswingers_for_left, df_inswingers_for_right = split_data(df_actual_inswingers)
     df_outswingers_for_left, df_outswingers_for_right = split_data(df_actual_outswingers)
@@ -2610,7 +2613,7 @@ def League_stats():
         st.dataframe(summary_outswingers_finisher, hide_index=True)
 
 
-    with col4:
+    with col3:
         st.write('Short, First Contact')
         st.dataframe(summary_short_first, hide_index=True)
         st.write('Short, Finisher')
