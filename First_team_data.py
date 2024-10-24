@@ -2438,6 +2438,15 @@ def Opposition_analysis():
     # Ensure the necessary columns are present in the dataset
     required_columns = ['possessionId','outcome', 'team_name', 'label', '321.0', 'playerName', 'x', 'y', '140.0', '141.0']
     available_columns = df_set_pieces.columns.intersection(required_columns)
+    
+    def preprocess_short_corners(df):
+        """
+        Preprocess the dataframe to set 223.0, 224.0, and 225.0 to False when 212.0 is less than 15 meters.
+        """
+        # Update columns 223.0, 224.0, and 225.0 to False where 212.0 is less than 15
+        df.loc[df['212.0'] < 15, ['223.0', '224.0', '225.0']] = False
+        
+        return df
 
 
     # If columns exist, continue processing
@@ -2463,7 +2472,7 @@ def Opposition_analysis():
         # Handling short corners: If the column is '212.0', we look for values < 10
         if corner_type_column == '212.0':
             # Identify the sequenceIds where the '212.0' column is less than 10 (short corners)
-            sequence_ids_with_true_corner_type = filtered_df[filtered_df[corner_type_column] < 10][['date', 'label', 'possessionId']].drop_duplicates()
+            sequence_ids_with_true_corner_type = filtered_df[filtered_df[corner_type_column] < 15][['date', 'label', 'possessionId']].drop_duplicates()
         else:
             # Identify the sequenceIds where the corner type column is True (corner taker)
             sequence_ids_with_true_corner_type = filtered_df[filtered_df[corner_type_column] == True][['date', 'label', 'possessionId']].drop_duplicates()
@@ -2494,6 +2503,8 @@ def Opposition_analysis():
         result_df = pd.merge(first_contact_df, finisher_df, on=['date', 'label', 'possessionId'])
 
         return result_df, filtered_df  # Return both the result and the filtered data for heatmaps
+    
+    df_set_pieces = preprocess_short_corners(df_set_pieces)
 
     # Process each set piece type and get the filtered data for heatmaps
     df_inswingers_for, df_inswingers_for_heatmap = process_set_pieces(df_set_pieces, '223.0')
