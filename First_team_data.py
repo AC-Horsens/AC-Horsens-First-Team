@@ -2559,7 +2559,8 @@ def Opposition_analysis():
 
     # Apply the function to short corners
     right_shorts, left_shorts = split_by_side_for_short_corners(df_set_pieces)
-
+    st.dataframe(right_shorts)
+    st.dataframe(left_shorts)
     col1, col2 = st.columns(2)
 
     # Display heatmaps for each type in the correct columns
