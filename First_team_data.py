@@ -2453,7 +2453,7 @@ def Opposition_analysis():
     def get_first_contact_and_finisher(df):
         result = []
 
-        # Iterate over each unique possession
+        # Iterate over each unique possession and label combination
         for possession_id, group in df.groupby(['possessionId', 'label']):
             group = group.sort_values('set_piece_index')  # Sort by set_piece_index (time order)
 
@@ -2474,17 +2474,17 @@ def Opposition_analysis():
                 # Finisher: The last player in the possession
                 finisher_player = group.iloc[-1]['playerName']
                 
-                # xG for the possession (for the same possessionId and label)
+                # xG for the possession (sum of all xG for the same possessionId and label)
                 possession_xg = group['321.0'].sum()
 
-                # Determine the type of corner (inswinger, outswinger, straight, or short)
-                inswinger = bool(corner_taker_row['223.0'].values[0])  # Inswinger if 223.0 is True
-                outswinger = bool(corner_taker_row['224.0'].values[0])  # Outswinger if 224.0 is True
-                straight = bool(corner_taker_row['225.0'].values[0])  # Straight if 225.0 is True
-                short = bool(corner_taker_row['short'].values[0])  # Short corner if 'short' is True
+                # Determine the type of corner for the entire possession
+                inswinger = group['223.0'].any()  # Inswinger if any 223.0 is True within the possession
+                outswinger = group['224.0'].any()  # Outswinger if any 224.0 is True within the possession
+                straight = group['225.0'].any()  # Straight if any 225.0 is True within the possession
+                short = group['short'].any()  # Short corner if any 'short' is True within the possession
 
                 result.append({
-                    'possessionId': str(possession_id),  # Convert possessionId to string
+                    'possessionId': possession_id,  # Convert possessionId to string
                     'first_contact_player': first_contact_player,
                     'finisher_player': finisher_player,
                     'xg': possession_xg,
@@ -2601,7 +2601,6 @@ def Opposition_analysis():
 
         return first_contact_summary, finisher_summary
     first_contact_finisher_df = get_first_contact_and_finisher(df_set_pieces)
-    st.write(first_contact_finisher_df)
 
     # Summarize first contact and finisher for each corner type (inswingers, outswingers, shorts)
     inswinger_data = first_contact_finisher_df[first_contact_finisher_df['inswinger'] == True]
