@@ -2488,7 +2488,6 @@ def Opposition_analysis():
         return pd.DataFrame(result)
 
     # Apply the function to the entire dataset
-    first_contact_finisher_df = get_first_contact_and_finisher(df_set_pieces)
 
     # Function to plot heatmaps for first contact using mplsoccer's VerticalPitch
     def plot_heatmap(df, title):
@@ -2589,13 +2588,14 @@ def Opposition_analysis():
         finisher_summary = finisher_summary.rename(columns={'xg': f'finisher_xg_{corner_type}'})
 
         return first_contact_summary, finisher_summary
+    first_contact_finisher_df = get_first_contact_and_finisher(df_set_pieces)
 
 
     # Summarize first contact and finisher for each corner type (inswingers, outswingers, shorts)
-    first_contact_inswingers, finisher_inswingers = summarize_first_contact_and_finisher(df_set_pieces, '223.0')
-    first_contact_outswingers, finisher_outswingers = summarize_first_contact_and_finisher(df_set_pieces, '224.0')
-    first_contact_shorts, finisher_shorts = summarize_first_contact_and_finisher(df_set_pieces, 'short')
-
+    first_contact_inswingers, finisher_inswingers = summarize_first_contact_and_finisher(first_contact_finisher_df, '223.0')
+    first_contact_outswingers, finisher_outswingers = summarize_first_contact_and_finisher(first_contact_finisher_df, '224.0')
+    first_contact_shorts, finisher_shorts = summarize_first_contact_and_finisher(first_contact_finisher_df, 'short')
+    
     col1,col2,col3 = st.columns(3)
     # Display the results in Streamlit or a summary table
     st.header('xG Summary by Player for First Contact and Finisher')
