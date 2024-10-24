@@ -2548,11 +2548,8 @@ def Opposition_analysis():
 
     # Display the heatmaps and xG summaries
     def filter_actual_corner_events(df, corner_type_column):
-        # Apply preprocessing for short corners: set 223.0, 224.0, and 225.0 to False where 212.0 < 15
-        df.loc[df['212.0'] < 15, ['223.0', '224.0', '225.0']] = False
-
         if corner_type_column == '212.0':
-            # For short corners, filter where the value in '212.0' is less than 15 and '6.0' is True
+            # For short corners, filter where the value in '212.0' is less than 10 and '6.0' is True
             return df[(df[corner_type_column] < 15) & (df['6.0'] == True)]
         else:
             # For other corner types, filter where the corner type column and '6.0' are both True
