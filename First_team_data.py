@@ -2577,7 +2577,7 @@ def Opposition_analysis():
         """
         Summarize the first contact and finisher for each player based on corner type.
         """
-        # Filter based on corner type
+        # Filter based on corner type (inswingers, outswingers, short)
         df_corner_type = df[df[corner_type] == True]
 
         # Summarize first contact
@@ -2589,6 +2589,7 @@ def Opposition_analysis():
         finisher_summary = finisher_summary.rename(columns={'xg': f'finisher_xg_{corner_type}'})
 
         return first_contact_summary, finisher_summary
+
 
     # Summarize first contact and finisher for each corner type (inswingers, outswingers, shorts)
     first_contact_inswingers, finisher_inswingers = summarize_first_contact_and_finisher(df_set_pieces, '223.0')
