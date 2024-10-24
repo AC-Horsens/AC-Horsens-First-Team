@@ -2437,214 +2437,103 @@ def Opposition_analysis():
     def preprocess_short_corners(df):
         """
         Preprocess the dataframe to set 223.0, 224.0, and 225.0 to False 
-        when 212.0 is less than 15 meters and 6.0 is either True (boolean) or 'true' (string).
+        when 212.0 is less than 10 meters and 6.0 is either True (boolean) or 'true' (string).
         """
-        # Update columns 223.0, 224.0, and 225.0 to False where 212.0 is less than 15 and 6.0 is True (boolean) or 'true' (string)
-        df.loc[(df['212.0'] < 15) & ((df['6.0'] == True) | (df['6.0'] == 'true')), ['223.0', '224.0', '225.0']] = False
-        
+        df.loc[(df['212.0'] < 10) & ((df['6.0'] == True) | (df['6.0'] == 'true')), ['223.0', '224.0', '225.0']] = False
         return df
 
-    # Preprocess short corners to set proper flags and exclude from other types
+    # Apply preprocessing to the set pieces data
     df_set_pieces = preprocess_short_corners(df_set_pieces)
 
-    # Exclude short corners from being categorized as other corner types
-    df_non_short = df_set_pieces[~((df_set_pieces['212.0'] < 15) & ((df_set_pieces['6.0'] == True) | (df_set_pieces['6.0'] == 'true')))]
+    # Function to get the first contact and finisher for each possession
+    def get_first_contact_and_finisher(df):
+        result = []
 
-    # Function to process set pieces based on the type of corner
-    def process_set_pieces(df, corner_type_column):
-        columns_to_keep = ['possessionId', 'team_name', 'outcome', 'label', 'date', '321.0', 'playerName', 'x', 'y', '140.0', '141.0']
+        # Iterate over each unique possession
+        for possession_id, group in df.groupby('possessionId'):
+            group = group.sort_values('set_piece_index')  # Sort by set_piece_index (time order)
 
-        # Ensure that we only use available columns
-        available_columns = df.columns.intersection(columns_to_keep + [corner_type_column, '6.0'])
-        filtered_df = df[available_columns]
+            # Identify the row where 6.0 is True (corner taker)
+            corner_taker_row = group[group['6.0'] == True]
+            
+            if not corner_taker_row.empty:
+                corner_taker_index = corner_taker_row.index[0]
+                label = corner_taker_row['label'].values[0]  # Get the label for xG aggregation
 
-        # Check if the corner type column exists
-        if corner_type_column not in filtered_df.columns:
-            raise ValueError(f"Column {corner_type_column} not found in the dataframe")
+                # First contact: First player after the corner taker in the same possession (next event)
+                first_contact_row = group[group.index > corner_taker_index].head(1)
+                if not first_contact_row.empty:
+                    first_contact_player = first_contact_row['playerName'].values[0]
+                else:
+                    first_contact_player = None
 
-        # Handling short corners: If the column is '212.0', we look for values < 10
-        if corner_type_column == '212.0':
-            # Identify the sequenceIds where the '212.0' column is less than 10 (short corners)
-            sequence_ids_with_true_corner_type = filtered_df[filtered_df[corner_type_column] < 15][['date', 'label', 'possessionId']].drop_duplicates()
-        else:
-            # Identify the sequenceIds where the corner type column is True (corner taker)
-            sequence_ids_with_true_corner_type = filtered_df[filtered_df[corner_type_column] == True][['date', 'label', 'possessionId']].drop_duplicates()
+                # Finisher: The last player in the possession
+                finisher_player = group.iloc[-1]['playerName']
+                
+                # xG for the possession (for the same possessionId and label)
+                possession_xg = group['321.0'].sum()
 
-        # Keep all rows associated with those sequenceIds (whole sequence)
-        filtered_df = filtered_df.merge(sequence_ids_with_true_corner_type, on=['date', 'label', 'possessionId'])
+                result.append({
+                    'possessionId': possession_id,
+                    'first_contact_player': first_contact_player,
+                    'finisher_player': finisher_player,
+                    'xg': possession_xg,
+                    'label': label
+                })
 
-        # Drop rows with missing playerName to avoid errors
-        filtered_df = filtered_df.dropna(subset=['playerName'])
+        return pd.DataFrame(result)
 
-        # Filter out the kicker (corner taker) to find the first touch after them
-        filtered_df_without_kicker = filtered_df[filtered_df[corner_type_column] != True]
+    # Apply the function to the entire dataset
+    first_contact_finisher_df = get_first_contact_and_finisher(df_set_pieces)
 
-        # First contact: Get the first touch after the corner
-        filtered_df_without_kicker['sequence_xg'] = filtered_df_without_kicker.groupby(['date', 'label', 'possessionId'])['321.0'].transform('first')
+    # Display the result
+    print(first_contact_finisher_df.head())
 
-        # Finisher: Get the last touch in each sequence
-        filtered_df['finisher_xg'] = filtered_df.groupby(['date', 'label', 'possessionId'])['321.0'].transform('last')
+    # Function to create a simple heatmap using matplotlib for first contacts
+    def plot_first_contact_heatmap_simple(df, title):
+        fig, ax = plt.subplots(figsize=(6, 8))
+        heatmap, xedges, yedges = np.histogram2d(df['x'], df['y'], bins=30)
+        heatmap = gaussian_filter(heatmap, sigma=1)
 
-        # Now, get the players who had the first contact and who finished
-        first_contact_df = filtered_df_without_kicker.groupby(['date', 'label', 'possessionId']).first().reset_index()[['date', 'label', 'possessionId', 'playerName', 'sequence_xg']]
-        first_contact_df = first_contact_df.rename(columns={'playerName': 'first_contact_player', 'sequence_xg': 'first_contact_xg'})
+        # Plot the heatmap
+        extent = [0, 100, 0, 100]  # Assuming the football pitch is scaled 0-100 for x and y
+        ax.imshow(heatmap.T, extent=extent, origin='lower', cmap='hot', alpha=0.7)
 
-        finisher_df = filtered_df.groupby(['date', 'label', 'possessionId']).last().reset_index()[['date', 'label', 'possessionId', 'playerName', 'finisher_xg']]
-        finisher_df = finisher_df.rename(columns={'playerName': 'finisher_player', 'finisher_xg': 'finisher_xg'})
-
-        # Merge the first contact and finisher information
-        result_df = pd.merge(first_contact_df, finisher_df, on=['date', 'label', 'possessionId'])
-
-        return result_df, filtered_df  # Return both the result and the filtered data for heatmaps
-
-    # Process each set piece type and get the filtered data for heatmaps
-    df_inswingers_for, df_inswingers_for_heatmap = process_set_pieces(df_non_short, '223.0')
-    df_outswingers_for, df_outswingers_for_heatmap = process_set_pieces(df_non_short, '224.0')
-    df_straight_for, df_straight_for_heatmap = process_set_pieces(df_non_short, '225.0')
-    df_short_for, df_short_for_heatmap = process_set_pieces(df_set_pieces, '212.0')  # Only for short corners
-
-    # Concatenate df_inswingers_for and df_straight_for for heatmap
-    df_inswingers_for_heatmap = pd.concat([df_inswingers_for_heatmap, df_straight_for_heatmap], axis=0)
-    df_inswingers_for = pd.concat([df_inswingers_for, df_straight_for], axis=0)
-
-    # Function to summarize the first contact and finisher
-    def summarize_xg(df, set_piece_type):
-        # First contact summary
-        first_contact_summary = df.groupby('first_contact_player')['first_contact_xg'].sum().reset_index()
-        first_contact_summary = first_contact_summary[first_contact_summary['first_contact_xg'] > 0]
-        first_contact_summary = first_contact_summary.rename(columns={'first_contact_xg': f'first_contact_xg_{set_piece_type}'})
-        first_contact_summary = first_contact_summary.sort_values(by=f'first_contact_xg_{set_piece_type}', ascending=False)
-
-        # Finisher summary  
-        finisher_summary = df.groupby('finisher_player')['finisher_xg'].sum().reset_index()
-        finisher_summary = finisher_summary[finisher_summary['finisher_xg'] > 0]
-        finisher_summary = finisher_summary.rename(columns={'finisher_xg': f'finisher_xg_{set_piece_type}'})
-        finisher_summary = finisher_summary.sort_values(by=f'finisher_xg_{set_piece_type}', ascending=False)
-
-        return first_contact_summary, finisher_summary
-
-    # Summarize xG by player for each set piece type (first contact and finisher)
-    summary_inswingers_first, summary_inswingers_finisher = summarize_xg(df_inswingers_for, 'inswingers')
-    summary_outswingers_first, summary_outswingers_finisher = summarize_xg(df_outswingers_for, 'outswingers')
-    summary_short_first, summary_short_finisher = summarize_xg(df_short_for, 'short')
-
-
-    # Split data for heatmaps based on y-coordinate (left and right side)
-    def split_data(df):
-        return df[df['y'] > 70], df[df['y'] < 30]
-
-    df_inswingers_for_left, df_inswingers_for_right = split_data(df_inswingers_for_heatmap)
-    df_outswingers_for_left, df_outswingers_for_right = split_data(df_outswingers_for_heatmap)
-    df_short_for_left, df_short_for_right = split_data(df_short_for_heatmap)
-
-    # Display the heatmaps and xG summaries
-    def filter_actual_corner_events(df, corner_type_column):
-        if corner_type_column == '212.0':
-            # For short corners, filter where the value in '212.0' is less than 10 and '6.0' is True
-            return df[(df[corner_type_column] < 15) & (df['6.0'] == True)]
-        else:
-            # For other corner types, filter where the corner type column and '6.0' are both True
-            return df[(df[corner_type_column] == True) & (df['6.0'] == True)]
-
-    # Function to create and display heatmaps for actual corner events in Streamlit
-    def plot_heatmap(df, title):
-        pitch = VerticalPitch(pitch_type='opta', half=True, line_zorder=2, pitch_color='grass', line_color='white')
-        fig, ax = pitch.draw()
-
-        # Extract coordinates based on available data
-        x_coords = df['140.0']  # x-coordinate column
-        y_coords = df['141.0']  # y-coordinate column
-
-        # Generate heatmap based on x and y coordinates
-        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50))  # Adjust bins if needed
-        bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
-        pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
-
-        # Set plot title
         ax.set_title(title)
+        ax.set_xlabel("Pitch X")
+        ax.set_ylabel("Pitch Y")
 
-        # Display the heatmap in Streamlit
-        st.pyplot(fig)
+        plt.colorbar(ax.imshow(heatmap.T, extent=extent, origin='lower', cmap='hot', alpha=0.7), ax=ax)
+        plt.show()
 
-    # Filter the actual corner events for inswingers, outswingers, straight, and short set pieces
-    df_actual_inswingers = filter_actual_corner_events(df_inswingers_for_heatmap, '223.0')
-    df_actual_outswingers = filter_actual_corner_events(df_outswingers_for_heatmap, '224.0')
-    df_actual_straight = filter_actual_corner_events(df_straight_for_heatmap, '225.0')
-    df_actual_short = filter_actual_corner_events(df_short_for_heatmap, '212.0')
-    
-    df_actual_inswingers = pd.concat([df_actual_inswingers, df_actual_straight], axis=0)
-    # Split the actual corner events data for heatmap based on y-coordinate (left and right sides)
-    df_inswingers_for_left, df_inswingers_for_right = split_data(df_actual_inswingers)
-    df_outswingers_for_left, df_outswingers_for_right = split_data(df_actual_outswingers)
-    df_short_for_left, df_short_for_right = split_data(df_actual_short)
-
-    # Streamlit layout for displaying heatmaps
-    col1, col2 = st.columns(2)
-
-    # Display heatmaps for left and right sides in Streamlit
-    with col1:
-        st.subheader('Inswingers')
-        plot_heatmap(df_inswingers_for_left, "Inswingers - Left Side (Actual Corners)")
+    # Function to split data for left and right side based on where the corner was taken
+    def split_by_side(df, corner_type_column):
+        # Right side: y < 30 for the corner-taking row
+        right_side = df[(df['6.0'] == True) & (df['y'] < 30) & (df[corner_type_column] == True)]
         
-        st.subheader('Outswingers')
-        plot_heatmap(df_outswingers_for_left, "Outswingers - Left Side (Actual Corners)")
-                
-        st.subheader('Short Corners')
-        plot_heatmap(df_short_for_left, "Short - Left Side (Actual Corners)")
-
-    with col2:
-        st.subheader('Inswingers')
-        plot_heatmap(df_inswingers_for_right, "Inswingers - Right Side (Actual Corners)")
+        # Left side: y > 70 for the corner-taking row
+        left_side = df[(df['6.0'] == True) & (df['y'] > 70) & (df[corner_type_column] == True)]
         
-        st.subheader('Outswingers')
-        plot_heatmap(df_outswingers_for_right, "Outswingers - Right Side (Actual Corners)")
-                
-        st.subheader('Short Corners')
-        plot_heatmap(df_short_for_right, "Short - Right Side (Actual Corners)")
+        return right_side, left_side
 
-    # Display the xG summaries for first contact and finisher
-    st.header('xG Summaries for First Contact and Finisher')
+    # Inswingers (223.0)
+    right_inswingers, left_inswingers = split_by_side(df_set_pieces, '223.0')
 
-    def calculate_total_xg_from_summary(finisher_df, set_piece_type):
-        total_xg = finisher_df[f'finisher_xg_{set_piece_type}'].sum()
-        return total_xg
+    # Outswingers (224.0)
+    right_outswingers, left_outswingers = split_by_side(df_set_pieces, '224.0')
 
-    col1, col2, col3 = st.columns(3)
+    # Short Corners (212.0, pass length < 10)
+    right_shorts, left_shorts = split_by_side(df_set_pieces[(df_set_pieces['212.0'] < 10)], '212.0')
 
-    with col1:
-        st.write('Inswingers, First Contact')
-        st.dataframe(summary_inswingers_first, hide_index=True)
-        st.write('Inswingers, Finisher')
-        st.dataframe(summary_inswingers_finisher, hide_index=True)
-        
+    # Plot heatmaps for the first contact for each side
+    plot_first_contact_heatmap_simple(right_inswingers, "First Contact - Inswingers (Right Side)")
+    plot_first_contact_heatmap_simple(left_inswingers, "First Contact - Inswingers (Left Side)")
 
-    with col2:
-        st.write('Outswingers, First Contact')
-        st.dataframe(summary_outswingers_first, hide_index=True)
-        st.write('Outswingers, Finisher')
-        st.dataframe(summary_outswingers_finisher, hide_index=True)
+    plot_first_contact_heatmap_simple(right_outswingers, "First Contact - Outswingers (Right Side)")
+    plot_first_contact_heatmap_simple(left_outswingers, "First Contact - Outswingers (Left Side)")
 
-
-    with col3:
-        st.write('Short, First Contact')
-        st.dataframe(summary_short_first, hide_index=True)
-        st.write('Short, Finisher')
-        st.dataframe(summary_short_finisher, hide_index=True)
-
-
-    total_xg_inswingers = calculate_total_xg_from_summary(summary_inswingers_finisher, 'inswingers')
-    total_xg_outswingers = calculate_total_xg_from_summary(summary_outswingers_finisher, 'outswingers')
-    total_xg_short = calculate_total_xg_from_summary(summary_short_finisher, 'short')
-
-    # Create a dataframe with the total xG values for each set piece type
-    total_xg_df = pd.DataFrame({
-        'Set Piece Type': ['Inswingers', 'Outswingers', 'Short'],
-        'Total xG': [total_xg_inswingers, total_xg_outswingers, total_xg_short]
-    })
-
-    # Display the total xG as a DataFrame in Streamlit
-    st.header('Total xG for Set Pieces')
-    st.dataframe(total_xg_df,hide_index=True)
+    plot_first_contact_heatmap_simple(right_shorts, "First Contact - Short Corners (Right Side)")
+    plot_first_contact_heatmap_simple(left_shorts, "First Contact - Short Corners (Left Side)")
 
 def Physical_data():
     df = load_physical_data()
