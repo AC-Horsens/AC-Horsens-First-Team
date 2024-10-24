@@ -2484,7 +2484,7 @@ def Opposition_analysis():
                 short = group['short'].any()  # Short corner if any 'short' is True within the possession
 
                 result.append({
-                    'possessionId': possession_id,  # Convert possessionId to string
+                    'possessionId': str(possession_id),  # Convert possessionId to string
                     'first_contact_player': first_contact_player,
                     'finisher_player': finisher_player,
                     'xg': possession_xg,
