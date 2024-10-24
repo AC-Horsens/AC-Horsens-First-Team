@@ -2599,7 +2599,7 @@ def Opposition_analysis():
 
         return first_contact_summary, finisher_summary
     first_contact_finisher_df = get_first_contact_and_finisher(df_set_pieces)
-    st.dataframe(first_contact_finisher_df)
+    st.write(first_contact_finisher_df)
 
     # Summarize first contact and finisher for each corner type (inswingers, outswingers, shorts)
     inswinger_data = first_contact_finisher_df[first_contact_finisher_df['inswinger'] == True]
