@@ -2534,9 +2534,9 @@ def Opposition_analysis():
         return first_contact_summary, finisher_summary
 
     # Summarize xG by player for each set piece type (first contact and finisher)
-    summary_inswingers_first, summary_inswingers_finisher = summarize_xg(df_inswingers_for_heatmap, 'inswingers')
-    summary_outswingers_first, summary_outswingers_finisher = summarize_xg(df_outswingers_for_heatmap, 'outswingers')
-    summary_short_first, summary_short_finisher = summarize_xg(df_short_for_heatmap, 'short')
+    summary_inswingers_first, summary_inswingers_finisher = summarize_xg(df_inswingers_for, 'inswingers')
+    summary_outswingers_first, summary_outswingers_finisher = summarize_xg(df_outswingers_for, 'outswingers')
+    summary_short_first, summary_short_finisher = summarize_xg(df_short_for, 'short')
 
     # Split data for heatmaps based on y-coordinate (left and right side)
     def split_data(df):
