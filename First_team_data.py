@@ -2519,6 +2519,11 @@ def Opposition_analysis():
 
     # Function to summarize the first contact and finisher
     def summarize_xg(df, set_piece_type):
+        # Apply the short corner criteria: For short corners (where '212.0' is the column for short corners), 
+        # filter where '212.0' is less than 10 if applicable
+        if set_piece_type == 'short':
+            df = df[df['212.0'] < 10]
+        
         # First contact summary
         first_contact_summary = df.groupby('first_contact_player')['first_contact_xg'].sum().reset_index()
         first_contact_summary = first_contact_summary[first_contact_summary['first_contact_xg'] > 0]
@@ -2532,7 +2537,6 @@ def Opposition_analysis():
         finisher_summary = finisher_summary.sort_values(by=f'finisher_xg_{set_piece_type}', ascending=False)
 
         return first_contact_summary, finisher_summary
-    st.write(df_short_for)
     # Summarize xG by player for each set piece type (first contact and finisher)
     summary_inswingers_first, summary_inswingers_finisher = summarize_xg(df_inswingers_for, 'inswingers')
     summary_outswingers_first, summary_outswingers_finisher = summarize_xg(df_outswingers_for, 'outswingers')
