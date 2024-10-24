@@ -2513,13 +2513,13 @@ def Opposition_analysis():
         first_contact_summary = first_contact_summary[first_contact_summary['first_contact_xg'] > 0]
         first_contact_summary = first_contact_summary.rename(columns={'first_contact_xg': f'first_contact_xg_{set_piece_type}'})
         first_contact_summary = first_contact_summary.sort_values(by=f'first_contact_xg_{set_piece_type}', ascending=False)
-        
+
         # Finisher summary  
         finisher_summary = df.groupby('finisher_player')['finisher_xg'].sum().reset_index()
         finisher_summary = finisher_summary[finisher_summary['finisher_xg'] > 0]
         finisher_summary = finisher_summary.rename(columns={'finisher_xg': f'finisher_xg_{set_piece_type}'})
         finisher_summary = finisher_summary.sort_values(by=f'finisher_xg_{set_piece_type}', ascending=False)
-        
+
         return first_contact_summary, finisher_summary
 
     # Summarize xG by player for each set piece type (first contact and finisher)
