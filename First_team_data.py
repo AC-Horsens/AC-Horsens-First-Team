@@ -2441,13 +2441,13 @@ def Opposition_analysis():
     
     def preprocess_short_corners(df):
         """
-        Preprocess the dataframe to set 223.0, 224.0, and 225.0 to False when 212.0 is less than 15 meters.
+        Preprocess the dataframe to set 223.0, 224.0, and 225.0 to False 
+        when 212.0 is less than 15 meters and 6.0 is either True (boolean) or 'true' (string).
         """
-        # Update columns 223.0, 224.0, and 225.0 to False where 212.0 is less than 15
-        df.loc[df['212.0'] < 15, ['223.0', '224.0', '225.0']] = False
+        # Update columns 223.0, 224.0, and 225.0 to False where 212.0 is less than 15 and 6.0 is True (boolean) or 'true' (string)
+        df.loc[(df['212.0'] < 15) & ((df['6.0'] == True) | (df['6.0'] == 'true')), ['223.0', '224.0', '225.0']] = False
         
         return df
-
 
     # If columns exist, continue processing
     df_set_pieces['team_name'] = df_set_pieces['team_name'].str.replace(" ", "_")
@@ -2519,11 +2519,6 @@ def Opposition_analysis():
 
     # Function to summarize the first contact and finisher
     def summarize_xg(df, set_piece_type):
-        # Apply the short corner criteria: For short corners (where '212.0' is the column for short corners), 
-        # filter where '212.0' is less than 10 if applicable
-        if set_piece_type == 'short':
-            df = df[df['212.0'] < 10]
-        
         # First contact summary
         first_contact_summary = df.groupby('first_contact_player')['first_contact_xg'].sum().reset_index()
         first_contact_summary = first_contact_summary[first_contact_summary['first_contact_xg'] > 0]
