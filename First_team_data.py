@@ -2525,15 +2525,22 @@ def Opposition_analysis():
     # Short Corners (212.0, pass length < 10)
     right_shorts, left_shorts = split_by_side(df_set_pieces[(df_set_pieces['212.0'] < 10)], '212.0')
 
-    # Plot heatmaps for the first contact for each side
-    plot_heatmap(right_inswingers, "First Contact - Inswingers (Right Side)")
-    plot_heatmap(left_inswingers, "First Contact - Inswingers (Left Side)")
+    col1, col2 = st.columns(2)
 
-    plot_heatmap(right_outswingers, "First Contact - Outswingers (Right Side)")
-    plot_heatmap(left_outswingers, "First Contact - Outswingers (Left Side)")
+    # Display heatmaps for each type in the correct columns
+    with col1:
+        # Left side heatmaps
+        st.subheader('First Contact - Left Side')
+        plot_heatmap(left_inswingers, "First Contact - Inswingers (Left Side)")
+        plot_heatmap(left_outswingers, "First Contact - Outswingers (Left Side)")
+        plot_heatmap(left_shorts, "First Contact - Short Corners (Left Side)")
 
-    plot_heatmap(right_shorts, "First Contact - Short Corners (Right Side)")
-    plot_heatmap(left_shorts, "First Contact - Short Corners (Left Side)")
+    with col2:
+        # Right side heatmaps
+        st.subheader('First Contact - Right Side')
+        plot_heatmap(right_inswingers, "First Contact - Inswingers (Right Side)")
+        plot_heatmap(right_outswingers, "First Contact - Outswingers (Right Side)")
+        plot_heatmap(right_shorts, "First Contact - Short Corners (Right Side)")
 
 
 def Physical_data():
