@@ -2513,6 +2513,10 @@ def Opposition_analysis():
 
     # Function to split data for left and right side based on where the corner was taken
     def split_by_side(df, corner_type_column):
+        """
+        Split the dataframe into right side and left side based on where the corner was taken.
+        For short corners, use the 'short' column to determine if a corner is short.
+        """
         # Right side: y < 30 for the corner-taking row
         right_side = df[(df['6.0'] == True) & (df['y'] < 30) & (df[corner_type_column] == True)]
         
@@ -2521,14 +2525,27 @@ def Opposition_analysis():
         
         return right_side, left_side
 
-    # Inswingers (223.0)
+    # Apply the function to inswingers (223.0)
     right_inswingers, left_inswingers = split_by_side(df_set_pieces, '223.0')
 
-    # Outswingers (224.0)
+    # Apply the function to outswingers (224.0)
     right_outswingers, left_outswingers = split_by_side(df_set_pieces, '224.0')
 
-    # Short Corners (212.0, pass length < 10)
-    right_shorts, left_shorts = split_by_side(df_set_pieces[(df_set_pieces['212.0'] < 10)], '212.0')
+    # Apply the function to short corners (using the new 'short' column)
+    def split_by_side_for_short_corners(df):
+        """
+        Special handling for short corners. Split based on the 'short' column (whether short is True).
+        """
+        # Right side: y < 30 for the corner-taking row
+        right_side = df[(df['6.0'] == True) & (df['y'] < 30) & (df['short'] == True)]
+        
+        # Left side: y > 70 for the corner-taking row
+        left_side = df[(df['6.0'] == True) & (df['y'] > 70) & (df['short'] == True)]
+        
+        return right_side, left_side
+
+    # Apply the function to short corners
+    right_shorts, left_shorts = split_by_side_for_short_corners(df_set_pieces)
 
     col1, col2 = st.columns(2)
 
