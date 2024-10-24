@@ -2433,7 +2433,6 @@ def Opposition_analysis():
     df_set_pieces = df_set_pieces[
         (df_set_pieces['date'] >= selected_start_date) & (df_set_pieces['date'] <= selected_end_date)
     ]
-    st.write(df_set_pieces.dtypes)
     def preprocess_short_corners(df):
         """
         Preprocess the dataframe to set 223.0, 224.0, and 225.0 to False 
@@ -2450,7 +2449,7 @@ def Opposition_analysis():
         result = []
 
         # Iterate over each unique possession
-        for possession_id, group in df.groupby('possessionId'):
+        for possession_id, group in df.groupby(['possessionId','label']):
             group = group.sort_values('set_piece_index')  # Sort by set_piece_index (time order)
 
             # Identify the row where 6.0 is True (corner taker)
