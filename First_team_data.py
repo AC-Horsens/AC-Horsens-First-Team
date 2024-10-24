@@ -2548,9 +2548,12 @@ def Opposition_analysis():
 
     # Display the heatmaps and xG summaries
     def filter_actual_corner_events(df, corner_type_column):
+        # Apply preprocessing for short corners: set 223.0, 224.0, and 225.0 to False where 212.0 < 15
+        df.loc[df['212.0'] < 15, ['223.0', '224.0', '225.0']] = False
+
         if corner_type_column == '212.0':
-            # For short corners, filter where the value in '212.0' is less than 10 and '6.0' is True
-            return df[(df[corner_type_column] < 10) & (df['6.0'] == True)]
+            # For short corners, filter where the value in '212.0' is less than 15 and '6.0' is True
+            return df[(df[corner_type_column] < 15) & (df['6.0'] == True)]
         else:
             # For other corner types, filter where the corner type column and '6.0' are both True
             return df[(df[corner_type_column] == True) & (df['6.0'] == True)]
@@ -2576,7 +2579,16 @@ def Opposition_analysis():
         st.pyplot(fig)
 
     # Filter the actual corner events for inswingers, outswingers, straight, and short set pieces
-
+    df_actual_inswingers = filter_actual_corner_events(df_inswingers_for_heatmap, '223.0')
+    df_actual_outswingers = filter_actual_corner_events(df_outswingers_for_heatmap, '224.0')
+    df_actual_straight = filter_actual_corner_events(df_straight_for_heatmap, '225.0')
+    df_actual_short = filter_actual_corner_events(df_short_for_heatmap, '212.0')
+    
+    df_actual_inswingers = pd.concat([df_actual_inswingers, df_actual_straight], axis=0)
+    # Split the actual corner events data for heatmap based on y-coordinate (left and right sides)
+    df_inswingers_for_left, df_inswingers_for_right = split_data(df_actual_inswingers)
+    df_outswingers_for_left, df_outswingers_for_right = split_data(df_actual_outswingers)
+    df_short_for_left, df_short_for_right = split_data(df_actual_short)
 
     # Streamlit layout for displaying heatmaps
     col1, col2 = st.columns(2)
