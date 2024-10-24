@@ -2464,12 +2464,19 @@ def Opposition_analysis():
                 corner_taker_index = corner_taker_row.index[0]
                 label = corner_taker_row['label'].values[0]  # Get the label for xG aggregation
 
-                # First contact: First player after the corner taker in the same possession (next event)
-                first_contact_row = group[group.index > corner_taker_index].head(1)
-                if not first_contact_row.empty:
-                    first_contact_player = first_contact_row['playerName'].values[0]
+                # Check if the outcome of the corner taker is 0 (indicating failed corner)
+                outcome = corner_taker_row['outcome'].values[0]
+
+                # First contact logic
+                if outcome == 0:
+                    first_contact_player = 'opponent'  # If outcome is 0, first contact is by the opponent
                 else:
-                    first_contact_player = None
+                    # First player after the corner taker in the same possession (next event)
+                    first_contact_row = group[group.index > corner_taker_index].head(1)
+                    if not first_contact_row.empty:
+                        first_contact_player = first_contact_row['playerName'].values[0]
+                    else:
+                        first_contact_player = None
 
                 # Finisher: The last player in the possession
                 finisher_player = group.iloc[-1]['playerName']
@@ -2496,7 +2503,6 @@ def Opposition_analysis():
                 })
 
         return pd.DataFrame(result)
-
 
 
     # Apply the function to the entire dataset
