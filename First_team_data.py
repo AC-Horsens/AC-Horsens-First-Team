@@ -2477,15 +2477,25 @@ def Opposition_analysis():
                 # xG for the possession (for the same possessionId and label)
                 possession_xg = group['321.0'].sum()
 
+                inswinger = bool(corner_taker_row['223.0'].values[0])  # Inswinger if 223.0 is True
+                outswinger = bool(corner_taker_row['224.0'].values[0])  # Outswinger if 224.0 is True
+                straight = bool(corner_taker_row['225.0'].values[0])  # Straight if 225.0 is True
+                short = bool(corner_taker_row['short'].values[0])  # Short corner if 'short' is True
+
                 result.append({
                     'possessionId': possession_id,
                     'first_contact_player': first_contact_player,
                     'finisher_player': finisher_player,
                     'xg': possession_xg,
-                    'label': label
+                    'label': label,
+                    'inswinger': inswinger,
+                    'outswinger': outswinger,
+                    'straight': straight,
+                    'short': short
                 })
 
-        return pd.DataFrame(result)
+            return pd.DataFrame(result)
+
 
     # Apply the function to the entire dataset
 
@@ -2592,9 +2602,8 @@ def Opposition_analysis():
 
 
     # Summarize first contact and finisher for each corner type (inswingers, outswingers, shorts)
-    first_contact_inswingers, finisher_inswingers = summarize_first_contact_and_finisher(first_contact_finisher_df, '223.0')
-    first_contact_outswingers, finisher_outswingers = summarize_first_contact_and_finisher(first_contact_finisher_df, '224.0')
-    first_contact_shorts, finisher_shorts = summarize_first_contact_and_finisher(first_contact_finisher_df, 'short')
+    inswinger_data = first_contact_finisher_df[first_contact_finisher_df['inswinger'] == True]
+    st.dataframe(inswinger_data)
     
     col1,col2,col3 = st.columns(3)
     # Display the results in Streamlit or a summary table
