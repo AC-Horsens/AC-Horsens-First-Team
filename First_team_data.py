@@ -2603,12 +2603,15 @@ def Opposition_analysis():
     first_contact_finisher_df = get_first_contact_and_finisher(df_set_pieces)
 
     # Summarize first contact and finisher for each corner type (inswingers, outswingers, shorts)
-    inswinger_data = summarize_first_contact_and_finisher(first_contact_finisher_df,'inswinger')
-    st.write(inswinger_data)
-    
-    col1,col2,col3 = st.columns(3)
+    first_contact_inswingers, finisher_inswingers = summarize_first_contact_and_finisher(first_contact_finisher_df, 'inswinger')
+    first_contact_outswingers, finisher_outswingers = summarize_first_contact_and_finisher(first_contact_finisher_df, 'outswinger')
+    first_contact_shorts, finisher_shorts = summarize_first_contact_and_finisher(first_contact_finisher_df, 'short')
+
     # Display the results in Streamlit or a summary table
     st.header('xG Summary by Player for First Contact and Finisher')
+
+    col1, col2, col3 = st.columns(3)
+
     with col1:
         st.subheader('Inswingers')
         st.write('First Contact - Inswingers')
@@ -2629,6 +2632,7 @@ def Opposition_analysis():
         st.dataframe(first_contact_shorts, hide_index=True)
         st.write('Finisher - Short Corners')
         st.dataframe(finisher_shorts, hide_index=True)
+
 
 def Physical_data():
     df = load_physical_data()
