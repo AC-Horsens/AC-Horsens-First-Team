@@ -2433,12 +2433,7 @@ def Opposition_analysis():
     df_set_pieces = df_set_pieces[
         (df_set_pieces['date'] >= selected_start_date) & (df_set_pieces['date'] <= selected_end_date)
     ]
-    # Filter and process data for each type of set piece (inswingers, outswingers, straight, short)
-    
-    # Ensure the necessary columns are present in the dataset
-    required_columns = ['possessionId','outcome', 'team_name', 'label', '321.0', 'playerName', 'x', 'y', '140.0', '141.0']
-    available_columns = df_set_pieces.columns.intersection(required_columns)
-    
+
     def preprocess_short_corners(df):
         """
         Preprocess the dataframe to set 223.0, 224.0, and 225.0 to False 
@@ -2449,13 +2444,11 @@ def Opposition_analysis():
         
         return df
 
-    # If columns exist, continue processing
-    df_set_pieces['team_name'] = df_set_pieces['team_name'].str.replace(" ", "_")
-    df_set_pieces = df_set_pieces[df_set_pieces['team_name'] == selected_team]
-    df_set_pieces['date'] = pd.to_datetime(df_set_pieces['date'], format='%Y-%m-%d')
-    df_set_pieces = df_set_pieces[
-        (df_set_pieces['date'] >= selected_start_date) & (df_set_pieces['date'] <= selected_end_date)
-    ]
+    # Preprocess short corners to set proper flags and exclude from other types
+    df_set_pieces = preprocess_short_corners(df_set_pieces)
+
+    # Exclude short corners from being categorized as other corner types
+    df_non_short = df_set_pieces[~((df_set_pieces['212.0'] < 15) & ((df_set_pieces['6.0'] == True) | (df_set_pieces['6.0'] == 'true')))]
 
     # Function to process set pieces based on the type of corner
     def process_set_pieces(df, corner_type_column):
@@ -2503,18 +2496,15 @@ def Opposition_analysis():
         result_df = pd.merge(first_contact_df, finisher_df, on=['date', 'label', 'possessionId'])
 
         return result_df, filtered_df  # Return both the result and the filtered data for heatmaps
-    
-    df_set_pieces = preprocess_short_corners(df_set_pieces)
 
     # Process each set piece type and get the filtered data for heatmaps
-    df_inswingers_for, df_inswingers_for_heatmap = process_set_pieces(df_set_pieces, '223.0')
-    df_outswingers_for, df_outswingers_for_heatmap = process_set_pieces(df_set_pieces, '224.0')
-    df_straight_for, df_straight_for_heatmap = process_set_pieces(df_set_pieces, '225.0')
-    df_short_for, df_short_for_heatmap = process_set_pieces(df_set_pieces, '212.0')
-    
-    df_inswingers_for_heatmap = pd.concat([df_inswingers_for_heatmap, df_straight_for_heatmap], axis=0)
+    df_inswingers_for, df_inswingers_for_heatmap = process_set_pieces(df_non_short, '223.0')
+    df_outswingers_for, df_outswingers_for_heatmap = process_set_pieces(df_non_short, '224.0')
+    df_straight_for, df_straight_for_heatmap = process_set_pieces(df_non_short, '225.0')
+    df_short_for, df_short_for_heatmap = process_set_pieces(df_set_pieces, '212.0')  # Only for short corners
 
-    # Concatenate df_inswingers_for and df_straight_for
+    # Concatenate df_inswingers_for and df_straight_for for heatmap
+    df_inswingers_for_heatmap = pd.concat([df_inswingers_for_heatmap, df_straight_for_heatmap], axis=0)
     df_inswingers_for = pd.concat([df_inswingers_for, df_straight_for], axis=0)
 
     # Function to summarize the first contact and finisher
@@ -2532,10 +2522,12 @@ def Opposition_analysis():
         finisher_summary = finisher_summary.sort_values(by=f'finisher_xg_{set_piece_type}', ascending=False)
 
         return first_contact_summary, finisher_summary
+
     # Summarize xG by player for each set piece type (first contact and finisher)
     summary_inswingers_first, summary_inswingers_finisher = summarize_xg(df_inswingers_for, 'inswingers')
     summary_outswingers_first, summary_outswingers_finisher = summarize_xg(df_outswingers_for, 'outswingers')
     summary_short_first, summary_short_finisher = summarize_xg(df_short_for, 'short')
+
 
     # Split data for heatmaps based on y-coordinate (left and right side)
     def split_data(df):
