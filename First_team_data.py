@@ -2604,7 +2604,7 @@ def Opposition_analysis():
 
     # Summarize first contact and finisher for each corner type (inswingers, outswingers, shorts)
     inswinger_data = summarize_first_contact_and_finisher(first_contact_finisher_df,'inswinger')
-    st.dataframe(inswinger_data)
+    st.write(inswinger_data)
     
     col1,col2,col3 = st.columns(3)
     # Display the results in Streamlit or a summary table
