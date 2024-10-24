@@ -2454,12 +2454,12 @@ def Opposition_analysis():
         result = []
 
         # Iterate over each unique possession
-        for possession_id, group in df.groupby(['possessionId','label']):
+        for possession_id, group in df.groupby(['possessionId', 'label']):
             group = group.sort_values('set_piece_index')  # Sort by set_piece_index (time order)
 
             # Identify the row where 6.0 is True (corner taker)
             corner_taker_row = group[group['6.0'] == True]
-            
+
             if not corner_taker_row.empty:
                 corner_taker_index = corner_taker_row.index[0]
                 label = corner_taker_row['label'].values[0]  # Get the label for xG aggregation
@@ -2477,24 +2477,26 @@ def Opposition_analysis():
                 # xG for the possession (for the same possessionId and label)
                 possession_xg = group['321.0'].sum()
 
+                # Determine the type of corner (inswinger, outswinger, straight, or short)
                 inswinger = bool(corner_taker_row['223.0'].values[0])  # Inswinger if 223.0 is True
                 outswinger = bool(corner_taker_row['224.0'].values[0])  # Outswinger if 224.0 is True
                 straight = bool(corner_taker_row['225.0'].values[0])  # Straight if 225.0 is True
                 short = bool(corner_taker_row['short'].values[0])  # Short corner if 'short' is True
 
                 result.append({
-                    'possessionId': possession_id,
+                    'possessionId': str(possession_id),  # Convert possessionId to string
                     'first_contact_player': first_contact_player,
                     'finisher_player': finisher_player,
                     'xg': possession_xg,
-                    'label': label,
+                    'label': str(label),  # Convert label to string
                     'inswinger': inswinger,
                     'outswinger': outswinger,
                     'straight': straight,
                     'short': short
                 })
 
-            return pd.DataFrame(result)
+        return pd.DataFrame(result)
+
 
 
     # Apply the function to the entire dataset
