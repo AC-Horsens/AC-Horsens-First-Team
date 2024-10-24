@@ -1943,7 +1943,7 @@ def Dashboard():
         if st.session_state['selected_data3']:
             Data_types[st.session_state['selected_data3']]()
 
-def League_stats():
+def Opposition_analysis():
     
     balanced_central_defender_df = position_dataframes['Central defender']
     fullbacks_df = position_dataframes['Fullbacks']
@@ -2450,7 +2450,7 @@ def League_stats():
 
     # Function to process set pieces based on the type of corner
     def process_set_pieces(df, corner_type_column):
-        columns_to_keep = ['possessionId', 'team_name','outcome', 'label', 'date', '321.0', 'playerName', 'x', 'y', '140.0', '141.0']
+        columns_to_keep = ['possessionId', 'team_name', 'outcome', 'label', 'date', '321.0', 'playerName', 'x', 'y', '140.0', '141.0']
 
         # Ensure that we only use available columns
         available_columns = df.columns.intersection(columns_to_keep + [corner_type_column, '6.0'])
@@ -2460,8 +2460,13 @@ def League_stats():
         if corner_type_column not in filtered_df.columns:
             raise ValueError(f"Column {corner_type_column} not found in the dataframe")
 
-        # Identify the sequenceIds where the corner type column is True (corner taker)
-        sequence_ids_with_true_corner_type = filtered_df[filtered_df[corner_type_column] == True][['date', 'label', 'possessionId']].drop_duplicates()
+        # Handling short corners: If the column is '212.0', we look for values < 10
+        if corner_type_column == '212.0':
+            # Identify the sequenceIds where the '212.0' column is less than 10 (short corners)
+            sequence_ids_with_true_corner_type = filtered_df[filtered_df[corner_type_column] < 10][['date', 'label', 'possessionId']].drop_duplicates()
+        else:
+            # Identify the sequenceIds where the corner type column is True (corner taker)
+            sequence_ids_with_true_corner_type = filtered_df[filtered_df[corner_type_column] == True][['date', 'label', 'possessionId']].drop_duplicates()
 
         # Keep all rows associated with those sequenceIds (whole sequence)
         filtered_df = filtered_df.merge(sequence_ids_with_true_corner_type, on=['date', 'label', 'possessionId'])
@@ -2532,7 +2537,12 @@ def League_stats():
 
     # Display the heatmaps and xG summaries
     def filter_actual_corner_events(df, corner_type_column):
-        return df[(df[corner_type_column] == True) & (df['6.0'] == True)]
+        if corner_type_column == '212.0':
+            # For short corners, filter where the value in '212.0' is less than 10 and '6.0' is True
+            return df[(df[corner_type_column] < 10) & (df['6.0'] == True)]
+        else:
+            # For other corner types, filter where the corner type column and '6.0' are both True
+            return df[(df[corner_type_column] == True) & (df['6.0'] == True)]
 
     # Function to create and display heatmaps for actual corner events in Streamlit
     def plot_heatmap(df, title):
@@ -2722,7 +2732,7 @@ def Physical_data():
 
 Data_types = {
     'Dashboard': Dashboard,
-    'League stats': League_stats,
+    'Opposition analysis': Opposition_analysis,
     'Physical data': Physical_data
 }
 
