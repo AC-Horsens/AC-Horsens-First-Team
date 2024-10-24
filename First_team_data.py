@@ -2428,7 +2428,7 @@ def Opposition_analysis():
     # Load the set pieces data
     df_set_pieces = load_set_piece_data()
     df_set_pieces['team_name'] = df_set_pieces['team_name'].str.replace(" ", "_")
-    df_set_pieces = df_set_pieces[df_set_pieces['team_name'] == selected_team]
+    #df_set_pieces = df_set_pieces[df_set_pieces['team_name'] == selected_team]
     df_set_pieces['date'] = pd.to_datetime(df_set_pieces['date'], format='%Y-%m-%d')
     df_set_pieces = df_set_pieces[
         (df_set_pieces['date'] >= selected_start_date) & (df_set_pieces['date'] <= selected_end_date)
