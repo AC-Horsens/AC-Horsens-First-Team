@@ -2435,15 +2435,21 @@ def Opposition_analysis():
     ]
     def preprocess_short_corners(df):
         """
-        Preprocess the dataframe to set 223.0, 224.0, and 225.0 to False 
-        when 212.0 is less than 10 meters and 6.0 is either True (boolean) or 'true' (string).
+        Preprocess the dataframe to set 223.0, 224.0, and 225.0 to False when 212.0 is less than 10 meters 
+        and 6.0 is either True (boolean) or 'true' (string). Additionally, a new column 'short' is added, 
+        which is True if the short corner criteria are met.
         """
-        df.loc[(df['212.0'] < 10) & ((df['6.0'] == True) | (df['6.0'] == 'true')), ['223.0', '224.0', '225.0']] = False
+        # Add 'short' column, True if 212.0 < 10 and 6.0 is True or 'true'
+        df['short'] = (df['212.0'] < 10) & ((df['6.0'] == True) | (df['6.0'] == 'true'))
+        
+        # Set 223.0, 224.0, and 225.0 to False if the corner is classified as 'short'
+        df.loc[df['short'], ['223.0', '224.0', '225.0']] = False
+        
         return df
 
     # Apply preprocessing to the set pieces data
     df_set_pieces = preprocess_short_corners(df_set_pieces)
-
+    st.dataframe(df_set_pieces)
     # Function to get the first contact and finisher for each possession
     def get_first_contact_and_finisher(df):
         result = []
