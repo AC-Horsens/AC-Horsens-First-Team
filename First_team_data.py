@@ -2486,25 +2486,25 @@ def Opposition_analysis():
     # Apply the function to the entire dataset
     first_contact_finisher_df = get_first_contact_and_finisher(df_set_pieces)
 
-    # Display the result
-    print(first_contact_finisher_df.head())
+    # Function to plot heatmaps for first contact using mplsoccer's VerticalPitch
+    def plot_heatmap(df, title):
+        pitch = VerticalPitch(pitch_type='opta', half=True, line_zorder=2, pitch_color='grass', line_color='white')
+        fig, ax = pitch.draw()
 
-    # Function to create a simple heatmap using matplotlib for first contacts
-    def plot_first_contact_heatmap_simple(df, title):
-        fig, ax = plt.subplots(figsize=(6, 8))
-        heatmap, xedges, yedges = np.histogram2d(df['x'], df['y'], bins=30)
-        heatmap = gaussian_filter(heatmap, sigma=1)
+        # Extract coordinates based on available data
+        x_coords = df['140.0']  # x-coordinate column
+        y_coords = df['141.0']  # y-coordinate column
 
-        # Plot the heatmap
-        extent = [0, 100, 0, 100]  # Assuming the football pitch is scaled 0-100 for x and y
-        ax.imshow(heatmap.T, extent=extent, origin='lower', cmap='hot', alpha=0.7)
+        # Generate heatmap based on x and y coordinates
+        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50))  # Adjust bins if needed
+        bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
+        pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
 
+        # Set plot title
         ax.set_title(title)
-        ax.set_xlabel("Pitch X")
-        ax.set_ylabel("Pitch Y")
 
-        plt.colorbar(ax.imshow(heatmap.T, extent=extent, origin='lower', cmap='hot', alpha=0.7), ax=ax)
-        plt.show()
+        # Display the heatmap in Streamlit
+        st.pyplot(fig)
 
     # Function to split data for left and right side based on where the corner was taken
     def split_by_side(df, corner_type_column):
@@ -2526,14 +2526,15 @@ def Opposition_analysis():
     right_shorts, left_shorts = split_by_side(df_set_pieces[(df_set_pieces['212.0'] < 10)], '212.0')
 
     # Plot heatmaps for the first contact for each side
-    plot_first_contact_heatmap_simple(right_inswingers, "First Contact - Inswingers (Right Side)")
-    plot_first_contact_heatmap_simple(left_inswingers, "First Contact - Inswingers (Left Side)")
+    plot_heatmap(right_inswingers, "First Contact - Inswingers (Right Side)")
+    plot_heatmap(left_inswingers, "First Contact - Inswingers (Left Side)")
 
-    plot_first_contact_heatmap_simple(right_outswingers, "First Contact - Outswingers (Right Side)")
-    plot_first_contact_heatmap_simple(left_outswingers, "First Contact - Outswingers (Left Side)")
+    plot_heatmap(right_outswingers, "First Contact - Outswingers (Right Side)")
+    plot_heatmap(left_outswingers, "First Contact - Outswingers (Left Side)")
 
-    plot_first_contact_heatmap_simple(right_shorts, "First Contact - Short Corners (Right Side)")
-    plot_first_contact_heatmap_simple(left_shorts, "First Contact - Short Corners (Left Side)")
+    plot_heatmap(right_shorts, "First Contact - Short Corners (Right Side)")
+    plot_heatmap(left_shorts, "First Contact - Short Corners (Left Side)")
+
 
 def Physical_data():
     df = load_physical_data()
