@@ -2428,7 +2428,7 @@ def Opposition_analysis():
     # Load the set pieces data
     df_set_pieces = load_set_piece_data()
     df_set_pieces['team_name'] = df_set_pieces['team_name'].str.replace(" ", "_")
-    #df_set_pieces = df_set_pieces[df_set_pieces['team_name'] == selected_team]
+    df_set_pieces = df_set_pieces[df_set_pieces['team_name'] == selected_team]
     df_set_pieces['date'] = pd.to_datetime(df_set_pieces['date'], format='%Y-%m-%d')
     df_set_pieces = df_set_pieces[
         (df_set_pieces['date'] >= selected_start_date) & (df_set_pieces['date'] <= selected_end_date)
@@ -2449,7 +2449,6 @@ def Opposition_analysis():
 
     # Apply preprocessing to the set pieces data
     df_set_pieces = preprocess_short_corners(df_set_pieces)
-    st.dataframe(df_set_pieces)
     # Function to get the first contact and finisher for each possession
     def get_first_contact_and_finisher(df):
         result = []
@@ -2564,6 +2563,61 @@ def Opposition_analysis():
         plot_heatmap(right_outswingers, "First Contact - Outswingers (Right Side)")
         plot_heatmap(right_shorts, "First Contact - Short Corners (Right Side)")
 
+    def summarize_xg_by_player(df, player_column, xg_column):
+        """
+        Summarize the total xG for players based on their role (first contact or finisher).
+        Group by the player and aggregate the total xG.
+        """
+        summary = df.groupby(player_column)[xg_column].sum().reset_index()
+        summary = summary[summary[xg_column] > 0]  # Filter out players with 0 xG
+        return summary.sort_values(by=xg_column, ascending=False)
+
+    # Create the summary for first contact and finisher for each corner type
+    def summarize_first_contact_and_finisher(df, corner_type):
+        """
+        Summarize the first contact and finisher for each player based on corner type.
+        """
+        # Filter based on corner type
+        df_corner_type = df[df[corner_type] == True]
+
+        # Summarize first contact
+        first_contact_summary = summarize_xg_by_player(df_corner_type, 'first_contact_player', 'xg')
+        first_contact_summary = first_contact_summary.rename(columns={'xg': f'first_contact_xg_{corner_type}'})
+
+        # Summarize finisher
+        finisher_summary = summarize_xg_by_player(df_corner_type, 'finisher_player', 'xg')
+        finisher_summary = finisher_summary.rename(columns={'xg': f'finisher_xg_{corner_type}'})
+
+        return first_contact_summary, finisher_summary
+
+    # Summarize first contact and finisher for each corner type (inswingers, outswingers, shorts)
+    first_contact_inswingers, finisher_inswingers = summarize_first_contact_and_finisher(df_set_pieces, '223.0')
+    first_contact_outswingers, finisher_outswingers = summarize_first_contact_and_finisher(df_set_pieces, '224.0')
+    first_contact_shorts, finisher_shorts = summarize_first_contact_and_finisher(df_set_pieces, 'short')
+
+    col1,col2,col3 = st.columns(3)
+    # Display the results in Streamlit or a summary table
+    st.header('xG Summary by Player for First Contact and Finisher')
+    with col1:
+        st.subheader('Inswingers')
+        st.write('First Contact - Inswingers')
+        st.dataframe(first_contact_inswingers, hide_index=True)
+        st.write('Finisher - Inswingers')
+        st.dataframe(finisher_inswingers, hide_index=True)
+
+    with col2:
+        st.subheader('Outswingers')
+        st.write('First Contact - Outswingers')
+        st.dataframe(first_contact_outswingers, hide_index=True)
+        st.write('Finisher - Outswingers')
+        st.dataframe(finisher_outswingers, hide_index=True)
+
+    with col3:
+        st.subheader('Short Corners')
+        st.write('First Contact - Short Corners')
+        st.dataframe(first_contact_shorts, hide_index=True)
+        st.write('Finisher - Short Corners')
+        st.dataframe(finisher_shorts, hide_index=True)
 
 def Physical_data():
     df = load_physical_data()
