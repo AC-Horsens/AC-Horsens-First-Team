@@ -2467,14 +2467,14 @@ def Opposition_analysis():
                 # Check if the outcome of the corner taker is 0 (indicating failed corner)
                 outcome = corner_taker_row['outcome'].values[0]
 
-                # First contact logic
+                # First contact logic based on outcome
                 if outcome == 0:
                     first_contact_player = 'opponent'  # If outcome is 0, first contact is by the opponent
                 else:
-                    # First player after the corner taker in the same possession (next event)
-                    first_contact_row = group[group.index > corner_taker_index].head(1)
-                    if not first_contact_row.empty:
-                        first_contact_player = first_contact_row['playerName'].values[0]
+                    # First contact: Always the player from the next event after the corner taker
+                    next_event_row = group[group.index > corner_taker_index].head(1)
+                    if not next_event_row.empty:
+                        first_contact_player = next_event_row['playerName'].values[0]
                     else:
                         first_contact_player = None
 
@@ -2503,9 +2503,6 @@ def Opposition_analysis():
                 })
 
         return pd.DataFrame(result)
-
-
-    # Apply the function to the entire dataset
 
     # Function to plot heatmaps for first contact using mplsoccer's VerticalPitch
     def plot_heatmap(df, title):
