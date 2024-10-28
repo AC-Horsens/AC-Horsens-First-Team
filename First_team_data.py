@@ -2617,6 +2617,7 @@ def Opposition_analysis():
         st.subheader('Inswingers')
         st.write('First Contact - Inswingers')
         st.dataframe(first_contact_inswingers, hide_index=True)
+
         st.write('Finisher - Inswingers')
         st.dataframe(finisher_inswingers, hide_index=True)
 
@@ -2633,7 +2634,29 @@ def Opposition_analysis():
         st.dataframe(first_contact_shorts, hide_index=True)
         st.write('Finisher - Short Corners')
         st.dataframe(finisher_shorts, hide_index=True)
+    def calculate_total_xg_by_corner_type(finisher_inswingers, finisher_outswingers, finisher_shorts):
+        # Calculate the total xG for each corner type by summing the xG column in each dataframe
+        total_inswinger_xg = finisher_inswingers['finisher_xg_inswinger'].sum()
+        total_outswinger_xg = finisher_outswingers['finisher_xg_outswinger'].sum()
+        total_short_xg = finisher_shorts['finisher_xg_short'].sum()
 
+        # Create a summary dataframe
+        total_xg_summary = pd.DataFrame({
+            'Corner Type': ['Inswinger', 'Outswinger', 'Short'],
+            'Total xG': [total_inswinger_xg, total_outswinger_xg, total_short_xg]
+        })
+        
+        # Optionally, add a row for the overall total xG
+        total_xg_summary.loc['Total'] = ['All Types', total_xg_summary['Total xG'].sum()]
+        
+        return total_xg_summary
+
+    # Calculate the total xG by corner type
+    total_xg_summary = calculate_total_xg_by_corner_type(finisher_inswingers, finisher_outswingers, finisher_shorts)
+
+    # Display the total xG summary
+    st.subheader('Total xG by Corner Type Across All Players')
+    st.dataframe(total_xg_summary, hide_index=True)
 
 def Physical_data():
     df = load_physical_data()
