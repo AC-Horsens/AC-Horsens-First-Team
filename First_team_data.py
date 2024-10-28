@@ -2440,7 +2440,7 @@ def Opposition_analysis():
         which is True if the short corner criteria are met.
         """
         # Add 'short' column, True if 212.0 < 10 and 6.0 is True or 'true'
-        df['short'] = (df['212.0'] < 15) & ((df['6.0'] == True) | (df['6.0'] == 'true'))
+        df['short'] = (df['212.0'] < 20) & ((df['6.0'] == True) | (df['6.0'] == 'true'))
         
         # Set 223.0, 224.0, and 225.0 to False if the corner is classified as 'short'
         df.loc[df['short'], ['223.0', '224.0', '225.0']] = False
