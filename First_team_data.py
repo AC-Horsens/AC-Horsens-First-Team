@@ -2604,8 +2604,24 @@ def Opposition_analysis():
 
         return first_contact_summary, finisher_summary
     first_contact_finisher_df = get_first_contact_and_finisher(df_set_pieces)
-    st.dataframe(first_contact_finisher_df)
-    # Summarize first contact and finisher for each corner type (inswingers, outswingers, shorts)
+    def enforce_exclusivity(row):
+        # If 'short' is True, set all others to False
+        if row['short']:
+            row['inswinger'] = False
+            row['outswinger'] = False
+            row['straight'] = False
+        # Else, if 'inswinger' is True, set others to False
+        elif row['inswinger']:
+            row['outswinger'] = False
+            row['straight'] = False
+            row['short'] = False
+        # Else, if 'outswinger' is True, set the remaining to False
+        elif row['outswinger']:
+            row['straight'] = False
+            row['short'] = False
+        # 'straight' is the lowest priority, so no further changes are needed if only it is True
+        return row    # Summarize first contact and finisher for each corner type (inswingers, outswingers, shorts)
+    first_contact_finisher_df = first_contact_finisher_df = first_contact_finisher_df.apply(enforce_exclusivity, axis=1)
     first_contact_inswingers, finisher_inswingers = summarize_first_contact_and_finisher(first_contact_finisher_df, 'inswinger')
     first_contact_outswingers, finisher_outswingers = summarize_first_contact_and_finisher(first_contact_finisher_df, 'outswinger')
     first_contact_shorts, finisher_shorts = summarize_first_contact_and_finisher(first_contact_finisher_df, 'short')
