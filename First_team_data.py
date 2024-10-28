@@ -2450,6 +2450,7 @@ def Opposition_analysis():
     # Apply preprocessing to the set pieces data
     df_set_pieces = preprocess_short_corners(df_set_pieces)
     # Function to get the first contact and finisher for each possession
+    st.dataframe(df_set_pieces)
     def get_first_contact_and_finisher(df):
         result = []
 
@@ -2592,7 +2593,7 @@ def Opposition_analysis():
         """
         # Filter based on corner type (inswingers, outswingers, short)
         df_corner_type = df[df[corner_type] == True]
-
+        
         # Summarize first contact
         first_contact_summary = summarize_xg_by_player(df_corner_type, 'first_contact_player', 'xg')
         first_contact_summary = first_contact_summary.rename(columns={'xg': f'first_contact_xg_{corner_type}'})
