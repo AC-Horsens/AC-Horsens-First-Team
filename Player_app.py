@@ -993,5 +993,5 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
     with col3:
         plot_heatmap_end_location(Pasninger_spillet_til, f'Passes {player_name}')
 
-
+    st.dataframe(Alle_off_aktioner)
 player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fullbacks_df,number8_df,number6_df,number10_df,winger_df,classic_striker_df)
