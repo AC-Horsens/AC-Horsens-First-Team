@@ -2681,6 +2681,13 @@ def Physical_data():
     teams = st.selectbox('Choose team',team)
     team_df = df[df['Team'] == teams]
     team_df = team_df[['Player','label','minsPlayed','High Speed Running Distance','High Speed Running Count','Sprinting Count','Sprinting Distance','Total Distance']]
+    
+    metric_columns = ['High Speed Running Distance', 'High Speed Running Count', 'Sprinting Count', 
+                      'Sprinting Distance', 'Total Distance']
+    
+    # Adjust each metric column to be per 90 minutes
+    for col in metric_columns:
+        team_df[col] = (team_df[col].astype(float) / team_df['minsPlayed'].astype(float)) * 90
 
     st.dataframe(team_df,hide_index=True)
 
