@@ -2694,7 +2694,9 @@ def Physical_data():
     matches = team_df['label'].unique()
     match = st.multiselect('Choose match',matches,default=matches)
     with col2:
-        team_df = team_df[team_df['label'].isin(match)]
+        match = st.multiselect('Choose match',matches,default=matches)
+
+    team_df = team_df[team_df['label'].isin(match)]
 
     team_df = team_df[['Player','label','minsPlayed','High Speed Running Distance','High Speed Running Count','Sprinting Count','Sprinting Distance','Total Distance']]
     
