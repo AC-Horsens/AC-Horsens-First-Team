@@ -2682,7 +2682,7 @@ def Physical_data():
     team_df = df[df['Team'] == teams]
     team_df = team_df[['Player','label','minsPlayed','High Speed Running Distance','High Speed Running Count','Sprinting Count','Sprinting Distance','Total Distance']]
 
-    st.dataframe(team_df)
+    st.dataframe(team_df,hide_index=True)
 
 Data_types = {
     'Dashboard': Dashboard,
