@@ -2672,8 +2672,11 @@ def Opposition_analysis():
 
 def Physical_data():
     df = load_physical_data()
+    df_matchstats = load_match_stats()
+    df_matchstats = df_matchstats[['player_matchName','player_playerId','contestantId','label','match_id','date']]
     st.dataframe(df)
-
+    st.dataframe(df_matchstats)
+    
 Data_types = {
     'Dashboard': Dashboard,
     'Opposition analysis': Opposition_analysis,
