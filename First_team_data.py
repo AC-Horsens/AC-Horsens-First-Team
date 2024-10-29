@@ -2677,6 +2677,15 @@ def Physical_data():
     df_matchstats = df_matchstats.rename(columns={'player_playerId': 'optaUuid', 'match_id': 'Opta match id'})
     df = df.merge(df_matchstats,on=['Opta match id','optaUuid'])
     df = df[df['minsPlayed'].astype(int) > 30]
+    df = df[['Player','label','minsPlayed','High Speed Running Distance','High Speed Running Count','Sprinting Count','Sprinting Distance','Total Distance']]
+    
+    metric_columns = ['High Speed Running Distance', 'High Speed Running Count', 'Sprinting Count', 
+                      'Sprinting Distance', 'Total Distance']
+    
+    # Adjust each metric column to be per 90 minutes
+    for col in metric_columns:
+        df[col] = (df[col].astype(float) / df['minsPlayed'].astype(float)) * 90
+    df = df.round(2)
     team = sorted(df['Team'].unique())
     col1,col2 = st.columns(2)
     with col1:
@@ -2689,12 +2698,6 @@ def Physical_data():
 
     team_df = team_df[['Player','label','minsPlayed','High Speed Running Distance','High Speed Running Count','Sprinting Count','Sprinting Distance','Total Distance']]
     
-    metric_columns = ['High Speed Running Distance', 'High Speed Running Count', 'Sprinting Count', 
-                      'Sprinting Distance', 'Total Distance']
-    
-    # Adjust each metric column to be per 90 minutes
-    for col in metric_columns:
-        team_df[col] = (team_df[col].astype(float) / team_df['minsPlayed'].astype(float)) * 90
     team_df = team_df.round(2)
     st.dataframe(team_df,hide_index=True)
 
