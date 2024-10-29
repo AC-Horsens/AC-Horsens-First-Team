@@ -2676,6 +2676,12 @@ def Physical_data():
     df_matchstats = df_matchstats[['player_matchName','minsPlayed','player_playerId','contestantId','label','match_id','date']]
     df_matchstats = df_matchstats.rename(columns={'player_playerId': 'optaUuid', 'match_id': 'Opta match id'})
     df = df.merge(df_matchstats,on=['Opta match id','optaUuid'])
+
+    total_df = df[['Team','label','High Speed Running Distance','High Speed Running Count','Sprinting Count','Sprinting Distance','Total Distance']]
+    total_df = total_df.groupby(['Team','label']).sum().reset_index()
+    total_df = total_df[['Team','High Speed Running Distance','High Speed Running Count','Sprinting Count','Sprinting Distance','Total Distance']]
+    total_df = total_df.groupby('Team').sum().reset_index()
+    
     df = df[df['minsPlayed'].astype(int) > 30]
     df = df[['Player','Team','label','minsPlayed','High Speed Running Distance','High Speed Running Count','Sprinting Count','Sprinting Distance','Total Distance']]
     
@@ -2716,6 +2722,20 @@ def Physical_data():
     team_df = team_df.groupby(['Player']).mean().reset_index()
     st.write('Chosen matches')
     st.dataframe(team_df, hide_index=True)
+
+    st.write("Team Total Metrics (Sorted by Metric)")
+    for metric in metric_columns:
+        sorted_df = total_df[['Team', metric]].sort_values(by=metric, ascending=False)
+
+        # Plotting
+        fig, ax = plt.subplots()
+        ax.barh(sorted_df['Player'], sorted_df[metric], align='center')
+        ax.set_xlabel(metric)
+        ax.set_ylabel('Player')
+        ax.set_title(f"{metric} by Player (Top to Bottom)")
+        ax.invert_yaxis()  # Largest values at the top
+        st.pyplot(fig)  # Display in Streamlit
+
 Data_types = {
     'Dashboard': Dashboard,
     'Opposition analysis': Opposition_analysis,
