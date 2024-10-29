@@ -2675,10 +2675,12 @@ def Physical_data():
     df_matchstats = load_match_stats()
     df_matchstats = df_matchstats[['player_matchName','player_playerId','contestantId','label','match_id','date']]
     df_matchstats = df_matchstats.rename(columns={'player_playerId': 'optaUuid', 'match_id': 'Opta match id'})
-    st.dataframe(df_matchstats)
-    st.dataframe(df)
     df = df.merge(df_matchstats,on=['Opta match id','optaUuid'])
+    team = df['Team'].unique()
+    teams = st.selectbox('Choose team',team)
+    team_df = df[df['Team'] == teams]
     st.dataframe(df)
+    st.dataframe(team_df)
 Data_types = {
     'Dashboard': Dashboard,
     'Opposition analysis': Opposition_analysis,
