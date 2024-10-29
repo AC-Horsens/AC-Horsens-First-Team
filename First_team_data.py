@@ -2680,7 +2680,7 @@ def Physical_data():
     total_df = df[['Team','label','High Speed Running Distance','High Speed Running Count','Sprinting Count','Sprinting Distance','Total Distance']]
     total_df = total_df.groupby(['Team','label']).sum().reset_index()
     total_df = total_df[['Team','High Speed Running Distance','High Speed Running Count','Sprinting Count','Sprinting Distance','Total Distance']]
-    total_df = total_df.groupby('Team').sum().reset_index()
+    total_df = total_df.groupby('Team').mean().reset_index()
     
     df = df[df['minsPlayed'].astype(int) > 30]
     df = df[['Player','Team','label','minsPlayed','High Speed Running Distance','High Speed Running Count','Sprinting Count','Sprinting Distance','Total Distance']]
