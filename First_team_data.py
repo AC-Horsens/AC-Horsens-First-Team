@@ -2677,7 +2677,7 @@ def Physical_data():
     df_matchstats = df_matchstats.rename(columns={'player_playerId': 'optaUuid', 'match_id': 'Opta match id'})
     df = df.merge(df_matchstats,on=['Opta match id','optaUuid'])
     df = df[df['minsPlayed'].astype(int) > 30]
-    df = df[['Player','label','minsPlayed','High Speed Running Distance','High Speed Running Count','Sprinting Count','Sprinting Distance','Total Distance']]
+    df = df[['Player','Team','label','minsPlayed','High Speed Running Distance','High Speed Running Count','Sprinting Count','Sprinting Distance','Total Distance']]
     
     metric_columns = ['High Speed Running Distance', 'High Speed Running Count', 'Sprinting Count', 
                       'Sprinting Distance', 'Total Distance']
