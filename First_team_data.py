@@ -2692,7 +2692,6 @@ def Physical_data():
         teams = st.selectbox('Choose team',team)
     team_df = df[df['Team'] == teams]
     matches = team_df['label'].unique()
-    match = st.multiselect('Choose match',matches,default=matches)
     with col2:
         match = st.multiselect('Choose match',matches,default=matches)
 
