@@ -2677,7 +2677,7 @@ def Physical_data():
     df_matchstats = df_matchstats.rename(columns={'player_playerId': 'optaUuid', 'match_id': 'Opta match id'})
     st.dataframe(df_matchstats)
     st.dataframe(df)
-    df = df.merge(df_matchstats,on=['Opta match id','OptaUuid'])
+    df = df.merge(df_matchstats,on=['Opta match id','optaUuid'])
     st.dataframe(df)
 Data_types = {
     'Dashboard': Dashboard,
