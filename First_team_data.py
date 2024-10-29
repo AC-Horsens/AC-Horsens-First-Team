@@ -2700,14 +2700,22 @@ def Physical_data():
     team_df = team_df[['Player','minsPlayed','High Speed Running Distance','High Speed Running Count','Sprinting Count','Sprinting Distance','Total Distance']]
     sum_df = df[['Player','minsPlayed']]
     sum_df = sum_df.groupby('Player').sum().reset_index()
-    sum_df = sum_df[sum_df['minsPlayed'] > 200]
+    sum_df = sum_df[sum_df['minsPlayed'] > 300]
+    df = df.merge(sum_df,on='Player',how='inner')
+    df = df[['Player','High Speed Running Distance','High Speed Running Count','Sprinting Count','Sprinting Distance','Total Distance']]
+
+    df = df.round(2)
+    df = df.groupby(['Player']).mean().reset_index()
+
+    st.write('All matches')
+    st.dataframe(df,hide_index=True)
     team_df = team_df.merge(sum_df,on='Player',how='inner')
     team_df = team_df[['Player','High Speed Running Distance','High Speed Running Count','Sprinting Count','Sprinting Distance','Total Distance']]
 
     team_df = team_df.round(2)
     team_df = team_df.groupby(['Player']).mean().reset_index()
-    st.dataframe(team_df,hide_index=True)
-
+    st.write('Chosen matches')
+    st.dataframe(team_df)
 Data_types = {
     'Dashboard': Dashboard,
     'Opposition analysis': Opposition_analysis,
