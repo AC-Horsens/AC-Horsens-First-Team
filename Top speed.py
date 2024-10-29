@@ -308,7 +308,7 @@ if schedule_df is not None:
 # Save all matches data to a single CSV file
 all_matches_summarized = all_matches_summarized.sort_values(by=['Player', 'Top Speed'], ascending=[True, False]) \
                 .groupby('Player') \
-                .apply(lambda x: x.iloc[1:]) \
+                .apply(lambda x: x.iloc[2:]) \
                 .reset_index(drop=True)
 all_matches_summarized = all_matches_summarized.groupby(['Player', 'ID'], as_index=False).max()
 all_matches_summarized = all_matches_summarized.round(2)

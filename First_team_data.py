@@ -128,15 +128,9 @@ def load_squads():
 
 @st.cache_data
 def load_physical_data():
-    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/physical_summary.csv'
+    url = r'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/Physical_data_all.csv'
     physical_data = pd.read_csv(url)
     return physical_data
-
-@st.cache_data
-def load_physical_player_data():
-    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/player_data.csv'
-    physical_player_data = pd.read_csv(url)
-    return physical_player_data
 
 @st.cache_data
 def load_set_piece_data():
@@ -2678,89 +2672,7 @@ def Opposition_analysis():
 
 def Physical_data():
     df = load_physical_data()
-    physical_player_data = load_physical_player_data()
-    df.set_index('Team', inplace=True)
-
-    # Preserve the original numeric data for sorting
-    numeric_df = df.copy()
-
-    # Format columns to remove thousand separators and ensure proper decimal formatting for display
-    formatted_df = df.applymap(lambda x: f"{x:.2f}" if isinstance(x, float) else f"{x}")
-    st.dataframe(formatted_df)
-
-    # Create ranks for the metrics
-    for column in numeric_df.columns:
-        rank_col = f"Rank_{column}"
-        numeric_df[rank_col] = numeric_df[column].rank(ascending=False).astype(int)
-
-    st.title("Team Performance Metrics")
-
-    # Specify the columns to visualize
-    columns_to_plot = [
-        'High Speed Running Count',
-        'High Speed Running Distance',
-        'Sprinting Count',
-        'Sprinting Distance',
-        'Total Distance'
-    ]
-
-    # Create bar charts for each specified column using Plotly
-    for column in columns_to_plot:
-        
-        # Sort the DataFrame by the current column
-        sorted_df = numeric_df.sort_values(by=column, ascending=False)
-        
-        # Plotting
-        fig = go.Figure(data=[
-            go.Bar(x=sorted_df.index, y=sorted_df[column], marker_color='skyblue')
-        ])
-        fig.update_layout(
-            title=f'{column} - Sorted by Value',
-            xaxis_title='Team',
-            yaxis_title=column,
-            xaxis_tickangle=-45
-        )
-        
-        # Display the plot in Streamlit
-        st.plotly_chart(fig)
-
-    # Combine formatted and rank data
-    st.header('Player Performance Metrics')
-    col1,col2,col3,col4,col5 = st.columns(5)
-    highspeed_count = physical_player_data[physical_player_data['Metric'] == 'High Speed Running Count']
-    highspeed_count = highspeed_count.sort_values(by='per 90',ascending = False)
-    highspeed_distance = physical_player_data[physical_player_data['Metric'] == 'High Speed Running Distance']
-    highspeed_distance = highspeed_distance.sort_values(by='per 90',ascending = False)
-    
-    sprint_count = physical_player_data[physical_player_data['Metric'] == 'Sprinting Count']
-    sprint_count = sprint_count.sort_values(by='per 90', ascending = False)
-    Sprint_distance = physical_player_data[physical_player_data['Metric'] == 'Sprinting Distance']
-    Sprint_distance = Sprint_distance.sort_values(by='per 90', ascending = False)
-    Total_distance = physical_player_data[physical_player_data['Metric'] == 'Total Distance']
-    Total_distance = Total_distance.sort_values(by='per 90', ascending = False)
-    
-    with col1: 
-        st.write('High speed running count')
-        highspeed_count = highspeed_count[['Player','per 90']]
-        st.dataframe(highspeed_count,hide_index=True)
-    with col2:
-        st.write('High speed distance')
-        highspeed_distance = highspeed_distance[['Player','per 90']]
-        st.dataframe(highspeed_distance,hide_index=True)
-    with col3:
-        st.write('Sprint count')
-        sprint_count = sprint_count[['Player','per 90']]
-        st.dataframe(sprint_count,hide_index=True)
-    with col4:
-        st.write('Sprint distance')
-        Sprint_distance = Sprint_distance[['Player','per 90']]
-        st.dataframe(Sprint_distance,hide_index=True)
-    with col5:
-        st.write('Total distance')
-        Total_distance = Total_distance[['Player','per 90']]
-        st.dataframe(Total_distance,hide_index=True)
-    
-    # Display the combined DataFrame with ranks
+    st.dataframe(df)
 
 Data_types = {
     'Dashboard': Dashboard,
