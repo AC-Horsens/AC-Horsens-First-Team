@@ -2697,9 +2697,10 @@ def Physical_data():
 
     team_df = team_df[team_df['label'].isin(match)]
 
-    team_df = team_df[['Player','label','minsPlayed','High Speed Running Distance','High Speed Running Count','Sprinting Count','Sprinting Distance','Total Distance']]
+    team_df = team_df[['Player','minsPlayed','High Speed Running Distance','High Speed Running Count','Sprinting Count','Sprinting Distance','Total Distance']]
     
     team_df = team_df.round(2)
+    team_df = team_df.groupby(['Player','minsPlayed']).sum()
     st.dataframe(team_df,hide_index=True)
 
 Data_types = {
