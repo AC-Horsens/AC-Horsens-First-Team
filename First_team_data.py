@@ -2705,7 +2705,7 @@ def Physical_data():
     df = df[['Player','Team','High Speed Running Distance','High Speed Running Count','Sprinting Count','Sprinting Distance','Total Distance']]
 
     df = df.round(2)
-    df = df.groupby(['Player']).mean().reset_index()
+    df = df.groupby(['Player','Team']).mean().reset_index()
 
     st.write('All matches')
     st.dataframe(df,hide_index=True)
