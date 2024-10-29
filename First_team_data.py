@@ -2729,10 +2729,10 @@ def Physical_data():
 
         # Plotting
         fig, ax = plt.subplots()
-        ax.barh(sorted_df['Player'], sorted_df[metric], align='center')
+        ax.barh(sorted_df['Team'], sorted_df[metric], align='center')
         ax.set_xlabel(metric)
-        ax.set_ylabel('Player')
-        ax.set_title(f"{metric} by Player (Top to Bottom)")
+        ax.set_ylabel('Team')
+        ax.set_title(f"{metric} by Team (Top to Bottom)")
         ax.invert_yaxis()  # Largest values at the top
         st.pyplot(fig)  # Display in Streamlit
 
