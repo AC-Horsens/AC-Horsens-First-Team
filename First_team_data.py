@@ -2673,9 +2673,10 @@ def Opposition_analysis():
 def Physical_data():
     df = load_physical_data()
     df_matchstats = load_match_stats()
-    df_matchstats = df_matchstats[['player_matchName','player_playerId','contestantId','label','match_id','date']]
+    df_matchstats = df_matchstats[['player_matchName','minsPlayed','player_playerId','contestantId','label','match_id','date']]
     df_matchstats = df_matchstats.rename(columns={'player_playerId': 'optaUuid', 'match_id': 'Opta match id'})
     df = df.merge(df_matchstats,on=['Opta match id','optaUuid'])
+    df = df[df['minsPlayed'].astype(int) > 30]
     team = df['Team'].unique()
     teams = st.selectbox('Choose team',team)
     team_df = df[df['Team'] == teams]
