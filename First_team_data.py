@@ -2702,7 +2702,7 @@ def Physical_data():
     sum_df = sum_df.groupby('Player').sum().reset_index()
     sum_df = sum_df[sum_df['minsPlayed'] > 300]
     df = df.merge(sum_df,on='Player',how='inner')
-    df = df[['Player','High Speed Running Distance','High Speed Running Count','Sprinting Count','Sprinting Distance','Total Distance']]
+    df = df[['Player','Team','High Speed Running Distance','High Speed Running Count','Sprinting Count','Sprinting Distance','Total Distance']]
 
     df = df.round(2)
     df = df.groupby(['Player']).mean().reset_index()
