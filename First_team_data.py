@@ -2677,11 +2677,11 @@ def Physical_data():
     df_matchstats = df_matchstats.rename(columns={'player_playerId': 'optaUuid', 'match_id': 'Opta match id'})
     df = df.merge(df_matchstats,on=['Opta match id','optaUuid'])
     df = df[df['minsPlayed'].astype(int) > 30]
-    team = df['Team'].unique()
+    team = sorted(df['Team'].unique())
     teams = st.selectbox('Choose team',team)
     team_df = df[df['Team'] == teams]
     team_df = team_df[['Team','Player','label','minsPlayed','High Speed Running Distance','High Speed Running Count','Sprinting Count','Sprinting Distance','Total Distance']]
-    st.dataframe(df)
+
     st.dataframe(team_df)
 
 Data_types = {
