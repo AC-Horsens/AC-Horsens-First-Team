@@ -2704,8 +2704,8 @@ def Physical_data():
     df = df.merge(sum_df,on='Player',how='inner')
     df = df[['Player','Team','High Speed Running Distance','High Speed Running Count','Sprinting Count','Sprinting Distance','Total Distance']]
 
-    df = df.round(2)
     df = df.groupby(['Player','Team']).mean().reset_index()
+    df = df.round(2)
 
     st.write('All matches')
     st.dataframe(df,hide_index=True)
@@ -2715,7 +2715,7 @@ def Physical_data():
     team_df = team_df.round(2)
     team_df = team_df.groupby(['Player']).mean().reset_index()
     st.write('Chosen matches')
-    st.dataframe(team_df)
+    st.dataframe(team_df, hide_index=True)
 Data_types = {
     'Dashboard': Dashboard,
     'Opposition analysis': Opposition_analysis,
