@@ -2718,23 +2718,39 @@ def Physical_data():
     team_df = team_df.merge(sum_df,on='Player',how='inner')
     team_df = team_df[['Player','High Speed Running Distance','High Speed Running Count','Sprinting Count','Sprinting Distance','Total Distance']]
 
-    team_df = team_df.round(2)
     team_df = team_df.groupby(['Player']).mean().reset_index()
+    team_df = team_df.round(2)
+
     st.write('Chosen matches')
     st.dataframe(team_df, hide_index=True)
 
     st.write("Team Total Metrics (Sorted by Metric)")
     for metric in metric_columns:
+        # Sort data by the metric in descending order
         sorted_df = total_df[['Team', metric]].sort_values(by=metric, ascending=False)
+        
+        # Create a bar chart with Plotly
+        fig = go.Figure(
+            data=[
+                go.Bar(
+                    x=sorted_df['Team'], 
+                    y=sorted_df[metric],
+                    orientation='v'
+                )
+            ]
+        )
+        
+        # Update layout for the chart
+        fig.update_layout(
+            title=f"{metric} by Team (Top to Bottom)",
+            xaxis_title="Team",
+            yaxis_title=metric,
+            xaxis=dict(categoryorder="total descending")  # Ensure x-axis is sorted from top to bottom
+        )
+        
+        # Display the plot in Streamlit
+        st.plotly_chart(fig)
 
-        # Plotting
-        fig, ax = plt.subplots()
-        ax.barh(sorted_df['Team'], sorted_df[metric], align='center')
-        ax.set_xlabel(metric)
-        ax.set_ylabel('Team')
-        ax.set_title(f"{metric} by Team (Top to Bottom)")
-        ax.invert_yaxis()  # Largest values at the top
-        st.pyplot(fig)  # Display in Streamlit
 
 Data_types = {
     'Dashboard': Dashboard,
