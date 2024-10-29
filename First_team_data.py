@@ -2688,7 +2688,7 @@ def Physical_data():
     # Adjust each metric column to be per 90 minutes
     for col in metric_columns:
         team_df[col] = (team_df[col].astype(float) / team_df['minsPlayed'].astype(float)) * 90
-
+    team_df = team_df.round(2)
     st.dataframe(team_df,hide_index=True)
 
 Data_types = {
