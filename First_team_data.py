@@ -2680,7 +2680,7 @@ def Physical_data():
     team = sorted(df['Team'].unique())
     teams = st.selectbox('Choose team',team)
     team_df = df[df['Team'] == teams]
-    team_df = team_df[['Team','Player','label','minsPlayed','High Speed Running Distance','High Speed Running Count','Sprinting Count','Sprinting Distance','Total Distance']]
+    team_df = team_df[['Player','label','minsPlayed','High Speed Running Distance','High Speed Running Count','Sprinting Count','Sprinting Distance','Total Distance']]
 
     st.dataframe(team_df)
 
