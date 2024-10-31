@@ -1942,11 +1942,22 @@ def Opposition_analysis():
     balanced_central_defender_df = position_dataframes['Central defender']
     balanced_central_defender_df['label'] = balanced_central_defender_df['label'].str.replace(' ', '_')
     fullbacks_df = position_dataframes['Fullbacks']
+    fullbacks_df['label'] = fullbacks_df['label'].str.replace(' ', '_')
+
     number6_df = position_dataframes['Number 6']
+    number6_df['label'] = number6_df['label'].str.replace(' ', '_')
+
     number8_df = position_dataframes['Number 8']
+    number8_df['label'] = number8_df['label'].str.replace(' ', '_')
+
     number10_df = position_dataframes['Number 10']
+    number10_df['label'] = number10_df['label'].str.replace(' ', '_')
+
     winger_df = position_dataframes['Winger']
+    winger_df['label'] = winger_df['label'].str.replace(' ', '_')
+
     classic_striker_df = position_dataframes['Classic striker']
+    classic_striker_df['label'] = classic_striker_df['label'].str.replace(' ', '_')
 
     matchstats_df = load_match_stats()
     matchstats_df = matchstats_df.rename(columns={'player_matchName': 'playerName'})
