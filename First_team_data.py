@@ -1940,6 +1940,7 @@ def Dashboard():
 def Opposition_analysis():
     
     balanced_central_defender_df = position_dataframes['Central defender']
+    balanced_central_defender_df['label'] = balanced_central_defender_df['label'].str.replace(' ', '_')
     fullbacks_df = position_dataframes['Fullbacks']
     number6_df = position_dataframes['Number 6']
     number8_df = position_dataframes['Number 8']
