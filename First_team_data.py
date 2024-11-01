@@ -25,6 +25,13 @@ def load_packing_data():
     return df_packing
 
 @st.cache_data
+def load_subs():
+    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/subs%20DNK_1_Division_2024_2025.csv'
+    df_subs = pd.read_csv(url)
+    df_subs['label'] = (df_subs['label'] + ' ' + df_subs['date'])
+    return df_subs   
+
+@st.cache_data
 def load_spacecontrol_data():
     url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/Space_control_all%20DNK_1_Division_2024_2025.csv'
     df_spacecontrol = pd.read_csv(url)
@@ -139,19 +146,19 @@ def load_set_piece_data():
     df_set_piece['label'] = (df_set_piece['label'] + ' ' + df_set_piece['date']).astype(str)
     return df_set_piece
 
-
-def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
+def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,df_subs,squads):
 
     def calculate_score(df, column, score_column):
         df_unique = df.drop_duplicates(column).copy()
         df_unique.loc[:, score_column] = pd.qcut(df_unique[column], q=10, labels=False, duplicates='raise') + 1
         return df.merge(df_unique[[column, score_column]], on=column, how='left')
+
     def calculate_opposite_score(df, column, score_column):
         df_unique = df.drop_duplicates(column).copy()
         df_unique.loc[:, score_column] = pd.qcut(-df_unique[column], q=10, labels=False, duplicates='raise') + 1
         return df.merge(df_unique[[column, score_column]], on=column, how='left')
     
-    minutter_kamp = 45
+    minutter_kamp = 30
     minutter_total = 300
         
     df_possession_xa = df_xA.rename(columns={'318.0': 'xA'})
@@ -230,7 +237,10 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         df_scouting['opponents_xA'] = pd.to_numeric(df_scouting['opponents_xA'], errors='coerce')
         
         return df_scouting
+    
     df_scouting = calculate_match_xa(df_scouting)
+
+
 
     df_scouting.fillna(0, inplace=True)
     squads['dateOfBirth'] = pd.to_datetime(squads['dateOfBirth'])
