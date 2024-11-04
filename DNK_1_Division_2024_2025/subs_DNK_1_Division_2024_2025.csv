@@ -1,4 +1,120 @@
 team_name,timeMin,timeSec,playerName,label,date,typeId,44.0,292.0,293.0
+Hobro,59,2,J. Cornelius,Hobro vs B 93,2024-09-02,18,Forward,NaN,NaN
+Hobro,59,2,S. Andreasen,Hobro vs B 93,2024-09-02,19,Forward,9,2
+Hobro,59,11,T. Hansen,Hobro vs B 93,2024-09-02,18,Midfielder,NaN,NaN
+Hobro,59,11,M. Compaoré,Hobro vs B 93,2024-09-02,19,Midfielder,6,5
+B 93,65,0,T. Blidegn,Hobro vs B 93,2024-09-02,18,Midfielder,NaN,NaN
+B 93,65,0,O. Jakobsen,Hobro vs B 93,2024-09-02,19,Midfielder,6,2
+Hobro,69,31,L. Klitten,Hobro vs B 93,2024-09-02,18,Defender,NaN,NaN
+Hobro,69,31,M. Nielsen,Hobro vs B 93,2024-09-02,19,Midfielder,5,1
+Hobro,69,50,V. Rasmussen,Hobro vs B 93,2024-09-02,18,Midfielder,NaN,NaN
+Hobro,69,50,M. Pedersen,Hobro vs B 93,2024-09-02,19,Midfielder,7,4
+B 93,73,29,M. Mouritz,Hobro vs B 93,2024-09-02,18,Midfielder,NaN,NaN
+B 93,73,29,N. Morberg,Hobro vs B 93,2024-09-02,19,Midfielder,7,4
+Hobro,83,11,O. Klitten,Hobro vs B 93,2024-09-02,18,Forward,NaN,NaN
+Hobro,83,11,O. Dorph,Hobro vs B 93,2024-09-02,19,Midfielder,5,5
+B 93,85,0,E. Nnamani,Hobro vs B 93,2024-09-02,18,Forward,NaN,NaN
+B 93,85,0,A. Bredahl,Hobro vs B 93,2024-09-02,19,Defender,4,4
+B 93,85,21,O. Addo,Hobro vs B 93,2024-09-02,18,Forward,NaN,NaN
+B 93,85,21,A. Heimer,Hobro vs B 93,2024-09-02,19,Midfielder,6,1
+B 93,45,0,O. Addo,Esbjerg vs B 93,2024-09-15,18,Forward,NaN,NaN
+B 93,45,0,F. Isaki,Esbjerg vs B 93,2024-09-15,19,Midfielder,5,5
+B 93,45,0,N. Morberg,Esbjerg vs B 93,2024-09-15,18,Midfielder,NaN,NaN
+B 93,45,0,A. Bredahl,Esbjerg vs B 93,2024-09-15,19,Midfielder,7,1
+Esbjerg,68,19,L. From,Esbjerg vs B 93,2024-09-15,18,Forward,NaN,NaN
+Esbjerg,68,19,P. Bjur,Esbjerg vs B 93,2024-09-15,19,Midfielder,6,2
+Esbjerg,68,20,J. Mortensen,Esbjerg vs B 93,2024-09-15,18,Defender,NaN,NaN
+Esbjerg,68,20,P. Tjørnelund,Esbjerg vs B 93,2024-09-15,19,Defender,3,2
+Esbjerg,68,0,T. Freriks,Esbjerg vs B 93,2024-09-15,18,Forward,NaN,NaN
+Esbjerg,68,0,M. Ladefoged,Esbjerg vs B 93,2024-09-15,19,Forward,10,3
+B 93,61,10,L. Henriksen,Esbjerg vs B 93,2024-09-15,18,Defender,NaN,NaN
+B 93,61,10,J. Okore,Esbjerg vs B 93,2024-09-15,19,Defender,3,2
+Esbjerg,81,28,A. Skipper,Esbjerg vs B 93,2024-09-15,18,Defender,NaN,NaN
+Esbjerg,81,28,J. Meyer,Esbjerg vs B 93,2024-09-15,19,Defender,4,5
+Esbjerg,88,42,A. Lausen,Esbjerg vs B 93,2024-09-15,18,Midfielder,NaN,NaN
+Esbjerg,88,42,J. Beck,Esbjerg vs B 93,2024-09-15,19,Midfielder,6,1
+B 93,73,16,E. Nnamani,Esbjerg vs B 93,2024-09-15,18,Forward,NaN,NaN
+B 93,73,16,J. Voldby,Esbjerg vs B 93,2024-09-15,19,Forward,9,3
+B 93,89,32,N. Mouritsen,Esbjerg vs B 93,2024-09-15,18,Defender,NaN,NaN
+B 93,89,32,G. Højbjerg,Esbjerg vs B 93,2024-09-15,19,Midfielder,7,3
+Horsens,30,34,M. Kallesøe,B 93 vs Horsens,2024-09-21,18,Defender,NaN,NaN
+Horsens,30,34,A. Ludwig,B 93 vs Horsens,2024-09-21,19,Defender,3,2
+B 93,57,33,A. Bredahl,B 93 vs Horsens,2024-09-21,18,Forward,NaN,NaN
+B 93,57,33,O. Addo,B 93 vs Horsens,2024-09-21,19,Forward,9,3
+B 93,57,53,N. Morberg,B 93 vs Horsens,2024-09-21,18,Midfielder,NaN,NaN
+B 93,57,53,A. Heimer,B 93 vs Horsens,2024-09-21,19,Defender,3,2
+B 93,58,15,J. Okore,B 93 vs Horsens,2024-09-21,18,Defender,NaN,NaN
+B 93,58,15,M. Mouritz,B 93 vs Horsens,2024-09-21,19,Midfielder,7,5
+B 93,72,20,E. Nnamani,B 93 vs Horsens,2024-09-21,18,Forward,NaN,NaN
+B 93,72,20,J. Voldby,B 93 vs Horsens,2024-09-21,19,Forward,9,3
+B 93,78,45,O. Jakobsen,B 93 vs Horsens,2024-09-21,18,Forward,NaN,NaN
+B 93,78,45,F. Isaki,B 93 vs Horsens,2024-09-21,19,Midfielder,7,2
+Horsens,56,40,K. Karikari,B 93 vs Horsens,2024-09-21,18,Forward,NaN,NaN
+Horsens,56,40,M. Egho,B 93 vs Horsens,2024-09-21,19,Forward,9,3
+Horsens,56,51,C. Tapé,B 93 vs Horsens,2024-09-21,18,Defender,NaN,NaN
+Horsens,56,51,J. Madsen,B 93 vs Horsens,2024-09-21,19,Midfielder,5,1
+Horsens,56,45,S. Ngabo,B 93 vs Horsens,2024-09-21,18,Midfielder,NaN,NaN
+Horsens,56,45,S. Pingel,B 93 vs Horsens,2024-09-21,19,Midfielder,6,3
+Horsens,76,10,O. Kolskogen,B 93 vs Horsens,2024-09-21,18,Defender,NaN,NaN
+Horsens,76,10,F. Christensen,B 93 vs Horsens,2024-09-21,19,Defender,3,2
+B 93,45,0,E. Christensen,Fredericia vs B 93,2024-09-28,18,Defender,NaN,NaN
+B 93,45,0,L. Henriksen,Fredericia vs B 93,2024-09-28,19,Defender,4,4
+B 93,45,0,N. Morberg,Fredericia vs B 93,2024-09-28,18,Midfielder,NaN,NaN
+B 93,45,0,A. Bredahl,Fredericia vs B 93,2024-09-28,19,Midfielder,7,4
+Fredericia,65,29,W. Madsen,Fredericia vs B 93,2024-09-28,18,Midfielder,NaN,NaN
+Fredericia,65,29,F. Winther,Fredericia vs B 93,2024-09-28,19,Midfielder,5,4
+Fredericia,65,42,J. Lindekilde,Fredericia vs B 93,2024-09-28,18,Defender,NaN,NaN
+Fredericia,65,42,J. Jessen,Fredericia vs B 93,2024-09-28,19,Midfielder,5,2
+B 93,66,0,N. Mouritsen,Fredericia vs B 93,2024-09-28,18,Defender,NaN,NaN
+B 93,66,0,G. Højbjerg,Fredericia vs B 93,2024-09-28,19,Defender,3,1
+Fredericia,73,12,A. Andersen,Fredericia vs B 93,2024-09-28,18,Defender,NaN,NaN
+B 93,66,15,O. Jakobsen,Fredericia vs B 93,2024-09-28,18,Forward,NaN,NaN
+Fredericia,73,12,J. Juelsgård,Fredericia vs B 93,2024-09-28,19,Midfielder,6,1
+B 93,66,15,J. Voldby,Fredericia vs B 93,2024-09-28,19,Midfielder,7,5
+Fredericia,73,27,O. Buch,Fredericia vs B 93,2024-09-28,18,Forward,NaN,NaN
+Fredericia,73,27,E. Dall,Fredericia vs B 93,2024-09-28,19,Midfielder,6,3
+Fredericia,83,22,M. Opondo,Fredericia vs B 93,2024-09-28,18,Midfielder,NaN,NaN
+Fredericia,83,22,D. Haarbo,Fredericia vs B 93,2024-09-28,19,Forward,8,2
+B 93,87,3,O. Addo,Fredericia vs B 93,2024-09-28,18,Forward,NaN,NaN
+B 93,87,3,M. Secka,Fredericia vs B 93,2024-09-28,19,Forward,9,3
+Esbjerg,55,28,L. Montano,B 93 vs Esbjerg,2024-10-04,18,Defender,NaN,NaN
+Esbjerg,55,28,A. Troelsen,B 93 vs Esbjerg,2024-10-04,19,Defender,3,1
+Esbjerg,68,16,Y. Bourhane,B 93 vs Esbjerg,2024-10-04,18,Midfielder,NaN,NaN
+Esbjerg,68,16,M. Maden,B 93 vs Esbjerg,2024-10-04,19,Midfielder,7,3
+Esbjerg,68,17,T. Freriks,B 93 vs Esbjerg,2024-10-04,18,Forward,NaN,NaN
+Esbjerg,68,17,M. Ladefoged,B 93 vs Esbjerg,2024-10-04,19,Forward,8,2
+Esbjerg,73,24,L. From,B 93 vs Esbjerg,2024-10-04,18,Forward,NaN,NaN
+Esbjerg,73,24,P. Bjur,B 93 vs Esbjerg,2024-10-04,19,Forward,9,1
+Esbjerg,73,37,N. Strunck,B 93 vs Esbjerg,2024-10-04,18,Midfielder,NaN,NaN
+Esbjerg,73,37,J. Beck,B 93 vs Esbjerg,2024-10-04,19,Midfielder,6,4
+B 93,62,23,J. Voldby,B 93 vs Esbjerg,2024-10-04,18,Forward,NaN,NaN
+B 93,62,23,A. Bredahl,B 93 vs Esbjerg,2024-10-04,19,Forward,9,3
+B 93,62,10,J. Okore,B 93 vs Esbjerg,2024-10-04,18,Defender,NaN,NaN
+B 93,62,10,A. Heimer,B 93 vs Esbjerg,2024-10-04,19,Defender,4,4
+B 93,74,28,O. Addo,B 93 vs Esbjerg,2024-10-04,18,Forward,NaN,NaN
+B 93,74,28,M. Secka,B 93 vs Esbjerg,2024-10-04,19,Midfielder,6,1
+B 93,74,35,O. Jakobsen,B 93 vs Esbjerg,2024-10-04,18,Forward,NaN,NaN
+B 93,74,35,S. Koch,B 93 vs Esbjerg,2024-10-04,19,Midfielder,6,2
+Vendsyssel,37,40,G. Mortensen,Vendsyssel vs B 93,2024-10-18,18,Defender,NaN,NaN
+Vendsyssel,37,40,M. Haarup,Vendsyssel vs B 93,2024-10-18,19,Defender,3,1
+B 93,47,14,G. Højbjerg,Vendsyssel vs B 93,2024-10-18,18,Defender,NaN,NaN
+B 93,47,14,M. Wohlgemuth,Vendsyssel vs B 93,2024-10-18,19,Midfielder,5,5
+Vendsyssel,45,0,M. Lassen,Vendsyssel vs B 93,2024-10-18,18,Defender,NaN,NaN
+Vendsyssel,45,0,P. Rejnhold,Vendsyssel vs B 93,2024-10-18,19,Defender,3,2
+B 93,60,6,O. Jakobsen,Vendsyssel vs B 93,2024-10-18,18,Forward,NaN,NaN
+B 93,60,6,F. Isaki,Vendsyssel vs B 93,2024-10-18,19,Forward,9,3
+B 93,60,15,J. Voldby,Vendsyssel vs B 93,2024-10-18,18,Forward,NaN,NaN
+B 93,60,15,S. Koch,Vendsyssel vs B 93,2024-10-18,19,Forward,8,2
+Vendsyssel,60,29,S. Borgelin,Vendsyssel vs B 93,2024-10-18,18,Forward,NaN,NaN
+Vendsyssel,60,29,L. Steffensen,Vendsyssel vs B 93,2024-10-18,19,Forward,9,1
+Vendsyssel,60,37,K. Kusk,Vendsyssel vs B 93,2024-10-18,18,Midfielder,NaN,NaN
+Vendsyssel,60,37,L. Jensen,Vendsyssel vs B 93,2024-10-18,19,Midfielder,7,4
+Vendsyssel,70,49,R. Thellufsen,Vendsyssel vs B 93,2024-10-18,18,Midfielder,NaN,NaN
+Vendsyssel,70,49,A. Simon Okosun,Vendsyssel vs B 93,2024-10-18,19,Midfielder,7,5
+B 93,85,35,N. Morberg,Vendsyssel vs B 93,2024-10-18,18,Midfielder,NaN,NaN
+B 93,85,35,E. Christensen,Vendsyssel vs B 93,2024-10-18,19,Midfielder,7,3
+B 93,85,36,O. Addo,Vendsyssel vs B 93,2024-10-18,18,Forward,NaN,NaN
+B 93,85,36,T. Blidegn,Vendsyssel vs B 93,2024-10-18,19,Midfielder,7,3
 Roskilde,67,4,R. Arabaci,B 93 vs Roskilde,2024-10-25,18,Forward,NaN,NaN
 Roskilde,67,4,E. Nielsen,B 93 vs Roskilde,2024-10-25,19,Midfielder,6,1
 B 93,59,29,N. Morberg,B 93 vs Roskilde,2024-10-25,18,Midfielder,NaN,NaN
@@ -169,122 +285,52 @@ B 93,84,6,M. Falkesgaard,B 93 vs Hillerød,2024-08-23,18,Goalkeeper,NaN,NaN
 B 93,84,6,A. Vaporakis,B 93 vs Hillerød,2024-08-23,19,Goalkeeper,NaN,0
 B 93,90,15,O. Addo,B 93 vs Hillerød,2024-08-23,18,Forward,NaN,NaN
 B 93,90,15,A. Heimer,B 93 vs Hillerød,2024-08-23,19,Midfielder,7,1
-Hobro,59,2,J. Cornelius,Hobro vs B 93,2024-09-02,18,Forward,NaN,NaN
-Hobro,59,2,S. Andreasen,Hobro vs B 93,2024-09-02,19,Forward,9,2
-Hobro,59,11,T. Hansen,Hobro vs B 93,2024-09-02,18,Midfielder,NaN,NaN
-Hobro,59,11,M. Compaoré,Hobro vs B 93,2024-09-02,19,Midfielder,6,5
-B 93,65,0,T. Blidegn,Hobro vs B 93,2024-09-02,18,Midfielder,NaN,NaN
-B 93,65,0,O. Jakobsen,Hobro vs B 93,2024-09-02,19,Midfielder,6,2
-Hobro,69,31,L. Klitten,Hobro vs B 93,2024-09-02,18,Defender,NaN,NaN
-Hobro,69,31,M. Nielsen,Hobro vs B 93,2024-09-02,19,Midfielder,5,1
-Hobro,69,50,V. Rasmussen,Hobro vs B 93,2024-09-02,18,Midfielder,NaN,NaN
-Hobro,69,50,M. Pedersen,Hobro vs B 93,2024-09-02,19,Midfielder,7,4
-B 93,73,29,M. Mouritz,Hobro vs B 93,2024-09-02,18,Midfielder,NaN,NaN
-B 93,73,29,N. Morberg,Hobro vs B 93,2024-09-02,19,Midfielder,7,4
-Hobro,83,11,O. Klitten,Hobro vs B 93,2024-09-02,18,Forward,NaN,NaN
-Hobro,83,11,O. Dorph,Hobro vs B 93,2024-09-02,19,Midfielder,5,5
-B 93,85,0,E. Nnamani,Hobro vs B 93,2024-09-02,18,Forward,NaN,NaN
-B 93,85,0,A. Bredahl,Hobro vs B 93,2024-09-02,19,Defender,4,4
-B 93,85,21,O. Addo,Hobro vs B 93,2024-09-02,18,Forward,NaN,NaN
-B 93,85,21,A. Heimer,Hobro vs B 93,2024-09-02,19,Midfielder,6,1
-B 93,45,0,O. Addo,Esbjerg vs B 93,2024-09-15,18,Forward,NaN,NaN
-B 93,45,0,F. Isaki,Esbjerg vs B 93,2024-09-15,19,Midfielder,5,5
-B 93,45,0,N. Morberg,Esbjerg vs B 93,2024-09-15,18,Midfielder,NaN,NaN
-B 93,45,0,A. Bredahl,Esbjerg vs B 93,2024-09-15,19,Midfielder,7,1
-Esbjerg,68,19,L. From,Esbjerg vs B 93,2024-09-15,18,Forward,NaN,NaN
-Esbjerg,68,19,P. Bjur,Esbjerg vs B 93,2024-09-15,19,Midfielder,6,2
-Esbjerg,68,20,J. Mortensen,Esbjerg vs B 93,2024-09-15,18,Defender,NaN,NaN
-Esbjerg,68,20,P. Tjørnelund,Esbjerg vs B 93,2024-09-15,19,Defender,3,2
-Esbjerg,68,0,T. Freriks,Esbjerg vs B 93,2024-09-15,18,Forward,NaN,NaN
-Esbjerg,68,0,M. Ladefoged,Esbjerg vs B 93,2024-09-15,19,Forward,10,3
-B 93,61,10,L. Henriksen,Esbjerg vs B 93,2024-09-15,18,Defender,NaN,NaN
-B 93,61,10,J. Okore,Esbjerg vs B 93,2024-09-15,19,Defender,3,2
-Esbjerg,81,28,A. Skipper,Esbjerg vs B 93,2024-09-15,18,Defender,NaN,NaN
-Esbjerg,81,28,J. Meyer,Esbjerg vs B 93,2024-09-15,19,Defender,4,5
-Esbjerg,88,42,A. Lausen,Esbjerg vs B 93,2024-09-15,18,Midfielder,NaN,NaN
-Esbjerg,88,42,J. Beck,Esbjerg vs B 93,2024-09-15,19,Midfielder,6,1
-B 93,73,16,E. Nnamani,Esbjerg vs B 93,2024-09-15,18,Forward,NaN,NaN
-B 93,73,16,J. Voldby,Esbjerg vs B 93,2024-09-15,19,Forward,9,3
-B 93,89,32,N. Mouritsen,Esbjerg vs B 93,2024-09-15,18,Defender,NaN,NaN
-B 93,89,32,G. Højbjerg,Esbjerg vs B 93,2024-09-15,19,Midfielder,7,3
-Horsens,30,34,M. Kallesøe,B 93 vs Horsens,2024-09-21,18,Defender,NaN,NaN
-Horsens,30,34,A. Ludwig,B 93 vs Horsens,2024-09-21,19,Defender,3,2
-B 93,57,33,A. Bredahl,B 93 vs Horsens,2024-09-21,18,Forward,NaN,NaN
-B 93,57,33,O. Addo,B 93 vs Horsens,2024-09-21,19,Forward,9,3
-B 93,57,53,N. Morberg,B 93 vs Horsens,2024-09-21,18,Midfielder,NaN,NaN
-B 93,57,53,A. Heimer,B 93 vs Horsens,2024-09-21,19,Defender,3,2
-B 93,58,15,J. Okore,B 93 vs Horsens,2024-09-21,18,Defender,NaN,NaN
-B 93,58,15,M. Mouritz,B 93 vs Horsens,2024-09-21,19,Midfielder,7,5
-B 93,72,20,E. Nnamani,B 93 vs Horsens,2024-09-21,18,Forward,NaN,NaN
-B 93,72,20,J. Voldby,B 93 vs Horsens,2024-09-21,19,Forward,9,3
-B 93,78,45,O. Jakobsen,B 93 vs Horsens,2024-09-21,18,Forward,NaN,NaN
-B 93,78,45,F. Isaki,B 93 vs Horsens,2024-09-21,19,Midfielder,7,2
-Horsens,56,40,K. Karikari,B 93 vs Horsens,2024-09-21,18,Forward,NaN,NaN
-Horsens,56,40,M. Egho,B 93 vs Horsens,2024-09-21,19,Forward,9,3
-Horsens,56,51,C. Tapé,B 93 vs Horsens,2024-09-21,18,Defender,NaN,NaN
-Horsens,56,51,J. Madsen,B 93 vs Horsens,2024-09-21,19,Midfielder,5,1
-Horsens,56,45,S. Ngabo,B 93 vs Horsens,2024-09-21,18,Midfielder,NaN,NaN
-Horsens,56,45,S. Pingel,B 93 vs Horsens,2024-09-21,19,Midfielder,6,3
-Horsens,76,10,O. Kolskogen,B 93 vs Horsens,2024-09-21,18,Defender,NaN,NaN
-Horsens,76,10,F. Christensen,B 93 vs Horsens,2024-09-21,19,Defender,3,2
-B 93,45,0,E. Christensen,Fredericia vs B 93,2024-09-28,18,Defender,NaN,NaN
-B 93,45,0,L. Henriksen,Fredericia vs B 93,2024-09-28,19,Defender,4,4
-B 93,45,0,N. Morberg,Fredericia vs B 93,2024-09-28,18,Midfielder,NaN,NaN
-B 93,45,0,A. Bredahl,Fredericia vs B 93,2024-09-28,19,Midfielder,7,4
-Fredericia,65,29,W. Madsen,Fredericia vs B 93,2024-09-28,18,Midfielder,NaN,NaN
-Fredericia,65,29,F. Winther,Fredericia vs B 93,2024-09-28,19,Midfielder,5,4
-Fredericia,65,42,J. Lindekilde,Fredericia vs B 93,2024-09-28,18,Defender,NaN,NaN
-Fredericia,65,42,J. Jessen,Fredericia vs B 93,2024-09-28,19,Midfielder,5,2
-B 93,66,0,N. Mouritsen,Fredericia vs B 93,2024-09-28,18,Defender,NaN,NaN
-B 93,66,0,G. Højbjerg,Fredericia vs B 93,2024-09-28,19,Defender,3,1
-Fredericia,73,12,A. Andersen,Fredericia vs B 93,2024-09-28,18,Defender,NaN,NaN
-B 93,66,15,O. Jakobsen,Fredericia vs B 93,2024-09-28,18,Forward,NaN,NaN
-Fredericia,73,12,J. Juelsgård,Fredericia vs B 93,2024-09-28,19,Midfielder,6,1
-B 93,66,15,J. Voldby,Fredericia vs B 93,2024-09-28,19,Midfielder,7,5
-Fredericia,73,27,O. Buch,Fredericia vs B 93,2024-09-28,18,Forward,NaN,NaN
-Fredericia,73,27,E. Dall,Fredericia vs B 93,2024-09-28,19,Midfielder,6,3
-Fredericia,83,22,M. Opondo,Fredericia vs B 93,2024-09-28,18,Midfielder,NaN,NaN
-Fredericia,83,22,D. Haarbo,Fredericia vs B 93,2024-09-28,19,Forward,8,2
-B 93,87,3,O. Addo,Fredericia vs B 93,2024-09-28,18,Forward,NaN,NaN
-B 93,87,3,M. Secka,Fredericia vs B 93,2024-09-28,19,Forward,9,3
-Esbjerg,55,28,L. Montano,B 93 vs Esbjerg,2024-10-04,18,Defender,NaN,NaN
-Esbjerg,55,28,A. Troelsen,B 93 vs Esbjerg,2024-10-04,19,Defender,3,1
-Esbjerg,68,16,Y. Bourhane,B 93 vs Esbjerg,2024-10-04,18,Midfielder,NaN,NaN
-Esbjerg,68,16,M. Maden,B 93 vs Esbjerg,2024-10-04,19,Midfielder,7,3
-Esbjerg,68,17,T. Freriks,B 93 vs Esbjerg,2024-10-04,18,Forward,NaN,NaN
-Esbjerg,68,17,M. Ladefoged,B 93 vs Esbjerg,2024-10-04,19,Forward,8,2
-Esbjerg,73,24,L. From,B 93 vs Esbjerg,2024-10-04,18,Forward,NaN,NaN
-Esbjerg,73,24,P. Bjur,B 93 vs Esbjerg,2024-10-04,19,Forward,9,1
-Esbjerg,73,37,N. Strunck,B 93 vs Esbjerg,2024-10-04,18,Midfielder,NaN,NaN
-Esbjerg,73,37,J. Beck,B 93 vs Esbjerg,2024-10-04,19,Midfielder,6,4
-B 93,62,23,J. Voldby,B 93 vs Esbjerg,2024-10-04,18,Forward,NaN,NaN
-B 93,62,23,A. Bredahl,B 93 vs Esbjerg,2024-10-04,19,Forward,9,3
-B 93,62,10,J. Okore,B 93 vs Esbjerg,2024-10-04,18,Defender,NaN,NaN
-B 93,62,10,A. Heimer,B 93 vs Esbjerg,2024-10-04,19,Defender,4,4
-B 93,74,28,O. Addo,B 93 vs Esbjerg,2024-10-04,18,Forward,NaN,NaN
-B 93,74,28,M. Secka,B 93 vs Esbjerg,2024-10-04,19,Midfielder,6,1
-B 93,74,35,O. Jakobsen,B 93 vs Esbjerg,2024-10-04,18,Forward,NaN,NaN
-B 93,74,35,S. Koch,B 93 vs Esbjerg,2024-10-04,19,Midfielder,6,2
-Vendsyssel,37,40,G. Mortensen,Vendsyssel vs B 93,2024-10-18,18,Defender,NaN,NaN
-Vendsyssel,37,40,M. Haarup,Vendsyssel vs B 93,2024-10-18,19,Defender,3,1
-B 93,47,14,G. Højbjerg,Vendsyssel vs B 93,2024-10-18,18,Defender,NaN,NaN
-B 93,47,14,M. Wohlgemuth,Vendsyssel vs B 93,2024-10-18,19,Midfielder,5,5
-Vendsyssel,45,0,M. Lassen,Vendsyssel vs B 93,2024-10-18,18,Defender,NaN,NaN
-Vendsyssel,45,0,P. Rejnhold,Vendsyssel vs B 93,2024-10-18,19,Defender,3,2
-B 93,60,6,O. Jakobsen,Vendsyssel vs B 93,2024-10-18,18,Forward,NaN,NaN
-B 93,60,6,F. Isaki,Vendsyssel vs B 93,2024-10-18,19,Forward,9,3
-B 93,60,15,J. Voldby,Vendsyssel vs B 93,2024-10-18,18,Forward,NaN,NaN
-B 93,60,15,S. Koch,Vendsyssel vs B 93,2024-10-18,19,Forward,8,2
-Vendsyssel,60,29,S. Borgelin,Vendsyssel vs B 93,2024-10-18,18,Forward,NaN,NaN
-Vendsyssel,60,29,L. Steffensen,Vendsyssel vs B 93,2024-10-18,19,Forward,9,1
-Vendsyssel,60,37,K. Kusk,Vendsyssel vs B 93,2024-10-18,18,Midfielder,NaN,NaN
-Vendsyssel,60,37,L. Jensen,Vendsyssel vs B 93,2024-10-18,19,Midfielder,7,4
-Vendsyssel,70,49,R. Thellufsen,Vendsyssel vs B 93,2024-10-18,18,Midfielder,NaN,NaN
-Vendsyssel,70,49,A. Simon Okosun,Vendsyssel vs B 93,2024-10-18,19,Midfielder,7,5
-B 93,85,35,N. Morberg,Vendsyssel vs B 93,2024-10-18,18,Midfielder,NaN,NaN
-B 93,85,35,E. Christensen,Vendsyssel vs B 93,2024-10-18,19,Midfielder,7,3
-B 93,85,36,O. Addo,Vendsyssel vs B 93,2024-10-18,18,Forward,NaN,NaN
-B 93,85,36,T. Blidegn,Vendsyssel vs B 93,2024-10-18,19,Midfielder,7,3
+Esbjerg,64,7,P. Bjur,Roskilde vs Esbjerg,2024-08-30,18,Midfielder,NaN,NaN
+Esbjerg,64,7,T. Freriks,Roskilde vs Esbjerg,2024-08-30,19,Forward,9,3
+Esbjerg,71,39,M. Maden,Roskilde vs Esbjerg,2024-08-30,18,Midfielder,NaN,NaN
+Esbjerg,71,39,E. Andersen,Roskilde vs Esbjerg,2024-08-30,19,Midfielder,7,5
+Esbjerg,80,42,L. From,Roskilde vs Esbjerg,2024-08-30,18,Forward,NaN,NaN
+Esbjerg,80,42,M. Ladefoged,Roskilde vs Esbjerg,2024-08-30,19,Midfielder,7,5
+Esbjerg,80,59,N. Strunck,Roskilde vs Esbjerg,2024-08-30,18,Midfielder,NaN,NaN
+Esbjerg,80,59,A. Troelsen,Roskilde vs Esbjerg,2024-08-30,19,Midfielder,7,3
+Roskilde,75,14,A. Maarup,Roskilde vs Esbjerg,2024-08-30,18,Midfielder,NaN,NaN
+Roskilde,75,14,M. Kristensen,Roskilde vs Esbjerg,2024-08-30,19,Midfielder,7,3
+Roskilde,75,14,H. Askham,Roskilde vs Esbjerg,2024-08-30,18,Defender,NaN,NaN
+Roskilde,75,14,O. Skolnik,Roskilde vs Esbjerg,2024-08-30,19,Defender,4,3
+Roskilde,88,52,E. Nielsen,Roskilde vs Esbjerg,2024-08-30,18,Forward,NaN,NaN
+Roskilde,88,52,J. Damkjær,Roskilde vs Esbjerg,2024-08-30,19,Forward,9,2
+Roskilde,92,15,A. Taranis,Roskilde vs Esbjerg,2024-08-30,18,Forward,NaN,NaN
+Roskilde,92,15,F. Engqvist,Roskilde vs Esbjerg,2024-08-30,19,Midfielder,7,3
+Esbjerg,64,12,L. From,Hvidovre vs Esbjerg,2024-09-22,18,Forward,NaN,NaN
+Esbjerg,64,12,P. Bjur,Hvidovre vs Esbjerg,2024-09-22,19,Midfielder,6,2
+Esbjerg,79,15,T. Freriks,Hvidovre vs Esbjerg,2024-09-22,18,Forward,NaN,NaN
+Esbjerg,79,15,M. Ladefoged,Hvidovre vs Esbjerg,2024-09-22,19,Forward,9,3
+Esbjerg,79,42,N. Strunck,Hvidovre vs Esbjerg,2024-09-22,18,Midfielder,NaN,NaN
+Esbjerg,79,42,F. Flaskager,Hvidovre vs Esbjerg,2024-09-22,19,Midfielder,6,3
+Hvidovre,75,42,J. Singh,Hvidovre vs Esbjerg,2024-09-22,18,Forward,NaN,NaN
+Hvidovre,75,42,J. Adjei-Broni,Hvidovre vs Esbjerg,2024-09-22,19,Midfielder,6,2
+Hvidovre,79,52,M. Spelmann,Hvidovre vs Esbjerg,2024-09-22,18,Midfielder,NaN,NaN
+Hvidovre,79,52,M. Fredslund,Hvidovre vs Esbjerg,2024-09-22,19,Midfielder,6,3
+Hvidovre,83,40,F. Krogstad,Hvidovre vs Esbjerg,2024-09-22,18,Midfielder,NaN,NaN
+Hvidovre,83,40,M. Kaalund,Hvidovre vs Esbjerg,2024-09-22,19,Defender,3,2
+Esbjerg,45,0,L. Montano,Esbjerg vs Hillerød,2024-09-29,18,Defender,NaN,NaN
+Esbjerg,45,0,A. Troelsen,Esbjerg vs Hillerød,2024-09-29,19,Midfielder,7,1
+Esbjerg,68,21,Y. Bourhane,Esbjerg vs Hillerød,2024-09-29,18,Midfielder,NaN,NaN
+Esbjerg,68,21,M. Maden,Esbjerg vs Hillerød,2024-09-29,19,Midfielder,7,3
+Esbjerg,77,30,L. From,Esbjerg vs Hillerød,2024-09-29,18,Forward,NaN,NaN
+Esbjerg,77,30,M. Ladefoged,Esbjerg vs Hillerød,2024-09-29,19,Forward,9,1
+Esbjerg,77,40,N. Strunck,Esbjerg vs Hillerød,2024-09-29,18,Midfielder,NaN,NaN
+Esbjerg,77,40,J. Beck,Esbjerg vs Hillerød,2024-09-29,19,Midfielder,6,1
+Esbjerg,87,56,T. Freriks,Esbjerg vs Hillerød,2024-09-29,18,Forward,NaN,NaN
+Esbjerg,87,56,E. Andersen,Esbjerg vs Hillerød,2024-09-29,19,Forward,10,3
+Hillerød,69,29,M. Bay,Esbjerg vs Hillerød,2024-09-29,18,Midfielder,NaN,NaN
+Hillerød,69,29,B. Kücükylidiz,Esbjerg vs Hillerød,2024-09-29,19,Midfielder,6,5
+Hillerød,69,43,D. Johansen,Esbjerg vs Hillerød,2024-09-29,18,Defender,NaN,NaN
+Hillerød,69,43,L. Bøje-Larsen,Esbjerg vs Hillerød,2024-09-29,19,Midfielder,6,4
+Hillerød,69,49,S. Sharif,Esbjerg vs Hillerød,2024-09-29,18,Defender,NaN,NaN
+Hillerød,69,49,C. Allen,Esbjerg vs Hillerød,2024-09-29,19,Forward,8,1
+Hillerød,74,48,A. Justinussen,Esbjerg vs Hillerød,2024-09-29,18,Forward,NaN,NaN
+Hillerød,74,48,M. Veltz,Esbjerg vs Hillerød,2024-09-29,19,Defender,4,3
 Esbjerg,31,46,T. Freriks,Esbjerg vs Fredericia,2024-10-19,18,Forward,NaN,NaN
 Esbjerg,31,46,M. Ladefoged,Esbjerg vs Fredericia,2024-10-19,19,Forward,9,2
 Esbjerg,58,56,T. Stagaard,Esbjerg vs Fredericia,2024-10-19,18,Defender,NaN,NaN
@@ -321,6 +367,24 @@ OB,88,38,M. Ejdum,OB vs Esbjerg,2024-10-26,18,Midfielder,NaN,NaN
 OB,88,38,J. Berthel Askou,OB vs Esbjerg,2024-10-26,19,Forward,10,3
 OB,88,47,L. Deedson,OB vs Esbjerg,2024-10-26,18,Forward,NaN,NaN
 OB,88,47,G. Grubbe,OB vs Esbjerg,2024-10-26,19,Forward,9,1
+Hobro,18,22,J. Cornelius,Esbjerg vs Hobro,2024-11-03,18,Forward,NaN,NaN
+Hobro,18,22,M. Bruhn,Esbjerg vs Hobro,2024-11-03,19,Forward,9,3
+Esbjerg,41,15,J. Mortensen,Esbjerg vs Hobro,2024-11-03,18,Defender,NaN,NaN
+Esbjerg,41,15,P. Tjørnelund,Esbjerg vs Hobro,2024-11-03,19,Defender,3,2
+Esbjerg,45,0,N. Strunck,Esbjerg vs Hobro,2024-11-03,18,Midfielder,NaN,NaN
+Esbjerg,45,0,L. Montano,Esbjerg vs Hobro,2024-11-03,19,Midfielder,7,2
+Esbjerg,62,35,L. From,Esbjerg vs Hobro,2024-11-03,18,Forward,NaN,NaN
+Esbjerg,62,35,P. Bjur,Esbjerg vs Hobro,2024-11-03,19,Forward,8,2
+Hobro,67,47,M. Pedersen,Esbjerg vs Hobro,2024-11-03,18,Midfielder,NaN,NaN
+Hobro,67,47,Z. Hyltoft,Esbjerg vs Hobro,2024-11-03,19,Midfielder,6,3
+Esbjerg,79,5,T. Freriks,Esbjerg vs Hobro,2024-11-03,18,Forward,NaN,NaN
+Esbjerg,79,5,M. Ladefoged,Esbjerg vs Hobro,2024-11-03,19,Forward,9,3
+Esbjerg,79,15,A. Troelsen,Esbjerg vs Hobro,2024-11-03,18,Defender,NaN,NaN
+Esbjerg,79,15,B. Baldursson,Esbjerg vs Hobro,2024-11-03,19,Defender,3,1
+Hobro,88,44,L. Klitten,Esbjerg vs Hobro,2024-11-03,18,Defender,NaN,NaN
+Hobro,88,44,L. Nørby,Esbjerg vs Hobro,2024-11-03,19,Midfielder,5,1
+Hobro,88,45,S. Andreasen,Esbjerg vs Hobro,2024-11-03,18,Forward,NaN,NaN
+Hobro,88,45,M. Compaoré,Esbjerg vs Hobro,2024-11-03,19,Midfielder,5,4
 OB,57,21,B. Paulsen,Esbjerg vs OB,2024-07-20,18,Defender,NaN,NaN
 OB,57,21,J. Gomez,Esbjerg vs OB,2024-07-20,19,Defender,4,5
 Esbjerg,64,33,L. From,Esbjerg vs OB,2024-07-20,18,Forward,NaN,NaN
@@ -451,52 +515,96 @@ Esbjerg,77,48,A. Lausen,Esbjerg vs HB Køge,2024-08-24,18,Midfielder,NaN,NaN
 Esbjerg,77,48,E. Andersen,Esbjerg vs HB Køge,2024-08-24,19,Midfielder,6,1
 Esbjerg,78,0,Y. Bourhane,Esbjerg vs HB Køge,2024-08-24,18,Midfielder,NaN,NaN
 Esbjerg,78,0,P. Tjørnelund,Esbjerg vs HB Køge,2024-08-24,19,Midfielder,7,4
-Esbjerg,64,7,P. Bjur,Roskilde vs Esbjerg,2024-08-30,18,Midfielder,NaN,NaN
-Esbjerg,64,7,T. Freriks,Roskilde vs Esbjerg,2024-08-30,19,Forward,9,3
-Esbjerg,71,39,M. Maden,Roskilde vs Esbjerg,2024-08-30,18,Midfielder,NaN,NaN
-Esbjerg,71,39,E. Andersen,Roskilde vs Esbjerg,2024-08-30,19,Midfielder,7,5
-Esbjerg,80,42,L. From,Roskilde vs Esbjerg,2024-08-30,18,Forward,NaN,NaN
-Esbjerg,80,42,M. Ladefoged,Roskilde vs Esbjerg,2024-08-30,19,Midfielder,7,5
-Esbjerg,80,59,N. Strunck,Roskilde vs Esbjerg,2024-08-30,18,Midfielder,NaN,NaN
-Esbjerg,80,59,A. Troelsen,Roskilde vs Esbjerg,2024-08-30,19,Midfielder,7,3
-Roskilde,75,14,A. Maarup,Roskilde vs Esbjerg,2024-08-30,18,Midfielder,NaN,NaN
-Roskilde,75,14,M. Kristensen,Roskilde vs Esbjerg,2024-08-30,19,Midfielder,7,3
-Roskilde,75,14,H. Askham,Roskilde vs Esbjerg,2024-08-30,18,Defender,NaN,NaN
-Roskilde,75,14,O. Skolnik,Roskilde vs Esbjerg,2024-08-30,19,Defender,4,3
-Roskilde,88,52,E. Nielsen,Roskilde vs Esbjerg,2024-08-30,18,Forward,NaN,NaN
-Roskilde,88,52,J. Damkjær,Roskilde vs Esbjerg,2024-08-30,19,Forward,9,2
-Roskilde,92,15,A. Taranis,Roskilde vs Esbjerg,2024-08-30,18,Forward,NaN,NaN
-Roskilde,92,15,F. Engqvist,Roskilde vs Esbjerg,2024-08-30,19,Midfielder,7,3
-Esbjerg,64,12,L. From,Hvidovre vs Esbjerg,2024-09-22,18,Forward,NaN,NaN
-Esbjerg,64,12,P. Bjur,Hvidovre vs Esbjerg,2024-09-22,19,Midfielder,6,2
-Esbjerg,79,15,T. Freriks,Hvidovre vs Esbjerg,2024-09-22,18,Forward,NaN,NaN
-Esbjerg,79,15,M. Ladefoged,Hvidovre vs Esbjerg,2024-09-22,19,Forward,9,3
-Esbjerg,79,42,N. Strunck,Hvidovre vs Esbjerg,2024-09-22,18,Midfielder,NaN,NaN
-Esbjerg,79,42,F. Flaskager,Hvidovre vs Esbjerg,2024-09-22,19,Midfielder,6,3
-Hvidovre,75,42,J. Singh,Hvidovre vs Esbjerg,2024-09-22,18,Forward,NaN,NaN
-Hvidovre,75,42,J. Adjei-Broni,Hvidovre vs Esbjerg,2024-09-22,19,Midfielder,6,2
-Hvidovre,79,52,M. Spelmann,Hvidovre vs Esbjerg,2024-09-22,18,Midfielder,NaN,NaN
-Hvidovre,79,52,M. Fredslund,Hvidovre vs Esbjerg,2024-09-22,19,Midfielder,6,3
-Hvidovre,83,40,F. Krogstad,Hvidovre vs Esbjerg,2024-09-22,18,Midfielder,NaN,NaN
-Hvidovre,83,40,M. Kaalund,Hvidovre vs Esbjerg,2024-09-22,19,Defender,3,2
-Esbjerg,45,0,L. Montano,Esbjerg vs Hillerød,2024-09-29,18,Defender,NaN,NaN
-Esbjerg,45,0,A. Troelsen,Esbjerg vs Hillerød,2024-09-29,19,Midfielder,7,1
-Esbjerg,68,21,Y. Bourhane,Esbjerg vs Hillerød,2024-09-29,18,Midfielder,NaN,NaN
-Esbjerg,68,21,M. Maden,Esbjerg vs Hillerød,2024-09-29,19,Midfielder,7,3
-Esbjerg,77,30,L. From,Esbjerg vs Hillerød,2024-09-29,18,Forward,NaN,NaN
-Esbjerg,77,30,M. Ladefoged,Esbjerg vs Hillerød,2024-09-29,19,Forward,9,1
-Esbjerg,77,40,N. Strunck,Esbjerg vs Hillerød,2024-09-29,18,Midfielder,NaN,NaN
-Esbjerg,77,40,J. Beck,Esbjerg vs Hillerød,2024-09-29,19,Midfielder,6,1
-Esbjerg,87,56,T. Freriks,Esbjerg vs Hillerød,2024-09-29,18,Forward,NaN,NaN
-Esbjerg,87,56,E. Andersen,Esbjerg vs Hillerød,2024-09-29,19,Forward,10,3
-Hillerød,69,29,M. Bay,Esbjerg vs Hillerød,2024-09-29,18,Midfielder,NaN,NaN
-Hillerød,69,29,B. Kücükylidiz,Esbjerg vs Hillerød,2024-09-29,19,Midfielder,6,5
-Hillerød,69,43,D. Johansen,Esbjerg vs Hillerød,2024-09-29,18,Defender,NaN,NaN
-Hillerød,69,43,L. Bøje-Larsen,Esbjerg vs Hillerød,2024-09-29,19,Midfielder,6,4
-Hillerød,69,49,S. Sharif,Esbjerg vs Hillerød,2024-09-29,18,Defender,NaN,NaN
-Hillerød,69,49,C. Allen,Esbjerg vs Hillerød,2024-09-29,19,Forward,8,1
-Hillerød,74,48,A. Justinussen,Esbjerg vs Hillerød,2024-09-29,18,Forward,NaN,NaN
-Hillerød,74,48,M. Veltz,Esbjerg vs Hillerød,2024-09-29,19,Defender,4,3
+Fredericia,11,33,F. Winther,Fredericia vs Hvidovre,2024-08-25,18,Midfielder,NaN,NaN
+Fredericia,11,33,W. Madsen,Fredericia vs Hvidovre,2024-08-25,19,Midfielder,6,5
+Hvidovre,32,25,M. Fredslund,Fredericia vs Hvidovre,2024-08-25,18,Defender,NaN,NaN
+Hvidovre,32,25,M. Spelmann,Fredericia vs Hvidovre,2024-08-25,19,Midfielder,5,3
+Fredericia,61,34,O. Buch,Fredericia vs Hvidovre,2024-08-25,18,Forward,NaN,NaN
+Fredericia,61,34,E. Dall,Fredericia vs Hvidovre,2024-08-25,19,Forward,9,2
+Fredericia,61,42,D. Kristjánsson,Fredericia vs Hvidovre,2024-08-25,18,Defender,NaN,NaN
+Fredericia,61,42,J. Lindekilde,Fredericia vs Hvidovre,2024-08-25,19,Midfielder,7,5
+Hvidovre,67,7,J. Singh,Fredericia vs Hvidovre,2024-08-25,18,Forward,NaN,NaN
+Hvidovre,67,7,M. Andreasen,Fredericia vs Hvidovre,2024-08-25,19,Midfielder,5,1
+Hvidovre,79,40,M. Kaalund,Fredericia vs Hvidovre,2024-08-25,18,Midfielder,NaN,NaN
+Hvidovre,79,40,M. Papuga,Fredericia vs Hvidovre,2024-08-25,19,Midfielder,5,4
+Fredericia,75,42,A. Bøndergaard,Fredericia vs Hvidovre,2024-08-25,18,Forward,NaN,NaN
+Fredericia,75,42,D. Thøgersen,Fredericia vs Hvidovre,2024-08-25,19,Defender,3,1
+Fredericia,75,44,J. Jessen,Fredericia vs Hvidovre,2024-08-25,18,Midfielder,NaN,NaN
+Fredericia,75,44,P. Egelund,Fredericia vs Hvidovre,2024-08-25,19,Forward,9,3
+HB Køge,45,0,S. Larsen,HB Køge vs Fredericia,2024-09-01,18,Defender,NaN,NaN
+HB Køge,45,0,M. Jakobsen,HB Køge vs Fredericia,2024-09-01,19,Midfielder,6,3
+HB Køge,45,0,G. Çulhacı,HB Køge vs Fredericia,2024-09-01,18,Defender,NaN,NaN
+HB Køge,45,0,N. Jakobsen,HB Køge vs Fredericia,2024-09-01,19,Defender,3,1
+HB Køge,62,41,A. Gøthler,HB Køge vs Fredericia,2024-09-01,18,Forward,NaN,NaN
+HB Køge,62,41,C. Jensen,HB Køge vs Fredericia,2024-09-01,19,Midfielder,6,1
+HB Køge,62,44,G. Larsen,HB Køge vs Fredericia,2024-09-01,18,Midfielder,NaN,NaN
+HB Køge,62,44,Y. Dhaflaoui,HB Køge vs Fredericia,2024-09-01,19,Midfielder,6,4
+Fredericia,53,44,D. Kristjánsson,HB Køge vs Fredericia,2024-09-01,18,Defender,NaN,NaN
+Fredericia,53,44,O. Buch,HB Køge vs Fredericia,2024-09-01,19,Midfielder,5,4
+HB Køge,70,29,J. Rothmann,HB Køge vs Fredericia,2024-09-01,18,Forward,NaN,NaN
+HB Køge,70,29,S. Jalaei,HB Køge vs Fredericia,2024-09-01,19,Midfielder,6,1
+Fredericia,73,7,A. Bøndergaard,HB Køge vs Fredericia,2024-09-01,18,Forward,NaN,NaN
+Fredericia,73,7,P. Egelund,HB Køge vs Fredericia,2024-09-01,19,Forward,10,3
+Fredericia,73,16,W. Madsen,HB Køge vs Fredericia,2024-09-01,18,Midfielder,NaN,NaN
+Fredericia,73,16,D. Haarbo,HB Køge vs Fredericia,2024-09-01,19,Midfielder,6,3
+Fredericia,83,34,A. Dahl,HB Køge vs Fredericia,2024-09-01,18,Defender,NaN,NaN
+Fredericia,83,34,J. Kudsk,HB Køge vs Fredericia,2024-09-01,19,Midfielder,6,5
+Fredericia,83,29,A. Muçolli,HB Køge vs Fredericia,2024-09-01,18,Forward,NaN,NaN
+Fredericia,83,29,E. Dall,HB Køge vs Fredericia,2024-09-01,19,Forward,10,3
+Fredericia,45,0,A. Bøndergaard,Fredericia vs Hobro,2024-09-16,18,Forward,NaN,NaN
+Fredericia,45,0,E. Dall,Fredericia vs Hobro,2024-09-16,19,Forward,9,3
+Fredericia,59,14,J. Jessen,Fredericia vs Hobro,2024-09-16,18,Midfielder,NaN,NaN
+Fredericia,59,14,D. Kristjánsson,Fredericia vs Hobro,2024-09-16,19,Defender,3,1
+Fredericia,59,34,G. Marcussen,Fredericia vs Hobro,2024-09-16,18,Midfielder,NaN,NaN
+Fredericia,59,34,M. Opondo,Fredericia vs Hobro,2024-09-16,19,Midfielder,7,4
+Hobro,69,27,J. Cornelius,Fredericia vs Hobro,2024-09-16,18,Forward,NaN,NaN
+Hobro,69,27,S. Andreasen,Fredericia vs Hobro,2024-09-16,19,Forward,9,3
+Hobro,81,18,V. Rasmussen,Fredericia vs Hobro,2024-09-16,18,Midfielder,NaN,NaN
+Hobro,81,18,T. Hansen,Fredericia vs Hobro,2024-09-16,19,Midfielder,6,1
+Hobro,81,31,M. Bruhn,Fredericia vs Hobro,2024-09-16,18,Forward,NaN,NaN
+Hobro,81,31,M. Compaoré,Fredericia vs Hobro,2024-09-16,19,Forward,9,2
+Fredericia,81,30,J. Juelsgård,Fredericia vs Hobro,2024-09-16,18,Defender,NaN,NaN
+Fredericia,81,30,A. Andersen,Fredericia vs Hobro,2024-09-16,19,Defender,4,4
+Fredericia,88,58,O. Buch,Fredericia vs Hobro,2024-09-16,18,Forward,NaN,NaN
+Fredericia,88,58,D. Thøgersen,Fredericia vs Hobro,2024-09-16,19,Forward,8,2
+Fredericia,57,59,J. Lindekilde,Hillerød vs Fredericia,2024-09-23,18,Defender,NaN,NaN
+Fredericia,57,59,G. Marcussen,Hillerød vs Fredericia,2024-09-23,19,Midfielder,7,4
+Fredericia,58,1,A. Muçolli,Hillerød vs Fredericia,2024-09-23,18,Forward,NaN,NaN
+Fredericia,58,1,J. Jessen,Hillerød vs Fredericia,2024-09-23,19,Midfielder,6,3
+Hillerød,45,0,K. Enghardt,Hillerød vs Fredericia,2024-09-23,18,Defender,NaN,NaN
+Hillerød,45,0,R. Møller,Hillerød vs Fredericia,2024-09-23,19,Defender,3,2
+Hillerød,54,45,T. Arndal,Hillerød vs Fredericia,2024-09-23,18,Midfielder,NaN,NaN
+Hillerød,54,45,M. Veltz,Hillerød vs Fredericia,2024-09-23,19,Midfielder,6,5
+Hillerød,65,49,N. Schmidt,Hillerød vs Fredericia,2024-09-23,18,Midfielder,NaN,NaN
+Hillerød,65,49,M. Bay,Hillerød vs Fredericia,2024-09-23,19,Midfielder,6,3
+Fredericia,80,32,M. Opondo,Hillerød vs Fredericia,2024-09-23,18,Midfielder,NaN,NaN
+Fredericia,80,32,F. Winther,Hillerød vs Fredericia,2024-09-23,19,Midfielder,7,3
+Fredericia,83,47,A. Bøndergaard,Hillerød vs Fredericia,2024-09-23,18,Forward,NaN,NaN
+Fredericia,83,47,E. Dall,Hillerød vs Fredericia,2024-09-23,19,Forward,10,3
+Hillerød,75,0,M. Etim,Hillerød vs Fredericia,2024-09-23,18,Forward,NaN,NaN
+Hillerød,75,0,D. Bagou,Hillerød vs Fredericia,2024-09-23,19,Forward,10,3
+Hillerød,75,6,A. Justinussen,Hillerød vs Fredericia,2024-09-23,18,Forward,NaN,NaN
+Hillerød,75,6,B. Kücükylidiz,Hillerød vs Fredericia,2024-09-23,19,Forward,9,1
+Horsens,45,0,A. Herdonsson,Fredericia vs Horsens,2024-10-05,18,Midfielder,NaN,NaN
+Horsens,45,0,F. Christensen,Fredericia vs Horsens,2024-10-05,19,Midfielder,7,3
+Horsens,45,0,O. Kjærgaard,Fredericia vs Horsens,2024-10-05,18,Midfielder,NaN,NaN
+Horsens,45,0,C. Tapé,Fredericia vs Horsens,2024-10-05,19,Midfielder,6,1
+Fredericia,68,27,A. Muçolli,Fredericia vs Horsens,2024-10-05,18,Forward,NaN,NaN
+Fredericia,68,27,F. Winther,Fredericia vs Horsens,2024-10-05,19,Midfielder,NaN,0
+Fredericia,68,40,O. Buch,Fredericia vs Horsens,2024-10-05,18,Forward,NaN,NaN
+Fredericia,68,40,J. Jessen,Fredericia vs Horsens,2024-10-05,19,Midfielder,NaN,0
+Fredericia,68,18,W. Madsen,Fredericia vs Horsens,2024-10-05,18,Midfielder,NaN,NaN
+Fredericia,68,18,E. Dall,Fredericia vs Horsens,2024-10-05,19,Forward,NaN,0
+Horsens,69,5,O. Kolskogen,Fredericia vs Horsens,2024-10-05,18,Defender,NaN,NaN
+Horsens,69,5,F. Roslyng,Fredericia vs Horsens,2024-10-05,19,Forward,9,2
+Fredericia,85,1,A. Bøndergaard,Fredericia vs Horsens,2024-10-05,18,Forward,NaN,NaN
+Fredericia,85,1,P. Egelund,Fredericia vs Horsens,2024-10-05,19,Forward,NaN,0
+Fredericia,89,12,D. Kristjánsson,Fredericia vs Horsens,2024-10-05,18,Defender,NaN,NaN
+Fredericia,89,12,D. Thøgersen,Fredericia vs Horsens,2024-10-05,19,Midfielder,6,4
+Horsens,81,50,K. Karikari,Fredericia vs Horsens,2024-10-05,18,Forward,NaN,NaN
+Horsens,81,50,S. Ngabo,Fredericia vs Horsens,2024-10-05,19,Forward,10,3
+Horsens,89,14,E. Frederiksen,Fredericia vs Horsens,2024-10-05,18,Midfielder,NaN,NaN
+Horsens,89,14,A. Ludwig,Fredericia vs Horsens,2024-10-05,19,Midfielder,6,2
 Fredericia,45,0,J. Jessen,Hobro vs Fredericia,2024-10-27,18,Midfielder,NaN,NaN
 Fredericia,45,0,J. Lindekilde,Hobro vs Fredericia,2024-10-27,19,Midfielder,6,1
 Fredericia,66,7,F. Winther,Hobro vs Fredericia,2024-10-27,18,Midfielder,NaN,NaN
@@ -517,6 +625,24 @@ Hobro,81,46,S. Andreasen,Hobro vs Fredericia,2024-10-27,18,Forward,NaN,NaN
 Hobro,81,46,M. Nielsen,Hobro vs Fredericia,2024-10-27,19,Forward,9,1
 Hobro,87,1,O. Klitten,Hobro vs Fredericia,2024-10-27,18,Forward,NaN,NaN
 Hobro,87,1,L. Nørby,Hobro vs Fredericia,2024-10-27,19,Midfielder,5,2
+OB,55,21,A. Manneh,Fredericia vs OB,2024-11-03,18,Midfielder,NaN,NaN
+OB,55,21,W. Martin,Fredericia vs OB,2024-11-03,19,Midfielder,7,4
+Fredericia,45,0,J. Lindekilde,Fredericia vs OB,2024-11-03,18,Defender,NaN,NaN
+Fredericia,45,0,A. Muçolli,Fredericia vs OB,2024-11-03,19,Midfielder,5,1
+OB,68,38,G. Grubbe,Fredericia vs OB,2024-11-03,18,Defender,NaN,NaN
+OB,68,38,J. Gomez,Fredericia vs OB,2024-11-03,19,Defender,3,1
+OB,68,58,L. Deedson,Fredericia vs OB,2024-11-03,18,Forward,NaN,NaN
+OB,68,58,M. Fenger,Fredericia vs OB,2024-11-03,19,Midfielder,6,5
+OB,80,41,B. Paulsen,Fredericia vs OB,2024-11-03,18,Defender,NaN,NaN
+OB,80,41,J. Berthel Askou,Fredericia vs OB,2024-11-03,19,Defender,4,5
+OB,81,5,M. Ejdum,Fredericia vs OB,2024-11-03,18,Midfielder,NaN,NaN
+OB,81,5,E. Hansborg-Sørensen,Fredericia vs OB,2024-11-03,19,Midfielder,6,3
+Fredericia,72,22,A. Dahl,Fredericia vs OB,2024-11-03,18,Defender,NaN,NaN
+Fredericia,72,22,J. Jessen,Fredericia vs OB,2024-11-03,19,Midfielder,7,3
+Fredericia,80,10,A. Bøndergaard,Fredericia vs OB,2024-11-03,18,Forward,NaN,NaN
+Fredericia,80,10,E. Dall,Fredericia vs OB,2024-11-03,19,Forward,9,3
+Fredericia,80,24,F. Winther,Fredericia vs OB,2024-11-03,18,Midfielder,NaN,NaN
+Fredericia,80,24,D. Haarbo,Fredericia vs OB,2024-11-03,19,Midfielder,7,5
 Fredericia,71,6,O. Buch,Horsens vs Fredericia,2024-07-21,18,Forward,NaN,NaN
 Fredericia,71,6,P. Egelund,Horsens vs Fredericia,2024-07-21,19,Midfielder,6,2
 Fredericia,71,12,A. Muçolli,Horsens vs Fredericia,2024-07-21,18,Forward,NaN,NaN
@@ -611,96 +737,94 @@ OB,87,34,J. Bonde,OB vs Fredericia,2024-08-21,18,Midfielder,NaN,NaN
 OB,87,34,W. Martin,OB vs Fredericia,2024-08-21,19,Midfielder,7,3
 OB,87,45,J. Gomez,OB vs Fredericia,2024-08-21,18,Defender,NaN,NaN
 OB,87,45,T. Slotsager,OB vs Fredericia,2024-08-21,19,Defender,4,4
-Fredericia,11,33,F. Winther,Fredericia vs Hvidovre,2024-08-25,18,Midfielder,NaN,NaN
-Fredericia,11,33,W. Madsen,Fredericia vs Hvidovre,2024-08-25,19,Midfielder,6,5
-Hvidovre,32,25,M. Fredslund,Fredericia vs Hvidovre,2024-08-25,18,Defender,NaN,NaN
-Hvidovre,32,25,M. Spelmann,Fredericia vs Hvidovre,2024-08-25,19,Midfielder,5,3
-Fredericia,61,34,O. Buch,Fredericia vs Hvidovre,2024-08-25,18,Forward,NaN,NaN
-Fredericia,61,34,E. Dall,Fredericia vs Hvidovre,2024-08-25,19,Forward,9,2
-Fredericia,61,42,D. Kristjánsson,Fredericia vs Hvidovre,2024-08-25,18,Defender,NaN,NaN
-Fredericia,61,42,J. Lindekilde,Fredericia vs Hvidovre,2024-08-25,19,Midfielder,7,5
-Hvidovre,67,7,J. Singh,Fredericia vs Hvidovre,2024-08-25,18,Forward,NaN,NaN
-Hvidovre,67,7,M. Andreasen,Fredericia vs Hvidovre,2024-08-25,19,Midfielder,5,1
-Hvidovre,79,40,M. Kaalund,Fredericia vs Hvidovre,2024-08-25,18,Midfielder,NaN,NaN
-Hvidovre,79,40,M. Papuga,Fredericia vs Hvidovre,2024-08-25,19,Midfielder,5,4
-Fredericia,75,42,A. Bøndergaard,Fredericia vs Hvidovre,2024-08-25,18,Forward,NaN,NaN
-Fredericia,75,42,D. Thøgersen,Fredericia vs Hvidovre,2024-08-25,19,Defender,3,1
-Fredericia,75,44,J. Jessen,Fredericia vs Hvidovre,2024-08-25,18,Midfielder,NaN,NaN
-Fredericia,75,44,P. Egelund,Fredericia vs Hvidovre,2024-08-25,19,Forward,9,3
-HB Køge,45,0,S. Larsen,HB Køge vs Fredericia,2024-09-01,18,Defender,NaN,NaN
-HB Køge,45,0,M. Jakobsen,HB Køge vs Fredericia,2024-09-01,19,Midfielder,6,3
-HB Køge,45,0,G. Çulhacı,HB Køge vs Fredericia,2024-09-01,18,Defender,NaN,NaN
-HB Køge,45,0,N. Jakobsen,HB Køge vs Fredericia,2024-09-01,19,Defender,3,1
-HB Køge,62,41,A. Gøthler,HB Køge vs Fredericia,2024-09-01,18,Forward,NaN,NaN
-HB Køge,62,41,C. Jensen,HB Køge vs Fredericia,2024-09-01,19,Midfielder,6,1
-HB Køge,62,44,G. Larsen,HB Køge vs Fredericia,2024-09-01,18,Midfielder,NaN,NaN
-HB Køge,62,44,Y. Dhaflaoui,HB Køge vs Fredericia,2024-09-01,19,Midfielder,6,4
-Fredericia,53,44,D. Kristjánsson,HB Køge vs Fredericia,2024-09-01,18,Defender,NaN,NaN
-Fredericia,53,44,O. Buch,HB Køge vs Fredericia,2024-09-01,19,Midfielder,5,4
-HB Køge,70,29,J. Rothmann,HB Køge vs Fredericia,2024-09-01,18,Forward,NaN,NaN
-HB Køge,70,29,S. Jalaei,HB Køge vs Fredericia,2024-09-01,19,Midfielder,6,1
-Fredericia,73,7,A. Bøndergaard,HB Køge vs Fredericia,2024-09-01,18,Forward,NaN,NaN
-Fredericia,73,7,P. Egelund,HB Køge vs Fredericia,2024-09-01,19,Forward,10,3
-Fredericia,73,16,W. Madsen,HB Køge vs Fredericia,2024-09-01,18,Midfielder,NaN,NaN
-Fredericia,73,16,D. Haarbo,HB Køge vs Fredericia,2024-09-01,19,Midfielder,6,3
-Fredericia,83,34,A. Dahl,HB Køge vs Fredericia,2024-09-01,18,Defender,NaN,NaN
-Fredericia,83,34,J. Kudsk,HB Køge vs Fredericia,2024-09-01,19,Midfielder,6,5
-Fredericia,83,29,A. Muçolli,HB Køge vs Fredericia,2024-09-01,18,Forward,NaN,NaN
-Fredericia,83,29,E. Dall,HB Køge vs Fredericia,2024-09-01,19,Forward,10,3
-Fredericia,45,0,A. Bøndergaard,Fredericia vs Hobro,2024-09-16,18,Forward,NaN,NaN
-Fredericia,45,0,E. Dall,Fredericia vs Hobro,2024-09-16,19,Forward,9,3
-Fredericia,59,14,J. Jessen,Fredericia vs Hobro,2024-09-16,18,Midfielder,NaN,NaN
-Fredericia,59,14,D. Kristjánsson,Fredericia vs Hobro,2024-09-16,19,Defender,3,1
-Fredericia,59,34,G. Marcussen,Fredericia vs Hobro,2024-09-16,18,Midfielder,NaN,NaN
-Fredericia,59,34,M. Opondo,Fredericia vs Hobro,2024-09-16,19,Midfielder,7,4
-Hobro,69,27,J. Cornelius,Fredericia vs Hobro,2024-09-16,18,Forward,NaN,NaN
-Hobro,69,27,S. Andreasen,Fredericia vs Hobro,2024-09-16,19,Forward,9,3
-Hobro,81,18,V. Rasmussen,Fredericia vs Hobro,2024-09-16,18,Midfielder,NaN,NaN
-Hobro,81,18,T. Hansen,Fredericia vs Hobro,2024-09-16,19,Midfielder,6,1
-Hobro,81,31,M. Bruhn,Fredericia vs Hobro,2024-09-16,18,Forward,NaN,NaN
-Hobro,81,31,M. Compaoré,Fredericia vs Hobro,2024-09-16,19,Forward,9,2
-Fredericia,81,30,J. Juelsgård,Fredericia vs Hobro,2024-09-16,18,Defender,NaN,NaN
-Fredericia,81,30,A. Andersen,Fredericia vs Hobro,2024-09-16,19,Defender,4,4
-Fredericia,88,58,O. Buch,Fredericia vs Hobro,2024-09-16,18,Forward,NaN,NaN
-Fredericia,88,58,D. Thøgersen,Fredericia vs Hobro,2024-09-16,19,Forward,8,2
-Fredericia,57,59,J. Lindekilde,Hillerød vs Fredericia,2024-09-23,18,Defender,NaN,NaN
-Fredericia,57,59,G. Marcussen,Hillerød vs Fredericia,2024-09-23,19,Midfielder,7,4
-Fredericia,58,1,A. Muçolli,Hillerød vs Fredericia,2024-09-23,18,Forward,NaN,NaN
-Fredericia,58,1,J. Jessen,Hillerød vs Fredericia,2024-09-23,19,Midfielder,6,3
-Hillerød,45,0,K. Enghardt,Hillerød vs Fredericia,2024-09-23,18,Defender,NaN,NaN
-Hillerød,45,0,R. Møller,Hillerød vs Fredericia,2024-09-23,19,Defender,3,2
-Hillerød,54,45,T. Arndal,Hillerød vs Fredericia,2024-09-23,18,Midfielder,NaN,NaN
-Hillerød,54,45,M. Veltz,Hillerød vs Fredericia,2024-09-23,19,Midfielder,6,5
-Hillerød,65,49,N. Schmidt,Hillerød vs Fredericia,2024-09-23,18,Midfielder,NaN,NaN
-Hillerød,65,49,M. Bay,Hillerød vs Fredericia,2024-09-23,19,Midfielder,6,3
-Fredericia,80,32,M. Opondo,Hillerød vs Fredericia,2024-09-23,18,Midfielder,NaN,NaN
-Fredericia,80,32,F. Winther,Hillerød vs Fredericia,2024-09-23,19,Midfielder,7,3
-Fredericia,83,47,A. Bøndergaard,Hillerød vs Fredericia,2024-09-23,18,Forward,NaN,NaN
-Fredericia,83,47,E. Dall,Hillerød vs Fredericia,2024-09-23,19,Forward,10,3
-Hillerød,75,0,M. Etim,Hillerød vs Fredericia,2024-09-23,18,Forward,NaN,NaN
-Hillerød,75,0,D. Bagou,Hillerød vs Fredericia,2024-09-23,19,Forward,10,3
-Hillerød,75,6,A. Justinussen,Hillerød vs Fredericia,2024-09-23,18,Forward,NaN,NaN
-Hillerød,75,6,B. Kücükylidiz,Hillerød vs Fredericia,2024-09-23,19,Forward,9,1
-Horsens,45,0,A. Herdonsson,Fredericia vs Horsens,2024-10-05,18,Midfielder,NaN,NaN
-Horsens,45,0,F. Christensen,Fredericia vs Horsens,2024-10-05,19,Midfielder,7,3
-Horsens,45,0,O. Kjærgaard,Fredericia vs Horsens,2024-10-05,18,Midfielder,NaN,NaN
-Horsens,45,0,C. Tapé,Fredericia vs Horsens,2024-10-05,19,Midfielder,6,1
-Fredericia,68,27,A. Muçolli,Fredericia vs Horsens,2024-10-05,18,Forward,NaN,NaN
-Fredericia,68,27,F. Winther,Fredericia vs Horsens,2024-10-05,19,Midfielder,NaN,0
-Fredericia,68,40,O. Buch,Fredericia vs Horsens,2024-10-05,18,Forward,NaN,NaN
-Fredericia,68,40,J. Jessen,Fredericia vs Horsens,2024-10-05,19,Midfielder,NaN,0
-Fredericia,68,18,W. Madsen,Fredericia vs Horsens,2024-10-05,18,Midfielder,NaN,NaN
-Fredericia,68,18,E. Dall,Fredericia vs Horsens,2024-10-05,19,Forward,NaN,0
-Horsens,69,5,O. Kolskogen,Fredericia vs Horsens,2024-10-05,18,Defender,NaN,NaN
-Horsens,69,5,F. Roslyng,Fredericia vs Horsens,2024-10-05,19,Forward,9,2
-Fredericia,85,1,A. Bøndergaard,Fredericia vs Horsens,2024-10-05,18,Forward,NaN,NaN
-Fredericia,85,1,P. Egelund,Fredericia vs Horsens,2024-10-05,19,Forward,NaN,0
-Fredericia,89,12,D. Kristjánsson,Fredericia vs Horsens,2024-10-05,18,Defender,NaN,NaN
-Fredericia,89,12,D. Thøgersen,Fredericia vs Horsens,2024-10-05,19,Midfielder,6,4
-Horsens,81,50,K. Karikari,Fredericia vs Horsens,2024-10-05,18,Forward,NaN,NaN
-Horsens,81,50,S. Ngabo,Fredericia vs Horsens,2024-10-05,19,Forward,10,3
-Horsens,89,14,E. Frederiksen,Fredericia vs Horsens,2024-10-05,18,Midfielder,NaN,NaN
-Horsens,89,14,A. Ludwig,Fredericia vs Horsens,2024-10-05,19,Midfielder,6,2
+Kolding,45,0,I. Tånnander,Kolding vs HB Køge,2024-09-14,18,Midfielder,NaN,NaN
+Kolding,45,0,S. Jalal,Kolding vs HB Køge,2024-09-14,19,Midfielder,6,2
+Kolding,55,2,A. Beck,Kolding vs HB Køge,2024-09-14,18,Midfielder,NaN,NaN
+Kolding,55,2,J. Vetter,Kolding vs HB Køge,2024-09-14,19,Midfielder,6,5
+HB Køge,64,54,Mohamad Al Naser,Kolding vs HB Køge,2024-09-14,18,Forward,NaN,NaN
+HB Køge,64,54,Y. Dhaflaoui,Kolding vs HB Køge,2024-09-14,19,Forward,8,2
+HB Køge,64,59,S. Larsen,Kolding vs HB Køge,2024-09-14,18,Defender,NaN,NaN
+HB Køge,64,59,N. Jakobsen,Kolding vs HB Køge,2024-09-14,19,Defender,3,1
+Kolding,66,23,S. Yatéké,Kolding vs HB Køge,2024-09-14,18,Forward,NaN,NaN
+Kolding,66,23,C. Enemark,Kolding vs HB Køge,2024-09-14,19,Forward,9,1
+Kolding,78,0,M. Sarr,Kolding vs HB Køge,2024-09-14,18,Forward,NaN,NaN
+Kolding,78,0,J. Musbaudeen,Kolding vs HB Køge,2024-09-14,19,Forward,9,2
+Kolding,77,41,A. Nørager,Kolding vs HB Køge,2024-09-14,18,Defender,NaN,NaN
+Kolding,77,41,J. Vadstrup,Kolding vs HB Køge,2024-09-14,19,Defender,4,4
+HB Køge,92,20,G. Larsen,Kolding vs HB Køge,2024-09-14,18,Midfielder,NaN,NaN
+HB Køge,92,20,A. Gøthler,Kolding vs HB Køge,2024-09-14,19,Forward,10,3
+Vendsyssel,63,57,K. Kusk,HB Køge vs Vendsyssel,2024-09-20,18,Midfielder,NaN,NaN
+Vendsyssel,63,57,L. Jensen,HB Køge vs Vendsyssel,2024-09-20,19,Midfielder,7,2
+Vendsyssel,63,28,S. Borgelin,HB Køge vs Vendsyssel,2024-09-20,18,Forward,NaN,NaN
+Vendsyssel,63,28,M. Hannesbo,HB Køge vs Vendsyssel,2024-09-20,19,Forward,9,1
+Vendsyssel,77,5,M. Kaastrup,HB Køge vs Vendsyssel,2024-09-20,18,Forward,NaN,NaN
+Vendsyssel,77,5,R. Thellufsen,HB Køge vs Vendsyssel,2024-09-20,19,Midfielder,7,4
+Vendsyssel,76,53,O. Øhlenschlæger,HB Køge vs Vendsyssel,2024-09-20,18,Midfielder,NaN,NaN
+Vendsyssel,76,53,M. Haarup,HB Køge vs Vendsyssel,2024-09-20,19,Defender,3,2
+HB Køge,69,2,S. Jalaei,HB Køge vs Vendsyssel,2024-09-20,18,Forward,NaN,NaN
+HB Køge,69,2,M. Mulder,HB Køge vs Vendsyssel,2024-09-20,19,Defender,3,2
+Vendsyssel,89,40,L. Steffensen,HB Køge vs Vendsyssel,2024-09-20,18,Forward,NaN,NaN
+Vendsyssel,89,40,P. Rejnhold,HB Køge vs Vendsyssel,2024-09-20,19,Midfielder,7,1
+HB Køge,80,0,Mohamad Al Naser,HB Køge vs Vendsyssel,2024-09-20,18,Forward,NaN,NaN
+HB Køge,80,0,G. Larsen,HB Køge vs Vendsyssel,2024-09-20,19,Midfielder,7,5
+HB Køge,80,0,C. Jensen,HB Køge vs Vendsyssel,2024-09-20,18,Midfielder,NaN,NaN
+HB Køge,80,0,M. Khan,HB Køge vs Vendsyssel,2024-09-20,19,Midfielder,7,2
+HB Køge,89,58,N. Jakobsen,HB Køge vs Vendsyssel,2024-09-20,18,Midfielder,NaN,NaN
+HB Køge,89,58,M. Babaiasl,HB Køge vs Vendsyssel,2024-09-20,19,Midfielder,7,1
+Roskilde,45,0,A. Taranis,Roskilde vs HB Køge,2024-09-29,18,Forward,NaN,NaN
+Roskilde,45,0,M. Lysholm,Roskilde vs HB Køge,2024-09-29,19,Midfielder,6,1
+Roskilde,59,35,R. Arabaci,Roskilde vs HB Køge,2024-09-29,18,Forward,NaN,NaN
+Roskilde,59,35,E. Nielsen,Roskilde vs HB Køge,2024-09-29,19,Midfielder,6,3
+HB Køge,45,0,G. Larsen,Roskilde vs HB Køge,2024-09-29,18,Midfielder,NaN,NaN
+HB Køge,45,0,S. Jalaei,Roskilde vs HB Køge,2024-09-29,19,Midfielder,6,5
+HB Køge,87,2,Mohamad Al Naser,Roskilde vs HB Køge,2024-09-29,18,Forward,NaN,NaN
+HB Køge,87,2,M. Khan,Roskilde vs HB Køge,2024-09-29,19,Midfielder,6,5
+HB Køge,89,27,C. Jensen,Roskilde vs HB Køge,2024-09-29,18,Forward,NaN,NaN
+HB Køge,89,27,S. Hald,Roskilde vs HB Køge,2024-09-29,19,Midfielder,6,4
+Roskilde,80,2,A. Maarup,Roskilde vs HB Køge,2024-09-29,18,Midfielder,NaN,NaN
+Roskilde,80,2,M. Kristensen,Roskilde vs HB Køge,2024-09-29,19,Midfielder,7,5
+Roskilde,80,0,N. Halse,Roskilde vs HB Køge,2024-09-29,18,Midfielder,NaN,NaN
+Roskilde,80,0,K. Nyegaard,Roskilde vs HB Køge,2024-09-29,19,Midfielder,6,4
+Roskilde,88,38,G. Fraulo,Roskilde vs HB Køge,2024-09-29,18,Midfielder,NaN,NaN
+Roskilde,88,38,S. Baskaya,Roskilde vs HB Køge,2024-09-29,19,Forward,9,2
+OB,36,41,M. Ejdum,OB vs HB Køge,2024-10-04,18,Midfielder,NaN,NaN
+OB,36,41,T. Trybull,OB vs HB Køge,2024-10-04,19,Midfielder,7,4
+OB,36,59,J. Gomez,OB vs HB Køge,2024-10-04,18,Defender,NaN,NaN
+OB,36,59,T. Slotsager,OB vs HB Køge,2024-10-04,19,Defender,4,3
+HB Køge,75,59,Mohamad Al Naser,OB vs HB Køge,2024-10-04,18,Forward,NaN,NaN
+HB Køge,75,59,S. Jalaei,OB vs HB Køge,2024-10-04,19,Forward,9,2
+HB Køge,80,30,G. Larsen,OB vs HB Køge,2024-10-04,18,Midfielder,NaN,NaN
+HB Køge,80,30,S. Hald,OB vs HB Køge,2024-10-04,19,Midfielder,6,5
+HB Køge,80,25,C. Jensen,OB vs HB Køge,2024-10-04,18,Forward,NaN,NaN
+HB Køge,80,25,G. Çulhacı,OB vs HB Køge,2024-10-04,19,Midfielder,6,4
+HB Køge,87,5,S. Larsen,OB vs HB Køge,2024-10-04,18,Defender,NaN,NaN
+HB Køge,87,5,M. Khan,OB vs HB Køge,2024-10-04,19,Defender,3,2
+OB,64,29,W. Martin,OB vs HB Køge,2024-10-04,18,Forward,NaN,NaN
+OB,64,29,M. Ivančević,OB vs HB Køge,2024-10-04,19,Defender,4,4
+OB,86,24,A. Manneh,OB vs HB Køge,2024-10-04,18,Midfielder,NaN,NaN
+OB,86,24,G. Grubbe,OB vs HB Køge,2024-10-04,19,Midfielder,7,3
+OB,86,41,L. Deedson,OB vs HB Køge,2024-10-04,18,Forward,NaN,NaN
+OB,86,41,E. Hansborg-Sørensen,OB vs HB Køge,2024-10-04,19,Midfielder,7,5
+HB Køge,56,30,G. Çulhacı,HB Køge vs Hobro,2024-10-18,18,Defender,NaN,NaN
+HB Køge,56,30,S. Jalaei,HB Køge vs Hobro,2024-10-18,19,Midfielder,6,5
+HB Køge,56,31,M. Jensen,HB Køge vs Hobro,2024-10-18,18,Midfielder,NaN,NaN
+HB Køge,56,31,S. Hald,HB Køge vs Hobro,2024-10-18,19,Midfielder,6,4
+Hobro,45,0,Z. Hyltoft,HB Køge vs Hobro,2024-10-18,18,Midfielder,NaN,NaN
+Hobro,45,0,T. Hansen,HB Køge vs Hobro,2024-10-18,19,Midfielder,7,5
+HB Køge,84,40,Mohamad Al Naser,HB Køge vs Hobro,2024-10-18,18,Forward,NaN,NaN
+HB Køge,84,40,A. Gøthler,HB Køge vs Hobro,2024-10-18,19,Forward,8,2
+HB Køge,88,51,C. Jensen,HB Køge vs Hobro,2024-10-18,18,Forward,NaN,NaN
+HB Køge,88,51,M. Babaiasl,HB Køge vs Hobro,2024-10-18,19,Midfielder,6,4
+HB Køge,89,6,J. Arias,HB Køge vs Hobro,2024-10-18,18,Forward,NaN,NaN
+HB Køge,89,6,I. Figuigui,HB Køge vs Hobro,2024-10-18,19,Forward,9,3
+Hobro,60,52,M. Bruhn,HB Køge vs Hobro,2024-10-18,18,Forward,NaN,NaN
+Hobro,60,52,J. Cornelius,HB Køge vs Hobro,2024-10-18,19,Midfielder,7,3
+Hobro,71,1,O. Klitten,HB Køge vs Hobro,2024-10-18,18,Forward,NaN,NaN
+Hobro,71,1,M. Nielsen,HB Køge vs Hobro,2024-10-18,19,Midfielder,5,2
+Hobro,71,0,S. Andreasen,HB Køge vs Hobro,2024-10-18,18,Forward,NaN,NaN
+Hobro,71,0,O. Dorph,HB Køge vs Hobro,2024-10-18,19,Forward,10,3
+Hobro,78,22,E. Søgaard,HB Køge vs Hobro,2024-10-18,18,Defender,NaN,NaN
+Hobro,78,22,L. Nørby,HB Køge vs Hobro,2024-10-18,19,Midfielder,5,5
 HB Køge,45,0,S. Larsen,HB Køge vs Kolding,2024-10-25,18,Defender,NaN,NaN
 HB Køge,45,0,M. Chacón,HB Køge vs Kolding,2024-10-25,19,Defender,3,2
 Kolding,70,6,M. Sarr,HB Køge vs Kolding,2024-10-25,18,Forward,NaN,NaN
@@ -825,94 +949,80 @@ Hillerød,72,13,S. Sharif,Hillerød vs HB Køge,2024-08-16,18,Defender,NaN,NaN
 Hillerød,72,13,C. Allen,Hillerød vs HB Køge,2024-08-16,19,Defender,3,2
 Hillerød,86,48,M. Etim,Hillerød vs HB Køge,2024-08-16,18,Forward,NaN,NaN
 Hillerød,86,48,K. Enghardt,Hillerød vs HB Køge,2024-08-16,19,Midfielder,7,4
-Kolding,45,0,I. Tånnander,Kolding vs HB Køge,2024-09-14,18,Midfielder,NaN,NaN
-Kolding,45,0,S. Jalal,Kolding vs HB Køge,2024-09-14,19,Midfielder,6,2
-Kolding,55,2,A. Beck,Kolding vs HB Køge,2024-09-14,18,Midfielder,NaN,NaN
-Kolding,55,2,J. Vetter,Kolding vs HB Køge,2024-09-14,19,Midfielder,6,5
-HB Køge,64,54,Mohamad Al Naser,Kolding vs HB Køge,2024-09-14,18,Forward,NaN,NaN
-HB Køge,64,54,Y. Dhaflaoui,Kolding vs HB Køge,2024-09-14,19,Forward,8,2
-HB Køge,64,59,S. Larsen,Kolding vs HB Køge,2024-09-14,18,Defender,NaN,NaN
-HB Køge,64,59,N. Jakobsen,Kolding vs HB Køge,2024-09-14,19,Defender,3,1
-Kolding,66,23,S. Yatéké,Kolding vs HB Køge,2024-09-14,18,Forward,NaN,NaN
-Kolding,66,23,C. Enemark,Kolding vs HB Køge,2024-09-14,19,Forward,9,1
-Kolding,78,0,M. Sarr,Kolding vs HB Køge,2024-09-14,18,Forward,NaN,NaN
-Kolding,78,0,J. Musbaudeen,Kolding vs HB Køge,2024-09-14,19,Forward,9,2
-Kolding,77,41,A. Nørager,Kolding vs HB Køge,2024-09-14,18,Defender,NaN,NaN
-Kolding,77,41,J. Vadstrup,Kolding vs HB Køge,2024-09-14,19,Defender,4,4
-HB Køge,92,20,G. Larsen,Kolding vs HB Køge,2024-09-14,18,Midfielder,NaN,NaN
-HB Køge,92,20,A. Gøthler,Kolding vs HB Køge,2024-09-14,19,Forward,10,3
-Vendsyssel,63,57,K. Kusk,HB Køge vs Vendsyssel,2024-09-20,18,Midfielder,NaN,NaN
-Vendsyssel,63,57,L. Jensen,HB Køge vs Vendsyssel,2024-09-20,19,Midfielder,7,2
-Vendsyssel,63,28,S. Borgelin,HB Køge vs Vendsyssel,2024-09-20,18,Forward,NaN,NaN
-Vendsyssel,63,28,M. Hannesbo,HB Køge vs Vendsyssel,2024-09-20,19,Forward,9,1
-Vendsyssel,77,5,M. Kaastrup,HB Køge vs Vendsyssel,2024-09-20,18,Forward,NaN,NaN
-Vendsyssel,77,5,R. Thellufsen,HB Køge vs Vendsyssel,2024-09-20,19,Midfielder,7,4
-Vendsyssel,76,53,O. Øhlenschlæger,HB Køge vs Vendsyssel,2024-09-20,18,Midfielder,NaN,NaN
-Vendsyssel,76,53,M. Haarup,HB Køge vs Vendsyssel,2024-09-20,19,Defender,3,2
-HB Køge,69,2,S. Jalaei,HB Køge vs Vendsyssel,2024-09-20,18,Forward,NaN,NaN
-HB Køge,69,2,M. Mulder,HB Køge vs Vendsyssel,2024-09-20,19,Defender,3,2
-Vendsyssel,89,40,L. Steffensen,HB Køge vs Vendsyssel,2024-09-20,18,Forward,NaN,NaN
-Vendsyssel,89,40,P. Rejnhold,HB Køge vs Vendsyssel,2024-09-20,19,Midfielder,7,1
-HB Køge,80,0,Mohamad Al Naser,HB Køge vs Vendsyssel,2024-09-20,18,Forward,NaN,NaN
-HB Køge,80,0,G. Larsen,HB Køge vs Vendsyssel,2024-09-20,19,Midfielder,7,5
-HB Køge,80,0,C. Jensen,HB Køge vs Vendsyssel,2024-09-20,18,Midfielder,NaN,NaN
-HB Køge,80,0,M. Khan,HB Køge vs Vendsyssel,2024-09-20,19,Midfielder,7,2
-HB Køge,89,58,N. Jakobsen,HB Køge vs Vendsyssel,2024-09-20,18,Midfielder,NaN,NaN
-HB Køge,89,58,M. Babaiasl,HB Køge vs Vendsyssel,2024-09-20,19,Midfielder,7,1
-Roskilde,45,0,A. Taranis,Roskilde vs HB Køge,2024-09-29,18,Forward,NaN,NaN
-Roskilde,45,0,M. Lysholm,Roskilde vs HB Køge,2024-09-29,19,Midfielder,6,1
-Roskilde,59,35,R. Arabaci,Roskilde vs HB Køge,2024-09-29,18,Forward,NaN,NaN
-Roskilde,59,35,E. Nielsen,Roskilde vs HB Køge,2024-09-29,19,Midfielder,6,3
-HB Køge,45,0,G. Larsen,Roskilde vs HB Køge,2024-09-29,18,Midfielder,NaN,NaN
-HB Køge,45,0,S. Jalaei,Roskilde vs HB Køge,2024-09-29,19,Midfielder,6,5
-HB Køge,87,2,Mohamad Al Naser,Roskilde vs HB Køge,2024-09-29,18,Forward,NaN,NaN
-HB Køge,87,2,M. Khan,Roskilde vs HB Køge,2024-09-29,19,Midfielder,6,5
-HB Køge,89,27,C. Jensen,Roskilde vs HB Køge,2024-09-29,18,Forward,NaN,NaN
-HB Køge,89,27,S. Hald,Roskilde vs HB Køge,2024-09-29,19,Midfielder,6,4
-Roskilde,80,2,A. Maarup,Roskilde vs HB Køge,2024-09-29,18,Midfielder,NaN,NaN
-Roskilde,80,2,M. Kristensen,Roskilde vs HB Køge,2024-09-29,19,Midfielder,7,5
-Roskilde,80,0,N. Halse,Roskilde vs HB Køge,2024-09-29,18,Midfielder,NaN,NaN
-Roskilde,80,0,K. Nyegaard,Roskilde vs HB Køge,2024-09-29,19,Midfielder,6,4
-Roskilde,88,38,G. Fraulo,Roskilde vs HB Køge,2024-09-29,18,Midfielder,NaN,NaN
-Roskilde,88,38,S. Baskaya,Roskilde vs HB Køge,2024-09-29,19,Forward,9,2
-OB,36,41,M. Ejdum,OB vs HB Køge,2024-10-04,18,Midfielder,NaN,NaN
-OB,36,41,T. Trybull,OB vs HB Køge,2024-10-04,19,Midfielder,7,4
-OB,36,59,J. Gomez,OB vs HB Køge,2024-10-04,18,Defender,NaN,NaN
-OB,36,59,T. Slotsager,OB vs HB Køge,2024-10-04,19,Defender,4,3
-HB Køge,75,59,Mohamad Al Naser,OB vs HB Køge,2024-10-04,18,Forward,NaN,NaN
-HB Køge,75,59,S. Jalaei,OB vs HB Køge,2024-10-04,19,Forward,9,2
-HB Køge,80,30,G. Larsen,OB vs HB Køge,2024-10-04,18,Midfielder,NaN,NaN
-HB Køge,80,30,S. Hald,OB vs HB Køge,2024-10-04,19,Midfielder,6,5
-HB Køge,80,25,C. Jensen,OB vs HB Køge,2024-10-04,18,Forward,NaN,NaN
-HB Køge,80,25,G. Çulhacı,OB vs HB Køge,2024-10-04,19,Midfielder,6,4
-HB Køge,87,5,S. Larsen,OB vs HB Køge,2024-10-04,18,Defender,NaN,NaN
-HB Køge,87,5,M. Khan,OB vs HB Køge,2024-10-04,19,Defender,3,2
-OB,64,29,W. Martin,OB vs HB Køge,2024-10-04,18,Forward,NaN,NaN
-OB,64,29,M. Ivančević,OB vs HB Køge,2024-10-04,19,Defender,4,4
-OB,86,24,A. Manneh,OB vs HB Køge,2024-10-04,18,Midfielder,NaN,NaN
-OB,86,24,G. Grubbe,OB vs HB Køge,2024-10-04,19,Midfielder,7,3
-OB,86,41,L. Deedson,OB vs HB Køge,2024-10-04,18,Forward,NaN,NaN
-OB,86,41,E. Hansborg-Sørensen,OB vs HB Køge,2024-10-04,19,Midfielder,7,5
-HB Køge,56,30,G. Çulhacı,HB Køge vs Hobro,2024-10-18,18,Defender,NaN,NaN
-HB Køge,56,30,S. Jalaei,HB Køge vs Hobro,2024-10-18,19,Midfielder,6,5
-HB Køge,56,31,M. Jensen,HB Køge vs Hobro,2024-10-18,18,Midfielder,NaN,NaN
-HB Køge,56,31,S. Hald,HB Køge vs Hobro,2024-10-18,19,Midfielder,6,4
-Hobro,45,0,Z. Hyltoft,HB Køge vs Hobro,2024-10-18,18,Midfielder,NaN,NaN
-Hobro,45,0,T. Hansen,HB Køge vs Hobro,2024-10-18,19,Midfielder,7,5
-HB Køge,84,40,Mohamad Al Naser,HB Køge vs Hobro,2024-10-18,18,Forward,NaN,NaN
-HB Køge,84,40,A. Gøthler,HB Køge vs Hobro,2024-10-18,19,Forward,8,2
-HB Køge,88,51,C. Jensen,HB Køge vs Hobro,2024-10-18,18,Forward,NaN,NaN
-HB Køge,88,51,M. Babaiasl,HB Køge vs Hobro,2024-10-18,19,Midfielder,6,4
-HB Køge,89,6,J. Arias,HB Køge vs Hobro,2024-10-18,18,Forward,NaN,NaN
-HB Køge,89,6,I. Figuigui,HB Køge vs Hobro,2024-10-18,19,Forward,9,3
-Hobro,60,52,M. Bruhn,HB Køge vs Hobro,2024-10-18,18,Forward,NaN,NaN
-Hobro,60,52,J. Cornelius,HB Køge vs Hobro,2024-10-18,19,Midfielder,7,3
-Hobro,71,1,O. Klitten,HB Køge vs Hobro,2024-10-18,18,Forward,NaN,NaN
-Hobro,71,1,M. Nielsen,HB Køge vs Hobro,2024-10-18,19,Midfielder,5,2
-Hobro,71,0,S. Andreasen,HB Køge vs Hobro,2024-10-18,18,Forward,NaN,NaN
-Hobro,71,0,O. Dorph,HB Køge vs Hobro,2024-10-18,19,Forward,10,3
-Hobro,78,22,E. Søgaard,HB Køge vs Hobro,2024-10-18,18,Defender,NaN,NaN
-Hobro,78,22,L. Nørby,HB Køge vs Hobro,2024-10-18,19,Midfielder,5,5
+Kolding,45,0,A. Njai,Hillerød vs Kolding,2024-08-30,18,Defender,NaN,NaN
+Kolding,45,0,S. Jalal,Hillerød vs Kolding,2024-08-30,19,Midfielder,6,1
+Kolding,62,0,M. Vestergård,Hillerød vs Kolding,2024-08-30,18,Midfielder,NaN,NaN
+Kolding,62,0,F. Møller,Hillerød vs Kolding,2024-08-30,19,Midfielder,6,3
+Kolding,62,15,S. Yatéké,Hillerød vs Kolding,2024-08-30,18,Forward,NaN,NaN
+Kolding,62,15,C. Enemark,Hillerød vs Kolding,2024-08-30,19,Forward,9,3
+Kolding,70,9,M. Sarr,Hillerød vs Kolding,2024-08-30,18,Forward,NaN,NaN
+Kolding,70,9,A. Beck,Hillerød vs Kolding,2024-08-30,19,Forward,9,2
+Hillerød,45,0,T. Arndal,Hillerød vs Kolding,2024-08-30,18,Midfielder,NaN,NaN
+Hillerød,45,0,M. Veltz,Hillerød vs Kolding,2024-08-30,19,Midfielder,6,2
+Hillerød,45,0,A. Alicino,Hillerød vs Kolding,2024-08-30,18,Midfielder,NaN,NaN
+Hillerød,45,0,B. Kücükylidiz,Hillerød vs Kolding,2024-08-30,19,Midfielder,5,4
+Kolding,82,48,P. Ngongo,Hillerød vs Kolding,2024-08-30,18,Forward,NaN,NaN
+Kolding,82,48,C. Holmelund,Hillerød vs Kolding,2024-08-30,19,Forward,8,1
+Hillerød,60,51,R. Møller,Hillerød vs Kolding,2024-08-30,18,Defender,NaN,NaN
+Hillerød,60,51,G. Arndal-Lauritzen,Hillerød vs Kolding,2024-08-30,19,Defender,4,4
+Hillerød,60,56,K. Enghardt,Hillerød vs Kolding,2024-08-30,18,Defender,NaN,NaN
+Hillerød,60,56,J. Witt,Hillerød vs Kolding,2024-08-30,19,Defender,4,5
+Hillerød,70,9,S. Opoku,Hillerød vs Kolding,2024-08-30,18,Midfielder,NaN,NaN
+Hillerød,70,9,M. Bruhn,Hillerød vs Kolding,2024-08-30,19,Forward,10,3
+Vendsyssel,56,3,S. Borgelin,Vendsyssel vs Hillerød,2024-09-14,18,Forward,NaN,NaN
+Vendsyssel,56,3,L. Steffensen,Vendsyssel vs Hillerød,2024-09-14,19,Forward,9,3
+Vendsyssel,56,12,F. Børsting,Vendsyssel vs Hillerød,2024-09-14,18,Midfielder,NaN,NaN
+Vendsyssel,56,12,R. Thellufsen,Vendsyssel vs Hillerød,2024-09-14,19,Midfielder,7,5
+Hillerød,53,53,T. Arndal,Vendsyssel vs Hillerød,2024-09-14,18,Midfielder,NaN,NaN
+Hillerød,53,53,B. Kücükylidiz,Vendsyssel vs Hillerød,2024-09-14,19,Forward,9,2
+Vendsyssel,70,51,G. Mortensen,Vendsyssel vs Hillerød,2024-09-14,18,Defender,NaN,NaN
+Vendsyssel,70,51,M. Lauritsen,Vendsyssel vs Hillerød,2024-09-14,19,Defender,3,1
+Vendsyssel,71,1,L. Jensen,Vendsyssel vs Hillerød,2024-09-14,18,Forward,NaN,NaN
+Vendsyssel,71,1,M. Kaastrup,Vendsyssel vs Hillerød,2024-09-14,19,Midfielder,5,2
+Hillerød,79,14,A. Justinussen,Vendsyssel vs Hillerød,2024-09-14,18,Forward,NaN,NaN
+Hillerød,79,14,M. Bay,Vendsyssel vs Hillerød,2024-09-14,19,Forward,9,1
+Hillerød,79,15,M. Etim,Vendsyssel vs Hillerød,2024-09-14,18,Forward,NaN,NaN
+Hillerød,79,15,M. Veltz,Vendsyssel vs Hillerød,2024-09-14,19,Forward,9,3
+Vendsyssel,81,40,M. Greve,Vendsyssel vs Hillerød,2024-09-14,18,Defender,NaN,NaN
+Vendsyssel,81,40,V. Mpindi,Vendsyssel vs Hillerød,2024-09-14,19,Defender,4,5
+Hillerød,88,27,C. Allen,Vendsyssel vs Hillerød,2024-09-14,18,Defender,NaN,NaN
+Hillerød,88,27,D. Johansen,Vendsyssel vs Hillerød,2024-09-14,19,Midfielder,6,2
+Hillerød,88,28,N. Schmidt,Vendsyssel vs Hillerød,2024-09-14,18,Midfielder,NaN,NaN
+Hillerød,88,28,A. Alicino,Vendsyssel vs Hillerød,2024-09-14,19,Midfielder,6,4
+Vendsyssel,45,0,L. Jensen,Hillerød vs Vendsyssel,2024-10-04,18,Forward,NaN,NaN
+Vendsyssel,45,0,K. Kusk,Hillerød vs Vendsyssel,2024-10-04,19,Midfielder,6,2
+Vendsyssel,60,28,S. Borgelin,Hillerød vs Vendsyssel,2024-10-04,18,Forward,NaN,NaN
+Vendsyssel,60,28,L. Steffensen,Hillerød vs Vendsyssel,2024-10-04,19,Forward,9,2
+Hillerød,61,54,C. Allen,Hillerød vs Vendsyssel,2024-10-04,18,Defender,NaN,NaN
+Hillerød,61,54,S. Sharif,Hillerød vs Vendsyssel,2024-10-04,19,Midfielder,5,4
+Vendsyssel,72,23,O. Øhlenschlæger,Hillerød vs Vendsyssel,2024-10-04,18,Midfielder,NaN,NaN
+Vendsyssel,72,23,R. Thellufsen,Hillerød vs Vendsyssel,2024-10-04,19,Midfielder,7,4
+Hillerød,66,37,T. Arndal,Hillerød vs Vendsyssel,2024-10-04,18,Midfielder,NaN,NaN
+Hillerød,66,37,B. Kücükylidiz,Hillerød vs Vendsyssel,2024-10-04,19,Midfielder,7,3
+Vendsyssel,82,13,M. Kaastrup,Hillerød vs Vendsyssel,2024-10-04,18,Forward,NaN,NaN
+Vendsyssel,82,13,M. Hannesbo,Hillerød vs Vendsyssel,2024-10-04,19,Midfielder,6,1
+Vendsyssel,82,20,M. Lassen,Hillerød vs Vendsyssel,2024-10-04,18,Defender,NaN,NaN
+Vendsyssel,82,20,P. Rejnhold,Hillerød vs Vendsyssel,2024-10-04,19,Defender,3,2
+Hillerød,74,11,M. Bay,Hillerød vs Vendsyssel,2024-10-04,18,Midfielder,NaN,NaN
+Hillerød,74,11,M. Veltz,Hillerød vs Vendsyssel,2024-10-04,19,Forward,10,3
+Hillerød,45,0,M. Bay,Kolding vs Hillerød,2024-10-18,18,Midfielder,NaN,NaN
+Hillerød,45,0,M. Veltz,Kolding vs Hillerød,2024-10-18,19,Forward,9,3
+Hillerød,56,4,S. Sharif,Kolding vs Hillerød,2024-10-18,18,Defender,NaN,NaN
+Hillerød,56,4,M. Etim,Kolding vs Hillerød,2024-10-18,19,Forward,9,2
+Hillerød,56,10,N. Schmidt,Kolding vs Hillerød,2024-10-18,18,Midfielder,NaN,NaN
+Hillerød,56,10,B. Kücükylidiz,Kolding vs Hillerød,2024-10-18,19,Midfielder,5,5
+Kolding,71,16,A. Nørager,Kolding vs Hillerød,2024-10-18,18,Defender,NaN,NaN
+Kolding,71,16,C. Enemark,Kolding vs Hillerød,2024-10-18,19,Defender,3,1
+Kolding,71,35,J. Musbaudeen,Kolding vs Hillerød,2024-10-18,18,Midfielder,NaN,NaN
+Kolding,71,35,V. Westh,Kolding vs Hillerød,2024-10-18,19,Midfielder,7,5
+Hillerød,70,53,T. Arndal,Kolding vs Hillerød,2024-10-18,18,Midfielder,NaN,NaN
+Hillerød,70,53,F. Karlsen,Kolding vs Hillerød,2024-10-18,19,Forward,10,3
+Kolding,80,6,A. Beck,Kolding vs Hillerød,2024-10-18,18,Midfielder,NaN,NaN
+Kolding,80,6,I. Tånnander,Kolding vs Hillerød,2024-10-18,19,Forward,9,1
+Hillerød,79,45,A. Justinussen,Kolding vs Hillerød,2024-10-18,18,Forward,NaN,NaN
+Hillerød,79,45,A. Alicino,Kolding vs Hillerød,2024-10-18,19,Midfielder,5,4
+Kolding,86,57,S. Jalal,Kolding vs Hillerød,2024-10-18,18,Midfielder,NaN,NaN
+Kolding,86,57,J. Vetter,Kolding vs Hillerød,2024-10-18,19,Defender,4,4
 Horsens,45,0,C. Tapé,Hillerød vs Horsens,2024-10-25,18,Defender,NaN,NaN
 Horsens,45,0,A. Herdonsson,Hillerød vs Horsens,2024-10-25,19,Forward,10,3
 Hillerød,65,15,B. Kücükylidiz,Hillerød vs Horsens,2024-10-25,18,Midfielder,NaN,NaN
@@ -1041,138 +1151,6 @@ Hvidovre,85,15,M. Fredslund,Hvidovre vs Hillerød,2024-08-20,18,Defender,NaN,NaN
 Hvidovre,85,15,M. Papuga,Hvidovre vs Hillerød,2024-08-20,19,Midfielder,7,5
 Hillerød,83,52,M. Etim,Hvidovre vs Hillerød,2024-08-20,18,Forward,NaN,NaN
 Hillerød,83,52,N. Schmidt,Hvidovre vs Hillerød,2024-08-20,19,Forward,10,3
-Kolding,45,0,A. Njai,Hillerød vs Kolding,2024-08-30,18,Defender,NaN,NaN
-Kolding,45,0,S. Jalal,Hillerød vs Kolding,2024-08-30,19,Midfielder,6,1
-Kolding,62,0,M. Vestergård,Hillerød vs Kolding,2024-08-30,18,Midfielder,NaN,NaN
-Kolding,62,0,F. Møller,Hillerød vs Kolding,2024-08-30,19,Midfielder,6,3
-Kolding,62,15,S. Yatéké,Hillerød vs Kolding,2024-08-30,18,Forward,NaN,NaN
-Kolding,62,15,C. Enemark,Hillerød vs Kolding,2024-08-30,19,Forward,9,3
-Kolding,70,9,M. Sarr,Hillerød vs Kolding,2024-08-30,18,Forward,NaN,NaN
-Kolding,70,9,A. Beck,Hillerød vs Kolding,2024-08-30,19,Forward,9,2
-Hillerød,45,0,T. Arndal,Hillerød vs Kolding,2024-08-30,18,Midfielder,NaN,NaN
-Hillerød,45,0,M. Veltz,Hillerød vs Kolding,2024-08-30,19,Midfielder,6,2
-Hillerød,45,0,A. Alicino,Hillerød vs Kolding,2024-08-30,18,Midfielder,NaN,NaN
-Hillerød,45,0,B. Kücükylidiz,Hillerød vs Kolding,2024-08-30,19,Midfielder,5,4
-Kolding,82,48,P. Ngongo,Hillerød vs Kolding,2024-08-30,18,Forward,NaN,NaN
-Kolding,82,48,C. Holmelund,Hillerød vs Kolding,2024-08-30,19,Forward,8,1
-Hillerød,60,51,R. Møller,Hillerød vs Kolding,2024-08-30,18,Defender,NaN,NaN
-Hillerød,60,51,G. Arndal-Lauritzen,Hillerød vs Kolding,2024-08-30,19,Defender,4,4
-Hillerød,60,56,K. Enghardt,Hillerød vs Kolding,2024-08-30,18,Defender,NaN,NaN
-Hillerød,60,56,J. Witt,Hillerød vs Kolding,2024-08-30,19,Defender,4,5
-Hillerød,70,9,S. Opoku,Hillerød vs Kolding,2024-08-30,18,Midfielder,NaN,NaN
-Hillerød,70,9,M. Bruhn,Hillerød vs Kolding,2024-08-30,19,Forward,10,3
-Vendsyssel,56,3,S. Borgelin,Vendsyssel vs Hillerød,2024-09-14,18,Forward,NaN,NaN
-Vendsyssel,56,3,L. Steffensen,Vendsyssel vs Hillerød,2024-09-14,19,Forward,9,3
-Vendsyssel,56,12,F. Børsting,Vendsyssel vs Hillerød,2024-09-14,18,Midfielder,NaN,NaN
-Vendsyssel,56,12,R. Thellufsen,Vendsyssel vs Hillerød,2024-09-14,19,Midfielder,7,5
-Hillerød,53,53,T. Arndal,Vendsyssel vs Hillerød,2024-09-14,18,Midfielder,NaN,NaN
-Hillerød,53,53,B. Kücükylidiz,Vendsyssel vs Hillerød,2024-09-14,19,Forward,9,2
-Vendsyssel,70,51,G. Mortensen,Vendsyssel vs Hillerød,2024-09-14,18,Defender,NaN,NaN
-Vendsyssel,70,51,M. Lauritsen,Vendsyssel vs Hillerød,2024-09-14,19,Defender,3,1
-Vendsyssel,71,1,L. Jensen,Vendsyssel vs Hillerød,2024-09-14,18,Forward,NaN,NaN
-Vendsyssel,71,1,M. Kaastrup,Vendsyssel vs Hillerød,2024-09-14,19,Midfielder,5,2
-Hillerød,79,14,A. Justinussen,Vendsyssel vs Hillerød,2024-09-14,18,Forward,NaN,NaN
-Hillerød,79,14,M. Bay,Vendsyssel vs Hillerød,2024-09-14,19,Forward,9,1
-Hillerød,79,15,M. Etim,Vendsyssel vs Hillerød,2024-09-14,18,Forward,NaN,NaN
-Hillerød,79,15,M. Veltz,Vendsyssel vs Hillerød,2024-09-14,19,Forward,9,3
-Vendsyssel,81,40,M. Greve,Vendsyssel vs Hillerød,2024-09-14,18,Defender,NaN,NaN
-Vendsyssel,81,40,V. Mpindi,Vendsyssel vs Hillerød,2024-09-14,19,Defender,4,5
-Hillerød,88,27,C. Allen,Vendsyssel vs Hillerød,2024-09-14,18,Defender,NaN,NaN
-Hillerød,88,27,D. Johansen,Vendsyssel vs Hillerød,2024-09-14,19,Midfielder,6,2
-Hillerød,88,28,N. Schmidt,Vendsyssel vs Hillerød,2024-09-14,18,Midfielder,NaN,NaN
-Hillerød,88,28,A. Alicino,Vendsyssel vs Hillerød,2024-09-14,19,Midfielder,6,4
-Vendsyssel,45,0,L. Jensen,Hillerød vs Vendsyssel,2024-10-04,18,Forward,NaN,NaN
-Vendsyssel,45,0,K. Kusk,Hillerød vs Vendsyssel,2024-10-04,19,Midfielder,6,2
-Vendsyssel,60,28,S. Borgelin,Hillerød vs Vendsyssel,2024-10-04,18,Forward,NaN,NaN
-Vendsyssel,60,28,L. Steffensen,Hillerød vs Vendsyssel,2024-10-04,19,Forward,9,2
-Hillerød,61,54,C. Allen,Hillerød vs Vendsyssel,2024-10-04,18,Defender,NaN,NaN
-Hillerød,61,54,S. Sharif,Hillerød vs Vendsyssel,2024-10-04,19,Midfielder,5,4
-Vendsyssel,72,23,O. Øhlenschlæger,Hillerød vs Vendsyssel,2024-10-04,18,Midfielder,NaN,NaN
-Vendsyssel,72,23,R. Thellufsen,Hillerød vs Vendsyssel,2024-10-04,19,Midfielder,7,4
-Hillerød,66,37,T. Arndal,Hillerød vs Vendsyssel,2024-10-04,18,Midfielder,NaN,NaN
-Hillerød,66,37,B. Kücükylidiz,Hillerød vs Vendsyssel,2024-10-04,19,Midfielder,7,3
-Vendsyssel,82,13,M. Kaastrup,Hillerød vs Vendsyssel,2024-10-04,18,Forward,NaN,NaN
-Vendsyssel,82,13,M. Hannesbo,Hillerød vs Vendsyssel,2024-10-04,19,Midfielder,6,1
-Vendsyssel,82,20,M. Lassen,Hillerød vs Vendsyssel,2024-10-04,18,Defender,NaN,NaN
-Vendsyssel,82,20,P. Rejnhold,Hillerød vs Vendsyssel,2024-10-04,19,Defender,3,2
-Hillerød,74,11,M. Bay,Hillerød vs Vendsyssel,2024-10-04,18,Midfielder,NaN,NaN
-Hillerød,74,11,M. Veltz,Hillerød vs Vendsyssel,2024-10-04,19,Forward,10,3
-Hillerød,45,0,M. Bay,Kolding vs Hillerød,2024-10-18,18,Midfielder,NaN,NaN
-Hillerød,45,0,M. Veltz,Kolding vs Hillerød,2024-10-18,19,Forward,9,3
-Hillerød,56,4,S. Sharif,Kolding vs Hillerød,2024-10-18,18,Defender,NaN,NaN
-Hillerød,56,4,M. Etim,Kolding vs Hillerød,2024-10-18,19,Forward,9,2
-Hillerød,56,10,N. Schmidt,Kolding vs Hillerød,2024-10-18,18,Midfielder,NaN,NaN
-Hillerød,56,10,B. Kücükylidiz,Kolding vs Hillerød,2024-10-18,19,Midfielder,5,5
-Kolding,71,16,A. Nørager,Kolding vs Hillerød,2024-10-18,18,Defender,NaN,NaN
-Kolding,71,16,C. Enemark,Kolding vs Hillerød,2024-10-18,19,Defender,3,1
-Kolding,71,35,J. Musbaudeen,Kolding vs Hillerød,2024-10-18,18,Midfielder,NaN,NaN
-Kolding,71,35,V. Westh,Kolding vs Hillerød,2024-10-18,19,Midfielder,7,5
-Hillerød,70,53,T. Arndal,Kolding vs Hillerød,2024-10-18,18,Midfielder,NaN,NaN
-Hillerød,70,53,F. Karlsen,Kolding vs Hillerød,2024-10-18,19,Forward,10,3
-Kolding,80,6,A. Beck,Kolding vs Hillerød,2024-10-18,18,Midfielder,NaN,NaN
-Kolding,80,6,I. Tånnander,Kolding vs Hillerød,2024-10-18,19,Forward,9,1
-Hillerød,79,45,A. Justinussen,Kolding vs Hillerød,2024-10-18,18,Forward,NaN,NaN
-Hillerød,79,45,A. Alicino,Kolding vs Hillerød,2024-10-18,19,Midfielder,5,4
-Kolding,86,57,S. Jalal,Kolding vs Hillerød,2024-10-18,18,Midfielder,NaN,NaN
-Kolding,86,57,J. Vetter,Kolding vs Hillerød,2024-10-18,19,Defender,4,4
-Hobro,71,23,V. Rasmussen,Roskilde vs Hobro,2024-08-10,18,Midfielder,NaN,NaN
-Hobro,71,23,T. Hansen,Roskilde vs Hobro,2024-08-10,19,Midfielder,6,4
-Hobro,71,25,J. Cornelius,Roskilde vs Hobro,2024-08-10,18,Forward,NaN,NaN
-Hobro,71,25,J. Sneftrup,Roskilde vs Hobro,2024-08-10,19,Forward,9,1
-Roskilde,63,34,S. Baskaya,Roskilde vs Hobro,2024-08-10,18,Midfielder,NaN,NaN
-Roskilde,63,34,E. Nielsen,Roskilde vs Hobro,2024-08-10,19,Forward,NaN,0
-Hobro,88,34,M. Kristensen,Roskilde vs Hobro,2024-08-10,18,Midfielder,NaN,NaN
-Hobro,88,34,O. Overgaard,Roskilde vs Hobro,2024-08-10,19,Midfielder,6,5
-Roskilde,74,25,A. Taranis,Roskilde vs Hobro,2024-08-10,18,Forward,NaN,NaN
-Roskilde,74,25,M. Kristensen,Roskilde vs Hobro,2024-08-10,19,Midfielder,NaN,0
-Roskilde,74,24,K. Nyegaard,Roskilde vs Hobro,2024-08-10,18,Midfielder,NaN,NaN
-Roskilde,74,24,N. Vesterbæk,Roskilde vs Hobro,2024-08-10,19,Defender,NaN,0
-Hobro,93,15,L. Klitten,Roskilde vs Hobro,2024-08-10,18,Defender,NaN,NaN
-Hobro,93,15,O. Meedom,Roskilde vs Hobro,2024-08-10,19,Midfielder,7,1
-Roskilde,84,12,R. Arabaci,Roskilde vs Hobro,2024-08-10,18,Forward,NaN,NaN
-Roskilde,84,12,J. Damkjær,Roskilde vs Hobro,2024-08-10,19,Midfielder,NaN,0
-Roskilde,84,11,A. Maarup,Roskilde vs Hobro,2024-08-10,18,Midfielder,NaN,NaN
-Roskilde,84,11,M. Winkel,Roskilde vs Hobro,2024-08-10,19,Midfielder,NaN,0
-Hobro,21,46,J. Bøge,Hobro vs Hvidovre,2024-08-17,18,Defender,NaN,NaN
-Hobro,21,46,M. Jacobsen,Hobro vs Hvidovre,2024-08-17,19,Defender,4,3
-Hvidovre,45,0,J. Adjei-Broni,Hobro vs Hvidovre,2024-08-17,18,Forward,NaN,NaN
-Hvidovre,45,0,J. Singh,Hobro vs Hvidovre,2024-08-17,19,Forward,8,2
-Hobro,62,15,V. Rasmussen,Hobro vs Hvidovre,2024-08-17,18,Midfielder,NaN,NaN
-Hobro,62,15,T. Hansen,Hobro vs Hvidovre,2024-08-17,19,Midfielder,6,3
-Hobro,62,20,J. Cornelius,Hobro vs Hvidovre,2024-08-17,18,Forward,NaN,NaN
-Hobro,62,20,M. Compaoré,Hobro vs Hvidovre,2024-08-17,19,Midfielder,7,2
-Hvidovre,65,15,A. Smed,Hobro vs Hvidovre,2024-08-17,18,Midfielder,NaN,NaN
-Hvidovre,65,15,M. Fredslund,Hobro vs Hvidovre,2024-08-17,19,Midfielder,6,4
-Hvidovre,65,27,M. Kaalund,Hobro vs Hvidovre,2024-08-17,18,Midfielder,NaN,NaN
-Hvidovre,65,27,M. Spelmann,Hobro vs Hvidovre,2024-08-17,19,Midfielder,7,4
-Hvidovre,71,47,F. Høgh,Hobro vs Hvidovre,2024-08-17,18,Forward,NaN,NaN
-Hvidovre,71,47,S. Makienok,Hobro vs Hvidovre,2024-08-17,19,Forward,9,3
-Hobro,80,9,O. Klitten,Hobro vs Hvidovre,2024-08-17,18,Forward,NaN,NaN
-Hobro,80,9,M. Nielsen,Hobro vs Hvidovre,2024-08-17,19,Midfielder,7,2
-Hobro,80,15,L. Klitten,Hobro vs Hvidovre,2024-08-17,18,Defender,NaN,NaN
-Hobro,80,15,O. Dorph,Hobro vs Hvidovre,2024-08-17,19,Midfielder,7,4
-Hvidovre,80,6,J. Gemmer,Hobro vs Hvidovre,2024-08-17,18,Midfielder,NaN,NaN
-Hvidovre,80,6,E. Jensen,Hobro vs Hvidovre,2024-08-17,19,Midfielder,7,5
-Vendsyssel,45,0,M. Haarup,Vendsyssel vs Hobro,2024-08-21,18,Defender,NaN,NaN
-Vendsyssel,45,0,G. Mortensen,Vendsyssel vs Hobro,2024-08-21,19,Defender,3,1
-Vendsyssel,59,46,L. Jensen,Vendsyssel vs Hobro,2024-08-21,18,Forward,NaN,NaN
-Vendsyssel,59,46,M. Kaastrup,Vendsyssel vs Hobro,2024-08-21,19,Forward,10,3
-Hobro,58,33,M. Compaoré,Vendsyssel vs Hobro,2024-08-21,18,Forward,NaN,NaN
-Hobro,58,33,J. Cornelius,Vendsyssel vs Hobro,2024-08-21,19,Forward,9,1
-Vendsyssel,67,59,A. Ahmad,Vendsyssel vs Hobro,2024-08-21,18,Forward,NaN,NaN
-Vendsyssel,67,59,R. Thellufsen,Vendsyssel vs Hobro,2024-08-21,19,Midfielder,6,2
-Vendsyssel,68,6,F. Børsting,Vendsyssel vs Hobro,2024-08-21,18,Midfielder,NaN,NaN
-Vendsyssel,68,6,M. Hannesbo,Vendsyssel vs Hobro,2024-08-21,19,Midfielder,7,1
-Hobro,68,51,V. Rasmussen,Vendsyssel vs Hobro,2024-08-21,18,Midfielder,NaN,NaN
-Hobro,68,51,O. Overgaard,Vendsyssel vs Hobro,2024-08-21,19,Midfielder,6,3
-Hobro,68,54,M. Kristensen,Vendsyssel vs Hobro,2024-08-21,18,Midfielder,NaN,NaN
-Hobro,68,54,T. Hansen,Vendsyssel vs Hobro,2024-08-21,19,Midfielder,6,2
-Vendsyssel,75,32,L. Steffensen,Vendsyssel vs Hobro,2024-08-21,18,Forward,NaN,NaN
-Vendsyssel,75,32,S. Borgelin,Vendsyssel vs Hobro,2024-08-21,19,Forward,9,3
-Hobro,87,16,F. Dietz,Vendsyssel vs Hobro,2024-08-21,18,Defender,NaN,NaN
-Hobro,87,16,O. Dorph,Vendsyssel vs Hobro,2024-08-21,19,Midfielder,5,4
-Hobro,87,17,T. Hansen,Vendsyssel vs Hobro,2024-08-21,18,Midfielder,NaN,NaN
-Hobro,87,17,M. Nielsen,Vendsyssel vs Hobro,2024-08-21,19,Midfielder,7,5
 Hobro,61,6,L. Klitten,Hobro vs OB,2024-08-25,18,Defender,NaN,NaN
 Hobro,61,6,M. Nielsen,Hobro vs OB,2024-08-25,19,Midfielder,7,4
 Hobro,70,8,F. Christensen,Hobro vs OB,2024-08-25,18,Forward,NaN,NaN
@@ -1249,6 +1227,96 @@ Hobro,85,23,S. Andreasen,Hobro vs Roskilde,2024-10-04,18,Forward,NaN,NaN
 Hobro,85,23,M. Compaoré,Hobro vs Roskilde,2024-10-04,19,Forward,9,2
 Roskilde,84,37,A. Jensen,Hobro vs Roskilde,2024-10-04,18,Forward,NaN,NaN
 Roskilde,84,37,S. Baskaya,Hobro vs Roskilde,2024-10-04,19,Midfielder,6,2
+Hobro,71,23,V. Rasmussen,Roskilde vs Hobro,2024-08-10,18,Midfielder,NaN,NaN
+Hobro,71,23,T. Hansen,Roskilde vs Hobro,2024-08-10,19,Midfielder,6,4
+Hobro,71,25,J. Cornelius,Roskilde vs Hobro,2024-08-10,18,Forward,NaN,NaN
+Hobro,71,25,J. Sneftrup,Roskilde vs Hobro,2024-08-10,19,Forward,9,1
+Roskilde,63,34,S. Baskaya,Roskilde vs Hobro,2024-08-10,18,Midfielder,NaN,NaN
+Roskilde,63,34,E. Nielsen,Roskilde vs Hobro,2024-08-10,19,Forward,NaN,0
+Hobro,88,34,M. Kristensen,Roskilde vs Hobro,2024-08-10,18,Midfielder,NaN,NaN
+Hobro,88,34,O. Overgaard,Roskilde vs Hobro,2024-08-10,19,Midfielder,6,5
+Roskilde,74,25,A. Taranis,Roskilde vs Hobro,2024-08-10,18,Forward,NaN,NaN
+Roskilde,74,25,M. Kristensen,Roskilde vs Hobro,2024-08-10,19,Midfielder,NaN,0
+Roskilde,74,24,K. Nyegaard,Roskilde vs Hobro,2024-08-10,18,Midfielder,NaN,NaN
+Roskilde,74,24,N. Vesterbæk,Roskilde vs Hobro,2024-08-10,19,Defender,NaN,0
+Hobro,93,15,L. Klitten,Roskilde vs Hobro,2024-08-10,18,Defender,NaN,NaN
+Hobro,93,15,O. Meedom,Roskilde vs Hobro,2024-08-10,19,Midfielder,7,1
+Roskilde,84,12,R. Arabaci,Roskilde vs Hobro,2024-08-10,18,Forward,NaN,NaN
+Roskilde,84,12,J. Damkjær,Roskilde vs Hobro,2024-08-10,19,Midfielder,NaN,0
+Roskilde,84,11,A. Maarup,Roskilde vs Hobro,2024-08-10,18,Midfielder,NaN,NaN
+Roskilde,84,11,M. Winkel,Roskilde vs Hobro,2024-08-10,19,Midfielder,NaN,0
+Hobro,21,46,J. Bøge,Hobro vs Hvidovre,2024-08-17,18,Defender,NaN,NaN
+Hobro,21,46,M. Jacobsen,Hobro vs Hvidovre,2024-08-17,19,Defender,4,3
+Hvidovre,45,0,J. Adjei-Broni,Hobro vs Hvidovre,2024-08-17,18,Forward,NaN,NaN
+Hvidovre,45,0,J. Singh,Hobro vs Hvidovre,2024-08-17,19,Forward,8,2
+Hobro,62,15,V. Rasmussen,Hobro vs Hvidovre,2024-08-17,18,Midfielder,NaN,NaN
+Hobro,62,15,T. Hansen,Hobro vs Hvidovre,2024-08-17,19,Midfielder,6,3
+Hobro,62,20,J. Cornelius,Hobro vs Hvidovre,2024-08-17,18,Forward,NaN,NaN
+Hobro,62,20,M. Compaoré,Hobro vs Hvidovre,2024-08-17,19,Midfielder,7,2
+Hvidovre,65,15,A. Smed,Hobro vs Hvidovre,2024-08-17,18,Midfielder,NaN,NaN
+Hvidovre,65,15,M. Fredslund,Hobro vs Hvidovre,2024-08-17,19,Midfielder,6,4
+Hvidovre,65,27,M. Kaalund,Hobro vs Hvidovre,2024-08-17,18,Midfielder,NaN,NaN
+Hvidovre,65,27,M. Spelmann,Hobro vs Hvidovre,2024-08-17,19,Midfielder,7,4
+Hvidovre,71,47,F. Høgh,Hobro vs Hvidovre,2024-08-17,18,Forward,NaN,NaN
+Hvidovre,71,47,S. Makienok,Hobro vs Hvidovre,2024-08-17,19,Forward,9,3
+Hobro,80,9,O. Klitten,Hobro vs Hvidovre,2024-08-17,18,Forward,NaN,NaN
+Hobro,80,9,M. Nielsen,Hobro vs Hvidovre,2024-08-17,19,Midfielder,7,2
+Hobro,80,15,L. Klitten,Hobro vs Hvidovre,2024-08-17,18,Defender,NaN,NaN
+Hobro,80,15,O. Dorph,Hobro vs Hvidovre,2024-08-17,19,Midfielder,7,4
+Hvidovre,80,6,J. Gemmer,Hobro vs Hvidovre,2024-08-17,18,Midfielder,NaN,NaN
+Hvidovre,80,6,E. Jensen,Hobro vs Hvidovre,2024-08-17,19,Midfielder,7,5
+Vendsyssel,45,0,M. Haarup,Vendsyssel vs Hobro,2024-08-21,18,Defender,NaN,NaN
+Vendsyssel,45,0,G. Mortensen,Vendsyssel vs Hobro,2024-08-21,19,Defender,3,1
+Vendsyssel,59,46,L. Jensen,Vendsyssel vs Hobro,2024-08-21,18,Forward,NaN,NaN
+Vendsyssel,59,46,M. Kaastrup,Vendsyssel vs Hobro,2024-08-21,19,Forward,10,3
+Hobro,58,33,M. Compaoré,Vendsyssel vs Hobro,2024-08-21,18,Forward,NaN,NaN
+Hobro,58,33,J. Cornelius,Vendsyssel vs Hobro,2024-08-21,19,Forward,9,1
+Vendsyssel,67,59,A. Ahmad,Vendsyssel vs Hobro,2024-08-21,18,Forward,NaN,NaN
+Vendsyssel,67,59,R. Thellufsen,Vendsyssel vs Hobro,2024-08-21,19,Midfielder,6,2
+Vendsyssel,68,6,F. Børsting,Vendsyssel vs Hobro,2024-08-21,18,Midfielder,NaN,NaN
+Vendsyssel,68,6,M. Hannesbo,Vendsyssel vs Hobro,2024-08-21,19,Midfielder,7,1
+Hobro,68,51,V. Rasmussen,Vendsyssel vs Hobro,2024-08-21,18,Midfielder,NaN,NaN
+Hobro,68,51,O. Overgaard,Vendsyssel vs Hobro,2024-08-21,19,Midfielder,6,3
+Hobro,68,54,M. Kristensen,Vendsyssel vs Hobro,2024-08-21,18,Midfielder,NaN,NaN
+Hobro,68,54,T. Hansen,Vendsyssel vs Hobro,2024-08-21,19,Midfielder,6,2
+Vendsyssel,75,32,L. Steffensen,Vendsyssel vs Hobro,2024-08-21,18,Forward,NaN,NaN
+Vendsyssel,75,32,S. Borgelin,Vendsyssel vs Hobro,2024-08-21,19,Forward,9,3
+Hobro,87,16,F. Dietz,Vendsyssel vs Hobro,2024-08-21,18,Defender,NaN,NaN
+Hobro,87,16,O. Dorph,Vendsyssel vs Hobro,2024-08-21,19,Midfielder,5,4
+Hobro,87,17,T. Hansen,Vendsyssel vs Hobro,2024-08-21,18,Midfielder,NaN,NaN
+Hobro,87,17,M. Nielsen,Vendsyssel vs Hobro,2024-08-21,19,Midfielder,7,5
+Hvidovre,57,17,M. Knudsen,Hvidovre vs Horsens,2024-08-30,18,Midfielder,NaN,NaN
+Hvidovre,57,17,M. Spelmann,Hvidovre vs Horsens,2024-08-30,19,Midfielder,6,3
+Horsens,66,9,F. Christensen,Hvidovre vs Horsens,2024-08-30,18,Midfielder,NaN,NaN
+Horsens,66,9,M. Opondo,Hvidovre vs Horsens,2024-08-30,19,Midfielder,7,3
+Horsens,66,5,S. Pingel,Hvidovre vs Horsens,2024-08-30,18,Forward,NaN,NaN
+Horsens,66,5,M. Egho,Hvidovre vs Horsens,2024-08-30,19,Forward,9,2
+Horsens,73,15,S. Ngabo,Hvidovre vs Horsens,2024-08-30,18,Midfielder,NaN,NaN
+Horsens,73,15,J. Madsen,Hvidovre vs Horsens,2024-08-30,19,Forward,9,2
+Hvidovre,72,3,J. Singh,Hvidovre vs Horsens,2024-08-30,18,Forward,NaN,NaN
+Hvidovre,72,3,J. Adjei-Broni,Hvidovre vs Horsens,2024-08-30,19,Forward,8,2
+Hvidovre,76,40,M. Kaalund,Hvidovre vs Horsens,2024-08-30,18,Midfielder,NaN,NaN
+Hvidovre,76,40,M. Andreasen,Hvidovre vs Horsens,2024-08-30,19,Midfielder,6,3
+Horsens,83,50,M. Kallesøe,Hvidovre vs Horsens,2024-08-30,18,Defender,NaN,NaN
+Horsens,83,50,F. Roslyng,Hvidovre vs Horsens,2024-08-30,19,Defender,3,2
+Hvidovre,76,45,A. Smed,Hvidovre vs Horsens,2024-08-30,18,Midfielder,NaN,NaN
+Hvidovre,76,45,M. Papuga,Hvidovre vs Horsens,2024-08-30,19,Forward,9,2
+OB,58,0,M. Jensen,Horsens vs OB,2024-09-14,18,Forward,NaN,NaN
+OB,58,0,W. Martin,Horsens vs OB,2024-09-14,19,Midfielder,6,5
+OB,58,9,A. Manneh,Horsens vs OB,2024-09-14,18,Midfielder,NaN,NaN
+OB,58,9,T. Trybull,Horsens vs OB,2024-09-14,19,Midfielder,6,4
+OB,63,29,B. Paulsen,Horsens vs OB,2024-09-14,18,Defender,NaN,NaN
+OB,63,29,T. Slotsager,Horsens vs OB,2024-09-14,19,Midfielder,6,4
+Horsens,64,36,A. Herdonsson,Horsens vs OB,2024-09-14,18,Midfielder,NaN,NaN
+Horsens,64,36,S. Pingel,Horsens vs OB,2024-09-14,19,Forward,10,3
+Horsens,64,42,K. Karikari,Horsens vs OB,2024-09-14,18,Forward,NaN,NaN
+Horsens,64,42,F. Christensen,Horsens vs OB,2024-09-14,19,Midfielder,5,5
+Horsens,64,58,O. Kjærgaard,Horsens vs OB,2024-09-14,18,Midfielder,NaN,NaN
+Horsens,64,58,J. Madsen,Horsens vs OB,2024-09-14,19,Midfielder,6,4
+OB,85,7,L. Deedson,Horsens vs OB,2024-09-14,18,Forward,NaN,NaN
+OB,85,7,E. Hansborg-Sørensen,Horsens vs OB,2024-09-14,19,Midfielder,6,5
+Horsens,82,19,S. Ngabo,Horsens vs OB,2024-09-14,18,Midfielder,NaN,NaN
+Horsens,82,19,M. Hyseni,Horsens vs OB,2024-09-14,19,Forward,10,3
 Hvidovre,56,3,M. Spelmann,Horsens vs Hvidovre,2024-10-20,18,Midfielder,NaN,NaN
 Hvidovre,56,3,S. Makienok,Horsens vs Hvidovre,2024-10-20,19,Defender,3,2
 Horsens,61,59,K. Karikari,Horsens vs Hvidovre,2024-10-20,18,Forward,NaN,NaN
@@ -1321,82 +1389,6 @@ Horsens,59,40,J. Madsen,Horsens vs Vendsyssel,2024-08-24,18,Midfielder,NaN,NaN
 Horsens,59,40,O. Kouassi,Horsens vs Vendsyssel,2024-08-24,19,Midfielder,7,1
 Horsens,74,10,S. Ngabo,Horsens vs Vendsyssel,2024-08-24,18,Midfielder,NaN,NaN
 Horsens,74,10,M. Hyseni,Horsens vs Vendsyssel,2024-08-24,19,Forward,9,1
-Hvidovre,57,17,M. Knudsen,Hvidovre vs Horsens,2024-08-30,18,Midfielder,NaN,NaN
-Hvidovre,57,17,M. Spelmann,Hvidovre vs Horsens,2024-08-30,19,Midfielder,6,3
-Horsens,66,9,F. Christensen,Hvidovre vs Horsens,2024-08-30,18,Midfielder,NaN,NaN
-Horsens,66,9,M. Opondo,Hvidovre vs Horsens,2024-08-30,19,Midfielder,7,3
-Horsens,66,5,S. Pingel,Hvidovre vs Horsens,2024-08-30,18,Forward,NaN,NaN
-Horsens,66,5,M. Egho,Hvidovre vs Horsens,2024-08-30,19,Forward,9,2
-Horsens,73,15,S. Ngabo,Hvidovre vs Horsens,2024-08-30,18,Midfielder,NaN,NaN
-Horsens,73,15,J. Madsen,Hvidovre vs Horsens,2024-08-30,19,Forward,9,2
-Hvidovre,72,3,J. Singh,Hvidovre vs Horsens,2024-08-30,18,Forward,NaN,NaN
-Hvidovre,72,3,J. Adjei-Broni,Hvidovre vs Horsens,2024-08-30,19,Forward,8,2
-Hvidovre,76,40,M. Kaalund,Hvidovre vs Horsens,2024-08-30,18,Midfielder,NaN,NaN
-Hvidovre,76,40,M. Andreasen,Hvidovre vs Horsens,2024-08-30,19,Midfielder,6,3
-Horsens,83,50,M. Kallesøe,Hvidovre vs Horsens,2024-08-30,18,Defender,NaN,NaN
-Horsens,83,50,F. Roslyng,Hvidovre vs Horsens,2024-08-30,19,Defender,3,2
-Hvidovre,76,45,A. Smed,Hvidovre vs Horsens,2024-08-30,18,Midfielder,NaN,NaN
-Hvidovre,76,45,M. Papuga,Hvidovre vs Horsens,2024-08-30,19,Forward,9,2
-OB,58,0,M. Jensen,Horsens vs OB,2024-09-14,18,Forward,NaN,NaN
-OB,58,0,W. Martin,Horsens vs OB,2024-09-14,19,Midfielder,6,5
-OB,58,9,A. Manneh,Horsens vs OB,2024-09-14,18,Midfielder,NaN,NaN
-OB,58,9,T. Trybull,Horsens vs OB,2024-09-14,19,Midfielder,6,4
-OB,63,29,B. Paulsen,Horsens vs OB,2024-09-14,18,Defender,NaN,NaN
-OB,63,29,T. Slotsager,Horsens vs OB,2024-09-14,19,Midfielder,6,4
-Horsens,64,36,A. Herdonsson,Horsens vs OB,2024-09-14,18,Midfielder,NaN,NaN
-Horsens,64,36,S. Pingel,Horsens vs OB,2024-09-14,19,Forward,10,3
-Horsens,64,42,K. Karikari,Horsens vs OB,2024-09-14,18,Forward,NaN,NaN
-Horsens,64,42,F. Christensen,Horsens vs OB,2024-09-14,19,Midfielder,5,5
-Horsens,64,58,O. Kjærgaard,Horsens vs OB,2024-09-14,18,Midfielder,NaN,NaN
-Horsens,64,58,J. Madsen,Horsens vs OB,2024-09-14,19,Midfielder,6,4
-OB,85,7,L. Deedson,Horsens vs OB,2024-09-14,18,Forward,NaN,NaN
-OB,85,7,E. Hansborg-Sørensen,Horsens vs OB,2024-09-14,19,Midfielder,6,5
-Horsens,82,19,S. Ngabo,Horsens vs OB,2024-09-14,18,Midfielder,NaN,NaN
-Horsens,82,19,M. Hyseni,Horsens vs OB,2024-09-14,19,Forward,10,3
-Vendsyssel,45,0,B. Clemmensen,Hvidovre vs Vendsyssel,2024-10-26,18,Defender,NaN,NaN
-Vendsyssel,45,0,M. Hannesbo,Hvidovre vs Vendsyssel,2024-10-26,19,Forward,8,1
-Vendsyssel,56,9,K. Kusk,Hvidovre vs Vendsyssel,2024-10-26,18,Midfielder,NaN,NaN
-Vendsyssel,56,9,M. Kaastrup,Hvidovre vs Vendsyssel,2024-10-26,19,Midfielder,7,3
-Vendsyssel,65,45,L. Steffensen,Hvidovre vs Vendsyssel,2024-10-26,18,Forward,NaN,NaN
-Vendsyssel,65,45,S. Borgelin,Hvidovre vs Vendsyssel,2024-10-26,19,Forward,9,3
-Hvidovre,56,28,N. Clausen,Hvidovre vs Vendsyssel,2024-10-26,18,Defender,NaN,NaN
-Hvidovre,56,28,M. Fredslund,Hvidovre vs Vendsyssel,2024-10-26,19,Defender,3,1
-Hvidovre,56,27,J. Gemmer,Hvidovre vs Vendsyssel,2024-10-26,18,Midfielder,NaN,NaN
-Hvidovre,56,27,M. Spelmann,Hvidovre vs Vendsyssel,2024-10-26,19,Midfielder,5,3
-Hvidovre,74,39,F. Høgh,Hvidovre vs Vendsyssel,2024-10-26,18,Forward,NaN,NaN
-Hvidovre,74,39,E. Jensen,Hvidovre vs Vendsyssel,2024-10-26,19,Midfielder,6,1
-Vendsyssel,77,11,M. Lassen,Hvidovre vs Vendsyssel,2024-10-26,18,Defender,NaN,NaN
-Vendsyssel,77,11,L. Jensen,Hvidovre vs Vendsyssel,2024-10-26,19,Midfielder,6,2
-Hvidovre,55,49,J. Adjei-Broni,Kolding vs Hvidovre,2024-07-26,18,Forward,NaN,NaN
-Hvidovre,55,49,F. Høgh,Kolding vs Hvidovre,2024-07-26,19,Forward,10,3
-Kolding,62,22,I. Tånnander,Kolding vs Hvidovre,2024-07-26,18,Midfielder,NaN,NaN
-Kolding,62,22,S. Jalal,Kolding vs Hvidovre,2024-07-26,19,Midfielder,NaN,0
-Kolding,62,5,C. Palm,Kolding vs Hvidovre,2024-07-26,18,Midfielder,NaN,NaN
-Kolding,62,5,F. Møller,Kolding vs Hvidovre,2024-07-26,19,Midfielder,NaN,0
-Kolding,62,27,A. Beck,Kolding vs Hvidovre,2024-07-26,18,Midfielder,NaN,NaN
-Kolding,62,27,S. Yatéké,Kolding vs Hvidovre,2024-07-26,19,Forward,NaN,0
-Hvidovre,68,0,M. Gehrt,Kolding vs Hvidovre,2024-07-26,18,Midfielder,NaN,NaN
-Hvidovre,68,0,M. Fredslund,Kolding vs Hvidovre,2024-07-26,19,Midfielder,5,3
-Hvidovre,68,5,J. Gemmer,Kolding vs Hvidovre,2024-07-26,18,Midfielder,NaN,NaN
-Hvidovre,68,5,M. Olsen,Kolding vs Hvidovre,2024-07-26,19,Defender,3,2
-Hvidovre,40,15,M. Kaalund,OB vs Hvidovre,2024-08-03,18,Midfielder,NaN,NaN
-Hvidovre,40,15,M. Kiilerich,OB vs Hvidovre,2024-08-03,19,Midfielder,5,4
-Hvidovre,40,19,M. Fredslund,OB vs Hvidovre,2024-08-03,18,Defender,NaN,NaN
-Hvidovre,40,19,M. Spelmann,OB vs Hvidovre,2024-08-03,19,Midfielder,7,5
-OB,60,8,N. Mickelson,OB vs Hvidovre,2024-08-03,18,Defender,NaN,NaN
-OB,60,8,G. Grubbe,OB vs Hvidovre,2024-08-03,19,Defender,3,1
-OB,60,42,M. Jensen,OB vs Hvidovre,2024-08-03,18,Forward,NaN,NaN
-OB,60,42,E. Hansborg-Sørensen,OB vs Hvidovre,2024-08-03,19,Midfielder,7,2
-Hvidovre,69,6,A. Smed,OB vs Hvidovre,2024-08-03,18,Midfielder,NaN,NaN
-Hvidovre,69,6,S. Makienok,OB vs Hvidovre,2024-08-03,19,Forward,9,1
-OB,74,10,L. Kjerrumgaard,OB vs Hvidovre,2024-08-03,18,Forward,NaN,NaN
-OB,74,10,W. Martin,OB vs Hvidovre,2024-08-03,19,Forward,9,3
-OB,85,20,M. Ejdum,OB vs Hvidovre,2024-08-03,18,Midfielder,NaN,NaN
-OB,85,20,T. Slotsager,OB vs Hvidovre,2024-08-03,19,Defender,4,5
-Hvidovre,85,22,N. Clausen,OB vs Hvidovre,2024-08-03,18,Defender,NaN,NaN
-Hvidovre,85,22,M. Lysholm,OB vs Hvidovre,2024-08-03,19,Forward,9,2
-Hvidovre,85,20,L. Qamili,OB vs Hvidovre,2024-08-03,18,Forward,NaN,NaN
-Hvidovre,85,20,J. Adjei-Broni,OB vs Hvidovre,2024-08-03,19,Defender,3,1
 Roskilde,8,24,E. Nielsen,Roskilde vs Hvidovre,2024-09-13,18,Forward,NaN,NaN
 Roskilde,8,24,A. Jensen,Roskilde vs Hvidovre,2024-09-13,19,Midfielder,6,3
 Hvidovre,45,0,M. Fredslund,Roskilde vs Hvidovre,2024-09-13,18,Defender,NaN,NaN
@@ -1441,6 +1433,82 @@ Kolding,85,36,C. Enemark,Hvidovre vs Kolding,2024-10-07,18,Defender,NaN,NaN
 Kolding,85,36,J. Vetter,Hvidovre vs Kolding,2024-10-07,19,Midfielder,5,1
 Hvidovre,75,34,A. Smed,Hvidovre vs Kolding,2024-10-07,18,Midfielder,NaN,NaN
 Hvidovre,75,34,J. Adjei-Broni,Hvidovre vs Kolding,2024-10-07,19,Forward,8,2
+Vendsyssel,45,0,B. Clemmensen,Hvidovre vs Vendsyssel,2024-10-26,18,Defender,NaN,NaN
+Vendsyssel,45,0,M. Hannesbo,Hvidovre vs Vendsyssel,2024-10-26,19,Forward,8,1
+Vendsyssel,56,9,K. Kusk,Hvidovre vs Vendsyssel,2024-10-26,18,Midfielder,NaN,NaN
+Vendsyssel,56,9,M. Kaastrup,Hvidovre vs Vendsyssel,2024-10-26,19,Midfielder,7,3
+Vendsyssel,65,45,L. Steffensen,Hvidovre vs Vendsyssel,2024-10-26,18,Forward,NaN,NaN
+Vendsyssel,65,45,S. Borgelin,Hvidovre vs Vendsyssel,2024-10-26,19,Forward,9,3
+Hvidovre,56,28,N. Clausen,Hvidovre vs Vendsyssel,2024-10-26,18,Defender,NaN,NaN
+Hvidovre,56,28,M. Fredslund,Hvidovre vs Vendsyssel,2024-10-26,19,Defender,3,1
+Hvidovre,56,27,J. Gemmer,Hvidovre vs Vendsyssel,2024-10-26,18,Midfielder,NaN,NaN
+Hvidovre,56,27,M. Spelmann,Hvidovre vs Vendsyssel,2024-10-26,19,Midfielder,5,3
+Hvidovre,74,39,F. Høgh,Hvidovre vs Vendsyssel,2024-10-26,18,Forward,NaN,NaN
+Hvidovre,74,39,E. Jensen,Hvidovre vs Vendsyssel,2024-10-26,19,Midfielder,6,1
+Vendsyssel,77,11,M. Lassen,Hvidovre vs Vendsyssel,2024-10-26,18,Defender,NaN,NaN
+Vendsyssel,77,11,L. Jensen,Hvidovre vs Vendsyssel,2024-10-26,19,Midfielder,6,2
+Hvidovre,55,49,J. Adjei-Broni,Kolding vs Hvidovre,2024-07-26,18,Forward,NaN,NaN
+Hvidovre,55,49,F. Høgh,Kolding vs Hvidovre,2024-07-26,19,Forward,10,3
+Kolding,62,22,I. Tånnander,Kolding vs Hvidovre,2024-07-26,18,Midfielder,NaN,NaN
+Kolding,62,22,S. Jalal,Kolding vs Hvidovre,2024-07-26,19,Midfielder,NaN,0
+Kolding,62,5,C. Palm,Kolding vs Hvidovre,2024-07-26,18,Midfielder,NaN,NaN
+Kolding,62,5,F. Møller,Kolding vs Hvidovre,2024-07-26,19,Midfielder,NaN,0
+Kolding,62,27,A. Beck,Kolding vs Hvidovre,2024-07-26,18,Midfielder,NaN,NaN
+Kolding,62,27,S. Yatéké,Kolding vs Hvidovre,2024-07-26,19,Forward,NaN,0
+Hvidovre,68,0,M. Gehrt,Kolding vs Hvidovre,2024-07-26,18,Midfielder,NaN,NaN
+Hvidovre,68,0,M. Fredslund,Kolding vs Hvidovre,2024-07-26,19,Midfielder,5,3
+Hvidovre,68,5,J. Gemmer,Kolding vs Hvidovre,2024-07-26,18,Midfielder,NaN,NaN
+Hvidovre,68,5,M. Olsen,Kolding vs Hvidovre,2024-07-26,19,Defender,3,2
+Hvidovre,40,15,M. Kaalund,OB vs Hvidovre,2024-08-03,18,Midfielder,NaN,NaN
+Hvidovre,40,15,M. Kiilerich,OB vs Hvidovre,2024-08-03,19,Midfielder,5,4
+Hvidovre,40,19,M. Fredslund,OB vs Hvidovre,2024-08-03,18,Defender,NaN,NaN
+Hvidovre,40,19,M. Spelmann,OB vs Hvidovre,2024-08-03,19,Midfielder,7,5
+OB,60,8,N. Mickelson,OB vs Hvidovre,2024-08-03,18,Defender,NaN,NaN
+OB,60,8,G. Grubbe,OB vs Hvidovre,2024-08-03,19,Defender,3,1
+OB,60,42,M. Jensen,OB vs Hvidovre,2024-08-03,18,Forward,NaN,NaN
+OB,60,42,E. Hansborg-Sørensen,OB vs Hvidovre,2024-08-03,19,Midfielder,7,2
+Hvidovre,69,6,A. Smed,OB vs Hvidovre,2024-08-03,18,Midfielder,NaN,NaN
+Hvidovre,69,6,S. Makienok,OB vs Hvidovre,2024-08-03,19,Forward,9,1
+OB,74,10,L. Kjerrumgaard,OB vs Hvidovre,2024-08-03,18,Forward,NaN,NaN
+OB,74,10,W. Martin,OB vs Hvidovre,2024-08-03,19,Forward,9,3
+OB,85,20,M. Ejdum,OB vs Hvidovre,2024-08-03,18,Midfielder,NaN,NaN
+OB,85,20,T. Slotsager,OB vs Hvidovre,2024-08-03,19,Defender,4,5
+Hvidovre,85,22,N. Clausen,OB vs Hvidovre,2024-08-03,18,Defender,NaN,NaN
+Hvidovre,85,22,M. Lysholm,OB vs Hvidovre,2024-08-03,19,Forward,9,2
+Hvidovre,85,20,L. Qamili,OB vs Hvidovre,2024-08-03,18,Forward,NaN,NaN
+Hvidovre,85,20,J. Adjei-Broni,OB vs Hvidovre,2024-08-03,19,Defender,3,1
+Roskilde,61,36,R. Arabaci,Kolding vs Roskilde,2024-08-24,18,Forward,NaN,NaN
+Roskilde,61,36,A. Maarup,Kolding vs Roskilde,2024-08-24,19,Midfielder,6,5
+Roskilde,63,15,V. Montell,Kolding vs Roskilde,2024-08-24,18,Defender,NaN,NaN
+Roskilde,63,15,N. Vesterbæk,Kolding vs Roskilde,2024-08-24,19,Defender,4,5
+Kolding,61,2,F. Møller,Kolding vs Roskilde,2024-08-24,18,Midfielder,NaN,NaN
+Kolding,61,2,B. Kvist,Kolding vs Roskilde,2024-08-24,19,Forward,9,1
+Kolding,69,29,S. Jalal,Kolding vs Roskilde,2024-08-24,18,Midfielder,NaN,NaN
+Kolding,69,29,M. Sarr,Kolding vs Roskilde,2024-08-24,19,Midfielder,6,2
+Kolding,69,11,V. Westh,Kolding vs Roskilde,2024-08-24,18,Midfielder,NaN,NaN
+Kolding,69,11,M. Vestergård,Kolding vs Roskilde,2024-08-24,19,Midfielder,7,3
+Roskilde,84,20,N. Halse,Kolding vs Roskilde,2024-08-24,18,Midfielder,NaN,NaN
+Roskilde,84,20,J. Damkjær,Kolding vs Roskilde,2024-08-24,19,Forward,9,2
+Roskilde,84,27,E. Nielsen,Kolding vs Roskilde,2024-08-24,18,Forward,NaN,NaN
+Roskilde,84,27,M. Kristensen,Kolding vs Roskilde,2024-08-24,19,Midfielder,6,2
+Kolding,80,35,S. Yatéké,Kolding vs Roskilde,2024-08-24,18,Forward,NaN,NaN
+Kolding,80,35,C. Enemark,Kolding vs Roskilde,2024-08-24,19,Forward,9,3
+Kolding,58,20,V. Westh,Kolding vs OB,2024-09-27,18,Midfielder,NaN,NaN
+Kolding,58,20,E. Agyiri,Kolding vs OB,2024-09-27,19,Midfielder,6,5
+Kolding,58,22,M. Sarr,Kolding vs OB,2024-09-27,18,Forward,NaN,NaN
+Kolding,58,22,S. Jalal,Kolding vs OB,2024-09-27,19,Midfielder,6,2
+OB,68,45,J. Bonde,Kolding vs OB,2024-09-27,18,Midfielder,NaN,NaN
+OB,68,45,T. Trybull,Kolding vs OB,2024-09-27,19,Midfielder,7,3
+Kolding,76,33,I. Tånnander,Kolding vs OB,2024-09-27,18,Midfielder,NaN,NaN
+Kolding,76,33,J. Vadstrup,Kolding vs OB,2024-09-27,19,Midfielder,6,1
+OB,72,56,J. Gomez,Kolding vs OB,2024-09-27,18,Defender,NaN,NaN
+OB,72,56,T. Slotsager,Kolding vs OB,2024-09-27,19,Defender,4,4
+Kolding,86,42,J. Musbaudeen,Kolding vs OB,2024-09-27,18,Midfielder,NaN,NaN
+Kolding,86,42,B. Kvist,Kolding vs OB,2024-09-27,19,Midfielder,6,3
+OB,85,41,L. Deedson,Kolding vs OB,2024-09-27,18,Forward,NaN,NaN
+OB,85,41,G. Grubbe,Kolding vs OB,2024-09-27,19,Midfielder,6,2
+OB,85,44,W. Martin,Kolding vs OB,2024-09-27,18,Forward,NaN,NaN
+OB,85,44,E. Hansborg-Sørensen,Kolding vs OB,2024-09-27,19,Midfielder,6,1
 Roskilde,45,0,K. Nyegaard,Roskilde vs Kolding,2024-11-02,18,Midfielder,NaN,NaN
 Roskilde,45,0,M. Kristensen,Roskilde vs Kolding,2024-11-02,19,Midfielder,6,3
 Kolding,55,47,A. Nørager,Roskilde vs Kolding,2024-11-02,18,Defender,NaN,NaN
@@ -1479,38 +1547,6 @@ Kolding,80,46,M. Sarr,Vendsyssel vs Kolding,2024-08-10,18,Forward,NaN,NaN
 Kolding,80,46,C. Palm,Vendsyssel vs Kolding,2024-08-10,19,Midfielder,NaN,0
 Kolding,84,40,A. Njai,Vendsyssel vs Kolding,2024-08-10,18,Defender,NaN,NaN
 Kolding,84,40,J. Vetter,Vendsyssel vs Kolding,2024-08-10,19,Defender,0,0
-Roskilde,61,36,R. Arabaci,Kolding vs Roskilde,2024-08-24,18,Forward,NaN,NaN
-Roskilde,61,36,A. Maarup,Kolding vs Roskilde,2024-08-24,19,Midfielder,6,5
-Roskilde,63,15,V. Montell,Kolding vs Roskilde,2024-08-24,18,Defender,NaN,NaN
-Roskilde,63,15,N. Vesterbæk,Kolding vs Roskilde,2024-08-24,19,Defender,4,5
-Kolding,61,2,F. Møller,Kolding vs Roskilde,2024-08-24,18,Midfielder,NaN,NaN
-Kolding,61,2,B. Kvist,Kolding vs Roskilde,2024-08-24,19,Forward,9,1
-Kolding,69,29,S. Jalal,Kolding vs Roskilde,2024-08-24,18,Midfielder,NaN,NaN
-Kolding,69,29,M. Sarr,Kolding vs Roskilde,2024-08-24,19,Midfielder,6,2
-Kolding,69,11,V. Westh,Kolding vs Roskilde,2024-08-24,18,Midfielder,NaN,NaN
-Kolding,69,11,M. Vestergård,Kolding vs Roskilde,2024-08-24,19,Midfielder,7,3
-Roskilde,84,20,N. Halse,Kolding vs Roskilde,2024-08-24,18,Midfielder,NaN,NaN
-Roskilde,84,20,J. Damkjær,Kolding vs Roskilde,2024-08-24,19,Forward,9,2
-Roskilde,84,27,E. Nielsen,Kolding vs Roskilde,2024-08-24,18,Forward,NaN,NaN
-Roskilde,84,27,M. Kristensen,Kolding vs Roskilde,2024-08-24,19,Midfielder,6,2
-Kolding,80,35,S. Yatéké,Kolding vs Roskilde,2024-08-24,18,Forward,NaN,NaN
-Kolding,80,35,C. Enemark,Kolding vs Roskilde,2024-08-24,19,Forward,9,3
-Kolding,58,20,V. Westh,Kolding vs OB,2024-09-27,18,Midfielder,NaN,NaN
-Kolding,58,20,E. Agyiri,Kolding vs OB,2024-09-27,19,Midfielder,6,5
-Kolding,58,22,M. Sarr,Kolding vs OB,2024-09-27,18,Forward,NaN,NaN
-Kolding,58,22,S. Jalal,Kolding vs OB,2024-09-27,19,Midfielder,6,2
-OB,68,45,J. Bonde,Kolding vs OB,2024-09-27,18,Midfielder,NaN,NaN
-OB,68,45,T. Trybull,Kolding vs OB,2024-09-27,19,Midfielder,7,3
-Kolding,76,33,I. Tånnander,Kolding vs OB,2024-09-27,18,Midfielder,NaN,NaN
-Kolding,76,33,J. Vadstrup,Kolding vs OB,2024-09-27,19,Midfielder,6,1
-OB,72,56,J. Gomez,Kolding vs OB,2024-09-27,18,Defender,NaN,NaN
-OB,72,56,T. Slotsager,Kolding vs OB,2024-09-27,19,Defender,4,4
-Kolding,86,42,J. Musbaudeen,Kolding vs OB,2024-09-27,18,Midfielder,NaN,NaN
-Kolding,86,42,B. Kvist,Kolding vs OB,2024-09-27,19,Midfielder,6,3
-OB,85,41,L. Deedson,Kolding vs OB,2024-09-27,18,Forward,NaN,NaN
-OB,85,41,G. Grubbe,Kolding vs OB,2024-09-27,19,Midfielder,6,2
-OB,85,44,W. Martin,Kolding vs OB,2024-09-27,18,Forward,NaN,NaN
-OB,85,44,E. Hansborg-Sørensen,Kolding vs OB,2024-09-27,19,Midfielder,6,1
 Vendsyssel,45,0,M. Houkjær,OB vs Vendsyssel,2024-08-30,18,Defender,NaN,NaN
 Vendsyssel,45,0,O. Jebali,OB vs Vendsyssel,2024-08-30,19,Defender,4,4
 Vendsyssel,58,53,M. Kaastrup,OB vs Vendsyssel,2024-08-30,18,Forward,NaN,NaN
