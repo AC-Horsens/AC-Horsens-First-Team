@@ -1912,7 +1912,10 @@ def Dashboard():
 
         st.header('Chosen matches')
         df_set_pieces_matches = df_set_pieces_matches[df_set_pieces_matches['label'].isin(match_choice)]
-        st.dataframe(df_set_pieces_matches)
+        df_set_pieces_matches = df_set_pieces_matches[['team_name','321.0','xG_against','xG_diff']]
+        df_set_pieces_matches = df_set_pieces_matches.rename(columns={'321.0': 'xG'})
+
+        st.dataframe(df_set_pieces_matches,hide_index=True)
 
     Data_types = {
         'xG': xg,
