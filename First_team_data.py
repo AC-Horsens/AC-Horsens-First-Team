@@ -1899,10 +1899,14 @@ def Dashboard():
     def set_pieces():
         df_set_pieces = load_set_piece_data()
         df_set_pieces = df_set_pieces.fillna(0)
-        df_set_pieces = df_set_pieces.groupby('team_name').agg({'321.0': 'sum'})
-        df_set_pieces = df_set_pieces.rename(columns={'321.0': 'xG'})
-        df_set_pieces = df_set_pieces.sort_values(by='xG',ascending=False)
-        st.dataframe(df_set_pieces)
+        df_set_pieces_matches = df_set_pieces.groupby(['team_name','label']).agg({'321.0':'sum'})
+        df_set_pieces_matches['xG_match'] = df_set_pieces_matches.groupby('label')['321.0'].transform('sum')
+        df_set_pieces_matches['xG_against'] = df_set_pieces['321.0'] - df_set_pieces_matches['xG_match']
+        df_set_pieces_matches['xG_diff'] = df_set_pieces['321.0'] - df_set_pieces_matches['xG_match'] + df_set_pieces_matches['321.0']
+        df_set_pieces_sum = df_set_pieces.groupby('team_name').agg({'321.0': 'sum', 'xG_against': 'sum', 'xG_diff': 'sum'})
+        df_set_pieces_sum = df_set_pieces_sum.rename(columns={'321.0': 'xG'})
+        df_set_pieces_sum = df_set_pieces_sum.sort_values(by='xG',ascending=False)
+        st.dataframe(df_set_pieces_sum)
 
     Data_types = {
         'xG': xg,
