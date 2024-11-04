@@ -146,7 +146,7 @@ def load_set_piece_data():
     df_set_piece['label'] = (df_set_piece['label'] + ' ' + df_set_piece['date']).astype(str)
     return df_set_piece
 
-def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,df_subs,squads):
+def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
 
     def calculate_score(df, column, score_column):
         df_unique = df.drop_duplicates(column).copy()
