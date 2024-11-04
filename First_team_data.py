@@ -1903,10 +1903,16 @@ def Dashboard():
         df_set_pieces_matches['xG_match'] = df_set_pieces_matches.groupby('label')['321.0'].transform('sum')
         df_set_pieces_matches['xG_against'] = df_set_pieces_matches['321.0'] - df_set_pieces_matches['xG_match']
         df_set_pieces_matches['xG_diff'] = df_set_pieces_matches['321.0'] - df_set_pieces_matches['xG_match'] + df_set_pieces_matches['321.0']
+
         df_set_pieces_sum = df_set_pieces_matches.groupby('team_name').agg({'321.0': 'sum', 'xG_against': 'sum', 'xG_diff': 'sum'})
         df_set_pieces_sum = df_set_pieces_sum.rename(columns={'321.0': 'xG'})
         df_set_pieces_sum = df_set_pieces_sum.sort_values(by='xG',ascending=False)
+        st.header('Whole season')
         st.dataframe(df_set_pieces_sum)
+
+        st.header('Chosen matches')
+        df_set_pieces_matches = df_set_pieces_matches[df_set_pieces_matches['label'].isin(match_choice)]
+        st.dataframe(df_set_pieces_matches)
 
     Data_types = {
         'xG': xg,
