@@ -1921,12 +1921,38 @@ def Dashboard():
         Freekicks = Freekicks.sort_values(by='xG',ascending=False)
         st.dataframe(Freekicks)
 
+        st.write('Corners')
+        Corners = df_set_pieces[(df_set_pieces['26.0'] != True) & (df_set_pieces['24.0'] != True)]
+        Corners = Corners.groupby(['team_name','label']).agg({'321.0':'sum'}).reset_index()
+        Corners['xG_match'] = Corners.groupby('label')['321.0'].transform('sum')
+        Corners['xG_against'] = Corners['321.0'] - Corners['xG_match']
+        Corners['xG_diff'] = Corners['321.0'] - Corners['xG_match'] + Corners['321.0']
+        Corners = Corners.groupby('team_name').agg({'321.0': 'sum', 'xG_against': 'sum', 'xG_diff': 'sum'})
+        Corners = Corners.rename(columns={'321.0': 'xG'})
+        Corners = Corners.sort_values(by='xG',ascending=False)
+        st.dataframe(Corners)
+
         st.header('Chosen matches')
         df_set_pieces_matches = df_set_pieces_matches[df_set_pieces_matches['label'].isin(match_choice)]
         df_set_pieces_matches = df_set_pieces_matches[['team_name','321.0','xG_against','xG_diff']]
         df_set_pieces_matches = df_set_pieces_matches.rename(columns={'321.0': 'xG'})
-
+        
+        st.write('All set pieces')
         st.dataframe(df_set_pieces_matches,hide_index=True)
+
+        st.write('Freekicks')
+        Freekicks_matches = Freekicks[Freekicks['label'].isin(match_choice)]
+        Freekicks_matches = Freekicks_matches[['team_name','321.0','xG_against','xG_diff']]
+        Freekicks_matches = Freekicks_matches.rename(columns={'321.0': 'xG'})
+
+        st.dataframe(Freekicks_matches,hide_index=True)
+
+        st.write('Corners')
+        Corners_matches = Corners[Corners['label'].isin(match_choice)]
+        Corners_matches = Corners_matches[['team_name','321.0','xG_against','xG_diff']]
+        Corners_matches = Corners_matches.rename(columns={'321.0': 'xG'})
+
+        st.dataframe(Corners_matches,hide_index=True)
 
     Data_types = {
         'xG': xg,
