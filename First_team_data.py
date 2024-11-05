@@ -1927,7 +1927,6 @@ def Dashboard():
         Corners['xG_match'] = Corners.groupby('label')['321.0'].transform('sum')
         Corners['xG_against'] = Corners['321.0'] - Corners['xG_match']
         Corners['xG_diff'] = Corners['321.0'] - Corners['xG_match'] + Corners['321.0']
-        Corners = Corners.groupby('team_name').agg({'321.0': 'sum', 'xG_against': 'sum', 'xG_diff': 'sum'})
         Corners = Corners.rename(columns={'321.0': 'xG'})
         Corners = Corners.sort_values(by='xG',ascending=False)
         st.dataframe(Corners)
@@ -1946,7 +1945,6 @@ def Dashboard():
         Freekicks['xG_match'] = Freekicks.groupby('label')['321.0'].transform('sum')
         Freekicks['xG_against'] = Freekicks['321.0'] - Freekicks['xG_match']
         Freekicks['xG_diff'] = Freekicks['321.0'] - Freekicks['xG_match'] + Freekicks['321.0']
-        Freekicks = Freekicks.groupby('team_name').agg({'321.0': 'sum', 'xG_against': 'sum', 'xG_diff': 'sum'})
         Freekicks = Freekicks.rename(columns={'321.0': 'xG'})
         Freekicks = Freekicks.sort_values(by='xG',ascending=False)
         Freekicks_matches = Freekicks[Freekicks['label'].isin(match_choice)]
