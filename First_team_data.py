@@ -1927,6 +1927,8 @@ def Dashboard():
         Corners['xG_match'] = Corners.groupby('label')['321.0'].transform('sum')
         Corners['xG_against'] = Corners['321.0'] - Corners['xG_match']
         Corners['xG_diff'] = Corners['321.0'] - Corners['xG_match'] + Corners['321.0']
+        Corners = Corners.groupby('team_name').agg({'321.0': 'sum', 'xG_against': 'sum', 'xG_diff': 'sum'})
+
         Corners = Corners.rename(columns={'321.0': 'xG'})
         Corners = Corners.sort_values(by='xG',ascending=False)
         st.dataframe(Corners)
