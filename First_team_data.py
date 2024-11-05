@@ -1582,7 +1582,7 @@ def Dashboard():
                     teammates = start_awayPlayers
             df_early_crosses['end_awayPlayers'] = df_early_crosses['end_awayPlayers'].apply(clean_teammates_data)
 
-                if isinstance(teammates, list):
+            if isinstance(teammates, list):
                     num_teammates_near_goal, player_names_near_goal = count_teammates_near_goal(teammates)
                     df_early_crosses.at[idx, '#players in box'] = num_teammates_near_goal
                     df_early_crosses.at[idx, 'players in box'] = ', '.join(player_names_near_goal)
