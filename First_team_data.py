@@ -1512,9 +1512,18 @@ def Dashboard():
 
         # Filter the DataFrame
         df_crosses = df_crosses[df_crosses['qualifier'].apply(filter_qualifiers)]
+        def clean_teammates_data(teammates):
+            for teammate in teammates:
+                if isinstance(teammate.get('distance_to_own_goal'), np.float64):
+                    teammate['distance_to_own_goal'] = float(teammate['distance_to_own_goal'])
+                if isinstance(teammate.get('distance_to_opponents_goal'), np.float64):
+                    teammate['distance_to_opponents_goal'] = float(teammate['distance_to_opponents_goal'])
+            return teammates
+
         def early_crosses(df_crosses):
             st.header('Early crosses')
             df_early_crosses = df_crosses[(df_crosses['x'].astype(float) <= 88.5) & (df_crosses['x'].astype(float) >= 70.0) & ((df_crosses['y'].astype(float) >= 78.9) | (df_crosses['y'].astype(float) <= 21.1))]
+            st.dataframe(df_early_crosses)
             
             pitch = Pitch(pitch_type='opta', half=True, pitch_color='grass')
             fig, ax = pitch.draw(figsize=(10, 8))
@@ -1533,19 +1542,7 @@ def Dashboard():
                 except (ValueError, SyntaxError):
                     return []
             
-            # Helper function to clean np.float64 values
-            def clean_float64_in_teammates(teammates):
-                for teammate in teammates:
-                    if isinstance(teammate.get('distance_to_own_goal'), np.float64):
-                        teammate['distance_to_own_goal'] = float(teammate['distance_to_own_goal'])
-                    if isinstance(teammate.get('distance_to_opponents_goal'), np.float64):
-                        teammate['distance_to_opponents_goal'] = float(teammate['distance_to_opponents_goal'])
-                return teammates
-
             def count_teammates_near_goal(teammates, distance_threshold=20):
-                # Clean np.float64 values in teammates list
-                teammates = clean_float64_in_teammates(teammates)
-                
                 count = 0
                 player_names_near_goal = []
                 
@@ -1556,6 +1553,12 @@ def Dashboard():
                         player_names_near_goal.append(teammate['name'])
                 
                 return count, player_names_near_goal
+            
+            # Clean teammates data in each row before processing
+            df_early_crosses['start_homePlayers'] = df_early_crosses['start_homePlayers'].apply(clean_teammates_data)
+            df_early_crosses['start_awayPlayers'] = df_early_crosses['start_awayPlayers'].apply(clean_teammates_data)
+            df_early_crosses['end_homePlayers'] = df_early_crosses['end_homePlayers'].apply(clean_teammates_data)
+            df_early_crosses['end_awayPlayers'] = df_early_crosses['end_awayPlayers'].apply(clean_teammates_data)
             
             df_early_crosses['#players in box'] = 0
             df_early_crosses['players in box'] = ''
@@ -1599,7 +1602,6 @@ def Dashboard():
             df_player_counts = df_player_counts.sort_values(by=['Times in Box'], ascending=False)
             df_player_counts = df_player_counts[df_player_counts['Player'] != '']
             st.dataframe(df_player_counts, hide_index=True)
-            st.dataframe(df_early_crosses)
 
         early_crosses(df_crosses)
         
