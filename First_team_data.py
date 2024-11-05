@@ -1911,8 +1911,14 @@ def Dashboard():
         st.write('All set pieces')
         st.dataframe(df_set_pieces_sum)
         st.write('Freekicks')
-        st.dataframe(df_set_pieces)
         Freekicks = df_set_pieces[(df_set_pieces['26.0'] == True) | (df_set_pieces['24.0'] == True)]
+        Freekicks = Freekicks.groupby(['team_name','label']).agg({'321.0':'sum'}).reset_index()
+        Freekicks['xG_match'] = Freekicks.groupby('label')['321.0'].transform('sum')
+        Freekicks['xG_against'] = Freekicks['321.0'] - Freekicks['xG_match']
+        Freekicks['xG_diff'] = Freekicks['321.0'] - Freekicks['xG_match'] + Freekicks['321.0']
+        Freekicks = Freekicks.groupby('team_name').agg({'321.0': 'sum', 'xG_against': 'sum', 'xG_diff': 'sum'})
+        Freekicks = Freekicks.rename(columns={'321.0': 'xG'})
+        Freekicks = Freekicks.sort_values(by='xG',ascending=False)
         st.dataframe(Freekicks)
 
         st.header('Chosen matches')
