@@ -1542,7 +1542,7 @@ def Dashboard():
                 player_names_near_goal = []
                 
                 for teammate in teammates:
-                    distance_to_opponents_goal = teammate.get('distance_to_opponents_goal', None)
+                    distance_to_opponents_goal = float(teammate.get('distance_to_opponents_goal', None))
                     if distance_to_opponents_goal is not None:
                         if distance_to_opponents_goal <= distance_threshold:
                             count += 1
