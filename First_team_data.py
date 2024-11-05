@@ -1513,13 +1513,17 @@ def Dashboard():
         # Filter the DataFrame
         df_crosses = df_crosses[df_crosses['qualifier'].apply(filter_qualifiers)]
         def clean_teammates_data(teammates):
+            # Check if teammates is a list, if not, return it unchanged
+            if not isinstance(teammates, list):
+                return teammates
+            
+            # Iterate through each dictionary in teammates and clean float64 values
             for teammate in teammates:
                 if isinstance(teammate.get('distance_to_own_goal'), np.float64):
                     teammate['distance_to_own_goal'] = float(teammate['distance_to_own_goal'])
                 if isinstance(teammate.get('distance_to_opponents_goal'), np.float64):
                     teammate['distance_to_opponents_goal'] = float(teammate['distance_to_opponents_goal'])
             return teammates
-
         def early_crosses(df_crosses):
             st.header('Early crosses')
             df_early_crosses = df_crosses[(df_crosses['x'].astype(float) <= 88.5) & (df_crosses['x'].astype(float) >= 70.0) & ((df_crosses['y'].astype(float) >= 78.9) | (df_crosses['y'].astype(float) <= 21.1))]
