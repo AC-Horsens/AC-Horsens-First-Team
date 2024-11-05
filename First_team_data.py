@@ -1908,7 +1908,11 @@ def Dashboard():
         df_set_pieces_sum = df_set_pieces_sum.rename(columns={'321.0': 'xG'})
         df_set_pieces_sum = df_set_pieces_sum.sort_values(by='xG',ascending=False)
         st.header('Whole season')
+        st.write('All set pieces')
         st.dataframe(df_set_pieces_sum)
+        st.write('Freekicks')
+        Freekicks = df_set_pieces[df_set_pieces['26.0'] == 'true'] | df_set_pieces['24.0'] == 'true'
+        st.dataframe(Freekicks)
 
         st.header('Chosen matches')
         df_set_pieces_matches = df_set_pieces_matches[df_set_pieces_matches['label'].isin(match_choice)]
