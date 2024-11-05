@@ -1941,6 +1941,7 @@ def Dashboard():
         st.dataframe(df_set_pieces_matches,hide_index=True)
 
         st.write('Freekicks')
+        Freekicks = df_set_pieces[(df_set_pieces['26.0'] == True) | (df_set_pieces['24.0'] == True)]
         Freekicks_matches = Freekicks[Freekicks['label'].isin(match_choice)]
         Freekicks_matches = Freekicks_matches[['team_name','321.0','xG_against','xG_diff']]
         Freekicks_matches = Freekicks_matches.rename(columns={'321.0': 'xG'})
@@ -1948,6 +1949,7 @@ def Dashboard():
         st.dataframe(Freekicks_matches,hide_index=True)
 
         st.write('Corners')
+        Corners = df_set_pieces[(df_set_pieces['26.0'] != True) & (df_set_pieces['24.0'] != True)]
         Corners_matches = Corners[Corners['label'].isin(match_choice)]
         Corners_matches = Corners_matches[['team_name','321.0','xG_against','xG_diff']]
         Corners_matches = Corners_matches.rename(columns={'321.0': 'xG'})
