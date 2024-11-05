@@ -1514,47 +1514,53 @@ def Dashboard():
         df_crosses = df_crosses[df_crosses['qualifier'].apply(filter_qualifiers)]
         def early_crosses(df_crosses):
             st.header('Early crosses')
-            df_early_crosses = df_crosses[(df_crosses['x'].astype(float) <= 88.5) &(df_crosses['x'].astype(float) >= 70.0) & ((df_crosses['y'].astype(float) >= 78.9) | (df_crosses['y'].astype(float) <= 21.1))]
+            df_early_crosses = df_crosses[(df_crosses['x'].astype(float) <= 88.5) & (df_crosses['x'].astype(float) >= 70.0) & ((df_crosses['y'].astype(float) >= 78.9) | (df_crosses['y'].astype(float) <= 21.1))]
             st.dataframe(df_early_crosses)
-            pitch = Pitch(pitch_type='opta', half=True,pitch_color='grass')  # Create a half-pitch plot
+            
+            pitch = Pitch(pitch_type='opta', half=True, pitch_color='grass')
             fig, ax = pitch.draw(figsize=(10, 8))
-
-            # Plot arrows from x,y to pass_end_x,pass_end_y
+            
             for _, row in df_early_crosses.iterrows():
-                pitch.arrows(row['x'], row['y'], row['pass_end_x'], row['pass_end_y'],
-                            color='blue', ax=ax, width=2, headwidth=5, headlength=5, headaxislength=4.5)
-
-            # Add labels for players (optional)
+                pitch.arrows(row['x'], row['y'], row['pass_end_x'], row['pass_end_y'], color='blue', ax=ax, width=2, headwidth=5, headlength=5, headaxislength=4.5)
+            
             for _, row in df_early_crosses.iterrows():
                 ax.text(row['x'], row['y'], row['playerName'], fontsize=12, color='black')
-
-            # Display the plot in Streamlit
+            
             st.pyplot(fig)
-
+            
             def parse_players(players):
                 try:
                     return ast.literal_eval(players) if isinstance(players, str) else players
                 except (ValueError, SyntaxError):
-                    return []  # Return an empty list if parsing fails
+                    return []
+            
+            # Helper function to clean np.float64 values
+            def clean_float64_in_teammates(teammates):
+                for teammate in teammates:
+                    if isinstance(teammate.get('distance_to_own_goal'), np.float64):
+                        teammate['distance_to_own_goal'] = float(teammate['distance_to_own_goal'])
+                    if isinstance(teammate.get('distance_to_opponents_goal'), np.float64):
+                        teammate['distance_to_opponents_goal'] = float(teammate['distance_to_opponents_goal'])
+                return teammates
 
             def count_teammates_near_goal(teammates, distance_threshold=20):
+                # Clean np.float64 values in teammates list
+                teammates = clean_float64_in_teammates(teammates)
+                
                 count = 0
                 player_names_near_goal = []
                 
                 for teammate in teammates:
                     distance_to_opponents_goal = teammate.get('distance_to_opponents_goal', None)
-                    if distance_to_opponents_goal is not None:
-                        if distance_to_opponents_goal <= distance_threshold:
-                            count += 1
-                            player_names_near_goal.append(teammate['name'])
+                    if distance_to_opponents_goal is not None and distance_to_opponents_goal <= distance_threshold:
+                        count += 1
+                        player_names_near_goal.append(teammate['name'])
                 
                 return count, player_names_near_goal
-
-            # Initialize the new column with default values (e.g., 0)
+            
             df_early_crosses['#players in box'] = 0
             df_early_crosses['players in box'] = ''
-
-            # Loop through the DataFrame
+            
             for idx, row in df_early_crosses.iterrows():
                 player_name = row['playerName']
                 start_homePlayers = parse_players(row['start_homePlayers'])
@@ -1562,10 +1568,8 @@ def Dashboard():
                 end_homePlayers = parse_players(row['end_homePlayers'])
                 end_awayPlayers = parse_players(row['end_awayPlayers'])
                 
-                # Ensure teammates is always a list
                 teammates = []
-
-                # Determine if the player is in homePlayers or awayPlayers
+                
                 if isinstance(end_homePlayers, list) and player_name in [player['name'] for player in end_homePlayers]:
                     teammates = end_homePlayers
                 elif isinstance(start_homePlayers, list) and player_name in [player['name'] for player in start_homePlayers]:
@@ -1576,29 +1580,27 @@ def Dashboard():
                     teammates = start_awayPlayers
 
                 if isinstance(teammates, list):
-                    # Count teammates near opponents' goal and get their names
                     num_teammates_near_goal, player_names_near_goal = count_teammates_near_goal(teammates)
                     df_early_crosses.at[idx, '#players in box'] = num_teammates_near_goal
                     df_early_crosses.at[idx, 'players in box'] = ', '.join(player_names_near_goal)
 
             fig_histogram = px.histogram(df_early_crosses, x='#players in box', nbins=30, title='#Players in box')
-            st.plotly_chart(fig_histogram)        
+            st.plotly_chart(fig_histogram)
+            
             def count_players_in_box(player_lists):
-                # Flatten the list of strings into a single list of player names
                 all_players = [player.strip() for sublist in player_lists for player in sublist.split(",")]
-                
-                # Count the occurrences of each player's name
                 player_counts = Counter(all_players)
-                
                 return player_counts
 
             player_lists = df_early_crosses['players in box'].tolist()
             player_counts = count_players_in_box(player_lists)
+            
             st.write("Player Counts in the Box:")
             df_player_counts = pd.DataFrame(player_counts.items(), columns=['Player', 'Times in Box'])
             df_player_counts = df_player_counts.sort_values(by=['Times in Box'], ascending=False)
             df_player_counts = df_player_counts[df_player_counts['Player'] != '']
             st.dataframe(df_player_counts, hide_index=True)
+
         early_crosses(df_crosses)
         
         def late_crosses(df_crosses):
