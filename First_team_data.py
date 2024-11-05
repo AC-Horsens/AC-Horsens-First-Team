@@ -1948,8 +1948,7 @@ def Dashboard():
         Freekicks = Freekicks.rename(columns={'321.0': 'xG'})
         Freekicks = Freekicks.sort_values(by='xG',ascending=False)
         Freekicks_matches = Freekicks[Freekicks['label'].isin(match_choice)]
-        Freekicks_matches = Freekicks_matches[['team_name','321.0','xG_against','xG_diff']]
-        Freekicks_matches = Freekicks_matches.rename(columns={'321.0': 'xG'})
+        Freekicks_matches = Freekicks_matches[['team_name','xG','xG_against','xG_diff']]
 
         st.dataframe(Freekicks_matches,hide_index=True)
 
@@ -1963,8 +1962,7 @@ def Dashboard():
         Corners = Corners.rename(columns={'321.0': 'xG'})
         Corners = Corners.sort_values(by='xG',ascending=False)
         Corners_matches = Corners[Corners['label'].isin(match_choice)]
-        Corners_matches = Corners_matches[['team_name','321.0','xG_against','xG_diff']]
-        Corners_matches = Corners_matches.rename(columns={'321.0': 'xG'})
+        Corners_matches = Corners_matches[['team_name','xG','xG_against','xG_diff']]
 
         st.dataframe(Corners_matches,hide_index=True)
 
