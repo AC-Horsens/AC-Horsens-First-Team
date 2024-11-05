@@ -1912,7 +1912,7 @@ def Dashboard():
         st.dataframe(df_set_pieces_sum)
         st.write('Freekicks')
         st.dataframe(df_set_pieces)
-        Freekicks = df_set_pieces[df_set_pieces['26'] == 'true'] | df_set_pieces['24'] == 'true'
+        Freekicks = df_set_pieces[df_set_pieces['26.0'] == True] | df_set_pieces['24.0'] == True
         st.dataframe(Freekicks)
 
         st.header('Chosen matches')
