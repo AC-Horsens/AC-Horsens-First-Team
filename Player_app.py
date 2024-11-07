@@ -941,8 +941,11 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
         # Select relevant columns: playerName, x, y, and xG (321.0)
         afslutninger = afslutninger[['playerName', 'x', 'y', '321.0']]
         
+        # Calculate total xG
+        total_xg = afslutninger['321.0'].sum()
+        
         # Create the pitch
-        pitch = VerticalPitch(pitch_type='opta', half=True, line_color='white',pitch_color='grass')
+        pitch = VerticalPitch(pitch_type='opta', half=True, line_color='white', pitch_color='grass')
         
         # Create the figure
         fig, ax = pitch.draw()
@@ -953,7 +956,13 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
             c='yellow', edgecolors='black', linewidth=1, alpha=0.7, ax=ax
         )
         
-        # Add a colorbar (optional)        
+        # Annotate each shot with its xG value
+        for _, shot in afslutninger.iterrows():
+            ax.text(shot['x'], shot['y'], f"{shot['321.0']:.2f}", ha='center', va='center', fontsize=8, color='black')
+        
+        # Add total xG in the center of the pitch
+        ax.text(50, 40, f'Total xG: {total_xg:.2f}', ha='center', va='center', fontsize=15, color='black')
+        
         # Set title
         ax.set_title(f'{player_name} Shot xG Map', fontsize=20)
         
