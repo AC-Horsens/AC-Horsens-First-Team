@@ -955,7 +955,7 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
         
         # Annotate each shot with its xG value directly next to each dot
         for _, shot in afslutninger.iterrows():
-            ax.text(shot['x'], shot['y'], f"{shot['321.0']:.2f}", ha='center', va='center', fontsize=8, color='black')
+            ax.text(shot['x'].astype(float), shot['y'].astype(float), f"{shot['321.0']:.2f}", ha='center', va='center', fontsize=8, color='black')
         
         # Set title
         ax.set_title(f'{player_name} Shot xG Map', fontsize=20)
