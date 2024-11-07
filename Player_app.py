@@ -955,10 +955,10 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
                 c='yellow', edgecolors='black', linewidth=1, alpha=0.7, ax=ax,
             )
             
-            # Annotate each shot with its xG value directly next to the dot
+            # Annotate each shot with its xG value slightly above the dot
             ax.text(
-                shot['x'], shot['y'], f"{shot['321.0']:.2f}", 
-                ha='center', va='center', fontsize=8, color='black',
+                shot['x'], shot['y'] - 1, f"{shot['321.0']:.2f}",  # Adjust 'y - 1' to keep text above
+                ha='center', va='bottom', fontsize=8, color='black',
                 bbox=dict(facecolor='white', edgecolor='none', alpha=0.7)  # Add background for visibility
             )
         
