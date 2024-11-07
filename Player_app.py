@@ -956,7 +956,7 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
         for i, row in afslutninger.iterrows():
             ax.text(
                 row['x'], row['y'], f"{row['321.0']:.2f}", 
-                fontsize=6, ha='center', va='center', color='black'
+                fontsize=6, ha='center', va='bottom', color='black'
             )
         
         # Set title
