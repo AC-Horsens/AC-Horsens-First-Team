@@ -964,7 +964,7 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
         
         # Display the total xG in the center of the pitch
         ax.text(
-            70, 40, f"Total xG: {total_xg:.2f}",  # Adjust y-coordinate if needed for better positioning
+            60, 50, f"Total xG: {total_xg:.2f}",  # Adjust y-coordinate if needed for better positioning
             ha='center', va='center', fontsize=12, color='black',
             bbox=dict(facecolor='white', edgecolor='none', alpha=0.7)  # Background for visibility
         )
