@@ -975,7 +975,7 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
     Defensive_aktioner = Defensive_aktioner[['x','y']]
     
     if '140.0' in df.columns:
-        Alle_off_aktioner = df[(df['140.0'] > 0) & (df['playerName'] == player_name)] & (df['x'] > 0)
+        Alle_off_aktioner = df[(df['140.0'] > 0) & (df['playerName'] == player_name) & (df['x'] > 0)]
     else:
         st.error("'140' column does not exist in the DataFrame.")
 
