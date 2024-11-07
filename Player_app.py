@@ -940,6 +940,9 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
         # Select relevant columns: playerName, x, y, and xG (321.0)
         afslutninger = afslutninger[['playerName', 'x', 'y', '321.0']]
         
+        # Calculate the total xG
+        total_xg = afslutninger['321.0'].sum()
+        
         # Create the pitch (horizontal orientation)
         pitch = Pitch(pitch_type='opta', half=True, line_color='white', pitch_color='grass')
         
@@ -952,19 +955,25 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
             c='yellow', edgecolors='black', alpha=0.7
         )
         
-        # Annotate each shot with player name and xG value
+        # Annotate each shot with xG value
         for i, row in afslutninger.iterrows():
             ax.text(
                 row['x'], row['y'], f"{row['321.0']:.2f}", 
                 fontsize=6, ha='center', va='bottom', color='black'
             )
         
+        # Display the total xG in the center of the pitch
+        ax.text(
+            50, 40, f"Total xG: {total_xg:.2f}",  # Adjust y-coordinate if needed for better positioning
+            ha='center', va='center', fontsize=12, color='black',
+            bbox=dict(facecolor='white', edgecolor='none', alpha=0.7)  # Background for visibility
+        )
+        
         # Set title
         ax.set_title(f'{player_name} Shot xG Map', fontsize=20)
         
         # Display the plot in Streamlit
         st.pyplot(fig)
-
 
     # Example call in Streamlit app
 
