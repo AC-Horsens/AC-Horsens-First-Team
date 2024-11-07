@@ -954,13 +954,19 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
                 [shot['x']], [shot['y']], s=shot['321.0'] * 100, 
                 c='yellow', edgecolors='black', linewidth=1, alpha=0.7, ax=ax,
             )
+            
+            # Annotate each shot with its xG value directly next to the dot
+            ax.text(
+                shot['x'], shot['y'], f"{shot['321.0']:.2f}", 
+                ha='center', va='center', fontsize=8, color='black',
+                bbox=dict(facecolor='white', edgecolor='none', alpha=0.7)  # Add background for visibility
+            )
         
         # Set title
         ax.set_title(f'{player_name} Shot xG Map', fontsize=20)
         
         # Display the plot in Streamlit
         st.pyplot(fig)
-
 
     # Example call in Streamlit app
 
