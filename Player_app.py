@@ -935,8 +935,7 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
 
     def plot_xg_shots(df, player_name):
         # Filter the dataset for shots with xG > 0 and for the specified player
-        afslutninger = df[df['321.0'] > 0]
-        afslutninger = afslutninger[afslutninger['playerName'] == player_name]
+        afslutninger = df[(df['321.0'] > 0) & (df['playerName'] == player_name)]
         
         # Select relevant columns: playerName, x, y, and xG (321.0)
         afslutninger = afslutninger[['playerName', 'x', 'y', '321.0']]
@@ -945,21 +944,19 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
         pitch = VerticalPitch(pitch_type='opta', half=True, line_color='white', pitch_color='grass')
         
         # Create the figure
-        fig, ax = pitch.draw()
+        fig, ax = pitch.draw(figsize=(10, 6))
         
-        # Plot each shot and annotate with xG value immediately after
-        for _, shot in afslutninger.iterrows():
-            # Plot each shot as a dot
-            pitch.scatter(
-                [shot['x']], [shot['y']], s=shot['321.0'] * 100, 
-                c='yellow', edgecolors='black', linewidth=1, alpha=0.7, ax=ax,
-            )
-            
-            # Annotate each shot with its xG value slightly above the dot
+        # Use ax.scatter to plot the shots
+        sc = ax.scatter(
+            afslutninger['x'], afslutninger['y'], s=afslutninger['321.0'] * 100, 
+            c='yellow', edgecolors='black', alpha=0.7
+        )
+        
+        # Annotate each shot with player name and xG value
+        for i, row in afslutninger.iterrows():
             ax.text(
-                shot['x'], shot['y'] - 1, f"{shot['321.0']:.2f}",  # Adjust 'y - 1' to keep text above
-                ha='center', va='bottom', fontsize=8, color='black',
-                bbox=dict(facecolor='white', edgecolor='none', alpha=0.7)  # Add background for visibility
+                row['x'], row['y'], f"{row['playerName']}\n{row['321.0']:.2f}", 
+                fontsize=6, ha='center', va='center', color='black'
             )
         
         # Set title
@@ -967,6 +964,7 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
         
         # Display the plot in Streamlit
         st.pyplot(fig)
+
 
     # Example call in Streamlit app
 
