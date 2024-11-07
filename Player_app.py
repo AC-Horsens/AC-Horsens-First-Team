@@ -940,8 +940,8 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
         # Select relevant columns: playerName, x, y, and xG (321.0)
         afslutninger = afslutninger[['playerName', 'x', 'y', '321.0']]
         
-        # Create the pitch
-        pitch = VerticalPitch(pitch_type='opta', half=True, line_color='white', pitch_color='grass')
+        # Create the pitch (horizontal orientation)
+        pitch = Pitch(pitch_type='opta', half=True, line_color='white', pitch_color='grass')
         
         # Create the figure
         fig, ax = pitch.draw(figsize=(10, 6))
