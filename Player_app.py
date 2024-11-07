@@ -955,7 +955,7 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
         # Annotate each shot with player name and xG value
         for i, row in afslutninger.iterrows():
             ax.text(
-                row['x'], row['y'], f"{row['playerName']}\n{row['321.0']:.2f}", 
+                row['x'], row['y'], f"{row['321.0']:.2f}", 
                 fontsize=6, ha='center', va='center', color='black'
             )
         
