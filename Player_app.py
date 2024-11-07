@@ -952,11 +952,8 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
             # Plot each shot as a dot
             pitch.scatter(
                 [shot['x']], [shot['y']], s=shot['321.0'] * 100, 
-                c='yellow', edgecolors='black', linewidth=1, alpha=0.7, ax=ax
+                c='yellow', edgecolors='black', linewidth=1, alpha=0.7, ax=ax,
             )
-            
-            # Annotate each shot with its xG value directly above
-            ax.text(shot['x'], shot['y'] + 1, f"{shot['321.0']:.2f}", ha='center', va='bottom', fontsize=8, color='black')
         
         # Set title
         ax.set_title(f'{player_name} Shot xG Map', fontsize=20)
