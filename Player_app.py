@@ -949,8 +949,8 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
         
         # Plot the shots
         sc = pitch.scatter(
-            afslutninger['x'], afslutninger['y'], s=afslutninger['321.0'] * 1000,  # Scale the size of dots by xG
-            c='red', edgecolors='black', linewidth=1, alpha=0.7, ax=ax
+            afslutninger['x'], afslutninger['y'], s=afslutninger['321.0'] * 100,  # Scale the size of dots by xG
+            c='yellow', edgecolors='black', linewidth=1, alpha=0.7, ax=ax
         )
         
         # Add a colorbar (optional)        
