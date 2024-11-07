@@ -947,14 +947,15 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
         # Create the figure
         fig, ax = pitch.draw()
         
-        # Plot the shots
-        sc = pitch.scatter(
-            afslutninger['x'], afslutninger['y'], s=afslutninger['321.0'] * 100,  # Scale the size of dots by xG
-            c='yellow', edgecolors='black', linewidth=1, alpha=0.7, ax=ax
-        )
-        
-        # Annotate each shot with its xG value above the dot
+        # Plot each shot and annotate with xG value immediately after
         for _, shot in afslutninger.iterrows():
+            # Plot each shot as a dot
+            pitch.scatter(
+                [shot['x']], [shot['y']], s=shot['321.0'] * 100, 
+                c='yellow', edgecolors='black', linewidth=1, alpha=0.7, ax=ax
+            )
+            
+            # Annotate each shot with its xG value directly above
             ax.text(shot['x'], shot['y'] + 1, f"{shot['321.0']:.2f}", ha='center', va='bottom', fontsize=8, color='black')
         
         # Set title
