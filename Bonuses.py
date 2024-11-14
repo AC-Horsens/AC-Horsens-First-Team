@@ -2,8 +2,10 @@ import pandas as pd
 import streamlit as st
 
 st.set_page_config(layout='wide')
+url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/matchstats_all%20DNK_1_Division_2024_2025.csv'
+matchstats_df = pd.read_csv(url)
+matchstats_df['label'] = (matchstats_df['label'] + ' ' + matchstats_df['date'])
 
-matchstats_df = pd.read_csv(r'C:\Users\Seamus-admin\Documents\GitHub\AC-Horsens-First-Team\DNK_1_Division_2024_2025\matchstats_all DNK_1_Division_2024_2025.csv')
 
 matchstats_df = matchstats_df[matchstats_df['team_name'] == 'Horsens']
 matchstats_df = matchstats_df[['player_matchName','player_position','minsPlayed']]
