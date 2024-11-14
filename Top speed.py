@@ -284,7 +284,7 @@ if schedule_df is not None:
                 description = re.sub(r'[\\/*?:"<>|]', "_", description).strip()
 
                 print(metadata_df[['ssiId', 'description']])
-            
+
                 # Get the physical data
                 physical_data = get_physical_produced(game_id)
                 physical_summary = get_physical_summary(game_id)
