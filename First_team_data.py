@@ -970,9 +970,7 @@ def Dashboard():
     df_spacecontrol = df_spacecontrol[['Team', 'label', 'Total Control Area %', 'Center Control Area %', 'Penalty Area Control %']]
     df_spacecontrol = df_spacecontrol.rename(columns={'Team': 'team_name'})
 
-    xA_map = df_xA[['contestantId','team_name']]
-    df_matchstats = df_matchstats.merge(xA_map, on='contestantId', how='inner')
-    df_matchstats = df_matchstats.drop_duplicates()
+
     df_matchstats['team_name'] = df_matchstats['team_name'].apply(lambda x: x if x == 'Horsens' else 'Opponent')
     df_passes = df_matchstats[['team_name','label','openPlayPass','successfulOpenPlayPass']]
 
