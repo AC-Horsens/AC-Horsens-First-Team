@@ -2038,7 +2038,7 @@ def Opposition_analysis():
 
     matchstats_df = load_match_stats()
     matchstats_df = matchstats_df.rename(columns={'player_matchName': 'playerName'})
-    matchstats_df = matchstats_df.groupby(['contestantId','label', 'date']).sum().reset_index()
+    matchstats_df = matchstats_df.groupby(['contestantId','team_name','label', 'date']).sum().reset_index()
     matchstats_df['label'] = np.where(matchstats_df['label'].notnull(), 1, matchstats_df['label'])
     date_format = '%Y-%m-%d'
     matchstats_df['date'] = pd.to_datetime(matchstats_df['date'], format=date_format)
