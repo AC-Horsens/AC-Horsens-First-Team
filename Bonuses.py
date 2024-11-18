@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 
 st.set_page_config(layout='wide')
-url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/Bonus.csv'
+url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/Bonus.csv'
 matchstats_df = pd.read_csv(url)
 
 
