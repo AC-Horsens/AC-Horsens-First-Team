@@ -1,321 +1,321 @@
 ,player_matchName,player_position,minsPlayed
-0,M. Delač,Goalkeeper,90
-1,A. Ekeroth,Defender,90
-2,O. Kolskogen,Defender,72
-3,S. Hausner,Defender,90
-4,M. Kallesøe,Defender,72
-5,J. Madsen,Defensive Midfielder,90
-6,F. Christensen,Defensive Midfielder,90
-7,M. Larsen,Defensive Midfielder,79
-8,J. Ankersen,Attacking Midfielder,63
-9,S. Pingel,Striker,90
-10,M. Egho,Striker,72
-11,A. Herdonsson,Substitute,18
-12,M. Hyseni,Substitute,27
-13,E. Just,Substitute,11
-14,A. Hermansen,Substitute,NaN
-15,K. Karikari,Substitute,18
-16,A. Ludwig,Substitute,NaN
-17,A. Nehme,Substitute,NaN
-18,S. Reese,Substitute,NaN
-19,F. Roslyng,Substitute,18
-375,M. Delač,Goalkeeper,90
-376,J. Madsen,Defender,90
-377,O. Kolskogen,Defender,75
-378,S. Hausner,Defender,90
-379,M. Kallesøe,Defender,83
-380,A. Herdonsson,Defensive Midfielder,90
-381,F. Christensen,Defensive Midfielder,90
-382,J. Ankersen,Attacking Midfielder,90
-383,S. Pingel,Attacking Midfielder,83
-384,E. Just,Attacking Midfielder,69
-385,M. Egho,Striker,69
-386,M. Hyseni,Substitute,21
-387,K. Karikari,Substitute,7
-388,A. Ludwig,Substitute,15
-389,O. Kouassi,Substitute,NaN
-390,A. Nehme,Substitute,NaN
-391,A. Hoff,Substitute,NaN
-392,F. Roslyng,Substitute,7
-393,C. Tapé,Substitute,21
-394,H. Toftegaard,Substitute,NaN
+139,M. Delač,Goalkeeper,90
+140,C. Tapé,Defender,90
+141,O. Kolskogen,Defender,56
+142,S. Hausner,Defender,90
+143,M. Kallesøe,Defender,90
+144,J. Madsen,Midfielder,56
+145,F. Christensen,Midfielder,90
+146,K. Lusavec,Midfielder,75
+147,E. Frederiksen,Midfielder,90
+148,S. Pingel,Striker,75
+149,K. Karikari,Striker,82
+150,M. Egho,Substitute,8
+151,A. Herdonsson,Substitute,15
+152,M. Hyseni,Substitute,15
+153,O. Kjærgaard,Substitute,34
+154,A. Ludwig,Substitute,NaN
+155,M. Larsen,Substitute,NaN
+156,S. Ngabo,Substitute,NaN
+157,A. Hoff,Substitute,NaN
+158,F. Roslyng,Substitute,34
 574,M. Delač,Goalkeeper,90
 575,J. Madsen,Defender,90
-576,O. Kolskogen,Defender,90
+576,O. Kolskogen,Defender,75
 577,S. Hausner,Defender,90
-578,M. Kallesøe,Defender,90
+578,M. Kallesøe,Defender,83
 579,A. Herdonsson,Defensive Midfielder,90
-580,F. Christensen,Defensive Midfielder,72
-581,E. Just,Defensive Midfielder,90
-582,J. Ankersen,Attacking Midfielder,63
-583,M. Egho,Striker,72
-584,S. Pingel,Striker,90
-585,M. Hyseni,Substitute,NaN
-586,K. Karikari,Substitute,18
-587,O. Kjærgaard,Substitute,27
-588,A. Ludwig,Substitute,NaN
-589,O. Kouassi,Substitute,NaN
+580,F. Christensen,Defensive Midfielder,90
+581,J. Ankersen,Attacking Midfielder,90
+582,S. Pingel,Attacking Midfielder,83
+583,E. Just,Attacking Midfielder,69
+584,M. Egho,Striker,69
+585,M. Hyseni,Substitute,21
+586,K. Karikari,Substitute,7
+587,A. Ludwig,Substitute,15
+588,O. Kouassi,Substitute,NaN
+589,A. Nehme,Substitute,NaN
 590,A. Hoff,Substitute,NaN
-591,F. Roslyng,Substitute,NaN
-592,C. Tapé,Substitute,18
+591,F. Roslyng,Substitute,7
+592,C. Tapé,Substitute,21
 593,H. Toftegaard,Substitute,NaN
-633,M. Delač,Goalkeeper,90
-634,J. Madsen,Defender,65
-635,O. Kolskogen,Defender,81
-636,S. Hausner,Defender,90
-637,M. Kallesøe,Defender,90
-638,A. Herdonsson,Defensive Midfielder,90
-639,F. Christensen,Defensive Midfielder,81
-640,O. Kjærgaard,Defensive Midfielder,90
-641,J. Ankersen,Attacking Midfielder,14
-642,M. Egho,Striker,65
-643,S. Pingel,Striker,90
-644,M. Hyseni,Substitute,25
-645,K. Karikari,Substitute,9
-646,A. Ludwig,Substitute,9
-647,O. Kouassi,Substitute,NaN
-648,S. Ngabo,Substitute,25
-649,A. Hoff,Substitute,NaN
-650,F. Roslyng,Substitute,NaN
-651,A. Moro,Substitute,NaN
-652,C. Tapé,Substitute,76
-889,M. Delač,Goalkeeper,90
-890,C. Tapé,Defender,90
-891,A. Ludwig,Defender,90
-892,S. Hausner,Defender,90
-893,M. Kallesøe,Defender,85
-894,J. Madsen,Defensive Midfielder,74
-895,A. Herdonsson,Defensive Midfielder,90
-896,O. Kjærgaard,Defensive Midfielder,90
-897,S. Ngabo,Attacking Midfielder,74
-898,M. Hyseni,Striker,58
-899,S. Pingel,Striker,58
-900,M. Egho,Substitute,32
-901,F. Christensen,Substitute,16
-902,K. Karikari,Substitute,32
-903,O. Kolskogen,Substitute,5
-904,O. Kouassi,Substitute,NaN
-905,A. Hoff,Substitute,NaN
-906,M. Opondo,Substitute,NaN
-907,F. Roslyng,Substitute,NaN
-908,J. Ankersen,Substitute,16
-1186,M. Delač,Goalkeeper,90
-1187,C. Tapé,Defender,90
-1188,A. Ludwig,Defender,90
-1189,S. Hausner,Defender,90
-1190,M. Kallesøe,Defender,31
-1191,J. Madsen,Midfielder,60
-1192,F. Christensen,Midfielder,60
-1193,O. Kjærgaard,Midfielder,90
-1194,S. Ngabo,Striker,75
-1195,M. Egho,Striker,45
-1196,S. Pingel,Striker,90
-1197,A. Herdonsson,Substitute,30
-1198,M. Hyseni,Substitute,15
-1199,K. Karikari,Substitute,45
-1200,O. Kolskogen,Substitute,59
-1201,O. Kouassi,Substitute,30
-1202,A. Hoff,Substitute,NaN
-1203,M. Opondo,Substitute,NaN
-1204,F. Roslyng,Substitute,NaN
-1205,J. Ankersen,Substitute,NaN
-1444,M. Delač,Goalkeeper,90
-1445,C. Tapé,Defender,90
-1446,O. Kolskogen,Defender,90
-1447,S. Hausner,Defender,90
-1448,M. Kallesøe,Defender,84
-1449,A. Herdonsson,Midfielder,90
-1450,F. Christensen,Midfielder,67
-1451,O. Kjærgaard,Midfielder,90
-1452,S. Ngabo,Striker,74
-1453,K. Karikari,Striker,90
-1454,S. Pingel,Striker,67
-1455,M. Egho,Substitute,23
-1456,M. Hyseni,Substitute,NaN
-1457,K. Lusavec,Substitute,NaN
-1458,M. Larsen,Substitute,NaN
-1459,J. Madsen,Substitute,16
-1460,O. Kouassi,Substitute,NaN
-1461,A. Hoff,Substitute,NaN
-1462,M. Opondo,Substitute,23
-1463,F. Roslyng,Substitute,6
-1663,M. Delač,Goalkeeper,90
-1664,C. Tapé,Defender,90
-1665,O. Kolskogen,Defender,90
-1666,S. Hausner,Defender,90
-1667,M. Kallesøe,Defender,90
-1668,K. Lusavec,Defensive Midfielder,90
-1669,A. Herdonsson,Defensive Midfielder,65
-1670,O. Kjærgaard,Attacking Midfielder,65
-1671,S. Ngabo,Attacking Midfielder,83
-1672,E. Frederiksen,Attacking Midfielder,90
-1673,K. Karikari,Striker,65
-1674,M. Egho,Substitute,NaN
-1675,M. Hyseni,Substitute,7
-1676,F. Christensen,Substitute,25
-1677,M. Larsen,Substitute,NaN
-1678,J. Madsen,Substitute,25
-1679,O. Kouassi,Substitute,NaN
-1680,A. Hoff,Substitute,NaN
-1681,S. Pingel,Substitute,25
-1682,F. Roslyng,Substitute,NaN
-1921,M. Delač,Goalkeeper,90
-1922,C. Tapé,Defender,57
-1923,O. Kolskogen,Defender,77
-1924,S. Hausner,Defender,90
-1925,M. Kallesøe,Defender,31
-1926,K. Lusavec,Defensive Midfielder,90
-1927,A. Herdonsson,Defensive Midfielder,90
-1928,O. Kjærgaard,Attacking Midfielder,90
-1929,S. Ngabo,Attacking Midfielder,57
-1930,E. Frederiksen,Attacking Midfielder,90
-1931,K. Karikari,Striker,57
-1932,M. Egho,Substitute,33
-1933,M. Hyseni,Substitute,NaN
-1934,F. Christensen,Substitute,13
-1935,A. Ludwig,Substitute,59
-1936,J. Madsen,Substitute,33
-1937,O. Kouassi,Substitute,NaN
-1938,A. Hoff,Substitute,NaN
-1939,S. Pingel,Substitute,33
-1940,F. Roslyng,Substitute,NaN
-2178,M. Delač,Goalkeeper,90
-2179,J. Madsen,Defender,90
-2180,O. Kolskogen,Defender,90
-2181,S. Hausner,Defender,71
-2182,M. Kallesøe,Defender,90
-2183,A. Herdonsson,Defensive Midfielder,81
-2184,K. Lusavec,Defensive Midfielder,90
-2185,K. Karikari,Attacking Midfielder,81
-2186,O. Kjærgaard,Attacking Midfielder,71
-2187,E. Frederiksen,Attacking Midfielder,90
-2188,S. Pingel,Striker,89
-2189,M. Egho,Substitute,1
-2190,M. Hyseni,Substitute,9
-2191,F. Christensen,Substitute,9
-2192,M. Larsen,Substitute,NaN
-2193,O. Kouassi,Substitute,NaN
-2194,S. Ngabo,Substitute,19
-2195,A. Hoff,Substitute,NaN
-2196,F. Roslyng,Substitute,19
-2197,C. Tapé,Substitute,NaN
-2476,M. Delač,Goalkeeper,90
-2477,J. Madsen,Defender,90
-2478,O. Kolskogen,Defender,70
-2479,S. Hausner,Defender,90
-2480,M. Kallesøe,Defender,90
-2481,A. Herdonsson,Defensive Midfielder,45
-2482,K. Lusavec,Defensive Midfielder,90
-2483,O. Kjærgaard,Attacking Midfielder,45
-2484,K. Karikari,Attacking Midfielder,82
-2485,E. Frederiksen,Attacking Midfielder,89
-2486,S. Pingel,Striker,90
-2487,M. Egho,Substitute,NaN
-2488,M. Hyseni,Substitute,NaN
-2489,F. Christensen,Substitute,45
-2490,A. Ludwig,Substitute,1
-2491,O. Kouassi,Substitute,NaN
-2492,S. Ngabo,Substitute,8
-2493,A. Hoff,Substitute,NaN
-2494,F. Roslyng,Substitute,20
-2495,C. Tapé,Substitute,45
-2734,M. Delač,Goalkeeper,90
-2735,C. Tapé,Defender,90
-2736,O. Kolskogen,Defender,90
-2737,S. Hausner,Defender,90
-2738,M. Kallesøe,Defender,90
-2739,J. Madsen,Midfielder,90
-2740,F. Christensen,Midfielder,69
-2741,K. Lusavec,Midfielder,90
-2742,E. Frederiksen,Midfielder,89
-2743,S. Pingel,Striker,90
-2744,K. Karikari,Striker,62
-2745,M. Egho,Substitute,1
-2746,A. Herdonsson,Substitute,21
-2747,M. Hyseni,Substitute,NaN
-2748,O. Kjærgaard,Substitute,28
-2749,A. Ludwig,Substitute,NaN
-2750,M. Larsen,Substitute,NaN
-2751,A. Hoff,Substitute,NaN
-2752,F. Roslyng,Substitute,NaN
-2753,A. Moro,Substitute,NaN
-2833,M. Delač,Goalkeeper,90
-2834,C. Tapé,Defender,45
-2835,O. Kolskogen,Defender,87
-2836,S. Hausner,Defender,90
-2837,M. Kallesøe,Defender,90
-2838,J. Madsen,Midfielder,75
-2839,K. Lusavec,Midfielder,90
-2840,F. Christensen,Midfielder,90
-2841,E. Frederiksen,Midfielder,90
-2842,K. Karikari,Striker,60
-2843,S. Pingel,Striker,75
-2844,M. Egho,Substitute,NaN
-2845,A. Herdonsson,Substitute,45
-2846,M. Hyseni,Substitute,15
-2847,O. Kjærgaard,Substitute,30
-2848,A. Ludwig,Substitute,3
-2849,M. Larsen,Substitute,NaN
-2850,S. Ngabo,Substitute,NaN
-2851,A. Hoff,Substitute,NaN
-2852,F. Roslyng,Substitute,15
-3051,M. Delač,Goalkeeper,90
-3052,J. Madsen,Defender,90
-3053,A. Ludwig,Defender,62
-3054,S. Hausner,Defender,90
-3055,M. Kallesøe,Defender,90
-3056,F. Christensen,Defensive Midfielder,82
-3057,K. Lusavec,Defensive Midfielder,90
-3058,K. Karikari,Attacking Midfielder,62
-3059,S. Ngabo,Attacking Midfielder,62
-3060,E. Frederiksen,Attacking Midfielder,90
-3061,S. Pingel,Striker,78
-3062,M. Egho,Substitute,NaN
-3063,A. Herdonsson,Substitute,8
-3064,M. Hyseni,Substitute,12
-3065,O. Kjærgaard,Substitute,28
-3066,O. Kolskogen,Substitute,28
-3067,M. Larsen,Substitute,NaN
-3068,A. Hoff,Substitute,NaN
-3069,F. Roslyng,Substitute,NaN
-3070,C. Tapé,Substitute,28
-3348,M. Delač,Goalkeeper,90
-3349,C. Tapé,Defender,90
-3350,O. Kolskogen,Defender,56
-3351,S. Hausner,Defender,90
-3352,M. Kallesøe,Defender,90
-3353,J. Madsen,Midfielder,56
-3354,F. Christensen,Midfielder,90
-3355,K. Lusavec,Midfielder,75
-3356,E. Frederiksen,Midfielder,90
-3357,S. Pingel,Striker,75
-3358,K. Karikari,Striker,82
-3359,M. Egho,Substitute,8
-3360,A. Herdonsson,Substitute,15
-3361,M. Hyseni,Substitute,15
-3362,O. Kjærgaard,Substitute,34
-3363,A. Ludwig,Substitute,NaN
-3364,M. Larsen,Substitute,NaN
-3365,S. Ngabo,Substitute,NaN
-3366,A. Hoff,Substitute,NaN
-3367,F. Roslyng,Substitute,34
-3646,M. Delač,Goalkeeper,90
-3647,J. Madsen,Defender,90
-3648,S. Reese,Defender,90
-3649,S. Hausner,Defender,90
-3650,M. Kallesøe,Defender,61
-3651,M. Larsen,Midfielder,78
-3652,F. Christensen,Midfielder,90
-3653,M. Opondo,Midfielder,61
-3654,S. Pingel,Attacking Midfielder,90
-3655,J. Ankersen,Attacking Midfielder,68
-3656,M. Egho,Striker,62
-3657,A. Ekeroth,Substitute,12
-3658,A. Herdonsson,Substitute,29
-3659,M. Hyseni,Substitute,28
-3660,E. Just,Substitute,22
-3661,A. Hermansen,Substitute,NaN
-3662,O. Kolskogen,Substitute,29
-3663,A. Ludwig,Substitute,NaN
-3664,A. Nehme,Substitute,NaN
-3665,O. Stanisic,Substitute,NaN
+773,M. Delač,Goalkeeper,90
+774,J. Madsen,Defender,90
+775,O. Kolskogen,Defender,90
+776,S. Hausner,Defender,90
+777,M. Kallesøe,Defender,90
+778,A. Herdonsson,Defensive Midfielder,90
+779,F. Christensen,Defensive Midfielder,72
+780,E. Just,Defensive Midfielder,90
+781,J. Ankersen,Attacking Midfielder,63
+782,M. Egho,Striker,72
+783,S. Pingel,Striker,90
+784,M. Hyseni,Substitute,NaN
+785,K. Karikari,Substitute,18
+786,O. Kjærgaard,Substitute,27
+787,A. Ludwig,Substitute,NaN
+788,O. Kouassi,Substitute,NaN
+789,A. Hoff,Substitute,NaN
+790,F. Roslyng,Substitute,NaN
+791,C. Tapé,Substitute,18
+792,H. Toftegaard,Substitute,NaN
+832,M. Delač,Goalkeeper,90
+833,J. Madsen,Defender,65
+834,O. Kolskogen,Defender,81
+835,S. Hausner,Defender,90
+836,M. Kallesøe,Defender,90
+837,A. Herdonsson,Defensive Midfielder,90
+838,F. Christensen,Defensive Midfielder,81
+839,O. Kjærgaard,Defensive Midfielder,90
+840,J. Ankersen,Attacking Midfielder,14
+841,M. Egho,Striker,65
+842,S. Pingel,Striker,90
+843,M. Hyseni,Substitute,25
+844,K. Karikari,Substitute,9
+845,A. Ludwig,Substitute,9
+846,O. Kouassi,Substitute,NaN
+847,S. Ngabo,Substitute,25
+848,A. Hoff,Substitute,NaN
+849,F. Roslyng,Substitute,NaN
+850,A. Moro,Substitute,NaN
+851,C. Tapé,Substitute,76
+1088,M. Delač,Goalkeeper,90
+1089,C. Tapé,Defender,90
+1090,A. Ludwig,Defender,90
+1091,S. Hausner,Defender,90
+1092,M. Kallesøe,Defender,85
+1093,J. Madsen,Defensive Midfielder,74
+1094,A. Herdonsson,Defensive Midfielder,90
+1095,O. Kjærgaard,Defensive Midfielder,90
+1096,S. Ngabo,Attacking Midfielder,74
+1097,M. Hyseni,Striker,58
+1098,S. Pingel,Striker,58
+1099,M. Egho,Substitute,32
+1100,F. Christensen,Substitute,16
+1101,K. Karikari,Substitute,32
+1102,O. Kolskogen,Substitute,5
+1103,O. Kouassi,Substitute,NaN
+1104,A. Hoff,Substitute,NaN
+1105,M. Opondo,Substitute,NaN
+1106,F. Roslyng,Substitute,NaN
+1107,J. Ankersen,Substitute,16
+1385,M. Delač,Goalkeeper,90
+1386,C. Tapé,Defender,90
+1387,A. Ludwig,Defender,90
+1388,S. Hausner,Defender,90
+1389,M. Kallesøe,Defender,31
+1390,J. Madsen,Midfielder,60
+1391,F. Christensen,Midfielder,60
+1392,O. Kjærgaard,Midfielder,90
+1393,S. Ngabo,Striker,75
+1394,M. Egho,Striker,45
+1395,S. Pingel,Striker,90
+1396,A. Herdonsson,Substitute,30
+1397,M. Hyseni,Substitute,15
+1398,K. Karikari,Substitute,45
+1399,O. Kolskogen,Substitute,59
+1400,O. Kouassi,Substitute,30
+1401,A. Hoff,Substitute,NaN
+1402,M. Opondo,Substitute,NaN
+1403,F. Roslyng,Substitute,NaN
+1404,J. Ankersen,Substitute,NaN
+1643,M. Delač,Goalkeeper,90
+1644,C. Tapé,Defender,90
+1645,O. Kolskogen,Defender,90
+1646,S. Hausner,Defender,90
+1647,M. Kallesøe,Defender,84
+1648,A. Herdonsson,Midfielder,90
+1649,F. Christensen,Midfielder,67
+1650,O. Kjærgaard,Midfielder,90
+1651,S. Ngabo,Striker,74
+1652,K. Karikari,Striker,90
+1653,S. Pingel,Striker,67
+1654,M. Egho,Substitute,23
+1655,M. Hyseni,Substitute,NaN
+1656,K. Lusavec,Substitute,NaN
+1657,M. Larsen,Substitute,NaN
+1658,J. Madsen,Substitute,16
+1659,O. Kouassi,Substitute,NaN
+1660,A. Hoff,Substitute,NaN
+1661,M. Opondo,Substitute,23
+1662,F. Roslyng,Substitute,6
+1862,M. Delač,Goalkeeper,90
+1863,C. Tapé,Defender,90
+1864,O. Kolskogen,Defender,90
+1865,S. Hausner,Defender,90
+1866,M. Kallesøe,Defender,90
+1867,K. Lusavec,Defensive Midfielder,90
+1868,A. Herdonsson,Defensive Midfielder,65
+1869,O. Kjærgaard,Attacking Midfielder,65
+1870,S. Ngabo,Attacking Midfielder,83
+1871,E. Frederiksen,Attacking Midfielder,90
+1872,K. Karikari,Striker,65
+1873,M. Egho,Substitute,NaN
+1874,M. Hyseni,Substitute,7
+1875,F. Christensen,Substitute,25
+1876,M. Larsen,Substitute,NaN
+1877,J. Madsen,Substitute,25
+1878,O. Kouassi,Substitute,NaN
+1879,A. Hoff,Substitute,NaN
+1880,S. Pingel,Substitute,25
+1881,F. Roslyng,Substitute,NaN
+2120,M. Delač,Goalkeeper,90
+2121,C. Tapé,Defender,57
+2122,O. Kolskogen,Defender,77
+2123,S. Hausner,Defender,90
+2124,M. Kallesøe,Defender,31
+2125,K. Lusavec,Defensive Midfielder,90
+2126,A. Herdonsson,Defensive Midfielder,90
+2127,O. Kjærgaard,Attacking Midfielder,90
+2128,S. Ngabo,Attacking Midfielder,57
+2129,E. Frederiksen,Attacking Midfielder,90
+2130,K. Karikari,Striker,57
+2131,M. Egho,Substitute,33
+2132,M. Hyseni,Substitute,NaN
+2133,F. Christensen,Substitute,13
+2134,A. Ludwig,Substitute,59
+2135,J. Madsen,Substitute,33
+2136,O. Kouassi,Substitute,NaN
+2137,A. Hoff,Substitute,NaN
+2138,S. Pingel,Substitute,33
+2139,F. Roslyng,Substitute,NaN
+2377,M. Delač,Goalkeeper,90
+2378,J. Madsen,Defender,90
+2379,O. Kolskogen,Defender,90
+2380,S. Hausner,Defender,71
+2381,M. Kallesøe,Defender,90
+2382,A. Herdonsson,Defensive Midfielder,81
+2383,K. Lusavec,Defensive Midfielder,90
+2384,K. Karikari,Attacking Midfielder,81
+2385,O. Kjærgaard,Attacking Midfielder,71
+2386,E. Frederiksen,Attacking Midfielder,90
+2387,S. Pingel,Striker,89
+2388,M. Egho,Substitute,1
+2389,M. Hyseni,Substitute,9
+2390,F. Christensen,Substitute,9
+2391,M. Larsen,Substitute,NaN
+2392,O. Kouassi,Substitute,NaN
+2393,S. Ngabo,Substitute,19
+2394,A. Hoff,Substitute,NaN
+2395,F. Roslyng,Substitute,19
+2396,C. Tapé,Substitute,NaN
+2675,M. Delač,Goalkeeper,90
+2676,J. Madsen,Defender,90
+2677,O. Kolskogen,Defender,70
+2678,S. Hausner,Defender,90
+2679,M. Kallesøe,Defender,90
+2680,A. Herdonsson,Defensive Midfielder,45
+2681,K. Lusavec,Defensive Midfielder,90
+2682,O. Kjærgaard,Attacking Midfielder,45
+2683,K. Karikari,Attacking Midfielder,82
+2684,E. Frederiksen,Attacking Midfielder,89
+2685,S. Pingel,Striker,90
+2686,M. Egho,Substitute,NaN
+2687,M. Hyseni,Substitute,NaN
+2688,F. Christensen,Substitute,45
+2689,A. Ludwig,Substitute,1
+2690,O. Kouassi,Substitute,NaN
+2691,S. Ngabo,Substitute,8
+2692,A. Hoff,Substitute,NaN
+2693,F. Roslyng,Substitute,20
+2694,C. Tapé,Substitute,45
+2933,M. Delač,Goalkeeper,90
+2934,C. Tapé,Defender,90
+2935,O. Kolskogen,Defender,90
+2936,S. Hausner,Defender,90
+2937,M. Kallesøe,Defender,90
+2938,J. Madsen,Midfielder,90
+2939,F. Christensen,Midfielder,69
+2940,K. Lusavec,Midfielder,90
+2941,E. Frederiksen,Midfielder,89
+2942,S. Pingel,Striker,90
+2943,K. Karikari,Striker,62
+2944,M. Egho,Substitute,1
+2945,A. Herdonsson,Substitute,21
+2946,M. Hyseni,Substitute,NaN
+2947,O. Kjærgaard,Substitute,28
+2948,A. Ludwig,Substitute,NaN
+2949,M. Larsen,Substitute,NaN
+2950,A. Hoff,Substitute,NaN
+2951,F. Roslyng,Substitute,NaN
+2952,A. Moro,Substitute,NaN
+3032,M. Delač,Goalkeeper,90
+3033,C. Tapé,Defender,45
+3034,O. Kolskogen,Defender,87
+3035,S. Hausner,Defender,90
+3036,M. Kallesøe,Defender,90
+3037,J. Madsen,Midfielder,75
+3038,K. Lusavec,Midfielder,90
+3039,F. Christensen,Midfielder,90
+3040,E. Frederiksen,Midfielder,90
+3041,K. Karikari,Striker,60
+3042,S. Pingel,Striker,75
+3043,M. Egho,Substitute,NaN
+3044,A. Herdonsson,Substitute,45
+3045,M. Hyseni,Substitute,15
+3046,O. Kjærgaard,Substitute,30
+3047,A. Ludwig,Substitute,3
+3048,M. Larsen,Substitute,NaN
+3049,S. Ngabo,Substitute,NaN
+3050,A. Hoff,Substitute,NaN
+3051,F. Roslyng,Substitute,15
+3250,M. Delač,Goalkeeper,90
+3251,J. Madsen,Defender,90
+3252,A. Ludwig,Defender,62
+3253,S. Hausner,Defender,90
+3254,M. Kallesøe,Defender,90
+3255,F. Christensen,Defensive Midfielder,82
+3256,K. Lusavec,Defensive Midfielder,90
+3257,K. Karikari,Attacking Midfielder,62
+3258,S. Ngabo,Attacking Midfielder,62
+3259,E. Frederiksen,Attacking Midfielder,90
+3260,S. Pingel,Striker,78
+3261,M. Egho,Substitute,NaN
+3262,A. Herdonsson,Substitute,8
+3263,M. Hyseni,Substitute,12
+3264,O. Kjærgaard,Substitute,28
+3265,O. Kolskogen,Substitute,28
+3266,M. Larsen,Substitute,NaN
+3267,A. Hoff,Substitute,NaN
+3268,F. Roslyng,Substitute,NaN
+3269,C. Tapé,Substitute,28
+3566,M. Delač,Goalkeeper,90
+3567,J. Madsen,Defender,90
+3568,S. Reese,Defender,90
+3569,S. Hausner,Defender,90
+3570,M. Kallesøe,Defender,61
+3571,M. Larsen,Midfielder,78
+3572,F. Christensen,Midfielder,90
+3573,M. Opondo,Midfielder,61
+3574,S. Pingel,Attacking Midfielder,90
+3575,J. Ankersen,Attacking Midfielder,68
+3576,M. Egho,Striker,62
+3577,A. Ekeroth,Substitute,12
+3578,A. Herdonsson,Substitute,29
+3579,M. Hyseni,Substitute,28
+3580,E. Just,Substitute,22
+3581,A. Hermansen,Substitute,NaN
+3582,O. Kolskogen,Substitute,29
+3583,A. Ludwig,Substitute,NaN
+3584,A. Nehme,Substitute,NaN
+3585,O. Stanisic,Substitute,NaN
+3725,M. Delač,Goalkeeper,90
+3726,A. Ekeroth,Defender,90
+3727,O. Kolskogen,Defender,72
+3728,S. Hausner,Defender,90
+3729,M. Kallesøe,Defender,72
+3730,J. Madsen,Defensive Midfielder,90
+3731,F. Christensen,Defensive Midfielder,90
+3732,M. Larsen,Defensive Midfielder,79
+3733,J. Ankersen,Attacking Midfielder,63
+3734,S. Pingel,Striker,90
+3735,M. Egho,Striker,72
+3736,A. Herdonsson,Substitute,18
+3737,M. Hyseni,Substitute,27
+3738,E. Just,Substitute,11
+3739,A. Hermansen,Substitute,NaN
+3740,K. Karikari,Substitute,18
+3741,A. Ludwig,Substitute,NaN
+3742,A. Nehme,Substitute,NaN
+3743,S. Reese,Substitute,NaN
+3744,F. Roslyng,Substitute,18
