@@ -2284,7 +2284,7 @@ def Opposition_analysis():
     agg_df = agg_df.sort_values(by='Total score', ascending=False)
     agg_df = agg_df.round(2)
     st.dataframe(agg_df, hide_index=True)
-    
+    central_defender_df = agg_df.copy()
     st.header('Fullbacks')
 
     # Filter the fullbacks data for the 'Horsens' team
@@ -2330,6 +2330,7 @@ def Opposition_analysis():
 
     # Display the aggregated DataFrame in Streamlit
     st.dataframe(agg_df, hide_index=True)
+    fullback_df = agg_df.copy()
 
 
     st.header('Number 6')
@@ -2375,6 +2376,8 @@ def Opposition_analysis():
 
     # Display the aggregated DataFrame in Streamlit
     st.dataframe(agg_df, hide_index=True)
+    Number_6_df = agg_df.copy()
+
     st.header('Number 8')
     fullbacks_df = number8_df[number8_df['team_name'] == 'Horsens']
     fullbacks_df['match_date'] = pd.to_datetime(fullbacks_df['label'].str.extract(r'(\d{4}-\d{2}-\d{2})')[0])
@@ -2417,6 +2420,7 @@ def Opposition_analysis():
 
     # Display the aggregated DataFrame in Streamlit
     st.dataframe(agg_df, hide_index=True)
+    Number_8_df = agg_df.copy()
 
     st.header('Number 10')
     fullbacks_df = number10_df[number10_df['team_name'] == 'Horsens']
@@ -2460,6 +2464,7 @@ def Opposition_analysis():
 
     # Display the aggregated DataFrame in Streamlit
     st.dataframe(agg_df, hide_index=True)
+    Number_10_df = agg_df.copy()
 
     st.header('Winger')
     fullbacks_df = winger_df[winger_df['team_name'] == 'Horsens']
@@ -2503,6 +2508,7 @@ def Opposition_analysis():
 
     # Display the aggregated DataFrame in Streamlit
     st.dataframe(agg_df, hide_index=True)
+    Winger_df = agg_df.copy()
 
     
     st.header('Striker')
@@ -2547,7 +2553,61 @@ def Opposition_analysis():
 
     # Display the aggregated DataFrame in Streamlit
     st.dataframe(agg_df, hide_index=True)
+    Striker_df = agg_df.copy()
 
+    def draw_pitch(position_data):
+        fig, ax = plt.subplots(figsize=(10, 7))
+        ax.set_xlim(0, 100)
+        ax.set_ylim(0, 70)
+        ax.set_aspect('equal', adjustable='box')
+
+        # Draw pitch outline and features
+        plt.plot([0, 0, 100, 100, 0], [0, 70, 70, 0, 0], color="black", linewidth=2)  # Pitch outline
+        plt.plot([50, 50], [0, 70], color="black", linewidth=1)  # Center line
+        plt.plot([0, 16.5, 16.5, 0], [25, 25, 45, 45], color="black", linewidth=1)  # Left penalty area
+        plt.plot([100, 83.5, 83.5, 100], [25, 25, 45, 45], color="black", linewidth=1)  # Right penalty area
+        center_circle = plt.Circle((50, 35), 9.15, color="black", fill=False, linewidth=1)
+        ax.add_patch(center_circle)
+
+        # Define player positions on the pitch
+        positions = {
+            "Central Defenders": [(20, 35)],
+            "Fullbacks": [(10, 55), (10, 15)],
+            "Number 6": [(40, 35)],
+            "Number 8": [(60, 35)],
+            "Number 10": [(70, 25)],
+            "Wingers": [(30, 60), (30, 10)],
+            "Strikers": [(80, 35)],
+        }
+
+        # Add players to the positions
+        for position, coords in positions.items():
+            players = position_data.get(position, [])
+            for i, (x, y) in enumerate(coords):
+                plt.text(x, y + 5, position, fontsize=10, ha="center", color="blue", fontweight="bold")
+                if i < len(players):
+                    player_name, total_score = players[i]
+                    plt.text(x, y, f"{player_name}\n({total_score})", fontsize=8, ha="center", color="black")
+
+        # Remove axes for a clean look
+        ax.axis('off')
+        return fig
+
+    # Prepare the data for positions
+    position_data = {
+        "Central Defenders": central_defender_df[['playerName', 'Total score']].values.tolist(),
+        "Fullbacks": fullback_df[['playerName', 'Total score']].values.tolist(),
+        "Number 6": Number_6_df[['playerName', 'Total score']].values.tolist(),
+        "Number 8": Number_8_df[['playerName', 'Total score']].values.tolist(),
+        "Number 10": Number_10_df[['playerName', 'Total score']].values.tolist(),
+        "Wingers": Winger_df[['playerName', 'Total score']].values.tolist(),
+        "Strikers": Striker_df[['playerName', 'Total score']].values.tolist(),
+    }
+
+    # Draw and display the pitch
+    st.header("Depth chart on data")
+    pitch_fig = draw_pitch(position_data)
+    st.pyplot(pitch_fig)
 
     st.header('Set pieces')
 
@@ -2778,6 +2838,7 @@ def Opposition_analysis():
         st.dataframe(first_contact_shorts, hide_index=True)
         st.write('Finisher - Short Corners')
         st.dataframe(finisher_shorts, hide_index=True)
+
     def calculate_total_xg_by_corner_type(finisher_inswingers, finisher_outswingers, finisher_shorts):
         # Calculate the total xG for each corner type by summing the xG column in each dataframe
         total_inswinger_xg = finisher_inswingers['finisher_xg_inswinger'].sum()
