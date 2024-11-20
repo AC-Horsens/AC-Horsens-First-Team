@@ -2292,7 +2292,10 @@ def Opposition_analysis():
     # Extract and convert 'match_date' from the 'label' column, dropping null values
     fullbacks_df['match_date'] = pd.to_datetime(fullbacks_df['label'].str.extract(r'(\d{4}-\d{2}-\d{2})')[0])
     fullbacks_df = fullbacks_df.dropna(subset=['match_date'])
-
+    fullbacks_df = fullbacks_df[
+        (fullbacks_df['match_date'] >= three_months_ago) & 
+        (fullbacks_df['match_date'] <= today)
+    ]
     # Use previously calculated 'latest_dates' to filter recent matches
     recent_matches_df = fullbacks_df[fullbacks_df['match_date'].isin(latest_dates)]
 
@@ -2333,7 +2336,10 @@ def Opposition_analysis():
     # Extract and convert 'match_date' from the 'label' column, dropping null values
     fullbacks_df['match_date'] = pd.to_datetime(fullbacks_df['label'].str.extract(r'(\d{4}-\d{2}-\d{2})')[0])
     fullbacks_df = fullbacks_df.dropna(subset=['match_date'])
-
+    fullbacks_df = fullbacks_df[
+        (fullbacks_df['match_date'] >= three_months_ago) & 
+        (fullbacks_df['match_date'] <= today)
+    ]
     # Use previously calculated 'latest_dates' to filter recent matches
     recent_matches_df = fullbacks_df[fullbacks_df['match_date'].isin(latest_dates)]
 
@@ -2372,7 +2378,10 @@ def Opposition_analysis():
     fullbacks_df = number8_df[number8_df['team_name'] == 'Horsens']
     fullbacks_df['match_date'] = pd.to_datetime(fullbacks_df['label'].str.extract(r'(\d{4}-\d{2}-\d{2})')[0])
     fullbacks_df = fullbacks_df.dropna(subset=['match_date'])
-
+    fullbacks_df = fullbacks_df[
+        (fullbacks_df['match_date'] >= three_months_ago) & 
+        (fullbacks_df['match_date'] <= today)
+    ]
     # Use previously calculated 'latest_dates' to filter recent matches
     recent_matches_df = fullbacks_df[fullbacks_df['match_date'].isin(latest_dates)]
 
@@ -2412,7 +2421,10 @@ def Opposition_analysis():
     fullbacks_df = number10_df[number10_df['team_name'] == 'Horsens']
     fullbacks_df['match_date'] = pd.to_datetime(fullbacks_df['label'].str.extract(r'(\d{4}-\d{2}-\d{2})')[0])
     fullbacks_df = fullbacks_df.dropna(subset=['match_date'])
-
+    fullbacks_df = fullbacks_df[
+        (fullbacks_df['match_date'] >= three_months_ago) & 
+        (fullbacks_df['match_date'] <= today)
+    ]
     # Use previously calculated 'latest_dates' to filter recent matches
     recent_matches_df = fullbacks_df[fullbacks_df['match_date'].isin(latest_dates)]
 
@@ -2452,7 +2464,10 @@ def Opposition_analysis():
     fullbacks_df = winger_df[winger_df['team_name'] == 'Horsens']
     fullbacks_df['match_date'] = pd.to_datetime(fullbacks_df['label'].str.extract(r'(\d{4}-\d{2}-\d{2})')[0])
     fullbacks_df = fullbacks_df.dropna(subset=['match_date'])
-
+    fullbacks_df = fullbacks_df[
+        (fullbacks_df['match_date'] >= three_months_ago) & 
+        (fullbacks_df['match_date'] <= today)
+    ]
     # Use previously calculated 'latest_dates' to filter recent matches
     recent_matches_df = fullbacks_df[fullbacks_df['match_date'].isin(latest_dates)]
 
@@ -2493,7 +2508,10 @@ def Opposition_analysis():
     fullbacks_df = classic_striker_df[classic_striker_df['team_name'] == 'Horsens']
     fullbacks_df['match_date'] = pd.to_datetime(fullbacks_df['label'].str.extract(r'(\d{4}-\d{2}-\d{2})')[0])
     fullbacks_df = fullbacks_df.dropna(subset=['match_date'])
-
+    fullbacks_df = fullbacks_df[
+        (fullbacks_df['match_date'] >= three_months_ago) & 
+        (fullbacks_df['match_date'] <= today)
+    ]
     # Use previously calculated 'latest_dates' to filter recent matches
     recent_matches_df = fullbacks_df[fullbacks_df['match_date'].isin(latest_dates)]
 
