@@ -2241,11 +2241,11 @@ def Opposition_analysis():
     balanced_central_defender_df = balanced_central_defender_df[balanced_central_defender_df['team_name'] == 'Horsens']
     balanced_central_defender_df['match_date'] = pd.to_datetime(balanced_central_defender_df['label'].str.extract(r'(\d{4}-\d{2}-\d{2})')[0])
     today = datetime.now()
-    two_months_ago = today - timedelta(days=60)
+    three_months_ago = today - timedelta(days=90)
 
     # Filter for matches within the last two months
     balanced_central_defender_df = balanced_central_defender_df[
-        (balanced_central_defender_df['match_date'] >= two_months_ago) & 
+        (balanced_central_defender_df['match_date'] >= three_months_ago) & 
         (balanced_central_defender_df['match_date'] <= today)
     ]
 
