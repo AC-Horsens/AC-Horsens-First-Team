@@ -2272,6 +2272,7 @@ def Opposition_analysis():
     }).reset_index()
 
     agg_df = agg_df.sort_values(by='Total score', ascending=False)
+    agg_df = agg_df.round(2)
     st.dataframe(agg_df, hide_index=True)
     
     st.header('Fullbacks')
