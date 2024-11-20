@@ -2576,7 +2576,7 @@ def Opposition_analysis():
             "Number 6": [(40, 35)],
             "Number 8": [(60, 45)],
             "Number 10": [(70, 25)],
-            "Wingers": [(50, 60), (50, 10)],
+            "Wingers": [(60, 60), (60, 10)],
             "Strikers": [(90, 35)],
         }
 
