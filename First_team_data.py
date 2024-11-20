@@ -9,6 +9,7 @@ from collections import Counter
 from scipy.ndimage import gaussian_filter
 from datetime import datetime
 from mplsoccer import Pitch, VerticalPitch
+from datetime import datetime, timedelta
 
 st.set_page_config(layout='wide')
 
@@ -2239,7 +2240,15 @@ def Opposition_analysis():
 
     balanced_central_defender_df = balanced_central_defender_df[balanced_central_defender_df['team_name'] == 'Horsens']
     balanced_central_defender_df['match_date'] = pd.to_datetime(balanced_central_defender_df['label'].str.extract(r'(\d{4}-\d{2}-\d{2})')[0])
-    st.dataframe(balanced_central_defender_df)
+    today = datetime.now()
+    two_months_ago = today - timedelta(days=60)
+
+    # Filter for matches within the last two months
+    balanced_central_defender_df = balanced_central_defender_df[
+        (balanced_central_defender_df['match_date'] >= two_months_ago) & 
+        (balanced_central_defender_df['match_date'] <= today)
+    ]
+
     # Ensure 'match_date' column is not null
     balanced_central_defender_df = balanced_central_defender_df.dropna(subset=['match_date'])
     unique_dates = balanced_central_defender_df['match_date'].unique()
