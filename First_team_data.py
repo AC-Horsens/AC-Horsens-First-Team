@@ -2298,7 +2298,7 @@ def Opposition_analysis():
     # Sort by 'Total score' and drop unnecessary columns
     combined_df = combined_df.sort_values(by='Total score', ascending=False)
     combined_df = combined_df.drop(columns=['match_date', 'player_position', 'player_positionSide'])
-
+    combined_df = combined_df.round(2)
     # Display the combined DataFrame in Streamlit
     st.dataframe(combined_df, hide_index=True)
 
@@ -2313,6 +2313,7 @@ def Opposition_analysis():
 
     # Sort by 'Total score' in descending order
     agg_df = agg_df.sort_values(by='Total score', ascending=False)
+    agg_df = agg_df.round(2)
 
     # Display the aggregated DataFrame in Streamlit
     st.dataframe(agg_df, hide_index=True)
@@ -2338,6 +2339,7 @@ def Opposition_analysis():
     # Sort by 'Total score' and drop unnecessary columns
     combined_df = combined_df.sort_values(by='Total score', ascending=False)
     combined_df = combined_df.drop(columns=['match_date', 'player_position'])
+    combined_df = combined_df.round(2)
 
     # Display the combined DataFrame in Streamlit
     st.dataframe(combined_df, hide_index=True)
@@ -2353,6 +2355,7 @@ def Opposition_analysis():
 
     # Sort by 'Total score' in descending order
     agg_df = agg_df.sort_values(by='Total score', ascending=False)
+    agg_df = agg_df.round(2)
 
     # Display the aggregated DataFrame in Streamlit
     st.dataframe(agg_df, hide_index=True)
@@ -2375,6 +2378,7 @@ def Opposition_analysis():
     # Sort by 'Total score' and drop unnecessary columns
     combined_df = combined_df.sort_values(by='Total score', ascending=False)
     combined_df = combined_df.drop(columns=['match_date', 'player_position'])
+    combined_df = combined_df.round(2)
 
     # Display the combined DataFrame in Streamlit
     st.dataframe(combined_df, hide_index=True)
@@ -2390,6 +2394,7 @@ def Opposition_analysis():
 
     # Sort by 'Total score' in descending order
     agg_df = agg_df.sort_values(by='Total score', ascending=False)
+    agg_df = agg_df.round(2)
 
     # Display the aggregated DataFrame in Streamlit
     st.dataframe(agg_df, hide_index=True)
@@ -2413,6 +2418,7 @@ def Opposition_analysis():
     # Sort by 'Total score' and drop unnecessary columns
     combined_df = combined_df.sort_values(by='Total score', ascending=False)
     combined_df = combined_df.drop(columns=['match_date'])
+    combined_df = combined_df.round(2)
 
     # Display the combined DataFrame in Streamlit
     st.dataframe(combined_df, hide_index=True)
@@ -2428,6 +2434,7 @@ def Opposition_analysis():
 
     # Sort by 'Total score' in descending order
     agg_df = agg_df.sort_values(by='Total score', ascending=False)
+    agg_df = agg_df.round(2)
 
     # Display the aggregated DataFrame in Streamlit
     st.dataframe(agg_df, hide_index=True)
@@ -2451,6 +2458,7 @@ def Opposition_analysis():
     # Sort by 'Total score' and drop unnecessary columns
     combined_df = combined_df.sort_values(by='Total score', ascending=False)
     combined_df = combined_df.drop(columns=['match_date'])
+    combined_df = combined_df.round(2)
 
     # Display the combined DataFrame in Streamlit
     st.dataframe(combined_df, hide_index=True)
@@ -2466,6 +2474,7 @@ def Opposition_analysis():
 
     # Sort by 'Total score' in descending order
     agg_df = agg_df.sort_values(by='Total score', ascending=False)
+    agg_df = agg_df.round(2)
 
     # Display the aggregated DataFrame in Streamlit
     st.dataframe(agg_df, hide_index=True)
@@ -2490,6 +2499,7 @@ def Opposition_analysis():
     # Sort by 'Total score' and drop unnecessary columns
     combined_df = combined_df.sort_values(by='Total score', ascending=False)
     combined_df = combined_df.drop(columns=['match_date'])
+    combined_df = combined_df.round(2)
 
     # Display the combined DataFrame in Streamlit
     st.dataframe(combined_df, hide_index=True)
@@ -2505,6 +2515,7 @@ def Opposition_analysis():
 
     # Sort by 'Total score' in descending order
     agg_df = agg_df.sort_values(by='Total score', ascending=False)
+    agg_df = agg_df.round(2)
 
     # Display the aggregated DataFrame in Streamlit
     st.dataframe(agg_df, hide_index=True)
