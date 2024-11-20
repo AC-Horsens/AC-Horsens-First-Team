@@ -2574,10 +2574,10 @@ def Opposition_analysis():
             "Central Defenders": [(20, 35)],
             "Fullbacks": [(10, 55), (10, 15)],
             "Number 6": [(40, 35)],
-            "Number 8": [(60, 35)],
+            "Number 8": [(60, 45)],
             "Number 10": [(70, 25)],
-            "Wingers": [(30, 60), (30, 10)],
-            "Strikers": [(80, 35)],
+            "Wingers": [(50, 60), (50, 10)],
+            "Strikers": [(90, 35)],
         }
 
         # Add players to the positions
