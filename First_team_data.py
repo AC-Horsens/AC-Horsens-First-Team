@@ -2589,7 +2589,7 @@ def Opposition_analysis():
                 # Display the same list of players for both locations
                 for j, (player_name, total_score) in enumerate(players):
                     offset_y = y - j * 3  # Adjust vertical offset for each player
-                    plt.text(x, offset_y, f"{player_name}\n({total_score})", fontsize=8, ha="center", color="black")
+                    plt.text(x, offset_y, f"{player_name} ({total_score})", fontsize=8, ha="center", color="black")
 
         # Remove axes for a clean look
         ax.axis('off')
