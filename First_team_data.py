@@ -2585,12 +2585,10 @@ def Opposition_analysis():
             players = position_data.get(position, [])
             for i, (x, y) in enumerate(coords):
                 plt.text(x, y + 5, position, fontsize=10, ha="center", color="blue", fontweight="bold")
-                for j, (player_name, total_score) in enumerate(players):
-                    offset_y = y - j * 3  # Adjust vertical offset for each player
-                    # Left side
-                    plt.text(x - 5, offset_y, f"{player_name}\n({total_score})", fontsize=8, ha="center", color="black")
-                    # Right side
-                    plt.text(x + 5, offset_y, f"{player_name}\n({total_score})", fontsize=8, ha="center", color="black")
+                for x_offset in [-5, 5]:  # Offset for left and right positions
+                    for j, (player_name, total_score) in enumerate(players):
+                        offset_y = y - j * 3  # Adjust vertical offset for each player
+                        plt.text(x + x_offset, offset_y, f"{player_name}\n({total_score})", fontsize=8, ha="center", color="black")
 
         # Remove axes for a clean look
         ax.axis('off')
