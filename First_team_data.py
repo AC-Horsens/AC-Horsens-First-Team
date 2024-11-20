@@ -1924,7 +1924,8 @@ def Dashboard():
         st.dataframe(Freekicks)
 
         st.write('Corners')
-        Corners = df_set_pieces[(df_set_pieces['26.0'] != True) & (df_set_pieces['24.0'] != True)]
+        Corners = df_set_pieces[df_set_pieces['25.0'] == True]
+        #Corners = df_set_pieces[(df_set_pieces['26.0'] != True) & (df_set_pieces['24.0'] != True)]
         Corners = Corners.groupby(['team_name','label']).agg({'321.0':'sum'}).reset_index()
         Corners['xG_match'] = Corners.groupby('label')['321.0'].transform('sum')
         Corners['xG_against'] = Corners['321.0'] - Corners['xG_match']
