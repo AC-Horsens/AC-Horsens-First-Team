@@ -2583,11 +2583,13 @@ def Opposition_analysis():
         # Add players to the positions
         for position, coords in positions.items():
             players = position_data.get(position, [])
-            for i, (x, y) in enumerate(coords):
+            for x, y in coords:
+                # Add position title
                 plt.text(x, y + 5, position, fontsize=10, ha="center", color="blue", fontweight="bold")
-            for j, (player_name, total_score) in enumerate(players):
-                offset_y = y - j * 3  # Adjust vertical offset for each player
-                plt.text(x, offset_y, f"{player_name}\n({total_score})", fontsize=8, ha="center", color="black")
+                # Display the same list of players for both locations
+                for j, (player_name, total_score) in enumerate(players):
+                    offset_y = y - j * 3  # Adjust vertical offset for each player
+                    plt.text(x, offset_y, f"{player_name}\n({total_score})", fontsize=8, ha="center", color="black")
 
         # Remove axes for a clean look
         ax.axis('off')
