@@ -2239,7 +2239,7 @@ def Opposition_analysis():
 
     balanced_central_defender_df = balanced_central_defender_df[balanced_central_defender_df['team_name'] == 'Horsens']
     balanced_central_defender_df['match_date'] = pd.to_datetime(balanced_central_defender_df['label'].str.extract(r'(\d{4}-\d{2}-\d{2})')[0])
-
+    st.dataframe(balanced_central_defender_df)
     # Ensure 'match_date' column is not null
     balanced_central_defender_df = balanced_central_defender_df.dropna(subset=['match_date'])
     unique_dates = balanced_central_defender_df['match_date'].unique()
