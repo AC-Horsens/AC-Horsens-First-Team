@@ -55,12 +55,6 @@ def load_possession_data():
     return df_possession
 
 @st.cache_data
-def load_modstander():
-    team_names = ['AaB','B_93','Fredericia','HB_Køge','Helsingør','Hillerød','Hobro','Horsens','Kolding','Næstved','SønderjyskE','Vendsyssel']  
-    Modstander = st.selectbox('Choose opponent', team_names)
-    return Modstander
-
-@st.cache_data
 def load_possession_stats():
     url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/possession_stats_all%20DNK_1_Division_2024_2025.csv'
     df_possession_stats = pd.read_csv(url)
@@ -2022,6 +2016,7 @@ def Opposition_analysis():
     
     balanced_central_defender_df = position_dataframes['Central defender']
     balanced_central_defender_df['label'] = balanced_central_defender_df['label'].str.replace(' ', '_')
+    
     fullbacks_df = position_dataframes['Fullbacks']
     fullbacks_df['label'] = fullbacks_df['label'].str.replace(' ', '_')
 
