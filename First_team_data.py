@@ -2211,6 +2211,7 @@ def Opposition_analysis():
 
     matchstats_df = matchstats_df.set_index('team_name')
     matchstats_df = matchstats_df.drop(columns=['matches_rank'])
+    matchstats_df = pd.to_numeric(matchstats_df,errors='coerce')
     matchstats_df = matchstats_df.round(2)
     st.dataframe(matchstats_df)
     matchstats_df = matchstats_df.reset_index()
