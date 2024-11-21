@@ -2222,7 +2222,7 @@ def Opposition_analysis():
     team_df = matchstats_df.loc[matchstats_df['team_name'] == selected_team]
 
     # Target ranks
-    target_ranks = [1, 2, 3, 4, 9, 10, 11, 12]
+    target_ranks = [1,1.5, 2,2.5, 3,3.5, 4,4.5, 9,9.5, 10,10.5, 11,11.5, 12,12.5]
 
     # Filter the selected team's ranks and values
     filtered_data_df = pd.DataFrame()
