@@ -2073,15 +2073,15 @@ def Opposition_analysis():
     
     xg_df = load_all_xg()
 
-    # Filter for open play xG
+    # Filter for xG
     xg_df_openplay = xg_df[xg_df['321'] > 0]
 
-    # Aggregate open play xG by team and match (contestantId, team_name, label, date)
+    # Aggregate xG by team and match (contestantId, team_name, label, date)
     xg_df_openplay = (
         xg_df_openplay.groupby(['contestantId', 'team_name', 'label', 'date'])['321']
         .sum()
         .reset_index()
-        .rename(columns={'321': 'open play xG'})
+        .rename(columns={'321': 'xG'})
     )
 
     # Ensure the date column is in datetime format
@@ -2089,17 +2089,17 @@ def Opposition_analysis():
 
     # Calculate total xG for each match (grouping by label and date)
     match_total_xg = (
-        xg_df_openplay.groupby(['label', 'date'])['open play xG']
+        xg_df_openplay.groupby(['label', 'date'])['xG']
         .sum()
         .reset_index()
-        .rename(columns={'open play xG': 'total match xG'})
+        .rename(columns={'xG': 'total match xG'})
     )
 
     # Merge the total match xG into the team-level data
     xg_df_openplay = xg_df_openplay.merge(match_total_xg, on=['label', 'date'], how='left')
 
     # Calculate xG against for each team
-    xg_df_openplay['xG against'] = xg_df_openplay['total match xG'] - xg_df_openplay['open play xG']
+    xg_df_openplay['xG against'] = xg_df_openplay['total match xG'] - xg_df_openplay['xG']
 
     # Optional: Drop intermediate columns if needed
     xg_df_openplay = xg_df_openplay.drop(columns=['total match xG'])
@@ -2141,7 +2141,7 @@ def Opposition_analysis():
     matchstats_df = matchstats_df.groupby(['contestantId', 'team_name']).agg({
         'label': 'sum',  # Example of a column to sum
         'penAreaEntries': 'sum',  # Example of another column to sum
-        'open play xG': 'sum',
+        'xG': 'sum',
         'xG against' : 'sum',  # Example of a column to average
         'duelLost': 'sum',
         'duelWon': 'sum',
@@ -2172,7 +2172,7 @@ def Opposition_analysis():
 
     matchstats_df = matchstats_df.rename(columns={'label': 'matches'})
     matchstats_df['PenAreaEntries per match'] = matchstats_df['penAreaEntries'] / matchstats_df['matches']
-    matchstats_df['Open play xG per match'] = matchstats_df['open play xG'] / matchstats_df['matches']
+    matchstats_df['xG per match'] = matchstats_df['xG'] / matchstats_df['matches']
     matchstats_df['xG against per match'] = matchstats_df['xG against'] / matchstats_df['matches']
     matchstats_df['Duels per match'] = (matchstats_df['duelLost'] + matchstats_df['duelWon']) /matchstats_df['matches']
     matchstats_df['Duels won %'] = (matchstats_df['duelWon'] / (matchstats_df['duelWon'] + matchstats_df['duelLost']))*100	
@@ -2194,7 +2194,7 @@ def Opposition_analysis():
     matchstats_df['Total Space control %'] = matchstats_df['Total Control Area %']
     matchstats_df['Center Space control %'] = matchstats_df['Center Control Area %']
     matchstats_df['Penalty Area Space control %'] = matchstats_df['Penalty Area Control %']
-    matchstats_df = matchstats_df[['team_name','matches','PenAreaEntries per match','Open play xG per match','xG against per match','Duels per match','Duels won %','Passes per game','Pass accuracy %','Back zone pass accuracy %','Forward zone pass accuracy %','possWonDef3rd %','possWonMid3rd %','possWonAtt3rd %','Forward pass share %','Final third entries per match','Final third pass accuracy %','Open play shot assists share','PPDA per match','Total Space control %','Center Space control %','Penalty Area Space control %','Long pass share %','Crosses','Cross accuracy %']]
+    matchstats_df = matchstats_df[['team_name','matches','PenAreaEntries per match','xG per match','xG against per match','Duels per match','Duels won %','Passes per game','Pass accuracy %','Back zone pass accuracy %','Forward zone pass accuracy %','possWonDef3rd %','possWonMid3rd %','possWonAtt3rd %','Forward pass share %','Final third entries per match','Final third pass accuracy %','Open play shot assists share','PPDA per match','Total Space control %','Center Space control %','Penalty Area Space control %','Long pass share %','Crosses','Cross accuracy %']]
     matchstats_df['team_name'] = matchstats_df['team_name'].str.replace(' ', '_')
     matchstats_df = matchstats_df.round(2)
 
