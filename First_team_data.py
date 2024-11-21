@@ -2132,7 +2132,6 @@ def Opposition_analysis():
     df_ppda['PPDA'] = df_ppda['PPDA'].astype(float).round(2)
     df_ppda = df_ppda[['team_name','date', 'PPDA']]
     matchstats_df = xg_df_openplay.merge(filtered_data,on=['contestantId','label','team_name','date'])
-    st.dataframe(matchstats_df)
     matchstats_df = df_ppda.merge(matchstats_df)
 
     matchstats_df = matchstats_df.merge(df_spacecontrol,how='left')
@@ -2169,7 +2168,8 @@ def Opposition_analysis():
         'Penalty Area Control %': 'mean',
         'PPDA': 'mean',
         }).reset_index()
-    
+    matchstats_df = matchstats_df.round(2)
+
     matchstats_df = matchstats_df.rename(columns={'label': 'matches'})
     matchstats_df['PenAreaEntries per match'] = matchstats_df['penAreaEntries'] / matchstats_df['matches']
     matchstats_df['Open play xG per match'] = matchstats_df['open play xG'] / matchstats_df['matches']
@@ -2196,6 +2196,7 @@ def Opposition_analysis():
     matchstats_df['Penalty Area Space control %'] = matchstats_df['Penalty Area Control %']
     matchstats_df = matchstats_df[['team_name','matches','PenAreaEntries per match','Open play xG per match','xG against per match','Duels per match','Duels won %','Passes per game','Pass accuracy %','Back zone pass accuracy %','Forward zone pass accuracy %','possWonDef3rd %','possWonMid3rd %','possWonAtt3rd %','Forward pass share %','Final third entries per match','Final third pass accuracy %','Open play shot assists share','PPDA per match','Total Space control %','Center Space control %','Penalty Area Space control %','Long pass share %','Crosses','Cross accuracy %']]
     matchstats_df['team_name'] = matchstats_df['team_name'].str.replace(' ', '_')
+    matchstats_df = matchstats_df.round(2)
 
     cols_to_rank = matchstats_df.drop(columns=['team_name']).columns
     ranked_df = matchstats_df.copy()
@@ -2206,6 +2207,8 @@ def Opposition_analysis():
             ranked_df[col + '_rank'] = matchstats_df[col].rank(axis=0, ascending=False)
 
     matchstats_df = ranked_df.merge(matchstats_df)
+    matchstats_df = matchstats_df.round(2)
+
     matchstats_df = matchstats_df.set_index('team_name')
     matchstats_df = matchstats_df.drop(columns=['matches_rank'])
     matchstats_df = matchstats_df.round(2)
