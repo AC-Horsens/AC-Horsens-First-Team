@@ -2130,7 +2130,7 @@ def Opposition_analysis():
     df_ppda['PPDA'] = df_ppda['PPDA'].astype(float).round(2)
     df_ppda = df_ppda[['team_name','date', 'PPDA']]
     matchstats_df = xg_df_openplay.merge(filtered_data,on=['contestantId','team_name','date'],how='left')
-    st.datafreame(matchstats_df)
+    st.dataframe(matchstats_df)
     matchstats_df = df_ppda.merge(matchstats_df)
 
     matchstats_df = matchstats_df.merge(df_spacecontrol,how='left')
