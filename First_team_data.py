@@ -2103,7 +2103,7 @@ def Opposition_analysis():
 
     # Optional: Drop intermediate columns if needed
     xg_df_openplay = xg_df_openplay.drop(columns=['total match xG'])
-    st.dataframe(xg_df_openplay)   
+    st.dataframe(filtered_data)   
     df_spacecontrol = load_spacecontrol_data()
     df_spacecontrol = df_spacecontrol[df_spacecontrol['Type'] == 'Player']
     df_spacecontrol = df_spacecontrol[['Team','date','TotalControlArea','CenterControlArea','PenaltyAreaControl','label']]
