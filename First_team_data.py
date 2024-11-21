@@ -2103,6 +2103,8 @@ def Opposition_analysis():
 
     # Optional: Drop intermediate columns if needed
     xg_df_openplay = xg_df_openplay.drop(columns=['total match xG'])
+    xg_df_openplay['label'] = np.where(xg_df_openplay['label'].notnull(), 1, xg_df_openplay['label'])
+
     df_spacecontrol = load_spacecontrol_data()
     df_spacecontrol = df_spacecontrol[df_spacecontrol['Type'] == 'Player']
     df_spacecontrol = df_spacecontrol[['Team','date','TotalControlArea','CenterControlArea','PenaltyAreaControl','label']]
@@ -2129,7 +2131,7 @@ def Opposition_analysis():
     df_ppda['date'] = pd.to_datetime(df_ppda['date'])
     df_ppda['PPDA'] = df_ppda['PPDA'].astype(float).round(2)
     df_ppda = df_ppda[['team_name','date', 'PPDA']]
-    matchstats_df = xg_df_openplay.merge(filtered_data,on=['contestantId','team_name','date'],how='inner')
+    matchstats_df = xg_df_openplay.merge(filtered_data,on=['contestantId','team_name','date'])
     st.dataframe(matchstats_df)
     matchstats_df = df_ppda.merge(matchstats_df)
 
