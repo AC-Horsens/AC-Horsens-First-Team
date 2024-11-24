@@ -1092,6 +1092,46 @@ B 93,2745618301,923,5,91,59,1,71.8,-1.8,N. Mouritsen,NaN,202.0,NaN,NaN,B 93 vs F
 B 93,2745618361,924,1,92,5,1,76.5,-1.6,O. Addo,305.0,202.0,NaN,NaN,B 93 vs Fredericia,2024-11-08,69.4,23.6,0.00023899,NaN,NaN,NaN,18.7,2.0,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,true,NaN,NaN,NaN,3
 B 93,2745620429,942,1,78,10,1,49.8,50.1,A. Bredahl,262.0,178.0,NaN,NaN,B 93 vs Fredericia,2024-11-08,36.9,51.6,0.00002551,NaN,NaN,NaN,13.6,3.1,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,NaN,NaN,NaN,NaN,2
 B 93,2747663403,975,49,68,25,1,13.3,76.1,N. Morberg,231.0,159.0,NaN,NaN,B 93 vs Fredericia,2024-11-08,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,NaN,NaN,NaN,NaN,NaN,NaN,NaN,2
+Hobro,2750101317,154,1,18,4,1,23.2,61.7,M. Jacobsen,68.0,47.0,NaN,NaN,B 93 vs Hobro,2024-11-22,26.3,75.0,0.00000288,NaN,NaN,NaN,9.6,1.2,NaN,NaN,,NaN,,true,NaN,,,,NaN,,NaN,NaN,NaN,NaN,1
+Hobro,2750101401,155,1,18,6,1,29.0,75.0,F. Dietz,68.0,47.0,NaN,NaN,B 93 vs Hobro,2024-11-22,23.6,58.4,0.00000299,NaN,NaN,NaN,12.6,4.2,NaN,NaN,,NaN,,NaN,NaN,,,,NaN,,NaN,NaN,NaN,NaN,2
+B 93,2750099517,193,1,14,31,1,61.1,43.6,N. Morberg,57.0,38.0,NaN,NaN,B 93 vs Hobro,2024-11-22,55.2,26.5,0.00022492,NaN,NaN,NaN,13.2,4.2,NaN,NaN,,NaN,,true,NaN,,,,NaN,,NaN,NaN,NaN,NaN,1
+B 93,2750099529,194,1,14,32,1,55.1,26.5,M. Mouritz,57.0,38.0,NaN,NaN,B 93 vs Hobro,2024-11-22,64.4,1.4,0.00016706,NaN,NaN,NaN,19.7,5.2,NaN,NaN,,NaN,,NaN,NaN,,,,NaN,,NaN,NaN,NaN,NaN,2
+Hobro,2750108051,253,1,30,52,1,45.0,90.3,V. Rasmussen,107.0,77.0,NaN,NaN,B 93 vs Hobro,2024-11-22,41.8,84.7,0.00001719,NaN,NaN,NaN,5.1,4.0,NaN,NaN,,NaN,,true,NaN,,,,NaN,,NaN,NaN,NaN,NaN,1
+Hobro,2750108093,254,1,30,54,1,40.7,83.9,M. Pedersen,107.0,77.0,NaN,NaN,B 93 vs Hobro,2024-11-22,27.8,71.5,0.00000557,NaN,NaN,NaN,16.0,3.7,NaN,NaN,,NaN,,NaN,NaN,,,,NaN,,NaN,NaN,NaN,NaN,2
+B 93,2750102995,260,1,21,1,1,70.3,90.3,M. Mouritz,76.0,52.0,NaN,NaN,B 93 vs Hobro,2024-11-22,90.8,40.4,0.04658246,NaN,NaN,NaN,40.2,5.3,NaN,NaN,,NaN,,true,NaN,,,,NaN,,NaN,NaN,NaN,NaN,1
+B 93,2750102999,261,61,21,7,1,90.8,40.4,J. Egeris,76.0,52.0,NaN,NaN,B 93 vs Hobro,2024-11-22,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,,NaN,NaN,,,,NaN,,NaN,NaN,NaN,NaN,2
+B 93,2750105121,305,1,25,7,1,24.4,2.9,M. Mouritz,92.0,66.0,NaN,NaN,B 93 vs Hobro,2024-11-22,26.4,18.0,0.00000217,NaN,NaN,NaN,10.5,1.4,NaN,NaN,,NaN,,true,NaN,,,,NaN,,NaN,NaN,NaN,NaN,1
+B 93,2750105127,306,1,25,8,1,26.4,18.0,N. Morberg,92.0,66.0,NaN,NaN,B 93 vs Hobro,2024-11-22,19.4,29.8,0.00000147,NaN,NaN,NaN,10.9,2.3,NaN,NaN,,NaN,,NaN,NaN,,,,NaN,,NaN,NaN,NaN,NaN,2
+Hobro,2750112381,345,1,39,50,1,66.7,21.5,M. Kristensen,138.0,93.0,NaN,NaN,B 93 vs Hobro,2024-11-22,84.9,75.9,0.00453154,NaN,NaN,NaN,41.6,1.1,NaN,NaN,,NaN,,true,NaN,,,,NaN,,NaN,NaN,NaN,NaN,1
+B 93,2750107343,346,1,29,32,1,22.4,72.3,A. Heimer,105.0,76.0,NaN,NaN,B 93 vs Hobro,2024-11-22,24.4,88.4,0.00000175,NaN,NaN,NaN,11.1,1.4,NaN,NaN,,NaN,,NaN,NaN,,,,NaN,,NaN,NaN,NaN,NaN,2
+Hobro,2750093991,35,1,3,21,0,99.5,99.3,M. Kristensen,18.0,13.0,NaN,NaN,B 93 vs Hobro,2024-11-22,98.7,54.0,NaN,NaN,NaN,NaN,30.8,4.7,true,NaN,,NaN,,NaN,true,,,,NaN,,NaN,NaN,NaN,NaN,1
+B 93,2750110533,416,1,35,36,1,44.7,65.5,A. Heimer,121.0,84.0,NaN,NaN,B 93 vs Hobro,2024-11-22,45.0,34.9,0.00005223,NaN,NaN,NaN,20.8,4.7,NaN,NaN,,NaN,,true,NaN,,,,NaN,,NaN,NaN,NaN,NaN,1
+Hobro,2750139521,484,1,51,52,1,34.1,30.3,M. Pedersen,195.0,131.0,NaN,NaN,B 93 vs Hobro,2024-11-22,30.4,6.7,0.00000511,NaN,NaN,NaN,16.5,4.5,NaN,NaN,,NaN,,true,NaN,,,,NaN,,NaN,NaN,NaN,NaN,1
+Hobro,2750139707,485,1,51,57,1,30.3,4.6,E. Søgaard,195.0,131.0,NaN,NaN,B 93 vs Hobro,2024-11-22,15.1,28.5,0.00000111,NaN,NaN,NaN,22.8,2.3,NaN,NaN,,NaN,,NaN,NaN,,,,NaN,,NaN,NaN,NaN,NaN,2
+Hobro,2750141159,503,1,53,31,0,99.5,0.5,M. Kristensen,201.0,135.0,NaN,NaN,B 93 vs Hobro,2024-11-22,92.7,43.1,NaN,NaN,NaN,NaN,29.8,1.8,NaN,true,,NaN,,NaN,true,,,,NaN,,NaN,NaN,NaN,NaN,1
+Hobro,2750141277,504,1,53,38,0,82.1,5.0,M. Kristensen,202.0,135.0,NaN,NaN,B 93 vs Hobro,2024-11-22,94.3,52.7,NaN,NaN,NaN,NaN,34.9,1.2,NaN,NaN,,NaN,,NaN,NaN,,,,NaN,,NaN,NaN,NaN,NaN,2
+Hobro,2750141401,505,1,53,45,1,74.5,67.6,S. Andreasen,203.0,135.0,NaN,NaN,B 93 vs Hobro,2024-11-22,55.6,53.0,0.00053993,NaN,NaN,NaN,22.2,3.6,NaN,NaN,,NaN,,NaN,NaN,,,,NaN,,NaN,NaN,NaN,NaN,3
+Hobro,2750141517,506,1,53,48,1,46.1,53.1,M. Jacobsen,203.0,135.0,NaN,NaN,B 93 vs Hobro,2024-11-22,22.0,50.6,0.00000494,NaN,NaN,NaN,25.4,3.2,NaN,NaN,,NaN,,NaN,NaN,,,,NaN,,NaN,NaN,NaN,NaN,4
+B 93,2750118487,527,44,21,6,1,88.6,38.8,J. Egeris,76.0,52.0,NaN,NaN,B 93 vs Hobro,2024-11-22,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,,NaN,NaN,,,,NaN,,NaN,NaN,NaN,NaN,3
+Hobro,2750144553,530,1,57,2,0,27.2,31.9,S. Andreasen,216.0,147.0,NaN,NaN,B 93 vs Hobro,2024-11-22,29.5,31.5,NaN,NaN,NaN,NaN,2.4,6.2,NaN,NaN,,NaN,,true,NaN,,,,NaN,,NaN,NaN,NaN,NaN,1
+B 93,2750133607,544,1,46,19,1,42.2,35.2,J. Egeris,174.0,118.0,NaN,NaN,B 93 vs Hobro,2024-11-22,37.7,68.1,0.00002425,NaN,NaN,NaN,22.9,1.8,NaN,NaN,,NaN,,true,NaN,,,,NaN,,NaN,NaN,NaN,NaN,1
+B 93,2750133683,545,1,46,24,1,53.6,72.7,A. Heimer,174.0,118.0,NaN,NaN,B 93 vs Hobro,2024-11-22,53.4,97.2,0.00006033,NaN,NaN,NaN,16.7,1.6,NaN,NaN,,NaN,,NaN,NaN,,,,NaN,,NaN,NaN,NaN,NaN,2
+Hobro,2750167795,702,1,79,6,0,20.0,33.1,J. Dakir,297.0,201.0,NaN,NaN,B 93 vs Hobro,2024-11-22,70.1,20.4,NaN,NaN,NaN,NaN,53.3,6.1,NaN,NaN,,NaN,,true,NaN,,,,NaN,,NaN,NaN,NaN,NaN,1
+Hobro,2750167823,704,44,79,10,1,48.3,12.5,O. Klitten,298.0,201.0,NaN,NaN,B 93 vs Hobro,2024-11-22,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,,NaN,NaN,,,,NaN,,NaN,NaN,NaN,NaN,2
+Hobro,2750169797,733,1,82,49,0,28.5,22.4,M. Jacobsen,314.0,215.0,NaN,NaN,B 93 vs Hobro,2024-11-22,70.9,-2.0,NaN,NaN,NaN,NaN,47.5,5.9,NaN,NaN,,NaN,,true,NaN,,,,NaN,,NaN,NaN,NaN,NaN,1
+B 93,2750095059,75,1,5,24,1,11.2,33.0,M. Falkesgaard,27.0,18.0,NaN,NaN,B 93 vs Hobro,2024-11-22,22.0,20.1,0.00000115,NaN,NaN,NaN,14.3,5.6,NaN,NaN,,NaN,,true,NaN,,,,NaN,,NaN,NaN,NaN,NaN,1
+Hobro,2750172533,757,1,88,26,0,41.1,61.8,F. Dietz,323.0,221.0,NaN,NaN,B 93 vs Hobro,2024-11-22,45.6,61.1,NaN,NaN,NaN,NaN,4.7,6.2,NaN,NaN,,NaN,,true,NaN,,,,NaN,,NaN,NaN,NaN,NaN,1
+Hobro,2750172571,758,1,88,30,1,41.2,61.4,F. Dietz,NaN,221.0,NaN,NaN,B 93 vs Hobro,2024-11-22,22.8,52.5,0.00000158,NaN,NaN,NaN,20.2,3.4,NaN,NaN,,NaN,,NaN,NaN,,,,NaN,,NaN,NaN,NaN,NaN,2
+B 93,2750095083,76,1,5,26,1,22.0,20.1,J. Egeris,27.0,18.0,NaN,NaN,B 93 vs Hobro,2024-11-22,11.1,36.7,0.00000061,NaN,NaN,NaN,16.1,2.4,NaN,NaN,,NaN,,NaN,NaN,,,,NaN,,NaN,NaN,NaN,NaN,2
+Hobro,2750174857,775,1,91,28,0,36.6,26.2,E. Søgaard,335.0,229.0,NaN,NaN,B 93 vs Hobro,2024-11-22,99.0,22.5,NaN,NaN,NaN,NaN,65.6,6.2,NaN,NaN,,NaN,,true,NaN,,,,NaN,,NaN,NaN,NaN,NaN,1
+Hobro,2750174953,776,1,57,4,0,13.0,35.0,M. Jacobsen,217.0,147.0,NaN,NaN,B 93 vs Hobro,2024-11-22,41.0,15.6,NaN,NaN,NaN,NaN,32.2,5.9,NaN,NaN,,NaN,,NaN,NaN,,,,NaN,,NaN,NaN,NaN,NaN,2
+Hobro,2750178179,801,1,95,16,0,38.0,20.3,E. Søgaard,350.0,239.0,NaN,NaN,B 93 vs Hobro,2024-11-22,78.9,16.7,NaN,NaN,NaN,NaN,43.0,6.2,NaN,NaN,,NaN,,true,NaN,,,,NaN,,NaN,NaN,NaN,NaN,1
+B 93,2750161855,841,1,72,8,1,31.2,43.1,J. Egeris,271.0,184.0,NaN,NaN,B 93 vs Hobro,2024-11-22,44.1,94.5,0.00001828,NaN,NaN,NaN,37.5,1.2,NaN,NaN,,NaN,,true,NaN,,,,NaN,,NaN,NaN,NaN,NaN,1
+B 93,2750161887,842,1,72,10,1,44.1,94.5,N. Mouritsen,271.0,184.0,NaN,NaN,B 93 vs Hobro,2024-11-22,30.9,82.9,0.00000633,NaN,NaN,NaN,15.9,3.7,NaN,NaN,,NaN,,NaN,NaN,,,,NaN,,NaN,NaN,NaN,NaN,2
+B 93,2750164389,865,1,74,32,0,99.5,99.5,M. Mouritz,277.0,186.0,NaN,NaN,B 93 vs Hobro,2024-11-22,95.6,53.6,NaN,NaN,NaN,NaN,31.5,4.6,true,NaN,,NaN,,NaN,true,,,,NaN,,NaN,NaN,NaN,NaN,1
+B 93,2750164489,866,1,74,38,1,80.7,91.4,M. Mouritz,278.0,186.0,1.0,NaN,B 93 vs Hobro,2024-11-22,93.9,52.4,0.23238812,NaN,NaN,15,29.9,5.2,NaN,NaN,,NaN,,NaN,NaN,,,,NaN,,NaN,NaN,NaN,NaN,2
+B 93,2750164499,867,15,74,39,1,91.7,54.4,J. Voldby,278.0,186.0,NaN,NaN,B 93 vs Hobro,2024-11-22,NaN,NaN,NaN,0.1466013789176941,0.15807069838047028,NaN,NaN,NaN,NaN,NaN,,NaN,,NaN,NaN,,,,true,,NaN,NaN,NaN,NaN,3
+B 93,2750170915,976,1,85,5,0,99.5,0.5,N. Mouritsen,321.0,220.0,NaN,NaN,B 93 vs Hobro,2024-11-22,101.3,42.8,NaN,NaN,NaN,NaN,28.8,1.5,true,NaN,,NaN,,NaN,true,,,,NaN,,NaN,NaN,NaN,NaN,1
 OB,2702056339,112,1,9,13,1,99.5,0.5,L. Deedson,41.0,25.0,NaN,NaN,Esbjerg vs OB,2024-07-20,90.0,9.1,0.00081027,NaN,NaN,NaN,11.6,2.6,NaN,NaN,NaN,NaN,,NaN,true,,,NaN,NaN,NaN,NaN,NaN,NaN,NaN,1
 OB,2702056345,113,1,9,14,0,90.0,11.3,A. Manneh,41.0,25.0,NaN,NaN,Esbjerg vs OB,2024-07-20,91.3,35.8,NaN,NaN,NaN,NaN,16.7,1.5,true,NaN,NaN,NaN,,NaN,NaN,,,NaN,NaN,NaN,NaN,NaN,NaN,NaN,2
 OB,2702056357,114,6,9,16,1,98.9,29.8,A. Manneh,NaN,25.0,NaN,NaN,Esbjerg vs OB,2024-07-20,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,,NaN,NaN,NaN,NaN,NaN,NaN,NaN,3
@@ -6349,6 +6389,93 @@ Hvidovre,2741025677,948,3,42,52,0,42.0,81.3,C. Jakobsen,167.0,102.0,NaN,NaN,Hvid
 Hvidovre,2741027321,949,3,45,24,0,26.1,91.9,F. Høgh,174.0,106.0,NaN,NaN,Hvidovre vs Vendsyssel,2024-10-26,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,,NaN,NaN,NaN,NaN,NaN,NaN,2
 Hvidovre,2741047231,957,1,78,20,0,50.8,75.2,S. Makienok,NaN,185.0,NaN,NaN,Hvidovre vs Vendsyssel,2024-10-26,55.4,73.8,NaN,NaN,NaN,NaN,4.9,6.1,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,,NaN,NaN,NaN,NaN,NaN,NaN,2
 Hvidovre,2741055227,962,49,92,22,1,34.1,17.6,M. Fredslund,346.0,217.0,NaN,NaN,Hvidovre vs Vendsyssel,2024-10-26,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,,,NaN,NaN,NaN,NaN,NaN,NaN,3
+Roskilde,2750090975,121,1,13,5,1,99.5,99.5,R. Arabaci,58.0,37.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,89.6,88.0,0.00105155,NaN,NaN,NaN,13.0,3.8,NaN,NaN,,NaN,NaN,NaN,true,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Roskilde,2750090987,122,1,13,6,0,89.3,88.9,A. Taranis,58.0,37.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,94.7,47.0,NaN,NaN,NaN,NaN,29.1,4.9,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Roskilde,2750091045,123,1,13,13,1,87.6,9.8,N. Halse,59.0,37.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,89.5,30.1,0.01501109,NaN,NaN,NaN,13.9,1.4,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,3
+Roskilde,2750091081,124,1,13,15,1,92.5,26.7,E. Nielsen,59.0,37.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,91.6,14.6,0.00324924,NaN,NaN,NaN,8.3,4.6,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,4
+Roskilde,2750091093,125,1,13,19,0,91.5,14.9,N. Vesterbæk,59.0,37.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,91.9,47.0,NaN,NaN,NaN,NaN,21.8,1.6,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,5
+Roskilde,2750091345,127,1,13,40,1,56.3,87.2,G. Fraulo,61.0,39.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,64.2,83.5,0.00019445,NaN,NaN,NaN,8.7,6.0,NaN,NaN,,NaN,NaN,true,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Roskilde,2750091363,128,1,13,44,1,62.9,82.1,O. Juul,61.0,39.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,60.1,91.8,0.00014562,NaN,NaN,NaN,7.2,2.0,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Hvidovre,2750089983,132,1,11,16,1,29.7,72.3,M. Kiilerich,48.0,30.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,26.7,53.3,0.00000478,NaN,NaN,NaN,13.3,4.5,NaN,NaN,,NaN,NaN,true,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Hvidovre,2750090025,133,1,11,17,1,29.2,49.4,J. Gemmer,48.0,30.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,30.1,67.2,0.00000613,NaN,NaN,NaN,12.1,1.5,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Hvidovre,2750093601,194,1,17,23,1,31.2,33.6,M. Olsen,75.0,50.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,32.8,70.6,0.00000958,NaN,NaN,NaN,25.2,1.5,NaN,NaN,,NaN,NaN,true,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Roskilde,2750096205,211,1,22,34,0,99.5,0.5,O. Juul,91.0,61.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,92.0,45.4,NaN,NaN,NaN,NaN,31.5,1.8,true,NaN,,NaN,NaN,NaN,true,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Roskilde,2750096237,212,1,22,40,0,68.8,19.8,N. Halse,92.0,61.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,77.8,28.6,NaN,NaN,NaN,NaN,11.2,0.6,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Roskilde,2750097325,225,1,25,2,0,99.5,0.5,O. Juul,99.0,65.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,92.5,54.6,NaN,NaN,NaN,NaN,37.5,1.8,true,NaN,,NaN,NaN,NaN,true,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Roskilde,2750097329,226,6,25,8,1,97.8,76.3,O. Juul,NaN,65.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Roskilde,2750097487,227,1,25,24,0,99.5,99.5,A. Taranis,100.0,65.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,90.9,48.5,NaN,NaN,NaN,NaN,35.8,4.5,true,NaN,,NaN,NaN,NaN,true,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Hvidovre,2750084595,23,1,1,36,0,99.5,99.5,F. Krogstad,6.0,2.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,94.9,57.2,NaN,NaN,NaN,NaN,29.2,4.5,true,NaN,,NaN,NaN,NaN,true,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Hvidovre,2750096609,238,1,23,22,1,43.9,32.5,J. Gemmer,95.0,62.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,54.9,32.5,0.00010414,NaN,NaN,NaN,11.6,0,NaN,NaN,,NaN,NaN,true,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Hvidovre,2750096617,239,1,23,24,1,55.7,32.7,F. Krogstad,95.0,62.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,42.8,17.6,0.00003761,NaN,NaN,NaN,17.0,3.8,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Roskilde,2750099369,254,1,29,9,1,99.5,0.5,O. Juul,112.0,73.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,91.6,8.2,0.00070269,NaN,NaN,NaN,9.8,2.6,NaN,NaN,,NaN,NaN,NaN,true,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Roskilde,2750099407,255,1,29,11,1,90.8,10.4,A. Taranis,112.0,73.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,84.2,16.4,0.00237329,NaN,NaN,NaN,8.0,2.6,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Roskilde,2750099413,256,1,29,13,0,81.7,17.3,O. Juul,112.0,73.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,89.7,47.3,NaN,NaN,NaN,NaN,22.1,1.2,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,3
+Roskilde,2750099477,257,1,29,18,1,70.4,49.9,M. Juhl,113.0,73.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,64.7,14.1,0.00063294,NaN,NaN,NaN,25.1,4.5,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,4
+Roskilde,2750099493,258,1,29,21,0,64.9,13.8,R. Arabaci,113.0,73.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,90.2,67.0,NaN,NaN,NaN,NaN,44.9,0.9,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,5
+Roskilde,2750085335,28,1,3,10,1,37.8,91.2,O. Skolnik,12.0,5.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,73.3,81.2,0.00093008,NaN,NaN,NaN,37.9,6.1,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Hvidovre,2750102583,351,1,35,7,1,99.5,99.5,F. Krogstad,132.0,86.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,80.8,87.5,0.00115217,NaN,NaN,NaN,21.3,3.5,NaN,NaN,,NaN,NaN,NaN,true,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Hvidovre,2750102589,352,1,35,12,0,76.1,82.2,M. Spelmann,132.0,86.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,96.7,37.6,NaN,NaN,NaN,NaN,37.3,5.3,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Hvidovre,2750102597,353,6,35,14,1,84.4,55.2,M. Spelmann,NaN,86.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,3
+Hvidovre,2750102759,354,1,35,31,1,99.5,0.5,J. Gemmer,133.0,86.0,1.0,NaN,Hvidovre vs Roskilde,2024-11-22,95.2,48.2,0.19472993,NaN,NaN,15,32.7,1.7,NaN,true,,NaN,NaN,NaN,true,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Hvidovre,2750102869,355,15,35,32,1,89.9,50.3,M. Olsen,133.0,86.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,NaN,NaN,NaN,0.01391920167952776,0.0,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,true,,NaN,NaN,NaN,NaN,2
+Roskilde,2750104581,361,1,12,33,1,51.1,40.9,N. Vesterbæk,57.0,37.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,66.7,43.6,0.00154608,NaN,NaN,NaN,16.5,0.1,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,6
+Hvidovre,2750103133,366,1,36,24,1,28.0,26.1,M. Olsen,139.0,90.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,24.8,43.3,0.00000362,NaN,NaN,NaN,12.2,1.9,NaN,NaN,,NaN,NaN,true,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Roskilde,2750105727,378,1,41,13,0,65.3,87.1,N. Halse,152.0,99.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,81.5,20.9,NaN,NaN,NaN,NaN,48.1,5.1,NaN,NaN,,NaN,NaN,true,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Hvidovre,2750104181,379,1,38,10,1,39.6,50.0,M. Kiilerich,143.0,94.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,41.4,65.7,0.00002635,NaN,NaN,NaN,10.8,1.4,NaN,NaN,,NaN,NaN,true,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Hvidovre,2750104199,380,1,38,11,1,42.3,67.8,A. Iljazovski,143.0,94.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,53.1,65.4,0.00012704,NaN,NaN,NaN,11.5,6.1,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Hvidovre,2750105039,396,1,39,46,1,99.5,99.5,J. Gemmer,147.0,96.0,1.0,NaN,Hvidovre vs Roskilde,2024-11-22,92.9,51.2,0.10009895,NaN,NaN,13,33.6,4.5,true,NaN,,NaN,NaN,NaN,true,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Hvidovre,2750105045,397,13,39,51,1,92.0,50.0,M. Kiilerich,147.0,96.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,NaN,NaN,NaN,0.10911055654287338,0.0,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,true,,NaN,NaN,NaN,NaN,2
+Roskilde,2750111079,404,1,40,30,1,36.9,25.3,A. Maarup,149.0,97.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,32.5,18.5,0.00000723,NaN,NaN,NaN,6.5,3.9,NaN,NaN,,NaN,NaN,true,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Hvidovre,2750105883,410,1,41,36,1,30.0,80.3,A. Iljazovski,155.0,100.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,34.8,67.8,0.000008,NaN,NaN,NaN,9.9,5.2,NaN,NaN,,NaN,NaN,true,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Hvidovre,2750105919,411,1,41,37,1,34.1,62.3,J. Gemmer,155.0,100.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,29.0,30.7,0.00000693,NaN,NaN,NaN,22.1,4.5,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Hvidovre,2750111585,455,5,35,40,1,71.2,-1.9,M. Olsen,NaN,86.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,3
+Hvidovre,2750112207,456,1,35,41,0,68.1,-1.3,F. Krogstad,134.0,86.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,85.7,6.1,NaN,NaN,NaN,NaN,19.2,0.3,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,true,NaN,NaN,NaN,4
+Hvidovre,2750117993,480,1,47,1,1,84.9,6.8,F. Krogstad,170.0,110.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,95.3,84.8,0.00135683,NaN,NaN,NaN,54.2,1.4,NaN,NaN,,NaN,NaN,true,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Hvidovre,2750118039,481,1,47,11,1,91.8,93.6,M. Kiilerich,170.0,110.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,81.9,87.7,0.00144898,NaN,NaN,NaN,11.1,3.5,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Hvidovre,2750118051,482,1,47,11,0,81.8,85.3,M. Spelmann,170.0,110.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,90.7,44.3,NaN,NaN,NaN,NaN,29.4,5.0,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,3
+Hvidovre,2750118097,483,13,47,14,1,80.5,59.3,M. Olsen,171.0,110.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,NaN,NaN,NaN,0.03496016934514046,0.0,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,true,NaN,,NaN,NaN,NaN,NaN,4
+Hvidovre,2750119147,494,1,48,23,1,25.5,47.5,M. Kiilerich,175.0,114.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,48.1,18.2,0.00002505,NaN,NaN,NaN,31.0,5.6,NaN,NaN,,NaN,NaN,true,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Hvidovre,2750119191,495,1,48,31,1,46.9,41.0,S. Makienok,175.0,114.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,33.8,22.7,0.00001323,NaN,NaN,NaN,18.5,3.9,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Hvidovre,2750121723,520,1,51,13,1,34.3,88.3,A. Iljazovski,187.0,120.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,42.1,92.0,0.00001002,NaN,NaN,NaN,8.6,0.3,NaN,NaN,,NaN,NaN,true,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Hvidovre,2750121735,521,1,51,14,1,42.1,92.0,M. Spelmann,187.0,120.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,29.7,87.4,0.00000463,NaN,NaN,NaN,13.4,3.4,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Roskilde,2750086301,53,1,5,9,1,31.2,72.9,N. Halse,25.0,15.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,36.9,50.3,0.00001323,NaN,NaN,NaN,16.5,5.1,NaN,NaN,,NaN,NaN,true,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Roskilde,2750086325,54,1,5,12,0,38.4,60.6,E. Nielsen,25.0,15.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,43.2,87.8,NaN,NaN,NaN,NaN,19.2,1.3,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Roskilde,2750134863,568,1,63,36,0,99.5,0.5,O. Juul,226.0,141.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,91.0,64.9,NaN,NaN,NaN,NaN,44.7,1.8,true,NaN,,NaN,NaN,NaN,true,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Roskilde,2750134869,569,15,63,42,1,91.5,65.1,E. Nielsen,227.0,141.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,NaN,NaN,NaN,0.03195353224873543,0.139290913939476,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,true,,NaN,NaN,NaN,NaN,2
+Roskilde,2750134879,570,6,63,43,1,96.0,59.6,E. Nielsen,NaN,141.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,3
+Roskilde,2750135501,571,1,64,11,0,99.5,99.5,A. Taranis,228.0,141.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,93.2,53.9,NaN,NaN,NaN,NaN,31.7,4.5,true,NaN,,NaN,NaN,NaN,true,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Roskilde,2750135727,572,1,64,17,1,58.4,73.6,M. Juhl,229.0,141.0,1.0,NaN,Hvidovre vs Roskilde,2024-11-22,68.2,90.3,0.00038014,NaN,NaN,13,15.3,0.8,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Roskilde,2750142391,632,1,70,54,1,38.5,80.3,A. Taranis,252.0,157.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,31.9,51.2,0.00001189,NaN,NaN,NaN,21.0,4.4,NaN,NaN,,NaN,NaN,true,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Roskilde,2750142413,633,1,70,56,1,34.7,47.6,N. Halse,252.0,157.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,46.5,18.0,0.00004096,NaN,NaN,NaN,23.6,5.3,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Roskilde,2750142775,637,1,71,12,1,32.4,8.2,M. Juhl,253.0,157.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,29.0,62.1,0.00000775,NaN,NaN,NaN,36.8,1.7,NaN,NaN,,NaN,NaN,true,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Roskilde,2750142953,638,1,71,21,1,26.4,70.8,O. Skolnik,253.0,157.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,12.0,54.6,0.00000084,NaN,NaN,NaN,18.7,3.8,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Roskilde,2750145367,649,1,73,53,1,28.8,69.1,O. Skolnik,260.0,159.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,60.3,74.5,0.0001021,NaN,NaN,NaN,33.3,0.1,NaN,NaN,,NaN,NaN,true,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Roskilde,2750145377,650,1,73,58,0,60.0,75.0,A. Maarup,260.0,159.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,60.2,75.1,NaN,NaN,NaN,NaN,0.2,0.3,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Roskilde,2750147087,661,1,75,40,1,15.2,36.4,M. Brylov,266.0,163.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,20.1,69.7,0.00000156,NaN,NaN,NaN,23.2,1.3,NaN,NaN,,NaN,NaN,true,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Roskilde,2750147091,662,1,75,41,1,23.8,70.9,O. Skolnik,266.0,163.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,28.2,89.9,0.00000277,NaN,NaN,NaN,13.7,1.2,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Hvidovre,2750139087,688,1,67,37,1,43.8,73.5,C. Jakobsen,240.0,150.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,41.9,36.0,0.00003916,NaN,NaN,NaN,25.6,4.6,NaN,NaN,,NaN,NaN,true,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Hvidovre,2750139137,689,1,67,41,1,41.6,34.8,M. Kiilerich,240.0,150.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,44.6,9.7,0.00002584,NaN,NaN,NaN,17.4,4.9,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Hvidovre,2750144811,740,1,73,23,0,23.1,12.3,F. Đukić,257.0,158.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,63.6,32.4,NaN,NaN,NaN,NaN,44.7,0.3,NaN,NaN,,NaN,NaN,true,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Hvidovre,2750144861,741,1,73,27,0,71.5,31.5,J. Adjei-Broni,258.0,158.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,68.0,43.9,NaN,NaN,NaN,NaN,9.2,2.0,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Roskilde,2750163881,753,1,89,58,0,63.8,8.8,G. Fraulo,306.0,189.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,84.1,55.7,NaN,NaN,NaN,NaN,38.4,1.0,NaN,NaN,,NaN,NaN,true,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Roskilde,2750164913,760,1,91,5,1,12.1,53.6,M. Brylov,312.0,193.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,66.6,64.0,0.00018508,NaN,NaN,NaN,57.7,0.1,NaN,NaN,,NaN,NaN,true,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Roskilde,2750165629,767,1,92,6,0,81.3,93.5,A. Taranis,316.0,195.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,101.3,32.7,NaN,NaN,NaN,NaN,46.4,5.2,NaN,NaN,,NaN,NaN,true,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Hvidovre,2750148201,771,1,76,24,1,67.2,21.8,M. Gehrt,268.0,164.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,84.8,8.2,0.00075602,NaN,NaN,NaN,20.7,5.8,NaN,NaN,,NaN,NaN,true,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Hvidovre,2750148211,772,1,76,25,0,83.8,9.7,M. Spelmann,268.0,164.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,86.8,27.3,NaN,NaN,NaN,NaN,12.4,1.3,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Hvidovre,2750149051,776,1,77,17,0,99.5,99.5,J. Singh,272.0,166.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,92.5,54.8,NaN,NaN,NaN,NaN,31.3,4.5,true,NaN,,NaN,NaN,NaN,true,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Hvidovre,2750149263,777,1,77,27,1,65.1,89.4,M. Spelmann,273.0,166.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,78.6,64.2,0.006659,NaN,NaN,NaN,22.2,5.4,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Hvidovre,2750157181,793,1,84,17,1,34.4,20.7,M. Spelmann,282.0,174.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,26.4,57.3,0.00000664,NaN,NaN,NaN,26.3,1.9,NaN,NaN,,NaN,NaN,true,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Hvidovre,2750157235,794,1,84,21,1,24.7,57.5,M. Olsen,282.0,174.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,9.0,44.5,0.00000059,NaN,NaN,NaN,18.7,3.6,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Hvidovre,2750162893,852,1,89,11,1,65.2,45.8,J. Singh,304.0,188.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,88.1,91.1,0.00121768,NaN,NaN,NaN,39.1,0.9,NaN,NaN,,NaN,NaN,true,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Hvidovre,2750162897,853,61,89,14,0,87.2,92.1,A. Johansen,304.0,188.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Hvidovre,2750164435,865,1,90,39,1,42.5,35.2,M. Kiilerich,311.0,192.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,56.1,30.7,0.00011238,NaN,NaN,NaN,14.6,6.1,NaN,NaN,,NaN,NaN,true,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Hvidovre,2750164491,866,1,90,42,1,58.0,20.4,M. Gehrt,311.0,192.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,78.6,4.1,0.00062093,NaN,NaN,NaN,24.3,5.8,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Hvidovre,2750166611,881,1,93,21,1,36.9,26.5,F. Đukić,318.0,196.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,75.0,64.0,0.00119094,NaN,NaN,NaN,47.4,0.6,NaN,NaN,,NaN,NaN,true,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Hvidovre,2750166619,882,1,93,26,0,75.6,66.3,S. Makienok,318.0,196.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,88.9,68.1,NaN,NaN,NaN,NaN,14.0,0.1,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Roskilde,2750089453,90,1,10,16,1,26.2,71.7,O. Skolnik,45.0,27.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,15.4,47.6,0.00000174,NaN,NaN,NaN,19.9,4.1,NaN,NaN,,NaN,NaN,true,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Roskilde,2750089473,91,1,10,20,0,15.8,54.0,M. Brylov,45.0,27.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,65.5,70.6,NaN,NaN,NaN,NaN,53.4,0.2,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,2
+Hvidovre,2750088355,98,1,8,27,1,62.3,36.9,J. Gemmer,39.0,24.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,63.1,18.8,0.00035392,NaN,NaN,NaN,12.3,4.8,NaN,NaN,,NaN,NaN,true,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,1
+Hvidovre,2750088371,99,1,8,31,1,72.7,14.6,M. Olsen,39.0,24.0,NaN,NaN,Hvidovre vs Roskilde,2024-11-22,85.7,47.9,0.02686529,NaN,NaN,NaN,26.4,1.0,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN,NaN,2
 Kolding,2707204009,114,1,11,6,1,31.3,16.1,C. Vestergaard,41.0,23.0,NaN,NaN,Vendsyssel vs Kolding,2024-08-10,67.9,66.0,0.00037558,NaN,NaN,NaN,51.3,0.7,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,NaN,1
 Vendsyssel,2707204527,115,1,8,1,1,19.5,42.7,K. Kusk,25.0,16.0,NaN,NaN,Vendsyssel vs Kolding,2024-08-10,25.0,37.1,0.00000238,NaN,NaN,NaN,6.9,5.7,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,NaN,1
 Vendsyssel,2707204611,116,1,11,47,1,30.6,30.7,M. Greve,42.0,24.0,NaN,NaN,Vendsyssel vs Kolding,2024-08-10,38.1,27.7,0.00001081,NaN,NaN,NaN,8.1,6.0,NaN,NaN,NaN,NaN,NaN,true,NaN,NaN,,NaN,NaN,NaN,NaN,NaN,NaN,NaN,1
