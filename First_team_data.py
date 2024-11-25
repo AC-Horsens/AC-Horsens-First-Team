@@ -859,10 +859,10 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         # Prepare final output
         df_winger = df_winger.dropna()
 
-        df_winger_total = df_winger[['playerName', 'team_name', 'player_position', 'player_positionSide', 'minsPlayed', 
+        df_winger_total = df_winger[['playerName', 'team_name', 'minsPlayed', 
                                     'age_today', 'Passing_', 'Chance_creation', 'Goalscoring_', 'Possession_value', 'Total score']]
-        df_winger_total = df_winger_total.groupby(['playerName', 'team_name', 'player_position', 'player_positionSide', 'age_today']).mean().reset_index()
-        minutter = df_winger.groupby(['playerName', 'team_name', 'player_position', 'player_positionSide', 'age_today'])['minsPlayed'].sum().astype(float).reset_index()
+        df_winger_total = df_winger_total.groupby(['playerName', 'team_name', 'age_today']).mean().reset_index()
+        minutter = df_winger.groupby(['playerName', 'team_name', 'age_today'])['minsPlayed'].sum().astype(float).reset_index()
         df_winger_total['minsPlayed total'] = minutter['minsPlayed']
 
         df_winger_total = df_winger_total[df_winger_total['minsPlayed total'].astype(int) >= minutter_total]
@@ -918,10 +918,10 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         )        
         df_striker = df_striker.dropna()
 
-        df_striker_total = df_striker[['playerName', 'team_name', 'player_position', 'player_positionSide', 'minsPlayed', 
+        df_striker_total = df_striker[['playerName', 'team_name', 'minsPlayed', 
                                     'age_today', 'Linkup play', 'Chance creation', 'Goalscoring', 'Possession value', 'Total score']]
-        df_striker_total = df_striker_total.groupby(['playerName', 'team_name', 'player_position', 'player_positionSide', 'age_today']).mean().reset_index()
-        minutter = df_striker.groupby(['playerName', 'team_name', 'player_position', 'player_positionSide', 'age_today'])['minsPlayed'].sum().astype(float).reset_index()
+        df_striker_total = df_striker_total.groupby(['playerName', 'team_name', 'age_today']).mean().reset_index()
+        minutter = df_striker.groupby(['playerName', 'team_name', 'age_today'])['minsPlayed'].sum().astype(float).reset_index()
         df_striker_total['minsPlayed total'] = minutter['minsPlayed']
 
         df_striker_total = df_striker_total[df_striker_total['minsPlayed total'].astype(int) >= minutter_total]
