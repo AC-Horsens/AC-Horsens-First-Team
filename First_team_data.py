@@ -858,6 +858,9 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
 
         # Prepare final output
         df_winger = df_winger.dropna()
+        
+        df_winger = df_winger[['playerName', 'team_name', 'age_today', 'minsPlayed', 'label', 
+                    'Passing_', 'Chance_creation', 'Goalscoring_', 'Possession_value', 'Total score']]
 
         df_winger_total = df_winger[['playerName', 'team_name', 'minsPlayed', 
                                     'age_today', 'Passing_', 'Chance_creation', 'Goalscoring_', 'Possession_value', 'Total score']]
