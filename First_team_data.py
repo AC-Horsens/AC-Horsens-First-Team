@@ -911,9 +911,9 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
 
         df_striker['Total score'] = df_striker.apply(
             lambda row: weighted_mean(
-                [row['Linkup play'], row['Chance_creation'], row['Goalscoring'], row['Possession value']],
-                [3 if row['Linkup play'] < 5 else 1, 3 if row['Chance_creation_'] < 5 else 1, 
-                3 if row['Goalscoring_'] < 5 else 1, 3 if row['Possession_value_'] < 5 else 1]
+                [row['Linkup play'], row['Chance creation'], row['Goalscoring'], row['Possession value']],
+                [3 if row['Linkup play'] < 5 else 1, 3 if row['Chance creation'] < 5 else 1, 
+                3 if row['Goalscoring'] < 5 else 1, 3 if row['Possession value'] < 5 else 1]
             ), axis=1
         )        
         df_striker = df_striker[['playerName','team_name','label','minsPlayed','age_today','Linkup play','Chance creation','Goalscoring','Possession value','Total score']]
