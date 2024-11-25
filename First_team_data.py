@@ -494,7 +494,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
                                 'age_today', 'Defending_', 'Passing_', 'Chance_creation', 'Possession_value_added',
                                 'Total score']]
         
-        df_backs = df_backs[['playerName', 'team_name', 'player_position', 'player_positionSide', 'minsPlayed', 'Defending_', 'Passing_', 'Chance_creation','Possession_value_added', 'Total score']]
+        df_backs = df_backs[['playerName', 'team_name', 'player_position', 'player_positionSide','age_today', 'minsPlayed', 'Defending_', 'Passing_', 'Chance_creation','Possession_value_added', 'Total score']]
 
         df_backstotal = df_backstotal.groupby(['playerName', 'team_name', 'player_position', 'player_positionSide', 'age_today']).mean().reset_index()
 
