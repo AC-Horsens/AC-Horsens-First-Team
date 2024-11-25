@@ -751,7 +751,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
 
         # Combine scores into categories
         df_10['Passing'] = df_10[['Forward zone pass % score', 'Forward zone pass score', 'Passing % score', 'Passing score']].mean(axis=1)
-        df_10['Chance creation'] = df_10[['attAssistOpenplay_per90 score', 'penAreaEntries_per90 score', 'Forward zone pass % score',
+        df_10['Chance creation'] = df_10[['Open play assists score', 'Penalty area entries score', 'Forward zone pass % score',
                                         'Forward zone pass score', 'Final third passes % score', 'Final third passes per90 score',
                                         'Possession value total score', 'Possession value score', 'Dribble % score', 
                                         'Touches in box per90 score', 'xA per90 score']].mean(axis=1)
