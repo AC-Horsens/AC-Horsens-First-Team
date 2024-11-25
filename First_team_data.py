@@ -871,51 +871,61 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         return df_winger
 
     def Classic_striker():
+        st.title('Classic striker')
         df_striker = df_scouting[(df_scouting['player_position'] == 'Striker') & (df_scouting['player_positionSide'].str.contains('Centre'))]
         df_striker['minsPlayed'] = df_striker['minsPlayed'].astype(int)
-        df_striker = df_striker[df_striker['minsPlayed'] >= minutter_kamp]
+        df_striker = df_striker[df_striker['minsPlayed'].astype(int) >= minutter_kamp]
 
-        # Calculate scores
-        df_striker = calculate_score(df_striker, 'Possession value total per_90', 'Possession value total score')
-        df_striker = calculate_score(df_striker, 'possessionValue.pvValue_per90', 'Possession value score')
-        df_striker = calculate_score(df_striker, 'possessionValue.pvAdded_per90', 'Possession value added score')
+        df_striker = calculate_score(df_striker,'Possession value total per_90','Possession value total score')
+        df_striker = calculate_score(df_striker,'possessionValue.pvValue_per90', 'Possession value score')
+        df_striker = calculate_score(df_striker,'possessionValue.pvAdded_per90', 'Possession value added score')
         df_striker = calculate_score(df_striker, 'Passing %', 'Passing % score')
         df_striker = calculate_score(df_striker, 'Passes_per90', 'Passing score')
-        df_striker = calculate_score(df_striker, 'finalThirdEntries_per90', 'Final third entries score')
+        df_striker = calculate_score(df_striker, 'finalThirdEntries_per90', 'finalThirdEntries_per90 score')
         df_striker = calculate_score(df_striker, 'Forward zone pass %', 'Forward zone pass % score')
         df_striker = calculate_score(df_striker, 'Forward zone pass_per90', 'Forward zone pass score')
-        df_striker = calculate_score(df_striker, 'fwdPass_per90', 'Forward passes per90 score')
-        df_striker = calculate_score(df_striker, 'attAssistOpenplay_per90', 'Open play assists score')
-        df_striker = calculate_score(df_striker, 'penAreaEntries_per90', 'Penalty area entries score')
-        df_striker = calculate_score(df_striker, 'shotFastbreak_per90', 'Shot fast break score')
-        df_striker = calculate_score(df_striker, 'dribble %', 'Dribble % score')
-        df_striker = calculate_score(df_striker, 'touches_in_box_per90', 'Touches in box per90 score')
-        df_striker = calculate_score(df_striker, 'xA_per90', 'xA per90 score')
-        df_striker = calculate_score(df_striker, 'attemptsIbox_per90', 'Attempts in box per90 score')
-        df_striker = calculate_score(df_striker, 'xg_per90', 'xG per90 score')
+        df_striker = calculate_score(df_striker, 'fwdPass_per90', 'fwd_Pass_per90 score')
+        df_striker = calculate_score(df_striker, 'attAssistOpenplay_per90','attAssistOpenplay_per90 score')
+        df_striker = calculate_score(df_striker, 'penAreaEntries_per90','penAreaEntries_per90 score')
+        df_striker = calculate_score(df_striker, 'finalThird passes %','finalThird passes % score')
+        df_striker = calculate_score(df_striker, 'finalthirdpass_per90','finalThird passes per90 score')
+        df_striker = calculate_score(df_striker, 'shotFastbreak_per90','shotFastbreak_per90 score')
+        df_striker = calculate_score(df_striker, 'dribble %','dribble % score')
+        df_striker = calculate_score(df_striker, 'dribble_per90', 'dribble_per90 score')
+        df_striker = calculate_score(df_striker, 'touches_in_box_per90','touches_in_box_per90 score')
+        df_striker = calculate_score(df_striker, 'xA_per90','xA_per90 score')
+        df_striker = calculate_score(df_striker, 'attemptsIbox_per90','attemptsIbox_per90 score')
+        df_striker = calculate_score(df_striker, 'xg_per90','xg_per90 score')
+        df_striker = calculate_score(df_striker, 'post_shot_xg_per90','post_shot_xg_per90 score')
 
-        # Combine scores into categories
-        df_striker['Linkup play'] = df_striker[['Forward zone pass % score', 'Passing % score', 'Possession value score']].mean(axis=1)
-        df_striker['Chance creation'] = df_striker[['Open play assists score', 'Penalty area entries score']].mean(axis=1)
-        df_striker['Goalscoring'] = df_striker[['xG per90 score', 'Touches in box per90 score']].mean(axis=1)
-        df_striker['Possession value'] = df_striker[['Possession value total score', 'possessionValue.pvAdded_per90']].mean(axis=1)
 
-        # Calculate component scores
-        df_striker = calculate_score(df_striker, 'Linkup play', 'Linkup play_')
-        df_striker = calculate_score(df_striker, 'Chance creation', 'Chance_creation_')
-        df_striker = calculate_score(df_striker, 'Goalscoring', 'Goalscoring_')
-        df_striker = calculate_score(df_striker, 'Possession value', 'Possession_value_')
+        df_striker['Linkup_play'] = df_striker[['Forward zone pass % score','Forward zone pass score','Passing % score','Passing score','Possession value score','penAreaEntries_per90 score','finalThirdEntries_per90 score']].mean(axis=1)
+        df_striker['Chance_creation'] = df_striker[['penAreaEntries_per90 score','Possession value total score','touches_in_box_per90 score','finalThirdEntries_per90 score']].mean(axis=1)
+        df_striker['Goalscoring_'] = df_striker[['post_shot_xg_per90','xg_per90 score','xg_per90 score','xg_per90 score']].mean(axis=1)
+        df_striker['Possession_value'] = df_striker[['Possession value total score','Possession value score','Possession value score','Possession value score']].mean(axis=1)
 
-        # Calculate Total Score
+        df_striker = calculate_score(df_striker, 'Linkup_play', 'Linkup play')
+        df_striker = calculate_score(df_striker, 'Chance_creation','Chance creation')
+        df_striker = calculate_score(df_striker, 'Goalscoring_','Goalscoring')        
+        df_striker = calculate_score(df_striker, 'Possession_value', 'Possession value')
+
         df_striker['Total score'] = df_striker.apply(
             lambda row: weighted_mean(
                 [row['Linkup play_'], row['Chance_creation_'], row['Goalscoring_'], row['Possession_value_']],
                 [3 if row['Linkup play_'] < 5 else 1, 3 if row['Chance_creation_'] < 5 else 1, 
                 3 if row['Goalscoring_'] < 5 else 1, 3 if row['Possession_value_'] < 5 else 1]
             ), axis=1
-        )
+        )        
+        df_striker = df_striker[['playerName','team_name','label','minsPlayed','age_today','Linkup play','Chance creation','Goalscoring','Possession value','Total score']]
+        df_striker = df_striker.dropna()
 
-        # Prepare final output
+        df_strikertotal = df_striker[['playerName','team_name','minsPlayed','age_today','Linkup play','Chance creation','Goalscoring','Possession value','Total score']]
+
+        df_strikertotal = df_strikertotal.groupby(['playerName','team_name','age_today']).mean().reset_index()
+        minutter = df_striker.groupby(['playerName', 'team_name','age_today'])['minsPlayed'].sum().astype(float).reset_index()
+        df_strikertotal['minsPlayed total'] = minutter['minsPlayed']
+        # Calculate Total Score
+
         df_striker_total = df_striker.groupby(['playerName', 'team_name']).mean().reset_index()
         return df_striker.sort_values('Total score', ascending=False)
 
