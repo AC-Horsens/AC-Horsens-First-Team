@@ -409,7 +409,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         # Calculate weighted Total score
         df_balanced_central_defender['Total score'] = df_balanced_central_defender.apply(
             lambda row: weighted_mean(
-                [row['Defending_'], row['Passing_'], row['Possession_value_added']],
+                [row['Defending_'],row['Defending_'], row['Passing_'], row['Possession_value_added']],
                 [3 if row['Defending_'] < 5 else 1, 3 if row['Passing_'] < 5 else 1, 3 if row['Possession_value_added'] < 5 else 1]
             ), axis=1
                     )
@@ -431,8 +431,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         df_balanced_central_defendertotal = df_balanced_central_defendertotal.sort_values('Total score', ascending=False)
 
         return df_balanced_central_defender
-
-    
+  
     def fullbacks():
         df_backs = df_scouting[((df_scouting['player_position'] == 'Defender') | (df_scouting['player_position'] == 'Wing Back')) & 
                             ((df_scouting['player_positionSide'] == 'Right') | (df_scouting['player_positionSide'] == 'Left'))]
@@ -482,17 +481,14 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         # Calculate Total Score with Weighted Mean
         df_backs['Total score'] = df_backs.apply(
             lambda row: weighted_mean(
-                [row['Defending_'], row['Passing_'], row['Chance_creation'], row['Possession_value_added']],
-                [3 if row['Defending_'] < 5 else 1,
-                3 if row['Passing_'] < 5 else 1,
-                3 if row['Chance_creation'] < 5 else 1,
-                3 if row['Possession_value_added'] < 5 else 1]
+                [row['Defending_'], row['Passing_'], row['Chance_creation']],
+                [3 if row['Defending_'] < 5 else 1, 3 if row['Passing_'] < 5 else 1, 3 if row['Chance_creation'] < 5 else 1]
             ), axis=1
         )
 
-        df_backs = df_backs[['playerName', 'team_name', 'player_position', 'player_positionSide', 'label',
-                            'minsPlayed', 'age_today', 'Defending_', 'Passing_', 'Chance_creation',
-                            'Possession_value_added', 'Total score']]
+        # Prepare final output
+        df_backs = df_backs[['playerName', 'team_name', 'player_position', 'player_positionSide', 'minsPlayed', 'Defending_', 'Passing_', 'Chance_creation', 'Total score']]
+
         df_backs = df_backs.dropna()
 
         df_backstotal = df_backs[['playerName', 'team_name', 'player_position', 'player_positionSide', 'minsPlayed',
@@ -546,7 +542,16 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         df_sekser = calculate_score(df_sekser, 'Progressive ball movement','Progressive_ball_movement')
         df_sekser = calculate_score(df_sekser, 'Possession value added', 'Possession_value_added')
         
-        df_sekser['Total score'] = df_sekser[['Defending_','Defending_','Defending_','Passing_','Passing_','Passing_','Progressive_ball_movement','Possession_value_added']].mean(axis=1)
+        df_sekser['Total score'] = df_sekser.apply(
+        lambda row: weighted_mean(
+            [row['Defending_'], row['Passing_'],row['Progressive_ball_movement'],row['Possession_value_added']],
+            [3 if row['Defending_'] < 5 else 1, 3 if row['Passing_'] < 5 else 1, 3 if row['Progressive_ball_movement'] < 5 else 1, 3 if row['Possession_value_added'] < 5 else 1]
+        ), axis=1
+        )
+
+    # Prepare final output
+        df_sekser = df_sekser[['playerName', 'team_name', 'player_position', 'minsPlayed', 'Defending_', 'Passing_', 'Total score']]
+
         df_sekser = df_sekser[['playerName','team_name','player_position','label','minsPlayed','age_today','Defending_','Passing_','Progressive_ball_movement','Possession_value_added','Total score']]
         df_sekser = df_sekser.dropna()
         df_seksertotal = df_sekser[['playerName','team_name','player_position','minsPlayed','age_today','Defending_','Passing_','Progressive_ball_movement','Possession_value_added','Total score']]
