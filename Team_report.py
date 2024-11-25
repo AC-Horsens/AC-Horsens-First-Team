@@ -384,7 +384,7 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         df_unique = df.drop_duplicates(column).copy()
         df_unique.loc[:, score_column] = pd.qcut(df_unique[column], q=10, labels=False, duplicates='raise') + 1
         return df.merge(df_unique[[column, score_column]], on=column, how='left')
-    
+
     def calculate_opposite_score(df, column, score_column):
         df_unique = df.drop_duplicates(column).copy()
         df_unique.loc[:, score_column] = pd.qcut(-df_unique[column], q=10, labels=False, duplicates='raise') + 1
@@ -396,22 +396,30 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
             expanded_scores.extend([score] * weight)
         return np.mean(expanded_scores)
 
-    minutter_kamp = 0
+    minutter_kamp = 30
     minutter_total = 300
         
     df_possession_xa = df_possession_xa.rename(columns={'318.0': 'xA'})
     df_possession_xa_summed = df_possession_xa.groupby(['playerName','label'])['xA'].sum().reset_index()
 
-    df_pv = df_pv[['playerName', 'team_name', 'label', 'possessionValue.pvValue', 'possessionValue.pvAdded']]
-    df_pv.loc[:, 'possessionValue.pvValue'] = df_pv['possessionValue.pvValue'].astype(float)
-    df_pv.loc[:, 'possessionValue.pvAdded'] = df_pv['possessionValue.pvAdded'].astype(float)
-    df_pv['possessionValue'] = df_pv['possessionValue.pvValue'] + df_pv['possessionValue.pvAdded']
-    df_kamp = df_pv.groupby(['playerName', 'label', 'team_name']).sum()
+    try:
+        df_pv = df_pv_all[['playerName', 'team_name', 'label', 'possessionValue.pvValue', 'possessionValue.pvAdded']]
+        df_pv.loc[:, 'possessionValue.pvValue'] = df_pv['possessionValue.pvValue'].astype(float)
+        df_pv.loc[:, 'possessionValue.pvAdded'] = df_pv['possessionValue.pvAdded'].astype(float)
+        df_pv['possessionValue'] = df_pv['possessionValue.pvValue'] + df_pv['possessionValue.pvAdded']
+        df_kamp = df_pv.groupby(['playerName', 'label', 'team_name']).sum()
+    except KeyError:
+        df_pv = df_possession_xa[['playerName', 'team_name', 'label', 'xA']]
+        df_pv.loc[:, 'possessionValue.pvValue'] = df_pv['xA'].astype(float)
+        df_pv.loc[:, 'possessionValue.pvAdded'] = df_pv['xA'].astype(float)
+        df_pv['possessionValue'] = df_pv['xA'] + df_pv['xA']
+        df_kamp = df_pv.groupby(['playerName', 'label', 'team_name']).sum()
 
     df_kamp = df_kamp.reset_index()
     df_matchstats = df_matchstats[['player_matchName','player_playerId','contestantId','duelLost','aerialLost','player_position','player_positionSide','successfulOpenPlayPass','totalContest','duelWon','penAreaEntries','accurateBackZonePass','possWonDef3rd','wonContest','accurateFwdZonePass','openPlayPass','totalBackZonePass','minsPlayed','fwdPass','finalThirdEntries','ballRecovery','totalFwdZonePass','successfulFinalThirdPasses','totalFinalThirdPasses','attAssistOpenplay','aerialWon','totalAttAssist','possWonMid3rd','interception','totalCrossNocorner','interceptionWon','attOpenplay','touchesInOppBox','attemptsIbox','totalThroughBall','possWonAtt3rd','accurateCrossNocorner','bigChanceCreated','accurateThroughBall','totalLayoffs','accurateLayoffs','totalFastbreak','shotFastbreak','formationUsed','label','match_id','date','possLostAll']]
     df_matchstats = df_matchstats.rename(columns={'player_matchName': 'playerName'})
     df_scouting = df_matchstats.merge(df_kamp)
+
     def calculate_match_pv(df_scouting):
         # Calculate the total match_xg for each match_id
         df_scouting['match_pv'] = df_scouting.groupby('match_id')['possessionValue.pvValue'].transform('sum')
@@ -424,17 +432,18 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         df_scouting['opponents_pv'] = pd.to_numeric(df_scouting['opponents_pv'], errors='coerce')
         return df_scouting
     df_scouting = calculate_match_pv(df_scouting)
-    
+
     df_xg = df_xg_all[['contestantId','team_name','playerName','playerId','321','322','9','match_id','label','date']]
     df_xg = df_xg[df_xg['9']!= True]
+
     df_xg = df_xg.rename(columns={'321': 'xg'})
     df_xg = df_xg.rename(columns={'322': 'post shot xg'})
 
     df_xg['xg'] = df_xg['xg'].astype(float)
     df_xg['post shot xg'] = df_xg['post shot xg'].astype(float)
+
     df_xg = df_xg.groupby(['playerName','playerId','match_id','contestantId','team_name','label','date']).sum()
     df_xg = df_xg.reset_index()
-
     df_scouting = df_scouting.rename(columns={'player_playerId': 'playerId'})
     df_scouting = df_scouting.merge(df_xg, how='left', on=['playerName', 'playerId', 'match_id', 'contestantId', 'team_name', 'label', 'date']).reset_index()
     def calculate_match_xg(df_scouting):
@@ -451,8 +460,9 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         return df_scouting
 
     df_scouting = calculate_match_xg(df_scouting)
-    
+
     df_scouting = df_scouting.merge(df_possession_xa_summed, how='left')
+
     def calculate_match_xa(df_scouting):
         # Calculate the total match_xg for each match_id
         df_scouting['match_xA'] = df_scouting.groupby('match_id')['xA'].transform('sum')
@@ -465,8 +475,9 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         df_scouting['opponents_xA'] = pd.to_numeric(df_scouting['opponents_xA'], errors='coerce')
         
         return df_scouting
-    df_scouting = calculate_match_xa(df_scouting)
     
+    df_scouting = calculate_match_xa(df_scouting)
+
     df_scouting.fillna(0, inplace=True)
     squads['dateOfBirth'] = pd.to_datetime(squads['dateOfBirth'])
     today = datetime.today()
@@ -474,7 +485,7 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
     squads = squads[['id','matchName','nationality','dateOfBirth','age_today']]
     squads = squads.rename(columns={'id': 'playerId'})
     squads = squads.rename(columns={'matchName': 'playerName'})
-    squads.fillna(0,inplace=True)
+    #squads.fillna(0,inplace=True)
 
     df_scouting = df_scouting.merge(squads,how='outer')
     df_scouting = df_scouting.drop_duplicates(subset=['playerName', 'team_name', 'player_position', 'player_positionSide', 'label'])
@@ -940,7 +951,7 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         df_ottertotal = df_ottertotal.sort_values('Total score', ascending=False)
 
         return df_otter
-        
+
     def number10():
         df_10 = df_scouting[
             ((df_scouting['player_position'] == 'Attacking Midfielder') & df_scouting['player_positionSide'].str.contains('Centre')) |
@@ -973,7 +984,7 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
 
         # Combine scores into categories
         df_10['Passing'] = df_10[['Forward zone pass % score', 'Forward zone pass score', 'Passing % score', 'Passing score']].mean(axis=1)
-        df_10['Chance creation'] = df_10[['attAssistOpenplay_per90 score', 'penAreaEntries_per90 score', 'Forward zone pass % score',
+        df_10['Chance creation'] = df_10[['Open play assists score', 'Penalty area entries score', 'Forward zone pass % score',
                                         'Forward zone pass score', 'Final third passes % score', 'Final third passes per90 score',
                                         'Possession value total score', 'Possession value score', 'Dribble % score', 
                                         'Touches in box per90 score', 'xA per90 score']].mean(axis=1)
@@ -999,18 +1010,18 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         # Prepare final output
         df_10 = df_10.dropna()
 
-        df_10total = df_10[['playerName', 'team_name', 'player_position', 'minsPlayed', 'age_today', 
+        df_10total = df_10[['playerName', 'team_name', 'minsPlayed', 'age_today', 
                             'Passing_', 'Chance_creation', 'Goalscoring_', 'Possession_value', 'Total score']]
         
-        df_10 = df_10[['playerName', 'team_name', 'player_position', 'age_today', 'minsPlayed', 'label', 
+        df_10 = df_10[['playerName', 'team_name', 'age_today', 'minsPlayed', 'label', 
                     'Passing_', 'Chance_creation', 'Goalscoring_', 'Possession_value', 'Total score']]
 
-        df_10total = df_10total.groupby(['playerName', 'team_name', 'player_position', 'age_today']).mean().reset_index()
-        minutter = df_10.groupby(['playerName', 'team_name', 'player_position', 'age_today'])['minsPlayed'].sum().astype(float).reset_index()
+        df_10total = df_10total.groupby(['playerName', 'team_name', 'age_today']).mean().reset_index()
+        minutter = df_10.groupby(['playerName', 'team_name', 'age_today'])['minsPlayed'].sum().astype(float).reset_index()
         df_10total['minsPlayed total'] = minutter['minsPlayed']
 
         df_10 = df_10.sort_values('Total score', ascending=False)
-        df_10total = df_10total[['playerName', 'team_name', 'player_position', 'age_today', 'minsPlayed total', 
+        df_10total = df_10total[['playerName', 'team_name', 'age_today', 'minsPlayed total', 
                                 'Passing_', 'Chance_creation', 'Goalscoring_', 'Possession_value', 'Total score']]
         df_10total = df_10total[df_10total['minsPlayed total'].astype(int) >= minutter_total]
 
@@ -1056,7 +1067,7 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
 
         # Combine scores into categories
         df_winger['Passing'] = df_winger[['Forward zone pass % score', 'Forward zone pass score', 'Passing % score', 'Passing score']].mean(axis=1)
-        df_winger['Chance creation'] = df_winger[['attAssistOpenplay_per90 score', 'penAreaEntries_per90 score', 'Forward zone pass % score', 
+        df_winger['Chance creation'] = df_winger[['Open play assists score', 'Penalty area entries score', 'Forward zone pass % score', 
                                                 'Forward zone pass score', 'Final third passes % score', 'Final third passes per90 score', 
                                                 'Possession value total score', 'Possession value score', 'Dribble % score', 
                                                 'Dribble per90 score', 'Touches in box per90 score', 'xA per90 score']].mean(axis=1)
@@ -1080,11 +1091,14 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
 
         # Prepare final output
         df_winger = df_winger.dropna()
+        
+        df_winger = df_winger[['playerName', 'team_name', 'age_today', 'minsPlayed', 'label', 
+                    'Passing_', 'Chance_creation', 'Goalscoring_', 'Possession_value', 'Total score']]
 
-        df_winger_total = df_winger[['playerName', 'team_name', 'player_position', 'player_positionSide', 'minsPlayed', 
+        df_winger_total = df_winger[['playerName', 'team_name', 'minsPlayed', 
                                     'age_today', 'Passing_', 'Chance_creation', 'Goalscoring_', 'Possession_value', 'Total score']]
-        df_winger_total = df_winger_total.groupby(['playerName', 'team_name', 'player_position', 'player_positionSide', 'age_today']).mean().reset_index()
-        minutter = df_winger.groupby(['playerName', 'team_name', 'player_position', 'player_positionSide', 'age_today'])['minsPlayed'].sum().astype(float).reset_index()
+        df_winger_total = df_winger_total.groupby(['playerName', 'team_name', 'age_today']).mean().reset_index()
+        minutter = df_winger.groupby(['playerName', 'team_name', 'age_today'])['minsPlayed'].sum().astype(float).reset_index()
         df_winger_total['minsPlayed total'] = minutter['minsPlayed']
 
         df_winger_total = df_winger_total[df_winger_total['minsPlayed total'].astype(int) >= minutter_total]
@@ -1095,52 +1109,63 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
     def Classic_striker():
         df_striker = df_scouting[(df_scouting['player_position'] == 'Striker') & (df_scouting['player_positionSide'].str.contains('Centre'))]
         df_striker['minsPlayed'] = df_striker['minsPlayed'].astype(int)
-        df_striker = df_striker[df_striker['minsPlayed'] >= minutter_kamp]
+        df_striker = df_striker[df_striker['minsPlayed'].astype(int) >= minutter_kamp]
 
-        # Calculate scores
-        df_striker = calculate_score(df_striker, 'Possession value total per_90', 'Possession value total score')
-        df_striker = calculate_score(df_striker, 'possessionValue.pvValue_per90', 'Possession value score')
-        df_striker = calculate_score(df_striker, 'possessionValue.pvAdded_per90', 'Possession value added score')
+        df_striker = calculate_score(df_striker,'Possession value total per_90','Possession value total score')
+        df_striker = calculate_score(df_striker,'possessionValue.pvValue_per90', 'Possession value score')
+        df_striker = calculate_score(df_striker,'possessionValue.pvAdded_per90', 'Possession value added score')
         df_striker = calculate_score(df_striker, 'Passing %', 'Passing % score')
         df_striker = calculate_score(df_striker, 'Passes_per90', 'Passing score')
-        df_striker = calculate_score(df_striker, 'finalThirdEntries_per90', 'Final third entries score')
+        df_striker = calculate_score(df_striker, 'finalThirdEntries_per90', 'finalThirdEntries_per90 score')
         df_striker = calculate_score(df_striker, 'Forward zone pass %', 'Forward zone pass % score')
         df_striker = calculate_score(df_striker, 'Forward zone pass_per90', 'Forward zone pass score')
-        df_striker = calculate_score(df_striker, 'fwdPass_per90', 'Forward passes per90 score')
-        df_striker = calculate_score(df_striker, 'attAssistOpenplay_per90', 'Open play assists score')
-        df_striker = calculate_score(df_striker, 'penAreaEntries_per90', 'Penalty area entries score')
-        df_striker = calculate_score(df_striker, 'shotFastbreak_per90', 'Shot fast break score')
-        df_striker = calculate_score(df_striker, 'dribble %', 'Dribble % score')
-        df_striker = calculate_score(df_striker, 'touches_in_box_per90', 'Touches in box per90 score')
-        df_striker = calculate_score(df_striker, 'xA_per90', 'xA per90 score')
-        df_striker = calculate_score(df_striker, 'attemptsIbox_per90', 'Attempts in box per90 score')
-        df_striker = calculate_score(df_striker, 'xg_per90', 'xG per90 score')
+        df_striker = calculate_score(df_striker, 'fwdPass_per90', 'fwd_Pass_per90 score')
+        df_striker = calculate_score(df_striker, 'attAssistOpenplay_per90','attAssistOpenplay_per90 score')
+        df_striker = calculate_score(df_striker, 'penAreaEntries_per90','penAreaEntries_per90 score')
+        df_striker = calculate_score(df_striker, 'finalThird passes %','finalThird passes % score')
+        df_striker = calculate_score(df_striker, 'finalthirdpass_per90','finalThird passes per90 score')
+        df_striker = calculate_score(df_striker, 'shotFastbreak_per90','shotFastbreak_per90 score')
+        df_striker = calculate_score(df_striker, 'dribble %','dribble % score')
+        df_striker = calculate_score(df_striker, 'dribble_per90', 'dribble_per90 score')
+        df_striker = calculate_score(df_striker, 'touches_in_box_per90','touches_in_box_per90 score')
+        df_striker = calculate_score(df_striker, 'xA_per90','xA_per90 score')
+        df_striker = calculate_score(df_striker, 'attemptsIbox_per90','attemptsIbox_per90 score')
+        df_striker = calculate_score(df_striker, 'xg_per90','xg_per90 score')
+        df_striker = calculate_score(df_striker, 'post_shot_xg_per90','post_shot_xg_per90 score')
 
-        # Combine scores into categories
-        df_striker['Linkup play'] = df_striker[['Forward zone pass % score', 'Passing % score', 'Possession value score']].mean(axis=1)
-        df_striker['Chance creation'] = df_striker[['attAssistOpenplay_per90 score', 'penAreaEntries_per90 score']].mean(axis=1)
-        df_striker['Goalscoring'] = df_striker[['xg_per90 score', 'Touches in box per90 score']].mean(axis=1)
-        df_striker['Possession value'] = df_striker[['Possession value total score', 'possessionValue.pvAdded_per90']].mean(axis=1)
 
-        # Calculate component scores
-        df_striker = calculate_score(df_striker, 'Linkup play', 'Linkup play_')
-        df_striker = calculate_score(df_striker, 'Chance creation', 'Chance_creation_')
-        df_striker = calculate_score(df_striker, 'Goalscoring', 'Goalscoring_')
-        df_striker = calculate_score(df_striker, 'Possession value', 'Possession_value_')
+        df_striker['Linkup_play'] = df_striker[['Forward zone pass % score','Forward zone pass score','Passing % score','Passing score','Possession value score','penAreaEntries_per90 score','finalThirdEntries_per90 score']].mean(axis=1)
+        df_striker['Chance_creation'] = df_striker[['penAreaEntries_per90 score','Possession value total score','touches_in_box_per90 score','finalThirdEntries_per90 score']].mean(axis=1)
+        df_striker['Goalscoring_'] = df_striker[['post_shot_xg_per90','xg_per90 score','xg_per90 score','xg_per90 score']].mean(axis=1)
+        df_striker['Possession_value'] = df_striker[['Possession value total score','Possession value score','Possession value score','Possession value score']].mean(axis=1)
 
-        # Calculate Total Score
+        df_striker = calculate_score(df_striker, 'Linkup_play', 'Linkup play')
+        df_striker = calculate_score(df_striker, 'Chance_creation','Chance creation')
+        df_striker = calculate_score(df_striker, 'Goalscoring_','Goalscoring')        
+        df_striker = calculate_score(df_striker, 'Possession_value', 'Possession value')
+
         df_striker['Total score'] = df_striker.apply(
             lambda row: weighted_mean(
-                [row['Linkup play_'], row['Chance_creation_'], row['Goalscoring_'], row['Possession_value_']],
-                [3 if row['Linkup play_'] < 5 else 1, 3 if row['Chance_creation_'] < 5 else 1, 
-                3 if row['Goalscoring_'] < 5 else 1, 3 if row['Possession_value_'] < 5 else 1]
+                [row['Linkup play'], row['Chance creation'], row['Goalscoring'], row['Possession value']],
+                [3 if row['Linkup play'] < 5 else 1, 3 if row['Chance creation'] < 5 else 1, 
+                3 if row['Goalscoring'] < 5 else 1, 3 if row['Possession value'] < 5 else 1]
             ), axis=1
-        )
+        )        
+        df_striker = df_striker.dropna()
+        df_striker= df_striker[['playerName', 'team_name', 'age_today', 'minsPlayed', 'label', 
+                    'Linkup play', 'Chance creation', 'Goalscoring', 'Possession value', 'Total score']]
 
-        # Prepare final output
-        df_striker_total = df_striker.groupby(['playerName', 'team_name']).mean().reset_index()
-        return df_striker.sort_values('Total score', ascending=False)
-  
+        df_striker_total = df_striker[['playerName', 'team_name', 'minsPlayed', 
+                                    'age_today', 'Linkup play', 'Chance creation', 'Goalscoring', 'Possession value', 'Total score']]
+        df_striker_total = df_striker_total.groupby(['playerName', 'team_name', 'age_today']).mean().reset_index()
+        minutter = df_striker.groupby(['playerName', 'team_name', 'age_today'])['minsPlayed'].sum().astype(float).reset_index()
+        df_striker_total['minsPlayed total'] = minutter['minsPlayed']
+
+        df_striker_total = df_striker_total[df_striker_total['minsPlayed total'].astype(int) >= minutter_total]
+        df_striker_total = df_striker_total.sort_values('Total score', ascending=False)
+
+        return df_striker
+
     def Targetman():
         df_striker = df_scouting[(df_scouting['player_position'] == 'Striker') & (df_scouting['player_positionSide'].str.contains('Centre'))]
         df_striker['minsPlayed'] = df_striker['minsPlayed'].astype(int)
@@ -1239,6 +1264,7 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         df_strikertotal= df_strikertotal[df_strikertotal['minsPlayed total'].astype(int) >= minutter_total]
         df_strikertotal = df_strikertotal.sort_values('Total score',ascending = False)
         return df_boksstriker
+
     return {
         'Central defender': balanced_central_defender(),
         'Fullbacks': fullbacks(),
@@ -1248,6 +1274,7 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         'Winger': winger(),
         'Classic striker': Classic_striker(),
     }
+
 df_xg, df_xa, df_pv, df_possession_stats, df_xa_agg, df_possession_data, df_xg_agg, df_pv_agg, df_xg_all, df_possession_xa, df_pv_all, df_matchstats, squads, possession_events = load_data()
 position_dataframes = Process_data_spillere(df_possession_xa, df_pv, df_matchstats, df_xg_all, squads)
 
