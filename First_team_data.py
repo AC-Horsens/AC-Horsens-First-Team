@@ -898,7 +898,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         # Combine scores into categories
         df_striker['Linkup play'] = df_striker[['Forward zone pass % score', 'Passing % score', 'Possession value score']].mean(axis=1)
         df_striker['Chance creation'] = df_striker[['Open play assists score', 'Penalty area entries score']].mean(axis=1)
-        df_striker['Goalscoring'] = df_striker[['xg_per90 score','xg_per90 score', 'xg_per90 score','Post shot xG per90 score', 'Touches in box per90 score']].mean(axis=1)
+        df_striker['Goalscoring'] = df_striker[['xG per90 score','xG per90 score', 'xG per90 score','Post shot xG per90 score', 'Touches in box per90 score']].mean(axis=1)
         df_striker['Possession value'] = df_striker[['Possession value total score', 'possessionValue.pvAdded_per90']].mean(axis=1)
 
         # Calculate component scores
