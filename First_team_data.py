@@ -481,19 +481,21 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         # Calculate Total Score with Weighted Mean
         df_backs['Total score'] = df_backs.apply(
             lambda row: weighted_mean(
-                [row['Defending_'], row['Passing_'], row['Chance_creation']],
-                [3 if row['Defending_'] < 5 else 1, 3 if row['Passing_'] < 5 else 1, 3 if row['Chance_creation'] < 5 else 1]
+                [row['Defending_'], row['Passing_'], row['Chance_creation'], row['Possession_value_added']],
+                [3 if row['Defending_'] < 5 else 1, 3 if row['Passing_'] < 5 else 1, 3 if row['Chance_creation'] < 5 else 1, 3 if row['Possession_value_added'] < 5 else 1]
             ), axis=1
         )
 
         # Prepare final output
-        df_backs = df_backs[['playerName', 'team_name', 'player_position', 'player_positionSide', 'minsPlayed', 'Defending_', 'Passing_', 'Chance_creation', 'Total score']]
 
         df_backs = df_backs.dropna()
 
         df_backstotal = df_backs[['playerName', 'team_name', 'player_position', 'player_positionSide', 'minsPlayed',
                                 'age_today', 'Defending_', 'Passing_', 'Chance_creation', 'Possession_value_added',
                                 'Total score']]
+        
+        df_backs = df_backs[['playerName', 'team_name', 'player_position', 'player_positionSide', 'minsPlayed', 'Defending_', 'Passing_', 'Chance_creation','Possession_value_added', 'Total score']]
+
         df_backstotal = df_backstotal.groupby(['playerName', 'team_name', 'player_position', 'player_positionSide', 'age_today']).mean().reset_index()
 
         minutter = df_backs.groupby(['playerName', 'team_name', 'player_position', 'player_positionSide', 'age_today'])['minsPlayed'].sum().astype(float).reset_index()
