@@ -748,7 +748,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
 
         # Combine scores into categories
         df_10['Passing'] = df_10[['Forward zone pass % score', 'Forward zone pass per90 score', 'Passing % score', 'Passing score']].mean(axis=1)
-        df_10['Chance creation'] = df_10[['xA per90 score', 'Touches in box per90 score', 'Dribble % score', 
+        df_10['Chance creation'] = df_10[['xA per90 score', 'Touches in box per90 score', 'Dribble % score',
                                         'Dribble per90 score', 'Final third passes % score', 'Final third passes per90 score',
                                         'Possession value score', 'Possession value total score']].mean(axis=1)
         df_10['Goalscoring'] = df_10[['xG per90 score', 'Post shot xG per90 score', 'Touches in box per90 score']].mean(axis=1)
@@ -764,7 +764,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         df_10['Total score'] = df_10.apply(
             lambda row: weighted_mean(
                 [row['Passing_'], row['Chance_creation'], row['Goalscoring_'], row['Possession_value_added']],
-                [3 if row['Passing_'] < 5 else 1, 3 if row['Chance_creation'] < 5 else 1, 
+                [3 if row['Passing_'] < 5 else 1, 3 if row['Chance_creation'] < 5 else 1,
                 3 if row['Goalscoring_'] < 5 else 1, 3 if row['Possession_value_added'] < 5 else 1]
             ), axis=1
         )
@@ -772,22 +772,23 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         # Prepare final output
         df_10 = df_10.dropna()
 
-        df_10total = df_10[['playerName', 'team_name', 'player_position', 'minsPlayed', 'age_today',
-                            'Passing_', 'Chance_creation', 'Goalscoring_', 'Possession_value_added', 'Total score']]
-        df_10total = df_10total.groupby(['playerName', 'team_name', 'player_position', 'age_today']).mean().reset_index()
+        # Only keep numeric columns for aggregation
+        numeric_columns = df_10.select_dtypes(include=['number']).columns.tolist()
+        non_numeric_columns = ['playerName', 'team_name', 'player_position', 'age_today']
+        aggregation_columns = non_numeric_columns + numeric_columns
 
-        minutter = df_10.groupby(['playerName', 'team_name', 'player_position', 'age_today'])['minsPlayed'].sum().astype(float).reset_index()
+        df_10total = df_10[aggregation_columns]
+        df_10total = df_10total.groupby(non_numeric_columns).mean().reset_index()
+
+        minutter = df_10.groupby(non_numeric_columns)['minsPlayed'].sum().astype(float).reset_index()
         df_10total['minsPlayed total'] = minutter['minsPlayed']
 
         df_10total = df_10total[df_10total['minsPlayed total'].astype(int) >= minutter_total]
         df_10total = df_10total.sort_values('Total score', ascending=False)
 
-        df_10 = df_10[['playerName', 'team_name', 'player_position', 'age_today', 'minsPlayed', 'label',
-                    'Passing_', 'Chance_creation', 'Goalscoring_', 'Possession_value_added', 'Total score']]
         df_10 = df_10.sort_values('Total score', ascending=False)
 
         return df_10
-
     def winger():
         df_winger = df_scouting[
             (
