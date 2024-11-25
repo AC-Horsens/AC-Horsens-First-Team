@@ -412,8 +412,10 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
                 [row['Defending_'], row['Passing_'], row['Possession_value_added']],
                 [3 if row['Defending_'] < 5 else 1, 3 if row['Passing_'] < 5 else 1, 3 if row['Possession_value_added'] < 5 else 1]
             ), axis=1
-        )
-
+                    )
+        df_balanced_central_defender = df_balanced_central_defender[
+            ['playerName', 'team_name', 'player_position', 'minsPlayed', 'age_today', 'Defending_', 'Possession_value_added', 'Passing_', 'Total score']
+        ]
         # Prepare summary
         df_balanced_central_defendertotal = df_balanced_central_defender[
             ['playerName', 'team_name', 'player_position', 'minsPlayed', 'age_today', 'Defending_', 'Possession_value_added', 'Passing_', 'Total score']
