@@ -864,6 +864,8 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         df_winger_total = df_winger_total.groupby(['playerName', 'team_name', 'player_position', 'player_positionSide', 'age_today']).mean().reset_index()
         minutter = df_winger.groupby(['playerName', 'team_name', 'player_position', 'player_positionSide', 'age_today'])['minsPlayed'].sum().astype(float).reset_index()
         df_winger_total['minsPlayed total'] = minutter['minsPlayed']
+        df_winger_total = df_winger_total[['playerName', 'team_name', 'player_position', 'age_today', 'minsPlayed total', 
+                                'Passing_', 'Chance_creation', 'Goalscoring_', 'Possession_value', 'Total score']]
 
         df_winger_total = df_winger_total[df_winger_total['minsPlayed total'].astype(int) >= minutter_total]
         df_winger_total = df_winger_total.sort_values('Total score', ascending=False)
