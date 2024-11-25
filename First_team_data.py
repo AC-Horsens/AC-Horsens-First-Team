@@ -788,7 +788,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         df_10total['minsPlayed total'] = minutter['minsPlayed']
 
         df_10 = df_10.sort_values('Total score', ascending=False)
-        df_10total = df_10total[['playerName', 'team_name', 'player_position', 'age_today', 'minsPlayed total', 
+        df_10total = df_10total[['playerName', 'team_name', 'age_today', 'minsPlayed total', 
                                 'Passing_', 'Chance_creation', 'Goalscoring_', 'Possession_value', 'Total score']]
         df_10total = df_10total[df_10total['minsPlayed total'].astype(int) >= minutter_total]
 
