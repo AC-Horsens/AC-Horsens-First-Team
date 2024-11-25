@@ -551,9 +551,6 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         ), axis=1
         )
 
-    # Prepare final output
-        df_sekser = df_sekser[['playerName', 'team_name', 'player_position', 'minsPlayed', 'Defending_', 'Passing_', 'Total score']]
-
         df_sekser = df_sekser[['playerName','team_name','player_position','label','minsPlayed','age_today','Defending_','Passing_','Progressive_ball_movement','Possession_value_added','Total score']]
         df_sekser = df_sekser.dropna()
         df_seksertotal = df_sekser[['playerName','team_name','player_position','minsPlayed','age_today','Defending_','Passing_','Progressive_ball_movement','Possession_value_added','Total score']]
