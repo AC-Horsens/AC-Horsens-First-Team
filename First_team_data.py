@@ -647,53 +647,75 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         return df_sekser_double_6_forward
     
     def number8():
-        df_otter = df_scouting[(df_scouting['player_position'] == 'Midfielder') & df_scouting['player_positionSide'].str.contains('Centre')]
-        df_otter.loc[:,'minsPlayed'] = df_otter['minsPlayed'].astype(int)
-        df_otter = df_otter[df_otter['minsPlayed'].astype(int) >= minutter_kamp]
+        df_otter = df_scouting[(df_scouting['player_position'] == 'Midfielder') & 
+                            (df_scouting['player_positionSide'].str.contains('Centre'))]
+        df_otter['minsPlayed'] = df_otter['minsPlayed'].astype(int)
+        df_otter = df_otter[df_otter['minsPlayed'] >= minutter_kamp]
 
-        df_otter = calculate_score(df_otter,'Possession value total per_90','Possession value total score')
-        df_otter = calculate_score(df_otter,'possessionValue.pvValue_per90', 'Possession value score')
-        df_otter = calculate_score(df_otter,'possessionValue.pvAdded_per90', 'Possession value added score')
+        # Calculate scores
+        df_otter = calculate_score(df_otter, 'Possession value total per_90', 'Possession value total score')
+        df_otter = calculate_score(df_otter, 'possessionValue.pvValue_per90', 'Possession value score')
+        df_otter = calculate_score(df_otter, 'possessionValue.pvAdded_per90', 'Possession value added score')
         df_otter = calculate_score(df_otter, 'duels won %', 'duels won % score')
-        df_otter = calculate_score(df_otter,'Duels_per90', 'Duels per 90 score')
+        df_otter = calculate_score(df_otter, 'Duels_per90', 'Duels per 90 score')
         df_otter = calculate_score(df_otter, 'Passing %', 'Passing % score')
         df_otter = calculate_score(df_otter, 'Passes_per90', 'Passing score')
         df_otter = calculate_score(df_otter, 'Back zone pass %', 'Back zone pass % score')
         df_otter = calculate_score(df_otter, 'Back zone pass_per90', 'Back zone pass score')
-        df_otter = calculate_score(df_otter, 'finalThirdEntries_per90', 'finalThirdEntries_per90 score')
-        df_otter = calculate_score(df_otter, 'possWonDef3rd_possWonMid3rd_per90&interceptions_per90', 'possWonDef3rd_possWonMid3rd_per90&interceptions_per90 score')
-        df_otter = calculate_score(df_otter, 'possWonDef3rd_possWonMid3rd_possWonAtt3rd_per90', 'possWonDef3rd_possWonMid3rd_possWonAtt3rd_per90 score')
+        df_otter = calculate_score(df_otter, 'finalThirdEntries_per90', 'finalThird entries score')
+        df_otter = calculate_score(df_otter, 'possWonDef3rd_possWonMid3rd_per90&interceptions_per90', 'Defensive actions score')
         df_otter = calculate_score(df_otter, 'Forward zone pass %', 'Forward zone pass % score')
         df_otter = calculate_score(df_otter, 'Forward zone pass_per90', 'Forward zone pass score')
-        df_otter = calculate_score(df_otter, 'fwdPass_per90', 'fwd_Pass_per90 score')
-        df_otter = calculate_score(df_otter, 'attAssistOpenplay_per90','attAssistOpenplay_per90 score')
-        df_otter = calculate_score(df_otter, 'penAreaEntries_per90','penAreaEntries_per90 score')
-        df_otter = calculate_opposite_score(df_otter, 'possLost_per90', 'possLost_per90 score')
-        df_otter = calculate_score(df_otter, 'xA_per90','xA_per90 score')
+        df_otter = calculate_score(df_otter, 'fwdPass_per90', 'Forward passes per90 score')
+        df_otter = calculate_score(df_otter, 'attAssistOpenplay_per90', 'Open play assists score')
+        df_otter = calculate_score(df_otter, 'penAreaEntries_per90', 'Penalty area entries score')
+        df_otter = calculate_opposite_score(df_otter, 'possLost_per90', 'Possession lost per90 score')
+        df_otter = calculate_score(df_otter, 'xA_per90', 'xA per90 score')
 
-        df_otter['Defending'] = df_otter[['duels won % score','Duels per 90 score','possWonDef3rd_possWonMid3rd_possWonAtt3rd_per90 score']].mean(axis=1)
-        df_otter['Passing'] = df_otter[['Forward zone pass % score','Forward zone pass score','Passing % score','Passing score','possLost_per90 score']].mean(axis=1)
-        df_otter['Progressive ball movement'] = df_otter[['xA_per90 score','fwd_Pass_per90 score','penAreaEntries_per90 score','Forward zone pass % score','Forward zone pass score','finalThirdEntries_per90 score','Possession value total score','possLost_per90 score']].mean(axis=1)
-        df_otter['Possession value'] = df_otter[['Possession value added score','Possession value total score','possLost_per90 score']].mean(axis=1)
-        
+        # Combine scores into categories
+        df_otter['Defending'] = df_otter[['duels won % score', 'Duels per 90 score', 'Defensive actions score']].mean(axis=1)
+        df_otter['Passing'] = df_otter[['Forward zone pass % score', 'Forward zone pass score', 
+                                        'Passing % score', 'Passing score', 'Possession lost per90 score']].mean(axis=1)
+        df_otter['Progressive ball movement'] = df_otter[['xA per90 score', 'Forward passes per90 score', 
+                                                        'Penalty area entries score', 'finalThird entries score', 
+                                                        'Possession value total score', 'Possession lost per90 score']].mean(axis=1)
+        df_otter['Possession value'] = df_otter[['Possession value added score', 
+                                                'Possession value total score', 'Possession lost per90 score']].mean(axis=1)
+
+        # Calculate component scores
         df_otter = calculate_score(df_otter, 'Defending', 'Defending_')
         df_otter = calculate_score(df_otter, 'Passing', 'Passing_')
-        df_otter = calculate_score(df_otter, 'Progressive ball movement','Progressive_ball_movement')
+        df_otter = calculate_score(df_otter, 'Progressive ball movement', 'Progressive_ball_movement')
         df_otter = calculate_score(df_otter, 'Possession value', 'Possession_value')
-        
-        df_otter['Total score'] = df_otter[['Defending_','Passing_','Passing_','Progressive_ball_movement','Progressive_ball_movement','Progressive_ball_movement','Progressive_ball_movement','Possession_value','Possession_value','Possession_value']].mean(axis=1)
-        df_otter = df_otter[['playerName','team_name','player_position','label','minsPlayed','age_today','Defending_','Passing_','Progressive_ball_movement','Possession_value','Total score']]
+
+        # Calculate Total Score with Weighted Mean
+        df_otter['Total score'] = df_otter.apply(
+            lambda row: weighted_mean(
+                [row['Defending_'], row['Passing_'], row['Progressive_ball_movement'], row['Possession_value']],
+                [3 if row['Defending_'] < 5 else 1, 3 if row['Passing_'] < 5 else 1, 
+                3 if row['Progressive_ball_movement'] < 5 else 1, 3 if row['Possession_value'] < 5 else 1]
+            ), axis=1
+        )
+
+        # Prepare final output
         df_otter = df_otter.dropna()
 
-        df_ottertotal = df_otter[['playerName','team_name','player_position','minsPlayed','age_today','Defending_','Passing_','Progressive_ball_movement','Possession_value','Total score']]
+        df_ottertotal = df_otter[['playerName', 'team_name', 'player_position', 'minsPlayed', 'age_today', 
+                                'Defending_', 'Passing_', 'Progressive_ball_movement', 'Possession_value', 'Total score']]
+        
+        df_otter = df_otter[['playerName', 'team_name', 'player_position', 'age_today', 'minsPlayed', 'label', 
+                            'Defending_', 'Passing_', 'Progressive_ball_movement', 'Possession_value', 'Total score']]
 
-        df_ottertotal = df_ottertotal.groupby(['playerName','team_name','player_position','age_today']).mean().reset_index()
-        minutter = df_otter.groupby(['playerName', 'team_name','player_position','age_today'])['minsPlayed'].sum().astype(float).reset_index()
+        df_ottertotal = df_ottertotal.groupby(['playerName', 'team_name', 'player_position', 'age_today']).mean().reset_index()
+        minutter = df_otter.groupby(['playerName', 'team_name', 'player_position', 'age_today'])['minsPlayed'].sum().astype(float).reset_index()
         df_ottertotal['minsPlayed total'] = minutter['minsPlayed']
-        df_otter = df_otter.sort_values('Total score',ascending = False)
-        df_ottertotal = df_ottertotal[['playerName','team_name','player_position','age_today','minsPlayed total','Defending_','Passing_','Progressive_ball_movement','Possession_value','Total score']]
-        df_ottertotal= df_ottertotal[df_ottertotal['minsPlayed total'].astype(int) >= minutter_total]
-        df_ottertotal = df_ottertotal.sort_values('Total score',ascending = False)
+
+        df_otter = df_otter.sort_values('Total score', ascending=False)
+        df_ottertotal = df_ottertotal[['playerName', 'team_name', 'player_position', 'age_today', 'minsPlayed total', 
+                                    'Defending_', 'Passing_', 'Progressive_ball_movement', 'Possession_value', 'Total score']]
+        df_ottertotal = df_ottertotal[df_ottertotal['minsPlayed total'].astype(int) >= minutter_total]
+
+        df_ottertotal = df_ottertotal.sort_values('Total score', ascending=False)
 
         return df_otter
         
