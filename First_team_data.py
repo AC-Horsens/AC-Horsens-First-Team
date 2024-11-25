@@ -733,7 +733,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         df_10 = calculate_score(df_10, 'possessionValue.pvAdded_per90', 'Possession value added score')
         df_10 = calculate_score(df_10, 'Passing %', 'Passing % score')
         df_10 = calculate_score(df_10, 'Passes_per90', 'Passing score')
-        df_10 = calculate_score(df_10, 'finalThirdEntries_per90', 'finalThird entries score')
+        df_10 = calculate_score(df_10, 'finalThirdEntries_per90', 'Final third entries score')
         df_10 = calculate_score(df_10, 'Forward zone pass %', 'Forward zone pass % score')
         df_10 = calculate_score(df_10, 'Forward zone pass_per90', 'Forward zone pass score')
         df_10 = calculate_score(df_10, 'fwdPass_per90', 'Forward passes per90 score')
@@ -750,16 +750,16 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         df_10 = calculate_score(df_10, 'post_shot_xg_per90', 'Post shot xG per90 score')
 
         # Combine scores into categories
+        df_10['Defending'] = df_10[['Possession lost per90 score']].mean(axis=1)
         df_10['Passing'] = df_10[['Forward zone pass % score', 'Forward zone pass score', 'Passing % score', 'Passing score']].mean(axis=1)
-        df_10['Chance creation'] = df_10[['Open play assists score', 'Penalty area entries score', 'Forward zone pass % score',
-                                        'Forward zone pass score', 'Final third passes % score', 'Final third passes per90 score',
-                                        'Possession value total score', 'Possession value score', 'Dribble % score', 
-                                        'Touches in box per90 score', 'xA per90 score']].mean(axis=1)
-        df_10['Goalscoring'] = df_10[['xG per90 score', 'xG per90 score', 'xG per90 score', 'Post shot xG per90 score', 'Touches in box per90 score']].mean(axis=1)
-        df_10['Possession value'] = df_10[['Possession value total score', 'Possession value added score', 'Possession value score', 
-                                        'Possession lost per90 score']].mean(axis=1)
+        df_10['Chance creation'] = df_10[['Open play assists score', 'Penalty area entries score', 'Final third passes % score', 
+                                        'Final third passes per90 score', 'Possession value total score', 
+                                        'Dribble % score', 'Dribble per90 score', 'xA per90 score']].mean(axis=1)
+        df_10['Goalscoring'] = df_10[['xG per90 score', 'Post shot xG per90 score', 'Touches in box per90 score']].mean(axis=1)
+        df_10['Possession value'] = df_10[['Possession value added score', 'Possession value total score', 'Possession lost per90 score']].mean(axis=1)
 
         # Calculate component scores
+        df_10 = calculate_score(df_10, 'Defending', 'Defending_')
         df_10 = calculate_score(df_10, 'Passing', 'Passing_')
         df_10 = calculate_score(df_10, 'Chance creation', 'Chance_creation')
         df_10 = calculate_score(df_10, 'Goalscoring', 'Goalscoring_')
@@ -768,9 +768,10 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         # Calculate Total Score with Weighted Mean
         df_10['Total score'] = df_10.apply(
             lambda row: weighted_mean(
-                [row['Passing_'], row['Chance_creation'], row['Goalscoring_'], row['Possession_value']],
-                [3 if row['Passing_'] < 5 else 1, 3 if row['Chance_creation'] < 5 else 1, 
-                3 if row['Goalscoring_'] < 5 else 1, 3 if row['Possession_value'] < 5 else 1]
+                [row['Defending_'], row['Passing_'], row['Chance_creation'], row['Goalscoring_'], row['Possession_value']],
+                [3 if row['Defending_'] < 5 else 1, 3 if row['Passing_'] < 5 else 1, 
+                3 if row['Chance_creation'] < 5 else 1, 3 if row['Goalscoring_'] < 5 else 1, 
+                3 if row['Possession_value'] < 5 else 1]
             ), axis=1
         )
 
@@ -778,10 +779,10 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         df_10 = df_10.dropna()
 
         df_10total = df_10[['playerName', 'team_name', 'player_position', 'minsPlayed', 'age_today', 
-                            'Passing_', 'Chance_creation', 'Goalscoring_', 'Possession_value', 'Total score']]
+                            'Defending_', 'Passing_', 'Chance_creation', 'Goalscoring_', 'Possession_value', 'Total score']]
         
         df_10 = df_10[['playerName', 'team_name', 'player_position', 'age_today', 'minsPlayed', 'label', 
-                    'Passing_', 'Chance_creation', 'Goalscoring_', 'Possession_value', 'Total score']]
+                    'Defending_', 'Passing_', 'Chance_creation', 'Goalscoring_', 'Possession_value', 'Total score']]
 
         df_10total = df_10total.groupby(['playerName', 'team_name', 'player_position', 'age_today']).mean().reset_index()
         minutter = df_10.groupby(['playerName', 'team_name', 'player_position', 'age_today'])['minsPlayed'].sum().astype(float).reset_index()
@@ -789,12 +790,13 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
 
         df_10 = df_10.sort_values('Total score', ascending=False)
         df_10total = df_10total[['playerName', 'team_name', 'player_position', 'age_today', 'minsPlayed total', 
-                                'Passing_', 'Chance_creation', 'Goalscoring_', 'Possession_value', 'Total score']]
+                                'Defending_', 'Passing_', 'Chance_creation', 'Goalscoring_', 'Possession_value', 'Total score']]
         df_10total = df_10total[df_10total['minsPlayed total'].astype(int) >= minutter_total]
 
         df_10total = df_10total.sort_values('Total score', ascending=False)
 
         return df_10
+
 
     def winger():
         df_winger = df_scouting[
