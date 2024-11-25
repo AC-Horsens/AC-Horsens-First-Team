@@ -720,44 +720,60 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         return df_otter
 
     def number10():
+        # Filter for number 10 players
         df_10 = df_scouting[
             ((df_scouting['player_position'] == 'Attacking Midfielder') & df_scouting['player_positionSide'].str.contains('Centre')) |
             ((df_scouting['player_position'] == 'Midfielder') & df_scouting['player_positionSide'].str.contains('Centre'))
         ]
-        df_10['minsPlayed'] = df_10['minsPlayed'].astype(int)
+        
+        # Ensure `minsPlayed` is numeric and filter for minimum minutes played
+        df_10['minsPlayed'] = pd.to_numeric(df_10['minsPlayed'], errors='coerce').fillna(0).astype(int)
         df_10 = df_10[df_10['minsPlayed'] >= minutter_kamp]
+        
+        # Check if DataFrame is empty after filtering
+        if df_10.empty:
+            raise ValueError("No data available for 'number 10' players after filtering. Check the filtering criteria.")
 
-        # Calculate scores
-        df_10 = calculate_score(df_10, 'Possession value total per_90', 'Possession value total score')
-        df_10 = calculate_score(df_10, 'possessionValue.pvValue_per90', 'Possession value score')
-        df_10 = calculate_score(df_10, 'possessionValue.pvAdded_per90', 'Possession value added score')
-        df_10 = calculate_score(df_10, 'Passing %', 'Passing % score')
-        df_10 = calculate_score(df_10, 'Passes_per90', 'Passing score')
-        df_10 = calculate_score(df_10, 'finalThirdEntries_per90', 'finalThird entries score')
-        df_10 = calculate_score(df_10, 'Forward zone pass %', 'Forward zone pass % score')
-        df_10 = calculate_score(df_10, 'Forward zone pass_per90', 'Forward zone pass score')
-        df_10 = calculate_score(df_10, 'fwdPass_per90', 'Forward passes per90 score')
-        df_10 = calculate_score(df_10, 'attAssistOpenplay_per90', 'Open play assists score')
-        df_10 = calculate_score(df_10, 'penAreaEntries_per90', 'Penalty area entries score')
-        df_10 = calculate_score(df_10, 'finalThird passes %', 'Final third passes % score')
-        df_10 = calculate_score(df_10, 'finalthirdpass_per90', 'Final third passes per90 score')
-        df_10 = calculate_score(df_10, 'dribble %', 'Dribble % score')
-        df_10 = calculate_score(df_10, 'dribble_per90', 'Dribble per90 score')
-        df_10 = calculate_score(df_10, 'touches_in_box_per90', 'Touches in box per90 score')
-        df_10 = calculate_score(df_10, 'xA_per90', 'xA per90 score')
-        df_10 = calculate_score(df_10, 'xg_per90', 'xG per90 score')
-        df_10 = calculate_opposite_score(df_10, 'possLost_per90', 'Possession lost per90 score')
-        df_10 = calculate_score(df_10, 'post_shot_xg_per90', 'Post shot xG per90 score')
+        # Calculate scores for relevant metrics
+        score_columns = [
+            ('Possession value total per_90', 'Possession value total score'),
+            ('possessionValue.pvValue_per90', 'Possession value score'),
+            ('possessionValue.pvAdded_per90', 'Possession value added score'),
+            ('Passing %', 'Passing % score'),
+            ('Passes_per90', 'Passing score'),
+            ('finalThirdEntries_per90', 'Final third entries score'),
+            ('Forward zone pass %', 'Forward zone pass % score'),
+            ('Forward zone pass_per90', 'Forward zone pass score'),
+            ('fwdPass_per90', 'Forward passes per90 score'),
+            ('attAssistOpenplay_per90', 'Open play assists score'),
+            ('penAreaEntries_per90', 'Penalty area entries score'),
+            ('finalThird passes %', 'Final third passes % score'),
+            ('finalthirdpass_per90', 'Final third passes per90 score'),
+            ('dribble %', 'Dribble % score'),
+            ('dribble_per90', 'Dribble per90 score'),
+            ('touches_in_box_per90', 'Touches in box per90 score'),
+            ('xA_per90', 'xA per90 score'),
+            ('xg_per90', 'xG per90 score'),
+            ('post_shot_xg_per90', 'Post shot xG per90 score'),
+            ('possLost_per90', 'Possession lost per90 score', 'opposite')  # Mark as opposite scoring
+        ]
+
+        for col, score_col, *score_type in score_columns:
+            if col not in df_10.columns:
+                raise KeyError(f"Column '{col}' is missing from the dataset.")
+            if score_type and score_type[0] == 'opposite':
+                df_10 = calculate_opposite_score(df_10, col, score_col)
+            else:
+                df_10 = calculate_score(df_10, col, score_col)
 
         # Combine scores into categories
         df_10['Passing'] = df_10[['Forward zone pass % score', 'Forward zone pass score', 'Passing % score', 'Passing score']].mean(axis=1)
-        df_10['Chance creation'] = df_10[['Open play assists score', 'Penalty area entries score', 'Forward zone pass % score',
-                                        'Forward zone pass score', 'Final third passes % score', 'Final third passes per90 score',
-                                        'Possession value total score', 'Possession value score', 'Dribble % score', 
+        df_10['Chance creation'] = df_10[['Open play assists score', 'Penalty area entries score', 'Final third passes % score', 
+                                        'Final third passes per90 score', 'Possession value total score', 'Dribble % score',
                                         'Touches in box per90 score', 'xA per90 score']].mean(axis=1)
-        df_10['Goalscoring'] = df_10[['xG per90 score', 'xG per90 score', 'xG per90 score', 'Post shot xG per90 score', 'Touches in box per90 score']].mean(axis=1)
+        df_10['Goalscoring'] = df_10[['xG per90 score', 'Post shot xG per90 score', 'Touches in box per90 score']].mean(axis=1)
         df_10['Possession value'] = df_10[['Possession value total score', 'Possession value added score', 'Possession value score', 
-                                        'Possession lost per90 score']].mean(axis=1)
+                                            'Possession lost per90 score']].mean(axis=1)
 
         # Calculate component scores
         df_10 = calculate_score(df_10, 'Passing', 'Passing_')
@@ -776,22 +792,13 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
 
         # Prepare final output
         df_10 = df_10.dropna()
-
         df_10total = df_10[['playerName', 'team_name', 'player_position', 'minsPlayed', 'age_today', 
                             'Passing_', 'Chance_creation', 'Goalscoring_', 'Possession_value', 'Total score']]
-        
-        df_10 = df_10[['playerName', 'team_name', 'player_position', 'age_today', 'minsPlayed', 'label', 
-                    'Passing_', 'Chance_creation', 'Goalscoring_', 'Possession_value', 'Total score']]
-
         df_10total = df_10total.groupby(['playerName', 'team_name', 'player_position', 'age_today']).mean().reset_index()
         minutter = df_10.groupby(['playerName', 'team_name', 'player_position', 'age_today'])['minsPlayed'].sum().astype(float).reset_index()
         df_10total['minsPlayed total'] = minutter['minsPlayed']
 
-        df_10 = df_10.sort_values('Total score', ascending=False)
-        df_10total = df_10total[['playerName', 'team_name', 'player_position', 'age_today', 'minsPlayed total', 
-                                'Passing_', 'Chance_creation', 'Goalscoring_', 'Possession_value', 'Total score']]
         df_10total = df_10total[df_10total['minsPlayed total'].astype(int) >= minutter_total]
-
         df_10total = df_10total.sort_values('Total score', ascending=False)
 
         return df_10
@@ -916,8 +923,6 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
                 3 if row['Goalscoring'] < 5 else 1, 3 if row['Possession value'] < 5 else 1]
             ), axis=1
         )        
-        df_striker = df_striker.dropna()
-
         df_striker = df_striker.dropna()
 
         df_striker_total = df_striker[['playerName', 'team_name', 'player_position', 'player_positionSide', 'minsPlayed', 
