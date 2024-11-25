@@ -141,11 +141,7 @@ def load_set_piece_data():
     df_set_piece['label'] = (df_set_piece['label'] + ' ' + df_set_piece['date']).astype(str)
     return df_set_piece
 
-def weighted_mean(scores, weights):
-    expanded_scores = []
-    for score, weight in zip(scores, weights):
-        expanded_scores.extend([score] * weight)
-    return np.mean(expanded_scores)
+
 
 def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
 
@@ -158,7 +154,13 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         df_unique = df.drop_duplicates(column).copy()
         df_unique.loc[:, score_column] = pd.qcut(-df_unique[column], q=10, labels=False, duplicates='raise') + 1
         return df.merge(df_unique[[column, score_column]], on=column, how='left')
-    
+
+    def weighted_mean(scores, weights):
+        expanded_scores = []
+        for score, weight in zip(scores, weights):
+            expanded_scores.extend([score] * weight)
+        return np.mean(expanded_scores)
+
     minutter_kamp = 30
     minutter_total = 300
         
@@ -240,8 +242,6 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         return df_scouting
     
     df_scouting = calculate_match_xa(df_scouting)
-
-
 
     df_scouting.fillna(0, inplace=True)
     squads['dateOfBirth'] = pd.to_datetime(squads['dateOfBirth'])
@@ -429,6 +429,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         df_balanced_central_defendertotal = df_balanced_central_defendertotal.sort_values('Total score', ascending=False)
 
         return df_balanced_central_defender
+
     
     def fullbacks():
         df_backs = df_scouting[((df_scouting['player_position'] == 'Defender') | (df_scouting['player_position'] == 'Wing Back')) & 
