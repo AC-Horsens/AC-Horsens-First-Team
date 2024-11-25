@@ -916,9 +916,16 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
             ), axis=1
         )
 
-        # Prepare final output
-        df_striker_total = df_striker.groupby(['playerName', 'team_name']).mean().reset_index()
-        return df_striker.sort_values('Total score', ascending=False)
+        df_striker_total = df_striker[['playerName', 'team_name', 'player_position', 'player_positionSide', 'minsPlayed', 
+                                    'age_today', 'Linkup play_', 'Chance_creation', 'Goalscoring_', 'Possession_value_', 'Total score']]
+        df_striker_total = df_striker_total.groupby(['playerName', 'team_name', 'player_position', 'player_positionSide', 'age_today']).mean().reset_index()
+        minutter = df_striker.groupby(['playerName', 'team_name', 'player_position', 'player_positionSide', 'age_today'])['minsPlayed'].sum().astype(float).reset_index()
+        df_striker_total['minsPlayed total'] = minutter['minsPlayed']
+
+        df_striker_total = df_striker_total[df_striker_total['minsPlayed total'].astype(int) >= minutter_total]
+        df_striker_total = df_striker_total.sort_values('Total score', ascending=False)
+
+        return df_striker
   
     def Targetman():
         df_striker = df_scouting[(df_scouting['player_position'] == 'Striker') & (df_scouting['player_positionSide'].str.contains('Centre'))]
