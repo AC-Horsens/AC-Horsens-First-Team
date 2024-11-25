@@ -911,7 +911,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
 
         df_striker['Total score'] = df_striker.apply(
             lambda row: weighted_mean(
-                [row['Linkup play_'], row['Chance_creation_'], row['Goalscoring_'], row['Possession_value_']],
+                [row['Linkup play'], row['Chance_creation'], row['Goalscoring'], row['Possession value']],
                 [3 if row['Linkup play'] < 5 else 1, 3 if row['Chance_creation_'] < 5 else 1, 
                 3 if row['Goalscoring_'] < 5 else 1, 3 if row['Possession_value_'] < 5 else 1]
             ), axis=1
