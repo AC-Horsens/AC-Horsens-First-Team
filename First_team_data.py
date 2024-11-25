@@ -917,7 +917,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         )
 
         df_striker_total = df_striker[['playerName', 'team_name', 'player_position', 'player_positionSide', 'minsPlayed', 
-                                    'age_today', 'Linkup play_', 'Chance_creation', 'Goalscoring_', 'Possession_value_', 'Total score']]
+                                    'age_today', 'Linkup play_', 'Chance_creation_', 'Goalscoring_', 'Possession_value_', 'Total score']]
         df_striker_total = df_striker_total.groupby(['playerName', 'team_name', 'player_position', 'player_positionSide', 'age_today']).mean().reset_index()
         minutter = df_striker.groupby(['playerName', 'team_name', 'player_position', 'player_positionSide', 'age_today'])['minsPlayed'].sum().astype(float).reset_index()
         df_striker_total['minsPlayed total'] = minutter['minsPlayed']
