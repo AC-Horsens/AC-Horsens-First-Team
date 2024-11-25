@@ -391,7 +391,7 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         return df.merge(df_unique[[column, score_column]], on=column, how='left')
  
     minutter_kamp = 0
-    minutter_total = 200
+    minutter_total = 300
         
     df_possession_xa = df_possession_xa.rename(columns={'318.0': 'xA'})
     df_possession_xa_summed = df_possession_xa.groupby(['playerName','label'])['xA'].sum().reset_index()
@@ -1355,7 +1355,7 @@ def create_pdf_progress_report(horsens_df, total_expected_points_combined, posit
         aggregation_dict['minsPlayed'] = 'sum'
         
         filtered_df = filtered_df.groupby('playerName').agg(aggregation_dict).reset_index()
-        filtered_df = filtered_df[filtered_df['minsPlayed'] > 200]
+        filtered_df = filtered_df[filtered_df['minsPlayed'] > 300]
         filtered_df = filtered_df.round(2)
         filtered_df['Total score'] = filtered_df['Total score'].astype(float)        
         reordered_columns = ['playerName', 'minsPlayed'] + numeric_columns
