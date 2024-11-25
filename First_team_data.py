@@ -916,18 +916,21 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
                 3 if row['Goalscoring'] < 5 else 1, 3 if row['Possession value'] < 5 else 1]
             ), axis=1
         )        
-        df_striker = df_striker[['playerName','team_name','label','minsPlayed','age_today','Linkup play','Chance creation','Goalscoring','Possession value','Total score']]
         df_striker = df_striker.dropna()
 
-        df_strikertotal = df_striker[['playerName','team_name','minsPlayed','age_today','Linkup play','Chance creation','Goalscoring','Possession value','Total score']]
+        df_striker = df_striker.dropna()
 
-        df_strikertotal = df_strikertotal.groupby(['playerName','team_name','age_today']).mean().reset_index()
-        minutter = df_striker.groupby(['playerName', 'team_name','age_today'])['minsPlayed'].sum().astype(float).reset_index()
-        df_strikertotal['minsPlayed total'] = minutter['minsPlayed']
-        # Calculate Total Score
+        df_striker_total = df_striker[['playerName', 'team_name', 'player_position', 'player_positionSide', 'minsPlayed', 
+                                    'age_today', 'Linkup play', 'Chance creation', 'Goalscoring', 'Possession value', 'Total score']]
+        df_striker_total = df_striker_total.groupby(['playerName', 'team_name', 'player_position', 'player_positionSide', 'age_today']).mean().reset_index()
+        minutter = df_striker.groupby(['playerName', 'team_name', 'player_position', 'player_positionSide', 'age_today'])['minsPlayed'].sum().astype(float).reset_index()
+        df_striker_total['minsPlayed total'] = minutter['minsPlayed']
 
-        df_striker_total = df_striker.groupby(['playerName', 'team_name']).mean().reset_index()
-        return df_striker.sort_values('Total score', ascending=False)
+        df_striker_total = df_striker_total[df_striker_total['minsPlayed total'].astype(int) >= minutter_total]
+        df_striker_total = df_striker_total.sort_values('Total score', ascending=False)
+
+        return df_striker
+
 
     def Targetman():
         df_striker = df_scouting[(df_scouting['player_position'] == 'Striker') & (df_scouting['player_positionSide'].str.contains('Centre'))]
