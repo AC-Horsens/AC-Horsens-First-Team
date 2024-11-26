@@ -639,19 +639,18 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         df_balanced_central_defender = calculate_score(df_balanced_central_defender, 'Passing', 'Passing_')
         df_balanced_central_defender = calculate_score(df_balanced_central_defender, 'Possession value added', 'Possession_value_added')
 
-        # Calculate weighted Total score
         df_balanced_central_defender['Total score'] = df_balanced_central_defender.apply(
             lambda row: weighted_mean(
                 [row['Defending_'], row['Passing_'], row['Possession_value_added']],
                 [
-                    4 if row['Defending_'] < 5 else 2,
+                    3 if row['Defending_'] < 5 else 2,
                     3 if row['Passing_'] < 5 else 1,
                     3 if row['Possession_value_added'] < 5 else 1
                 ]
             ),
             axis=1
         )
-
+        
         df_balanced_central_defender = df_balanced_central_defender[
             ['playerName', 'team_name', 'player_position', 'minsPlayed','label', 'age_today', 'Defending_', 'Possession_value_added', 'Passing_', 'Total score']
         ]
@@ -724,8 +723,6 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
                 [3 if row['Defending_'] < 5 else 1, 3 if row['Passing_'] < 5 else 1, 3 if row['Chance_creation'] < 5 else 1, 3 if row['Possession_value_added'] < 5 else 1]
             ), axis=1
         )
-
-        # Prepare final output
 
         df_backs = df_backs.dropna()
 
@@ -1091,7 +1088,7 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
             lambda row: weighted_mean(
                 [row['Passing_'], row['Chance_creation'], row['Goalscoring_'], row['Possession_value']],
                 [3 if row['Passing_'] < 5 else 1, 3 if row['Chance_creation'] < 5 else 1, 
-                4 if row['Goalscoring_'] < 5 else 2, 3 if row['Possession_value'] < 5 else 1]
+                3 if row['Goalscoring_'] < 5 else 1, 3 if row['Possession_value'] < 5 else 1]
             ), axis=1
         )
 
@@ -1154,7 +1151,7 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
             lambda row: weighted_mean(
                 [row['Linkup play'], row['Chance creation'], row['Goalscoring'], row['Possession value']],
                 [3 if row['Linkup play'] < 5 else 1, 3 if row['Chance creation'] < 5 else 1, 
-                4 if row['Goalscoring'] < 5 else 2, 3 if row['Possession value'] < 5 else 1]
+                3 if row['Goalscoring'] < 5 else 2, 3 if row['Possession value'] < 5 else 1]
             ), axis=1
         )        
         df_striker = df_striker.dropna()
