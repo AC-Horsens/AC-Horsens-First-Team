@@ -297,6 +297,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
     df_scouting['aerialWon_per90'] = (df_scouting['aerialWon'].astype(float)/df_scouting['minsPlayed'].astype(float)) * 90
     df_scouting['possLost_per90'] = (df_scouting['possLostAll'].astype(float)/df_scouting['minsPlayed'].astype(float)) * 90
     df_scouting.fillna(0, inplace=True)
+
     def ball_playing_central_defender():
         df_spillende_stopper = df_scouting[(df_scouting['player_position'] == 'Defender') & (df_scouting['player_positionSide'].str.contains('Centre'))]
         df_spillende_stopper['minsPlayed'] = df_spillende_stopper['minsPlayed'].astype(int)
@@ -1041,6 +1042,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         'Winger': winger(),
         'Classic striker': Classic_striker(),
     }
+
 df_xA = load_xA()
 df_pv = load_pv_all()
 df_match_stats = load_match_stats()
