@@ -406,7 +406,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
 
         df_balanced_central_defender['Total score'] = df_balanced_central_defender.apply(
             lambda row: weighted_mean(
-                [row['Defending_'], row['Passing_'], row['Possession value added']],
+                [row['Defending_'],row['Defending_'], row['Passing_'], row['Possession_value_added']],
                 [
                     3 if row['Defending_'] < 5 else 1,
                     3 if row['Passing_'] < 5 else 1,
