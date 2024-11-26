@@ -408,7 +408,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
             lambda row: weighted_mean(
                 [row['Defending_'], row['Passing_'], row['Possession_value_added']],
                 [
-                    3 if row['Defending_'] < 5 else 2,
+                    4 if row['Defending_'] < 5 else 2,
                     3 if row['Passing_'] < 5 else 1,
                     3 if row['Possession_value_added'] < 5 else 1
                 ]
@@ -916,7 +916,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
             lambda row: weighted_mean(
                 [row['Linkup play'], row['Chance creation'], row['Goalscoring'], row['Possession value']],
                 [3 if row['Linkup play'] < 5 else 1, 3 if row['Chance creation'] < 5 else 1, 
-                3 if row['Goalscoring'] < 5 else 1, 3 if row['Possession value'] < 5 else 1]
+                4 if row['Goalscoring'] < 5 else 2, 3 if row['Possession value'] < 5 else 1]
             ), axis=1
         )        
         df_striker = df_striker.dropna()
