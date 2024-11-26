@@ -297,7 +297,6 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
     df_scouting['aerialWon_per90'] = (df_scouting['aerialWon'].astype(float)/df_scouting['minsPlayed'].astype(float)) * 90
     df_scouting['possLost_per90'] = (df_scouting['possLostAll'].astype(float)/df_scouting['minsPlayed'].astype(float)) * 90
     df_scouting.fillna(0, inplace=True)
-
     def ball_playing_central_defender():
         df_spillende_stopper = df_scouting[(df_scouting['player_position'] == 'Defender') & (df_scouting['player_positionSide'].str.contains('Centre'))]
         df_spillende_stopper['minsPlayed'] = df_spillende_stopper['minsPlayed'].astype(int)
@@ -548,7 +547,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         df_sekser['Total score'] = df_sekser.apply(
         lambda row: weighted_mean(
             [row['Defending_'], row['Passing_'],row['Progressive_ball_movement'],row['Possession_value_added']],
-            [3 if row['Defending_'] < 5 else 1, 3 if row['Passing_'] < 5 else 1, 3 if row['Progressive_ball_movement'] < 5 else 1, 3 if row['Possession_value_added'] < 5 else 1]
+            [3 if row['Defending_'] < 5 else 2, 3 if row['Passing_'] < 5 else 2, 3 if row['Progressive_ball_movement'] < 5 else 1, 3 if row['Possession_value_added'] < 5 else 1]
         ), axis=1
         )
 
@@ -931,7 +930,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
 
         df_striker_total = df_striker_total[df_striker_total['minsPlayed total'].astype(int) >= minutter_total]
         df_striker_total = df_striker_total.sort_values('Total score', ascending=False)
-
+        df_striker = df_striker.sort_values('Total score',ascending = False)
         return df_striker
 
     def Targetman():
@@ -1042,7 +1041,6 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         'Winger': winger(),
         'Classic striker': Classic_striker(),
     }
-
 df_xA = load_xA()
 df_pv = load_pv_all()
 df_match_stats = load_match_stats()

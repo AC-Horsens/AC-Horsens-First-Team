@@ -783,7 +783,7 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         df_sekser['Total score'] = df_sekser.apply(
         lambda row: weighted_mean(
             [row['Defending_'], row['Passing_'],row['Progressive_ball_movement'],row['Possession_value_added']],
-            [3 if row['Defending_'] < 5 else 1, 3 if row['Passing_'] < 5 else 1, 3 if row['Progressive_ball_movement'] < 5 else 1, 3 if row['Possession_value_added'] < 5 else 1]
+            [3 if row['Defending_'] < 5 else 2, 3 if row['Passing_'] < 5 else 2, 3 if row['Progressive_ball_movement'] < 5 else 1, 3 if row['Possession_value_added'] < 5 else 1]
         ), axis=1
         )
 
@@ -1166,7 +1166,7 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
 
         df_striker_total = df_striker_total[df_striker_total['minsPlayed total'].astype(int) >= minutter_total]
         df_striker_total = df_striker_total.sort_values('Total score', ascending=False)
-
+        df_striker = df_striker.sort_values('Total score',ascending = False)
         return df_striker
 
     def Targetman():
