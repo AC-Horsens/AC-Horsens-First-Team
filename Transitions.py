@@ -1,12 +1,6 @@
 import pandas as pd
-import statsmodels.api as sm
-import matplotlib.pyplot as plt
-from pandas.plotting import table
 import numpy as np
-import os
 import psycopg2
-import pandas as pd
-import json
 
 db_navn = 'AC Horsens'
 db_brugernavn = 'postgres'
@@ -191,8 +185,6 @@ def length_to_opp_goal(df):
 
 df = length_to_opp_goal(df)
 
-
-
 # Merge possession length
 df = df.merge(sequence_length, on=['label','date','sequenceId'], how='left')
 
@@ -209,7 +201,7 @@ df['321.0'] = pd.to_numeric(df['321.0'], errors='coerce')
 Transition_xg = df.groupby(['label','date','sequenceId'])['321.0'].max().reset_index()
 
 # Rename the '321.0' column to 'Transition_xg' for clarity
-Transition_xg.rename(columns={'321.0': 'Transition xg'}, inplace=True)
+Transition_xg.rename(columns={'321.0': 'Transition xG'}, inplace=True)
 
 # Merge this new 'Transition_xg' back into the original DataFrame
 df = df.merge(Transition_xg, on=['label','date','sequenceId'], how='left')
@@ -231,25 +223,18 @@ df1 = df[condition1 | condition2 | condition3]
 df1 = df1[df1['possession_index'] == 1]
 df1['label'] = (df1['label'] + ' ' + df1['date'])
 
-df_by_team = df1.groupby(['team_name','label'])['Transition xg'].sum().reset_index()
-df_by_team['match_Transition_xg'] = df_by_team.groupby(['label'])['Transition xg'].transform('sum')
-df_by_team['Transition xG difference'] = df_by_team['Transition xg'] - df_by_team['match_Transition_xg'] + df_by_team['Transition xg']
-df_by_team['Transition xG against'] = df_by_team['Transition xg'] - df_by_team['match_Transition_xg']
+df_by_team = df1.groupby(['team_name','label'])['Transition xG'].sum().reset_index()
+df_by_team['match_Transition_xG'] = df_by_team.groupby(['label'])['Transition xG'].transform('sum')
+df_by_team['Transition xG difference'] = df_by_team['Transition xG'] - df_by_team['match_Transition_xG'] + df_by_team['Transition xG']
+df_by_team['Transition xG against'] = df_by_team['Transition xG'] - df_by_team['match_Transition_xG']
 difference_df = df_by_team.groupby(['team_name','label'])['Transition xG difference'].sum().reset_index()
 xg_against = df_by_team.groupby(['team_name','label'])['Transition xG against'].sum().reset_index()
-total_df = df_by_team.groupby(['team_name','label'])['Transition xg'].sum().reset_index()
+total_df = df_by_team.groupby(['team_name','label'])['Transition xG'].sum().reset_index()
 combined_df = difference_df.merge(total_df, on=['team_name','label'],how='outer')
 combined_df = combined_df.merge(xg_against, on=['team_name','label'],how='outer')
 combined_df = combined_df.sort_values('Transition xG difference', ascending=False)
 combined_df = combined_df.round(2)
-print('sorteret efter xg difference')
-print(combined_df)
-combined_df = combined_df.sort_values('Transition xg', ascending=False)
-print('sorteret efter samlet')
-print(combined_df)
-combined_df = combined_df.sort_values('Transition xG against', ascending=False)
-print('sorteret efter xg against')
-print(combined_df)
+
 df_xg = pd.read_csv(r'C:\Users\Seamus-admin\Documents\GitHub\AC-Horsens-First-Team\DNK_1_Division_2024_2025\xg_all DNK_1_Division_2024_2025.csv')
 df_xg['label'] = (df_xg['label'] + ' ' + df_xg['date'])
 
@@ -257,11 +242,10 @@ df_xg['321'] = df_xg['321'].astype(float)
 df_xg = df_xg.groupby(['team_name','label']).sum('321')
 df_xg = df_xg.rename(columns={'321': 'Total xG'})
 combined_df = combined_df.merge(df_xg,on=['team_name','label'],how='outer')
-combined_df['Transition xg share'] = combined_df['Transition xg']/combined_df['Total xG']
-combined_df = combined_df[['team_name','label','Transition xG difference','Transition xg','Transition xG against','Transition xg share']]
+combined_df['Transition xG share'] = combined_df['Transition xG']/combined_df['Total xG']
+combined_df = combined_df[['team_name','label','Transition xG difference','Transition xG','Transition xG against','Transition xG share']]
 combined_df['team_name'] = combined_df['team_name'].str.replace(' ', '_')
 combined_df = combined_df.set_index('team_name')
 combined_df = combined_df.round(2)
-gennemsnit = combined_df['Transition xg share'].mean()
 
-print(combined_df)
+combined_df.to_csv(r'C:\Users\Seamus-admin\Documents\GitHub\AC-Horsens-First-Team\DNK_1_Division_2024_2025\Transitions_all DNK_1_Division_2024_2025.csv')

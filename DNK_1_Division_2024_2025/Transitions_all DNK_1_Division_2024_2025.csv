@@ -1,0 +1,205 @@
+team_name,label,Transition xG difference,Transition xG,Transition xG against,Transition xG share
+B_93,B 93 vs Esbjerg 2024-10-04,-1.32,0.23,-1.55,0.48
+B_93,B 93 vs Fredericia 2024-11-08,-2.87,0.56,-3.43,0.53
+B_93,B 93 vs Hillerød 2024-08-23,-0.35,0.02,-0.37,0.02
+B_93,B 93 vs Hobro 2024-11-22,-1.68,0.09,-1.76,0.11
+B_93,B 93 vs Horsens 2024-09-21,-1.99,0.05,-2.03,0.08
+B_93,B 93 vs Kolding 2024-07-19,-0.32,0.39,-0.71,0.56
+B_93,B 93 vs OB 2024-08-16,0.32,0.92,-0.61,0.44
+B_93,B 93 vs Roskilde 2024-10-25,-0.95,0.07,-1.02,0.08
+B_93,B 93 vs Vendsyssel 2024-08-02,0.14,1.15,-1.0,0.7
+B_93,Esbjerg vs B 93 2024-09-15,-0.12,1.55,-1.67,0.8
+B_93,Fredericia vs B 93 2024-09-28,-0.37,0.25,-0.62,0.45
+B_93,HB Køge vs B 93 2024-08-20,1.14,1.45,-0.31,0.58
+B_93,Hobro vs B 93 2024-09-02,0.13,0.8,-0.67,0.87
+B_93,Horsens vs B 93 2024-11-01,-1.57,0.27,-1.84,0.44
+B_93,Hvidovre vs B 93 2024-08-09,-1.63,0.17,-1.8,0.27
+B_93,Roskilde vs B 93 2024-07-27,0.32,0.96,-0.64,0.6
+B_93,Vendsyssel vs B 93 2024-10-18,-0.87,0.06,-0.93,0.05
+Esbjerg,B 93 vs Esbjerg 2024-10-04,1.32,1.55,-0.23,0.64
+Esbjerg,Esbjerg vs B 93 2024-09-15,0.12,1.67,-1.55,0.53
+Esbjerg,Esbjerg vs Fredericia 2024-10-19,0.17,0.37,-0.2,0.74
+Esbjerg,Esbjerg vs HB Køge 2024-08-24,0.87,1.38,-0.5,0.61
+Esbjerg,Esbjerg vs Hillerød 2024-09-29,-0.87,0.19,-1.06,0.57
+Esbjerg,Esbjerg vs Hobro 2024-11-03,0.82,1.41,-0.59,0.58
+Esbjerg,Esbjerg vs Horsens 2024-08-04,0.06,0.22,-0.16,0.51
+Esbjerg,Esbjerg vs OB 2024-07-20,-0.03,0.17,-0.2,0.17
+Esbjerg,Esbjerg vs Roskilde 2024-11-10,0.89,1.21,-0.32,0.45
+Esbjerg,Esbjerg vs Vendsyssel 2024-08-17,1.15,1.15,0.0,0.64
+Esbjerg,Fredericia vs Esbjerg 2024-08-11,-0.21,0.39,-0.59,0.3
+Esbjerg,Hillerød vs Esbjerg 2024-11-24,-0.77,0.7,-1.47,0.78
+Esbjerg,Hobro vs Esbjerg 2024-07-26,1.34,2.04,-0.7,0.76
+Esbjerg,Hvidovre vs Esbjerg 2024-09-22,-0.96,0.37,-1.34,0.35
+Esbjerg,Kolding vs Esbjerg 2024-08-21,-0.63,0.14,-0.77,0.24
+Esbjerg,OB vs Esbjerg 2024-10-26,-0.74,0.05,-0.79,0.04
+Esbjerg,Roskilde vs Esbjerg 2024-08-30,0.3,0.81,-0.5,0.47
+Fredericia,B 93 vs Fredericia 2024-11-08,2.87,3.43,-0.56,0.69
+Fredericia,Esbjerg vs Fredericia 2024-10-19,-0.17,0.2,-0.37,0.16
+Fredericia,Fredericia vs B 93 2024-09-28,0.37,0.62,-0.25,0.22
+Fredericia,Fredericia vs Esbjerg 2024-08-11,0.21,0.59,-0.39,0.34
+Fredericia,Fredericia vs Hobro 2024-09-16,-1.18,0.57,-1.75,0.35
+Fredericia,Fredericia vs Horsens 2024-10-05,-0.56,0.2,-0.76,0.76
+Fredericia,Fredericia vs Hvidovre 2024-08-25,-0.28,0.38,-0.65,0.2
+Fredericia,Fredericia vs Kolding 2024-11-24,-0.03,0.3,-0.33,0.44
+Fredericia,Fredericia vs OB 2024-11-03,-0.16,0.4,-0.56,0.42
+Fredericia,Fredericia vs Roskilde 2024-08-16,-0.85,0.19,-1.04,0.14
+Fredericia,Fredericia vs Vendsyssel 2024-07-27,0.58,1.27,-0.68,0.45
+Fredericia,HB Køge vs Fredericia 2024-09-01,1.79,2.0,-0.22,0.51
+Fredericia,Hillerød vs Fredericia 2024-09-23,0.47,0.78,-0.31,0.65
+Fredericia,Hobro vs Fredericia 2024-10-27,0.94,1.12,-0.18,0.73
+Fredericia,Horsens vs Fredericia 2024-07-21,0.05,0.16,-0.11,0.15
+Fredericia,Kolding vs Fredericia 2024-08-02,-1.13,0.05,-1.18,0.15
+Fredericia,OB vs Fredericia 2024-08-21,-0.52,0.57,-1.1,1.03
+HB_Køge,Esbjerg vs HB Køge 2024-08-24,-0.87,0.5,-1.38,0.28
+HB_Køge,HB Køge vs B 93 2024-08-20,-1.14,0.31,-1.45,0.25
+HB_Køge,HB Køge vs Fredericia 2024-09-01,-1.79,0.22,-2.0,0.22
+HB_Køge,HB Køge vs Hobro 2024-10-18,-0.61,0.04,-0.65,0.02
+HB_Køge,HB Køge vs Horsens 2024-08-11,-2.85,0.07,-2.92,0.32
+HB_Køge,HB Køge vs Hvidovre 2024-11-10,-0.52,0.36,-0.88,0.29
+HB_Køge,HB Køge vs Kolding 2024-10-25,-1.02,0.02,-1.04,0.03
+HB_Køge,HB Køge vs OB 2024-07-26,-0.77,0.07,-0.84,1.04
+HB_Køge,HB Køge vs Vendsyssel 2024-09-20,-1.0,0.19,-1.19,0.21
+HB_Køge,Hillerød vs HB Køge 2024-08-16,-0.34,0.63,-0.97,0.74
+HB_Køge,Hobro vs HB Køge 2024-08-02,-0.13,0.15,-0.28,0.35
+HB_Køge,Horsens vs HB Køge 2024-11-24,0.06,0.5,-0.44,0.87
+HB_Køge,Hvidovre vs HB Køge 2024-07-19,-0.58,0.07,-0.65,0.33
+HB_Køge,Kolding vs HB Køge 2024-09-14,-0.49,0.03,-0.52,0.05
+HB_Køge,OB vs HB Køge 2024-10-04,0.37,0.85,-0.48,1.0
+HB_Køge,Roskilde vs HB Køge 2024-09-29,-0.22,0.62,-0.84,0.34
+HB_Køge,Vendsyssel vs HB Køge 2024-11-02,-0.19,0.06,-0.25,0.15
+Hillerød,B 93 vs Hillerød 2024-08-23,0.35,0.37,-0.02,0.48
+Hillerød,Esbjerg vs Hillerød 2024-09-29,0.87,1.06,-0.19,0.6
+Hillerød,Hillerød vs Esbjerg 2024-11-24,0.77,1.47,-0.7,0.5
+Hillerød,Hillerød vs Fredericia 2024-09-23,-0.47,0.31,-0.78,0.11
+Hillerød,Hillerød vs HB Køge 2024-08-16,0.34,0.97,-0.63,0.29
+Hillerød,Hillerød vs Hobro 2024-07-21,0.62,1.56,-0.94,0.76
+Hillerød,Hillerød vs Horsens 2024-10-25,0.3,0.83,-0.53,0.47
+Hillerød,Hillerød vs Hvidovre 2024-11-01,0.43,0.67,-0.25,0.9
+Hillerød,Hillerød vs Kolding 2024-08-30,0.13,0.28,-0.15,0.19
+Hillerød,Hillerød vs Roskilde 2024-08-02,0.05,0.05,0.0,0.06
+Hillerød,Hillerød vs Vendsyssel 2024-10-04,1.01,1.39,-0.37,0.65
+Hillerød,Hobro vs Hillerød 2024-11-11,-0.34,0.17,-0.51,0.13
+Hillerød,Horsens vs Hillerød 2024-07-26,-0.1,0.37,-0.47,0.44
+Hillerød,Hvidovre vs Hillerød 2024-08-20,0.07,0.5,-0.43,0.88
+Hillerød,Kolding vs Hillerød 2024-10-18,-1.44,0.0,-1.44,0.0
+Hillerød,OB vs Hillerød 2024-08-10,0.3,0.43,-0.13,0.5
+Hillerød,Vendsyssel vs Hillerød 2024-09-14,0.52,0.58,-0.05,0.36
+Hobro,B 93 vs Hobro 2024-11-22,1.68,1.76,-0.09,0.73
+Hobro,Esbjerg vs Hobro 2024-11-03,-0.82,0.59,-1.41,0.27
+Hobro,Fredericia vs Hobro 2024-09-16,1.18,1.75,-0.57,0.61
+Hobro,HB Køge vs Hobro 2024-10-18,0.61,0.65,-0.04,0.34
+Hobro,Hillerød vs Hobro 2024-07-21,-0.62,0.94,-1.56,0.7
+Hobro,Hobro vs B 93 2024-09-02,-0.13,0.67,-0.8,0.41
+Hobro,Hobro vs Esbjerg 2024-07-26,-1.34,0.7,-2.04,0.35
+Hobro,Hobro vs Fredericia 2024-10-27,-0.94,0.18,-1.12,0.27
+Hobro,Hobro vs HB Køge 2024-08-02,0.13,0.28,-0.15,0.14
+Hobro,Hobro vs Hillerød 2024-11-11,0.34,0.51,-0.17,0.35
+Hobro,Hobro vs Hvidovre 2024-08-17,0.26,0.36,-0.09,0.43
+Hobro,Hobro vs Kolding 2024-09-20,-0.07,0.27,-0.34,0.25
+Hobro,Hobro vs OB 2024-08-25,-1.31,0.0,-1.31,0.0
+Hobro,Hobro vs Roskilde 2024-10-04,-0.17,0.08,-0.25,0.03
+Hobro,Horsens vs Hobro 2024-09-28,-0.82,0.42,-1.24,0.82
+Hobro,Roskilde vs Hobro 2024-08-10,-0.02,0.16,-0.18,0.06
+Hobro,Vendsyssel vs Hobro 2024-08-21,0.28,0.88,-0.6,0.67
+Horsens,B 93 vs Horsens 2024-09-21,1.99,2.03,-0.05,0.59
+Horsens,Esbjerg vs Horsens 2024-08-04,-0.06,0.16,-0.22,0.6
+Horsens,Fredericia vs Horsens 2024-10-05,0.56,0.76,-0.2,0.42
+Horsens,HB Køge vs Horsens 2024-08-11,2.85,2.92,-0.07,0.69
+Horsens,Hillerød vs Horsens 2024-10-25,-0.3,0.53,-0.83,0.62
+Horsens,Horsens vs B 93 2024-11-01,1.57,1.84,-0.27,0.64
+Horsens,Horsens vs Fredericia 2024-07-21,-0.05,0.11,-0.16,0.14
+Horsens,Horsens vs HB Køge 2024-11-24,-0.06,0.44,-0.5,0.48
+Horsens,Horsens vs Hillerød 2024-07-26,0.1,0.47,-0.37,0.34
+Horsens,Horsens vs Hobro 2024-09-28,0.82,1.24,-0.42,0.43
+Horsens,Horsens vs Hvidovre 2024-10-20,1.99,2.39,-0.4,0.6
+Horsens,Horsens vs Kolding 2024-08-16,-1.46,0.03,-1.5,0.09
+Horsens,Horsens vs OB 2024-09-14,0.16,0.47,-0.31,0.2
+Horsens,Horsens vs Vendsyssel 2024-08-24,0.2,0.24,-0.04,0.08
+Horsens,Hvidovre vs Horsens 2024-08-30,-0.59,0.46,-1.05,0.23
+Horsens,OB vs Horsens 2024-11-09,-0.08,0.47,-0.55,0.44
+Horsens,Roskilde vs Horsens 2024-08-20,-0.61,0.33,-0.95,0.27
+Hvidovre,Fredericia vs Hvidovre 2024-08-25,0.28,0.65,-0.38,0.57
+Hvidovre,HB Køge vs Hvidovre 2024-11-10,0.52,0.88,-0.36,0.59
+Hvidovre,Hillerød vs Hvidovre 2024-11-01,-0.43,0.25,-0.67,0.21
+Hvidovre,Hobro vs Hvidovre 2024-08-17,-0.26,0.09,-0.36,0.29
+Hvidovre,Horsens vs Hvidovre 2024-10-20,-1.99,0.4,-2.39,0.41
+Hvidovre,Hvidovre vs B 93 2024-08-09,1.63,1.8,-0.17,0.58
+Hvidovre,Hvidovre vs Esbjerg 2024-09-22,0.96,1.34,-0.37,0.63
+Hvidovre,Hvidovre vs HB Køge 2024-07-19,0.58,0.65,-0.07,0.26
+Hvidovre,Hvidovre vs Hillerød 2024-08-20,-0.07,0.43,-0.5,0.28
+Hvidovre,Hvidovre vs Horsens 2024-08-30,0.59,1.05,-0.46,0.34
+Hvidovre,Hvidovre vs Kolding 2024-10-07,-0.1,0.28,-0.38,0.41
+Hvidovre,Hvidovre vs Roskilde 2024-11-22,0.12,0.49,-0.37,0.27
+Hvidovre,Hvidovre vs Vendsyssel 2024-10-26,0.8,1.7,-0.9,0.62
+Hvidovre,Kolding vs Hvidovre 2024-07-26,-0.25,0.0,-0.25,0.0
+Hvidovre,OB vs Hvidovre 2024-08-03,-0.44,0.35,-0.78,0.45
+Hvidovre,Roskilde vs Hvidovre 2024-09-13,-0.64,0.16,-0.81,0.28
+Hvidovre,Vendsyssel vs Hvidovre 2024-09-28,0.2,0.23,-0.03,0.13
+Kolding,B 93 vs Kolding 2024-07-19,0.32,0.71,-0.39,0.61
+Kolding,Fredericia vs Kolding 2024-11-24,0.03,0.33,-0.3,0.4
+Kolding,HB Køge vs Kolding 2024-10-25,1.02,1.04,-0.02,0.7
+Kolding,Hillerød vs Kolding 2024-08-30,-0.13,0.15,-0.28,0.12
+Kolding,Hobro vs Kolding 2024-09-20,0.07,0.34,-0.27,0.51
+Kolding,Horsens vs Kolding 2024-08-16,1.46,1.5,-0.03,0.73
+Kolding,Hvidovre vs Kolding 2024-10-07,0.1,0.38,-0.28,0.39
+Kolding,Kolding vs Esbjerg 2024-08-21,0.63,0.77,-0.14,0.44
+Kolding,Kolding vs Fredericia 2024-08-02,1.13,1.18,-0.05,0.59
+Kolding,Kolding vs HB Køge 2024-09-14,0.49,0.52,-0.03,0.47
+Kolding,Kolding vs Hillerød 2024-10-18,1.44,1.44,0.0,0.93
+Kolding,Kolding vs Hvidovre 2024-07-26,0.25,0.25,0.0,0.33
+Kolding,Kolding vs OB 2024-09-27,0.1,0.25,-0.14,0.21
+Kolding,Kolding vs Roskilde 2024-08-24,0.58,0.68,-0.1,0.57
+Kolding,Kolding vs Vendsyssel 2024-11-08,-0.02,0.14,-0.16,0.41
+Kolding,Roskilde vs Kolding 2024-11-02,0.11,0.27,-0.16,0.27
+Kolding,Vendsyssel vs Kolding 2024-08-10,0.38,0.59,-0.21,0.42
+OB,B 93 vs OB 2024-08-16,-0.32,0.61,-0.92,0.22
+OB,Esbjerg vs OB 2024-07-20,0.03,0.2,-0.17,0.18
+OB,Fredericia vs OB 2024-11-03,0.16,0.56,-0.4,0.42
+OB,HB Køge vs OB 2024-07-26,0.77,0.84,-0.07,0.22
+OB,Hobro vs OB 2024-08-25,1.31,1.31,0.0,0.61
+OB,Horsens vs OB 2024-09-14,-0.16,0.31,-0.47,0.44
+OB,Kolding vs OB 2024-09-27,-0.1,0.14,-0.25,0.29
+OB,OB vs Esbjerg 2024-10-26,0.74,0.79,-0.05,0.29
+OB,OB vs Fredericia 2024-08-21,0.52,1.1,-0.57,0.49
+OB,OB vs HB Køge 2024-10-04,-0.37,0.48,-0.85,0.36
+OB,OB vs Hillerød 2024-08-10,-0.3,0.13,-0.43,0.12
+OB,OB vs Horsens 2024-11-09,0.08,0.55,-0.47,0.39
+OB,OB vs Hvidovre 2024-08-03,0.44,0.78,-0.35,0.39
+OB,OB vs Roskilde 2024-09-22,-0.2,0.52,-0.72,0.25
+OB,OB vs Vendsyssel 2024-08-30,0.09,0.49,-0.41,0.18
+OB,Roskilde vs OB 2024-10-18,0.32,0.37,-0.05,0.23
+OB,Vendsyssel vs OB 2024-11-25,0.11,0.21,-0.1,0.25
+Roskilde,B 93 vs Roskilde 2024-10-25,0.95,1.02,-0.07,0.72
+Roskilde,Esbjerg vs Roskilde 2024-11-10,-0.89,0.32,-1.21,0.5
+Roskilde,Fredericia vs Roskilde 2024-08-16,0.85,1.04,-0.19,0.66
+Roskilde,Hillerød vs Roskilde 2024-08-02,-0.05,0.0,-0.05,0.0
+Roskilde,Hobro vs Roskilde 2024-10-04,0.17,0.25,-0.08,0.66
+Roskilde,Hvidovre vs Roskilde 2024-11-22,-0.12,0.37,-0.49,0.46
+Roskilde,Kolding vs Roskilde 2024-08-24,-0.58,0.1,-0.68,0.69
+Roskilde,OB vs Roskilde 2024-09-22,0.2,0.72,-0.52,0.59
+Roskilde,Roskilde vs B 93 2024-07-27,-0.32,0.64,-0.96,0.41
+Roskilde,Roskilde vs Esbjerg 2024-08-30,-0.3,0.5,-0.81,0.48
+Roskilde,Roskilde vs HB Køge 2024-09-29,0.22,0.84,-0.62,0.7
+Roskilde,Roskilde vs Hobro 2024-08-10,0.02,0.18,-0.16,0.58
+Roskilde,Roskilde vs Horsens 2024-08-20,0.61,0.95,-0.33,0.57
+Roskilde,Roskilde vs Hvidovre 2024-09-13,0.64,0.81,-0.16,0.46
+Roskilde,Roskilde vs Kolding 2024-11-02,-0.11,0.16,-0.27,0.38
+Roskilde,Roskilde vs OB 2024-10-18,-0.32,0.05,-0.37,0.11
+Roskilde,Vendsyssel vs Roskilde 2024-07-19,-0.25,0.21,-0.46,0.48
+Vendsyssel,B 93 vs Vendsyssel 2024-08-02,-0.14,1.0,-1.15,0.51
+Vendsyssel,Esbjerg vs Vendsyssel 2024-08-17,-1.15,0.0,-1.15,0.0
+Vendsyssel,Fredericia vs Vendsyssel 2024-07-27,-0.58,0.68,-1.27,0.47
+Vendsyssel,HB Køge vs Vendsyssel 2024-09-20,1.0,1.19,-0.19,0.55
+Vendsyssel,Hillerød vs Vendsyssel 2024-10-04,-1.01,0.37,-1.39,0.39
+Vendsyssel,Horsens vs Vendsyssel 2024-08-24,-0.2,0.04,-0.24,0.08
+Vendsyssel,Hvidovre vs Vendsyssel 2024-10-26,-0.8,0.9,-1.7,0.72
+Vendsyssel,Kolding vs Vendsyssel 2024-11-08,0.02,0.16,-0.14,0.24
+Vendsyssel,OB vs Vendsyssel 2024-08-30,-0.09,0.41,-0.49,0.58
+Vendsyssel,Vendsyssel vs B 93 2024-10-18,0.87,0.93,-0.06,0.42
+Vendsyssel,Vendsyssel vs HB Køge 2024-11-02,0.19,0.25,-0.06,0.32
+Vendsyssel,Vendsyssel vs Hillerød 2024-09-14,-0.52,0.05,-0.58,0.13
+Vendsyssel,Vendsyssel vs Hobro 2024-08-21,-0.28,0.6,-0.88,0.44
+Vendsyssel,Vendsyssel vs Hvidovre 2024-09-28,-0.2,0.03,-0.23,0.04
+Vendsyssel,Vendsyssel vs Kolding 2024-08-10,-0.38,0.21,-0.59,0.12
+Vendsyssel,Vendsyssel vs OB 2024-11-25,-0.11,0.1,-0.21,0.13
+Vendsyssel,Vendsyssel vs Roskilde 2024-07-19,0.25,0.46,-0.21,0.31
