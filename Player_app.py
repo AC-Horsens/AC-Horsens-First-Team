@@ -251,6 +251,8 @@ def Process_data_spillere(df_possession_xa,df_pv_all,df_matchstats,df_xg_all,squ
     df_scouting['attemptsIbox_per90'] = (df_scouting['attemptsIbox'].astype(float)/df_scouting['minsPlayed'].astype(float)) * 90
     df_scouting['aerialWon_per90'] = (df_scouting['aerialWon'].astype(float)/df_scouting['minsPlayed'].astype(float)) * 90
     df_scouting['possLost_per90'] = (df_scouting['possLostAll'].astype(float)/df_scouting['minsPlayed'].astype(float)) * 90
+    df_scouting['Attempts conceded in box per 90'] = (df_scouting['attemptsConcededIbox'].astype(float)/df_scouting['minsPlayed'].astype(float)) * 90
+
     df_scouting.fillna(0, inplace=True)
 
     def ball_playing_central_defender():
@@ -320,6 +322,7 @@ def Process_data_spillere(df_possession_xa,df_pv_all,df_matchstats,df_xg_all,squ
         df_balanced_central_defender['minsPlayed'] = df_balanced_central_defender['minsPlayed'].astype(int)
         
         df_balanced_central_defender = df_balanced_central_defender[df_balanced_central_defender['minsPlayed'].astype(int) >= minutter_kamp]
+        df_balanced_central_defender = calculate_opposite_score(df_balanced_central_defender,'Attempts conceded in box per 90','Attempts conceded in box per 90 score')
         df_balanced_central_defender = calculate_opposite_score(df_balanced_central_defender,'opponents_pv', 'opponents pv score')
         df_balanced_central_defender = calculate_opposite_score(df_balanced_central_defender,'opponents_xg', 'opponents xg score')
         df_balanced_central_defender = calculate_opposite_score(df_balanced_central_defender,'opponents_xA', 'opponents xA score')
@@ -338,7 +341,11 @@ def Process_data_spillere(df_possession_xa,df_pv_all,df_matchstats,df_xg_all,squ
         df_balanced_central_defender = calculate_score(df_balanced_central_defender, 'Forward zone pass_per90', 'Forward zone pass score')
         df_balanced_central_defender = calculate_opposite_score(df_balanced_central_defender,'possLost_per90','possLost per90 score')
 
-        df_balanced_central_defender['Defending'] = df_balanced_central_defender[['duels won % score','duels won % score','duelWon score','opponents pv score','opponents xg score','opponents xA score','opponents pv score','opponents xg score','opponents xA score','Aerial duel % score','Aerial duel % score','Aerial duel score', 'possWonDef3rd_possWonMid3rd_per90&interceptions_per90 score', 'possWonDef3rd_possWonMid3rd_per90&interceptions_per90 score', 'ballRecovery score']].mean(axis=1)
+        df_balanced_central_defender['Defending'] = df_balanced_central_defender[
+            ['duels won % score', 'duelWon score', 'opponents pv score', 'opponents xg score', 'opponents xA score',
+            'opponents pv score', 'opponents xg score', 'opponents xA score', 'Aerial duel % score',
+            'possWonDef3rd_possWonMid3rd_per90&interceptions_per90 score', 'possWonDef3rd_possWonMid3rd_per90&interceptions_per90 score',
+            'ballRecovery score','Attempts conceded in box per 90 score','Attempts conceded in box per 90 score']].mean(axis=1)
         df_balanced_central_defender['Possession value added'] = df_balanced_central_defender[['Possession value added score','possLost per90 score']].mean(axis=1)
         df_balanced_central_defender['Passing'] = df_balanced_central_defender[['Open play passing % score','Passing score', 'Back zone pass % score','Back zone pass score','Back zone pass % score','Back zone pass score','Back zone pass % score','Back zone pass score','possLost per90 score','possLost per90 score']].mean(axis=1)
         
@@ -359,8 +366,7 @@ def Process_data_spillere(df_possession_xa,df_pv_all,df_matchstats,df_xg_all,squ
         df_balanced_central_defendertotal = df_balanced_central_defendertotal[df_balanced_central_defendertotal['minsPlayed total'].astype(int) >= minutter_total]
         df_balanced_central_defendertotal = df_balanced_central_defendertotal.sort_values('Total score',ascending = False)
         return df_balanced_central_defender
-
-    
+  
     def fullbacks():
         df_backs = df_scouting[((df_scouting['player_position'] == 'Defender') | (df_scouting['player_position'] == 'Wing Back')) & ((df_scouting['player_positionSide'] == 'Right') | (df_scouting['player_positionSide'] == 'Left'))]
         df_backs['minsPlayed'] = df_backs['minsPlayed'].astype(int)
