@@ -53,8 +53,7 @@ aggregated_df = (
     .agg(
         In_squad=('player_matchName', 'count'),  # Count appearances of each player
         Starting_11=('player_position', lambda x: (x != 'Substitute').sum()),  # Count non-substitute entries
-        total_minutes_played=('minsPlayed', 'sum'),
-        Goals = ('goals','sum')
+        total_minutes_played=('minsPlayed', 'sum')
     )
 )
 
