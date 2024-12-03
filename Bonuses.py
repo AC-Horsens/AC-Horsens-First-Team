@@ -17,7 +17,7 @@ goals = goals[['team_name', 'playerName', 'label', 'date']]
 
 # List of players' goals
 player_goal_counts = (
-    goals.groupby('playerName')
+    goals.groupby(['playerName','label','date'])
     .size()
     .reset_index(name='goal_count')  # Rename the resulting column
 )
@@ -36,27 +36,44 @@ goal_counts['goals_in_match'] = goal_counts.groupby(['label', 'date'])['team_goa
 goal_counts['result'] = goal_counts['team_goals'] - (goal_counts['goals_in_match'] - goal_counts['team_goals'])
 
 # Determine if the team won the match
-goal_counts['win'] = goal_counts['result'] > 0
+goal_counts['wins'] = goal_counts['result'] > 0
 
 # Filter for Horsens matches and relevant columns
 horsens_results = goal_counts[goal_counts['team_name'] == 'Horsens']
 horsens_results = horsens_results[['label', 'date', 'win']]
 
 # Display the dataframes in Streamlit
-print(player_goal_counts)  # Players' goals
-print(horsens_results)  # Match results for Horsens
 matchstats_df = matchstats_df[['player_matchName','label','date','player_position','minsPlayed']]
 # Assuming matchstats_df is your dataframe
 aggregated_df = (
-    matchstats_df.groupby(['player_matchName','label','date'])
+    matchstats_df.groupby(['player_matchName', 'label', 'date'])
     .agg(
         In_squad=('player_matchName', 'count'),  # Count appearances of each player
         Starting_11=('player_position', lambda x: (x != 'Substitute').sum()),  # Count non-substitute entries
         total_minutes_played=('minsPlayed', 'sum')
     )
-)
+).reset_index()
+
+
+aggregated_df = aggregated_df.rename(columns={'player_matchName': 'playerName'})
 
 # Set the index as player_matchName (this is already the case after groupby)
-aggregated_df.index.name = 'player_matchName'
-print(aggregated_df)
-st.dataframe(aggregated_df)
+merged_df = aggregated_df.merge(player_goal_counts, on=['playerName', 'label', 'date'])
+merged_df = merged_df.merge(horsens_results,on=['label', 'date'])
+merged_df['Starting_11_wins'] = merged_df.apply(
+    lambda row: 1 if row['Starting_11'] > 0 and row['win'] else 0, axis=1
+)
+final_df = (
+    merged_df.groupby('playerName')
+    .agg(
+        In_squad=('In_squad', 'sum'),
+        Starting_11=('Starting_11', 'sum'),
+        total_minutes_played=('total_minutes_played', 'sum'),
+        goal_count=('goal_count', 'sum'),
+        Starting_11_wins=('Starting_11_wins', 'sum')
+    )
+    .reset_index()
+)
+
+# Display the resulting dataframe
+st.dataframe(final_df)
