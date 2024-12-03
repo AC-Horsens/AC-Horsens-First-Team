@@ -48,7 +48,7 @@ print(horsens_results)  # Match results for Horsens
 matchstats_df = matchstats_df[['player_matchName','label','date','player_position','minsPlayed']]
 # Assuming matchstats_df is your dataframe
 aggregated_df = (
-    matchstats_df.groupby(['player_matchName','label'])
+    matchstats_df.groupby(['player_matchName','label','date'])
     .agg(
         In_squad=('player_matchName', 'count'),  # Count appearances of each player
         Starting_11=('player_position', lambda x: (x != 'Substitute').sum()),  # Count non-substitute entries
