@@ -61,8 +61,11 @@ aggregated_df = aggregated_df.rename(columns={'player_matchName': 'playerName'})
 merged_df = aggregated_df.merge(player_goal_counts, on=['playerName', 'label', 'date'],how = 'left')
 merged_df = merged_df.merge(horsens_results,on=['label', 'date'],how = 'left')
 merged_df['Starting_11_wins'] = merged_df.apply(
-    lambda row: 1 if row['Starting_11'] > 0 and row['wins'] else 0, axis=1
+    lambda row: 1 if row['Starting_11'] > 0 and row['wins'] == True else 0, axis=1
 )
+filtered_df = merged_df[merged_df['playerName'].str.contains('C. Tapé', na=False)]
+
+# Print the filtered dataframe
 final_df = (
     merged_df.groupby('playerName')
     .agg(
