@@ -40,7 +40,7 @@ goal_counts['wins'] = goal_counts['result'] > 0
 
 # Filter for Horsens matches and relevant columns
 horsens_results = goal_counts[goal_counts['team_name'] == 'Horsens']
-horsens_results = horsens_results[['label', 'date', 'win']]
+horsens_results = horsens_results[['label', 'date', 'wins']]
 
 # Display the dataframes in Streamlit
 matchstats_df = matchstats_df[['player_matchName','label','date','player_position','minsPlayed']]
@@ -61,7 +61,7 @@ aggregated_df = aggregated_df.rename(columns={'player_matchName': 'playerName'})
 merged_df = aggregated_df.merge(player_goal_counts, on=['playerName', 'label', 'date'])
 merged_df = merged_df.merge(horsens_results,on=['label', 'date'])
 merged_df['Starting_11_wins'] = merged_df.apply(
-    lambda row: 1 if row['Starting_11'] > 0 and row['win'] else 0, axis=1
+    lambda row: 1 if row['Starting_11'] > 0 and row['wins'] else 0, axis=1
 )
 final_df = (
     merged_df.groupby('playerName')
