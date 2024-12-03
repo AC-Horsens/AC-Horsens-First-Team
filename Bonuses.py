@@ -45,8 +45,7 @@ horsens_results = horsens_results[['label', 'date', 'win']]
 # Display the dataframes in Streamlit
 print(player_goal_counts)  # Players' goals
 print(horsens_results)  # Match results for Horsens
-
-matchstats_df = matchstats_df[['player_matchName','label','player_position','minsPlayed']]
+matchstats_df = matchstats_df[['player_matchName','label','date','player_position','minsPlayed']]
 # Assuming matchstats_df is your dataframe
 aggregated_df = (
     matchstats_df.groupby(['player_matchName','label'])
