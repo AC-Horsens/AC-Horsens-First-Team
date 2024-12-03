@@ -77,6 +77,6 @@ final_df = (
     )
     .reset_index()
 )
-
+final_df = final_df.set_index('playerName')
 # Display the resulting dataframe
 st.dataframe(final_df)
