@@ -59,7 +59,7 @@ aggregated_df = aggregated_df.rename(columns={'player_matchName': 'playerName'})
 
 # Set the index as player_matchName (this is already the case after groupby)
 merged_df = aggregated_df.merge(player_goal_counts, on=['playerName', 'label', 'date'],how = 'left')
-merged_df = merged_df.merge(horsens_results,on=['label', 'date'])
+merged_df = merged_df.merge(horsens_results,on=['label', 'date'],how = 'left')
 merged_df['Starting_11_wins'] = merged_df.apply(
     lambda row: 1 if row['Starting_11'] > 0 and row['wins'] else 0, axis=1
 )
