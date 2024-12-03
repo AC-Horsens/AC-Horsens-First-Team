@@ -669,6 +669,7 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
             df_balanced_central_defendertotal['minsPlayed total'].astype(int) >= minutter_total
         ]
         df_balanced_central_defendertotal = df_balanced_central_defendertotal.sort_values('Total score', ascending=False)
+        df_balanced_central_defender = df_balanced_central_defender.sort_values('Total score', ascending=False)
 
         return df_balanced_central_defender
   
@@ -1108,6 +1109,7 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
 
         df_winger_total = df_winger_total[df_winger_total['minsPlayed total'].astype(int) >= minutter_total]
         df_winger_total = df_winger_total.sort_values('Total score', ascending=False)
+        df_winger = df_winger.sort_values('Total score', ascending=False)
 
         return df_winger
 
