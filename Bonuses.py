@@ -45,15 +45,19 @@ horsens_results = horsens_results[['label', 'date', 'wins']]
 # Display the dataframes in Streamlit
 matchstats_df = matchstats_df[['player_matchName','label','date','player_position','minsPlayed']]
 # Assuming matchstats_df is your dataframe
+
+matchstats_df['Subbed_in'] = (matchstats_df['minsPlayed'] > 0) & (matchstats_df['player_position'] == 'Substitute')
+
+# Aggregate the data including Subbed_in
 aggregated_df = (
     matchstats_df.groupby(['player_matchName', 'label', 'date'])
     .agg(
         In_squad=('player_matchName', 'count'),  # Count appearances of each player
         Starting_11=('player_position', lambda x: (x != 'Substitute').sum()),  # Count non-substitute entries
-        total_minutes_played=('minsPlayed', 'sum')
+        total_minutes_played=('minsPlayed', 'sum'),
+        Subbed_in=('Subbed_in', 'sum')  # Sum the Subbed_in column to count occurrences
     )
 ).reset_index()
-
 
 aggregated_df = aggregated_df.rename(columns={'player_matchName': 'playerName'})
 
@@ -63,20 +67,24 @@ merged_df = merged_df.merge(horsens_results,on=['label', 'date'],how = 'left')
 merged_df['Starting_11_wins'] = merged_df.apply(
     lambda row: 1 if row['Starting_11'] > 0 and row['wins'] == True else 0, axis=1
 )
-filtered_df = merged_df[merged_df['playerName'].str.contains('C. Tapé', na=False)]
-
+merged_df['Subbed_in_wins'] = merged_df.apply(
+    lambda row: 1 if row['Subbed_in'] > 0 and row['wins'] == True else 0, axis=1
+)
 # Print the filtered dataframe
 final_df = (
     merged_df.groupby('playerName')
     .agg(
         In_squad=('In_squad', 'sum'),
         Starting_11=('Starting_11', 'sum'),
+        Subbed_in = ('Subbed_in','sum'),
         total_minutes_played=('total_minutes_played', 'sum'),
         goal_count=('goal_count', 'sum'),
-        Starting_11_wins=('Starting_11_wins', 'sum')
+        Starting_11_wins=('Starting_11_wins', 'sum'),
+        Subbed_in_wins = ('Subbed_in_wins','sum')
     )
     .reset_index()
 )
 final_df = final_df.set_index('playerName')
+print(final_df)
 # Display the resulting dataframe
 st.dataframe(final_df)
