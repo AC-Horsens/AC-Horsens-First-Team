@@ -531,22 +531,6 @@ Fredericia,81,59,D. Kristjánsson,Esbjerg vs Fredericia,2024-10-19,18,Defender,N
 Fredericia,81,59,D. Thøgersen,Esbjerg vs Fredericia,2024-10-19,19,Defender,3,1
 Fredericia,82,8,A. Bøndergaard,Esbjerg vs Fredericia,2024-10-19,18,Forward,NaN,NaN
 Fredericia,82,8,E. Dall,Esbjerg vs Fredericia,2024-10-19,19,Forward,9,3
-Esbjerg,40,55,A. Lausen,OB vs Esbjerg,2024-10-26,18,Midfielder,NaN,NaN
-Esbjerg,40,55,P. Bjur,OB vs Esbjerg,2024-10-26,19,Midfielder,5,1
-Esbjerg,71,9,J. Beck,OB vs Esbjerg,2024-10-26,18,Midfielder,NaN,NaN
-Esbjerg,71,9,M. Maden,OB vs Esbjerg,2024-10-26,19,Forward,9,1
-Esbjerg,76,57,L. From,OB vs Esbjerg,2024-10-26,18,Forward,NaN,NaN
-Esbjerg,76,57,M. Ladefoged,OB vs Esbjerg,2024-10-26,19,Midfielder,6,2
-Esbjerg,77,14,L. Montano,OB vs Esbjerg,2024-10-26,18,Defender,NaN,NaN
-OB,61,49,L. Kjerrumgaard,OB vs Esbjerg,2024-10-26,18,Forward,NaN,NaN
-Esbjerg,77,14,A. Troelsen,OB vs Esbjerg,2024-10-26,19,Defender,3,1
-OB,61,49,M. Fenger,OB vs Esbjerg,2024-10-26,19,Forward,9,3
-OB,82,10,A. Manneh,OB vs Esbjerg,2024-10-26,18,Midfielder,NaN,NaN
-OB,82,10,W. Martin,OB vs Esbjerg,2024-10-26,19,Midfielder,7,4
-OB,88,38,M. Ejdum,OB vs Esbjerg,2024-10-26,18,Midfielder,NaN,NaN
-OB,88,38,J. Berthel Askou,OB vs Esbjerg,2024-10-26,19,Forward,10,3
-OB,88,47,L. Deedson,OB vs Esbjerg,2024-10-26,18,Forward,NaN,NaN
-OB,88,47,G. Grubbe,OB vs Esbjerg,2024-10-26,19,Forward,9,1
 Hobro,18,22,J. Cornelius,Esbjerg vs Hobro,2024-11-03,18,Forward,NaN,NaN
 Hobro,18,22,M. Bruhn,Esbjerg vs Hobro,2024-11-03,19,Forward,9,3
 Esbjerg,41,15,J. Mortensen,Esbjerg vs Hobro,2024-11-03,18,Defender,NaN,NaN
@@ -621,6 +605,22 @@ Esbjerg,74,1,Y. Bourhane,Vendsyssel vs Esbjerg,2024-12-01,18,Midfielder,NaN,NaN
 Esbjerg,74,1,M. Ladefoged,Vendsyssel vs Esbjerg,2024-12-01,19,Midfielder,6,4
 Esbjerg,73,54,A. Troelsen,Vendsyssel vs Esbjerg,2024-12-01,18,Defender,NaN,NaN
 Esbjerg,73,54,N. Strunck,Vendsyssel vs Esbjerg,2024-12-01,19,Midfielder,7,3
+Esbjerg,40,55,A. Lausen,OB vs Esbjerg,2024-10-26,18,Midfielder,NaN,NaN
+Esbjerg,40,55,P. Bjur,OB vs Esbjerg,2024-10-26,19,Midfielder,5,1
+Esbjerg,71,9,J. Beck,OB vs Esbjerg,2024-10-26,18,Midfielder,NaN,NaN
+Esbjerg,71,9,M. Maden,OB vs Esbjerg,2024-10-26,19,Forward,9,1
+Esbjerg,76,57,L. From,OB vs Esbjerg,2024-10-26,18,Forward,NaN,NaN
+Esbjerg,76,57,M. Ladefoged,OB vs Esbjerg,2024-10-26,19,Midfielder,6,2
+Esbjerg,77,14,L. Montano,OB vs Esbjerg,2024-10-26,18,Defender,NaN,NaN
+OB,61,49,L. Kjerrumgaard,OB vs Esbjerg,2024-10-26,18,Forward,NaN,NaN
+Esbjerg,77,14,A. Troelsen,OB vs Esbjerg,2024-10-26,19,Defender,3,1
+OB,61,49,M. Fenger,OB vs Esbjerg,2024-10-26,19,Forward,9,3
+OB,82,10,A. Manneh,OB vs Esbjerg,2024-10-26,18,Midfielder,NaN,NaN
+OB,82,10,W. Martin,OB vs Esbjerg,2024-10-26,19,Midfielder,7,4
+OB,88,38,M. Ejdum,OB vs Esbjerg,2024-10-26,18,Midfielder,NaN,NaN
+OB,88,38,J. Berthel Askou,OB vs Esbjerg,2024-10-26,19,Forward,10,3
+OB,88,47,L. Deedson,OB vs Esbjerg,2024-10-26,18,Forward,NaN,NaN
+OB,88,47,G. Grubbe,OB vs Esbjerg,2024-10-26,19,Forward,9,1
 Fredericia,71,6,O. Buch,Horsens vs Fredericia,2024-07-21,18,Forward,NaN,NaN
 Fredericia,71,6,P. Egelund,Horsens vs Fredericia,2024-07-21,19,Midfielder,6,2
 Fredericia,71,12,A. Muçolli,Horsens vs Fredericia,2024-07-21,18,Forward,NaN,NaN
