@@ -1,4 +1,472 @@
 type,overall.away,overall.home,overall.middle,interval_type,interval,away,home,middle,label,match_id,league_name,country,date,home_team,away_team
+ballPossession,52.5,47.5,NaN,5,0-5,32.8,67.2,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+ballPossession,52.5,47.5,NaN,5,6-10,38.2,61.8,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+ballPossession,52.5,47.5,NaN,5,11-15,36.4,63.6,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+ballPossession,52.5,47.5,NaN,5,16-20,62.7,37.3,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+ballPossession,52.5,47.5,NaN,5,21-25,78.6,21.4,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+ballPossession,52.5,47.5,NaN,5,26-30,70.8,29.2,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+ballPossession,52.5,47.5,NaN,5,31-35,84.2,15.8,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+ballPossession,52.5,47.5,NaN,5,36-40,66.2,33.8,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+ballPossession,52.5,47.5,NaN,5,41-45,32.6,67.4,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+ballPossession,52.5,47.5,NaN,5,46-50,58.1,41.9,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+ballPossession,52.5,47.5,NaN,5,51-55,91.1,8.9,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+ballPossession,52.5,47.5,NaN,5,56-60,35.1,64.9,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+ballPossession,52.5,47.5,NaN,5,61-65,43.2,56.8,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+ballPossession,52.5,47.5,NaN,5,66-70,29.8,70.2,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+ballPossession,52.5,47.5,NaN,5,71-75,52.2,47.8,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+ballPossession,52.5,47.5,NaN,5,76-80,24.4,75.6,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+ballPossession,52.5,47.5,NaN,5,81-85,47.1,52.9,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+ballPossession,52.5,47.5,NaN,5,86-90,48.2,51.8,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+ballPossession,52.5,47.5,NaN,15,0-15,35.7,64.3,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+ballPossession,52.5,47.5,NaN,15,16-30,71.2,28.8,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+ballPossession,52.5,47.5,NaN,15,31-45,63.7,36.3,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+ballPossession,52.5,47.5,NaN,15,46-60,59.0,41.0,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+ballPossession,52.5,47.5,NaN,15,61-75,43.1,56.9,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+ballPossession,52.5,47.5,NaN,15,76-90,41.5,58.5,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+ballPossession,52.5,47.5,NaN,45,0-45,56.5,43.5,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+ballPossession,52.5,47.5,NaN,45,46-90,48.2,51.8,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorial,61.0,39.0,NaN,5,0-5,65.6,34.4,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorial,61.0,39.0,NaN,5,6-10,63.6,36.4,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorial,61.0,39.0,NaN,5,11-15,60.6,39.4,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorial,61.0,39.0,NaN,5,16-20,52.5,47.5,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorial,61.0,39.0,NaN,5,21-25,70.0,30.0,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorial,61.0,39.0,NaN,5,26-30,77.1,22.9,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorial,61.0,39.0,NaN,5,31-35,71.9,28.1,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorial,61.0,39.0,NaN,5,36-40,72.1,27.9,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorial,61.0,39.0,NaN,5,41-45,62.8,37.2,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorial,61.0,39.0,NaN,5,46-50,30.2,69.8,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorial,61.0,39.0,NaN,5,51-55,83.9,16.1,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorial,61.0,39.0,NaN,5,56-60,68.9,31.1,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorial,61.0,39.0,NaN,5,61-65,40.5,59.5,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorial,61.0,39.0,NaN,5,66-70,25.5,74.5,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorial,61.0,39.0,NaN,5,71-75,47.8,52.2,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorial,61.0,39.0,NaN,5,76-80,73.3,26.7,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorial,61.0,39.0,NaN,5,81-85,52.9,47.1,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorial,61.0,39.0,NaN,5,86-90,57.6,42.4,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorial,61.0,39.0,NaN,15,0-15,63.2,36.8,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorial,61.0,39.0,NaN,15,16-30,66.1,33.9,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorial,61.0,39.0,NaN,15,31-45,69.6,30.4,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorial,61.0,39.0,NaN,15,46-60,64.2,35.8,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorial,61.0,39.0,NaN,15,61-75,39.2,60.8,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorial,61.0,39.0,NaN,15,76-90,61.0,39.0,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorial,61.0,39.0,NaN,45,0-45,66.2,33.8,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorial,61.0,39.0,NaN,45,46-90,55.3,44.7,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorialThird,21.6,41.8,36.6,5,0-5,23.0,49.2,27.8,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorialThird,21.6,41.8,36.6,5,6-10,18.2,32.7,49.1,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorialThird,21.6,41.8,36.6,5,11-15,21.2,39.4,39.4,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorialThird,21.6,41.8,36.6,5,16-20,25.4,35.6,39.0,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorialThird,21.6,41.8,36.6,5,21-25,15.7,48.6,35.7,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorialThird,21.6,41.8,36.6,5,26-30,10.4,62.5,27.1,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorialThird,21.6,41.8,36.6,5,31-35,14.0,49.1,36.9,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorialThird,21.6,41.8,36.6,5,36-40,7.4,63.2,29.4,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorialThird,21.6,41.8,36.6,5,41-45,7.0,39.5,53.5,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorialThird,21.6,41.8,36.6,5,46-50,41.9,9.3,48.8,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorialThird,21.6,41.8,36.6,5,51-55,5.4,57.1,37.5,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorialThird,21.6,41.8,36.6,5,56-60,16.2,45.9,37.9,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorialThird,21.6,41.8,36.6,5,61-65,40.5,29.7,29.8,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorialThird,21.6,41.8,36.6,5,66-70,55.3,8.5,36.2,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorialThird,21.6,41.8,36.6,5,71-75,27.5,31.9,40.6,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorialThird,21.6,41.8,36.6,5,76-80,20.0,53.3,26.7,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorialThird,21.6,41.8,36.6,5,81-85,38.2,44.1,17.7,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorialThird,21.6,41.8,36.6,5,86-90,23.5,37.6,38.9,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorialThird,21.6,41.8,36.6,15,0-15,20.9,40.7,38.4,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorialThird,21.6,41.8,36.6,15,16-30,17.5,48.0,34.5,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorialThird,21.6,41.8,36.6,15,31-45,9.5,52.4,38.1,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorialThird,21.6,41.8,36.6,15,46-60,19.1,40.5,40.4,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorialThird,21.6,41.8,36.6,15,61-75,39.2,24.2,36.6,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorialThird,21.6,41.8,36.6,15,76-90,25.6,43.3,31.1,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorialThird,21.6,41.8,36.6,45,0-45,16.1,46.9,37.0,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+territorialThird,21.6,41.8,36.6,45,46-90,27.6,36.3,36.1,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
+ballPossession,53.1,46.9,NaN,5,0-5,38.8,61.2,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+ballPossession,53.1,46.9,NaN,5,6-10,64.8,35.2,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+ballPossession,53.1,46.9,NaN,5,11-15,54.0,46.0,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+ballPossession,53.1,46.9,NaN,5,16-20,24.3,75.7,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+ballPossession,53.1,46.9,NaN,5,21-25,68.3,31.7,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+ballPossession,53.1,46.9,NaN,5,26-30,74.4,25.6,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+ballPossession,53.1,46.9,NaN,5,31-35,53.6,46.4,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+ballPossession,53.1,46.9,NaN,5,36-40,32.5,67.5,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+ballPossession,53.1,46.9,NaN,5,41-45,40.0,60.0,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+ballPossession,53.1,46.9,NaN,5,46-50,56.2,43.8,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+ballPossession,53.1,46.9,NaN,5,51-55,66.1,33.9,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+ballPossession,53.1,46.9,NaN,5,56-60,71.1,28.9,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+ballPossession,53.1,46.9,NaN,5,61-65,38.5,61.5,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+ballPossession,53.1,46.9,NaN,5,66-70,38.5,61.5,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+ballPossession,53.1,46.9,NaN,5,71-75,44.0,56.0,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+ballPossession,53.1,46.9,NaN,5,76-80,40.0,60.0,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+ballPossession,53.1,46.9,NaN,5,81-85,60.5,39.5,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+ballPossession,53.1,46.9,NaN,5,86-90,61.2,38.8,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+ballPossession,53.1,46.9,NaN,15,0-15,51.5,48.5,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+ballPossession,53.1,46.9,NaN,15,16-30,61.7,38.3,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+ballPossession,53.1,46.9,NaN,15,31-45,42.7,57.3,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+ballPossession,53.1,46.9,NaN,15,46-60,64.4,35.6,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+ballPossession,53.1,46.9,NaN,15,61-75,40.6,59.4,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+ballPossession,53.1,46.9,NaN,15,76-90,55.5,44.5,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+ballPossession,53.1,46.9,NaN,45,0-45,52.0,48.0,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+ballPossession,53.1,46.9,NaN,45,46-90,54.2,45.8,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorial,56.8,43.2,NaN,5,0-5,61.2,38.8,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorial,56.8,43.2,NaN,5,6-10,40.7,59.3,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorial,56.8,43.2,NaN,5,11-15,52.0,48.0,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorial,56.8,43.2,NaN,5,16-20,45.9,54.1,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorial,56.8,43.2,NaN,5,21-25,36.7,63.3,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorial,56.8,43.2,NaN,5,26-30,66.7,33.3,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorial,56.8,43.2,NaN,5,31-35,69.6,30.4,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorial,56.8,43.2,NaN,5,36-40,85.0,15.0,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorial,56.8,43.2,NaN,5,41-45,50.7,49.3,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorial,56.8,43.2,NaN,5,46-50,64.6,35.4,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorial,56.8,43.2,NaN,5,51-55,44.6,55.4,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorial,56.8,43.2,NaN,5,56-60,57.8,42.2,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorial,56.8,43.2,NaN,5,61-65,38.5,61.5,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorial,56.8,43.2,NaN,5,66-70,55.8,44.2,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorial,56.8,43.2,NaN,5,71-75,56.0,44.0,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorial,56.8,43.2,NaN,5,76-80,62.2,37.8,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorial,56.8,43.2,NaN,5,81-85,72.1,27.9,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorial,56.8,43.2,NaN,5,86-90,58.8,41.2,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorial,56.8,43.2,NaN,15,0-15,52.0,48.0,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorial,56.8,43.2,NaN,15,16-30,52.0,48.0,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorial,56.8,43.2,NaN,15,31-45,64.9,35.1,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorial,56.8,43.2,NaN,15,46-60,55.0,45.0,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorial,56.8,43.2,NaN,15,61-75,52.3,47.7,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorial,56.8,43.2,NaN,15,76-90,63.0,37.0,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorial,56.8,43.2,NaN,45,0-45,56.3,43.7,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorial,56.8,43.2,NaN,45,46-90,57.3,42.7,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorialThird,26.3,35.2,38.5,5,0-5,23.9,41.8,34.3,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorialThird,26.3,35.2,38.5,5,6-10,38.9,25.9,35.2,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorialThird,26.3,35.2,38.5,5,11-15,30.0,30.0,40.0,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorialThird,26.3,35.2,38.5,5,16-20,29.7,13.5,56.8,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorialThird,26.3,35.2,38.5,5,21-25,50.0,20.0,30.0,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorialThird,26.3,35.2,38.5,5,26-30,24.4,34.6,41.0,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorialThird,26.3,35.2,38.5,5,31-35,16.1,44.6,39.3,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorialThird,26.3,35.2,38.5,5,36-40,5.0,60.0,35.0,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorialThird,26.3,35.2,38.5,5,41-45,33.3,26.7,40.0,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorialThird,26.3,35.2,38.5,5,46-50,16.7,45.8,37.5,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorialThird,26.3,35.2,38.5,5,51-55,35.7,21.4,42.9,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorialThird,26.3,35.2,38.5,5,56-60,17.8,53.3,28.9,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorialThird,26.3,35.2,38.5,5,61-65,42.3,7.7,50.0,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorialThird,26.3,35.2,38.5,5,66-70,28.8,26.9,44.3,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorialThird,26.3,35.2,38.5,5,71-75,10.0,44.0,46.0,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorialThird,26.3,35.2,38.5,5,76-80,31.1,44.4,24.5,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorialThird,26.3,35.2,38.5,5,81-85,14.0,51.2,34.8,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorialThird,26.3,35.2,38.5,5,86-90,22.4,37.6,40.0,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorialThird,26.3,35.2,38.5,15,0-15,30.4,33.3,36.3,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorialThird,26.3,35.2,38.5,15,16-30,34.3,25.1,40.6,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorialThird,26.3,35.2,38.5,15,31-45,21.1,40.4,38.5,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorialThird,26.3,35.2,38.5,15,46-60,24.2,38.9,36.9,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorialThird,26.3,35.2,38.5,15,61-75,24.2,29.7,46.1,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorialThird,26.3,35.2,38.5,15,76-90,22.5,42.8,34.7,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorialThird,26.3,35.2,38.5,45,0-45,28.6,32.9,38.5,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+territorialThird,26.3,35.2,38.5,45,46-90,23.6,37.8,38.6,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
+ballPossession,39.5,60.5,NaN,5,0-5,60.5,39.5,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+ballPossession,39.5,60.5,NaN,5,6-10,42.6,57.4,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+ballPossession,39.5,60.5,NaN,5,11-15,61.5,38.5,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+ballPossession,39.5,60.5,NaN,5,16-20,29.3,70.7,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+ballPossession,39.5,60.5,NaN,5,21-25,30.5,69.5,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+ballPossession,39.5,60.5,NaN,5,26-30,38.3,61.7,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+ballPossession,39.5,60.5,NaN,5,31-35,33.3,66.7,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+ballPossession,39.5,60.5,NaN,5,36-40,28.3,71.7,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+ballPossession,39.5,60.5,NaN,5,41-45,34.1,65.9,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+ballPossession,39.5,60.5,NaN,5,46-50,72.2,27.8,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+ballPossession,39.5,60.5,NaN,5,51-55,32.9,67.1,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+ballPossession,39.5,60.5,NaN,5,56-60,51.8,48.2,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+ballPossession,39.5,60.5,NaN,5,61-65,23.3,76.7,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+ballPossession,39.5,60.5,NaN,5,66-70,32.7,67.3,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+ballPossession,39.5,60.5,NaN,5,71-75,59.3,40.7,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+ballPossession,39.5,60.5,NaN,5,76-80,65.8,34.2,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+ballPossession,39.5,60.5,NaN,5,81-85,33.3,66.7,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+ballPossession,39.5,60.5,NaN,5,86-90,24.5,75.5,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+ballPossession,39.5,60.5,NaN,15,0-15,53.4,46.6,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+ballPossession,39.5,60.5,NaN,15,16-30,33.1,66.9,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+ballPossession,39.5,60.5,NaN,15,31-45,32.2,67.8,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+ballPossession,39.5,60.5,NaN,15,46-60,50.3,49.7,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+ballPossession,39.5,60.5,NaN,15,61-75,35.3,64.7,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+ballPossession,39.5,60.5,NaN,15,76-90,35.9,64.1,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+ballPossession,39.5,60.5,NaN,45,0-45,37.7,62.3,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+ballPossession,39.5,60.5,NaN,45,46-90,41.5,58.5,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorial,51.8,48.2,NaN,5,0-5,55.8,44.2,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorial,51.8,48.2,NaN,5,6-10,68.1,31.9,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorial,51.8,48.2,NaN,5,11-15,84.6,15.4,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorial,51.8,48.2,NaN,5,16-20,41.5,58.5,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorial,51.8,48.2,NaN,5,21-25,54.2,45.8,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorial,51.8,48.2,NaN,5,26-30,43.3,56.7,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorial,51.8,48.2,NaN,5,31-35,54.4,45.6,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorial,51.8,48.2,NaN,5,36-40,43.3,56.7,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorial,51.8,48.2,NaN,5,41-45,35.4,64.6,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorial,51.8,48.2,NaN,5,46-50,68.5,31.5,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorial,51.8,48.2,NaN,5,51-55,53.4,46.6,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorial,51.8,48.2,NaN,5,56-60,64.3,35.7,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorial,51.8,48.2,NaN,5,61-65,48.8,51.2,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorial,51.8,48.2,NaN,5,66-70,57.1,42.9,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorial,51.8,48.2,NaN,5,71-75,22.2,77.8,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorial,51.8,48.2,NaN,5,76-80,76.3,23.7,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorial,51.8,48.2,NaN,5,81-85,50.0,50.0,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorial,51.8,48.2,NaN,5,86-90,38.3,61.7,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorial,51.8,48.2,NaN,15,0-15,67.2,32.8,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorial,51.8,48.2,NaN,15,16-30,46.9,53.1,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorial,51.8,48.2,NaN,15,31-45,43.2,56.8,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorial,51.8,48.2,NaN,15,46-60,61.2,38.8,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorial,51.8,48.2,NaN,15,61-75,46.2,53.8,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorial,51.8,48.2,NaN,15,76-90,49.4,50.6,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorial,51.8,48.2,NaN,45,0-45,50.3,49.7,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorial,51.8,48.2,NaN,45,46-90,53.3,46.7,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorialThird,23.4,27.0,49.6,5,0-5,9.3,27.9,62.8,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorialThird,23.4,27.0,49.6,5,6-10,14.9,38.3,46.8,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorialThird,23.4,27.0,49.6,5,11-15,0.0,65.4,34.6,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorialThird,23.4,27.0,49.6,5,16-20,29.3,17.1,53.6,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorialThird,23.4,27.0,49.6,5,21-25,20.3,25.4,54.3,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorialThird,23.4,27.0,49.6,5,26-30,28.3,26.7,45.0,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorialThird,23.4,27.0,49.6,5,31-35,21.1,19.3,59.6,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorialThird,23.4,27.0,49.6,5,36-40,26.7,15.0,58.3,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorialThird,23.4,27.0,49.6,5,41-45,34.1,20.7,45.2,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorialThird,23.4,27.0,49.6,5,46-50,11.1,44.4,44.5,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorialThird,23.4,27.0,49.6,5,51-55,20.5,26.0,53.5,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorialThird,23.4,27.0,49.6,5,56-60,10.7,30.4,58.9,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorialThird,23.4,27.0,49.6,5,61-65,27.9,11.6,60.5,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorialThird,23.4,27.0,49.6,5,66-70,16.3,30.6,53.1,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorialThird,23.4,27.0,49.6,5,71-75,40.7,14.8,44.5,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorialThird,23.4,27.0,49.6,5,76-80,21.1,55.3,23.6,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorialThird,23.4,27.0,49.6,5,81-85,29.2,33.3,37.5,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorialThird,23.4,27.0,49.6,5,86-90,39.4,18.1,42.5,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorialThird,23.4,27.0,49.6,15,0-15,9.5,40.5,50.0,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorialThird,23.4,27.0,49.6,15,16-30,25.6,23.8,50.6,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorialThird,23.4,27.0,49.6,15,31-45,28.1,18.6,53.3,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorialThird,23.4,27.0,49.6,15,46-60,14.8,32.8,52.4,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorialThird,23.4,27.0,49.6,15,61-75,26.1,20.2,53.7,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorialThird,23.4,27.0,49.6,15,76-90,33.3,29.5,37.2,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorialThird,23.4,27.0,49.6,45,0-45,22.7,25.7,51.6,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+territorialThird,23.4,27.0,49.6,45,46-90,24.0,28.4,47.6,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
+ballPossession,49.4,50.6,NaN,5,0-5,62.1,37.9,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+ballPossession,49.4,50.6,NaN,5,6-10,67.9,32.1,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+ballPossession,49.4,50.6,NaN,5,11-15,40.4,59.6,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+ballPossession,49.4,50.6,NaN,5,16-20,52.6,47.4,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+ballPossession,49.4,50.6,NaN,5,21-25,31.6,68.4,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+ballPossession,49.4,50.6,NaN,5,26-30,17.8,82.2,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+ballPossession,49.4,50.6,NaN,5,31-35,22.2,77.8,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+ballPossession,49.4,50.6,NaN,5,36-40,50.0,50.0,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+ballPossession,49.4,50.6,NaN,5,41-45,89.1,10.9,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+ballPossession,49.4,50.6,NaN,5,46-50,40.6,59.4,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+ballPossession,49.4,50.6,NaN,5,51-55,68.4,31.6,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+ballPossession,49.4,50.6,NaN,5,56-60,32.1,67.9,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+ballPossession,49.4,50.6,NaN,5,61-65,33.3,66.7,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+ballPossession,49.4,50.6,NaN,5,66-70,65.7,34.3,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+ballPossession,49.4,50.6,NaN,5,71-75,63.2,36.8,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+ballPossession,49.4,50.6,NaN,5,76-80,50.0,50.0,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+ballPossession,49.4,50.6,NaN,5,81-85,50.0,50.0,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+ballPossession,49.4,50.6,NaN,5,86-90,24.4,75.6,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+ballPossession,49.4,50.6,NaN,15,0-15,57.0,43.0,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+ballPossession,49.4,50.6,NaN,15,16-30,35.7,64.3,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+ballPossession,49.4,50.6,NaN,15,31-45,60.3,39.7,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+ballPossession,49.4,50.6,NaN,15,46-60,49.2,50.8,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+ballPossession,49.4,50.6,NaN,15,61-75,56.5,43.5,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+ballPossession,49.4,50.6,NaN,15,76-90,34.0,66.0,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+ballPossession,49.4,50.6,NaN,45,0-45,52.6,47.4,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+ballPossession,49.4,50.6,NaN,45,46-90,46.5,53.5,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorial,60.0,40.0,NaN,5,0-5,62.1,37.9,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorial,60.0,40.0,NaN,5,6-10,85.7,14.3,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorial,60.0,40.0,NaN,5,11-15,77.2,22.8,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorial,60.0,40.0,NaN,5,16-20,57.9,42.1,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorial,60.0,40.0,NaN,5,21-25,84.2,15.8,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorial,60.0,40.0,NaN,5,26-30,62.2,37.8,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorial,60.0,40.0,NaN,5,31-35,31.5,68.5,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorial,60.0,40.0,NaN,5,36-40,69.0,31.0,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorial,60.0,40.0,NaN,5,41-45,41.3,58.7,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorial,60.0,40.0,NaN,5,46-50,76.6,23.4,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorial,60.0,40.0,NaN,5,51-55,82.9,17.1,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorial,60.0,40.0,NaN,5,56-60,41.5,58.5,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorial,60.0,40.0,NaN,5,61-65,50.0,50.0,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorial,60.0,40.0,NaN,5,66-70,57.1,42.9,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorial,60.0,40.0,NaN,5,71-75,66.2,33.8,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorial,60.0,40.0,NaN,5,76-80,66.7,33.3,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorial,60.0,40.0,NaN,5,81-85,50.0,50.0,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorial,60.0,40.0,NaN,5,86-90,42.0,58.0,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorial,60.0,40.0,NaN,15,0-15,74.3,25.7,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorial,60.0,40.0,NaN,15,16-30,66.4,33.6,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorial,60.0,40.0,NaN,15,31-45,46.6,53.4,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorial,60.0,40.0,NaN,15,46-60,69.4,30.6,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorial,60.0,40.0,NaN,15,61-75,58.6,41.4,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorial,60.0,40.0,NaN,15,76-90,48.2,51.8,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorial,60.0,40.0,NaN,45,0-45,61.4,38.6,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorial,60.0,40.0,NaN,45,46-90,58.8,41.2,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorialThird,21.8,33.0,45.2,5,0-5,25.8,34.8,39.4,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorialThird,21.8,33.0,45.2,5,6-10,8.9,37.5,53.6,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorialThird,21.8,33.0,45.2,5,11-15,3.5,40.4,56.1,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorialThird,21.8,33.0,45.2,5,16-20,24.6,31.6,43.8,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorialThird,21.8,33.0,45.2,5,21-25,5.3,52.6,42.1,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorialThird,21.8,33.0,45.2,5,26-30,22.2,33.3,44.5,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorialThird,21.8,33.0,45.2,5,31-35,53.7,3.7,42.6,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorialThird,21.8,33.0,45.2,5,36-40,19.0,39.7,41.3,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorialThird,21.8,33.0,45.2,5,41-45,23.9,25.0,51.1,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorialThird,21.8,33.0,45.2,5,46-50,3.1,50.0,46.9,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorialThird,21.8,33.0,45.2,5,51-55,6.6,38.2,55.2,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorialThird,21.8,33.0,45.2,5,56-60,32.1,24.5,43.4,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorialThird,21.8,33.0,45.2,5,61-65,25.0,27.1,47.9,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorialThird,21.8,33.0,45.2,5,66-70,24.3,31.4,44.3,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorialThird,21.8,33.0,45.2,5,71-75,17.6,42.6,39.8,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorialThird,21.8,33.0,45.2,5,76-80,13.9,38.9,47.2,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorialThird,21.8,33.0,45.2,5,81-85,22.2,41.7,36.1,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorialThird,21.8,33.0,45.2,5,86-90,40.3,21.8,37.9,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorialThird,21.8,33.0,45.2,15,0-15,13.4,37.4,49.2,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorialThird,21.8,33.0,45.2,15,16-30,18.6,37.9,43.5,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorialThird,21.8,33.0,45.2,15,31-45,30.4,23.5,46.1,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorialThird,21.8,33.0,45.2,15,46-60,12.4,38.3,49.3,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorialThird,21.8,33.0,45.2,15,61-75,22.0,34.4,43.6,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorialThird,21.8,33.0,45.2,15,76-90,31.9,28.8,39.3,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorialThird,21.8,33.0,45.2,45,0-45,21.4,32.1,46.5,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+territorialThird,21.8,33.0,45.2,45,46-90,22.1,33.9,44.0,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
+ballPossession,45.2,54.8,NaN,5,0-5,32.6,67.4,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+ballPossession,45.2,54.8,NaN,5,6-10,55.8,44.2,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+ballPossession,45.2,54.8,NaN,5,11-15,27.9,72.1,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+ballPossession,45.2,54.8,NaN,5,16-20,35.4,64.6,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+ballPossession,45.2,54.8,NaN,5,21-25,71.7,28.3,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+ballPossession,45.2,54.8,NaN,5,26-30,34.5,65.5,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+ballPossession,45.2,54.8,NaN,5,31-35,63.0,37.0,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+ballPossession,45.2,54.8,NaN,5,36-40,35.7,64.3,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+ballPossession,45.2,54.8,NaN,5,41-45,43.0,57.0,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+ballPossession,45.2,54.8,NaN,5,46-50,44.9,55.1,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+ballPossession,45.2,54.8,NaN,5,51-55,49.2,50.8,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+ballPossession,45.2,54.8,NaN,5,56-60,34.0,66.0,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+ballPossession,45.2,54.8,NaN,5,61-65,55.2,44.8,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+ballPossession,45.2,54.8,NaN,5,66-70,43.1,56.9,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+ballPossession,45.2,54.8,NaN,5,71-75,33.3,66.7,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+ballPossession,45.2,54.8,NaN,5,76-80,22.0,78.0,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+ballPossession,45.2,54.8,NaN,5,81-85,73.9,26.1,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+ballPossession,45.2,54.8,NaN,5,86-90,54.9,45.1,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+ballPossession,45.2,54.8,NaN,15,0-15,38.5,61.5,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+ballPossession,45.2,54.8,NaN,15,16-30,46.4,53.6,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+ballPossession,45.2,54.8,NaN,15,31-45,46.6,53.4,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+ballPossession,45.2,54.8,NaN,15,46-60,43.0,57.0,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+ballPossession,45.2,54.8,NaN,15,61-75,44.4,55.6,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+ballPossession,45.2,54.8,NaN,15,76-90,51.9,48.1,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+ballPossession,45.2,54.8,NaN,45,0-45,44.1,55.9,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+ballPossession,45.2,54.8,NaN,45,46-90,46.3,53.7,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorial,35.1,64.9,NaN,5,0-5,46.5,53.5,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorial,35.1,64.9,NaN,5,6-10,28.8,71.2,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorial,35.1,64.9,NaN,5,11-15,44.3,55.7,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorial,35.1,64.9,NaN,5,16-20,31.2,68.8,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorial,35.1,64.9,NaN,5,21-25,51.7,48.3,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorial,35.1,64.9,NaN,5,26-30,36.9,63.1,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorial,35.1,64.9,NaN,5,31-35,38.9,61.1,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorial,35.1,64.9,NaN,5,36-40,39.3,60.7,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorial,35.1,64.9,NaN,5,41-45,48.1,51.9,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorial,35.1,64.9,NaN,5,46-50,30.6,69.4,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorial,35.1,64.9,NaN,5,51-55,47.5,52.5,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorial,35.1,64.9,NaN,5,56-60,10.0,90.0,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorial,35.1,64.9,NaN,5,61-65,11.9,88.1,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorial,35.1,64.9,NaN,5,66-70,33.8,66.2,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorial,35.1,64.9,NaN,5,71-75,26.3,73.7,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorial,35.1,64.9,NaN,5,76-80,36.6,63.4,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorial,35.1,64.9,NaN,5,81-85,17.4,82.6,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorial,35.1,64.9,NaN,5,86-90,42.3,57.7,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorial,35.1,64.9,NaN,15,0-15,39.7,60.3,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorial,35.1,64.9,NaN,15,16-30,40.1,59.9,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorial,35.1,64.9,NaN,15,31-45,42.9,57.1,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorial,35.1,64.9,NaN,15,46-60,30.4,69.6,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorial,35.1,64.9,NaN,15,61-75,23.8,76.2,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorial,35.1,64.9,NaN,15,76-90,33.5,66.5,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorial,35.1,64.9,NaN,45,0-45,41.0,59.0,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorial,35.1,64.9,NaN,45,46-90,28.9,71.1,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorialThird,42.2,14.7,43.1,5,0-5,37.2,23.3,39.5,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorialThird,42.2,14.7,43.1,5,6-10,50.0,0.0,50.0,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorialThird,42.2,14.7,43.1,5,11-15,34.4,11.5,54.1,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorialThird,42.2,14.7,43.1,5,16-20,43.8,10.4,45.8,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorialThird,42.2,14.7,43.1,5,21-25,28.3,23.3,48.4,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorialThird,42.2,14.7,43.1,5,26-30,50.0,22.6,27.4,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorialThird,42.2,14.7,43.1,5,31-35,35.2,14.8,50.0,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorialThird,42.2,14.7,43.1,5,36-40,30.4,7.1,62.5,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorialThird,42.2,14.7,43.1,5,41-45,26.6,15.2,58.2,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorialThird,42.2,14.7,43.1,5,46-50,44.9,8.2,46.9,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorialThird,42.2,14.7,43.1,5,51-55,40.7,23.7,35.6,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorialThird,42.2,14.7,43.1,5,56-60,58.0,4.0,38.0,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorialThird,42.2,14.7,43.1,5,61-65,58.2,7.5,34.3,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorialThird,42.2,14.7,43.1,5,66-70,40.0,24.6,35.4,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorialThird,42.2,14.7,43.1,5,71-75,50.9,5.3,43.8,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorialThird,42.2,14.7,43.1,5,76-80,48.8,12.2,39.0,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorialThird,42.2,14.7,43.1,5,81-85,45.7,13.0,41.3,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorialThird,42.2,14.7,43.1,5,86-90,42.3,26.8,30.9,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorialThird,42.2,14.7,43.1,15,0-15,40.4,10.9,48.7,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorialThird,42.2,14.7,43.1,15,16-30,41.7,19.8,38.5,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorialThird,42.2,14.7,43.1,15,31-45,30.2,12.7,57.1,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorialThird,42.2,14.7,43.1,15,46-60,47.5,12.7,39.8,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorialThird,42.2,14.7,43.1,15,61-75,49.7,12.7,37.6,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorialThird,42.2,14.7,43.1,15,76-90,44.9,19.0,36.1,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorialThird,42.2,14.7,43.1,45,0-45,37.2,14.7,48.1,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+territorialThird,42.2,14.7,43.1,45,46-90,47.5,14.7,37.8,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
+ballPossession,50.3,49.7,NaN,5,0-5,52.7,47.3,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+ballPossession,50.3,49.7,NaN,5,6-10,16.0,84.0,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+ballPossession,50.3,49.7,NaN,5,11-15,53.2,46.8,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+ballPossession,50.3,49.7,NaN,5,16-20,41.5,58.5,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+ballPossession,50.3,49.7,NaN,5,21-25,78.6,21.4,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+ballPossession,50.3,49.7,NaN,5,26-30,68.3,31.7,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+ballPossession,50.3,49.7,NaN,5,31-35,38.2,61.8,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+ballPossession,50.3,49.7,NaN,5,36-40,53.1,46.9,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+ballPossession,50.3,49.7,NaN,5,41-45,49.3,50.7,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+ballPossession,50.3,49.7,NaN,5,46-50,50.7,49.3,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+ballPossession,50.3,49.7,NaN,5,51-55,61.7,38.3,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+ballPossession,50.3,49.7,NaN,5,56-60,39.6,60.4,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+ballPossession,50.3,49.7,NaN,5,61-65,31.0,69.0,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+ballPossession,50.3,49.7,NaN,5,66-70,60.3,39.7,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+ballPossession,50.3,49.7,NaN,5,71-75,53.3,46.7,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+ballPossession,50.3,49.7,NaN,5,76-80,61.2,38.8,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+ballPossession,50.3,49.7,NaN,5,81-85,55.6,44.4,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+ballPossession,50.3,49.7,NaN,5,86-90,43.0,57.0,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+ballPossession,50.3,49.7,NaN,15,0-15,40.8,59.2,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+ballPossession,50.3,49.7,NaN,15,16-30,63.4,36.6,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+ballPossession,50.3,49.7,NaN,15,31-45,47.4,52.6,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+ballPossession,50.3,49.7,NaN,15,46-60,51.4,48.6,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+ballPossession,50.3,49.7,NaN,15,61-75,47.1,52.9,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+ballPossession,50.3,49.7,NaN,15,76-90,51.3,48.7,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+ballPossession,50.3,49.7,NaN,45,0-45,50.8,49.2,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+ballPossession,50.3,49.7,NaN,45,46-90,49.9,50.1,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorial,44.8,55.2,NaN,5,0-5,60.0,40.0,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorial,44.8,55.2,NaN,5,6-10,62.0,38.0,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorial,44.8,55.2,NaN,5,11-15,61.7,38.3,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorial,44.8,55.2,NaN,5,16-20,37.7,62.3,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorial,44.8,55.2,NaN,5,21-25,50.0,50.0,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorial,44.8,55.2,NaN,5,26-30,42.9,57.1,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorial,44.8,55.2,NaN,5,31-35,32.7,67.3,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorial,44.8,55.2,NaN,5,36-40,32.8,67.2,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorial,44.8,55.2,NaN,5,41-45,47.9,52.1,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorial,44.8,55.2,NaN,5,46-50,41.3,58.7,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorial,44.8,55.2,NaN,5,51-55,60.0,40.0,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorial,44.8,55.2,NaN,5,56-60,35.4,64.6,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorial,44.8,55.2,NaN,5,61-65,18.3,81.7,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorial,44.8,55.2,NaN,5,66-70,51.7,48.3,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorial,44.8,55.2,NaN,5,71-75,50.0,50.0,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorial,44.8,55.2,NaN,5,76-80,57.1,42.9,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorial,44.8,55.2,NaN,5,81-85,50.0,50.0,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorial,44.8,55.2,NaN,5,86-90,33.7,66.3,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorial,44.8,55.2,NaN,15,0-15,61.2,38.8,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorial,44.8,55.2,NaN,15,16-30,43.6,56.4,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorial,44.8,55.2,NaN,15,31-45,38.4,61.6,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorial,44.8,55.2,NaN,15,46-60,45.9,54.1,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorial,44.8,55.2,NaN,15,61-75,38.6,61.4,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorial,44.8,55.2,NaN,15,76-90,44.4,55.6,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorial,44.8,55.2,NaN,45,0-45,46.9,53.1,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorial,44.8,55.2,NaN,45,46-90,43.0,57.0,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorialThird,32.0,25.0,43.0,5,0-5,18.2,41.8,40.0,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorialThird,32.0,25.0,43.0,5,6-10,12.0,30.0,58.0,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorialThird,32.0,25.0,43.0,5,11-15,21.3,44.7,34.0,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorialThird,32.0,25.0,43.0,5,16-20,43.4,18.9,37.7,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorialThird,32.0,25.0,43.0,5,21-25,28.6,25.0,46.4,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorialThird,32.0,25.0,43.0,5,26-30,33.3,23.8,42.9,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorialThird,32.0,25.0,43.0,5,31-35,50.9,21.8,27.3,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorialThird,32.0,25.0,43.0,5,36-40,43.8,17.2,39.0,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorialThird,32.0,25.0,43.0,5,41-45,25.4,28.2,46.4,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorialThird,32.0,25.0,43.0,5,46-50,34.7,13.3,52.0,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorialThird,32.0,25.0,43.0,5,51-55,15.0,38.3,46.7,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorialThird,32.0,25.0,43.0,5,56-60,29.2,18.8,52.0,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorialThird,32.0,25.0,43.0,5,61-65,45.1,5.6,49.3,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorialThird,32.0,25.0,43.0,5,66-70,27.6,24.1,48.3,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorialThird,32.0,25.0,43.0,5,71-75,35.0,21.7,43.3,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorialThird,32.0,25.0,43.0,5,76-80,20.4,34.7,44.9,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorialThird,32.0,25.0,43.0,5,81-85,29.6,38.9,31.5,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorialThird,32.0,25.0,43.0,5,86-90,46.5,19.8,33.7,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorialThird,32.0,25.0,43.0,15,0-15,17.1,38.8,44.1,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorialThird,32.0,25.0,43.0,15,16-30,34.9,22.7,42.4,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorialThird,32.0,25.0,43.0,15,31-45,38.9,22.6,38.5,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorialThird,32.0,25.0,43.0,15,46-60,26.8,23.0,50.2,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorialThird,32.0,25.0,43.0,15,61-75,36.5,16.4,47.1,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorialThird,32.0,25.0,43.0,15,76-90,34.9,29.1,36.0,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorialThird,32.0,25.0,43.0,45,0-45,31.1,27.4,41.5,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
+territorialThird,32.0,25.0,43.0,45,46-90,32.8,22.8,44.4,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
 ballPossession,55.1,44.9,NaN,5,0-5,50.0,50.0,NaN,Hobro vs Hvidovre,651qsgvxz0hgo5cewrehcj9ck,1_Division,DNK,2024-08-17,Hobro,Hvidovre
 ballPossession,55.1,44.9,NaN,5,6-10,65.2,34.8,NaN,Hobro vs Hvidovre,651qsgvxz0hgo5cewrehcj9ck,1_Division,DNK,2024-08-17,Hobro,Hvidovre
 ballPossession,55.1,44.9,NaN,5,11-15,50.0,50.0,NaN,Hobro vs Hvidovre,651qsgvxz0hgo5cewrehcj9ck,1_Division,DNK,2024-08-17,Hobro,Hvidovre
@@ -7955,471 +8423,3 @@ territorialThird,30.0,24.0,46.0,15,61-75,23.3,30.2,46.5,OB vs Hillerød,62gfjlfu
 territorialThird,30.0,24.0,46.0,15,76-90,11.4,34.8,53.8,OB vs Hillerød,62gfjlfuls7nb7fb9qc04l2xg,1_Division,DNK,2024-08-10,OB,Hillerød
 territorialThird,30.0,24.0,46.0,45,0-45,35.7,18.9,45.4,OB vs Hillerød,62gfjlfuls7nb7fb9qc04l2xg,1_Division,DNK,2024-08-10,OB,Hillerød
 territorialThird,30.0,24.0,46.0,45,46-90,24.0,29.3,46.7,OB vs Hillerød,62gfjlfuls7nb7fb9qc04l2xg,1_Division,DNK,2024-08-10,OB,Hillerød
-ballPossession,52.5,47.5,NaN,5,0-5,32.8,67.2,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-ballPossession,52.5,47.5,NaN,5,6-10,38.2,61.8,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-ballPossession,52.5,47.5,NaN,5,11-15,36.4,63.6,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-ballPossession,52.5,47.5,NaN,5,16-20,62.7,37.3,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-ballPossession,52.5,47.5,NaN,5,21-25,78.6,21.4,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-ballPossession,52.5,47.5,NaN,5,26-30,70.8,29.2,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-ballPossession,52.5,47.5,NaN,5,31-35,84.2,15.8,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-ballPossession,52.5,47.5,NaN,5,36-40,66.2,33.8,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-ballPossession,52.5,47.5,NaN,5,41-45,32.6,67.4,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-ballPossession,52.5,47.5,NaN,5,46-50,58.1,41.9,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-ballPossession,52.5,47.5,NaN,5,51-55,91.1,8.9,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-ballPossession,52.5,47.5,NaN,5,56-60,35.1,64.9,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-ballPossession,52.5,47.5,NaN,5,61-65,43.2,56.8,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-ballPossession,52.5,47.5,NaN,5,66-70,29.8,70.2,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-ballPossession,52.5,47.5,NaN,5,71-75,52.2,47.8,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-ballPossession,52.5,47.5,NaN,5,76-80,24.4,75.6,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-ballPossession,52.5,47.5,NaN,5,81-85,47.1,52.9,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-ballPossession,52.5,47.5,NaN,5,86-90,48.2,51.8,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-ballPossession,52.5,47.5,NaN,15,0-15,35.7,64.3,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-ballPossession,52.5,47.5,NaN,15,16-30,71.2,28.8,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-ballPossession,52.5,47.5,NaN,15,31-45,63.7,36.3,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-ballPossession,52.5,47.5,NaN,15,46-60,59.0,41.0,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-ballPossession,52.5,47.5,NaN,15,61-75,43.1,56.9,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-ballPossession,52.5,47.5,NaN,15,76-90,41.5,58.5,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-ballPossession,52.5,47.5,NaN,45,0-45,56.5,43.5,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-ballPossession,52.5,47.5,NaN,45,46-90,48.2,51.8,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorial,61.0,39.0,NaN,5,0-5,65.6,34.4,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorial,61.0,39.0,NaN,5,6-10,63.6,36.4,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorial,61.0,39.0,NaN,5,11-15,60.6,39.4,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorial,61.0,39.0,NaN,5,16-20,52.5,47.5,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorial,61.0,39.0,NaN,5,21-25,70.0,30.0,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorial,61.0,39.0,NaN,5,26-30,77.1,22.9,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorial,61.0,39.0,NaN,5,31-35,71.9,28.1,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorial,61.0,39.0,NaN,5,36-40,72.1,27.9,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorial,61.0,39.0,NaN,5,41-45,62.8,37.2,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorial,61.0,39.0,NaN,5,46-50,30.2,69.8,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorial,61.0,39.0,NaN,5,51-55,83.9,16.1,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorial,61.0,39.0,NaN,5,56-60,68.9,31.1,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorial,61.0,39.0,NaN,5,61-65,40.5,59.5,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorial,61.0,39.0,NaN,5,66-70,25.5,74.5,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorial,61.0,39.0,NaN,5,71-75,47.8,52.2,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorial,61.0,39.0,NaN,5,76-80,73.3,26.7,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorial,61.0,39.0,NaN,5,81-85,52.9,47.1,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorial,61.0,39.0,NaN,5,86-90,57.6,42.4,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorial,61.0,39.0,NaN,15,0-15,63.2,36.8,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorial,61.0,39.0,NaN,15,16-30,66.1,33.9,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorial,61.0,39.0,NaN,15,31-45,69.6,30.4,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorial,61.0,39.0,NaN,15,46-60,64.2,35.8,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorial,61.0,39.0,NaN,15,61-75,39.2,60.8,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorial,61.0,39.0,NaN,15,76-90,61.0,39.0,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorial,61.0,39.0,NaN,45,0-45,66.2,33.8,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorial,61.0,39.0,NaN,45,46-90,55.3,44.7,NaN,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorialThird,21.6,41.8,36.6,5,0-5,23.0,49.2,27.8,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorialThird,21.6,41.8,36.6,5,6-10,18.2,32.7,49.1,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorialThird,21.6,41.8,36.6,5,11-15,21.2,39.4,39.4,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorialThird,21.6,41.8,36.6,5,16-20,25.4,35.6,39.0,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorialThird,21.6,41.8,36.6,5,21-25,15.7,48.6,35.7,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorialThird,21.6,41.8,36.6,5,26-30,10.4,62.5,27.1,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorialThird,21.6,41.8,36.6,5,31-35,14.0,49.1,36.9,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorialThird,21.6,41.8,36.6,5,36-40,7.4,63.2,29.4,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorialThird,21.6,41.8,36.6,5,41-45,7.0,39.5,53.5,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorialThird,21.6,41.8,36.6,5,46-50,41.9,9.3,48.8,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorialThird,21.6,41.8,36.6,5,51-55,5.4,57.1,37.5,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorialThird,21.6,41.8,36.6,5,56-60,16.2,45.9,37.9,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorialThird,21.6,41.8,36.6,5,61-65,40.5,29.7,29.8,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorialThird,21.6,41.8,36.6,5,66-70,55.3,8.5,36.2,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorialThird,21.6,41.8,36.6,5,71-75,27.5,31.9,40.6,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorialThird,21.6,41.8,36.6,5,76-80,20.0,53.3,26.7,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorialThird,21.6,41.8,36.6,5,81-85,38.2,44.1,17.7,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorialThird,21.6,41.8,36.6,5,86-90,23.5,37.6,38.9,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorialThird,21.6,41.8,36.6,15,0-15,20.9,40.7,38.4,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorialThird,21.6,41.8,36.6,15,16-30,17.5,48.0,34.5,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorialThird,21.6,41.8,36.6,15,31-45,9.5,52.4,38.1,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorialThird,21.6,41.8,36.6,15,46-60,19.1,40.5,40.4,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorialThird,21.6,41.8,36.6,15,61-75,39.2,24.2,36.6,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorialThird,21.6,41.8,36.6,15,76-90,25.6,43.3,31.1,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorialThird,21.6,41.8,36.6,45,0-45,16.1,46.9,37.0,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-territorialThird,21.6,41.8,36.6,45,46-90,27.6,36.3,36.1,HB Køge vs Horsens,62to8z5uwcrf85s9tt8cosfmc,1_Division,DNK,2024-08-11,HB Køge,Horsens
-ballPossession,53.1,46.9,NaN,5,0-5,38.8,61.2,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-ballPossession,53.1,46.9,NaN,5,6-10,64.8,35.2,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-ballPossession,53.1,46.9,NaN,5,11-15,54.0,46.0,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-ballPossession,53.1,46.9,NaN,5,16-20,24.3,75.7,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-ballPossession,53.1,46.9,NaN,5,21-25,68.3,31.7,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-ballPossession,53.1,46.9,NaN,5,26-30,74.4,25.6,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-ballPossession,53.1,46.9,NaN,5,31-35,53.6,46.4,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-ballPossession,53.1,46.9,NaN,5,36-40,32.5,67.5,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-ballPossession,53.1,46.9,NaN,5,41-45,40.0,60.0,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-ballPossession,53.1,46.9,NaN,5,46-50,56.2,43.8,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-ballPossession,53.1,46.9,NaN,5,51-55,66.1,33.9,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-ballPossession,53.1,46.9,NaN,5,56-60,71.1,28.9,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-ballPossession,53.1,46.9,NaN,5,61-65,38.5,61.5,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-ballPossession,53.1,46.9,NaN,5,66-70,38.5,61.5,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-ballPossession,53.1,46.9,NaN,5,71-75,44.0,56.0,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-ballPossession,53.1,46.9,NaN,5,76-80,40.0,60.0,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-ballPossession,53.1,46.9,NaN,5,81-85,60.5,39.5,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-ballPossession,53.1,46.9,NaN,5,86-90,61.2,38.8,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-ballPossession,53.1,46.9,NaN,15,0-15,51.5,48.5,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-ballPossession,53.1,46.9,NaN,15,16-30,61.7,38.3,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-ballPossession,53.1,46.9,NaN,15,31-45,42.7,57.3,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-ballPossession,53.1,46.9,NaN,15,46-60,64.4,35.6,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-ballPossession,53.1,46.9,NaN,15,61-75,40.6,59.4,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-ballPossession,53.1,46.9,NaN,15,76-90,55.5,44.5,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-ballPossession,53.1,46.9,NaN,45,0-45,52.0,48.0,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-ballPossession,53.1,46.9,NaN,45,46-90,54.2,45.8,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorial,56.8,43.2,NaN,5,0-5,61.2,38.8,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorial,56.8,43.2,NaN,5,6-10,40.7,59.3,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorial,56.8,43.2,NaN,5,11-15,52.0,48.0,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorial,56.8,43.2,NaN,5,16-20,45.9,54.1,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorial,56.8,43.2,NaN,5,21-25,36.7,63.3,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorial,56.8,43.2,NaN,5,26-30,66.7,33.3,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorial,56.8,43.2,NaN,5,31-35,69.6,30.4,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorial,56.8,43.2,NaN,5,36-40,85.0,15.0,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorial,56.8,43.2,NaN,5,41-45,50.7,49.3,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorial,56.8,43.2,NaN,5,46-50,64.6,35.4,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorial,56.8,43.2,NaN,5,51-55,44.6,55.4,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorial,56.8,43.2,NaN,5,56-60,57.8,42.2,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorial,56.8,43.2,NaN,5,61-65,38.5,61.5,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorial,56.8,43.2,NaN,5,66-70,55.8,44.2,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorial,56.8,43.2,NaN,5,71-75,56.0,44.0,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorial,56.8,43.2,NaN,5,76-80,62.2,37.8,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorial,56.8,43.2,NaN,5,81-85,72.1,27.9,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorial,56.8,43.2,NaN,5,86-90,58.8,41.2,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorial,56.8,43.2,NaN,15,0-15,52.0,48.0,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorial,56.8,43.2,NaN,15,16-30,52.0,48.0,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorial,56.8,43.2,NaN,15,31-45,64.9,35.1,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorial,56.8,43.2,NaN,15,46-60,55.0,45.0,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorial,56.8,43.2,NaN,15,61-75,52.3,47.7,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorial,56.8,43.2,NaN,15,76-90,63.0,37.0,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorial,56.8,43.2,NaN,45,0-45,56.3,43.7,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorial,56.8,43.2,NaN,45,46-90,57.3,42.7,NaN,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorialThird,26.3,35.2,38.5,5,0-5,23.9,41.8,34.3,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorialThird,26.3,35.2,38.5,5,6-10,38.9,25.9,35.2,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorialThird,26.3,35.2,38.5,5,11-15,30.0,30.0,40.0,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorialThird,26.3,35.2,38.5,5,16-20,29.7,13.5,56.8,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorialThird,26.3,35.2,38.5,5,21-25,50.0,20.0,30.0,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorialThird,26.3,35.2,38.5,5,26-30,24.4,34.6,41.0,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorialThird,26.3,35.2,38.5,5,31-35,16.1,44.6,39.3,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorialThird,26.3,35.2,38.5,5,36-40,5.0,60.0,35.0,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorialThird,26.3,35.2,38.5,5,41-45,33.3,26.7,40.0,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorialThird,26.3,35.2,38.5,5,46-50,16.7,45.8,37.5,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorialThird,26.3,35.2,38.5,5,51-55,35.7,21.4,42.9,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorialThird,26.3,35.2,38.5,5,56-60,17.8,53.3,28.9,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorialThird,26.3,35.2,38.5,5,61-65,42.3,7.7,50.0,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorialThird,26.3,35.2,38.5,5,66-70,28.8,26.9,44.3,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorialThird,26.3,35.2,38.5,5,71-75,10.0,44.0,46.0,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorialThird,26.3,35.2,38.5,5,76-80,31.1,44.4,24.5,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorialThird,26.3,35.2,38.5,5,81-85,14.0,51.2,34.8,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorialThird,26.3,35.2,38.5,5,86-90,22.4,37.6,40.0,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorialThird,26.3,35.2,38.5,15,0-15,30.4,33.3,36.3,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorialThird,26.3,35.2,38.5,15,16-30,34.3,25.1,40.6,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorialThird,26.3,35.2,38.5,15,31-45,21.1,40.4,38.5,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorialThird,26.3,35.2,38.5,15,46-60,24.2,38.9,36.9,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorialThird,26.3,35.2,38.5,15,61-75,24.2,29.7,46.1,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorialThird,26.3,35.2,38.5,15,76-90,22.5,42.8,34.7,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorialThird,26.3,35.2,38.5,45,0-45,28.6,32.9,38.5,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-territorialThird,26.3,35.2,38.5,45,46-90,23.6,37.8,38.6,Fredericia vs Esbjerg,636w1d231ya7tiky1o3uf8c2c,1_Division,DNK,2024-08-11,Fredericia,Esbjerg
-ballPossession,39.5,60.5,NaN,5,0-5,60.5,39.5,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-ballPossession,39.5,60.5,NaN,5,6-10,42.6,57.4,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-ballPossession,39.5,60.5,NaN,5,11-15,61.5,38.5,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-ballPossession,39.5,60.5,NaN,5,16-20,29.3,70.7,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-ballPossession,39.5,60.5,NaN,5,21-25,30.5,69.5,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-ballPossession,39.5,60.5,NaN,5,26-30,38.3,61.7,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-ballPossession,39.5,60.5,NaN,5,31-35,33.3,66.7,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-ballPossession,39.5,60.5,NaN,5,36-40,28.3,71.7,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-ballPossession,39.5,60.5,NaN,5,41-45,34.1,65.9,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-ballPossession,39.5,60.5,NaN,5,46-50,72.2,27.8,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-ballPossession,39.5,60.5,NaN,5,51-55,32.9,67.1,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-ballPossession,39.5,60.5,NaN,5,56-60,51.8,48.2,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-ballPossession,39.5,60.5,NaN,5,61-65,23.3,76.7,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-ballPossession,39.5,60.5,NaN,5,66-70,32.7,67.3,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-ballPossession,39.5,60.5,NaN,5,71-75,59.3,40.7,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-ballPossession,39.5,60.5,NaN,5,76-80,65.8,34.2,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-ballPossession,39.5,60.5,NaN,5,81-85,33.3,66.7,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-ballPossession,39.5,60.5,NaN,5,86-90,24.5,75.5,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-ballPossession,39.5,60.5,NaN,15,0-15,53.4,46.6,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-ballPossession,39.5,60.5,NaN,15,16-30,33.1,66.9,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-ballPossession,39.5,60.5,NaN,15,31-45,32.2,67.8,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-ballPossession,39.5,60.5,NaN,15,46-60,50.3,49.7,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-ballPossession,39.5,60.5,NaN,15,61-75,35.3,64.7,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-ballPossession,39.5,60.5,NaN,15,76-90,35.9,64.1,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-ballPossession,39.5,60.5,NaN,45,0-45,37.7,62.3,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-ballPossession,39.5,60.5,NaN,45,46-90,41.5,58.5,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorial,51.8,48.2,NaN,5,0-5,55.8,44.2,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorial,51.8,48.2,NaN,5,6-10,68.1,31.9,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorial,51.8,48.2,NaN,5,11-15,84.6,15.4,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorial,51.8,48.2,NaN,5,16-20,41.5,58.5,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorial,51.8,48.2,NaN,5,21-25,54.2,45.8,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorial,51.8,48.2,NaN,5,26-30,43.3,56.7,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorial,51.8,48.2,NaN,5,31-35,54.4,45.6,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorial,51.8,48.2,NaN,5,36-40,43.3,56.7,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorial,51.8,48.2,NaN,5,41-45,35.4,64.6,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorial,51.8,48.2,NaN,5,46-50,68.5,31.5,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorial,51.8,48.2,NaN,5,51-55,53.4,46.6,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorial,51.8,48.2,NaN,5,56-60,64.3,35.7,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorial,51.8,48.2,NaN,5,61-65,48.8,51.2,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorial,51.8,48.2,NaN,5,66-70,57.1,42.9,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorial,51.8,48.2,NaN,5,71-75,22.2,77.8,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorial,51.8,48.2,NaN,5,76-80,76.3,23.7,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorial,51.8,48.2,NaN,5,81-85,50.0,50.0,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorial,51.8,48.2,NaN,5,86-90,38.3,61.7,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorial,51.8,48.2,NaN,15,0-15,67.2,32.8,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorial,51.8,48.2,NaN,15,16-30,46.9,53.1,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorial,51.8,48.2,NaN,15,31-45,43.2,56.8,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorial,51.8,48.2,NaN,15,46-60,61.2,38.8,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorial,51.8,48.2,NaN,15,61-75,46.2,53.8,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorial,51.8,48.2,NaN,15,76-90,49.4,50.6,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorial,51.8,48.2,NaN,45,0-45,50.3,49.7,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorial,51.8,48.2,NaN,45,46-90,53.3,46.7,NaN,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorialThird,23.4,27.0,49.6,5,0-5,9.3,27.9,62.8,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorialThird,23.4,27.0,49.6,5,6-10,14.9,38.3,46.8,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorialThird,23.4,27.0,49.6,5,11-15,0.0,65.4,34.6,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorialThird,23.4,27.0,49.6,5,16-20,29.3,17.1,53.6,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorialThird,23.4,27.0,49.6,5,21-25,20.3,25.4,54.3,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorialThird,23.4,27.0,49.6,5,26-30,28.3,26.7,45.0,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorialThird,23.4,27.0,49.6,5,31-35,21.1,19.3,59.6,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorialThird,23.4,27.0,49.6,5,36-40,26.7,15.0,58.3,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorialThird,23.4,27.0,49.6,5,41-45,34.1,20.7,45.2,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorialThird,23.4,27.0,49.6,5,46-50,11.1,44.4,44.5,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorialThird,23.4,27.0,49.6,5,51-55,20.5,26.0,53.5,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorialThird,23.4,27.0,49.6,5,56-60,10.7,30.4,58.9,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorialThird,23.4,27.0,49.6,5,61-65,27.9,11.6,60.5,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorialThird,23.4,27.0,49.6,5,66-70,16.3,30.6,53.1,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorialThird,23.4,27.0,49.6,5,71-75,40.7,14.8,44.5,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorialThird,23.4,27.0,49.6,5,76-80,21.1,55.3,23.6,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorialThird,23.4,27.0,49.6,5,81-85,29.2,33.3,37.5,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorialThird,23.4,27.0,49.6,5,86-90,39.4,18.1,42.5,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorialThird,23.4,27.0,49.6,15,0-15,9.5,40.5,50.0,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorialThird,23.4,27.0,49.6,15,16-30,25.6,23.8,50.6,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorialThird,23.4,27.0,49.6,15,31-45,28.1,18.6,53.3,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorialThird,23.4,27.0,49.6,15,46-60,14.8,32.8,52.4,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorialThird,23.4,27.0,49.6,15,61-75,26.1,20.2,53.7,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorialThird,23.4,27.0,49.6,15,76-90,33.3,29.5,37.2,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorialThird,23.4,27.0,49.6,45,0-45,22.7,25.7,51.6,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-territorialThird,23.4,27.0,49.6,45,46-90,24.0,28.4,47.6,Horsens vs Kolding,63k0w54ygz5bip8a709rpfpxw,1_Division,DNK,2024-08-16,Horsens,Kolding
-ballPossession,49.4,50.6,NaN,5,0-5,62.1,37.9,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-ballPossession,49.4,50.6,NaN,5,6-10,67.9,32.1,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-ballPossession,49.4,50.6,NaN,5,11-15,40.4,59.6,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-ballPossession,49.4,50.6,NaN,5,16-20,52.6,47.4,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-ballPossession,49.4,50.6,NaN,5,21-25,31.6,68.4,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-ballPossession,49.4,50.6,NaN,5,26-30,17.8,82.2,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-ballPossession,49.4,50.6,NaN,5,31-35,22.2,77.8,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-ballPossession,49.4,50.6,NaN,5,36-40,50.0,50.0,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-ballPossession,49.4,50.6,NaN,5,41-45,89.1,10.9,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-ballPossession,49.4,50.6,NaN,5,46-50,40.6,59.4,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-ballPossession,49.4,50.6,NaN,5,51-55,68.4,31.6,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-ballPossession,49.4,50.6,NaN,5,56-60,32.1,67.9,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-ballPossession,49.4,50.6,NaN,5,61-65,33.3,66.7,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-ballPossession,49.4,50.6,NaN,5,66-70,65.7,34.3,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-ballPossession,49.4,50.6,NaN,5,71-75,63.2,36.8,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-ballPossession,49.4,50.6,NaN,5,76-80,50.0,50.0,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-ballPossession,49.4,50.6,NaN,5,81-85,50.0,50.0,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-ballPossession,49.4,50.6,NaN,5,86-90,24.4,75.6,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-ballPossession,49.4,50.6,NaN,15,0-15,57.0,43.0,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-ballPossession,49.4,50.6,NaN,15,16-30,35.7,64.3,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-ballPossession,49.4,50.6,NaN,15,31-45,60.3,39.7,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-ballPossession,49.4,50.6,NaN,15,46-60,49.2,50.8,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-ballPossession,49.4,50.6,NaN,15,61-75,56.5,43.5,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-ballPossession,49.4,50.6,NaN,15,76-90,34.0,66.0,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-ballPossession,49.4,50.6,NaN,45,0-45,52.6,47.4,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-ballPossession,49.4,50.6,NaN,45,46-90,46.5,53.5,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorial,60.0,40.0,NaN,5,0-5,62.1,37.9,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorial,60.0,40.0,NaN,5,6-10,85.7,14.3,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorial,60.0,40.0,NaN,5,11-15,77.2,22.8,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorial,60.0,40.0,NaN,5,16-20,57.9,42.1,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorial,60.0,40.0,NaN,5,21-25,84.2,15.8,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorial,60.0,40.0,NaN,5,26-30,62.2,37.8,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorial,60.0,40.0,NaN,5,31-35,31.5,68.5,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorial,60.0,40.0,NaN,5,36-40,69.0,31.0,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorial,60.0,40.0,NaN,5,41-45,41.3,58.7,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorial,60.0,40.0,NaN,5,46-50,76.6,23.4,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorial,60.0,40.0,NaN,5,51-55,82.9,17.1,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorial,60.0,40.0,NaN,5,56-60,41.5,58.5,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorial,60.0,40.0,NaN,5,61-65,50.0,50.0,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorial,60.0,40.0,NaN,5,66-70,57.1,42.9,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorial,60.0,40.0,NaN,5,71-75,66.2,33.8,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorial,60.0,40.0,NaN,5,76-80,66.7,33.3,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorial,60.0,40.0,NaN,5,81-85,50.0,50.0,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorial,60.0,40.0,NaN,5,86-90,42.0,58.0,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorial,60.0,40.0,NaN,15,0-15,74.3,25.7,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorial,60.0,40.0,NaN,15,16-30,66.4,33.6,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorial,60.0,40.0,NaN,15,31-45,46.6,53.4,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorial,60.0,40.0,NaN,15,46-60,69.4,30.6,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorial,60.0,40.0,NaN,15,61-75,58.6,41.4,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorial,60.0,40.0,NaN,15,76-90,48.2,51.8,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorial,60.0,40.0,NaN,45,0-45,61.4,38.6,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorial,60.0,40.0,NaN,45,46-90,58.8,41.2,NaN,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorialThird,21.8,33.0,45.2,5,0-5,25.8,34.8,39.4,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorialThird,21.8,33.0,45.2,5,6-10,8.9,37.5,53.6,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorialThird,21.8,33.0,45.2,5,11-15,3.5,40.4,56.1,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorialThird,21.8,33.0,45.2,5,16-20,24.6,31.6,43.8,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorialThird,21.8,33.0,45.2,5,21-25,5.3,52.6,42.1,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorialThird,21.8,33.0,45.2,5,26-30,22.2,33.3,44.5,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorialThird,21.8,33.0,45.2,5,31-35,53.7,3.7,42.6,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorialThird,21.8,33.0,45.2,5,36-40,19.0,39.7,41.3,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorialThird,21.8,33.0,45.2,5,41-45,23.9,25.0,51.1,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorialThird,21.8,33.0,45.2,5,46-50,3.1,50.0,46.9,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorialThird,21.8,33.0,45.2,5,51-55,6.6,38.2,55.2,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorialThird,21.8,33.0,45.2,5,56-60,32.1,24.5,43.4,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorialThird,21.8,33.0,45.2,5,61-65,25.0,27.1,47.9,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorialThird,21.8,33.0,45.2,5,66-70,24.3,31.4,44.3,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorialThird,21.8,33.0,45.2,5,71-75,17.6,42.6,39.8,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorialThird,21.8,33.0,45.2,5,76-80,13.9,38.9,47.2,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorialThird,21.8,33.0,45.2,5,81-85,22.2,41.7,36.1,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorialThird,21.8,33.0,45.2,5,86-90,40.3,21.8,37.9,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorialThird,21.8,33.0,45.2,15,0-15,13.4,37.4,49.2,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorialThird,21.8,33.0,45.2,15,16-30,18.6,37.9,43.5,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorialThird,21.8,33.0,45.2,15,31-45,30.4,23.5,46.1,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorialThird,21.8,33.0,45.2,15,46-60,12.4,38.3,49.3,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorialThird,21.8,33.0,45.2,15,61-75,22.0,34.4,43.6,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorialThird,21.8,33.0,45.2,15,76-90,31.9,28.8,39.3,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorialThird,21.8,33.0,45.2,45,0-45,21.4,32.1,46.5,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-territorialThird,21.8,33.0,45.2,45,46-90,22.1,33.9,44.0,B 93 vs OB,63xeqztss8336rl4y45w74zys,1_Division,DNK,2024-08-16,B 93,OB
-ballPossession,45.2,54.8,NaN,5,0-5,32.6,67.4,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-ballPossession,45.2,54.8,NaN,5,6-10,55.8,44.2,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-ballPossession,45.2,54.8,NaN,5,11-15,27.9,72.1,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-ballPossession,45.2,54.8,NaN,5,16-20,35.4,64.6,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-ballPossession,45.2,54.8,NaN,5,21-25,71.7,28.3,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-ballPossession,45.2,54.8,NaN,5,26-30,34.5,65.5,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-ballPossession,45.2,54.8,NaN,5,31-35,63.0,37.0,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-ballPossession,45.2,54.8,NaN,5,36-40,35.7,64.3,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-ballPossession,45.2,54.8,NaN,5,41-45,43.0,57.0,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-ballPossession,45.2,54.8,NaN,5,46-50,44.9,55.1,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-ballPossession,45.2,54.8,NaN,5,51-55,49.2,50.8,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-ballPossession,45.2,54.8,NaN,5,56-60,34.0,66.0,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-ballPossession,45.2,54.8,NaN,5,61-65,55.2,44.8,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-ballPossession,45.2,54.8,NaN,5,66-70,43.1,56.9,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-ballPossession,45.2,54.8,NaN,5,71-75,33.3,66.7,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-ballPossession,45.2,54.8,NaN,5,76-80,22.0,78.0,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-ballPossession,45.2,54.8,NaN,5,81-85,73.9,26.1,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-ballPossession,45.2,54.8,NaN,5,86-90,54.9,45.1,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-ballPossession,45.2,54.8,NaN,15,0-15,38.5,61.5,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-ballPossession,45.2,54.8,NaN,15,16-30,46.4,53.6,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-ballPossession,45.2,54.8,NaN,15,31-45,46.6,53.4,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-ballPossession,45.2,54.8,NaN,15,46-60,43.0,57.0,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-ballPossession,45.2,54.8,NaN,15,61-75,44.4,55.6,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-ballPossession,45.2,54.8,NaN,15,76-90,51.9,48.1,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-ballPossession,45.2,54.8,NaN,45,0-45,44.1,55.9,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-ballPossession,45.2,54.8,NaN,45,46-90,46.3,53.7,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorial,35.1,64.9,NaN,5,0-5,46.5,53.5,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorial,35.1,64.9,NaN,5,6-10,28.8,71.2,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorial,35.1,64.9,NaN,5,11-15,44.3,55.7,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorial,35.1,64.9,NaN,5,16-20,31.2,68.8,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorial,35.1,64.9,NaN,5,21-25,51.7,48.3,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorial,35.1,64.9,NaN,5,26-30,36.9,63.1,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorial,35.1,64.9,NaN,5,31-35,38.9,61.1,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorial,35.1,64.9,NaN,5,36-40,39.3,60.7,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorial,35.1,64.9,NaN,5,41-45,48.1,51.9,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorial,35.1,64.9,NaN,5,46-50,30.6,69.4,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorial,35.1,64.9,NaN,5,51-55,47.5,52.5,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorial,35.1,64.9,NaN,5,56-60,10.0,90.0,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorial,35.1,64.9,NaN,5,61-65,11.9,88.1,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorial,35.1,64.9,NaN,5,66-70,33.8,66.2,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorial,35.1,64.9,NaN,5,71-75,26.3,73.7,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorial,35.1,64.9,NaN,5,76-80,36.6,63.4,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorial,35.1,64.9,NaN,5,81-85,17.4,82.6,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorial,35.1,64.9,NaN,5,86-90,42.3,57.7,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorial,35.1,64.9,NaN,15,0-15,39.7,60.3,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorial,35.1,64.9,NaN,15,16-30,40.1,59.9,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorial,35.1,64.9,NaN,15,31-45,42.9,57.1,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorial,35.1,64.9,NaN,15,46-60,30.4,69.6,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorial,35.1,64.9,NaN,15,61-75,23.8,76.2,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorial,35.1,64.9,NaN,15,76-90,33.5,66.5,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorial,35.1,64.9,NaN,45,0-45,41.0,59.0,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorial,35.1,64.9,NaN,45,46-90,28.9,71.1,NaN,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorialThird,42.2,14.7,43.1,5,0-5,37.2,23.3,39.5,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorialThird,42.2,14.7,43.1,5,6-10,50.0,0.0,50.0,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorialThird,42.2,14.7,43.1,5,11-15,34.4,11.5,54.1,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorialThird,42.2,14.7,43.1,5,16-20,43.8,10.4,45.8,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorialThird,42.2,14.7,43.1,5,21-25,28.3,23.3,48.4,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorialThird,42.2,14.7,43.1,5,26-30,50.0,22.6,27.4,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorialThird,42.2,14.7,43.1,5,31-35,35.2,14.8,50.0,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorialThird,42.2,14.7,43.1,5,36-40,30.4,7.1,62.5,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorialThird,42.2,14.7,43.1,5,41-45,26.6,15.2,58.2,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorialThird,42.2,14.7,43.1,5,46-50,44.9,8.2,46.9,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorialThird,42.2,14.7,43.1,5,51-55,40.7,23.7,35.6,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorialThird,42.2,14.7,43.1,5,56-60,58.0,4.0,38.0,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorialThird,42.2,14.7,43.1,5,61-65,58.2,7.5,34.3,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorialThird,42.2,14.7,43.1,5,66-70,40.0,24.6,35.4,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorialThird,42.2,14.7,43.1,5,71-75,50.9,5.3,43.8,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorialThird,42.2,14.7,43.1,5,76-80,48.8,12.2,39.0,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorialThird,42.2,14.7,43.1,5,81-85,45.7,13.0,41.3,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorialThird,42.2,14.7,43.1,5,86-90,42.3,26.8,30.9,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorialThird,42.2,14.7,43.1,15,0-15,40.4,10.9,48.7,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorialThird,42.2,14.7,43.1,15,16-30,41.7,19.8,38.5,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorialThird,42.2,14.7,43.1,15,31-45,30.2,12.7,57.1,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorialThird,42.2,14.7,43.1,15,46-60,47.5,12.7,39.8,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorialThird,42.2,14.7,43.1,15,61-75,49.7,12.7,37.6,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorialThird,42.2,14.7,43.1,15,76-90,44.9,19.0,36.1,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorialThird,42.2,14.7,43.1,45,0-45,37.2,14.7,48.1,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-territorialThird,42.2,14.7,43.1,45,46-90,47.5,14.7,37.8,Hillerød vs HB Køge,64asahp9xtmrj6tt53ghkam1g,1_Division,DNK,2024-08-16,Hillerød,HB Køge
-ballPossession,50.3,49.7,NaN,5,0-5,52.7,47.3,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-ballPossession,50.3,49.7,NaN,5,6-10,16.0,84.0,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-ballPossession,50.3,49.7,NaN,5,11-15,53.2,46.8,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-ballPossession,50.3,49.7,NaN,5,16-20,41.5,58.5,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-ballPossession,50.3,49.7,NaN,5,21-25,78.6,21.4,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-ballPossession,50.3,49.7,NaN,5,26-30,68.3,31.7,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-ballPossession,50.3,49.7,NaN,5,31-35,38.2,61.8,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-ballPossession,50.3,49.7,NaN,5,36-40,53.1,46.9,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-ballPossession,50.3,49.7,NaN,5,41-45,49.3,50.7,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-ballPossession,50.3,49.7,NaN,5,46-50,50.7,49.3,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-ballPossession,50.3,49.7,NaN,5,51-55,61.7,38.3,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-ballPossession,50.3,49.7,NaN,5,56-60,39.6,60.4,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-ballPossession,50.3,49.7,NaN,5,61-65,31.0,69.0,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-ballPossession,50.3,49.7,NaN,5,66-70,60.3,39.7,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-ballPossession,50.3,49.7,NaN,5,71-75,53.3,46.7,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-ballPossession,50.3,49.7,NaN,5,76-80,61.2,38.8,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-ballPossession,50.3,49.7,NaN,5,81-85,55.6,44.4,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-ballPossession,50.3,49.7,NaN,5,86-90,43.0,57.0,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-ballPossession,50.3,49.7,NaN,15,0-15,40.8,59.2,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-ballPossession,50.3,49.7,NaN,15,16-30,63.4,36.6,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-ballPossession,50.3,49.7,NaN,15,31-45,47.4,52.6,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-ballPossession,50.3,49.7,NaN,15,46-60,51.4,48.6,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-ballPossession,50.3,49.7,NaN,15,61-75,47.1,52.9,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-ballPossession,50.3,49.7,NaN,15,76-90,51.3,48.7,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-ballPossession,50.3,49.7,NaN,45,0-45,50.8,49.2,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-ballPossession,50.3,49.7,NaN,45,46-90,49.9,50.1,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorial,44.8,55.2,NaN,5,0-5,60.0,40.0,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorial,44.8,55.2,NaN,5,6-10,62.0,38.0,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorial,44.8,55.2,NaN,5,11-15,61.7,38.3,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorial,44.8,55.2,NaN,5,16-20,37.7,62.3,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorial,44.8,55.2,NaN,5,21-25,50.0,50.0,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorial,44.8,55.2,NaN,5,26-30,42.9,57.1,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorial,44.8,55.2,NaN,5,31-35,32.7,67.3,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorial,44.8,55.2,NaN,5,36-40,32.8,67.2,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorial,44.8,55.2,NaN,5,41-45,47.9,52.1,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorial,44.8,55.2,NaN,5,46-50,41.3,58.7,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorial,44.8,55.2,NaN,5,51-55,60.0,40.0,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorial,44.8,55.2,NaN,5,56-60,35.4,64.6,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorial,44.8,55.2,NaN,5,61-65,18.3,81.7,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorial,44.8,55.2,NaN,5,66-70,51.7,48.3,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorial,44.8,55.2,NaN,5,71-75,50.0,50.0,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorial,44.8,55.2,NaN,5,76-80,57.1,42.9,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorial,44.8,55.2,NaN,5,81-85,50.0,50.0,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorial,44.8,55.2,NaN,5,86-90,33.7,66.3,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorial,44.8,55.2,NaN,15,0-15,61.2,38.8,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorial,44.8,55.2,NaN,15,16-30,43.6,56.4,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorial,44.8,55.2,NaN,15,31-45,38.4,61.6,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorial,44.8,55.2,NaN,15,46-60,45.9,54.1,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorial,44.8,55.2,NaN,15,61-75,38.6,61.4,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorial,44.8,55.2,NaN,15,76-90,44.4,55.6,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorial,44.8,55.2,NaN,45,0-45,46.9,53.1,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorial,44.8,55.2,NaN,45,46-90,43.0,57.0,NaN,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorialThird,32.0,25.0,43.0,5,0-5,18.2,41.8,40.0,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorialThird,32.0,25.0,43.0,5,6-10,12.0,30.0,58.0,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorialThird,32.0,25.0,43.0,5,11-15,21.3,44.7,34.0,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorialThird,32.0,25.0,43.0,5,16-20,43.4,18.9,37.7,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorialThird,32.0,25.0,43.0,5,21-25,28.6,25.0,46.4,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorialThird,32.0,25.0,43.0,5,26-30,33.3,23.8,42.9,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorialThird,32.0,25.0,43.0,5,31-35,50.9,21.8,27.3,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorialThird,32.0,25.0,43.0,5,36-40,43.8,17.2,39.0,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorialThird,32.0,25.0,43.0,5,41-45,25.4,28.2,46.4,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorialThird,32.0,25.0,43.0,5,46-50,34.7,13.3,52.0,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorialThird,32.0,25.0,43.0,5,51-55,15.0,38.3,46.7,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorialThird,32.0,25.0,43.0,5,56-60,29.2,18.8,52.0,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorialThird,32.0,25.0,43.0,5,61-65,45.1,5.6,49.3,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorialThird,32.0,25.0,43.0,5,66-70,27.6,24.1,48.3,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorialThird,32.0,25.0,43.0,5,71-75,35.0,21.7,43.3,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorialThird,32.0,25.0,43.0,5,76-80,20.4,34.7,44.9,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorialThird,32.0,25.0,43.0,5,81-85,29.6,38.9,31.5,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorialThird,32.0,25.0,43.0,5,86-90,46.5,19.8,33.7,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorialThird,32.0,25.0,43.0,15,0-15,17.1,38.8,44.1,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorialThird,32.0,25.0,43.0,15,16-30,34.9,22.7,42.4,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorialThird,32.0,25.0,43.0,15,31-45,38.9,22.6,38.5,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorialThird,32.0,25.0,43.0,15,46-60,26.8,23.0,50.2,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorialThird,32.0,25.0,43.0,15,61-75,36.5,16.4,47.1,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorialThird,32.0,25.0,43.0,15,76-90,34.9,29.1,36.0,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorialThird,32.0,25.0,43.0,45,0-45,31.1,27.4,41.5,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
-territorialThird,32.0,25.0,43.0,45,46-90,32.8,22.8,44.4,Fredericia vs Roskilde,64o9dmwumoh7ybeg7hb62m3o4,1_Division,DNK,2024-08-16,Fredericia,Roskilde
