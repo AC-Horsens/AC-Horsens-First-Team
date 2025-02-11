@@ -257,24 +257,6 @@ B 93,84,6,M. Falkesgaard,B 93 vs Hillerød,2024-08-23,18,Goalkeeper,NaN,NaN
 B 93,84,6,A. Vaporakis,B 93 vs Hillerød,2024-08-23,19,Goalkeeper,NaN,0
 B 93,90,15,O. Addo,B 93 vs Hillerød,2024-08-23,18,Forward,NaN,NaN
 B 93,90,15,A. Heimer,B 93 vs Hillerød,2024-08-23,19,Midfielder,7,1
-Hobro,59,2,J. Cornelius,Hobro vs B 93,2024-09-02,18,Forward,NaN,NaN
-Hobro,59,2,S. Andreasen,Hobro vs B 93,2024-09-02,19,Forward,9,2
-Hobro,59,11,T. Hansen,Hobro vs B 93,2024-09-02,18,Midfielder,NaN,NaN
-Hobro,59,11,M. Compaoré,Hobro vs B 93,2024-09-02,19,Midfielder,6,5
-B 93,65,0,T. Blidegn,Hobro vs B 93,2024-09-02,18,Midfielder,NaN,NaN
-B 93,65,0,O. Jakobsen,Hobro vs B 93,2024-09-02,19,Midfielder,6,2
-Hobro,69,31,L. Klitten,Hobro vs B 93,2024-09-02,18,Defender,NaN,NaN
-Hobro,69,31,M. Nielsen,Hobro vs B 93,2024-09-02,19,Midfielder,5,1
-Hobro,69,50,V. Rasmussen,Hobro vs B 93,2024-09-02,18,Midfielder,NaN,NaN
-Hobro,69,50,M. Pedersen,Hobro vs B 93,2024-09-02,19,Midfielder,7,4
-B 93,73,29,M. Mouritz,Hobro vs B 93,2024-09-02,18,Midfielder,NaN,NaN
-B 93,73,29,N. Morberg,Hobro vs B 93,2024-09-02,19,Midfielder,7,4
-Hobro,83,11,O. Klitten,Hobro vs B 93,2024-09-02,18,Forward,NaN,NaN
-Hobro,83,11,O. Dorph,Hobro vs B 93,2024-09-02,19,Midfielder,5,5
-B 93,85,0,E. Nnamani,Hobro vs B 93,2024-09-02,18,Forward,NaN,NaN
-B 93,85,0,A. Bredahl,Hobro vs B 93,2024-09-02,19,Defender,4,4
-B 93,85,21,O. Addo,Hobro vs B 93,2024-09-02,18,Forward,NaN,NaN
-B 93,85,21,A. Heimer,Hobro vs B 93,2024-09-02,19,Midfielder,6,1
 B 93,45,0,O. Addo,Esbjerg vs B 93,2024-09-15,18,Forward,NaN,NaN
 B 93,45,0,F. Isaki,Esbjerg vs B 93,2024-09-15,19,Midfielder,5,5
 B 93,45,0,N. Morberg,Esbjerg vs B 93,2024-09-15,18,Midfielder,NaN,NaN
@@ -295,6 +277,24 @@ B 93,73,16,E. Nnamani,Esbjerg vs B 93,2024-09-15,18,Forward,NaN,NaN
 B 93,73,16,J. Voldby,Esbjerg vs B 93,2024-09-15,19,Forward,9,3
 B 93,89,32,N. Mouritsen,Esbjerg vs B 93,2024-09-15,18,Defender,NaN,NaN
 B 93,89,32,G. Højbjerg,Esbjerg vs B 93,2024-09-15,19,Midfielder,7,3
+Hobro,59,2,J. Cornelius,Hobro vs B 93,2024-09-02,18,Forward,NaN,NaN
+Hobro,59,2,S. Andreasen,Hobro vs B 93,2024-09-02,19,Forward,9,2
+Hobro,59,11,T. Hansen,Hobro vs B 93,2024-09-02,18,Midfielder,NaN,NaN
+Hobro,59,11,M. Compaoré,Hobro vs B 93,2024-09-02,19,Midfielder,6,5
+B 93,65,0,T. Blidegn,Hobro vs B 93,2024-09-02,18,Midfielder,NaN,NaN
+B 93,65,0,O. Jakobsen,Hobro vs B 93,2024-09-02,19,Midfielder,6,2
+Hobro,69,31,L. Klitten,Hobro vs B 93,2024-09-02,18,Defender,NaN,NaN
+Hobro,69,31,M. Nielsen,Hobro vs B 93,2024-09-02,19,Midfielder,5,1
+Hobro,69,50,V. Rasmussen,Hobro vs B 93,2024-09-02,18,Midfielder,NaN,NaN
+Hobro,69,50,M. Pedersen,Hobro vs B 93,2024-09-02,19,Midfielder,7,4
+B 93,73,29,M. Mouritz,Hobro vs B 93,2024-09-02,18,Midfielder,NaN,NaN
+B 93,73,29,N. Morberg,Hobro vs B 93,2024-09-02,19,Midfielder,7,4
+Hobro,83,11,O. Klitten,Hobro vs B 93,2024-09-02,18,Forward,NaN,NaN
+Hobro,83,11,O. Dorph,Hobro vs B 93,2024-09-02,19,Midfielder,5,5
+B 93,85,0,E. Nnamani,Hobro vs B 93,2024-09-02,18,Forward,NaN,NaN
+B 93,85,0,A. Bredahl,Hobro vs B 93,2024-09-02,19,Defender,4,4
+B 93,85,21,O. Addo,Hobro vs B 93,2024-09-02,18,Forward,NaN,NaN
+B 93,85,21,A. Heimer,Hobro vs B 93,2024-09-02,19,Midfielder,6,1
 Horsens,30,34,M. Kallesøe,B 93 vs Horsens,2024-09-21,18,Defender,NaN,NaN
 Horsens,30,34,A. Ludwig,B 93 vs Horsens,2024-09-21,19,Defender,3,2
 B 93,57,33,A. Bredahl,B 93 vs Horsens,2024-09-21,18,Forward,NaN,NaN
