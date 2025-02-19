@@ -2044,7 +2044,7 @@ def Dashboard():
         df_set_pieces_sum = df_set_pieces_sum.sort_values(by='xG',ascending=False)
         st.header('Whole season')
         st.write('All set pieces')
-        st.dataframe(df_set_pieces_goals)
+        st.dataframe(df_set_pieces_goals,hide_index=True)
         st.dataframe(df_set_pieces_sum)
         st.write('Freekicks')
         Freekicks = df_set_pieces[(df_set_pieces['26.0'] == True) | (df_set_pieces['24.0'] == True)]
