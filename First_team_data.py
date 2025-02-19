@@ -2031,6 +2031,8 @@ def Dashboard():
         df_set_pieces = load_set_piece_data()
         df_set_pieces = df_set_pieces.fillna(0)
         df_set_pieces = df_set_pieces.round(2)
+        df_set_pieces_goals = df_set_pieces[df_set_pieces['typeId'] == 16]
+        df_set_pieces_goals = df_set_pieces_goals.groupby('team_name').sum()
         df_set_pieces_matches = df_set_pieces.groupby(['team_name','label']).agg({'321.0':'sum'}).reset_index()
         df_set_pieces_matches['xG_match'] = df_set_pieces_matches.groupby('label')['321.0'].transform('sum')
         df_set_pieces_matches['xG_against'] = df_set_pieces_matches['321.0'] - df_set_pieces_matches['xG_match']
@@ -2041,6 +2043,7 @@ def Dashboard():
         df_set_pieces_sum = df_set_pieces_sum.sort_values(by='xG',ascending=False)
         st.header('Whole season')
         st.write('All set pieces')
+        st.dataframe(df_set_pieces_goals)
         st.dataframe(df_set_pieces_sum)
         st.write('Freekicks')
         Freekicks = df_set_pieces[(df_set_pieces['26.0'] == True) | (df_set_pieces['24.0'] == True)]
