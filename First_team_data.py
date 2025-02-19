@@ -2032,7 +2032,7 @@ def Dashboard():
         df_set_pieces = df_set_pieces.fillna(0)
         df_set_pieces = df_set_pieces.round(2)
         df_set_pieces_goals = df_set_pieces[df_set_pieces['typeId'] == 16]
-        df_set_pieces_goals = df_set_pieces_goals.groupby('team_name').size()
+        df_set_pieces_goals = df_set_pieces_goals.groupby('team_name').size().reset_index(name='Goals')
         df_set_pieces_matches = df_set_pieces.groupby(['team_name','label']).agg({'321.0':'sum'}).reset_index()
         df_set_pieces_matches['xG_match'] = df_set_pieces_matches.groupby('label')['321.0'].transform('sum')
         df_set_pieces_matches['xG_against'] = df_set_pieces_matches['321.0'] - df_set_pieces_matches['xG_match']
