@@ -270,7 +270,7 @@ all_match_data = pd.DataFrame(columns=['Team', 'Metric', '5', '10', '15', '20', 
 all_player_data = pd.DataFrame()
 all_matches_summarized = pd.DataFrame()
 schedule_df = get_schedule()
-schedule_df = schedule_df[schedule_df['description'].str.contains('ACH')]
+schedule_df = schedule_df[schedule_df['description'].str.contains('HIK')]
 if schedule_df is not None:
     for index, row in schedule_df.iterrows():
             game_id = row['ssiId']
