@@ -725,8 +725,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
 
     def number10():
         df_10 = df_scouting[
-            ((df_scouting['player_position'] == 'Attacking Midfielder') & df_scouting['player_positionSide'].str.contains('Centre')) |
-            ((df_scouting['player_position'] == 'Midfielder') & df_scouting['player_positionSide'].str.contains('Centre'))
+            ((df_scouting['player_position'] == 'Attacking Midfielder') & df_scouting['player_positionSide'].str.contains('Centre'))
         ]
         df_10['minsPlayed'] = df_10['minsPlayed'].astype(int)
         df_10 = df_10[df_10['minsPlayed'] >= minutter_kamp]
@@ -855,8 +854,8 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         df_winger['Total score'] = df_winger.apply(
             lambda row: weighted_mean(
                 [row['Passing_'], row['Chance_creation'], row['Goalscoring_'], row['Possession_value']],
-                [3 if row['Passing_'] < 5 else 1, 3 if row['Chance_creation'] < 5 else 1, 
-                3 if row['Goalscoring_'] < 5 else 1, 3 if row['Possession_value'] < 5 else 1]
+                [3 if row['Passing_'] > 5 else 1, 3 if row['Chance_creation'] > 5 else 1, 
+                3 if row['Goalscoring_'] > 5 else 1, 3 if row['Possession_value'] > 5 else 1]
             ), axis=1
         )
 
