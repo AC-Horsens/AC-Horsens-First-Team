@@ -713,6 +713,20 @@ Esbjerg,89,20,J. Meyer,HB Køge vs Esbjerg,2025-02-28,18,Defender,NaN,NaN
 Esbjerg,89,20,B. Baldursson,HB Køge vs Esbjerg,2025-02-28,19,Midfielder,NaN,NaN
 Esbjerg,89,42,T. Freriks,HB Køge vs Esbjerg,2025-02-28,18,Forward,NaN,NaN
 Esbjerg,89,42,J. Ankersen,HB Køge vs Esbjerg,2025-02-28,19,Midfielder,NaN,NaN
+Hvidovre,45,0,J. Gemmer,Esbjerg vs Hvidovre,2025-03-09,18,Midfielder,NaN,NaN
+Hvidovre,45,0,M. Spelmann,Esbjerg vs Hvidovre,2025-03-09,19,Midfielder,7,5
+Esbjerg,64,56,P. Bjur,Esbjerg vs Hvidovre,2025-03-09,18,Midfielder,NaN,NaN
+Esbjerg,64,56,L. From,Esbjerg vs Hvidovre,2025-03-09,19,Forward,10,3
+Esbjerg,65,9,M. Maden,Esbjerg vs Hvidovre,2025-03-09,18,Midfielder,NaN,NaN
+Esbjerg,65,9,J. Lucena,Esbjerg vs Hvidovre,2025-03-09,19,Midfielder,7,3
+Esbjerg,77,8,A. Lausen,Esbjerg vs Hvidovre,2025-03-09,18,Midfielder,NaN,NaN
+Esbjerg,77,8,J. Ankersen,Esbjerg vs Hvidovre,2025-03-09,19,Midfielder,6,1
+Hvidovre,69,24,J. Adjei-Broni,Esbjerg vs Hvidovre,2025-03-09,18,Forward,NaN,NaN
+Hvidovre,69,24,S. Makienok,Esbjerg vs Hvidovre,2025-03-09,19,Forward,9,2
+Hvidovre,69,38,A. Smed,Esbjerg vs Hvidovre,2025-03-09,18,Midfielder,NaN,NaN
+Hvidovre,69,38,J. Singh,Esbjerg vs Hvidovre,2025-03-09,19,Midfielder,6,1
+Hvidovre,78,42,N. Clausen,Esbjerg vs Hvidovre,2025-03-09,18,Defender,NaN,NaN
+Hvidovre,78,42,A. Iljazovski,Esbjerg vs Hvidovre,2025-03-09,19,Midfielder,5,1
 Fredericia,71,6,O. Buch,Horsens vs Fredericia,2024-07-21,18,Forward,NaN,NaN
 Fredericia,71,6,P. Egelund,Horsens vs Fredericia,2024-07-21,19,Midfielder,6,2
 Fredericia,71,12,A. Muçolli,Horsens vs Fredericia,2024-07-21,18,Forward,NaN,NaN
@@ -1705,6 +1719,22 @@ Hobro,86,57,L. Klitten,Hvidovre vs Hobro,2024-11-29,18,Defender,NaN,NaN
 Hobro,86,57,M. Compaoré,Hvidovre vs Hobro,2024-11-29,19,Midfielder,5,1
 Hobro,87,5,S. Andreasen,Hvidovre vs Hobro,2024-11-29,18,Forward,NaN,NaN
 Hobro,87,5,M. Boye,Hvidovre vs Hobro,2024-11-29,19,Forward,9,1
+Vendsyssel,70,52,S. Borgelin,Hobro vs Vendsyssel,2025-02-21,18,Forward,NaN,NaN
+Vendsyssel,70,52,Z. Dalügge,Hobro vs Vendsyssel,2025-02-21,19,Forward,9,1
+Vendsyssel,71,5,R. Thellufsen,Hobro vs Vendsyssel,2025-02-21,18,Midfielder,NaN,NaN
+Vendsyssel,71,5,A. Rise Kristiansen,Hobro vs Vendsyssel,2025-02-21,19,Forward,8,2
+Vendsyssel,71,18,L. Jensen,Hobro vs Vendsyssel,2025-02-21,18,Forward,NaN,NaN
+Vendsyssel,71,18,M. Munck,Hobro vs Vendsyssel,2025-02-21,19,Midfielder,6,3
+Vendsyssel,78,33,I. Nikolov,Hobro vs Vendsyssel,2025-02-21,18,Midfielder,NaN,NaN
+Vendsyssel,78,33,M. Kaastrup,Hobro vs Vendsyssel,2025-02-21,19,Midfielder,6,1
+Vendsyssel,86,11,M. Lassen,Hobro vs Vendsyssel,2025-02-21,18,Defender,NaN,NaN
+Vendsyssel,86,11,K. Kusk,Hobro vs Vendsyssel,2025-02-21,19,Midfielder,6,2
+Hobro,71,53,O. Klitten,Hobro vs Vendsyssel,2025-02-21,18,Forward,NaN,NaN
+Hobro,71,53,T. Hansen,Hobro vs Vendsyssel,2025-02-21,19,Midfielder,7,4
+Hobro,72,1,S. Andreasen,Hobro vs Vendsyssel,2025-02-21,18,Forward,NaN,NaN
+Hobro,72,1,M. Bruhn,Hobro vs Vendsyssel,2025-02-21,19,Defender,4,4
+Hobro,83,45,V. Rasmussen,Hobro vs Vendsyssel,2025-02-21,18,Midfielder,NaN,NaN
+Hobro,83,45,Z. Hyltoft,Hobro vs Vendsyssel,2025-02-21,19,Midfielder,5,3
 Hobro,56,9,V. Rasmussen,OB vs Hobro,2025-03-02,18,Midfielder,NaN,NaN
 Hobro,56,9,Z. Hyltoft,OB vs Hobro,2025-03-02,19,Midfielder,6,4
 Hobro,74,0,S. Andreasen,OB vs Hobro,2025-03-02,18,Forward,NaN,NaN
@@ -1723,22 +1753,6 @@ OB,73,35,A. Sørensen,OB vs Hobro,2025-03-02,18,Defender,NaN,NaN
 OB,73,35,M. McCoy,OB vs Hobro,2025-03-02,19,Defender,3,1
 OB,81,9,L. Deedson,OB vs Hobro,2025-03-02,18,Forward,NaN,NaN
 OB,81,9,E. Hansborg-Sørensen,OB vs Hobro,2025-03-02,19,Forward,8,2
-Vendsyssel,70,52,S. Borgelin,Hobro vs Vendsyssel,2025-02-21,18,Forward,NaN,NaN
-Vendsyssel,70,52,Z. Dalügge,Hobro vs Vendsyssel,2025-02-21,19,Forward,9,1
-Vendsyssel,71,5,R. Thellufsen,Hobro vs Vendsyssel,2025-02-21,18,Midfielder,NaN,NaN
-Vendsyssel,71,5,A. Rise Kristiansen,Hobro vs Vendsyssel,2025-02-21,19,Forward,8,2
-Vendsyssel,71,18,L. Jensen,Hobro vs Vendsyssel,2025-02-21,18,Forward,NaN,NaN
-Vendsyssel,71,18,M. Munck,Hobro vs Vendsyssel,2025-02-21,19,Midfielder,6,3
-Vendsyssel,78,33,I. Nikolov,Hobro vs Vendsyssel,2025-02-21,18,Midfielder,NaN,NaN
-Vendsyssel,78,33,M. Kaastrup,Hobro vs Vendsyssel,2025-02-21,19,Midfielder,6,1
-Vendsyssel,86,11,M. Lassen,Hobro vs Vendsyssel,2025-02-21,18,Defender,NaN,NaN
-Vendsyssel,86,11,K. Kusk,Hobro vs Vendsyssel,2025-02-21,19,Midfielder,6,2
-Hobro,71,53,O. Klitten,Hobro vs Vendsyssel,2025-02-21,18,Forward,NaN,NaN
-Hobro,71,53,T. Hansen,Hobro vs Vendsyssel,2025-02-21,19,Midfielder,7,4
-Hobro,72,1,S. Andreasen,Hobro vs Vendsyssel,2025-02-21,18,Forward,NaN,NaN
-Hobro,72,1,M. Bruhn,Hobro vs Vendsyssel,2025-02-21,19,Defender,4,4
-Hobro,83,45,V. Rasmussen,Hobro vs Vendsyssel,2025-02-21,18,Midfielder,NaN,NaN
-Hobro,83,45,Z. Hyltoft,Hobro vs Vendsyssel,2025-02-21,19,Midfielder,5,3
 Horsens,45,0,O. Kolskogen,Hobro vs Horsens,2025-03-08,18,Defender,NaN,NaN
 Horsens,45,0,F. Roslyng,Hobro vs Horsens,2025-03-08,19,Defender,4,4
 Horsens,51,0,C. Tapé,Hobro vs Horsens,2025-03-08,18,Defender,NaN,NaN
@@ -2233,3 +2247,19 @@ Vendsyssel,69,12,O. Øhlenschlæger,Vendsyssel vs Roskilde,2024-07-19,18,Midfiel
 Vendsyssel,69,12,M. Hannesbo,Vendsyssel vs Roskilde,2024-07-19,19,Midfielder,6,2
 Vendsyssel,87,20,G. Mortensen,Vendsyssel vs Roskilde,2024-07-19,18,Defender,NaN,NaN
 Vendsyssel,87,20,M. Haarup,Vendsyssel vs Roskilde,2024-07-19,19,Defender,3,1
+Vendsyssel,38,22,L. Steffensen,Roskilde vs Vendsyssel,2025-03-09,18,Forward,NaN,NaN
+Vendsyssel,38,22,H. Ndam,Roskilde vs Vendsyssel,2025-03-09,19,Forward,9,1
+Roskilde,54,32,E. Nielsen,Roskilde vs Vendsyssel,2025-03-09,18,Forward,NaN,NaN
+Roskilde,54,32,R. Arabaci,Roskilde vs Vendsyssel,2025-03-09,19,Midfielder,6,2
+Roskilde,77,48,A. Maarup,Roskilde vs Vendsyssel,2025-03-09,18,Midfielder,NaN,NaN
+Roskilde,77,48,M. Kristensen,Roskilde vs Vendsyssel,2025-03-09,19,Midfielder,7,3
+Vendsyssel,64,26,M. Munck,Roskilde vs Vendsyssel,2025-03-09,18,Midfielder,NaN,NaN
+Vendsyssel,64,26,I. Nikolov,Roskilde vs Vendsyssel,2025-03-09,19,Midfielder,7,2
+Vendsyssel,64,30,K. Kusk,Roskilde vs Vendsyssel,2025-03-09,18,Midfielder,NaN,NaN
+Vendsyssel,64,30,Z. Dalügge,Roskilde vs Vendsyssel,2025-03-09,19,Midfielder,7,4
+Roskilde,90,50,A. Taranis,Roskilde vs Vendsyssel,2025-03-09,18,Forward,NaN,NaN
+Roskilde,90,50,M. Uhd,Roskilde vs Vendsyssel,2025-03-09,19,Forward,9,3
+Vendsyssel,76,39,S. Borgelin,Roskilde vs Vendsyssel,2025-03-09,18,Forward,NaN,NaN
+Vendsyssel,76,39,L. Jensen,Roskilde vs Vendsyssel,2025-03-09,19,Midfielder,6,2
+Vendsyssel,76,54,M. Lassen,Roskilde vs Vendsyssel,2025-03-09,18,Defender,NaN,NaN
+Vendsyssel,76,54,M. Haarup,Roskilde vs Vendsyssel,2025-03-09,19,Midfielder,5,4
