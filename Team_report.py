@@ -397,7 +397,7 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         return np.mean(expanded_scores)
 
     minutter_kamp = 30
-    minutter_total = 300
+    minutter_total = 350
         
     df_possession_xa = df_possession_xa.rename(columns={'318.0': 'xA'})
     df_possession_xa_summed = df_possession_xa.groupby(['playerName','label'])['xA'].sum().reset_index()
@@ -960,8 +960,7 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
 
     def number10():
         df_10 = df_scouting[
-            ((df_scouting['player_position'] == 'Attacking Midfielder') & df_scouting['player_positionSide'].str.contains('Centre')) |
-            ((df_scouting['player_position'] == 'Midfielder') & df_scouting['player_positionSide'].str.contains('Centre'))
+            ((df_scouting['player_position'] == 'Attacking Midfielder') & df_scouting['player_positionSide'].str.contains('Centre'))
         ]
         df_10['minsPlayed'] = df_10['minsPlayed'].astype(int)
         df_10 = df_10[df_10['minsPlayed'] >= minutter_kamp]
@@ -1090,8 +1089,8 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         df_winger['Total score'] = df_winger.apply(
             lambda row: weighted_mean(
                 [row['Passing_'], row['Chance_creation'], row['Goalscoring_'], row['Possession_value']],
-                [3 if row['Passing_'] < 5 else 1, 3 if row['Chance_creation'] < 5 else 1, 
-                3 if row['Goalscoring_'] < 5 else 1, 3 if row['Possession_value'] < 5 else 1]
+                [3 if row['Passing_'] > 5 else 1, 3 if row['Chance_creation'] > 5 else 1, 
+                3 if row['Goalscoring_'] > 5 else 1, 3 if row['Possession_value'] > 5 else 1]
             ), axis=1
         )
 
@@ -1509,7 +1508,7 @@ def create_pdf_progress_report(horsens_df, total_expected_points_combined, posit
         aggregation_dict['minsPlayed'] = 'sum'
         
         filtered_df = filtered_df.groupby('playerName').agg(aggregation_dict).reset_index()
-        filtered_df = filtered_df[filtered_df['minsPlayed'] > 300]
+        filtered_df = filtered_df[filtered_df['minsPlayed'] > 350]
         filtered_df = filtered_df.round(2)
         filtered_df['Total score'] = filtered_df['Total score'].astype(float)        
         reordered_columns = ['playerName', 'minsPlayed'] + numeric_columns
