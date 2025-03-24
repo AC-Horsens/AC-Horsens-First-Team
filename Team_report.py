@@ -396,7 +396,7 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
             expanded_scores.extend([score] * weight)
         return np.mean(expanded_scores)
 
-    minutter_kamp = 30
+    minutter_kamp = 45
     minutter_total = 350
         
     df_possession_xa = df_possession_xa.rename(columns={'318.0': 'xA'})

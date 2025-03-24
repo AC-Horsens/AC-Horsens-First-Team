@@ -113,9 +113,6 @@ def fetch_and_save_possession_data_for_nordic_bet_teams():
 df = fetch_and_save_possession_data_for_nordic_bet_teams()
 
 
-import pandas as pd
-import numpy as np
-
 # Reset index to avoid ambiguity with 'label'
 df = df.reset_index(drop=True)
 

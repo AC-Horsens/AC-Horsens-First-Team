@@ -141,8 +141,6 @@ def load_set_piece_data():
     df_set_piece['label'] = (df_set_piece['label'] + ' ' + df_set_piece['date']).astype(str)
     return df_set_piece
 
-
-
 def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
 
     def calculate_score(df, column, score_column):
@@ -161,7 +159,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
             expanded_scores.extend([score] * weight)
         return np.mean(expanded_scores)
 
-    minutter_kamp = 30
+    minutter_kamp = 45
     minutter_total = 300
         
     df_possession_xa = df_xA.rename(columns={'318.0': 'xA'})
@@ -2874,7 +2872,7 @@ def Opposition_analysis():
         # Generate heatmap based on x and y coordinates
         bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50))  # Adjust bins if needed
         bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
-        pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
+        pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='none')
 
         # Set plot title
         ax.set_title(title)
