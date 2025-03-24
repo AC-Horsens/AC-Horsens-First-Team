@@ -60,7 +60,7 @@ def load_data(team_name):
 
     squads = pd.read_csv(r'DNK_1_Division_2024_2025/squads DNK_1_Division_2024_2025.csv')
         
-    return df_xg, df_xa, df_pv, df_possession_stats, df_xa_agg, df_possession_data, df_xg_agg, df_pv_agg, df_xg_all, df_possession_xa, df_pv_all, df_matchstats, squads
+    return df_xg, df_xA, df_pv, df_possession_stats, df_xa_agg, df_possession_data, df_xg_agg, df_pv_agg, df_xg_all, df_possession_xa, df_pv_all, df_matchstats, squads
 
 def plot_heatmap_location(data, title):
     pitch = Pitch(pitch_type='opta', line_zorder=2, pitch_color='grass', line_color='white')
