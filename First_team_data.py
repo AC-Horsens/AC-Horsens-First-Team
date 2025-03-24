@@ -411,7 +411,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
             lambda row: weighted_mean(
                 [row['Defending_'], row['Passing_'], row['Possession_value_added']],
                 [
-                    5 if row['Defending_'] < 5 else 2,
+                    5 if row['Defending_'] < 5 else 3,
                     2 if row['Passing_'] < 5 else 1,
                     1 if row['Possession_value_added'] < 5 else 1
                 ]
