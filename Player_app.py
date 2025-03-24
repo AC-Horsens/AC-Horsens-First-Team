@@ -60,7 +60,7 @@ def load_data(team_name):
 
     squads = pd.read_csv(r'DNK_1_Division_2024_2025/squads DNK_1_Division_2024_2025.csv')
         
-    return df_xg, df_xA, df_pv, df_possession_stats, df_xa_agg, df_possession_data, df_xg_agg, df_pv_agg, df_xg_all, df_pv_all, df_matchstats, squads
+    return df_xg, df_xA, df_pv, df_possession_stats, df_xa_agg, df_possession_data, df_xg_agg, df_pv_agg, df_xg_all, df_pv_all, df_match_stats, squads
 
 def plot_heatmap_location(data, title):
     pitch = Pitch(pitch_type='opta', line_zorder=2, pitch_color='grass', line_color='white')
@@ -1010,9 +1010,9 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
     }
 
 
-df_xg, df_xA, df_pv, df_possession_stats, df_xa_agg, df_possession_data, df_xg_agg, df_pv_agg, df_xg_all, df_pv_all, df_matchstats, squads = load_data(team_name)
+df_xg, df_xA, df_pv, df_possession_stats, df_xa_agg, df_possession_data, df_xg_agg, df_pv_agg, df_xg_all, df_pv_all, df_match_stats, squads = load_data(team_name)
 
-position_dataframes = Process_data_spillere(df_xA, df_pv_all, df_matchstats, df_xg_all, squads)
+position_dataframes = Process_data_spillere(df_xA, df_pv_all, df_match_stats, df_xg_all, squads)
 
 #defending_central_defender_df = position_dataframes['defending_central_defender']
 #ball_playing_central_defender_df = position_dataframes['ball_playing_central_defender']
@@ -1028,7 +1028,7 @@ classic_striker_df = position_dataframes['Classic striker']
 #targetman_df = position_dataframes['Targetman']
 #box_striker_df = position_dataframes['Boxstriker']    
     
-def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fullbacks_df,number8_df,number6_df,number10_df,winger_df,classic_striker_df):
+def player_data(df_possession_data,df_match_stats,balanced_central_defender_df,fullbacks_df,number8_df,number6_df,number10_df,winger_df,classic_striker_df):
     horsens = df_possession_data.copy()
     horsens = df_possession_data[df_possession_data['team_name'].str.contains(team_name)]
     horsens = horsens.sort_values(by='playerName')
@@ -1040,7 +1040,7 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
     kampe = df['label'].unique()
     kampvalg = st.multiselect('Choose matches', kampe, kampe[0:3])
     df = df[df['label'].isin(kampvalg)]
-    df_matchstats_player = df_matchstats[(df_matchstats['player_matchName'] == player_name) & (df_matchstats['label'].isin(kampvalg))]
+    df_matchstats_player = df_match_stats[(df_match_stats['player_matchName'] == player_name) & (df_match_stats['label'].isin(kampvalg))]
     df_matchstats_player['date'] = pd.to_datetime(df_matchstats_player['date'])
     df_matchstats_player = df_matchstats_player.sort_values(by='date')
     balanced_central_defender_df = balanced_central_defender_df[(balanced_central_defender_df['label'].isin(kampvalg)) & (balanced_central_defender_df['playerName'] == player_name)]
@@ -1162,4 +1162,4 @@ def player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fu
         plot_heatmap_end_location(Pasninger_spillet_til, f'Passes {player_name}')
 
     st.dataframe(Alle_off_aktioner)
-player_data(df_possession_data,df_matchstats,balanced_central_defender_df,fullbacks_df,number8_df,number6_df,number10_df,winger_df,classic_striker_df)
+player_data(df_possession_data,df_match_stats,balanced_central_defender_df,fullbacks_df,number8_df,number6_df,number10_df,winger_df,classic_striker_df)
