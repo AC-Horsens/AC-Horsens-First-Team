@@ -1353,8 +1353,6 @@ def process_data():
     expected_points_xa, total_expected_points_xa = calculate_expected_points(df_xa, '318.0')
     expected_points_xa_top_6, total_expected_points_xa_top_6 = calculate_expected_points_top_6(df_xa, '318.0')
 
-
-
     df_holdsummary = create_holdsummary(df_possession_stats_summary, df_xg, df_xa, df_matchstats,df_ppda, possession_events)
     # Merge the expected points from both xG and xA simulations
     merged_df = expected_points_xg.merge(expected_points_xa, on=['label','date', 'team_name'], suffixes=('_xg', '_xa'))
@@ -1383,7 +1381,7 @@ def process_data():
         filtered_df.groupby('team_name')['label']
         .count()
         .reset_index()
-        .rename(columns={'label': 'top_6_match_count'})
+        .rename(columns={'label': 'Top 6 match count'})
     )
     horsens_df = merged_df[merged_df['team_name'] == 'Horsens']
 
@@ -1399,8 +1397,7 @@ def process_data():
     total_expected_points_combined_top_6 = total_expected_points_combined_top_6[['team_name', 'Total expected points']]
     total_expected_points_combined_top_6 = total_expected_points_combined_top_6[total_expected_points_combined_top_6['Total expected points'] > 0]
     total_expected_points_combined_top_6 = label_counts_per_team_top_6.merge(total_expected_points_combined_top_6)
-    total_expected_points_combined_top_6 ['Expected points per game'] = total_expected_points_combined_top_6['Total expected points'] / total_expected_points_combined_top_6['label']
-    total_expected_points_combined_top_6 = total_expected_points_combined_top_6.rename(columns={'label': 'matches'})
+    total_expected_points_combined_top_6 ['Expected points per game'] = total_expected_points_combined_top_6['Total expected points'] / total_expected_points_combined_top_6['Top 6 match count']
 
     return horsens_df, merged_df, total_expected_points_combined,total_expected_points_combined_top_6
 
@@ -1532,17 +1529,17 @@ def create_pdf_game_report(game_data, df_xg_agg, df_xa_agg, merged_df, df_posses
     pdf.output(f"Match reports/Match_Report_{label}.pdf")
     print(f'{label} report created')
 # Generate a PDF report for each game involving Horsens
-#for index, row in horsens_df.iterrows():
+for index, row in horsens_df.iterrows():
     # Define the file path based on the label
-#    label = row['label']  # Adjust this to the correct column name for your label
-#    file_path = f"Match reports/Match_Report_{label}.pdf"
+    label = row['label']  # Adjust this to the correct column name for your label
+    file_path = f"Match reports/Match_Report_{label}.pdf"
     
     # Check if the file already exists
-#    if not os.path.exists(file_path):
-        # If it doesn't exist, create the PDF
-#        create_pdf_game_report(row, df_xg_agg, df_xa_agg, merged_df, df_possession_stats, position_dataframes)
-#    else:
-#        print(f"Skipping creation for {label}, PDF already exists.")
+    if not os.path.exists(file_path):
+    # If it doesn't exist, create the PDF
+        create_pdf_game_report(row, df_xg_agg, df_xa_agg, merged_df, df_possession_stats, position_dataframes)
+    else:
+        print(f"Skipping creation for {label}, PDF already exists.")
 
 def create_pdf_progress_report(horsens_df, total_expected_points_combined,total_expected_points_combined_top_6, position_dataframes):
     today = date.today()
