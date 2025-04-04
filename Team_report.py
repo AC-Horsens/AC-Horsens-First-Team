@@ -390,37 +390,23 @@ def create_holdsummary(df_possession_stats_summary, df_xg, df_xa,df_matchstats,d
     df_xa_hold = df_xa.groupby(['team_name','contestantId', 'label'])['318.0'].sum().reset_index()
     df_xa_hold = df_xa_hold.rename(columns={'318.0': 'xA'})
     paentries = df_matchstats.groupby(['contestantId','label'])['penAreaEntries'].sum().reset_index()
-    passes = possession_events[possession_events['typeId'] == 1]
-    scfl_passes_team = passes[passes['outcome'] == 1]
-    scfl_passes_team = scfl_passes_team.groupby(['team_name', 'label']).size().reset_index(name='successful_passes')
-    passes_team = passes.groupby(['team_name', 'label']).size().reset_index(name='total_passes')
-    
-    # Merge successful and total passes
-    passes_team = passes_team.merge(scfl_passes_team, on=['team_name', 'label'], how='left')
-    
-    # Fill NaN values in successful_passes with 0 (in case some teams didn't have successful passes)
-    passes_team['successful_passes'].fillna(0, inplace=True)
-    
-    # Add pass accuracy calculation
-    passes_team['pass_accuracy'] = (passes_team['successful_passes'] / passes_team['total_passes']) * 100
-    
-    # Add percentage of total passes
-    total_passes_per_match = passes_team.groupby('label')['total_passes'].transform('sum')
-    passes_team['percentage_of_total_passes'] = (passes_team['total_passes'] / total_passes_per_match) * 100
-    
-    passes_team = passes_team[['team_name', 'label', 'pass_accuracy', 'percentage_of_total_passes']]
+    duels = possession_events[(possession_events['typeId'] == 44) | (possession_events['typeId'] == 7)]
+    duels_team_percentage = duels.groupby(['team_name', 'label'])['outcome'].mean().reset_index(name='duel_win_percentage')
+    print(duels_team_percentage)
+    # Add percentage of total passes    
+    duels_team_percentage = duels_team_percentage[['team_name', 'label', 'duel_win_percentage']]
     df_holdsummary = df_xa_hold.merge(df_xg_hold)
     df_holdsummary = df_holdsummary.merge(paentries)
     df_holdsummary = df_holdsummary.merge(df_post_shot_xg_hold)
     df_holdsummary = df_holdsummary.merge(df_cleaned_xg_hold)
     df_holdsummary = df_holdsummary.merge(df_possession_stats_summary)
     df_holdsummary = df_holdsummary.merge(df_ppda)
-    df_holdsummary = df_holdsummary.merge(passes_team)
+    df_holdsummary = df_holdsummary.merge(duels_team_percentage)
 
     #df_holdsummary = df_holdsummary.merge(packing_df_hold)
     #df_holdsummary = df_holdsummary.merge(space_control_df)
     
-    df_holdsummary = df_holdsummary[['team_name', 'label', 'xA', 'xG','Cleaned xG','Post shot xG', 'terr_poss','penAreaEntries','PPDA','pass_accuracy','percentage_of_total_passes']]
+    df_holdsummary = df_holdsummary[['team_name', 'label', 'xA', 'xG','Cleaned xG','Post shot xG', 'terr_poss','penAreaEntries','PPDA','duel_win_percentage']]
     
     return df_holdsummary
 
@@ -1327,24 +1313,6 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         'Classic striker': Classic_striker(),
     }
 
-df_xg, df_xa, df_pv, df_possession_stats, df_xa_agg, df_possession_data, df_xg_agg, df_pv_agg, df_xg_all, df_possession_xa, df_pv_all, df_matchstats, squads, possession_events = load_data()
-position_dataframes = Process_data_spillere(df_possession_xa, df_pv, df_matchstats, df_xg_all, squads)
-
-#defending_central_defender_df = position_dataframes['defending_central_defender']
-#ball_playing_central_defender_df = position_dataframes['ball_playing_central_defender']
-balanced_central_defender_df = position_dataframes['Central defender']
-fullbacks_df = position_dataframes['Fullbacks']
-number6_df = position_dataframes['Number 6']
-#number6_double_6_forward_df = position_dataframes['number6_double_6_forward']
-#number6_destroyer_df = position_dataframes['Number 6 (destroyer)']
-number8_df = position_dataframes['Number 8']
-number10_df = position_dataframes['Number 10']
-winger_df = position_dataframes['Winger']
-classic_striker_df = position_dataframes['Classic striker']
-#targetman_df = position_dataframes['Targetman']
-#box_striker_df = position_dataframes['Boxstriker']
-df_xg_agg, df_xa_agg, df_pv_agg, df_possession_stats, df_possession_stats_summary = preprocess_data(df_xg_agg, df_xa_agg, df_pv_agg, df_possession_stats)
-df_ppda = calculate_ppda(df_possession_data)
 def process_data():
     expected_points_xg, total_expected_points_xg = calculate_expected_points(df_xg, '321')
     expected_points_xg_top_6, total_expected_points_xg_top_6 = calculate_expected_points_top_6(df_xg, '321')
@@ -1401,10 +1369,31 @@ def process_data():
 
     return horsens_df, merged_df, total_expected_points_combined,total_expected_points_combined_top_6
 
+
+df_xg, df_xa, df_pv, df_possession_stats, df_xa_agg, df_possession_data, df_xg_agg, df_pv_agg, df_xg_all, df_possession_xa, df_pv_all, df_matchstats, squads, possession_events = load_data()
+df_xg_agg, df_xa_agg, df_pv_agg, df_possession_stats, df_possession_stats_summary = preprocess_data(df_xg_agg, df_xa_agg, df_pv_agg, df_possession_stats)
+df_ppda = calculate_ppda(df_possession_data)
+
 horsens_df, merged_df, total_expected_points_combined,total_expected_points_combined_top_6 = process_data()
 
-print(total_expected_points_combined)
-print(total_expected_points_combined_top_6)
+print(merged_df)
+position_dataframes = Process_data_spillere(df_possession_xa, df_pv, df_matchstats, df_xg_all, squads)
+
+#defending_central_defender_df = position_dataframes['defending_central_defender']
+#ball_playing_central_defender_df = position_dataframes['ball_playing_central_defender']
+balanced_central_defender_df = position_dataframes['Central defender']
+fullbacks_df = position_dataframes['Fullbacks']
+number6_df = position_dataframes['Number 6']
+#number6_double_6_forward_df = position_dataframes['number6_double_6_forward']
+#number6_destroyer_df = position_dataframes['Number 6 (destroyer)']
+number8_df = position_dataframes['Number 8']
+number10_df = position_dataframes['Number 10']
+winger_df = position_dataframes['Winger']
+classic_striker_df = position_dataframes['Classic striker']
+#targetman_df = position_dataframes['Targetman']
+#box_striker_df = position_dataframes['Boxstriker']
+horsens_df, merged_df, total_expected_points_combined,total_expected_points_combined_top_6 = process_data()
+
 
 def create_pdf_game_report(game_data, df_xg_agg, df_xa_agg, merged_df, df_possession_stats, position_dataframes):
     pdf = FPDF()
@@ -1461,8 +1450,7 @@ def create_pdf_game_report(game_data, df_xg_agg, df_xa_agg, merged_df, df_posses
     pdf.cell(30, 5, 'Territorial possession', 1)
     pdf.cell(25, 5, 'Penalty area entries', 1)
     pdf.cell(10, 5, 'PPDA', 1)
-    pdf.cell(20, 5, 'Possession(%)', 1)
-    pdf.cell(20, 5, 'Pass accuracy (%)', 1)
+    pdf.cell(20, 5, 'Duels (%)', 1)
 
     pdf.ln()
 
@@ -1476,8 +1464,7 @@ def create_pdf_game_report(game_data, df_xg_agg, df_xa_agg, merged_df, df_posses
         pdf.cell(30, 5, f"{row['terr_poss']:.2f}", 1)
         pdf.cell(25, 5, f"{row['penAreaEntries']:.0f}", 1)
         pdf.cell(10, 5, f"{row['PPDA']:.2f}", 1)
-        pdf.cell(20, 5, f"{row['percentage_of_total_passes']:.2f}", 1)
-        pdf.cell(20, 5, f"{row['pass_accuracy']:.2f}", 1)
+        pdf.cell(15, 5, f"{row['Duel win %']:.2f}", 1)
 
         pdf.ln()
         
