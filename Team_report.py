@@ -390,7 +390,7 @@ def create_holdsummary(df_possession_stats_summary, df_xg, df_xa,df_matchstats,d
     df_xa_hold = df_xa.groupby(['team_name','contestantId', 'label'])['318.0'].sum().reset_index()
     df_xa_hold = df_xa_hold.rename(columns={'318.0': 'xA'})
     paentries = df_matchstats.groupby(['contestantId','label'])['penAreaEntries'].sum().reset_index()
-    duels = possession_events[(possession_events['typeId'] == 44) | (possession_events['typeId'] == 7)]
+    duels = possession_events[(possession_events['typeId'] == 44) | (possession_events['typeId'] == 7)| (possession_events['typeId'] == 45)| (possession_events['typeId'] == 3)| (possession_events['typeId'] == 4)]
     duels_team_percentage = duels.groupby(['team_name', 'label'])['outcome'].mean().reset_index(name='duel_win_percentage')
     print(duels_team_percentage)
     # Add percentage of total passes    
@@ -407,7 +407,7 @@ def create_holdsummary(df_possession_stats_summary, df_xg, df_xa,df_matchstats,d
     #df_holdsummary = df_holdsummary.merge(space_control_df)
     
     df_holdsummary = df_holdsummary[['team_name', 'label', 'xA', 'xG','Cleaned xG','Post shot xG', 'terr_poss','penAreaEntries','PPDA','duel_win_percentage']]
-    
+    print(df_holdsummary)
     return df_holdsummary
 
 def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads):
@@ -677,7 +677,7 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
             lambda row: weighted_mean(
                 [row['Defending_'], row['Passing_'], row['Possession_value_added']],
                 [
-                    5 if row['Defending_'] < 5 else 3,
+                    7 if row['Defending_'] < 5 else 5,
                     2 if row['Passing_'] < 5 else 1,
                     1 if row['Possession_value_added'] < 5 else 1
                 ]
@@ -1121,7 +1121,7 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         df_winger['Total score'] = df_winger.apply(
             lambda row: weighted_mean(
                 [row['Passing_'], row['Chance_creation'], row['Goalscoring_'], row['Possession_value']],
-                [3 if row['Passing_'] > 5 else 1, 5 if row['Chance_creation'] > 5 else 1, 
+                [1 if row['Passing_'] > 5 else 1, 5 if row['Chance_creation'] > 5 else 1, 
                 5 if row['Goalscoring_'] > 5 else 1, 3 if row['Possession_value'] > 5 else 1]
             ), axis=1
         )
@@ -1376,7 +1376,6 @@ df_ppda = calculate_ppda(df_possession_data)
 
 horsens_df, merged_df, total_expected_points_combined,total_expected_points_combined_top_6 = process_data()
 
-print(merged_df)
 position_dataframes = Process_data_spillere(df_possession_xa, df_pv, df_matchstats, df_xg_all, squads)
 
 #defending_central_defender_df = position_dataframes['defending_central_defender']
@@ -1464,7 +1463,7 @@ def create_pdf_game_report(game_data, df_xg_agg, df_xa_agg, merged_df, df_posses
         pdf.cell(30, 5, f"{row['terr_poss']:.2f}", 1)
         pdf.cell(25, 5, f"{row['penAreaEntries']:.0f}", 1)
         pdf.cell(10, 5, f"{row['PPDA']:.2f}", 1)
-        pdf.cell(15, 5, f"{row['Duel win %']:.2f}", 1)
+        pdf.cell(15, 5, f"{row['duel_win_percentage']:.2f}", 1)
 
         pdf.ln()
         
