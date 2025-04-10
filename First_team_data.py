@@ -49,8 +49,9 @@ def load_match_stats():
 
 @st.cache_data
 def load_possession_data():
-    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/Horsens/Horsens_possession_data.csv'
-    df_possession = pd.read_csv(url)
+    #url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/Horsens/Horsens_possession_data.csv'
+    #df_possession = pd.read_csv(url)
+    df_possession = pd.read_csv(r'C:\Users\Seamus-admin\Documents\GitHub\AC-Horsens-First-Team\DNK_1_Division_2024_2025\Horsens\Horsens_possession_data.csv')
     df_possession['label'] = (df_possession['label'] + ' ' + df_possession['date']).astype(str)
     return df_possession
 
@@ -1065,965 +1066,138 @@ def Dashboard():
     df_possession_stats = load_possession_stats()
     df_possession = load_possession_data()
     df_possession['team_name'] = df_possession['team_name'].apply(lambda x: x if x == 'Horsens' else 'Opponent')
-    df_xg['team_name'] = df_xg['team_name'].apply(lambda x: x if x == 'Horsens' else 'Opponent')
-
-    df_matchstats = load_match_stats()
-    df_packing = load_packing_data()
-    df_xA = load_xA()
-    df_spacecontrol = load_spacecontrol_data()
+    df_possession['match_state'] = df_possession['match_state'].apply(
+        lambda x: x if x == 'Horsens' or x == 'draw' else 'Opponent'
+    )
     st.title('AC Horsens First Team Dashboard')
     df_possession['date'] = pd.to_datetime(df_possession['date'])
-    df_possession = df_possession.sort_values(by='date')
-    matches = df_possession['label'].unique()
-    matches = matches[::-1]
-    match_choice = st.multiselect('Choose a match', matches)
-    df_xg = df_xg[df_xg['label'].isin(match_choice)]
-    df_pv = df_pv[df_pv['label'].isin(match_choice)]
-    df_possession_stats = df_possession_stats[df_possession_stats['label'].isin(match_choice)]
-    df_packing = df_packing[df_packing['label'].isin(match_choice)]
-    df_matchstats = df_matchstats[df_matchstats['label'].isin(match_choice)]
+    df_possession_1 = df_possession.copy()
+    df_possession_1 = df_possession_1.sort_values(by='date')
+
+    df_possession = df_possession.sort_values(by='date',ascending=False)
+    match_choice = st.multiselect('Choose Match Labels', df_possession['label'].unique(), default=df_possession['label'].unique())
+
+    st.write('Choose match state')
+    col1,col2,col3 = st.columns(3)
+    with col1:
+        option1 = st.checkbox('Horsens')
+    with col2:
+        option2 = st.checkbox('Draw')
+    with col3:
+        option3 = st.checkbox('Opponent')
+
+    if st.button('Update Data'):
+        # Filter the data based on selected options
+        df_possession = df_possession.copy()  # Make a copy of the original data
+
+        # Case when all three options are selected
+        if option1 and option2 and option3:
+            df_possession = df_possession[df_possession['match_state'].isin(['Horsens', 'draw', 'Opponent'])]
+        # Case when two options are selected
+        elif option1 and option2:
+            df_possession = df_possession[df_possession['match_state'].isin(['Horsens', 'draw'])]
+        elif option1 and option3:
+            df_possession = df_possession[df_possession['match_state'].isin(['Horsens', 'Opponent'])]
+        elif option2 and option3:
+            df_possession = df_possession[df_possession['match_state'].isin(['draw', 'Opponent'])]
+        # Case when only one option is selected
+        elif option1:
+            df_possession = df_possession[df_possession['match_state'] == 'Horsens']
+        elif option2:
+            df_possession = df_possession[df_possession['match_state'] == 'draw']
+        elif option3:
+            df_possession = df_possession[df_possession['match_state'] == 'Opponent']
+
+        # Display the filtered data
     df_possession = df_possession[df_possession['label'].isin(match_choice)]
-    df_xA = df_xA[df_xA['label'].isin(match_choice)]
-    df_spacecontrol = df_spacecontrol[df_spacecontrol['label'].isin(match_choice)]
-    df_spacecontrol = df_spacecontrol[df_spacecontrol['Type'] == 'Player']
-    df_spacecontrol = df_spacecontrol[['Team','TotalControlArea','CenterControlArea','PenaltyAreaControl','label']]
-    df_spacecontrol[['TotalControlArea', 'CenterControlArea', 'PenaltyAreaControl']] = df_spacecontrol[['TotalControlArea', 'CenterControlArea', 'PenaltyAreaControl']].astype(float).round(2)
-    df_spacecontrol['Team'] = df_spacecontrol['Team'].apply(lambda x: x if x == 'Horsens' else 'Opponent')
+
+    Pass_per_possession = df_possession[df_possession['typeId'] == 1].groupby(['possessionId', 'label', 'team_name']).size().reset_index(name='Passes per possession')
+    Pass_per_possession = Pass_per_possession.drop(columns=['possessionId','label'])
+    Pass_per_possession = Pass_per_possession.groupby(['team_name']).mean().reset_index()
+    xg_per_match = df_possession[df_possession['321.0'] > 0]
+    xg_per_match = xg_per_match[['team_name','label','321.0']]
+    xg_per_match = xg_per_match.groupby(['team_name','label']).sum().reset_index()
+    xg_per_match = xg_per_match.drop(columns=['label'])
+    xg_per_match = xg_per_match.groupby('team_name').mean().reset_index()
+    team_summary = xg_per_match.merge(Pass_per_possession)
+    st.dataframe(team_summary,hide_index=True)
+    df_opponent = df_possession[
+        (df_possession['team_name'] == 'Opponent') & 
+        (df_possession['x'] > 75) & 
+        (df_possession['typeId'].isin([1, 2, 3, 13, 14, 15, 16]))
+    ]
+    # Count the number of actions (rows) where the x_axis condition is met
+    actions_count = len(df_opponent)
+
+    # Filter again for rows where column '321.0' is greater than 0.15
+    df_opponent_321 = df_opponent[
+        ((df_opponent['321.0'] > 0.15) | (df_opponent['318.0'] > 0.15)| (df_opponent['322.0'] > 0.15)) |
+        ((df_opponent['x'] > 83) & (df_opponent['y'] > 21.1) & (df_opponent['y'] < 78.9))
+    ]
+    df_opponent['weight'] = (
+        (df_opponent['321.0'] > 0.15).astype(int) * 1 +
+        (df_opponent['318.0'] > 0.15).astype(int) * 1 +
+        (df_opponent['322.0'] > 0.15).astype(int) * 1 +
+        ((df_opponent['x'] > 83) & (df_opponent['y'].between(21.1, 78.9))).astype(int) * 0.5
+    )
     
-    df_spacecontrol = df_spacecontrol.groupby(['Team', 'label']).sum().reset_index()    
-    df_spacecontrol['TotalControlArea_match'] = df_spacecontrol.groupby('label')['TotalControlArea'].transform('sum')
-    df_spacecontrol['CenterControlArea_match'] = df_spacecontrol.groupby('label')['CenterControlArea'].transform('sum')
-    df_spacecontrol['PenaltyAreaControl_match'] = df_spacecontrol.groupby('label')['PenaltyAreaControl'].transform('sum')
-
-    df_spacecontrol['Total Control Area %'] = df_spacecontrol['TotalControlArea'] / df_spacecontrol['TotalControlArea_match'] * 100
-    df_spacecontrol['Center Control Area %'] = df_spacecontrol['CenterControlArea'] / df_spacecontrol['CenterControlArea_match'] * 100
-    df_spacecontrol['Penalty Area Control %'] = df_spacecontrol['PenaltyAreaControl'] / df_spacecontrol['PenaltyAreaControl_match'] * 100
-    df_spacecontrol = df_spacecontrol[['Team', 'label', 'Total Control Area %', 'Center Control Area %', 'Penalty Area Control %']]
-    df_spacecontrol = df_spacecontrol.rename(columns={'Team': 'team_name'})
-
-
-    df_matchstats['team_name'] = df_matchstats['team_name'].apply(lambda x: x if x == 'Horsens' else 'Opponent')
-    df_passes = df_matchstats[['team_name','label','openPlayPass','successfulOpenPlayPass']]
-
-    df_passes = df_passes.groupby(['team_name','label']).sum().reset_index()
-    df_xA_summary = df_possession.groupby(['team_name','label'])['318.0'].sum().reset_index()
-    df_xA_summary = df_xA_summary.rename(columns={'318.0': 'xA'})
-
-    df_xg_summary = df_xg.groupby(['team_name','label'])['321'].sum().reset_index()
-    df_xg_summary = df_xg_summary.rename(columns={'321': 'xG'})
-    df_packing_summary = df_packing[['team_name','label','bypassed_opponents','bypassed_defenders']]
-    df_packing_summary['team_name'] = df_packing_summary['team_name'].apply(lambda x: x if x == 'Horsens' else 'Opponent')
-
-    df_packing_summary = df_packing_summary.groupby(['team_name','label']).sum().reset_index()
+    weighted_actions_sum = df_opponent['weight'].sum()
     
-    team_summary = df_xg_summary.merge(df_xA_summary, on=['team_name','label'])
-    team_summary = team_summary.merge(df_passes, on=['team_name','label'])
-    team_summary = team_summary.merge(df_packing_summary, on=['team_name', 'label'],how='outer')
-    team_summary = team_summary.merge(df_spacecontrol, on=['team_name', 'label'],how='outer')
-    team_summary = team_summary.drop(columns='label')
-    team_summary = team_summary.groupby('team_name').mean().reset_index()
-    team_summary = team_summary.round(2)
-    st.dataframe(team_summary.style.format(precision=2), use_container_width=True,hide_index=True)
+    mentality_score = (1 - (weighted_actions_sum / actions_count)) * 100
+    actions_321_count = len(df_opponent_321)
+    st.write(f"Team mentality score {(1-(weighted_actions_sum / actions_count))*100}")
+    mentality_scores = []
 
-    
-    def xg():
-        df_xg = load_xg()
-        xg_all = load_all_xg()
-        xg_all = xg_all[~(xg_all[['9','24', '25', '26']] == True).any(axis=1)]
-        
-        df_xg = df_xg[['playerName', 'label', 'team_name', 'x', 'y', '321', 'periodId', 'timeMin', 'timeSec', '9', '24', '25', '26']]
-        df_xg = df_xg[df_xg['label'].isin(match_choice)]
-        df_xg = df_xg[~(df_xg[['9','24', '25', '26']] == True).any(axis=1)]
+    # Find all unique match labels in the *full* df_possession (not filtered)
+    all_labels = df_possession_1['label'].unique()
 
-        xg_period = df_xg[['team_name','321','label']]
-        xg_period = xg_period.groupby(['team_name', 'label']).sum().reset_index()
-        xg_period['xG_match'] = xg_period.groupby('label')['321'].transform('sum')
-        xg_period['xG difference period'] = xg_period['321'] - xg_period['xG_match'] + xg_period['321']
-        xg_period = xg_period.groupby('team_name').sum().reset_index()
-        xg_period = xg_period[['team_name', 'xG difference period']]
-        xg_period = xg_period.sort_values(by=['xG difference period'], ascending=False)
-        xg_period = xg_period[xg_period['team_name'] == 'Horsens']
-        xg_period['xG difference period'] = xg_period['xG difference period'].round(2)
-        
-        xg_all = xg_all[['team_name','321','label','date']]
-        xg_all = xg_all.groupby(['team_name','label','date']).sum().reset_index()
-        xg_all['xG_match'] = xg_all.groupby('label')['321'].transform('sum')
-        xg_all['xG difference'] = xg_all['321'] - xg_all['xG_match'] + xg_all['321']
-        xg_all = xg_all.sort_values(by=['date'], ascending=True)
-        xg_all_table = xg_all.groupby('team_name').sum().reset_index()
-        xg_all_table = xg_all_table[['team_name', 'xG difference']]
-        xg_all_table = xg_all_table.sort_values(by=['xG difference'], ascending=False)
-        xg_all_table['xG difference'] = xg_all_table['xG difference'].round(2)
-        xg_all_table['xG difference rank'] = xg_all_table['xG difference'].rank(ascending=False)
-        st.header('Whole season')
-        st.dataframe(xg_all_table,hide_index=True)
-
-        xg_all['xG rolling average'] = xg_all.groupby('team_name')['xG difference'].transform(lambda x: x.rolling(window=3, min_periods=1).mean())
-        fig = go.Figure()
-        
-        for team in xg_all['team_name'].unique():
-            team_data = xg_all[xg_all['team_name'] == team]
-            line_size = 5 if team == 'Horsens' else 1  # Larger line for Horsens
-            fig.add_trace(go.Scatter(
-                x=team_data['date'], 
-                y=team_data['xG rolling average'], 
-                mode='lines',
-                name=team,
-                line=dict(width=line_size)
-            ))
-        
-        fig.update_layout(
-            title='3-Game Rolling Average of xG Difference Over Time',
-            xaxis_title='Date',
-            yaxis_title='3-Game Rolling Average xG Difference',
-            template='plotly_white'
-        )
-        
-        st.plotly_chart(fig)
-
-        df_xg['team_name'] = df_xg['team_name'].apply(lambda x: x if x == 'Horsens' else 'Opponent')
-        df_xg = df_xg.sort_values(by=['team_name','timeMin'])
-
-        df_xg['cumulative_xG'] = df_xg.groupby(['team_name'])['321'].cumsum()
-
-        fig = go.Figure()
-        
-        for team in df_xg['team_name'].unique():
-            team_data = df_xg[df_xg['team_name'] == team]
-            fig.add_trace(go.Scatter(
-                x=team_data['timeMin'], 
-                y=team_data['cumulative_xG'], 
-                mode='lines',
-                name=team,
-            ))
-        
-        fig.update_layout(
-            title='Average Cumulative xG Over Time',
-            xaxis_title='Time (Minutes)',
-            yaxis_title='Average Cumulative xG',
-            template='plotly_white'
-        )
-        st.header('Chosen matches')
-        st.dataframe(xg_period, hide_index=True)        
-        st.plotly_chart(fig)
-    
-        df_xg_plot = df_xg[['playerName','team_name','x','y', '321']]
-        df_xg_plot = df_xg_plot[df_xg_plot['team_name'] == 'Horsens']
-        pitch = Pitch(pitch_type='opta',half=True,line_color='white', pitch_color='grass')
-        fig, ax = pitch.draw(figsize=(10, 6))
-        
-        sc = ax.scatter(df_xg_plot['x'], df_xg_plot['y'], s=df_xg_plot['321'] * 100, c='red', edgecolors='black', alpha=0.6)
-        
-        for i, row in df_xg_plot.iterrows():
-            ax.text(row['x'], row['y'], f"{row['playerName']}\n{row['321']:.2f}", fontsize=6, ha='center', va='center')
-        
-        st.pyplot(fig)
-        df_xg_plot = df_xg_plot[['playerName','321']]
-        df_xg_plot = df_xg_plot.groupby('playerName')['321'].sum().reset_index()
-        df_xg_plot = df_xg_plot.sort_values('321',ascending=False)
-        st.dataframe(df_xg_plot,hide_index=True)
-
-    def passes():
-        df_matchstats = load_match_stats()
-        df_matchstats = df_matchstats[['contestantId','date', 'label', 'successfulOpenPlayPass', 'openPlayPass']]
-        df_matchstats['date'] = pd.to_datetime(df_matchstats['date'])
-        df_possession = load_possession_data()
-        df_xA = load_xA()
-        xA_map = df_xA[['contestantId', 'team_name']].drop_duplicates()
-        df_matchstats = df_matchstats.merge(xA_map, on='contestantId')
-        df_matchstats = df_matchstats[['label','date', 'team_name', 'successfulOpenPlayPass', 'openPlayPass']]
-        df_matchstats_tabel = df_matchstats[['team_name', 'successfulOpenPlayPass', 'openPlayPass']]
-        df_matchstats_tabel = df_matchstats_tabel.groupby('team_name').sum().reset_index()
-        df_matchstats_tabel = df_matchstats_tabel.sort_values(by='openPlayPass', ascending=False)
-        df_matchstats = df_matchstats.groupby(['label','date', 'team_name']).sum().reset_index()
-        df_matchstats = df_matchstats.sort_values(by='date')
-        st.header('Whole season')
-        st.dataframe(df_matchstats_tabel, hide_index=True)
-        # Beregn 3-kamps rullende gennemsnit for hver team
-        
-        df_matchstats['rolling_openPlayPass'] = df_matchstats.groupby('team_name')['openPlayPass'].transform(lambda x: x.rolling(3, min_periods=1).mean())
-        df_matchstats['rolling_successfulOpenPlayPass'] = df_matchstats.groupby('team_name')['successfulOpenPlayPass'].transform(lambda x: x.rolling(3, min_periods=1).mean())
-
-        fig1 = go.Figure()
-
-        for team in df_matchstats['team_name'].unique():
-            team_data = df_matchstats[df_matchstats['team_name'] == team]
-            line_size = 5 if team == 'Horsens' else 1  # Larger line for Horsens
-            fig1.add_trace(go.Scatter(
-                x=team_data['date'],
-                y=team_data['rolling_openPlayPass'],
-                mode='lines',
-                name=team,
-                line=dict(width=line_size)
-            ))
-
-        fig1.update_layout(
-            title='3-Game Rolling Average of Open Play Passes',
-            xaxis_title='Date',
-            yaxis_title='3-Game Rolling Average Open Play Passes',
-            template='plotly_white'
-        )
-
-        # Plot for successfulOpenPlayPass med rullende gennemsnit
-        fig2 = go.Figure()
-
-        for team in df_matchstats['team_name'].unique():
-            team_data = df_matchstats[df_matchstats['team_name'] == team]
-            line_size = 5 if team == 'Horsens' else 1  # Larger line for Horsens
-            fig2.add_trace(go.Scatter(
-                x=team_data['date'],
-                y=team_data['rolling_successfulOpenPlayPass'],
-                mode='lines',
-                name=team,
-                line=dict(width=line_size)
-            ))
-
-        fig2.update_layout(
-            title='3-Game Rolling Average of Successful Open Play Passes',
-            xaxis_title='Date',
-            yaxis_title='3-Game Rolling Average Successful Open Play Passes',
-            template='plotly_white'
-        )
-
-        # Vis plots i Streamlit
-        st.plotly_chart(fig1)
-        st.plotly_chart(fig2)
-
-        df_possession = df_possession[~(df_possession[['6.0','107.0']] == True).any(axis=1)]
-        df_possession = df_possession[df_possession['label'].isin(match_choice)]
-        df_passes_horsens = df_possession[df_possession['team_name'] == 'Horsens']
-        
-        df_passes_horsens = df_passes_horsens.sort_values(by='eventId').reset_index(drop=True)
-        df_passes_horsens['pass_receiver'] = None
-    
-        for i in range(len(df_passes_horsens) - 1):
-            current_event = df_passes_horsens.loc[i]
-            if current_event['typeId'] == 1 and current_event['outcome'] == 1:
-                next_event_id = current_event['eventId'] + 1
-                next_event = df_passes_horsens[(df_passes_horsens['eventId'] == next_event_id) & (df_passes_horsens['team_name'] == current_event['team_name'])]
-
-                if not next_event.empty:
-                    pass_receiver = next_event.iloc[0]['playerName']
-                    df_passes_horsens.at[i, 'pass_receiver'] = pass_receiver
-        df_passes_horsens = df_passes_horsens[(df_passes_horsens['typeId'] == 1) & (df_passes_horsens['outcome'] == 1)]
-
-        mid_third_pass_ends = df_passes_horsens[
-            (df_passes_horsens['140.0'].astype(float) >= 33.3) & 
-            (df_passes_horsens['140.0'].astype(float) <= 66.3) & 
-            (df_passes_horsens['141.0'].astype(float) >= 21.1) & 
-            (df_passes_horsens['141.0'].astype(float) <= 78.9) & 
-            ((df_passes_horsens['y'].astype(float) <= 21.1) | 
-            (df_passes_horsens['y'].astype(float) >= 78.9))
+    # Loop through all matches
+    for label in all_labels:
+        df_match = df_possession_1[df_possession_1['label'] == label]
+        df_opponent = df_match[
+            (df_match['team_name'] == 'Opponent') & 
+            (df_match['x'] > 75) & 
+            (df_match['typeId'].isin([1, 2, 3, 13, 14, 15, 16]))
         ]
-        mid_third_pass_ends = mid_third_pass_ends[['typeId','team_name','playerName','pass_receiver','eventId', '140.0', '141.0','x', 'y','label','date','outcome']]
+        actions_count = len(df_opponent)
         
-        # Tæl forekomster af kombinationer af team_name og label
-        team_counts = mid_third_pass_ends.groupby(['team_name','label']).size().reset_index(name='count')
-        team_counts.columns = ['team_name', 'label', 'count']
-        team_counts = team_counts.sort_values(by=['count'], ascending=False)
-
-        # Tæl forekomster af hver playerName
-        player_counts = mid_third_pass_ends['playerName'].value_counts().reset_index(name='Passed')
-        player_counts.columns = ['playerName', 'Passed']
-        pass_receiver_counts = mid_third_pass_ends['pass_receiver'].value_counts().reset_index(name='Received')
-        pass_receiver_counts.columns = ['pass_receiver', 'Received']
-        pass_receiver_counts.rename(columns={'pass_receiver': 'playerName'}, inplace=True)
-        player_counts = player_counts.merge(pass_receiver_counts, on='playerName', how='outer')
-        player_counts = player_counts.fillna(0)
-        player_counts['Total'] = player_counts['Passed'] + player_counts['Received']
-        player_counts = player_counts.sort_values(by=['Total'], ascending=False)
-        st.header('Chosen matches')
-        st.write('Passes from side to halfspace/centerspace')
-        st.dataframe(player_counts,hide_index=True)
-        st.dataframe(team_counts,hide_index=True)
-        option2 = st.selectbox(
-            'Select the position',
-            ('Start', 'End')
-        )
-
-        # Initialize the pitch
-        pitch = Pitch(pitch_type='opta',line_zorder=2, pitch_color='grass', line_color='white')
-        fig, ax = pitch.draw()
-
-        # Extract coordinates based on user selection
-        if option2 == 'Start':
-            x_coords = mid_third_pass_ends['x']
-            y_coords = mid_third_pass_ends['y']
-        else:
-            x_coords = mid_third_pass_ends['140.0']
-            y_coords = mid_third_pass_ends['141.0']
-
-        # Plot the heatmap
-        fig.set_facecolor('#22312b')
-        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50)) # Adjust bins as needed
-        bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
-        pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='#22312b')
-
-        pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
-
-        # Display the plot in Streamlit
-        st.pyplot(fig)
-
-        
-        st.write('Passes from center to side/halfspace on last third')
-        final_third_pass_ends = df_passes_horsens[
-            (
-                (df_passes_horsens['140.0'].astype(float) >= 66.3) & 
-                (
-                    (df_passes_horsens['141.0'].astype(float) <= 21.1) | 
-                    (df_passes_horsens['141.0'].astype(float) >= 78.9)
-                )
-            ) & 
-            (
-                ((df_passes_horsens['140.0'].astype(float) >= 66.3) & 
-                (df_passes_horsens['y'].astype(float) >= 36.8) & 
-                (df_passes_horsens['y'].astype(float) <= 63.2))
+        if actions_count > 0:
+            # Calculate weighted sum
+            df_opponent['weight'] = (
+                (df_opponent['321.0'] > 0.15).astype(int) * 1 +
+                (df_opponent['318.0'] > 0.15).astype(int) * 1 +
+                (df_opponent['322.0'] > 0.15).astype(int) * 1 +
+                ((df_opponent['x'] > 83) & (df_opponent['y'].between(21.1, 78.9))).astype(int) * 0.5
             )
-        ]
-        final_third_pass_ends = final_third_pass_ends[['typeId','team_name','playerName','pass_receiver','eventId', '140.0', '141.0','x', 'y','label','date','outcome']]
-        
-        # Tæl forekomster af kombinationer af team_name og label
-        team_counts = final_third_pass_ends.groupby(['team_name','label']).size().reset_index(name='count')
-        team_counts.columns = ['team_name', 'label', 'count']
-        team_counts = team_counts.sort_values(by=['count'], ascending=False)
-
-        # Tæl forekomster af hver playerName
-        player_counts = final_third_pass_ends['playerName'].value_counts().reset_index(name='Passed')
-        player_counts.columns = ['playerName', 'Passed']
-        pass_receiver_counts = final_third_pass_ends['pass_receiver'].value_counts().reset_index(name='Received')
-        pass_receiver_counts.columns = ['pass_receiver', 'Received']
-        pass_receiver_counts.rename(columns={'pass_receiver': 'playerName'}, inplace=True)
-        player_counts = player_counts.merge(pass_receiver_counts, on='playerName', how='outer')
-        player_counts = player_counts.fillna(0)
-        player_counts['Total'] = player_counts['Passed'] + player_counts['Received']
-        player_counts = player_counts.sort_values(by=['Total'], ascending=False)
-        st.dataframe(player_counts,hide_index=True)
-        st.dataframe(team_counts,hide_index=True)
-        pitch = Pitch(pitch_type='opta', pitch_color='grass', line_color='white')
-        fig, ax = pitch.draw()
-
-        # Plotting the arrows
-        for index, row in final_third_pass_ends.iterrows():
-            pitch.arrows(row['x'], row['y'], row['140.0'], row['141.0'], ax=ax, width=2, headwidth=3, color='black')
-
-        st.pyplot(fig)
-
-    def packing():
-        df_packing = load_packing_data()
-        df_packing['pass_receiver'] = df_packing['pass_receiver'].astype(str)
-        df_packing = df_packing[df_packing['pass_receiver'] != '']
-        df_packing = df_packing[df_packing['pass_receiver'] != None]
-        df_packing = df_packing[df_packing['bypassed_opponents'] < 11]
-
-        packing_teams = df_packing.groupby(['team_name','label'])[['bypassed_opponents','bypassed_defenders']].sum().reset_index()
-        packing_teams = packing_teams[['team_name','bypassed_opponents','bypassed_defenders']]
-        packing_teams = packing_teams.groupby('team_name').mean().reset_index()
-        packing_teams = packing_teams.round(2)
-        packing_teams = packing_teams.sort_values(by='bypassed_opponents', ascending=False)
-        st.header('Whole season')
-        st.dataframe(packing_teams, hide_index=True)
-        df_packing_time = df_packing.groupby(['label','date', 'team_name'])['bypassed_opponents'].sum().reset_index()
-        df_packing_time = df_packing_time.sort_values(by='date')
-        df_packing_time['packing_match'] = df_packing_time.groupby('label')['bypassed_opponents'].transform('sum')
-        df_packing_time['packing_diff'] = df_packing_time['bypassed_opponents'] - df_packing_time['packing_match'] + df_packing_time['bypassed_opponents']
-        # Beregn 3-kamps rullende gennemsnit for hver team
-        df_packing_time['rolling_packing'] = df_packing_time.groupby('team_name')['packing_diff'].transform(lambda x: x.rolling(3, min_periods=1).mean())
-        
-        fig1 = go.Figure()
-
-        for team in df_packing_time['team_name'].unique():
-            team_data = df_packing_time[df_packing_time['team_name'] == team]
-            line_size = 5 if team == 'Horsens' else 1  # Større linje for Horsens
-            fig1.add_trace(go.Scatter(
-                x=team_data['date'],
-                y=team_data['rolling_packing'],
-                mode='lines',
-                name=team,
-                line=dict(width=line_size)
-            ))
-
-        fig1.update_layout(
-            title='3-Game Rolling Average of packing difference',
-            xaxis_title='Date',
-            yaxis_title='3-Game Rolling Average of packing difference',
-            template='plotly_white'
-        )
-        st.plotly_chart(fig1)
-        
-        df_packing_period = df_packing[df_packing['label'].isin(match_choice)]
-        df_packing_period = df_packing_period[['label', 'team_name', 'bypassed_opponents', 'bypassed_defenders']]
-        df_packing_period = df_packing_period.groupby(['label', 'team_name'])[['bypassed_opponents','bypassed_defenders']].sum().reset_index()
-        df_packing_period = df_packing_period.sort_values(by='bypassed_opponents', ascending=False)
-        df_packing_period['packing_match'] = df_packing_period.groupby('label')['bypassed_opponents'].transform('sum')
-        df_packing_period['packing_diff'] = df_packing_period['bypassed_opponents'] - df_packing_period['packing_match'] + df_packing_period['bypassed_opponents']
-        df_packing_period = df_packing_period[df_packing_period['team_name'] == 'Horsens']
-        df_packing_period = df_packing_period[['label','bypassed_opponents', 'packing_diff']]
-        
-        st.header('Chosen matches')
-        st.dataframe(df_packing_period, hide_index=True)
-        
-        df_packing_pass_received_player = df_packing[df_packing['label'].isin(match_choice)]
-        df_packing_pass_received_player = df_packing_pass_received_player[df_packing_pass_received_player['team_name'] == 'Horsens']
-        df_packing_pass_received_player = df_packing_pass_received_player[['pass_receiver', 'bypassed_opponents']]
-        df_packing_pass_received_player = df_packing_pass_received_player.groupby(['pass_receiver'])['bypassed_opponents'].sum().reset_index()
-        df_packing_pass_received_player = df_packing_pass_received_player.sort_values(by='bypassed_opponents', ascending=False)
-        df_packing_pass_received_player.rename(columns={'pass_receiver': 'playerName', 'bypassed_opponents': 'bypassed_opponents_received'}, inplace=True)
-        
-        df_packing_period_player = df_packing[df_packing['label'].isin(match_choice)]
-        df_packing_period_player = df_packing_period_player[df_packing_period_player['team_name'] == 'Horsens']
-        df_packing_period_player = df_packing_period_player[['playerName', 'bypassed_opponents', 'bypassed_defenders']]
-        df_packing_period_player = df_packing_period_player.groupby(['playerName'])[['bypassed_opponents','bypassed_defenders']].sum().reset_index()
-        df_packing_period_player = df_packing_period_player.sort_values(by='bypassed_opponents', ascending=False)
-        df_packing_period_player = df_packing_period_player.merge(df_packing_pass_received_player, on='playerName', how='left')
-        df_packing_period_player.rename(columns={'bypassed_opponents': 'packing', 'bypassed_defenders': 'packing_defenders', 'bypassed_opponents_received': 'packing_received'}, inplace=True)
-        df_packing_period_player = df_packing_period_player.fillna(0)
-    
-        st.dataframe(df_packing_period_player, hide_index=True)
-        
-        df_packing_first_third = df_packing[df_packing['label'].isin(match_choice)]
-        df_packing_first_third = df_packing_first_third[df_packing_first_third['x'] <= 33.3]
-        df_packing_first_third = df_packing_first_third[df_packing_first_third['team_name'] == 'Horsens']   
-        df_packing_first_third = df_packing_first_third[df_packing_first_third['bypassed_opponents'] > 0]
-        df_packing_first_third = df_packing_first_third[['closest_opponent_distance']]
-        fig_histogram = px.histogram(df_packing_first_third, x='closest_opponent_distance', nbins=30, title='Histogram of Closest Opponent Distance')
-        st.plotly_chart(fig_histogram)
-
-    def chance_creation():
-        df_matchstats = load_match_stats()
-        df_matchstats = df_match_stats[['contestantId','player_matchName','date', 'label', 'touchesInOppBox']]
-        df_matchstats['date'] = pd.to_datetime(df_matchstats['date'])
-        df_xA = load_xA()
-        df_crosses = load_crosses()
-        xA_map = df_xA[['contestantId', 'team_name']].drop_duplicates()
-        df_matchstats = df_matchstats.merge(xA_map, on='contestantId')
-        
-        df_possession = load_possession_data()
-        df_possession = df_possession[~(df_possession[['6.0','107.0']] == True).any(axis=1)]
-        df_possession = df_possession[df_possession['label'].isin(match_choice)]
-        df_possession = df_possession[df_possession['team_name'] == 'Horsens']
-
-        df_possession = df_possession.sort_values(by='eventId').reset_index(drop=True)        
-        df_possession['pass_receiver'] = None
-        for i in range(len(df_possession) - 1):
-            current_event = df_possession.loc[i]
-            if current_event['typeId'] == 1 and current_event['outcome'] == 1:
-                next_event_id = current_event['eventId'] + 1
-                next_event = df_possession[(df_possession['eventId'] == next_event_id) & (df_possession['team_name'] == current_event['team_name'])]
-
-                if not next_event.empty:
-                    pass_receiver = next_event.iloc[0]['playerName']
-                    df_possession.at[i, 'pass_receiver'] = pass_receiver
-
-        df_passes = df_possession[df_possession['team_name'] == 'Horsens']
-        df_passes = df_passes[df_passes['label'].isin(match_choice)]
-        
-
-        df_forward_passes = df_passes[df_passes['typeId'] == 1]
-        df_passes = df_passes[(df_passes['typeId'] == 1) & (df_passes['outcome'] == 1)]
-        assistzone_pass_ends = df_passes[
-            (df_passes['140.0'].astype(float) >= 83) &
-            (df_passes['141.0'].astype(float) >= 21.1) & 
-            (df_passes['141.0'].astype(float) <= 36.8)|
-            (df_passes['140.0'].astype(float) >= 83) &
-            (df_passes['141.0'].astype(float) >= 63.2) &
-            (df_passes['141.0'].astype(float) <= 78.9)
-        ]
-
-        team_counts = assistzone_pass_ends.groupby(['team_name','label']).size().reset_index(name='count')
-        team_counts.columns = ['team_name', 'label', 'count']
-        team_counts = team_counts.sort_values(by=['count'], ascending=False)
-
-        # Tæl forekomster af hver playerName
-        player_counts = assistzone_pass_ends['playerName'].value_counts().reset_index(name='Passed')
-        player_counts.columns = ['playerName', 'Passed']
-        pass_receiver_counts = assistzone_pass_ends['pass_receiver'].value_counts().reset_index(name='Received')
-        pass_receiver_counts.columns = ['pass_receiver', 'Received']
-        pass_receiver_counts.rename(columns={'pass_receiver': 'playerName'}, inplace=True)
-        player_counts = player_counts.merge(pass_receiver_counts, on='playerName', how='outer')
-        player_counts.fillna(0, inplace=True)
-        player_counts['Total'] = player_counts['Passed'] + player_counts['Received']
-        player_counts = player_counts.sort_values(by=['Total'], ascending=False)
-        
-        st.header('Passes into halfspace in the box')
-        st.dataframe(player_counts,hide_index=True)
-        st.dataframe(team_counts,hide_index=True)
-
-        
-        option = st.selectbox(
-            'Select the position to display',
-            ('Start', 'End')
-        )
-
-        # Initialize the pitch
-        pitch = Pitch(pitch_type='opta',line_zorder=2, pitch_color='grass', line_color='white')
-        fig, ax = pitch.draw()
-
-        # Extract coordinates based on user selection
-        if option == 'Start':
-            x_coords = assistzone_pass_ends['x']
-            y_coords = assistzone_pass_ends['y']
+            
+            weighted_actions_sum = df_opponent['weight'].sum()
+            
+            mentality_score = (1 - (weighted_actions_sum / actions_count)) * 100
         else:
-            x_coords = assistzone_pass_ends['140.0']
-            y_coords = assistzone_pass_ends['141.0']
+            mentality_score = None
 
-        # Plot the heatmap
-        fig.set_facecolor('#22312b')
-        bin_statistic = pitch.bin_statistic(x_coords, y_coords, statistic='count', bins=(50, 50)) # Adjust bins as needed
-        bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
-        pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='#22312b')
+        mentality_scores.append({'Match': label, 'Team Mentality Score': mentality_score})
 
-        pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='black')
+    # Convert list to dataframe
+    mentality_df = pd.DataFrame(mentality_scores)
 
-        # Display the plot in Streamlit
-        st.pyplot(fig)
+    # Show the mentality scores
+    st.dataframe(mentality_df, hide_index=True)
 
-        st.header('Touches in zone 14')
-        df_zone14 = df_possession[(df_possession['x'].astype(float) >= 66) & ((df_possession['y'].astype(float) >= 21.1) & (df_possession['y'].astype(float) <= 78.9))]
-        
-        df_zone14_team = df_zone14.groupby(['team_name', 'label']).size().reset_index(name='Touches')
-        df_zone14_team = df_zone14_team.sort_values(by=['Touches'], ascending=False)
-        df_zone14_player = df_zone14.groupby(['playerName']).size().reset_index(name='Touches')
-        df_zone14_player = df_zone14_player.sort_values(by=['Touches'], ascending=False)
-        st.dataframe(df_zone14_team,hide_index=True)
-        st.dataframe(df_zone14_player, hide_index=True)
-        
-        st.header('Touches in box')
-        st.write('Whole season')
-        touches_in_box_player = df_matchstats[df_matchstats['team_name'] == 'Horsens']
+    fig = px.line(
+        mentality_df,
+        x='Match', 
+        y='Team Mentality Score',
+        title='Team Mentality Score per Match',
+    )
 
-        touches_in_box_player = touches_in_box_player[touches_in_box_player['label'].isin(match_choice)]
-        touches_in_box_player = touches_in_box_player.groupby(['player_matchName'])['touchesInOppBox'].sum().reset_index()
-        touches_in_box_player = touches_in_box_player.sort_values(by=['touchesInOppBox'], ascending=False)
-        touches_in_box_team = df_matchstats.groupby(['team_name','date', 'label'])['touchesInOppBox'].sum().reset_index()
-        touches_in_box_team['tib_match'] = touches_in_box_team.groupby('label')['touchesInOppBox'].transform('sum')
-        touches_in_box_team['touches_in_box_diff'] = touches_in_box_team['touchesInOppBox'] - touches_in_box_team['tib_match'] + touches_in_box_team['touchesInOppBox']
-        touches_in_box_team = touches_in_box_team.sort_values(by=['date'], ascending=True)
-        touches_in_box_team['rolling_touches_in_box'] = touches_in_box_team.groupby('team_name')['touches_in_box_diff'].transform(lambda x: x.rolling(3, min_periods=1).mean())
-        touches_in_box_team_period = touches_in_box_team[touches_in_box_team['label'].isin(match_choice)]
-        touches_in_box_team_period = touches_in_box_team_period[touches_in_box_team_period['team_name'] == 'Horsens']
-        touches_in_box_team_period = touches_in_box_team_period[['team_name','label', 'touches_in_box_diff']]
-        touches_in_box_team_period = touches_in_box_team_period.sort_values(by=['touches_in_box_diff'], ascending=False)
-        fig1 = go.Figure()
+    fig.update_layout(
+        xaxis_tickangle=-45,
+        yaxis_range=[50, 100],  # Set y-axis limits
+    )
 
-        for team in touches_in_box_team['team_name'].unique():
-            team_data = touches_in_box_team[touches_in_box_team['team_name'] == team]
-            line_size = 5 if team == 'Horsens' else 1  # Larger line for Horsens
-            fig1.add_trace(go.Scatter(
-                x=team_data['date'],
-                y=team_data['rolling_touches_in_box'],
-                mode='lines',
-                name=team,
-                line=dict(width=line_size)
-            ))
+    st.plotly_chart(fig, use_container_width=True)
 
-        fig1.update_layout(
-            title='3-Game Rolling Average of touches in box difference',
-            xaxis_title='Date',
-            yaxis_title='3-Game Rolling Average of touches in box difference',
-            template='plotly_white'
-        )
-
-        st.plotly_chart(fig1)
-        st.write('Chosen matches')
-        st.dataframe(touches_in_box_team_period, hide_index=True)
-        st.dataframe(touches_in_box_player, hide_index=True)      
-
-    def crosses():
-        df_crosses = load_crosses()
-        df_crosses = df_crosses[df_crosses['label'].isin(match_choice)]
-        df_crosses['qualifier'] = df_crosses['qualifier'].apply(ast.literal_eval)
-
-        # List of qualifierIds to filter out
-        filter_qualifier_ids = [5, 6, 24, 25, 26, 107]
-
-        # Function to check if any dictionary in the list has a qualifierId in the filter list
-        def filter_qualifiers(qualifier_list):
-            return not any(d['qualifierId'] in filter_qualifier_ids for d in qualifier_list)
-
-        # Filter the DataFrame
-        df_crosses = df_crosses[df_crosses['qualifier'].apply(filter_qualifiers)]
-        def early_crosses(df_crosses):
-            st.header('Early crosses')
-            df_early_crosses = df_crosses[(df_crosses['x'].astype(float) <= 88.5) &(df_crosses['x'].astype(float) >= 70.0) & ((df_crosses['y'].astype(float) >= 78.9) | (df_crosses['y'].astype(float) <= 21.1))]
-            pitch = Pitch(pitch_type='opta', half=True,pitch_color='grass')  # Create a half-pitch plot
-            fig, ax = pitch.draw(figsize=(10, 8))
-
-            # Plot arrows from x,y to pass_end_x,pass_end_y
-            for _, row in df_early_crosses.iterrows():
-                pitch.arrows(row['x'], row['y'], row['pass_end_x'], row['pass_end_y'],
-                            color='blue', ax=ax, width=2, headwidth=5, headlength=5, headaxislength=4.5)
-
-            # Add labels for players (optional)
-            for _, row in df_early_crosses.iterrows():
-                ax.text(row['x'], row['y'], row['playerName'], fontsize=12, color='black')
-
-            # Display the plot in Streamlit
-            st.pyplot(fig)
-
-            def parse_players(players):
-                try:
-                    return ast.literal_eval(players) if isinstance(players, str) else players
-                except (ValueError, SyntaxError):
-                    return []  # Return an empty list if parsing fails
-
-            def count_teammates_near_goal(teammates, distance_threshold=20):
-                count = 0
-                player_names_near_goal = []
-                
-                for teammate in teammates:
-                    distance_to_opponents_goal = teammate.get('distance_to_opponents_goal', None)
-                    if distance_to_opponents_goal is not None:
-                        if distance_to_opponents_goal <= distance_threshold:
-                            count += 1
-                            player_names_near_goal.append(teammate['name'])
-                
-                return count, player_names_near_goal
-
-            # Initialize the new column with default values (e.g., 0)
-            df_early_crosses['#players in box'] = 0
-            df_early_crosses['players in box'] = ''
-
-            # Loop through the DataFrame
-            for idx, row in df_early_crosses.iterrows():
-                player_name = row['playerName']
-                start_homePlayers = parse_players(row['start_homePlayers'])
-                start_awayPlayers = parse_players(row['start_awayPlayers'])
-                end_homePlayers = parse_players(row['end_homePlayers'])
-                end_awayPlayers = parse_players(row['end_awayPlayers'])
-                
-                # Ensure teammates is always a list
-                teammates = []
-
-                # Determine if the player is in homePlayers or awayPlayers
-                if isinstance(end_homePlayers, list) and player_name in [player['name'] for player in end_homePlayers]:
-                    teammates = end_homePlayers
-                elif isinstance(start_homePlayers, list) and player_name in [player['name'] for player in start_homePlayers]:
-                    teammates = start_homePlayers
-                elif isinstance(end_awayPlayers, list) and player_name in [player['name'] for player in end_awayPlayers]:
-                    teammates = end_awayPlayers
-                elif isinstance(start_awayPlayers, list) and player_name in [player['name'] for player in start_awayPlayers]:
-                    teammates = start_awayPlayers
-
-                if isinstance(teammates, list):
-                    # Count teammates near opponents' goal and get their names
-                    num_teammates_near_goal, player_names_near_goal = count_teammates_near_goal(teammates)
-                    df_early_crosses.at[idx, '#players in box'] = num_teammates_near_goal
-                    df_early_crosses.at[idx, 'players in box'] = ', '.join(player_names_near_goal)
-
-            fig_histogram = px.histogram(df_early_crosses, x='#players in box', nbins=30, title='#Players in box')
-            st.plotly_chart(fig_histogram)        
-            def count_players_in_box(player_lists):
-                # Flatten the list of strings into a single list of player names
-                all_players = [player.strip() for sublist in player_lists for player in sublist.split(",")]
-                
-                # Count the occurrences of each player's name
-                player_counts = Counter(all_players)
-                
-                return player_counts
-
-            player_lists = df_early_crosses['players in box'].tolist()
-            player_counts = count_players_in_box(player_lists)
-            st.write("Player Counts in the Box:")
-            df_player_counts = pd.DataFrame(player_counts.items(), columns=['Player', 'Times in Box'])
-            df_player_counts = df_player_counts.sort_values(by=['Times in Box'], ascending=False)
-            df_player_counts = df_player_counts[df_player_counts['Player'] != '']
-            st.dataframe(df_player_counts, hide_index=True)
-        early_crosses(df_crosses)
-        
-        def late_crosses(df_crosses):
-            st.header('Late crosses')
-            df_early_crosses = df_crosses[(df_crosses['x'].astype(float) > 88.5) & ((df_crosses['y'].astype(float) >= 78.9) | (df_crosses['y'].astype(float) <= 21.1))]
-            
-            pitch = Pitch(pitch_type='opta', half=True,pitch_color='grass')  # Create a half-pitch plot
-            fig, ax = pitch.draw(figsize=(10, 8))
-
-            # Plot arrows from x,y to pass_end_x,pass_end_y
-            for _, row in df_early_crosses.iterrows():
-                pitch.arrows(row['x'], row['y'], row['pass_end_x'], row['pass_end_y'],
-                            color='blue', ax=ax, width=2, headwidth=5, headlength=5, headaxislength=4.5)
-
-            # Add labels for players (optional)
-            for _, row in df_early_crosses.iterrows():
-                ax.text(row['x'], row['y'], row['playerName'], fontsize=12, color='black')
-
-
-            # Display the plot in Streamlit
-            st.pyplot(fig)
-
-            def parse_players(players):
-                try:
-                    return ast.literal_eval(players) if isinstance(players, str) else players
-                except (ValueError, SyntaxError):
-                    return []  # Return an empty list if parsing fails
-
-            def count_teammates_near_goal(teammates, distance_threshold=20):
-                count = 0
-                player_names_near_goal = []
-                
-                for teammate in teammates:
-                    distance_to_opponents_goal = teammate.get('distance_to_opponents_goal', None)
-                    if distance_to_opponents_goal is not None:
-                        if distance_to_opponents_goal <= distance_threshold:
-                            count += 1
-                            player_names_near_goal.append(teammate['name'])
-                
-                return count, player_names_near_goal
-
-            # Initialize the new column with default values (e.g., 0)
-            df_early_crosses['#players in box'] = 0
-            df_early_crosses['players in box'] = ''
-
-            # Loop through the DataFrame
-            for idx, row in df_early_crosses.iterrows():
-                player_name = row['playerName']
-                start_homePlayers = parse_players(row['start_homePlayers'])
-                start_awayPlayers = parse_players(row['start_awayPlayers'])
-                end_homePlayers = parse_players(row['end_homePlayers'])
-                end_awayPlayers = parse_players(row['end_awayPlayers'])
-                
-                # Ensure teammates is always a list
-                teammates = []
-
-                # Determine if the player is in homePlayers or awayPlayers
-                if isinstance(end_homePlayers, list) and player_name in [player['name'] for player in end_homePlayers]:
-                    teammates = end_homePlayers
-                elif isinstance(start_homePlayers, list) and player_name in [player['name'] for player in start_homePlayers]:
-                    teammates = start_homePlayers
-                elif isinstance(end_awayPlayers, list) and player_name in [player['name'] for player in end_awayPlayers]:
-                    teammates = end_awayPlayers
-                elif isinstance(start_awayPlayers, list) and player_name in [player['name'] for player in start_awayPlayers]:
-                    teammates = start_awayPlayers
-
-                if isinstance(teammates, list):
-                    # Count teammates near opponents' goal and get their names
-                    num_teammates_near_goal, player_names_near_goal = count_teammates_near_goal(teammates)
-                    df_early_crosses.at[idx, '#players in box'] = num_teammates_near_goal
-                    df_early_crosses.at[idx, 'players in box'] = ', '.join(player_names_near_goal)
-
-            fig_histogram = px.histogram(df_early_crosses, x='#players in box', nbins=30, title='#Players in box')
-            st.plotly_chart(fig_histogram)        
-            def count_players_in_box(player_lists):
-                # Flatten the list of strings into a single list of player names
-                all_players = [player.strip() for sublist in player_lists for player in sublist.split(",")]
-                
-                # Count the occurrences of each player's name
-                player_counts = Counter(all_players)
-                
-                return player_counts
-
-            player_lists = df_early_crosses['players in box'].tolist()
-            player_counts = count_players_in_box(player_lists)
-            st.write("Player Counts in the Box:")
-            df_player_counts = pd.DataFrame(player_counts.items(), columns=['Player', 'Times in Box'])
-            df_player_counts = df_player_counts.sort_values(by=['Times in Box'], ascending=False)
-            df_player_counts = df_player_counts[df_player_counts['Player'] != '']
-            st.dataframe(df_player_counts, hide_index=True)
-        late_crosses(df_crosses)
-        
-        def cutback(df_crosses):
-            st.header('Cutbacks')
-            df_early_crosses = df_crosses[
-                (df_crosses['x'].astype(float) > 83.0) & 
-                (
-                    ((df_crosses['y'].astype(float) <= 78.9) & (df_crosses['y'].astype(float) >= 63.2)) | 
-                    ((df_crosses['y'].astype(float) >= 21.1) & (df_crosses['y'].astype(float) <= 36.8))
-                )
-            ]
-            
-            pitch = Pitch(pitch_type='opta', half=True,pitch_color='grass')  # Create a half-pitch plot
-            fig, ax = pitch.draw(figsize=(10, 8))
-
-            # Plot arrows from x,y to pass_end_x,pass_end_y
-            for _, row in df_early_crosses.iterrows():
-                pitch.arrows(row['x'], row['y'], row['pass_end_x'], row['pass_end_y'],
-                            color='blue', ax=ax, width=2, headwidth=5, headlength=5, headaxislength=4.5)
-
-            # Add labels for players (optional)
-            for _, row in df_early_crosses.iterrows():
-                ax.text(row['x'], row['y'], row['playerName'], fontsize=12, color='black')
-
-            plt.title('Cutbacks', fontsize=20)
-
-            # Display the plot in Streamlit
-            st.pyplot(fig)
-
-            def parse_players(players):
-                try:
-                    return ast.literal_eval(players) if isinstance(players, str) else players
-                except (ValueError, SyntaxError):
-                    return []  # Return an empty list if parsing fails
-
-            def count_teammates_near_goal(teammates, distance_threshold=20):
-                count = 0
-                player_names_near_goal = []
-                
-                for teammate in teammates:
-                    distance_to_opponents_goal = teammate.get('distance_to_opponents_goal', None)
-                    if distance_to_opponents_goal is not None:
-                        if distance_to_opponents_goal <= distance_threshold:
-                            count += 1
-                            player_names_near_goal.append(teammate['name'])
-                
-                return count, player_names_near_goal
-
-            # Initialize the new column with default values (e.g., 0)
-            df_early_crosses['#players in box'] = 0
-            df_early_crosses['players in box'] = ''
-
-            # Loop through the DataFrame
-            for idx, row in df_early_crosses.iterrows():
-                player_name = row['playerName']
-                start_homePlayers = parse_players(row['start_homePlayers'])
-                start_awayPlayers = parse_players(row['start_awayPlayers'])
-                end_homePlayers = parse_players(row['end_homePlayers'])
-                end_awayPlayers = parse_players(row['end_awayPlayers'])
-                
-                # Ensure teammates is always a list
-                teammates = []
-
-                # Determine if the player is in homePlayers or awayPlayers
-                if isinstance(end_homePlayers, list) and player_name in [player['name'] for player in end_homePlayers]:
-                    teammates = end_homePlayers
-                elif isinstance(start_homePlayers, list) and player_name in [player['name'] for player in start_homePlayers]:
-                    teammates = start_homePlayers
-                elif isinstance(end_awayPlayers, list) and player_name in [player['name'] for player in end_awayPlayers]:
-                    teammates = end_awayPlayers
-                elif isinstance(start_awayPlayers, list) and player_name in [player['name'] for player in start_awayPlayers]:
-                    teammates = start_awayPlayers
-
-                if isinstance(teammates, list):
-                    # Count teammates near opponents' goal and get their names
-                    num_teammates_near_goal, player_names_near_goal = count_teammates_near_goal(teammates)
-                    df_early_crosses.at[idx, '#players in box'] = num_teammates_near_goal
-                    df_early_crosses.at[idx, 'players in box'] = ', '.join(player_names_near_goal)
-
-            fig_histogram = px.histogram(df_early_crosses, x='#players in box', nbins=30, title='#Players in box')
-            st.plotly_chart(fig_histogram)        
-            def count_players_in_box(player_lists):
-                # Flatten the list of strings into a single list of player names
-                all_players = [player.strip() for sublist in player_lists for player in sublist.split(",")]
-                
-                # Count the occurrences of each player's name
-                player_counts = Counter(all_players)
-                
-                return player_counts
-
-            player_lists = df_early_crosses['players in box'].tolist()
-            player_counts = count_players_in_box(player_lists)
-            st.write("Player Counts in the Box:")
-            df_player_counts = pd.DataFrame(player_counts.items(), columns=['Player', 'Times in Box'])
-            df_player_counts = df_player_counts.sort_values(by=['Times in Box'], ascending=False)
-            df_player_counts = df_player_counts[df_player_counts['Player'] != '']
-            st.dataframe(df_player_counts, hide_index=True)
-        cutback(df_crosses)
-
-    def pressing():
-        df_possession_data = load_possession_data()
-        def calculate_ppda(df_possession_data):
-            df_ppda = df_possession_data[df_possession_data['typeId'].isin([1, 4, 7,8, 45])]
-            df_ppdabeyond40 = df_ppda[df_ppda['x'].astype(float) > 40]
-            df_ppdabeyond40_passes = df_ppdabeyond40[df_ppdabeyond40['typeId'] == 1]
-            df_ppdabeyond40_passestotal = df_ppdabeyond40_passes.groupby(['label','date'])['eventId'].count().reset_index()
-            df_ppdabeyond40_passestotal = df_ppdabeyond40_passestotal.rename(columns={'eventId': 'passes in game'})
-            df_ppdabeyond40_passesteams = df_ppdabeyond40_passes.groupby(['label','team_name','date'])['eventId'].count().reset_index()
-            df_ppdabeyond40_passesteams = df_ppdabeyond40_passesteams.rename(columns={'eventId': 'passes'})
-
-            df_ppdabeyond40_defactions = df_ppdabeyond40[df_ppdabeyond40['typeId'].isin([4, 7, 8, 45])]
-            df_ppdabeyond40_defactionstotal = df_ppdabeyond40_defactions.groupby(['label','date'])['eventId'].count().reset_index()
-            df_ppdabeyond40_defactionstotal = df_ppdabeyond40_defactionstotal.rename(columns={'eventId': 'defensive actions in game'})
-            df_ppdabeyond40_defactionsteams = df_ppdabeyond40_defactions.groupby(['label', 'team_name','date'])['eventId'].count().reset_index()
-            df_ppdabeyond40_defactionsteams = df_ppdabeyond40_defactionsteams.rename(columns={'eventId': 'defensive actions'})
-            df_ppdabeyond40total = df_ppdabeyond40_defactionstotal.merge(df_ppdabeyond40_passestotal)
-            df_ppdabeyond40 = df_ppdabeyond40_defactionsteams.merge(df_ppdabeyond40total)
-            df_ppdabeyond40 = df_ppdabeyond40.merge(df_ppdabeyond40_passesteams)
-            df_ppdabeyond40['opponents passes'] = df_ppdabeyond40['passes in game'] - df_ppdabeyond40['passes']
-            df_ppdabeyond40['PPDA'] = df_ppdabeyond40['opponents passes'] / df_ppdabeyond40['defensive actions']
-            df_ppda = df_ppdabeyond40[['label', 'team_name','date', 'PPDA']]
-            df_ppda = df_ppda.sort_values(by=['date'], ascending=True)
-            return df_ppda
-        
-        df_ppda = calculate_ppda(df_possession_data)
-        df_ppda = df_ppda[df_ppda['team_name'] == 'Horsens']
-        df_ppda_season_average = df_ppda.groupby(['team_name'])['PPDA'].mean().reset_index()
-        average_ppda = df_ppda_season_average['PPDA'][0]
-        df_ppda_sorted = df_ppda.sort_values(by=['date', 'label'], ascending=[True, True])
-        df_counterpressing = counterpressing()
-        df_counterpressing = df_counterpressing.sort_values(by=['date'], ascending=True)
-
-        def add_avg_line(fig, avg):
-            fig.add_shape(
-                type="line",
-                x0=-0.5, x1=len(fig.data[0].x)-0.5,
-                y0=avg, y1=avg,
-                line=dict(color="Red", dash="dash")
-            )
-            fig.add_annotation(
-                x=len(fig.data[0].x)-0.5,
-                y=avg,
-                text=f"Avg PPDA: {avg:.2f}",
-                showarrow=False,
-                yshift=10
-        )
-            
-        st.header('Whole season')
-        fig = go.Figure()
-
-        fig.add_trace(go.Bar(
-            x=df_counterpressing['label'],
-            y=df_counterpressing['counterpressing_5s'],
-            name='Counterpressing 5s'
-        ))
-
-        fig.add_trace(go.Bar(
-            x=df_counterpressing['label'],
-            y=df_counterpressing['counterpressing_10s'],
-            name='Counterpressing 10s',
-            base=df_counterpressing['counterpressing_5s']
-        ))
-
-        fig.update_layout(
-            barmode='stack',
-            title='Counterpressing Events',
-            legend_title='Event Type'
-        )
-
-        st.plotly_chart(fig)
-
-        
-        fig_whole_season = px.bar(df_ppda_sorted, x='label', y='PPDA', title='PPDA for Horsens - Whole Season')
-        add_avg_line(fig_whole_season, average_ppda)
-        st.plotly_chart(fig_whole_season)
-
-        st.header('Chosen matches')
-        df_counterpressing = df_counterpressing[df_counterpressing['label'].isin(match_choice)]
-        fig = go.Figure()
-
-        fig.add_trace(go.Bar(
-            x=df_counterpressing['label'],
-            y=df_counterpressing['counterpressing_5s'],
-            name='Counterpressing 5s'
-        ))
-
-        fig.add_trace(go.Bar(
-            x=df_counterpressing['label'],
-            y=df_counterpressing['counterpressing_10s'],
-            name='Counterpressing 10s',
-            base=df_counterpressing['counterpressing_5s']
-        ))
-
-        fig.update_layout(
-            barmode='stack',
-            title='Counterpressing Events',
-            xaxis_title='Match',
-            yaxis_title='Number of Events',
-            legend_title='Event Type'
-        )
-
-        st.plotly_chart(fig)
-        df_ppda_chosen_period = df_ppda_sorted[df_ppda_sorted['label'].isin(match_choice)]
-        fig_chosen_matches = px.bar(df_ppda_chosen_period, x='label', y='PPDA', title='PPDA for Horsens - Chosen Matches')
-        add_avg_line(fig_chosen_matches, average_ppda)
-        st.plotly_chart(fig_chosen_matches)
 
     def set_pieces():
         df_set_pieces = load_set_piece_data()
@@ -2108,12 +1282,6 @@ def Dashboard():
         st.dataframe(Corners_matches)
 
     Data_types = {
-        'xG': xg,
-        'Passing':passes,
-        'Packing': packing,
-        'Chance Creation': chance_creation,
-        'Pressing': pressing,
-        'Crosses': crosses,
         'Set pieces': set_pieces
     }
 
@@ -3122,10 +2290,10 @@ Data_types = {
 }
 
 
-st.cache_data(experimental_allow_widgets=True)
-st.cache_resource(experimental_allow_widgets=True)
+st.cache_data()
+st.cache_resource()
 selected_data = st.sidebar.radio('Choose data type',list(Data_types.keys()))
 
-st.cache_data(experimental_allow_widgets=True)
-st.cache_resource(experimental_allow_widgets=True)
+st.cache_data()
+st.cache_resource()
 Data_types[selected_data]()
