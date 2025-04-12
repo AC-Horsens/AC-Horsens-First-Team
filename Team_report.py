@@ -395,19 +395,18 @@ def create_holdsummary(df_possession_stats_summary, df_xg, df_xa,df_matchstats,d
     print(duels_team_percentage)
     # Add percentage of total passes    
     duels_team_percentage = duels_team_percentage[['team_name', 'label', 'duel_win_percentage']]
-    df_holdsummary = df_xa_hold.merge(df_xg_hold)
-    df_holdsummary = df_holdsummary.merge(paentries)
-    df_holdsummary = df_holdsummary.merge(df_post_shot_xg_hold)
-    df_holdsummary = df_holdsummary.merge(df_cleaned_xg_hold)
-    df_holdsummary = df_holdsummary.merge(df_possession_stats_summary)
-    df_holdsummary = df_holdsummary.merge(df_ppda)
-    df_holdsummary = df_holdsummary.merge(duels_team_percentage)
+    df_holdsummary = df_xa_hold.merge(df_xg_hold, how = 'outer')
+    df_holdsummary = df_holdsummary.merge(paentries,how = 'outer')
+    df_holdsummary = df_holdsummary.merge(df_post_shot_xg_hold,how = 'outer')
+    df_holdsummary = df_holdsummary.merge(df_cleaned_xg_hold,how = 'outer')
+    df_holdsummary = df_holdsummary.merge(df_possession_stats_summary,how = 'outer')
+    df_holdsummary = df_holdsummary.merge(df_ppda,how = 'outer')
+    df_holdsummary = df_holdsummary.merge(duels_team_percentage,how = 'outer')
 
     #df_holdsummary = df_holdsummary.merge(packing_df_hold)
     #df_holdsummary = df_holdsummary.merge(space_control_df)
     
     df_holdsummary = df_holdsummary[['team_name', 'label', 'xA', 'xG','Cleaned xG','Post shot xG', 'terr_poss','penAreaEntries','PPDA','duel_win_percentage']]
-    print(df_holdsummary)
     return df_holdsummary
 
 def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads):
@@ -677,9 +676,9 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
             lambda row: weighted_mean(
                 [row['Defending_'], row['Passing_'], row['Possession_value_added']],
                 [
-                    7 if row['Defending_'] < 5 else 5,
-                    2 if row['Passing_'] < 5 else 1,
-                    1 if row['Possession_value_added'] < 5 else 1
+                    7 if row['Defending_'] < 3 else 5,
+                    2 if row['Passing_'] < 3 else 1,
+                    1 if row['Possession_value_added'] < 3 else 1
                 ]
             ),
             axis=1
@@ -755,7 +754,7 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         df_backs['Total score'] = df_backs.apply(
             lambda row: weighted_mean(
                 [row['Defending_'], row['Passing_'], row['Chance_creation'], row['Possession_value_added']],
-                [3 if row['Defending_'] < 5 else 1, 3 if row['Passing_'] < 5 else 1, 3 if row['Chance_creation'] < 5 else 1, 3 if row['Possession_value_added'] < 5 else 1]
+                [3 if row['Defending_'] < 3 else 1, 3 if row['Passing_'] < 3 else 1, 3 if row['Chance_creation'] < 3 else 1, 3 if row['Possession_value_added'] < 3 else 1]
             ), axis=1
         )
 
