@@ -1086,27 +1086,22 @@ def Dashboard():
     with col3:
         option3 = st.checkbox('Opponent')
 
-    if st.button('Update Data'):
-        # Filter the data based on selected options
-        df_possession = df_possession.copy()  # Make a copy of the original data
-
-        # Case when all three options are selected
-        if option1 and option2 and option3:
-            df_possession = df_possession[df_possession['match_state'].isin(['Horsens', 'draw', 'Opponent'])]
-        # Case when two options are selected
-        elif option1 and option2:
-            df_possession = df_possession[df_possession['match_state'].isin(['Horsens', 'draw'])]
-        elif option1 and option3:
-            df_possession = df_possession[df_possession['match_state'].isin(['Horsens', 'Opponent'])]
-        elif option2 and option3:
-            df_possession = df_possession[df_possession['match_state'].isin(['draw', 'Opponent'])]
-        # Case when only one option is selected
-        elif option1:
-            df_possession = df_possession[df_possession['match_state'] == 'Horsens']
-        elif option2:
-            df_possession = df_possession[df_possession['match_state'] == 'draw']
-        elif option3:
-            df_possession = df_possession[df_possession['match_state'] == 'Opponent']
+    if option1 and option2 and option3:
+        df_possession = df_possession[df_possession['match_state'].isin(['Horsens', 'draw', 'Opponent'])]
+    # Case when two options are selected
+    elif option1 and option2:
+        df_possession = df_possession[df_possession['match_state'].isin(['Horsens', 'draw'])]
+    elif option1 and option3:
+        df_possession = df_possession[df_possession['match_state'].isin(['Horsens', 'Opponent'])]
+    elif option2 and option3:
+        df_possession = df_possession[df_possession['match_state'].isin(['draw', 'Opponent'])]
+    # Case when only one option is selected
+    elif option1:
+        df_possession = df_possession[df_possession['match_state'] == 'Horsens']
+    elif option2:
+        df_possession = df_possession[df_possession['match_state'] == 'draw']
+    elif option3:
+        df_possession = df_possession[df_possession['match_state'] == 'Opponent']
 
         # Display the filtered data
     df_possession = df_possession[df_possession['label'].isin(match_choice)]
