@@ -49,9 +49,9 @@ def load_match_stats():
 
 @st.cache_data
 def load_possession_data():
-    #url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/Horsens/Horsens_possession_data.csv'
-    #df_possession = pd.read_csv(url)
-    df_possession = pd.read_csv(r'C:\Users\Seamus-admin\Documents\GitHub\AC-Horsens-First-Team\DNK_1_Division_2024_2025\Horsens\Horsens_possession_data.csv')
+    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/Horsens/Horsens_possession_data.csv'
+    df_possession = pd.read_csv(url)
+    #df_possession = pd.read_csv(r'C:\Users\Seamus-admin\Documents\GitHub\AC-Horsens-First-Team\DNK_1_Division_2024_2025\Horsens\Horsens_possession_data.csv')
     df_possession['label'] = (df_possession['label'] + ' ' + df_possession['date']).astype(str)
     return df_possession
 
