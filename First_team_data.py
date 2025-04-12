@@ -1103,7 +1103,6 @@ def Dashboard():
     elif option3:
         df_possession = df_possession[df_possession['match_state'] == 'Opponent']
 
-        # Display the filtered data
     df_possession = df_possession[df_possession['label'].isin(match_choice)]
 
     Pass_per_possession = df_possession[df_possession['typeId'] == 1].groupby(['possessionId', 'label', 'team_name']).size().reset_index(name='Passes per possession')
