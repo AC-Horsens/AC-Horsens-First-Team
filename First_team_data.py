@@ -1118,7 +1118,7 @@ def Dashboard():
     total_xg_per_match = total_xg_per_match.rename(columns={'321.0': 'total_match_xG'})
 
     # Merge team xG with total match xG (on 'label')
-    xg_per_match = xg_per_match.merge(total_xg_per_match, on='label',how='outer')
+    xg_per_match = xg_per_match.merge(total_xg_per_match, on='label',how='left')
     xg_per_match = xg_per_match.fillna(0)
     xg_per_match['xG_diff'] = 2 * xg_per_match['321.0'] - xg_per_match['total_match_xG']
     xg_per_match['xG against'] = xg_per_match['total_match_xG'] - xg_per_match['321.0']
