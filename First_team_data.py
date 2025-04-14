@@ -1086,22 +1086,6 @@ def Dashboard():
     with col3:
         option3 = st.checkbox('Opponent')
 
-    if option1 and option2 and option3:
-        df_possession = df_possession[df_possession['match_state'].isin(['Horsens', 'draw', 'Opponent'])]
-    # Case when two options are selected
-    elif option1 and option2:
-        df_possession = df_possession[df_possession['match_state'].isin(['Horsens', 'draw'])]
-    elif option1 and option3:
-        df_possession = df_possession[df_possession['match_state'].isin(['Horsens', 'Opponent'])]
-    elif option2 and option3:
-        df_possession = df_possession[df_possession['match_state'].isin(['draw', 'Opponent'])]
-    # Case when only one option is selected
-    elif option1:
-        df_possession = df_possession[df_possession['match_state'] == 'Horsens']
-    elif option2:
-        df_possession = df_possession[df_possession['match_state'] == 'draw']
-    elif option3:
-        df_possession = df_possession[df_possession['match_state'] == 'Opponent']
 
     df_possession = df_possession[df_possession['label'].isin(match_choice)]
     df_possession = df_possession.sort_values(by=['date','timeMin', 'timeSec'])  # Sort the events by time
@@ -1160,12 +1144,46 @@ def Dashboard():
 
     # Optional: remove duplicates if needed
     game_state_df = game_state_df.drop_duplicates()
-
+    if option1 and option2 and option3:
+        game_state_df = game_state_df[game_state_df['match_state'].isin(['Horsens', 'draw', 'Opponent'])]
+    # Case when two options are selected
+    elif option1 and option2:
+        game_state_df= game_state_df[game_state_df['match_state'].isin(['Horsens', 'draw'])]
+    elif option1 and option3:
+        game_state_df = game_state_df[game_state_df['match_state'].isin(['Horsens', 'Opponent'])]
+    elif option2 and option3:
+        game_state_df = game_state_df[game_state_df['match_state'].isin(['draw', 'Opponent'])]
+    # Case when only one option is selected
+    elif option1:
+        game_state_df = game_state_df[game_state_df['match_state'] == 'Horsens']
+    elif option2:
+        game_state_df = game_state_df[game_state_df['match_state'] == 'draw']
+    elif option3:
+        game_state_df = game_state_df[game_state_df['match_state'] == 'Opponent']
     # Show
     st.dataframe(game_state_df,hide_index=True)
     game_state_df = game_state_df.groupby('match_state')['duration'].sum().reset_index()
     st.dataframe(game_state_df,hide_index=True)
     # Calculate passes per possession
+
+    if option1 and option2 and option3:
+        df_possession = df_possession[df_possession['match_state'].isin(['Horsens', 'draw', 'Opponent'])]
+    # Case when two options are selected
+    elif option1 and option2:
+        df_possession = df_possession[df_possession['match_state'].isin(['Horsens', 'draw'])]
+    elif option1 and option3:
+        df_possession = df_possession[df_possession['match_state'].isin(['Horsens', 'Opponent'])]
+    elif option2 and option3:
+        df_possession = df_possession[df_possession['match_state'].isin(['draw', 'Opponent'])]
+    # Case when only one option is selected
+    elif option1:
+        df_possession = df_possession[df_possession['match_state'] == 'Horsens']
+    elif option2:
+        df_possession = df_possession[df_possession['match_state'] == 'draw']
+    elif option3:
+        df_possession = df_possession[df_possession['match_state'] == 'Opponent']
+
+
     Pass_per_possession = df_possession[df_possession['typeId'] == 1].groupby(['possessionId', 'label', 'team_name']).size().reset_index(name='Passes per possession')
     Pass_per_possession = Pass_per_possession.drop(columns=['possessionId', 'label'])
     Pass_per_possession = Pass_per_possession.groupby('team_name').mean().reset_index()
