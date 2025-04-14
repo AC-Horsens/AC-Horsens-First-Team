@@ -1221,6 +1221,9 @@ def Dashboard():
     # Merge everything together
     team_summary = xg_summary.merge(Pass_per_possession, on='team_name',how='outer')
     team_summary['xG per 90'] = (team_summary['xG']/state_duration)*90
+    team_summary['xG difference per 90'] = (team_summary['xG difference']/state_duration)*90
+    team_summary['xG against per 90'] = (team_summary['xG against']/state_duration)*90
+
     team_summary = team_summary.round(2)
     st.dataframe(team_summary, hide_index=True,use_container_width=True)
     df_opponent = df_possession[
