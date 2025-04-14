@@ -1109,7 +1109,7 @@ def Dashboard():
     Pass_per_possession = df_possession[df_possession['typeId'] == 1].groupby(['possessionId', 'label', 'team_name']).size().reset_index(name='Passes per possession')
     Pass_per_possession = Pass_per_possession.drop(columns=['possessionId', 'label'])
     Pass_per_possession = Pass_per_possession.groupby('team_name').mean().reset_index()
-
+    st.dataframe(df_possession)
     # Calculate xG per match per team
     xg_per_match = df_possession[df_possession['321.0'] > 0]
     xg_per_match = xg_per_match[['team_name', 'label', '321.0']]
