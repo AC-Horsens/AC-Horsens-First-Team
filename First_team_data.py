@@ -1131,7 +1131,7 @@ def Dashboard():
     }).reset_index()
 
     xg_summary = xg_summary.rename(columns={'321.0': 'xG', 'xG_diff': 'xG difference'})
-
+    st.dataframe(xg_summary)
     # Merge everything together
     team_summary = xg_summary.merge(Pass_per_possession, on='team_name',how='outer')
     team_summary = team_summary.round(2)
