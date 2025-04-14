@@ -1146,7 +1146,7 @@ def Dashboard():
             next_match_label = temp_states[i+1][2]
             
             # If the next state is from a different match OR time goes backwards (new match starts)
-            if next_match_label != match_label:
+            if next_match_label != match_label or next_start_time < start_time:
                 end_time = match_end_time
             else:
                 end_time = next_start_time
@@ -1158,7 +1158,7 @@ def Dashboard():
         game_state_durations.append((current_state, start_time, end_time, duration))
 
     # Convert to DataFrame
-    game_state_df = pd.DataFrame(game_state_durations, columns=['match_state', 'start_time', 'end_time', 'duration'])
+    game_state_df = pd.DataFrame(game_state_durations, columns=['label','match_state', 'start_time', 'end_time', 'duration'])
 
     # Drop duplicates if needed
     game_state_df = game_state_df.drop_duplicates(subset=['match_state', 'start_time', 'end_time'])
