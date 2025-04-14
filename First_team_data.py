@@ -1111,7 +1111,6 @@ def Dashboard():
     xg_per_match = df_possession[df_possession['321.0'] > 0]
     xg_per_match = xg_per_match[['team_name','label','321.0']]
     xg_per_match = xg_per_match.groupby(['team_name','label']).sum().reset_index()
-    xg_per_match = xg_per_match.drop(columns=['label'])
     xg_per_match = xg_per_match.groupby('team_name').mean().reset_index()
     total_xg_per_match = xg_per_match.groupby('label')['321.0'].sum().reset_index()
     total_xg_per_match = total_xg_per_match.rename(columns={'321.0': 'total_match_xG'})
