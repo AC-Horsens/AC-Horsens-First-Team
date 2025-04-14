@@ -1116,37 +1116,42 @@ def Dashboard():
     match_label = None
     match_end_time = None
 
-    # Temporary list to store per-row start times
+    # Temporary list to store per-row start times and match labels
     temp_states = []
 
-    # Iterate through each match
+    # Iterate through each row
     for index, row in df_possession.iterrows():
-        # When the match label changes (i.e., a new match), update match_end_time
+        # When the match label changes (new match)
         if match_label != row['label']:
             match_label = row['label']
             match_end_time = df_possession[df_possession['label'] == row['label']]['timeMin'].max()
 
-        # If the state changes (or it's the first row)
         if previous_state != row['match_state']:
             if previous_state is not None:
-                temp_states.append((previous_state, previous_time))
-
+                temp_states.append((previous_state, previous_time, match_label, match_end_time))
+            
             previous_state = row['match_state']
             previous_time = row['timeMin']
 
-    # Append the last state
+    # Add the final state
     if previous_state is not None:
-        temp_states.append((previous_state, previous_time))
+        temp_states.append((previous_state, previous_time, match_label, match_end_time))
 
-    # Now assign end times
+    # Now calculate durations
     for i in range(len(temp_states)):
-        current_state, start_time = temp_states[i]
+        current_state, start_time, match_label, match_end_time = temp_states[i]
         
         if i < len(temp_states) - 1:
-            # End time is the next state's start_time
-            end_time = temp_states[i+1][1]
+            next_start_time = temp_states[i+1][1]
+            next_match_label = temp_states[i+1][2]
+            
+            # If the next state is from a different match OR time goes backwards (new match starts)
+            if next_match_label != match_label or next_start_time < start_time:
+                end_time = match_end_time
+            else:
+                end_time = next_start_time
         else:
-            # Last state: end time is match_end_time
+            # Last row — use match_end_time
             end_time = match_end_time
 
         duration = end_time - start_time
@@ -1155,7 +1160,7 @@ def Dashboard():
     # Convert to DataFrame
     game_state_df = pd.DataFrame(game_state_durations, columns=['match_state', 'start_time', 'end_time', 'duration'])
 
-    # Optional: Clean up duplicate "draw" states (if any)
+    # Drop duplicates if needed
     game_state_df = game_state_df.drop_duplicates(subset=['match_state', 'start_time', 'end_time'])
 
     # Display
