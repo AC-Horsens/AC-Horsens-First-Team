@@ -1123,15 +1123,16 @@ def Dashboard():
             match_label = row['label']
             match_end_time = df_possession[df_possession['label'] == row['label']]['timeMin'].max()
 
-        # If the current state is 'draw' and a state change happens, end 'draw' state
+        # Handle the transition for the "draw" state
         if previous_state == "draw" and row['match_state'] != "draw":
+            # If the previous state is 'draw' and the current state is not, record the 'draw' state
             game_state_durations.append(("draw", previous_time, row['timeMin'], row['timeMin'] - previous_time))
 
         # If the state changes, calculate the previous state duration
         if previous_state != row['match_state']:
             if previous_state is not None:
-                # Adjust the end_time if it's lower than the start_time
-                if previous_time < match_end_time:
+                # If it's still within the match time, set the end_time to match_end_time
+                if previous_state == "draw" and previous_time < match_end_time:
                     game_state_durations.append((previous_state, previous_time, match_end_time, match_end_time - previous_time))
                 else:
                     game_state_durations.append((previous_state, previous_time, previous_time, 0))  # If no duration
@@ -1150,6 +1151,7 @@ def Dashboard():
                 game_state_durations.append((previous_state, previous_time, match_end_time, match_end_time - previous_time))
             else:
                 game_state_durations.append((previous_state, previous_time, previous_time, 0))  # If no duration
+    
     # Convert the list to a DataFrame
     game_state_df = pd.DataFrame(game_state_durations, columns=['match_state', 'start_time', 'end_time', 'duration'])
 
