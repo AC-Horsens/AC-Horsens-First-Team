@@ -1106,29 +1106,47 @@ def Dashboard():
     df_possession = df_possession[df_possession['label'].isin(match_choice)]
     df_possession = df_possession.sort_values(by=['date','timeMin', 'timeSec'])  # Sort the events by time
     df_possession['timeMin'] = df_possession['timeMin'].astype(float)  # Ensure timeMin is a float for calculations
-    df_possession['time_diff'] = df_possession['timeMin'].diff().fillna(0)
+    df_possession['time_diff'] = df_possession['timeMin'].diff().fillna(0)  # Calculate time difference between events
+    
+    # Initialize list to store game state durations across matches
     game_state_durations = []
-
-    # Loop through the data to calculate the durations per state
+    
     previous_state = None
     previous_time = None
+    match_start_time = None
+    match_end_time = None
+    match_label = None
+    
+    # Iterate through each match
     for index, row in df_possession.iterrows():
-        # If the game state changes, store the previous duration and reset the counter
+        # When the match starts, set the match start and end times
+        if match_label != row['label']:
+            # Store previous match's game state duration
+            if previous_state is not None:
+                game_state_durations.append((previous_state, match_start_time, match_end_time, match_end_time - match_start_time))
+            
+            # Update to the new match's state
+            match_label = row['label']
+            match_start_time = row['timeMin']
+            match_end_time = df_possession[df_possession['label'] == row['label']]['timeMin'].max()
+
+        # If the state changes within the match, calculate the previous state duration
         if previous_state != row['match_state']:
             if previous_state is not None:
-                # Store the duration for the previous state
-                game_state_durations.append((previous_state, previous_time, row['timeMin'] - previous_time))
-            # Update the previous state and time
+                game_state_durations.append((previous_state, previous_time, row['timeMin'], row['timeMin'] - previous_time))
+
+            # Update the state and start time for the new state
             previous_state = row['match_state']
             previous_time = row['timeMin']
+    
+    # Handle the last game state in the match
+    if previous_state is not None:
+        game_state_durations.append((previous_state, previous_time, match_end_time, match_end_time - previous_time))
 
-    # Add the final state duration (the game ends at the last event)
-    game_state_durations.append((previous_state, previous_time, df_possession['timeMin'].max() - previous_time))
-
-    # Convert to DataFrame
-    game_state_df = pd.DataFrame(game_state_durations, columns=['match_state', 'start_time', 'duration'])
-
-    # Now you have a DataFrame that gives you the time duration for each game state
+    # Convert the list to a DataFrame
+    game_state_df = pd.DataFrame(game_state_durations, columns=['match_state', 'start_time', 'end_time', 'duration'])
+    
+    # Display the state durations for each game state
     st.dataframe(game_state_df)
 
     # Calculate passes per possession
