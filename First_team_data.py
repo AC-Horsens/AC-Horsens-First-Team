@@ -1147,7 +1147,7 @@ def Dashboard():
             game_state_durations.append(("draw", previous_time, match_end_time, match_end_time - previous_time))
         else:
             if previous_time < match_end_time:
-                game_state_durations.append((previous_state, previous_time, match_end_time, match_end_time - previous_time))
+                game_state_durations.append((previous_time, match_end_time, match_end_time - previous_time))
             else:
                 game_state_durations.append((previous_state, previous_time, previous_time, 0))  # If no duration
     st.write(game_state_durations)
