@@ -1164,7 +1164,6 @@ def Dashboard():
     )
 
     # Drop duplicates if needed
-    game_state_df = game_state_df.drop_duplicates(subset=['label', 'match_state', 'start_time', 'end_time'])
 
     # Display
     st.dataframe(game_state_df)
