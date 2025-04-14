@@ -1126,9 +1126,11 @@ def Dashboard():
     xg_diff_per_team = xg_per_match.groupby('team_name')['xG_diff'].mean().reset_index()
 
     # Step 6: Rename column for clarity
-    xg_diff_per_team = xg_diff_per_team.rename(columns={'xG_diff': 'avg_xG_diff'})
+    xg_diff_per_team = xg_diff_per_team.rename(columns={'xG_diff': 'xG difference'})
 
     team_summary = xg_per_match.merge(Pass_per_possession)
+    team_summary = team_summary.rename(columns={'321.0': 'xG'})
+
     team_summary = team_summary.merge(xg_diff_per_team, on='team_name')
     st.dataframe(team_summary,hide_index=True)
     df_opponent = df_possession[
