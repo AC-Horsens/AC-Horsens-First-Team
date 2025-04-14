@@ -1104,7 +1104,7 @@ def Dashboard():
         df_possession = df_possession[df_possession['match_state'] == 'Opponent']
 
     df_possession = df_possession[df_possession['label'].isin(match_choice)]
-    df_possession = df_possession.sort_values(by=['timeMin', 'timeSec'])  # Sort the events by time
+    df_possession = df_possession.sort_values(by=['date','timeMin', 'timeSec'])  # Sort the events by time
     df_possession['timeMin'] = df_possession['timeMin'].astype(float)  # Ensure timeMin is a float for calculations
     df_possession['time_diff'] = df_possession['timeMin'].diff().fillna(0)
     game_state_durations = []
