@@ -1105,35 +1105,38 @@ def Dashboard():
 
     df_possession = df_possession[df_possession['label'].isin(match_choice)]
 
+    # Calculate passes per possession
     Pass_per_possession = df_possession[df_possession['typeId'] == 1].groupby(['possessionId', 'label', 'team_name']).size().reset_index(name='Passes per possession')
-    Pass_per_possession = Pass_per_possession.drop(columns=['possessionId','label'])
-    Pass_per_possession = Pass_per_possession.groupby(['team_name']).mean().reset_index()
-    xg_per_match = df_possession[df_possession['321.0'] > 0]
-    xg_per_match = xg_per_match[['team_name','label','321.0']]
-    xg_per_match = xg_per_match.groupby(['team_name','label']).sum().reset_index()
-    total_xg_per_match = xg_per_match.groupby('label')['321.0'].sum().reset_index()
-    xg_per_match = xg_per_match.merge(total_xg_per_match, on='label')
+    Pass_per_possession = Pass_per_possession.drop(columns=['possessionId', 'label'])
+    Pass_per_possession = Pass_per_possession.groupby('team_name').mean().reset_index()
 
-    xg_per_match = xg_per_match.drop(columns=['label'])
-    xg_per_match = xg_per_match.groupby('team_name').mean().reset_index()
+    # Calculate xG per match per team
+    xg_per_match = df_possession[df_possession['321.0'] > 0]
+    xg_per_match = xg_per_match[['team_name', 'label', '321.0']]
+    xg_per_match = xg_per_match.groupby(['team_name', 'label']).sum().reset_index()
+
+    # Calculate total xG per match
+    total_xg_per_match = xg_per_match.groupby('label')['321.0'].sum().reset_index()
     total_xg_per_match = total_xg_per_match.rename(columns={'321.0': 'total_match_xG'})
 
-    # Step 3: Merge team xG with total match xG
+    # Merge team xG with total match xG (on 'label')
+    xg_per_match = xg_per_match.merge(total_xg_per_match, on='label')
 
-    # Step 4: Calculate xG difference per match for each team
+    # Calculate xG difference per match for each team
     xg_per_match['xG_diff'] = 2 * xg_per_match['321.0'] - xg_per_match['total_match_xG']
 
-    # Step 5: Average xG_diff per team
-    xg_diff_per_team = xg_per_match.groupby('team_name')['xG_diff'].mean().reset_index()
+    # Now average xG and xG_diff per team
+    xg_summary = xg_per_match.groupby('team_name').agg({
+        '321.0': 'mean',
+        'xG_diff': 'mean'
+    }).reset_index()
 
-    # Step 6: Rename column for clarity
-    xg_diff_per_team = xg_diff_per_team.rename(columns={'xG_diff': 'xG difference'})
+    xg_summary = xg_summary.rename(columns={'321.0': 'xG', 'xG_diff': 'xG difference'})
 
-    team_summary = xg_per_match.merge(Pass_per_possession)
-    team_summary = team_summary.rename(columns={'321.0': 'xG'})
+    # Merge everything together
+    team_summary = xg_summary.merge(Pass_per_possession, on='team_name')
 
-    team_summary = team_summary.merge(xg_diff_per_team, on='team_name')
-    st.dataframe(team_summary,hide_index=True)
+    st.dataframe(team_summary, hide_index=True)
     df_opponent = df_possession[
         (df_possession['team_name'] == 'Opponent') & 
         (df_possession['x'] > 75) & 
