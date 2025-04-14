@@ -1114,15 +1114,13 @@ def Dashboard():
     xg_per_match = df_possession[df_possession['321.0'] > 0]
     xg_per_match = xg_per_match[['team_name', 'label', '321.0']]
     xg_per_match = xg_per_match.groupby(['team_name', 'label']).sum().reset_index()
-    st.dataframe(xg_per_match)
     # Calculate total xG per match
     total_xg_per_match = xg_per_match.groupby('label')['321.0'].sum().reset_index()
     total_xg_per_match = total_xg_per_match.rename(columns={'321.0': 'total_match_xG'})
 
     # Merge team xG with total match xG (on 'label')
     xg_per_match = xg_per_match.merge(total_xg_per_match, on='label',how='outer')
-
-    # Calculate xG difference per match for each team
+    st.dataframe(xg_per_match)
     xg_per_match['xG_diff'] = 2 * xg_per_match['321.0'] - xg_per_match['total_match_xG']
     xg_per_match['xG against'] = xg_per_match['total_match_xG'] - xg_per_match['321.0']
     # Now average xG and xG_diff per team
