@@ -1136,7 +1136,7 @@ def Dashboard():
 
     # Merge everything together
     team_summary = xg_summary.merge(Pass_per_possession, on='team_name')
-
+    team_summary = team_summary.round(2)
     st.dataframe(team_summary, hide_index=True,use_container_width=True)
     df_opponent = df_possession[
         (df_possession['team_name'] == 'Opponent') & 
@@ -1161,8 +1161,9 @@ def Dashboard():
     weighted_actions_sum = df_opponent['weight'].sum()
     
     mentality_score = (1 - (weighted_actions_sum / actions_count)) * 100
+    mentality_score = mentality_score.round(2)
     actions_321_count = len(df_opponent_321)
-    st.write(f"Team mentality score {(1-(weighted_actions_sum / actions_count))*100}")
+    st.write(f"Team mentality score {mentality_score}")
     mentality_scores = []
 
     # Find all unique match labels in the *full* df_possession (not filtered)
