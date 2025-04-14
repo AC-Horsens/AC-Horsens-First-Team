@@ -1137,7 +1137,7 @@ def Dashboard():
     # Merge everything together
     team_summary = xg_summary.merge(Pass_per_possession, on='team_name')
 
-    st.dataframe(team_summary, hide_index=True)
+    st.dataframe(team_summary, hide_index=True,use_container_width=True)
     df_opponent = df_possession[
         (df_possession['team_name'] == 'Opponent') & 
         (df_possession['x'] > 75) & 
