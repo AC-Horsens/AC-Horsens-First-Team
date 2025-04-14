@@ -1131,7 +1131,6 @@ def Dashboard():
     xg_per_match['xG_diff'] = 2 * xg_per_match['321.0'] - xg_per_match['total_match_xG']
     xg_per_match['xG against'] = xg_per_match['total_match_xG'] - xg_per_match['321.0']
 
-    st.dataframe(xg_per_match)
     # Now average xG and xG_diff per team
     xg_summary = xg_per_match.groupby('team_name').agg({
         '321.0': 'mean',
