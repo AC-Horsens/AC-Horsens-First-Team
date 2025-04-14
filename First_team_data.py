@@ -1138,11 +1138,9 @@ def Dashboard():
             previous_time = row['timeMin']
     
     # Handle the last game state in the match
-    if previous_state is not None:
         if previous_time < match_end_time:
             game_state_durations.append((previous_state, previous_time, match_end_time, match_end_time - previous_time))
-        else:
-            game_state_durations.append((previous_state, previous_time, previous_time, 0))  # If no duration
+
     
     # Convert the list to a DataFrame
     game_state_df = pd.DataFrame(game_state_durations, columns=['match_state', 'start_time', 'end_time', 'duration'])
