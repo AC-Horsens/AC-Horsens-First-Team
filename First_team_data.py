@@ -1155,13 +1155,16 @@ def Dashboard():
             end_time = match_end_time
 
         duration = end_time - start_time
-        game_state_durations.append((current_state, start_time, end_time, duration))
+        game_state_durations.append((match_label, current_state, start_time, end_time, duration))
 
     # Convert to DataFrame
-    game_state_df = pd.DataFrame(game_state_durations, columns=['match_state', 'start_time', 'end_time', 'duration'])
+    game_state_df = pd.DataFrame(
+        game_state_durations, 
+        columns=['label', 'match_state', 'start_time', 'end_time', 'duration']
+    )
 
     # Drop duplicates if needed
-    game_state_df = game_state_df.drop_duplicates(subset=['match_state', 'start_time', 'end_time'])
+    game_state_df = game_state_df.drop_duplicates(subset=['label', 'match_state', 'start_time', 'end_time'])
 
     # Display
     st.dataframe(game_state_df)
