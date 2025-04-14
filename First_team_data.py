@@ -1112,39 +1112,38 @@ def Dashboard():
     # Calculate xG per match per team
     xg_per_match = df_possession[df_possession['321.0'] > 0]
     xg_per_match = xg_per_match[['team_name', 'label', '321.0']]
-    xg_pivot = xg_per_match.pivot(index='label', columns='team_name', values='321.0').fillna(0).reset_index()
+    xg_per_match = xg_per_match.groupby(['team_name', 'label']).sum().reset_index()
 
-    # Rename columns nicely (optional)
-    xg_pivot = xg_pivot.rename_axis(None, axis=1)
+    # Ensure both 'Horsens' and 'Opponent' exist for every match
+    all_labels = df_possession['label'].unique()
+    teams = ['Horsens', 'Opponent']
+    full_index = pd.MultiIndex.from_product([teams, all_labels], names=['team_name', 'label'])
+    xg_per_match = xg_per_match.set_index(['team_name', 'label']).reindex(full_index, fill_value=0).reset_index()
 
-    # Melt it back to long format for easier merging later
-    xg_melted = xg_pivot.melt(id_vars='label', var_name='team_name', value_name='xG')
+    # Calculate total xG per match
+    total_xg_per_match = xg_per_match.groupby('label')['321.0'].sum().reset_index()
+    total_xg_per_match = total_xg_per_match.rename(columns={'321.0': 'total_match_xG'})
 
-    # Now calculate xG against
-    # For each row: xG against = total xG of match - team's own xG
-    xg_pivot['total_match_xG'] = xg_pivot.drop(columns=['label']).sum(axis=1)
+    # Merge team xG with total match xG (on 'label')
+    xg_per_match = xg_per_match.merge(total_xg_per_match, on='label', how='left')
 
-    # Merge the total xG back to long data
-    xg_melted = xg_melted.merge(xg_pivot[['label', 'total_match_xG']], on='label', how='left')
+    # Calculate xG difference and xG against
+    xg_per_match['xG_diff'] = 2 * xg_per_match['321.0'] - xg_per_match['total_match_xG']
+    xg_per_match['xG against'] = xg_per_match['total_match_xG'] - xg_per_match['321.0']
 
-    xg_melted['xG against'] = xg_melted['total_match_xG'] - xg_melted['xG']
-
-    # Calculate xG_diff
-    xg_melted['xG difference'] = 2 * xg_melted['xG'] - xg_melted['total_match_xG']
-
-    # Now you can group by team_name to get the average per team
-    xg_summary = xg_melted.groupby('team_name').agg({
-        'xG': 'mean',
-        'xG difference': 'mean',
-        'xG against': 'mean'
+    st.dataframe(xg_per_match)
+    # Now average xG and xG_diff per team
+    xg_summary = xg_per_match.groupby('team_name').agg({
+        '321.0': 'mean',
+        'xG_diff': 'mean',
+        'xG against': 'mean'       # xG against
     }).reset_index()
 
-    # Continue merging with Pass_per_possession etc.
-    team_summary = xg_summary.merge(Pass_per_possession, on='team_name', how='outer')
+    xg_summary = xg_summary.rename(columns={'321.0': 'xG', 'xG_diff': 'xG difference'})
+    # Merge everything together
+    team_summary = xg_summary.merge(Pass_per_possession, on='team_name',how='outer')
     team_summary = team_summary.round(2)
-
-    # Show it
-    st.dataframe(team_summary, hide_index=True, use_container_width=True)
+    st.dataframe(team_summary, hide_index=True,use_container_width=True)
     df_opponent = df_possession[
         (df_possession['team_name'] == 'Opponent') & 
         (df_possession['x'] > 75) & 
