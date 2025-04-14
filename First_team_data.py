@@ -1146,7 +1146,7 @@ def Dashboard():
             next_match_label = temp_states[i+1][2]
             
             # If the next state is from a different match OR time goes backwards (new match starts)
-            if next_match_label != match_label or next_start_time < start_time:
+            if next_match_label != match_label:
                 end_time = match_end_time
             else:
                 end_time = next_start_time
