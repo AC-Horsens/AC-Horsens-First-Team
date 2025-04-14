@@ -1112,12 +1112,13 @@ def Dashboard():
     xg_per_match = xg_per_match[['team_name','label','321.0']]
     xg_per_match = xg_per_match.groupby(['team_name','label']).sum().reset_index()
     total_xg_per_match = xg_per_match.groupby('label')['321.0'].sum().reset_index()
+    xg_per_match = xg_per_match.merge(total_xg_per_match, on='label')
+
     xg_per_match = xg_per_match.drop(columns=['label'])
     xg_per_match = xg_per_match.groupby('team_name').mean().reset_index()
     total_xg_per_match = total_xg_per_match.rename(columns={'321.0': 'total_match_xG'})
 
     # Step 3: Merge team xG with total match xG
-    xg_per_match = xg_per_match.merge(total_xg_per_match, on='label')
 
     # Step 4: Calculate xG difference per match for each team
     xg_per_match['xG_diff'] = 2 * xg_per_match['321.0'] - xg_per_match['total_match_xG']
