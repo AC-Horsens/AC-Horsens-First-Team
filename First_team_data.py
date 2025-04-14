@@ -1165,7 +1165,8 @@ def Dashboard():
     game_state_df = game_state_df.groupby('match_state')['duration'].sum().reset_index()
     st.dataframe(game_state_df,hide_index=True)
     # Calculate passes per possession
-
+    state_duration = game_state_df['duration'].sum()
+    st.write(state_duration)
     if option1 and option2 and option3:
         df_possession = df_possession[df_possession['match_state'].isin(['Horsens', 'draw', 'Opponent'])]
     # Case when two options are selected
