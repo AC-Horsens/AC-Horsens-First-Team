@@ -1107,57 +1107,58 @@ def Dashboard():
     df_possession = df_possession.sort_values(by=['date','timeMin', 'timeSec'])  # Sort the events by time
     df_possession['timeMin'] = df_possession['timeMin'].astype(float)
     
-    # Initialize list to store game state durations across matches
+        # Initialize list to store game state durations across matches
     game_state_durations = []
-    
+
     # Track previous state, previous time, and match label
     previous_state = None
     previous_time = None
     match_label = None
     match_end_time = None
 
+    # Temporary list to store per-row start times
+    temp_states = []
+
     # Iterate through each match
     for index, row in df_possession.iterrows():
-        # When the match starts, set the match end time (max timeMin for the match label)
+        # When the match label changes (i.e., a new match), update match_end_time
         if match_label != row['label']:
             match_label = row['label']
             match_end_time = df_possession[df_possession['label'] == row['label']]['timeMin'].max()
 
-        # If the current state is 'draw' and a state change happens, end 'draw' state
-        if previous_state == "draw" and row['match_state'] != "draw":
-            game_state_durations.append(("draw", previous_time, row['timeMin'], row['timeMin'] - previous_time))
-
-        # If the state changes, calculate the previous state duration
+        # If the state changes (or it's the first row)
         if previous_state != row['match_state']:
             if previous_state is not None:
-                # Adjust the end_time if it's lower than the start_time
-                if previous_time < match_end_time:
-                    game_state_durations.append((previous_state, previous_time, match_end_time, match_end_time - previous_time))
-                else:
-                    game_state_durations.append((previous_state, previous_time, previous_time, 0))  # If no duration
+                temp_states.append((previous_state, previous_time))
 
-            # Update the state and start time for the new state
             previous_state = row['match_state']
             previous_time = row['timeMin']
-    
-    # Handle the last game state in the match
+
+    # Append the last state
     if previous_state is not None:
-        if previous_state == "draw":
-            # If the game state is still "draw", end it at the match's end time
-            game_state_durations.append(("draw", previous_time, match_end_time, match_end_time - previous_time))
+        temp_states.append((previous_state, previous_time))
+
+    # Now assign end times
+    for i in range(len(temp_states)):
+        current_state, start_time = temp_states[i]
+        
+        if i < len(temp_states) - 1:
+            # End time is the next state's start_time
+            end_time = temp_states[i+1][1]
         else:
-            if previous_time < match_end_time:
-                game_state_durations.append((previous_state, previous_time, match_end_time, match_end_time - previous_time))
-            else:
-                game_state_durations.append((previous_state, previous_time, previous_time, 0))  # If no duration
-    
-    # Convert the list to a DataFrame
+            # Last state: end time is match_end_time
+            end_time = match_end_time
+
+        duration = end_time - start_time
+        game_state_durations.append((current_state, start_time, end_time, duration))
+
+    # Convert to DataFrame
     game_state_df = pd.DataFrame(game_state_durations, columns=['match_state', 'start_time', 'end_time', 'duration'])
 
-    # Clean up duplicate "draw" states (if any)
+    # Optional: Clean up duplicate "draw" states (if any)
     game_state_df = game_state_df.drop_duplicates(subset=['match_state', 'start_time', 'end_time'])
 
-    # Display the state durations for each game state
+    # Display
     st.dataframe(game_state_df)
 
 
