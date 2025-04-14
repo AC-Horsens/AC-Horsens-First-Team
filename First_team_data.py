@@ -1123,17 +1123,16 @@ def Dashboard():
             match_label = row['label']
             match_end_time = df_possession[df_possession['label'] == row['label']]['timeMin'].max()
 
-        # Handle the transition for the "draw" state
+        # If the current state is 'draw' and a state change happens, end 'draw' state
         if previous_state == "draw" and row['match_state'] != "draw":
-            # If the previous state is 'draw' and the current state is not, record the 'draw' state
             game_state_durations.append(("draw", previous_time, row['timeMin'], row['timeMin'] - previous_time))
 
         # If the state changes, calculate the previous state duration
         if previous_state != row['match_state']:
             if previous_state is not None:
-                # If it's still within the match time, set the end_time to match_end_time
-                if previous_state == "draw" and previous_time < match_end_time:
-                    game_state_durations.append((previous_state, previous_time, row['timeMin'], row['timeMin'] - previous_time))
+                # Adjust the end_time if it's lower than the start_time
+                if previous_time < match_end_time:
+                    game_state_durations.append((previous_state, previous_time, match_end_time, match_end_time - previous_time))
                 else:
                     game_state_durations.append((previous_state, previous_time, previous_time, 0))  # If no duration
 
@@ -1151,19 +1150,14 @@ def Dashboard():
                 game_state_durations.append((previous_state, previous_time, match_end_time, match_end_time - previous_time))
             else:
                 game_state_durations.append((previous_state, previous_time, previous_time, 0))  # If no duration
-    
     # Convert the list to a DataFrame
     game_state_df = pd.DataFrame(game_state_durations, columns=['match_state', 'start_time', 'end_time', 'duration'])
 
     # Clean up duplicate "draw" states (if any)
     game_state_df = game_state_df.drop_duplicates(subset=['match_state', 'start_time', 'end_time'])
 
-    # Adjust the "draw" state to finish at the match end time when necessary
-    game_state_df.loc[game_state_df['match_state'] == 'draw', 'end_time'] = game_state_df.groupby('match_state')['end_time'].transform('max')
-
     # Display the state durations for each game state
     st.dataframe(game_state_df)
-
 
 
     # Calculate passes per possession
