@@ -1161,7 +1161,6 @@ def Dashboard():
     # Display the state durations for each game state
     st.dataframe(game_state_df)
 
-
     # Calculate passes per possession
     Pass_per_possession = df_possession[df_possession['typeId'] == 1].groupby(['possessionId', 'label', 'team_name']).size().reset_index(name='Passes per possession')
     Pass_per_possession = Pass_per_possession.drop(columns=['possessionId', 'label'])
