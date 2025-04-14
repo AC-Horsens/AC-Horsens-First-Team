@@ -1135,7 +1135,7 @@ def Dashboard():
     xg_summary = xg_summary.rename(columns={'321.0': 'xG', 'xG_diff': 'xG difference'})
 
     # Merge everything together
-    team_summary = xg_summary.merge(Pass_per_possession, on='team_name')
+    team_summary = xg_summary.merge(Pass_per_possession, on='team_name',how='outer')
     team_summary = team_summary.round(2)
     st.dataframe(team_summary, hide_index=True,use_container_width=True)
     df_opponent = df_possession[
