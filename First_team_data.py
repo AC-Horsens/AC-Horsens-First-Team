@@ -1211,9 +1211,9 @@ def Dashboard():
 
     # Now average xG and xG_diff per team
     xg_summary = xg_per_match.groupby('team_name').agg({
-        '321.0': 'mean',
-        'xG_diff': 'mean',
-        'xG against': 'mean'       # xG against
+        '321.0': 'sum',
+        'xG_diff': 'sum',
+        'xG against': 'sum'       # xG against
     }).reset_index()
 
     xg_summary = xg_summary.rename(columns={'321.0': 'xG', 'xG_diff': 'xG difference'})
