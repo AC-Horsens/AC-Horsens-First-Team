@@ -1104,6 +1104,32 @@ def Dashboard():
         df_possession = df_possession[df_possession['match_state'] == 'Opponent']
 
     df_possession = df_possession[df_possession['label'].isin(match_choice)]
+    df_possession = df_possession.sort_values(by=['timeMin', 'timeSec'])  # Sort the events by time
+    df_possession['timeMin'] = df_possession['timeMin'].astype(float)  # Ensure timeMin is a float for calculations
+    df_possession['time_diff'] = df_possession['timeMin'].diff().fillna(0)
+    game_state_durations = []
+
+    # Loop through the data to calculate the durations per state
+    previous_state = None
+    previous_time = None
+    for index, row in df_possession.iterrows():
+        # If the game state changes, store the previous duration and reset the counter
+        if previous_state != row['match_state']:
+            if previous_state is not None:
+                # Store the duration for the previous state
+                game_state_durations.append((previous_state, previous_time, row['timeMin'] - previous_time))
+            # Update the previous state and time
+            previous_state = row['match_state']
+            previous_time = row['timeMin']
+
+    # Add the final state duration (the game ends at the last event)
+    game_state_durations.append((previous_state, previous_time, df_possession['timeMin'].max() - previous_time))
+
+    # Convert to DataFrame
+    game_state_df = pd.DataFrame(game_state_durations, columns=['match_state', 'start_time', 'duration'])
+
+    # Now you have a DataFrame that gives you the time duration for each game state
+    st.dataframe(game_state_df)
 
     # Calculate passes per possession
     Pass_per_possession = df_possession[df_possession['typeId'] == 1].groupby(['possessionId', 'label', 'team_name']).size().reset_index(name='Passes per possession')
