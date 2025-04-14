@@ -1110,62 +1110,58 @@ def Dashboard():
         # Initialize list to store game state durations across matches
     game_state_durations = []
 
-    # Track previous state, previous time, and match label
+    # Track previous state and previous time
     previous_state = None
     previous_time = None
-    match_label = None
-    match_end_time = None
-
-    # Temporary list to store per-row start times and match labels
-    temp_states = []
+    previous_label = None
 
     # Iterate through each row
     for index, row in df_possession.iterrows():
-        # When the match label changes (new match)
-        if match_label != row['label']:
-            match_label = row['label']
-            match_end_time = df_possession[df_possession['label'] == row['label']]['timeMin'].max()
-
-        if previous_state != row['match_state']:
-            if previous_state is not None:
-                temp_states.append((previous_state, previous_time, match_label, match_end_time))
-            
-            previous_state = row['match_state']
-            previous_time = row['timeMin']
-
-    # Add the final state
-    if previous_state is not None:
-        temp_states.append((previous_state, previous_time, match_label, match_end_time))
-
-    # Now calculate durations
-    for i in range(len(temp_states)):
-        current_state, start_time, match_label, match_end_time = temp_states[i]
+        current_label = row['label']
+        current_time = row['timeMin']
+        current_state = row['match_state']
         
-        if i < len(temp_states) - 1:
-            next_start_time = temp_states[i+1][1]
-            next_match_label = temp_states[i+1][2]
-            
-            # If the next state is from a different match OR time goes backwards (new match starts)
-            if next_match_label != match_label:
-                end_time = next_start_time
+        # If it's the first row, initialize
+        if previous_state is None:
+            previous_state = current_state
+            previous_time = current_time
+            previous_label = current_label
+            continue
+
+        # If match state changed
+        if current_state != previous_state or current_label != previous_label:
+            # Determine end_time
+            if current_label == previous_label:
+                end_time = current_time
             else:
-                end_time = next_start_time
-        else:
-            # Last row — use match_end_time
-            end_time = match_end_time
+                # Different match → get end time of previous match
+                end_time = df_possession[df_possession['label'] == previous_label]['timeMin'].max()
 
-        duration = end_time - start_time
-        game_state_durations.append((match_label, current_state, start_time, end_time, duration))
+            # Save the previous state
+            duration = end_time - previous_time
+            game_state_durations.append((previous_label, previous_state, previous_time, end_time, duration))
+            
+            # Update previous trackers
+            previous_state = current_state
+            previous_time = current_time
+            previous_label = current_label
 
-    # Convert to DataFrame
+    # After loop, save the last state
+    if previous_state is not None:
+        end_time = df_possession[df_possession['label'] == previous_label]['timeMin'].max()
+        duration = end_time - previous_time
+        game_state_durations.append((previous_label, previous_state, previous_time, end_time, duration))
+
+    # Create DataFrame
     game_state_df = pd.DataFrame(
-        game_state_durations, 
+        game_state_durations,
         columns=['label', 'match_state', 'start_time', 'end_time', 'duration']
     )
 
-    # Drop duplicates if needed
+    # Optional: remove duplicates if needed
+    game_state_df = game_state_df.drop_duplicates()
 
-    # Display
+    # Show
     st.dataframe(game_state_df)
 
 
