@@ -1105,12 +1105,12 @@ def Dashboard():
 
     df_possession = df_possession[df_possession['label'].isin(match_choice)]
     df_possession = df_possession.sort_values(by=['date','timeMin', 'timeSec'])  # Sort the events by time
-    df_possession['timeMin'] = df_possession['timeMin'].astype(float)  # Ensure timeMin is a float for calculations
-    df_possession['time_diff'] = df_possession['timeMin'].diff().fillna(0)  # Calculate time difference between events
+    df_possession['timeMin'] = df_possession['timeMin'].astype(float)
     
     # Initialize list to store game state durations across matches
     game_state_durations = []
     
+    # Track previous state, previous time, and match label
     previous_state = None
     previous_time = None
     match_label = None
@@ -1120,7 +1120,6 @@ def Dashboard():
     for index, row in df_possession.iterrows():
         # When the match starts, set the match end time (max timeMin for the match label)
         if match_label != row['label']:
-            # Update to the new match's state
             match_label = row['label']
             match_end_time = df_possession[df_possession['label'] == row['label']]['timeMin'].max()
 
@@ -1155,7 +1154,10 @@ def Dashboard():
     
     # Convert the list to a DataFrame
     game_state_df = pd.DataFrame(game_state_durations, columns=['match_state', 'start_time', 'end_time', 'duration'])
-    
+
+    # Clean up duplicate "draw" states (if any)
+    game_state_df = game_state_df.drop_duplicates(subset=['match_state', 'start_time', 'end_time'])
+
     # Display the state durations for each game state
     st.dataframe(game_state_df)
 
