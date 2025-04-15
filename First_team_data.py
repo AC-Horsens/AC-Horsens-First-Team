@@ -1165,7 +1165,6 @@ def Dashboard():
     elif option3:
         game_state_df = game_state_df[game_state_df['match_state'] == 'Opponent']
     # Show
-    st.dataframe(game_state_df,hide_index=True)
     game_state_df = game_state_df.groupby('match_state')['duration'].sum().reset_index()
     st.dataframe(game_state_df,hide_index=True)
     # Calculate passes per possession
@@ -1259,11 +1258,11 @@ def Dashboard():
     mentality_scores = []
 
     # Find all unique match labels in the *full* df_possession (not filtered)
-    all_labels = df_possession_1['label'].unique()
+    all_labels = df_possession['label'].unique()
 
     # Loop through all matches
     for label in all_labels:
-        df_match = df_possession_1[df_possession_1['label'] == label]
+        df_match = df_possession[df_possession['label'] == label]
         df_opponent = df_match[
             (df_match['team_name'] == 'Opponent') & 
             (df_match['x'] > 75) & 
