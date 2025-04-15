@@ -1335,6 +1335,8 @@ def Dashboard():
 
     def defensive_line_data():
         def_line = load_def_line_data()
+        st.dataframe(def_line)
+        st.dataframe(df_possession)
         def_line = def_line.merge(df_possession, on='match_id')
         st.dataframe(def_line)
 
