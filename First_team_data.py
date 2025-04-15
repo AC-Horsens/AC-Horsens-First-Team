@@ -1328,7 +1328,7 @@ def Dashboard():
         st.plotly_chart(fig, use_container_width=True)
 
     def defensive_line_data():
-        def_line = pd.read_csv(r'C:\Users\Seamus-admin\Documents\GitHub\AC-Horsens-First-Team\DNK_1_Division_2024_2025\Horsens\Defensive line data.csv')
+        def_line = pd.read_csv(r'C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2024_2025/Horsens/Defensive line data.csv')
         def_line = def_line.merge(df_possession, on='match_id')
         st.dataframe(def_line)
 
