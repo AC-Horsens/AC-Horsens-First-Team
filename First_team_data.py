@@ -1075,12 +1075,18 @@ def Dashboard():
     df_possession_1 = df_possession_1.sort_values(by='date')
 
     df_possession = df_possession.sort_values(by='date',ascending=False)
-    match_choice = st.multiselect(
-        'Choose Match Labels',
-        options=df_possession['label'].unique(),
-        default=df_possession['label'].unique(),
-        label_visibility="collapsed"
-    )
+    select_all = st.checkbox("Use all matches", value=True)
+
+    all_labels = df_possession['label'].unique()
+
+    if select_all:
+        match_choice = all_labels  # All labels selected automatically
+    else:
+        match_choice = st.multiselect(
+            "Choose Match Labels",
+            options=all_labels,
+            default=[]
+        )
     st.write('Choose match state')
     col1,col2,col3 = st.columns(3)
     with col1:
