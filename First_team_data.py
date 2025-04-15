@@ -1071,8 +1071,6 @@ def Dashboard():
     )
     st.title('AC Horsens First Team Dashboard')
     df_possession['date'] = pd.to_datetime(df_possession['date'])
-    df_possession_1 = df_possession.copy()
-    df_possession_1 = df_possession_1.sort_values(by='date')
 
     df_possession = df_possession.sort_values(by='date',ascending=False)
     select_all = st.checkbox("Use all matches", value=True)
@@ -1210,6 +1208,7 @@ def Dashboard():
     teams = ['Horsens', 'Opponent']
     full_index = pd.MultiIndex.from_product([teams, all_labels], names=['team_name', 'label'])
     xg_per_match = xg_per_match.set_index(['team_name', 'label']).reindex(full_index, fill_value=0).reset_index()
+    cleaned_xg_per_match = cleaned_xg_per_match.set_index(['team_name', 'label']).reindex(full_index, fill_value=0).reset_index()
 
     # Calculate total xG per match
     total_xg_per_match = xg_per_match.groupby('label')['321.0'].sum().reset_index()
