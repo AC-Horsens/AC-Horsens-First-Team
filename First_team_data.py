@@ -1220,7 +1220,7 @@ def Dashboard():
     # Merge team xG with total match xG (on 'label')
     xg_per_match = xg_per_match.merge(total_xg_per_match, on='label', how='left')
     cleaned_xg_per_match = cleaned_xg_per_match.merge(cleaned_total_xg_per_match, on='label', how='left')
-
+    st.dataframe(cleaned_xg_per_match)
     # Calculate xG difference and xG against
     xg_per_match['xG_diff'] = 2 * xg_per_match['321.0'] - xg_per_match['total_match_xG']
     xg_per_match['xG against'] = xg_per_match['total_match_xG'] - xg_per_match['321.0']
