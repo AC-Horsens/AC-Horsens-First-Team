@@ -1201,6 +1201,10 @@ def Dashboard():
     xg_per_match = xg_per_match[['team_name', 'label', '321.0']]
     xg_per_match = xg_per_match.groupby(['team_name', 'label']).sum().reset_index()
 
+    cleaned_xg_per_match = df_possession[df_possession['321.0'] > 0.1]
+    cleaned_xg_per_match = cleaned_xg_per_match[['team_name', 'label', '321.0']]
+    cleaned_xg_per_match = cleaned_xg_per_match.groupby(['team_name', 'label']).sum().reset_index()
+
     # Ensure both 'Horsens' and 'Opponent' exist for every match
     all_labels = df_possession['label'].unique()
     teams = ['Horsens', 'Opponent']
@@ -1210,13 +1214,19 @@ def Dashboard():
     # Calculate total xG per match
     total_xg_per_match = xg_per_match.groupby('label')['321.0'].sum().reset_index()
     total_xg_per_match = total_xg_per_match.rename(columns={'321.0': 'total_match_xG'})
+    cleaned_total_xg_per_match = cleaned_xg_per_match.groupby('label')['321.0'].sum().reset_index()
+    cleaned_total_xg_per_match = cleaned_total_xg_per_match.rename(columns={'321.0': 'total_match_cleaned_xG'})
 
     # Merge team xG with total match xG (on 'label')
     xg_per_match = xg_per_match.merge(total_xg_per_match, on='label', how='left')
+    cleaned_xg_per_match = cleaned_xg_per_match.merge(cleaned_total_xg_per_match, on='label', how='left')
 
     # Calculate xG difference and xG against
     xg_per_match['xG_diff'] = 2 * xg_per_match['321.0'] - xg_per_match['total_match_xG']
     xg_per_match['xG against'] = xg_per_match['total_match_xG'] - xg_per_match['321.0']
+
+    cleaned_xg_per_match['Cleaned xG diff'] = 2 * cleaned_xg_per_match['321.0'] - cleaned_xg_per_match['total_match_xG']
+    cleaned_xg_per_match['Cleaned xG against'] = cleaned_xg_per_match['total_match_xG'] - cleaned_xg_per_match['321.0']
 
     # Now average xG and xG_diff per team
     xg_summary = xg_per_match.groupby('team_name').agg({
@@ -1224,9 +1234,16 @@ def Dashboard():
         'xG_diff': 'sum',
         'xG against': 'sum'       # xG against
     }).reset_index()
+    
+    cleaned_xg_summary = cleaned_xg_per_match.groupby('team_name').agg({
+        '321.0': 'sum',
+        'Cleaned xG diff': 'sum',
+        'Cleaned xG against': 'sum'       # xG against
+    }).reset_index()
+    cleaned_xg_summary = cleaned_xg_summary.rename(columns={'321.0': 'Cleaned xG'})
 
     xg_summary = xg_summary.rename(columns={'321.0': 'xG', 'xG_diff': 'xG difference'})
-    # Merge everything together
+    xg_summary = xg_summary.merge(cleaned_xg_summary, on ='team_name',how='outer')
     team_summary = xg_summary.merge(Pass_per_possession, on='team_name',how='outer')
     team_summary['xG per 90'] = (team_summary['xG']/state_duration)*90
     team_summary['xG difference per 90'] = (team_summary['xG difference']/state_duration)*90
