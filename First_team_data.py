@@ -1429,6 +1429,7 @@ def Dashboard():
 
     Data_types = {
         'Team mentality score': team_mentality_score,
+        'Defensive line': defensive_line_data,
         'Set pieces': set_pieces
     }
 
