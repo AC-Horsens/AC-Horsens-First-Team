@@ -1259,7 +1259,6 @@ def Dashboard():
     mentality_score = (1 - (weighted_actions_sum / actions_count)) * 100
     mentality_score = mentality_score.round(2)
     actions_321_count = len(df_opponent_321)
-    st.write(f"Team mentality score {mentality_score}")
     mentality_scores = []
 
     # Find all unique match labels in the *full* df_possession (not filtered)
