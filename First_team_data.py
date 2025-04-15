@@ -1335,6 +1335,7 @@ def Dashboard():
 
     def defensive_line_data():
         def_line = load_def_line_data()
+        def_line = def_line[def_line['team'] == 'ACH']
         def_line = def_line.groupby('description')['percent_matching_in_this_second'].mean()
         st.dataframe(def_line)
 
