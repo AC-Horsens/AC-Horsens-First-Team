@@ -1338,6 +1338,19 @@ def Dashboard():
         def_line = def_line[def_line['team'] == 'ACH']
         def_line = def_line.groupby('description')['percent_matching_in_this_second'].mean()
         st.dataframe(def_line)
+        fig = px.line(
+            def_line,
+            x='description', 
+            y='percent_matching_in_this_second',
+            title='Defensive line succesrate',
+        )
+
+        fig.update_layout(
+            xaxis_tickangle=-45,
+            yaxis_range=[50, 100],  # Set y-axis limits
+        )
+
+        st.plotly_chart(fig, use_container_width=True)
 
     def set_pieces():
         df_set_pieces = load_set_piece_data()
