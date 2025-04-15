@@ -56,6 +56,11 @@ def load_possession_data():
     return df_possession
 
 @st.cache_data
+def load_def_line_data():
+    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/Horsens/Defensive line data.csv'
+    def_line = pd.read_csv(url)
+
+@st.cache_data
 def load_possession_stats():
     url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/possession_stats_all%20DNK_1_Division_2024_2025.csv'
     df_possession_stats = pd.read_csv(url)
@@ -1328,7 +1333,7 @@ def Dashboard():
         st.plotly_chart(fig, use_container_width=True)
 
     def defensive_line_data():
-        def_line = pd.read_csv(r'C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2024_2025/Horsens/Defensive line data.csv')
+        def_line = load_def_line_data()
         def_line = def_line.merge(df_possession, on='match_id')
         st.dataframe(def_line)
 
