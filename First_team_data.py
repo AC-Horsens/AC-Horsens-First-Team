@@ -1335,7 +1335,7 @@ def Dashboard():
 
     def defensive_line_data():
         def_line = load_def_line_data()
-        def_line = def_line.merge(df_possession, on='match_id')
+        def_line = def_line.groupby('description')['percent_matching_in_this_second'].mean()
         st.dataframe(def_line)
 
     def set_pieces():
