@@ -1432,6 +1432,7 @@ def Dashboard():
         if f'selected_data{i}' not in st.session_state:
             st.session_state[f'selected_data{i}'] = ''
 
+
     # Create three columns for select boxes
     col1, col2, col3 = st.columns(3)
 
