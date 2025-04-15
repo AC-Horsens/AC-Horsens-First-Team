@@ -1250,83 +1250,83 @@ def Dashboard():
 
     team_summary = team_summary.round(2)
     st.dataframe(team_summary, hide_index=True,use_container_width=True)
-    df_opponent = df_possession[
-        (df_possession['team_name'] == 'Opponent') & 
-        (df_possession['x'] > 75) & 
-        (df_possession['typeId'].isin([1, 2, 3, 13, 14, 15, 16]))
-    ]
-    # Count the number of actions (rows) where the x_axis condition is met
-    actions_count = len(df_opponent)
-
-    # Filter again for rows where column '321.0' is greater than 0.15
-    df_opponent_321 = df_opponent[
-        ((df_opponent['321.0'] > 0.15) | (df_opponent['318.0'] > 0.15)| (df_opponent['322.0'] > 0.15)) |
-        ((df_opponent['x'] > 83) & (df_opponent['y'] > 21.1) & (df_opponent['y'] < 78.9))
-    ]
-    df_opponent['weight'] = (
-        (df_opponent['321.0'] > 0.15).astype(int) * 1 +
-        (df_opponent['318.0'] > 0.15).astype(int) * 1 +
-        (df_opponent['322.0'] > 0.15).astype(int) * 1 +
-        ((df_opponent['x'] > 83) & (df_opponent['y'].between(21.1, 78.9))).astype(int) * 0.5
-    )
-    
-    weighted_actions_sum = df_opponent['weight'].sum()
-    
-    mentality_score = (1 - (weighted_actions_sum / actions_count)) * 100
-    mentality_score = mentality_score.round(2)
-    actions_321_count = len(df_opponent_321)
-    mentality_scores = []
-
-    # Find all unique match labels in the *full* df_possession (not filtered)
-    all_labels = df_possession['label'].unique()
-
-    # Loop through all matches
-    for label in all_labels:
-        df_match = df_possession[df_possession['label'] == label]
-        df_opponent = df_match[
-            (df_match['team_name'] == 'Opponent') & 
-            (df_match['x'] > 75) & 
-            (df_match['typeId'].isin([1, 2, 3, 13, 14, 15, 16]))
+    def team_mentality_score():
+        df_opponent = df_possession[
+            (df_possession['team_name'] == 'Opponent') & 
+            (df_possession['x'] > 75) & 
+            (df_possession['typeId'].isin([1, 2, 3, 13, 14, 15, 16]))
         ]
+        # Count the number of actions (rows) where the x_axis condition is met
         actions_count = len(df_opponent)
+
+        # Filter again for rows where column '321.0' is greater than 0.15
+        df_opponent_321 = df_opponent[
+            ((df_opponent['321.0'] > 0.15) | (df_opponent['318.0'] > 0.15)| (df_opponent['322.0'] > 0.15)) |
+            ((df_opponent['x'] > 83) & (df_opponent['y'] > 21.1) & (df_opponent['y'] < 78.9))
+        ]
+        df_opponent['weight'] = (
+            (df_opponent['321.0'] > 0.15).astype(int) * 1 +
+            (df_opponent['318.0'] > 0.15).astype(int) * 1 +
+            (df_opponent['322.0'] > 0.15).astype(int) * 1 +
+            ((df_opponent['x'] > 83) & (df_opponent['y'].between(21.1, 78.9))).astype(int) * 0.5
+        )
         
-        if actions_count > 0:
-            # Calculate weighted sum
-            df_opponent['weight'] = (
-                (df_opponent['321.0'] > 0.15).astype(int) * 1 +
-                (df_opponent['318.0'] > 0.15).astype(int) * 1 +
-                (df_opponent['322.0'] > 0.15).astype(int) * 1 +
-                ((df_opponent['x'] > 83) & (df_opponent['y'].between(21.1, 78.9))).astype(int) * 0.5
-            )
+        weighted_actions_sum = df_opponent['weight'].sum()
+        
+        mentality_score = (1 - (weighted_actions_sum / actions_count)) * 100
+        mentality_score = mentality_score.round(2)
+        actions_321_count = len(df_opponent_321)
+        mentality_scores = []
+
+        # Find all unique match labels in the *full* df_possession (not filtered)
+        all_labels = df_possession['label'].unique()
+
+        # Loop through all matches
+        for label in all_labels:
+            df_match = df_possession[df_possession['label'] == label]
+            df_opponent = df_match[
+                (df_match['team_name'] == 'Opponent') & 
+                (df_match['x'] > 75) & 
+                (df_match['typeId'].isin([1, 2, 3, 13, 14, 15, 16]))
+            ]
+            actions_count = len(df_opponent)
             
-            weighted_actions_sum = df_opponent['weight'].sum()
-            
-            mentality_score = (1 - (weighted_actions_sum / actions_count)) * 100
-        else:
-            mentality_score = None
+            if actions_count > 0:
+                # Calculate weighted sum
+                df_opponent['weight'] = (
+                    (df_opponent['321.0'] > 0.15).astype(int) * 1 +
+                    (df_opponent['318.0'] > 0.15).astype(int) * 1 +
+                    (df_opponent['322.0'] > 0.15).astype(int) * 1 +
+                    ((df_opponent['x'] > 83) & (df_opponent['y'].between(21.1, 78.9))).astype(int) * 0.5
+                )
+                
+                weighted_actions_sum = df_opponent['weight'].sum()
+                
+                mentality_score = (1 - (weighted_actions_sum / actions_count)) * 100
+            else:
+                mentality_score = None
 
-        mentality_scores.append({'Match': label, 'Team Mentality Score': mentality_score})
+            mentality_scores.append({'Match': label, 'Team Mentality Score': mentality_score})
 
-    # Convert list to dataframe
-    mentality_df = pd.DataFrame(mentality_scores)
+        # Convert list to dataframe
+        mentality_df = pd.DataFrame(mentality_scores)
 
-    # Show the mentality scores
-    st.dataframe(mentality_df, hide_index=True)
+        # Show the mentality scores
+        st.dataframe(mentality_df, hide_index=True)
 
-    fig = px.line(
-        mentality_df,
-        x='Match', 
-        y='Team Mentality Score',
-        title='Team Mentality Score per Match',
-    )
+        fig = px.line(
+            mentality_df,
+            x='Match', 
+            y='Team Mentality Score',
+            title='Team Mentality Score per Match',
+        )
 
-    fig.update_layout(
-        xaxis_tickangle=-45,
-        yaxis_range=[50, 100],  # Set y-axis limits
-    )
+        fig.update_layout(
+            xaxis_tickangle=-45,
+            yaxis_range=[50, 100],  # Set y-axis limits
+        )
 
-    st.plotly_chart(fig, use_container_width=True)
-
+        st.plotly_chart(fig, use_container_width=True)
 
     def set_pieces():
         df_set_pieces = load_set_piece_data()
@@ -1424,6 +1424,7 @@ def Dashboard():
         st.dataframe(Corners_matches)
 
     Data_types = {
+        'Team mentality score': team_mentality_score,
         'Set pieces': set_pieces
     }
 
