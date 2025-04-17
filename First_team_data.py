@@ -1232,7 +1232,16 @@ def Dashboard():
     team_summary['xG against per 90'] = (team_summary['xG against']/state_duration)*90
 
     team_summary = team_summary.round(2)
-    st.dataframe(team_summary, hide_index=True,use_container_width=True)
+    metrics_df = team_summary[['team_name', 'xG', 'xG difference', 'xG against', 'Cleaned xG', 'Cleaned xG diff', 'Cleaned xG against', 'Passes per possession']]
+    per90_df = team_summary[['team_name', 'xG per 90', 'xG difference per 90', 'xG against per 90']]
+
+    # Display one above the other
+    st.subheader("Team Summary (Total Metrics)")
+    st.dataframe(metrics_df, hide_index=True, use_container_width=True)
+
+    st.subheader("Team Summary (Per 90 Minutes)")
+    st.dataframe(per90_df, hide_index=True, use_container_width=True)
+
     def team_mentality_score():
         df_opponent = df_possession[
             (df_possession['team_name'] == 'Opponent') & 
