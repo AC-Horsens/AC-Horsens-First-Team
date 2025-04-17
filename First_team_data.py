@@ -1326,10 +1326,10 @@ def Dashboard():
 
         def_line = def_line[['match_id','label','team_name','date','contestantId','timeMin','timeSec','percent_succes','match_state']]
         def_line = def_line.sort_values(['date','timeMin','timeSec'])
-        st.dataframe(def_line)
 
         def_line = def_line.groupby(['label','date','match_state'])['percent_succes'].mean().reset_index()
-    
+        st.dataframe(def_line)
+
         fig = px.line(
             def_line,
             x='label', 
