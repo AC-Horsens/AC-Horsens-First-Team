@@ -13,17 +13,6 @@ from datetime import datetime, timedelta
 
 st.set_page_config(layout='wide')
 
-@st.cache_data
-def load_packing_data():
-    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/packing_all%20DNK_1_Division_2024_2025.csv'
-    df_packing = pd.read_csv(url)
-    df_packing['label'] = (df_packing['label'] + ' ' + df_packing['date']).astype(str)
-    df_packing = df_packing.rename(columns={'teamName': 'team_name'})
-    df_packing['pass_receiver'] = df_packing['pass_receiver'].astype(str)
-    df_packing = df_packing[df_packing['pass_receiver'] != '']
-    df_packing = df_packing[df_packing['pass_receiver'] != None]
-    df_packing = df_packing[df_packing['bypassed_opponents'] < 11]
-    return df_packing
 
 @st.cache_data
 def load_subs():
@@ -31,14 +20,6 @@ def load_subs():
     df_subs = pd.read_csv(url)
     df_subs['label'] = (df_subs['label'] + ' ' + df_subs['date'])
     return df_subs   
-
-@st.cache_data
-def load_spacecontrol_data():
-    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/Space_control_all%20DNK_1_Division_2024_2025.csv'
-    df_spacecontrol = pd.read_csv(url)
-    df_spacecontrol['label'] = (df_spacecontrol['label'] + ' ' + df_spacecontrol['date']).astype(str)
-    df_spacecontrol = df_spacecontrol.rename(columns={'teamName': 'team_name'})
-    return df_spacecontrol
 
 @st.cache_data
 def load_match_stats():
@@ -57,7 +38,7 @@ def load_possession_data():
 
 @st.cache_data
 def load_def_line_data():
-    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/Horsens/Defensive_line_data.csv'
+    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/Horsens_Defensive_line_data.csv'
     def_line = pd.read_csv(url)
     return def_line
 
@@ -1067,9 +1048,6 @@ winger_df = position_dataframes['Winger']
 classic_striker_df = position_dataframes['Classic striker']
 
 def Dashboard():
-    df_xg = load_xg()
-    df_pv = load_pv()
-    df_possession_stats = load_possession_stats()
     df_possession = load_possession_data()
     df_possession['team_name'] = df_possession['team_name'].apply(lambda x: x if x == 'Horsens' else 'Opponent')
     df_possession['match_state'] = df_possession['match_state'].apply(
@@ -1335,11 +1313,11 @@ def Dashboard():
 
     def defensive_line_data():
         def_line = load_def_line_data()
-        df = df_possession[['team_name','contestantId','match_id','label']]
-        def_line = def_line[def_line['team'] == 'ACH']
-        def_line = def_line.merge(df,left_on='team_id',right_on='contestantId')
+        st.write(def_line.columns)
+        st.write(df_possession.columns)
+        df = df_possession[['team_name','contestantId','match_id','label','timeMin','timeSec','match_state']]
+        def_line = def_line.merge(df, on='match_id',how='left')
         def_line = def_line.groupby('description')['percent_matching_in_this_second'].mean().reset_index()
-        st.dataframe(def_line)
         fig = px.line(
             def_line,
             x='description', 
@@ -1577,27 +1555,6 @@ def Opposition_analysis():
     xg_df_openplay = xg_df_openplay.drop(columns=['total match xG'])
     xg_df_openplay['label'] = np.where(xg_df_openplay['label'].notnull(), 1, xg_df_openplay['label'])
 
-    df_spacecontrol = load_spacecontrol_data()
-    df_spacecontrol = df_spacecontrol[df_spacecontrol['Type'] == 'Player']
-    df_spacecontrol = df_spacecontrol[['Team','date','TotalControlArea','CenterControlArea','PenaltyAreaControl','label']]
-    df_spacecontrol[['TotalControlArea', 'CenterControlArea', 'PenaltyAreaControl']] = df_spacecontrol[['TotalControlArea', 'CenterControlArea', 'PenaltyAreaControl']].astype(float).round(2)
-    
-    df_spacecontrol = df_spacecontrol.groupby(['Team','label','date']).sum().reset_index()
-    df_spacecontrol['date'] = pd.to_datetime(df_spacecontrol['date'])
-    df_spacecontrol['TotalControlArea_match'] = df_spacecontrol.groupby('label')['TotalControlArea'].transform('sum')
-    df_spacecontrol['CenterControlArea_match'] = df_spacecontrol.groupby('label')['CenterControlArea'].transform('sum')
-    df_spacecontrol['PenaltyAreaControl_match'] = df_spacecontrol.groupby('label')['PenaltyAreaControl'].transform('sum')
-
-    df_spacecontrol['Total Control Area %'] = df_spacecontrol['TotalControlArea'] / df_spacecontrol['TotalControlArea_match'] * 100
-    df_spacecontrol['Center Control Area %'] = df_spacecontrol['CenterControlArea'] / df_spacecontrol['CenterControlArea_match'] * 100
-    df_spacecontrol['Penalty Area Control %'] = df_spacecontrol['PenaltyAreaControl'] / df_spacecontrol['PenaltyAreaControl_match'] * 100
-
-
-    df_spacecontrol = df_spacecontrol[['Team','date', 'Total Control Area %', 'Center Control Area %', 'Penalty Area Control %']]
-    df_spacecontrol = df_spacecontrol.rename(columns={'Team': 'team_name'})
-    df_spacecontrol['Total Control Area %'] = df_spacecontrol['Total Control Area %'].round(2)
-    df_spacecontrol['Center Control Area %'] = df_spacecontrol['Center Control Area %'].round(2)
-    df_spacecontrol['Penalty Area Control %'] = df_spacecontrol['Penalty Area Control %'].round(2)
     df_ppda = load_ppda()
     df_ppda = df_ppda.groupby(['team_name','date']).sum().reset_index()
     df_ppda['date'] = pd.to_datetime(df_ppda['date'])
@@ -1605,8 +1562,6 @@ def Opposition_analysis():
     df_ppda = df_ppda[['team_name','date', 'PPDA']]
     matchstats_df = xg_df_openplay.merge(filtered_data,on=['contestantId','label','team_name','date'])
     matchstats_df = df_ppda.merge(matchstats_df)
-
-    matchstats_df = matchstats_df.merge(df_spacecontrol,how='left')
 
     matchstats_df = matchstats_df.drop(columns='date')
     # Perform aggregation
@@ -1635,9 +1590,6 @@ def Opposition_analysis():
         'totalCrossNocorner': 'sum',
         'accurateCrossNocorner': 'sum',
         'totalLongBalls': 'sum',
-        'Total Control Area %': 'mean',
-        'Center Control Area %': 'mean',
-        'Penalty Area Control %': 'mean',
         'PPDA': 'mean',
         }).reset_index()
     matchstats_df = matchstats_df.round(2)
