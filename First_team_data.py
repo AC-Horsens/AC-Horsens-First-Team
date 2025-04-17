@@ -1295,7 +1295,6 @@ def Dashboard():
         mentality_df = pd.DataFrame(mentality_scores)
 
         # Show the mentality scores
-        st.dataframe(mentality_df, hide_index=True)
 
         fig = px.line(
             mentality_df,
