@@ -1318,7 +1318,7 @@ def Dashboard():
 
         # Merge only on match_id to get label
         def_line = def_line.merge(labels_df, on='match_id', how='outer')
-        st.write(labels_df)
+        st.write(def_line)
 
         # Merge on full key to get match_state
         def_line = def_line.merge(states_df, on=['match_id','date','label', 'contestantId', 'timeMin', 'timeSec'], how='outer')
