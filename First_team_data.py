@@ -1337,6 +1337,7 @@ def Dashboard():
             x='label', 
             y='percent_succes',
             title='Defensive line succesrate',
+            range = [85,100],
         )
 
         fig.update_layout(
