@@ -1317,11 +1317,11 @@ def Dashboard():
         states_df = df_possession[['match_id', 'contestantId', 'timeMin', 'timeSec', 'match_state']]
 
         # Merge only on match_id to get label
-        def_line = def_line.merge(labels_df, on='match_id', how='left')
+        def_line = def_line.merge(labels_df, on='match_id', how='outer')
         st.write(labels_df)
 
         # Merge on full key to get match_state
-        def_line = def_line.merge(states_df, on=['match_id', 'contestantId', 'timeMin', 'timeSec'], how='left')
+        def_line = def_line.merge(states_df, on=['match_id', 'contestantId', 'timeMin', 'timeSec'], how='outer')
         def_line = def_line.sort_values('date')
         st.dataframe(def_line)
 
