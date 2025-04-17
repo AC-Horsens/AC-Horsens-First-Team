@@ -1328,7 +1328,7 @@ def Dashboard():
         def_line = def_line.sort_values(['date','timeMin','timeSec'])
 
         def_line = def_line.groupby(['label','date'])['percent_succes'].mean().reset_index()
-        def_line = def_line.sort_values(['date','timeMin','timeSec'])
+        def_line = def_line.sort_values(['date'])
 
         st.dataframe(def_line)
 
