@@ -1318,8 +1318,6 @@ def Dashboard():
 
         # Merge only on match_id to get label
         def_line = def_line.merge(labels_df, on='match_id', how='left')
-        st.write(def_line)
-
         # Merge on full key to get match_state
         def_line = def_line.merge(states_df, on=['match_id','date','label', 'contestantId', 'timeMin', 'timeSec'], how='left')
         def_line = def_line.sort_values(['date','timeMin','timeSec'])
@@ -1330,7 +1328,6 @@ def Dashboard():
         def_line = def_line.groupby(['label','date'])['percent_succes'].mean().reset_index()
         def_line = def_line.sort_values(['date'])
 
-        st.dataframe(def_line)
 
         fig = px.line(
             def_line,
