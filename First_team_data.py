@@ -1311,7 +1311,7 @@ def Dashboard():
 
         st.plotly_chart(fig, use_container_width=True)
 
-    def defensive_line_data():
+    def defensive_line_data(df_possession):
         def_line = load_def_line_data()
         st.dataframe(df_possession)
         labels_df = df_possession[['match_id', 'label']].drop_duplicates()
