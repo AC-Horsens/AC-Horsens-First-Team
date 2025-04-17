@@ -1311,7 +1311,7 @@ def Dashboard():
 
         st.plotly_chart(fig, use_container_width=True)
 
-    def defensive_line_data(df_possession):
+    def defensive_line_data():
         def_line = load_def_line_data()
         df_possession = df_possession.copy()
         st.dataframe(df_possession)
