@@ -1313,6 +1313,7 @@ def Dashboard():
 
     def defensive_line_data(df_possession):
         def_line = load_def_line_data()
+        df_possession = df_possession.copy()
         st.dataframe(df_possession)
         labels_df = df_possession[['match_id', 'label']].drop_duplicates()
         states_df = df_possession[['match_id', 'contestantId', 'timeMin', 'timeSec', 'match_state']]
