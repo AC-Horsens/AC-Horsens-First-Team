@@ -1328,6 +1328,8 @@ def Dashboard():
         def_line = def_line.sort_values(['date','timeMin','timeSec'])
 
         def_line = def_line.groupby(['label','date'])['percent_succes'].mean().reset_index()
+        def_line = def_line.sort_values(['date','timeMin','timeSec'])
+
         st.dataframe(def_line)
 
         fig = px.line(
