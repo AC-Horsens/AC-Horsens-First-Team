@@ -1315,9 +1315,9 @@ def Dashboard():
         def_line = load_def_line_data()
 
         df = df_possession[['team_name','contestantId','match_id','label','timeMin','timeSec','match_state']]
-        st.dataframe(df)
         def_line = def_line.merge(df, on='match_id',how='left')
-        #def_line = def_line.groupby('description')['percent_matching_in_this_second'].mean().reset_index()
+        def_line = def_line[['match_id','label','team_name','contestantId','timeMin','timeSec','percent_succes','match_state']]
+        def_line = def_line.groupby(['label','match_state'])['percent_succes'].mean().reset_index()
         st.dataframe(def_line)
         fig = px.line(
             def_line,
