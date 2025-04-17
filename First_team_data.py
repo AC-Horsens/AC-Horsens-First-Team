@@ -1315,7 +1315,7 @@ def Dashboard():
         def_line = load_def_line_data()
         df_possession_copy = df_possession.copy()
         labels_df = df_possession_copy[['match_id', 'label']].drop_duplicates()
-        st.write(label_df)
+        st.write(labels_df)
         states_df = df_possession_copy[['match_id', 'contestantId', 'timeMin', 'timeSec', 'match_state']]
 
         # Merge only on match_id to get label
