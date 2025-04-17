@@ -1322,11 +1322,14 @@ def Dashboard():
 
         # Merge on full key to get match_state
         def_line = def_line.merge(states_df, on=['match_id', 'contestantId', 'timeMin', 'timeSec'], how='left')
-
+        def_line = def_line.sort_values('date')
         st.dataframe(def_line)
 
-        def_line = def_line[['match_id','label','team_name','contestantId','timeMin','timeSec','percent_succes','match_state']]
+        def_line = def_line[['match_id','label','team_name','date','contestantId','timeMin','timeSec','percent_succes','match_state']]
+        def_line = def_line.sort_values('date')
+
         def_line = def_line.groupby(['label','match_state'])['percent_succes'].mean().reset_index()
+    
         fig = px.line(
             def_line,
             x='label', 
