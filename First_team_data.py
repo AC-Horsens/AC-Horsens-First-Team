@@ -1316,9 +1316,10 @@ def Dashboard():
 
         df = df_possession[['team_name','contestantId','match_id','label','timeMin','timeSec','match_state']]
         def_line = def_line.merge(df, on='match_id',how='outer')
+        st.dataframe(def_line)
+
         def_line = def_line[['match_id','label','team_name','contestantId','timeMin','timeSec','percent_succes','match_state']]
         def_line = def_line.groupby(['label','match_state'])['percent_succes'].mean().reset_index()
-        st.dataframe(def_line)
         fig = px.line(
             def_line,
             x='label', 
