@@ -1321,7 +1321,7 @@ def Dashboard():
         st.write(labels_df)
 
         # Merge on full key to get match_state
-        def_line = def_line.merge(states_df, on=['match_id', 'contestantId', 'timeMin', 'timeSec'], how='outer')
+        def_line = def_line.merge(states_df, on=['match_id','date','label', 'contestantId', 'timeMin', 'timeSec'], how='outer')
         def_line = def_line.sort_values('date')
         st.dataframe(def_line)
 
