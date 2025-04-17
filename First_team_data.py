@@ -1321,8 +1321,8 @@ def Dashboard():
         st.dataframe(def_line)
         fig = px.line(
             def_line,
-            x='description', 
-            y='percent_matching_in_this_second',
+            x='label', 
+            y='percent_succes',
             title='Defensive line succesrate',
         )
 
