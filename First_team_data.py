@@ -1330,7 +1330,7 @@ def Dashboard():
 
         fig = px.line(
             def_line,
-            x='Match', 
+            x='label', 
             y='percent_succes',
             title='Defensive line succesrate',
         )
