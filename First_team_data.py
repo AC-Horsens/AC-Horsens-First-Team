@@ -1313,11 +1313,12 @@ def Dashboard():
 
     def defensive_line_data():
         def_line = load_def_line_data()
-        st.write(def_line.columns)
-        st.write(df_possession.columns)
+
         df = df_possession[['team_name','contestantId','match_id','label','timeMin','timeSec','match_state']]
+        st.dataframe(df)
         def_line = def_line.merge(df, on='match_id',how='left')
-        def_line = def_line.groupby('description')['percent_matching_in_this_second'].mean().reset_index()
+        #def_line = def_line.groupby('description')['percent_matching_in_this_second'].mean().reset_index()
+        st.dataframe(def_line)
         fig = px.line(
             def_line,
             x='description', 
