@@ -1326,13 +1326,15 @@ def Dashboard():
 
         # Merge only on match_id to get label
         def_line = def_line.merge(labels_df, on='match_id', how='left')
+
         # Merge on full key to get match_state
         def_line = def_line.merge(states_df, on=['match_id','date','label', 'contestantId', 'timeMin', 'timeSec'], how='left')
         def_line = def_line.sort_values(['date','timeMin','timeSec'])
+        def_line = def_line.fillna(method='ffill')
+
 
         def_line = def_line[['match_id','label','team_name','date','contestantId','timeMin','timeSec','percent_succes','match_state']]
         def_line = def_line.sort_values(['date','timeMin','timeSec'])
-        def_line = def_line.fillna(method='ffill')
 
         def_line = def_line.groupby(['label','date'])['percent_succes'].mean().reset_index()
         def_line = def_line.sort_values(['date'])
