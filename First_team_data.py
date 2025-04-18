@@ -1332,10 +1332,10 @@ def Dashboard():
 
         def_line = def_line[['match_id','label','team_name','date','contestantId','timeMin','timeSec','percent_succes','match_state']]
         def_line = def_line.sort_values(['date','timeMin','timeSec'])
+        def_line = def_line.fillna(method='ffill')
 
         def_line = def_line.groupby(['label','date'])['percent_succes'].mean().reset_index()
         def_line = def_line.sort_values(['date'])
-        def_line = def_line.fillna(method='ffill')
         st.dataframe(def_line)
         fig = px.line(
             def_line,
