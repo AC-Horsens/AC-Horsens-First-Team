@@ -2424,8 +2424,6 @@ def Physical_data():
         st.plotly_chart(fig)
 
 def vocabulary():
-    st.header('Metrics')
-
     st.markdown("""
     ## 🟡 **How to Understand This Dashboard**
 
@@ -2469,12 +2467,110 @@ def vocabulary():
     ---"""
 )
 
+def player_profiles():
+    st.header("Player Profiles & Rating System")
+
+    st.markdown("""
+### 🎯 **Player Profiles Explained**
+
+This dashboard breaks down players by position and role using in-game statistics. For each profile, players are evaluated based on key tactical and technical responsibilities.
+
+---
+
+
+#### ⚖️ **Balanced Central Defender**
+- Focus: Defensive awareness + build-up reliability
+- Rated on:
+  - Suppressing opponent xG, xA, and PV
+  - Defensive actions
+  - Low possession loss
+  - Safe and forward passing
+
+---
+
+#### 🏃 **Fullbacks**
+- Focus: Supporting both defense and attack from wide areas
+- Rated on:
+  - Defensive duels
+  - Final third entries & assists
+  - Crossing and chance creation
+  - Possession value added
+
+---
+
+#### 🧹 **Number 6**
+- Focus: Anchoring midfield, controlling tempo
+- Rated on:
+  - Duels and interceptions
+  - Passing efficiency (especially backward/sideways)
+  - Recovery actions
+  - Forward passing when possible
+
+---
+
+
+#### 🧠 **Number 8**
+- Focus: Box-to-box midfielder
+- Rated on:
+  - Defensive work rate
+  - Progressive ball movement
+  - Final third passing
+  - Passing % and volume
+
+---
+
+#### 🎨 **Number 10**
+- Focus: Creativity and offensive output
+- Rated on:
+  - xA, xG, shot quality
+  - Dribbling and passing in the final third
+  - Assists and entries into dangerous areas
+
+---
+
+#### ⚡ **Winger**
+- Focus: Wide attacking threat
+- Rated on:
+  - Dribbling success and chance creation
+  - Touches in the box
+  - Crosses and assists
+
+---
+
+#### 🎯 **Classic Striker**
+- Focus: Goalscoring + link-up play
+- Rated on:
+  - xG, post-shot xG
+  - Link-up and passing
+  - Chance creation through involvement
+
+---
+
+### 🧮 **How Are Players Rated?**
+
+Players are rated on a **1–10 scale** for each key metric using *percentile-based scoring*. Here’s how it works:
+
+- Players are grouped into percentiles across each metric (e.g., duel win %, pass accuracy).
+- A player in the top 10% gets a score of 10; bottom 10% gets 1.
+- Some metrics are reversed (e.g., possession lost), so lower values get higher scores.
+- These metric scores are **grouped by category** (Defending, Passing, Chance Creation, etc.) and averaged.
+- **Total score** is a weighted mean of category scores:
+  - More weight is given to weak areas for development emphasis.
+  - Example: A player weak in defending may have that weighted more in their total score.
+
+---
+
+These profiles help identify what role a player best fits in, what they excel at, and where they might need improvement — **backed by real match data**.
+
+    """)
+
 
 Data_types = {
     'Dashboard': Dashboard,
     'Opposition analysis': Opposition_analysis,
     'Physical data': Physical_data,
-    'Vocabulary': vocabulary
+    'Vocabulary': vocabulary,
+    'Player profiles': player_profiles
 }
 
 
