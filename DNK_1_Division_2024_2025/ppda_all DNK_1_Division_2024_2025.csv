@@ -1,313 +1,323 @@
 label,team_name,date,PPDA
-Hvidovre vs HB Køge,Hvidovre,2024-07-19,5.285714285714286
-B 93 vs Kolding,Kolding,2024-07-19,13.551724137931034
 B 93 vs Kolding,B 93,2024-07-19,11.666666666666666
-Vendsyssel vs Roskilde,Roskilde,2024-07-19,10.035714285714286
-Vendsyssel vs Roskilde,Vendsyssel,2024-07-19,17.923076923076923
 Hvidovre vs HB Køge,HB Køge,2024-07-19,26.4
+Vendsyssel vs Roskilde,Roskilde,2024-07-19,10.035714285714286
+Hvidovre vs HB Køge,Hvidovre,2024-07-19,5.285714285714286
+Vendsyssel vs Roskilde,Vendsyssel,2024-07-19,17.923076923076923
+B 93 vs Kolding,Kolding,2024-07-19,13.551724137931034
 Esbjerg vs OB,Esbjerg,2024-07-20,10.655172413793103
 Esbjerg vs OB,OB,2024-07-20,8.28
-Hillerød vs Hobro,Hillerød,2024-07-21,5.105263157894737
-Horsens vs Fredericia,Fredericia,2024-07-21,10.870967741935484
 Horsens vs Fredericia,Horsens,2024-07-21,9.2
+Horsens vs Fredericia,Fredericia,2024-07-21,10.870967741935484
+Hillerød vs Hobro,Hillerød,2024-07-21,5.105263157894737
 Hillerød vs Hobro,Hobro,2024-07-21,20.5
-Hobro vs Esbjerg,Esbjerg,2024-07-26,15.842105263157896
-Horsens vs Hillerød,Hillerød,2024-07-26,8.846153846153847
 HB Køge vs OB,OB,2024-07-26,5.0
 HB Køge vs OB,HB Køge,2024-07-26,24.466666666666665
-Kolding vs Hvidovre,Kolding,2024-07-26,7.8125
 Kolding vs Hvidovre,Hvidovre,2024-07-26,12.058823529411764
+Hobro vs Esbjerg,Esbjerg,2024-07-26,15.842105263157896
 Hobro vs Esbjerg,Hobro,2024-07-26,8.878787878787879
+Kolding vs Hvidovre,Kolding,2024-07-26,7.8125
 Horsens vs Hillerød,Horsens,2024-07-26,7.482758620689655
+Horsens vs Hillerød,Hillerød,2024-07-26,8.846153846153847
+Roskilde vs B 93,B 93,2024-07-27,36.2
 Fredericia vs Vendsyssel,Fredericia,2024-07-27,21.857142857142858
 Fredericia vs Vendsyssel,Vendsyssel,2024-07-27,7.21875
 Roskilde vs B 93,Roskilde,2024-07-27,6.111111111111111
-Roskilde vs B 93,B 93,2024-07-27,36.2
-Kolding vs Fredericia,Kolding,2024-08-02,9.3125
-Kolding vs Fredericia,Fredericia,2024-08-02,14.894736842105264
-Hobro vs HB Køge,HB Køge,2024-08-02,15.157894736842104
 B 93 vs Vendsyssel,B 93,2024-08-02,6.833333333333333
-Hobro vs HB Køge,Hobro,2024-08-02,12.91304347826087
 B 93 vs Vendsyssel,Vendsyssel,2024-08-02,22.705882352941178
-Hillerød vs Roskilde,Roskilde,2024-08-02,20.0
+Hobro vs HB Køge,Hobro,2024-08-02,12.91304347826087
+Hobro vs HB Køge,HB Køge,2024-08-02,15.157894736842104
+Kolding vs Fredericia,Fredericia,2024-08-02,14.894736842105264
 Hillerød vs Roskilde,Hillerød,2024-08-02,10.652173913043478
+Kolding vs Fredericia,Kolding,2024-08-02,9.3125
+Hillerød vs Roskilde,Roskilde,2024-08-02,20.0
 OB vs Hvidovre,Hvidovre,2024-08-03,7.375
 OB vs Hvidovre,OB,2024-08-03,7.9375
-Esbjerg vs Horsens,Esbjerg,2024-08-04,9.72
 Esbjerg vs Horsens,Horsens,2024-08-04,7.756756756756757
+Esbjerg vs Horsens,Esbjerg,2024-08-04,9.72
 Hvidovre vs B 93,Hvidovre,2024-08-09,5.2727272727272725
 Hvidovre vs B 93,B 93,2024-08-09,9.433333333333334
+OB vs Hillerød,OB,2024-08-10,15.631578947368421
+Vendsyssel vs Kolding,Kolding,2024-08-10,4.805555555555555
+Vendsyssel vs Kolding,Vendsyssel,2024-08-10,8.0
 Roskilde vs Hobro,Roskilde,2024-08-10,6.705882352941177
 Roskilde vs Hobro,Hobro,2024-08-10,15.916666666666666
 OB vs Hillerød,Hillerød,2024-08-10,9.392857142857142
-Vendsyssel vs Kolding,Kolding,2024-08-10,4.805555555555555
-OB vs Hillerød,OB,2024-08-10,15.631578947368421
-Vendsyssel vs Kolding,Vendsyssel,2024-08-10,8.0
-Fredericia vs Esbjerg,Esbjerg,2024-08-11,8.96
-Fredericia vs Esbjerg,Fredericia,2024-08-11,15.047619047619047
-HB Køge vs Horsens,Horsens,2024-08-11,7.961538461538462
 HB Køge vs Horsens,HB Køge,2024-08-11,19.0
-Fredericia vs Roskilde,Roskilde,2024-08-16,15.090909090909092
-Hillerød vs HB Køge,HB Køge,2024-08-16,15.333333333333334
-Hillerød vs HB Køge,Hillerød,2024-08-16,3.7857142857142856
-B 93 vs OB,B 93,2024-08-16,19.105263157894736
-B 93 vs OB,OB,2024-08-16,14.277777777777779
-Horsens vs Kolding,Kolding,2024-08-16,13.444444444444445
+Fredericia vs Esbjerg,Esbjerg,2024-08-11,8.96
+HB Køge vs Horsens,Horsens,2024-08-11,7.961538461538462
+Fredericia vs Esbjerg,Fredericia,2024-08-11,15.047619047619047
 Fredericia vs Roskilde,Fredericia,2024-08-16,12.227272727272727
 Horsens vs Kolding,Horsens,2024-08-16,7.866666666666666
-Esbjerg vs Vendsyssel,Vendsyssel,2024-08-17,5.285714285714286
-Hobro vs Hvidovre,Hobro,2024-08-17,12.37037037037037
+Horsens vs Kolding,Kolding,2024-08-16,13.444444444444445
+B 93 vs OB,OB,2024-08-16,14.277777777777779
+B 93 vs OB,B 93,2024-08-16,19.105263157894736
+Hillerød vs HB Køge,HB Køge,2024-08-16,15.333333333333334
+Hillerød vs HB Køge,Hillerød,2024-08-16,3.7857142857142856
+Fredericia vs Roskilde,Roskilde,2024-08-16,15.090909090909092
 Hobro vs Hvidovre,Hvidovre,2024-08-17,8.6875
+Hobro vs Hvidovre,Hobro,2024-08-17,12.37037037037037
+Esbjerg vs Vendsyssel,Vendsyssel,2024-08-17,5.285714285714286
 Esbjerg vs Vendsyssel,Esbjerg,2024-08-17,10.3
+Hvidovre vs Hillerød,Hvidovre,2024-08-20,12.178571428571429
+Hvidovre vs Hillerød,Hillerød,2024-08-20,8.275862068965518
+HB Køge vs B 93,HB Køge,2024-08-20,11.774193548387096
 HB Køge vs B 93,B 93,2024-08-20,6.666666666666667
 Roskilde vs Horsens,Roskilde,2024-08-20,11.481481481481481
 Roskilde vs Horsens,Horsens,2024-08-20,5.724137931034483
-HB Køge vs B 93,HB Køge,2024-08-20,11.774193548387096
-Hvidovre vs Hillerød,Hvidovre,2024-08-20,12.178571428571429
-Hvidovre vs Hillerød,Hillerød,2024-08-20,8.275862068965518
+OB vs Fredericia,Fredericia,2024-08-21,17.782608695652176
+OB vs Fredericia,OB,2024-08-21,9.227272727272727
 Kolding vs Esbjerg,Kolding,2024-08-21,4.175
 Kolding vs Esbjerg,Esbjerg,2024-08-21,14.107142857142858
 Vendsyssel vs Hobro,Hobro,2024-08-21,9.892857142857142
-OB vs Fredericia,Fredericia,2024-08-21,17.782608695652176
-OB vs Fredericia,OB,2024-08-21,9.227272727272727
 Vendsyssel vs Hobro,Vendsyssel,2024-08-21,11.0
 B 93 vs Hillerød,Hillerød,2024-08-23,6.032258064516129
 B 93 vs Hillerød,B 93,2024-08-23,23.235294117647058
+Horsens vs Vendsyssel,Vendsyssel,2024-08-24,29.75
+Kolding vs Roskilde,Kolding,2024-08-24,8.115384615384615
+Kolding vs Roskilde,Roskilde,2024-08-24,18.4375
 Horsens vs Vendsyssel,Horsens,2024-08-24,5.75
 Esbjerg vs HB Køge,HB Køge,2024-08-24,17.789473684210527
 Esbjerg vs HB Køge,Esbjerg,2024-08-24,12.4
-Kolding vs Roskilde,Kolding,2024-08-24,8.115384615384615
-Kolding vs Roskilde,Roskilde,2024-08-24,18.4375
-Horsens vs Vendsyssel,Vendsyssel,2024-08-24,29.75
-Hobro vs OB,Hobro,2024-08-25,14.956521739130435
-Hobro vs OB,OB,2024-08-25,6.1875
 Fredericia vs Hvidovre,Hvidovre,2024-08-25,7.976190476190476
 Fredericia vs Hvidovre,Fredericia,2024-08-25,7.484848484848484
-Hvidovre vs Horsens,Horsens,2024-08-30,6.5476190476190474
+Hobro vs OB,Hobro,2024-08-25,14.956521739130435
+Hobro vs OB,OB,2024-08-25,6.1875
+Roskilde vs Esbjerg,Esbjerg,2024-08-30,9.633333333333333
+OB vs Vendsyssel,OB,2024-08-30,6.878787878787879
+Hillerød vs Kolding,Hillerød,2024-08-30,6.714285714285714
 Hvidovre vs Horsens,Hvidovre,2024-08-30,10.0
 Hillerød vs Kolding,Kolding,2024-08-30,15.275862068965518
-Hillerød vs Kolding,Hillerød,2024-08-30,6.714285714285714
+Hvidovre vs Horsens,Horsens,2024-08-30,6.5476190476190474
 Roskilde vs Esbjerg,Roskilde,2024-08-30,8.774193548387096
-Roskilde vs Esbjerg,Esbjerg,2024-08-30,9.633333333333333
 OB vs Vendsyssel,Vendsyssel,2024-08-30,10.333333333333334
-OB vs Vendsyssel,OB,2024-08-30,6.878787878787879
 HB Køge vs Fredericia,HB Køge,2024-09-01,18.35
 HB Køge vs Fredericia,Fredericia,2024-09-01,8.576923076923077
 Hobro vs B 93,Hobro,2024-09-02,3.1333333333333333
 Hobro vs B 93,B 93,2024-09-02,12.071428571428571
 Roskilde vs Hvidovre,Roskilde,2024-09-13,14.4
 Roskilde vs Hvidovre,Hvidovre,2024-09-13,6.8
-Vendsyssel vs Hillerød,Hillerød,2024-09-14,7.1
 Vendsyssel vs Hillerød,Vendsyssel,2024-09-14,8.67741935483871
-Horsens vs OB,Horsens,2024-09-14,13.166666666666666
-Kolding vs HB Køge,HB Køge,2024-09-14,14.304347826086957
 Kolding vs HB Køge,Kolding,2024-09-14,12.653846153846153
 Horsens vs OB,OB,2024-09-14,8.1
+Kolding vs HB Køge,HB Køge,2024-09-14,14.304347826086957
+Horsens vs OB,Horsens,2024-09-14,13.166666666666666
+Vendsyssel vs Hillerød,Hillerød,2024-09-14,7.1
 Esbjerg vs B 93,B 93,2024-09-15,11.85
 Esbjerg vs B 93,Esbjerg,2024-09-15,26.6
-Fredericia vs Hobro,Hobro,2024-09-16,14.263157894736842
 Fredericia vs Hobro,Fredericia,2024-09-16,15.6875
+Fredericia vs Hobro,Hobro,2024-09-16,14.263157894736842
+HB Køge vs Vendsyssel,HB Køge,2024-09-20,7.892857142857143
 Hobro vs Kolding,Hobro,2024-09-20,15.0
 Hobro vs Kolding,Kolding,2024-09-20,7.0
-HB Køge vs Vendsyssel,HB Køge,2024-09-20,7.892857142857143
 HB Køge vs Vendsyssel,Vendsyssel,2024-09-20,7.756756756756757
-B 93 vs Horsens,Horsens,2024-09-21,2.5675675675675675
 B 93 vs Horsens,B 93,2024-09-21,38.0
-Hvidovre vs Esbjerg,Hvidovre,2024-09-22,12.277777777777779
-Hvidovre vs Esbjerg,Esbjerg,2024-09-22,20.705882352941178
-OB vs Roskilde,OB,2024-09-22,11.583333333333334
+B 93 vs Horsens,Horsens,2024-09-21,2.5675675675675675
 OB vs Roskilde,Roskilde,2024-09-22,15.7
-Hillerød vs Fredericia,Fredericia,2024-09-23,19.904761904761905
+Hvidovre vs Esbjerg,Esbjerg,2024-09-22,20.705882352941178
+Hvidovre vs Esbjerg,Hvidovre,2024-09-22,12.277777777777779
+OB vs Roskilde,OB,2024-09-22,11.583333333333334
 Hillerød vs Fredericia,Hillerød,2024-09-23,8.53125
+Hillerød vs Fredericia,Fredericia,2024-09-23,19.904761904761905
 Kolding vs OB,Kolding,2024-09-27,10.413793103448276
 Kolding vs OB,OB,2024-09-27,6.571428571428571
-Fredericia vs B 93,B 93,2024-09-28,14.307692307692308
-Fredericia vs B 93,Fredericia,2024-09-28,10.44
-Horsens vs Hobro,Hobro,2024-09-28,14.916666666666666
-Horsens vs Hobro,Horsens,2024-09-28,5.0
 Vendsyssel vs Hvidovre,Vendsyssel,2024-09-28,7.7368421052631575
 Vendsyssel vs Hvidovre,Hvidovre,2024-09-28,5.2682926829268295
-Esbjerg vs Hillerød,Hillerød,2024-09-29,5.515151515151516
-Roskilde vs HB Køge,HB Køge,2024-09-29,8.0
-Roskilde vs HB Køge,Roskilde,2024-09-29,4.59375
+Fredericia vs B 93,Fredericia,2024-09-28,10.44
+Fredericia vs B 93,B 93,2024-09-28,14.307692307692308
+Horsens vs Hobro,Hobro,2024-09-28,14.916666666666666
+Horsens vs Hobro,Horsens,2024-09-28,5.0
 Esbjerg vs Hillerød,Esbjerg,2024-09-29,23.272727272727273
-OB vs HB Køge,OB,2024-10-04,4.258064516129032
-OB vs HB Køge,HB Køge,2024-10-04,21.782608695652176
+Roskilde vs HB Køge,Roskilde,2024-09-29,4.59375
+Roskilde vs HB Køge,HB Køge,2024-09-29,8.0
+Esbjerg vs Hillerød,Hillerød,2024-09-29,5.515151515151516
 Hobro vs Roskilde,Roskilde,2024-10-04,17.727272727272727
-B 93 vs Esbjerg,B 93,2024-10-04,9.096774193548388
-Hobro vs Roskilde,Hobro,2024-10-04,10.172413793103448
 B 93 vs Esbjerg,Esbjerg,2024-10-04,8.393939393939394
+Hobro vs Roskilde,Hobro,2024-10-04,10.172413793103448
 Hillerød vs Vendsyssel,Hillerød,2024-10-04,9.09375
+B 93 vs Esbjerg,B 93,2024-10-04,9.096774193548388
+OB vs HB Køge,HB Køge,2024-10-04,21.782608695652176
+OB vs HB Køge,OB,2024-10-04,4.258064516129032
 Hillerød vs Vendsyssel,Vendsyssel,2024-10-04,10.483870967741936
-Fredericia vs Horsens,Fredericia,2024-10-05,16.181818181818183
 Fredericia vs Horsens,Horsens,2024-10-05,6.5
+Fredericia vs Horsens,Fredericia,2024-10-05,16.181818181818183
 Hvidovre vs Kolding,Hvidovre,2024-10-07,7.458333333333333
 Hvidovre vs Kolding,Kolding,2024-10-07,6.923076923076923
-Kolding vs Hillerød,Kolding,2024-10-18,5.818181818181818
-HB Køge vs Hobro,Hobro,2024-10-18,4.7
 HB Køge vs Hobro,HB Køge,2024-10-18,19.96
+Kolding vs Hillerød,Kolding,2024-10-18,5.818181818181818
 Kolding vs Hillerød,Hillerød,2024-10-18,10.25
+Roskilde vs OB,OB,2024-10-18,6.258064516129032
 Vendsyssel vs B 93,Vendsyssel,2024-10-18,6.264705882352941
+HB Køge vs Hobro,Hobro,2024-10-18,4.7
 Vendsyssel vs B 93,B 93,2024-10-18,15.142857142857142
 Roskilde vs OB,Roskilde,2024-10-18,22.842105263157894
-Roskilde vs OB,OB,2024-10-18,6.258064516129032
 Esbjerg vs Fredericia,Esbjerg,2024-10-19,12.44
 Esbjerg vs Fredericia,Fredericia,2024-10-19,15.75
-Horsens vs Hvidovre,Horsens,2024-10-20,5.842105263157895
 Horsens vs Hvidovre,Hvidovre,2024-10-20,11.84
-HB Køge vs Kolding,Kolding,2024-10-25,8.615384615384615
-HB Køge vs Kolding,HB Køge,2024-10-25,12.208333333333334
-B 93 vs Roskilde,Roskilde,2024-10-25,12.592592592592593
+Horsens vs Hvidovre,Horsens,2024-10-20,5.842105263157895
 B 93 vs Roskilde,B 93,2024-10-25,9.565217391304348
-Hillerød vs Horsens,Hillerød,2024-10-25,16.666666666666668
 Hillerød vs Horsens,Horsens,2024-10-25,13.631578947368421
-OB vs Esbjerg,Esbjerg,2024-10-26,15.652173913043478
-OB vs Esbjerg,OB,2024-10-26,4.947368421052632
+B 93 vs Roskilde,Roskilde,2024-10-25,12.592592592592593
+HB Køge vs Kolding,HB Køge,2024-10-25,12.208333333333334
+Hillerød vs Horsens,Hillerød,2024-10-25,16.666666666666668
+HB Køge vs Kolding,Kolding,2024-10-25,8.615384615384615
 Hvidovre vs Vendsyssel,Hvidovre,2024-10-26,10.068965517241379
+OB vs Esbjerg,OB,2024-10-26,4.947368421052632
+OB vs Esbjerg,Esbjerg,2024-10-26,15.652173913043478
 Hvidovre vs Vendsyssel,Vendsyssel,2024-10-26,6.046511627906977
-Hobro vs Fredericia,Hobro,2024-10-27,20.6
 Hobro vs Fredericia,Fredericia,2024-10-27,14.291666666666666
+Hobro vs Fredericia,Hobro,2024-10-27,20.6
 Horsens vs B 93,B 93,2024-11-01,19.61904761904762
-Horsens vs B 93,Horsens,2024-11-01,5.46875
-Hillerød vs Hvidovre,Hillerød,2024-11-01,11.678571428571429
 Hillerød vs Hvidovre,Hvidovre,2024-11-01,11.192307692307692
-Roskilde vs Kolding,Roskilde,2024-11-02,12.636363636363637
-Vendsyssel vs HB Køge,Vendsyssel,2024-11-02,10.666666666666666
+Hillerød vs Hvidovre,Hillerød,2024-11-01,11.678571428571429
+Horsens vs B 93,Horsens,2024-11-01,5.46875
 Roskilde vs Kolding,Kolding,2024-11-02,6.0
 Vendsyssel vs HB Køge,HB Køge,2024-11-02,12.09375
-Esbjerg vs Hobro,Hobro,2024-11-03,9.818181818181818
-Esbjerg vs Hobro,Esbjerg,2024-11-03,11.428571428571429
+Vendsyssel vs HB Køge,Vendsyssel,2024-11-02,10.666666666666666
+Roskilde vs Kolding,Roskilde,2024-11-02,12.636363636363637
 Fredericia vs OB,Fredericia,2024-11-03,10.947368421052632
 Fredericia vs OB,OB,2024-11-03,12.56
-Kolding vs Vendsyssel,Vendsyssel,2024-11-08,13.55
-B 93 vs Fredericia,B 93,2024-11-08,7.0
+Esbjerg vs Hobro,Hobro,2024-11-03,9.818181818181818
+Esbjerg vs Hobro,Esbjerg,2024-11-03,11.428571428571429
 B 93 vs Fredericia,Fredericia,2024-11-08,18.41176470588235
+Kolding vs Vendsyssel,Vendsyssel,2024-11-08,13.55
 Kolding vs Vendsyssel,Kolding,2024-11-08,7.657894736842105
+B 93 vs Fredericia,B 93,2024-11-08,7.0
 OB vs Horsens,Horsens,2024-11-09,11.653846153846153
 OB vs Horsens,OB,2024-11-09,5.685714285714286
-Esbjerg vs Roskilde,Esbjerg,2024-11-10,9.545454545454545
 Esbjerg vs Roskilde,Roskilde,2024-11-10,13.954545454545455
-HB Køge vs Hvidovre,Hvidovre,2024-11-10,7.782608695652174
+Esbjerg vs Roskilde,Esbjerg,2024-11-10,9.545454545454545
 HB Køge vs Hvidovre,HB Køge,2024-11-10,14.357142857142858
-Hobro vs Hillerød,Hillerød,2024-11-11,7.6
+HB Køge vs Hvidovre,Hvidovre,2024-11-10,7.782608695652174
 Hobro vs Hillerød,Hobro,2024-11-11,12.25
+Hobro vs Hillerød,Hillerød,2024-11-11,7.6
+Hvidovre vs Roskilde,Roskilde,2024-11-22,10.533333333333333
+B 93 vs Hobro,Hobro,2024-11-22,54.22222222222222
 Hvidovre vs Roskilde,Hvidovre,2024-11-22,7.117647058823529
 B 93 vs Hobro,B 93,2024-11-22,5.5675675675675675
-B 93 vs Hobro,Hobro,2024-11-22,54.22222222222222
-Hvidovre vs Roskilde,Roskilde,2024-11-22,10.533333333333333
-Horsens vs HB Køge,Horsens,2024-11-24,3.9302325581395348
-Horsens vs HB Køge,HB Køge,2024-11-24,14.68
-Fredericia vs Kolding,Kolding,2024-11-24,13.25
-Hillerød vs Esbjerg,Esbjerg,2024-11-24,23.473684210526315
 Fredericia vs Kolding,Fredericia,2024-11-24,19.25
 Hillerød vs Esbjerg,Hillerød,2024-11-24,6.705882352941177
-Vendsyssel vs OB,OB,2024-11-25,5.571428571428571
+Fredericia vs Kolding,Kolding,2024-11-24,13.25
+Horsens vs HB Køge,HB Køge,2024-11-24,14.68
+Hillerød vs Esbjerg,Esbjerg,2024-11-24,23.473684210526315
+Horsens vs HB Køge,Horsens,2024-11-24,3.9302325581395348
 Vendsyssel vs OB,Vendsyssel,2024-11-25,11.785714285714286
+Vendsyssel vs OB,OB,2024-11-25,5.571428571428571
+Hvidovre vs Hobro,Hobro,2024-11-29,8.605263157894736
 Kolding vs Horsens,Kolding,2024-11-29,13.166666666666666
 Kolding vs Horsens,Horsens,2024-11-29,5.7
 Hvidovre vs Hobro,Hvidovre,2024-11-29,8.352941176470589
-Hvidovre vs Hobro,Hobro,2024-11-29,8.605263157894736
-Roskilde vs Fredericia,Fredericia,2024-11-30,12.05
 Roskilde vs Fredericia,Roskilde,2024-11-30,29.928571428571427
-OB vs B 93,OB,2024-12-01,6.241379310344827
+Roskilde vs Fredericia,Fredericia,2024-11-30,12.05
 OB vs B 93,B 93,2024-12-01,15.173913043478262
+OB vs B 93,OB,2024-12-01,6.241379310344827
 Vendsyssel vs Esbjerg,Esbjerg,2024-12-01,6.696969696969697
 Vendsyssel vs Esbjerg,Vendsyssel,2024-12-01,10.290322580645162
-HB Køge vs Hillerød,HB Køge,2024-12-02,34.583333333333336
 HB Køge vs Hillerød,Hillerød,2024-12-02,7.583333333333333
-Hobro vs Vendsyssel,Hobro,2025-02-21,4.851851851851852
+HB Køge vs Hillerød,HB Køge,2024-12-02,34.583333333333336
 Hobro vs Vendsyssel,Vendsyssel,2025-02-21,25.444444444444443
-B 93 vs Hvidovre,Hvidovre,2025-02-21,7.6923076923076925
+Hobro vs Vendsyssel,Hobro,2025-02-21,4.851851851851852
 Hillerød vs OB,Hillerød,2025-02-21,20.210526315789473
 B 93 vs Hvidovre,B 93,2025-02-21,12.518518518518519
+B 93 vs Hvidovre,Hvidovre,2025-02-21,7.6923076923076925
 Hillerød vs OB,OB,2025-02-21,11.5
-Esbjerg vs Kolding,Kolding,2025-02-22,10.074074074074074
 Esbjerg vs Kolding,Esbjerg,2025-02-22,7.942857142857143
-Horsens vs Roskilde,Horsens,2025-02-23,5.444444444444445
+Esbjerg vs Kolding,Kolding,2025-02-22,10.074074074074074
 Fredericia vs HB Køge,HB Køge,2025-02-23,15.75
-Horsens vs Roskilde,Roskilde,2025-02-23,21.333333333333332
 Fredericia vs HB Køge,Fredericia,2025-02-23,8.863636363636363
-Hvidovre vs Fredericia,Hvidovre,2025-02-27,7.073170731707317
+Horsens vs Roskilde,Horsens,2025-02-23,5.444444444444445
+Horsens vs Roskilde,Roskilde,2025-02-23,21.333333333333332
 Hvidovre vs Fredericia,Fredericia,2025-02-27,13.142857142857142
+Hvidovre vs Fredericia,Hvidovre,2025-02-27,7.073170731707317
+HB Køge vs Esbjerg,Esbjerg,2025-02-28,9.0
 Vendsyssel vs Horsens,Horsens,2025-02-28,6.888888888888889
 Vendsyssel vs Horsens,Vendsyssel,2025-02-28,10.518518518518519
 HB Køge vs Esbjerg,HB Køge,2025-02-28,13.952380952380953
-HB Køge vs Esbjerg,Esbjerg,2025-02-28,9.0
-Kolding vs B 93,Kolding,2025-03-01,9.590909090909092
-Roskilde vs Hillerød,Roskilde,2025-03-01,10.961538461538462
-Kolding vs B 93,B 93,2025-03-01,11.52
 Roskilde vs Hillerød,Hillerød,2025-03-01,8.59375
+Roskilde vs Hillerød,Roskilde,2025-03-01,10.961538461538462
+Kolding vs B 93,Kolding,2025-03-01,9.590909090909092
+Kolding vs B 93,B 93,2025-03-01,11.52
 OB vs Hobro,Hobro,2025-03-02,16.8
 OB vs Hobro,OB,2025-03-02,6.785714285714286
-B 93 vs HB Køge,B 93,2025-03-07,7.393939393939394
-B 93 vs HB Køge,HB Køge,2025-03-07,16.392857142857142
 Fredericia vs Hillerød,Fredericia,2025-03-07,8.851851851851851
 Fredericia vs Hillerød,Hillerød,2025-03-07,18.17391304347826
-Hobro vs Horsens,Hobro,2025-03-08,15.222222222222221
+B 93 vs HB Køge,B 93,2025-03-07,7.393939393939394
+B 93 vs HB Køge,HB Køge,2025-03-07,16.392857142857142
 Hobro vs Horsens,Horsens,2025-03-08,9.903225806451612
-OB vs Kolding,OB,2025-03-08,7.451612903225806
 OB vs Kolding,Kolding,2025-03-08,5.5588235294117645
-Esbjerg vs Hvidovre,Hvidovre,2025-03-09,8.807692307692308
+Hobro vs Horsens,Hobro,2025-03-08,15.222222222222221
+OB vs Kolding,OB,2025-03-08,7.451612903225806
 Roskilde vs Vendsyssel,Roskilde,2025-03-09,9.066666666666666
 Esbjerg vs Hvidovre,Esbjerg,2025-03-09,9.25
 Roskilde vs Vendsyssel,Vendsyssel,2025-03-09,6.516129032258065
-Horsens vs Esbjerg,Horsens,2025-03-14,12.5
-Vendsyssel vs Fredericia,Fredericia,2025-03-14,8.096774193548388
-Hillerød vs B 93,B 93,2025-03-14,28.916666666666668
-HB Køge vs Roskilde,HB Køge,2025-03-14,14.166666666666666
-HB Køge vs Roskilde,Roskilde,2025-03-14,12.863636363636363
-Vendsyssel vs Fredericia,Vendsyssel,2025-03-14,14.615384615384615
-Hillerød vs B 93,Hillerød,2025-03-14,15.842105263157896
-Hvidovre vs OB,Hvidovre,2025-03-14,5.975
+Esbjerg vs Hvidovre,Hvidovre,2025-03-09,8.807692307692308
 Hvidovre vs OB,OB,2025-03-14,7.321428571428571
-Horsens vs Esbjerg,Esbjerg,2025-03-14,9.535714285714286
-Kolding vs Hobro,Hobro,2025-03-14,12.884615384615385
+Hvidovre vs OB,Hvidovre,2025-03-14,5.975
+Hillerød vs B 93,Hillerød,2025-03-14,15.842105263157896
 Kolding vs Hobro,Kolding,2025-03-14,5.651162790697675
-Vendsyssel vs Hillerød,Vendsyssel,2025-03-28,11.064516129032258
+Vendsyssel vs Fredericia,Vendsyssel,2025-03-14,14.615384615384615
+Vendsyssel vs Fredericia,Fredericia,2025-03-14,8.096774193548388
+Horsens vs Esbjerg,Horsens,2025-03-14,12.5
+Horsens vs Esbjerg,Esbjerg,2025-03-14,9.535714285714286
+Hillerød vs B 93,B 93,2025-03-14,28.916666666666668
+HB Køge vs Roskilde,Roskilde,2025-03-14,12.863636363636363
+HB Køge vs Roskilde,HB Køge,2025-03-14,14.166666666666666
+Kolding vs Hobro,Hobro,2025-03-14,12.884615384615385
 Vendsyssel vs Hillerød,Hillerød,2025-03-28,8.476190476190476
-Kolding vs Fredericia,Fredericia,2025-03-29,11.448275862068966
+Vendsyssel vs Hillerød,Vendsyssel,2025-03-28,11.064516129032258
+Kolding vs Fredericia,Kolding,2025-03-29,7.5
 Hvidovre vs Esbjerg,Hvidovre,2025-03-29,7.869565217391305
 Hvidovre vs Esbjerg,Esbjerg,2025-03-29,6.025
-Kolding vs Fredericia,Kolding,2025-03-29,7.5
-B 93 vs HB Køge,B 93,2025-03-29,8.275862068965518
+Kolding vs Fredericia,Fredericia,2025-03-29,11.448275862068966
 B 93 vs HB Køge,HB Køge,2025-03-29,8.482758620689655
+B 93 vs HB Køge,B 93,2025-03-29,8.275862068965518
 Hobro vs Roskilde,Hobro,2025-03-30,11.75
-Hobro vs Roskilde,Roskilde,2025-03-30,12.96774193548387
 OB vs Horsens,OB,2025-03-30,13.421052631578947
+Hobro vs Roskilde,Roskilde,2025-03-30,12.96774193548387
 OB vs Horsens,Horsens,2025-03-30,13.208333333333334
-HB Køge vs Vendsyssel,Vendsyssel,2025-04-04,9.423076923076923
-Roskilde vs B 93,Roskilde,2025-04-04,5.513513513513513
 Roskilde vs B 93,B 93,2025-04-04,15.64
-HB Køge vs Vendsyssel,HB Køge,2025-04-04,12.75
-Hillerød vs Hobro,Hillerød,2025-04-04,9.923076923076923
 Hillerød vs Hobro,Hobro,2025-04-04,15.88
+HB Køge vs Vendsyssel,HB Køge,2025-04-04,12.75
+Roskilde vs B 93,Roskilde,2025-04-04,5.513513513513513
+HB Køge vs Vendsyssel,Vendsyssel,2025-04-04,9.423076923076923
+Hillerød vs Hobro,Hillerød,2025-04-04,9.923076923076923
 Fredericia vs OB,OB,2025-04-05,8.380952380952381
 Fredericia vs OB,Fredericia,2025-04-05,16.833333333333332
-Esbjerg vs Kolding,Esbjerg,2025-04-06,7.212121212121212
 Esbjerg vs Kolding,Kolding,2025-04-06,6.794117647058823
 Horsens vs Hvidovre,Horsens,2025-04-06,8.75
+Esbjerg vs Kolding,Esbjerg,2025-04-06,7.212121212121212
 Horsens vs Hvidovre,Hvidovre,2025-04-06,6.425
 Fredericia vs Horsens,Horsens,2025-04-10,7.34375
 Fredericia vs Horsens,Fredericia,2025-04-10,15.454545454545455
 Kolding vs Hvidovre,Hvidovre,2025-04-11,8.029411764705882
 Kolding vs Hvidovre,Kolding,2025-04-11,5.216216216216216
-Esbjerg vs OB,OB,2025-04-11,8.8
-Esbjerg vs OB,Esbjerg,2025-04-11,8.333333333333334
 Hobro vs B 93,Hobro,2025-04-11,8.0
 Hobro vs B 93,B 93,2025-04-11,9.2
+Esbjerg vs OB,OB,2025-04-11,8.8
+Esbjerg vs OB,Esbjerg,2025-04-11,8.333333333333334
 Vendsyssel vs Roskilde,Roskilde,2025-04-12,8.48
 Vendsyssel vs Roskilde,Vendsyssel,2025-04-12,11.64
-HB Køge vs Hillerød,Hillerød,2025-04-13,9.12
 HB Køge vs Hillerød,HB Køge,2025-04-13,13.2
-Hvidovre vs Fredericia,Hvidovre,2025-04-16,10.678571428571429
+HB Køge vs Hillerød,Hillerød,2025-04-13,9.12
 Hvidovre vs Fredericia,Fredericia,2025-04-16,6.138888888888889
-Hobro vs Vendsyssel,Hobro,2025-04-16,14.28
+Hvidovre vs Fredericia,Hvidovre,2025-04-16,10.678571428571429
 Hobro vs Vendsyssel,Vendsyssel,2025-04-16,8.333333333333334
+Hobro vs Vendsyssel,Hobro,2025-04-16,14.28
+B 93 vs Hillerød,B 93,2025-04-17,7.852941176470588
+B 93 vs Hillerød,Hillerød,2025-04-17,12.25
 Roskilde vs HB Køge,HB Køge,2025-04-17,14.36
+Roskilde vs HB Køge,Roskilde,2025-04-17,6.7
 OB vs Kolding,OB,2025-04-17,8.03125
 OB vs Kolding,Kolding,2025-04-17,12.681818181818182
-B 93 vs Hillerød,Hillerød,2025-04-17,12.25
-B 93 vs Hillerød,B 93,2025-04-17,7.852941176470588
-Roskilde vs HB Køge,Roskilde,2025-04-17,6.7
-Horsens vs Esbjerg,Horsens,2025-04-18,15.733333333333333
-Horsens vs Esbjerg,Esbjerg,2025-04-18,7.827586206896552
+Horsens vs Esbjerg,Esbjerg,2025-04-18,8.285714285714286
+Horsens vs Esbjerg,Horsens,2025-04-18,13.941176470588236
+Vendsyssel vs B 93,B 93,2025-04-20,5.5588235294117645
+Hillerød vs Roskilde,Roskilde,2025-04-20,15.074074074074074
+Hillerød vs Roskilde,Hillerød,2025-04-20,16.8
+Vendsyssel vs B 93,Vendsyssel,2025-04-20,8.179487179487179
+Hvidovre vs OB,Hvidovre,2025-04-21,10.153846153846153
+Hvidovre vs OB,OB,2025-04-21,6.2
+Kolding vs Horsens,Horsens,2025-04-21,8.8
+Kolding vs Horsens,Kolding,2025-04-21,8.666666666666666
+HB Køge vs Hobro,HB Køge,2025-04-21,5.976190476190476
+HB Køge vs Hobro,Hobro,2025-04-21,19.105263157894736
