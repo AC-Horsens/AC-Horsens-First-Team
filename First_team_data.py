@@ -1235,7 +1235,7 @@ def Dashboard():
     team_summary['Cleaned xG against per 90'] = (team_summary['Cleaned xG against'] / state_duration) * 90
 
     team_summary = team_summary.round(2)
-    metrics_df = team_summary[['team_name', 'xG', 'xG difference', 'xG against', 'Cleaned xG', 'Cleaned xG diff', 'Cleaned xG against', 'Passes per possession']]
+    metrics_df = team_summary[['team_name', 'xG', 'xG difference', 'xG against', 'Cleaned xG', 'Cleaned xG difference', 'Cleaned xG against', 'Passes per possession']]
     per90_df = team_summary[['team_name', 
                             'xG per 90', 
                             'xG difference per 90', 
