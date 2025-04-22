@@ -2473,17 +2473,33 @@ def player_profiles():
     st.markdown("""
 ### 🎯 **Player Profiles Explained**
 
-This dashboard breaks down players by position and role using in-game statistics. For each profile, players are evaluated based on key tactical and technical responsibilities.
-
-Players are rated on a **1–10 scale** for each key metric using *percentile-based scoring*:
-- Top 10% of players = Score of **10**
-- Bottom 10% = Score of **1**
-- Metrics like possession lost or opponent xG/xA/PV are inverted → **lower values give higher scores**
-
-Final **Total Scores** are calculated using **weighted averages** of the category scores.  
-⚠️ Weak areas are given **extra weight** to emphasize development needs.
+This dashboard breaks down players by position and role using in-game statistics. Players are evaluated on key tactical and technical responsibilities, and **rated on a 1–10 scale using percentile-based scoring**.
 
 ---
+
+### 🧮 **How Are Players Rated?**
+
+- Metrics are ranked across all players at the same position.
+- **Top 10% = Score of 10**, **Bottom 10% = Score of 1**.
+- Some metrics (like possession loss, opponent xG) are inverted → **lower values give higher scores**.
+- Each metric belongs to a **category** (Defending, Passing, Chance Creation, Goalscoring, Possession Value).
+
+---
+
+### ⚖️ **How Is the Total Score Calculated?**
+
+- Category scores are combined using **weighted averages**.
+- **For defenders and midfielders:**  
+  → **Lower-performing areas** are weighted higher (to highlight weaknesses).  
+- **For attackers:**  
+  → **Top-performing areas** are weighted higher (to emphasize strengths).
+
+This allows the scoring to reflect the **different demands of each position**:  
+- **Attackers:** Reward peak performance.  
+- **Defenders:** Expose areas needing improvement.
+
+---
+
 """)
 
     with st.expander("Central Defender"):
