@@ -2483,7 +2483,7 @@ This dashboard breaks down players by position and role using in-game statistics
 - **Top 10% = Score of 10**, **Bottom 10% = Score of 1**.
 - Some metrics (like possession loss, opponent xG) are inverted → **lower values give higher scores**.
 - Each metric belongs to a **category** (Defending, Passing, Chance Creation, Goalscoring, Possession Value).
-
+- All player ratings are calculated based on all games this season, in the same league by players playing the same position
 ---
 
 ### ⚖️ **How Is the Total Score Calculated?**
@@ -2493,10 +2493,6 @@ This dashboard breaks down players by position and role using in-game statistics
   → **Lower-performing areas** are weighted higher (to highlight weaknesses).  
 - **For attackers:**  
   → **Top-performing areas** are weighted higher (to emphasize strengths).
-
-This allows the scoring to reflect the **different demands of each position**:  
-- **Attackers:** Reward peak performance.  
-- **Defenders:** Expose areas needing improvement.
 
 ---
 
@@ -2616,8 +2612,6 @@ This allows the scoring to reflect the **different demands of each position**:
   - 🎯 **Link-up Passing / Chance Creation:** 30%
   - ⚡ **Possession Value Added:** 20%
 """)
-
-
 
 Data_types = {
     'Dashboard': Dashboard,
