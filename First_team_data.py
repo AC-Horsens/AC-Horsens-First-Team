@@ -2429,58 +2429,45 @@ def vocabulary():
     st.markdown("""
     ## 🟡 **How to Understand This Dashboard**
 
-    This dashboard provides a **comprehensive performance overview** of AC Horsens' First Team,
-    focusing on key match metrics that can help coaches make informed decisions.
-
     ### ⚽ **What You’ll Find Here**
 
     1. **Game State Analysis**
        - Understand how much time the team spends in different match situations:
-         - Leading (**Horsens ahead**)
-         - Drawing (**equal score**)
-         - Trailing (**Opponent ahead**)
+         - Horsens (**Horsens ahead**)
+         - Draw (**equal score**)
+         - Opponent (**Opponent ahead**)
        - This helps identify how well the team manages various match scenarios.
 
     2. **Key Performance Metrics**
        - **xG (Expected Goals):** Measures the quality of chances created. A higher xG means the team is creating better chances.
        - **xG Difference:** The balance between chances created and conceded.
        - **xG Against:** Expected goals conceded — useful for evaluating defensive strength.
-       - **Passes per Possession:** Shows how well the team builds up play.
+       - **Passes per Possession:** Shows how many passes a team has per possession. Between 5 and 9 is the optimal for creating chances.
 
     3. **Per 90 Minutes Metrics**
        - Standardizes the performance numbers to a per-game basis (per 90 minutes), making it easier to compare across matches or teams.
 
     ---
 
-    ## 🧠 **Special Tactical Insights**
 
     ### 🟠 **Team Mentality Score**
        - Reflects how well the team controls space when defending.
        - Focuses on **limiting dangerous actions** from the opponent in advanced areas.
        - A higher score means better defensive discipline and mentality.
+       - We want to avoid box entries and dangerous shots. The team mentality score is measuring how many actions we can handle on our own third without the opponents threatening our goal
 
     ### 🟢 **Defensive Line Success Rate**
        - Measures how effective the team is at holding a high defensive line.
        - Indicates organization and the ability to limit opponent progress through compactness and positioning.
-
+       - We want to push our defensive line up to 25 meters in front of the goal whenever the ball is more than 40 meters away from our goal
     ### 🔵 **Set-Piece Efficiency**
        - Provides xG and actual goals from set-pieces like:
          - Corners
          - Free kicks
          - Throw-ins
-       - Helps evaluate how dangerous the team is on set plays — and how well they defend against them.
-
-    ---
-
-    ## 🎯 **Why This Matters for Coaching**
-
-    This dashboard helps you:
-    - Track the **effectiveness of tactics**.
-    - Understand **where the team dominates** and **where improvements are needed**.
-    - Support your match preparation and post-match analysis with **data-driven insights**.
-
-    The metrics are designed to be **easy to understand** and directly connected to how the team performs on the pitch — both with and without the ball.
-    """)
+        The definition of a set piece is 10 actions after the set piece or if the ball is cleared away from the final third
+    ---"""
+)
 
 
 Data_types = {
