@@ -2521,7 +2521,7 @@ Final **Total Scores** are calculated using **weighted averages** of the categor
   - ⚡ **Possession Value Added:** 15%
 """)
 
-    with st.expander("🧹 Number 6 (Defensive Midfielder)"):
+    with st.expander("Number 6 (Defensive Midfielder)"):
         st.markdown("""
 - **Focus:** Anchoring midfield, controlling tempo  
 - **Rated on:**  
