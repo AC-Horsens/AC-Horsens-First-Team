@@ -2470,99 +2470,139 @@ def vocabulary():
 def player_profiles():
     st.header("Player Profiles & Rating System")
 
+    st.header("Player Profiles & Rating System")
+
     st.markdown("""
 ### 🎯 **Player Profiles Explained**
 
 This dashboard breaks down players by position and role using in-game statistics. For each profile, players are evaluated based on key tactical and technical responsibilities.
 
+Players are rated on a **1–10 scale** for each key metric using *percentile-based scoring*:
+- Top 10% of players = Score of **10**
+- Bottom 10% = Score of **1**
+- Metrics like possession lost or opponent xG/xA/PV are inverted → **lower values give higher scores**
+
+Final **Total Scores** are calculated using **weighted averages** of the category scores.  
+⚠️ Weak areas are given **extra weight** to emphasize development needs.
+
 ---
+""")
 
+    with st.expander("⚖️ Balanced Central Defender"):
+        st.markdown("""
+- **Focus:** Defensive awareness + build-up reliability  
+- **Rated on:**  
+  - Opponent suppression (xG, xA, PV)
+  - Defensive actions: duels won %, aerial duels, interceptions, ball recoveries
+  - Possession value added per 90
+  - Forward zone pass %, passing % (safe/back zone passing)
+  - Limiting attempts conceded inside the box
+  - Low possession loss per 90
 
-#### ⚖️ **Balanced Central Defender**
-- Focus: Defensive awareness + build-up reliability
-- Rated on:
-  - Suppressing opponent xG, xA, and PV
-  - Defensive actions
+- **Weighting of categories:**
+  - 🛡️ **Defending:** 50%
+  - 🎯 **Passing:** 30%
+  - ⚡ **Possession Value Added:** 20%
+""")
+
+    with st.expander("🏃 Fullbacks"):
+        st.markdown("""
+- **Focus:** Supporting both defense and attack from wide areas  
+- **Rated on:**  
+  - Defensive duels, aerial duels
+  - Interceptions and recoveries
+  - Opponent suppression (xG, xA, PV)
+  - Final third entries, penalty area entries, assists, total crosses
+  - xA per 90, progressive passes
+  - Possession value added per 90, low possession loss
+
+- **Weighting of categories:**
+  - 🛡️ **Defending:** 30%
+  - 🎯 **Passing:** 25%
+  - 🎨 **Chance Creation:** 30%
+  - ⚡ **Possession Value Added:** 15%
+""")
+
+    with st.expander("🧹 Number 6 (Defensive Midfielder)"):
+        st.markdown("""
+- **Focus:** Anchoring midfield, controlling tempo  
+- **Rated on:**  
+  - Duels won %, aerial duels, interceptions, recoveries
+  - Passing security (back zone %, total passes)
+  - Forward passing (zone entry, progression)
+  - Possession value added per 90
   - Low possession loss
-  - Safe and forward passing
 
----
+- **Weighting of categories:**
+  - 🛡️ **Defending:** 40%
+  - 🎯 **Passing:** 35%
+  - ⚡ **Possession Value Added:** 25%
+""")
 
-#### 🏃 **Fullbacks**
-- Focus: Supporting both defense and attack from wide areas
-- Rated on:
-  - Defensive duels
-  - Final third entries & assists
-  - Crossing and chance creation
+    with st.expander("🧠 Number 8 (Box-to-Box Midfielder)"):
+        st.markdown("""
+- **Focus:** Two-way midfielder contributing both defensively and offensively  
+- **Rated on:**  
+  - Defensive work rate (duels, recoveries, interceptions)
+  - Progressive ball movement (forward passes, entries)
+  - Chance creation (xA, assists, penalty area entries)
+  - Passing efficiency (forward %, back %, total volume)
   - Possession value added
 
----
+- **Weighting of categories:**
+  - 🛡️ **Defending:** 30%
+  - 🎯 **Passing:** 30%
+  - 🎨 **Progressive Ball Movement / Chance Creation:** 30%
+  - ⚡ **Possession Value Added:** 10%
+""")
 
-#### 🧹 **Number 6**
-- Focus: Anchoring midfield, controlling tempo
-- Rated on:
-  - Duels and interceptions
-  - Passing efficiency (especially backward/sideways)
-  - Recovery actions
-  - Forward passing when possible
-
----
-
-
-#### 🧠 **Number 8**
-- Focus: Box-to-box midfielder
-- Rated on:
-  - Defensive work rate
-  - Progressive ball movement
-  - Final third passing
-  - Passing % and volume
-
----
-
-#### 🎨 **Number 10**
-- Focus: Creativity and offensive output
-- Rated on:
-  - xA, xG, shot quality
+    with st.expander("🎨 Number 10 (Attacking Midfielder / Playmaker)"):
+        st.markdown("""
+- **Focus:** Creativity and offensive production  
+- **Rated on:**  
+  - Chance creation (xA, assists, open play passes, penalty area entries)
+  - Goalscoring contribution (xG, post-shot xG, touches in box)
   - Dribbling and passing in the final third
-  - Assists and entries into dangerous areas
+  - Possession value (PV added, total, loss management)
 
----
+- **Weighting of categories:**
+  - 🎨 **Chance Creation:** 40%
+  - 🎯 **Passing:** 25%
+  - 🎯 **Goalscoring:** 25%
+  - ⚡ **Possession Value Added:** 10%
+""")
 
-#### ⚡ **Winger**
-- Focus: Wide attacking threat
-- Rated on:
-  - Dribbling success and chance creation
-  - Touches in the box
-  - Crosses and assists
+    with st.expander("⚡ Winger"):
+        st.markdown("""
+- **Focus:** Wide attacking threat and 1v1 capability  
+- **Rated on:**  
+  - Dribbling success %, dribbles per 90
+  - Chance creation (crosses, xA, assists, penalty area entries)
+  - Passing quality (forward zone %, volume)
+  - Goal threat (xG, post-shot xG, touches in the box)
+  - Possession value added, minimizing loss
 
----
+- **Weighting of categories:**
+  - 🎨 **Chance Creation:** 35%
+  - 🏹 **Goalscoring:** 25%
+  - 🎯 **Passing:** 25%
+  - ⚡ **Possession Value Added:** 15%
+""")
 
-#### 🎯 **Classic Striker**
-- Focus: Goalscoring + link-up play
-- Rated on:
-  - xG, post-shot xG
-  - Link-up and passing
-  - Chance creation through involvement
+    with st.expander("🎯 Classic Striker"):
+        st.markdown("""
+- **Focus:** Goalscoring + linking play  
+- **Rated on:**  
+  - Finishing quality (xG, post-shot xG, attempts in box)
+  - Link-up play (passing %, forward zone passing, assists)
+  - Possession value added
 
----
+- **Weighting of categories:**
+  - 🏹 **Goalscoring:** 50%
+  - 🎯 **Link-up Passing / Chance Creation:** 30%
+  - ⚡ **Possession Value Added:** 20%
+""")
 
-### 🧮 **How Are Players Rated?**
-
-Players are rated on a **1–10 scale** for each key metric using *percentile-based scoring*. Here’s how it works:
-
-- Players are grouped into percentiles across each metric (e.g., duel win %, pass accuracy).
-- A player in the top 10% gets a score of 10; bottom 10% gets 1.
-- Some metrics are reversed (e.g., possession lost), so lower values get higher scores.
-- These metric scores are **grouped by category** (Defending, Passing, Chance Creation, etc.) and averaged.
-- **Total score** is a weighted mean of category scores:
-  - More weight is given to weak areas for development emphasis.
-  - Example: A player weak in defending may have that weighted more in their total score.
-
----
-
-These profiles help identify what role a player best fits in, what they excel at, and where they might need improvement — **backed by real match data**.
-
-    """)
 
 
 Data_types = {
