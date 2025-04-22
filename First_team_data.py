@@ -1207,7 +1207,7 @@ def Dashboard():
     xg_per_match['xG_diff'] = 2 * xg_per_match['321.0'] - xg_per_match['total_match_xG']
     xg_per_match['xG against'] = xg_per_match['total_match_xG'] - xg_per_match['321.0']
 
-    cleaned_xg_per_match['Cleaned xG diff'] = 2 * cleaned_xg_per_match['321.0'] - cleaned_xg_per_match['total_match_cleaned_xG']
+    cleaned_xg_per_match['Cleaned xG difference'] = 2 * cleaned_xg_per_match['321.0'] - cleaned_xg_per_match['total_match_cleaned_xG']
     cleaned_xg_per_match['Cleaned xG against'] = cleaned_xg_per_match['total_match_cleaned_xG'] - cleaned_xg_per_match['321.0']
 
     # Now average xG and xG_diff per team
@@ -1219,7 +1219,7 @@ def Dashboard():
     
     cleaned_xg_summary = cleaned_xg_per_match.groupby('team_name').agg({
         '321.0': 'sum',
-        'Cleaned xG diff': 'sum',
+        'Cleaned xG difference': 'sum',
         'Cleaned xG against': 'sum'       # xG against
     }).reset_index()
     cleaned_xg_summary = cleaned_xg_summary.rename(columns={'321.0': 'Cleaned xG'})
@@ -1230,10 +1230,20 @@ def Dashboard():
     team_summary['xG per 90'] = (team_summary['xG']/state_duration)*90
     team_summary['xG difference per 90'] = (team_summary['xG difference']/state_duration)*90
     team_summary['xG against per 90'] = (team_summary['xG against']/state_duration)*90
+    team_summary['Cleaned xG per 90'] = (team_summary['Cleaned xG'] / state_duration) * 90
+    team_summary['Cleaned xG difference per 90'] = (team_summary['Cleaned xG difference'] / state_duration) * 90
+    team_summary['Cleaned xG against per 90'] = (team_summary['Cleaned xG against'] / state_duration) * 90
 
     team_summary = team_summary.round(2)
     metrics_df = team_summary[['team_name', 'xG', 'xG difference', 'xG against', 'Cleaned xG', 'Cleaned xG diff', 'Cleaned xG against', 'Passes per possession']]
-    per90_df = team_summary[['team_name', 'xG per 90', 'xG difference per 90', 'xG against per 90']]
+    per90_df = team_summary[['team_name', 
+                            'xG per 90', 
+                            'xG difference per 90', 
+                            'xG against per 90',
+                            'Cleaned xG per 90', 
+                            'Cleaned xG difference per 90', 
+                            'Cleaned xG against per 90',
+                            'Passes per possession']]
 
     # Display one above the other
     st.subheader("Team Summary (Total Metrics)")
