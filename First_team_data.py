@@ -2486,7 +2486,8 @@ def vocabulary():
 Data_types = {
     'Dashboard': Dashboard,
     'Opposition analysis': Opposition_analysis,
-    'Physical data': Physical_data
+    'Physical data': Physical_data,
+    'Vocabulary': vocabulary
 }
 
 
