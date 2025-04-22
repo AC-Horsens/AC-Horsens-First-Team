@@ -2609,7 +2609,7 @@ This dashboard breaks down players by position and role using in-game statistics
   - ⚡ **Possession Value Added:** 15%
 """)
 
-    with st.expander("Classic Striker"):
+    with st.expander("Striker"):
         st.markdown("""
 - **Focus:** Goalscoring + linking play  
 - **Rated on:**  
