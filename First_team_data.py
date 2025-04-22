@@ -2470,8 +2470,6 @@ def vocabulary():
 def player_profiles():
     st.header("Player Profiles & Rating System")
 
-    st.header("Player Profiles & Rating System")
-
     st.markdown("""
 ### 🎯 **Player Profiles Explained**
 
@@ -2488,7 +2486,7 @@ Final **Total Scores** are calculated using **weighted averages** of the categor
 ---
 """)
 
-    with st.expander("⚖️ Balanced Central Defender"):
+    with st.expander("Central Defender"):
         st.markdown("""
 - **Focus:** Defensive awareness + build-up reliability  
 - **Rated on:**  
@@ -2505,7 +2503,7 @@ Final **Total Scores** are calculated using **weighted averages** of the categor
   - ⚡ **Possession Value Added:** 20%
 """)
 
-    with st.expander("🏃 Fullbacks"):
+    with st.expander("Fullbacks"):
         st.markdown("""
 - **Focus:** Supporting both defense and attack from wide areas  
 - **Rated on:**  
@@ -2539,7 +2537,7 @@ Final **Total Scores** are calculated using **weighted averages** of the categor
   - ⚡ **Possession Value Added:** 25%
 """)
 
-    with st.expander("🧠 Number 8 (Box-to-Box Midfielder)"):
+    with st.expander("Number 8"):
         st.markdown("""
 - **Focus:** Two-way midfielder contributing both defensively and offensively  
 - **Rated on:**  
@@ -2556,7 +2554,7 @@ Final **Total Scores** are calculated using **weighted averages** of the categor
   - ⚡ **Possession Value Added:** 10%
 """)
 
-    with st.expander("🎨 Number 10 (Attacking Midfielder / Playmaker)"):
+    with st.expander("Number 10"):
         st.markdown("""
 - **Focus:** Creativity and offensive production  
 - **Rated on:**  
@@ -2572,7 +2570,7 @@ Final **Total Scores** are calculated using **weighted averages** of the categor
   - ⚡ **Possession Value Added:** 10%
 """)
 
-    with st.expander("⚡ Winger"):
+    with st.expander("Winger"):
         st.markdown("""
 - **Focus:** Wide attacking threat and 1v1 capability  
 - **Rated on:**  
@@ -2589,7 +2587,7 @@ Final **Total Scores** are calculated using **weighted averages** of the categor
   - ⚡ **Possession Value Added:** 15%
 """)
 
-    with st.expander("🎯 Classic Striker"):
+    with st.expander("Classic Striker"):
         st.markdown("""
 - **Focus:** Goalscoring + linking play  
 - **Rated on:**  
