@@ -2483,7 +2483,7 @@ This dashboard breaks down players by position and role using in-game statistics
 - **Top 10% = Score of 10**, **Bottom 10% = Score of 1**.
 - Some metrics (like possession loss, opponent xG) are inverted → **lower values give higher scores**.
 - Each metric belongs to a **category** (Defending, Passing, Chance Creation, Goalscoring, Possession Value).
-- All player ratings are calculated based on all games this season, in the same league by players playing the same position
+- All player ratings are calculated based on all games this season, in the same league by players playing the same position.
 ---
 
 ### ⚖️ **How Is the Total Score Calculated?**
