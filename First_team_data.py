@@ -2543,7 +2543,7 @@ This dashboard breaks down players by position and role using in-game statistics
   - ⚡ **Possession Value Added:** 15%
 """)
 
-    with st.expander("Number 6 (Defensive Midfielder)"):
+    with st.expander("Number 6"):
         st.markdown("""
 - **Focus:** Anchoring midfield, controlling tempo  
 - **Rated on:**  
