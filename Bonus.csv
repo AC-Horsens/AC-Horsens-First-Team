@@ -1,541 +1,541 @@
 ,date,label,player_matchName,player_position,minsPlayed
-198,2024-07-21,Horsens vs Fredericia,M. Delač,Goalkeeper,90
-199,2024-07-21,Horsens vs Fredericia,J. Madsen,Defender,90
-200,2024-07-21,Horsens vs Fredericia,S. Reese,Defender,90
-201,2024-07-21,Horsens vs Fredericia,S. Hausner,Defender,90
-202,2024-07-21,Horsens vs Fredericia,M. Kallesøe,Defender,61
-203,2024-07-21,Horsens vs Fredericia,M. Larsen,Midfielder,78
-204,2024-07-21,Horsens vs Fredericia,F. Christensen,Midfielder,90
-205,2024-07-21,Horsens vs Fredericia,M. Opondo,Midfielder,61
-206,2024-07-21,Horsens vs Fredericia,S. Pingel,Attacking Midfielder,90
-207,2024-07-21,Horsens vs Fredericia,J. Ankersen,Attacking Midfielder,68
-208,2024-07-21,Horsens vs Fredericia,M. Egho,Striker,62
-209,2024-07-21,Horsens vs Fredericia,A. Ekeroth,Substitute,12
-210,2024-07-21,Horsens vs Fredericia,A. Herdonsson,Substitute,29
-211,2024-07-21,Horsens vs Fredericia,M. Hyseni,Substitute,28
-212,2024-07-21,Horsens vs Fredericia,E. Just,Substitute,22
-213,2024-07-21,Horsens vs Fredericia,A. Hermansen,Substitute,NaN
-214,2024-07-21,Horsens vs Fredericia,O. Kolskogen,Substitute,29
-215,2024-07-21,Horsens vs Fredericia,A. Ludwig,Substitute,NaN
-216,2024-07-21,Horsens vs Fredericia,A. Nehme,Substitute,NaN
-217,2024-07-21,Horsens vs Fredericia,O. Stanisic,Substitute,NaN
-417,2025-03-08,Hobro vs Horsens,M. Delač,Goalkeeper,90
-418,2025-03-08,Hobro vs Horsens,C. Tapé,Defender,51
-419,2025-03-08,Hobro vs Horsens,O. Kolskogen,Defender,45
-420,2025-03-08,Hobro vs Horsens,S. Hausner,Defender,90
-421,2025-03-08,Hobro vs Horsens,M. Kallesøe,Defender,90
-422,2025-03-08,Hobro vs Horsens,S. Ngabo,Midfielder,71
-423,2025-03-08,Hobro vs Horsens,A. Herdonsson,Midfielder,63
-424,2025-03-08,Hobro vs Horsens,F. Christensen,Midfielder,90
-425,2025-03-08,Hobro vs Horsens,E. Frederiksen,Midfielder,90
-426,2025-03-08,Hobro vs Horsens,S. Pingel,Striker,90
-427,2025-03-08,Hobro vs Horsens,K. Karikari,Striker,63
-428,2025-03-08,Hobro vs Horsens,M. Egho,Substitute,NaN
-429,2025-03-08,Hobro vs Horsens,G. Guðmundsson,Substitute,19
-430,2025-03-08,Hobro vs Horsens,M. Hyseni,Substitute,NaN
-431,2025-03-08,Hobro vs Horsens,O. Kjærgaard,Substitute,27
-432,2025-03-08,Hobro vs Horsens,A. Ludwig,Substitute,NaN
-433,2025-03-08,Hobro vs Horsens,K. Lusavec,Substitute,27
-434,2025-03-08,Hobro vs Horsens,J. Madsen,Substitute,39
-435,2025-03-08,Hobro vs Horsens,F. Roslyng,Substitute,45
-436,2025-03-08,Hobro vs Horsens,F. Đukić,Substitute,NaN
-437,2024-07-26,Horsens vs Hillerød,M. Delač,Goalkeeper,90
-438,2024-07-26,Horsens vs Hillerød,A. Ekeroth,Defender,90
-439,2024-07-26,Horsens vs Hillerød,O. Kolskogen,Defender,72
-440,2024-07-26,Horsens vs Hillerød,S. Hausner,Defender,90
-441,2024-07-26,Horsens vs Hillerød,M. Kallesøe,Defender,72
-442,2024-07-26,Horsens vs Hillerød,J. Madsen,Defensive Midfielder,90
-443,2024-07-26,Horsens vs Hillerød,F. Christensen,Defensive Midfielder,90
-444,2024-07-26,Horsens vs Hillerød,M. Larsen,Defensive Midfielder,79
-445,2024-07-26,Horsens vs Hillerød,J. Ankersen,Attacking Midfielder,63
-446,2024-07-26,Horsens vs Hillerød,S. Pingel,Striker,90
-447,2024-07-26,Horsens vs Hillerød,M. Egho,Striker,72
-448,2024-07-26,Horsens vs Hillerød,A. Herdonsson,Substitute,18
-449,2024-07-26,Horsens vs Hillerød,M. Hyseni,Substitute,27
-450,2024-07-26,Horsens vs Hillerød,E. Just,Substitute,11
-451,2024-07-26,Horsens vs Hillerød,A. Hermansen,Substitute,NaN
-452,2024-07-26,Horsens vs Hillerød,K. Karikari,Substitute,18
-453,2024-07-26,Horsens vs Hillerød,A. Ludwig,Substitute,NaN
-454,2024-07-26,Horsens vs Hillerød,A. Nehme,Substitute,NaN
-455,2024-07-26,Horsens vs Hillerød,S. Reese,Substitute,NaN
-456,2024-07-26,Horsens vs Hillerød,F. Roslyng,Substitute,18
-832,2025-03-14,Horsens vs Esbjerg,M. Delač,Goalkeeper,90
-833,2025-03-14,Horsens vs Esbjerg,C. Tapé,Defender,90
-834,2025-03-14,Horsens vs Esbjerg,F. Roslyng,Defender,90
-835,2025-03-14,Horsens vs Esbjerg,S. Hausner,Defender,74
-836,2025-03-14,Horsens vs Esbjerg,M. Kallesøe,Defender,90
-837,2025-03-14,Horsens vs Esbjerg,S. Ngabo,Midfielder,68
-838,2025-03-14,Horsens vs Esbjerg,A. Herdonsson,Midfielder,90
-840,2025-03-14,Horsens vs Esbjerg,K. Lusavec,Midfielder,90
-841,2025-03-14,Horsens vs Esbjerg,K. Karikari,Midfielder,82
-842,2025-03-14,Horsens vs Esbjerg,E. Frederiksen,Attacking Midfielder,82
-843,2025-03-14,Horsens vs Esbjerg,S. Pingel,Striker,90
-844,2025-03-14,Horsens vs Esbjerg,S. Doua,Substitute,NaN
-845,2025-03-14,Horsens vs Esbjerg,M. Egho,Substitute,NaN
-846,2025-03-14,Horsens vs Esbjerg,G. Guðmundsson,Substitute,22
-847,2025-03-14,Horsens vs Esbjerg,M. Hyseni,Substitute,NaN
-848,2025-03-14,Horsens vs Esbjerg,O. Kjærgaard,Substitute,8
-849,2025-03-14,Horsens vs Esbjerg,A. Ludwig,Substitute,16
-850,2025-03-14,Horsens vs Esbjerg,Y. Ouorou,Substitute,8
-851,2025-03-14,Horsens vs Esbjerg,A. Moro,Substitute,NaN
-852,2025-03-14,Horsens vs Esbjerg,F. Đukić,Substitute,NaN
-1129,2024-08-04,Esbjerg vs Horsens,M. Delač,Goalkeeper,90
-1130,2024-08-04,Esbjerg vs Horsens,J. Madsen,Defender,90
-1131,2024-08-04,Esbjerg vs Horsens,O. Kolskogen,Defender,75
-1132,2024-08-04,Esbjerg vs Horsens,S. Hausner,Defender,90
-1133,2024-08-04,Esbjerg vs Horsens,M. Kallesøe,Defender,83
-1134,2024-08-04,Esbjerg vs Horsens,A. Herdonsson,Defensive Midfielder,90
-1135,2024-08-04,Esbjerg vs Horsens,F. Christensen,Defensive Midfielder,90
-1136,2024-08-04,Esbjerg vs Horsens,J. Ankersen,Attacking Midfielder,90
-1137,2024-08-04,Esbjerg vs Horsens,S. Pingel,Attacking Midfielder,83
-1138,2024-08-04,Esbjerg vs Horsens,E. Just,Attacking Midfielder,69
-1139,2024-08-04,Esbjerg vs Horsens,M. Egho,Striker,69
-1140,2024-08-04,Esbjerg vs Horsens,M. Hyseni,Substitute,21
-1141,2024-08-04,Esbjerg vs Horsens,K. Karikari,Substitute,7
-1142,2024-08-04,Esbjerg vs Horsens,A. Ludwig,Substitute,15
-1143,2024-08-04,Esbjerg vs Horsens,O. Kouassi,Substitute,NaN
-1144,2024-08-04,Esbjerg vs Horsens,A. Nehme,Substitute,NaN
-1145,2024-08-04,Esbjerg vs Horsens,A. Hoff,Substitute,NaN
-1146,2024-08-04,Esbjerg vs Horsens,F. Roslyng,Substitute,7
-1147,2024-08-04,Esbjerg vs Horsens,C. Tapé,Substitute,21
-1148,2024-08-04,Esbjerg vs Horsens,H. Toftegaard,Substitute,NaN
-1486,2024-08-11,HB Køge vs Horsens,M. Delač,Goalkeeper,90
-1487,2024-08-11,HB Køge vs Horsens,J. Madsen,Defender,90
-1488,2024-08-11,HB Køge vs Horsens,O. Kolskogen,Defender,90
-1489,2024-08-11,HB Køge vs Horsens,S. Hausner,Defender,90
-1490,2024-08-11,HB Køge vs Horsens,M. Kallesøe,Defender,90
-1491,2024-08-11,HB Køge vs Horsens,A. Herdonsson,Defensive Midfielder,90
-1492,2024-08-11,HB Køge vs Horsens,F. Christensen,Defensive Midfielder,72
-1493,2024-08-11,HB Køge vs Horsens,E. Just,Defensive Midfielder,90
-1494,2024-08-11,HB Køge vs Horsens,J. Ankersen,Attacking Midfielder,63
-1495,2024-08-11,HB Køge vs Horsens,M. Egho,Striker,72
-1496,2024-08-11,HB Køge vs Horsens,S. Pingel,Striker,90
-1497,2024-08-11,HB Køge vs Horsens,M. Hyseni,Substitute,NaN
-1498,2024-08-11,HB Køge vs Horsens,K. Karikari,Substitute,18
-1499,2024-08-11,HB Køge vs Horsens,O. Kjærgaard,Substitute,27
-1500,2024-08-11,HB Køge vs Horsens,A. Ludwig,Substitute,NaN
-1501,2024-08-11,HB Køge vs Horsens,O. Kouassi,Substitute,NaN
-1502,2024-08-11,HB Køge vs Horsens,A. Hoff,Substitute,NaN
-1503,2024-08-11,HB Køge vs Horsens,F. Roslyng,Substitute,NaN
-1504,2024-08-11,HB Køge vs Horsens,C. Tapé,Substitute,18
-1505,2024-08-11,HB Køge vs Horsens,H. Toftegaard,Substitute,NaN
-1526,2025-03-30,OB vs Horsens,M. Delač,Goalkeeper,90
-1527,2025-03-30,OB vs Horsens,J. Madsen,Defender,90
-1528,2025-03-30,OB vs Horsens,F. Roslyng,Defender,90
-1529,2025-03-30,OB vs Horsens,S. Hausner,Defender,79
-1530,2025-03-30,OB vs Horsens,M. Kallesøe,Defender,90
-1531,2025-03-30,OB vs Horsens,S. Ngabo,Midfielder,79
-1532,2025-03-30,OB vs Horsens,K. Lusavec,Midfielder,86
-1533,2025-03-30,OB vs Horsens,F. Christensen,Midfielder,90
-1534,2025-03-30,OB vs Horsens,K. Karikari,Midfielder,85
-1535,2025-03-30,OB vs Horsens,S. Pingel,Striker,90
-1536,2025-03-30,OB vs Horsens,E. Frederiksen,Striker,64
-1537,2025-03-30,OB vs Horsens,M. Egho,Substitute,4
-1538,2025-03-30,OB vs Horsens,G. Guðmundsson,Substitute,5
-1539,2025-03-30,OB vs Horsens,A. Herdonsson,Substitute,NaN
-1540,2025-03-30,OB vs Horsens,O. Kjærgaard,Substitute,26
-1541,2025-03-30,OB vs Horsens,O. Kolskogen,Substitute,11
-1542,2025-03-30,OB vs Horsens,A. Ludwig,Substitute,NaN
-1543,2025-03-30,OB vs Horsens,A. Hoff,Substitute,NaN
-1544,2025-03-30,OB vs Horsens,Y. Ouorou,Substitute,11
-1545,2025-03-30,OB vs Horsens,A. Moro,Substitute,NaN
-1625,2024-08-16,Horsens vs Kolding,M. Delač,Goalkeeper,90
-1626,2024-08-16,Horsens vs Kolding,J. Madsen,Defender,65
-1627,2024-08-16,Horsens vs Kolding,O. Kolskogen,Defender,81
-1628,2024-08-16,Horsens vs Kolding,S. Hausner,Defender,90
-1629,2024-08-16,Horsens vs Kolding,M. Kallesøe,Defender,90
-1630,2024-08-16,Horsens vs Kolding,A. Herdonsson,Defensive Midfielder,90
-1631,2024-08-16,Horsens vs Kolding,F. Christensen,Defensive Midfielder,81
-1632,2024-08-16,Horsens vs Kolding,O. Kjærgaard,Defensive Midfielder,90
-1633,2024-08-16,Horsens vs Kolding,J. Ankersen,Attacking Midfielder,14
-1634,2024-08-16,Horsens vs Kolding,M. Egho,Striker,65
-1635,2024-08-16,Horsens vs Kolding,S. Pingel,Striker,90
-1636,2024-08-16,Horsens vs Kolding,M. Hyseni,Substitute,25
-1637,2024-08-16,Horsens vs Kolding,K. Karikari,Substitute,9
-1638,2024-08-16,Horsens vs Kolding,A. Ludwig,Substitute,9
-1639,2024-08-16,Horsens vs Kolding,O. Kouassi,Substitute,NaN
-1640,2024-08-16,Horsens vs Kolding,S. Ngabo,Substitute,25
-1641,2024-08-16,Horsens vs Kolding,A. Hoff,Substitute,NaN
-1642,2024-08-16,Horsens vs Kolding,F. Roslyng,Substitute,NaN
-1643,2024-08-16,Horsens vs Kolding,A. Moro,Substitute,NaN
-1644,2024-08-16,Horsens vs Kolding,C. Tapé,Substitute,76
-1983,2025-04-06,Horsens vs Hvidovre,M. Delač,Goalkeeper,90
-1984,2025-04-06,Horsens vs Hvidovre,C. Tapé,Defender,90
-1985,2025-04-06,Horsens vs Hvidovre,F. Roslyng,Defender,90
-1986,2025-04-06,Horsens vs Hvidovre,O. Kolskogen,Defender,90
-1987,2025-04-06,Horsens vs Hvidovre,M. Kallesøe,Defender,75
-1988,2025-04-06,Horsens vs Hvidovre,K. Lusavec,Defensive Midfielder,75
-1989,2025-04-06,Horsens vs Hvidovre,F. Christensen,Defensive Midfielder,90
-1990,2025-04-06,Horsens vs Hvidovre,S. Ngabo,Attacking Midfielder,76
-1991,2025-04-06,Horsens vs Hvidovre,E. Frederiksen,Attacking Midfielder,87
-1992,2025-04-06,Horsens vs Hvidovre,O. Kjærgaard,Attacking Midfielder,90
-1993,2025-04-06,Horsens vs Hvidovre,S. Pingel,Striker,28
-1994,2025-04-06,Horsens vs Hvidovre,S. Doua,Substitute,15
-1995,2025-04-06,Horsens vs Hvidovre,A. Herdonsson,Substitute,15
-1996,2025-04-06,Horsens vs Hvidovre,M. Hyseni,Substitute,NaN
-1997,2025-04-06,Horsens vs Hvidovre,K. Karikari,Substitute,62
-1998,2025-04-06,Horsens vs Hvidovre,A. Ludwig,Substitute,NaN
-1999,2025-04-06,Horsens vs Hvidovre,J. Madsen,Substitute,NaN
-2000,2025-04-06,Horsens vs Hvidovre,Y. Ouorou,Substitute,14
-2001,2025-04-06,Horsens vs Hvidovre,A. Moro,Substitute,3
-2002,2025-04-06,Horsens vs Hvidovre,F. Đukić,Substitute,NaN
-2041,2024-08-20,Roskilde vs Horsens,M. Delač,Goalkeeper,90
-2042,2024-08-20,Roskilde vs Horsens,C. Tapé,Defender,90
-2043,2024-08-20,Roskilde vs Horsens,A. Ludwig,Defender,90
-2044,2024-08-20,Roskilde vs Horsens,S. Hausner,Defender,90
-2045,2024-08-20,Roskilde vs Horsens,M. Kallesøe,Defender,85
-2046,2024-08-20,Roskilde vs Horsens,J. Madsen,Defensive Midfielder,74
-2047,2024-08-20,Roskilde vs Horsens,A. Herdonsson,Defensive Midfielder,90
-2048,2024-08-20,Roskilde vs Horsens,O. Kjærgaard,Defensive Midfielder,90
-2049,2024-08-20,Roskilde vs Horsens,S. Ngabo,Attacking Midfielder,74
-2050,2024-08-20,Roskilde vs Horsens,M. Hyseni,Striker,58
-2051,2024-08-20,Roskilde vs Horsens,S. Pingel,Striker,58
-2052,2024-08-20,Roskilde vs Horsens,M. Egho,Substitute,32
-2053,2024-08-20,Roskilde vs Horsens,F. Christensen,Substitute,16
-2054,2024-08-20,Roskilde vs Horsens,K. Karikari,Substitute,32
-2055,2024-08-20,Roskilde vs Horsens,O. Kolskogen,Substitute,5
-2056,2024-08-20,Roskilde vs Horsens,O. Kouassi,Substitute,NaN
-2057,2024-08-20,Roskilde vs Horsens,A. Hoff,Substitute,NaN
-2058,2024-08-20,Roskilde vs Horsens,M. Opondo,Substitute,NaN
-2059,2024-08-20,Roskilde vs Horsens,F. Roslyng,Substitute,NaN
-2060,2024-08-20,Roskilde vs Horsens,J. Ankersen,Substitute,16
-2081,2025-04-10,Fredericia vs Horsens,F. Đukić,Goalkeeper,90
-2082,2025-04-10,Fredericia vs Horsens,C. Tapé,Defender,90
-2083,2025-04-10,Fredericia vs Horsens,F. Roslyng,Defender,90
-2084,2025-04-10,Fredericia vs Horsens,S. Hausner,Defender,90
-2085,2025-04-10,Fredericia vs Horsens,M. Kallesøe,Defender,19
-2086,2025-04-10,Fredericia vs Horsens,J. Madsen,Midfielder,56
-2087,2025-04-10,Fredericia vs Horsens,K. Lusavec,Midfielder,74
-2088,2025-04-10,Fredericia vs Horsens,F. Christensen,Midfielder,90
-2089,2025-04-10,Fredericia vs Horsens,E. Frederiksen,Midfielder,90
-2090,2025-04-10,Fredericia vs Horsens,S. Ngabo,Attacking Midfielder,56
-2091,2025-04-10,Fredericia vs Horsens,K. Karikari,Striker,74
-2092,2025-04-10,Fredericia vs Horsens,S. Doua,Substitute,71
-2093,2025-04-10,Fredericia vs Horsens,A. Herdonsson,Substitute,16
-2094,2025-04-10,Fredericia vs Horsens,M. Hyseni,Substitute,16
-2095,2025-04-10,Fredericia vs Horsens,O. Kjærgaard,Substitute,NaN
-2096,2025-04-10,Fredericia vs Horsens,O. Kolskogen,Substitute,NaN
-2097,2025-04-10,Fredericia vs Horsens,O. Kouassi,Substitute,NaN
-2098,2025-04-10,Fredericia vs Horsens,A. Hoff,Substitute,NaN
-2099,2025-04-10,Fredericia vs Horsens,Y. Ouorou,Substitute,34
-2100,2025-04-10,Fredericia vs Horsens,A. Moro,Substitute,34
-2616,2024-08-24,Horsens vs Vendsyssel,M. Delač,Goalkeeper,90
-2617,2024-08-24,Horsens vs Vendsyssel,C. Tapé,Defender,90
-2618,2024-08-24,Horsens vs Vendsyssel,A. Ludwig,Defender,90
-2619,2024-08-24,Horsens vs Vendsyssel,S. Hausner,Defender,90
-2620,2024-08-24,Horsens vs Vendsyssel,M. Kallesøe,Defender,31
-2621,2024-08-24,Horsens vs Vendsyssel,J. Madsen,Midfielder,60
-2622,2024-08-24,Horsens vs Vendsyssel,F. Christensen,Midfielder,60
-2623,2024-08-24,Horsens vs Vendsyssel,O. Kjærgaard,Midfielder,90
-2624,2024-08-24,Horsens vs Vendsyssel,S. Ngabo,Striker,75
-2625,2024-08-24,Horsens vs Vendsyssel,M. Egho,Striker,45
-2626,2024-08-24,Horsens vs Vendsyssel,S. Pingel,Striker,90
-2627,2024-08-24,Horsens vs Vendsyssel,A. Herdonsson,Substitute,30
-2628,2024-08-24,Horsens vs Vendsyssel,M. Hyseni,Substitute,15
-2629,2024-08-24,Horsens vs Vendsyssel,K. Karikari,Substitute,45
-2630,2024-08-24,Horsens vs Vendsyssel,O. Kolskogen,Substitute,59
-2631,2024-08-24,Horsens vs Vendsyssel,O. Kouassi,Substitute,30
-2632,2024-08-24,Horsens vs Vendsyssel,A. Hoff,Substitute,NaN
-2633,2024-08-24,Horsens vs Vendsyssel,M. Opondo,Substitute,NaN
-2634,2024-08-24,Horsens vs Vendsyssel,F. Roslyng,Substitute,NaN
-2635,2024-08-24,Horsens vs Vendsyssel,J. Ankersen,Substitute,NaN
-2855,2025-04-18,Horsens vs Esbjerg,M. Delač,Goalkeeper,6
-2856,2025-04-18,Horsens vs Esbjerg,C. Tapé,Defender,90
-2857,2025-04-18,Horsens vs Esbjerg,F. Roslyng,Defender,90
-2858,2025-04-18,Horsens vs Esbjerg,O. Kolskogen,Defender,90
-2859,2025-04-18,Horsens vs Esbjerg,M. Kallesøe,Defender,90
-2860,2025-04-18,Horsens vs Esbjerg,F. Christensen,Midfielder,90
-2861,2025-04-18,Horsens vs Esbjerg,K. Lusavec,Midfielder,90
-2862,2025-04-18,Horsens vs Esbjerg,A. Herdonsson,Midfielder,68
-2863,2025-04-18,Horsens vs Esbjerg,S. Ngabo,Attacking Midfielder,82
-2864,2025-04-18,Horsens vs Esbjerg,E. Frederiksen,Attacking Midfielder,82
-2865,2025-04-18,Horsens vs Esbjerg,S. Pingel,Striker,68
-2866,2025-04-18,Horsens vs Esbjerg,S. Doua,Substitute,NaN
-2867,2025-04-18,Horsens vs Esbjerg,M. Hyseni,Substitute,NaN
-2868,2025-04-18,Horsens vs Esbjerg,K. Karikari,Substitute,22
-2869,2025-04-18,Horsens vs Esbjerg,O. Kjærgaard,Substitute,8
-2870,2025-04-18,Horsens vs Esbjerg,A. Ludwig,Substitute,NaN
-2871,2025-04-18,Horsens vs Esbjerg,J. Madsen,Substitute,8
-2872,2025-04-18,Horsens vs Esbjerg,A. Hoff,Substitute,84
-2873,2025-04-18,Horsens vs Esbjerg,Y. Ouorou,Substitute,NaN
-2874,2025-04-18,Horsens vs Esbjerg,A. Moro,Substitute,22
-3072,2024-08-30,Hvidovre vs Horsens,M. Delač,Goalkeeper,90
-3073,2024-08-30,Hvidovre vs Horsens,C. Tapé,Defender,90
-3074,2024-08-30,Hvidovre vs Horsens,O. Kolskogen,Defender,90
-3075,2024-08-30,Hvidovre vs Horsens,S. Hausner,Defender,90
-3076,2024-08-30,Hvidovre vs Horsens,M. Kallesøe,Defender,84
-3077,2024-08-30,Hvidovre vs Horsens,A. Herdonsson,Midfielder,90
-3078,2024-08-30,Hvidovre vs Horsens,F. Christensen,Midfielder,67
-3079,2024-08-30,Hvidovre vs Horsens,O. Kjærgaard,Midfielder,90
-3080,2024-08-30,Hvidovre vs Horsens,S. Ngabo,Striker,74
-3081,2024-08-30,Hvidovre vs Horsens,K. Karikari,Striker,90
-3082,2024-08-30,Hvidovre vs Horsens,S. Pingel,Striker,67
-3083,2024-08-30,Hvidovre vs Horsens,M. Egho,Substitute,23
-3084,2024-08-30,Hvidovre vs Horsens,M. Hyseni,Substitute,NaN
-3085,2024-08-30,Hvidovre vs Horsens,K. Lusavec,Substitute,NaN
-3086,2024-08-30,Hvidovre vs Horsens,M. Larsen,Substitute,NaN
-3087,2024-08-30,Hvidovre vs Horsens,J. Madsen,Substitute,16
-3088,2024-08-30,Hvidovre vs Horsens,O. Kouassi,Substitute,NaN
-3089,2024-08-30,Hvidovre vs Horsens,A. Hoff,Substitute,NaN
-3090,2024-08-30,Hvidovre vs Horsens,M. Opondo,Substitute,23
-3091,2024-08-30,Hvidovre vs Horsens,F. Roslyng,Substitute,6
-3268,2025-04-21,Kolding vs Horsens,A. Hoff,Goalkeeper,90
-3269,2025-04-21,Kolding vs Horsens,J. Madsen,Defender,59
-3270,2025-04-21,Kolding vs Horsens,F. Roslyng,Defender,82
-3271,2025-04-21,Kolding vs Horsens,O. Kolskogen,Defender,90
-3272,2025-04-21,Kolding vs Horsens,M. Kallesøe,Defender,90
-3273,2025-04-21,Kolding vs Horsens,F. Christensen,Midfielder,90
-3274,2025-04-21,Kolding vs Horsens,K. Lusavec,Midfielder,59
-3275,2025-04-21,Kolding vs Horsens,O. Kjærgaard,Midfielder,59
-3276,2025-04-21,Kolding vs Horsens,S. Ngabo,Attacking Midfielder,79
-3277,2025-04-21,Kolding vs Horsens,E. Frederiksen,Attacking Midfielder,90
-3278,2025-04-21,Kolding vs Horsens,S. Pingel,Striker,90
-3279,2025-04-21,Kolding vs Horsens,S. Doua,Substitute,NaN
-3280,2025-04-21,Kolding vs Horsens,G. Guðmundsson,Substitute,NaN
-3281,2025-04-21,Kolding vs Horsens,M. Hyseni,Substitute,NaN
-3282,2025-04-21,Kolding vs Horsens,K. Karikari,Substitute,31
-3283,2025-04-21,Kolding vs Horsens,C. Rasmussen,Substitute,NaN
-3284,2025-04-21,Kolding vs Horsens,A. Ludwig,Substitute,8
-3285,2025-04-21,Kolding vs Horsens,Y. Ouorou,Substitute,11
-3286,2025-04-21,Kolding vs Horsens,A. Moro,Substitute,31
-3287,2025-04-21,Kolding vs Horsens,C. Tapé,Substitute,31
-3408,2024-09-14,Horsens vs OB,M. Delač,Goalkeeper,90
-3409,2024-09-14,Horsens vs OB,C. Tapé,Defender,90
-3410,2024-09-14,Horsens vs OB,O. Kolskogen,Defender,90
-3411,2024-09-14,Horsens vs OB,S. Hausner,Defender,90
-3412,2024-09-14,Horsens vs OB,M. Kallesøe,Defender,90
-3413,2024-09-14,Horsens vs OB,K. Lusavec,Defensive Midfielder,90
-3414,2024-09-14,Horsens vs OB,A. Herdonsson,Defensive Midfielder,65
-3415,2024-09-14,Horsens vs OB,O. Kjærgaard,Attacking Midfielder,65
-3416,2024-09-14,Horsens vs OB,S. Ngabo,Attacking Midfielder,83
-3417,2024-09-14,Horsens vs OB,E. Frederiksen,Attacking Midfielder,90
-3418,2024-09-14,Horsens vs OB,K. Karikari,Striker,65
-3419,2024-09-14,Horsens vs OB,M. Egho,Substitute,NaN
-3420,2024-09-14,Horsens vs OB,M. Hyseni,Substitute,7
-3421,2024-09-14,Horsens vs OB,F. Christensen,Substitute,25
-3422,2024-09-14,Horsens vs OB,M. Larsen,Substitute,NaN
-3423,2024-09-14,Horsens vs OB,J. Madsen,Substitute,25
-3424,2024-09-14,Horsens vs OB,O. Kouassi,Substitute,NaN
-3425,2024-09-14,Horsens vs OB,A. Hoff,Substitute,NaN
-3426,2024-09-14,Horsens vs OB,S. Pingel,Substitute,25
-3427,2024-09-14,Horsens vs OB,F. Roslyng,Substitute,NaN
-3666,2024-09-21,B 93 vs Horsens,M. Delač,Goalkeeper,90
-3667,2024-09-21,B 93 vs Horsens,C. Tapé,Defender,57
-3668,2024-09-21,B 93 vs Horsens,O. Kolskogen,Defender,77
-3669,2024-09-21,B 93 vs Horsens,S. Hausner,Defender,90
-3670,2024-09-21,B 93 vs Horsens,M. Kallesøe,Defender,31
-3671,2024-09-21,B 93 vs Horsens,K. Lusavec,Defensive Midfielder,90
-3672,2024-09-21,B 93 vs Horsens,A. Herdonsson,Defensive Midfielder,90
-3673,2024-09-21,B 93 vs Horsens,O. Kjærgaard,Attacking Midfielder,90
-3674,2024-09-21,B 93 vs Horsens,S. Ngabo,Attacking Midfielder,57
-3675,2024-09-21,B 93 vs Horsens,E. Frederiksen,Attacking Midfielder,90
-3676,2024-09-21,B 93 vs Horsens,K. Karikari,Striker,57
-3677,2024-09-21,B 93 vs Horsens,M. Egho,Substitute,33
-3678,2024-09-21,B 93 vs Horsens,M. Hyseni,Substitute,NaN
-3679,2024-09-21,B 93 vs Horsens,F. Christensen,Substitute,13
-3680,2024-09-21,B 93 vs Horsens,A. Ludwig,Substitute,59
-3681,2024-09-21,B 93 vs Horsens,J. Madsen,Substitute,33
-3682,2024-09-21,B 93 vs Horsens,O. Kouassi,Substitute,NaN
-3683,2024-09-21,B 93 vs Horsens,A. Hoff,Substitute,NaN
-3684,2024-09-21,B 93 vs Horsens,S. Pingel,Substitute,33
-3685,2024-09-21,B 93 vs Horsens,F. Roslyng,Substitute,NaN
-3923,2024-09-28,Horsens vs Hobro,M. Delač,Goalkeeper,90
-3924,2024-09-28,Horsens vs Hobro,J. Madsen,Defender,90
-3925,2024-09-28,Horsens vs Hobro,O. Kolskogen,Defender,90
-3926,2024-09-28,Horsens vs Hobro,S. Hausner,Defender,71
-3927,2024-09-28,Horsens vs Hobro,M. Kallesøe,Defender,90
-3928,2024-09-28,Horsens vs Hobro,A. Herdonsson,Defensive Midfielder,81
-3929,2024-09-28,Horsens vs Hobro,K. Lusavec,Defensive Midfielder,90
-3930,2024-09-28,Horsens vs Hobro,K. Karikari,Attacking Midfielder,81
-3931,2024-09-28,Horsens vs Hobro,O. Kjærgaard,Attacking Midfielder,71
-3932,2024-09-28,Horsens vs Hobro,E. Frederiksen,Attacking Midfielder,90
-3933,2024-09-28,Horsens vs Hobro,S. Pingel,Striker,89
-3934,2024-09-28,Horsens vs Hobro,M. Egho,Substitute,1
-3935,2024-09-28,Horsens vs Hobro,M. Hyseni,Substitute,9
-3936,2024-09-28,Horsens vs Hobro,F. Christensen,Substitute,9
-3937,2024-09-28,Horsens vs Hobro,M. Larsen,Substitute,NaN
-3938,2024-09-28,Horsens vs Hobro,O. Kouassi,Substitute,NaN
-3939,2024-09-28,Horsens vs Hobro,S. Ngabo,Substitute,19
-3940,2024-09-28,Horsens vs Hobro,A. Hoff,Substitute,NaN
-3941,2024-09-28,Horsens vs Hobro,F. Roslyng,Substitute,19
-3942,2024-09-28,Horsens vs Hobro,C. Tapé,Substitute,NaN
-4221,2024-10-05,Fredericia vs Horsens,M. Delač,Goalkeeper,90
-4222,2024-10-05,Fredericia vs Horsens,J. Madsen,Defender,90
-4223,2024-10-05,Fredericia vs Horsens,O. Kolskogen,Defender,70
-4224,2024-10-05,Fredericia vs Horsens,S. Hausner,Defender,90
-4225,2024-10-05,Fredericia vs Horsens,M. Kallesøe,Defender,90
-4226,2024-10-05,Fredericia vs Horsens,A. Herdonsson,Defensive Midfielder,45
-4227,2024-10-05,Fredericia vs Horsens,K. Lusavec,Defensive Midfielder,90
-4228,2024-10-05,Fredericia vs Horsens,O. Kjærgaard,Attacking Midfielder,45
-4229,2024-10-05,Fredericia vs Horsens,K. Karikari,Attacking Midfielder,82
-4230,2024-10-05,Fredericia vs Horsens,E. Frederiksen,Attacking Midfielder,89
-4231,2024-10-05,Fredericia vs Horsens,S. Pingel,Striker,90
-4232,2024-10-05,Fredericia vs Horsens,M. Egho,Substitute,NaN
-4233,2024-10-05,Fredericia vs Horsens,M. Hyseni,Substitute,NaN
-4234,2024-10-05,Fredericia vs Horsens,F. Christensen,Substitute,45
-4235,2024-10-05,Fredericia vs Horsens,A. Ludwig,Substitute,1
-4236,2024-10-05,Fredericia vs Horsens,O. Kouassi,Substitute,NaN
-4237,2024-10-05,Fredericia vs Horsens,S. Ngabo,Substitute,8
-4238,2024-10-05,Fredericia vs Horsens,A. Hoff,Substitute,NaN
-4239,2024-10-05,Fredericia vs Horsens,F. Roslyng,Substitute,20
-4240,2024-10-05,Fredericia vs Horsens,C. Tapé,Substitute,45
-4479,2024-10-20,Horsens vs Hvidovre,M. Delač,Goalkeeper,90
-4480,2024-10-20,Horsens vs Hvidovre,C. Tapé,Defender,90
-4481,2024-10-20,Horsens vs Hvidovre,O. Kolskogen,Defender,90
-4482,2024-10-20,Horsens vs Hvidovre,S. Hausner,Defender,90
-4483,2024-10-20,Horsens vs Hvidovre,M. Kallesøe,Defender,90
-4484,2024-10-20,Horsens vs Hvidovre,J. Madsen,Midfielder,90
-4485,2024-10-20,Horsens vs Hvidovre,F. Christensen,Midfielder,69
-4486,2024-10-20,Horsens vs Hvidovre,K. Lusavec,Midfielder,90
-4487,2024-10-20,Horsens vs Hvidovre,E. Frederiksen,Midfielder,89
-4488,2024-10-20,Horsens vs Hvidovre,S. Pingel,Striker,90
-4489,2024-10-20,Horsens vs Hvidovre,K. Karikari,Striker,62
-4490,2024-10-20,Horsens vs Hvidovre,M. Egho,Substitute,1
-4491,2024-10-20,Horsens vs Hvidovre,A. Herdonsson,Substitute,21
-4492,2024-10-20,Horsens vs Hvidovre,M. Hyseni,Substitute,NaN
-4493,2024-10-20,Horsens vs Hvidovre,O. Kjærgaard,Substitute,28
-4494,2024-10-20,Horsens vs Hvidovre,A. Ludwig,Substitute,NaN
-4495,2024-10-20,Horsens vs Hvidovre,M. Larsen,Substitute,NaN
-4496,2024-10-20,Horsens vs Hvidovre,A. Hoff,Substitute,NaN
-4497,2024-10-20,Horsens vs Hvidovre,F. Roslyng,Substitute,NaN
-4498,2024-10-20,Horsens vs Hvidovre,A. Moro,Substitute,NaN
-4578,2024-10-25,Hillerød vs Horsens,M. Delač,Goalkeeper,90
-4579,2024-10-25,Hillerød vs Horsens,C. Tapé,Defender,45
-4580,2024-10-25,Hillerød vs Horsens,O. Kolskogen,Defender,87
-4581,2024-10-25,Hillerød vs Horsens,S. Hausner,Defender,90
-4582,2024-10-25,Hillerød vs Horsens,M. Kallesøe,Defender,90
-4583,2024-10-25,Hillerød vs Horsens,J. Madsen,Midfielder,75
-4584,2024-10-25,Hillerød vs Horsens,K. Lusavec,Midfielder,90
-4585,2024-10-25,Hillerød vs Horsens,F. Christensen,Midfielder,90
-4586,2024-10-25,Hillerød vs Horsens,E. Frederiksen,Midfielder,90
-4587,2024-10-25,Hillerød vs Horsens,K. Karikari,Striker,60
-4588,2024-10-25,Hillerød vs Horsens,S. Pingel,Striker,75
-4589,2024-10-25,Hillerød vs Horsens,M. Egho,Substitute,NaN
-4590,2024-10-25,Hillerød vs Horsens,A. Herdonsson,Substitute,45
-4591,2024-10-25,Hillerød vs Horsens,M. Hyseni,Substitute,15
-4592,2024-10-25,Hillerød vs Horsens,O. Kjærgaard,Substitute,30
-4593,2024-10-25,Hillerød vs Horsens,A. Ludwig,Substitute,3
-4594,2024-10-25,Hillerød vs Horsens,M. Larsen,Substitute,NaN
-4595,2024-10-25,Hillerød vs Horsens,S. Ngabo,Substitute,NaN
-4596,2024-10-25,Hillerød vs Horsens,A. Hoff,Substitute,NaN
-4597,2024-10-25,Hillerød vs Horsens,F. Roslyng,Substitute,15
-4796,2024-11-01,Horsens vs B 93,M. Delač,Goalkeeper,90
-4797,2024-11-01,Horsens vs B 93,J. Madsen,Defender,90
-4798,2024-11-01,Horsens vs B 93,A. Ludwig,Defender,62
-4799,2024-11-01,Horsens vs B 93,S. Hausner,Defender,90
-4800,2024-11-01,Horsens vs B 93,M. Kallesøe,Defender,90
-4801,2024-11-01,Horsens vs B 93,F. Christensen,Defensive Midfielder,82
-4802,2024-11-01,Horsens vs B 93,K. Lusavec,Defensive Midfielder,90
-4803,2024-11-01,Horsens vs B 93,K. Karikari,Attacking Midfielder,62
-4804,2024-11-01,Horsens vs B 93,S. Ngabo,Attacking Midfielder,62
-4805,2024-11-01,Horsens vs B 93,E. Frederiksen,Attacking Midfielder,90
-4806,2024-11-01,Horsens vs B 93,S. Pingel,Striker,78
-4807,2024-11-01,Horsens vs B 93,M. Egho,Substitute,NaN
-4808,2024-11-01,Horsens vs B 93,A. Herdonsson,Substitute,8
-4809,2024-11-01,Horsens vs B 93,M. Hyseni,Substitute,12
-4810,2024-11-01,Horsens vs B 93,O. Kjærgaard,Substitute,28
-4811,2024-11-01,Horsens vs B 93,O. Kolskogen,Substitute,28
-4812,2024-11-01,Horsens vs B 93,M. Larsen,Substitute,NaN
-4813,2024-11-01,Horsens vs B 93,A. Hoff,Substitute,NaN
-4814,2024-11-01,Horsens vs B 93,F. Roslyng,Substitute,NaN
-4815,2024-11-01,Horsens vs B 93,C. Tapé,Substitute,28
-5093,2024-11-09,OB vs Horsens,M. Delač,Goalkeeper,90
-5094,2024-11-09,OB vs Horsens,C. Tapé,Defender,90
-5095,2024-11-09,OB vs Horsens,O. Kolskogen,Defender,56
-5096,2024-11-09,OB vs Horsens,S. Hausner,Defender,90
-5097,2024-11-09,OB vs Horsens,M. Kallesøe,Defender,90
-5098,2024-11-09,OB vs Horsens,J. Madsen,Midfielder,56
-5099,2024-11-09,OB vs Horsens,F. Christensen,Midfielder,90
-5100,2024-11-09,OB vs Horsens,K. Lusavec,Midfielder,75
-5101,2024-11-09,OB vs Horsens,E. Frederiksen,Midfielder,90
-5102,2024-11-09,OB vs Horsens,S. Pingel,Striker,75
-5103,2024-11-09,OB vs Horsens,K. Karikari,Striker,82
-5104,2024-11-09,OB vs Horsens,M. Egho,Substitute,8
-5105,2024-11-09,OB vs Horsens,A. Herdonsson,Substitute,15
-5106,2024-11-09,OB vs Horsens,M. Hyseni,Substitute,15
-5107,2024-11-09,OB vs Horsens,O. Kjærgaard,Substitute,34
-5108,2024-11-09,OB vs Horsens,A. Ludwig,Substitute,NaN
-5109,2024-11-09,OB vs Horsens,M. Larsen,Substitute,NaN
-5110,2024-11-09,OB vs Horsens,S. Ngabo,Substitute,NaN
-5111,2024-11-09,OB vs Horsens,A. Hoff,Substitute,NaN
-5112,2024-11-09,OB vs Horsens,F. Roslyng,Substitute,34
-5313,2024-11-24,Horsens vs HB Køge,M. Delač,Goalkeeper,90
-5314,2024-11-24,Horsens vs HB Køge,C. Tapé,Defender,45
-5315,2024-11-24,Horsens vs HB Køge,F. Roslyng,Defender,90
-5316,2024-11-24,Horsens vs HB Køge,S. Hausner,Defender,90
-5317,2024-11-24,Horsens vs HB Køge,M. Kallesøe,Defender,90
-5318,2024-11-24,Horsens vs HB Køge,F. Christensen,Defensive Midfielder,90
-5319,2024-11-24,Horsens vs HB Køge,K. Lusavec,Defensive Midfielder,45
-5320,2024-11-24,Horsens vs HB Køge,K. Karikari,Attacking Midfielder,66
-5321,2024-11-24,Horsens vs HB Køge,M. Hyseni,Attacking Midfielder,66
-5322,2024-11-24,Horsens vs HB Køge,E. Frederiksen,Attacking Midfielder,83
-5323,2024-11-24,Horsens vs HB Køge,S. Pingel,Striker,90
-5324,2024-11-24,Horsens vs HB Køge,M. Egho,Substitute,24
-5325,2024-11-24,Horsens vs HB Køge,A. Herdonsson,Substitute,45
-5326,2024-11-24,Horsens vs HB Køge,O. Kjærgaard,Substitute,24
-5327,2024-11-24,Horsens vs HB Køge,O. Kolskogen,Substitute,NaN
-5328,2024-11-24,Horsens vs HB Køge,A. Ludwig,Substitute,NaN
-5329,2024-11-24,Horsens vs HB Køge,J. Madsen,Substitute,45
-5330,2024-11-24,Horsens vs HB Køge,S. Ngabo,Substitute,7
-5331,2024-11-24,Horsens vs HB Køge,A. Hoff,Substitute,NaN
-5332,2024-11-24,Horsens vs HB Køge,A. Moro,Substitute,NaN
-5487,2024-11-29,Kolding vs Horsens,M. Delač,Goalkeeper,90
-5488,2024-11-29,Kolding vs Horsens,J. Madsen,Defender,90
-5489,2024-11-29,Kolding vs Horsens,F. Roslyng,Defender,45
-5490,2024-11-29,Kolding vs Horsens,S. Hausner,Defender,90
-5491,2024-11-29,Kolding vs Horsens,M. Kallesøe,Defender,90
-5492,2024-11-29,Kolding vs Horsens,K. Lusavec,Defensive Midfielder,90
-5493,2024-11-29,Kolding vs Horsens,F. Christensen,Defensive Midfielder,58
-5494,2024-11-29,Kolding vs Horsens,K. Karikari,Attacking Midfielder,58
-5495,2024-11-29,Kolding vs Horsens,A. Herdonsson,Attacking Midfielder,86
-5496,2024-11-29,Kolding vs Horsens,E. Frederiksen,Attacking Midfielder,89
-5497,2024-11-29,Kolding vs Horsens,S. Pingel,Striker,90
-5498,2024-11-29,Kolding vs Horsens,M. Egho,Substitute,NaN
-5499,2024-11-29,Kolding vs Horsens,M. Hyseni,Substitute,NaN
-5500,2024-11-29,Kolding vs Horsens,O. Kjærgaard,Substitute,32
-5501,2024-11-29,Kolding vs Horsens,O. Kolskogen,Substitute,45
-5502,2024-11-29,Kolding vs Horsens,A. Ludwig,Substitute,1
-5503,2024-11-29,Kolding vs Horsens,M. Larsen,Substitute,4
-5504,2024-11-29,Kolding vs Horsens,S. Ngabo,Substitute,32
-5505,2024-11-29,Kolding vs Horsens,A. Hoff,Substitute,NaN
-5506,2024-11-29,Kolding vs Horsens,C. Tapé,Substitute,NaN
-5903,2025-02-23,Horsens vs Roskilde,F. Đukić,Goalkeeper,90
-5904,2025-02-23,Horsens vs Roskilde,J. Madsen,Defender,90
-5905,2025-02-23,Horsens vs Roskilde,O. Kolskogen,Defender,90
-5906,2025-02-23,Horsens vs Roskilde,M. Fenger,Defender,90
-5907,2025-02-23,Horsens vs Roskilde,M. Kallesøe,Defender,80
-5908,2025-02-23,Horsens vs Roskilde,S. Ngabo,Midfielder,64
-5909,2025-02-23,Horsens vs Roskilde,A. Herdonsson,Midfielder,74
-5911,2025-02-23,Horsens vs Roskilde,F. Christensen,Midfielder,90
-5912,2025-02-23,Horsens vs Roskilde,E. Frederiksen,Midfielder,80
-5913,2025-02-23,Horsens vs Roskilde,S. Pingel,Striker,90
-5914,2025-02-23,Horsens vs Roskilde,M. Hyseni,Striker,64
-5915,2025-02-23,Horsens vs Roskilde,M. Delač,Substitute,NaN
-5916,2025-02-23,Horsens vs Roskilde,G. Guðmundsson,Substitute,10
-5917,2025-02-23,Horsens vs Roskilde,K. Karikari,Substitute,26
-5918,2025-02-23,Horsens vs Roskilde,O. Kjærgaard,Substitute,26
-5919,2025-02-23,Horsens vs Roskilde,A. Ludwig,Substitute,NaN
-5920,2025-02-23,Horsens vs Roskilde,K. Lusavec,Substitute,16
-5921,2025-02-23,Horsens vs Roskilde,F. Roslyng,Substitute,NaN
-5922,2025-02-23,Horsens vs Roskilde,A. Saine,Substitute,10
-5923,2025-02-23,Horsens vs Roskilde,A. Moro,Substitute,NaN
-6041,2025-02-28,Vendsyssel vs Horsens,F. Đukić,Goalkeeper,90
-6042,2025-02-28,Vendsyssel vs Horsens,J. Madsen,Defender,90
-6043,2025-02-28,Vendsyssel vs Horsens,O. Kolskogen,Defender,90
-6044,2025-02-28,Vendsyssel vs Horsens,S. Hausner,Defender,90
-6045,2025-02-28,Vendsyssel vs Horsens,M. Kallesøe,Defender,90
-6046,2025-02-28,Vendsyssel vs Horsens,S. Ngabo,Midfielder,82
-6047,2025-02-28,Vendsyssel vs Horsens,A. Herdonsson,Midfielder,90
-6048,2025-02-28,Vendsyssel vs Horsens,F. Christensen,Midfielder,68
-6049,2025-02-28,Vendsyssel vs Horsens,E. Frederiksen,Midfielder,90
-6050,2025-02-28,Vendsyssel vs Horsens,K. Karikari,Striker,90
-6051,2025-02-28,Vendsyssel vs Horsens,S. Pingel,Striker,86
-6052,2025-02-28,Vendsyssel vs Horsens,M. Delač,Substitute,NaN
-6053,2025-02-28,Vendsyssel vs Horsens,M. Egho,Substitute,NaN
-6054,2025-02-28,Vendsyssel vs Horsens,M. Fenger,Substitute,8
-6055,2025-02-28,Vendsyssel vs Horsens,G. Guðmundsson,Substitute,NaN
-6056,2025-02-28,Vendsyssel vs Horsens,M. Hyseni,Substitute,NaN
-6057,2025-02-28,Vendsyssel vs Horsens,O. Kjærgaard,Substitute,4
-6058,2025-02-28,Vendsyssel vs Horsens,K. Lusavec,Substitute,22
-6059,2025-02-28,Vendsyssel vs Horsens,A. Moro,Substitute,NaN
-6060,2025-02-28,Vendsyssel vs Horsens,C. Tapé,Substitute,NaN
+555,2024-07-21,Horsens vs Fredericia,M. Delač,Goalkeeper,90
+556,2024-07-21,Horsens vs Fredericia,J. Madsen,Defender,90
+557,2024-07-21,Horsens vs Fredericia,S. Reese,Defender,90
+558,2024-07-21,Horsens vs Fredericia,S. Hausner,Defender,90
+559,2024-07-21,Horsens vs Fredericia,M. Kallesøe,Defender,61
+560,2024-07-21,Horsens vs Fredericia,M. Larsen,Midfielder,78
+561,2024-07-21,Horsens vs Fredericia,F. Christensen,Midfielder,90
+562,2024-07-21,Horsens vs Fredericia,M. Opondo,Midfielder,61
+563,2024-07-21,Horsens vs Fredericia,S. Pingel,Attacking Midfielder,90
+564,2024-07-21,Horsens vs Fredericia,J. Ankersen,Attacking Midfielder,68
+565,2024-07-21,Horsens vs Fredericia,M. Egho,Striker,62
+566,2024-07-21,Horsens vs Fredericia,A. Ekeroth,Substitute,12
+567,2024-07-21,Horsens vs Fredericia,A. Herdonsson,Substitute,29
+568,2024-07-21,Horsens vs Fredericia,M. Hyseni,Substitute,28
+569,2024-07-21,Horsens vs Fredericia,E. Just,Substitute,22
+570,2024-07-21,Horsens vs Fredericia,A. Hermansen,Substitute,NaN
+571,2024-07-21,Horsens vs Fredericia,O. Kolskogen,Substitute,29
+572,2024-07-21,Horsens vs Fredericia,A. Ludwig,Substitute,NaN
+573,2024-07-21,Horsens vs Fredericia,A. Nehme,Substitute,NaN
+574,2024-07-21,Horsens vs Fredericia,O. Stanisic,Substitute,NaN
+594,2025-04-18,Horsens vs Esbjerg,M. Delač,Goalkeeper,6
+595,2025-04-18,Horsens vs Esbjerg,C. Tapé,Defender,90
+596,2025-04-18,Horsens vs Esbjerg,F. Roslyng,Defender,90
+597,2025-04-18,Horsens vs Esbjerg,O. Kolskogen,Defender,90
+598,2025-04-18,Horsens vs Esbjerg,M. Kallesøe,Defender,90
+599,2025-04-18,Horsens vs Esbjerg,F. Christensen,Midfielder,90
+600,2025-04-18,Horsens vs Esbjerg,K. Lusavec,Midfielder,90
+601,2025-04-18,Horsens vs Esbjerg,A. Herdonsson,Midfielder,68
+602,2025-04-18,Horsens vs Esbjerg,S. Ngabo,Attacking Midfielder,82
+603,2025-04-18,Horsens vs Esbjerg,E. Frederiksen,Attacking Midfielder,82
+604,2025-04-18,Horsens vs Esbjerg,S. Pingel,Striker,68
+605,2025-04-18,Horsens vs Esbjerg,S. Doua,Substitute,NaN
+606,2025-04-18,Horsens vs Esbjerg,M. Hyseni,Substitute,NaN
+607,2025-04-18,Horsens vs Esbjerg,K. Karikari,Substitute,22
+608,2025-04-18,Horsens vs Esbjerg,O. Kjærgaard,Substitute,8
+609,2025-04-18,Horsens vs Esbjerg,A. Ludwig,Substitute,NaN
+610,2025-04-18,Horsens vs Esbjerg,J. Madsen,Substitute,8
+611,2025-04-18,Horsens vs Esbjerg,A. Hoff,Substitute,84
+612,2025-04-18,Horsens vs Esbjerg,Y. Ouorou,Substitute,NaN
+613,2025-04-18,Horsens vs Esbjerg,A. Moro,Substitute,22
+752,2024-07-26,Horsens vs Hillerød,M. Delač,Goalkeeper,90
+753,2024-07-26,Horsens vs Hillerød,A. Ekeroth,Defender,90
+754,2024-07-26,Horsens vs Hillerød,O. Kolskogen,Defender,72
+755,2024-07-26,Horsens vs Hillerød,S. Hausner,Defender,90
+756,2024-07-26,Horsens vs Hillerød,M. Kallesøe,Defender,72
+757,2024-07-26,Horsens vs Hillerød,J. Madsen,Defensive Midfielder,90
+758,2024-07-26,Horsens vs Hillerød,F. Christensen,Defensive Midfielder,90
+759,2024-07-26,Horsens vs Hillerød,M. Larsen,Defensive Midfielder,79
+760,2024-07-26,Horsens vs Hillerød,J. Ankersen,Attacking Midfielder,63
+761,2024-07-26,Horsens vs Hillerød,S. Pingel,Striker,90
+762,2024-07-26,Horsens vs Hillerød,M. Egho,Striker,72
+763,2024-07-26,Horsens vs Hillerød,A. Herdonsson,Substitute,18
+764,2024-07-26,Horsens vs Hillerød,M. Hyseni,Substitute,27
+765,2024-07-26,Horsens vs Hillerød,E. Just,Substitute,11
+766,2024-07-26,Horsens vs Hillerød,A. Hermansen,Substitute,NaN
+767,2024-07-26,Horsens vs Hillerød,K. Karikari,Substitute,18
+768,2024-07-26,Horsens vs Hillerød,A. Ludwig,Substitute,NaN
+769,2024-07-26,Horsens vs Hillerød,A. Nehme,Substitute,NaN
+770,2024-07-26,Horsens vs Hillerød,S. Reese,Substitute,NaN
+771,2024-07-26,Horsens vs Hillerød,F. Roslyng,Substitute,18
+1007,2025-04-21,Kolding vs Horsens,A. Hoff,Goalkeeper,90
+1008,2025-04-21,Kolding vs Horsens,J. Madsen,Defender,59
+1009,2025-04-21,Kolding vs Horsens,F. Roslyng,Defender,82
+1010,2025-04-21,Kolding vs Horsens,O. Kolskogen,Defender,90
+1011,2025-04-21,Kolding vs Horsens,M. Kallesøe,Defender,90
+1012,2025-04-21,Kolding vs Horsens,F. Christensen,Midfielder,90
+1013,2025-04-21,Kolding vs Horsens,K. Lusavec,Midfielder,59
+1014,2025-04-21,Kolding vs Horsens,O. Kjærgaard,Midfielder,59
+1015,2025-04-21,Kolding vs Horsens,S. Ngabo,Attacking Midfielder,79
+1016,2025-04-21,Kolding vs Horsens,E. Frederiksen,Attacking Midfielder,90
+1017,2025-04-21,Kolding vs Horsens,S. Pingel,Striker,90
+1018,2025-04-21,Kolding vs Horsens,S. Doua,Substitute,NaN
+1019,2025-04-21,Kolding vs Horsens,G. Guðmundsson,Substitute,NaN
+1020,2025-04-21,Kolding vs Horsens,M. Hyseni,Substitute,NaN
+1021,2025-04-21,Kolding vs Horsens,K. Karikari,Substitute,31
+1022,2025-04-21,Kolding vs Horsens,C. Rasmussen,Substitute,NaN
+1023,2025-04-21,Kolding vs Horsens,A. Ludwig,Substitute,8
+1024,2025-04-21,Kolding vs Horsens,Y. Ouorou,Substitute,11
+1025,2025-04-21,Kolding vs Horsens,A. Moro,Substitute,31
+1026,2025-04-21,Kolding vs Horsens,C. Tapé,Substitute,31
+1244,2024-08-04,Esbjerg vs Horsens,M. Delač,Goalkeeper,90
+1245,2024-08-04,Esbjerg vs Horsens,J. Madsen,Defender,90
+1246,2024-08-04,Esbjerg vs Horsens,O. Kolskogen,Defender,75
+1247,2024-08-04,Esbjerg vs Horsens,S. Hausner,Defender,90
+1248,2024-08-04,Esbjerg vs Horsens,M. Kallesøe,Defender,83
+1249,2024-08-04,Esbjerg vs Horsens,A. Herdonsson,Defensive Midfielder,90
+1250,2024-08-04,Esbjerg vs Horsens,F. Christensen,Defensive Midfielder,90
+1251,2024-08-04,Esbjerg vs Horsens,J. Ankersen,Attacking Midfielder,90
+1252,2024-08-04,Esbjerg vs Horsens,S. Pingel,Attacking Midfielder,83
+1253,2024-08-04,Esbjerg vs Horsens,E. Just,Attacking Midfielder,69
+1254,2024-08-04,Esbjerg vs Horsens,M. Egho,Striker,69
+1255,2024-08-04,Esbjerg vs Horsens,M. Hyseni,Substitute,21
+1256,2024-08-04,Esbjerg vs Horsens,K. Karikari,Substitute,7
+1257,2024-08-04,Esbjerg vs Horsens,A. Ludwig,Substitute,15
+1258,2024-08-04,Esbjerg vs Horsens,O. Kouassi,Substitute,NaN
+1259,2024-08-04,Esbjerg vs Horsens,A. Nehme,Substitute,NaN
+1260,2024-08-04,Esbjerg vs Horsens,A. Hoff,Substitute,NaN
+1261,2024-08-04,Esbjerg vs Horsens,F. Roslyng,Substitute,7
+1262,2024-08-04,Esbjerg vs Horsens,C. Tapé,Substitute,21
+1263,2024-08-04,Esbjerg vs Horsens,H. Toftegaard,Substitute,NaN
+1404,2024-08-11,HB Køge vs Horsens,M. Delač,Goalkeeper,90
+1405,2024-08-11,HB Køge vs Horsens,J. Madsen,Defender,90
+1406,2024-08-11,HB Køge vs Horsens,O. Kolskogen,Defender,90
+1407,2024-08-11,HB Køge vs Horsens,S. Hausner,Defender,90
+1408,2024-08-11,HB Køge vs Horsens,M. Kallesøe,Defender,90
+1409,2024-08-11,HB Køge vs Horsens,A. Herdonsson,Defensive Midfielder,90
+1410,2024-08-11,HB Køge vs Horsens,F. Christensen,Defensive Midfielder,72
+1411,2024-08-11,HB Køge vs Horsens,E. Just,Defensive Midfielder,90
+1412,2024-08-11,HB Køge vs Horsens,J. Ankersen,Attacking Midfielder,63
+1413,2024-08-11,HB Køge vs Horsens,M. Egho,Striker,72
+1414,2024-08-11,HB Køge vs Horsens,S. Pingel,Striker,90
+1415,2024-08-11,HB Køge vs Horsens,M. Hyseni,Substitute,NaN
+1416,2024-08-11,HB Køge vs Horsens,K. Karikari,Substitute,18
+1417,2024-08-11,HB Køge vs Horsens,O. Kjærgaard,Substitute,27
+1418,2024-08-11,HB Køge vs Horsens,A. Ludwig,Substitute,NaN
+1419,2024-08-11,HB Køge vs Horsens,O. Kouassi,Substitute,NaN
+1420,2024-08-11,HB Køge vs Horsens,A. Hoff,Substitute,NaN
+1421,2024-08-11,HB Køge vs Horsens,F. Roslyng,Substitute,NaN
+1422,2024-08-11,HB Køge vs Horsens,C. Tapé,Substitute,18
+1423,2024-08-11,HB Køge vs Horsens,H. Toftegaard,Substitute,NaN
+1463,2024-08-16,Horsens vs Kolding,M. Delač,Goalkeeper,90
+1464,2024-08-16,Horsens vs Kolding,J. Madsen,Defender,65
+1465,2024-08-16,Horsens vs Kolding,O. Kolskogen,Defender,81
+1466,2024-08-16,Horsens vs Kolding,S. Hausner,Defender,90
+1467,2024-08-16,Horsens vs Kolding,M. Kallesøe,Defender,90
+1468,2024-08-16,Horsens vs Kolding,A. Herdonsson,Defensive Midfielder,90
+1469,2024-08-16,Horsens vs Kolding,F. Christensen,Defensive Midfielder,81
+1470,2024-08-16,Horsens vs Kolding,O. Kjærgaard,Defensive Midfielder,90
+1471,2024-08-16,Horsens vs Kolding,J. Ankersen,Attacking Midfielder,14
+1472,2024-08-16,Horsens vs Kolding,M. Egho,Striker,65
+1473,2024-08-16,Horsens vs Kolding,S. Pingel,Striker,90
+1474,2024-08-16,Horsens vs Kolding,M. Hyseni,Substitute,25
+1475,2024-08-16,Horsens vs Kolding,K. Karikari,Substitute,9
+1476,2024-08-16,Horsens vs Kolding,A. Ludwig,Substitute,9
+1477,2024-08-16,Horsens vs Kolding,O. Kouassi,Substitute,NaN
+1478,2024-08-16,Horsens vs Kolding,S. Ngabo,Substitute,25
+1479,2024-08-16,Horsens vs Kolding,A. Hoff,Substitute,NaN
+1480,2024-08-16,Horsens vs Kolding,F. Roslyng,Substitute,NaN
+1481,2024-08-16,Horsens vs Kolding,A. Moro,Substitute,NaN
+1482,2024-08-16,Horsens vs Kolding,C. Tapé,Substitute,76
+1680,2024-08-20,Roskilde vs Horsens,M. Delač,Goalkeeper,90
+1681,2024-08-20,Roskilde vs Horsens,C. Tapé,Defender,90
+1682,2024-08-20,Roskilde vs Horsens,A. Ludwig,Defender,90
+1683,2024-08-20,Roskilde vs Horsens,S. Hausner,Defender,90
+1684,2024-08-20,Roskilde vs Horsens,M. Kallesøe,Defender,85
+1685,2024-08-20,Roskilde vs Horsens,J. Madsen,Defensive Midfielder,74
+1686,2024-08-20,Roskilde vs Horsens,A. Herdonsson,Defensive Midfielder,90
+1687,2024-08-20,Roskilde vs Horsens,O. Kjærgaard,Defensive Midfielder,90
+1688,2024-08-20,Roskilde vs Horsens,S. Ngabo,Attacking Midfielder,74
+1689,2024-08-20,Roskilde vs Horsens,M. Hyseni,Striker,58
+1690,2024-08-20,Roskilde vs Horsens,S. Pingel,Striker,58
+1691,2024-08-20,Roskilde vs Horsens,M. Egho,Substitute,32
+1692,2024-08-20,Roskilde vs Horsens,F. Christensen,Substitute,16
+1693,2024-08-20,Roskilde vs Horsens,K. Karikari,Substitute,32
+1694,2024-08-20,Roskilde vs Horsens,O. Kolskogen,Substitute,5
+1695,2024-08-20,Roskilde vs Horsens,O. Kouassi,Substitute,NaN
+1696,2024-08-20,Roskilde vs Horsens,A. Hoff,Substitute,NaN
+1697,2024-08-20,Roskilde vs Horsens,M. Opondo,Substitute,NaN
+1698,2024-08-20,Roskilde vs Horsens,F. Roslyng,Substitute,NaN
+1699,2024-08-20,Roskilde vs Horsens,J. Ankersen,Substitute,16
+1938,2024-08-24,Horsens vs Vendsyssel,M. Delač,Goalkeeper,90
+1939,2024-08-24,Horsens vs Vendsyssel,C. Tapé,Defender,90
+1940,2024-08-24,Horsens vs Vendsyssel,A. Ludwig,Defender,90
+1941,2024-08-24,Horsens vs Vendsyssel,S. Hausner,Defender,90
+1942,2024-08-24,Horsens vs Vendsyssel,M. Kallesøe,Defender,31
+1943,2024-08-24,Horsens vs Vendsyssel,J. Madsen,Midfielder,60
+1944,2024-08-24,Horsens vs Vendsyssel,F. Christensen,Midfielder,60
+1945,2024-08-24,Horsens vs Vendsyssel,O. Kjærgaard,Midfielder,90
+1946,2024-08-24,Horsens vs Vendsyssel,S. Ngabo,Striker,75
+1947,2024-08-24,Horsens vs Vendsyssel,M. Egho,Striker,45
+1948,2024-08-24,Horsens vs Vendsyssel,S. Pingel,Striker,90
+1949,2024-08-24,Horsens vs Vendsyssel,A. Herdonsson,Substitute,30
+1950,2024-08-24,Horsens vs Vendsyssel,M. Hyseni,Substitute,15
+1951,2024-08-24,Horsens vs Vendsyssel,K. Karikari,Substitute,45
+1952,2024-08-24,Horsens vs Vendsyssel,O. Kolskogen,Substitute,59
+1953,2024-08-24,Horsens vs Vendsyssel,O. Kouassi,Substitute,30
+1954,2024-08-24,Horsens vs Vendsyssel,A. Hoff,Substitute,NaN
+1955,2024-08-24,Horsens vs Vendsyssel,M. Opondo,Substitute,NaN
+1956,2024-08-24,Horsens vs Vendsyssel,F. Roslyng,Substitute,NaN
+1957,2024-08-24,Horsens vs Vendsyssel,J. Ankersen,Substitute,NaN
+2156,2024-08-30,Hvidovre vs Horsens,M. Delač,Goalkeeper,90
+2157,2024-08-30,Hvidovre vs Horsens,C. Tapé,Defender,90
+2158,2024-08-30,Hvidovre vs Horsens,O. Kolskogen,Defender,90
+2159,2024-08-30,Hvidovre vs Horsens,S. Hausner,Defender,90
+2160,2024-08-30,Hvidovre vs Horsens,M. Kallesøe,Defender,84
+2161,2024-08-30,Hvidovre vs Horsens,A. Herdonsson,Midfielder,90
+2162,2024-08-30,Hvidovre vs Horsens,F. Christensen,Midfielder,67
+2163,2024-08-30,Hvidovre vs Horsens,O. Kjærgaard,Midfielder,90
+2164,2024-08-30,Hvidovre vs Horsens,S. Ngabo,Striker,74
+2165,2024-08-30,Hvidovre vs Horsens,K. Karikari,Striker,90
+2166,2024-08-30,Hvidovre vs Horsens,S. Pingel,Striker,67
+2167,2024-08-30,Hvidovre vs Horsens,M. Egho,Substitute,23
+2168,2024-08-30,Hvidovre vs Horsens,M. Hyseni,Substitute,NaN
+2169,2024-08-30,Hvidovre vs Horsens,K. Lusavec,Substitute,NaN
+2170,2024-08-30,Hvidovre vs Horsens,M. Larsen,Substitute,NaN
+2171,2024-08-30,Hvidovre vs Horsens,J. Madsen,Substitute,16
+2172,2024-08-30,Hvidovre vs Horsens,O. Kouassi,Substitute,NaN
+2173,2024-08-30,Hvidovre vs Horsens,A. Hoff,Substitute,NaN
+2174,2024-08-30,Hvidovre vs Horsens,M. Opondo,Substitute,23
+2175,2024-08-30,Hvidovre vs Horsens,F. Roslyng,Substitute,6
+2375,2024-09-14,Horsens vs OB,M. Delač,Goalkeeper,90
+2376,2024-09-14,Horsens vs OB,C. Tapé,Defender,90
+2377,2024-09-14,Horsens vs OB,O. Kolskogen,Defender,90
+2378,2024-09-14,Horsens vs OB,S. Hausner,Defender,90
+2379,2024-09-14,Horsens vs OB,M. Kallesøe,Defender,90
+2380,2024-09-14,Horsens vs OB,K. Lusavec,Defensive Midfielder,90
+2381,2024-09-14,Horsens vs OB,A. Herdonsson,Defensive Midfielder,65
+2382,2024-09-14,Horsens vs OB,O. Kjærgaard,Attacking Midfielder,65
+2383,2024-09-14,Horsens vs OB,S. Ngabo,Attacking Midfielder,83
+2384,2024-09-14,Horsens vs OB,E. Frederiksen,Attacking Midfielder,90
+2385,2024-09-14,Horsens vs OB,K. Karikari,Striker,65
+2386,2024-09-14,Horsens vs OB,M. Egho,Substitute,NaN
+2387,2024-09-14,Horsens vs OB,M. Hyseni,Substitute,7
+2388,2024-09-14,Horsens vs OB,F. Christensen,Substitute,25
+2389,2024-09-14,Horsens vs OB,M. Larsen,Substitute,NaN
+2390,2024-09-14,Horsens vs OB,J. Madsen,Substitute,25
+2391,2024-09-14,Horsens vs OB,O. Kouassi,Substitute,NaN
+2392,2024-09-14,Horsens vs OB,A. Hoff,Substitute,NaN
+2393,2024-09-14,Horsens vs OB,S. Pingel,Substitute,25
+2394,2024-09-14,Horsens vs OB,F. Roslyng,Substitute,NaN
+2633,2024-09-21,B 93 vs Horsens,M. Delač,Goalkeeper,90
+2634,2024-09-21,B 93 vs Horsens,C. Tapé,Defender,57
+2635,2024-09-21,B 93 vs Horsens,O. Kolskogen,Defender,77
+2636,2024-09-21,B 93 vs Horsens,S. Hausner,Defender,90
+2637,2024-09-21,B 93 vs Horsens,M. Kallesøe,Defender,31
+2638,2024-09-21,B 93 vs Horsens,K. Lusavec,Defensive Midfielder,90
+2639,2024-09-21,B 93 vs Horsens,A. Herdonsson,Defensive Midfielder,90
+2640,2024-09-21,B 93 vs Horsens,O. Kjærgaard,Attacking Midfielder,90
+2641,2024-09-21,B 93 vs Horsens,S. Ngabo,Attacking Midfielder,57
+2642,2024-09-21,B 93 vs Horsens,E. Frederiksen,Attacking Midfielder,90
+2643,2024-09-21,B 93 vs Horsens,K. Karikari,Striker,57
+2644,2024-09-21,B 93 vs Horsens,M. Egho,Substitute,33
+2645,2024-09-21,B 93 vs Horsens,M. Hyseni,Substitute,NaN
+2646,2024-09-21,B 93 vs Horsens,F. Christensen,Substitute,13
+2647,2024-09-21,B 93 vs Horsens,A. Ludwig,Substitute,59
+2648,2024-09-21,B 93 vs Horsens,J. Madsen,Substitute,33
+2649,2024-09-21,B 93 vs Horsens,O. Kouassi,Substitute,NaN
+2650,2024-09-21,B 93 vs Horsens,A. Hoff,Substitute,NaN
+2651,2024-09-21,B 93 vs Horsens,S. Pingel,Substitute,33
+2652,2024-09-21,B 93 vs Horsens,F. Roslyng,Substitute,NaN
+2890,2024-09-28,Horsens vs Hobro,M. Delač,Goalkeeper,90
+2891,2024-09-28,Horsens vs Hobro,J. Madsen,Defender,90
+2892,2024-09-28,Horsens vs Hobro,O. Kolskogen,Defender,90
+2893,2024-09-28,Horsens vs Hobro,S. Hausner,Defender,71
+2894,2024-09-28,Horsens vs Hobro,M. Kallesøe,Defender,90
+2895,2024-09-28,Horsens vs Hobro,A. Herdonsson,Defensive Midfielder,81
+2896,2024-09-28,Horsens vs Hobro,K. Lusavec,Defensive Midfielder,90
+2897,2024-09-28,Horsens vs Hobro,K. Karikari,Attacking Midfielder,81
+2898,2024-09-28,Horsens vs Hobro,O. Kjærgaard,Attacking Midfielder,71
+2899,2024-09-28,Horsens vs Hobro,E. Frederiksen,Attacking Midfielder,90
+2900,2024-09-28,Horsens vs Hobro,S. Pingel,Striker,89
+2901,2024-09-28,Horsens vs Hobro,M. Egho,Substitute,1
+2902,2024-09-28,Horsens vs Hobro,M. Hyseni,Substitute,9
+2903,2024-09-28,Horsens vs Hobro,F. Christensen,Substitute,9
+2904,2024-09-28,Horsens vs Hobro,M. Larsen,Substitute,NaN
+2905,2024-09-28,Horsens vs Hobro,O. Kouassi,Substitute,NaN
+2906,2024-09-28,Horsens vs Hobro,S. Ngabo,Substitute,19
+2907,2024-09-28,Horsens vs Hobro,A. Hoff,Substitute,NaN
+2908,2024-09-28,Horsens vs Hobro,F. Roslyng,Substitute,19
+2909,2024-09-28,Horsens vs Hobro,C. Tapé,Substitute,NaN
+3188,2024-10-05,Fredericia vs Horsens,M. Delač,Goalkeeper,90
+3189,2024-10-05,Fredericia vs Horsens,J. Madsen,Defender,90
+3190,2024-10-05,Fredericia vs Horsens,O. Kolskogen,Defender,70
+3191,2024-10-05,Fredericia vs Horsens,S. Hausner,Defender,90
+3192,2024-10-05,Fredericia vs Horsens,M. Kallesøe,Defender,90
+3193,2024-10-05,Fredericia vs Horsens,A. Herdonsson,Defensive Midfielder,45
+3194,2024-10-05,Fredericia vs Horsens,K. Lusavec,Defensive Midfielder,90
+3195,2024-10-05,Fredericia vs Horsens,O. Kjærgaard,Attacking Midfielder,45
+3196,2024-10-05,Fredericia vs Horsens,K. Karikari,Attacking Midfielder,82
+3197,2024-10-05,Fredericia vs Horsens,E. Frederiksen,Attacking Midfielder,89
+3198,2024-10-05,Fredericia vs Horsens,S. Pingel,Striker,90
+3199,2024-10-05,Fredericia vs Horsens,M. Egho,Substitute,NaN
+3200,2024-10-05,Fredericia vs Horsens,M. Hyseni,Substitute,NaN
+3201,2024-10-05,Fredericia vs Horsens,F. Christensen,Substitute,45
+3202,2024-10-05,Fredericia vs Horsens,A. Ludwig,Substitute,1
+3203,2024-10-05,Fredericia vs Horsens,O. Kouassi,Substitute,NaN
+3204,2024-10-05,Fredericia vs Horsens,S. Ngabo,Substitute,8
+3205,2024-10-05,Fredericia vs Horsens,A. Hoff,Substitute,NaN
+3206,2024-10-05,Fredericia vs Horsens,F. Roslyng,Substitute,20
+3207,2024-10-05,Fredericia vs Horsens,C. Tapé,Substitute,45
+3386,2024-10-25,Hillerød vs Horsens,M. Delač,Goalkeeper,90
+3387,2024-10-25,Hillerød vs Horsens,C. Tapé,Defender,45
+3388,2024-10-25,Hillerød vs Horsens,O. Kolskogen,Defender,87
+3389,2024-10-25,Hillerød vs Horsens,S. Hausner,Defender,90
+3390,2024-10-25,Hillerød vs Horsens,M. Kallesøe,Defender,90
+3391,2024-10-25,Hillerød vs Horsens,J. Madsen,Midfielder,75
+3392,2024-10-25,Hillerød vs Horsens,K. Lusavec,Midfielder,90
+3393,2024-10-25,Hillerød vs Horsens,F. Christensen,Midfielder,90
+3394,2024-10-25,Hillerød vs Horsens,E. Frederiksen,Midfielder,90
+3395,2024-10-25,Hillerød vs Horsens,K. Karikari,Striker,60
+3396,2024-10-25,Hillerød vs Horsens,S. Pingel,Striker,75
+3397,2024-10-25,Hillerød vs Horsens,M. Egho,Substitute,NaN
+3398,2024-10-25,Hillerød vs Horsens,A. Herdonsson,Substitute,45
+3399,2024-10-25,Hillerød vs Horsens,M. Hyseni,Substitute,15
+3400,2024-10-25,Hillerød vs Horsens,O. Kjærgaard,Substitute,30
+3401,2024-10-25,Hillerød vs Horsens,A. Ludwig,Substitute,3
+3402,2024-10-25,Hillerød vs Horsens,M. Larsen,Substitute,NaN
+3403,2024-10-25,Hillerød vs Horsens,S. Ngabo,Substitute,NaN
+3404,2024-10-25,Hillerød vs Horsens,A. Hoff,Substitute,NaN
+3405,2024-10-25,Hillerød vs Horsens,F. Roslyng,Substitute,15
+3684,2024-11-24,Horsens vs HB Køge,M. Delač,Goalkeeper,90
+3685,2024-11-24,Horsens vs HB Køge,C. Tapé,Defender,45
+3686,2024-11-24,Horsens vs HB Køge,F. Roslyng,Defender,90
+3687,2024-11-24,Horsens vs HB Køge,S. Hausner,Defender,90
+3688,2024-11-24,Horsens vs HB Køge,M. Kallesøe,Defender,90
+3689,2024-11-24,Horsens vs HB Køge,F. Christensen,Defensive Midfielder,90
+3690,2024-11-24,Horsens vs HB Køge,K. Lusavec,Defensive Midfielder,45
+3691,2024-11-24,Horsens vs HB Køge,K. Karikari,Attacking Midfielder,66
+3692,2024-11-24,Horsens vs HB Køge,M. Hyseni,Attacking Midfielder,66
+3693,2024-11-24,Horsens vs HB Køge,E. Frederiksen,Attacking Midfielder,83
+3694,2024-11-24,Horsens vs HB Køge,S. Pingel,Striker,90
+3695,2024-11-24,Horsens vs HB Køge,M. Egho,Substitute,24
+3696,2024-11-24,Horsens vs HB Køge,A. Herdonsson,Substitute,45
+3697,2024-11-24,Horsens vs HB Køge,O. Kjærgaard,Substitute,24
+3698,2024-11-24,Horsens vs HB Køge,O. Kolskogen,Substitute,NaN
+3699,2024-11-24,Horsens vs HB Køge,A. Ludwig,Substitute,NaN
+3700,2024-11-24,Horsens vs HB Køge,J. Madsen,Substitute,45
+3701,2024-11-24,Horsens vs HB Køge,S. Ngabo,Substitute,7
+3702,2024-11-24,Horsens vs HB Køge,A. Hoff,Substitute,NaN
+3703,2024-11-24,Horsens vs HB Køge,A. Moro,Substitute,NaN
+3778,2024-11-29,Kolding vs Horsens,M. Delač,Goalkeeper,90
+3779,2024-11-29,Kolding vs Horsens,J. Madsen,Defender,90
+3780,2024-11-29,Kolding vs Horsens,F. Roslyng,Defender,45
+3781,2024-11-29,Kolding vs Horsens,S. Hausner,Defender,90
+3782,2024-11-29,Kolding vs Horsens,M. Kallesøe,Defender,90
+3783,2024-11-29,Kolding vs Horsens,K. Lusavec,Defensive Midfielder,90
+3784,2024-11-29,Kolding vs Horsens,F. Christensen,Defensive Midfielder,58
+3785,2024-11-29,Kolding vs Horsens,K. Karikari,Attacking Midfielder,58
+3786,2024-11-29,Kolding vs Horsens,A. Herdonsson,Attacking Midfielder,86
+3787,2024-11-29,Kolding vs Horsens,E. Frederiksen,Attacking Midfielder,89
+3788,2024-11-29,Kolding vs Horsens,S. Pingel,Striker,90
+3789,2024-11-29,Kolding vs Horsens,M. Egho,Substitute,NaN
+3790,2024-11-29,Kolding vs Horsens,M. Hyseni,Substitute,NaN
+3791,2024-11-29,Kolding vs Horsens,O. Kjærgaard,Substitute,32
+3792,2024-11-29,Kolding vs Horsens,O. Kolskogen,Substitute,45
+3793,2024-11-29,Kolding vs Horsens,A. Ludwig,Substitute,1
+3794,2024-11-29,Kolding vs Horsens,M. Larsen,Substitute,4
+3795,2024-11-29,Kolding vs Horsens,S. Ngabo,Substitute,32
+3796,2024-11-29,Kolding vs Horsens,A. Hoff,Substitute,NaN
+3797,2024-11-29,Kolding vs Horsens,C. Tapé,Substitute,NaN
+4272,2025-03-14,Horsens vs Esbjerg,M. Delač,Goalkeeper,90
+4273,2025-03-14,Horsens vs Esbjerg,C. Tapé,Defender,90
+4274,2025-03-14,Horsens vs Esbjerg,F. Roslyng,Defender,90
+4275,2025-03-14,Horsens vs Esbjerg,S. Hausner,Defender,74
+4276,2025-03-14,Horsens vs Esbjerg,M. Kallesøe,Defender,90
+4277,2025-03-14,Horsens vs Esbjerg,S. Ngabo,Midfielder,68
+4278,2025-03-14,Horsens vs Esbjerg,A. Herdonsson,Midfielder,90
+4280,2025-03-14,Horsens vs Esbjerg,K. Lusavec,Midfielder,90
+4281,2025-03-14,Horsens vs Esbjerg,K. Karikari,Midfielder,82
+4282,2025-03-14,Horsens vs Esbjerg,E. Frederiksen,Attacking Midfielder,82
+4283,2025-03-14,Horsens vs Esbjerg,S. Pingel,Striker,90
+4284,2025-03-14,Horsens vs Esbjerg,S. Doua,Substitute,NaN
+4285,2025-03-14,Horsens vs Esbjerg,M. Egho,Substitute,NaN
+4286,2025-03-14,Horsens vs Esbjerg,G. Guðmundsson,Substitute,22
+4287,2025-03-14,Horsens vs Esbjerg,M. Hyseni,Substitute,NaN
+4288,2025-03-14,Horsens vs Esbjerg,O. Kjærgaard,Substitute,8
+4289,2025-03-14,Horsens vs Esbjerg,A. Ludwig,Substitute,16
+4290,2025-03-14,Horsens vs Esbjerg,Y. Ouorou,Substitute,8
+4291,2025-03-14,Horsens vs Esbjerg,A. Moro,Substitute,NaN
+4292,2025-03-14,Horsens vs Esbjerg,F. Đukić,Substitute,NaN
+4590,2024-10-20,Horsens vs Hvidovre,M. Delač,Goalkeeper,90
+4591,2024-10-20,Horsens vs Hvidovre,C. Tapé,Defender,90
+4592,2024-10-20,Horsens vs Hvidovre,O. Kolskogen,Defender,90
+4593,2024-10-20,Horsens vs Hvidovre,S. Hausner,Defender,90
+4594,2024-10-20,Horsens vs Hvidovre,M. Kallesøe,Defender,90
+4595,2024-10-20,Horsens vs Hvidovre,J. Madsen,Midfielder,90
+4596,2024-10-20,Horsens vs Hvidovre,F. Christensen,Midfielder,69
+4597,2024-10-20,Horsens vs Hvidovre,K. Lusavec,Midfielder,90
+4598,2024-10-20,Horsens vs Hvidovre,E. Frederiksen,Midfielder,89
+4599,2024-10-20,Horsens vs Hvidovre,S. Pingel,Striker,90
+4600,2024-10-20,Horsens vs Hvidovre,K. Karikari,Striker,62
+4601,2024-10-20,Horsens vs Hvidovre,M. Egho,Substitute,1
+4602,2024-10-20,Horsens vs Hvidovre,A. Herdonsson,Substitute,21
+4603,2024-10-20,Horsens vs Hvidovre,M. Hyseni,Substitute,NaN
+4604,2024-10-20,Horsens vs Hvidovre,O. Kjærgaard,Substitute,28
+4605,2024-10-20,Horsens vs Hvidovre,A. Ludwig,Substitute,NaN
+4606,2024-10-20,Horsens vs Hvidovre,M. Larsen,Substitute,NaN
+4607,2024-10-20,Horsens vs Hvidovre,A. Hoff,Substitute,NaN
+4608,2024-10-20,Horsens vs Hvidovre,F. Roslyng,Substitute,NaN
+4609,2024-10-20,Horsens vs Hvidovre,A. Moro,Substitute,NaN
+4787,2024-11-01,Horsens vs B 93,M. Delač,Goalkeeper,90
+4788,2024-11-01,Horsens vs B 93,J. Madsen,Defender,90
+4789,2024-11-01,Horsens vs B 93,A. Ludwig,Defender,62
+4790,2024-11-01,Horsens vs B 93,S. Hausner,Defender,90
+4791,2024-11-01,Horsens vs B 93,M. Kallesøe,Defender,90
+4792,2024-11-01,Horsens vs B 93,F. Christensen,Defensive Midfielder,82
+4793,2024-11-01,Horsens vs B 93,K. Lusavec,Defensive Midfielder,90
+4794,2024-11-01,Horsens vs B 93,K. Karikari,Attacking Midfielder,62
+4795,2024-11-01,Horsens vs B 93,S. Ngabo,Attacking Midfielder,62
+4796,2024-11-01,Horsens vs B 93,E. Frederiksen,Attacking Midfielder,90
+4797,2024-11-01,Horsens vs B 93,S. Pingel,Striker,78
+4798,2024-11-01,Horsens vs B 93,M. Egho,Substitute,NaN
+4799,2024-11-01,Horsens vs B 93,A. Herdonsson,Substitute,8
+4800,2024-11-01,Horsens vs B 93,M. Hyseni,Substitute,12
+4801,2024-11-01,Horsens vs B 93,O. Kjærgaard,Substitute,28
+4802,2024-11-01,Horsens vs B 93,O. Kolskogen,Substitute,28
+4803,2024-11-01,Horsens vs B 93,M. Larsen,Substitute,NaN
+4804,2024-11-01,Horsens vs B 93,A. Hoff,Substitute,NaN
+4805,2024-11-01,Horsens vs B 93,F. Roslyng,Substitute,NaN
+4806,2024-11-01,Horsens vs B 93,C. Tapé,Substitute,28
+4966,2024-11-09,OB vs Horsens,M. Delač,Goalkeeper,90
+4967,2024-11-09,OB vs Horsens,C. Tapé,Defender,90
+4968,2024-11-09,OB vs Horsens,O. Kolskogen,Defender,56
+4969,2024-11-09,OB vs Horsens,S. Hausner,Defender,90
+4970,2024-11-09,OB vs Horsens,M. Kallesøe,Defender,90
+4971,2024-11-09,OB vs Horsens,J. Madsen,Midfielder,56
+4972,2024-11-09,OB vs Horsens,F. Christensen,Midfielder,90
+4973,2024-11-09,OB vs Horsens,K. Lusavec,Midfielder,75
+4974,2024-11-09,OB vs Horsens,E. Frederiksen,Midfielder,90
+4975,2024-11-09,OB vs Horsens,S. Pingel,Striker,75
+4976,2024-11-09,OB vs Horsens,K. Karikari,Striker,82
+4977,2024-11-09,OB vs Horsens,M. Egho,Substitute,8
+4978,2024-11-09,OB vs Horsens,A. Herdonsson,Substitute,15
+4979,2024-11-09,OB vs Horsens,M. Hyseni,Substitute,15
+4980,2024-11-09,OB vs Horsens,O. Kjærgaard,Substitute,34
+4981,2024-11-09,OB vs Horsens,A. Ludwig,Substitute,NaN
+4982,2024-11-09,OB vs Horsens,M. Larsen,Substitute,NaN
+4983,2024-11-09,OB vs Horsens,S. Ngabo,Substitute,NaN
+4984,2024-11-09,OB vs Horsens,A. Hoff,Substitute,NaN
+4985,2024-11-09,OB vs Horsens,F. Roslyng,Substitute,34
+5186,2025-02-23,Horsens vs Roskilde,F. Đukić,Goalkeeper,90
+5187,2025-02-23,Horsens vs Roskilde,J. Madsen,Defender,90
+5188,2025-02-23,Horsens vs Roskilde,O. Kolskogen,Defender,90
+5189,2025-02-23,Horsens vs Roskilde,M. Fenger,Defender,90
+5190,2025-02-23,Horsens vs Roskilde,M. Kallesøe,Defender,80
+5191,2025-02-23,Horsens vs Roskilde,S. Ngabo,Midfielder,64
+5192,2025-02-23,Horsens vs Roskilde,A. Herdonsson,Midfielder,74
+5194,2025-02-23,Horsens vs Roskilde,F. Christensen,Midfielder,90
+5195,2025-02-23,Horsens vs Roskilde,E. Frederiksen,Midfielder,80
+5196,2025-02-23,Horsens vs Roskilde,S. Pingel,Striker,90
+5197,2025-02-23,Horsens vs Roskilde,M. Hyseni,Striker,64
+5198,2025-02-23,Horsens vs Roskilde,M. Delač,Substitute,NaN
+5199,2025-02-23,Horsens vs Roskilde,G. Guðmundsson,Substitute,10
+5200,2025-02-23,Horsens vs Roskilde,K. Karikari,Substitute,26
+5201,2025-02-23,Horsens vs Roskilde,O. Kjærgaard,Substitute,26
+5202,2025-02-23,Horsens vs Roskilde,A. Ludwig,Substitute,NaN
+5203,2025-02-23,Horsens vs Roskilde,K. Lusavec,Substitute,16
+5204,2025-02-23,Horsens vs Roskilde,F. Roslyng,Substitute,NaN
+5205,2025-02-23,Horsens vs Roskilde,A. Saine,Substitute,10
+5206,2025-02-23,Horsens vs Roskilde,A. Moro,Substitute,NaN
+5324,2025-02-28,Vendsyssel vs Horsens,F. Đukić,Goalkeeper,90
+5325,2025-02-28,Vendsyssel vs Horsens,J. Madsen,Defender,90
+5326,2025-02-28,Vendsyssel vs Horsens,O. Kolskogen,Defender,90
+5327,2025-02-28,Vendsyssel vs Horsens,S. Hausner,Defender,90
+5328,2025-02-28,Vendsyssel vs Horsens,M. Kallesøe,Defender,90
+5329,2025-02-28,Vendsyssel vs Horsens,S. Ngabo,Midfielder,82
+5330,2025-02-28,Vendsyssel vs Horsens,A. Herdonsson,Midfielder,90
+5331,2025-02-28,Vendsyssel vs Horsens,F. Christensen,Midfielder,68
+5332,2025-02-28,Vendsyssel vs Horsens,E. Frederiksen,Midfielder,90
+5333,2025-02-28,Vendsyssel vs Horsens,K. Karikari,Striker,90
+5334,2025-02-28,Vendsyssel vs Horsens,S. Pingel,Striker,86
+5335,2025-02-28,Vendsyssel vs Horsens,M. Delač,Substitute,NaN
+5336,2025-02-28,Vendsyssel vs Horsens,M. Egho,Substitute,NaN
+5337,2025-02-28,Vendsyssel vs Horsens,M. Fenger,Substitute,8
+5338,2025-02-28,Vendsyssel vs Horsens,G. Guðmundsson,Substitute,NaN
+5339,2025-02-28,Vendsyssel vs Horsens,M. Hyseni,Substitute,NaN
+5340,2025-02-28,Vendsyssel vs Horsens,O. Kjærgaard,Substitute,4
+5341,2025-02-28,Vendsyssel vs Horsens,K. Lusavec,Substitute,22
+5342,2025-02-28,Vendsyssel vs Horsens,A. Moro,Substitute,NaN
+5343,2025-02-28,Vendsyssel vs Horsens,C. Tapé,Substitute,NaN
+5564,2025-03-08,Hobro vs Horsens,M. Delač,Goalkeeper,90
+5565,2025-03-08,Hobro vs Horsens,C. Tapé,Defender,51
+5566,2025-03-08,Hobro vs Horsens,O. Kolskogen,Defender,45
+5567,2025-03-08,Hobro vs Horsens,S. Hausner,Defender,90
+5568,2025-03-08,Hobro vs Horsens,M. Kallesøe,Defender,90
+5569,2025-03-08,Hobro vs Horsens,S. Ngabo,Midfielder,71
+5570,2025-03-08,Hobro vs Horsens,A. Herdonsson,Midfielder,63
+5571,2025-03-08,Hobro vs Horsens,F. Christensen,Midfielder,90
+5572,2025-03-08,Hobro vs Horsens,E. Frederiksen,Midfielder,90
+5573,2025-03-08,Hobro vs Horsens,S. Pingel,Striker,90
+5574,2025-03-08,Hobro vs Horsens,K. Karikari,Striker,63
+5575,2025-03-08,Hobro vs Horsens,M. Egho,Substitute,NaN
+5576,2025-03-08,Hobro vs Horsens,G. Guðmundsson,Substitute,19
+5577,2025-03-08,Hobro vs Horsens,M. Hyseni,Substitute,NaN
+5578,2025-03-08,Hobro vs Horsens,O. Kjærgaard,Substitute,27
+5579,2025-03-08,Hobro vs Horsens,A. Ludwig,Substitute,NaN
+5580,2025-03-08,Hobro vs Horsens,K. Lusavec,Substitute,27
+5581,2025-03-08,Hobro vs Horsens,J. Madsen,Substitute,39
+5582,2025-03-08,Hobro vs Horsens,F. Roslyng,Substitute,45
+5583,2025-03-08,Hobro vs Horsens,F. Đukić,Substitute,NaN
+6139,2025-04-06,Horsens vs Hvidovre,M. Delač,Goalkeeper,90
+6140,2025-04-06,Horsens vs Hvidovre,C. Tapé,Defender,90
+6141,2025-04-06,Horsens vs Hvidovre,F. Roslyng,Defender,90
+6142,2025-04-06,Horsens vs Hvidovre,O. Kolskogen,Defender,90
+6143,2025-04-06,Horsens vs Hvidovre,M. Kallesøe,Defender,75
+6144,2025-04-06,Horsens vs Hvidovre,K. Lusavec,Defensive Midfielder,75
+6145,2025-04-06,Horsens vs Hvidovre,F. Christensen,Defensive Midfielder,90
+6146,2025-04-06,Horsens vs Hvidovre,S. Ngabo,Attacking Midfielder,76
+6147,2025-04-06,Horsens vs Hvidovre,E. Frederiksen,Attacking Midfielder,87
+6148,2025-04-06,Horsens vs Hvidovre,O. Kjærgaard,Attacking Midfielder,90
+6149,2025-04-06,Horsens vs Hvidovre,S. Pingel,Striker,28
+6150,2025-04-06,Horsens vs Hvidovre,S. Doua,Substitute,15
+6151,2025-04-06,Horsens vs Hvidovre,A. Herdonsson,Substitute,15
+6152,2025-04-06,Horsens vs Hvidovre,M. Hyseni,Substitute,NaN
+6153,2025-04-06,Horsens vs Hvidovre,K. Karikari,Substitute,62
+6154,2025-04-06,Horsens vs Hvidovre,A. Ludwig,Substitute,NaN
+6155,2025-04-06,Horsens vs Hvidovre,J. Madsen,Substitute,NaN
+6156,2025-04-06,Horsens vs Hvidovre,Y. Ouorou,Substitute,14
+6157,2025-04-06,Horsens vs Hvidovre,A. Moro,Substitute,3
+6158,2025-04-06,Horsens vs Hvidovre,F. Đukić,Substitute,NaN
+6238,2025-03-30,OB vs Horsens,M. Delač,Goalkeeper,90
+6239,2025-03-30,OB vs Horsens,J. Madsen,Defender,90
+6240,2025-03-30,OB vs Horsens,F. Roslyng,Defender,90
+6241,2025-03-30,OB vs Horsens,S. Hausner,Defender,79
+6242,2025-03-30,OB vs Horsens,M. Kallesøe,Defender,90
+6243,2025-03-30,OB vs Horsens,S. Ngabo,Midfielder,79
+6244,2025-03-30,OB vs Horsens,K. Lusavec,Midfielder,86
+6245,2025-03-30,OB vs Horsens,F. Christensen,Midfielder,90
+6246,2025-03-30,OB vs Horsens,K. Karikari,Midfielder,85
+6247,2025-03-30,OB vs Horsens,S. Pingel,Striker,90
+6248,2025-03-30,OB vs Horsens,E. Frederiksen,Striker,64
+6249,2025-03-30,OB vs Horsens,M. Egho,Substitute,4
+6250,2025-03-30,OB vs Horsens,G. Guðmundsson,Substitute,5
+6251,2025-03-30,OB vs Horsens,A. Herdonsson,Substitute,NaN
+6252,2025-03-30,OB vs Horsens,O. Kjærgaard,Substitute,26
+6253,2025-03-30,OB vs Horsens,O. Kolskogen,Substitute,11
+6254,2025-03-30,OB vs Horsens,A. Ludwig,Substitute,NaN
+6255,2025-03-30,OB vs Horsens,A. Hoff,Substitute,NaN
+6256,2025-03-30,OB vs Horsens,Y. Ouorou,Substitute,11
+6257,2025-03-30,OB vs Horsens,A. Moro,Substitute,NaN
+6358,2025-04-10,Fredericia vs Horsens,F. Đukić,Goalkeeper,90
+6359,2025-04-10,Fredericia vs Horsens,C. Tapé,Defender,90
+6360,2025-04-10,Fredericia vs Horsens,F. Roslyng,Defender,90
+6361,2025-04-10,Fredericia vs Horsens,S. Hausner,Defender,90
+6362,2025-04-10,Fredericia vs Horsens,M. Kallesøe,Defender,19
+6363,2025-04-10,Fredericia vs Horsens,J. Madsen,Midfielder,56
+6364,2025-04-10,Fredericia vs Horsens,K. Lusavec,Midfielder,74
+6365,2025-04-10,Fredericia vs Horsens,F. Christensen,Midfielder,90
+6366,2025-04-10,Fredericia vs Horsens,E. Frederiksen,Midfielder,90
+6367,2025-04-10,Fredericia vs Horsens,S. Ngabo,Attacking Midfielder,56
+6368,2025-04-10,Fredericia vs Horsens,K. Karikari,Striker,74
+6369,2025-04-10,Fredericia vs Horsens,S. Doua,Substitute,71
+6370,2025-04-10,Fredericia vs Horsens,A. Herdonsson,Substitute,16
+6371,2025-04-10,Fredericia vs Horsens,M. Hyseni,Substitute,16
+6372,2025-04-10,Fredericia vs Horsens,O. Kjærgaard,Substitute,NaN
+6373,2025-04-10,Fredericia vs Horsens,O. Kolskogen,Substitute,NaN
+6374,2025-04-10,Fredericia vs Horsens,O. Kouassi,Substitute,NaN
+6375,2025-04-10,Fredericia vs Horsens,A. Hoff,Substitute,NaN
+6376,2025-04-10,Fredericia vs Horsens,Y. Ouorou,Substitute,34
+6377,2025-04-10,Fredericia vs Horsens,A. Moro,Substitute,34
