@@ -754,7 +754,7 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         df_backs['Total score'] = df_backs.apply(
             lambda row: weighted_mean(
                 [row['Defending_'], row['Passing_'], row['Chance_creation'], row['Possession_value_added']],
-                [3 if row['Defending_'] < 3 else 1, 3 if row['Passing_'] < 3 else 1, 3 if row['Chance_creation'] < 3 else 1, 3 if row['Possession_value_added'] < 3 else 1]
+                [3 if row['Defending_'] < 3 else 3, 3 if row['Passing_'] < 2 else 1, 3 if row['Chance_creation'] < 3 else 2, 3 if row['Possession_value_added'] < 3 else 2]
             ), axis=1
         )
 
