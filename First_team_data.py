@@ -1430,7 +1430,7 @@ def Dashboard():
         df_set_pieces_sum = df_set_pieces_sum.rename(columns={'321.0': 'xG'})
         df_set_pieces_sum = df_set_pieces_sum.sort_values(by='xG',ascending=False)
 
-        df_set_pieces_matches = df_set_pieces_matches[['team_name','321.0','xG_against','xG_diff','set_piece_type']]
+        df_set_pieces_matches = df_set_pieces_matches[['team_name','321.0','xG_against','xG_diff']]
         df_set_pieces_matches = df_set_pieces_matches.rename(columns={'321.0': 'xG'})
         st.write('All set pieces')
         st.dataframe(df_set_pieces_sum)
