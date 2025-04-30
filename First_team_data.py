@@ -1441,7 +1441,7 @@ def Dashboard():
         Freekicks = Freekicks.groupby(['team_name']).agg({'321.0':'sum'}).reset_index()
         Freekicks['xG_match'] = Freekicks.groupby('team_name')['321.0'].transform('sum')
         Freekicks['xG_against'] = Freekicks['321.0'] - Freekicks['xG_match']
-        Freekicks['xG_diff'] = Freekicks['321.0'] - Freekicks['xG_match'] + Freekicks['xG']
+        Freekicks['xG_diff'] = Freekicks['321.0'] - Freekicks['xG_match'] + Freekicks['321.0']
         Freekicks = Freekicks.rename(columns={'321.0': 'xG'})
 
         Freekicks = Freekicks.sort_values(by='xG',ascending=False)
