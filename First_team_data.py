@@ -1420,7 +1420,7 @@ def Dashboard():
         st.dataframe(Throw_ins)
 
         st.header('Chosen matches')
-        df_set_pieces_matches = df_set_pieces[df_set_pieces['label'].isin(match_choice)]
+        df_set_pieces_matches1 = df_set_pieces[df_set_pieces['label'].isin(match_choice)]
         df_set_pieces_matches = df_set_pieces.groupby(['team_name','label']).agg({'321.0':'sum'}).reset_index()
         df_set_pieces_matches['xG_match'] = df_set_pieces_matches.groupby('label')['321.0'].transform('sum')
         df_set_pieces_matches['xG_against'] = df_set_pieces_matches['321.0'] - df_set_pieces_matches['xG_match']
@@ -1436,7 +1436,7 @@ def Dashboard():
         st.dataframe(df_set_pieces_sum)
 
         st.write('Freekicks')
-        Freekicks = df_set_pieces_matches[(df_set_pieces_matches['set_piece_type'] == 'freekick')]
+        Freekicks = df_set_pieces_matches1[(df_set_pieces_matches1['set_piece_type'] == 'freekick')]
         Freekicks['team_name'] = Freekicks['team_name'].apply(lambda x: 'Opponent' if x != 'Horsens' else x)
         #Freekicks = Freekicks.groupby(['team_name']).agg({'321.0':'sum'}).reset_index()
         Freekicks['xG_match'] = Freekicks.groupby('team_name')['xG'].transform('sum')
@@ -1448,7 +1448,7 @@ def Dashboard():
         st.dataframe(Freekicks_matches)
 
         st.write('Corners')
-        Corners = df_set_pieces_matches[(df_set_pieces_matches['set_piece_type'] == 'corner')]
+        Corners = df_set_pieces_matches1[(df_set_pieces_matches1['set_piece_type'] == 'corner')]
         Corners['team_name'] = Corners['team_name'].apply(lambda x: 'Opponent' if x != 'Horsens' else x)
         #Corners = Corners.groupby(['team_name','label']).agg({'321.0':'sum'}).reset_index()
         Corners['xG_match'] = Corners.groupby('team_name')['xG'].transform('sum')
@@ -1461,7 +1461,7 @@ def Dashboard():
         st.dataframe(Corners_matches)
 
         st.write('Throw ins')
-        Throw_ins = df_set_pieces_matches[df_set_pieces_matches['set_piece_type'] =='throw_in']
+        Throw_ins = df_set_pieces_matches1[df_set_pieces_matches1['set_piece_type'] =='throw_in']
         #Corners = df_set_pieces[(df_set_pieces['26.0'] != True) & (df_set_pieces['24.0'] != True)]
         Throw_ins = Throw_ins.groupby(['team_name','label']).agg({'321.0':'sum'}).reset_index()
         Throw_ins['xG_match'] = Throw_ins.groupby('label')['321.0'].transform('sum')
