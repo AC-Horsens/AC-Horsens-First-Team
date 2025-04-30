@@ -1424,12 +1424,13 @@ def Dashboard():
         df_set_pieces_matches['xG_match'] = df_set_pieces_matches.groupby('label')['321.0'].transform('sum')
         df_set_pieces_matches['xG_against'] = df_set_pieces_matches['321.0'] - df_set_pieces_matches['xG_match']
         df_set_pieces_matches['xG_diff'] = df_set_pieces_matches['321.0'] - df_set_pieces_matches['xG_match'] + df_set_pieces_matches['321.0']
-        st.dataframe(df_set_pieces)
-        df_set_pieces_matches = df_set_pieces_matches[['team_name','321.0','xG_against','xG_diff','set_piece_type']]
         df_set_pieces_matches['team_name'] = df_set_pieces_matches['team_name'].apply(lambda x: 'Opponent' if x != 'Horsens' else x)
+        df_set_pieces_sum = df_set_pieces_matches.groupby('team_name').agg({'321.0': 'sum', 'xG_against': 'sum', 'xG_diff': 'sum'})
+        df_set_pieces_sum = df_set_pieces_sum.rename(columns={'321.0': 'xG'})
+        df_set_pieces_sum = df_set_pieces_sum.sort_values(by='xG',ascending=False)
 
+        df_set_pieces_matches = df_set_pieces_matches[['team_name','321.0','xG_against','xG_diff','set_piece_type']]
         df_set_pieces_matches = df_set_pieces_matches.rename(columns={'321.0': 'xG'})
-        df_set_pieces_matches = df_set_pieces_matches.groupby('team_name').sum()
         st.write('All set pieces')
         st.dataframe(df_set_pieces_matches)
 
