@@ -1452,10 +1452,12 @@ def Dashboard():
         st.write('Corners')
         Corners = df_set_pieces_matches1[(df_set_pieces_matches1['set_piece_type'] == 'corner')]
         Corners['team_name'] = Corners['team_name'].apply(lambda x: 'Opponent' if x != 'Horsens' else x)
-        #Corners = Corners.groupby(['team_name','label']).agg({'321.0':'sum'}).reset_index()
-        Corners['xG_match'] = Corners.groupby('team_name')['xG'].transform('sum')
-        Corners['xG_against'] = Corners['xG'] - Corners['xG_match']
-        Corners['xG_diff'] = Corners['xG'] - Corners['xG_match'] + Corners['xG']
+        Corners = Corners.groupby(['team_name','label']).agg({'321.0':'sum'}).reset_index()
+        Corners['xG_match'] = Corners.groupby('label')['321.0'].transform('sum')
+        Corners['xG_against'] = Corners['321.0'] - Corners['xG_match']
+        Corners['xG_diff'] = Corners['321.0'] - Corners['xG_match'] + Corners['321.0']
+        Corners = Corners.rename(columns={'321.0': 'xG'})
+
         Corners = Corners.sort_values(by='xG',ascending=False)
         Corners_matches = Corners[['team_name','xG','xG_against','xG_diff']]
         Corners_matches = Corners_matches.groupby('team_name').sum()
