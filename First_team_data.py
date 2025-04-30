@@ -1442,7 +1442,7 @@ def Dashboard():
         Freekicks['xG_against'] = Freekicks['xG'] - Freekicks['xG_match']
         Freekicks['xG_diff'] = Freekicks['xG'] - Freekicks['xG_match'] + Freekicks['xG']
         Freekicks = Freekicks.sort_values(by='xG',ascending=False)
-        Freekicks_matches = Freekicks_matches[['team_name','xG','xG_against','xG_diff']]
+        Freekicks_matches = Freekicks[['team_name','xG','xG_against','xG_diff']]
         Freekicks_matches = Freekicks_matches.groupby('team_name').sum()
         st.dataframe(Freekicks_matches)
 
