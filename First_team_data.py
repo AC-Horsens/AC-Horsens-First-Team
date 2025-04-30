@@ -1425,14 +1425,14 @@ def Dashboard():
         df_set_pieces_matches['xG_against'] = df_set_pieces_matches['321.0'] - df_set_pieces_matches['xG_match']
         df_set_pieces_matches['xG_diff'] = df_set_pieces_matches['321.0'] - df_set_pieces_matches['xG_match'] + df_set_pieces_matches['321.0']
         df_set_pieces_matches['team_name'] = df_set_pieces_matches['team_name'].apply(lambda x: 'Opponent' if x != 'Horsens' else x)
-        df_set_pieces_sum = df_set_pieces_matches.groupby('label').agg({'321.0': 'sum', 'xG_against': 'sum', 'xG_diff': 'sum'})
+        df_set_pieces_sum = df_set_pieces_matches.groupby('team_name').agg({'321.0': 'sum', 'xG_against': 'sum', 'xG_diff': 'sum'})
         df_set_pieces_sum = df_set_pieces_sum.rename(columns={'321.0': 'xG'})
         df_set_pieces_sum = df_set_pieces_sum.sort_values(by='xG',ascending=False)
 
         df_set_pieces_matches = df_set_pieces_matches[['team_name','321.0','xG_against','xG_diff','set_piece_type']]
         df_set_pieces_matches = df_set_pieces_matches.rename(columns={'321.0': 'xG'})
         st.write('All set pieces')
-        st.dataframe(df_set_pieces_matches)
+        st.dataframe(df_set_pieces_sum)
 
         st.write('Freekicks')
         Freekicks = df_set_pieces_matches[(df_set_pieces_matches['set_piece_type'] == 'freekick')]
@@ -1450,7 +1450,7 @@ def Dashboard():
         Corners = df_set_pieces_matches[(df_set_pieces_matches['set_piece_type'] == 'corner')]
         Corners['team_name'] = Corners['team_name'].apply(lambda x: 'Opponent' if x != 'Horsens' else x)
         #Corners = Corners.groupby(['team_name','label']).agg({'321.0':'sum'}).reset_index()
-        Corners['xG_match'] = Corners.groupby('label')['xG'].transform('sum')
+        Corners['xG_match'] = Corners.groupby('team_name')['xG'].transform('sum')
         Corners['xG_against'] = Corners['xG'] - Corners['xG_match']
         Corners['xG_diff'] = Corners['xG'] - Corners['xG_match'] + Corners['xG']
         Corners = Corners.sort_values(by='xG',ascending=False)
