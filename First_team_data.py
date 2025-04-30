@@ -1421,6 +1421,9 @@ def Dashboard():
 
         st.header('Chosen matches')
         df_set_pieces_matches = df_set_pieces[df_set_pieces['label'].isin(match_choice)]
+        df_set_pieces_matches['xG_match'] = df_set_pieces_matches.groupby('label')['321.0'].transform('sum')
+        df_set_pieces_matches['xG_against'] = df_set_pieces_matches['321.0'] - df_set_pieces_matches['xG_match']
+        df_set_pieces_matches['xG_diff'] = df_set_pieces_matches['321.0'] - df_set_pieces_matches['xG_match'] + df_set_pieces_matches['321.0']
         st.dataframe(df_set_pieces)
         df_set_pieces_matches = df_set_pieces_matches[['team_name','321.0','xG_against','xG_diff','set_piece_type']]
         df_set_pieces_matches['team_name'] = df_set_pieces_matches['team_name'].apply(lambda x: 'Opponent' if x != 'Horsens' else x)
