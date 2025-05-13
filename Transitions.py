@@ -1,6 +1,12 @@
 import pandas as pd
+import statsmodels.api as sm
+import matplotlib.pyplot as plt
+from pandas.plotting import table
 import numpy as np
+import os
 import psycopg2
+import pandas as pd
+import json
 
 db_navn = 'AC Horsens'
 db_brugernavn = 'postgres'
@@ -113,6 +119,9 @@ def fetch_and_save_possession_data_for_nordic_bet_teams():
 df = fetch_and_save_possession_data_for_nordic_bet_teams()
 
 
+import pandas as pd
+import numpy as np
+
 # Reset index to avoid ambiguity with 'label'
 df = df.reset_index(drop=True)
 
@@ -182,6 +191,8 @@ def length_to_opp_goal(df):
 
 df = length_to_opp_goal(df)
 
+
+
 # Merge possession length
 df = df.merge(sequence_length, on=['label','date','sequenceId'], how='left')
 
@@ -195,13 +206,13 @@ df = add_start_possession_distance(df)
 df['321.0'] = pd.to_numeric(df['321.0'], errors='coerce')
 
 # Calculate possession xG
-Transition_xg = df.groupby(['label','date','sequenceId'])['321.0'].max().reset_index()
+possession_xg = df.groupby(['label','date','sequenceId'])['321.0'].max().reset_index()
 
-# Rename the '321.0' column to 'Transition_xg' for clarity
-Transition_xg.rename(columns={'321.0': 'Transition xG'}, inplace=True)
+# Rename the '321.0' column to 'possession_xg' for clarity
+possession_xg.rename(columns={'321.0': 'possession_xg'}, inplace=True)
 
-# Merge this new 'Transition_xg' back into the original DataFrame
-df = df.merge(Transition_xg, on=['label','date','sequenceId'], how='left')
+# Merge this new 'possession_xg' back into the original DataFrame
+df = df.merge(possession_xg, on=['label','date','sequenceId'], how='left')
 
 # Apply conditions for filtering
 condition1 = (df['start_possession_distance'].astype(float) <= 30) & (df['possession_length'].astype(int) <= 5)
@@ -210,39 +221,53 @@ condition3 = (df['start_possession_distance'].astype(float) >= 60) & (df['posses
 
 # Combine all conditions with OR (|)
 df1 = df[condition1 | condition2 | condition3]
-# Filter based on team name and Transition_xg > 0
+# Filter based on team name and possession_xg > 0
 
 # Select relevant columns
-#df1 = df1[['timeMin', 'timeSec', 'x', 'y','team_name', 'playerName', 'label', 'distance to opp goal', 'start_possession_distance', 'possession_length', 'possession_index', 'Transition_xg']]
+#df1 = df1[['timeMin', 'timeSec', 'x', 'y','team_name', 'playerName', 'label', 'distance to opp goal', 'start_possession_distance', 'possession_length', 'possession_index', 'possession_xg']]
 
 # Print the final DataFrame
-#df1 = df1[df1['Transition_xg'] > 0]
+df1 = df1[df1['possession_xg'] > 0]
 df1 = df1[df1['possession_index'] == 1]
-df1['label'] = (df1['label'] + ' ' + df1['date'])
 
-df_by_team = df1.groupby(['team_name','label'])['Transition xG'].sum().reset_index()
-df_by_team['match_Transition_xG'] = df_by_team.groupby(['label'])['Transition xG'].transform('sum')
-df_by_team['Transition xG difference'] = df_by_team['Transition xG'] - df_by_team['match_Transition_xG'] + df_by_team['Transition xG']
-df_by_team['Transition xG against'] = df_by_team['Transition xG'] - df_by_team['match_Transition_xG']
-difference_df = df_by_team.groupby(['team_name','label'])['Transition xG difference'].sum().reset_index()
-xg_against = df_by_team.groupby(['team_name','label'])['Transition xG against'].sum().reset_index()
-total_df = df_by_team.groupby(['team_name','label'])['Transition xG'].sum().reset_index()
-combined_df = difference_df.merge(total_df, on=['team_name','label'],how='outer')
-combined_df = combined_df.merge(xg_against, on=['team_name','label'],how='outer')
-combined_df = combined_df.sort_values('Transition xG difference', ascending=False)
-combined_df = combined_df.round(2)
+df_by_match = df1.groupby(['label','date'])['possession_xg'].sum().reset_index()
 
+df_by_team = df1.groupby(['team_name','date','label'])['possession_xg'].sum().reset_index()
+df_by_team['match_possession_xg'] = df_by_team.groupby(['label','date'])['possession_xg'].transform('sum')
+df_by_team['xg_difference'] = df_by_team['possession_xg'] - df_by_team['match_possession_xg'] + df_by_team['possession_xg']
+df_by_team['xg_against'] = df_by_team['possession_xg'] - df_by_team['match_possession_xg']
+difference_df = df_by_team.groupby(['team_name'])['xg_difference'].sum().reset_index()
+xg_against = df_by_team.groupby(['team_name'])['xg_against'].sum().reset_index()
+total_df = df_by_team.groupby(['team_name'])['possession_xg'].sum().reset_index()
+combined_df = difference_df.merge(total_df, on='team_name')
+combined_df = combined_df.merge(xg_against, on='team_name')
+combined_df = combined_df.sort_values('xg_difference', ascending=False)
+combined_df.round(2)
+print('sorteret efter xg difference')
+print(combined_df)
+combined_df = combined_df.sort_values('possession_xg', ascending=False)
+print('sorteret efter samlet')
+print(combined_df)
+combined_df = combined_df.sort_values('xg_against', ascending=False)
+print('sorteret efter xg against')
+print(combined_df)
 df_xg = pd.read_csv(r'C:\Users\Seamus-admin\Documents\GitHub\AC-Horsens-First-Team\DNK_1_Division_2024_2025\xg_all DNK_1_Division_2024_2025.csv')
-df_xg['label'] = (df_xg['label'] + ' ' + df_xg['date'])
-
 df_xg['321'] = df_xg['321'].astype(float)
-df_xg = df_xg.groupby(['team_name','label']).sum('321')
-df_xg = df_xg.rename(columns={'321': 'Total xG'})
-combined_df = combined_df.merge(df_xg,on=['team_name','label'],how='outer')
-combined_df['Transition xG share'] = combined_df['Transition xG']/combined_df['Total xG']
-combined_df = combined_df[['team_name','label','Transition xG difference','Transition xG','Transition xG against','Transition xG share']]
-combined_df['team_name'] = combined_df['team_name'].str.replace(' ', '_')
+df_xg = df_xg.groupby('team_name').sum('321')
+df_xg = df_xg.rename(columns={'321': 'total_xg'})
+combined_df = combined_df.merge(df_xg,on='team_name')
+combined_df['xg share'] = combined_df['possession_xg']/combined_df['total_xg']
+combined_df = combined_df[['team_name','xg_difference','possession_xg','xg_against','xg share','total_xg']]
+combined_df = combined_df.rename(columns={'xg_difference': 'transition_xg_difference','possession_xg':'transition_xg','xg_against':'transition_xg_against','xg share': 'transition_xg_share'})
+
 combined_df = combined_df.set_index('team_name')
 combined_df = combined_df.round(2)
-
-combined_df.to_csv(r'C:\Users\Seamus-admin\Documents\GitHub\AC-Horsens-First-Team\DNK_1_Division_2024_2025\Transitions_all DNK_1_Division_2024_2025.csv')
+gennemsnit = combined_df['transition_xg_share'].mean()
+df_set_pieces = pd.read_csv(r'C:\Users\Seamus-admin\Documents\GitHub\AC-Horsens-First-Team\DNK_1_Division_2024_2025\set_piece_DNK_1_Division_2024_2025.csv')
+df_set_pieces = df_set_pieces.groupby('team_name').sum('321.0').reset_index()
+df_set_pieces = df_set_pieces.rename(columns={'321.0': 'set_piece_xg'})
+combined_df = combined_df.merge(df_set_pieces,on='team_name')
+combined_df['set piece xg share'] = combined_df['set_piece_xg']/combined_df['total_xg']
+combined_df = combined_df[['team_name','transition_xg','transition_xg_share','set_piece_xg','set piece xg share','total_xg']]
+combined_df.to_csv('xG breakdown.csv')
+print(combined_df)
