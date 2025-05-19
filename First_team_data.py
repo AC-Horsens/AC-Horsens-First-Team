@@ -24,7 +24,7 @@ def load_subs():
 @st.cache_data
 def load_match_stats():
     #url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/matchstats_all%20DNK_1_Division_2024_2025.csv'
-    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/matchstats_all%20DNK_1_Superliga_2024_2025.csv'
+    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/matchstats_all%20DNK_Superliga_2024_2025.csv'
     match_stats = pd.read_csv(url)
     match_stats['label'] = (match_stats['label'] + ' ' + match_stats['date'])
     return match_stats
