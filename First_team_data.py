@@ -23,8 +23,7 @@ def load_subs():
 
 @st.cache_data
 def load_match_stats():
-    #url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/matchstats_all%20DNK_1_Division_2024_2025.csv'
-    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/matchstats_all%20DNK_Superliga_2024_2025.csv'
+    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/matchstats_all%20DNK_1_Division_2024_2025.csv'
     match_stats = pd.read_csv(url)
     match_stats['label'] = (match_stats['label'] + ' ' + match_stats['date'])
     return match_stats
@@ -2374,7 +2373,7 @@ def Opposition_analysis():
 
 def Physical_data():
     df = load_physical_data()
-    df_matchstats = load_match_stats()
+    df_matchstats = load_match_stats(r'DNK_1_Division_2024_2025\matchstats_all DNK_Superliga_2024_2025.csv')
     df_matchstats = df_matchstats[['player_matchName','minsPlayed','player_playerId','contestantId','label','match_id','date']]
     df_matchstats = df_matchstats.rename(columns={'player_playerId': 'optaUuid', 'match_id': 'Opta match id'})
     df = df.merge(df_matchstats,on=['Opta match id','optaUuid'])
