@@ -2373,7 +2373,7 @@ def Opposition_analysis():
 
 def Physical_data():
     df = load_physical_data()
-    df_matchstats = pd.read_csv(r'C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2024_2025/matchstats_all DNK_Superliga_2024_2025.csv')
+    df_matchstats = pd.read_csv(r'DNK_1_Division_2024_2025/matchstats_all DNK_Superliga_2024_2025.csv')
     #df_matchstats = load_match_stats()
     df_matchstats = df_matchstats[['player_matchName','minsPlayed','player_playerId','contestantId','label','match_id','date']]
     df_matchstats = df_matchstats.rename(columns={'player_playerId': 'optaUuid', 'match_id': 'Opta match id'})
