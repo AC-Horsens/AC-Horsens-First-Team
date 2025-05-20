@@ -1,12 +1,6 @@
 import pandas as pd
-import statsmodels.api as sm
-import matplotlib.pyplot as plt
-from pandas.plotting import table
 import numpy as np
-import os
 import psycopg2
-import pandas as pd
-import json
 
 db_navn = 'AC Horsens'
 db_brugernavn = 'postgres'
@@ -22,7 +16,7 @@ conn = psycopg2.connect(
 cur = conn.cursor()
 cur.execute("SELECT schema_name FROM information_schema.schemata")
 schemas = cur.fetchall()
-
+print('connected to database')
 def map_to_unified_columns_possession(df):
     # Create a dictionary mapping the original column names to the unified column names
     column_mapping = {
@@ -116,14 +110,66 @@ def fetch_and_save_possession_data_for_nordic_bet_teams():
             conn.close()
     return combined_df
 
-df = fetch_and_save_possession_data_for_nordic_bet_teams()
-
-
+from concurrent.futures import ThreadPoolExecutor
+import psycopg2
 import pandas as pd
-import numpy as np
+import io
+from psycopg2 import sql
 
-# Reset index to avoid ambiguity with 'label'
-df = df.reset_index(drop=True)
+def fast_table_to_df(cur, schema, table):
+    query = sql.SQL('COPY {}.{} TO STDOUT WITH CSV HEADER').format(
+        sql.Identifier(schema),
+        sql.Identifier(table)
+    )
+    buffer = io.StringIO()
+    cur.copy_expert(query, buffer)
+    buffer.seek(0)
+    return pd.read_csv(buffer)
+
+def process_schema(schema):
+    local_conn = psycopg2.connect(
+        dbname=db_navn,
+        user=db_brugernavn,
+        password=db_adgangskode,
+        host=db_host,
+        port="5432"
+    )
+    local_cur = local_conn.cursor()
+
+    result_dfs = []
+    try:
+        local_cur.execute("SELECT table_name FROM information_schema.tables WHERE table_schema = %s", (schema,))
+        tables = [t[0] for t in local_cur.fetchall() if 'possession_data' in t[0]]
+
+        for table in tables:
+            print(f"Processing {schema}.{table}")
+            df = fast_table_to_df(local_cur, schema, table)
+            df = map_to_unified_columns_possession(df)
+            df = df[['timeMin', 'timeSec', 'x', 'y','team_name', 'playerName', 'label','date','typeId','sequence_duration','sequenceId','sequence_xG','5.0', '6.0', '9.0', '24.0', '25.0', '26.0', '107.0']]
+            result_dfs.append(df)
+    except Exception as e:
+        print(f"Error processing {schema}: {e}")
+    finally:
+        local_cur.close()
+        local_conn.close()
+
+    return result_dfs
+
+schemas_to_include = [
+    #'DNK_1_Division_2023_2024',
+    'DNK_1_Division_2024_2025',
+    #'DNK_Superliga_2023_2024',
+    #'DNK_Superliga_2024_2025'
+]
+
+with ThreadPoolExecutor(max_workers=4) as executor:
+    results = list(executor.map(process_schema, schemas_to_include))
+
+# Flatten and combine
+all_data_frames = [df for dfs in results for df in dfs]
+combined_df = pd.concat(all_data_frames, ignore_index=True)
+
+
 
 def filter_out_possession_ids(df):
     # List of columns to check for 'true' values as strings
@@ -146,25 +192,26 @@ def filter_out_possession_ids(df):
     
     return filtered_data
 
+def filter_out_possession_ids_fast(df):
+    columns_to_check = ['5.0', '6.0', '9.0', '24.0', '25.0', '26.0', '107.0']
+
+    # Ensure the relevant columns are strings
+    df[columns_to_check] = df[columns_to_check].astype(str).apply(lambda col: col.str.lower())
+
+    # Create a mask of rows where any of the columns are 'true'
+    mask = (df[columns_to_check] == 'true').any(axis=1)
+
+    # Get a set of tuples representing combinations to exclude
+    exclude_set = set(zip(df.loc[mask, 'date'], df.loc[mask, 'label'], df.loc[mask, 'sequenceId']))
+
+    # Use .isin with a tuple comparison for efficient filtering
+    keep_mask = ~df[['date', 'label', 'sequenceId']].apply(tuple, axis=1).isin(exclude_set)
+
+    return df[keep_mask]
+print('df created')
 # Apply filter function
-df = filter_out_possession_ids(df)
-
-def calculate_possession_length(df):
-    # Ensure timeMin and timeSec are numeric
-    df['timeMin'] = pd.to_numeric(df['timeMin'], errors='coerce')
-    df['timeSec'] = pd.to_numeric(df['timeSec'], errors='coerce')
-
-    # Group by sequenceId to get the time ranges for each possession
-    possession_length = df.groupby(['label','date','sequenceId']).apply(lambda group: (
-        (group['timeMin'].max() * 60 + group['timeSec'].max()) - 
-        (group['timeMin'].min() * 60 + group['timeSec'].min())
-    ))
-    # Rename the series for clarity
-    possession_length.name = 'possession_length'
-    
-    return possession_length
-
-sequence_length = calculate_possession_length(df)
+df = filter_out_possession_ids_fast(combined_df)
+print('data filtered')
 
 def add_start_possession_distance(df):
     # Find the rows where possession_index == 1 (start of possession)
@@ -178,96 +225,99 @@ def add_start_possession_distance(df):
     
     return df
 
+def add_start_possession_distance_efficient(df):
+    # Sorter først for korrekt rækkefølge
+    df = df.sort_values(by=['label', 'date', 'sequenceId', 'timeMin', 'timeSec'], ignore_index=True)
+
+    # Brug .groupby().first() i stedet for .loc og filter
+    start_distance = (
+        df[df['possession_index'] == 1]
+        .set_index(['label', 'date', 'sequenceId'])['distance to opp goal']
+        .rename('start_possession_distance')
+    )
+
+    # Brug join i stedet for merge
+    df = df.join(start_distance, on=['label', 'date', 'sequenceId'])
+
+    return df
+
+    # Ensure x and y are numeric
+
 def length_to_opp_goal(df):
     # Ensure x and y are numeric
-    df['x'] = pd.to_numeric(df['x'], errors='coerce')
-    df['y'] = pd.to_numeric(df['y'], errors='coerce')
+    df.loc[:, 'x'] = pd.to_numeric(df['x'], errors='coerce')
+    df.loc[:, 'y'] = pd.to_numeric(df['y'], errors='coerce')
 
     # Calculate distance to opponent's goal
     goal_x = 100
     goal_y = 50
-    df['distance to opp goal'] = np.sqrt((goal_x - df['x'])**2 + (goal_y - df['y'])**2)
+    df.loc[:, 'distance to opp goal'] = np.sqrt((goal_x - df['x'])**2 + (goal_y - df['y'])**2)
+    
     return df
 
 df = length_to_opp_goal(df)
 
+print('length to opponnents goal defined')
 
-
-# Merge possession length
-df = df.merge(sequence_length, on=['label','date','sequenceId'], how='left')
-
-# Calculate possession index
+df = df.sort_values(by=['label', 'date', 'timeMin', 'timeSec'])  # eller tilsvarende kolonner
 df['possession_index'] = df.groupby(['label','date','sequenceId']).cumcount() + 1
 
 # Add start possession distance
-df = add_start_possession_distance(df)
-
+df = add_start_possession_distance_efficient(df)
+print('start possession distance added')
 # Convert '321.0' to float
-df['321.0'] = pd.to_numeric(df['321.0'], errors='coerce')
-
-# Calculate possession xG
-possession_xg = df.groupby(['label','date','sequenceId'])['321.0'].max().reset_index()
-
-# Rename the '321.0' column to 'possession_xg' for clarity
-possession_xg.rename(columns={'321.0': 'possession_xg'}, inplace=True)
 
 # Merge this new 'possession_xg' back into the original DataFrame
-df = df.merge(possession_xg, on=['label','date','sequenceId'], how='left')
+df['sequence_duration'] = df['sequence_duration'].fillna(0).astype(int)
 
 # Apply conditions for filtering
-condition1 = (df['start_possession_distance'].astype(float) <= 30) & (df['possession_length'].astype(int) <= 5)
-condition2 = (df['start_possession_distance'].astype(float) >= 30) & (df['start_possession_distance'].astype(float) <= 60) & (df['possession_length'].astype(int) <= 8)
-condition3 = (df['start_possession_distance'].astype(float) >= 60) & (df['possession_length'].astype(int) <= 11)
+condition1 = (df['start_possession_distance'].astype(float) <= 30) & (df['sequence_duration'].astype(int) <= 5)
+condition2 = (df['start_possession_distance'].astype(float) >= 30) & (df['start_possession_distance'].astype(float) <= 60) & (df['sequence_duration'].astype(int) <= 8)
+condition3 = (df['start_possession_distance'].astype(float) >= 60) & (df['sequence_duration'].astype(int) <= 11)
 
 # Combine all conditions with OR (|)
 df1 = df[condition1 | condition2 | condition3]
 # Filter based on team name and possession_xg > 0
-
+print('Conditions applied')
 # Select relevant columns
 #df1 = df1[['timeMin', 'timeSec', 'x', 'y','team_name', 'playerName', 'label', 'distance to opp goal', 'start_possession_distance', 'possession_length', 'possession_index', 'possession_xg']]
+long_possessions = (
+    df.groupby(['label', 'date', 'sequenceId'])['possession_index']
+    .max()
+    .reset_index()
+)
+
+# Behold kun dem hvor der er mere end 2 hændelser i possessionen
+long_possessions = long_possessions[long_possessions['possession_index'] > 2]
+
+# Merge for at filtrere df1 baseret på lange possessions
+df1 = df1.merge(long_possessions[['label', 'date', 'sequenceId']], 
+                on=['label', 'date', 'sequenceId'], 
+                how='inner')
+df1 = df1.sort_values(by=['label', 'date', 'timeMin', 'timeSec'])  # eller tilsvarende kolonner
 
 # Print the final DataFrame
-df1 = df1[df1['possession_xg'] > 0]
-df1 = df1[df1['possession_index'] == 1]
+df1 = df1[df1['sequence_xG'] > 0.1]
+print(df1)
 
-df_by_match = df1.groupby(['label','date'])['possession_xg'].sum().reset_index()
 
-df_by_team = df1.groupby(['team_name','date','label'])['possession_xg'].sum().reset_index()
-df_by_team['match_possession_xg'] = df_by_team.groupby(['label','date'])['possession_xg'].transform('sum')
-df_by_team['xg_difference'] = df_by_team['possession_xg'] - df_by_team['match_possession_xg'] + df_by_team['possession_xg']
-df_by_team['xg_against'] = df_by_team['possession_xg'] - df_by_team['match_possession_xg']
-difference_df = df_by_team.groupby(['team_name'])['xg_difference'].sum().reset_index()
-xg_against = df_by_team.groupby(['team_name'])['xg_against'].sum().reset_index()
-total_df = df_by_team.groupby(['team_name'])['possession_xg'].sum().reset_index()
-combined_df = difference_df.merge(total_df, on='team_name')
-combined_df = combined_df.merge(xg_against, on='team_name')
-combined_df = combined_df.sort_values('xg_difference', ascending=False)
-combined_df.round(2)
-print('sorteret efter xg difference')
-print(combined_df)
-combined_df = combined_df.sort_values('possession_xg', ascending=False)
-print('sorteret efter samlet')
-print(combined_df)
-combined_df = combined_df.sort_values('xg_against', ascending=False)
-print('sorteret efter xg against')
-print(combined_df)
-df_xg = pd.read_csv(r'C:\Users\Seamus-admin\Documents\GitHub\AC-Horsens-First-Team\DNK_1_Division_2024_2025\xg_all DNK_1_Division_2024_2025.csv')
-df_xg['321'] = df_xg['321'].astype(float)
-df_xg = df_xg.groupby('team_name').sum('321')
-df_xg = df_xg.rename(columns={'321': 'total_xg'})
-combined_df = combined_df.merge(df_xg,on='team_name')
-combined_df['xg share'] = combined_df['possession_xg']/combined_df['total_xg']
-combined_df = combined_df[['team_name','xg_difference','possession_xg','xg_against','xg share','total_xg']]
-combined_df = combined_df.rename(columns={'xg_difference': 'transition_xg_difference','possession_xg':'transition_xg','xg_against':'transition_xg_against','xg share': 'transition_xg_share'})
+from mplsoccer import Pitch
+import matplotlib.pyplot as plt
+from scipy.ndimage import gaussian_filter
+df_start = df1[df1['possession_index'] == 1]
+def plot_heatmap_location(data):
+    pitch = Pitch(pitch_type='opta', line_zorder=2, pitch_color='grass', line_color='white')
+    fig, ax = pitch.draw(figsize=(6.6, 4.125))
+    fig.set_facecolor('#22312b')
+    bin_statistic = pitch.bin_statistic(data['x'], data['y'], statistic='count', bins=(50, 25))
+    bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
+    pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot')
+    plt.show(fig)
 
-combined_df = combined_df.set_index('team_name')
-combined_df = combined_df.round(2)
-gennemsnit = combined_df['transition_xg_share'].mean()
-df_set_pieces = pd.read_csv(r'C:\Users\Seamus-admin\Documents\GitHub\AC-Horsens-First-Team\DNK_1_Division_2024_2025\set_piece_DNK_1_Division_2024_2025.csv')
-df_set_pieces = df_set_pieces.groupby('team_name').sum('321.0').reset_index()
-df_set_pieces = df_set_pieces.rename(columns={'321.0': 'set_piece_xg'})
-combined_df = combined_df.merge(df_set_pieces,on='team_name')
-combined_df['set piece xg share'] = combined_df['set_piece_xg']/combined_df['total_xg']
-combined_df = combined_df[['team_name','transition_xg','transition_xg_share','set_piece_xg','set piece xg share','total_xg']]
-combined_df.to_csv('xG breakdown.csv')
-print(combined_df)
+print(len(df_start))
+#plot_heatmap_location(df_start)
+df_xgc_transitions = df1.groupby(['playerName','team_name']).sum('sequence_xG').reset_index()
+df_xgc_transitions = df_xgc_transitions.sort_values(by=['sequence_xG'],ascending=False)  # eller tilsvarende kolonner
+with pd.option_context('display.max_rows', None):
+    print(df_xgc_transitions[['playerName','team_name', 'sequence_xG']])
+df1.to_csv(r'Transitions.csv')

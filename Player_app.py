@@ -397,7 +397,6 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         df_balanced_central_defendertotal = df_balanced_central_defendertotal[
             df_balanced_central_defendertotal['minsPlayed total'].astype(int) >= minutter_total
         ]
-        df_balanced_central_defendertotal = df_balanced_central_defendertotal.sort_values('Total score', ascending=False)
 
         return df_balanced_central_defender
   
@@ -468,13 +467,11 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         minutter = df_backs.groupby(['playerName', 'team_name', 'player_position', 'player_positionSide', 'age_today'])['minsPlayed'].sum().astype(float).reset_index()
         df_backstotal['minsPlayed total'] = minutter['minsPlayed']
 
-        df_backs = df_backs.sort_values('Total score', ascending=False)
         df_backstotal = df_backstotal[['playerName', 'team_name', 'player_position', 'player_positionSide', 'age_today',
                                     'minsPlayed total', 'Defending_', 'Passing_', 'Chance_creation',
                                     'Possession_value_added', 'Total score']]
         df_backstotal = df_backstotal[df_backstotal['minsPlayed total'].astype(int) >= minutter_total]
 
-        df_backstotal = df_backstotal.sort_values('Total score', ascending=False)
 
         return df_backs
     
@@ -525,10 +522,8 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         df_seksertotal = df_seksertotal.groupby(['playerName','team_name','player_position','age_today']).mean().reset_index()
         minutter = df_sekser.groupby(['playerName', 'team_name','player_position','age_today'])['minsPlayed'].sum().astype(float).reset_index()
         df_seksertotal['minsPlayed total'] = minutter['minsPlayed']
-        df_sekser = df_sekser.sort_values('Total score',ascending = False)
         df_seksertotal = df_seksertotal[['playerName','team_name','player_position','age_today','minsPlayed total','Defending_','Passing_','Progressive_ball_movement','Possession_value_added','Total score']]
         df_seksertotal= df_seksertotal[df_seksertotal['minsPlayed total'].astype(int) >= minutter_total]
-        df_seksertotal = df_seksertotal.sort_values('Total score',ascending = False)
 
         return df_sekser
 
@@ -677,12 +672,10 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         minutter = df_otter.groupby(['playerName', 'team_name', 'player_position', 'age_today'])['minsPlayed'].sum().astype(float).reset_index()
         df_ottertotal['minsPlayed total'] = minutter['minsPlayed']
 
-        df_otter = df_otter.sort_values('Total score', ascending=False)
         df_ottertotal = df_ottertotal[['playerName', 'team_name', 'player_position', 'age_today', 'minsPlayed total', 
                                     'Defending_', 'Passing_', 'Progressive_ball_movement', 'Possession_value', 'Total score']]
         df_ottertotal = df_ottertotal[df_ottertotal['minsPlayed total'].astype(int) >= minutter_total]
 
-        df_ottertotal = df_ottertotal.sort_values('Total score', ascending=False)
 
         return df_otter
 
@@ -754,12 +747,10 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         minutter = df_10.groupby(['playerName', 'team_name', 'age_today'])['minsPlayed'].sum().astype(float).reset_index()
         df_10total['minsPlayed total'] = minutter['minsPlayed']
 
-        df_10 = df_10.sort_values('Total score', ascending=False)
         df_10total = df_10total[['playerName', 'team_name', 'age_today', 'minsPlayed total', 
                                 'Passing_', 'Chance_creation', 'Goalscoring_', 'Possession_value', 'Total score']]
         df_10total = df_10total[df_10total['minsPlayed total'].astype(int) >= minutter_total]
 
-        df_10total = df_10total.sort_values('Total score', ascending=False)
 
         return df_10
 
@@ -836,7 +827,6 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         df_winger_total['minsPlayed total'] = minutter['minsPlayed']
 
         df_winger_total = df_winger_total[df_winger_total['minsPlayed total'].astype(int) >= minutter_total]
-        df_winger_total = df_winger_total.sort_values('Total score', ascending=False)
 
         return df_winger
 
@@ -896,8 +886,6 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         df_striker_total['minsPlayed total'] = minutter['minsPlayed']
 
         df_striker_total = df_striker_total[df_striker_total['minsPlayed total'].astype(int) >= minutter_total]
-        df_striker_total = df_striker_total.sort_values('Total score', ascending=False)
-        df_striker = df_striker.sort_values('Total score',ascending = False)
         return df_striker
 
     def Targetman():
@@ -1038,7 +1026,7 @@ def player_data(df_possession_data,df_match_stats,balanced_central_defender_df,f
     df['date'] = pd.to_datetime(df['date'])
     df = df.sort_values(by='date',ascending=False)
     kampe = df['label'].unique()
-    kampvalg = st.multiselect('Choose matches', kampe, kampe[0:3])
+    kampvalg = st.multiselect('Choose matches', kampe, kampe[0:5])
     df = df[df['label'].isin(kampvalg)]
     df_matchstats_player = df_match_stats[(df_match_stats['player_matchName'] == player_name) & (df_match_stats['label'].isin(kampvalg))]
     df_matchstats_player['date'] = pd.to_datetime(df_matchstats_player['date'])
@@ -1060,6 +1048,7 @@ def player_data(df_possession_data,df_match_stats,balanced_central_defender_df,f
         
     if not balanced_central_defender_df.empty:
         st.write('As central defender')
+        st.line_chart(balanced_central_defender_df['Total score'])
         st.dataframe(balanced_central_defender_df, hide_index=True)
 
     if not fullbacks_df.empty:
