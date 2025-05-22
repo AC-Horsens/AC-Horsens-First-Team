@@ -131,7 +131,7 @@ def load_set_piece_data():
 
 @st.cache_data
 def load_transitions_data():
-    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/Transitions_DNK_1_Division_2024_2025.csv'
+    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/Transitions DNK_1_Division_2024_2025.csv'
     df_transitions = pd.read_csv(url)
     df_transitions['label'] = (df_transitions['label'] + ' ' + df_transitions['date']).astype(str)
     return df_transitions
@@ -1264,7 +1264,7 @@ def Dashboard():
         df_transitions = load_transitions_data()
         df_transitions = df_transitions.merge(df_possession,how='left')
         st.dataframe(df_transitions)
-        
+
     def team_mentality_score():
         df_opponent = df_possession[
             (df_possession['team_name'] == 'Opponent') & 
