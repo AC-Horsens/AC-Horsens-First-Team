@@ -1074,8 +1074,14 @@ def player_data(df_possession_data,df_match_stats,balanced_central_defender_df,f
             title='Performance profile as Central Defender'
         )
 
+        # Adjust line thickness: Total score thicker
+        fig.for_each_trace(
+            lambda trace: trace.update(line=dict(width=4)) if trace.name == 'Total score' else trace.update(line=dict(width=1.5))
+        )
+
         st.plotly_chart(fig, use_container_width=True)
 
+        # Show full data
         st.dataframe(balanced_central_defender_df, hide_index=True)
 
     if not fullbacks_df.empty:
