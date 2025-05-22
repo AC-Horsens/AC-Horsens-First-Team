@@ -1022,13 +1022,28 @@ def player_data(df_possession_data,df_match_stats,balanced_central_defender_df,f
     horsens = horsens.sort_values(by='playerName')
     player_name = st.selectbox('Choose player', horsens['playerName'].unique())
     st.title(f'{player_name}')    
-    df = df_possession_data[(df_possession_data['playerName'] == player_name)|(df_possession_data['pass_receiver'] == player_name)]
+
+    df = df_possession_data[
+        (df_possession_data['playerName'] == player_name) |
+        (df_possession_data['pass_receiver'] == player_name)
+    ]
+
     df['date'] = pd.to_datetime(df['date'])
-    df = df.sort_values(by='date',ascending=False)
+    df = df.sort_values(by='date', ascending=False)
     kampe = df['label'].unique()
-    kampvalg = st.multiselect('Choose matches', kampe, kampe[0:5])
+
+    # Ingen default-kampe valgt i UI
+    kampvalg = st.multiselect('Choose matches', kampe, default=[])
+
+    # Hvis ingen er valgt, brug alle
+    if not kampvalg:
+        kampvalg = kampe
+
     df = df[df['label'].isin(kampvalg)]
-    df_matchstats_player = df_match_stats[(df_match_stats['player_matchName'] == player_name) & (df_match_stats['label'].isin(kampvalg))]
+    df_matchstats_player = df_match_stats[
+        (df_match_stats['player_matchName'] == player_name) & 
+        (df_match_stats['label'].isin(kampvalg))
+    ]
     df_matchstats_player['date'] = pd.to_datetime(df_matchstats_player['date'])
     df_matchstats_player = df_matchstats_player.sort_values(by='date')
     balanced_central_defender_df = balanced_central_defender_df[(balanced_central_defender_df['label'].isin(kampvalg)) & (balanced_central_defender_df['playerName'] == player_name)]
