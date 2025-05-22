@@ -256,7 +256,7 @@ def Process_data_spillere(df_xg, df_xA,df_pv,df_match_stats,squads):
     df_scouting['Attempts conceded in box per 90'] = (df_scouting['attemptsConcededIbox'].astype(float)/df_scouting['minsPlayed'].astype(float)) * 90
 
     df_scouting.fillna(0, inplace=True)
-
+    st.dataframe(df_scouting)
     def ball_playing_central_defender():
         df_spillende_stopper = df_scouting[(df_scouting['player_position'] == 'Defender') & (df_scouting['player_positionSide'].str.contains('Centre'))]
         df_spillende_stopper['minsPlayed'] = df_spillende_stopper['minsPlayed'].astype(int)
