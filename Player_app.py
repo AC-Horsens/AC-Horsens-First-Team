@@ -370,7 +370,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
             axis=1
         )        
         df_balanced_central_defender['date'] = pd.to_datetime(df_balanced_central_defender['date'])
-        df_balanced_central_defender = df_balanced_central_defender.sort_values(by='date', ascending=False)
+        df_balanced_central_defender = df_balanced_central_defender.sort_values(by='date', ascending=True)
 
         df_balanced_central_defender = df_balanced_central_defender[
             ['playerName', 'team_name', 'player_position', 'minsPlayed','label', 'age_today', 'Defending_', 'Possession_value_added', 'Passing_', 'Total score']
@@ -1053,7 +1053,7 @@ def player_data(df_possession_data,df_match_stats,balanced_central_defender_df,f
         
     if not balanced_central_defender_df.empty:
         st.write('As central defender')
-        exclude_cols = ['team_name_player_position', 'minsPlayed', 'label', 'age_today']
+        exclude_cols = ['team_name','player_position', 'minsPlayed', 'label', 'age_today']
 
         # Keep only numeric columns that are not excluded
         metrics_df = balanced_central_defender_df.drop(columns=exclude_cols, errors='ignore')
