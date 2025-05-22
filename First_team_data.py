@@ -1265,6 +1265,8 @@ def Dashboard():
         df_transitions['date'] = pd.to_datetime(df_transitions['date'])
         df_transitions = df_transitions.apply(pd.to_numeric, errors='coerce')
         df_transitions['team_name'] = df_transitions['team_name'].astype(str)
+        df_transitions['playerName'] = df_transitions['playerName'].astype(str)
+        df_transitions['label'] = df_transitions['label'].astype(str)
 
         df_transitions = df_transitions.merge(df_possession,how='left')
         st.dataframe(df_transitions)
