@@ -1283,7 +1283,8 @@ def Dashboard():
         st.subheader('Transition starts')
         transitions_starts = df_transitions[
             (df_transitions['possession_index'] == 1) & 
-            (df_transitions['team_name'] == 'Horsens')
+            (df_transitions['team_name'] == 'Horsens') &
+            (df_transitions['sequence_duration'] > 2)
         ]        
         pitch = Pitch(pitch_type='opta',pitch_color='grass',line_color='white', line_zorder=2)
         fig, ax = pitch.draw(figsize=(10, 7))
@@ -1316,7 +1317,7 @@ def Dashboard():
         plt.title("Transitions: Start Locations by Horsens", fontsize=14)
         st.pyplot(fig)
         st.dataframe(transitions_starts)
-        
+
     def team_mentality_score():
         df_opponent = df_possession[
             (df_possession['team_name'] == 'Opponent') & 
