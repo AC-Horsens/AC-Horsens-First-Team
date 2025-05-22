@@ -12,7 +12,7 @@ st.set_page_config(layout="wide")
 team_name = st.selectbox('Choose team', ['B_93','Esbjerg','Fredericia','HB_Køge','Hillerød','Hobro','Horsens','Hvidovre','Kolding','OB','Roskilde','Vendsyssel'])
 
 @st.cache_data()
-def load_data():
+def load_data(team_name):
     df_xg = pd.read_csv(r'DNK_1_Division_2024_2025/xg_all DNK_1_Division_2024_2025.csv')
     df_xg['label'] = df_xg['label'] + ' ' + df_xg['date']
 
@@ -27,12 +27,18 @@ def load_data():
     df_xa_agg = pd.read_csv(r'DNK_1_Division_2024_2025/Horsens/Horsens_possession_data.csv')
     df_xa_agg['label'] = df_xa_agg['label'] + ' ' + df_xa_agg['date']
 
+    df_possession_data = pd.read_csv(f'DNK_1_Division_2024_2025/{team_name}/{team_name}_possession_data.csv')
+    df_possession_data['label'] = df_possession_data['label'] + ' ' + df_possession_data['date']
+    df_possession_data['team_name'] = df_possession_data['team_name'].str.replace(' ', '_')
                 
     df_xg_agg = pd.read_csv(r'DNK_1_Division_2024_2025/Horsens/Horsens_xg_data.csv')
     df_xg_agg['label'] = df_xg_agg['label'] + ' ' + df_xg_agg['date']
 
     df_pv_agg = pd.read_csv(r'DNK_1_Division_2024_2025/Horsens/Horsens_pv_data.csv')
     df_pv_agg['label'] = df_pv_agg['label'] + ' ' + df_pv_agg['date']
+
+    df_xg_all = pd.read_csv(r'DNK_1_Division_2024_2025/xg_all DNK_1_Division_2024_2025.csv')
+    df_xg_all['label'] = df_xg_all['label'] + ' ' + df_xg_all['date']
 
     df_pv_all = pd.read_csv(r'DNK_1_Division_2024_2025/xA_all DNK_1_Division_2024_2025.csv')
     df_pv_all['label'] = df_pv_all['label'] + ' ' + df_pv_all['date']
@@ -42,15 +48,7 @@ def load_data():
 
     squads = pd.read_csv(r'DNK_1_Division_2024_2025/squads DNK_1_Division_2024_2025.csv')
         
-    return df_xg, df_xA, df_pv, df_possession_stats, df_xa_agg, df_xg_agg, df_pv_agg, df_pv_all, df_match_stats, squads
-
-def load_team_data(team_name):
-
-    df_possession_data = pd.read_csv(f'DNK_1_Division_2024_2025/{team_name}/{team_name}_possession_data.csv')
-    df_possession_data['label'] = df_possession_data['label'] + ' ' + df_possession_data['date']
-    df_possession_data['team_name'] = df_possession_data['team_name'].str.replace(' ', '_')
-    return df_possession_data
-
+    return df_xg, df_xA, df_pv, df_possession_stats, df_xa_agg, df_possession_data, df_xg_agg, df_pv_agg, df_xg_all, df_pv_all, df_match_stats, squads
 
 def plot_heatmap_location(data, title):
     pitch = Pitch(pitch_type='opta', line_zorder=2, pitch_color='grass', line_color='white')
@@ -96,7 +94,7 @@ def plot_arrows(df):
 
     st.pyplot(fig)
     
-def Process_data_spillere(df_xg, df_xA,df_pv,df_match_stats,squads):
+def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
 
     def calculate_score(df, column, score_column):
         df_unique = df.drop_duplicates(column).copy()
@@ -121,7 +119,7 @@ def Process_data_spillere(df_xg, df_xA,df_pv,df_match_stats,squads):
     df_xA_summed = df_xA.groupby(['playerName','label'])['xA'].sum().reset_index()
 
     try:
-        df_pv = df_pv[['playerName', 'team_name', 'label', 'possessionValue.pvValue', 'possessionValue.pvAdded']]
+        df_pv = df_pv_all[['playerName', 'team_name', 'label', 'possessionValue.pvValue', 'possessionValue.pvAdded']]
         df_pv.loc[:, 'possessionValue.pvValue'] = df_pv['possessionValue.pvValue'].astype(float)
         df_pv.loc[:, 'possessionValue.pvAdded'] = df_pv['possessionValue.pvAdded'].astype(float)
         df_pv['possessionValue'] = df_pv['possessionValue.pvValue'] + df_pv['possessionValue.pvAdded']
@@ -151,7 +149,7 @@ def Process_data_spillere(df_xg, df_xA,df_pv,df_match_stats,squads):
         return df_scouting
     df_scouting = calculate_match_pv(df_scouting)
 
-    df_xg = df_xg[['contestantId','team_name','playerName','playerId','321','322','9','match_id','label','date']]
+    df_xg = df_xg_all[['contestantId','team_name','playerName','playerId','321','322','9','match_id','label','date']]
     df_xg = df_xg[df_xg['9']!= True]
 
     df_xg = df_xg.rename(columns={'321': 'xg'})
@@ -207,11 +205,7 @@ def Process_data_spillere(df_xg, df_xA,df_pv,df_match_stats,squads):
 
     df_scouting = df_scouting.merge(squads,how='outer')
     df_scouting = df_scouting.drop_duplicates(subset=['playerName', 'team_name', 'player_position', 'player_positionSide', 'label'])
-    df_scouting = df_scouting[df_scouting['playerName'].notna()]
-    df_scouting['playerName'] = df_scouting['playerName'].astype(str)
-    df_scouting = df_scouting[df_scouting['player_position'].notna()]
-    df_scouting['playerName'] = df_scouting['player_position'].astype(str)
-
+    
     df_scouting['post_shot_xg_per90'] = (df_scouting['post shot xg'].astype(float) / df_scouting['minsPlayed'].astype(float)) * 90
     df_scouting['xg_per90'] = (df_scouting['xg'].astype(float) / df_scouting['minsPlayed'].astype(float)) * 90
     df_scouting['xA_per90'] = (df_scouting['xA'].astype(float) / df_scouting['minsPlayed'].astype(float)) * 90
@@ -256,7 +250,7 @@ def Process_data_spillere(df_xg, df_xA,df_pv,df_match_stats,squads):
     df_scouting['Attempts conceded in box per 90'] = (df_scouting['attemptsConcededIbox'].astype(float)/df_scouting['minsPlayed'].astype(float)) * 90
 
     df_scouting.fillna(0, inplace=True)
-    st.dataframe(df_scouting)
+
     def ball_playing_central_defender():
         df_spillende_stopper = df_scouting[(df_scouting['player_position'] == 'Defender') & (df_scouting['player_positionSide'].str.contains('Centre'))]
         df_spillende_stopper['minsPlayed'] = df_spillende_stopper['minsPlayed'].astype(int)
@@ -992,10 +986,9 @@ def Process_data_spillere(df_xg, df_xA,df_pv,df_match_stats,squads):
     }
 
 
-df_xg, df_xA, df_pv, df_possession_stats, df_xa_agg, df_xg_agg, df_pv_agg, df_pv_all, df_match_stats, squads = load_data()
-df_possession_data = load_team_data(team_name)
+df_xg, df_xA, df_pv, df_possession_stats, df_xa_agg, df_possession_data, df_xg_agg, df_pv_agg, df_xg_all, df_pv_all, df_match_stats, squads = load_data(team_name)
 
-position_dataframes = Process_data_spillere(df_xg, df_xA, df_pv, df_match_stats, squads)
+position_dataframes = Process_data_spillere(df_xA, df_pv_all, df_match_stats, df_xg_all, squads)
 
 #defending_central_defender_df = position_dataframes['defending_central_defender']
 #ball_playing_central_defender_df = position_dataframes['ball_playing_central_defender']
@@ -1012,8 +1005,10 @@ classic_striker_df = position_dataframes['Classic striker']
 #box_striker_df = position_dataframes['Boxstriker']
 
 def player_data(df_possession_data,df_match_stats,balanced_central_defender_df,fullbacks_df,number8_df,number6_df,number10_df,winger_df,classic_striker_df):
+    horsens = df_possession_data.copy()
     horsens = df_possession_data[df_possession_data['team_name'].str.contains(team_name)]
-    player_name = st.selectbox('Choose player', sorted(horsens['playerName'].unique()))
+    horsens = horsens.sort_values(by='playerName')
+    player_name = st.selectbox('Choose player', horsens['playerName'].unique())
     st.title(f'{player_name}')    
 
     df = df_possession_data[
