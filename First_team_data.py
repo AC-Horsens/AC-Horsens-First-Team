@@ -1260,8 +1260,19 @@ def Dashboard():
     st.dataframe(per90_df, hide_index=True, use_container_width=True)
 
     def transitions():
-        
-        st.dataframe(df_transitions)
+        goals = df_transitions[df_transitions['typeId'] == 17]
+        goals_per_player = goals.groupby('playerName').size().reset_index(name='goals')
+
+        # Summer øvrige offensive stats
+        summary = df_transitions.groupby('playerName')[['assist', 'sequence_xG', '321.0', '322.0']].sum().reset_index()
+
+        # Merge
+        summary = summary.merge(goals_per_player, on='playerName', how='left')
+        summary['goals'] = summary['goals'].fillna(0).astype(int)
+
+        # Vis
+        st.subheader("Player Offensive transitions Summary")
+        st.dataframe(summary.sort_values('goals', ascending=False))
 
     def team_mentality_score():
         df_opponent = df_possession[
