@@ -6,6 +6,7 @@ from scipy.ndimage import gaussian_filter
 import numpy as np
 from datetime import datetime
 from mplsoccer import VerticalPitch
+import plotly.graph_objects as go
 
 
 st.set_page_config(layout="wide")
@@ -1052,31 +1053,46 @@ def player_data(df_possession_data,df_match_stats,balanced_central_defender_df,f
     classic_striker_df = classic_striker_df.drop(columns=['playerName', 'team.name', 'position_codes'],errors = 'ignore')
         
     if not balanced_central_defender_df.empty:
-        st.write('As central defender')
-        exclude_cols = ['team_name','player_position', 'minsPlayed', 'label', 'age_today']
+        st.subheader('As central defender')
 
-        # Keep only numeric columns that are not excluded
+        # Columns to exclude
+        exclude_cols = ['team_name_player_position', 'minsPlayed', 'label', 'age_today']
         metrics_df = balanced_central_defender_df.drop(columns=exclude_cols, errors='ignore')
-
-        # Combine with label to use as x-axis
         metrics_df['label'] = balanced_central_defender_df['label']
 
-        # Melt the DataFrame to long format
+        # Melt to long format
         melted_df = metrics_df.melt(id_vars='label', var_name='Metric', value_name='Value')
-        import plotly.express as px
 
-        fig = px.line(
-            melted_df,
-            x='label',
-            y='Value',
-            color='Metric',
-            markers=True,
-            title='Performance profile as Central Defender'
+        # Create figure manually
+        fig = go.Figure()
+
+        for metric in melted_df['Metric'].unique():
+            df_metric = melted_df[melted_df['Metric'] == metric]
+
+            fig.add_trace(go.Scatter(
+                x=df_metric['label'],
+                y=df_metric['Value'],
+                mode='lines+markers',
+                name=metric,
+                line=dict(
+                    width=4 if metric == 'Total score' else 1.5
+                )
+            ))
+
+        fig.update_layout(
+            title='Performance Profile as Central Defender',
+            xaxis_title='Match',
+            yaxis_title='Score',
+            legend_title='Metric',
+            hovermode='x unified',
+            template='plotly_white'
         )
 
         st.plotly_chart(fig, use_container_width=True)
 
+        # Show full raw data
         st.dataframe(balanced_central_defender_df, hide_index=True)
+
 
     if not fullbacks_df.empty:
         st.write('As fullback')
