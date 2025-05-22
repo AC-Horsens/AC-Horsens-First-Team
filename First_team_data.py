@@ -1278,7 +1278,7 @@ def Dashboard():
         st.subheader("Player Offensive transitions Summary")
         summary = summary.round(2)
         horsens_summary = summary[summary['team_name'] == 'Horsens']
-        st.dataframe(horsens_summary.sort_values('goals', ascending=False),hide_index=True)
+        st.dataframe(horsens_summary.sort_values(['goals','xG'], ascending=False),hide_index=True)
 
 
 
