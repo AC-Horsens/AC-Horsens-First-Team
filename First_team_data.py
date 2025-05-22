@@ -1285,9 +1285,36 @@ def Dashboard():
             (df_transitions['possession_index'] == 1) & 
             (df_transitions['team_name'] == 'Horsens')
         ]        
-        st.dataframe(transitions_starts)
+        pitch = VerticalPitch(pitch_type='opta', half=True, line_zorder=2)
+        fig, ax = pitch.draw(figsize=(10, 7))
 
+        # Normalize xG to scale marker size — avoid overly small or huge dots
+        size_scale = transitions_starts['sequence_xG'].fillna(0) * 1000
 
+        # Plot yellow dots
+        scatter = pitch.scatter(
+            transitions_starts['x'], transitions_starts['y'],
+            ax=ax,
+            s=size_scale,
+            color='yellow',
+            edgecolors='black',
+            alpha=0.7
+        )
+
+        # Add annotations: name + xG
+        for _, row in transitions_starts.iterrows():
+            pitch.annotate(
+                f"{row['playerName']} ({row['sequence_xG']:.2f})",
+                xy=(row['x'], row['y']),
+                ax=ax,
+                fontsize=8,
+                ha='center',
+                va='bottom',
+                color='black'
+            )
+
+        plt.title("Transitions: Start Locations by Horsens", fontsize=14)
+        st.pyplot(fig)
 
     def team_mentality_score():
         df_opponent = df_possession[
