@@ -1005,7 +1005,6 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         'Classic striker': Classic_striker(),
     }
 
-
 df_xg, df_xA, df_pv, df_possession_stats, df_xa_agg, df_possession_data, df_xg_agg, df_pv_agg, df_xg_all, df_pv_all, df_match_stats, squads = load_data(team_name)
 
 position_dataframes = Process_data_spillere(df_xA, df_pv_all, df_match_stats, df_xg_all, squads)

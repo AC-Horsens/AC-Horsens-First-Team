@@ -298,7 +298,6 @@ df1 = df1.sort_values(by=['label', 'date', 'timeMin', 'timeSec'])  # eller tilsv
 
 # Print the final DataFrame
 df1 = df1[df1['sequence_xG'] > 0.1]
-print(df1)
 
 
 from mplsoccer import Pitch
@@ -314,10 +313,7 @@ def plot_heatmap_location(data):
     pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot')
     plt.show(fig)
 
-print(len(df_start))
 #plot_heatmap_location(df_start)
-df_xgc_transitions = df1.groupby(['playerName','team_name']).sum('sequence_xG').reset_index()
-df_xgc_transitions = df_xgc_transitions.sort_values(by=['sequence_xG'],ascending=False)  # eller tilsvarende kolonner
-with pd.option_context('display.max_rows', None):
-    print(df_xgc_transitions[['playerName','team_name', 'sequence_xG']])
-df1.to_csv(r'Transitions.csv')
+#df_xgc_transitions = df1.groupby(['playerName','team_name']).sum('sequence_xG').reset_index()
+#df_xgc_transitions = df_xgc_transitions.sort_values(by=['sequence_xG'],ascending=False)  # eller tilsvarende kolonner
+df1.to_csv(r' Transitions DNK_1_Division_2024_2025.csv')
