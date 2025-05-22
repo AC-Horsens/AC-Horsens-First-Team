@@ -34,7 +34,6 @@ def load_data():
     df_pv_agg = pd.read_csv(r'DNK_1_Division_2024_2025/Horsens/Horsens_pv_data.csv')
     df_pv_agg['label'] = df_pv_agg['label'] + ' ' + df_pv_agg['date']
 
-
     df_pv_all = pd.read_csv(r'DNK_1_Division_2024_2025/xA_all DNK_1_Division_2024_2025.csv')
     df_pv_all['label'] = df_pv_all['label'] + ' ' + df_pv_all['date']
 
@@ -97,7 +96,7 @@ def plot_arrows(df):
 
     st.pyplot(fig)
     
-def Process_data_spillere(df_xA,df_pv_all,df_match_stats,squads):
+def Process_data_spillere(df_xA,df_pv,df_match_stats,squads):
 
     def calculate_score(df, column, score_column):
         df_unique = df.drop_duplicates(column).copy()
