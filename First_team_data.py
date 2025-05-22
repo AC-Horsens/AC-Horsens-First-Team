@@ -1264,6 +1264,7 @@ def Dashboard():
         df_transitions = load_transitions_data()
         df_transitions = df_transitions.merge(df_possession,how='left')
         st.dataframe(df_transitions)
+        
     def team_mentality_score():
         df_opponent = df_possession[
             (df_possession['team_name'] == 'Opponent') & 
