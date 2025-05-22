@@ -1080,8 +1080,7 @@ def player_data(df_possession_data,df_match_stats,balanced_central_defender_df,f
             else trace.update(line=dict(width=1))
         )
         fig.update_layout(
-            yaxis=dict(range=[0, 10]),
-            hovermode='x unified'
+            yaxis=dict(range=[0, 10])
         )
 
         st.plotly_chart(fig, use_container_width=True)
