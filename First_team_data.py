@@ -1280,6 +1280,9 @@ def Dashboard():
         horsens_summary = summary[summary['team_name'] == 'Horsens']
         st.dataframe(horsens_summary.sort_values(['goals','xG'], ascending=False),hide_index=True)
 
+        st.subheader('Transition starts')
+        transitions_starts = df_transitions[df_transitions['possession_index'] == 1]
+        st.dataframe(transitions_starts)
 
 
 
