@@ -1262,7 +1262,7 @@ def Dashboard():
 
     def transitions():
         df_transitions = transitions()
-        df_transitions = df_transitions.merge(df_possession,how=left)
+        df_transitions = df_transitions.merge(df_possession,how='left')
         st.dataframe(df_transitions)
     def team_mentality_score():
         df_opponent = df_possession[
