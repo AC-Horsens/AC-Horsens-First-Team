@@ -1262,11 +1262,6 @@ def Dashboard():
 
     def transitions():
         df_transitions = load_transitions_data()
-        df_transitions['date'] = pd.to_datetime(df_transitions['date'])
-        df_transitions = df_transitions.apply(pd.to_numeric, errors='coerce')
-        df_transitions['team_name'] = df_transitions['team_name'].astype(str)
-        df_transitions['playerName'] = df_transitions['playerName'].astype(str)
-        df_transitions['label'] = df_transitions['label'].astype(str)
         st.write(df_possession.dtypes)
         st.write(df_transitions.dtypes)
 
