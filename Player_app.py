@@ -1013,7 +1013,7 @@ def player_data(df_possession_data,df_match_stats,balanced_central_defender_df,f
 
     df = df_possession_data[
         (df_possession_data['playerName'] == player_name) |
-        (df_possession_data['pass_receiver'] == player_name)
+        (df_possession_data['receiverName'] == player_name)
     ]
 
     df['date'] = pd.to_datetime(df['date'])
