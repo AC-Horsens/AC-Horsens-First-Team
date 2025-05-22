@@ -1186,7 +1186,6 @@ def player_data(df_possession_data,df_match_stats,balanced_central_defender_df,f
     Bolde_modtaget = df[df['receiverName'] == player_name]
 
     Bolde_modtaget_ = Bolde_modtaget['playerName'].value_counts()
-    st.dataframe(Bolde_modtaget_)
     Bolde_modtaget_til = Bolde_modtaget[['140.0','141.0']]
 
     Pasninger_spillet = df[(df['typeId'] == 1) & (df['outcome'] == 1)]
