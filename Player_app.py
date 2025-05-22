@@ -1080,8 +1080,35 @@ def player_data(df_possession_data,df_match_stats,balanced_central_defender_df,f
             else trace.update(line=dict(width=1))
         )
         fig.update_layout(
-            yaxis=dict(range=[0, 10])
+            yaxis=dict(range=[0, 10]),
+            shapes=[
+                # Red zone (0–4)
+                dict(
+                    type="rect",
+                    xref="paper", yref="y",
+                    x0=0, x1=1, y0=0, y1=4,
+                    fillcolor="rgba(255, 0, 0, 0.1)",
+                    line=dict(width=0)
+                ),
+                # Yellow zone (4–6)
+                dict(
+                    type="rect",
+                    xref="paper", yref="y",
+                    x0=0, x1=1, y0=4, y1=6,
+                    fillcolor="rgba(255, 255, 0, 0.15)",
+                    line=dict(width=0)
+                ),
+                # Green zone (6–10)
+                dict(
+                    type="rect",
+                    xref="paper", yref="y",
+                    x0=0, x1=1, y0=6, y1=10,
+                    fillcolor="rgba(0, 255, 0, 0.1)",
+                    line=dict(width=0)
+                ),
+            ],
         )
+
 
         st.plotly_chart(fig, use_container_width=True)
 
