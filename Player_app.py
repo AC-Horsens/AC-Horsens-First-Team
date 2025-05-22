@@ -1069,7 +1069,7 @@ def player_data(df_possession_data,df_match_stats,balanced_central_defender_df,f
             return
 
         st.write(f'As {position_title}')
-        exclude_cols = ['team_name', 'player_position', 'minsPlayed', 'label', 'age_today']
+        exclude_cols = ['team_name', 'player_position','player_positionSide', 'minsPlayed', 'label', 'age_today']
 
         # Prepare metrics
         metrics_df = df.drop(columns=exclude_cols, errors='ignore')
