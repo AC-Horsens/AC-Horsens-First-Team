@@ -96,7 +96,7 @@ def plot_arrows(df):
 
     st.pyplot(fig)
     
-def Process_data_spillere(df_xA,df_pv,df_match_stats,squads):
+def Process_data_spillere(df_xg, df_xA,df_pv,df_match_stats,squads):
 
     def calculate_score(df, column, score_column):
         df_unique = df.drop_duplicates(column).copy()
