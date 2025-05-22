@@ -12,7 +12,7 @@ st.set_page_config(layout="wide")
 team_name = st.selectbox('Choose team', ['B_93','Esbjerg','Fredericia','HB_Køge','Hillerød','Hobro','Horsens','Hvidovre','Kolding','OB','Roskilde','Vendsyssel'])
 
 @st.cache_data()
-def load_data(team_name):
+def load_data():
     df_xg = pd.read_csv(r'DNK_1_Division_2024_2025/xg_all DNK_1_Division_2024_2025.csv')
     df_xg['label'] = df_xg['label'] + ' ' + df_xg['date']
 
@@ -27,21 +27,6 @@ def load_data(team_name):
     df_xa_agg = pd.read_csv(r'DNK_1_Division_2024_2025/Horsens/Horsens_possession_data.csv')
     df_xa_agg['label'] = df_xa_agg['label'] + ' ' + df_xa_agg['date']
 
-    df_possession_data = pd.read_csv(f'DNK_1_Division_2024_2025/{team_name}/{team_name}_possession_data.csv')
-    df_possession_data['label'] = df_possession_data['label'] + ' ' + df_possession_data['date']
-    df_possession_data['team_name'] = df_possession_data['team_name'].str.replace(' ', '_')
-    df_possession_data = df_possession_data.sort_values(by='eventId').reset_index(drop=True)
-    df_possession_data['pass_receiver'] = None
-
-    for i in range(len(df_possession_data) - 1):
-        current_event = df_possession_data.loc[i]
-        if current_event['typeId'] == 1 and current_event['outcome'] == 1:
-            next_event_id = current_event['eventId'] + 1
-            next_event = df_possession_data[(df_possession_data['eventId'] == next_event_id) & (df_possession_data['team_name'] == current_event['team_name']) & (df_possession_data['label'] == current_event['label'])]
-
-            if not next_event.empty:
-                pass_receiver = next_event.iloc[0]['playerName']
-                df_possession_data.at[i, 'pass_receiver'] = pass_receiver
                 
     df_xg_agg = pd.read_csv(r'DNK_1_Division_2024_2025/Horsens/Horsens_xg_data.csv')
     df_xg_agg['label'] = df_xg_agg['label'] + ' ' + df_xg_agg['date']
@@ -49,8 +34,6 @@ def load_data(team_name):
     df_pv_agg = pd.read_csv(r'DNK_1_Division_2024_2025/Horsens/Horsens_pv_data.csv')
     df_pv_agg['label'] = df_pv_agg['label'] + ' ' + df_pv_agg['date']
 
-    df_xg_all = pd.read_csv(r'DNK_1_Division_2024_2025/xg_all DNK_1_Division_2024_2025.csv')
-    df_xg_all['label'] = df_xg_all['label'] + ' ' + df_xg_all['date']
 
     df_pv_all = pd.read_csv(r'DNK_1_Division_2024_2025/xA_all DNK_1_Division_2024_2025.csv')
     df_pv_all['label'] = df_pv_all['label'] + ' ' + df_pv_all['date']
@@ -60,7 +43,15 @@ def load_data(team_name):
 
     squads = pd.read_csv(r'DNK_1_Division_2024_2025/squads DNK_1_Division_2024_2025.csv')
         
-    return df_xg, df_xA, df_pv, df_possession_stats, df_xa_agg, df_possession_data, df_xg_agg, df_pv_agg, df_xg_all, df_pv_all, df_match_stats, squads
+    return df_xg, df_xA, df_pv, df_possession_stats, df_xa_agg, df_xg_agg, df_pv_agg, df_pv_all, df_match_stats, squads
+
+def load_team_data(team_name):
+
+    df_possession_data = pd.read_csv(f'DNK_1_Division_2024_2025/{team_name}/{team_name}_possession_data.csv')
+    df_possession_data['label'] = df_possession_data['label'] + ' ' + df_possession_data['date']
+    df_possession_data['team_name'] = df_possession_data['team_name'].str.replace(' ', '_')
+    return df_possession_data
+
 
 def plot_heatmap_location(data, title):
     pitch = Pitch(pitch_type='opta', line_zorder=2, pitch_color='grass', line_color='white')
@@ -106,7 +97,7 @@ def plot_arrows(df):
 
     st.pyplot(fig)
     
-def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
+def Process_data_spillere(df_xA,df_pv_all,df_match_stats,squads):
 
     def calculate_score(df, column, score_column):
         df_unique = df.drop_duplicates(column).copy()
@@ -161,7 +152,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         return df_scouting
     df_scouting = calculate_match_pv(df_scouting)
 
-    df_xg = df_xg_all[['contestantId','team_name','playerName','playerId','321','322','9','match_id','label','date']]
+    df_xg = df_xg[['contestantId','team_name','playerName','playerId','321','322','9','match_id','label','date']]
     df_xg = df_xg[df_xg['9']!= True]
 
     df_xg = df_xg.rename(columns={'321': 'xg'})
@@ -998,9 +989,10 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
     }
 
 
-df_xg, df_xA, df_pv, df_possession_stats, df_xa_agg, df_possession_data, df_xg_agg, df_pv_agg, df_xg_all, df_pv_all, df_match_stats, squads = load_data(team_name)
+df_xg, df_xA, df_pv, df_possession_stats, df_match_stats, squads = load_data()
+df_possession_data = load_team_data(team_name)
 
-position_dataframes = Process_data_spillere(df_xA, df_pv_all, df_match_stats, df_xg_all, squads)
+position_dataframes = Process_data_spillere(df_xA, df_pv_all, df_match_stats, squads)
 
 #defending_central_defender_df = position_dataframes['defending_central_defender']
 #ball_playing_central_defender_df = position_dataframes['ball_playing_central_defender']
@@ -1134,7 +1126,7 @@ def player_data(df_possession_data,df_match_stats,balanced_central_defender_df,f
 
     # Example call in Streamlit app
 
-    Bolde_modtaget = df[df['pass_receiver'] == player_name]
+    Bolde_modtaget = df[df['receiverName'] == player_name]
 
     Bolde_modtaget_ = Bolde_modtaget['playerName'].value_counts()
     st.dataframe(Bolde_modtaget_)
