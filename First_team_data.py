@@ -1272,7 +1272,7 @@ def Dashboard():
 
         # Vis
         st.subheader("Player Offensive transitions Summary")
-        st.dataframe(summary.sort_values('goals', ascending=False))
+        st.dataframe(summary.sort_values('goals', ascending=False),index=False)
 
     def team_mentality_score():
         df_opponent = df_possession[
