@@ -1285,7 +1285,7 @@ def Dashboard():
             (df_transitions['possession_index'] == 1) & 
             (df_transitions['team_name'] == 'Horsens')
         ]        
-        pitch = VerticalPitch(pitch_type='opta', half=True, line_zorder=2)
+        pitch = Pitch(pitch_type='opta', color='grass',line_color='white', line_zorder=2)
         fig, ax = pitch.draw(figsize=(10, 7))
 
         # Normalize xG to scale marker size — avoid overly small or huge dots
