@@ -1057,7 +1057,7 @@ classic_striker_df = position_dataframes['Classic striker']
 
 def Dashboard():
     df_possession = load_possession_data()
-    df_transitions = load_transitions_data()  # 👈 Indlæs transitionsdata
+    df_transitions = load_transitions_data()
 
     # Standardisér team_name og match_state
     for df in [df_possession, df_transitions]:
@@ -1260,8 +1260,7 @@ def Dashboard():
     st.dataframe(per90_df, hide_index=True, use_container_width=True)
 
     def transitions():
-        df_transitions = load_transitions_data()
-        st.write(df_transitions.dtypes)
+        
         st.dataframe(df_transitions)
 
     def team_mentality_score():
