@@ -1290,7 +1290,7 @@ def Dashboard():
         fig, ax = pitch.draw(figsize=(10, 7))
 
         # Normalize xG to scale marker size — avoid overly small or huge dots
-        size_scale = transitions_starts['sequence_xG'].fillna(0) * 100
+        size_scale = transitions_starts['sequence_xG'].fillna(0) * 500
 
         # Plot yellow dots
         scatter = pitch.scatter(
