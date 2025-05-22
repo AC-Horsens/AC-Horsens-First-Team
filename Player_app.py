@@ -6,6 +6,7 @@ from scipy.ndimage import gaussian_filter
 import numpy as np
 from datetime import datetime
 from mplsoccer import VerticalPitch
+import plotly.express as px
 
 
 st.set_page_config(layout="wide")
@@ -1051,19 +1052,18 @@ def player_data(df_possession_data,df_match_stats,balanced_central_defender_df,f
     winger_df = winger_df.drop(columns=['playerName', 'team.name', 'position_codes'],errors = 'ignore')
     classic_striker_df = classic_striker_df.drop(columns=['playerName', 'team.name', 'position_codes'],errors = 'ignore')
         
-    if not balanced_central_defender_df.empty:
-        st.write('As central defender')
-        exclude_cols = ['team_name','player_position', 'minsPlayed', 'label', 'age_today']
+    def plot_position_performance(df, position_title):
+        if df.empty:
+            return
 
-        # Keep only numeric columns that are not excluded
-        metrics_df = balanced_central_defender_df.drop(columns=exclude_cols, errors='ignore')
+        st.write(f'As {position_title}')
+        exclude_cols = ['team_name', 'player_position', 'minsPlayed', 'label', 'age_today']
 
-        # Combine with label to use as x-axis
-        metrics_df['label'] = balanced_central_defender_df['label']
+        # Prepare metrics
+        metrics_df = df.drop(columns=exclude_cols, errors='ignore')
+        metrics_df['label'] = df['label']
 
-        # Melt the DataFrame to long format
         melted_df = metrics_df.melt(id_vars='label', var_name='Metric', value_name='Value')
-        import plotly.express as px
 
         fig = px.line(
             melted_df,
@@ -1071,73 +1071,38 @@ def player_data(df_possession_data,df_match_stats,balanced_central_defender_df,f
             y='Value',
             color='Metric',
             markers=True,
-            title='Performance profile as Central Defender'
+            title=f'Performance profile as {position_title}'
         )
 
-        # Adjust line thickness: Total score thicker
+        # Style total score
         fig.for_each_trace(
             lambda trace: trace.update(line=dict(width=4, color='yellow')) if trace.name == 'Total score'
             else trace.update(line=dict(width=1))
         )
+
+        # Background performance zones
         fig.update_layout(
             yaxis=dict(range=[0, 10]),
             shapes=[
-                # Red zone (0–4)
-                dict(
-                    type="rect",
-                    xref="paper", yref="y",
-                    x0=0, x1=1, y0=0, y1=4,
-                    fillcolor="rgba(255, 0, 0, 0.1)",
-                    line=dict(width=0)
-                ),
-                # Yellow zone (4–6)
-                dict(
-                    type="rect",
-                    xref="paper", yref="y",
-                    x0=0, x1=1, y0=4, y1=6,
-                    fillcolor="rgba(255, 255, 0, 0.15)",
-                    line=dict(width=0)
-                ),
-                # Green zone (6–10)
-                dict(
-                    type="rect",
-                    xref="paper", yref="y",
-                    x0=0, x1=1, y0=6, y1=10,
-                    fillcolor="rgba(0, 255, 0, 0.1)",
-                    line=dict(width=0)
-                ),
-            ],
+                dict(type="rect", xref="paper", yref="y", x0=0, x1=1, y0=0, y1=4,
+                    fillcolor="rgba(255, 0, 0, 0.1)", line=dict(width=0)),
+                dict(type="rect", xref="paper", yref="y", x0=0, x1=1, y0=4, y1=6,
+                    fillcolor="rgba(255, 255, 0, 0.15)", line=dict(width=0)),
+                dict(type="rect", xref="paper", yref="y", x0=0, x1=1, y0=6, y1=10,
+                    fillcolor="rgba(0, 255, 0, 0.1)", line=dict(width=0)),
+            ]
         )
 
-
         st.plotly_chart(fig, use_container_width=True)
+        st.dataframe(df, hide_index=True)
 
-        # Show full data
-        st.dataframe(balanced_central_defender_df, hide_index=True)
-
-    if not fullbacks_df.empty:
-        st.write('As fullback')
-        st.dataframe(fullbacks_df, hide_index=True)
-
-    if not number6_df.empty:
-        st.write('As number 6')
-        st.dataframe(number6_df, hide_index=True)
-
-    if not number8_df.empty:
-        st.write('As number 8')
-        st.dataframe(number8_df, hide_index=True)
-
-    if not number10_df.empty:
-        st.write('As number 10')
-        st.dataframe(number10_df, hide_index=True)
-
-    if not winger_df.empty:
-        st.write('As winger')
-        st.dataframe(winger_df, hide_index=True)
-
-    if not classic_striker_df.empty:
-        st.write('As classic striker')
-        st.dataframe(classic_striker_df, hide_index=True)
+    plot_position_performance(balanced_central_defender_df, "central defender")
+    plot_position_performance(fullbacks_df, "Fullback")
+    plot_position_performance(number6_df, "number 6")
+    plot_position_performance(number8_df, "number 8")
+    plot_position_performance(number10_df, "number 10")
+    plot_position_performance(winger_df, "winger")
+    plot_position_performance(classic_striker_df, "Striker")
 
     def plot_xg_shots(df, player_name):
         # Filter the dataset for shots with xG > 0 and for the specified player
