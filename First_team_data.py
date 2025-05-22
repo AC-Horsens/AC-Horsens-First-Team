@@ -1265,14 +1265,20 @@ def Dashboard():
 
         # Summer øvrige offensive stats
         summary = df_transitions.groupby(['playerName','team_name'])[['assist', 'sequence_xG', '321.0', '322.0']].sum().reset_index()
-
+        summary = summary.rename(columns={'321.0':'xG','322.0': 'Post shot xG'})
         # Merge
         summary = summary.merge(goals_per_player, on='playerName', how='left')
         summary['goals'] = summary['goals'].fillna(0).astype(int)
 
+        team_summary = summary.groupby('team_name')[['xG','Post shot xG','goals']]
+        st.subheader("Team Offensive transitions Summary")
+        st.dataframe(team_summary,hide_index=True)
         # Vis
         st.subheader("Player Offensive transitions Summary")
         st.dataframe(summary.sort_values('goals', ascending=False),hide_index=True)
+
+
+
 
     def team_mentality_score():
         df_opponent = df_possession[
