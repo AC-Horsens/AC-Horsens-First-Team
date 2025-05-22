@@ -129,6 +129,13 @@ def load_set_piece_data():
     df_set_piece['label'] = (df_set_piece['label'] + ' ' + df_set_piece['date']).astype(str)
     return df_set_piece
 
+@st.cache_data
+def transitions():
+    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/Transitions_DNK_1_Division_2024_2025.csv'
+    df_transitions = pd.read_csv(url)
+    df_transitions['label'] = (df_transitions['label'] + ' ' + df_transitions['date']).astype(str)
+    return df_transitions
+
 def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
 
     def calculate_score(df, column, score_column):
@@ -1253,6 +1260,10 @@ def Dashboard():
     st.subheader("Team Summary (Per 90 Minutes)")
     st.dataframe(per90_df, hide_index=True, use_container_width=True)
 
+    def transitions():
+        df_transitions = transitions()
+        df_transitions = df_transitions.merge(df_possession,how=left)
+        st.dataframe(df_transitions)
     def team_mentality_score():
         df_opponent = df_possession[
             (df_possession['team_name'] == 'Opponent') & 
