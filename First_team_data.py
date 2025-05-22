@@ -1263,6 +1263,8 @@ def Dashboard():
     def transitions():
         df_transitions = load_transitions_data()
         df_transitions['date'] = pd.to_datetime(df_transitions['date'])
+        df_transitions = df_transitions.apply(pd.to_numeric, errors='coerce')
+
         df_transitions = df_transitions.merge(df_possession,how='left')
         st.dataframe(df_transitions)
 
