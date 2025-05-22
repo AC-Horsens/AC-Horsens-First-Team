@@ -1053,7 +1053,29 @@ def player_data(df_possession_data,df_match_stats,balanced_central_defender_df,f
         
     if not balanced_central_defender_df.empty:
         st.write('As central defender')
-        st.line_chart(data = balanced_central_defender_df,y='Total score',x='label')
+        exclude_cols = ['team_name_player_position', 'minsPlayed', 'label', 'age_today']
+
+        # Keep only numeric columns that are not excluded
+        metrics_df = balanced_central_defender_df.drop(columns=exclude_cols, errors='ignore')
+
+        # Combine with label to use as x-axis
+        metrics_df['label'] = balanced_central_defender_df['label']
+
+        # Melt the DataFrame to long format
+        melted_df = metrics_df.melt(id_vars='label', var_name='Metric', value_name='Value')
+        import plotly.express as px
+
+        fig = px.line(
+            melted_df,
+            x='label',
+            y='Value',
+            color='Metric',
+            markers=True,
+            title='Performance profile as Central Defender'
+        )
+
+        st.plotly_chart(fig, use_container_width=True)
+
         st.dataframe(balanced_central_defender_df, hide_index=True)
 
     if not fullbacks_df.empty:
