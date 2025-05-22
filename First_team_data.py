@@ -1314,7 +1314,6 @@ def Dashboard():
                 color='black'
             )
 
-        plt.title("Transitions: Start Locations by Horsens", fontsize=14)
         st.pyplot(fig)
         st.dataframe(transitions_starts)
 
