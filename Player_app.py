@@ -1093,7 +1093,7 @@ def player_data(df_possession_data,df_match_stats,balanced_central_defender_df,f
 
         # Style total score
         fig.for_each_trace(
-            lambda trace: trace.update(line=dict(width=4, color='yellow')) if trace.name == 'Total score'
+            lambda trace: trace.update(line=dict(width=5, color='yellow')) if trace.name == 'Total score'
             else trace.update(line=dict(width=1))
         )
 
