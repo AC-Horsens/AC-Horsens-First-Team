@@ -1270,7 +1270,7 @@ def Dashboard():
         summary = summary.merge(goals_per_player, on='playerName', how='left')
         summary['goals'] = summary['goals'].fillna(0).astype(int)
 
-        team_summary = summary.groupby('team_name')[['xG','Post shot xG','goals']]
+        team_summary = summary.groupby('team_name')[['xG','Post shot xG','goals']].sum().reset_index()
         st.subheader("Team Offensive transitions Summary")
         st.dataframe(team_summary,hide_index=True)
         # Vis
