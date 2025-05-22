@@ -1267,6 +1267,8 @@ def Dashboard():
         df_transitions['team_name'] = df_transitions['team_name'].astype(str)
         df_transitions['playerName'] = df_transitions['playerName'].astype(str)
         df_transitions['label'] = df_transitions['label'].astype(str)
+        st.write(df_possession.dtypes)
+        st.write(df_transitions.dtypes)
 
         df_transitions = df_transitions.merge(df_possession,how='left')
         st.dataframe(df_transitions)
