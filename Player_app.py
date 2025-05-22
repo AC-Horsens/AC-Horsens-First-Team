@@ -1076,7 +1076,8 @@ def player_data(df_possession_data,df_match_stats,balanced_central_defender_df,f
 
         # Adjust line thickness: Total score thicker
         fig.for_each_trace(
-            lambda trace: trace.update(line=dict(width=4)) if trace.name == 'Total score' else trace.update(line=dict(width=1.5))
+            lambda trace: trace.update(line=dict(width=4, color='yellow')) if trace.name == 'Total score'
+            else trace.update(line=dict(width=1))
         )
 
         st.plotly_chart(fig, use_container_width=True)
