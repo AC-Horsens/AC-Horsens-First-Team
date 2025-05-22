@@ -1009,10 +1009,8 @@ classic_striker_df = position_dataframes['Classic striker']
 #box_striker_df = position_dataframes['Boxstriker']
 
 def player_data(df_possession_data,df_match_stats,balanced_central_defender_df,fullbacks_df,number8_df,number6_df,number10_df,winger_df,classic_striker_df):
-    horsens = df_possession_data.copy()
     horsens = df_possession_data[df_possession_data['team_name'].str.contains(team_name)]
-    horsens = horsens.sort_values(by='playerName')
-    player_name = st.selectbox('Choose player', horsens['playerName'].unique())
+    player_name = st.selectbox('Choose player', sorted(horsens['playerName'].unique()))
     st.title(f'{player_name}')    
 
     df = df_possession_data[
