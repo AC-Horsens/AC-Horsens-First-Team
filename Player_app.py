@@ -10,7 +10,12 @@ import plotly.express as px
 
 
 st.set_page_config(layout="wide")
-team_name = st.selectbox('Choose team', ['B_93','Esbjerg','Fredericia','HB_Køge','Hillerød','Hobro','Horsens','Hvidovre','Kolding','OB','Roskilde','Vendsyssel'])
+
+teams = ['B_93','Esbjerg','Fredericia','HB_Køge','Hillerød','Hobro','Horsens','Hvidovre','Kolding','OB','Roskilde','Vendsyssel']
+
+default_index = teams.index('Horsens')
+
+team_name = st.selectbox('Choose team', teams, index=default_index)
 
 @st.cache_data()
 def load_data(team_name):
