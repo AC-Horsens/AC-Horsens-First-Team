@@ -1492,7 +1492,8 @@ def Dashboard():
     Data_types = {
         'Team mentality score': team_mentality_score,
         'Defensive line': defensive_line_data,
-        'Set pieces': set_pieces
+        'Set pieces': set_pieces,
+        'Transitions': transitions
     }
 
     for i in range(1, 4):
