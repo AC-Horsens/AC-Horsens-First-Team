@@ -1315,7 +1315,8 @@ def Dashboard():
 
         plt.title("Transitions: Start Locations by Horsens", fontsize=14)
         st.pyplot(fig)
-
+        st.dataframe(transitions_starts)
+        
     def team_mentality_score():
         df_opponent = df_possession[
             (df_possession['team_name'] == 'Opponent') & 
