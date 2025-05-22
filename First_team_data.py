@@ -1260,7 +1260,7 @@ def Dashboard():
     st.dataframe(per90_df, hide_index=True, use_container_width=True)
 
     def transitions():
-        goals = df_transitions[df_transitions['typeId'] == 17]
+        goals = df_transitions[df_transitions['typeId'] == 16]
         goals_per_player = goals.groupby('playerName').size().reset_index(name='goals')
 
         # Summer øvrige offensive stats
