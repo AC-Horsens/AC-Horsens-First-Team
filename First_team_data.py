@@ -1085,13 +1085,13 @@ def Dashboard():
     st.write('Choose match state')
     col1,col2,col3 = st.columns(3)
     with col1:
-        option1 = st.checkbox('Horsens')
+        option1 = st.checkbox('Horsens',True)
     with col2:
-        option2 = st.checkbox('Draw')
+        option2 = st.checkbox('Draw',True)
     with col3:
-        option3 = st.checkbox('Opponent')
+        option3 = st.checkbox('Opponent',True)
 
-
+    df_transitions = df_transitions[df_transitions['label'].isin(match_choice)]
     df_possession = df_possession[df_possession['label'].isin(match_choice)]
     df_possession = df_possession.sort_values(by=['date','timeMin', 'timeSec'])  # Sort the events by time
     df_possession['timeMin'] = df_possession['timeMin'].astype(float)
