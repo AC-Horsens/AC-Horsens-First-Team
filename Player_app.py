@@ -1048,7 +1048,7 @@ def player_data(df_possession_data,df_match_stats,balanced_central_defender_df,f
         
     if not balanced_central_defender_df.empty:
         st.write('As central defender')
-        st.line_chart(balanced_central_defender_df['Total score'])
+        st.line_chart(data = balanced_central_defender_df,y='Total score',x='label')
         st.dataframe(balanced_central_defender_df, hide_index=True)
 
     if not fullbacks_df.empty:
@@ -1149,6 +1149,4 @@ def player_data(df_possession_data,df_match_stats,balanced_central_defender_df,f
        
     with col3:
         plot_heatmap_end_location(Pasninger_spillet_til, f'Passes {player_name}')
-
-    st.dataframe(Alle_off_aktioner)
 player_data(df_possession_data,df_match_stats,balanced_central_defender_df,fullbacks_df,number8_df,number6_df,number10_df,winger_df,classic_striker_df)
