@@ -1284,7 +1284,7 @@ def Dashboard():
         transitions_starts = df_transitions[
             (df_transitions['possession_index'] == 1) & 
             (df_transitions['team_name'] == 'Horsens') &
-            (df_transitions['sequence_duration'] > 2)
+            (df_transitions['sequence_duration'] > 1)
         ]        
         pitch = Pitch(pitch_type='opta',pitch_color='grass',line_color='white', line_zorder=2)
         fig, ax = pitch.draw(figsize=(10, 7))
