@@ -1264,7 +1264,7 @@ def Dashboard():
         goals_per_player = goals.groupby('playerName').size().reset_index(name='goals')
 
         # Summer øvrige offensive stats
-        summary = df_transitions.groupby('playerName')[['assist', 'sequence_xG', '321.0', '322.0']].sum().reset_index()
+        summary = df_transitions.groupby(['playerName','team_name'])[['assist', 'sequence_xG', '321.0', '322.0']].sum().reset_index()
 
         # Merge
         summary = summary.merge(goals_per_player, on='playerName', how='left')
