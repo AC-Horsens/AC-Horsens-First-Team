@@ -1315,7 +1315,6 @@ def Dashboard():
             )
 
         st.pyplot(fig)
-        st.dataframe(transitions_starts)
 
     def team_mentality_score():
         df_opponent = df_possession[
