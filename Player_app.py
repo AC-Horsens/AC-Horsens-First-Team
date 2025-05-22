@@ -988,7 +988,7 @@ def Process_data_spillere(df_xA,df_pv,df_match_stats,squads):
     }
 
 
-df_xg, df_xA, df_pv, df_possession_stats, df_match_stats, squads = load_data()
+df_xg, df_xA, df_pv, df_possession_stats, df_xa_agg, df_xg_agg, df_pv_agg, df_pv_all, df_match_stats, squads = load_data()
 df_possession_data = load_team_data(team_name)
 
 position_dataframes = Process_data_spillere(df_xA, df_pv, df_match_stats, squads)
