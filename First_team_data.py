@@ -1271,11 +1271,14 @@ def Dashboard():
         summary['goals'] = summary['goals'].fillna(0).astype(int)
 
         team_summary = summary.groupby('team_name')[['xG','Post shot xG','goals']].sum().reset_index()
+        team_summary = team_summary.round(2)
         st.subheader("Team Offensive transitions Summary")
         st.dataframe(team_summary,hide_index=True)
         # Vis
         st.subheader("Player Offensive transitions Summary")
-        st.dataframe(summary.sort_values('goals', ascending=False),hide_index=True)
+        summary = summary.round(2)
+        horsens_summary = summary[summary['team_name'] == 'Horsens']
+        st.dataframe(horsens_summary.sort_values('goals', ascending=False),hide_index=True)
 
 
 
