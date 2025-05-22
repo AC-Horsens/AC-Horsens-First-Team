@@ -1057,10 +1057,15 @@ classic_striker_df = position_dataframes['Classic striker']
 
 def Dashboard():
     df_possession = load_possession_data()
-    df_possession['team_name'] = df_possession['team_name'].apply(lambda x: x if x == 'Horsens' else 'Opponent')
-    df_possession['match_state'] = df_possession['match_state'].apply(
-        lambda x: x if x == 'Horsens' or x == 'draw' else 'Opponent'
-    )
+    df_transitions = load_transitions_data()  # 👈 Indlæs transitionsdata
+
+    # Standardisér team_name og match_state
+    for df in [df_possession, df_transitions]:
+        df['team_name'] = df['team_name'].apply(lambda x: x if x == 'Horsens' else 'Opponent')
+        df['match_state'] = df['match_state'].apply(lambda x: x if x == 'Horsens' or x == 'draw' else 'Opponent')
+
+    df_possession['date'] = pd.to_datetime(df_possession['date'])
+    df_possession = df_possession.sort_values(by='date', ascending=False)
     st.title('AC Horsens First Team Dashboard')
     df_possession['date'] = pd.to_datetime(df_possession['date'])
 
@@ -1165,22 +1170,16 @@ def Dashboard():
     st.dataframe(game_state_df,hide_index=True)
     # Calculate passes per possession
     state_duration = game_state_df['duration'].sum()
-    if option1 and option2 and option3:
-        df_possession = df_possession[df_possession['match_state'].isin(['Horsens', 'draw', 'Opponent'])]
-    # Case when two options are selected
-    elif option1 and option2:
-        df_possession = df_possession[df_possession['match_state'].isin(['Horsens', 'draw'])]
-    elif option1 and option3:
-        df_possession = df_possession[df_possession['match_state'].isin(['Horsens', 'Opponent'])]
-    elif option2 and option3:
-        df_possession = df_possession[df_possession['match_state'].isin(['draw', 'Opponent'])]
-    # Case when only one option is selected
-    elif option1:
-        df_possession = df_possession[df_possession['match_state'] == 'Horsens']
-    elif option2:
-        df_possession = df_possession[df_possession['match_state'] == 'draw']
-    elif option3:
-        df_possession = df_possession[df_possession['match_state'] == 'Opponent']
+    selected_states = []
+    if option1:
+        selected_states.append('Horsens')
+    if option2:
+        selected_states.append('draw')
+    if option3:
+        selected_states.append('Opponent')
+
+    df_possession = df_possession[df_possession['match_state'].isin(selected_states)]
+    df_transitions = df_transitions[df_transitions['match_state'].isin(selected_states)]
 
 
     Pass_per_possession = df_possession[df_possession['typeId'] == 1].groupby(['possessionId', 'label', 'team_name']).size().reset_index(name='Passes per possession')
@@ -1262,10 +1261,7 @@ def Dashboard():
 
     def transitions():
         df_transitions = load_transitions_data()
-        st.write(df_possession.dtypes)
         st.write(df_transitions.dtypes)
-
-        df_transitions = df_transitions.merge(df_possession,how='left')
         st.dataframe(df_transitions)
 
     def team_mentality_score():
