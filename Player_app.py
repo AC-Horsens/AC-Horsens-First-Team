@@ -7,6 +7,7 @@ import numpy as np
 from datetime import datetime
 from mplsoccer import VerticalPitch
 import plotly.express as px
+import plotly.graph_objects as go
 
 
 st.set_page_config(layout="wide")
@@ -1073,9 +1074,8 @@ def player_data(df_possession_data,df_match_stats,balanced_central_defender_df,f
             return
 
         st.write(f'As {position_title}')
-        exclude_cols = ['team_name', 'player_position','player_positionSide', 'minsPlayed', 'label', 'age_today']
+        exclude_cols = ['team_name', 'player_position', 'player_positionSide', 'minsPlayed', 'label', 'age_today']
 
-        # Prepare metrics
         metrics_df = df.drop(columns=exclude_cols, errors='ignore')
         metrics_df['label'] = df['label']
 
@@ -1090,7 +1090,7 @@ def player_data(df_possession_data,df_match_stats,balanced_central_defender_df,f
             title=f'Performance profile as {position_title}'
         )
 
-        # Style total score
+        # Highlight "Total score"
         fig.for_each_trace(
             lambda trace: trace.update(line=dict(width=5, color='yellow')) if trace.name == 'Total score'
             else trace.update(line=dict(width=1))
@@ -1107,6 +1107,21 @@ def player_data(df_possession_data,df_match_stats,balanced_central_defender_df,f
                 dict(type="rect", xref="paper", yref="y", x0=0, x1=1, y0=6, y1=10,
                     fillcolor="rgba(0, 255, 0, 0.1)", line=dict(width=0)),
             ]
+        )
+
+        # Calculate and add slope of 3-game rolling average for Total score
+        total_df = melted_df[melted_df['Metric'] == 'Total score'].copy()
+        total_df['rolling_avg'] = total_df['Value'].rolling(window=3, min_periods=1).mean()
+        total_df['slope'] = total_df['rolling_avg'].diff()  # simple slope = change from previous
+
+        fig.add_trace(
+            go.Scatter(
+                x=total_df['label'],
+                y=total_df['slope'],
+                mode='lines+markers',
+                name='Slope of 3-game rolling avg',
+                line=dict(dash='dot', color='blue', width=2)
+            )
         )
 
         st.plotly_chart(fig, use_container_width=True)

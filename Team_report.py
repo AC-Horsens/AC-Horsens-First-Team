@@ -1591,7 +1591,7 @@ def create_pdf_progress_report(horsens_df, total_expected_points_combined,total_
         aggregation_dict['minsPlayed'] = 'sum'
         
         filtered_df = filtered_df.groupby('playerName').agg(aggregation_dict).reset_index()
-        filtered_df = filtered_df[filtered_df['minsPlayed'] > 350]
+        filtered_df = filtered_df[filtered_df['minsPlayed'] > 400]
         filtered_df = filtered_df.round(2)
         filtered_df['Total score'] = filtered_df['Total score'].astype(float)        
         reordered_columns = ['playerName', 'minsPlayed'] + numeric_columns
