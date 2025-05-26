@@ -8,6 +8,7 @@ from datetime import datetime
 from mplsoccer import VerticalPitch
 import plotly.express as px
 import plotly.graph_objects as go
+from scipy.stats import linregress
 
 
 st.set_page_config(layout="wide")
@@ -1109,24 +1110,42 @@ def player_data(df_possession_data,df_match_stats,balanced_central_defender_df,f
             ]
         )
 
-        # Calculate and add slope of 3-game rolling average for Total score
+        # 3-game rolling average and regression line for "Total score"
         total_df = melted_df[melted_df['Metric'] == 'Total score'].copy()
+        total_df = total_df.reset_index(drop=True)
         total_df['rolling_avg'] = total_df['Value'].rolling(window=3, min_periods=1).mean()
-        total_df['slope'] = total_df['rolling_avg'].diff()  # simple slope = change from previous
+        total_df['index'] = total_df.index
 
-        fig.add_trace(
-            go.Scatter(
-                x=total_df['label'],
-                y=total_df['slope'],
-                mode='lines+markers',
-                name='Slope of 3-game rolling avg',
-                line=dict(dash='dot', color='blue', width=2)
+        regression_df = total_df.dropna(subset=['rolling_avg'])
+
+        if not regression_df.empty and len(regression_df) >= 2:
+            slope, intercept, *_ = linregress(regression_df['index'], regression_df['rolling_avg'])
+            regression_df['regression_line'] = intercept + slope * regression_df['index']
+
+            # Add 3-game rolling average
+            fig.add_trace(
+                go.Scatter(
+                    x=regression_df['label'],
+                    y=regression_df['rolling_avg'],
+                    mode='lines+markers',
+                    name='3-game rolling avg (Total score)',
+                    line=dict(color='blue', width=3, dash='dot')
+                )
             )
-        )
+
+            # Add regression line
+            fig.add_trace(
+                go.Scatter(
+                    x=regression_df['label'],
+                    y=regression_df['regression_line'],
+                    mode='lines',
+                    name='Regression on rolling avg',
+                    line=dict(color='black', width=2)
+                )
+            )
 
         st.plotly_chart(fig, use_container_width=True)
         st.dataframe(df, hide_index=True)
-
     plot_position_performance(balanced_central_defender_df, "central defender")
     plot_position_performance(fullbacks_df, "Fullback")
     plot_position_performance(number6_df, "number 6")
