@@ -1281,23 +1281,13 @@ def Dashboard():
         df_set_pieces['date'] = pd.to_datetime(df_set_pieces['date'])
         df_transitions['date'] = pd.to_datetime(df_transitions['date'])
 
-        # --- STEP 1: Remove set pieces by possessionId ---
-        set_piece_keys = df_set_pieces[['id']].drop_duplicates()
-        df_no_set_pieces = df_possession.merge(
-            set_piece_keys,
-            on=['id'],
-            how='left',
-            indicator=True
-        ).query("_merge == 'left_only'").drop(columns="_merge")
+        excluded_ids = pd.concat([
+            df_set_pieces[['id']],
+            df_transitions[['id']]
+        ])['id'].dropna().unique()
 
-        # --- STEP 2: Remove transitions by sequenceId ---
-        transition_keys = df_transitions[['id']].drop_duplicates()
-        df_open_play = df_no_set_pieces.merge(
-            transition_keys,
-            on=['id'],
-            how='left',
-            indicator=True
-        ).query("_merge == 'left_only'").drop(columns="_merge")
+        # Filter df_possession to keep only rows not in the excluded_ids
+        df_open_play = df_possession[~df_possession['id'].isin(excluded_ids)]
 
         # --- Continue as before ---
         goals = df_open_play[df_open_play['typeId'] == 16]
