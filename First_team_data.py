@@ -1492,7 +1492,14 @@ def Dashboard():
             {'label': 'Assistzone', 'x': 83, 'y': 63, 'width': 17, 'height': 20, 'color': 'yellow'},
             {'label': 'Assistzone', 'x': 83, 'y': 17, 'width': 17, 'height': 20, 'color': 'yellow'}
         ]
-
+        assist_zones.append({
+            'label': 'Dangerzone',
+            'x': 85,
+            'y': 37.5,
+            'width': 15,
+            'height': 25,
+            'color': 'red'
+        })
         for zone in assist_zones:
             rect = Rectangle(
                 (zone['x'], zone['y']),
