@@ -1474,8 +1474,15 @@ def Dashboard():
         col1, col2 = st.columns(2)
         col1.metric("Horsens - Assist Zone Actions", len(horsens_actions))
         col2.metric("Opponents - Assist Zone Actions Against", len(opponent_actions))
-        pitch = Pitch(pitch_type='opta', pitch_color='grass', line_color='white')
-        fig, ax = pitch.draw(figsize=(10, 7))
+        pitch = Pitch(
+            pitch_type='opta',
+            pitch_color='grass',
+            line_color='white',
+            half=True,
+            orientation='vertical'
+        )
+
+        fig, ax = pitch.draw(figsize=(6, 9))
 
         # Define and draw the assist zones
         assist_zones = [
@@ -1504,6 +1511,7 @@ def Dashboard():
             )
 
         st.pyplot(fig)
+        
     def set_pieces():
         df_set_pieces = load_set_piece_data()
         df_set_pieces = df_set_pieces.fillna(0)
