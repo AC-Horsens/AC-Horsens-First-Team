@@ -1291,10 +1291,10 @@ def Dashboard():
         ).query("_merge == 'left_only'").drop(columns="_merge")
 
         # --- STEP 2: Remove transitions by sequenceId ---
-        transition_keys = df_transitions[['label', 'date', 'sequenceId', 'team_name']].drop_duplicates()
+        transition_keys = df_transitions[['id']].drop_duplicates()
         df_open_play = df_no_set_pieces.merge(
             transition_keys,
-            on=['label', 'date', 'sequenceId', 'team_name'],
+            on=['id'],
             how='left',
             indicator=True
         ).query("_merge == 'left_only'").drop(columns="_merge")
