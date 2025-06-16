@@ -1470,6 +1470,7 @@ def Dashboard():
         # Create a DataFrame with both teams and their differences
         difference_df = pd.DataFrame({
             'team': ['Horsens', 'Opponents'],
+            'Assist zone actions': [horsens_count, opponent_count],
             'AZ difference': [horsens_count - opponent_count, opponent_count - horsens_count]
         })
 
