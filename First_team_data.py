@@ -1461,7 +1461,6 @@ def Dashboard():
         st.dataframe(horsens_summary.sort_values(['goals','xG'], ascending=False), hide_index=True)
 
     def transitions():
-        st.dataframe(df_transitions)
         zone1_mask = (
             ((df_transitions['x'] >= 66) & (df_transitions['x'] <= 80) & (df_transitions['y'] >= 40) & (df_transitions['y'] <= 60)) |
             ((df_transitions['x'] > 83) & (df_transitions['y'] >= 63) & (df_transitions['y'] <= 83)) |
@@ -1469,7 +1468,6 @@ def Dashboard():
         )
 
         assist_zone_possessions = df_transitions[zone1_mask]
-        st.dataframe(assist_zone_possessions)
         # --- Count assist zone actions ---
         assist_zone_counts = assist_zone_possessions.groupby('team_name').size().reset_index(name='Assist zone actions')
 
