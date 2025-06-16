@@ -1461,8 +1461,9 @@ def Dashboard():
 
         # Display summary
         st.subheader("Assist Zone Possession Actions")
-        st.dataframe(assist_zone_possessions)
-        #assist_zone_possessions = assist_zone_possessions.groupby()
+        assist_zone_counts = assist_zone_possessions.groupby('team_name')['id'].count().reset_index(name='count')
+        st.dataframe(assist_zone_counts)
+
         pitch = Pitch(
             pitch_type='opta',
             pitch_color='grass',
