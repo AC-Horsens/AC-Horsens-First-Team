@@ -1329,7 +1329,7 @@ def Dashboard():
         central_count = len(central_transitions)
         percentage_central = (central_count / total_transitions * 100) if total_transitions > 0 else 0
 
-        st.markdown(f"**Transitions startet i transition start zone:** {central_count} ud af {total_transitions} "
+        st.markdown(f"**Transitions startet in transition start zone:** {central_count} out of {total_transitions} "
                     f"({percentage_central:.1f}%)")
         
     def Defending():
