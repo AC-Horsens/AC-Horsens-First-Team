@@ -1442,6 +1442,51 @@ def Dashboard():
 
         st.plotly_chart(fig, use_container_width=True)
 
+        # Define assist zone masks
+        zone1_mask = (
+            (df_possession['x'] >= 66) & (df_possession['x'] <= 80) &
+            (df_possession['y'] >= 40) & (df_possession['y'] <= 60)
+        )
+        zone2_mask = (
+            (df_possession['x'] > 83) &
+            (df_possession['y'] >= 63) & (df_possession['y'] <= 83)
+        )
+        zone3_mask = (
+            (df_possession['x'] > 83) &
+            (df_possession['y'] >= 17) & (df_possession['y'] <= 37)
+        )
+
+        # Combine all assist zones
+        assist_zone_mask = zone1_mask | zone2_mask | zone3_mask
+
+        # Filter for possession events in assist zones
+        assist_zone_possessions = df_possession[assist_zone_mask]
+
+        # Count actions by team
+        horsens_actions = assist_zone_possessions[df_possession['team_name'] == 'Horsens']
+        opponent_actions = assist_zone_possessions[df_possession['team_name'] != 'Horsens']
+
+        # Display summary
+        st.subheader("Assist Zone Possession Actions")
+
+        col1, col2 = st.columns(2)
+        col1.metric("Horsens - Assist Zone Actions", len(horsens_actions))
+        col2.metric("Opponents - Assist Zone Actions Against", len(opponent_actions))
+
+        # Label zones for breakdown
+        assist_zone_possessions = assist_zone_possessions.copy()
+        assist_zone_possessions['zone'] = np.select(
+            [zone1_mask, zone2_mask, zone3_mask],
+            ['Zone 1 (66–80, 40–60)', 'Zone 2 (>83, 63–83)', 'Zone 3 (>83, 17–37)'],
+            default='Other'
+        )
+
+        # Group by zone and team
+        zone_breakdown = assist_zone_possessions.groupby(['zone', 'team_name']).size().unstack(fill_value=0).reset_index()
+
+        st.write("Breakdown by Zone and Team")
+        st.dataframe(zone_breakdown)
+
     def set_pieces():
         df_set_pieces = load_set_piece_data()
         df_set_pieces = df_set_pieces.fillna(0)
