@@ -1485,9 +1485,14 @@ def Dashboard():
 
         # Define and draw the assist zones
         assist_zones = [
-            {'label': 'Zone 1', 'x': 66, 'y': 33, 'width': 14, 'height': 35, 'color': 'yellow'},
-            {'label': 'Zone 2', 'x': 83, 'y': 63, 'width': 17, 'height': 20, 'color': 'orange'},
-            {'label': 'Zone 3', 'x': 83, 'y': 17, 'width': 17, 'height': 20, 'color': 'orange'}
+            # Mirror original: x = 66 --> x = 100 - 66 - 14 = 20
+            {'label': 'Zone 1', 'x': 20, 'y': 33, 'width': 14, 'height': 35, 'color': 'yellow'},
+
+            # Mirror original: x = 83 --> x = 100 - 83 - 17 = 0
+            {'label': 'Zone 2', 'x': 0, 'y': 63, 'width': 17, 'height': 20, 'color': 'orange'},
+
+            # Mirror original: x = 83 --> x = 100 - 83 - 17 = 0
+            {'label': 'Zone 3', 'x': 0, 'y': 17, 'width': 17, 'height': 20, 'color': 'orange'}
         ]
 
         for zone in assist_zones:
