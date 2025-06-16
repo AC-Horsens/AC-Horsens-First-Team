@@ -1387,7 +1387,7 @@ def Dashboard():
         })
 
         # --- Merge assist and danger zone dataframes ---
-        full_df = difference_df.merge(dangerzone_df, on='team', how='outer')
+        full_df = difference_df.merge(dangerzone_df, on='Team', how='outer')
 
         # --- Show summary table ---
         st.subheader("Assist Zone & Dangerzone Action Summary")
@@ -1507,7 +1507,7 @@ def Dashboard():
         })
 
         # --- Merge assist and danger zone dataframes ---
-        full_df = difference_df.merge(dangerzone_df, on='team', how='outer')
+        full_df = difference_df.merge(dangerzone_df, on='Team', how='outer')
 
         # --- Show summary table ---
         st.subheader("Assist Zone & Dangerzone Action Summary")
@@ -1731,7 +1731,7 @@ def Dashboard():
 
         # --- Create base difference_df ---
         difference_df = pd.DataFrame({
-            'team': ['Horsens', 'Opponents'],
+            'Team': ['Horsens', 'Opponents'],
             'Assist zone actions': [horsens_az, opponent_az],
             'AZ difference': [horsens_az - opponent_az, opponent_az - horsens_az]
         })
@@ -1757,13 +1757,13 @@ def Dashboard():
 
         # --- Create danger zone df and merge ---
         dangerzone_df = pd.DataFrame({
-            'team': ['Horsens', 'Opponents'],
+            'Team': ['Horsens', 'Opponents'],
             'Dangerzone actions': [horsens_dz, opponent_dz],
             'DZ difference': [horsens_dz - opponent_dz, opponent_dz - horsens_dz]
         })
 
         # --- Merge assist and danger zone dataframes ---
-        full_df = difference_df.merge(dangerzone_df, on='team', how='outer')
+        full_df = difference_df.merge(dangerzone_df, on='Team', how='outer')
 
         # --- Show summary table ---
         st.subheader("Assist Zone & Dangerzone Action Summary")
