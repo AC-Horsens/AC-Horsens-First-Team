@@ -1040,6 +1040,15 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         'Classic striker': Classic_striker(),
     }
 
+def plot_heatmap_location(data):
+    pitch = Pitch(pitch_type='opta', line_zorder=2, pitch_color='grass', line_color='white')
+    fig, ax = pitch.draw(figsize=(6.6, 4.125))
+    fig.set_facecolor('#22312b')
+    bin_statistic = pitch.bin_statistic(data['x'], data['y'], statistic='count', bins=(50, 25))
+    bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
+    pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot')
+    st.pyplot(fig)
+
 df_xA = load_xA()
 df_pv = load_pv_all()
 df_match_stats = load_match_stats()
@@ -1319,18 +1328,7 @@ def Dashboard():
 
         elif vis_type == "Heatmap":
             # Use hexbin for a simple heatmap of locations
-            hb = ax.hexbin(
-                transitions_starts['x'],
-                transitions_starts['y'],
-                gridsize=30,
-                extent=(0, 100, 0, 100),  # OPTA pitch scale
-                cmap='hot',
-                bins='log',
-                alpha=0.8
-            )
-            fig.colorbar(hb, ax=ax)
-
-        st.pyplot(fig)
+            plot_heatmap_location(transitions_starts)
 
 
     def Defending():
