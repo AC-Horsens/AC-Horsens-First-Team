@@ -1479,7 +1479,7 @@ def Dashboard():
 
         # Define and draw the assist zones
         assist_zones = [
-            {'label': 'Zone 1', 'x': 66, 'y': 33, 'width': 25, 'height': 20, 'color': 'yellow'},
+            {'label': 'Zone 1', 'x': 66, 'y': 33, 'width': 14, 'height': 35, 'color': 'yellow'},
             {'label': 'Zone 2', 'x': 83, 'y': 63, 'width': 17, 'height': 20, 'color': 'orange'},
             {'label': 'Zone 3', 'x': 83, 'y': 17, 'width': 17, 'height': 20, 'color': 'orange'}
         ]
