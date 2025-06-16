@@ -1494,7 +1494,7 @@ def Dashboard():
         ]
         assist_zones.append({
             'label': 'Dangerzone',
-            'x': 85,
+            'x': 86,
             'y': 37.5,
             'width': 15,
             'height': 25,
@@ -1503,8 +1503,8 @@ def Dashboard():
         for zone in assist_zones:
             rect = Rectangle(
                 (zone['x'], zone['y']),
-                zone['width'],  # width along x
-                zone['height'],  # height along y
+                zone['width'],
+                zone['height'],
                 edgecolor='black',
                 facecolor=zone['color'],
                 alpha=0.4,
@@ -1518,6 +1518,36 @@ def Dashboard():
                 ha='center', va='center',
                 fontsize=10, color='black', weight='bold'
             )
+
+        # Draw trapezoidal Dangerzone (from goalposts outward)
+        from matplotlib.patches import Polygon
+
+        danger_zone_poly = [
+            [100, 44],     # Right goalpost
+            [100, 56],     # Left goalpost
+            [85, 62.5],    # Top outside edge
+            [85, 37.5]     # Bottom outside edge
+        ]
+
+        danger_polygon = Polygon(
+            danger_zone_poly,
+            closed=True,
+            edgecolor='black',
+            facecolor='red',
+            alpha=0.4,
+            linewidth=2
+        )
+        ax.add_patch(danger_polygon)
+
+        # Add label for the danger zone
+        ax.text(
+            92, 50,
+            'Dangerzone',
+            ha='center', va='center',
+            fontsize=10,
+            color='white',
+            weight='bold'
+        )
 
         st.pyplot(fig)
     def set_pieces():
