@@ -1057,8 +1057,15 @@ classic_striker_df = position_dataframes['Classic striker']
 
 def Dashboard():
     df_possession = load_possession_data()
-    df_transitions = load_transitions_data()
     df_set_pieces = load_set_piece_data()
+    df_transitions = load_transitions_data()
+    excluded_ids = pd.concat(
+        df_set_pieces[['id']]
+    )['id'].dropna().unique()
+
+    # Filter df_possession to keep only rows not in the excluded_ids
+    df_transitions = df_transitions[~df_transitions['id'].isin(excluded_ids)]
+
     # Standardisér team_name og match_state
     for df in [df_possession, df_transitions, df_set_pieces]:
         df['team_name'] = df['team_name'].apply(lambda x: x if x == 'Horsens' else 'Opponent')
