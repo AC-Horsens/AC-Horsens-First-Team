@@ -83,25 +83,11 @@ def load_xA():
     return df_xA
 
 @st.cache_data
-def counterpressing():
-    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/Horsens/Horsens_counterpressing.csv'
-    df_counterpressing = pd.read_csv(url)
-    df_counterpressing['label'] = (df_counterpressing['label'] + ' ' + df_counterpressing['date']).astype(str)
-    return df_counterpressing
-
-@st.cache_data
 def load_ppda():
     url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/ppda_all%20DNK_1_Division_2024_2025.csv'
     df_ppda = pd.read_csv(url)
     df_ppda['label'] = (df_ppda['label'] + ' ' + df_ppda['date']).astype(str)
     return df_ppda
-
-@st.cache_data
-def load_crosses():
-    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/Horsens/Horsens_crosses.csv'
-    df_crosses = pd.read_csv(url)
-    df_crosses['label'] = (df_crosses['label'] + ' ' + df_crosses['date']).astype(str)
-    return df_crosses
 
 @st.cache_data
 def load_pv_all():
@@ -1283,7 +1269,6 @@ def Dashboard():
 
         return team_summary, player_summary
 
-
     def plot_transitions(transitions_starts, vis_type):
         pitch = Pitch(pitch_type='opta', pitch_color='grass', line_color='white', line_zorder=2)
         fig, ax = pitch.draw(figsize=(10, 7))
@@ -1310,7 +1295,6 @@ def Dashboard():
 
         elif vis_type == "Heatmap":
             plot_heatmap_location(transitions_starts)
-
 
     def transitions():
         # Load and show cached summary stats
@@ -1346,7 +1330,8 @@ def Dashboard():
         percentage_central = (central_count / total_transitions * 100) if total_transitions > 0 else 0
 
         st.markdown(f"**Transitions startet i transition start zone:** {central_count} ud af {total_transitions} "
-                    f"({percentage_central:.1f}%)")    
+                    f"({percentage_central:.1f}%)")
+        
     def Defending():
         df_opponent = df_possession[
             (df_possession['team_name'] == 'Opponent') & 
