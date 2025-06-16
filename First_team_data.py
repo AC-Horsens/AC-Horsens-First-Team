@@ -1468,7 +1468,7 @@ def Dashboard():
         )
 
         assist_zone_possessions = df_transitions[zone1_mask]
-
+        st.dataframe(assist_zone_possessions)
         # --- Count assist zone actions ---
         assist_zone_counts = assist_zone_possessions.groupby('team_name')['id'].count().reset_index(name='Assist zone actions')
 
