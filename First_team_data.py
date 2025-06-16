@@ -1316,7 +1316,7 @@ def Dashboard():
 
         st.pyplot(fig)
 
-    def team_mentality_score():
+    def Defending():
         df_opponent = df_possession[
             (df_possession['team_name'] == 'Opponent') & 
             (df_possession['x'] > 75) & 
@@ -1393,7 +1393,6 @@ def Dashboard():
 
         st.plotly_chart(fig, use_container_width=True)
 
-    def defensive_line_data():
         def_line = load_def_line_data()
         labels_df = df_possession[['match_id','date', 'label']].drop_duplicates()
         states_df = df_possession[['match_id','date','label', 'contestantId', 'timeMin', 'timeSec', 'match_state']]
@@ -1542,8 +1541,7 @@ def Dashboard():
         st.dataframe(Throw_ins)
 
     Data_types = {
-        'Team mentality score': team_mentality_score,
-        'Defensive line': defensive_line_data,
+        'Defending': Defending,
         'Set pieces': set_pieces,
         'Transitions': transitions
     }
