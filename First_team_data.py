@@ -1286,35 +1286,52 @@ def Dashboard():
             (df_transitions['team_name'] == 'Horsens') &
             (df_transitions['sequence_duration'] > 1)
         ]        
-        pitch = Pitch(pitch_type='opta',pitch_color='grass',line_color='white', line_zorder=2)
+        vis_type = st.selectbox("Choose visualization type", ["Pitch Scatter", "Heatmap"])
+
+        pitch = Pitch(pitch_type='opta', pitch_color='grass', line_color='white', line_zorder=2)
         fig, ax = pitch.draw(figsize=(10, 7))
 
-        # Normalize xG to scale marker size — avoid overly small or huge dots
-        size_scale = transitions_starts['sequence_xG'].fillna(0) * 500
+        if vis_type == "Pitch Scatter":
+            # Normalize xG to scale marker size
+            size_scale = transitions_starts['sequence_xG'].fillna(0) * 500
 
-        # Plot yellow dots
-        scatter = pitch.scatter(
-            transitions_starts['x'], transitions_starts['y'],
-            ax=ax,
-            s=size_scale,
-            color='yellow',
-            edgecolors='black',
-            alpha=0.7
-        )
-
-        # Add annotations: name + xG
-        for _, row in transitions_starts.iterrows():
-            pitch.annotate(
-                f"{row['playerName']} ({row['sequence_xG']:.2f})",
-                xy=(row['x'], row['y']),
+            # Scatter plot
+            scatter = pitch.scatter(
+                transitions_starts['x'], transitions_starts['y'],
                 ax=ax,
-                fontsize=8,
-                ha='center',
-                va='bottom',
-                color='black'
+                s=size_scale,
+                color='yellow',
+                edgecolors='black',
+                alpha=0.7
             )
 
+            # Add playerName + xG annotations
+            for _, row in transitions_starts.iterrows():
+                pitch.annotate(
+                    f"{row['playerName']} ({row['sequence_xG']:.2f})",
+                    xy=(row['x'], row['y']),
+                    ax=ax,
+                    fontsize=8,
+                    ha='center',
+                    va='bottom',
+                    color='black'
+                )
+
+        elif vis_type == "Heatmap":
+            # Use hexbin for a simple heatmap of locations
+            hb = ax.hexbin(
+                transitions_starts['x'],
+                transitions_starts['y'],
+                gridsize=30,
+                extent=(0, 100, 0, 100),  # OPTA pitch scale
+                cmap='hot',
+                bins='log',
+                alpha=0.8
+            )
+            fig.colorbar(hb, ax=ax)
+
         st.pyplot(fig)
+
 
     def Defending():
         df_opponent = df_possession[
