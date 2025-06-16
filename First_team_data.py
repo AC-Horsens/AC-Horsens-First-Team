@@ -10,6 +10,8 @@ from scipy.ndimage import gaussian_filter
 from datetime import datetime
 from mplsoccer import Pitch, VerticalPitch
 from datetime import datetime, timedelta
+from matplotlib.patches import Rectangle
+
 
 st.set_page_config(layout='wide')
 
@@ -1472,21 +1474,36 @@ def Dashboard():
         col1, col2 = st.columns(2)
         col1.metric("Horsens - Assist Zone Actions", len(horsens_actions))
         col2.metric("Opponents - Assist Zone Actions Against", len(opponent_actions))
+        pitch = Pitch(pitch_type='opta', pitch_color='grass', line_color='white')
+        fig, ax = pitch.draw(figsize=(10, 7))
 
-        # Label zones for breakdown
-        assist_zone_possessions = assist_zone_possessions.copy()
-        assist_zone_possessions['zone'] = np.select(
-            [zone1_mask, zone2_mask, zone3_mask],
-            ['Zone 1 (66–80, 40–60)', 'Zone 2 (>83, 63–83)', 'Zone 3 (>83, 17–37)'],
-            default='Other'
-        )
+        # Define and draw the assist zones
+        assist_zones = [
+            {'label': 'Zone 1', 'x': 66, 'y': 40, 'width': 14, 'height': 20, 'color': 'yellow'},
+            {'label': 'Zone 2', 'x': 83, 'y': 63, 'width': 17, 'height': 20, 'color': 'orange'},
+            {'label': 'Zone 3', 'x': 83, 'y': 17, 'width': 17, 'height': 20, 'color': 'orange'}
+        ]
 
-        # Group by zone and team
-        zone_breakdown = assist_zone_possessions.groupby(['zone', 'team_name']).size().unstack(fill_value=0).reset_index()
+        for zone in assist_zones:
+            rect = Rectangle(
+                (zone['x'], zone['y']),
+                zone['width'],  # width along x
+                zone['height'],  # height along y
+                edgecolor='black',
+                facecolor=zone['color'],
+                alpha=0.4,
+                linewidth=2
+            )
+            ax.add_patch(rect)
+            ax.text(
+                zone['x'] + zone['width'] / 2,
+                zone['y'] + zone['height'] / 2,
+                zone['label'],
+                ha='center', va='center',
+                fontsize=10, color='black', weight='bold'
+            )
 
-        st.write("Breakdown by Zone and Team")
-        st.dataframe(zone_breakdown)
-
+        st.pyplot(fig)
     def set_pieces():
         df_set_pieces = load_set_piece_data()
         df_set_pieces = df_set_pieces.fillna(0)
