@@ -10,7 +10,7 @@ from scipy.ndimage import gaussian_filter
 from datetime import datetime
 from mplsoccer import Pitch, VerticalPitch
 from datetime import datetime, timedelta
-from matplotlib.patches import Rectangle
+from matplotlib.patches import Rectangle, Polygon
 from matplotlib.path import Path
 
 
@@ -1555,6 +1555,7 @@ def Dashboard():
 
         # Display the full figure
         st.pyplot(fig)
+        
     def set_pieces():
         df_set_pieces = load_set_piece_data()
         df_set_pieces = df_set_pieces.fillna(0)
