@@ -1268,53 +1268,33 @@ def Dashboard():
     st.subheader("Team Summary (Per 90 Minutes)")
     st.dataframe(per90_df, hide_index=True, use_container_width=True)
 
-    def transitions():
+    @st.cache_data
+    def get_transition_summaries(df_transitions):
         goals = df_transitions[df_transitions['typeId'] == 16]
         goals_per_player = goals.groupby('playerName').size().reset_index(name='goals')
 
-        # Summer øvrige offensive stats
         summary = df_transitions.groupby(['playerName','team_name'])[['assist', 'sequence_xG', '321.0', '322.0']].sum().reset_index()
         summary = summary.rename(columns={'321.0':'xG','322.0': 'Post shot xG'})
-        # Merge
         summary = summary.merge(goals_per_player, on='playerName', how='left')
         summary['goals'] = summary['goals'].fillna(0).astype(int)
 
-        team_summary = summary.groupby('team_name')[['xG','Post shot xG','goals']].sum().reset_index()
-        team_summary = team_summary.round(2)
-        st.subheader("Team Offensive transitions Summary")
-        st.dataframe(team_summary,hide_index=True)
-        # Vis
-        st.subheader("Player Offensive transitions Summary")
-        summary = summary.round(2)
-        horsens_summary = summary[summary['team_name'] == 'Horsens']
-        st.dataframe(horsens_summary.sort_values(['goals','xG'], ascending=False),hide_index=True)
+        team_summary = summary.groupby('team_name')[['xG','Post shot xG','goals']].sum().reset_index().round(2)
+        player_summary = summary.round(2)
 
-        st.subheader('Transition starts')
-        transitions_starts = df_transitions[
-            (df_transitions['possession_index'] == 1) & 
-            (df_transitions['team_name'] == 'Horsens') &
-            (df_transitions['sequence_duration'] > 1)
-        ]        
-        vis_type = st.selectbox("Choose visualization type", ["Pitch Scatter", "Heatmap"])
+        return team_summary, player_summary
 
+
+    def plot_transitions(transitions_starts, vis_type):
         pitch = Pitch(pitch_type='opta', pitch_color='grass', line_color='white', line_zorder=2)
         fig, ax = pitch.draw(figsize=(10, 7))
 
         if vis_type == "Pitch Scatter":
-            # Normalize xG to scale marker size
             size_scale = transitions_starts['sequence_xG'].fillna(0) * 500
-
-            # Scatter plot
-            scatter = pitch.scatter(
+            pitch.scatter(
                 transitions_starts['x'], transitions_starts['y'],
-                ax=ax,
-                s=size_scale,
-                color='yellow',
-                edgecolors='black',
-                alpha=0.7
+                ax=ax, s=size_scale, color='yellow', edgecolors='black', alpha=0.7
             )
 
-            # Add playerName + xG annotations
             for _, row in transitions_starts.iterrows():
                 pitch.annotate(
                     f"{row['playerName']} ({row['sequence_xG']:.2f})",
@@ -1325,28 +1305,48 @@ def Dashboard():
                     va='bottom',
                     color='black'
                 )
+
             st.pyplot(fig)
 
         elif vis_type == "Heatmap":
-            # Use hexbin for a simple heatmap of locations
             plot_heatmap_location(transitions_starts)
+
+
+    def transitions():
+        # Load and show cached summary stats
+        team_summary, player_summary = get_transition_summaries(df_transitions)
+
+        st.subheader("Team Offensive transitions Summary")
+        st.dataframe(team_summary, hide_index=True)
+
+        st.subheader("Player Offensive transitions Summary")
+        horsens_summary = player_summary[player_summary['team_name'] == 'Horsens']
+        st.dataframe(horsens_summary.sort_values(['goals','xG'], ascending=False), hide_index=True)
+
+        # Transition starts visualization (only reruns below here on selectbox change)
+        st.subheader('Transition starts')
+
+        transitions_starts = df_transitions[
+            (df_transitions['possession_index'] == 1) & 
+            (df_transitions['team_name'] == 'Horsens') &
+            (df_transitions['sequence_duration'] > 1)
+        ]
+
+        vis_type = st.selectbox("Choose visualization type", ["Pitch Scatter", "Heatmap"])
+        plot_transitions(transitions_starts, vis_type)
+
+        # Central corridor analysis
         central_corridor_mask = (
             (transitions_starts['x'] >= 30) & (transitions_starts['x'] <= 70) &
             (transitions_starts['y'] >= 20) & (transitions_starts['y'] <= 80)
         )
-
-        # Count how many transitions fall in that area
         central_transitions = transitions_starts[central_corridor_mask]
-
-        # Calculate percentage
         total_transitions = len(transitions_starts)
         central_count = len(central_transitions)
         percentage_central = (central_count / total_transitions * 100) if total_transitions > 0 else 0
 
-        # Display
-        st.markdown(f"**Transitions startet in transition start zone:** {central_count} out of {total_transitions} "
-                    f"({percentage_central:.1f}%)")
-
+        st.markdown(f"**Transitions startet i transition start zone:** {central_count} ud af {total_transitions} "
+                    f"({percentage_central:.1f}%)")    
     def Defending():
         df_opponent = df_possession[
             (df_possession['team_name'] == 'Opponent') & 
