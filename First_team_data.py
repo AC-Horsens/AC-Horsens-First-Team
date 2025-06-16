@@ -1282,10 +1282,10 @@ def Dashboard():
         df_transitions['date'] = pd.to_datetime(df_transitions['date'])
 
         # --- STEP 1: Remove set pieces by possessionId ---
-        set_piece_keys = df_set_pieces[['label', 'date', 'possessionId', 'team_name']].drop_duplicates()
+        set_piece_keys = df_set_pieces[['id']].drop_duplicates()
         df_no_set_pieces = df_possession.merge(
             set_piece_keys,
-            on=['label', 'date', 'possessionId', 'team_name'],
+            on=['id'],
             how='left',
             indicator=True
         ).query("_merge == 'left_only'").drop(columns="_merge")
