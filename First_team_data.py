@@ -1461,6 +1461,7 @@ def Dashboard():
         st.dataframe(horsens_summary.sort_values(['goals','xG'], ascending=False), hide_index=True)
 
     def transitions():
+        st.dataframe(df_transitions)
         zone1_mask = (
             ((df_transitions['x'] >= 66) & (df_transitions['x'] <= 80) & (df_transitions['y'] >= 40) & (df_transitions['y'] <= 60)) |
             ((df_transitions['x'] > 83) & (df_transitions['y'] >= 63) & (df_transitions['y'] <= 83)) |
