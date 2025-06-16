@@ -1497,7 +1497,7 @@ def Dashboard():
         dangerzone_actions = df_transitions[inside_dangerzone]
 
         # --- Count danger zone actions ---
-        dangerzone_counts = dangerzone_actions.groupby('team_name')['id'].count().reset_index(name='Dangerzone actions')
+        dangerzone_counts = dangerzone_actions.groupby('team_name').size().reset_index(name='Dangerzone actions')
 
         horsens_dz = dangerzone_counts.loc[dangerzone_counts['team_name'] == 'Horsens', 'Dangerzone actions'].sum()
         opponent_dz = dangerzone_counts.loc[dangerzone_counts['team_name'] != 'Horsens', 'Dangerzone actions'].sum()
