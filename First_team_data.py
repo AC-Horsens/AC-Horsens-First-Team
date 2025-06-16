@@ -1549,13 +1549,13 @@ def Dashboard():
             'Dangerzone',
             ha='center', va='center',
             fontsize=10,
-            color='white',
+            color='black',
             weight='bold'
         )
 
         # Display the full figure
         st.pyplot(fig)
-        
+
     def set_pieces():
         df_set_pieces = load_set_piece_data()
         df_set_pieces = df_set_pieces.fillna(0)
