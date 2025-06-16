@@ -1058,9 +1058,9 @@ classic_striker_df = position_dataframes['Classic striker']
 def Dashboard():
     df_possession = load_possession_data()
     df_transitions = load_transitions_data()
-
+    df_set_pieces = load_set_piece_data()
     # Standardisér team_name og match_state
-    for df in [df_possession, df_transitions]:
+    for df in [df_possession, df_transitions, df_set_pieces]:
         df['team_name'] = df['team_name'].apply(lambda x: x if x == 'Horsens' else 'Opponent')
         df['match_state'] = df['match_state'].apply(lambda x: x if x == 'Horsens' or x == 'draw' else 'Opponent')
 
@@ -1093,6 +1093,7 @@ def Dashboard():
 
     df_transitions = df_transitions[df_transitions['label'].isin(match_choice)]
     df_possession = df_possession[df_possession['label'].isin(match_choice)]
+    df_set_pieces = df_set_pieces[df_set_pieces['label'].isin(match_choice)]
     df_possession = df_possession.sort_values(by=['date','timeMin', 'timeSec'])  # Sort the events by time
     df_possession['timeMin'] = df_possession['timeMin'].astype(float)
     
@@ -1274,6 +1275,42 @@ def Dashboard():
 
         return team_summary, player_summary
 
+    def get_breakthrough_summaries(df_possession):
+        # Load set piece data
+        df_set_pieces = load_set_piece_data()
+
+        # --- STEP 1: Remove set pieces by possessionId ---
+        set_piece_keys = df_set_pieces[['label', 'date', 'possessionId', 'team_name']].drop_duplicates()
+        df_no_set_pieces = df_possession.merge(
+            set_piece_keys,
+            on=['label', 'date', 'possessionId', 'team_name'],
+            how='left',
+            indicator=True
+        ).query("_merge == 'left_only'").drop(columns="_merge")
+
+        # --- STEP 2: Remove transitions by sequenceId ---
+        transition_keys = df_transitions[['label', 'date', 'sequenceId', 'team_name']].drop_duplicates()
+        df_open_play = df_no_set_pieces.merge(
+            transition_keys,
+            on=['label', 'date', 'sequenceId', 'team_name'],
+            how='left',
+            indicator=True
+        ).query("_merge == 'left_only'").drop(columns="_merge")
+
+        # --- Continue as before ---
+        goals = df_open_play[df_open_play['typeId'] == 16]
+        goals_per_player = goals.groupby('playerName').size().reset_index(name='goals')
+
+        summary = df_open_play.groupby(['playerName', 'team_name'])[['assist', 'sequence_xG', '321.0', '322.0']].sum().reset_index()
+        summary = summary.rename(columns={'321.0': 'xG', '322.0': 'Post shot xG'})
+        summary = summary.merge(goals_per_player, on='playerName', how='left')
+        summary['goals'] = summary['goals'].fillna(0).astype(int)
+
+        team_summary = summary.groupby('team_name')[['xG', 'Post shot xG', 'goals']].sum().reset_index().round(2)
+        player_summary = summary.round(2)
+
+        return team_summary, player_summary
+
     def plot_transitions(transitions_starts, vis_type):
         pitch = Pitch(pitch_type='opta', pitch_color='grass', line_color='white', line_zorder=2)
         fig, ax = pitch.draw(figsize=(10, 7))
@@ -1301,7 +1338,237 @@ def Dashboard():
         elif vis_type == "Heatmap":
             plot_heatmap_location(transitions_starts)
 
+    def Breakthrough():
+        zone1_mask = (
+            ((df_possession['x'] >= 66) & (df_possession['x'] <= 80) & (df_possession['y'] >= 40) & (df_possession['y'] <= 60)) |
+            ((df_possession['x'] > 83) & (df_possession['y'] >= 63) & (df_possession['y'] <= 83)) |
+            ((df_possession['x'] > 83) & (df_possession['y'] >= 17) & (df_possession['y'] <= 37))
+        )
+
+        assist_zone_possessions = df_possession[zone1_mask]
+
+        # --- Count assist zone actions ---
+        assist_zone_counts = assist_zone_possessions.groupby('team_name')['id'].count().reset_index(name='Assist zone actions')
+
+        horsens_az = assist_zone_counts.loc[assist_zone_counts['team_name'] == 'Horsens', 'Assist zone actions'].sum()
+        opponent_az = assist_zone_counts.loc[assist_zone_counts['team_name'] != 'Horsens', 'Assist zone actions'].sum()
+
+        # --- Create base difference_df ---
+        difference_df = pd.DataFrame({
+            'Team': ['Horsens', 'Opponents'],
+            'Assist zone actions': [horsens_az, opponent_az],
+            'AZ difference': [horsens_az - opponent_az, opponent_az - horsens_az]
+        })
+
+        # --- Danger zone polygon setup ---
+        danger_zone_poly = [
+            (100, 44),     # Right goalpost
+            (100, 56),     # Left goalpost
+            (85, 62.5),    # Top outer
+            (85, 37.5)     # Bottom outer
+        ]
+
+        danger_path = Path(danger_zone_poly)
+        positions = df_possession[['x', 'y']].to_numpy()
+        inside_dangerzone = danger_path.contains_points(positions)
+        dangerzone_actions = df_possession[inside_dangerzone]
+
+        # --- Count danger zone actions ---
+        dangerzone_counts = dangerzone_actions.groupby('team_name')['id'].count().reset_index(name='Dangerzone actions')
+
+        horsens_dz = dangerzone_counts.loc[dangerzone_counts['team_name'] == 'Horsens', 'Dangerzone actions'].sum()
+        opponent_dz = dangerzone_counts.loc[dangerzone_counts['team_name'] != 'Horsens', 'Dangerzone actions'].sum()
+
+        # --- Create danger zone df and merge ---
+        dangerzone_df = pd.DataFrame({
+            'Team': ['Horsens', 'Opponents'],
+            'Dangerzone actions': [horsens_dz, opponent_dz],
+            'DZ difference': [horsens_dz - opponent_dz, opponent_dz - horsens_dz]
+        })
+
+        # --- Merge assist and danger zone dataframes ---
+        full_df = difference_df.merge(dangerzone_df, on='team', how='outer')
+
+        # --- Show summary table ---
+        st.subheader("Assist Zone & Dangerzone Action Summary")
+        st.dataframe(full_df, hide_index=True)
+
+        # --- Draw pitch with assist + danger zones ---
+        pitch = Pitch(pitch_type='opta', pitch_color='grass', line_color='white', half=True)
+        fig, ax = pitch.draw(figsize=(6, 9))
+
+        # Draw assist zones
+        assist_zones = [
+            {'label': 'Assistzone', 'x': 66, 'y': 33, 'width': 14, 'height': 35, 'color': 'yellow'},
+            {'label': 'Assistzone', 'x': 83, 'y': 63, 'width': 17, 'height': 20, 'color': 'yellow'},
+            {'label': 'Assistzone', 'x': 83, 'y': 17, 'width': 17, 'height': 20, 'color': 'yellow'}
+        ]
+
+        for zone in assist_zones:
+            rect = Rectangle(
+                (zone['x'], zone['y']),
+                zone['width'],
+                zone['height'],
+                edgecolor='black',
+                facecolor=zone['color'],
+                alpha=0.4,
+                linewidth=2
+            )
+            ax.add_patch(rect)
+            ax.text(
+                zone['x'] + zone['width'] / 2,
+                zone['y'] + zone['height'] / 2,
+                zone['label'],
+                ha='center', va='center',
+                fontsize=10,
+                color='black',
+                weight='bold'
+            )
+
+        # Draw trapezoidal danger zone
+        danger_polygon = Polygon(
+            danger_zone_poly,
+            closed=True,
+            edgecolor='black',
+            facecolor='red',
+            alpha=0.4,
+            linewidth=2
+        )
+        ax.add_patch(danger_polygon)
+
+        # Add label for dangerzone
+        ax.text(
+            92, 50,
+            'Dangerzone',
+            ha='center', va='center',
+            fontsize=10,
+            color='black',
+            weight='bold'
+        )
+
+        # Display the full figure
+        st.pyplot(fig)
+
+        team_summary, player_summary = get_breakthrough_summaries(df_possession)
+
+        st.subheader("Team Offensive transitions Summary")
+        st.dataframe(team_summary, hide_index=True)
+
+        st.subheader("Player Offensive transitions Summary")
+        horsens_summary = player_summary[player_summary['team_name'] == 'Horsens']
+        st.dataframe(horsens_summary.sort_values(['goals','xG'], ascending=False), hide_index=True)
+
     def transitions():
+        zone1_mask = (
+            ((df_transitions['x'] >= 66) & (df_transitions['x'] <= 80) & (df_transitions['y'] >= 40) & (df_transitions['y'] <= 60)) |
+            ((df_transitions['x'] > 83) & (df_transitions['y'] >= 63) & (df_transitions['y'] <= 83)) |
+            ((df_transitions['x'] > 83) & (df_transitions['y'] >= 17) & (df_transitions['y'] <= 37))
+        )
+
+        assist_zone_possessions = df_transitions[zone1_mask]
+
+        # --- Count assist zone actions ---
+        assist_zone_counts = assist_zone_possessions.groupby('team_name')['id'].count().reset_index(name='Assist zone actions')
+
+        horsens_az = assist_zone_counts.loc[assist_zone_counts['team_name'] == 'Horsens', 'Assist zone actions'].sum()
+        opponent_az = assist_zone_counts.loc[assist_zone_counts['team_name'] != 'Horsens', 'Assist zone actions'].sum()
+
+        # --- Create base difference_df ---
+        difference_df = pd.DataFrame({
+            'Team': ['Horsens', 'Opponents'],
+            'Transition Assist zone actions': [horsens_az, opponent_az],
+            'Transition AZ difference': [horsens_az - opponent_az, opponent_az - horsens_az]
+        })
+
+        # --- Danger zone polygon setup ---
+        danger_zone_poly = [
+            (100, 44),     # Right goalpost
+            (100, 56),     # Left goalpost
+            (85, 62.5),    # Top outer
+            (85, 37.5)     # Bottom outer
+        ]
+
+        danger_path = Path(danger_zone_poly)
+        positions = df_transitions[['x', 'y']].to_numpy()
+        inside_dangerzone = danger_path.contains_points(positions)
+        dangerzone_actions = df_transitions[inside_dangerzone]
+
+        # --- Count danger zone actions ---
+        dangerzone_counts = dangerzone_actions.groupby('team_name')['id'].count().reset_index(name='Dangerzone actions')
+
+        horsens_dz = dangerzone_counts.loc[dangerzone_counts['team_name'] == 'Horsens', 'Dangerzone actions'].sum()
+        opponent_dz = dangerzone_counts.loc[dangerzone_counts['team_name'] != 'Horsens', 'Dangerzone actions'].sum()
+
+        # --- Create danger zone df and merge ---
+        dangerzone_df = pd.DataFrame({
+            'Team': ['Horsens', 'Opponents'],
+            'Transition Dangerzone actions': [horsens_dz, opponent_dz],
+            'Transition DZ difference': [horsens_dz - opponent_dz, opponent_dz - horsens_dz]
+        })
+
+        # --- Merge assist and danger zone dataframes ---
+        full_df = difference_df.merge(dangerzone_df, on='team', how='outer')
+
+        # --- Show summary table ---
+        st.subheader("Assist Zone & Dangerzone Action Summary")
+        st.dataframe(full_df, hide_index=True)
+
+        # --- Draw pitch with assist + danger zones ---
+        pitch = Pitch(pitch_type='opta', pitch_color='grass', line_color='white', half=True)
+        fig, ax = pitch.draw(figsize=(6, 9))
+
+        # Draw assist zones
+        assist_zones = [
+            {'label': 'Assistzone', 'x': 66, 'y': 33, 'width': 14, 'height': 35, 'color': 'yellow'},
+            {'label': 'Assistzone', 'x': 83, 'y': 63, 'width': 17, 'height': 20, 'color': 'yellow'},
+            {'label': 'Assistzone', 'x': 83, 'y': 17, 'width': 17, 'height': 20, 'color': 'yellow'}
+        ]
+
+        for zone in assist_zones:
+            rect = Rectangle(
+                (zone['x'], zone['y']),
+                zone['width'],
+                zone['height'],
+                edgecolor='black',
+                facecolor=zone['color'],
+                alpha=0.4,
+                linewidth=2
+            )
+            ax.add_patch(rect)
+            ax.text(
+                zone['x'] + zone['width'] / 2,
+                zone['y'] + zone['height'] / 2,
+                zone['label'],
+                ha='center', va='center',
+                fontsize=10,
+                color='black',
+                weight='bold'
+            )
+
+        # Draw trapezoidal danger zone
+        danger_polygon = Polygon(
+            danger_zone_poly,
+            closed=True,
+            edgecolor='black',
+            facecolor='red',
+            alpha=0.4,
+            linewidth=2
+        )
+        ax.add_patch(danger_polygon)
+
+        # Add label for dangerzone
+        ax.text(
+            92, 50,
+            'Dangerzone',
+            ha='center', va='center',
+            fontsize=10,
+            color='black',
+            weight='bold'
+        )
+
+        # Display the full figure
+        st.pyplot(fig)
+
         # Load and show cached summary stats
         team_summary, player_summary = get_transition_summaries(df_transitions)
 
@@ -1673,6 +1940,7 @@ def Dashboard():
         st.dataframe(Throw_ins)
 
     Data_types = {
+        'Breakthrough':Breakthrough,
         'Defending': Defending,
         'Set pieces': set_pieces,
         'Transitions': transitions
