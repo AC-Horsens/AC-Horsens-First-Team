@@ -1447,33 +1447,22 @@ def Dashboard():
         # Define assist zone masks
         zone1_mask = (
             (df_possession['x'] >= 66) & (df_possession['x'] <= 80) &
-            (df_possession['y'] >= 40) & (df_possession['y'] <= 60)
-        )
-        zone2_mask = (
+            (df_possession['y'] >= 40) & (df_possession['y'] <= 60)|
             (df_possession['x'] > 83) &
-            (df_possession['y'] >= 63) & (df_possession['y'] <= 83)
-        )
-        zone3_mask = (
+            (df_possession['y'] >= 63) & (df_possession['y'] <= 83)|
             (df_possession['x'] > 83) &
             (df_possession['y'] >= 17) & (df_possession['y'] <= 37)
         )
 
         # Combine all assist zones
-        assist_zone_mask = zone1_mask | zone2_mask | zone3_mask
 
         # Filter for possession events in assist zones
-        assist_zone_possessions = df_possession[assist_zone_mask]
-
-        # Count actions by team
-        horsens_actions = assist_zone_possessions[df_possession['team_name'] == 'Horsens']
-        opponent_actions = assist_zone_possessions[df_possession['team_name'] != 'Horsens']
+        assist_zone_possessions = df_possession[zone1_mask]
 
         # Display summary
         st.subheader("Assist Zone Possession Actions")
-
-        col1, col2 = st.columns(2)
-        col1.metric("Horsens - Assist Zone Actions", len(horsens_actions))
-        col2.metric("Opponents - Assist Zone Actions Against", len(opponent_actions))
+        st.dataframe(assist_zone_possessions)
+        #assist_zone_possessions = assist_zone_possessions.groupby()
         pitch = Pitch(
             pitch_type='opta',
             pitch_color='grass',
