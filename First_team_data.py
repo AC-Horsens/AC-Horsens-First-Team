@@ -1059,11 +1059,9 @@ def Dashboard():
     df_possession = load_possession_data()
     df_set_pieces = load_set_piece_data()
     df_transitions = load_transitions_data()
-    excluded_ids = pd.concat(
-        df_set_pieces[['id']]
-    )['id'].dropna().unique()
+    excluded_ids = df_set_pieces['id'].dropna().unique()
 
-    # Filter df_possession to keep only rows not in the excluded_ids
+    # Remove transitions that are also in set pieces
     df_transitions = df_transitions[~df_transitions['id'].isin(excluded_ids)]
 
     # Standardisér team_name og match_state
