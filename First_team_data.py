@@ -225,7 +225,8 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
     
     df_scouting = calculate_match_xa(df_scouting)
 
-    df_scouting.fillna(0, inplace=True)
+    df_scouting[df_scouting.select_dtypes(include='number').columns] = \
+    df_scouting.select_dtypes(include='number').fillna(0)    
     squads['dateOfBirth'] = pd.to_datetime(squads['dateOfBirth'])
     today = datetime.today()
     squads['age_today'] = ((today - squads['dateOfBirth']).dt.days / 365.25).apply(np.floor)
@@ -280,7 +281,8 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
     df_scouting['possLost_per90'] = (df_scouting['possLostAll'].astype(float)/df_scouting['minsPlayed'].astype(float)) * 90
     df_scouting['Attempts conceded in box per 90'] = (df_scouting['attemptsConcededIbox'].astype(float)/df_scouting['minsPlayed'].astype(float)) * 90
 
-    df_scouting.fillna(0, inplace=True)
+    df_scouting[df_scouting.select_dtypes(include='number').columns] = \
+    df_scouting.select_dtypes(include='number').fillna(0)    
 
     def ball_playing_central_defender():
         df_spillende_stopper = df_scouting[(df_scouting['player_position'] == 'Defender') & (df_scouting['player_positionSide'].str.contains('Centre'))]
@@ -1422,7 +1424,7 @@ def Dashboard():
         # Merge on full key to get match_state
         def_line = def_line.merge(states_df, on=['match_id','date','label', 'contestantId', 'timeMin', 'timeSec'], how='left')
         def_line = def_line.sort_values(['date','timeMin','timeSec'])
-        def_line = def_line.fillna(method='ffill')
+        def_line = def_line.ffill()
 
 
         def_line = def_line[['match_id','label','team_name','date','contestantId','timeMin','timeSec','percent_succes','match_state']]
