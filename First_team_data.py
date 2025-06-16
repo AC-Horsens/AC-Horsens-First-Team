@@ -1453,10 +1453,10 @@ def Dashboard():
 
         team_summary, player_summary = get_breakthrough_summaries(df_possession)
 
-        st.subheader("Team Offensive transitions Summary")
+        st.subheader("Team Breakthrough Summary")
         st.dataframe(team_summary, hide_index=True)
 
-        st.subheader("Player Offensive transitions Summary")
+        st.subheader("Player Breakthrough Summary")
         horsens_summary = player_summary[player_summary['team_name'] == 'Horsens']
         st.dataframe(horsens_summary.sort_values(['goals','xG'], ascending=False), hide_index=True)
 
