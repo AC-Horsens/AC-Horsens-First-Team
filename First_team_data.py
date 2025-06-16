@@ -1325,6 +1325,7 @@ def Dashboard():
                     va='bottom',
                     color='black'
                 )
+            st.pyplot(fig)
 
         elif vis_type == "Heatmap":
             # Use hexbin for a simple heatmap of locations
