@@ -1460,7 +1460,6 @@ def Dashboard():
         assist_zone_possessions = df_possession[zone1_mask]
 
         # Display summary
-        st.subheader("Assist Zone Actions")
         assist_zone_counts = assist_zone_possessions.groupby('team_name')['id'].count().reset_index(name='Assist zone actions')
 
         # Extract counts
