@@ -1460,9 +1460,22 @@ def Dashboard():
         assist_zone_possessions = df_possession[zone1_mask]
 
         # Display summary
-        st.subheader("Assist Zone Possession Actions")
-        assist_zone_counts = assist_zone_possessions.groupby('team_name')['id'].count().reset_index(name='count')
-        st.dataframe(assist_zone_counts)
+        st.subheader("Assist Zone Actions")
+        assist_zone_counts = assist_zone_possessions.groupby('team_name')['id'].count().reset_index(name='Assist zone actions')
+
+        # Extract counts
+        horsens_count = assist_zone_counts.loc[assist_zone_counts['team_name'] == 'Horsens', 'Assist zone actions'].sum()
+        opponent_count = assist_zone_counts.loc[assist_zone_counts['team_name'] != 'Horsens', 'Assist zone actions'].sum()
+
+        # Create a DataFrame with both teams and their differences
+        difference_df = pd.DataFrame({
+            'team': ['Horsens', 'Opponents'],
+            'AZ difference': [horsens_count - opponent_count, opponent_count - horsens_count]
+        })
+
+        # Display
+        st.subheader("Assist Zone Action Differences")
+        st.dataframe(difference_df, hide_index=True)
 
         pitch = Pitch(
             pitch_type='opta',
