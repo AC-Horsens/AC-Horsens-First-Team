@@ -11,6 +11,7 @@ from datetime import datetime
 from mplsoccer import Pitch, VerticalPitch
 from datetime import datetime, timedelta
 from matplotlib.patches import Rectangle
+from matplotlib.path import Path
 
 
 st.set_page_config(layout='wide')
@@ -1446,47 +1447,64 @@ def Dashboard():
 
         # Define assist zone masks
         zone1_mask = (
-            (df_possession['x'] >= 66) & (df_possession['x'] <= 80) &
-            (df_possession['y'] >= 40) & (df_possession['y'] <= 60)|
-            (df_possession['x'] > 83) &
-            (df_possession['y'] >= 63) & (df_possession['y'] <= 83)|
-            (df_possession['x'] > 83) &
-            (df_possession['y'] >= 17) & (df_possession['y'] <= 37)
+            ((df_possession['x'] >= 66) & (df_possession['x'] <= 80) & (df_possession['y'] >= 40) & (df_possession['y'] <= 60)) |
+            ((df_possession['x'] > 83) & (df_possession['y'] >= 63) & (df_possession['y'] <= 83)) |
+            ((df_possession['x'] > 83) & (df_possession['y'] >= 17) & (df_possession['y'] <= 37))
         )
 
-        # Combine all assist zones
-
-        # Filter for possession events in assist zones
         assist_zone_possessions = df_possession[zone1_mask]
 
-        # Display summary
+        # --- Count assist zone actions ---
         assist_zone_counts = assist_zone_possessions.groupby('team_name')['id'].count().reset_index(name='Assist zone actions')
 
-        # Extract counts
-        horsens_count = assist_zone_counts.loc[assist_zone_counts['team_name'] == 'Horsens', 'Assist zone actions'].sum()
-        opponent_count = assist_zone_counts.loc[assist_zone_counts['team_name'] != 'Horsens', 'Assist zone actions'].sum()
+        horsens_az = assist_zone_counts.loc[assist_zone_counts['team_name'] == 'Horsens', 'Assist zone actions'].sum()
+        opponent_az = assist_zone_counts.loc[assist_zone_counts['team_name'] != 'Horsens', 'Assist zone actions'].sum()
 
-        # Create a DataFrame with both teams and their differences
+        # --- Create base difference_df ---
         difference_df = pd.DataFrame({
             'team': ['Horsens', 'Opponents'],
-            'Assist zone actions': [horsens_count, opponent_count],
-            'AZ difference': [horsens_count - opponent_count, opponent_count - horsens_count]
+            'Assist zone actions': [horsens_az, opponent_az],
+            'AZ difference': [horsens_az - opponent_az, opponent_az - horsens_az]
         })
 
-        # Display
-        st.subheader("Assist Zone Action Differences")
-        st.dataframe(difference_df, hide_index=True)
+        # --- Danger zone polygon setup ---
+        danger_zone_poly = [
+            (100, 44),     # Right goalpost
+            (100, 56),     # Left goalpost
+            (85, 62.5),    # Top outer
+            (85, 37.5)     # Bottom outer
+        ]
 
-        pitch = Pitch(
-            pitch_type='opta',
-            pitch_color='grass',
-            line_color='white',
-            half=True,
-        )
+        danger_path = Path(danger_zone_poly)
+        positions = df_possession[['x', 'y']].to_numpy()
+        inside_dangerzone = danger_path.contains_points(positions)
+        dangerzone_actions = df_possession[inside_dangerzone]
 
+        # --- Count danger zone actions ---
+        dangerzone_counts = dangerzone_actions.groupby('team_name')['id'].count().reset_index(name='Dangerzone actions')
+
+        horsens_dz = dangerzone_counts.loc[dangerzone_counts['team_name'] == 'Horsens', 'Dangerzone actions'].sum()
+        opponent_dz = dangerzone_counts.loc[dangerzone_counts['team_name'] != 'Horsens', 'Dangerzone actions'].sum()
+
+        # --- Create danger zone df and merge ---
+        dangerzone_df = pd.DataFrame({
+            'team': ['Horsens', 'Opponents'],
+            'Dangerzone actions': [horsens_dz, opponent_dz],
+            'DZ difference': [horsens_dz - opponent_dz, opponent_dz - horsens_dz]
+        })
+
+        # --- Merge assist and danger zone dataframes ---
+        full_df = difference_df.merge(dangerzone_df, on='team', how='outer')
+
+        # --- Show summary table ---
+        st.subheader("Assist Zone & Dangerzone Action Summary")
+        st.dataframe(full_df, hide_index=True)
+
+        # --- Draw pitch with assist + danger zones ---
+        pitch = Pitch(pitch_type='opta', pitch_color='grass', line_color='white', half=True)
         fig, ax = pitch.draw(figsize=(6, 9))
 
-        # Define and draw the assist zones
+        # Draw assist zones
         assist_zones = [
             {'label': 'Assistzone', 'x': 66, 'y': 33, 'width': 14, 'height': 35, 'color': 'yellow'},
             {'label': 'Assistzone', 'x': 83, 'y': 63, 'width': 17, 'height': 20, 'color': 'yellow'},
@@ -1509,19 +1527,12 @@ def Dashboard():
                 zone['y'] + zone['height'] / 2,
                 zone['label'],
                 ha='center', va='center',
-                fontsize=10, color='black', weight='bold'
+                fontsize=10,
+                color='black',
+                weight='bold'
             )
 
-        # Draw trapezoidal Dangerzone (from goalposts outward)
-        from matplotlib.patches import Polygon
-
-        danger_zone_poly = [
-            [100, 44],     # Right goalpost
-            [100, 56],     # Left goalpost
-            [85, 62.5],    # Top outside edge
-            [85, 37.5]     # Bottom outside edge
-        ]
-
+        # Draw trapezoidal danger zone
         danger_polygon = Polygon(
             danger_zone_poly,
             closed=True,
@@ -1532,16 +1543,17 @@ def Dashboard():
         )
         ax.add_patch(danger_polygon)
 
-        # Add label for the danger zone
+        # Add label for dangerzone
         ax.text(
             92, 50,
             'Dangerzone',
             ha='center', va='center',
             fontsize=10,
-            color='black',
+            color='white',
             weight='bold'
         )
 
+        # Display the full figure
         st.pyplot(fig)
     def set_pieces():
         df_set_pieces = load_set_piece_data()
