@@ -1277,7 +1277,9 @@ def Dashboard():
 
     def get_breakthrough_summaries(df_possession):
         # Load set piece data
-        df_set_pieces = load_set_piece_data()
+        df_possession['date'] = pd.to_datetime(df_possession['date'])
+        df_set_pieces['date'] = pd.to_datetime(df_set_pieces['date'])
+        df_transitions['date'] = pd.to_datetime(df_transitions['date'])
 
         # --- STEP 1: Remove set pieces by possessionId ---
         set_piece_keys = df_set_pieces[['label', 'date', 'possessionId', 'team_name']].drop_duplicates()
