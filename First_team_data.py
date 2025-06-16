@@ -1329,7 +1329,22 @@ def Dashboard():
         elif vis_type == "Heatmap":
             # Use hexbin for a simple heatmap of locations
             plot_heatmap_location(transitions_starts)
+        central_corridor_mask = (
+            (transitions_starts['x'] >= 30) & (transitions_starts['x'] <= 70) &
+            (transitions_starts['y'] >= 20) & (transitions_starts['y'] <= 80)
+        )
 
+        # Count how many transitions fall in that area
+        central_transitions = transitions_starts[central_corridor_mask]
+
+        # Calculate percentage
+        total_transitions = len(transitions_starts)
+        central_count = len(central_transitions)
+        percentage_central = (central_count / total_transitions * 100) if total_transitions > 0 else 0
+
+        # Display
+        st.markdown(f"**Transitions startet in transition start zone:** {central_count} out of {total_transitions} "
+                    f"({percentage_central:.1f}%)")
 
     def Defending():
         df_opponent = df_possession[
