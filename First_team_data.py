@@ -1518,7 +1518,7 @@ def Dashboard():
 
         # --- Draw pitch with assist + danger zones ---
         pitch = Pitch(pitch_type='opta', pitch_color='grass', line_color='white', half=True)
-        fig, ax = pitch.draw(figsize=(4, 6))
+        fig, ax = pitch.draw(figsize=(6, 9))
 
         # Draw assist zones
         assist_zones = [
@@ -1570,7 +1570,7 @@ def Dashboard():
         )
 
         # Display the full figure
-        st.pyplot(fig,clear_figure=False)
+        st.pyplot(fig)
 
         # Load and show cached summary stats
         team_summary, player_summary = get_transition_summaries(df_transitions)
