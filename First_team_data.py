@@ -1070,7 +1070,6 @@ def Dashboard():
     # Remove transitions that are also in set pieces
     df_transitions = df_transitions[~df_transitions['id'].isin(excluded_ids)]
     excluded_transition_id = df_transitions['id'].dropna().unique()
-    df_possession = df_possession[~df_possession['id'].isin(excluded_transition_id)]
     # Standardisér team_name og match_state
     for df in [df_possession, df_transitions, df_set_pieces]:
         df['team_name'] = df['team_name'].apply(lambda x: x if x == 'Horsens' else 'Opponent')
@@ -1271,6 +1270,7 @@ def Dashboard():
 
     st.subheader("Team Summary (Per 90 Minutes)")
     st.dataframe(per90_df, hide_index=True, use_container_width=True)
+    df_possession = df_possession[~df_possession['id'].isin(excluded_transition_id)]
 
     @st.cache_data
     def get_transition_summaries(df_transitions):
