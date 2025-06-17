@@ -1060,7 +1060,11 @@ def Dashboard():
     df_possession = df_possession[~df_possession['28.0'].astype(str).str.lower().eq('true')]
 
     df_set_pieces = load_set_piece_data()
+    df_set_pieces = df_set_pieces[~df_set_pieces['28.0'].astype(str).str.lower().eq('true')]
+
     df_transitions = load_transitions_data()
+    df_transitions = df_transitions[~df_transitions['28.0'].astype(str).str.lower().eq('true')]
+
     excluded_ids = df_set_pieces['id'].dropna().unique()
 
     # Remove transitions that are also in set pieces
