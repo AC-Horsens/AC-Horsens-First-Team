@@ -1583,12 +1583,13 @@ def Dashboard():
         st.dataframe(horsens_summary.sort_values(['goals','xG'], ascending=False), hide_index=True)
 
         # Transition starts visualization (only reruns below here on selectbox change)
-        st.subheader('Transition starts')
+        st.subheader('Transition starts (>0.1 xG)')
 
         transitions_starts = df_transitions[
             (df_transitions['possession_index'] == 1) & 
             (df_transitions['team_name'] == 'Horsens') &
-            (df_transitions['sequence_duration'] > 0)
+            (df_transitions['sequence_duration'] > 0) &
+            (df_transitions['sequence_xG'] > 0.1)
         ]
 
         vis_type = st.selectbox("Choose visualization type", ["Pitch Scatter", "Heatmap"])
