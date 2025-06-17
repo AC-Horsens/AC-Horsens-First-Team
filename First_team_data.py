@@ -1570,7 +1570,7 @@ def Dashboard():
         )
 
         # Display the full figure
-        st.pyplot(fig)
+        st.pyplot(fig,clear_figure=False)
 
         # Load and show cached summary stats
         team_summary, player_summary = get_transition_summaries(df_transitions)
