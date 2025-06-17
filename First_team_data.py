@@ -1518,7 +1518,7 @@ def Dashboard():
 
         # --- Draw pitch with assist + danger zones ---
         pitch = Pitch(pitch_type='opta', pitch_color='grass', line_color='white', half=True)
-        fig, ax = pitch.draw(figsize=(6, 9))
+        fig, ax = pitch.draw(figsize=(4, 6))
 
         # Draw assist zones
         assist_zones = [
