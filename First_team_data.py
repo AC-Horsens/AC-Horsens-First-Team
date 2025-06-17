@@ -1057,6 +1057,8 @@ classic_striker_df = position_dataframes['Classic striker']
 
 def Dashboard():
     df_possession = load_possession_data()
+    df_possession = df_possession[~df_possession['28.0'].astype(str).str.lower().eq('true')]
+
     df_set_pieces = load_set_piece_data()
     df_transitions = load_transitions_data()
     excluded_ids = df_set_pieces['id'].dropna().unique()
