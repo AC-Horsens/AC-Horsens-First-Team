@@ -1662,17 +1662,25 @@ def Dashboard():
         on_ball_sequences = on_ball_sequences[on_ball_sequences['poss_player_name'] != on_ball_sequences['receiver_name']]
         st.write(on_ball_sequences)
 
-        grouped = on_ball_sequences.groupby(['match_id', 'sequence_id']).agg(
-            options_between_lines_count=('option_between_lines', 'sum'),
-            time_on_ball_count=('time_on_ball', 'sum')
-        ).reset_index()
-
-        # Avoid division by zero
-        grouped['options_per_time_on_ball'] = grouped.apply(
-            lambda row: row['options_between_lines_count'] / row['time_on_ball_count'] if row['time_on_ball_count'] > 0 else 0,
-            axis=1
+        has_time_on = (
+            df.groupby(['match_id', 'sequence_id'])['time_on_ball'].any()
+            .reset_index()
+            .rename(columns={'time_on_ball': 'has_time_on_ball'})
         )
-        st.dataframe(grouped)
+
+        # Count option_between_lines Trues per sequence/match
+        options_count = (
+            df.groupby(['match_id', 'sequence_id'])['option_between_lines'].sum()
+            .reset_index()
+            .rename(columns={'option_between_lines': 'options_between_lines_count'})
+        )
+
+        # Merge the two
+        summary = options_count.merge(has_time_on, on=['match_id', 'sequence_id'])
+
+        # If you only want sequences where time_on_ball is True
+        summary = summary[summary['has_time_on_ball']]
+        st.dataframe(summary)
 
 
     def Defending():
