@@ -1682,7 +1682,21 @@ def Dashboard():
         summary = options_count.merge(seq_has_time_on, on=['match_id','label', 'sequence_id'])
         summary = summary[summary['has_time_on_ball']]
         st.dataframe(summary)
-
+        options_per_minute = (
+            summary.groupby(['match_id','sequence_id', 'timeMin'])['options_between_lines_count']
+            .mean()
+            .reset_index()
+        )
+        for match in options_per_minute['match_id'].unique():
+            match_data = options_per_minute[options_per_minute['match_id'] == match]
+            fig = px.line(
+                match_data,
+                x='minute',
+                y='options_between_lines_count',
+                title=f"Options Between Lines Over Time (Match {match})",
+                labels={'timeMin': 'Minute in Match', 'options_between_lines_count': 'Options Between Lines'}
+            )
+            st.plotly_chart(fig, use_container_width=True)
 
     def Defending():
         df_opponent = df_possession[
