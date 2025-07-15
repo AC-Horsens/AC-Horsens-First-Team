@@ -1658,11 +1658,10 @@ def Dashboard():
             0.5 * on_ball_sequences.loc[mask_timeSec, 'timesec_first'].astype(float) +
             0.5 * on_ball_sequences.loc[mask_timeSec, 'timesec_last'].astype(float)
         )
-        st.dataframe(on_ball_sequences)
         on_ball_sequences = on_ball_sequences.drop(['date', 'timemin_last', 'timesec_last'], axis=1)
         on_ball_sequences['match_state'] = on_ball_sequences['match_state'].fillna('draw')
-
-        st.dataframe(on_ball_sequences)
+        on_ball_sequences = on_ball_sequences[on_ball_sequences['poss_player_name'] != on_ball_sequences['receiver_name']]
+        st.write(on_ball_sequences.columns)
 
     def Defending():
         df_opponent = df_possession[
