@@ -132,6 +132,7 @@ def load_transitions_data():
 def load_on_ball_sequences():
     url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/Horsens_on_ball_sequences.csv'
     df_on_ball_sequences= pd.read_csv(url)
+    df_on_ball_sequences['local_date'] = pd.to_datetime(df_on_ball_sequences['local_date'])
     df_on_ball_sequences['label'] = (df_on_ball_sequences['description'] + ' ' + df_on_ball_sequences['local_date']).astype(str)
     return df_on_ball_sequences    
 
@@ -1632,6 +1633,7 @@ def Dashboard():
 
     def Buildup():
         on_ball_sequences = load_on_ball_sequences()
+        on_ball_sequences['local_date'].pd.to_datetime
         labels_df = df_possession[['match_id','date', 'label']].drop_duplicates()
         states_df = df_possession[['match_id','date','label', 'contestantId', 'timeMin', 'timeSec', 'match_state']]
 
