@@ -12,7 +12,7 @@ from mplsoccer import Pitch, VerticalPitch
 from datetime import datetime, timedelta
 from matplotlib.patches import Rectangle, Polygon
 from matplotlib.path import Path
-
+import os
 
 st.set_page_config(layout='wide')
 
@@ -1056,6 +1056,34 @@ winger_df = position_dataframes['Winger']
 classic_striker_df = position_dataframes['Classic striker']
 
 def Dashboard():
+    XML_DIR = "C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/"
+    def list_xml_files(path):
+        return [f for f in os.listdir(path) if f.lower().endswith(".xml")]
+
+    st.title("Download Sportscode XML Tags")
+
+    if 'show_selector' not in st.session_state:
+        st.session_state['show_selector'] = False
+
+    if st.button("Download XML file"):
+        st.session_state['show_selector'] = True
+
+    if st.session_state['show_selector']:
+        xml_files = list_xml_files(XML_DIR)
+        if not xml_files:
+            st.info("No XML files found in the folder.")
+        else:
+            selected_file = st.selectbox("Select an XML file to download:", xml_files)
+            file_path = os.path.join(XML_DIR, selected_file)
+            with open(file_path, "rb") as f:
+                xml_bytes = f.read()
+            st.download_button(
+                label=f"Download '{selected_file}'",
+                data=xml_bytes,
+                file_name=selected_file,
+                mime="application/xml"
+            )
+
     df_possession = load_possession_data()
     df_possession = df_possession[~df_possession['28.0'].astype(str).str.lower().eq('true')]
 
