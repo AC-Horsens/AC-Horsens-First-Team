@@ -14,6 +14,9 @@ from matplotlib.patches import Rectangle, Polygon
 from matplotlib.path import Path
 import os
 import requests
+import glob
+
+
 st.set_page_config(layout='wide')
 
 
@@ -1056,46 +1059,18 @@ winger_df = position_dataframes['Winger']
 classic_striker_df = position_dataframes['Classic striker']
 
 def Dashboard():
-    REPO_OWNER = "AC-Horsens"
-    REPO_NAME = "AC-Horsens-First-Team"
-    BRANCH = "main"
-    API_URL = f"https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/git/trees/{BRANCH}?recursive=1"
-    RAW_BASE = f"https://raw.githubusercontent.com/{REPO_OWNER}/{REPO_NAME}/{BRANCH}/"
-
-    @st.cache_data(ttl=3600)
-    def list_xml_files():
-        r = requests.get(API_URL)
-        st.write("API Status:", r.status_code)
-        try:
-            data = r.json()
-        except Exception as e:
-            st.error(f"JSON decode error: {e}")
-            return []
-        st.write("Keys in JSON:", list(data.keys()))
-        st.write("First 1000 chars:", str(data)[:1000])
-        if r.status_code != 200:
-            st.error("Could not fetch files from GitHub (API limit hit?)")
-            return []
-        xmls = []
-        for file in data.get('tree', []):
-            if file.get("path", "").endswith('.xml'):
-                xmls.append(file["path"])
-        st.write(f"Found XML files: {xmls}")
-        return xmls
-    st.title("Download Sportscode XML Files")
-
-    xml_files = list_xml_files()
-
-    if not xml_files:
-        st.warning("No XML files found!")
+    xml_files = glob.glob('*.xml')
+    if xml_files:
+        selected_xml = st.selectbox('Select an XML file to download:', xml_files)
+        with open(selected_xml, 'rb') as f:
+            st.download_button(
+                label="Download selected XML",
+                data=f,
+                file_name=selected_xml,
+                mime='application/xml'
+            )
     else:
-        selected_file = st.selectbox("Choose an XML file to download:", xml_files)
-        raw_url = RAW_BASE + selected_file
-        st.markdown(f"[⬇️ Download {selected_file}]({raw_url})", unsafe_allow_html=True)
-        # Optionally, a download button:
-        r = requests.get(raw_url)
-        st.download_button(f"Download {selected_file}", r.content, file_name=selected_file)
-
+        st.write('No XML files found in this directory.')
     df_possession = load_possession_data()
     df_possession = df_possession[~df_possession['28.0'].astype(str).str.lower().eq('true')]
 
