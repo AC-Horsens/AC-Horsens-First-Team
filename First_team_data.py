@@ -1065,16 +1065,23 @@ def Dashboard():
     @st.cache_data(ttl=3600)
     def list_xml_files():
         r = requests.get(API_URL)
+        st.write("API Status:", r.status_code)
+        try:
+            data = r.json()
+        except Exception as e:
+            st.error(f"JSON decode error: {e}")
+            return []
+        st.write("Keys in JSON:", list(data.keys()))
+        st.write("First 1000 chars:", str(data)[:1000])
         if r.status_code != 200:
             st.error("Could not fetch files from GitHub (API limit hit?)")
             return []
-        data = r.json()
         xmls = []
         for file in data.get('tree', []):
-            if file["path"].endswith('.xml'):
+            if file.get("path", "").endswith('.xml'):
                 xmls.append(file["path"])
+        st.write(f"Found XML files: {xmls}")
         return xmls
-
     st.title("Download Sportscode XML Files")
 
     xml_files = list_xml_files()
