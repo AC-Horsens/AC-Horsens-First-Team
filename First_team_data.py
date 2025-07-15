@@ -1056,33 +1056,35 @@ winger_df = position_dataframes['Winger']
 classic_striker_df = position_dataframes['Classic striker']
 
 def Dashboard():
-    XML_DIR = r"C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/"
-    def list_xml_files(path):
-        return [f for f in os.listdir(path) if f.lower().endswith(".xml")]
+    GITHUB_OWNER = "AC-Horsens"
+    GITHUB_REPO = "AC-Horsens-First-Team"
+    GITHUB_BRANCH = "main"  # or another branch if not main
 
-    st.title("Download Sportscode XML Tags")
-
-    if 'show_selector' not in st.session_state:
-        st.session_state['show_selector'] = False
-
-    if st.button("Download XML file"):
-        st.session_state['show_selector'] = True
-
-    if st.session_state['show_selector']:
-        xml_files = list_xml_files(XML_DIR)
-        if not xml_files:
-            st.info("No XML files found in the folder.")
+    @st.cache_data(ttl=3600)
+    def list_xml_files_from_github(owner, repo, branch="main"):
+        api_url = f"https://api.github.com/repos/{owner}/{repo}/git/trees/{branch}?recursive=1"
+        resp = requests.get(api_url)
+        files = []
+        if resp.status_code == 200:
+            data = resp.json()
+            for f in data.get("tree", []):
+                if f["path"].endswith(".xml") and f["type"] == "blob":
+                    files.append(f["path"])
         else:
-            selected_file = st.selectbox("Select an XML file to download:", xml_files)
-            file_path = os.path.join(XML_DIR, selected_file)
-            with open(file_path, "rb") as f:
-                xml_bytes = f.read()
-            st.download_button(
-                label=f"Download '{selected_file}'",
-                data=xml_bytes,
-                file_name=selected_file,
-                mime="application/xml"
-            )
+            st.error(f"GitHub API error: {resp.status_code}")
+        return files
+
+    xml_files = list_xml_files_from_github(GITHUB_OWNER, GITHUB_REPO, GITHUB_BRANCH)
+
+    if not xml_files:
+        st.warning("No XML files found in the GitHub repo.")
+    else:
+        st.markdown("### Select and download an XML file")
+        selected = st.selectbox("Choose XML file:", xml_files)
+        base_url = f"https://raw.githubusercontent.com/{GITHUB_OWNER}/{GITHUB_REPO}/{GITHUB_BRANCH}/"
+        file_url = base_url + selected
+
+        st.markdown(f"[⬇️ Download {selected}]({file_url})", unsafe_allow_html=True)
 
     df_possession = load_possession_data()
     df_possession = df_possession[~df_possession['28.0'].astype(str).str.lower().eq('true')]
