@@ -1662,6 +1662,19 @@ def Dashboard():
         on_ball_sequences = on_ball_sequences[on_ball_sequences['poss_player_name'] != on_ball_sequences['receiver_name']]
         st.write(on_ball_sequences.columns)
 
+        grouped = on_ball_sequences.groupby(['match_id', 'sequence_id']).agg(
+            options_between_lines_count=('option_between_lines', 'sum'),
+            time_on_ball_count=('time_on_ball', 'sum')
+        ).reset_index()
+
+        # Avoid division by zero
+        grouped['options_per_time_on_ball'] = grouped.apply(
+            lambda row: row['options_between_lines_count'] / row['time_on_ball_count'] if row['time_on_ball_count'] > 0 else 0,
+            axis=1
+        )
+        st.dataframe(grouped)
+
+
     def Defending():
         df_opponent = df_possession[
             (df_possession['team_name'] == 'Opponent') & 
