@@ -1639,7 +1639,7 @@ def Dashboard():
         states_df = df_possession[['match_id','date','label', 'contestantId', 'timeMin', 'timeSec', 'match_state']]
 
         # Merge only on match_id to get label
-        on_ball_sequences = on_ball_sequences.merge(labels_df, on='match_id', how='left')
+        on_ball_sequences = on_ball_sequences.merge(labels_df, on=['match_id','date','label'], how='left')
         st.dataframe(on_ball_sequences)
         # Merge on full key to get match_state
         on_ball_sequences = on_ball_sequences.merge(states_df,left_on=['match_id','label','date', 'timemin_last', 'timesec_last'],right_on=['match_id','date','label', 'timeMin', 'timeSec'],how='left')
