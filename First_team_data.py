@@ -128,6 +128,13 @@ def load_transitions_data():
     df_transitions['label'] = (df_transitions['label'] + ' ' + df_transitions['date']).astype(str)
     return df_transitions
 
+@st.cache_data
+def load_on_ball_sequences():
+    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/Horsens_on_ball_sequences.csv'
+    df_on_ball_sequences= pd.read_csv(url)
+    df_on_ball_sequences['label'] = (df_on_ball_sequences['description'] + ' ' + df_on_ball_sequences['local_date']).astype(str)
+    return df_on_ball_sequences    
+
 def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
 
     def calculate_score(df, column, score_column):
@@ -1622,7 +1629,21 @@ def Dashboard():
 
         st.markdown(f"**Transitions startet in transition start zone:** {central_count} out of {total_transitions} "
                     f"({percentage_central:.1f}%)")
-        
+
+    def Buildup():
+        on_ball_sequences = load_on_ball_sequences()
+        labels_df = df_possession[['match_id','date', 'label']].drop_duplicates()
+        states_df = df_possession[['match_id','date','label', 'contestantId', 'timeMin', 'timeSec', 'match_state']]
+
+        # Merge only on match_id to get label
+        on_ball_sequences = on_ball_sequences.merge(labels_df, on='match_id', how='left')
+
+        # Merge on full key to get match_state
+        on_ball_sequences = on_ball_sequences.merge(states_df, on=['match_id','date','label', 'contestantId', 'timeMin', 'timeSec'], how='left')
+        on_ball_sequences = on_ball_sequences.sort_values(['date','timeMin','timeSec'])
+        on_ball_sequences = on_ball_sequences.ffill()
+        st.dataframe(on_ball_sequences)
+
     def Defending():
         df_opponent = df_possession[
             (df_possession['team_name'] == 'Opponent') & 
