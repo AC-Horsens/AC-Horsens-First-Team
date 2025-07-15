@@ -1663,14 +1663,14 @@ def Dashboard():
         st.write(on_ball_sequences)
 
         has_time_on = (
-            df.groupby(['match_id', 'sequence_id'])['time_on_ball'].any()
+            on_ball_sequences.groupby(['match_id', 'sequence_id'])['time_on_ball'].any()
             .reset_index()
             .rename(columns={'time_on_ball': 'has_time_on_ball'})
         )
 
         # Count option_between_lines Trues per sequence/match
         options_count = (
-            df.groupby(['match_id', 'sequence_id'])['option_between_lines'].sum()
+            on_ball_sequences.groupby(['match_id', 'sequence_id'])['option_between_lines'].sum()
             .reset_index()
             .rename(columns={'option_between_lines': 'options_between_lines_count'})
         )
