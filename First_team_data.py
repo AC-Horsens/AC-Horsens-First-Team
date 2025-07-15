@@ -1635,7 +1635,6 @@ def Dashboard():
 
     def Buildup():
         on_ball_sequences = load_on_ball_sequences()
-        on_ball_sequences['local_date'].pd.to_datetime
         labels_df = df_possession[['match_id','date', 'label']].drop_duplicates()
         states_df = df_possession[['match_id','date','label', 'contestantId', 'timeMin', 'timeSec', 'match_state']]
 
