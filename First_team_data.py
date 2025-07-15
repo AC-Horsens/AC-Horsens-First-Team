@@ -1660,7 +1660,7 @@ def Dashboard():
         on_ball_sequences = on_ball_sequences.drop(['date', 'timemin_last', 'timesec_last'], axis=1)
         on_ball_sequences['match_state'] = on_ball_sequences['match_state'].fillna('draw')
         on_ball_sequences = on_ball_sequences[on_ball_sequences['poss_player_name'] != on_ball_sequences['receiver_name']]
-        st.write(on_ball_sequences.columns)
+        st.write(on_ball_sequences)
 
         grouped = on_ball_sequences.groupby(['match_id', 'sequence_id']).agg(
             options_between_lines_count=('option_between_lines', 'sum'),
