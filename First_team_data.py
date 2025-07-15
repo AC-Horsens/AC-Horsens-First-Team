@@ -1643,10 +1643,25 @@ def Dashboard():
 
         # Merge on full key to get match_state
         on_ball_sequences = on_ball_sequences.merge(states_df,left_on=['match_id','local_date', 'timemin_last', 'timesec_last'],right_on=['match_id','date', 'timeMin', 'timeSec'],how='left')
+
         on_ball_sequences = on_ball_sequences.sort_values(['local_date', 'timemin_last', 'timesec_last'])
         on_ball_sequences = on_ball_sequences.ffill()
+        mask_timeMin = on_ball_sequences['timeMin'].isna()
+        on_ball_sequences.loc[mask_timeMin, 'timeMin'] = (
+            0.5 * on_ball_sequences.loc[mask_timeMin, 'timemin_first'].astype(float) +
+            0.5 * on_ball_sequences.loc[mask_timeMin, 'timemin_last'].astype(float)
+        )
+
+        # Similarly for timeSec
+        mask_timeSec = on_ball_sequences['timeSec'].isna()
+        on_ball_sequences.loc[mask_timeSec, 'timeSec'] = (
+            0.5 * on_ball_sequences.loc[mask_timeSec, 'timesec_first'].astype(float) +
+            0.5 * on_ball_sequences.loc[mask_timeSec, 'timesec_last'].astype(float)
+        )
         st.dataframe(on_ball_sequences)
         on_ball_sequences = on_ball_sequences.drop(['local_date', 'timemin_last', 'timesec_last'], axis=1)
+        on_ball_sequences['match_state'] = on_ball_sequences['match_state'].fillna('draw')
+
         st.dataframe(on_ball_sequences)
 
     def Defending():
