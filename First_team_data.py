@@ -1056,35 +1056,38 @@ winger_df = position_dataframes['Winger']
 classic_striker_df = position_dataframes['Classic striker']
 
 def Dashboard():
-    GITHUB_OWNER = "AC-Horsens"
-    GITHUB_REPO = "AC-Horsens-First-Team"
-    GITHUB_BRANCH = "main"  # or another branch if not main
+    REPO_OWNER = "AC-Horsens"
+    REPO_NAME = "AC-Horsens-First-Team"
+    BRANCH = "main"
+    API_URL = f"https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/git/trees/{BRANCH}?recursive=1"
+    RAW_BASE = f"https://raw.githubusercontent.com/{REPO_OWNER}/{REPO_NAME}/{BRANCH}/"
 
     @st.cache_data(ttl=3600)
-    def list_xml_files_from_github(owner, repo, branch="main"):
-        api_url = f"https://api.github.com/repos/{owner}/{repo}/git/trees/{branch}?recursive=1"
-        resp = requests.get(api_url)
-        files = []
-        if resp.status_code == 200:
-            data = resp.json()
-            for f in data.get("tree", []):
-                if f["path"].endswith(".xml") and f["type"] == "blob":
-                    files.append(f["path"])
-        else:
-            st.error(f"GitHub API error: {resp.status_code}")
-        return files
+    def list_xml_files():
+        r = requests.get(API_URL)
+        if r.status_code != 200:
+            st.error("Could not fetch files from GitHub (API limit hit?)")
+            return []
+        data = r.json()
+        xmls = []
+        for file in data.get('tree', []):
+            if file["path"].endswith('.xml'):
+                xmls.append(file["path"])
+        return xmls
 
-    xml_files = list_xml_files_from_github(GITHUB_OWNER, GITHUB_REPO, GITHUB_BRANCH)
+    st.title("Download Sportscode XML Files")
+
+    xml_files = list_xml_files()
 
     if not xml_files:
-        st.warning("No XML files found in the GitHub repo.")
+        st.warning("No XML files found!")
     else:
-        st.markdown("### Select and download an XML file")
-        selected = st.selectbox("Choose XML file:", xml_files)
-        base_url = f"https://raw.githubusercontent.com/{GITHUB_OWNER}/{GITHUB_REPO}/{GITHUB_BRANCH}/"
-        file_url = base_url + selected
-
-        st.markdown(f"[⬇️ Download {selected}]({file_url})", unsafe_allow_html=True)
+        selected_file = st.selectbox("Choose an XML file to download:", xml_files)
+        raw_url = RAW_BASE + selected_file
+        st.markdown(f"[⬇️ Download {selected_file}]({raw_url})", unsafe_allow_html=True)
+        # Optionally, a download button:
+        r = requests.get(raw_url)
+        st.download_button(f"Download {selected_file}", r.content, file_name=selected_file)
 
     df_possession = load_possession_data()
     df_possession = df_possession[~df_possession['28.0'].astype(str).str.lower().eq('true')]
