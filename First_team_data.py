@@ -1666,14 +1666,14 @@ def Dashboard():
 
         # For each sequence, does any receiver have time_on_ball True? (use the original df, not filtered)
         seq_has_time_on = (
-            filtered_df.groupby(['match_id', 'sequence_id'])['time_on_ball'].any()
+            filtered_df.groupby(['match_id','label', 'sequence_id'])['time_on_ball'].any()
             .reset_index()
             .rename(columns={'time_on_ball': 'has_time_on_ball'})
         )
 
         # Count option_between_lines Trues per sequence/match (for has_opp_behind == False only)
         options_count = (
-            filtered_df.groupby(['match_id', 'sequence_id'])['option_between_lines'].sum()
+            filtered_df.groupby(['match_id','label', 'sequence_id'])['option_between_lines'].sum()
             .reset_index()
             .rename(columns={'option_between_lines': 'options_between_lines_count'})
         )
