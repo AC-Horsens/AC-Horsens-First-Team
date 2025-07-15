@@ -1679,7 +1679,7 @@ def Dashboard():
         )
 
         # Merge, and keep only sequences where time_on_ball is True
-        summary = options_count.merge(seq_has_time_on, on=['match_id', 'sequence_id'])
+        summary = options_count.merge(seq_has_time_on, on=['match_id','label', 'sequence_id'])
         summary = summary[summary['has_time_on_ball']]
         st.dataframe(summary)
 
