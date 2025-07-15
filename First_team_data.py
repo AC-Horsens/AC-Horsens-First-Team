@@ -132,9 +132,9 @@ def load_transitions_data():
 def load_on_ball_sequences():
     url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/Horsens_on_ball_sequences.csv'
     df_on_ball_sequences = pd.read_csv(url)
-    df_on_ball_sequences['local_date'] = pd.to_datetime(df_on_ball_sequences['local_date'])
+    df_on_ball_sequences['date'] = pd.to_datetime(df_on_ball_sequences['local_date'])
     df_on_ball_sequences['label'] = (
-        df_on_ball_sequences['description'] + ' ' + df_on_ball_sequences['local_date'].astype(str)
+        df_on_ball_sequences['description'] + ' ' + df_on_ball_sequences['date'].astype(str)
     )
     return df_on_ball_sequences
 
@@ -1642,9 +1642,9 @@ def Dashboard():
         on_ball_sequences = on_ball_sequences.merge(labels_df, on='match_id', how='left')
 
         # Merge on full key to get match_state
-        on_ball_sequences = on_ball_sequences.merge(states_df,left_on=['match_id','local_date', 'timemin_last', 'timesec_last'],right_on=['match_id','date', 'timeMin', 'timeSec'],how='left')
+        on_ball_sequences = on_ball_sequences.merge(states_df,left_on=['match_id','label','date', 'timemin_last', 'timesec_last'],right_on=['match_id','date','label', 'timeMin', 'timeSec'],how='left')
 
-        on_ball_sequences = on_ball_sequences.sort_values(['local_date', 'timemin_last', 'timesec_last'])
+        on_ball_sequences = on_ball_sequences.sort_values(['date', 'timemin_last', 'timesec_last'])
         on_ball_sequences = on_ball_sequences.ffill()
         mask_timeMin = on_ball_sequences['timeMin'].isna()
         on_ball_sequences.loc[mask_timeMin, 'timeMin'] = (
@@ -1659,7 +1659,7 @@ def Dashboard():
             0.5 * on_ball_sequences.loc[mask_timeSec, 'timesec_last'].astype(float)
         )
         st.dataframe(on_ball_sequences)
-        on_ball_sequences = on_ball_sequences.drop(['local_date', 'timemin_last', 'timesec_last'], axis=1)
+        on_ball_sequences = on_ball_sequences.drop(['date', 'timemin_last', 'timesec_last'], axis=1)
         on_ball_sequences['match_state'] = on_ball_sequences['match_state'].fillna('draw')
 
         st.dataframe(on_ball_sequences)
