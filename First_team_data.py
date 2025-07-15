@@ -1980,6 +1980,7 @@ def Dashboard():
         st.dataframe(Throw_ins)
 
     Data_types = {
+        'Build up':Buildup,
         'Breakthrough':Breakthrough,
         'Defending': Defending,
         'Set pieces': set_pieces,
