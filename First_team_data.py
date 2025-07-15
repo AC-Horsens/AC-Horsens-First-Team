@@ -1056,7 +1056,7 @@ winger_df = position_dataframes['Winger']
 classic_striker_df = position_dataframes['Classic striker']
 
 def Dashboard():
-    XML_DIR = "C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/"
+    XML_DIR = r"C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/"
     def list_xml_files(path):
         return [f for f in os.listdir(path) if f.lower().endswith(".xml")]
 
