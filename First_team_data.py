@@ -1639,7 +1639,7 @@ def Dashboard():
         on_ball_sequences = on_ball_sequences.merge(labels_df, on='match_id', how='left')
 
         # Merge on full key to get match_state
-        on_ball_sequences = on_ball_sequences.merge(states_df, on=['match_id', 'timeMin', 'timeSec'], how='left')
+        on_ball_sequences = on_ball_sequences.merge(states_df,left_on=['match_id', 'timemin_last', 'timesec_last'],right_on=['match_id', 'timeMin', 'timeSec'],how='left')
         on_ball_sequences = on_ball_sequences.sort_values(['date','timeMin','timeSec'])
         on_ball_sequences = on_ball_sequences.ffill()
         st.dataframe(on_ball_sequences)
