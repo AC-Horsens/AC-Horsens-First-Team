@@ -1704,6 +1704,23 @@ def Dashboard():
             )
             st.plotly_chart(fig, use_container_width=True)
 
+        summary = (
+            on_ball_sequences.groupby(['match_id', 'sequence_id'])
+            .agg(
+                deep_run_opportunities=('deep_run_opportunity', 'sum'),
+                deep_runs=('deep_run', 'sum')
+            )
+            .reset_index()
+        )
+        summary['conversion_rate'] = summary['deep_runs'] / summary['deep_run_opportunities']
+        # Optional: Fill NaN with 0 if some opportunities are 0
+        summary['conversion_rate'] = summary['conversion_rate'].fillna(0)
+        st.dataframe(summary)
+
+        fig = px.bar(summary, x='sequence_id', y='conversion_rate', color='match_id', barmode='group',
+                    labels={'conversion_rate': 'Deep Run Conversion Rate'})
+        st.plotly_chart(fig, use_container_width=True)
+        
     def Defending():
         df_opponent = df_possession[
             (df_possession['team_name'] == 'Opponent') & 
