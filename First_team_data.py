@@ -1704,23 +1704,39 @@ def Dashboard():
             )
             st.plotly_chart(fig, use_container_width=True)
 
-        summary = (
-            on_ball_sequences.groupby(['match_id', 'sequence_id'])
+        on_ball_sequences['ten_min_bin'] = (on_ball_sequences['timeMin'] // 10) * 10
+
+        # Group and sum deep_run and opportunity by match, label, 10-min bin
+        deep_run_binned = (
+            on_ball_sequences.groupby(['match_id', 'label', 'ten_min_bin'])
             .agg(
                 deep_run_opportunities=('deep_run_opportunity', 'sum'),
                 deep_runs=('deep_run', 'sum')
             )
             .reset_index()
         )
-        summary['conversion_rate'] = summary['deep_runs'] / summary['deep_run_opportunities']
-        # Optional: Fill NaN with 0 if some opportunities are 0
-        summary['conversion_rate'] = summary['conversion_rate'].fillna(0)
-        st.dataframe(summary)
 
-        fig = px.bar(summary, x='sequence_id', y='conversion_rate', color='match_id', barmode='group',
-                    labels={'conversion_rate': 'Deep Run Conversion Rate'})
-        st.plotly_chart(fig, use_container_width=True)
-        
+        # Calculate conversion rate
+        deep_run_binned['conversion_rate'] = deep_run_binned.apply(
+            lambda row: row['deep_runs'] / row['deep_run_opportunities'] if row['deep_run_opportunities'] > 0 else None,
+            axis=1
+        )
+
+        import plotly.express as px
+
+        for match in deep_run_binned['label'].unique():
+            match_data = deep_run_binned[deep_run_binned['label'] == match]
+            fig = px.line(
+                match_data,
+                x='ten_min_bin',
+                y='conversion_rate',
+                range_y=[0, 1],  # Conversion rate from 0 to 1
+                title=f"10-Minute Deep Run Conversion Rate (Match {match})",
+                labels={'ten_min_bin': 'Minute (10-min bin)', 'conversion_rate': 'Deep Run Conversion Rate'}
+            )
+            st.plotly_chart(fig, use_container_width=True)
+
+
     def Defending():
         df_opponent = df_possession[
             (df_possession['team_name'] == 'Opponent') & 
