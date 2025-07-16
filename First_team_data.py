@@ -1700,7 +1700,7 @@ def Dashboard():
                 x='ten_min_bin',
                 y='options_between_lines_count',
                 range_y = [0,5],
-                title=f"5-Minute Average: Options Between Lines (Match {match})",
+                title=f"10-Minute Average: Options Between Lines (Match {match})",
                 labels={'ten_min_bin': 'Minute (10-min bin)', 'options_between_lines_count': 'Avg Options Between Lines'}
             )
             st.plotly_chart(fig, use_container_width=True)
