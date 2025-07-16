@@ -1699,6 +1699,7 @@ def Dashboard():
                 match_data,
                 x='ten_min_bin',
                 y='options_between_lines_count',
+                range_y = [0,5],
                 title=f"5-Minute Average: Options Between Lines (Match {match})",
                 labels={'ten_min_bin': 'Minute (10-min bin)', 'options_between_lines_count': 'Avg Options Between Lines'}
             )
