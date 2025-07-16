@@ -1681,7 +1681,6 @@ def Dashboard():
         # Merge, and keep only sequences where time_on_ball is True
         summary = options_count.merge(seq_has_time_on, on=['match_id','label','timeMin', 'sequence_id'])
         summary = summary[summary['has_time_on_ball']]
-        st.dataframe(summary)
         summary['ten_min_bin'] = (summary['timeMin'] // 10) * 10
 
         # Group and get mean
