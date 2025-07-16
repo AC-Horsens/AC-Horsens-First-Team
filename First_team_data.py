@@ -1691,7 +1691,7 @@ def Dashboard():
         )
 
         import plotly.express as px
-
+        st.header('Options between lines')
         for match in options_per_5min['label'].unique():
             match_data = options_per_5min[options_per_5min['label'] == match]
             fig = px.line(
@@ -1740,6 +1740,7 @@ def Dashboard():
 
 
         import plotly.express as px
+        st.header('Deep runs per opportunity')
 
         for match in deep_run_binned['label'].unique():
             match_data = deep_run_binned[deep_run_binned['label'] == match]
