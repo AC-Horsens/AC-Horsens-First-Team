@@ -1703,24 +1703,41 @@ def Dashboard():
                 labels={'ten_min_bin': 'Minute (10-min bin)', 'options_between_lines_count': 'Avg Options Between Lines'}
             )
             st.plotly_chart(fig, use_container_width=True)
-
+        
         on_ball_sequences['ten_min_bin'] = (on_ball_sequences['timeMin'] // 10) * 10
 
-        # Group and sum deep_run and opportunity by match, label, 10-min bin
+        sequence_opportunity = (
+            on_ball_sequences.groupby(['match_id', 'label', 'ten_min_bin', 'sequence_id'])['deep_run_opportunity'].any()
+            .reset_index()
+            .rename(columns={'deep_run_opportunity': 'has_deep_run_opportunity'})
+        )
+
+        # Numerator: How many deep_runs (receivers) in the sequence/bin/match?
+        sequence_deep_runs = (
+            on_ball_sequences.groupby(['match_id', 'label', 'ten_min_bin', 'sequence_id'])['deep_run'].sum()
+            .reset_index()
+            .rename(columns={'deep_run': 'deep_runs'})
+        )
+
+        # Merge and keep only sequences with opportunity
+        seq_summary = sequence_opportunity.merge(sequence_deep_runs, on=['match_id','label','ten_min_bin','sequence_id'])
+        seq_summary = seq_summary[seq_summary['has_deep_run_opportunity']]
+
+        # Now group by match/bin to get totals
         deep_run_binned = (
-            on_ball_sequences.groupby(['match_id', 'label', 'ten_min_bin'])
+            seq_summary.groupby(['match_id', 'label', 'ten_min_bin'])
             .agg(
-                deep_run_opportunities=('deep_run_opportunity', 'sum'),
-                deep_runs=('deep_run', 'sum')
+                deep_run_opportunities=('sequence_id', 'nunique'),  # 1 per sequence with opportunity
+                deep_runs=('deep_runs', 'sum')
             )
             .reset_index()
         )
 
-        # Calculate conversion rate
         deep_run_binned['conversion_rate'] = deep_run_binned.apply(
             lambda row: row['deep_runs'] / row['deep_run_opportunities'] if row['deep_run_opportunities'] > 0 else None,
             axis=1
         )
+
 
         import plotly.express as px
 
