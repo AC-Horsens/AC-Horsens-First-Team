@@ -1699,7 +1699,7 @@ def Dashboard():
                 x='ten_min_bin',
                 y='options_between_lines_count',
                 range_y = [0,5],
-                title=f"10-Minute Average: Options Between Lines (Match {match})",
+                title=f"Match {match}",
                 labels={'ten_min_bin': 'Minute (10-min bin)', 'options_between_lines_count': 'Avg Options Between Lines'}
             )
             st.plotly_chart(fig, use_container_width=True)
@@ -1748,7 +1748,7 @@ def Dashboard():
                 x='ten_min_bin',
                 y='conversion_rate',
                 range_y=[0, 1],  # Conversion rate from 0 to 1
-                title=f"10-Minute Deep Run Conversion Rate (Match {match})",
+                title=f"Match {match}",
                 labels={'ten_min_bin': 'Minute (10-min bin)', 'conversion_rate': 'Deep Run Conversion Rate'}
             )
             st.plotly_chart(fig, use_container_width=True)
