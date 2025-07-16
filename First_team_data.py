@@ -1738,7 +1738,6 @@ def Dashboard():
             axis=1
         )
 
-
         import plotly.express as px
         st.header('Deep runs per opportunity')
 
