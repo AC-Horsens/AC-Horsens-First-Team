@@ -1660,7 +1660,7 @@ def Dashboard():
         on_ball_sequences = on_ball_sequences.drop(['date', 'timemin_last', 'timesec_last'], axis=1)
         on_ball_sequences['match_state'] = on_ball_sequences['match_state'].fillna('draw')
         on_ball_sequences = on_ball_sequences[on_ball_sequences['poss_player_name'] != on_ball_sequences['receiver_name']]
-        st.write(on_ball_sequences)
+        st.write(on_ball_sequences.columns)
 
         filtered_df = on_ball_sequences[on_ball_sequences['has_opp_behind'] == False]
 
@@ -1682,11 +1682,11 @@ def Dashboard():
         summary = options_count.merge(seq_has_time_on, on=['match_id','label','timeMin', 'sequence_id'])
         summary = summary[summary['has_time_on_ball']]
         st.dataframe(summary)
-        summary['five_min_bin'] = (summary['timeMin'] // 5) * 5
+        summary['ten_min_bin'] = (summary['timeMin'] // 10) * 10
 
         # Group and get mean
         options_per_5min = (
-            summary.groupby(['match_id', 'label', 'five_min_bin'])['options_between_lines_count']
+            summary.groupby(['match_id', 'label', 'ten_min_bin'])['options_between_lines_count']
             .mean()
             .reset_index()
         )
@@ -1697,10 +1697,10 @@ def Dashboard():
             match_data = options_per_5min[options_per_5min['label'] == match]
             fig = px.line(
                 match_data,
-                x='five_min_bin',
+                x='ten_min_bin',
                 y='options_between_lines_count',
                 title=f"5-Minute Average: Options Between Lines (Match {match})",
-                labels={'five_min_bin': 'Minute (5-min bin)', 'options_between_lines_count': 'Avg Options Between Lines'}
+                labels={'ten_min_bin': 'Minute (10-min bin)', 'options_between_lines_count': 'Avg Options Between Lines'}
             )
             st.plotly_chart(fig, use_container_width=True)
 
