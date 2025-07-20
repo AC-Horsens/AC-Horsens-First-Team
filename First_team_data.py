@@ -723,6 +723,8 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         return df_otter
 
     def number10():
+        df_scouting['formationUsed'] = df_scouting['formationUsed'].astype(str)
+
         is_10_base = (
             (df_scouting['player_position'] == 'Attacking Midfielder') &
             (df_scouting['player_positionSide'].str.contains('Centre'))
