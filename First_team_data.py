@@ -1063,7 +1063,7 @@ squads = load_squads()
 
 position_dataframes = Process_data_spillere(df_xA, df_pv, df_match_stats, df_xg_all, squads)
 balanced_central_defender_df = position_dataframes['Central defender']
-fullbacks_df = position_dataframes['Wingbacks']
+fullbacks_df = position_dataframes['Wingback']
 number6_df = position_dataframes['Number 6']
 number8_df = position_dataframes['Number 8']
 number10_df = position_dataframes['Number 10']
