@@ -437,27 +437,8 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         return df_balanced_central_defender
   
     def fullbacks():
-        df_scouting['formationUsed'] = df_scouting['formationUsed'].astype(str)
-        df_scouting['player_positionSide'] = df_scouting['player_positionSide'].fillna('').astype(str)
-
-        # Formation 343 condition
-        is_343 = df_scouting['formationUsed'] == '343'
-
-        # Base: Defender or Wing Back on Right/Left
-        base_mask = (
-            ((df_scouting['player_position'] == 'Defender') | (df_scouting['player_position'] == 'Wing Back')) &
-            ((df_scouting['player_positionSide'] == 'Right') | (df_scouting['player_positionSide'] == 'Left'))
-        )
-
-        # 343 extra: Midfielder on Right/Left
-        extra_343_mask = (
-            is_343 &
-            (df_scouting['player_position'] == 'Midfielder') &
-            ((df_scouting['player_positionSide'] == 'Right') | (df_scouting['player_positionSide'] == 'Left'))
-        )
-
-        # Combine both
-        df_backs = df_scouting[base_mask | extra_343_mask]
+        df_backs = df_scouting[((df_scouting['player_position'] == 'Defender') | (df_scouting['player_position'] == 'Wing Back')| (df_scouting['player_position'] == 'Midfielder')) & 
+                            ((df_scouting['player_positionSide'] == 'Right') | (df_scouting['player_positionSide'] == 'Left'))]
         df_backs['minsPlayed'] = df_backs['minsPlayed'].astype(int)
         df_backs = df_backs[df_backs['minsPlayed'] >= minutter_kamp]
 
@@ -669,7 +650,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
     
     def number8():
         df_otter = df_scouting[(df_scouting['player_position'] == 'Midfielder') & 
-                            (df_scouting['player_positionSide'].str.contains('Centre'))]
+                            (df_scouting['player_positionSide'].isin['Centre/Right','Left/Centre'])]
         df_otter['minsPlayed'] = df_otter['minsPlayed'].astype(int)
         df_otter = df_otter[df_otter['minsPlayed'] >= minutter_kamp]
 
@@ -824,10 +805,6 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
 
     def winger():
         df_winger = df_scouting[
-            (
-                (df_scouting['player_position'] == 'Midfielder') &
-                (df_scouting['player_positionSide'].isin(['Right', 'Left']))
-            ) |
             (
                 (df_scouting['player_position'].isin(['Attacking Midfielder', 'Striker'])) &
                 (df_scouting['player_positionSide'].isin(['Right', 'Left']))
