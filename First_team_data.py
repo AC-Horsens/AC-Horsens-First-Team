@@ -723,19 +723,26 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         return df_otter
 
     def number10():
-        df_10 = df_scouting[
-            (
-                (df_scouting['formationUsed'] == '343') & 
-                (
-                    ((df_scouting['player_position'] == 'Attacking Midfielder') & df_scouting['player_positionSide'].str.contains('Centre')) |
-                    ((df_scouting['player_position'] == 'Striker') & df_scouting['player_positionSide'].str.contains('Right|Left'))
-                )
-            ) |
-            (
-                (df_scouting['formationUsed'] != '343') &
-                (df_scouting['player_position'] == 'Attacking Midfielder') & df_scouting['player_positionSide'].str.contains('Centre')
-            )
-        ]
+        df_scouting['formationUsed'] = df_scouting['formationUsed'].astype(str)
+
+        # Build the mask
+        is_343 = df_scouting['formationUsed'] == '343'
+
+        # For 343: include AM (Centre) or Striker (Right or Left)
+        mask_343 = is_343 & (
+            ((df_scouting['player_position'] == 'Attacking Midfielder') & df_scouting['player_positionSide'].str.contains('Centre', na=False)) |
+            ((df_scouting['player_position'] == 'Striker') & df_scouting['player_positionSide'].str.contains('Right|Left', na=False))
+        )
+
+        # For non-343: include only AM (Centre)
+        mask_other = (~is_343) & (
+            (df_scouting['player_position'] == 'Attacking Midfielder') &
+            df_scouting['player_positionSide'].str.contains('Centre', na=False)
+        )
+
+        # Final combined filter
+        df_10 = df_scouting[mask_343 | mask_other]
+
         df_10['minsPlayed'] = df_10['minsPlayed'].astype(int)
         df_10 = df_10[df_10['minsPlayed'] >= minutter_kamp]
 
