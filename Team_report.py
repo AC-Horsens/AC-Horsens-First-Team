@@ -725,23 +725,9 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         return df_balanced_central_defender
   
     def fullbacks():
-        is_def_or_wb = (
-            ((df_scouting['player_position'] == 'Defender') | 
-            (df_scouting['player_position'] == 'Wing Back')) & 
-            ((df_scouting['player_positionSide'] == 'Right') | 
-            (df_scouting['player_positionSide'] == 'Left'))
-        )
+        df_backs = df_scouting[((df_scouting['player_position'] == 'Defender') | (df_scouting['player_position'] == 'Wing Back')| (df_scouting['player_position'] == 'Midfielder')) & 
+                            ((df_scouting['player_positionSide'] == 'Right') | (df_scouting['player_positionSide'] == 'Left'))]
 
-        # Additional condition: if formationUsed is 343, also include Midfielders on the flanks
-        is_midfielder_flank_343 = (
-            (df_scouting['formationUsed'] == '343') &
-            (df_scouting['player_position'] == 'Midfielder') &
-            ((df_scouting['player_positionSide'] == 'Right') | 
-            (df_scouting['player_positionSide'] == 'Left'))
-        )
-
-        # Combine the conditions
-        df_backs = df_scouting[is_def_or_wb | is_midfielder_flank_343]
         df_backs['minsPlayed'] = df_backs['minsPlayed'].astype(int)
         df_backs = df_backs[df_backs['minsPlayed'] >= minutter_kamp]
 
@@ -1025,23 +1011,12 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         return df_otter
 
     def number10():
-        formation_last_digit = df_scouting['formationUsed'].str[-1]
-
-        # Base condition: Attacking Midfielder with Centre side
-        is_10_base = (
-            (df_scouting['player_position'] == 'Attacking Midfielder') &
-            (df_scouting['player_positionSide'].str.contains('Centre'))
-        )
-
-        # Extra condition: Striker with Right or Left side, only if last digit is '3'
-        is_striker_flank_343 = (
-            (formation_last_digit == '3') &
-            (df_scouting['player_position'] == 'Striker') &
-            (df_scouting['player_positionSide'].str.contains('Right|Left'))
-        )
-
-        # Combine filters
-        df_10 = df_scouting[is_10_base | is_striker_flank_343]
+        df_10 = df_scouting[
+            (
+                (df_scouting['player_position'].isin(['Attacking Midfielder', 'Striker'])) &
+                (df_scouting['player_positionSide'].isin(['Centre/Right', 'Left/Centre']))
+            )
+        ]
 
         df_10['minsPlayed'] = df_10['minsPlayed'].astype(int)
         df_10 = df_10[df_10['minsPlayed'] >= minutter_kamp]
@@ -1118,10 +1093,6 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
     def winger():
         df_winger = df_scouting[
             (
-                (df_scouting['player_position'] == 'Midfielder') &
-                (df_scouting['player_positionSide'].isin(['Right', 'Left']))
-            ) |
-            (
                 (df_scouting['player_position'].isin(['Attacking Midfielder', 'Striker'])) &
                 (df_scouting['player_positionSide'].isin(['Right', 'Left']))
             )
@@ -1194,20 +1165,8 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         return df_winger
 
     def Classic_striker():
-        formation_last_digit = df_scouting['formationUsed'].str[-1]
+        df_striker = df_scouting[(df_scouting['player_position'] == 'Striker') & (df_scouting['player_positionSide']=='Centre')]
 
-        # Define conditions for position and side
-        is_striker = df_scouting['player_position'] == 'Striker'
-
-        # Create conditional logic for side based on last digit of formation
-        side_cond = (
-            ((formation_last_digit == '2') & df_scouting['player_positionSide'].str.contains('Centre')) |
-            ((formation_last_digit == '3') & (df_scouting['player_positionSide'] == 'Centre'))|
-            ((formation_last_digit == '1') & (df_scouting['player_positionSide'] == 'Centre'))
-        )
-
-        # Apply filter
-        df_striker = df_scouting[is_striker & side_cond]
         df_striker['minsPlayed'] = df_striker['minsPlayed'].astype(int)
         df_striker = df_striker[df_striker['minsPlayed'].astype(int) >= minutter_kamp]
 
@@ -1367,12 +1326,12 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
 
     return {
         'Central defender': balanced_central_defender(),
-        'Fullbacks': fullbacks(),
+        'Wingback': fullbacks(),
         'Number 6' : number6(),
         'Number 8': number8(),
         'Number 10': number10(),
         'Winger': winger(),
-        'Classic striker': Classic_striker(),
+        'Striker': Classic_striker(),
     }
 
 def process_data():
@@ -1443,7 +1402,7 @@ position_dataframes = Process_data_spillere(df_possession_xa, df_pv, df_matchsta
 #defending_central_defender_df = position_dataframes['defending_central_defender']
 #ball_playing_central_defender_df = position_dataframes['ball_playing_central_defender']
 balanced_central_defender_df = position_dataframes['Central defender']
-fullbacks_df = position_dataframes['Wingbacks']
+fullbacks_df = position_dataframes['Wingback']
 number6_df = position_dataframes['Number 6']
 #number6_double_6_forward_df = position_dataframes['number6_double_6_forward']
 #number6_destroyer_df = position_dataframes['Number 6 (destroyer)']

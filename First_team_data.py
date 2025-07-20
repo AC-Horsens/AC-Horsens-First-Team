@@ -1043,7 +1043,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         'Number 8': number8(),
         'Number 10': number10(),
         'Winger': winger(),
-        'Classic striker': Classic_striker(),
+        'Striker': Classic_striker(),
     }
 
 def plot_heatmap_location(data):
@@ -1068,7 +1068,7 @@ number6_df = position_dataframes['Number 6']
 number8_df = position_dataframes['Number 8']
 number10_df = position_dataframes['Number 10']
 winger_df = position_dataframes['Winger']
-classic_striker_df = position_dataframes['Classic striker']
+classic_striker_df = position_dataframes['Striker']
 
 def Dashboard():
     xml_files = glob.glob('XML files/*.xml')
@@ -2138,7 +2138,7 @@ def Opposition_analysis():
     balanced_central_defender_df = position_dataframes['Central defender']
     balanced_central_defender_df['label'] = balanced_central_defender_df['label'].str.replace(' ', '_')
     
-    fullbacks_df = position_dataframes['Wingbacks']
+    fullbacks_df = position_dataframes['Wingback']
     fullbacks_df['label'] = fullbacks_df['label'].str.replace(' ', '_')
 
     number6_df = position_dataframes['Number 6']
@@ -2153,7 +2153,7 @@ def Opposition_analysis():
     winger_df = position_dataframes['Winger']
     winger_df['label'] = winger_df['label'].str.replace(' ', '_')
 
-    classic_striker_df = position_dataframes['Classic striker']
+    classic_striker_df = position_dataframes['Striker']
     classic_striker_df['label'] = classic_striker_df['label'].str.replace(' ', '_')
 
     matchstats_df = load_match_stats()
@@ -2406,7 +2406,7 @@ def Opposition_analysis():
     agg_df = agg_df.round(2)
     st.dataframe(agg_df, hide_index=True)
     central_defender_df = agg_df.copy()
-    st.header('Fullbacks')
+    st.header('Wingback')
 
     # Filter the fullbacks data for the 'Horsens' team
     fullbacks_df = fullbacks_df[fullbacks_df['team_name'] == 'Horsens']
