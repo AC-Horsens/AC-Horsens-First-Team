@@ -723,21 +723,20 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         return df_otter
 
     def number10():
-        formation_str = df_scouting['formationUsed'].astype(str)
-        formation_last_digit = formation_str.str[-1]
-
-        # Base condition: Attacking Midfielder with Centre side
         is_10_base = (
             (df_scouting['player_position'] == 'Attacking Midfielder') &
             (df_scouting['player_positionSide'].str.contains('Centre'))
         )
 
-        # Extra condition: Striker with Right or Left side, only if last digit is '3'
+        # Extra condition: only if formationUsed is exactly '343'
         is_striker_flank_343 = (
-            (formation_last_digit == '3') &
+            (df_scouting['formationUsed'] == '343') &
             (df_scouting['player_position'] == 'Striker') &
             (df_scouting['player_positionSide'].str.contains('Right|Left'))
         )
+
+        # Combine both conditions
+        df_10 = df_scouting[is_10_base | is_striker_flank_343]
 
         # Combine filters
         df_10 = df_scouting[is_10_base | is_striker_flank_343]
