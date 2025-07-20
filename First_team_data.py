@@ -1038,7 +1038,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
 
     return {
         'Central defender': balanced_central_defender(),
-        'Wingbacks': fullbacks(),
+        'Wingback': fullbacks(),
         'Number 6' : number6(),
         'Number 8': number8(),
         'Number 10': number10(),
