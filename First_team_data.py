@@ -649,8 +649,10 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         return df_sekser_double_6_forward
     
     def number8():
-        df_otter = df_scouting[(df_scouting['player_position'] == 'Midfielder') & 
-                            (df_scouting['player_positionSide'].isin['Centre/Right','Left/Centre'])]
+        df_otter = df_scouting[
+            (df_scouting['player_position'] == 'Midfielder') & 
+            (df_scouting['player_positionSide'].isin(['Centre/Right', 'Left/Centre']))
+        ]        
         df_otter['minsPlayed'] = df_otter['minsPlayed'].astype(int)
         df_otter = df_otter[df_otter['minsPlayed'] >= minutter_kamp]
 
