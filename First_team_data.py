@@ -44,7 +44,7 @@ def load_possession_data():
 
 @st.cache_data
 def load_def_line_data():
-    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2025_2026/Horsens_Defensive_line_data.csv'
+    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/Horsens_Defensive_line_data.csv'
     def_line = pd.read_csv(url)
     
     return def_line
