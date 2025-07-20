@@ -899,7 +899,6 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         df_striker = calculate_score(df_striker, 'penAreaEntries_per90','penAreaEntries_per90 score')
         df_striker = calculate_score(df_striker, 'finalThird passes %','finalThird passes % score')
         df_striker = calculate_score(df_striker, 'finalthirdpass_per90','finalThird passes per90 score')
-        df_striker = calculate_score(df_striker, 'shotFastbreak_per90','shotFastbreak_per90 score')
         df_striker = calculate_score(df_striker, 'dribble %','dribble % score')
         df_striker = calculate_score(df_striker, 'dribble_per90', 'dribble_per90 score')
         df_striker = calculate_score(df_striker, 'touches_in_box_per90','touches_in_box_per90 score')
