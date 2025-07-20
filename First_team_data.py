@@ -723,7 +723,8 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         return df_otter
 
     def number10():
-        formation_last_digit = df_scouting['formationUsed'].str[-1]
+        formation_str = df_scouting['formationUsed'].astype(str)
+        formation_last_digit = formation_str.str[-1]
 
         # Base condition: Attacking Midfielder with Centre side
         is_10_base = (
