@@ -723,9 +723,23 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         return df_otter
 
     def number10():
-        df_10 = df_scouting[
-            ((df_scouting['player_position'] == 'Attacking Midfielder') & df_scouting['player_positionSide'].str.contains('Centre'))
-        ]
+        formation_last_digit = df_scouting['formationUsed'].str[-1]
+
+        # Base condition: Attacking Midfielder with Centre side
+        is_10_base = (
+            (df_scouting['player_position'] == 'Attacking Midfielder') &
+            (df_scouting['player_positionSide'].str.contains('Centre'))
+        )
+
+        # Extra condition: Striker with Right or Left side, only if last digit is '3'
+        is_striker_flank_343 = (
+            (formation_last_digit == '3') &
+            (df_scouting['player_position'] == 'Striker') &
+            (df_scouting['player_positionSide'].str.contains('Right|Left'))
+        )
+
+        # Combine filters
+        df_10 = df_scouting[is_10_base | is_striker_flank_343]
         df_10['minsPlayed'] = df_10['minsPlayed'].astype(int)
         df_10 = df_10[df_10['minsPlayed'] >= minutter_kamp]
 
@@ -1062,7 +1076,7 @@ squads = load_squads()
 
 position_dataframes = Process_data_spillere(df_xA, df_pv, df_match_stats, df_xg_all, squads)
 balanced_central_defender_df = position_dataframes['Central defender']
-fullbacks_df = position_dataframes['Fullbacks']
+fullbacks_df = position_dataframes['Wingbacks']
 number6_df = position_dataframes['Number 6']
 number8_df = position_dataframes['Number 8']
 number10_df = position_dataframes['Number 10']
@@ -2137,7 +2151,7 @@ def Opposition_analysis():
     balanced_central_defender_df = position_dataframes['Central defender']
     balanced_central_defender_df['label'] = balanced_central_defender_df['label'].str.replace(' ', '_')
     
-    fullbacks_df = position_dataframes['Fullbacks']
+    fullbacks_df = position_dataframes['Wingbacks']
     fullbacks_df['label'] = fullbacks_df['label'].str.replace(' ', '_')
 
     number6_df = position_dataframes['Number 6']

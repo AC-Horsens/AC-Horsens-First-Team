@@ -9,50 +9,50 @@ from matplotlib.path import Path
 
 
 def load_data():
-    df_xg = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2024_2025/xg_all DNK_1_Division_2024_2025.csv')
+    df_xg = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2025_2026/xg_all DNK_1_Division_2025_2026.csv')
     df_xg['label'] = df_xg['label'] + ' ' + df_xg['date']
 
-    df_xa = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2024_2025/xA_all DNK_1_Division_2024_2025.csv')
+    df_xa = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2025_2026/xA_all DNK_1_Division_2025_2026.csv')
     df_xa['label'] = df_xa['label'] + ' ' + df_xa['date']
 
-    df_pv = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2024_2025/pv_all DNK_1_Division_2024_2025.csv')
+    df_pv = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2025_2026/pv_all DNK_1_Division_2025_2026.csv')
     df_pv['label'] = df_pv['label'] + ' ' + df_pv['date']
 
-    df_possession_stats = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2024_2025/possession_stats_all DNK_1_Division_2024_2025.csv')
+    df_possession_stats = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2025_2026/possession_stats_all DNK_1_Division_2025_2026.csv')
     df_possession_stats['label'] = df_possession_stats['label'] + ' ' + df_possession_stats['date']
 
-    df_xa_agg = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2024_2025/Horsens/Horsens_possession_data.csv')
+    df_xa_agg = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2025_2026/Horsens/Horsens_possession_data.csv')
     df_xa_agg['label'] = df_xa_agg['label'] + ' ' + df_xa_agg['date']
 
-    df_possession_data = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2024_2025/Horsens/Horsens_possession_data.csv')
+    df_possession_data = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2025_2026/Horsens/Horsens_possession_data.csv')
     df_possession_data['label'] = df_possession_data['label'] + ' ' + df_possession_data['date']
 
-    df_xg_agg = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2024_2025/Horsens/Horsens_xg_data.csv')
+    df_xg_agg = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2025_2026/Horsens/Horsens_xg_data.csv')
     df_xg_agg['label'] = df_xg_agg['label'] + ' ' + df_xg_agg['date']
 
-    df_pv_agg = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2024_2025/Horsens/Horsens_pv_data.csv')
+    df_pv_agg = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2025_2026/Horsens/Horsens_pv_data.csv')
     df_pv_agg['label'] = df_pv_agg['label'] + ' ' + df_pv_agg['date']
 
-    df_possession_xa = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2024_2025/xA_all DNK_1_Division_2024_2025.csv')
+    df_possession_xa = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2025_2026/xA_all DNK_1_Division_2025_2026.csv')
     df_possession_xa['label'] = df_possession_xa['label'] + ' ' + df_possession_xa['date']
 
-    df_xg_all = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2024_2025/xg_all DNK_1_Division_2024_2025.csv')
+    df_xg_all = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2025_2026/xg_all DNK_1_Division_2025_2026.csv')
     df_xg_all['label'] = df_xg_all['label'] + ' ' + df_xg_all['date']
 
-    df_pv_all = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2024_2025/pv_all DNK_1_Division_2024_2025.csv')
+    df_pv_all = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2025_2026/pv_all DNK_1_Division_2025_2026.csv')
     df_pv_all['label'] = df_pv_all['label'] + ' ' + df_pv_all['date']
 
-    df_matchstats = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2024_2025/matchstats_all DNK_1_Division_2024_2025.csv')
+    df_matchstats = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2025_2026/matchstats_all DNK_1_Division_2025_2026.csv')
     df_matchstats['label'] = df_matchstats['label'] + ' ' + df_matchstats['date']
 
-    squads = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2024_2025/squads DNK_1_Division_2024_2025.csv')
+    squads = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2025_2026/squads DNK_1_Division_2025_2026.csv')
     
-    possession_events = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2024_2025/Horsens/Horsens_possession_data.csv')
+    possession_events = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2025_2026/Horsens/Horsens_possession_data.csv')
     possession_events['label'] = possession_events['label'] + ' ' + possession_events['date']
-    #packing_df = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2024_2025/packing_all DNK_1_Division_2024_2025.csv')
+    #packing_df = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2025_2026/packing_all DNK_1_Division_2025_2026.csv')
     #packing_df['label'] = packing_df['label'] + ' ' + packing_df['date']
     
-    #space_control_df = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2024_2025/Space_control_all DNK_1_Division_2024_2025.csv')
+    #space_control_df = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2025_2026/Space_control_all DNK_1_Division_2025_2026.csv')
     #space_control_df['label'] = space_control_df['label'] + ' ' + space_control_df['date']
     
     return df_xg, df_xa, df_pv, df_possession_stats, df_xa_agg, df_possession_data, df_xg_agg, df_pv_agg, df_xg_all, df_possession_xa, df_pv_all, df_matchstats, squads, possession_events
@@ -725,8 +725,23 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         return df_balanced_central_defender
   
     def fullbacks():
-        df_backs = df_scouting[((df_scouting['player_position'] == 'Defender') | (df_scouting['player_position'] == 'Wing Back')) & 
-                            ((df_scouting['player_positionSide'] == 'Right') | (df_scouting['player_positionSide'] == 'Left'))]
+        is_def_or_wb = (
+            ((df_scouting['player_position'] == 'Defender') | 
+            (df_scouting['player_position'] == 'Wing Back')) & 
+            ((df_scouting['player_positionSide'] == 'Right') | 
+            (df_scouting['player_positionSide'] == 'Left'))
+        )
+
+        # Additional condition: if formationUsed is 343, also include Midfielders on the flanks
+        is_midfielder_flank_343 = (
+            (df_scouting['formationUsed'] == '343') &
+            (df_scouting['player_position'] == 'Midfielder') &
+            ((df_scouting['player_positionSide'] == 'Right') | 
+            (df_scouting['player_positionSide'] == 'Left'))
+        )
+
+        # Combine the conditions
+        df_backs = df_scouting[is_def_or_wb | is_midfielder_flank_343]
         df_backs['minsPlayed'] = df_backs['minsPlayed'].astype(int)
         df_backs = df_backs[df_backs['minsPlayed'] >= minutter_kamp]
 
@@ -1010,9 +1025,24 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         return df_otter
 
     def number10():
-        df_10 = df_scouting[
-            ((df_scouting['player_position'] == 'Attacking Midfielder') & df_scouting['player_positionSide'].str.contains('Centre'))
-        ]
+        formation_last_digit = df_scouting['formationUsed'].str[-1]
+
+        # Base condition: Attacking Midfielder with Centre side
+        is_10_base = (
+            (df_scouting['player_position'] == 'Attacking Midfielder') &
+            (df_scouting['player_positionSide'].str.contains('Centre'))
+        )
+
+        # Extra condition: Striker with Right or Left side, only if last digit is '3'
+        is_striker_flank_343 = (
+            (formation_last_digit == '3') &
+            (df_scouting['player_position'] == 'Striker') &
+            (df_scouting['player_positionSide'].str.contains('Right|Left'))
+        )
+
+        # Combine filters
+        df_10 = df_scouting[is_10_base | is_striker_flank_343]
+
         df_10['minsPlayed'] = df_10['minsPlayed'].astype(int)
         df_10 = df_10[df_10['minsPlayed'] >= minutter_kamp]
 
@@ -1164,7 +1194,20 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         return df_winger
 
     def Classic_striker():
-        df_striker = df_scouting[(df_scouting['player_position'] == 'Striker') & (df_scouting['player_positionSide'].str.contains('Centre'))]
+        formation_last_digit = df_scouting['formationUsed'].str[-1]
+
+        # Define conditions for position and side
+        is_striker = df_scouting['player_position'] == 'Striker'
+
+        # Create conditional logic for side based on last digit of formation
+        side_cond = (
+            ((formation_last_digit == '2') & df_scouting['player_positionSide'].str.contains('Centre')) |
+            ((formation_last_digit == '3') & (df_scouting['player_positionSide'] == 'Centre'))|
+            ((formation_last_digit == '1') & (df_scouting['player_positionSide'] == 'Centre'))
+        )
+
+        # Apply filter
+        df_striker = df_scouting[is_striker & side_cond]
         df_striker['minsPlayed'] = df_striker['minsPlayed'].astype(int)
         df_striker = df_striker[df_striker['minsPlayed'].astype(int) >= minutter_kamp]
 
@@ -1400,14 +1443,14 @@ position_dataframes = Process_data_spillere(df_possession_xa, df_pv, df_matchsta
 #defending_central_defender_df = position_dataframes['defending_central_defender']
 #ball_playing_central_defender_df = position_dataframes['ball_playing_central_defender']
 balanced_central_defender_df = position_dataframes['Central defender']
-fullbacks_df = position_dataframes['Fullbacks']
+fullbacks_df = position_dataframes['Wingbacks']
 number6_df = position_dataframes['Number 6']
 #number6_double_6_forward_df = position_dataframes['number6_double_6_forward']
 #number6_destroyer_df = position_dataframes['Number 6 (destroyer)']
 number8_df = position_dataframes['Number 8']
 number10_df = position_dataframes['Number 10']
 winger_df = position_dataframes['Winger']
-classic_striker_df = position_dataframes['Classic striker']
+classic_striker_df = position_dataframes['Striker']
 #targetman_df = position_dataframes['Targetman']
 #box_striker_df = position_dataframes['Boxstriker']
 #horsens_df, merged_df, total_expected_points_combined = process_data()
