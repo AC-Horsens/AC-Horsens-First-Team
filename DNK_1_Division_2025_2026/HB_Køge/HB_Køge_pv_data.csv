@@ -143,7 +143,6 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644073,50,1,1,13,28,0,92.8,25.5,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.1491584,0.1233501,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644085,51,6,1,13,29,1,92.0,33.6,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644249,52,1,1,14,9,1,99.5,0.5,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0636614,0.0343654,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-b2vft81kyjurzbmekvgrqwr64,Hobro,2827666135,967,37,14,0,0,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644267,53,1,1,14,17,1,94.4,86.6,2pm5oqzyonn0dysa5nszgq3xm,H. Bonnesen,0.0296706,-0.0339908,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644273,54,1,1,14,19,0,80.0,85.6,k43cten7yb6p59yo0firhb84,M. Schütt,0.0064957,-0.0231749,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644311,55,1,1,14,25,1,78.6,24.3,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.063017,0.063017,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
@@ -166,6 +165,7 @@ b2vft81kyjurzbmekvgrqwr64,Hobro,2827666135,967,37,14,0,0,1,0.0,0.0,NaN,NaN,NaN,N
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644485,71,1,1,15,6,0,72.5,27.0,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,0.0067807,-0.0282784,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644519,72,1,1,15,11,1,67.5,14.3,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,0.008386,0.008386,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644529,73,1,1,15,15,1,89.1,9.1,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0172841,0.0088981,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827651823,355,30,1,48,12,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644533,74,1,1,15,18,0,78.7,29.2,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0067149,-0.0105692,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644555,75,3,1,15,26,0,63.6,12.2,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,0.0,-0.0,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827645073,115,43,1,15,27,1,0.0,0.0,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
@@ -332,6 +332,7 @@ b2vft81kyjurzbmekvgrqwr64,Hobro,2827666135,967,37,14,0,0,1,0.0,0.0,NaN,NaN,NaN,N
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827647683,252,1,1,36,30,1,48.4,45.1,7al9w77ailhli8g487tkl32tw,M. Westergren,0.0008253,-2.68e-05,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827647699,253,1,1,36,32,1,41.4,68.8,6gmm4awyvlf9p7jr9dvnmp0tm,L. Bust,0.0002681,-0.0005572,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827647709,254,1,1,36,37,1,19.9,59.3,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.000349,8.09e-05,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827655617,383,32,2,45,0,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827647713,255,1,1,36,39,1,26.8,78.8,6gmm4awyvlf9p7jr9dvnmp0tm,L. Bust,0.0005487,0.0001997,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827647739,256,1,1,36,40,1,31.1,75.7,7al9w77ailhli8g487tkl32tw,M. Westergren,0.0012415,0.0006928,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827647743,257,61,1,36,45,0,42.5,86.8,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0012693,0.0,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
@@ -416,8 +417,6 @@ b2vft81kyjurzbmekvgrqwr64,Hobro,2827666135,967,37,14,0,0,1,0.0,0.0,NaN,NaN,NaN,N
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827651497,351,1,1,47,58,0,82.7,16.4,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.0107747,0.0093066,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827651517,352,1,1,48,2,0,78.0,43.4,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0748876,0.0748876,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827651531,353,15,1,48,5,1,77.2,54.8,k43cten7yb6p59yo0firhb84,M. Schütt,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827651823,355,30,1,48,12,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827655617,383,32,2,45,0,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827655701,384,49,2,45,13,1,35.0,54.9,2pm5oqzyonn0dysa5nszgq3xm,H. Bonnesen,0.0031888,0.0031888,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827655715,385,1,2,45,13,1,35.0,54.9,2pm5oqzyonn0dysa5nszgq3xm,H. Bonnesen,0.0002681,-0.0029207,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827655723,386,1,2,45,17,0,11.7,66.3,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.0012028,-0.0002681,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
@@ -752,6 +751,7 @@ b2vft81kyjurzbmekvgrqwr64,Hobro,2827666135,967,37,14,0,0,1,0.0,0.0,NaN,NaN,NaN,N
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827665923,762,1,2,93,33,1,49.1,12.8,67p0s4o54xcmiustgy8k5gljo,S. Hald,0.0006731,-0.0002442,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827665925,763,1,2,93,37,1,36.7,57.6,7al9w77ailhli8g487tkl32tw,M. Westergren,0.0013078,0.0006347,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827665935,764,1,2,93,38,1,39.6,50.7,67p0s4o54xcmiustgy8k5gljo,S. Hald,0.0002681,-0.0010397,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+b2vft81kyjurzbmekvgrqwr64,Hobro,2827644845,67,5,1,6,20,1,66.6,-0.8,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827665941,765,1,2,93,41,0,11.2,55.5,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.0009096,-0.0002681,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827665997,766,44,2,94,3,1,17.2,45.1,7al9w77ailhli8g487tkl32tw,M. Westergren,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827666001,767,12,2,94,4,1,16.0,56.7,7al9w77ailhli8g487tkl32tw,M. Westergren,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
@@ -837,7 +837,6 @@ b2vft81kyjurzbmekvgrqwr64,Hobro,2827644837,64,1,1,5,57,1,33.0,66.7,e0rgqk3gxzs00
 b2vft81kyjurzbmekvgrqwr64,Hobro,2827644833,62,1,1,6,4,1,38.2,43.8,6bv0j0ezhh9u5u5hqz64p790q,M. Jacobsen,0.0002843,1.33e-05,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 b2vft81kyjurzbmekvgrqwr64,Hobro,2827644843,66,1,1,6,7,1,22.9,18.8,cflwegqpzch8y30pb3dhigqnd,E. Søgaard,0.001331,0.0010467,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 b2vft81kyjurzbmekvgrqwr64,Hobro,2827644841,65,1,1,6,8,0,46.7,2.7,8q8yol44e42o9hwttlopznvh0,M. Nielsen,0.0011958,-0.0001352,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-b2vft81kyjurzbmekvgrqwr64,Hobro,2827644845,67,5,1,6,20,1,66.6,-0.8,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 b2vft81kyjurzbmekvgrqwr64,Hobro,2827649089,333,1,1,6,33,1,58.4,0.0,8q8yol44e42o9hwttlopznvh0,M. Nielsen,0.0007595,-0.0005254,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 b2vft81kyjurzbmekvgrqwr64,Hobro,2827649091,334,1,1,6,34,1,52.7,8.2,cflwegqpzch8y30pb3dhigqnd,E. Søgaard,0.0041922,0.0034327,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 b2vft81kyjurzbmekvgrqwr64,Hobro,2827649237,344,1,1,6,38,1,63.2,28.0,e0rgqk3gxzs005m9ok9hvp1ck,T. Hansen,0.0083183,0.0041261,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
@@ -1595,6 +1594,7 @@ b2vft81kyjurzbmekvgrqwr64,Hobro,2827663697,818,1,2,80,45,1,58.9,0.0,cflwegqpzch8
 b2vft81kyjurzbmekvgrqwr64,Hobro,2827663705,819,1,2,80,49,1,37.5,23.1,6bv0j0ezhh9u5u5hqz64p790q,M. Jacobsen,0.0002681,-0.0003517,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 b2vft81kyjurzbmekvgrqwr64,Hobro,2827663751,822,1,2,80,55,1,16.8,46.4,9yxhg70gpwi3e9s84c8qwg0yx,J. Dakir,0.0003495,8.14e-05,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 b2vft81kyjurzbmekvgrqwr64,Hobro,2827663761,823,1,2,80,58,1,20.7,16.4,cflwegqpzch8y30pb3dhigqnd,E. Søgaard,0.0004108,6.13e-05,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+b2vft81kyjurzbmekvgrqwr64,Hobro,2827666135,967,37,14,0,0,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 b2vft81kyjurzbmekvgrqwr64,Hobro,2827663777,824,1,2,81,2,1,23.6,40.6,6bv0j0ezhh9u5u5hqz64p790q,M. Jacobsen,0.0007209,0.0003101,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 b2vft81kyjurzbmekvgrqwr64,Hobro,2827663795,825,1,2,81,4,1,37.5,12.5,cflwegqpzch8y30pb3dhigqnd,E. Søgaard,0.002733,0.0020121,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 b2vft81kyjurzbmekvgrqwr64,Hobro,2827663801,826,3,2,81,10,0,66.6,8.2,9xub4z9b3bog8wqhn5yfihecp,M. Pedersen,0.001296,-0.001437,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18

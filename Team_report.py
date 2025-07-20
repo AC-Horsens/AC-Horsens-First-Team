@@ -1576,7 +1576,7 @@ def create_pdf_progress_report(horsens_df, total_expected_points_combined, posit
     plt.close()
     pdf.image("total_expected_points_table.png", x=5, y=71, w=200)
     
-    y_position = 100  # Initial y position after the table image
+    y_position = 130  # Initial y position after the table image
     pdf.set_xy(5, y_position)
 
     # Generate the DataFrame summary table for total expected points
@@ -1613,7 +1613,7 @@ def create_pdf_progress_report(horsens_df, total_expected_points_combined, posit
         aggregation_dict['minsPlayed'] = 'sum'
         
         filtered_df = filtered_df.groupby('playerName').agg(aggregation_dict).reset_index()
-        filtered_df = filtered_df[filtered_df['minsPlayed'] > 400]
+        filtered_df = filtered_df[filtered_df['minsPlayed'] > 0]
         filtered_df = filtered_df.round(2)
         filtered_df['Total score'] = filtered_df['Total score'].astype(float)        
         reordered_columns = ['playerName', 'minsPlayed'] + numeric_columns

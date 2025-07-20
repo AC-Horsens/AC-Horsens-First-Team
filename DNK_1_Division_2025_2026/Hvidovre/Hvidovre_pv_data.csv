@@ -138,6 +138,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827649965,133,1,1,14,30,0,96.6,33.6,a7eramyy1bd8msxmg84ctc8ut,A. Okosun,0.0324181,-0.0037027,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827660875,419,49,1,14,43,1,28.6,82.8,a30gduuv9d1s4pkthgu2jhyol,D. Stenderup,0.001172,0.001172,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827650021,135,1,1,14,44,1,42.2,83.2,a30gduuv9d1s4pkthgu2jhyol,D. Stenderup,0.0,-0.0169385,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
+8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827664147,510,68,2,55,56,1,75.1,87.8,NaN,NaN,NaN,NaN,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827650033,136,1,1,14,48,1,41.8,28.8,3pk6hii2s8tbv2zux8mvbapec,N. Jungvig,0.0083183,0.0071351,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827650061,137,1,1,14,52,1,80.6,8.8,bfvdr7ckiersz26ya2kq9f1g4,A. Iljazovski,0.0514749,0.0431566,NaN,1.0,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827650069,138,13,1,14,54,1,90.8,54.9,9tt9eo9bsff7dp7aqjal1obo4,F. Høgh,NaN,NaN,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
@@ -249,6 +250,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827653909,236,1,1,27,36,1,49.8,50.0,9tt9eo9bsff7dp7aqjal1obo4,F. Høgh,0.0003978,0.0003978,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827653925,237,1,1,27,43,1,33.3,61.5,dm6xpphbyyooqriwaambi7njd,F. Krogstad,0.0,-0.0003978,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827653933,238,1,1,27,47,1,27.9,37.7,3pk6hii2s8tbv2zux8mvbapec,N. Jungvig,0.0,0.0,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
+8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827661579,424,1,1,31,49,1,10.2,56.6,4qz1pnlx3d0m5wkhpocl0euj8,A. Ravn,0.0003397,-0.0002737,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827653949,239,1,1,27,48,1,27.9,51.0,a30gduuv9d1s4pkthgu2jhyol,D. Stenderup,0.0003391,-0.0001026,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827653965,240,1,1,27,54,0,31.0,23.4,3pk6hii2s8tbv2zux8mvbapec,N. Jungvig,0.0014664,0.0011273,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827653995,241,5,1,27,59,1,92.2,-1.7,3pk6hii2s8tbv2zux8mvbapec,N. Jungvig,NaN,NaN,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
@@ -276,7 +278,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827661425,420,49,1,31,43,1,27.5,21.9,bfvdr7ckiersz26ya2kq9f1g4,A. Iljazovski,0.0011202,0.0011202,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827661459,421,1,1,31,47,1,28.5,18.0,bfvdr7ckiersz26ya2kq9f1g4,A. Iljazovski,0.0003458,-0.0007744,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827661481,422,1,1,31,48,1,27.6,64.9,a30gduuv9d1s4pkthgu2jhyol,D. Stenderup,0.0002737,-7.21e-05,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
-8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827661579,424,1,1,31,49,1,10.2,56.6,4qz1pnlx3d0m5wkhpocl0euj8,A. Ravn,0.0003397,-0.0002737,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
+8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827663803,506,27,2,53,12,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827661679,426,1,1,31,51,1,23.2,86.9,a30gduuv9d1s4pkthgu2jhyol,D. Stenderup,0.0003862,0.0003862,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827661701,427,1,1,31,53,1,32.9,94.2,6dzg820946z4848whaa6ny2nd,N. Clausen,0.0012152,0.000829,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827661705,428,61,1,31,59,0,69.6,90.5,2cup1vjw8n43kbzzxfflnmplg,J. Singh,0.001296,0.0,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
@@ -304,6 +306,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827655513,289,1,1,33,40,1,34.8,70.8,dm6xpphbyyooqriwaambi7njd,F. Krogstad,0.0005389,-0.0004334,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827655531,290,1,1,33,42,1,34.4,56.1,a7eramyy1bd8msxmg84ctc8ut,A. Okosun,0.0,-0.0005389,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827655537,291,1,1,33,46,0,31.5,23.1,3pk6hii2s8tbv2zux8mvbapec,N. Jungvig,0.0,0.0,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
+8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827663961,507,28,2,55,19,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827655619,292,5,1,33,50,1,53.6,-0.7,3pk6hii2s8tbv2zux8mvbapec,N. Jungvig,NaN,NaN,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827655639,293,1,1,34,7,1,60.7,0.0,bfvdr7ckiersz26ya2kq9f1g4,A. Iljazovski,0.008744,0.0075095,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827655645,294,1,1,34,10,1,75.8,25.6,9tt9eo9bsff7dp7aqjal1obo4,F. Høgh,0.0057901,-0.0029539,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
@@ -499,9 +502,6 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827663729,504,61,2,53,4,1,64.3,88.6,6dzg820946z4848whaa6ny2nd,N. Clausen,0.0042373,0.0042373,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827663747,505,43,2,53,7,1,0.0,0.0,dm6xpphbyyooqriwaambi7njd,F. Krogstad,NaN,NaN,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827663963,508,43,2,53,9,1,0.0,0.0,a7eramyy1bd8msxmg84ctc8ut,A. Okosun,0.0043835,0.0001462,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
-8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827663803,506,27,2,53,12,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
-8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827663961,507,28,2,55,19,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
-8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827664147,510,68,2,55,56,1,75.1,87.8,NaN,NaN,NaN,NaN,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827664153,511,49,2,55,57,1,75.1,87.8,2cup1vjw8n43kbzzxfflnmplg,J. Singh,0.0043835,0.0001462,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827664157,512,1,2,55,57,1,75.1,87.8,2cup1vjw8n43kbzzxfflnmplg,J. Singh,0.0003657,-0.0040178,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827664171,513,1,2,55,59,1,31.0,69.4,a30gduuv9d1s4pkthgu2jhyol,D. Stenderup,0.000271,-9.47e-05,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
