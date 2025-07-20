@@ -6,7 +6,12 @@ import os
 from datetime import datetime
 from datetime import date
 from matplotlib.path import Path
+import unicodedata
 
+def convert_to_ascii(text):
+    if isinstance(text, str):
+        return unicodedata.normalize('NFKD', text).encode('ASCII', 'ignore').decode('ASCII')
+    return text
 
 def load_data():
     df_xg = pd.read_csv('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/DNK_1_Division_2025_2026/xg_all DNK_1_Division_2025_2026.csv')
@@ -387,7 +392,6 @@ def create_holdsummary(df_possession_stats_summary, df_xg, df_xa, df_matchstats,
     # --- Duels ---
     duels = possession_events[possession_events['typeId'].isin([3, 4, 7, 44, 45])]
     duels_team_percentage = duels.groupby(['team_name','contestantId', 'label'])['outcome'].mean().reset_index(name='duel_win_percentage')
-    print(duels_team_percentage)
     # --- Assist zone actions ---
     zone1_mask = (
         ((possession_events['x'] >= 66) & (possession_events['x'] <= 80) & (possession_events['y'] >= 40) & (possession_events['y'] <= 60)) |
@@ -396,7 +400,6 @@ def create_holdsummary(df_possession_stats_summary, df_xg, df_xa, df_matchstats,
     )
     assist_zone_actions = possession_events[zone1_mask]
     assist_zone_counts = assist_zone_actions.groupby(['team_name','contestantId', 'label']).size().reset_index(name='Assist zone actions')
-    print(assist_zone_counts)
     # --- Dangerzone actions ---
     danger_zone_poly = [(100, 44), (100, 56), (86, 62.5), (86, 37.5)]
     danger_path = Path(danger_zone_poly)
@@ -418,8 +421,6 @@ def create_holdsummary(df_possession_stats_summary, df_xg, df_xa, df_matchstats,
     df_holdsummary = df_holdsummary.merge(assist_zone_counts, how='left')
 
     df_holdsummary = df_holdsummary.merge(dangerzone_counts, how='left')
-
-
 
     # --- Final tidy dataframe ---
     df_holdsummary = df_holdsummary[[
@@ -573,7 +574,6 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
     df_scouting['Ballrecovery_per90'] = (df_scouting['ballRecovery'].astype(float)/df_scouting['minsPlayed'].astype(float)) * 90
     df_scouting['fwdPass_per90'] = (df_scouting['fwdPass'].astype(float)/df_scouting['minsPlayed'].astype(float)) * 90
     df_scouting['finalthirdpass_per90'] = (df_scouting['successfulFinalThirdPasses'].astype(float)/df_scouting['minsPlayed'].astype(float)) * 90
-    df_scouting['shotFastbreak_per90'] = (df_scouting['shotFastbreak'].astype(float)/df_scouting['minsPlayed'].astype(float)) * 90
     df_scouting['bigChanceCreated_per90'] = (df_scouting['bigChanceCreated'].astype(float)/df_scouting['minsPlayed'].astype(float)) * 90
     df_scouting['dribble %'] = (df_scouting['wonContest'].astype(float) / df_scouting['totalContest'].astype(float)) * 100
     df_scouting['dribble_per90'] = (df_scouting['wonContest'].astype(float)/df_scouting['minsPlayed'].astype(float)) * 90
@@ -775,7 +775,7 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         df_backs['Total score'] = df_backs.apply(
             lambda row: weighted_mean(
                 [row['Defending_'], row['Passing_'], row['Chance_creation'], row['Possession_value_added']],
-                [3 if row['Defending_'] < 3 else 3, 3 if row['Passing_'] < 2 else 1, 3 if row['Chance_creation'] < 3 else 2, 3 if row['Possession_value_added'] < 3 else 2]
+                [3 if row['Defending_'] < 3 else 3, 3 if row['Passing_'] < 2 else 1, 6 if row['Chance_creation'] > 3 else 2, 3 if row['Possession_value_added'] < 3 else 2]
             ), axis=1
         )
 
@@ -838,7 +838,7 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         df_sekser['Total score'] = df_sekser.apply(
         lambda row: weighted_mean(
             [row['Defending_'], row['Passing_'],row['Progressive_ball_movement'],row['Possession_value_added']],
-            [3 if row['Defending_'] < 5 else 2, 3 if row['Passing_'] < 5 else 2, 3 if row['Progressive_ball_movement'] < 5 else 1, 3 if row['Possession_value_added'] < 5 else 1]
+            [3 if row['Defending_'] < 5 else 4, 2 if row['Passing_'] < 5 else 2, 3 if row['Progressive_ball_movement'] < 5 else 2, 1 if row['Possession_value_added'] < 5 else 1]
         ), axis=1
         )
 
@@ -1183,7 +1183,6 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         df_striker = calculate_score(df_striker, 'penAreaEntries_per90','penAreaEntries_per90 score')
         df_striker = calculate_score(df_striker, 'finalThird passes %','finalThird passes % score')
         df_striker = calculate_score(df_striker, 'finalthirdpass_per90','finalThird passes per90 score')
-        df_striker = calculate_score(df_striker, 'shotFastbreak_per90','shotFastbreak_per90 score')
         df_striker = calculate_score(df_striker, 'dribble %','dribble % score')
         df_striker = calculate_score(df_striker, 'dribble_per90', 'dribble_per90 score')
         df_striker = calculate_score(df_striker, 'touches_in_box_per90','touches_in_box_per90 score')
@@ -1191,7 +1190,6 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         df_striker = calculate_score(df_striker, 'attemptsIbox_per90','attemptsIbox_per90 score')
         df_striker = calculate_score(df_striker, 'xg_per90','xg_per90 score')
         df_striker = calculate_score(df_striker, 'post_shot_xg_per90','post_shot_xg_per90 score')
-
 
         df_striker['Linkup_play'] = df_striker[['Forward zone pass % score','Forward zone pass score','Passing % score','Passing score','Possession value score','penAreaEntries_per90 score','finalThirdEntries_per90 score']].mean(axis=1)
         df_striker['Chance_creation'] = df_striker[['penAreaEntries_per90 score','Possession value total score','touches_in_box_per90 score','finalThirdEntries_per90 score']].mean(axis=1)
@@ -1533,8 +1531,8 @@ def create_pdf_game_report(game_data, df_xg_agg, df_xa_agg, merged_df, df_posses
 
             # Add all cells for the row
             for value in row.values[:-1]:
-                pdf.cell(col_width, 4, txt=str(value), border=1, fill=True)
-            pdf.cell(last_col_width, 4,txt=str(row.values[-1]), border=1, fill=True)
+                pdf.cell(col_width, 4, txt=convert_to_ascii(str(value)), border=1, fill=True)
+            pdf.cell(last_col_width, 4, txt=convert_to_ascii(str(row.values[-1])), border=1, fill=True)
             pdf.ln(4)       
     pdf.output(f"Match reports/Match_Report_{label}.pdf")
     print(f'{label} report created')
@@ -1543,7 +1541,7 @@ for index, row in horsens_df.iterrows():
     # Define the file path based on the label
     label = row['label']  # Adjust this to the correct column name for your label
     file_path = f"Match reports/Match_Report_{label}.pdf"
-    
+
     # Check if the file already exists
     if not os.path.exists(file_path):
     # If it doesn't exist, create the PDF
@@ -1570,7 +1568,6 @@ def create_pdf_progress_report(horsens_df, total_expected_points_combined, posit
     # Generate the DataFrame summary table for total expected points
     total_expected_points_combined = total_expected_points_combined.round(2)
     total_expected_points_combined = total_expected_points_combined.sort_values(by='Expected points per game', ascending=False)
-    total_expected_points_combined = total_expected_points_combined[total_expected_points_combined['team_name'].isin(['Kolding','Fredericia','Horsens','OB','Hvidovre','Esbjerg'])]
     plt.figure(figsize=(12, 0.01), dpi=500)
     plt.axis('off')
     plt.rc('font', size=6)  # Set font size
@@ -1623,7 +1620,7 @@ def create_pdf_progress_report(horsens_df, total_expected_points_combined, posit
         filtered_df = filtered_df[reordered_columns]
         filtered_df = filtered_df.sort_values('Total score',ascending=False)
         pdf.set_font("Arial", size=6)
-        pdf.cell(190, 4, txt=f"Position Report: {position}", ln=True, align='C')
+        pdf.cell(190, 4, txt=convert_to_ascii(f"Position Report: {position}"), ln=True, align='C')
         pdf.ln(0)
 
         # Add table headers
@@ -1651,8 +1648,8 @@ def create_pdf_progress_report(horsens_df, total_expected_points_combined, posit
 
             # Add all cells for the row
             for value in row.values[:-1]:
-                pdf.cell(col_width, 4, txt=str(value), border=1, fill=True)
-            pdf.cell(last_col_width, 4,txt=str(row.values[-1]), border=1, fill=True)
+                pdf.cell(col_width, 4, txt=convert_to_ascii(str(value)), border=1, fill=True)
+            pdf.cell(last_col_width, 4, txt=convert_to_ascii(str(row.values[-1])), border=1, fill=True)
             pdf.ln(4)  # Move to next line for the next player's row
 
         pdf.ln(0)  # Add some space between position reports
