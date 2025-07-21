@@ -1755,7 +1755,6 @@ def Dashboard():
             )
             st.plotly_chart(fig, use_container_width=True)
 
-
     def Defending():
         df_opponent = df_possession[
             (df_possession['team_name'] == 'Opponent') & 
@@ -2693,7 +2692,7 @@ def Opposition_analysis():
         # Define player positions on the pitch
         positions = {
             "Central Defenders": [(10, 35)],
-            "Fullbacks": [(10, 55), (10, 15)],
+            "Wingbacks": [(30, 55), (30, 15)],
             "Number 6": [(30, 35)],
             "Number 8": [(65, 45)],
             "Number 10": [(75, 25)],
