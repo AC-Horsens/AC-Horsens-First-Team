@@ -2718,7 +2718,7 @@ def Opposition_analysis():
     # Prepare the data for positions
     position_data = {
         "Central Defenders": central_defender_df[['playerName', 'Total score']].values.tolist(),
-        "Fullbacks": fullback_df[['playerName', 'Total score']].values.tolist(),
+        "Wingback": fullback_df[['playerName', 'Total score']].values.tolist(),
         "Number 6": Number_6_df[['playerName', 'Total score']].values.tolist(),
         "Number 8": Number_8_df[['playerName', 'Total score']].values.tolist(),
         "Number 10": Number_10_df[['playerName', 'Total score']].values.tolist(),
