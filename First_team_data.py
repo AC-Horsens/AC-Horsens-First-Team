@@ -2692,7 +2692,7 @@ def Opposition_analysis():
         # Define player positions on the pitch
         positions = {
             "Central Defenders": [(10, 35)],
-            "Wingbacks": [(30, 55), (30, 15)],
+            "Wingback": [(30, 55), (30, 15)],
             "Number 6": [(30, 35)],
             "Number 8": [(65, 45)],
             "Number 10": [(75, 25)],
