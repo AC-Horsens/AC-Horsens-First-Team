@@ -10,7 +10,6 @@ import plotly.express as px
 import plotly.graph_objects as go
 from scipy.stats import linregress
 
-
 st.set_page_config(layout="wide")
 
 teams = ['B_93','Esbjerg','Fredericia','HB_Køge','Hillerød','Hobro','Horsens','Hvidovre','Kolding','OB','Roskilde','Vendsyssel']
