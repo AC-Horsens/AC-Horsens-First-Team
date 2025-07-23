@@ -1195,6 +1195,40 @@ def player_data(df_possession_data,df_match_stats,balanced_central_defender_df,f
         # Display the plot in Streamlit
         st.pyplot(fig)
 
+    def plot_xa_heatmap(data, player_name):
+        # Filter for player and xA > 0
+        key_passes = data[
+            (data['318.0'] > 0) &
+            (data['playerName'] == player_name) &
+            (data['5.0'].ne(True)) &
+            (data['6.0'].ne(True)) &
+            (data['107.0'].ne(True))
+        ]
+
+        # Draw the pitch
+        pitch = Pitch(pitch_type='opta', line_zorder=2, pitch_color='grass', line_color='white')
+        fig, ax = pitch.draw(figsize=(6.6, 4.125))
+        fig.set_facecolor('#22312b')
+
+        # Compute and smooth weighted heatmap
+        bin_stat = pitch.bin_statistic(
+            key_passes['x'], key_passes['y'],
+            values=key_passes['318.0'], statistic='sum', bins=(50, 25)
+        )
+        bin_stat['statistic'] = gaussian_filter(bin_stat['statistic'], 1)
+        pitch.heatmap(bin_stat, ax=ax, cmap='hot')
+
+        # Add total xA text
+        total_xa = key_passes['318.0'].sum()
+        ax.text(
+            60, 3, f"Total xA: {total_xa:.2f}", color='white', ha='center', va='center',
+            bbox=dict(facecolor='black', edgecolor='none', alpha=0.6), fontsize=10
+        )
+
+        # Streamlit output
+        st.write(f"{player_name} xA Heatmap")
+        st.pyplot(fig)
+
     # Example call in Streamlit app
 
     Bolde_modtaget = df[df['receiverName'] == player_name]
@@ -1226,4 +1260,5 @@ def player_data(df_possession_data,df_match_stats,balanced_central_defender_df,f
        
     with col3:
         plot_heatmap_end_location(Pasninger_spillet_til, f'Passes {player_name}')
+        plot_xa_heatmap(df,player_name)
 player_data(df_possession_data,df_match_stats,balanced_central_defender_df,fullbacks_df,number8_df,number6_df,number10_df,winger_df,classic_striker_df)
