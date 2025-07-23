@@ -21,40 +21,40 @@ team_name = st.selectbox('Choose team', teams, index=default_index)
 
 @st.cache_data()
 def load_data(team_name):
-    df_xg = pd.read_csv(r'DNK_1_Division_2024_2025/xg_all DNK_1_Division_2024_2025.csv')
+    df_xg = pd.read_csv(r'DNK_1_Division_2025_2026/xg_all DNK_1_Division_2025_2026.csv')
     df_xg['label'] = df_xg['label'] + ' ' + df_xg['date']
 
-    df_xA = pd.read_csv(r'DNK_1_Division_2024_2025/xA_all DNK_1_Division_2024_2025.csv')
+    df_xA = pd.read_csv(r'DNK_1_Division_2025_2026/xA_all DNK_1_Division_2025_2026.csv')
     df_xA['label'] = df_xA['label'] + ' ' + df_xA['date']
 
-    df_pv = pd.read_csv(r'DNK_1_Division_2024_2025/pv_all DNK_1_Division_2024_2025.csv')
+    df_pv = pd.read_csv(r'DNK_1_Division_2025_2026/pv_all DNK_1_Division_2025_2026.csv')
 
-    df_possession_stats = pd.read_csv(r'DNK_1_Division_2024_2025/possession_stats_all DNK_1_Division_2024_2025.csv')
+    df_possession_stats = pd.read_csv(r'DNK_1_Division_2025_2026/possession_stats_all DNK_1_Division_2025_2026.csv')
     df_possession_stats['label'] = df_possession_stats['label'] + ' ' + df_possession_stats['date']
 
-    df_xa_agg = pd.read_csv(r'DNK_1_Division_2024_2025/Horsens/Horsens_possession_data.csv')
+    df_xa_agg = pd.read_csv(r'DNK_1_Division_2025_2026/Horsens/Horsens_possession_data.csv')
     df_xa_agg['label'] = df_xa_agg['label'] + ' ' + df_xa_agg['date']
 
-    df_possession_data = pd.read_csv(f'DNK_1_Division_2024_2025/{team_name}/{team_name}_possession_data.csv')
+    df_possession_data = pd.read_csv(f'DNK_1_Division_2025_2026/{team_name}/{team_name}_possession_data.csv')
     df_possession_data['label'] = df_possession_data['label'] + ' ' + df_possession_data['date']
     df_possession_data['team_name'] = df_possession_data['team_name'].str.replace(' ', '_')
                 
-    df_xg_agg = pd.read_csv(r'DNK_1_Division_2024_2025/Horsens/Horsens_xg_data.csv')
+    df_xg_agg = pd.read_csv(r'DNK_1_Division_2025_2026/Horsens/Horsens_xg_data.csv')
     df_xg_agg['label'] = df_xg_agg['label'] + ' ' + df_xg_agg['date']
 
-    df_pv_agg = pd.read_csv(r'DNK_1_Division_2024_2025/Horsens/Horsens_pv_data.csv')
+    df_pv_agg = pd.read_csv(r'DNK_1_Division_2025_2026/Horsens/Horsens_pv_data.csv')
     df_pv_agg['label'] = df_pv_agg['label'] + ' ' + df_pv_agg['date']
 
-    df_xg_all = pd.read_csv(r'DNK_1_Division_2024_2025/xg_all DNK_1_Division_2024_2025.csv')
+    df_xg_all = pd.read_csv(r'DNK_1_Division_2025_2026/xg_all DNK_1_Division_2025_2026.csv')
     df_xg_all['label'] = df_xg_all['label'] + ' ' + df_xg_all['date']
 
-    df_pv_all = pd.read_csv(r'DNK_1_Division_2024_2025/xA_all DNK_1_Division_2024_2025.csv')
+    df_pv_all = pd.read_csv(r'DNK_1_Division_2025_2026/xA_all DNK_1_Division_2025_2026.csv')
     df_pv_all['label'] = df_pv_all['label'] + ' ' + df_pv_all['date']
 
-    df_match_stats = pd.read_csv(r'DNK_1_Division_2024_2025/matchstats_all DNK_1_Division_2024_2025.csv')
+    df_match_stats = pd.read_csv(r'DNK_1_Division_2025_2026/matchstats_all DNK_1_Division_2025_2026.csv')
     df_match_stats['label'] = df_match_stats['label'] + ' ' + df_match_stats['date']
 
-    squads = pd.read_csv(r'DNK_1_Division_2024_2025/squads DNK_1_Division_2024_2025.csv')
+    squads = pd.read_csv(r'DNK_1_Division_2025_2026/squads DNK_1_Division_2025_2026.csv')
         
     return df_xg, df_xA, df_pv, df_possession_stats, df_xa_agg, df_possession_data, df_xg_agg, df_pv_agg, df_xg_all, df_pv_all, df_match_stats, squads
 
