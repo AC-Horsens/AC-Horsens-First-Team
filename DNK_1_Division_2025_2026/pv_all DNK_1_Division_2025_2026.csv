@@ -12,13 +12,13 @@ H. Bonnesen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0080558,-0.0
 M. Rochester,HB Køge,HB Køge vs Hobro,2025-07-18,0.008386,-0.0
 M. Schütt,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 G. Çulhacı,HB Køge,HB Køge vs Hobro,2025-07-18,0.0450252,-0.0
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0183078,0.0
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0183078,0.0
 M. Westergren,HB Køge,HB Køge vs Hobro,2025-07-18,0.0012265,0.0012265
 M. Westergren,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 N. Jakobsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.01035,0.01035
 N. Jakobsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0009158,0.0
 N. Jakobsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0003452,-0.0005706
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0003961,5.09e-05
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0003961,5.09e-05
 G. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0009514,-0.0003961
 S. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 NaN,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
@@ -31,12 +31,12 @@ S. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0041464,0.0030329
 G. Çulhacı,HB Køge,HB Køge vs Hobro,2025-07-18,0.0039241,-0.0002223
 M. Schütt,HB Køge,HB Køge vs Hobro,2025-07-18,0.0040481,0.000124
 G. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0044055,0.0003574
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0040481,-0.0003574
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0040481,-0.0003574
 L. Bust,HB Køge,HB Køge vs Hobro,2025-07-18,0.0054265,0.0013784
 N. Jakobsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0040313,-0.0013952
 M. Westergren,HB Køge,HB Køge vs Hobro,2025-07-18,0.0030932,-0.0009381
 L. Bust,HB Køge,HB Køge vs Hobro,2025-07-18,0.0133681,0.0102749
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0645868,0.0512187
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0645868,0.0512187
 M. Rochester,HB Køge,HB Køge vs Hobro,2025-07-18,0.0,-0.0645868
 NaN,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 N. Jakobsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0079567,0.006961
@@ -54,6 +54,7 @@ M. Rochester,HB Køge,HB Køge vs Hobro,2025-07-18,0.0594901,0.0515334
 M. Schütt,HB Køge,HB Køge vs Hobro,2025-07-18,0.0034264,-0.0560637
 N. Jakobsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0271734,0.023747
 S. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0220071,-0.0271734
+NaN,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 M. Westergren,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 M. Westergren,HB Køge,HB Køge vs Hobro,2025-07-18,0.0013174,-0.0
 G. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0041292,0.0041292
@@ -63,7 +64,7 @@ B. Bayrak,HB Køge,HB Køge vs Hobro,2025-07-18,0.0005298,-0.0002681
 NaN,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 H. Bonnesen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 G. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 H. Bonnesen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 G. Çulhacı,HB Køge,HB Køge vs Hobro,2025-07-18,0.0012728,-0.0003579
 M. Westergren,HB Køge,HB Køge vs Hobro,2025-07-18,0.0010211,0.0
@@ -141,7 +142,7 @@ G. Çulhacı,HB Køge,HB Køge vs Hobro,2025-07-18,0.0042117,-0.0036994
 S. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0040954,-0.0001163
 G. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0044055,0.0003101
 N. Jakobsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0083183,0.0039128
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0056157,-0.0027026
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0056157,-0.0027026
 N. Jakobsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0258083,0.0201926
 G. Çulhacı,HB Køge,HB Køge vs Hobro,2025-07-18,0.1491584,0.1233501
 G. Çulhacı,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
@@ -154,18 +155,17 @@ H. Bonnesen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0196721,0.0196721
 G. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0194325,-0.0002396
 M. Schütt,HB Køge,HB Køge vs Hobro,2025-07-18,0.063796,0.0443635
 M. Westergren,HB Køge,HB Køge vs Hobro,2025-07-18,0.0692238,0.0054278
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0190216,-0.0502022
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0190216,-0.0502022
 G. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0048491,-0.0141725
 M. Schütt,HB Køge,HB Køge vs Hobro,2025-07-18,0.0042373,0.0042373
 M. Schütt,HB Køge,HB Køge vs Hobro,2025-07-18,0.0043835,0.0001462
 M. Schütt,HB Køge,HB Køge vs Hobro,2025-07-18,0.0090441,0.0046606
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0137316,0.0046875
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0137316,0.0046875
 H. Bonnesen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0082816,-0.00545
 G. Çulhacı,HB Køge,HB Køge vs Hobro,2025-07-18,0.0501663,0.0418847
 M. Rochester,HB Køge,HB Køge vs Hobro,2025-07-18,0.0167855,-0.0333808
 M. Rochester,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0350591,0.0350591
-NaN,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0350591,0.0350591
 S. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0067807,-0.0282784
 S. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.008386,0.008386
 N. Jakobsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0172841,0.0088981
@@ -192,9 +192,10 @@ M. Westergren,HB Køge,HB Køge vs Hobro,2025-07-18,0.0040715,-0.0001658
 H. Bonnesen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0083183,0.0042468
 G. Çulhacı,HB Køge,HB Køge vs Hobro,2025-07-18,0.006988,-0.0013303
 G. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0083183,0.0013303
+NaN,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 G. Çulhacı,HB Køge,HB Køge vs Hobro,2025-07-18,0.006447,-0.0018713
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 N. Jakobsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0012478,-0.0005325
 L. Bust,HB Køge,HB Køge vs Hobro,2025-07-18,0.000813,-0.0
 G. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
@@ -228,7 +229,7 @@ L. Bust,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 H. Bonnesen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 G. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 H. Bonnesen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 B. Bayrak,HB Køge,HB Køge vs Hobro,2025-07-18,0.0013025,0.0
 M. Rochester,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 M. Rochester,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
@@ -249,7 +250,7 @@ L. Bust,HB Køge,HB Køge vs Hobro,2025-07-18,0.0040481,3.61e-05
 M. Westergren,HB Køge,HB Køge vs Hobro,2025-07-18,0.0258083,0.0217602
 G. Çulhacı,HB Køge,HB Køge vs Hobro,2025-07-18,0.0898244,0.0640161
 M. Rochester,HB Køge,HB Køge vs Hobro,2025-07-18,0.1742338,0.0844094
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 L. Bust,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 L. Bust,HB Køge,HB Køge vs Hobro,2025-07-18,0.0012511,0.0012511
 G. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0010989,-0.0001522
@@ -299,7 +300,7 @@ G. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0011561,-0.0056157
 N. Jakobsen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 N. Jakobsen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 G. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0080984,0.0080984
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0083183,0.0002199
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0083183,0.0002199
 N. Jakobsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0038674,-0.0044509
 L. Bust,HB Køge,HB Køge vs Hobro,2025-07-18,0.0040734,0.000206
 G. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0040481,-2.53e-05
@@ -314,13 +315,13 @@ M. Westergren,HB Køge,HB Køge vs Hobro,2025-07-18,0.0042373,-0.0
 M. Westergren,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 M. Westergren,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 M. Westergren,HB Køge,HB Køge vs Hobro,2025-07-18,0.0040499,0.0040499
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0042373,0.0001874
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0042373,0.0001874
 M. Rochester,HB Køge,HB Køge vs Hobro,2025-07-18,0.0043835,0.0001462
 M. Rochester,HB Køge,HB Køge vs Hobro,2025-07-18,0.001296,0.0
 M. Westergren,HB Køge,HB Køge vs Hobro,2025-07-18,0.0042179,0.0042179
 M. Westergren,HB Køge,HB Køge vs Hobro,2025-07-18,0.0002681,-0.0039498
 B. Bayrak,HB Køge,HB Køge vs Hobro,2025-07-18,0.0004775,0.0004775
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0015027,0.0
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0015027,0.0
 S. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0104769,-0.0
 H. Bonnesen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0020288,-0.0
 H. Bonnesen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
@@ -330,6 +331,7 @@ S. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0003591,-0.0022079
 M. Schütt,HB Køge,HB Køge vs Hobro,2025-07-18,0.0005256,0.0001665
 M. Rochester,HB Køge,HB Køge vs Hobro,2025-07-18,0.0004285,-9.71e-05
 G. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0008981,0.0004696
+NaN,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 N. Jakobsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0040481,0.00315
 G. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0040715,2.34e-05
 M. Schütt,HB Køge,HB Køge vs Hobro,2025-07-18,0.0040481,-2.34e-05
@@ -339,8 +341,8 @@ L. Bust,HB Køge,HB Køge vs Hobro,2025-07-18,0.0002681,-0.0005572
 B. Bayrak,HB Køge,HB Køge vs Hobro,2025-07-18,0.000349,8.09e-05
 L. Bust,HB Køge,HB Køge vs Hobro,2025-07-18,0.0005487,0.0001997
 M. Westergren,HB Køge,HB Køge vs Hobro,2025-07-18,0.0012415,0.0006928
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0012693,0.0
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0012693,0.0
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 S. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 M. Westergren,HB Køge,HB Køge vs Hobro,2025-07-18,0.0021018,0.001565
 M. Westergren,HB Køge,HB Køge vs Hobro,2025-07-18,0.0009281,-0.0011737
@@ -371,7 +373,7 @@ G. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 M. Schütt,HB Køge,HB Køge vs Hobro,2025-07-18,0.0002714,-0.0006997
 M. Westergren,HB Køge,HB Køge vs Hobro,2025-07-18,0.0003693,9.79e-05
 L. Bust,HB Køge,HB Køge vs Hobro,2025-07-18,0.0119623,0.011593
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0085015,-0.0034608
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0085015,-0.0034608
 G. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0049777,-0.0035238
 M. Schütt,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 G. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0043835,0.0043835
@@ -386,8 +388,6 @@ M. Schütt,HB Køge,HB Køge vs Hobro,2025-07-18,0.0041292,0.0041292
 M. Schütt,HB Køge,HB Køge vs Hobro,2025-07-18,0.0042754,0.0001462
 M. Schütt,HB Køge,HB Køge vs Hobro,2025-07-18,0.0,-0.0042754
 NaN,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
-NaN,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
-NaN,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 M. Westergren,HB Køge,HB Køge vs Hobro,2025-07-18,0.010757,0.010757
 M. Westergren,HB Køge,HB Køge vs Hobro,2025-07-18,0.0011737,-0.0095833
 N. Jakobsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0106987,0.0106987
@@ -397,7 +397,7 @@ B. Bayrak,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 B. Bayrak,HB Køge,HB Køge vs Hobro,2025-07-18,0.0013025,0.0008183
 M. Rochester,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 M. Rochester,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0952887,0.0952887
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0952887,0.0952887
 M. Schütt,HB Køge,HB Køge vs Hobro,2025-07-18,0.0226915,-0.0725972
 G. Çulhacı,HB Køge,HB Køge vs Hobro,2025-07-18,0.0127396,-0.0099519
 G. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0033587,-0.0093809
@@ -415,6 +415,7 @@ M. Rochester,HB Køge,HB Køge vs Hobro,2025-07-18,0.0042373,-0.0285001
 L. Bust,HB Køge,HB Køge vs Hobro,2025-07-18,0.0056157,0.0013784
 N. Jakobsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0079567,0.002341
 G. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0039453,-0.0040114
+NaN,Hobro,HB Køge vs Hobro,2025-07-18,NaN,NaN
 M. Westergren,HB Køge,HB Køge vs Hobro,2025-07-18,0.003952,6.7e-06
 L. Bust,HB Køge,HB Køge vs Hobro,2025-07-18,0.0014681,-0.0024839
 G. Çulhacı,HB Køge,HB Køge vs Hobro,2025-07-18,0.0107747,0.0093066
@@ -426,8 +427,8 @@ H. Bonnesen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0031888,0.0031888
 H. Bonnesen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0002681,-0.0029207
 B. Bayrak,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 B. Bayrak,HB Køge,HB Køge vs Hobro,2025-07-18,0.0012028,-0.0002681
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 H. Bonnesen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0039508,0.0039508
 H. Bonnesen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0042926,0.0003418
 H. Bonnesen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0012588,-0.0042926
@@ -445,8 +446,8 @@ M. Westergren,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 M. Westergren,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 B. Bayrak,HB Køge,HB Køge vs Hobro,2025-07-18,0.0247793,0.0
 M. Rochester,HB Køge,HB Køge vs Hobro,2025-07-18,0.0575163,0.032737
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0892496,0.0317333
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0042977,0.0
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0892496,0.0317333
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0042977,0.0
 S. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0042373,0.0042373
 G. Çulhacı,HB Køge,HB Køge vs Hobro,2025-07-18,0.0327374,0.0285001
 G. Çulhacı,HB Køge,HB Køge vs Hobro,2025-07-18,0.0251151,-0.0076223
@@ -457,48 +458,48 @@ G. Çulhacı,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 N. Jakobsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0430795,0.0137835
 G. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0244923,-0.0185872
 N. Jakobsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0312214,0.0067291
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.022802,0.022802
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.022802,0.022802
 S. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.043123,0.020321
 S. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0451097,0.0451097
 M. Westergren,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 S. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0060513,-0.0232447
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0060513,-0.0232447
 G. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 M. Westergren,HB Køge,HB Køge vs Hobro,2025-07-18,0.0,-0.0009419
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0659293,0.0659293
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0659293,0.0659293
 M. Rochester,HB Køge,HB Køge vs Hobro,2025-07-18,0.0069166,0.0
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0042373,0.0042373
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0042373,0.0042373
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 B. Bayrak,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 B. Bayrak,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 B. Bayrak,HB Køge,HB Køge vs Hobro,2025-07-18,0.0003495,0.0003495
 G. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.000271,-7.85e-05
 L. Bust,HB Køge,HB Køge vs Hobro,2025-07-18,0.0012044,0.0
 G. Çulhacı,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 B. Bayrak,HB Køge,HB Køge vs Hobro,2025-07-18,0.0011665,0.0004241
 M. Rochester,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 N. Jakobsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0002681,0.0002681
 B. Bayrak,HB Køge,HB Køge vs Hobro,2025-07-18,0.0005207,0.0002526
 N. Jakobsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0006247,0.000104
 M. Westergren,HB Køge,HB Køge vs Hobro,2025-07-18,0.0008327,0.000208
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0013605,0.0005278
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0013605,0.0005278
 M. Westergren,HB Køge,HB Køge vs Hobro,2025-07-18,0.0543805,0.05302
 M. Rochester,HB Køge,HB Køge vs Hobro,2025-07-18,0.0470352,-0.0073453
 M. Westergren,HB Køge,HB Køge vs Hobro,2025-07-18,0.0020575,0.0020575
 M. Rochester,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0012422,-0.0
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0012422,-0.0
 M. Westergren,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 M. Schütt,HB Køge,HB Køge vs Hobro,2025-07-18,0.0030969,0.0030969
 M. Schütt,HB Køge,HB Køge vs Hobro,2025-07-18,0.0038599,0.000763
 G. Çulhacı,HB Køge,HB Køge vs Hobro,2025-07-18,0.0439818,0.0401219
 G. Çulhacı,HB Køge,HB Køge vs Hobro,2025-07-18,0.0670124,0.0230306
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 G. Çulhacı,HB Køge,HB Køge vs Hobro,2025-07-18,0.0,-0.0670124
 S. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 B. Bayrak,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 N. Jakobsen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 B. Bayrak,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
@@ -529,7 +530,7 @@ G. Çulhacı,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 S. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0,0.0
 S. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0079567,-0.0043835
 G. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0664583,0.0664583
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.023993,-0.0424653
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.023993,-0.0424653
 G. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0102452,-0.0137478
 N. Jakobsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0120766,0.0018314
 M. Westergren,HB Køge,HB Køge vs Hobro,2025-07-18,0.0083183,-0.0037583
@@ -560,11 +561,11 @@ M. Westergren,HB Køge,HB Køge vs Hobro,2025-07-18,0.0036654,-0.0001484
 N. Jakobsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0040499,0.0003845
 G. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0011427,-0.0029072
 N. Jakobsen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.008386,0.0003879
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.008386,0.0003879
 B. Bayrak,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 B. Bayrak,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 B. Bayrak,HB Køge,HB Køge vs Hobro,2025-07-18,0.0012845,0.0005421
 A. Gøthler,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 M. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
@@ -577,7 +578,7 @@ M. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0002708,-0.000351
 M. Westergren,HB Køge,HB Køge vs Hobro,2025-07-18,0.000271,2e-07
 B. Bayrak,HB Køge,HB Køge vs Hobro,2025-07-18,0.0013604,0.0
 A. Gøthler,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0,-0.0013604
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0,-0.0013604
 N. Jakobsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0,0.0
 H. Bonnesen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0002681,-2.7e-06
 B. Bayrak,HB Køge,HB Køge vs Hobro,2025-07-18,0.0003397,7.16e-05
@@ -605,10 +606,10 @@ B. Bayrak,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 B. Bayrak,HB Køge,HB Køge vs Hobro,2025-07-18,0.0013429,-0.0004498
 Mohamad Al Naser,HB Køge,HB Køge vs Hobro,2025-07-18,0.0349546,-0.0
 G. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0485542,0.0485542
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.055887,0.0073328
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.055887,0.0073328
 Mohamad Al Naser,HB Køge,HB Køge vs Hobro,2025-07-18,0.0,-0.055887
 M. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0426919,0.0426919
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 M. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0045788,-0.0381131
 Mohamad Al Naser,HB Køge,HB Køge vs Hobro,2025-07-18,0.0029946,0.0029946
 A. Gøthler,HB Køge,HB Køge vs Hobro,2025-07-18,0.0008335,-0.0021611
@@ -621,7 +622,7 @@ S. Hald,HB Køge,HB Køge vs Hobro,2025-07-18,0.0003952,-0.0009512
 M. Westergren,HB Køge,HB Køge vs Hobro,2025-07-18,0.0012341,0.0008389
 S. Hald,HB Køge,HB Køge vs Hobro,2025-07-18,0.0011813,-5.28e-05
 H. Bonnesen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0,-0.0011813
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0,-0.0
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0,-0.0
 H. Bonnesen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0013605,0.0013605
 N. Jakobsen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0003106,-0.0010499
 H. Bonnesen,HB Køge,HB Køge vs Hobro,2025-07-18,0.0002681,-4.25e-05
@@ -656,10 +657,10 @@ B. Bayrak,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 NaN,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 N. Jakobsen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 N. Jakobsen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 S. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 S. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
-C. Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
+C. Tue Jensen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 B. Alkhoudari,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 NaN,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
 S. Larsen,HB Køge,HB Køge vs Hobro,2025-07-18,NaN,NaN
@@ -888,7 +889,6 @@ S. Andreasen,Hobro,HB Køge vs Hobro,2025-07-18,NaN,NaN
 V. Rasmussen,Hobro,HB Køge vs Hobro,2025-07-18,0.0040034,0.0040034
 M. Jacobsen,Hobro,HB Køge vs Hobro,2025-07-18,0.001973,-0.0
 M. Jacobsen,Hobro,HB Køge vs Hobro,2025-07-18,NaN,NaN
-NaN,Hobro,HB Køge vs Hobro,2025-07-18,NaN,NaN
 T. Hansen,Hobro,HB Køge vs Hobro,2025-07-18,NaN,NaN
 T. Hansen,Hobro,HB Køge vs Hobro,2025-07-18,NaN,NaN
 S. Andreasen,Hobro,HB Køge vs Hobro,2025-07-18,0.0,-0.0003463
@@ -10543,11 +10543,11 @@ M. Westergren,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.000902,-0.0002866
 G. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0004879,0.0004879
 S. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0006437,-0.0004879
 L. Bust,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0004327,0.0004327
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0012984,0.0008657
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0002681,-0.0010303
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0012984,0.0008657
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0002681,-0.0010303
 L. Bust,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0003412,7.31e-05
 N. Jakobsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0003579,8.98e-05
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0002681,-8.98e-05
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0002681,-8.98e-05
 L. Bust,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0003397,7.16e-05
 S. Hald,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0003968,5.71e-05
 S. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0002736,-0.0001232
@@ -10558,9 +10558,9 @@ M. Westergren,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0002941,-0.0002136
 L. Bust,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0006927,0.0003986
 N. Jakobsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0014149,0.0007222
 G. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0079142,0.0064993
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.001296,-0.0079142
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.001296,-0.0079142
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 B. Bayrak,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 B. Bayrak,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0003397,-0.0001915
 N. Jakobsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0005553,0.0002156
@@ -10571,7 +10571,7 @@ G. Çulhacı,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0012985,-0.0009164
 M. Westergren,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0029783,0.0029783
 M. Westergren,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0003405,-0.0026378
 L. Bust,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0006959,0.0003554
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0002765,-0.0004194
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0002765,-0.0004194
 N. Jakobsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0002812,4.7e-06
 L. Bust,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0012503,0.0009691
 G. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0012478,-2.5e-06
@@ -10593,7 +10593,7 @@ M. Rochester,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0035999,-0.0047184
 M. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0013429,-0.0035999
 M. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 L. Bust,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0006704,0.0
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0006368,-0.0006704
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0006368,-0.0006704
 G. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0014755,0.0014755
 G. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0027834,0.0013079
 G. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
@@ -10641,7 +10641,7 @@ L. Bust,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0003397,0.0
 S. Hald,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0008494,0.0005097
 M. Westergren,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0007339,-0.0001155
 L. Bust,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0012851,0.0005512
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0096479,0.0083628
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0096479,0.0083628
 N. Jakobsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 N. Jakobsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 N. Jakobsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0007528,0.0007528
@@ -10670,10 +10670,10 @@ N. Jakobsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 M. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.01035,0.01035
 M. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.01035,0.01035
 M. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.01035,0.01035
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.01035,0.01035
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0008607,-0.0094893
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0009158,5.51e-05
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0003397,0.0
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.01035,0.01035
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0008607,-0.0094893
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0009158,5.51e-05
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0003397,0.0
 M. Rochester,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0,-0.0003397
 B. Bayrak,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 B. Bayrak,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0004614,-0.0003587
@@ -10701,8 +10701,8 @@ M. Rochester,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 A. Gøthler,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 NaN,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 A. Gøthler,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.001297,0.001297
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0041292,-0.0
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0041292,-0.0
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 G. Çulhacı,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 G. Çulhacı,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 G. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0020156,0.0020156
@@ -10754,8 +10754,8 @@ N. Jakobsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 B. Bayrak,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0013025,0.0005601
 A. Gøthler,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 L. Bust,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0011198,0.0011198
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 N. Jakobsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0007075,-0.0003992
 L. Bust,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0002681,-0.0004394
 B. Bayrak,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0014868,-0.0002681
@@ -10771,7 +10771,7 @@ S. Hald,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0034783,0.0003854
 S. Hald,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.001297,-0.0021813
 G. Çulhacı,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 M. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 N. Jakobsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0106553,0.0106553
 L. Bust,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 G. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0012575,0.0
@@ -10801,9 +10801,9 @@ L. Bust,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0021206,0.0021206
 L. Bust,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0005958,-0.0015248
 S. Hald,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0002779,-0.0003179
 M. Westergren,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0038974,0.0036195
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0080984,0.004201
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0080984,0.004201
 N. Jakobsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0083183,0.0002199
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0260909,0.0177726
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0260909,0.0177726
 A. Gøthler,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0040798,-0.0260909
 A. Gøthler,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 G. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.010673,0.010673
@@ -10823,18 +10823,19 @@ M. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0036472,-0.0043095
 S. Hald,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0039538,0.0003066
 M. Westergren,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0085015,0.0045477
 N. Jakobsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0210818,0.0125803
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0301366,-0.0210818
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0301366,-0.0210818
 M. Westergren,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0042373,0.0042373
 M. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0043835,0.0001462
 M. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0083183,0.0039348
 G. Çulhacı,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0458914,0.0375731
 G. Çulhacı,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
+M. Westergren,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 M. Westergren,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0022052,0.0012875
 M. Westergren,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0068199,0.0068199
 L. Bust,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 M. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0042373,0.0042373
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0043835,0.0001462
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0045121,0.0001286
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0043835,0.0001462
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0045121,0.0001286
 M. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 A. Gøthler,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0568922,0.0523801
 M. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0850744,0.0281822
@@ -10850,8 +10851,8 @@ L. Bust,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0042926,0.0042926
 L. Bust,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0040499,-0.0002427
 N. Jakobsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.1107789,0.106729
 G. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0562596,-0.0545193
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.026058,-0.0302016
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.026058,-0.0302016
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 N. Jakobsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 S. Hald,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 S. Hald,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
@@ -10878,9 +10879,9 @@ S. Hald,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0008785,0.0008785
 S. Hald,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0003582,-0.0005203
 M. Westergren,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0003426,-1.56e-05
 L. Bust,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.008386,0.0080434
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.010366,0.00198
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.010366,0.00198
 N. Jakobsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0533832,0.0430172
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0684597,0.0150765
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0684597,0.0150765
 A. Gøthler,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 A. Gøthler,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 M. Westergren,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0015322,-0.0
@@ -10892,7 +10893,7 @@ NaN,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 B. Bayrak,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0011381,0.0003957
 A. Gøthler,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 N. Jakobsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0042373,0.0042373
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 B. Bayrak,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0009158,0.0009158
 B. Bayrak,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0003527,-0.0005631
 L. Bust,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0002681,-8.46e-05
@@ -10904,12 +10905,12 @@ M. Westergren,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0040499,-0.0002427
 M. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0040481,-1.8e-06
 S. Hald,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.001319,-0.0040481
 S. Hald,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 M. Westergren,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.003801,0.0029434
 L. Bust,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 S. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0518099,0.0518099
 A. Gøthler,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0140297,-0.0377802
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0049305,-0.0090992
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0049305,-0.0090992
 G. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0243985,0.0243985
 G. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 NaN,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
@@ -10940,7 +10941,7 @@ Mohamad Al Naser,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 M. Westergren,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0020466,0.0020466
 M. Westergren,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0004607,-0.0015859
 L. Bust,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0012503,0.0007896
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.000341,-0.0009093
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.000341,-0.0009093
 N. Jakobsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0013391,0.0009981
 G. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0079567,0.0066176
 M. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
@@ -10959,12 +10960,11 @@ S. Hald,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0004002,6.05e-05
 M. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 S. Hald,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0009209,-0.0007133
 M. Westergren,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0039115,0.0029906
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.001296,0.0
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.001296,0.0
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 N. Jakobsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 S. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 S. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
-M. Westergren,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 S. Hald,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 B. Bayrak,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0011246,-0.0003229
 Mohamad Al Naser,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0042373,0.0042373
@@ -10989,14 +10989,14 @@ B. Bayrak,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 S. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0009645,0.0006248
 S. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0012716,0.0003071
 G. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0039287,0.0026571
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0024564,-0.0014723
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0024564,-0.0014723
 G. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0008115,0.0008115
 L. Bust,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0040499,0.0032384
 M. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0008211,-0.0032288
 S. Hald,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0008219,8e-07
 M. Westergren,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0011185,0.0002966
 L. Bust,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0258083,0.0246898
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.00899,0.0
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.00899,0.0
 M. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 G. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0042373,0.0042373
 G. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0221565,0.0179192
@@ -11024,9 +11024,9 @@ L. Bust,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0,-0.0002681
 G. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0,0.0
 M. Westergren,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0,0.0
 M. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0008327,0.0003835
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0012216,0.0003889
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0002746,-0.0012992
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0012216,0.0003889
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0002746,-0.0012992
 L. Bust,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0005653,0.0002907
 M. Westergren,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.000733,-0.0005653
 M. Westergren,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0009147,0.0009147
@@ -11083,14 +11083,14 @@ G. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0009158,8.21e-05
 G. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0008982,-1.76e-05
 A. Gøthler,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0013284,0.0
 A. Gøthler,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 L. Bust,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 V. Sørensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 A. Gøthler,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 M. Schütt,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 M. Schütt,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0012139,-0.0028307
 S. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 B. Bayrak,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0011753,0.0
 Mohamad Al Naser,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 N. Jakobsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
@@ -11119,7 +11119,7 @@ M. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 M. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0029829,-0.0
 V. Sørensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 N. Jakobsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0013025,0.0003291
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0012392,-0.0
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0012392,-0.0
 V. Sørensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 B. Bayrak,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0253661,0.0
 Mohamad Al Naser,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0035526,0.0
@@ -11127,7 +11127,7 @@ Mohamad Al Naser,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 G. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 G. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0222057,0.0222057
 N. Jakobsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0025376,-0.0196681
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 M. Westergren,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 M. Westergren,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 M. Westergren,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
@@ -11157,8 +11157,8 @@ S. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 M. Schütt,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0004642,0.0004642
 S. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0104052,0.0104052
 S. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0002708,-0.0101344
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0004614,0.0
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0004614,0.0
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 B. Bayrak,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0014868,-0.0004567
 N. Jakobsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0043835,0.0043835
 N. Jakobsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0,-0.0043835
@@ -11176,7 +11176,7 @@ Mohamad Al Naser,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0136245,-0.0
 Mohamad Al Naser,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 V. Sørensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.01035,0.01035
 V. Sørensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
-C. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 I. Dorgu,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 N. Jakobsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0005325,-0.0024282
 N. Jakobsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
@@ -17660,8 +17660,8 @@ A. Lausen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 J. Lucena,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0297065,-0.0
 A. Troelsen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Troelsen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0042831,-0.0
-A. Lausen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0042373,0.0042373
 P. Bjur,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+A. Lausen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0042373,0.0042373
 A. Lausen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 J. Buus,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0104052,0.0104052
 J. Buus,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.000444,-0.0099612
@@ -17700,7 +17700,7 @@ A. Troelsen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0013701,0.0002516
 L. Vigen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0005902,-0.0007799
 A. Troelsen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0013545,0.0007643
 L. Vigen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0005594,-0.0007951
-NaN,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+NaN,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Troelsen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0008459,0.0002865
 A. Skipper,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0041464,0.0033005
 L. Vigen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0040481,-9.83e-05
@@ -17857,6 +17857,7 @@ M. Maden,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0007697,-0.001357
 A. Troelsen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0079142,0.0071445
 L. From,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0572258,0.0493116
 S. Eng Strand,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0070261,-0.0501997
+A. Lausen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 L. From,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 P. Bjur,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 P. Bjur,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
@@ -17865,8 +17866,8 @@ P. Bjur,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0834804,0.0627013
 L. From,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 L. From,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Skipper,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
-A. Skipper,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0013839,0.0013839
 NaN,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+A. Skipper,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0013839,0.0013839
 P. Bjur,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0041292,0.0027453
 J. Lucena,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0043835,0.0002543
 J. Lucena,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0007459,-0.0036376
@@ -18117,7 +18118,6 @@ M. Hansen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 M. Hansen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0002769,-0.0007201
 A. Troelsen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0002681,-8.8e-06
 K. Kristensen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0013603,0.0010922
-NaN,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 T. Freriks,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0005544,-0.0008059
 M. Hansen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0013605,0.0008061
 L. From,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0085015,0.007141
@@ -18146,11 +18146,11 @@ T. Freriks,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 S. Eng Strand,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 L. Vigen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0003426,0.0
 M. Hansen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
-L. From,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
-T. Stagaard,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Troelsen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 S. Eng Strand,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 S. Eng Strand,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+L. From,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+T. Stagaard,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 K. Kristensen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0103975,0.0096551
 J. Ankersen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0,-0.0103975
 J. Ankersen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
@@ -18202,6 +18202,7 @@ J. Buus,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0029741,0.0021724
 A. Skipper,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Skipper,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 M. Hansen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+NaN,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 K. Kristensen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 NaN,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 NaN,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
@@ -18258,6 +18259,8 @@ A. Skipper,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0013025,-0.0040499
 NaN,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 NaN,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 NaN,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+NaN,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+NaN,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 M. Egho,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0002746,0.0002746
 D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0011159,-0.0002746
 M. Egho,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
@@ -18444,8 +18447,6 @@ J. Adjei-Broni,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0039508,-0.0
 J. Adjei-Broni,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 N. Jungvig,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.000813,-0.0
 NaN,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
-NaN,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
-NaN,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Iljazovski,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.01035,0.01035
 A. Iljazovski,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0008419,0.0
 A. Iljazovski,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
@@ -18454,9 +18455,10 @@ M. Spelmann,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.01035,-0.0
 M. Spelmann,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0004028,0.0004028
 N. Jungvig,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0005222,0.0
 J. Adjei-Broni,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0004059,-0.0001163
-M. Egho,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 F. Krogstad,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0009568,0.0009568
+M. Egho,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 J. Singh,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0030588,0.002102
+J. Singh,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0080984,0.0041152
 J. Singh,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 J. Adjei-Broni,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0007708,-0.0019318
 F. Krogstad,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0009167,0.0001459
@@ -18641,12 +18643,11 @@ M. Spelmann,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0083183,0.0075647
 A. Smed,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0044055,-0.0039128
 N. Jungvig,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.008386,0.0039805
 A. Smed,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0199308,0.0115448
-A. Smed,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0085015,0.0001832
 A. Iljazovski,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0816185,0.0616877
 J. Singh,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 J. Singh,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 J. Singh,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
-F. Krogstad,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+N. Jungvig,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 M. Spelmann,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0014664,-0.0012463
 A. Iljazovski,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0042373,0.0042373
 J. Adjei-Broni,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
@@ -18697,6 +18698,7 @@ A. Smed,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0042754,0.0042754
 A. Smed,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 N. Jungvig,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0040381,0.0020708
 A. Iljazovski,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0083183,0.0042802
+A. Smed,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0085015,0.0001832
 A. Iljazovski,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0682671,0.0597656
 M. Egho,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.1180185,0.0497514
 F. Krogstad,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
@@ -18806,7 +18808,6 @@ N. Jungvig,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0003397,6.89e-05
 D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0003425,2.8e-06
 N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0002746,-6.79e-05
 O. Kjærgaard,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0039832,0.0037086
-E. Aby,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0080984,0.0041152
 E. Aby,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0037118,-0.0043866
 D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0258083,-0.0037118
 M. Egho,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
@@ -19065,3 +19066,1805 @@ N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0018132,0.0
 NaN,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 NaN,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 NaN,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+NaN,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+NaN,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,0.0042007,-0.0
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,0.0008874,-0.0
+S. Andreasen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,0.0009369,-0.0007424
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0039287,0.0039287
+S. Andreasen,Hobro,Hobro vs Middelfart,2025-07-27,0.0012114,-0.0027173
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0042373,0.0042373
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0002747,-0.0008772
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0002681,-6.6e-06
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,0.0003452,7.71e-05
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0002708,-7.44e-05
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0012421,0.0
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,0.001189,-5.31e-05
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0005076,-0.0009762
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0012452,0.0007376
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0002681,-0.0009771
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0003822,0.0001141
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0010387,-0.0003822
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0014164,0.0
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0020156,0.0020156
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0107574,0.0107574
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,0.0042926,0.0042926
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,0.0041464,-0.0001462
+S. Andreasen,Hobro,Hobro vs Middelfart,2025-07-27,0.0258083,0.0216619
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0616067,0.0323107
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0077292,0.0
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0011714,-0.0
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0004954,0.0004954
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0013037,-0.000738
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,0.0011714,-0.0001323
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0012005,2.91e-05
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0041464,0.0027378
+S. Andreasen,Hobro,Hobro vs Middelfart,2025-07-27,0.0083183,0.0041719
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Andreasen,Hobro,Hobro vs Middelfart,2025-07-27,0.0253661,0.0170478
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0103975,0.0
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,0.0024335,0.0
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0011332,-0.0
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,0.000343,0.000343
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0010203,-0.000343
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0004545,-0.0002879
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,0.001422,0.0
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Andreasen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0012154,-0.0024282
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0012455,-0.0012861
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,0.0011254,-0.0001201
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0012325,0.0012325
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0013087,7.62e-05
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,0.0008367,-0.000472
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.000334,-0.0005027
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0002745,-5.95e-05
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0006524,0.0003779
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0014818,0.0008294
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0006146,-0.0008672
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0012724,0.0006578
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0005023,-0.0007701
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0012946,0.0007923
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0,-0.0012946
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0,0.0
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,0.0003233,-3.23e-05
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0012042,0.0
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0005322,-0.0010145
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0035004,0.0029682
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,0.0040481,0.0005477
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0042373,0.0001892
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0042373,0.0
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.001296,-0.0029413
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0042373,0.0042373
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.001296,0.0
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0040499,0.0026266
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.00385,-0.0001999
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0015306,-0.00385
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.044692,0.044692
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,0.0042373,0.0042373
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,0.0,-0.0042373
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0042373,0.0042373
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.001393,0.0
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0004537,0.0004537
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.010421,0.010421
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0003518,-0.0100692
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0003262,-2.56e-05
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0479599,0.0476337
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0083183,-0.0396416
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0043803,-0.003938
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0083183,0.003938
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0080984,-0.0002199
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0085015,0.0004031
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.003591,-0.0049105
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.004012,0.000421
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0040481,3.61e-05
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0040132,-3.49e-05
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0007982,-0.003215
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0002681,-0.0005301
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,0.0009369,0.0006688
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,0.0016972,-0.0009369
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.000271,0.000271
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,0.0009545,0.0006835
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,0.0006114,-0.0003431
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0013936,0.0007822
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0002681,-0.0011255
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.00043,0.0001619
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0008846,0.0004546
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,0.0004137,-0.0004709
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.003968,0.0035543
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,0.0080984,0.0041304
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0080984,0.0
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,0.0053577,-0.029296
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0006723,-0.0027803
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0030588,0.0030588
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0014068,-0.001652
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0080984,0.0066916
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,0.0501663,0.0420679
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0092272,0.0
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0042179,0.0042179
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0038481,-0.0003698
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0041464,0.0002983
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0008115,-0.0033349
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0013383,0.0005268
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0007865,-0.0005518
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0002746,-0.0005119
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0060029,0.0057283
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0653286,0.0593257
+S. Andreasen,Hobro,Hobro vs Middelfart,2025-07-27,0.0567683,-0.0085603
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.1749535,0.1181852
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,0.0207967,0.0207967
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0460617,0.0460617
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.1494396,0.1033779
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0327374,0.0327374
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0715086,0.0715086
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0102193,-0.0612893
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0051802,-0.0050391
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0035749,-0.0016053
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0040499,0.000475
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0018132,-0.0040499
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0142558,0.0142558
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0542434,0.0399876
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0011634,0.0011634
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0041292,0.0041292
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,0.0,-0.0041292
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0002811,-0.0015909
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0004002,0.0001191
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0035275,0.0031273
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,0.0007982,-0.0027293
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0005594,-0.0002388
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0013391,0.0007797
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0012824,-5.67e-05
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0012821,-0.0010893
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0039538,0.0026717
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0080984,0.0041446
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,0.001296,0.0
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,0.0003397,-0.0001448
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0003288,-1.09e-05
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,0.0011159,-0.0003288
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0043835,0.0043835
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0080984,0.0037149
+S. Andreasen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0,-0.0327374
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,0.0003425,-0.0001954
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0003391,-3.4e-06
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0013289,0.0009898
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0004868,-0.0008421
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0002811,-0.0002057
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.000507,0.0002259
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0258083,0.0253013
+S. Andreasen,Hobro,Hobro vs Middelfart,2025-07-27,0.0352062,0.0093979
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.002492,-0.0352062
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0,-0.0
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0003397,-0.0022767
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.000271,-6.87e-05
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0003233,5.23e-05
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,0.0003397,1.64e-05
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0003969,5.72e-05
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0013391,0.0009422
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,0.0003308,-0.0010083
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0002714,-5.94e-05
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.000452,0.0001806
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.000317,-0.000135
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0012073,0.0008903
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.008386,0.0071787
+S. Andreasen,Hobro,Hobro vs Middelfart,2025-07-27,0.0138207,0.0054347
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0029655,-0.0138207
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0077671,0.0077671
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,0.001296,0.0
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0008247,-0.0002536
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0040499,0.0032252
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.00385,-0.0001999
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0008494,-0.0030006
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0012709,0.0004215
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0083183,0.0070474
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0,-0.0083183
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0040499,0.0002759
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0008226,-0.0032273
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0079142,0.0070916
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.001296,-0.0079142
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0004545,-0.0002879
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,0.000997,0.0
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Andreasen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0013025,-0.0
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0042373,0.0042373
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.001296,0.0
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0012393,-5.67e-05
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0043835,0.0043835
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.000457,-0.0039265
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.000413,-4.4e-05
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0013429,-0.000413
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.00051,-0.0009789
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0013839,0.0008739
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0011963,-0.0001876
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0040499,0.0028536
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0008115,-0.0032384
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0013208,0.0005093
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0028416,0.0015208
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0003285,-0.00183
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0005007,0.0001722
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0021418,0.0016411
+S. Andreasen,Hobro,Hobro vs Middelfart,2025-07-27,0.0249761,0.0228343
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0095755,-0.0154006
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0596114,0.0596114
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0277534,-0.031858
+S. Andreasen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.001615,0.0
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0367304,0.0367304
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0062604,-0.03047
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0042373,0.003252
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.000677,-0.0035603
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0038974,0.0032204
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0,-0.0038974
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0011561,-0.0007629
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0014149,7.63e-05
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0012104,-0.0002045
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0083183,0.0071079
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.004012,-0.0043063
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0083183,0.0043063
+S. Andreasen,Hobro,Hobro vs Middelfart,2025-07-27,0.0036441,-0.0046742
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0040973,0.0004532
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0007982,-0.0032991
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0003314,-0.0004668
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0006807,0.0003493
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0011361,0.0
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,0.0107076,0.0107076
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.000618,-0.0100896
+S. Andreasen,Hobro,Hobro vs Middelfart,2025-07-27,0.0025143,0.0018963
+S. Andreasen,Hobro,Hobro vs Middelfart,2025-07-27,0.0011484,-0.0025143
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0104052,0.0104052
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0002708,-0.0101344
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0003362,6.54e-05
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0013699,0.0010337
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0,-0.0013699
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0,0.0
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0011885,0.0003335
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0002779,-0.0009106
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0003463,6.84e-05
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0013688,0.0010225
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0009676,-0.0004012
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0041464,0.0031788
+S. Andreasen,Hobro,Hobro vs Middelfart,2025-07-27,0.0029482,-0.0011982
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0123128,0.0
+S. Andreasen,Hobro,Hobro vs Middelfart,2025-07-27,0.0382649,0.0259521
+S. Andreasen,Hobro,Hobro vs Middelfart,2025-07-27,0.05382,0.0155551
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0055455,-0.0482745
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0042373,0.0042373
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0043835,0.0001462
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0050537,-0.0088998
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.006988,0.006988
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0043835,0.0
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0027729,-0.0016106
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0025949,0.0025949
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0083183,0.0057234
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,0.0068933,-0.001425
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0082816,0.0082816
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0145881,0.0063065
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0161076,0.0015195
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0126936,-0.003414
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.008386,-0.0043076
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0070255,-0.008386
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0042373,0.0042373
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0043835,0.0001462
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0008328,-0.0035507
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0013483,0.0005155
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0258083,0.02446
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.1351231,-0.0258083
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0038126,0.0038126
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0042754,0.0004628
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0007018,-0.0051599
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0013604,0.0006586
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0013305,-2.99e-05
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.000271,-0.0010595
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,0.0003452,7.42e-05
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0009828,0.0006376
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,0.0013429,-0.0009828
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0106987,0.0106987
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0013144,-0.0093843
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,0.0,-0.0013144
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0107159,0.0107159
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.001166,0.001166
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0012211,5.51e-05
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0005958,-0.0012211
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0012028,-0.0
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,0.0009571,0.0002147
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0008115,-0.0001456
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.001229,0.0004175
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0012352,6.2e-06
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0012059,-2.93e-05
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0030926,0.0018867
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0079142,0.0048216
+S. Andreasen,Hobro,Hobro vs Middelfart,2025-07-27,0.0610393,-0.0079142
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0041464,0.0041464
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0039035,-0.0022108
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.00385,-5.35e-05
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0082816,0.0044316
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.002825,-0.0082816
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0020156,0.0020156
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,0.0006185,-0.0001139
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0011265,0.000508
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0013136,0.0001871
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0003981,-0.0009155
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0013685,0.0009704
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0003891,-0.0009794
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0013289,0.0009398
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0011913,-0.0001376
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0012772,8.59e-05
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0012928,1.56e-05
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0012408,-5.2e-05
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0012841,4.33e-05
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0014088,0.0001247
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0011788,-0.00023
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0003807,-0.0007981
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.000386,5.3e-06
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0009302,0.0005442
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,0.0077671,0.0068369
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0043835,0.0043835
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0123128,0.0079293
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.01035,-0.0
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0009158,0.0009158
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0012716,0.0003558
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0013304,5.88e-05
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0,-0.0013304
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0,0.0
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0008093,-0.0031445
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0002681,-0.0005412
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0002708,2.7e-06
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,0.0009369,-0.0002708
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0012109,-0.0
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0011472,0.0
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0003282,0.0003282
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0003128,-1.54e-05
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0054283,0.0051155
+S. Andreasen,Hobro,Hobro vs Middelfart,2025-07-27,0.0011561,-0.0054283
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0042373,0.0042373
+S. Andreasen,Hobro,Hobro vs Middelfart,2025-07-27,0.0142558,0.0142558
+S. Andreasen,Hobro,Hobro vs Middelfart,2025-07-27,0.0120607,-0.0021951
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0037548,-0.0083059
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.008386,0.0046312
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0093122,0.0009262
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0083183,-0.0009939
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0113288,0.0030105
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0083183,-0.0030105
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0083183,0.0
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.008386,-0.0083183
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0039137,0.0
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0043835,0.0004698
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.008386,0.0040025
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0258083,-0.008386
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0115783,0.0115783
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0002941,-0.0112842
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0002681,-2.6e-05
+NaN,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+NaN,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+NaN,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,0.0002779,0.0002779
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.001232,0.0
+S. Andreasen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0042373,0.0042373
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0008328,-0.007924
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0015155,-0.0008328
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,0.0004545,-0.0002879
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0003527,-0.0001018
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0107838,-0.0
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0009158,0.0009158
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0004679,-0.0004479
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.00028,-0.0001879
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0003518,7.18e-05
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0013685,0.0010167
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0008655,-0.0016905
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.003942,0.0030765
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0008494,-0.0030926
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0004165,-0.0004329
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0012503,0.0008338
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0009701,-0.0002802
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0009513,-1.88e-05
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0035103,0.002559
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0008018,-0.0027085
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0041464,0.0033446
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,0.00385,-0.0002964
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0042373,0.0003873
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0042831,4.58e-05
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0040481,-0.000235
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0040481,0.0
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0040481,0.0
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0,-0.0040481
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0040594,0.003106
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0036636,-0.0003958
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0008412,-0.0028224
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0013002,0.000459
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0038599,0.0025597
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,0.0005023,-0.0033576
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0008688,0.0003665
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0002779,-0.0005909
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0002681,-9.8e-06
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0009369,-0.0002681
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Andreasen,Hobro,Hobro vs Middelfart,2025-07-27,0.0,0.0
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,0.0003495,-0.0002806
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0003498,3e-07
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0007266,0.0003768
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0006956,-3.1e-05
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0024258,0.0017302
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,0.001297,-0.0011288
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0012265,-0.0
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0008548,0.0008548
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0035823,0.0027275
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0004961,-0.0030862
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0011731,0.000677
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0028164,0.0016433
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0007017,-0.0021147
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0,-0.0007017
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0008397,-0.0026313
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0012209,0.0003812
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0013007,7.98e-05
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0018616,-0.0013007
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0009158,0.0009158
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0006875,-0.0002283
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0002681,-0.0004194
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,0.0011921,-0.0002681
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,0.0006723,-0.0003524
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0042373,0.0042373
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.001297,0.0
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.000349,-0.0022313
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,0.000556,0.000207
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0007065,0.0
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,0.0025593,0.0018528
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,0.0005929,-0.0019664
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0006632,7.03e-05
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0015187,0.0
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0003582,-0.0004642
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,0.0104257,0.0104257
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.01035,-0.0
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,0.0003452,-0.0003972
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0003356,-9.6e-06
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0012849,0.0
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,0.001297,0.0
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0030541,0.0030541
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0013915,-0.0016626
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,0.0003397,-0.0002722
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0009153,0.0
+S. Andreasen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0013653,0.0013653
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Andreasen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0004497,-0.000949
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0002843,-0.0001654
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0035324,0.0032481
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0005076,-0.0030248
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0005958,-0.0029366
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0013448,0.000749
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0013464,1.6e-06
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0083183,0.0069719
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,0.0454354,0.0371171
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0141,0.0141
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0106971,-0.0034029
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0201964,0.0094993
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0036441,-0.0165523
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0083183,0.0046742
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0,-0.0083183
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0,0.0
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0,0.0
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0,0.0
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0037376,0.0025722
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0041464,0.0004088
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0040715,-7.49e-05
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0011254,-0.0029461
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0040715,0.0040715
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0040481,-2.34e-05
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.00385,-0.0001981
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.000855,-0.002995
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.001229,0.000374
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0079142,0.0066852
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,0.0037945,-0.0041197
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0083183,0.0045238
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,0.001296,-0.0070223
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0211373,0.0211373
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0153444,-0.0057929
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0409658,0.0256214
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0003797,0.0003797
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0011941,0.0008144
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0003856,-0.0008085
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0013912,0.0010056
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0003282,-0.001063
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0005958,0.0002676
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0013936,0.0007978
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0119623,-0.0013936
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.001297,-0.0
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0,-0.0020523
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,0.0003452,7.71e-05
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0003328,-1.24e-05
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0002681,-6.47e-05
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,0.0003362,6.81e-05
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0009613,0.0
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.000967,0.000967
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0003328,-0.002062
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0004848,0.000152
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0012421,0.0007573
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0021561,0.000914
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,0.0106987,0.0106987
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,0.0014681,-0.0
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0006178,0.0006178
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0013936,0.0007758
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0005353,-0.0008583
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0010908,0.0005555
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0003106,-0.0007802
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0003164,5.8e-06
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0004734,0.000157
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.000692,0.0002186
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.000271,-0.000421
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.001037,0.000766
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0012005,0.0001635
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0038599,0.0038599
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0005224,-0.0033375
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0013936,0.0008712
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0005651,-0.0008285
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0040499,0.0034848
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.003952,-9.79e-05
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0040481,9.61e-05
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0410052,0.0369571
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0002798,0.0002798
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0009158,0.000636
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0003424,-0.0005734
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,0.0009475,0.0
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,0.001224,-0.0009475
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0104563,0.0104563
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0004606,-0.0099957
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0006382,0.0001776
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0031888,0.0025506
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0004712,-0.0027176
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0021674,0.0016962
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,0.0041464,0.001979
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0550291,0.0508827
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,0.1079919,0.0529628
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,0.0687054,0.0394094
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.003016,0.003016
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0015155,-0.0
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,0.0104052,0.0104052
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,0.0003397,-0.0100655
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0009301,0.0005904
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0007405,-0.0001896
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0013701,0.0006296
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0083183,0.0069482
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0119623,0.003644
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0035317,-0.0119623
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0005336,-0.0023675
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0002714,-0.0002622
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0007103,0.0004389
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0011403,-0.0007103
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,0.0103975,0.0103975
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0564673,0.0460698
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0115314,0.0115314
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0012211,0.0
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0083183,0.0070972
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0040355,-0.0042828
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0040715,3.6e-05
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.008386,0.0043145
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0027095,-0.0056765
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.004012,0.0030553
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0040481,3.61e-05
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0,-0.0040481
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0,-0.0
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0042373,0.0042373
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0083183,0.0072731
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0093646,0.0010463
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0083183,-0.0010463
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0055693,-0.002749
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,0.0073086,-0.0219874
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0012634,0.0012634
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,0.001297,-0.0012634
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0104052,0.0104052
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0013421,-0.0090631
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0002807,-0.0010614
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0003822,0.0001015
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0013289,0.0009467
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,0.0004748,-0.0008541
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0013299,0.0008551
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.001296,-3.39e-05
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+NaN,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+Z. Hyltoft,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+NaN,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0003144,-0.0019047
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0006419,0.0006419
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0025143,0.0018724
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0002812,-0.0022331
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0008925,0.0006113
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0035275,0.002635
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0008115,-0.002716
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0038599,0.0030484
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0040499,0.00019
+Z. Hyltoft,Hobro,Hobro vs Middelfart,2025-07-27,0.0008115,-0.0032384
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0003106,-0.0005009
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0,-0.0003106
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,0.0009369,0.0006688
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0034372,0.0
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,0.0009158,0.0009158
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,0.0004509,-0.0004649
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0010826,-0.0004509
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,0.0003452,-0.0002788
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0007424,0.0003972
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0013313,0.0005889
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0007159,-0.0006154
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0,-0.0007159
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0005217,0.0002471
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0013936,0.0008719
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0004512,-0.0009424
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0011933,-0.0004512
+Z. Hyltoft,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0026413,0.0026413
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0005518,-0.0020895
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0034783,0.0029265
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0003732,-0.0031051
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0013945,0.0010213
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0012005,-0.000194
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0009173,-0.0003878
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0040973,0.00318
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0074551,-0.0040973
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.007728,0.0
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0037945,-0.0039335
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0030627,-0.0007318
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0003865,-0.0026762
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0019161,0.0015296
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0008494,-0.0010667
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0002779,-0.0005715
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0002783,4e-07
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0009761,-0.0002783
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0041292,0.0041292
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0043835,0.0002543
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0083183,0.0039348
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,0.010815,0.0024967
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0137192,0.0029042
+Z. Hyltoft,Hobro,Hobro vs Middelfart,2025-07-27,0.0266802,0.012961
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,0.0003452,-0.0003081
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0003452,0.0
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0004607,0.0001155
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0002714,-0.0001893
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0003688,9.74e-05
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0002736,-9.52e-05
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0010136,0.00074
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0011893,0.0001757
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.001297,0.001297
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0042373,0.0042373
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0008232,-0.0034141
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0040151,0.0031919
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0,-0.0040151
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0258083,0.0217602
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.1079366,-0.0258083
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0030069,0.0030069
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0002681,0.0
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,0.0003397,-0.0003251
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0013936,0.0010539
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0006719,-0.0007217
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0003808,-0.0002911
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0010623,0.0006815
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0014159,0.0003536
+Z. Hyltoft,Hobro,Hobro vs Middelfart,2025-07-27,0.0005272,-0.0008887
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0013936,0.0008664
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0005862,-0.0008074
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0013368,0.0007506
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+NaN,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+NaN,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Boye,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,0.0009369,-0.0003234
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0014471,-0.0
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0035324,0.0035324
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0007945,-0.0027379
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0002681,-0.0005264
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,0.0009269,-0.0002681
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0013464,0.0013464
+Z. Hyltoft,Hobro,Hobro vs Middelfart,2025-07-27,0.0037317,0.0023853
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0007075,-0.0030242
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0013025,-0.0007075
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.001296,0.0
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0040481,0.0029433
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0007957,-0.0032524
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.000971,0.0001753
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0037739,0.0028029
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0014664,-0.0037739
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0005214,0.0005214
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,0.0079717,0.0072293
+M. Boye,Hobro,Hobro vs Middelfart,2025-07-27,0.0042373,-0.0037344
+Z. Hyltoft,Hobro,Hobro vs Middelfart,2025-07-27,0.0247793,0.020542
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0338442,0.0090649
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0075299,-0.0217661
+Z. Hyltoft,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+Z. Hyltoft,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0024564,0.0024564
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0073928,-0.0219032
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0211452,0.0211452
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0085015,-0.0126437
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0223456,0.0138441
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0064944,-0.0158512
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0518125,0.0518125
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0029677,0.0029677
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+NaN,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0083183,0.0074517
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0028443,-0.0083183
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+Z. Hyltoft,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0042926,0.0042926
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0031198,-0.0011728
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0040973,0.0009775
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0008961,-0.0032012
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0014868,-0.0008961
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0491238,-0.0
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0,-0.0003397
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0006394,-0.0
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,0.0104263,0.0
+Z. Hyltoft,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+Z. Hyltoft,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0026053,0.0026053
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0083183,0.005713
+Z. Hyltoft,Hobro,Hobro vs Middelfart,2025-07-27,0.0039817,-0.0043366
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0327374,0.0287557
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0102039,-0.0225335
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Boye,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,0.0011159,0.0006759
+Z. Hyltoft,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+Z. Hyltoft,Hobro,Hobro vs Middelfart,2025-07-27,0.0042373,0.0031214
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0042373,0.0042373
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0116391,0.0074018
+M. Boye,Hobro,Hobro vs Middelfart,2025-07-27,0.0,-0.0116391
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0,-0.0
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0419868,0.0419868
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0100192,-0.0319676
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0185947,0.0085755
+Z. Hyltoft,Hobro,Hobro vs Middelfart,2025-07-27,0.009373,-0.0092217
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0060503,-0.0033227
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0075754,-0.0217206
+M. Boye,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+NaN,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+NaN,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+NaN,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+NaN,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+NaN,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0005125,0.0005125
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0014664,0.0
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.034921,0.034921
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0154851,-0.0194359
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0244839,0.0089988
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0080811,-0.0164028
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.001296,0.0
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0043835,-0.0
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0014419,0.0014419
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0011827,-0.0002592
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0005353,-0.0006474
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0013391,0.0008038
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0014471,-0.0013391
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0013284,-0.0
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0041464,0.0041464
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0011965,-0.0029499
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0042373,-0.0
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+E. Andersen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0042179,0.0042179
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0008018,-0.0034161
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0008984,9.66e-05
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0005967,-0.0003017
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.000271,-0.0003257
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0009994,0.0
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0049183,0.0049183
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0245673,0.0245673
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0025413,-0.022026
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0079567,0.0079567
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.0040481,-0.0039086
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012393,-0.0040481
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.000902,0.0001596
+E. Andersen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0040328,0.0040328
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0080984,0.000353
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.0054738,-0.0026246
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0008045,-0.0046693
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0011475,0.000343
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0039275,0.00278
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0031528,-0.0044332
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0040499,0.0008971
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0040954,4.55e-05
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0008195,-0.0032759
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0083183,-0.0008195
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.001296,0.0
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0042373,0.0029413
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.000992,0.0
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0013025,-0.000992
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.000271,0.000271
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0009324,-0.000271
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0258083,0.0
+E. Andersen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0712941,0.0454858
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0011043,0.0011043
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0042926,0.0031883
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0011614,-0.0031312
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0040734,0.002912
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0040481,-2.53e-05
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0008037,-0.0032444
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0011752,0.0003715
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0011913,1.61e-05
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0013305,0.0001392
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.0008151,-0.0005154
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0018795,0.0010644
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.0014664,-0.0018795
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0008888,0.0005436
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0011941,0.0003053
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012716,0.0003598
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.000558,-0.0007136
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0011427,-0.000558
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0011427,-0.0
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.001897,0.001897
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0009158,0.0
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0013429,0.0004271
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0038331,0.0029931
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0036123,0.0036123
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0014664,-0.0021459
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0078919,0.0070694
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0083183,0.0004264
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0327374,0.0244191
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0327374,0.0
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.005551,-0.0271864
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0004343,0.0004343
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0013391,0.0009048
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.0004227,-0.0009164
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0008025,0.0003798
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0029773,0.0021748
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0006178,-0.0023595
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003952,-0.0002226
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0002681,-0.0001271
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0009369,0.0006688
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.001296,-0.0009369
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.0042373,0.0042373
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.0018592,-0.0042373
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+E. Andersen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0041292,0.0041292
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0025214,0.0025214
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0014752,-0.0010462
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0011929,0.0011929
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0008327,-0.0003602
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0002708,-0.0005619
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012044,-0.0002708
+E. Andersen,Middelfart,Hobro vs Middelfart,2025-07-27,0.001297,0.0
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0005368,0.0005368
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0004645,-0.0005368
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0106553,0.0
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.01035,0.01035
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0,-0.01035
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003191,-0.0004208
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0010623,0.0007432
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0002681,-0.0007942
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0009994,0.0
+E. Andersen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0042373,0.0032379
+E. Andersen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0042373,0.0
+E. Andersen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0527914,0.0527914
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0084019,-0.0443895
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0079567,-0.0004452
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.008744,0.0007873
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.0041228,-0.008744
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.033093,0.033093
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0104575,0.0104575
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0002708,-0.0101867
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003452,7.44e-05
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0015568,-0.0003452
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003417,-0.0004007
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0010136,0.0006719
+E. Andersen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0008037,-0.0002099
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0011561,-0.0008037
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0079567,0.0079567
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0023903,-0.0055664
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0104052,0.0104052
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.000902,-0.0104052
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.01035,0.01035
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0112438,0.0112438
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003412,0.0003412
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0009158,0.0005746
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003452,-0.0009158
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0011493,0.0
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.0,-0.0
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0041292,0.0041292
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.000283,0.000283
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.0010221,0.0007391
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.0007024,-0.0003197
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0013839,0.0006815
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0042373,0.0028534
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0042373,0.0
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0059144,-0.0042373
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003344,0.0003344
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0011773,0.0008429
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0013037,0.0001264
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0013284,0.0
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0107076,0.0107076
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0042179,0.0
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0041464,-7.15e-05
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0327374,0.028591
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0053584,-0.0327374
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012816,0.0012816
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0,-0.0012816
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0083183,0.0069048
+E. Andersen,Middelfart,Hobro vs Middelfart,2025-07-27,0.001296,0.0
+E. Andersen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0104052,0.0104052
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0004579,-0.0099473
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003745,-8.34e-05
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0009369,-0.0003745
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0011634,-0.0
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0042179,0.0042179
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0040682,-0.0001497
+E. Andersen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0056157,-0.0038076
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.0085015,0.0028858
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0011246,-0.0008544
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0136666,0.0051651
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0035724,0.0035724
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.000708,-0.0028644
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0039989,0.0032909
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0004013,-0.0035976
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0,-0.0004013
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0002681,-0.0001332
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012028,-0.0002681
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.0,-0.0
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0041292,0.0041292
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.001297,0.0
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0004085,0.0004085
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012547,0.0008462
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0002769,-0.0009778
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012503,0.0009734
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0,0.0
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0039036,-0.0012503
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.01035,0.01035
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0104257,0.0
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0042373,0.0042373
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.0042926,5.53e-05
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.0041292,-0.0001634
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0040626,0.0040626
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0030069,0.0030069
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0014149,-0.001592
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0041464,0.0027315
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0271734,0.023027
+E. Andersen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0096073,0.0
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.01035,0.01035
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0009158,0.0
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003877,-0.0005281
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012824,0.0008947
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012593,0.0
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+E. Andersen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0042926,0.0030077
+E. Andersen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0007197,-0.0035729
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0013284,0.0
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0005168,-0.0003152
+E. Andersen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0039508,0.0027351
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012157,0.0012157
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.01035,0.01035
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003584,0.0003584
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0009158,0.0005574
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012241,0.0
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0104263,0.0
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0025792,0.0025792
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003634,-0.0022158
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0005958,0.0002324
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0013213,0.0007255
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003683,-0.000953
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0013992,0.0010309
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.0013074,-9.18e-05
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0038955,0.0025881
+E. Andersen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0040499,0.0001544
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0,-0.0040499
+E. Andersen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0,0.0
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0,-0.0
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0042373,0.0042373
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0042373,0.0
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0043835,0.0001462
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0081661,0.0037826
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0040313,-0.0041348
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0040954,6.41e-05
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0037277,-0.0003677
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0007019,-0.0030258
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0013007,0.0005988
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0005156,-0.0007851
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0083183,0.0078027
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0020798,-0.0062385
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0013464,0.0013464
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0004959,-0.0008505
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0013936,0.0008977
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0014712,7.76e-05
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0007644,-0.0007068
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0,-0.0007644
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0083183,0.0002199
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0133681,0.0050498
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0144117,0.0010436
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0091257,-0.005286
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0083183,-0.0008074
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0040355,-0.0042828
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0040715,3.6e-05
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0039814,-9.01e-05
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0080984,0.004117
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0,0.0
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0043835,0.0043835
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0008328,-0.0035507
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.001191,0.0003582
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0013305,0.0001395
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0079142,0.0065837
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0068928,-0.0010214
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0040715,-0.0028213
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0056157,0.0015442
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.0040954,-0.0015203
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0054265,0.0013311
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0042373,-0.0011892
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0085015,0.0042642
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0071892,-0.0085015
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0103975,0.0103975
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0775198,0.0775198
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003397,-0.0002264
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0002681,-7.16e-05
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003397,7.16e-05
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0002811,-5.86e-05
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012028,0.0009217
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0035324,0.0035324
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0011604,-0.002372
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0002779,-0.0008825
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0004674,0.0001895
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012559,0.0007885
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0113288,0.0100729
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0,-0.0113288
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0036893,0.0
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0,0.0
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003969,0.0003969
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003288,-6.81e-05
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012824,0.0008855
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012593,0.0
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.007904,0.0071616
+E. Andersen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0056157,-0.0022883
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0102062,0.0045905
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012803,-0.0089259
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0079111,0.0070185
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0007901,-0.007121
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0002681,-0.000522
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0011538,0.0008857
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.0013025,-0.0011538
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0042926,0.0042926
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0005023,-0.0037903
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.001319,-0.0005023
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0079567,0.0079567
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.001296,0.0
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.001899,0.001899
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0002736,-0.0016254
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0004743,0.0
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003452,-0.0003412
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012716,5.34e-05
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0106436,0.0106436
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0111789,0.0111789
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.001393,0.0
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0079545,0.0
+E. Andersen,Middelfart,Hobro vs Middelfart,2025-07-27,0.002362,0.0
+NaN,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+NaN,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012323,-0.0
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0011159,0.0003735
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0258083,0.0258083
+E. Andersen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+E. Andersen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.002955,0.0
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0042926,0.0042926
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0038599,-0.0004327
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0040499,0.00019
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0011427,-0.0040499
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0,-0.0
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012182,0.0012182
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0042373,0.0029657
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0040481,-0.0001892
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.0040481,0.0
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.000815,-0.0032331
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0013562,0.0005412
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0038519,0.0024957
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0040954,0.0002435
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012631,-0.0028323
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.0040548,0.0040548
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0008171,-0.0032377
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0022733,0.0014562
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0079567,0.0056834
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0022957,-0.0079567
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0041292,0.0041292
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0043835,0.0002543
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0011254,-0.0043835
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0040481,0.0040481
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.0040954,4.73e-05
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0,-0.0040954
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0850879,0.0291299
+E. Andersen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+E. Andersen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0030486,0.0013529
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003591,-0.0026895
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012794,-0.0017692
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0006379,-0.0006415
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0008903,0.0002524
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0008755,-1.48e-05
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0005311,-0.0003444
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0002681,-0.000263
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003397,7.16e-05
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0011159,-0.0003397
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0104052,0.0104052
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003397,-0.0100655
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0004934,0.0001537
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0002769,-0.0002165
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003397,6.28e-05
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.001003,-0.0003397
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0043835,0.0043835
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0083183,0.0039348
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0083183,0.0
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0083183,0.0
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0085015,0.0001832
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0327374,0.0242359
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0071908,-0.0255466
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0040481,0.0040481
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.0038306,-0.0002175
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0040481,0.0002175
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.0036188,-0.0004293
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0002948,-0.003324
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0002681,-2.67e-05
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003362,6.81e-05
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.000813,0.0004768
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0105173,0.0
+E. Andersen,Middelfart,Hobro vs Middelfart,2025-07-27,0.001199,-0.0093183
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0080238,0.0
+E. Andersen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0214353,0.0134115
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012287,-0.0214353
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0043835,0.0043835
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0083183,0.0039348
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.001296,0.0
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0013429,0.000173
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0042831,0.0042831
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0085015,0.0042184
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0016145,0.0
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0042373,0.0042373
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0083183,0.004081
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.008386,6.77e-05
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.0033945,-0.0049915
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0044055,0.001011
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0083183,0.0039128
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0083457,2.74e-05
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0120518,0.0037061
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.009441,-0.0026108
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0136029,0.0041619
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0085702,-0.0050327
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0083183,-0.0002519
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0083183,0.0
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0030356,-0.0052827
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0690803,0.0397843
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0011775,0.0011775
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012336,5.61e-05
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0002843,-0.0009493
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012223,-0.0002843
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.0041292,0.0041292
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0042926,0.0001634
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003253,-0.0039673
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0006619,0.0003366
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0015155,-0.0006619
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0014626,0.0009074
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0006791,-0.0007835
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.0002681,-0.000411
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0009369,0.0
+E. Andersen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0015319,-0.0
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.001165,0.0007799
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0011136,0.0011136
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.01035,0.01035
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.000897,0.0
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0004253,-0.0004717
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0010828,0.0
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.000354,-0.0003884
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003362,-1.78e-05
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0009001,-0.0003362
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0009527,-0.000611
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003829,0.0003829
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0011427,-0.0003829
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0042926,0.0042926
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012504,-0.0030422
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0013385,8.81e-05
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0011289,-0.0002096
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0005294,-0.0005995
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0013067,0.0007773
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0011632,-0.0
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+E. Andersen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0,0.0
+E. Andersen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0080984,0.0038058
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0552041,0.0259081
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.1357128,0.1357128
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0009158,0.0009158
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003463,-0.0005695
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0002769,-6.94e-05
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003495,7.26e-05
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0002904,-5.91e-05
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.000583,0.0002926
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012195,0.0006365
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.003968,0.0027485
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012114,-0.0027566
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0019448,0.0019448
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+E. Andersen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Boesen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0076389,0.0068965
+M. Boesen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Boesen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0031701,-0.0076389
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0020626,0.0020626
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0002681,-0.0017945
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0008698,0.0006017
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.006988,0.0061182
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.001296,-0.005692
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.0042373,0.0029413
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.0011427,-0.0030946
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0009571,0.0002147
+M. Boesen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0083183,0.0073612
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0056157,-0.0027026
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.0040715,-0.0015442
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.008744,-0.0040715
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0035293,0.0
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0009158,0.0009158
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0,-0.0009158
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003582,1.3e-05
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003243,-3.39e-05
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0006618,0.0003375
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0020011,0.0013393
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0014681,-0.0020011
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.000418,0.000418
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0010033,0.0005853
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0009924,-1.09e-05
+M. Boesen,Middelfart,Hobro vs Middelfart,2025-07-27,0.001297,0.0
+M. Boesen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0007279,0.0007279
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0014564,0.0
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0076389,0.0068965
+M. Boesen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Boesen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0028863,-0.0047526
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0018592,-0.0010271
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.01035,-0.0
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0,0.0
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0004642,0.0
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0011159,-0.0002279
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0004085,0.0004085
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0005172,0.0001087
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003144,-0.0002028
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0002973,-1.71e-05
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0002681,-2.92e-05
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0009158,0.0006477
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003397,-0.0005761
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0013289,0.0009892
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0079567,0.0066278
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0042373,-0.0037194
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.0083183,0.004081
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.001296,0.0
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0041292,0.0041292
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.0042926,0.0001634
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.0083183,0.0040257
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0083183,0.0
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0083183,0.0
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0083183,0.0
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+NaN,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+NaN,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0019918,0.0019918
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0013605,-0.0006313
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0004149,-0.0009456
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0083183,0.0079034
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0358296,0.0275113
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.001296,0.0
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012613,-0.0
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0014681,-0.0020745
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0015155,-0.0
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0005881,0.0005881
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012394,-0.0008093
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Eg Pedersen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+R. Kakeeto,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0026553,0.0
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0031211,0.0031211
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0011714,-0.0019497
+S. Eg Pedersen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.000992,0.0002496
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.003952,0.00296
+R. Kakeeto,Middelfart,Hobro vs Middelfart,2025-07-27,0.0041464,0.0001944
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0040132,-0.0001332
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0040481,3.49e-05
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0042831,0.000235
+M. Boesen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0079567,0.0036736
+S. Eg Pedersen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0251661,0.0172094
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.03632,0.0111539
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0075128,-0.0217832
+R. Kakeeto,Middelfart,Hobro vs Middelfart,2025-07-27,0.0091366,0.0091366
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0063822,-0.0091366
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0034611,0.0034611
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0041292,0.0041292
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0009571,0.0002147
+M. Boesen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0040481,0.003091
+R. Kakeeto,Middelfart,Hobro vs Middelfart,2025-07-27,0.0042373,0.0001892
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0079567,0.0037194
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0079567,0.0
+M. Boesen,Middelfart,Hobro vs Middelfart,2025-07-27,0.002482,-0.0054747
+M. Boesen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0058844,-0.029296
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0006968,0.0006968
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0079561,0.0
+M. Boesen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0563643,0.0484082
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0056157,-0.0507486
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0083183,0.0027026
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0083183,0.0
+R. Kakeeto,Middelfart,Hobro vs Middelfart,2025-07-27,0.0085015,0.0001832
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0154273,0.0069258
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0043036,-0.0111237
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+NaN,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+NaN,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012265,-0.0
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0104052,0.0104052
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003059,-0.0100993
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.000925,-0.0003059
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012436,-0.0
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0008635,0.0008635
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003452,-0.0005183
+S. Eg Pedersen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003485,3.3e-06
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003991,5.06e-05
+R. Kakeeto,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012964,0.0008973
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.001297,0.0
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003416,-0.0009554
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0083183,0.0
+M. Boesen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Boesen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0025999,0.0
+S. Eg Pedersen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0042373,0.0042373
+S. Eg Pedersen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0152756,0.0110383
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0,-0.0152756
+M. Boesen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Eg Pedersen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0039426,-0.029296
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Eg Pedersen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Eg Pedersen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Eg Pedersen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Boesen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Boesen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Boesen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Boesen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Eg Pedersen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+R. Kakeeto,Middelfart,Hobro vs Middelfart,2025-07-27,0.0006959,0.0006959
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0035823,0.0028864
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0041087,0.0005264
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0002736,-0.0038351
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0004675,0.0001939
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003417,-0.0001258
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0011994,-0.0003417
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0004711,0.0004711
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0011354,0.0
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0062561,0.0
+M. Boesen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Boesen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0258083,0.0209063
+M. Boesen,Middelfart,Hobro vs Middelfart,2025-07-27,0.1349513,0.1349513
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0054766,0.0054766
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0083183,0.0083183
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0074693,-0.000849
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0076601,0.0
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0325554,0.0325554
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+V. Kwasniak,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+V. Kwasniak,Middelfart,Hobro vs Middelfart,2025-07-27,0.0042831,0.0042831
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.001319,-0.0042831
+M. Boesen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012125,-0.0
+S. Eg Pedersen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0079717,0.0079717
+M. Boesen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+V. Kwasniak,Middelfart,Hobro vs Middelfart,2025-07-27,0.0109613,0.0029896
+V. Kwasniak,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.1115884,0.1107188
+M. Boesen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Boesen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0121574,-0.099431
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0011975,0.0011975
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0014868,-0.0011975
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Eg Pedersen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Eg Pedersen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+R. Kakeeto,Middelfart,Hobro vs Middelfart,2025-07-27,0.0104563,0.0104563
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+R. Kakeeto,Middelfart,Hobro vs Middelfart,2025-07-27,0.0,-0.0104563
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Boesen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+NaN,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+NaN,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+NaN,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN

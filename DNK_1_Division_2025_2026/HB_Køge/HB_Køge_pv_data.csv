@@ -12,13 +12,13 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827641485,10,1,1,0,14,1,68.9,11.1,444n8m1tirk6lp739iigw42c5,M. Rochester,0.008386,-0.0,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827641797,16,61,1,0,15,1,71.4,17.6,k43cten7yb6p59yo0firhb84,M. Schütt,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827641505,11,1,1,0,17,1,75.2,31.0,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.0450252,-0.0,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827641507,12,61,1,0,17,0,89.6,31.6,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0183078,0.0,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827641507,12,61,1,0,17,0,89.6,31.6,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0183078,0.0,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827641567,13,1,1,0,44,0,30.2,51.8,7al9w77ailhli8g487tkl32tw,M. Westergren,0.0012265,0.0012265,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827641573,14,43,1,1,25,1,0.0,0.0,7al9w77ailhli8g487tkl32tw,M. Westergren,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827641799,17,7,1,1,36,1,13.1,88.6,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.01035,0.01035,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827641801,18,49,1,1,37,1,12.8,88.7,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0009158,0.0,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827641803,19,1,1,1,38,1,11.7,87.1,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0003452,-0.0005706,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827641805,20,1,1,1,41,1,20.2,94.2,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0003961,5.09e-05,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827641805,20,1,1,1,41,1,20.2,94.2,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0003961,5.09e-05,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827641807,21,1,1,1,43,0,9.8,88.3,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0009514,-0.0003961,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827641991,22,4,1,2,38,0,49.2,5.2,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827789195,779,27,1,3,6,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
@@ -31,12 +31,12 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827649223,295,1,1,4,4,1,64.8,20.5,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.0039241,-0.0002223,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827649235,297,1,1,4,6,1,58.3,26.6,k43cten7yb6p59yo0firhb84,M. Schütt,0.0040481,0.000124,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827651361,338,1,1,4,10,1,56.3,65.4,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0044055,0.0003574,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827651369,340,1,1,4,11,1,64.4,75.8,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0040481,-0.0003574,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827651369,340,1,1,4,11,1,64.4,75.8,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0040481,-0.0003574,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827651371,341,1,1,4,14,1,57.3,83.6,6gmm4awyvlf9p7jr9dvnmp0tm,L. Bust,0.0054265,0.0013784,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827651367,339,1,1,4,16,1,63.4,95.5,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0040313,-0.0013952,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827651373,342,1,1,4,20,1,50.3,60.3,7al9w77ailhli8g487tkl32tw,M. Westergren,0.0030932,-0.0009381,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827651379,343,1,1,4,22,1,54.6,87.7,6gmm4awyvlf9p7jr9dvnmp0tm,L. Bust,0.0133681,0.0102749,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827651383,344,1,1,4,26,1,92.9,86.3,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0645868,0.0512187,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827651383,344,1,1,4,26,1,92.9,86.3,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0645868,0.0512187,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827652035,356,50,1,4,27,1,87.0,64.4,444n8m1tirk6lp739iigw42c5,M. Rochester,0.0,-0.0645868,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827652051,357,5,1,4,33,1,73.4,101.4,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827652497,358,1,1,4,36,1,73.1,100.0,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0079567,0.006961,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
@@ -54,6 +54,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644925,103,1,1,5,24,1,84.8,75.0,k43cten7yb6p59yo0firhb84,M. Schütt,0.0034264,-0.0560637,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644935,106,1,1,5,25,1,78.4,89.3,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0271734,0.023747,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827643915,31,1,1,5,28,0,99.3,31.1,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,0.0220071,-0.0271734,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827649987,312,28,1,44,25,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827643911,30,44,1,5,48,1,37.4,43.8,7al9w77ailhli8g487tkl32tw,M. Westergren,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827643907,29,1,1,5,48,0,35.6,48.1,7al9w77ailhli8g487tkl32tw,M. Westergren,0.0013174,-0.0,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827643919,32,8,1,6,11,1,45.9,83.8,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0041292,0.0041292,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
@@ -63,7 +64,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827643935,36,5,1,6,20,0,33.4,100.8,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827643939,37,12,1,6,41,1,11.5,53.0,2pm5oqzyonn0dysa5nszgq3xm,H. Bonnesen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827643943,38,45,1,6,44,0,21.4,63.5,3mgrufy83uhzs9liw8pwxi784,G. Larsen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644937,107,10,1,6,46,1,17.1,63.4,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644937,107,10,1,6,46,1,17.1,63.4,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644909,99,12,1,6,50,1,15.1,44.2,2pm5oqzyonn0dysa5nszgq3xm,H. Bonnesen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644943,109,12,1,6,51,1,30.3,41.5,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.0012728,-0.0003579,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644915,100,1,1,7,19,0,22.9,46.4,7al9w77ailhli8g487tkl32tw,M. Westergren,0.0010211,0.0,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
@@ -141,7 +142,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644025,45,1,1,13,13,1,63.9,14.6,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,0.0040954,-0.0001163,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644033,46,1,1,13,15,1,61.0,25.8,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0044055,0.0003101,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644043,47,1,1,13,19,1,64.4,80.2,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0083183,0.0039128,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644059,48,1,1,13,21,1,71.7,77.6,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0056157,-0.0027026,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644059,48,1,1,13,21,1,71.7,77.6,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0056157,-0.0027026,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644071,49,1,1,13,24,1,75.2,86.5,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0258083,0.0201926,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644073,50,1,1,13,28,0,92.8,25.5,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.1491584,0.1233501,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644085,51,6,1,13,29,1,92.0,33.6,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
@@ -154,18 +155,17 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644333,58,1,1,14,32,1,88.3,83.2,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0194325,-0.0002396,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644335,59,1,1,14,33,1,78.8,87.9,k43cten7yb6p59yo0firhb84,M. Schütt,0.063796,0.0443635,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644341,60,1,1,14,35,1,87.7,60.2,7al9w77ailhli8g487tkl32tw,M. Westergren,0.0692238,0.0054278,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644371,61,1,1,14,38,1,77.2,68.8,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0190216,-0.0502022,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644371,61,1,1,14,38,1,77.2,68.8,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0190216,-0.0502022,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644381,62,1,1,14,41,0,80.1,87.1,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0048491,-0.0141725,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644405,63,7,1,14,44,1,61.5,95.7,k43cten7yb6p59yo0firhb84,M. Schütt,0.0042373,0.0042373,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644409,64,49,1,14,47,1,76.7,87.7,k43cten7yb6p59yo0firhb84,M. Schütt,0.0043835,0.0001462,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644423,65,1,1,14,51,1,77.0,82.6,k43cten7yb6p59yo0firhb84,M. Schütt,0.0090441,0.0046606,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644431,66,1,1,14,54,1,69.2,66.0,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0137316,0.0046875,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644431,66,1,1,14,54,1,69.2,66.0,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0137316,0.0046875,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644441,67,1,1,14,56,1,67.4,36.9,2pm5oqzyonn0dysa5nszgq3xm,H. Bonnesen,0.0082816,-0.00545,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644447,68,1,1,14,58,1,70.5,42.8,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.0501663,0.0418847,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644449,69,3,1,14,59,0,82.2,53.3,444n8m1tirk6lp739iigw42c5,M. Rochester,0.0167855,-0.0333808,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827649217,294,43,1,14,59,1,0.0,0.0,444n8m1tirk6lp739iigw42c5,M. Rochester,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644481,70,1,1,15,4,1,71.0,67.0,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0350591,0.0350591,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827651817,354,70,1,44,59,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644481,70,1,1,15,4,1,71.0,67.0,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0350591,0.0350591,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644485,71,1,1,15,6,0,72.5,27.0,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,0.0067807,-0.0282784,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644519,72,1,1,15,11,1,67.5,14.3,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,0.008386,0.008386,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644529,73,1,1,15,15,1,89.1,9.1,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0172841,0.0088981,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
@@ -192,9 +192,10 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644765,91,1,1,16,12,1,62.2,14.1,2pm5oqzyonn0dysa5nszgq3xm,H. Bonnesen,0.0083183,0.0042468,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644769,92,1,1,16,13,1,71.9,19.2,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.006988,-0.0013303,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644781,93,1,1,16,15,0,66.3,22.7,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0083183,0.0013303,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827650351,314,68,1,44,33,0,71.9,74.8,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644789,94,1,1,16,16,0,80.0,11.7,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.006447,-0.0018713,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827790045,783,44,1,16,17,0,87.5,36.9,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644871,95,5,1,16,33,1,38.0,101.9,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827790045,783,44,1,16,17,0,87.5,36.9,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644871,95,5,1,16,33,1,38.0,101.9,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644883,96,1,1,16,50,0,39.6,100.0,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0012478,-0.0005325,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827644987,113,12,1,17,15,1,26.1,80.8,6gmm4awyvlf9p7jr9dvnmp0tm,L. Bust,0.000813,-0.0,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827645017,114,4,1,17,22,0,25.8,74.8,3mgrufy83uhzs9liw8pwxi784,G. Larsen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
@@ -228,7 +229,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827645665,143,12,1,24,0,1,7.4,36.6,2pm5oqzyonn0dysa5nszgq3xm,H. Bonnesen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827645675,145,44,1,24,0,0,13.0,37.2,3mgrufy83uhzs9liw8pwxi784,G. Larsen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827645669,144,43,1,24,1,1,0.0,0.0,2pm5oqzyonn0dysa5nszgq3xm,H. Bonnesen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827645679,146,4,1,24,9,1,14.0,46.2,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827645679,146,4,1,24,9,1,14.0,46.2,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827645713,147,1,1,24,30,0,19.2,38.0,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.0013025,0.0,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827645715,148,44,1,24,35,0,76.0,31.2,444n8m1tirk6lp739iigw42c5,M. Rochester,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827645723,149,5,1,24,39,1,56.0,-1.8,444n8m1tirk6lp739iigw42c5,M. Rochester,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
@@ -249,7 +250,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827645829,164,1,1,26,15,1,54.3,43.7,7al9w77ailhli8g487tkl32tw,M. Westergren,0.0258083,0.0217602,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827645831,165,1,1,26,17,1,81.0,37.3,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.0898244,0.0640161,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827645833,166,1,1,26,20,1,96.4,30.6,444n8m1tirk6lp739iigw42c5,M. Rochester,0.1742338,0.0844094,1.0,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827645835,167,16,1,26,21,1,94.9,50.1,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827645835,167,16,1,26,21,1,94.9,50.1,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827645879,168,44,1,27,29,1,40.6,73.4,6gmm4awyvlf9p7jr9dvnmp0tm,L. Bust,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827645883,169,1,1,27,30,1,38.5,69.6,6gmm4awyvlf9p7jr9dvnmp0tm,L. Bust,0.0012511,0.0012511,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827645891,170,1,1,27,31,0,41.0,71.4,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0010989,-0.0001522,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
@@ -299,7 +300,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827646669,214,44,1,32,47,0,71.8,80.0,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827646679,215,61,1,32,48,1,70.8,82.9,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827646695,216,1,1,32,51,1,67.1,80.5,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0080984,0.0080984,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827646703,217,1,1,32,52,1,70.6,75.0,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0083183,0.0002199,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827646703,217,1,1,32,52,1,70.6,75.0,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0083183,0.0002199,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827646709,218,1,1,32,55,1,68.1,85.9,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0038674,-0.0044509,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827646719,219,1,1,32,57,1,54.0,80.0,6gmm4awyvlf9p7jr9dvnmp0tm,L. Bust,0.0040734,0.000206,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827646727,220,1,1,32,58,1,63.7,84.5,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0040481,-2.53e-05,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
@@ -314,13 +315,13 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827646909,229,5,1,33,36,0,62.6,101.7,7al9w77ailhli8g487tkl32tw,M. Westergren,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827647023,230,44,1,34,10,1,40.6,53.4,7al9w77ailhli8g487tkl32tw,M. Westergren,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827647029,231,1,1,34,10,1,44.4,51.3,7al9w77ailhli8g487tkl32tw,M. Westergren,0.0040499,0.0040499,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827647031,232,1,1,34,11,1,52.0,59.0,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0042373,0.0001874,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827647031,232,1,1,34,11,1,52.0,59.0,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0042373,0.0001874,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827647035,233,49,1,34,12,1,58.7,52.8,444n8m1tirk6lp739iigw42c5,M. Rochester,0.0043835,0.0001462,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827647051,234,61,1,34,16,0,54.2,53.9,444n8m1tirk6lp739iigw42c5,M. Rochester,0.001296,0.0,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827647075,235,49,1,34,20,1,39.9,61.4,7al9w77ailhli8g487tkl32tw,M. Westergren,0.0042179,0.0042179,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827647087,236,1,1,34,20,1,39.9,61.4,7al9w77ailhli8g487tkl32tw,M. Westergren,0.0002681,-0.0039498,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827647115,237,1,1,34,25,0,10.7,54.9,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.0004775,0.0004775,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827647117,238,43,1,34,29,1,0.0,0.0,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0015027,0.0,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827647117,238,43,1,34,29,1,0.0,0.0,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0015027,0.0,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827647277,239,12,1,35,1,1,12.9,47.9,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,0.0104769,-0.0,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827647345,240,74,1,35,22,1,36.9,9.8,2pm5oqzyonn0dysa5nszgq3xm,H. Bonnesen,0.0020288,-0.0,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827647347,241,5,1,35,23,0,34.6,-1.2,2pm5oqzyonn0dysa5nszgq3xm,H. Bonnesen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
@@ -330,6 +331,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827647575,245,1,1,36,5,1,32.0,7.3,k43cten7yb6p59yo0firhb84,M. Schütt,0.0005256,0.0001665,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827647587,246,1,1,36,6,1,30.3,15.3,444n8m1tirk6lp739iigw42c5,M. Rochester,0.0004285,-9.71e-05,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827647605,247,1,1,36,9,1,26.7,22.7,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0008981,0.0004696,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827651817,354,70,1,44,59,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827647615,248,1,1,36,16,1,56.4,81.7,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0040481,0.00315,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827647633,249,1,1,36,19,1,53.7,54.8,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0040715,2.34e-05,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827647639,250,1,1,36,21,1,54.7,43.7,k43cten7yb6p59yo0firhb84,M. Schütt,0.0040481,-2.34e-05,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
@@ -339,8 +341,8 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827647709,254,1,1,36,37,1,19.9,59.3,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.000349,8.09e-05,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827647713,255,1,1,36,39,1,26.8,78.8,6gmm4awyvlf9p7jr9dvnmp0tm,L. Bust,0.0005487,0.0001997,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827647739,256,1,1,36,40,1,31.1,75.7,7al9w77ailhli8g487tkl32tw,M. Westergren,0.0012415,0.0006928,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827647743,257,61,1,36,45,0,42.5,86.8,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0012693,0.0,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827647751,258,4,1,36,46,0,52.1,91.7,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827647743,257,61,1,36,45,0,42.5,86.8,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0012693,0.0,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827647751,258,4,1,36,46,0,52.1,91.7,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827647947,259,12,1,37,23,1,26.4,34.3,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827647963,260,49,1,37,26,1,31.9,52.8,7al9w77ailhli8g487tkl32tw,M. Westergren,0.0021018,0.001565,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827647965,261,1,1,37,27,1,31.9,52.8,7al9w77ailhli8g487tkl32tw,M. Westergren,0.0009281,-0.0011737,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
@@ -371,7 +373,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827649137,287,1,1,41,4,1,29.9,30.7,k43cten7yb6p59yo0firhb84,M. Schütt,0.0002714,-0.0006997,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827649149,288,1,1,41,5,1,23.0,52.8,7al9w77ailhli8g487tkl32tw,M. Westergren,0.0003693,9.79e-05,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827649197,289,1,1,41,7,1,29.2,76.0,6gmm4awyvlf9p7jr9dvnmp0tm,L. Bust,0.0119623,0.011593,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827649241,298,1,1,41,16,1,78.9,90.0,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0085015,-0.0034608,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827649241,298,1,1,41,16,1,78.9,90.0,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0085015,-0.0034608,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827649253,299,1,1,41,17,0,72.8,69.3,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0049777,-0.0035238,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827650279,313,61,1,41,30,1,65.5,71.4,k43cten7yb6p59yo0firhb84,M. Schütt,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827649357,300,49,1,41,32,1,63.1,76.4,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0043835,0.0043835,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
@@ -386,8 +388,6 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827649831,309,49,1,42,57,1,51.1,36.4,k43cten7yb6p59yo0firhb84,M. Schütt,0.0042754,0.0001462,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827649859,310,50,1,43,0,1,66.1,54.7,k43cten7yb6p59yo0firhb84,M. Schütt,0.0,-0.0042754,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827649945,311,27,1,43,12,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827649987,312,28,1,44,25,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827650351,314,68,1,44,33,0,71.9,74.8,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827650549,315,49,1,45,13,1,29.7,28.3,7al9w77ailhli8g487tkl32tw,M. Westergren,0.010757,0.010757,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827650567,316,1,1,45,16,0,34.2,27.0,7al9w77ailhli8g487tkl32tw,M. Westergren,0.0011737,-0.0095833,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827650637,317,8,1,45,23,1,25.7,49.9,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0106987,0.0106987,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
@@ -397,7 +397,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827651033,321,1,1,46,35,0,16.2,73.8,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.0013025,0.0008183,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827651037,322,44,1,46,39,0,70.1,73.0,444n8m1tirk6lp739iigw42c5,M. Rochester,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827651051,323,61,1,46,40,1,74.0,72.9,444n8m1tirk6lp739iigw42c5,M. Rochester,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827651083,324,1,1,46,44,1,73.4,69.0,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0952887,0.0952887,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827651083,324,1,1,46,44,1,73.4,69.0,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0952887,0.0952887,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827651085,325,1,1,46,45,1,75.3,55.8,k43cten7yb6p59yo0firhb84,M. Schütt,0.0226915,-0.0725972,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827651087,326,1,1,46,46,1,74.5,53.0,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.0127396,-0.0099519,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827651095,327,1,1,46,46,1,58.3,57.9,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0033587,-0.0093809,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
@@ -415,6 +415,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827651401,346,1,1,47,38,1,61.1,34.0,6gmm4awyvlf9p7jr9dvnmp0tm,L. Bust,0.0056157,0.0013784,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827651425,347,1,1,47,41,1,65.4,67.0,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0079567,0.002341,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827651437,348,1,1,47,42,1,67.0,40.0,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0039453,-0.0040114,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+b2vft81kyjurzbmekvgrqwr64,Hobro,2827651573,434,5,1,9,11,0,16.8,100.6,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827651451,349,1,1,47,44,1,51.5,46.7,7al9w77ailhli8g487tkl32tw,M. Westergren,0.003952,6.7e-06,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827651465,350,1,1,47,49,1,55.4,63.0,6gmm4awyvlf9p7jr9dvnmp0tm,L. Bust,0.0014681,-0.0024839,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827651497,351,1,1,47,58,0,82.7,16.4,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.0107747,0.0093066,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
@@ -426,8 +427,8 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827655715,385,1,2,45,13,1,35.0,54.9,2pm5oqzyonn0dysa5nszgq3xm,H. Bonnesen,0.0002681,-0.0029207,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2828582067,784,49,2,45,15,1,13.5,56.5,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827655723,386,1,2,45,17,0,11.7,66.3,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.0012028,-0.0002681,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827655747,387,61,2,45,20,1,44.4,89.3,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827655753,388,5,2,45,21,0,43.7,101.2,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827655747,387,61,2,45,20,1,44.4,89.3,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827655753,388,5,2,45,21,0,43.7,101.2,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827655871,389,7,2,45,40,1,36.9,54.3,2pm5oqzyonn0dysa5nszgq3xm,H. Bonnesen,0.0039508,0.0039508,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827655873,390,49,2,45,41,1,42.0,58.4,2pm5oqzyonn0dysa5nszgq3xm,H. Bonnesen,0.0042926,0.0003418,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827655897,391,1,2,45,43,0,51.2,53.4,2pm5oqzyonn0dysa5nszgq3xm,H. Bonnesen,0.0012588,-0.0042926,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
@@ -445,8 +446,8 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827656581,402,43,2,47,32,1,0.0,0.0,7al9w77ailhli8g487tkl32tw,M. Westergren,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827656745,404,1,2,47,58,1,24.0,77.0,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.0247793,0.0,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827656757,405,1,2,48,3,1,76.1,64.8,444n8m1tirk6lp739iigw42c5,M. Rochester,0.0575163,0.032737,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827656759,406,3,2,48,6,1,93.8,70.3,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0892496,0.0317333,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827656855,407,61,2,48,8,0,92.4,69.9,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0042977,0.0,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827656759,406,3,2,48,6,1,93.8,70.3,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0892496,0.0317333,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827656855,407,61,2,48,8,0,92.4,69.9,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0042977,0.0,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827656897,408,7,2,48,31,1,72.0,18.2,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,0.0042373,0.0042373,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827656899,409,49,2,48,32,1,72.3,25.0,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.0327374,0.0285001,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827656931,410,1,2,48,34,1,75.3,25.9,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.0251151,-0.0076223,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
@@ -457,48 +458,48 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827657115,415,1,2,49,16,1,99.5,0.5,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0430795,0.0137835,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827657117,416,1,2,49,17,1,95.1,27.3,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0244923,-0.0185872,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827657131,417,1,2,49,18,1,84.1,15.9,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0312214,0.0067291,NaN,1.0,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827657135,418,15,2,49,21,1,80.5,35.8,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827657191,419,1,2,49,24,1,77.3,37.1,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.022802,0.022802,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827657135,418,15,2,49,21,1,80.5,35.8,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827657191,419,1,2,49,24,1,77.3,37.1,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.022802,0.022802,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827657197,420,3,2,49,30,1,92.8,85.4,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,0.043123,0.020321,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827657233,421,1,2,49,31,0,93.5,85.7,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,0.0451097,0.0451097,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827657235,422,44,2,49,35,0,95.0,56.6,7al9w77ailhli8g487tkl32tw,M. Westergren,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827657243,423,6,2,49,37,1,94.8,61.3,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827657401,424,1,2,50,9,0,99.5,99.5,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0060513,-0.0232447,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827657401,424,1,2,50,9,0,99.5,99.5,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0060513,-0.0232447,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827657539,425,5,2,50,12,1,74.6,-1.2,3mgrufy83uhzs9liw8pwxi784,G. Larsen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827657555,426,1,2,50,36,0,76.3,0.0,7al9w77ailhli8g487tkl32tw,M. Westergren,0.0,-0.0009419,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827657601,427,1,2,50,46,0,94.3,81.2,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0659293,0.0659293,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827657601,427,1,2,50,46,0,94.3,81.2,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0659293,0.0659293,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827657609,428,61,2,50,48,1,93.8,63.4,444n8m1tirk6lp739iigw42c5,M. Rochester,0.0069166,0.0,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827657643,429,74,2,50,52,1,82.1,94.1,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0042373,0.0042373,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827657651,430,5,2,50,54,0,75.6,101.9,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827657643,429,74,2,50,52,1,82.1,94.1,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0042373,0.0042373,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827657651,430,5,2,50,54,0,75.6,101.9,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827657963,431,52,2,51,40,1,6.2,67.6,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827658011,432,80,2,51,47,0,11.0,64.0,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827658043,433,1,2,51,50,1,9.3,48.7,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.0003495,0.0003495,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827658055,434,1,2,51,51,1,26.1,58.8,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.000271,-7.85e-05,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827658093,435,1,2,51,56,0,6.4,68.7,6gmm4awyvlf9p7jr9dvnmp0tm,L. Bust,0.0012044,0.0,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827658133,436,7,2,52,2,0,45.8,34.0,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827658245,437,12,2,52,18,1,23.8,89.4,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827658343,438,5,2,52,30,1,-0.6,63.6,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827658245,437,12,2,52,18,1,23.8,89.4,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827658343,438,5,2,52,30,1,-0.6,63.6,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827658445,439,1,2,52,58,0,3.7,43.7,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.0011665,0.0004241,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827658447,440,44,2,53,2,0,66.4,56.4,444n8m1tirk6lp739iigw42c5,M. Rochester,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827658505,441,1,2,53,6,1,44.0,66.4,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0002681,0.0002681,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827658523,442,1,2,53,10,1,14.7,58.2,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.0005207,0.0002526,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827658537,443,1,2,53,14,1,35.1,91.4,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0006247,0.000104,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827658553,444,1,2,53,15,1,33.9,85.6,7al9w77ailhli8g487tkl32tw,M. Westergren,0.0008327,0.000208,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827658577,445,1,2,53,17,1,39.7,91.2,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0013605,0.0005278,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827658577,445,1,2,53,17,1,39.7,91.2,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0013605,0.0005278,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827658615,446,1,2,53,25,1,77.0,73.0,7al9w77ailhli8g487tkl32tw,M. Westergren,0.0543805,0.05302,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827658619,447,1,2,53,28,0,97.4,72.6,444n8m1tirk6lp739iigw42c5,M. Rochester,0.0470352,-0.0073453,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827658871,448,8,2,54,10,1,34.3,77.6,7al9w77ailhli8g487tkl32tw,M. Westergren,0.0020575,0.0020575,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827658891,449,83,2,54,13,0,60.5,83.8,444n8m1tirk6lp739iigw42c5,M. Rochester,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827659139,450,1,2,55,6,0,27.9,74.8,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0012422,-0.0,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827659139,450,1,2,55,6,0,27.9,74.8,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0012422,-0.0,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827659187,451,45,2,55,18,0,33.6,70.5,7al9w77ailhli8g487tkl32tw,M. Westergren,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827659217,452,49,2,55,23,1,35.6,70.2,k43cten7yb6p59yo0firhb84,M. Schütt,0.0030969,0.0030969,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827659233,453,1,2,55,24,1,44.6,58.8,k43cten7yb6p59yo0firhb84,M. Schütt,0.0038599,0.000763,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827659275,454,3,2,55,27,1,74.6,35.5,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.0439818,0.0401219,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827659291,455,1,2,55,31,1,84.2,29.2,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.0670124,0.0230306,NaN,1.0,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827659297,456,15,2,55,33,1,89.1,60.0,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827659297,456,15,2,55,33,1,89.1,60.0,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827659349,457,1,2,55,34,1,81.3,24.7,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.0,-0.0670124,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827659351,458,4,2,55,40,1,89.7,46.0,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827660011,459,16,2,57,47,1,88.5,50.0,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827660011,459,16,2,57,47,1,88.5,50.0,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827660493,476,10,2,59,43,1,2.6,51.9,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827660533,477,12,2,59,54,1,9.8,62.1,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827660545,478,10,2,59,55,1,3.2,51.9,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
@@ -529,7 +530,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827661371,501,49,2,63,43,1,61.2,33.4,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,0.0,0.0,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827661393,502,1,2,63,43,1,61.2,33.4,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,0.0079567,-0.0043835,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827661403,503,1,2,63,47,1,77.2,49.1,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0664583,0.0664583,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827661409,504,1,2,63,51,1,97.1,72.1,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.023993,-0.0424653,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827661409,504,1,2,63,51,1,97.1,72.1,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.023993,-0.0424653,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827661423,505,1,2,63,52,1,94.7,87.5,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0102452,-0.0137478,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827661431,506,1,2,63,55,1,85.2,87.8,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0120766,0.0018314,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827661435,507,1,2,64,0,1,62.9,52.4,7al9w77ailhli8g487tkl32tw,M. Westergren,0.0083183,-0.0037583,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
@@ -560,11 +561,11 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827661761,532,1,2,66,39,1,44.5,86.2,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0040499,0.0003845,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827661765,533,1,2,66,40,0,53.0,59.6,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0011427,-0.0029072,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827661773,534,61,2,66,47,1,57.4,88.1,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827661779,535,2,2,66,50,1,72.3,94.4,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.008386,0.0003879,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827661779,535,2,2,66,50,1,72.3,94.4,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.008386,0.0003879,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827661801,536,10,2,67,29,1,1.7,51.8,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827661805,537,6,2,67,30,0,3.8,60.9,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827661861,538,44,2,68,25,0,13.0,51.3,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827661869,539,5,2,68,29,1,-1.5,40.5,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827661861,538,44,2,68,25,0,13.0,51.3,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827661869,539,5,2,68,29,1,-1.5,40.5,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827661921,540,1,2,68,55,0,3.0,53.3,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.0012845,0.0005421,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827661925,541,44,2,68,57,0,68.4,41.4,d2ukggo2v5jsw4pctznmaijo4,A. Gøthler,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2828585299,786,83,2,69,1,1,60.4,40.3,619s1phj5bkgkug3aszc1y9cl,M. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
@@ -577,7 +578,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827661997,550,1,2,69,26,1,21.6,35.8,7al9w77ailhli8g487tkl32tw,M. Westergren,0.000271,2e-07,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827662009,551,1,2,69,31,1,8.3,53.9,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.0013604,0.0,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827662013,552,61,2,69,36,1,42.1,66.9,d2ukggo2v5jsw4pctznmaijo4,A. Gøthler,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827662017,553,1,2,69,38,1,37.2,68.8,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0,-0.0013604,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827662017,553,1,2,69,38,1,37.2,68.8,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0,-0.0013604,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827662019,554,1,2,69,41,1,29.7,89.9,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0,0.0,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827662023,555,1,2,69,43,1,18.7,77.9,2pm5oqzyonn0dysa5nszgq3xm,H. Bonnesen,0.0002681,-2.7e-06,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827662025,556,1,2,69,45,1,10.4,50.9,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.0003397,7.16e-05,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
@@ -605,10 +606,10 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827662623,578,1,2,74,37,0,19.2,25.5,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.0013429,-0.0004498,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827662635,579,43,2,74,45,1,0.0,0.0,abhfq12njxxutqjtb9zvcusyc,Mohamad Al Naser,0.0349546,-0.0,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827662637,580,1,2,74,47,1,71.7,43.7,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0485542,0.0485542,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827662639,581,1,2,74,48,1,78.8,48.4,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.055887,0.0073328,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827662639,581,1,2,74,48,1,78.8,48.4,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.055887,0.0073328,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827662641,582,50,2,74,49,1,84.3,44.2,abhfq12njxxutqjtb9zvcusyc,Mohamad Al Naser,0.0,-0.055887,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827662643,583,1,2,74,51,1,80.4,38.8,619s1phj5bkgkug3aszc1y9cl,M. Jensen,0.0426919,0.0426919,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827662645,584,61,2,74,53,1,82.0,35.8,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827662645,584,61,2,74,53,1,82.0,35.8,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827662647,585,3,2,74,54,0,78.0,39.5,619s1phj5bkgkug3aszc1y9cl,M. Jensen,0.0045788,-0.0381131,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827662679,586,74,2,75,9,1,34.7,32.8,abhfq12njxxutqjtb9zvcusyc,Mohamad Al Naser,0.0029946,0.0029946,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827662685,587,1,2,75,11,1,32.6,50.9,d2ukggo2v5jsw4pctznmaijo4,A. Gøthler,0.0008335,-0.0021611,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
@@ -621,7 +622,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827662741,594,1,2,75,29,1,31.8,46.9,7al9w77ailhli8g487tkl32tw,M. Westergren,0.0012341,0.0008389,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827662743,595,1,2,75,37,1,42.8,24.4,67p0s4o54xcmiustgy8k5gljo,S. Hald,0.0011813,-5.28e-05,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827662745,596,1,2,75,39,1,42.9,79.6,2pm5oqzyonn0dysa5nszgq3xm,H. Bonnesen,0.0,-0.0011813,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827662747,597,50,2,75,42,1,58.0,75.4,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0,-0.0,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827662747,597,50,2,75,42,1,58.0,75.4,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0,-0.0,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827662757,598,1,2,75,46,1,38.4,82.3,2pm5oqzyonn0dysa5nszgq3xm,H. Bonnesen,0.0013605,0.0013605,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827662759,599,1,2,75,47,1,44.5,89.0,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0003106,-0.0010499,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827662761,600,1,2,75,49,1,23.7,79.7,2pm5oqzyonn0dysa5nszgq3xm,H. Bonnesen,0.0002681,-4.25e-05,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
@@ -656,10 +657,10 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827663239,628,43,2,78,12,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2828588477,789,49,2,78,20,1,56.0,75.8,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2828588501,790,1,2,78,23,1,56.0,75.8,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2828588547,791,1,2,78,26,1,74.9,40.6,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2828588547,791,1,2,78,26,1,74.9,40.6,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2828588551,792,61,2,78,27,0,79.5,30.8,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827663387,639,5,2,78,50,1,60.6,-1.4,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827663389,640,18,2,79,23,1,0.0,0.0,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827663389,640,18,2,79,23,1,0.0,0.0,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827663391,641,19,2,79,23,1,0.0,0.0,6orujbbswf771s9rv0dcd8kd0,B. Alkhoudari,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2827663521,642,43,2,79,42,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2828588905,793,1,2,79,57,0,67.9,0.0,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
@@ -888,7 +889,6 @@ b2vft81kyjurzbmekvgrqwr64,Hobro,2827653669,442,4,1,7,44,1,65.0,22.8,4qyfoq5fjioc
 b2vft81kyjurzbmekvgrqwr64,Hobro,2827653655,441,1,1,8,31,0,71.7,6.8,dwuxps3jv2852642q000wep6,V. Rasmussen,0.0040034,0.0040034,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 b2vft81kyjurzbmekvgrqwr64,Hobro,2827653651,440,1,1,8,36,0,56.4,71.6,6bv0j0ezhh9u5u5hqz64p790q,M. Jacobsen,0.001973,-0.0,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 b2vft81kyjurzbmekvgrqwr64,Hobro,2827651543,428,12,1,9,10,1,17.2,88.5,6bv0j0ezhh9u5u5hqz64p790q,M. Jacobsen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
-b2vft81kyjurzbmekvgrqwr64,Hobro,2827651573,434,5,1,9,11,0,16.8,100.6,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 b2vft81kyjurzbmekvgrqwr64,Hobro,2827651575,435,43,1,9,46,1,0.0,0.0,e0rgqk3gxzs005m9ok9hvp1ck,T. Hansen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 b2vft81kyjurzbmekvgrqwr64,Hobro,2827651577,436,12,1,9,46,1,12.8,56.8,e0rgqk3gxzs005m9ok9hvp1ck,T. Hansen,NaN,NaN,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
 b2vft81kyjurzbmekvgrqwr64,Hobro,2827660061,607,50,1,9,48,1,30.4,70.2,4qyfoq5fjiochtj89w426lm21,S. Andreasen,0.0,-0.0003463,NaN,NaN,HB Køge vs Hobro,brnzj43frth2y4gjyeex6n5lg,2025-07-18
@@ -1796,11 +1796,11 @@ b2vft81kyjurzbmekvgrqwr64,Hobro,2827666135,967,37,14,0,0,1,0.0,0.0,NaN,NaN,NaN,N
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829139661,8,1,1,0,32,1,33.9,28.0,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0004879,0.0004879,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829139663,9,1,1,0,33,0,31.5,17.4,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,0.0006437,-0.0004879,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829139695,10,1,1,0,40,1,17.6,51.8,6gmm4awyvlf9p7jr9dvnmp0tm,L. Bust,0.0004327,0.0004327,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829139697,11,49,1,0,44,1,29.8,59.0,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0012984,0.0008657,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829139701,12,1,1,0,44,1,30.9,54.0,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0002681,-0.0010303,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829139697,11,49,1,0,44,1,29.8,59.0,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0012984,0.0008657,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829139701,12,1,1,0,44,1,30.9,54.0,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0002681,-0.0010303,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829141127,69,1,1,0,45,1,15.5,51.5,6gmm4awyvlf9p7jr9dvnmp0tm,L. Bust,0.0003412,7.31e-05,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829139705,13,1,1,0,46,1,17.0,79.4,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0003579,8.98e-05,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829139711,14,1,1,0,47,1,27.5,81.8,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0002681,-8.98e-05,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829139711,14,1,1,0,47,1,27.5,81.8,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0002681,-8.98e-05,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829139719,15,1,1,0,49,1,11.6,70.9,6gmm4awyvlf9p7jr9dvnmp0tm,L. Bust,0.0003397,7.16e-05,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829139727,16,1,1,0,52,1,22.5,29.4,67p0s4o54xcmiustgy8k5gljo,S. Hald,0.0003968,5.71e-05,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829139733,17,1,1,0,55,1,34.4,10.6,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,0.0002736,-0.0001232,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
@@ -1811,9 +1811,9 @@ b2vft81kyjurzbmekvgrqwr64,Hobro,2827666135,967,37,14,0,0,1,0.0,0.0,NaN,NaN,NaN,N
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829139775,22,1,1,1,8,1,31.8,90.9,6gmm4awyvlf9p7jr9dvnmp0tm,L. Bust,0.0006927,0.0003986,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829139789,23,1,1,1,11,1,39.7,96.7,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0014149,0.0007222,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829139807,24,1,1,1,13,1,56.6,87.1,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0079142,0.0064993,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829139809,25,3,1,1,15,0,68.8,94.2,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.001296,-0.0079142,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829139829,26,61,1,1,19,1,70.6,96.0,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829139839,27,5,1,1,19,0,69.3,101.0,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829139809,25,3,1,1,15,0,68.8,94.2,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.001296,-0.0079142,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829139829,26,61,1,1,19,1,70.6,96.0,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829139839,27,5,1,1,19,0,69.3,101.0,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829139899,28,52,1,1,42,1,8.8,66.2,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829139913,29,1,1,1,43,1,10.6,61.8,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.0003397,-0.0001915,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829139917,30,1,1,1,48,1,36.4,93.5,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0005553,0.0002156,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
@@ -1824,7 +1824,7 @@ b2vft81kyjurzbmekvgrqwr64,Hobro,2827666135,967,37,14,0,0,1,0.0,0.0,NaN,NaN,NaN,N
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829140181,35,49,1,2,57,1,33.2,47.6,7al9w77ailhli8g487tkl32tw,M. Westergren,0.0029783,0.0029783,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829140189,36,1,1,2,57,1,26.2,50.7,7al9w77ailhli8g487tkl32tw,M. Westergren,0.0003405,-0.0026378,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829140193,37,1,1,2,59,1,24.4,64.6,6gmm4awyvlf9p7jr9dvnmp0tm,L. Bust,0.0006959,0.0003554,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829140195,38,1,1,3,0,1,36.2,74.2,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0002765,-0.0004194,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829140195,38,1,1,3,0,1,36.2,74.2,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0002765,-0.0004194,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829140199,39,1,1,3,3,1,36.4,96.3,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0002812,4.7e-06,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829140207,40,1,1,3,5,1,24.0,74.8,6gmm4awyvlf9p7jr9dvnmp0tm,L. Bust,0.0012503,0.0009691,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829140209,41,1,1,3,8,0,43.4,70.2,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0012478,-2.5e-06,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
@@ -1846,7 +1846,7 @@ b2vft81kyjurzbmekvgrqwr64,Hobro,2827666135,967,37,14,0,0,1,0.0,0.0,NaN,NaN,NaN,N
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829140665,57,1,1,5,17,0,57.1,19.7,619s1phj5bkgkug3aszc1y9cl,M. Jensen,0.0013429,-0.0035999,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829140669,58,5,1,5,21,0,101.6,15.9,619s1phj5bkgkug3aszc1y9cl,M. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829140795,59,1,1,5,54,1,21.2,90.9,6gmm4awyvlf9p7jr9dvnmp0tm,L. Bust,0.0006704,0.0,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829140799,60,1,1,5,56,1,37.0,90.3,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0006368,-0.0006704,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829140799,60,1,1,5,56,1,37.0,90.3,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0006368,-0.0006704,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829140821,61,61,1,5,57,0,33.4,83.8,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0014755,0.0014755,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829140827,62,74,1,5,59,1,38.8,92.6,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0027834,0.0013079,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829140829,63,5,1,6,1,0,39.7,101.0,3mgrufy83uhzs9liw8pwxi784,G. Larsen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
@@ -1894,7 +1894,7 @@ b2vft81kyjurzbmekvgrqwr64,Hobro,2827666135,967,37,14,0,0,1,0.0,0.0,NaN,NaN,NaN,N
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829142125,106,1,1,12,51,1,55.8,15.8,67p0s4o54xcmiustgy8k5gljo,S. Hald,0.0008494,0.0005097,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829142131,107,1,1,12,55,1,45.9,44.2,7al9w77ailhli8g487tkl32tw,M. Westergren,0.0007339,-0.0001155,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829142165,108,1,1,12,56,1,37.8,66.4,6gmm4awyvlf9p7jr9dvnmp0tm,L. Bust,0.0012851,0.0005512,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829142167,109,1,1,13,3,0,76.9,74.1,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0096479,0.0083628,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829142167,109,1,1,13,3,0,76.9,74.1,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0096479,0.0083628,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829142189,110,83,1,13,10,0,69.1,87.7,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829142193,111,43,1,13,12,1,0.0,0.0,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829142275,112,1,1,13,40,0,29.3,79.1,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0007528,0.0007528,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
@@ -1923,10 +1923,10 @@ b2vft81kyjurzbmekvgrqwr64,Hobro,2827666135,967,37,14,0,0,1,0.0,0.0,NaN,NaN,NaN,N
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829142763,134,43,1,16,2,1,0.0,0.0,619s1phj5bkgkug3aszc1y9cl,M. Jensen,0.01035,0.01035,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829146611,291,8,1,16,3,1,12.0,71.1,619s1phj5bkgkug3aszc1y9cl,M. Jensen,0.01035,0.01035,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829147495,317,3,1,16,4,1,14.6,77.8,619s1phj5bkgkug3aszc1y9cl,M. Jensen,0.01035,0.01035,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829142777,135,43,1,16,6,1,0.0,0.0,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.01035,0.01035,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829142783,136,43,1,16,6,1,0.0,0.0,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0008607,-0.0094893,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829142785,137,49,1,16,7,1,12.3,87.8,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0009158,5.51e-05,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829142791,138,1,1,16,8,1,7.6,92.6,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0003397,0.0,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829142777,135,43,1,16,6,1,0.0,0.0,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.01035,0.01035,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829142783,136,43,1,16,6,1,0.0,0.0,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0008607,-0.0094893,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829142785,137,49,1,16,7,1,12.3,87.8,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0009158,5.51e-05,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829142791,138,1,1,16,8,1,7.6,92.6,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0003397,0.0,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829142793,139,50,1,16,10,1,32.5,82.0,444n8m1tirk6lp739iigw42c5,M. Rochester,0.0,-0.0003397,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829142845,140,52,1,16,26,1,4.7,50.0,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829142883,141,1,1,16,32,1,13.6,49.4,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.0004614,-0.0003587,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
@@ -1954,8 +1954,8 @@ b2vft81kyjurzbmekvgrqwr64,Hobro,2827666135,967,37,14,0,0,1,0.0,0.0,NaN,NaN,NaN,N
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829143717,164,19,1,20,37,1,0.0,0.0,d2ukggo2v5jsw4pctznmaijo4,A. Gøthler,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829143761,165,68,1,21,0,0,71.5,85.6,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829143793,166,45,1,21,8,0,46.6,54.0,d2ukggo2v5jsw4pctznmaijo4,A. Gøthler,0.001297,0.001297,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829143835,167,74,1,21,11,1,53.7,89.7,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0041292,-0.0,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829143837,168,5,1,21,17,0,41.0,101.0,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829143835,167,74,1,21,11,1,53.7,89.7,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0041292,-0.0,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829143837,168,5,1,21,17,0,41.0,101.0,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829143893,169,61,1,21,51,1,41.6,25.5,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829143895,170,5,1,21,51,0,37.8,-0.8,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829143927,171,7,1,22,3,1,31.8,34.8,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0020156,0.0020156,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
@@ -2007,8 +2007,8 @@ b2vft81kyjurzbmekvgrqwr64,Hobro,2827666135,967,37,14,0,0,1,0.0,0.0,NaN,NaN,NaN,N
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829144615,214,1,1,28,16,0,2.3,59.1,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.0013025,0.0005601,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829144617,215,44,1,28,21,0,70.3,69.1,d2ukggo2v5jsw4pctznmaijo4,A. Gøthler,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829144625,216,1,1,28,22,0,46.4,72.6,6gmm4awyvlf9p7jr9dvnmp0tm,L. Bust,0.0011198,0.0011198,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829144631,217,43,1,28,24,1,0.0,0.0,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829144637,218,5,1,28,26,1,55.5,101.8,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829144631,217,43,1,28,24,1,0.0,0.0,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829144637,218,5,1,28,26,1,55.5,101.8,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829144641,219,1,1,28,30,1,67.0,100.0,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0007075,-0.0003992,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829144649,220,1,1,28,33,1,38.8,83.3,6gmm4awyvlf9p7jr9dvnmp0tm,L. Bust,0.0002681,-0.0004394,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829144653,221,1,1,28,38,0,10.4,65.2,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.0014868,-0.0002681,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
@@ -2024,7 +2024,7 @@ b2vft81kyjurzbmekvgrqwr64,Hobro,2827666135,967,37,14,0,0,1,0.0,0.0,NaN,NaN,NaN,N
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829144887,231,3,1,30,41,0,51.4,22.6,67p0s4o54xcmiustgy8k5gljo,S. Hald,0.001297,-0.0021813,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829144899,233,43,1,30,44,1,0.0,0.0,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829144895,232,45,1,30,45,0,42.8,26.4,619s1phj5bkgkug3aszc1y9cl,M. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829151857,380,83,1,31,0,0,29.7,73.5,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829151857,380,83,1,31,0,0,29.7,73.5,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829144945,234,7,1,31,0,1,29.7,79.4,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0106553,0.0106553,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829144947,235,61,1,31,1,1,28.8,78.2,6gmm4awyvlf9p7jr9dvnmp0tm,L. Bust,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829144949,236,49,1,31,3,1,30.0,75.9,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0012575,0.0,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
@@ -2054,9 +2054,9 @@ b2vft81kyjurzbmekvgrqwr64,Hobro,2827666135,967,37,14,0,0,1,0.0,0.0,NaN,NaN,NaN,N
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829145773,260,1,1,34,8,1,31.9,54.9,6gmm4awyvlf9p7jr9dvnmp0tm,L. Bust,0.0005958,-0.0015248,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829145787,261,1,1,34,12,1,37.7,26.7,67p0s4o54xcmiustgy8k5gljo,S. Hald,0.0002779,-0.0003179,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829145817,262,1,1,34,16,1,38.3,43.9,7al9w77ailhli8g487tkl32tw,M. Westergren,0.0038974,0.0036195,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829145819,263,1,1,34,21,1,54.0,74.7,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0080984,0.004201,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829145819,263,1,1,34,21,1,54.0,74.7,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0080984,0.004201,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829145825,264,1,1,34,22,1,69.1,91.8,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0083183,0.0002199,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829145835,265,1,1,34,24,1,77.5,84.5,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0260909,0.0177726,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829145835,265,1,1,34,24,1,77.5,84.5,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0260909,0.0177726,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829145837,266,3,1,34,27,0,90.9,78.6,d2ukggo2v5jsw4pctznmaijo4,A. Gøthler,0.0040798,-0.0260909,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829145841,267,61,1,34,28,1,89.9,77.8,d2ukggo2v5jsw4pctznmaijo4,A. Gøthler,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829146059,268,7,1,35,10,1,26.3,36.2,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.010673,0.010673,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
@@ -2076,18 +2076,19 @@ b2vft81kyjurzbmekvgrqwr64,Hobro,2827666135,967,37,14,0,0,1,0.0,0.0,NaN,NaN,NaN,N
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829146239,282,1,1,35,51,1,52.0,20.3,67p0s4o54xcmiustgy8k5gljo,S. Hald,0.0039538,0.0003066,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829146273,283,1,1,35,55,1,64.7,46.7,7al9w77ailhli8g487tkl32tw,M. Westergren,0.0085015,0.0045477,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829146283,284,1,1,36,0,1,86.9,94.1,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0210818,0.0125803,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829146289,285,2,1,36,2,1,76.8,86.0,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0301366,-0.0210818,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829146289,285,2,1,36,2,1,76.8,86.0,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0301366,-0.0210818,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829146525,286,7,1,36,47,1,58.0,19.6,7al9w77ailhli8g487tkl32tw,M. Westergren,0.0042373,0.0042373,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829146533,287,49,1,36,49,1,65.4,30.7,619s1phj5bkgkug3aszc1y9cl,M. Jensen,0.0043835,0.0001462,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829146563,288,1,1,36,50,1,63.1,36.3,619s1phj5bkgkug3aszc1y9cl,M. Jensen,0.0083183,0.0039348,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829146567,289,1,1,36,57,0,91.5,18.6,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,0.0458914,0.0375731,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829146609,290,5,1,36,59,1,84.4,-1.6,1icurh5jrnw1e6jdgqxjnhdnu,G. Çulhacı,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829156995,433,12,2,50,38,1,11.7,68.1,7al9w77ailhli8g487tkl32tw,M. Westergren,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829146767,293,1,1,37,40,0,77.8,0.0,7al9w77ailhli8g487tkl32tw,M. Westergren,0.0022052,0.0012875,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829146813,294,1,1,37,45,0,73.8,15.5,7al9w77ailhli8g487tkl32tw,M. Westergren,0.0068199,0.0068199,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829146821,295,44,1,37,49,0,90.7,58.7,6gmm4awyvlf9p7jr9dvnmp0tm,L. Bust,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829146839,296,8,1,37,52,1,68.0,73.8,619s1phj5bkgkug3aszc1y9cl,M. Jensen,0.0042373,0.0042373,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829146845,297,49,1,37,53,1,68.8,73.8,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0043835,0.0001462,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829146859,298,1,1,37,54,1,73.0,75.1,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0045121,0.0001286,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829146845,297,49,1,37,53,1,68.8,73.8,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0043835,0.0001462,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829146859,298,1,1,37,54,1,73.0,75.1,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0045121,0.0001286,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829146897,299,61,1,38,2,1,93.3,92.4,619s1phj5bkgkug3aszc1y9cl,M. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829146907,300,1,1,38,4,1,94.4,86.9,d2ukggo2v5jsw4pctznmaijo4,A. Gøthler,0.0568922,0.0523801,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829146929,301,1,1,38,5,1,94.1,70.3,619s1phj5bkgkug3aszc1y9cl,M. Jensen,0.0850744,0.0281822,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
@@ -2103,8 +2104,8 @@ b2vft81kyjurzbmekvgrqwr64,Hobro,2827666135,967,37,14,0,0,1,0.0,0.0,NaN,NaN,NaN,N
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829147411,311,1,1,39,33,1,44.8,42.7,6gmm4awyvlf9p7jr9dvnmp0tm,L. Bust,0.0040499,-0.0002427,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829147433,312,1,1,39,41,1,87.1,90.6,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.1107789,0.106729,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829147445,313,1,1,39,43,1,80.4,70.3,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0562596,-0.0545193,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829147449,314,3,1,39,45,0,91.4,66.6,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.026058,-0.0302016,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829147453,315,61,1,39,47,1,92.1,69.7,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829147449,314,3,1,39,45,0,91.4,66.6,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.026058,-0.0302016,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829147453,315,61,1,39,47,1,92.1,69.7,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829147477,316,83,1,39,52,0,78.4,93.5,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829147597,318,56,1,40,7,1,6.4,31.5,67p0s4o54xcmiustgy8k5gljo,S. Hald,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829147707,319,5,1,40,8,1,-0.8,28.9,67p0s4o54xcmiustgy8k5gljo,S. Hald,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
@@ -2131,9 +2132,9 @@ b2vft81kyjurzbmekvgrqwr64,Hobro,2827666135,967,37,14,0,0,1,0.0,0.0,NaN,NaN,NaN,N
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829148347,340,1,1,42,43,1,23.8,25.0,67p0s4o54xcmiustgy8k5gljo,S. Hald,0.0003582,-0.0005203,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829148381,341,1,1,42,44,1,27.3,40.0,7al9w77ailhli8g487tkl32tw,M. Westergren,0.0003426,-1.56e-05,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829148387,342,1,1,42,50,1,66.3,78.4,6gmm4awyvlf9p7jr9dvnmp0tm,L. Bust,0.008386,0.0080434,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829148407,343,1,1,42,52,1,71.5,69.1,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.010366,0.00198,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829148407,343,1,1,42,52,1,71.5,69.1,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.010366,0.00198,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829148433,344,1,1,42,54,1,87.6,91.1,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0533832,0.0430172,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829148455,345,1,1,42,56,1,96.2,77.6,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0684597,0.0150765,NaN,1.0,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829148455,345,1,1,42,56,1,96.2,77.6,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0684597,0.0150765,NaN,1.0,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829148459,346,13,1,42,58,1,92.0,63.8,d2ukggo2v5jsw4pctznmaijo4,A. Gøthler,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829148473,347,5,1,42,59,0,100.9,39.0,d2ukggo2v5jsw4pctznmaijo4,A. Gøthler,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829148655,348,1,1,43,40,0,33.4,29.8,7al9w77ailhli8g487tkl32tw,M. Westergren,0.0015322,-0.0,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
@@ -2145,7 +2146,7 @@ b2vft81kyjurzbmekvgrqwr64,Hobro,2827666135,967,37,14,0,0,1,0.0,0.0,NaN,NaN,NaN,N
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829149155,353,1,1,45,24,0,4.1,56.3,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.0011381,0.0003957,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829149163,354,44,1,45,27,0,68.9,72.2,d2ukggo2v5jsw4pctznmaijo4,A. Gøthler,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829149175,355,74,1,45,29,1,66.1,73.8,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0042373,0.0042373,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829149191,356,44,1,45,31,0,66.4,75.9,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829149191,356,44,1,45,31,0,66.4,75.9,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829149259,357,49,1,45,38,1,20.4,63.6,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.0009158,0.0009158,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829149299,358,1,1,45,39,1,20.4,63.6,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.0003527,-0.0005631,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829149319,359,1,1,45,44,1,31.4,85.1,6gmm4awyvlf9p7jr9dvnmp0tm,L. Bust,0.0002681,-8.46e-05,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
@@ -2157,12 +2158,12 @@ b2vft81kyjurzbmekvgrqwr64,Hobro,2827666135,967,37,14,0,0,1,0.0,0.0,NaN,NaN,NaN,N
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829149517,365,1,1,46,20,1,54.7,31.5,619s1phj5bkgkug3aszc1y9cl,M. Jensen,0.0040481,-1.8e-06,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829149531,366,1,1,46,23,0,58.9,10.9,67p0s4o54xcmiustgy8k5gljo,S. Hald,0.001319,-0.0040481,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829149555,367,5,1,46,26,0,101.1,9.1,67p0s4o54xcmiustgy8k5gljo,S. Hald,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829149915,369,5,1,46,53,1,68.2,101.4,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829149915,369,5,1,46,53,1,68.2,101.4,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829149933,370,1,1,47,32,0,81.7,100.0,7al9w77ailhli8g487tkl32tw,M. Westergren,0.003801,0.0029434,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829149935,371,44,1,47,36,0,91.6,52.0,6gmm4awyvlf9p7jr9dvnmp0tm,L. Bust,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829149965,372,1,1,47,42,1,91.3,21.8,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,0.0518099,0.0518099,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829149987,373,1,1,47,43,1,89.5,31.5,d2ukggo2v5jsw4pctznmaijo4,A. Gøthler,0.0140297,-0.0377802,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829149993,374,1,1,47,46,0,78.1,17.0,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0049305,-0.0090992,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829149993,374,1,1,47,46,0,78.1,17.0,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0049305,-0.0090992,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829150019,375,74,1,47,51,1,72.9,59.0,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0243985,0.0243985,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829150165,377,5,1,48,17,1,15.2,101.4,3mgrufy83uhzs9liw8pwxi784,G. Larsen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829150229,379,30,1,48,39,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
@@ -2193,7 +2194,7 @@ b2vft81kyjurzbmekvgrqwr64,Hobro,2827666135,967,37,14,0,0,1,0.0,0.0,NaN,NaN,NaN,N
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829155639,406,49,2,47,38,1,35.7,13.7,7al9w77ailhli8g487tkl32tw,M. Westergren,0.0020466,0.0020466,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829155711,407,1,2,47,40,1,27.0,17.9,7al9w77ailhli8g487tkl32tw,M. Westergren,0.0004607,-0.0015859,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829155733,408,1,2,47,45,1,32.9,61.2,6gmm4awyvlf9p7jr9dvnmp0tm,L. Bust,0.0012503,0.0007896,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829155737,409,1,2,47,48,1,39.6,69.0,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.000341,-0.0009093,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829155737,409,1,2,47,48,1,39.6,69.0,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.000341,-0.0009093,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829155791,410,1,2,47,49,1,31.6,84.7,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0013391,0.0009981,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829155831,411,1,2,47,55,1,66.3,65.7,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0079567,0.0066176,NaN,1.0,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829155833,412,13,2,48,0,1,79.4,42.1,619s1phj5bkgkug3aszc1y9cl,M. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
@@ -2212,12 +2213,11 @@ b2vft81kyjurzbmekvgrqwr64,Hobro,2827666135,967,37,14,0,0,1,0.0,0.0,NaN,NaN,NaN,N
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829156503,425,4,2,49,27,1,36.2,28.3,619s1phj5bkgkug3aszc1y9cl,M. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829156735,426,1,2,49,59,1,39.5,23.3,67p0s4o54xcmiustgy8k5gljo,S. Hald,0.0009209,-0.0007133,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829156751,427,1,2,50,2,1,38.5,52.2,7al9w77ailhli8g487tkl32tw,M. Westergren,0.0039115,0.0029906,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829156753,428,61,2,50,4,0,57.2,66.1,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.001296,0.0,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829156801,429,83,2,50,11,0,32.4,88.2,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829156753,428,61,2,50,4,0,57.2,66.1,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.001296,0.0,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829156801,429,83,2,50,11,0,32.4,88.2,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829156831,430,45,2,50,12,0,33.0,91.6,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829156861,431,12,2,50,19,1,2.9,32.1,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829156869,432,6,2,50,19,0,0.0,33.7,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829156995,433,12,2,50,38,1,11.7,68.1,7al9w77ailhli8g487tkl32tw,M. Westergren,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829157043,434,4,2,50,46,1,7.8,50.2,67p0s4o54xcmiustgy8k5gljo,S. Hald,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829157259,435,1,2,51,13,0,10.5,41.5,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.0011246,-0.0003229,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829157353,436,7,2,51,27,1,66.8,24.1,abhfq12njxxutqjtb9zvcusyc,Mohamad Al Naser,0.0042373,0.0042373,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
@@ -2242,14 +2242,14 @@ b2vft81kyjurzbmekvgrqwr64,Hobro,2827666135,967,37,14,0,0,1,0.0,0.0,NaN,NaN,NaN,N
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829158519,456,49,2,54,38,1,28.4,8.8,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,0.0009645,0.0006248,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829158527,457,1,2,54,39,1,28.4,8.8,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,0.0012716,0.0003071,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829158565,458,1,2,54,40,1,38.4,48.1,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0039287,0.0026571,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829158569,459,1,2,54,47,0,64.2,71.4,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0024564,-0.0014723,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829158569,459,1,2,54,47,0,64.2,71.4,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0024564,-0.0014723,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829158595,460,1,2,54,50,1,63.2,72.4,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0008115,0.0008115,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829158607,461,1,2,54,52,1,43.1,67.5,6gmm4awyvlf9p7jr9dvnmp0tm,L. Bust,0.0040499,0.0032384,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829158629,462,1,2,54,53,1,53.0,46.6,619s1phj5bkgkug3aszc1y9cl,M. Jensen,0.0008211,-0.0032288,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829158661,463,1,2,54,57,1,47.4,30.9,67p0s4o54xcmiustgy8k5gljo,S. Hald,0.0008219,8e-07,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829158677,464,1,2,55,0,1,41.3,64.5,7al9w77ailhli8g487tkl32tw,M. Westergren,0.0011185,0.0002966,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829158713,465,1,2,55,2,1,45.7,83.9,6gmm4awyvlf9p7jr9dvnmp0tm,L. Bust,0.0258083,0.0246898,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829158717,466,61,2,55,8,0,86.9,70.3,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.00899,0.0,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829158717,466,61,2,55,8,0,86.9,70.3,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.00899,0.0,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829158815,467,83,2,55,21,0,65.8,81.7,619s1phj5bkgkug3aszc1y9cl,M. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829158837,468,74,2,55,24,1,66.3,84.7,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0042373,0.0042373,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829158851,469,49,2,55,25,1,76.8,86.0,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0221565,0.0179192,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
@@ -2277,9 +2277,9 @@ b2vft81kyjurzbmekvgrqwr64,Hobro,2827666135,967,37,14,0,0,1,0.0,0.0,NaN,NaN,NaN,N
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829159665,491,1,2,57,24,1,16.6,83.0,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0,0.0,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829159683,492,1,2,57,26,1,26.8,73.2,7al9w77ailhli8g487tkl32tw,M. Westergren,0.0,0.0,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829159699,493,1,2,57,28,1,34.2,92.1,619s1phj5bkgkug3aszc1y9cl,M. Jensen,0.0008327,0.0003835,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829159707,494,1,2,57,30,0,40.9,95.4,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0012216,0.0003889,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829159765,495,5,2,57,33,1,41.0,101.4,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829159785,496,1,2,57,37,1,46.7,100.0,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0002746,-0.0012992,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829159707,494,1,2,57,30,0,40.9,95.4,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0012216,0.0003889,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829159765,495,5,2,57,33,1,41.0,101.4,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829159785,496,1,2,57,37,1,46.7,100.0,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0002746,-0.0012992,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829159797,497,1,2,57,40,1,29.0,90.5,6gmm4awyvlf9p7jr9dvnmp0tm,L. Bust,0.0005653,0.0002907,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829159801,498,1,2,57,41,0,33.7,90.5,7al9w77ailhli8g487tkl32tw,M. Westergren,0.000733,-0.0005653,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829159819,499,74,2,57,45,1,31.3,99.5,7al9w77ailhli8g487tkl32tw,M. Westergren,0.0009147,0.0009147,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
@@ -2336,14 +2336,14 @@ b2vft81kyjurzbmekvgrqwr64,Hobro,2827666135,967,37,14,0,0,1,0.0,0.0,NaN,NaN,NaN,N
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829162127,549,1,2,67,14,1,21.3,32.8,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0008982,-1.76e-05,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829162131,550,61,2,67,16,0,39.4,18.5,d2ukggo2v5jsw4pctznmaijo4,A. Gøthler,0.0013284,0.0,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829162137,551,5,2,67,17,0,32.2,-1.2,d2ukggo2v5jsw4pctznmaijo4,A. Gøthler,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829162475,552,5,2,68,8,1,4.8,-0.6,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829162475,552,5,2,68,8,1,4.8,-0.6,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829162479,553,18,2,68,25,1,0.0,0.0,6gmm4awyvlf9p7jr9dvnmp0tm,L. Bust,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829162483,554,19,2,68,25,1,0.0,0.0,egxik3guom123v43rthy89c7o,V. Sørensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829162519,555,18,2,68,33,1,0.0,0.0,d2ukggo2v5jsw4pctznmaijo4,A. Gøthler,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829162521,556,19,2,68,33,1,0.0,0.0,k43cten7yb6p59yo0firhb84,M. Schütt,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829162679,557,1,2,69,22,0,12.2,0.0,k43cten7yb6p59yo0firhb84,M. Schütt,0.0012139,-0.0028307,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829162801,558,10,2,69,58,1,11.1,43.1,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829162837,559,4,2,70,1,1,22.5,46.0,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829162837,559,4,2,70,1,1,22.5,46.0,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829162957,560,1,2,70,39,0,21.4,43.4,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.0011753,0.0,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829162959,561,44,2,70,43,0,67.2,71.4,abhfq12njxxutqjtb9zvcusyc,Mohamad Al Naser,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829162985,562,5,2,70,46,1,58.6,101.2,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
@@ -2372,7 +2372,7 @@ b2vft81kyjurzbmekvgrqwr64,Hobro,2827666135,967,37,14,0,0,1,0.0,0.0,NaN,NaN,NaN,N
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829163683,585,1,2,74,1,0,65.9,69.0,619s1phj5bkgkug3aszc1y9cl,M. Jensen,0.0029829,-0.0,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829163759,586,5,2,74,6,1,56.6,101.8,egxik3guom123v43rthy89c7o,V. Sørensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829163799,587,1,2,74,29,0,74.4,100.0,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0013025,0.0003291,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829163815,588,1,2,74,32,0,62.9,71.2,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0012392,-0.0,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829163815,588,1,2,74,32,0,62.9,71.2,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0012392,-0.0,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829163867,589,55,2,74,39,1,40.2,68.2,egxik3guom123v43rthy89c7o,V. Sørensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829163989,590,1,2,75,19,1,38.3,73.0,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.0253661,0.0,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829163993,591,61,2,75,23,0,77.8,34.5,abhfq12njxxutqjtb9zvcusyc,Mohamad Al Naser,0.0035526,0.0,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
@@ -2380,7 +2380,7 @@ b2vft81kyjurzbmekvgrqwr64,Hobro,2827666135,967,37,14,0,0,1,0.0,0.0,NaN,NaN,NaN,N
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829164013,593,43,2,75,28,1,0.0,0.0,3mgrufy83uhzs9liw8pwxi784,G. Larsen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829164043,594,1,2,75,30,1,72.5,54.2,3mgrufy83uhzs9liw8pwxi784,G. Larsen,0.0222057,0.0222057,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829164049,595,1,2,75,32,0,68.7,82.1,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0025376,-0.0196681,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829164603,604,83,2,75,38,0,44.5,41.0,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829164603,604,83,2,75,38,0,44.5,41.0,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829164207,596,12,2,75,49,1,13.1,40.1,7al9w77ailhli8g487tkl32tw,M. Westergren,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829164213,597,12,2,76,10,1,8.1,59.3,7al9w77ailhli8g487tkl32tw,M. Westergren,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829164241,598,5,2,76,12,1,-1.4,59.6,7al9w77ailhli8g487tkl32tw,M. Westergren,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
@@ -2410,8 +2410,8 @@ b2vft81kyjurzbmekvgrqwr64,Hobro,2827666135,967,37,14,0,0,1,0.0,0.0,NaN,NaN,NaN,N
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829165711,623,1,2,81,25,1,21.1,7.3,k43cten7yb6p59yo0firhb84,M. Schütt,0.0004642,0.0004642,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829165713,624,49,2,81,26,1,24.5,11.6,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,0.0104052,0.0104052,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829165725,625,1,2,81,26,1,24.5,12.5,4m7gr5z6b40dj02yrmlwgeluc,S. Larsen,0.0002708,-0.0101344,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829165729,626,1,2,81,29,0,9.7,17.3,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,0.0004614,0.0,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829165745,627,4,2,81,33,1,16.4,19.2,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829165729,626,1,2,81,29,0,9.7,17.3,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,0.0004614,0.0,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829165745,627,4,2,81,33,1,16.4,19.2,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829165979,628,1,2,82,4,0,20.2,22.1,dqqswfn9s1tdxjoslts8ks6xg,B. Bayrak,0.0014868,-0.0004567,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829166073,629,49,2,82,23,1,59.8,69.6,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0043835,0.0043835,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829166079,630,3,2,82,25,0,58.4,73.2,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0,-0.0043835,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
@@ -2429,7 +2429,7 @@ b2vft81kyjurzbmekvgrqwr64,Hobro,2827666135,967,37,14,0,0,1,0.0,0.0,NaN,NaN,NaN,N
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829166589,642,5,2,83,57,0,87.6,-1.8,abhfq12njxxutqjtb9zvcusyc,Mohamad Al Naser,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829166751,643,7,2,84,31,0,17.8,93.6,egxik3guom123v43rthy89c7o,V. Sørensen,0.01035,0.01035,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829166781,644,5,2,84,32,1,20.6,101.2,egxik3guom123v43rthy89c7o,V. Sørensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
-8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829166951,645,18,2,85,3,1,0.0,0.0,74m58jsznzu8l89b8h7rkh1bd,C. Jensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
+8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829166951,645,18,2,85,3,1,0.0,0.0,74m58jsznzu8l89b8h7rkh1bd,C. Tue Jensen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829166955,646,19,2,85,3,1,0.0,0.0,bmvcofmie6om4muxij4kdkro4,I. Dorgu,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829167089,647,1,2,85,30,0,21.7,100.0,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,0.0005325,-0.0024282,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
 8cfkisxf1fkxdqtt6tx1tup48,HB Køge,2829167091,648,5,2,85,34,0,38.4,101.4,4ti8pdx03j8dh4mdb626ltmvo,N. Jakobsen,NaN,NaN,NaN,NaN,HB Køge vs Aarhus Fremad,budoafznnaffvp9oyzt6abcic,2025-07-25
