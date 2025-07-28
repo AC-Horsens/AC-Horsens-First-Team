@@ -222,7 +222,6 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
     df_scouting = calculate_match_xg(df_scouting)
 
     df_scouting = df_scouting.merge(df_possession_xa_summed, how='left')
-    st.dataframe(df_scouting)
 
     def calculate_match_xa(df_scouting):
         # Calculate the total match_xg for each match_id
@@ -296,6 +295,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
 
     df_scouting[df_scouting.select_dtypes(include='number').columns] = \
     df_scouting.select_dtypes(include='number').fillna(0)    
+    st.dataframe(df_scouting)
 
     def ball_playing_central_defender():
         df_spillende_stopper = df_scouting[(df_scouting['player_position'] == 'Defender') & (df_scouting['player_positionSide'].str.contains('Centre'))]
