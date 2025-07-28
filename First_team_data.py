@@ -442,7 +442,6 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
                             ((df_scouting['player_positionSide'] == 'Right') | (df_scouting['player_positionSide'] == 'Left'))]
         df_backs['minsPlayed'] = df_backs['minsPlayed'].astype(int)
         df_backs = df_backs[df_backs['minsPlayed'] >= minutter_kamp]
-        st.dataframe(df_backs)
         df_backs = calculate_opposite_score(df_backs, 'opponents_pv', 'opponents pv score')
         df_backs = calculate_opposite_score(df_backs, 'opponents_xg', 'opponents xg score')
         df_backs = calculate_opposite_score(df_backs, 'opponents_xA', 'opponents xA score')
@@ -490,6 +489,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
                 [3 if row['Defending_'] < 3 else 3, 3 if row['Passing_'] < 2 else 1, 3 if row['Chance_creation'] < 3 else 2, 3 if row['Possession_value_added'] < 3 else 2]
             ), axis=1
         )
+        st.dataframe(df_backs)
 
         df_backs = df_backs.dropna()
 
