@@ -2406,6 +2406,7 @@ def Opposition_analysis():
     st.dataframe(agg_df, hide_index=True)
     central_defender_df = agg_df.copy()
     st.header('Wingback')
+    st.dataframe(fullbacks_df)
 
     # Filter the fullbacks data for the 'Horsens' team
     fullbacks_df = fullbacks_df[fullbacks_df['team_name'] == 'Horsens']
@@ -2417,7 +2418,6 @@ def Opposition_analysis():
         (fullbacks_df['match_date'] >= three_months_ago) & 
         (fullbacks_df['match_date'] <= today)
     ]
-    st.dataframe(fullbacks_df)
     # Use previously calculated 'latest_dates' to filter recent matches
     recent_matches_df = fullbacks_df[fullbacks_df['match_date'].isin(latest_dates)]
 
