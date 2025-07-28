@@ -2417,6 +2417,7 @@ def Opposition_analysis():
         (fullbacks_df['match_date'] >= three_months_ago) & 
         (fullbacks_df['match_date'] <= today)
     ]
+    st.dataframe(fullbacks_df)
     # Use previously calculated 'latest_dates' to filter recent matches
     recent_matches_df = fullbacks_df[fullbacks_df['match_date'].isin(latest_dates)]
 
@@ -2425,9 +2426,11 @@ def Opposition_analysis():
     matches_against_selected_team_df = fullbacks_df[fullbacks_df['label'].str.contains(selected_team)]
 
     # Combine recent matches and matches involving similar teams
-    combined_df = pd.merge(recent_matches_df, matches_with_teams_df, how='outer')
-    combined_df = pd.merge(combined_df, matches_against_selected_team_df, how='outer')
-
+    combined_df = pd.concat([
+        recent_matches_df,
+        matches_with_teams_df,
+        matches_against_selected_team_df
+    ], ignore_index=True).drop_duplicates()
     # Sort by 'Total score' and drop unnecessary columns
     combined_df = combined_df.sort_values(by='Total score', ascending=False)
     combined_df = combined_df.drop(columns=['match_date', 'player_position', 'player_positionSide'])
