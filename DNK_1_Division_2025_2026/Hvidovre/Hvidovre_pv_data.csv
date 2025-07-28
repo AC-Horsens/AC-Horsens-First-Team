@@ -138,7 +138,6 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827649825,126,83,1,14,5,1,71.4,33.4,bfvdr7ckiersz26ya2kq9f1g4,A. Iljazovski,0.0320608,0.0320608,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827649829,127,43,1,14,9,1,0.0,0.0,1cumsropo1r0msfzxxteml1w,J. Adjei-Broni,NaN,NaN,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827649837,128,61,1,14,10,1,70.0,46.9,1cumsropo1r0msfzxxteml1w,J. Adjei-Broni,NaN,NaN,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
-8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827662343,436,32,2,45,0,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827649853,129,3,1,14,11,0,76.4,10.0,bfvdr7ckiersz26ya2kq9f1g4,A. Iljazovski,0.001296,-0.0307648,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827649931,130,5,1,14,12,1,76.6,-1.8,bfvdr7ckiersz26ya2kq9f1g4,A. Iljazovski,NaN,NaN,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827649947,131,1,1,14,27,1,81.3,0.0,bfvdr7ckiersz26ya2kq9f1g4,A. Iljazovski,0.0037027,0.0028255,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
@@ -443,6 +442,7 @@ contestantId,team_name,id,eventId,typeId,periodId,timeMin,timeSec,outcome,x,y,pl
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827659705,413,61,1,45,56,0,73.2,14.0,bfvdr7ckiersz26ya2kq9f1g4,A. Iljazovski,0.001296,0.0,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827659707,414,5,1,45,57,0,73.5,-1.2,bfvdr7ckiersz26ya2kq9f1g4,A. Iljazovski,NaN,NaN,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827659795,416,30,1,46,5,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
+8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827662343,436,32,2,45,0,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827662349,437,1,2,45,0,1,50.7,50.0,9tt9eo9bsff7dp7aqjal1obo4,F. Høgh,0.0004101,0.0004101,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827662353,438,1,2,45,5,1,32.4,49.1,a30gduuv9d1s4pkthgu2jhyol,D. Stenderup,0.0117973,0.0,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2827662357,439,44,2,45,6,1,73.6,47.2,9tt9eo9bsff7dp7aqjal1obo4,F. Høgh,NaN,NaN,NaN,NaN,Hvidovre vs B 93,bsnoje72zc76mcdjiutfqzthw,2025-07-18
@@ -1902,7 +1902,6 @@ f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,2829371959,215,1,1,27,56,1,37.8,60.0,bmkwmf5f2
 f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,2829371977,216,1,1,27,57,1,44.9,55.8,8k4wwchytdstpn0yhrxd5nbv9,L. Vigen,0.0005902,-0.0007799,NaN,NaN,Esbjerg vs Hvidovre,bvvrtxnqrk97bjs1us04z7axg,2025-07-26
 f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,2829371981,217,1,1,28,0,1,39.4,71.5,bmkwmf5f2ssnw2cq7uga7yd5g,A. Troelsen,0.0013545,0.0007643,NaN,NaN,Esbjerg vs Hvidovre,bvvrtxnqrk97bjs1us04z7axg,2025-07-26
 f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,2829371987,218,1,1,28,1,1,40.7,58.1,8k4wwchytdstpn0yhrxd5nbv9,L. Vigen,0.0005594,-0.0007951,NaN,NaN,Esbjerg vs Hvidovre,bvvrtxnqrk97bjs1us04z7axg,2025-07-26
-8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2829370599,186,28,1,21,54,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,Esbjerg vs Hvidovre,bvvrtxnqrk97bjs1us04z7axg,2025-07-26
 f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,2829371999,219,1,1,28,3,1,35.7,73.2,bmkwmf5f2ssnw2cq7uga7yd5g,A. Troelsen,0.0008459,0.0002865,NaN,NaN,Esbjerg vs Hvidovre,bvvrtxnqrk97bjs1us04z7axg,2025-07-26
 f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,2829372011,220,1,1,28,7,1,49.1,27.7,aqc0qritba195wf770gyd1149,A. Skipper,0.0041464,0.0033005,NaN,NaN,Esbjerg vs Hvidovre,bvvrtxnqrk97bjs1us04z7axg,2025-07-26
 f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,2829372035,221,1,1,28,9,1,63.2,27.7,8k4wwchytdstpn0yhrxd5nbv9,L. Vigen,0.0040481,-9.83e-05,NaN,NaN,Esbjerg vs Hvidovre,bvvrtxnqrk97bjs1us04z7axg,2025-07-26
@@ -2068,7 +2067,6 @@ f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,2829383557,382,1,2,48,5,1,90.8,32.8,6m4anciafm
 f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,2829383565,383,13,2,48,6,1,90.5,40.1,6hmsrr08cllpl4iumu92zskbt,L. From,NaN,NaN,NaN,NaN,Esbjerg vs Hvidovre,bvvrtxnqrk97bjs1us04z7axg,2025-07-26
 f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,2829383609,384,5,2,48,7,0,101.0,42.0,6hmsrr08cllpl4iumu92zskbt,L. From,NaN,NaN,NaN,NaN,Esbjerg vs Hvidovre,bvvrtxnqrk97bjs1us04z7axg,2025-07-26
 f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,2829383795,385,44,2,48,27,1,42.3,46.3,aqc0qritba195wf770gyd1149,A. Skipper,NaN,NaN,NaN,NaN,Esbjerg vs Hvidovre,bvvrtxnqrk97bjs1us04z7axg,2025-07-26
-8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2829370605,187,68,1,21,56,0,54.9,22.8,NaN,NaN,NaN,NaN,NaN,NaN,Esbjerg vs Hvidovre,bvvrtxnqrk97bjs1us04z7axg,2025-07-26
 f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,2829383805,386,1,2,48,27,1,34.8,57.6,aqc0qritba195wf770gyd1149,A. Skipper,0.0013839,0.0013839,NaN,NaN,Esbjerg vs Hvidovre,bvvrtxnqrk97bjs1us04z7axg,2025-07-26
 f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,2829383825,387,43,2,48,29,1,0.0,0.0,6m4anciafmzc24s44xszymbc9,P. Bjur,0.0041292,0.0027453,NaN,NaN,Esbjerg vs Hvidovre,bvvrtxnqrk97bjs1us04z7axg,2025-07-26
 f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,2829383843,388,49,2,48,34,1,63.4,23.1,5sha6xhovfmuzd7rolx1om39w,J. Lucena,0.0043835,0.0002543,NaN,NaN,Esbjerg vs Hvidovre,bvvrtxnqrk97bjs1us04z7axg,2025-07-26
@@ -2649,6 +2647,8 @@ f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,2829400321,774,37,14,0,0,1,0.0,0.0,NaN,NaN,NaN
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2829370471,182,5,1,21,2,0,44.3,-1.2,1cumsropo1r0msfzxxteml1w,J. Adjei-Broni,NaN,NaN,NaN,NaN,Esbjerg vs Hvidovre,bvvrtxnqrk97bjs1us04z7axg,2025-07-26
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2829370529,184,1,1,21,19,0,20.2,23.1,3pk6hii2s8tbv2zux8mvbapec,N. Jungvig,0.000813,-0.0,NaN,NaN,Esbjerg vs Hvidovre,bvvrtxnqrk97bjs1us04z7axg,2025-07-26
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2829370597,185,27,1,21,53,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,Esbjerg vs Hvidovre,bvvrtxnqrk97bjs1us04z7axg,2025-07-26
+8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2829370599,186,28,1,21,54,1,0.0,0.0,NaN,NaN,NaN,NaN,NaN,NaN,Esbjerg vs Hvidovre,bvvrtxnqrk97bjs1us04z7axg,2025-07-26
+8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2829370605,187,68,1,21,56,0,54.9,22.8,NaN,NaN,NaN,NaN,NaN,NaN,Esbjerg vs Hvidovre,bvvrtxnqrk97bjs1us04z7axg,2025-07-26
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2829370681,188,7,1,22,22,0,7.6,17.4,bfvdr7ckiersz26ya2kq9f1g4,A. Iljazovski,0.01035,0.01035,NaN,NaN,Esbjerg vs Hvidovre,bvvrtxnqrk97bjs1us04z7axg,2025-07-26
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2829370683,189,43,1,22,25,1,0.0,0.0,bfvdr7ckiersz26ya2kq9f1g4,A. Iljazovski,0.0008419,0.0,NaN,NaN,Esbjerg vs Hvidovre,bvvrtxnqrk97bjs1us04z7axg,2025-07-26
 8gxd9ry2580pu1b1dd5ny9ymy,Hvidovre,2829379221,400,45,1,22,26,0,16.2,8.3,bfvdr7ckiersz26ya2kq9f1g4,A. Iljazovski,NaN,NaN,NaN,NaN,Esbjerg vs Hvidovre,bvvrtxnqrk97bjs1us04z7axg,2025-07-26
