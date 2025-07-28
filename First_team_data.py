@@ -1061,7 +1061,6 @@ df_xg_all = load_all_xg()
 squads = load_squads()
 
 position_dataframes = Process_data_spillere(df_xA, df_pv, df_match_stats, df_xg_all, squads)
-st.dataframe(position_dataframes)
 balanced_central_defender_df = position_dataframes['Central defender']
 fullbacks_df = position_dataframes['Wingback']
 number6_df = position_dataframes['Number 6']
@@ -1069,6 +1068,7 @@ number8_df = position_dataframes['Number 8']
 number10_df = position_dataframes['Number 10']
 winger_df = position_dataframes['Winger']
 classic_striker_df = position_dataframes['Striker']
+st.dataframe(fullbacks_df)
 
 def Dashboard():
     xml_files = glob.glob('XML files/*.xml')
