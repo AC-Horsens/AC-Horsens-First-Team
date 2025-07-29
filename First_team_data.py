@@ -1830,6 +1830,7 @@ def Dashboard():
         st.plotly_chart(fig, use_container_width=True)
 
         def_line = load_def_line_data()
+        st.dataframe(def_line)
         labels_df = df_possession[['match_id','date', 'label']].drop_duplicates()
         states_df = df_possession[['match_id','date','label', 'contestantId', 'timeMin', 'timeSec', 'match_state']]
 
