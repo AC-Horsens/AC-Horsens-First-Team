@@ -1858,7 +1858,7 @@ def Dashboard():
 
         fig.update_layout(
             xaxis_tickangle=-45,
-            yaxis_range=[85, 100],  # Set y-axis limits
+            yaxis_range=[70, 100],  # Set y-axis limits
         )
 
         st.plotly_chart(fig, use_container_width=True)
