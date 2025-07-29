@@ -1830,12 +1830,12 @@ def Dashboard():
         st.plotly_chart(fig, use_container_width=True)
 
         def_line = load_def_line_data()
-        st.dataframe(def_line)
         labels_df = df_possession[['match_id','date', 'label']].drop_duplicates()
         states_df = df_possession[['match_id','date','label', 'contestantId', 'timeMin', 'timeSec', 'match_state']]
 
         # Merge only on match_id to get label
         def_line = def_line.merge(labels_df, on='match_id', how='left')
+        st.dataframe(def_line)
 
         # Merge on full key to get match_state
         def_line = def_line.merge(states_df, on=['match_id','date','label', 'contestantId', 'timeMin', 'timeSec'], how='left')
