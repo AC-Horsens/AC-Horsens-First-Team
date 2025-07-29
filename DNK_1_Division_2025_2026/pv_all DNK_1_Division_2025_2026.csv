@@ -9299,8 +9299,8 @@ A. Troelsen,Esbjerg,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
 A. Troelsen,Esbjerg,Esbjerg vs Lyngby,2025-07-20,0.0004453,0.0004453
 A. Skipper,Esbjerg,Esbjerg vs Lyngby,2025-07-20,0.0012452,0.0007999
 A. Skipper,Esbjerg,Esbjerg vs Lyngby,2025-07-20,0.0004492,-0.000796
-S. Eng Strand,Esbjerg,Esbjerg vs Lyngby,2025-07-20,0.0,-0.0004492
 S. Eng Strand,Esbjerg,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
+S. Eng Strand,Esbjerg,Esbjerg vs Lyngby,2025-07-20,0.0,-0.0004492
 S. Eng Strand,Esbjerg,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
 A. Troelsen,Esbjerg,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
 A. Troelsen,Esbjerg,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
@@ -9401,8 +9401,9 @@ L. From,Esbjerg,Esbjerg vs Lyngby,2025-07-20,0.0324958,0.0077117
 P. Bjur,Esbjerg,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
 J. Buus,Esbjerg,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
 J. Buus,Esbjerg,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
-P. Bjur,Esbjerg,Esbjerg vs Lyngby,2025-07-20,0.001297,0.0
 P. Bjur,Esbjerg,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
+P. Bjur,Esbjerg,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
+P. Bjur,Esbjerg,Esbjerg vs Lyngby,2025-07-20,0.001297,0.0
 A. Skipper,Esbjerg,Esbjerg vs Lyngby,2025-07-20,0.0011403,-0.0
 NaN,Esbjerg,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
 M. Maden,Esbjerg,Esbjerg vs Lyngby,2025-07-20,0.0104052,0.0104052
@@ -9448,7 +9449,7 @@ A. Troelsen,Esbjerg,Esbjerg vs Lyngby,2025-07-20,0.0006039,0.0002621
 L. Vigen,Esbjerg,Esbjerg vs Lyngby,2025-07-20,0.0013914,0.0007875
 S. Eng Strand,Esbjerg,Esbjerg vs Lyngby,2025-07-20,0.000746,-0.0006454
 A. Troelsen,Esbjerg,Esbjerg vs Lyngby,2025-07-20,0.0003721,-0.0003739
-A. Skipper,Esbjerg,Esbjerg vs Lyngby,2025-07-20,0.0004324,6.03e-05
+K. Kristensen,Esbjerg,Esbjerg vs Lyngby,2025-07-20,0.0004324,6.03e-05
 J. Buus,Esbjerg,Esbjerg vs Lyngby,2025-07-20,0.0004473,1.49e-05
 A. Skipper,Esbjerg,Esbjerg vs Lyngby,2025-07-20,0.0005258,7.85e-05
 A. Troelsen,Esbjerg,Esbjerg vs Lyngby,2025-07-20,0.0014664,-0.0005258
@@ -9473,9 +9474,10 @@ S. Eng Strand,Esbjerg,Esbjerg vs Lyngby,2025-07-20,0.0186055,0.010104
 J. Ankersen,Esbjerg,Esbjerg vs Lyngby,2025-07-20,0.0073327,-0.0112728
 T. Freriks,Esbjerg,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
 A. Skipper,Esbjerg,Esbjerg vs Lyngby,2025-07-20,0.0008607,0.0
+J. Buus,Esbjerg,Esbjerg vs Lyngby,2025-07-20,0.0002736,-0.002296
 A. Skipper,Esbjerg,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
 J. Buus,Esbjerg,Esbjerg vs Lyngby,2025-07-20,0.0025696,0.0018062
-J. Buus,Esbjerg,Esbjerg vs Lyngby,2025-07-20,0.0002736,-0.002296
+K. Kristensen,Esbjerg,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
 K. Kristensen,Esbjerg,Esbjerg vs Lyngby,2025-07-20,0.0004006,-0.0004601
 A. Skipper,Esbjerg,Esbjerg vs Lyngby,2025-07-20,0.0007634,0.0003628
 A. Lausen,Esbjerg,Esbjerg vs Lyngby,2025-07-20,0.0004281,-0.0021415
@@ -9528,6 +9530,7 @@ S. Eng Strand,Esbjerg,Esbjerg vs Lyngby,2025-07-20,0.0002681,-7.16e-05
 K. Kristensen,Esbjerg,Esbjerg vs Lyngby,2025-07-20,0.0009369,-0.0002681
 A. Lausen,Esbjerg,Esbjerg vs Lyngby,2025-07-20,0.001296,0.0
 A. Lausen,Esbjerg,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
+A. Skipper,Esbjerg,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
 J. Buus,Esbjerg,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
 A. Troelsen,Esbjerg,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
 L. Vigen,Esbjerg,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
@@ -9564,7 +9567,9 @@ A. Troelsen,Esbjerg,Esbjerg vs Lyngby,2025-07-20,0.0003452,0.0
 S. Eng Strand,Esbjerg,Esbjerg vs Lyngby,2025-07-20,0.0003491,3.9e-06
 J. Ankersen,Esbjerg,Esbjerg vs Lyngby,2025-07-20,0.0,-0.0003491
 J. Ankersen,Esbjerg,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
+J. Ankersen,Esbjerg,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
 S. Eng Strand,Esbjerg,Esbjerg vs Lyngby,2025-07-20,0.0009514,-0.0021995
+J. Ankersen,Esbjerg,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
 S. Eng Strand,Esbjerg,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
 S. Eng Strand,Esbjerg,Esbjerg vs Lyngby,2025-07-20,0.0040616,0.0025229
 T. Freriks,Esbjerg,Esbjerg vs Lyngby,2025-07-20,0.001296,-0.0040616
@@ -9638,6 +9643,7 @@ J. Ankersen,Esbjerg,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
 J. Ankersen,Esbjerg,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
 J. Ankersen,Esbjerg,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
 M. Maden,Esbjerg,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
+J. Ankersen,Esbjerg,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
 J. Ankersen,Esbjerg,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
 K. Kristensen,Esbjerg,Esbjerg vs Lyngby,2025-07-20,0.0031609,0.0024185
 A. Lausen,Esbjerg,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
@@ -10197,7 +10203,7 @@ P. Langhoff,Lyngby,Esbjerg vs Lyngby,2025-07-20,0.0079111,0.003863
 G. Mortensen,Lyngby,Esbjerg vs Lyngby,2025-07-20,0.0039241,-0.003987
 P. Langhoff,Lyngby,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
 P. Langhoff,Lyngby,Esbjerg vs Lyngby,2025-07-20,0.0040715,0.0001474
-L. Sandgrav,Lyngby,Esbjerg vs Lyngby,2025-07-20,0.0028797,-0.0011918
+G. Fraulo,Lyngby,Esbjerg vs Lyngby,2025-07-20,0.0028797,-0.0011918
 M. Ivančević,Lyngby,Esbjerg vs Lyngby,2025-07-20,0.0037296,0.0008499
 T. Storm,Lyngby,Esbjerg vs Lyngby,2025-07-20,0.0079142,0.0041846
 O. Buur,Lyngby,Esbjerg vs Lyngby,2025-07-20,0.0008115,-0.0071027
@@ -10285,6 +10291,7 @@ O. Buur,Lyngby,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
 B. Rolland,Lyngby,Esbjerg vs Lyngby,2025-07-20,0.0003383,-0.0004041
 J. Ægidius,Lyngby,Esbjerg vs Lyngby,2025-07-20,0.0009276,0.0005893
 Í. Þorvaldsson,Lyngby,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
+J. Cornelius,Lyngby,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
 L. Sandgrav,Lyngby,Esbjerg vs Lyngby,2025-07-20,0.0,0.0
 L. Sandgrav,Lyngby,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
 J. Cornelius,Lyngby,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
@@ -10310,12 +10317,12 @@ J. Ægidius,Lyngby,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
 J. Ægidius,Lyngby,Esbjerg vs Lyngby,2025-07-20,0.0012028,0.0
 J. Cornelius,Lyngby,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
 G. Mortensen,Lyngby,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
-G. Mortensen,Lyngby,Esbjerg vs Lyngby,2025-07-20,0.0039868,0.002784
 J. Cornelius,Lyngby,Esbjerg vs Lyngby,2025-07-20,0.0012631,-0.0
+G. Mortensen,Lyngby,Esbjerg vs Lyngby,2025-07-20,0.0039868,0.002784
 B. Rolland,Lyngby,Esbjerg vs Lyngby,2025-07-20,0.0004743,0.0004743
 L. Sandgrav,Lyngby,Esbjerg vs Lyngby,2025-07-20,0.0003273,-0.000147
-NaN,Lyngby,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
 B. Rolland,Lyngby,Esbjerg vs Lyngby,2025-07-20,0.0005558,0.0002285
+NaN,Lyngby,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
 T. Storm,Lyngby,Esbjerg vs Lyngby,2025-07-20,0.0025143,0.0019585
 O. Buur,Lyngby,Esbjerg vs Lyngby,2025-07-20,0.0116391,0.0091248
 G. Fraulo,Lyngby,Esbjerg vs Lyngby,2025-07-20,0.0069039,-0.0116391
@@ -10345,6 +10352,7 @@ J. Ægidius,Lyngby,Esbjerg vs Lyngby,2025-07-20,0.0,0.0
 Í. Þorvaldsson,Lyngby,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
 J. Ægidius,Lyngby,Esbjerg vs Lyngby,2025-07-20,0.0003452,-0.0003972
 T. Storm,Lyngby,Esbjerg vs Lyngby,2025-07-20,0.0003988,-0.0003452
+J. Ægidius,Lyngby,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
 J. Ægidius,Lyngby,Esbjerg vs Lyngby,2025-07-20,0.0003453,0.0
 P. Langhoff,Lyngby,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
 P. Langhoff,Lyngby,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
@@ -10433,11 +10441,12 @@ G. Fraulo,Lyngby,Esbjerg vs Lyngby,2025-07-20,0.0430795,-0.0080185
 P. Langhoff,Lyngby,Esbjerg vs Lyngby,2025-07-20,0.0659321,0.0228526
 L. Sandgrav,Lyngby,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
 L. Sandgrav,Lyngby,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
-G. Fraulo,Lyngby,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
 T. Storm,Lyngby,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
+G. Fraulo,Lyngby,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
 W. Steindorsson,Lyngby,Esbjerg vs Lyngby,2025-07-20,0.0042373,0.0042373
 W. Steindorsson,Lyngby,Esbjerg vs Lyngby,2025-07-20,0.001296,0.0
 W. Steindorsson,Lyngby,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
+P. Langhoff,Lyngby,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
 P. Langhoff,Lyngby,Esbjerg vs Lyngby,2025-07-20,0.0011653,-0.0
 P. Langhoff,Lyngby,Esbjerg vs Lyngby,2025-07-20,NaN,NaN
 B. Blume,Lyngby,Esbjerg vs Lyngby,2025-07-20,0.0003885,0.0003885
@@ -10669,7 +10678,7 @@ M. Westergren,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 N. Jakobsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 M. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.01035,0.01035
 M. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.01035,0.01035
-M. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.01035,0.01035
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.01035,0.01035
 C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.01035,0.01035
 C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0008607,-0.0094893
 C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0009158,5.51e-05
@@ -10710,6 +10719,7 @@ S. Hald,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0009158,0.0
 S. Hald,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0002681,-0.0006477
 B. Bayrak,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0003397,7.16e-05
 N. Jakobsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0008233,0.0
+N. Jakobsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 B. Bayrak,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 B. Bayrak,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 B. Bayrak,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0103913,-0.0
@@ -10730,9 +10740,11 @@ G. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0007446,-0.0009171
 G. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 B. Bayrak,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0012708,0.0005284
 A. Gøthler,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
+G. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 S. Hald,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 S. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0019707,0.0019707
 G. Çulhacı,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0011714,0.0
+G. Çulhacı,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 S. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0040461,0.0040461
 S. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0003145,-0.0037316
 L. Bust,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0003164,1.9e-06
@@ -10884,7 +10896,7 @@ C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0684597,0.0150765
 A. Gøthler,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 A. Gøthler,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 M. Westergren,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0015322,-0.0
-S. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
+S. Hald,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 G. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 G. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 G. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
@@ -10892,6 +10904,7 @@ NaN,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 B. Bayrak,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0011381,0.0003957
 A. Gøthler,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 N. Jakobsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0042373,0.0042373
+C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 B. Bayrak,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0009158,0.0009158
 B. Bayrak,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0003527,-0.0005631
@@ -10921,6 +10934,7 @@ S. Hald,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0005324,0.0002513
 S. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0003341,-0.0001983
 S. Hald,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0011403,-0.0003341
 N. Jakobsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
+M. Westergren,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 M. Westergren,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0104438,0.0104438
 M. Westergren,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0007964,-0.0096474
 N. Jakobsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0003585,-0.0004379
@@ -10952,6 +10966,7 @@ M. Westergren,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 M. Westergren,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 B. Bayrak,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0076389,0.0068965
 Mohamad Al Naser,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
+Mohamad Al Naser,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 Mohamad Al Naser,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0094178,-0.0076389
 L. Bust,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0002681,0.0002681
 B. Bayrak,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0,-0.0002681
@@ -10964,6 +10979,7 @@ C. Tue Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 N. Jakobsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 S. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 S. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
+Mohamad Al Naser,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 M. Westergren,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 S. Hald,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 B. Bayrak,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0011246,-0.0003229
@@ -11071,6 +11087,7 @@ L. Bust,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 G. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 B. Bayrak,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0009369,0.0001945
 Mohamad Al Naser,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
+Mohamad Al Naser,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 M. Westergren,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.001297,0.0
 M. Westergren,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 L. Bust,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
@@ -11109,6 +11126,7 @@ M. Westergren,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0083183,0.0043942
 N. Jakobsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.011477,0.0031587
 M. Westergren,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.003832,-0.007645
 N. Jakobsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
+M. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 M. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0083183,0.0083183
 M. Schütt,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 M. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0060818,-0.0074174
@@ -11221,6 +11239,8 @@ B. Bayrak,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 N. Jakobsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.0011427,-0.0011029
 S. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 S. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
+S. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
+Mohamad Al Naser,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 M. Jensen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,0.01035,-0.0
 S. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 S. Larsen,HB Køge,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
@@ -11253,6 +11273,7 @@ M. Kaastrup,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0011421,-0.0039
 E. Egerton,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0081661,0.0081661
 K. Andersen,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0026996,-0.0081661
 Ó. Hjaltason,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0013434,-0.0
+S. Bækgård,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 E. Egerton,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0043835,0.0043835
 E. Egerton,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0029457,-0.0043835
 S. Bækgård,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
@@ -11281,6 +11302,7 @@ E. Egerton,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.001297,-0.001375
 A. Pisani,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 K. Andersen,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 K. Kiilerich,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
+K. Kiilerich,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 K. Lunding,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0003591,0.0003591
 Marcus Kirchheiner,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0015771,0.001218
 Ó. Hjaltason,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0003356,0.0003356
@@ -11301,6 +11323,7 @@ M. Agnarsson,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0040381,0.0029
 M. Kaastrup,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0008033,-0.0032348
 M. Berthelsen,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0013305,0.0005272
 Marcus Kirchheiner,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0011933,-0.0013305
+E. Egerton,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 K. Lunding,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0040481,0.0040481
 Marcus Kirchheiner,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0012588,-0.0040481
 Marcus Kirchheiner,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
@@ -11320,6 +11343,7 @@ S. Bækgård,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0013025,-0.002
 K. Lunding,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 K. Lunding,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0054139,0.0045413
 Marcus Kirchheiner,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0085015,0.0030876
+E. Egerton,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 E. Egerton,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 M. Berthelsen,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0084796,-0.0140961
 M. Kaastrup,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.1485071,0.1485071
@@ -11361,8 +11385,8 @@ E. Egerton,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0042373,0.00014
 E. Egerton,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 M. Berthelsen,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 M. Berthelsen,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
-A. Pisani,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 A. Pisani,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0014149,0.0014149
+A. Pisani,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 Marcus Kirchheiner,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0005035,-0.0009114
 A. Pisani,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.000271,-0.0002325
 Marcus Kirchheiner,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0020367,0.0017657
@@ -11393,7 +11417,7 @@ M. Berthelsen,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0041464,0.004
 K. Andersen,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.008386,0.0042396
 K. Lunding,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0075972,-0.0007888
 M. Agnarsson,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
-M. Agnarsson,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
+K. Lunding,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 M. Kaastrup,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.019151,-0.010145
 M. Agnarsson,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0014621,-0.0176889
 M. Agnarsson,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
@@ -11444,7 +11468,7 @@ M. Berthelsen,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0006969,0.000
 NaN,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 NaN,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 NaN,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
-M. Berthelsen,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0005353,0.0005353
+Ó. Hjaltason,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0005353,0.0005353
 A. Pisani,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0015019,0.0009666
 E. Egerton,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0041292,0.0026273
 K. Andersen,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.001296,0.0
@@ -11508,6 +11532,7 @@ Marcus Kirchheiner,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 M. Berthelsen,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 S. Bækgård,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 S. Bækgård,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0012559,0.0012559
+K. Andersen,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 K. Andersen,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0003308,-0.0009251
 Marcus Kirchheiner,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0005199,0.0001891
 E. Egerton,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0025696,0.0020497
@@ -11577,7 +11602,7 @@ M. Kaastrup,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0,-0.0008527
 E. Egerton,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 S. Bækgård,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0013936,0.0013936
 A. Pisani,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
-A. Pisani,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0014052,-8.81e-05
+S. Bækgård,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0014052,-8.81e-05
 M. Berthelsen,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0040499,0.0026447
 Marcus Kirchheiner,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0040954,4.55e-05
 S. Bækgård,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0056157,0.0015203
@@ -11603,11 +11628,11 @@ A. Pisani,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0041206,0.0015346
 K. Andersen,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0040481,-7.25e-05
 M. Agnarsson,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0079567,0.0039086
 K. Andersen,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0,-0.0079567
-M. Agnarsson,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
+K. Andersen,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 S. Bækgård,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0599486,0.0306526
 K. Andersen,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 M. Agnarsson,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
-S. Bækgård,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0005156,-0.0008215
+M. Kaastrup,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0005156,-0.0008215
 M. Agnarsson,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.000825,0.0003094
 A. Pisani,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0013839,0.0008683
 M. Berthelsen,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0039538,0.0025699
@@ -11636,6 +11661,7 @@ M. Berthelsen,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0014088,0.000
 M. Agnarsson,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0004152,-0.0009936
 Ó. Hjaltason,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0003373,-7.79e-05
 A. Pisani,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0014798,-0.0003373
+K. Lunding,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 A. Pisani,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 A. Pisani,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0104052,0.0104052
 A. Pisani,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0003452,-0.01006
@@ -11661,6 +11687,7 @@ A. Pisani,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0002828,8.7e-06
 K. Kiilerich,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0003397,5.69e-05
 M. Agnarsson,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0012742,0.0009345
 M. Kaastrup,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0,-0.0012742
+Ó. Hjaltason,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 A. Pisani,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 A. Pisani,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 A. Pisani,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
@@ -11668,7 +11695,8 @@ K. Kiilerich,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 K. Kiilerich,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 K. Kiilerich,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0011706,0.0005882
 S. Bækgård,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
-K. Kiilerich,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0011601,0.0004177
+Ó. Hjaltason,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0011601,0.0004177
+K. Kiilerich,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 K. Andersen,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 E. Egerton,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0068786,0.0057185
 M. Kaastrup,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
@@ -11838,6 +11866,7 @@ M. Berthelsen,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0079567,0.007
 S. Bækgård,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0015155,-0.0079567
 NaN,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 Ó. Hjaltason,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0003089,-3.65e-05
+K. Kiilerich,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 M. Agnarsson,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 S. Bækgård,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0014664,0.0005792
 Marcus Kirchheiner,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0020736,0.0020736
@@ -11887,6 +11916,7 @@ M. Kaastrup,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0026532,-0.0056
 M. Kaastrup,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 M. Kaastrup,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 E. Egerton,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0075754,-0.0217206
+A. Pisani,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 M. Berthelsen,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0042373,0.0042373
 S. Bækgård,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0083183,0.004081
 M. Kaastrup,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0036414,-0.0046769
@@ -11909,8 +11939,8 @@ J. Beluli,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 M. Kaastrup,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 M. Kubel,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 Marcus Kirchheiner,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0011742,0.0011742
-M. Berthelsen,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0012211,4.69e-05
 M. Berthelsen,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0017537,0.0005326
+M. Berthelsen,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0012211,4.69e-05
 M. Berthelsen,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0002681,-0.0014856
 K. Kiilerich,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0008688,0.0006007
 E. Egerton,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0008108,-5.8e-05
@@ -11948,7 +11978,7 @@ M. Berthelsen,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 M. Berthelsen,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0156322,-0.0136638
 K. Lunding,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0218254,0.0061932
 M. Berthelsen,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0139479,-0.0078775
-E. Egerton,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0419224,0.0279745
+Marcus Kirchheiner,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0419224,0.0279745
 A. Pisani,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0520163,0.0100939
 Marcus Kirchheiner,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 K. Lunding,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
@@ -12069,6 +12099,7 @@ Marcus Kirchheiner,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0014664,
 A. Pisani,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0193822,0.0123942
 S. Bækgård,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0064177,-0.0129645
 E. Egerton,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
+Ó. Hjaltason,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 Ó. Hjaltason,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0043835,0.0043835
 Ó. Hjaltason,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0040715,-0.000312
 M. Kubel,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0045467,-0.0040715
@@ -12176,6 +12207,7 @@ M. Kjølby,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0013391,0.001339
 E. Egerton,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0008027,-0.0013391
 M. Agnarsson,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 J. Beluli,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.01035,0.01035
+A. Holvad,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,NaN,NaN
 A. Pisani,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0009158,0.0
 A. Pisani,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0003452,-0.0005706
 M. Agnarsson,Aarhus Fremad,HB Køge vs Aarhus Fremad,2025-07-25,0.0008832,-0.0003452
@@ -12286,7 +12318,9 @@ F. Roslyng,Horsens,Horsens vs Kolding,2025-07-25,0.0002681,-6.5e-06
 M. Delač,Horsens,Horsens vs Kolding,2025-07-25,0.0003397,7.16e-05
 S. Hausner,Horsens,Horsens vs Kolding,2025-07-25,0.000875,0.0005353
 F. Brandhof,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
+A. Saine,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 F. Brandhof,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
+A. Saine,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 A. Saine,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 S. Hausner,Horsens,Horsens vs Kolding,2025-07-25,0.0035749,-0.0032034
 F. Roslyng,Horsens,Horsens vs Kolding,2025-07-25,0.0079567,0.0043818
@@ -12302,8 +12336,10 @@ S. Hausner,Horsens,Horsens vs Kolding,2025-07-25,0.0004727,-0.0
 A. Saine,Horsens,Horsens vs Kolding,2025-07-25,0.0002737,0.0002737
 S. Hausner,Horsens,Horsens vs Kolding,2025-07-25,0.0009158,0.0006421
 S. Hausner,Horsens,Horsens vs Kolding,2025-07-25,0.0003425,-0.0005733
+F. Brandhof,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 F. Brandhof,Horsens,Horsens vs Kolding,2025-07-25,0.000875,0.0005325
 S. Pingel,Horsens,Horsens vs Kolding,2025-07-25,0.001296,0.0
+P. Olsen,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 I. Miličević,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 P. Olsen,Horsens,Horsens vs Kolding,2025-07-25,0.0008514,0.0003907
 P. Olsen,Horsens,Horsens vs Kolding,2025-07-25,0.0009158,6.44e-05
@@ -12375,6 +12411,7 @@ F. Roslyng,Horsens,Horsens vs Kolding,2025-07-25,0.000664,-0.0003362
 I. Miličević,Horsens,Horsens vs Kolding,2025-07-25,0.0019897,0.0019897
 I. Miličević,Horsens,Horsens vs Kolding,2025-07-25,0.0019897,0.0
 I. Miličević,Horsens,Horsens vs Kolding,2025-07-25,0.0012582,0.0012582
+F. Brandhof,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 F. Brandhof,Horsens,Horsens vs Kolding,2025-07-25,0.001297,3.88e-05
 A. Moro,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 P. Olsen,Horsens,Horsens vs Kolding,2025-07-25,0.0051533,-0.0047319
@@ -12420,9 +12457,9 @@ S. Pingel,Horsens,Horsens vs Kolding,2025-07-25,0.0002736,-0.0004591
 A. Saine,Horsens,Horsens vs Kolding,2025-07-25,0.0005172,0.0002436
 K. Kirkegaard,Horsens,Horsens vs Kolding,2025-07-25,0.0003825,-0.0005172
 A. Moro,Horsens,Horsens vs Kolding,2025-07-25,0.0020575,0.0020575
-NaN,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 A. Saine,Horsens,Horsens vs Kolding,2025-07-25,0.0006125,-0.001445
 K. Kirkegaard,Horsens,Horsens vs Kolding,2025-07-25,0.0012693,-0.0007882
+A. Saine,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 F. Brandhof,Horsens,Horsens vs Kolding,2025-07-25,0.0039508,0.0026815
 F. Brandhof,Horsens,Horsens vs Kolding,2025-07-25,0.0039989,0.0027296
 F. Brandhof,Horsens,Horsens vs Kolding,2025-07-25,0.0007869,-0.003212
@@ -12454,6 +12491,7 @@ S. Pingel,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 S. Pingel,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 F. Brandhof,Horsens,Horsens vs Kolding,2025-07-25,0.0104052,0.0104052
 F. Brandhof,Horsens,Horsens vs Kolding,2025-07-25,0.0003701,-0.0100351
+S. Pingel,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 S. Pingel,Horsens,Horsens vs Kolding,2025-07-25,0.0377089,0.0373388
 I. Miličević,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 I. Miličević,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
@@ -12477,7 +12515,6 @@ P. Olsen,Horsens,Horsens vs Kolding,2025-07-25,0.0139181,0.0139181
 P. Olsen,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 I. Miličević,Horsens,Horsens vs Kolding,2025-07-25,0.0042373,0.0042373
 A. Moro,Horsens,Horsens vs Kolding,2025-07-25,0.001296,0.0
-NaN,Kolding,Horsens vs Kolding,2025-07-25,NaN,NaN
 I. Miličević,Horsens,Horsens vs Kolding,2025-07-25,0.0043835,0.0043835
 I. Miličević,Horsens,Horsens vs Kolding,2025-07-25,0.001296,-0.0030875
 I. Miličević,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
@@ -12518,7 +12555,7 @@ S. Hausner,Horsens,Horsens vs Kolding,2025-07-25,0.0040481,0.0
 A. Moro,Horsens,Horsens vs Kolding,2025-07-25,0.0040954,4.73e-05
 F. Brandhof,Horsens,Horsens vs Kolding,2025-07-25,0.0037845,-0.0003109
 F. Brandhof,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
-F. Roslyng,Horsens,Horsens vs Kolding,2025-07-25,0.0036486,0.002867
+S. Pingel,Horsens,Horsens vs Kolding,2025-07-25,0.0036486,0.002867
 K. Kirkegaard,Horsens,Horsens vs Kolding,2025-07-25,0.0027256,0.0
 K. Kirkegaard,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 M. Delač,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
@@ -12535,7 +12572,6 @@ P. Olsen,Horsens,Horsens vs Kolding,2025-07-25,0.0003856,-7.5e-05
 F. Roslyng,Horsens,Horsens vs Kolding,2025-07-25,0.0011381,0.0
 O. Kolskogen,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 S. Hausner,Horsens,Horsens vs Kolding,2025-07-25,0.0003651,-0.0008026
-NaN,Kolding,Horsens vs Kolding,2025-07-25,NaN,NaN
 O. Kolskogen,Horsens,Horsens vs Kolding,2025-07-25,0.0013854,0.0010203
 F. Roslyng,Horsens,Horsens vs Kolding,2025-07-25,0.0079142,0.0065288
 I. Miličević,Horsens,Horsens vs Kolding,2025-07-25,0.0006189,-0.0072953
@@ -12565,11 +12601,13 @@ F. Roslyng,Horsens,Horsens vs Kolding,2025-07-25,0.0011427,-0.0006189
 F. Roslyng,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 M. Delač,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 M. Delač,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
+M. Delač,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 M. Delač,Horsens,Horsens vs Kolding,2025-07-25,0.0003452,-0.0003972
 O. Kolskogen,Horsens,Horsens vs Kolding,2025-07-25,0.0003288,-1.64e-05
 F. Roslyng,Horsens,Horsens vs Kolding,2025-07-25,0.0005962,0.0
 A. Moro,Horsens,Horsens vs Kolding,2025-07-25,0.0021206,0.0021206
 F. Brandhof,Horsens,Horsens vs Kolding,2025-07-25,0.0024102,0.0002896
+A. Moro,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 A. Saine,Horsens,Horsens vs Kolding,2025-07-25,0.0,-0.0024102
 S. Pingel,Horsens,Horsens vs Kolding,2025-07-25,0.016813,-0.0089953
 S. Hausner,Horsens,Horsens vs Kolding,2025-07-25,0.0044773,-0.0123357
@@ -12615,7 +12653,7 @@ A. Moro,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 S. Hausner,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 K. Kirkegaard,Horsens,Horsens vs Kolding,2025-07-25,0.0008514,0.0
 S. Hausner,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
-F. Brandhof,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
+S. Hausner,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 S. Pingel,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 I. Miličević,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 M. Delač,Horsens,Horsens vs Kolding,2025-07-25,0.001435,0.0006926
@@ -12678,6 +12716,7 @@ F. Roslyng,Horsens,Horsens vs Kolding,2025-07-25,0.0015839,0.0011601
 K. Kirkegaard,Horsens,Horsens vs Kolding,2025-07-25,0.0002779,-0.001306
 F. Roslyng,Horsens,Horsens vs Kolding,2025-07-25,0.0002681,-9.8e-06
 NaN,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
+A. Saine,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 NaN,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 S. Pingel,Horsens,Horsens vs Kolding,2025-07-25,0.0042373,-0.0
 S. Pingel,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
@@ -12694,6 +12733,7 @@ K. Kirkegaard,Horsens,Horsens vs Kolding,2025-07-25,0.0041464,0.0041464
 K. Kirkegaard,Horsens,Horsens vs Kolding,2025-07-25,0.0011785,-0.0029679
 P. Olsen,Horsens,Horsens vs Kolding,2025-07-25,0.0042926,0.0042926
 P. Olsen,Horsens,Horsens vs Kolding,2025-07-25,0.0040499,-0.0002427
+F. Brandhof,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 F. Brandhof,Horsens,Horsens vs Kolding,2025-07-25,0.0508303,0.0467804
 P. Olsen,Horsens,Horsens vs Kolding,2025-07-25,0.0146499,-0.0361804
 F. Brandhof,Horsens,Horsens vs Kolding,2025-07-25,0.0206174,0.0059675
@@ -12708,6 +12748,11 @@ A. Saine,Horsens,Horsens vs Kolding,2025-07-25,0.0149038,0.0065855
 I. Miličević,Horsens,Horsens vs Kolding,2025-07-25,0.0664583,0.0515545
 S. Pingel,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 F. Brandhof,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
+F. Roslyng,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
+F. Roslyng,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
+A. Moro,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
+K. Kirkegaard,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
+S. Pingel,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 S. Pingel,Horsens,Horsens vs Kolding,2025-07-25,0.0041292,-0.0
 S. Pingel,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 A. Moro,Horsens,Horsens vs Kolding,2025-07-25,0.01035,-0.0
@@ -12739,6 +12784,7 @@ F. Roslyng,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 O. Kolskogen,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 A. Moro,Horsens,Horsens vs Kolding,2025-07-25,0.0043835,0.0043835
 A. Moro,Horsens,Horsens vs Kolding,2025-07-25,0.0008123,-0.0035712
+F. Roslyng,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 F. Roslyng,Horsens,Horsens vs Kolding,2025-07-25,0.0039384,0.0031261
 I. Miličević,Horsens,Horsens vs Kolding,2025-07-25,0.016779,-0.0039384
 S. Pingel,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
@@ -12940,7 +12986,8 @@ A. Saine,Horsens,Horsens vs Kolding,2025-07-25,0.0083183,0.0002625
 S. Hausner,Horsens,Horsens vs Kolding,2025-07-25,0.007628,-0.0006903
 P. Olsen,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 P. Olsen,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
-O. Kolskogen,Horsens,Horsens vs Kolding,2025-07-25,0.0041292,0.0041292
+S. Hausner,Horsens,Horsens vs Kolding,2025-07-25,0.0041292,0.0041292
+S. Hausner,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 S. Hausner,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 I. Miličević,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 C. Tapé,Horsens,Horsens vs Kolding,2025-07-25,0.0105217,0.0105217
@@ -13033,7 +13080,6 @@ S. Doua,Horsens,Horsens vs Kolding,2025-07-25,0.0036944,-0.0109862
 A. Saine,Horsens,Horsens vs Kolding,2025-07-25,0.0013025,-0.0036944
 A. Saine,Horsens,Horsens vs Kolding,2025-07-25,0.0013025,-0.0
 A. Ludwig,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
-A. Saine,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 F. Brandhof,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 A. Ludwig,Horsens,Horsens vs Kolding,2025-07-25,0.0014664,1.69e-05
 S. Pingel,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
@@ -13053,8 +13099,12 @@ S. Doua,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 S. Doua,Horsens,Horsens vs Kolding,2025-07-25,0.0156322,-0.0136638
 P. Olsen,Horsens,Horsens vs Kolding,2025-07-25,0.0,-0.0156322
 P. Olsen,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
+P. Olsen,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 NaN,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
 NaN,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
+NaN,Horsens,Horsens vs Kolding,2025-07-25,NaN,NaN
+NaN,Kolding,Horsens vs Kolding,2025-07-25,NaN,NaN
+NaN,Kolding,Horsens vs Kolding,2025-07-25,NaN,NaN
 J. Vadstrup,Kolding,Horsens vs Kolding,2025-07-25,NaN,NaN
 J. Vadstrup,Kolding,Horsens vs Kolding,2025-07-25,0.0004607,0.0004607
 M. Olsen,Kolding,Horsens vs Kolding,2025-07-25,0.0013605,0.0
@@ -13195,6 +13245,7 @@ C. Vestergaard,Kolding,Horsens vs Kolding,2025-07-25,0.0042373,-0.0001462
 C. Jørgensen,Kolding,Horsens vs Kolding,2025-07-25,0.0012158,-0.0030215
 N. Morberg,Kolding,Horsens vs Kolding,2025-07-25,0.0012158,-0.0
 V. Westh,Kolding,Horsens vs Kolding,2025-07-25,0.0042373,0.0042373
+C. Jørgensen,Kolding,Horsens vs Kolding,2025-07-25,NaN,NaN
 C. Jørgensen,Kolding,Horsens vs Kolding,2025-07-25,0.000361,-0.0038763
 J. Vadstrup,Kolding,Horsens vs Kolding,2025-07-25,0.0003418,-1.92e-05
 C. Vestergaard,Kolding,Horsens vs Kolding,2025-07-25,0.0004021,6.03e-05
@@ -13240,6 +13291,7 @@ A. Nørager,Kolding,Horsens vs Kolding,2025-07-25,0.0083183,0.0043063
 M. Olsen,Kolding,Horsens vs Kolding,2025-07-25,0.0083183,0.0
 V. Westh,Kolding,Horsens vs Kolding,2025-07-25,0.008744,0.0004257
 M. Olsen,Kolding,Horsens vs Kolding,2025-07-25,0.0018481,0.0
+V. Westh,Kolding,Horsens vs Kolding,2025-07-25,NaN,NaN
 M. Saaby,Kolding,Horsens vs Kolding,2025-07-25,0.0043835,0.0043835
 M. Saaby,Kolding,Horsens vs Kolding,2025-07-25,0.0080984,0.0037149
 C. Jørgensen,Kolding,Horsens vs Kolding,2025-07-25,0.0291403,0.0210419
@@ -13307,6 +13359,7 @@ N. Morberg,Kolding,Horsens vs Kolding,2025-07-25,0.0041464,0.0003725
 C. Jørgensen,Kolding,Horsens vs Kolding,2025-07-25,0.0042373,9.09e-05
 A. Nørager,Kolding,Horsens vs Kolding,2025-07-25,0.0083183,0.004081
 M. Olsen,Kolding,Horsens vs Kolding,2025-07-25,0.001296,-0.0083183
+C. Vestergaard,Kolding,Horsens vs Kolding,2025-07-25,NaN,NaN
 C. Vestergaard,Kolding,Horsens vs Kolding,2025-07-25,0.0004607,0.0004607
 C. Vestergaard,Kolding,Horsens vs Kolding,2025-07-25,NaN,NaN
 C. Vestergaard,Kolding,Horsens vs Kolding,2025-07-25,0.0002681,-0.0002613
@@ -13394,6 +13447,7 @@ V. Westh,Kolding,Horsens vs Kolding,2025-07-25,0.0090375,0.0002935
 M. Saaby,Kolding,Horsens vs Kolding,2025-07-25,0.0013579,-0.0076796
 M. Olsen,Kolding,Horsens vs Kolding,2025-07-25,0.0,0.0
 M. Olsen,Kolding,Horsens vs Kolding,2025-07-25,0.0040481,-0.0003354
+M. Saaby,Kolding,Horsens vs Kolding,2025-07-25,NaN,NaN
 M. Saaby,Kolding,Horsens vs Kolding,2025-07-25,0.0027103,-0.0013378
 N. Morberg,Kolding,Horsens vs Kolding,2025-07-25,0.0040499,0.0013396
 C. Jørgensen,Kolding,Horsens vs Kolding,2025-07-25,0.0040481,-1.8e-06
@@ -13402,6 +13456,7 @@ S. Yatéké,Kolding,Horsens vs Kolding,2025-07-25,0.0083183,0.0
 A. Nørager,Kolding,Horsens vs Kolding,2025-07-25,0.0327374,0.0244191
 A. Nørager,Kolding,Horsens vs Kolding,2025-07-25,0.0539375,0.0212001
 M. Olsen,Kolding,Horsens vs Kolding,2025-07-25,NaN,NaN
+C. Jørgensen,Kolding,Horsens vs Kolding,2025-07-25,NaN,NaN
 C. Jørgensen,Kolding,Horsens vs Kolding,2025-07-25,NaN,NaN
 M. Saaby,Kolding,Horsens vs Kolding,2025-07-25,0.0376459,0.0376459
 A. Nørager,Kolding,Horsens vs Kolding,2025-07-25,0.0071647,-0.0304812
@@ -13429,7 +13484,7 @@ A. Nørager,Kolding,Horsens vs Kolding,2025-07-25,0.0042373,0.0001892
 M. Saaby,Kolding,Horsens vs Kolding,2025-07-25,0.0079567,0.0037194
 C. Jørgensen,Kolding,Horsens vs Kolding,2025-07-25,0.0042831,-0.0036736
 M. Saaby,Kolding,Horsens vs Kolding,2025-07-25,0.0083183,0.0040352
-M. Olsen,Kolding,Horsens vs Kolding,2025-07-25,0.005181,-0.0031373
+V. Westh,Kolding,Horsens vs Kolding,2025-07-25,0.005181,-0.0031373
 M. Olsen,Kolding,Horsens vs Kolding,2025-07-25,NaN,NaN
 C. Vestergaard,Kolding,Horsens vs Kolding,2025-07-25,0.0258083,0.0249858
 V. Westh,Kolding,Horsens vs Kolding,2025-07-25,0.0155651,-0.0102432
@@ -13460,6 +13515,7 @@ C. Vestergaard,Kolding,Horsens vs Kolding,2025-07-25,NaN,NaN
 I. Tånnander,Kolding,Horsens vs Kolding,2025-07-25,NaN,NaN
 C. Vestergaard,Kolding,Horsens vs Kolding,2025-07-25,0.0003452,0.000111
 N. Morberg,Kolding,Horsens vs Kolding,2025-07-25,0.0033213,0.0029761
+S. Yatéké,Kolding,Horsens vs Kolding,2025-07-25,NaN,NaN
 S. Yatéké,Kolding,Horsens vs Kolding,2025-07-25,0.0042373,0.000916
 V. Westh,Kolding,Horsens vs Kolding,2025-07-25,0.001296,0.0
 V. Westh,Kolding,Horsens vs Kolding,2025-07-25,NaN,NaN
@@ -13473,6 +13529,7 @@ C. Vestergaard,Kolding,Horsens vs Kolding,2025-07-25,0.0002681,-0.0015813
 J. Vadstrup,Kolding,Horsens vs Kolding,2025-07-25,0.0002681,0.0
 L. Moser,Kolding,Horsens vs Kolding,2025-07-25,0.0003383,7.02e-05
 A. Nørager,Kolding,Horsens vs Kolding,2025-07-25,0.0013025,-0.0003383
+C. Jørgensen,Kolding,Horsens vs Kolding,2025-07-25,NaN,NaN
 A. Nørager,Kolding,Horsens vs Kolding,2025-07-25,NaN,NaN
 A. Nørager,Kolding,Horsens vs Kolding,2025-07-25,0.0040973,0.0040973
 M. Saaby,Kolding,Horsens vs Kolding,2025-07-25,0.0040481,-4.92e-05
@@ -13496,7 +13553,7 @@ N. Morberg,Kolding,Horsens vs Kolding,2025-07-25,0.0,-0.0003532
 N. Morberg,Kolding,Horsens vs Kolding,2025-07-25,NaN,NaN
 C. Vestergaard,Kolding,Horsens vs Kolding,2025-07-25,0.0005311,-0.0014965
 M. Saaby,Kolding,Horsens vs Kolding,2025-07-25,0.0003746,-0.0001565
-N. Morberg,Kolding,Horsens vs Kolding,2025-07-25,0.0004336,5.9e-05
+A. Nørager,Kolding,Horsens vs Kolding,2025-07-25,0.0004336,5.9e-05
 M. Olsen,Kolding,Horsens vs Kolding,2025-07-25,0.0013932,0.0009596
 V. Westh,Kolding,Horsens vs Kolding,2025-07-25,0.0103975,0.0090043
 S. Yatéké,Kolding,Horsens vs Kolding,2025-07-25,0.0047268,-0.0056707
@@ -13718,6 +13775,7 @@ A. Nørager,Kolding,Horsens vs Kolding,2025-07-25,NaN,NaN
 C. Vestergaard,Kolding,Horsens vs Kolding,2025-07-25,0.0015613,-0.0
 M. Olsen,Kolding,Horsens vs Kolding,2025-07-25,NaN,NaN
 C. Jørgensen,Kolding,Horsens vs Kolding,2025-07-25,NaN,NaN
+C. Jørgensen,Kolding,Horsens vs Kolding,2025-07-25,NaN,NaN
 N. Morberg,Kolding,Horsens vs Kolding,2025-07-25,0.0011154,0.0011154
 C. Jørgensen,Kolding,Horsens vs Kolding,2025-07-25,0.0053599,0.0042445
 S. Yatéké,Kolding,Horsens vs Kolding,2025-07-25,0.0043835,0.0
@@ -13749,6 +13807,7 @@ C. Vestergaard,Kolding,Horsens vs Kolding,2025-07-25,0.0031544,-0.000126
 J. Vadstrup,Kolding,Horsens vs Kolding,2025-07-25,0.0040499,0.0008955
 A. Nørager,Kolding,Horsens vs Kolding,2025-07-25,0.0083183,0.0042684
 M. Olsen,Kolding,Horsens vs Kolding,2025-07-25,0.0018731,-0.0064452
+M. Olsen,Kolding,Horsens vs Kolding,2025-07-25,NaN,NaN
 V. Westh,Kolding,Horsens vs Kolding,2025-07-25,0.0079567,0.0079567
 M. Saaby,Kolding,Horsens vs Kolding,2025-07-25,0.0083183,0.0003616
 V. Westh,Kolding,Horsens vs Kolding,2025-07-25,0.0151882,0.0068699
@@ -13772,6 +13831,7 @@ C. Jørgensen,Kolding,Horsens vs Kolding,2025-07-25,NaN,NaN
 C. Jørgensen,Kolding,Horsens vs Kolding,2025-07-25,NaN,NaN
 A. Nørager,Kolding,Horsens vs Kolding,2025-07-25,NaN,NaN
 J. Vadstrup,Kolding,Horsens vs Kolding,2025-07-25,0.001125,0.001125
+A. Nørager,Kolding,Horsens vs Kolding,2025-07-25,NaN,NaN
 A. Nørager,Kolding,Horsens vs Kolding,2025-07-25,0.0011773,0.0011773
 A. Nørager,Kolding,Horsens vs Kolding,2025-07-25,0.000967,0.000967
 M. Olsen,Kolding,Horsens vs Kolding,2025-07-25,0.0012064,8.14e-05
@@ -13811,8 +13871,8 @@ N. Morberg,Kolding,Horsens vs Kolding,2025-07-25,0.0009076,0.0001652
 C. Jørgensen,Kolding,Horsens vs Kolding,2025-07-25,0.0011667,-0.0009076
 C. Jørgensen,Kolding,Horsens vs Kolding,2025-07-25,NaN,NaN
 C. Vestergaard,Kolding,Horsens vs Kolding,2025-07-25,0.0004428,0.0004428
-M. Saaby,Kolding,Horsens vs Kolding,2025-07-25,NaN,NaN
 M. Saaby,Kolding,Horsens vs Kolding,2025-07-25,0.0014495,0.0010067
+M. Saaby,Kolding,Horsens vs Kolding,2025-07-25,NaN,NaN
 M. Saaby,Kolding,Horsens vs Kolding,2025-07-25,0.0012609,-0.0001886
 N. Morberg,Kolding,Horsens vs Kolding,2025-07-25,0.0003349,-0.000926
 A. Nørager,Kolding,Horsens vs Kolding,2025-07-25,0.0040734,0.0037385
@@ -13847,6 +13907,7 @@ C. Jørgensen,Kolding,Horsens vs Kolding,2025-07-25,0.0043835,0.0003034
 C. Jørgensen,Kolding,Horsens vs Kolding,2025-07-25,NaN,NaN
 M. Olsen,Kolding,Horsens vs Kolding,2025-07-25,0.0053581,-0.0123917
 M. Olsen,Kolding,Horsens vs Kolding,2025-07-25,NaN,NaN
+J. Vadstrup,Kolding,Horsens vs Kolding,2025-07-25,NaN,NaN
 J. Vadstrup,Kolding,Horsens vs Kolding,2025-07-25,NaN,NaN
 C. Vestergaard,Kolding,Horsens vs Kolding,2025-07-25,0.0108233,0.0108233
 C. Vestergaard,Kolding,Horsens vs Kolding,2025-07-25,0.0004558,-0.0103675
@@ -13898,6 +13959,7 @@ M. Saaby,Kolding,Horsens vs Kolding,2025-07-25,0.0072636,0.0
 M. Saaby,Kolding,Horsens vs Kolding,2025-07-25,NaN,NaN
 J. Vadstrup,Kolding,Horsens vs Kolding,2025-07-25,0.0025792,0.0025792
 J. Vadstrup,Kolding,Horsens vs Kolding,2025-07-25,0.0013502,-0.001229
+M. Døj,Kolding,Horsens vs Kolding,2025-07-25,NaN,NaN
 M. Døj,Kolding,Horsens vs Kolding,2025-07-25,0.0040499,0.0026997
 C. Jørgensen,Kolding,Horsens vs Kolding,2025-07-25,0.0042373,0.0001874
 M. Døj,Kolding,Horsens vs Kolding,2025-07-25,0.001296,-0.0029413
@@ -13931,12 +13993,14 @@ M. Ivančević,Lyngby,Lyngby vs B 93,2025-07-25,0.0258083,0.0220921
 F. Gytkjær,Lyngby,Lyngby vs B 93,2025-07-25,0.0624625,0.0366542
 G. Mortensen,Lyngby,Lyngby vs B 93,2025-07-25,0.0069962,-0.0554663
 M. Ivančević,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
+M. Ivančević,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 T. Storm,Lyngby,Lyngby vs B 93,2025-07-25,0.0002681,0.0002681
 J. Ægidius,Lyngby,Lyngby vs B 93,2025-07-25,0.000469,0.0002009
 P. Langhoff,Lyngby,Lyngby vs B 93,2025-07-25,0.0007209,0.0002519
 G. Mortensen,Lyngby,Lyngby vs B 93,2025-07-25,0.0002834,-0.0004375
 M. Ivančević,Lyngby,Lyngby vs B 93,2025-07-25,0.0011561,-0.0002834
 M. Ivančević,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
+C. Björk,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 P. Langhoff,Lyngby,Lyngby vs B 93,2025-07-25,0.0042373,0.0042373
 J. Cornelius,Lyngby,Lyngby vs B 93,2025-07-25,0.0040481,-0.0001892
 M. Hebo,Lyngby,Lyngby vs B 93,2025-07-25,0.006988,0.0029399
@@ -13959,6 +14023,7 @@ J. Ægidius,Lyngby,Lyngby vs B 93,2025-07-25,0.0009375,-0.0002736
 G. Fraulo,Lyngby,Lyngby vs B 93,2025-07-25,0.0105115,0.0105115
 G. Fraulo,Lyngby,Lyngby vs B 93,2025-07-25,0.0011723,-0.0093392
 J. Cornelius,Lyngby,Lyngby vs B 93,2025-07-25,0.001297,0.0
+G. Mortensen,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 G. Mortensen,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 O. Buur,Lyngby,Lyngby vs B 93,2025-07-25,0.002103,0.002103
 O. Buur,Lyngby,Lyngby vs B 93,2025-07-25,0.0013936,0.0013936
@@ -14045,6 +14110,7 @@ G. Mortensen,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 O. Buur,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 O. Buur,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 J. Cornelius,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
+J. Cornelius,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 G. Fraulo,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 J. Cornelius,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 P. Langhoff,Lyngby,Lyngby vs B 93,2025-07-25,0.0012359,0.0012359
@@ -14094,12 +14160,15 @@ P. Langhoff,Lyngby,Lyngby vs B 93,2025-07-25,0.0079142,0.0049741
 L. Sandgrav,Lyngby,Lyngby vs B 93,2025-07-25,0.0172137,0.0092995
 O. Buur,Lyngby,Lyngby vs B 93,2025-07-25,0.0044098,-0.0172137
 L. Sandgrav,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
+G. Mortensen,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
+B. Blume,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 J. Cornelius,Lyngby,Lyngby vs B 93,2025-07-25,0.0042373,0.0
 J. Cornelius,Lyngby,Lyngby vs B 93,2025-07-25,0.0043835,0.0001462
 J. Cornelius,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 J. Cornelius,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 T. Storm,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 G. Mortensen,Lyngby,Lyngby vs B 93,2025-07-25,0.0012824,0.0012824
+L. Sandgrav,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 L. Sandgrav,Lyngby,Lyngby vs B 93,2025-07-25,0.0,-0.0012824
 L. Sandgrav,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 G. Mortensen,Lyngby,Lyngby vs B 93,2025-07-25,0.0085015,0.0069193
@@ -14142,6 +14211,7 @@ G. Fraulo,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 G. Mortensen,Lyngby,Lyngby vs B 93,2025-07-25,0.0013037,-0.00211
 L. Sandgrav,Lyngby,Lyngby vs B 93,2025-07-25,0.001297,0.0
 G. Fraulo,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
+M. Ivančević,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 M. Ivančević,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 J. Ægidius,Lyngby,Lyngby vs B 93,2025-07-25,0.0003425,-0.0003999
 T. Storm,Lyngby,Lyngby vs B 93,2025-07-25,0.0003624,1.99e-05
@@ -14232,6 +14302,7 @@ T. Storm,Lyngby,Lyngby vs B 93,2025-07-25,0.0041464,0.0002318
 P. Langhoff,Lyngby,Lyngby vs B 93,2025-07-25,0.2912333,0.2870869
 G. Mortensen,Lyngby,Lyngby vs B 93,2025-07-25,0.0626379,-0.2285954
 G. Fraulo,Lyngby,Lyngby vs B 93,2025-07-25,0.0114649,-0.051173
+F. Gytkjær,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 P. Langhoff,Lyngby,Lyngby vs B 93,2025-07-25,0.0042373,0.0042373
 P. Langhoff,Lyngby,Lyngby vs B 93,2025-07-25,0.001296,-0.0042373
 M. Ivančević,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
@@ -14271,6 +14342,7 @@ T. Storm,Lyngby,Lyngby vs B 93,2025-07-25,0.0002863,1.82e-05
 J. Ægidius,Lyngby,Lyngby vs B 93,2025-07-25,0.0012028,0.0009165
 G. Fraulo,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 G. Fraulo,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
+G. Fraulo,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 O. Buur,Lyngby,Lyngby vs B 93,2025-07-25,0.001323,-0.0005522
 P. Langhoff,Lyngby,Lyngby vs B 93,2025-07-25,0.0042373,0.0029143
 M. Hebo,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
@@ -14287,10 +14359,12 @@ NaN,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 M. Ivančević,Lyngby,Lyngby vs B 93,2025-07-25,0.0104052,0.0104052
 M. Ivančević,Lyngby,Lyngby vs B 93,2025-07-25,0.001435,-0.0104052
 NaN,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
+O. Buur,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 M. Hebo,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 Í. Þorvaldsson,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 NaN,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 F. Gytkjær,Lyngby,Lyngby vs B 93,2025-07-25,0.0002811,0.0002811
+NaN,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 T. Storm,Lyngby,Lyngby vs B 93,2025-07-25,0.0076759,0.0
 J. Cornelius,Lyngby,Lyngby vs B 93,2025-07-25,0.0029542,-0.0076759
 Í. Þorvaldsson,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
@@ -14309,6 +14383,7 @@ M. Ivančević,Lyngby,Lyngby vs B 93,2025-07-25,0.0042926,0.0003796
 M. Ivančević,Lyngby,Lyngby vs B 93,2025-07-25,0.0014154,-0.0028772
 G. Mortensen,Lyngby,Lyngby vs B 93,2025-07-25,0.0040499,0.0026345
 J. Cornelius,Lyngby,Lyngby vs B 93,2025-07-25,0.0012158,-0.0028341
+T. Storm,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 T. Storm,Lyngby,Lyngby vs B 93,2025-07-25,0.003955,0.003955
 L. Sandgrav,Lyngby,Lyngby vs B 93,2025-07-25,0.0043835,0.0004285
 L. Sandgrav,Lyngby,Lyngby vs B 93,2025-07-25,0.0042373,-0.0001462
@@ -14376,6 +14451,7 @@ L. Sandgrav,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 L. Sandgrav,Lyngby,Lyngby vs B 93,2025-07-25,0.0043835,0.0043835
 L. Sandgrav,Lyngby,Lyngby vs B 93,2025-07-25,0.0041173,-0.0002662
 J. Cornelius,Lyngby,Lyngby vs B 93,2025-07-25,0.0012588,-0.0041173
+J. Cornelius,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 P. Langhoff,Lyngby,Lyngby vs B 93,2025-07-25,0.0042373,0.0042373
 P. Langhoff,Lyngby,Lyngby vs B 93,2025-07-25,0.0,-0.0042373
 P. Langhoff,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
@@ -14391,6 +14467,8 @@ M. Ivančević,Lyngby,Lyngby vs B 93,2025-07-25,0.0009065,0.0005584
 M. Ivančević,Lyngby,Lyngby vs B 93,2025-07-25,0.0,-0.0009065
 Í. Þorvaldsson,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 Í. Þorvaldsson,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
+B. Blume,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
+F. Gytkjær,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 F. Gytkjær,Lyngby,Lyngby vs B 93,2025-07-25,0.0083183,0.0070121
 G. Fraulo,Lyngby,Lyngby vs B 93,2025-07-25,0.0468296,0.0385113
 M. Ivančević,Lyngby,Lyngby vs B 93,2025-07-25,0.0,0.0
@@ -14495,6 +14573,7 @@ J. Ægidius,Lyngby,Lyngby vs B 93,2025-07-25,0.0003452,1.64e-05
 M. Ivančević,Lyngby,Lyngby vs B 93,2025-07-25,0.0085015,0.0081563
 Í. Þorvaldsson,Lyngby,Lyngby vs B 93,2025-07-25,0.0303359,0.0218344
 J. Cornelius,Lyngby,Lyngby vs B 93,2025-07-25,0.0017313,0.0
+L. Sandgrav,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 P. Langhoff,Lyngby,Lyngby vs B 93,2025-07-25,0.0,0.0
 P. Langhoff,Lyngby,Lyngby vs B 93,2025-07-25,0.0,0.0
 G. Fraulo,Lyngby,Lyngby vs B 93,2025-07-25,0.0,0.0
@@ -14534,6 +14613,7 @@ J. Ægidius,Lyngby,Lyngby vs B 93,2025-07-25,0.0277041,0.0268434
 L. Sandgrav,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 O. Buur,Lyngby,Lyngby vs B 93,2025-07-25,0.0042926,0.0042926
 O. Buur,Lyngby,Lyngby vs B 93,2025-07-25,0.0012005,-0.0042926
+G. Fraulo,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 G. Fraulo,Lyngby,Lyngby vs B 93,2025-07-25,0.008386,0.008386
 G. Fraulo,Lyngby,Lyngby vs B 93,2025-07-25,0.0028729,0.0028729
 P. Langhoff,Lyngby,Lyngby vs B 93,2025-07-25,0.0017573,0.0
@@ -14597,11 +14677,13 @@ F. Gytkjær,Lyngby,Lyngby vs B 93,2025-07-25,0.0466798,-0.0055657
 F. Gytkjær,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 G. Fraulo,Lyngby,Lyngby vs B 93,2025-07-25,0.0778527,0.0485567
 M. Ivančević,Lyngby,Lyngby vs B 93,2025-07-25,0.0223533,-0.0554994
+T. Storm,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 O. Buur,Lyngby,Lyngby vs B 93,2025-07-25,0.0216324,0.0216324
 G. Fraulo,Lyngby,Lyngby vs B 93,2025-07-25,0.0023021,-0.0216324
 T. Storm,Lyngby,Lyngby vs B 93,2025-07-25,0.0008514,-0.0
 T. Storm,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 G. Fraulo,Lyngby,Lyngby vs B 93,2025-07-25,0.0104563,0.0104563
+P. Langhoff,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 P. Langhoff,Lyngby,Lyngby vs B 93,2025-07-25,0.0103887,0.0103887
 P. Langhoff,Lyngby,Lyngby vs B 93,2025-07-25,0.001145,-0.0103887
 O. Buur,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
@@ -14615,8 +14697,9 @@ G. Mortensen,Lyngby,Lyngby vs B 93,2025-07-25,0.0249761,0.0166578
 B. Blume,Lyngby,Lyngby vs B 93,2025-07-25,0.0026233,-0.0249761
 B. Blume,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 P. Langhoff,Lyngby,Lyngby vs B 93,2025-07-25,0.0042373,0.0042373
+Í. Þorvaldsson,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 P. Langhoff,Lyngby,Lyngby vs B 93,2025-07-25,0.0027729,-0.0014644
-O. Buur,Lyngby,Lyngby vs B 93,2025-07-25,0.0042373,0.0042373
+G. Fraulo,Lyngby,Lyngby vs B 93,2025-07-25,0.0042373,0.0042373
 P. Langhoff,Lyngby,Lyngby vs B 93,2025-07-25,0.0082755,0.0040382
 L. Sandgrav,Lyngby,Lyngby vs B 93,2025-07-25,0.0,-0.0082755
 T. Storm,Lyngby,Lyngby vs B 93,2025-07-25,0.0003895,-0.0065033
@@ -14635,13 +14718,14 @@ J. Ægidius,Lyngby,Lyngby vs B 93,2025-07-25,0.0013391,0.0010593
 Í. Þorvaldsson,Lyngby,Lyngby vs B 93,2025-07-25,0.0013284,-1.07e-05
 Í. Þorvaldsson,Lyngby,Lyngby vs B 93,2025-07-25,0.0029998,0.0029998
 O. Buur,Lyngby,Lyngby vs B 93,2025-07-25,0.0079142,0.0079142
-J. Ægidius,Lyngby,Lyngby vs B 93,2025-07-25,0.0079567,4.25e-05
+G. Fraulo,Lyngby,Lyngby vs B 93,2025-07-25,0.0079567,4.25e-05
 B. Blume,Lyngby,Lyngby vs B 93,2025-07-25,0.0145062,0.0065495
 G. Mortensen,Lyngby,Lyngby vs B 93,2025-07-25,0.0177162,0.00321
 L. Sandgrav,Lyngby,Lyngby vs B 93,2025-07-25,0.0040503,-0.0177162
 L. Sandgrav,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 P. Langhoff,Lyngby,Lyngby vs B 93,2025-07-25,0.0043835,0.0043835
 P. Langhoff,Lyngby,Lyngby vs B 93,2025-07-25,0.0080984,0.0037149
+L. Sandgrav,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 L. Sandgrav,Lyngby,Lyngby vs B 93,2025-07-25,0.0253661,0.0172677
 G. Mortensen,Lyngby,Lyngby vs B 93,2025-07-25,0.0111771,-0.014189
 L. Sandgrav,Lyngby,Lyngby vs B 93,2025-07-25,0.0,0.0
@@ -14654,6 +14738,7 @@ J. Ægidius,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 J. Ægidius,Lyngby,Lyngby vs B 93,2025-07-25,0.0006114,0.0006114
 G. Fraulo,Lyngby,Lyngby vs B 93,2025-07-25,0.0013771,0.0
 G. Fraulo,Lyngby,Lyngby vs B 93,2025-07-25,0.001393,1.59e-05
+G. Fraulo,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 P. Langhoff,Lyngby,Lyngby vs B 93,2025-07-25,0.0012669,-0.0001102
 T. Storm,Lyngby,Lyngby vs B 93,2025-07-25,0.0005784,0.0005784
 P. Langhoff,Lyngby,Lyngby vs B 93,2025-07-25,0.000668,0.000668
@@ -14670,9 +14755,11 @@ M. Ivančević,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 B. Rolland,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 F. Gytkjær,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 M. Warming,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
+NaN,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 G. Fraulo,Lyngby,Lyngby vs B 93,2025-07-25,0.0325554,0.0325554
 T. Storm,Lyngby,Lyngby vs B 93,2025-07-25,0.0327374,0.000182
 T. Storm,Lyngby,Lyngby vs B 93,2025-07-25,0.0150619,-0.0176755
+L. Sandgrav,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 L. Sandgrav,Lyngby,Lyngby vs B 93,2025-07-25,0.0430795,0.0280176
 T. Storm,Lyngby,Lyngby vs B 93,2025-07-25,0.0123125,0.0
 T. Storm,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
@@ -14689,8 +14776,9 @@ J. Ægidius,Lyngby,Lyngby vs B 93,2025-07-25,0.0323258,-0.0010633
 G. Mortensen,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 T. Storm,Lyngby,Lyngby vs B 93,2025-07-25,0.0006376,0.0001493
 P. Langhoff,Lyngby,Lyngby vs B 93,2025-07-25,0.007904,0.0
-G. Fraulo,Lyngby,Lyngby vs B 93,2025-07-25,0.0085015,0.0
+B. Rolland,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 Í. Þorvaldsson,Lyngby,Lyngby vs B 93,2025-07-25,0.0080984,0.0001944
+G. Fraulo,Lyngby,Lyngby vs B 93,2025-07-25,0.0085015,0.0
 M. Warming,Lyngby,Lyngby vs B 93,2025-07-25,0.0567166,0.0482151
 B. Blume,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 P. Langhoff,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
@@ -14758,8 +14846,8 @@ O. Buur,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 L. Sandgrav,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 B. Rolland,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 M. Warming,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
-P. Langhoff,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
-B. Blume,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
+L. Sandgrav,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
+G. Mortensen,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 NaN,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 NaN,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
 NaN,Lyngby,Lyngby vs B 93,2025-07-25,NaN,NaN
@@ -14780,6 +14868,7 @@ M. Wohlgemuth,B 93,Lyngby vs B 93,2025-07-25,0.0003619,-0.0009459
 O. Søe,B 93,Lyngby vs B 93,2025-07-25,0.0013921,-0.0003619
 O. Søe,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 L. Henriksen,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
+M. Wohlgemuth,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 M. Wohlgemuth,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 O. Søe,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 L. Henriksen,B 93,Lyngby vs B 93,2025-07-25,0.0003397,-0.0030142
@@ -14807,9 +14896,8 @@ O. Søe,B 93,Lyngby vs B 93,2025-07-25,0.0079142,0.0069274
 K. Grabovskis,B 93,Lyngby vs B 93,2025-07-25,0.001296,-0.0066182
 A. Heimer,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 A. Heimer,B 93,Lyngby vs B 93,2025-07-25,0.0012158,-0.0
-L. Henriksen,B 93,Lyngby vs B 93,2025-07-25,0.0013284,-0.0
+N. Mouritsen,B 93,Lyngby vs B 93,2025-07-25,0.0013284,-0.0
 O. Søe,B 93,Lyngby vs B 93,2025-07-25,0.0082219,0.0
-C. Björk,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 F. Isaki,B 93,Lyngby vs B 93,2025-07-25,0.0320608,0.0238389
 F. Isaki,B 93,Lyngby vs B 93,2025-07-25,0.0039792,-0.0280816
 M. Wohlgemuth,B 93,Lyngby vs B 93,2025-07-25,0.0083183,0.0043391
@@ -14818,6 +14906,7 @@ A. Ahmad,B 93,Lyngby vs B 93,2025-07-25,0.0150439,-0.0107644
 K. Grabovskis,B 93,Lyngby vs B 93,2025-07-25,0.0014799,0.0
 A. Vaporakis,B 93,Lyngby vs B 93,2025-07-25,0.0104052,0.0104052
 A. Vaporakis,B 93,Lyngby vs B 93,2025-07-25,0.0003452,-0.01006
+A. Heimer,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 A. Heimer,B 93,Lyngby vs B 93,2025-07-25,0.0004427,9.75e-05
 M. Wohlgemuth,B 93,Lyngby vs B 93,2025-07-25,0.0013837,0.000941
 F. Isaki,B 93,Lyngby vs B 93,2025-07-25,0.0085015,0.0071178
@@ -14938,6 +15027,7 @@ V. Hammershøy-Mistrati,B 93,Lyngby vs B 93,2025-07-25,0.0004614,-0.0009158
 A. Ahmad,B 93,Lyngby vs B 93,2025-07-25,0.0107104,0.0107104
 A. Ahmad,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 A. Ahmad,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
+A. Ahmad,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 L. Henriksen,B 93,Lyngby vs B 93,2025-07-25,0.0004363,-0.0013143
 M. Wohlgemuth,B 93,Lyngby vs B 93,2025-07-25,0.000271,-0.0001653
 O. Søe,B 93,Lyngby vs B 93,2025-07-25,0.0004122,0.0001412
@@ -14957,6 +15047,7 @@ N. Mouritsen,B 93,Lyngby vs B 93,2025-07-25,0.0360465,0.0192999
 K. Grabovskis,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 K. Grabovskis,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 N. Mouritsen,B 93,Lyngby vs B 93,2025-07-25,0.0074794,-0.0218166
+A. Heimer,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 A. Heimer,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 L. Henriksen,B 93,Lyngby vs B 93,2025-07-25,0.0002943,0.0002943
 A. Vaporakis,B 93,Lyngby vs B 93,2025-07-25,0.0012422,-0.0002943
@@ -15029,6 +15120,7 @@ O. Søe,B 93,Lyngby vs B 93,2025-07-25,0.0,-0.0002779
 L. Henriksen,B 93,Lyngby vs B 93,2025-07-25,0.0011272,-0.000386
 F. Isaki,B 93,Lyngby vs B 93,2025-07-25,0.0009106,-0.0011272
 M. Wohlgemuth,B 93,Lyngby vs B 93,2025-07-25,0.0014164,0.0
+M. Wohlgemuth,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 F. Isaki,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 F. Isaki,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 A. Vaporakis,B 93,Lyngby vs B 93,2025-07-25,0.0003452,-0.0003972
@@ -15049,10 +15141,12 @@ N. Mouritsen,B 93,Lyngby vs B 93,2025-07-25,0.0038867,-0.0042117
 A. Heimer,B 93,Lyngby vs B 93,2025-07-25,0.0008037,-0.003083
 O. Søe,B 93,Lyngby vs B 93,2025-07-25,0.0003026,-0.0005011
 A. Vaporakis,B 93,Lyngby vs B 93,2025-07-25,0.0011561,-0.0003026
+L. Henriksen,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 M. Wohlgemuth,B 93,Lyngby vs B 93,2025-07-25,0.0041292,-0.0
 M. Wohlgemuth,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 K. Grabovskis,B 93,Lyngby vs B 93,2025-07-25,0.0034611,0.0034611
 A. Heimer,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
+A. Ahmad,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 A. Heimer,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 N. Mouritsen,B 93,Lyngby vs B 93,2025-07-25,0.0003425,-0.0021367
 V. Hammershøy-Mistrati,B 93,Lyngby vs B 93,2025-07-25,0.0003569,1.44e-05
@@ -15218,6 +15312,7 @@ O. Søe,B 93,Lyngby vs B 93,2025-07-25,0.0003495,2.1e-05
 A. Heimer,B 93,Lyngby vs B 93,2025-07-25,0.0011923,-0.0003495
 A. Heimer,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 C. Björk,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
+C. Björk,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 A. Vaporakis,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 A. Vaporakis,B 93,Lyngby vs B 93,2025-07-25,0.0003397,-7.33e-05
 M. Wohlgemuth,B 93,Lyngby vs B 93,2025-07-25,0.0006929,0.0003532
@@ -15244,7 +15339,6 @@ NaN,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 L. Henriksen,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 L. Henriksen,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 L. Henriksen,B 93,Lyngby vs B 93,2025-07-25,0.0012241,-0.0010771
-C. Björk,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 M. Wohlgemuth,B 93,Lyngby vs B 93,2025-07-25,0.0018616,-0.0011987
 O. Søe,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 K. Grabovskis,B 93,Lyngby vs B 93,2025-07-25,0.0038222,0.0038222
@@ -15280,6 +15374,7 @@ A. Ahmad,B 93,Lyngby vs B 93,2025-07-25,0.0011286,-0.0067825
 A. Ahmad,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 V. Hammershøy-Mistrati,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 N. Thomsen,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
+NaN,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 L. Henriksen,B 93,Lyngby vs B 93,2025-07-25,0.0011781,0.0001054
 C. Björk,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 L. Henriksen,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
@@ -15336,6 +15431,8 @@ N. Thomsen,B 93,Lyngby vs B 93,2025-07-25,0.0211867,0.0211867
 L. Henriksen,B 93,Lyngby vs B 93,2025-07-25,0.0040715,-0.0171152
 N. Mouritsen,B 93,Lyngby vs B 93,2025-07-25,0.0014664,-0.0040715
 M. Wohlgemuth,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
+M. Wohlgemuth,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
+N. Thomsen,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 O. Søe,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 N. Mouritsen,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 A. Heimer,B 93,Lyngby vs B 93,2025-07-25,0.0012265,0.0012265
@@ -15440,6 +15537,7 @@ K. Grabovskis,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 O. Addo,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 A. Ahmad,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 T. Blidegn,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
+NaN,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 M. Wohlgemuth,B 93,Lyngby vs B 93,2025-07-25,0.0083183,0.0010323
 N. Mouritsen,B 93,Lyngby vs B 93,2025-07-25,0.0008033,-0.007515
 A. Heimer,B 93,Lyngby vs B 93,2025-07-25,0.0038408,0.0030375
@@ -15447,7 +15545,6 @@ M. Wohlgemuth,B 93,Lyngby vs B 93,2025-07-25,0.0003628,-0.003478
 A. Heimer,B 93,Lyngby vs B 93,2025-07-25,0.0012421,0.0008793
 L. Henriksen,B 93,Lyngby vs B 93,2025-07-25,0.0003314,-0.0009107
 O. Søe,B 93,Lyngby vs B 93,2025-07-25,0.0002737,-5.77e-05
-A. Vaporakis,B 93,Lyngby vs B 93,2025-07-25,0.0005958,0.0003221
 M. Wohlgemuth,B 93,Lyngby vs B 93,2025-07-25,0.0002681,-0.0003277
 A. Vaporakis,B 93,Lyngby vs B 93,2025-07-25,0.0003664,9.83e-05
 M. Wohlgemuth,B 93,Lyngby vs B 93,2025-07-25,0.000271,-9.54e-05
@@ -15471,8 +15568,8 @@ N. Thomsen,B 93,Lyngby vs B 93,2025-07-25,0.01035,-0.0
 N. Thomsen,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 A. Heimer,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 A. Heimer,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
-C. Björk,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
-C. Björk,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
+L. Henriksen,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
+L. Henriksen,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 R. Arabaci,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 T. Blidegn,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 T. Blidegn,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
@@ -15497,6 +15594,8 @@ A. Heimer,B 93,Lyngby vs B 93,2025-07-25,0.0004187,0.0
 M. Wohlgemuth,B 93,Lyngby vs B 93,2025-07-25,0.0009158,0.0004971
 M. Wohlgemuth,B 93,Lyngby vs B 93,2025-07-25,0.0002745,-0.0006413
 A. Vaporakis,B 93,Lyngby vs B 93,2025-07-25,0.0012028,0.0
+O. Addo,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
+A. Vaporakis,B 93,Lyngby vs B 93,2025-07-25,0.0005958,0.0003221
 A. Heimer,B 93,Lyngby vs B 93,2025-07-25,0.0012408,-0.0012028
 O. Addo,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 A. Heimer,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
@@ -15558,6 +15657,7 @@ L. Henriksen,B 93,Lyngby vs B 93,2025-07-25,0.0014609,0.0
 T. Blidegn,B 93,Lyngby vs B 93,2025-07-25,0.01035,-0.0
 T. Blidegn,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 N. Thomsen,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
+N. Thomsen,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 O. Addo,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 N. Mouritsen,B 93,Lyngby vs B 93,2025-07-25,0.010751,0.010751
 N. Mouritsen,B 93,Lyngby vs B 93,2025-07-25,0.0033347,-0.0074163
@@ -15574,7 +15674,7 @@ A. Heimer,B 93,Lyngby vs B 93,2025-07-25,0.0080984,0.004003
 N. Mouritsen,B 93,Lyngby vs B 93,2025-07-25,0.0080984,0.0
 O. Addo,B 93,Lyngby vs B 93,2025-07-25,0.0163641,0.0082657
 R. Arabaci,B 93,Lyngby vs B 93,2025-07-25,0.0192961,0.002932
-A. Heimer,B 93,Lyngby vs B 93,2025-07-25,0.0103764,-0.0089197
+N. Thomsen,B 93,Lyngby vs B 93,2025-07-25,0.0103764,-0.0089197
 M. Wohlgemuth,B 93,Lyngby vs B 93,2025-07-25,0.0173635,0.0069871
 N. Mouritsen,B 93,Lyngby vs B 93,2025-07-25,0.0022992,0.0
 O. Addo,B 93,Lyngby vs B 93,2025-07-25,0.0054938,0.0031946
@@ -15584,6 +15684,7 @@ N. Mouritsen,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 N. Mouritsen,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 N. Mouritsen,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 N. Mouritsen,B 93,Lyngby vs B 93,2025-07-25,0.0003397,-0.0028463
+O. Addo,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 N. Thomsen,B 93,Lyngby vs B 93,2025-07-25,0.0,-0.0
 T. Blidegn,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 L. Henriksen,B 93,Lyngby vs B 93,2025-07-25,0.003935,0.003935
@@ -15607,6 +15708,7 @@ T. Blidegn,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 L. Henriksen,B 93,Lyngby vs B 93,2025-07-25,0.0003426,0.0003426
 N. Mouritsen,B 93,Lyngby vs B 93,2025-07-25,0.0005346,0.000192
 O. Addo,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
+L. Henriksen,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 T. Blidegn,B 93,Lyngby vs B 93,2025-07-25,0.0013515,0.0008169
 N. Thomsen,B 93,Lyngby vs B 93,2025-07-25,0.0008241,-0.0005274
 N. Mouritsen,B 93,Lyngby vs B 93,2025-07-25,0.0009914,0.0001673
@@ -15632,6 +15734,7 @@ L. Henriksen,B 93,Lyngby vs B 93,2025-07-25,0.0083183,0.0027026
 N. Mouritsen,B 93,Lyngby vs B 93,2025-07-25,0.0083183,0.0
 L. Henriksen,B 93,Lyngby vs B 93,2025-07-25,0.0018023,-0.0083183
 N. Thomsen,B 93,Lyngby vs B 93,2025-07-25,0.0042373,0.0042373
+N. Thomsen,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 N. Thomsen,B 93,Lyngby vs B 93,2025-07-25,0.0042373,0.0042373
 N. Thomsen,B 93,Lyngby vs B 93,2025-07-25,0.0025947,-0.0016426
 N. Thomsen,B 93,Lyngby vs B 93,2025-07-25,0.0327374,0.0327374
@@ -15659,6 +15762,8 @@ O. Søe,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 A. Vaporakis,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 A. Vaporakis,B 93,Lyngby vs B 93,2025-07-25,0.0,0.0
 O. Addo,B 93,Lyngby vs B 93,2025-07-25,0.0,0.0
+O. Søe,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
+E. Nnamani,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 A. Vaporakis,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 A. Vaporakis,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 A. Vaporakis,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
@@ -15680,13 +15785,14 @@ E. Nnamani,B 93,Lyngby vs B 93,2025-07-25,0.0040668,0.0011082
 E. Nnamani,B 93,Lyngby vs B 93,2025-07-25,0.0011566,-0.0029102
 R. Arabaci,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 R. Arabaci,B 93,Lyngby vs B 93,2025-07-25,0.0012693,0.0
+NaN,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 A. Heimer,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 M. Wohlgemuth,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 A. Heimer,B 93,Lyngby vs B 93,2025-07-25,0.0042179,0.0042179
 A. Heimer,B 93,Lyngby vs B 93,2025-07-25,0.0011886,-0.0042179
-NaN,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 A. Heimer,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 A. Heimer,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
+N. Thomsen,B 93,Lyngby vs B 93,2025-07-25,NaN,NaN
 N. Thomsen,B 93,Lyngby vs B 93,2025-07-25,0.01035,0.01035
 N. Thomsen,B 93,Lyngby vs B 93,2025-07-25,0.0003383,-0.0100669
 R. Arabaci,B 93,Lyngby vs B 93,2025-07-25,0.0003481,9.8e-06
@@ -15743,6 +15849,8 @@ G. Arndal-Lauritzen,Hillerød,Hillerød vs AaB,2025-07-26,0.0012005,-0.0
 J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,0.0012875,-0.0
 N. Schmidt,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 V. Dedes,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
+N. Schmidt,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
+V. Dedes,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 V. Dedes,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,0.0011113,0.0011113
 J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,0.0002736,-0.0008377
@@ -15755,6 +15863,7 @@ N. Schmidt,Hillerød,Hillerød vs AaB,2025-07-26,0.0017022,0.0017022
 M. Mouritz,Hillerød,Hillerød vs AaB,2025-07-26,0.002831,0.0011288
 M. Mouritz,Hillerød,Hillerød vs AaB,2025-07-26,0.0014149,-0.0014161
 A. Justinussen,Hillerød,Hillerød vs AaB,2025-07-26,0.001297,-0.0001179
+M. Etim,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 M. Etim,Hillerød,Hillerød vs AaB,2025-07-26,0.0161639,-0.0
 M. Etim,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 V. Dedes,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
@@ -15792,6 +15901,7 @@ G. Arndal-Lauritzen,Hillerød,Hillerød vs AaB,2025-07-26,0.0002681,-0.0004492
 A. Kappenberger,Hillerød,Hillerød vs AaB,2025-07-26,0.0009369,0.0
 A. Justinussen,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 A. Justinussen,Hillerød,Hillerød vs AaB,2025-07-26,0.001296,-0.0009369
+A. Justinussen,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 A. Justinussen,Hillerød,Hillerød vs AaB,2025-07-26,0.0007901,0.0007901
 J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,0.0029337,0.0021436
 C. Allen,Hillerød,Hillerød vs AaB,2025-07-26,0.0011427,-0.0029337
@@ -15855,6 +15965,7 @@ M. Etim,Hillerød,Hillerød vs AaB,2025-07-26,0.0008611,0.0008611
 M. Mouritz,Hillerød,Hillerød vs AaB,2025-07-26,0.000435,-0.0004261
 W. Glindtvad,Hillerød,Hillerød vs AaB,2025-07-26,0.0016514,0.0012164
 N. Schmidt,Hillerød,Hillerød vs AaB,2025-07-26,0.0079567,0.0063053
+M. Etim,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 M. Etim,Hillerød,Hillerød vs AaB,2025-07-26,0.014352,0.0063953
 V. Dedes,Hillerød,Hillerød vs AaB,2025-07-26,0.0456674,0.0313154
 V. Dedes,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
@@ -15872,6 +15983,7 @@ C. Allen,Hillerød,Hillerød vs AaB,2025-07-26,0.0529554,0.0487181
 V. Dedes,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,0.0011809,0.0011809
 G. Arndal-Lauritzen,Hillerød,Hillerød vs AaB,2025-07-26,0.0035823,0.0024014
+G. Arndal-Lauritzen,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 G. Arndal-Lauritzen,Hillerød,Hillerød vs AaB,2025-07-26,0.0011916,-0.0035823
 J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,0.0104052,0.0104052
 J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,0.001189,-0.0104052
@@ -15900,6 +16012,7 @@ M. Mouritz,Hillerød,Hillerød vs AaB,2025-07-26,0.0097703,0.0018136
 C. Allen,Hillerød,Hillerød vs AaB,2025-07-26,0.0081283,-0.001642
 M. Mouritz,Hillerød,Hillerød vs AaB,2025-07-26,0.005814,-0.0023143
 J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,0.0011561,0.0011561
+M. Mouritz,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 M. Mouritz,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 W. Glindtvad,Hillerød,Hillerød vs AaB,2025-07-26,0.0041464,0.0002784
 N. Schmidt,Hillerød,Hillerød vs AaB,2025-07-26,0.0039241,-0.0002223
@@ -15942,6 +16055,7 @@ A. Justinussen,Hillerød,Hillerød vs AaB,2025-07-26,0.0027395,0.0
 A. Justinussen,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
+NaN,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,0.0104052,0.0104052
 J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,0.0003452,-0.01006
 G. Arndal-Lauritzen,Hillerød,Hillerød vs AaB,2025-07-26,0.0010297,0.0006845
@@ -15952,7 +16066,8 @@ A. Justinussen,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 N. Schmidt,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
-J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,0.01035,-0.0
+J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
+N. Schmidt,Hillerød,Hillerød vs AaB,2025-07-26,0.01035,-0.0
 J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,0.0104052,0.0104052
 J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,0.0003362,-0.010069
 C. Allen,Hillerød,Hillerød vs AaB,2025-07-26,0.0014664,-0.0003362
@@ -15960,6 +16075,7 @@ M. Etim,Hillerød,Hillerød vs AaB,2025-07-26,0.0141,-0.0
 M. Etim,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
+M. Mouritz,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 W. Glindtvad,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,0.0010018,-0.0
@@ -15981,8 +16097,8 @@ NaN,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 NaN,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 A. Kappenberger,Hillerød,Hillerød vs AaB,2025-07-26,0.0003518,0.0003518
 N. Schmidt,Hillerød,Hillerød vs AaB,2025-07-26,0.0012295,0.0008777
-N. Schmidt,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
-N. Schmidt,Hillerød,Hillerød vs AaB,2025-07-26,0.001297,0.0
+C. Allen,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
+C. Allen,Hillerød,Hillerød vs AaB,2025-07-26,0.001297,0.0
 N. Schmidt,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,0.0011427,-0.0
 W. Glindtvad,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
@@ -16062,6 +16178,7 @@ T. Arndal,Hillerød,Hillerød vs AaB,2025-07-26,0.0069316,-0.0076376
 M. Mouritz,Hillerød,Hillerød vs AaB,2025-07-26,0.0650855,0.0650855
 G. Arndal-Lauritzen,Hillerød,Hillerød vs AaB,2025-07-26,0.0251661,-0.0399194
 V. Dedes,Hillerød,Hillerød vs AaB,2025-07-26,0.0471123,0.0219462
+A. Justinussen,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 M. Mouritz,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 G. Arndal-Lauritzen,Hillerød,Hillerød vs AaB,2025-07-26,0.0008562,-0.0006071
 A. Kappenberger,Hillerød,Hillerød vs AaB,2025-07-26,0.0037974,0.0029412
@@ -16118,6 +16235,7 @@ J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,0.0040499,0.0032799
 M. Mouritz,Hillerød,Hillerød vs AaB,2025-07-26,0.0251661,0.0211162
 V. Dedes,Hillerød,Hillerød vs AaB,2025-07-26,0.0517961,0.02663
 M. Etim,Hillerød,Hillerød vs AaB,2025-07-26,0.0043511,0.0
+K. John,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 V. Dedes,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,0.0043835,0.0043835
 J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,0.002691,-0.0016925
@@ -16146,6 +16264,7 @@ J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,0.000451,1.48e-05
 G. Arndal-Lauritzen,Hillerød,Hillerød vs AaB,2025-07-26,0.0002681,-0.0001829
 A. Kappenberger,Hillerød,Hillerød vs AaB,2025-07-26,0.0003397,7.16e-05
 G. Arndal-Lauritzen,Hillerød,Hillerød vs AaB,2025-07-26,0.0005097,0.00017
+O. Ross,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 A. Justinussen,Hillerød,Hillerød vs AaB,2025-07-26,0.0007495,0.0002398
 M. Etim,Hillerød,Hillerød vs AaB,2025-07-26,0.0005344,-0.0002151
 N. Schmidt,Hillerød,Hillerød vs AaB,2025-07-26,0.0013833,0.0008489
@@ -16232,6 +16351,7 @@ J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,0.0003328,5.83e-05
 G. Arndal-Lauritzen,Hillerød,Hillerød vs AaB,2025-07-26,0.0011012,0.0007684
 A. Justinussen,Hillerød,Hillerød vs AaB,2025-07-26,0.0002708,-0.0008304
 G. Arndal-Lauritzen,Hillerød,Hillerød vs AaB,2025-07-26,0.0003146,4.38e-05
+NaN,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 N. Schmidt,Hillerød,Hillerød vs AaB,2025-07-26,0.0003397,2.51e-05
 J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,0.0002736,-6.61e-05
 A. Kappenberger,Hillerød,Hillerød vs AaB,2025-07-26,0.0003425,6.89e-05
@@ -16306,6 +16426,8 @@ G. Arndal-Lauritzen,Hillerød,Hillerød vs AaB,2025-07-26,0.0042831,0.0002332
 N. Schmidt,Hillerød,Hillerød vs AaB,2025-07-26,0.0079567,0.0036736
 G. Arndal-Lauritzen,Hillerød,Hillerød vs AaB,2025-07-26,0.0083183,0.0003616
 V. Dedes,Hillerød,Hillerød vs AaB,2025-07-26,0.0028662,-0.0054521
+V. Dedes,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
+M. Mouritz,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 V. Dedes,Hillerød,Hillerød vs AaB,2025-07-26,0.0083183,0.0083183
 A. Justinussen,Hillerød,Hillerød vs AaB,2025-07-26,0.0,-0.0083183
 N. Schmidt,Hillerød,Hillerød vs AaB,2025-07-26,0.0042373,0.0042373
@@ -16370,11 +16492,12 @@ A. Justinussen,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 G. Arndal-Lauritzen,Hillerød,Hillerød vs AaB,2025-07-26,0.0008783,-0.0004611
 J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,0.0012851,0.0004068
 N. Schmidt,Hillerød,Hillerød vs AaB,2025-07-26,0.0080984,0.0068133
+J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 G. Arndal-Lauritzen,Hillerød,Hillerød vs AaB,2025-07-26,0.0258083,0.0177099
 M. Etim,Hillerød,Hillerød vs AaB,2025-07-26,0.0187853,-0.007023
 T. Arndal,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 M. Etim,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
-N. Schmidt,Hillerød,Hillerød vs AaB,2025-07-26,0.0,-0.029296
+M. Mouritz,Hillerød,Hillerød vs AaB,2025-07-26,0.0,-0.029296
 J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 N. Schmidt,Hillerød,Hillerød vs AaB,2025-07-26,0.0232479,0.0232479
 V. Dedes,Hillerød,Hillerød vs AaB,2025-07-26,0.0051888,-0.0180591
@@ -16464,6 +16587,7 @@ W. Glindtvad,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 W. Glindtvad,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 NaN,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 NaN,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
+NaN,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 L. Bøje-Larsen,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 L. Bøje-Larsen,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 G. Arndal-Lauritzen,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
@@ -16508,6 +16632,7 @@ J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,0.0085015,0.0043355
 S. Jalaei,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 A. Justinussen,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 M. Veltz,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
+M. Veltz,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,0.0011579,-0.0
 H. Toftegaard,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
@@ -16521,10 +16646,12 @@ J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,0.011477,-0.0007691
 M. Veltz,Hillerød,Hillerød vs AaB,2025-07-26,0.0,-0.0
 M. Mouritz,Hillerød,Hillerød vs AaB,2025-07-26,0.0043835,0.0043835
 M. Mouritz,Hillerød,Hillerød vs AaB,2025-07-26,0.0012158,-0.0043835
+M. Mouritz,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 M. Mouritz,Hillerød,Hillerød vs AaB,2025-07-26,0.0011034,0.0011034
 J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,0.0042926,0.0031892
 J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,0.0014871,-0.0028055
 L. Bøje-Larsen,Hillerød,Hillerød vs AaB,2025-07-26,0.0012005,-0.0014871
+G. Arndal-Lauritzen,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 G. Arndal-Lauritzen,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 G. Arndal-Lauritzen,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 G. Arndal-Lauritzen,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
@@ -16552,6 +16679,7 @@ A. Kappenberger,Hillerød,Hillerød vs AaB,2025-07-26,0.01035,0.01035
 NaN,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 M. Mouritz,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 A. Alicino,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
+NaN,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 NaN,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 NaN,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 G. Arndal-Lauritzen,Hillerød,Hillerød vs AaB,2025-07-26,0.0014681,0.0
@@ -16670,7 +16798,6 @@ A. Alicino,Hillerød,Hillerød vs AaB,2025-07-26,0.0014664,0.0
 L. Bøje-Larsen,Hillerød,Hillerød vs AaB,2025-07-26,0.0049634,-0.0
 J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 H. Toftegaard,Hillerød,Hillerød vs AaB,2025-07-26,0.0014802,0.0001716
-NaN,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 A. Alicino,Hillerød,Hillerød vs AaB,2025-07-26,0.0042926,0.0028124
 A. Alicino,Hillerød,Hillerød vs AaB,2025-07-26,0.0042373,-5.53e-05
 L. Bøje-Larsen,Hillerød,Hillerød vs AaB,2025-07-26,0.0021312,0.0
@@ -16692,14 +16819,15 @@ M. Etim,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 A. Kappenberger,Hillerød,Hillerød vs AaB,2025-07-26,0.0014664,-0.0013533
 A. Kappenberger,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
-A. Kappenberger,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
-A. Kappenberger,Hillerød,Hillerød vs AaB,2025-07-26,0.0005762,0.0005762
+J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
+J. Witt,Hillerød,Hillerød vs AaB,2025-07-26,0.0005762,0.0005762
 M. Etim,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 L. Bøje-Larsen,Hillerød,Hillerød vs AaB,2025-07-26,0.007728,0.0
 M. Veltz,Hillerød,Hillerød vs AaB,2025-07-26,0.0048816,-0.0028464
 M. Veltz,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 M. Veltz,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 A. Kappenberger,Hillerød,Hillerød vs AaB,2025-07-26,0.0009523,0.0002099
+NaN,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 NaN,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 NaN,Hillerød,Hillerød vs AaB,2025-07-26,NaN,NaN
 NaN,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
@@ -16712,8 +16840,13 @@ V. Müller,AaB,Hillerød vs AaB,2025-07-26,0.0013025,0.0
 K. John,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 M. Kallesøe,AaB,Hillerød vs AaB,2025-07-26,0.0011246,-0.0
 A. Håpnes,AaB,Hillerød vs AaB,2025-07-26,0.0079389,0.0079389
+N. Arnórsson,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 F. Børsting,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 F. Børsting,AaB,Hillerød vs AaB,2025-07-26,0.0030797,-0.0048592
+V. Møller,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
+N. Arnórsson,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
+N. Arnórsson,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
+V. Møller,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 V. Møller,AaB,Hillerød vs AaB,2025-07-26,0.0079567,0.004877
 M. Bomholt,AaB,Hillerød vs AaB,2025-07-26,0.0083183,0.0003616
 O. Ross,AaB,Hillerød vs AaB,2025-07-26,0.0079567,-0.0003616
@@ -16759,8 +16892,8 @@ M. Bomholt,AaB,Hillerød vs AaB,2025-07-26,0.0251661,0.0209288
 K. John,AaB,Hillerød vs AaB,2025-07-26,0.0435607,0.0183946
 K. John,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 F. Børsting,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
+F. Børsting,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 F. Børsting,AaB,Hillerød vs AaB,2025-07-26,0.0253661,0.0
-K. John,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 K. John,AaB,Hillerød vs AaB,2025-07-26,0.003356,-0.0220101
 M. Bomholt,AaB,Hillerød vs AaB,2025-07-26,0.0043835,0.0010275
 M. Bomholt,AaB,Hillerød vs AaB,2025-07-26,0.0083183,0.0039348
@@ -16781,8 +16914,8 @@ C. Olsson,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 M. Nielsen,AaB,Hillerød vs AaB,2025-07-26,0.0030069,0.0030069
 M. Nielsen,AaB,Hillerød vs AaB,2025-07-26,0.0029688,-3.81e-05
 O. Ross,AaB,Hillerød vs AaB,2025-07-26,0.001297,0.0
-V. Møller,AaB,Hillerød vs AaB,2025-07-26,0.0042179,0.0042179
-V. Møller,AaB,Hillerød vs AaB,2025-07-26,0.0054803,0.0012624
+A. Håpnes,AaB,Hillerød vs AaB,2025-07-26,0.0042179,0.0042179
+A. Håpnes,AaB,Hillerød vs AaB,2025-07-26,0.0054803,0.0012624
 K. John,AaB,Hillerød vs AaB,2025-07-26,0.001296,0.0
 F. Børsting,AaB,Hillerød vs AaB,2025-07-26,0.0054738,0.0054738
 M. Kallesøe,AaB,Hillerød vs AaB,2025-07-26,0.0043835,0.0
@@ -16820,6 +16953,7 @@ M. Kallesøe,AaB,Hillerød vs AaB,2025-07-26,0.0003404,-0.0002166
 E. Makolli,AaB,Hillerød vs AaB,2025-07-26,0.0034296,0.0030892
 A. Håpnes,AaB,Hillerød vs AaB,2025-07-26,0.0005187,-0.0029109
 E. Makolli,AaB,Hillerød vs AaB,2025-07-26,0.0006618,0.0001431
+M. Kallesøe,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 M. Kallesøe,AaB,Hillerød vs AaB,2025-07-26,0.0,-0.0006618
 M. Kallesøe,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 A. Håpnes,AaB,Hillerød vs AaB,2025-07-26,0.0085015,0.0
@@ -16843,6 +16977,7 @@ O. Ross,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 K. John,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 A. Håpnes,AaB,Hillerød vs AaB,2025-07-26,0.0008607,0.0008607
 A. Håpnes,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
+A. Håpnes,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 M. Nielsen,AaB,Hillerød vs AaB,2025-07-26,0.000992,-0.0011623
 O. Ross,AaB,Hillerød vs AaB,2025-07-26,0.0002681,-0.0007239
 C. Olsson,AaB,Hillerød vs AaB,2025-07-26,0.0002714,3.3e-06
@@ -16851,6 +16986,7 @@ C. Olsson,AaB,Hillerød vs AaB,2025-07-26,0.0009733,0.0
 K. John,AaB,Hillerød vs AaB,2025-07-26,0.0026894,0.0017161
 V. Møller,AaB,Hillerød vs AaB,2025-07-26,0.011477,0.0087876
 K. John,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
+M. Bomholt,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 E. Makolli,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 M. Kallesøe,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 M. Kallesøe,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
@@ -16866,6 +17002,7 @@ V. Müller,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 V. Müller,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 V. Müller,AaB,Hillerød vs AaB,2025-07-26,0.0104263,0.0
 M. Kallesøe,AaB,Hillerød vs AaB,2025-07-26,0.0042926,0.0042926
+M. Kallesøe,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 M. Kallesøe,AaB,Hillerød vs AaB,2025-07-26,0.001319,-0.0042926
 A. Håpnes,AaB,Hillerød vs AaB,2025-07-26,0.0012767,-0.0
 A. Håpnes,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
@@ -16931,7 +17068,6 @@ M. Bomholt,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 M. Bomholt,AaB,Hillerød vs AaB,2025-07-26,0.0445415,0.0445415
 O. Ross,AaB,Hillerød vs AaB,2025-07-26,0.0,-0.0445415
 O. Ross,AaB,Hillerød vs AaB,2025-07-26,0.0023052,-0.0
-O. Ross,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 C. Olsson,AaB,Hillerød vs AaB,2025-07-26,0.0006523,0.0006523
 C. Olsson,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 M. Nielsen,AaB,Hillerød vs AaB,2025-07-26,0.0035275,0.001898
@@ -17038,12 +17174,14 @@ M. Kallesøe,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 M. Kallesøe,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 V. Møller,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 M. Kallesøe,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
+M. Kallesøe,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 E. Makolli,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 M. Bomholt,AaB,Hillerød vs AaB,2025-07-26,0.0004251,7.98e-05
 A. Håpnes,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 A. Håpnes,AaB,Hillerød vs AaB,2025-07-26,0.0012028,-0.0004251
 A. Håpnes,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 M. Nielsen,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
+C. Olsson,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 C. Olsson,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 K. John,AaB,Hillerød vs AaB,2025-07-26,0.0008397,0.0008397
 A. Håpnes,AaB,Hillerød vs AaB,2025-07-26,0.0004202,-0.0004195
@@ -17076,6 +17214,7 @@ M. Bomholt,AaB,Hillerød vs AaB,2025-07-26,0.0012921,-0.0006542
 M. Bomholt,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 M. Kallesøe,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 N. Arnórsson,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
+NaN,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 V. Müller,AaB,Hillerød vs AaB,2025-07-26,0.0008635,0.0008635
 V. Müller,AaB,Hillerød vs AaB,2025-07-26,0.0003527,-0.0005108
 N. Arnórsson,AaB,Hillerød vs AaB,2025-07-26,0.0004002,4.75e-05
@@ -17088,7 +17227,7 @@ F. Børsting,AaB,Hillerød vs AaB,2025-07-26,0.0120398,0.0040831
 M. Nielsen,AaB,Hillerød vs AaB,2025-07-26,0.019789,0.0077492
 O. Ross,AaB,Hillerød vs AaB,2025-07-26,0.0530647,0.0332757
 F. Børsting,AaB,Hillerød vs AaB,2025-07-26,0.0690451,0.0159804
-M. Bomholt,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
+V. Møller,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 N. Arnórsson,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 M. Nielsen,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 C. Olsson,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
@@ -17099,6 +17238,7 @@ M. Nielsen,AaB,Hillerød vs AaB,2025-07-26,0.0008337,-0.0
 M. Nielsen,AaB,Hillerød vs AaB,2025-07-26,0.0002743,0.0002743
 V. Müller,AaB,Hillerød vs AaB,2025-07-26,0.000902,-0.0002743
 E. Makolli,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
+E. Makolli,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 A. Håpnes,AaB,Hillerød vs AaB,2025-07-26,0.0012851,0.0012851
 M. Bomholt,AaB,Hillerød vs AaB,2025-07-26,0.0012325,0.0
 M. Bomholt,AaB,Hillerød vs AaB,2025-07-26,0.0012738,4.13e-05
@@ -17106,6 +17246,7 @@ V. Møller,AaB,Hillerød vs AaB,2025-07-26,0.001319,4.52e-05
 K. John,AaB,Hillerød vs AaB,2025-07-26,0.0709635,0.0709635
 M. Bomholt,AaB,Hillerød vs AaB,2025-07-26,0.0565936,-0.0143699
 F. Børsting,AaB,Hillerød vs AaB,2025-07-26,0.0,0.0
+F. Børsting,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 F. Børsting,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 M. Nielsen,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 E. Makolli,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
@@ -17138,6 +17279,7 @@ F. Børsting,AaB,Hillerød vs AaB,2025-07-26,0.0056157,0.0056157
 A. Håpnes,AaB,Hillerød vs AaB,2025-07-26,0.0025291,-0.0056157
 N. Arnórsson,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 N. Arnórsson,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
+NaN,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 V. Müller,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 V. Müller,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 V. Müller,AaB,Hillerød vs AaB,2025-07-26,0.0011427,-0.0
@@ -17164,6 +17306,7 @@ K. John,AaB,Hillerød vs AaB,2025-07-26,0.0012693,0.0
 C. Olsson,AaB,Hillerød vs AaB,2025-07-26,0.0106553,0.0106553
 M. Bomholt,AaB,Hillerød vs AaB,2025-07-26,0.001166,0.0
 M. Bomholt,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
+A. Håpnes,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 A. Håpnes,AaB,Hillerød vs AaB,2025-07-26,0.0106553,0.0106553
 A. Håpnes,AaB,Hillerød vs AaB,2025-07-26,0.0020179,0.0
 A. Håpnes,AaB,Hillerød vs AaB,2025-07-26,0.0006067,-0.0100486
@@ -17176,6 +17319,7 @@ K. John,AaB,Hillerød vs AaB,2025-07-26,0.0004547,6.57e-05
 O. Ross,AaB,Hillerød vs AaB,2025-07-26,0.0012172,0.0007625
 M. Bomholt,AaB,Hillerød vs AaB,2025-07-26,0.0021406,0.0009234
 M. Bomholt,AaB,Hillerød vs AaB,2025-07-26,0.001525,-0.0006156
+E. Makolli,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 E. Makolli,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 V. Møller,AaB,Hillerød vs AaB,2025-07-26,0.0104563,0.0104563
 V. Møller,AaB,Hillerød vs AaB,2025-07-26,0.0104563,0.0
@@ -17195,6 +17339,7 @@ V. Møller,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 A. Maarup,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 O. Ross,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 A. Jasson,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
+NaN,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 M. Nielsen,AaB,Hillerød vs AaB,2025-07-26,0.0003885,-0.0
 M. Nielsen,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 A. Maarup,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
@@ -17216,6 +17361,7 @@ NaN,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 F. Børsting,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 V. Müller,AaB,Hillerød vs AaB,2025-07-26,0.0014664,-0.0007424
 A. Maarup,AaB,Hillerød vs AaB,2025-07-26,0.0,-0.0
+A. Maarup,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 A. Maarup,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 A. Maarup,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 A. Maarup,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
@@ -17252,8 +17398,10 @@ K. John,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 A. Håpnes,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 E. Makolli,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 M. Nielsen,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
+M. Nielsen,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 A. Maarup,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 A. Jasson,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
+NaN,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 NaN,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 NaN,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 M. Nielsen,AaB,Hillerød vs AaB,2025-07-26,0.0079561,0.0062792
@@ -17295,6 +17443,8 @@ A. Håpnes,AaB,Hillerød vs AaB,2025-07-26,0.001297,0.0
 A. Håpnes,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 M. Nielsen,AaB,Hillerød vs AaB,2025-07-26,0.0,0.0
 E. Makolli,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
+F. Børsting,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
+E. Makolli,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 E. Makolli,AaB,Hillerød vs AaB,2025-07-26,0.0104052,0.0104052
 E. Makolli,AaB,Hillerød vs AaB,2025-07-26,0.0009157,-0.0094895
 K. John,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
@@ -17317,6 +17467,7 @@ A. Håpnes,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 A. Håpnes,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 M. Nielsen,AaB,Hillerød vs AaB,2025-07-26,0.0009158,0.0009158
 M. Nielsen,AaB,Hillerød vs AaB,2025-07-26,0.0012135,-0.0009158
+A. Maarup,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 A. Maarup,AaB,Hillerød vs AaB,2025-07-26,0.0019865,0.0019865
 A. Håpnes,AaB,Hillerød vs AaB,2025-07-26,0.0012503,0.0012503
 A. Maarup,AaB,Hillerød vs AaB,2025-07-26,0.0011346,-0.0001157
@@ -17354,6 +17505,7 @@ E. Makolli,AaB,Hillerød vs AaB,2025-07-26,0.0083183,0.0056162
 F. Børsting,AaB,Hillerød vs AaB,2025-07-26,0.0116391,0.0033208
 M. Bomholt,AaB,Hillerød vs AaB,2025-07-26,0.004012,-0.0076271
 C. Olsson,AaB,Hillerød vs AaB,2025-07-26,0.0013025,-0.0027095
+C. Olsson,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 F. Børsting,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 F. Børsting,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 F. Børsting,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
@@ -17366,6 +17518,7 @@ B. Skovgaard,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 NaN,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 M. Bomholt,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 M. Jiménez,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
+NaN,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 NaN,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 C. Olsson,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 F. Børsting,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
@@ -17418,9 +17571,9 @@ C. Olsson,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 F. Børsting,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 A. Jasson,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 A. Håpnes,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
+A. Håpnes,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 B. Skovgaard,AaB,Hillerød vs AaB,2025-07-26,0.0016549,-0.0
 B. Skovgaard,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
-NaN,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 F. Børsting,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 A. Jasson,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 A. Maarup,AaB,Hillerød vs AaB,2025-07-26,0.010744,0.010744
@@ -17436,7 +17589,7 @@ A. Jasson,AaB,Hillerød vs AaB,2025-07-26,0.0008993,0.0
 A. Jasson,AaB,Hillerød vs AaB,2025-07-26,0.000292,0.000292
 M. Nielsen,AaB,Hillerød vs AaB,2025-07-26,0.0009369,0.0
 C. Olsson,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
-C. Olsson,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
+M. Nielsen,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 M. Nielsen,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 C. Olsson,AaB,Hillerød vs AaB,2025-07-26,0.01035,-0.0
 C. Olsson,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
@@ -17466,6 +17619,7 @@ V. Müller,AaB,Hillerød vs AaB,2025-07-26,0.0009369,0.0001945
 B. Skovgaard,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 B. Skovgaard,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 B. Skovgaard,AaB,Hillerød vs AaB,2025-07-26,0.001296,-0.0
+E. Makolli,AaB,Hillerød vs AaB,2025-07-26,NaN,NaN
 E. Makolli,AaB,Hillerød vs AaB,2025-07-26,0.0019897,0.0019897
 E. Makolli,AaB,Hillerød vs AaB,2025-07-26,0.0,-0.0019897
 A. Håpnes,AaB,Hillerød vs AaB,2025-07-26,0.0004438,0.0004438
@@ -17504,6 +17658,7 @@ A. Skipper,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0007644,-0.0037945
 A. Troelsen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0011889,0.0011889
 A. Skipper,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0083183,0.0071294
 L. From,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0,-0.0083183
+J. Lucena,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 J. Lucena,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0042373,0.0042373
 A. Skipper,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0043835,0.0001462
 A. Skipper,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0083183,0.0039348
@@ -17512,6 +17667,9 @@ P. Bjur,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 P. Bjur,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 M. Maden,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0042926,0.0042926
 M. Maden,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0011667,-0.0031259
+L. Vigen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+L. Vigen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+L. Vigen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 L. Vigen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0039256,0.0039256
 A. Lausen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0,-0.0039256
 J. Buus,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0079142,0.004267
@@ -17569,6 +17727,7 @@ A. Skipper,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0003481,0.0003481
 L. Vigen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0004614,0.0001133
 M. Maden,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0,0.0
 M. Maden,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0,0.0
+A. Lausen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Lausen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0034611,0.0028577
 J. Lucena,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.001296,0.0
 J. Lucena,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0042373,0.0042373
@@ -17619,6 +17778,7 @@ L. From,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 M. Maden,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Troelsen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 J. Lucena,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.012977,0.012977
+A. Lausen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Lausen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0011198,-0.0042926
 A. Troelsen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0042926,0.0
 A. Troelsen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0002681,0.0002681
@@ -17672,8 +17832,9 @@ A. Lausen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0012432,0.0012432
 L. Vigen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0031161,0.0018729
 A. Troelsen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Troelsen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
-A. Skipper,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0019736,0.0019736
+J. Buus,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0019736,0.0019736
 A. Skipper,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0009698,0.0009698
+NaN,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Skipper,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0004061,-0.0005637
 J. Buus,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0005223,0.0001162
 A. Lausen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0013526,0.0008303
@@ -17687,8 +17848,9 @@ S. Eng Strand,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 S. Eng Strand,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Skipper,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Skipper,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
-J. Buus,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+S. Eng Strand,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 S. Eng Strand,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0103715,-0.0
+J. Buus,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 S. Eng Strand,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 S. Eng Strand,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 S. Eng Strand,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0009369,-0.001429
@@ -17765,7 +17927,6 @@ K. Kristensen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.001293,0.0009797
 M. Maden,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0,-0.001293
 K. Kristensen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0006863,0.0004084
 M. Maden,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0005744,-0.0001119
-NaN,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 L. Vigen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0002681,-0.0003063
 K. Kristensen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0004029,0.0001348
 A. Skipper,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.000566,0.0001631
@@ -17789,6 +17950,7 @@ NaN,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 NaN,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Skipper,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 P. Bjur,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0,0.0
+J. Buus,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 J. Buus,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0008732,-0.0004642
 J. Buus,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 J. Buus,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
@@ -17814,16 +17976,16 @@ A. Troelsen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0011185,0.0001415
 A. Skipper,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0002681,-0.0008504
 K. Kristensen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0008526,0.0005845
 L. Vigen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0002681,-0.0005845
-NaN,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 K. Kristensen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.008744,0.0084759
+NaN,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 L. From,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0719339,0.0631899
 J. Buus,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0052028,-0.0667311
 A. Lausen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0085015,0.0032987
 P. Bjur,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0432646,-0.0085015
 A. Skipper,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Skipper,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0006896,0.0006896
+L. Vigen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 M. Maden,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0030588,0.0030588
-NaN,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 L. From,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0043835,0.0013247
 L. From,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0781778,0.0737943
 S. Eng Strand,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0059829,-0.0721949
@@ -17889,6 +18051,7 @@ A. Lausen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0079567,0.0069453
 L. Vigen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.001296,0.0
 L. Vigen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 J. Buus,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.001297,-0.0012452
+A. Skipper,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Skipper,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0024951,0.0024951
 L. Vigen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0042926,0.0017975
 L. Vigen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0013599,-0.0029327
@@ -17915,8 +18078,8 @@ A. Troelsen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0083183,-0.000118
 L. From,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0194721,0.0111538
 M. Maden,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 M. Maden,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
-P. Bjur,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
-P. Bjur,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+A. Troelsen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+L. Vigen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 J. Buus,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0009915,0.0009915
 J. Buus,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0003856,-0.0006059
 K. Kristensen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0004934,0.0001078
@@ -17926,17 +18089,19 @@ J. Buus,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0017799,-0.0005772
 J. Buus,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0041292,0.0041292
 J. Buus,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0042754,0.0001462
 J. Buus,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0,-0.0042754
+A. Lausen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+J. Buus,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 J. Buus,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 L. Vigen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0446699,0.0446699
 J. Lucena,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0125767,0.0
 J. Lucena,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0237064,0.0237064
 J. Lucena,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 NaN,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
-NaN,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 M. Maden,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 J. Ankersen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 J. Lucena,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 T. Freriks,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+NaN,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 L. Vigen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0043835,0.0043835
 L. Vigen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0040481,-0.0003354
 S. Eng Strand,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.00385,-0.0001981
@@ -17973,6 +18138,7 @@ L. From,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 L. Vigen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 L. Vigen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0004642,-0.0
 T. Freriks,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+T. Freriks,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 J. Ankersen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0003481,-0.0
 K. Kristensen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 K. Kristensen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
@@ -17994,6 +18160,7 @@ P. Bjur,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0050005,-0.0083183
 P. Bjur,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 P. Bjur,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 L. From,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+S. Eng Strand,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 T. Freriks,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0043835,0.0043835
 T. Freriks,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0190955,0.014712
 S. Eng Strand,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0064258,-0.0126697
@@ -18001,6 +18168,7 @@ S. Eng Strand,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0034264,-0.0029994
 L. From,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.006988,0.0035616
 A. Lausen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0079567,0.0009687
 J. Buus,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0080984,0.0001417
+P. Bjur,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 P. Bjur,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Lausen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0046585,-0.0108626
 A. Lausen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
@@ -18012,14 +18180,17 @@ S. Eng Strand,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 K. Kristensen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0012241,-0.0002598
 A. Troelsen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 L. Vigen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+L. Vigen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Lausen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 L. Vigen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 L. Vigen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+J. Ankersen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 J. Ankersen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 J. Buus,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 J. Buus,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 J. Ankersen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.01035,-0.0
 J. Ankersen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+S. Eng Strand,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 S. Eng Strand,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Lausen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Skipper,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
@@ -18037,7 +18208,7 @@ A. Skipper,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0696565,0.0183694
 A. Troelsen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Troelsen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Lausen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
-A. Lausen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+L. Vigen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Lausen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 K. Kristensen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 K. Kristensen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
@@ -18051,6 +18222,8 @@ L. From,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 L. From,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 P. Bjur,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 M. Hansen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+J. Buus,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+J. Buus,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Troelsen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Skipper,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Troelsen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0004545,-0.0002879
@@ -18075,6 +18248,8 @@ J. Buus,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0007453,0.0003332
 A. Skipper,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0007209,0.0007209
 J. Buus,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0008074,8.65e-05
 T. Freriks,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0,-0.0008074
+T. Freriks,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+T. Freriks,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 T. Freriks,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.003016,0.003016
 T. Freriks,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 T. Freriks,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
@@ -18088,6 +18263,9 @@ J. Ankersen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0040481,0.0003204
 A. Lausen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.003136,-0.0009121
 T. Freriks,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 J. Ankersen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+A. Lausen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+T. Freriks,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+J. Ankersen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Skipper,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0008037,-0.0023323
 A. Troelsen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0038599,0.0030562
 A. Lausen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0004923,-0.0033676
@@ -18096,6 +18274,7 @@ K. Kristensen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0003397,7.16e-05
 A. Skipper,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0003922,5.25e-05
 J. Buus,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0002772,-0.000115
 A. Skipper,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0009282,-0.0002772
+A. Lausen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 J. Ankersen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0002708,-0.0006574
 J. Buus,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0009158,0.000645
 J. Buus,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0010527,-0.0009158
@@ -18125,6 +18304,8 @@ J. Ankersen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0206228,0.0121213
 L. From,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0487828,0.02816
 L. From,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.01355,0.0
 L. From,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+S. Eng Strand,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+L. Vigen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 L. Vigen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0040481,0.0040481
 M. Hansen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0043835,0.0003354
 M. Hansen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0008328,-0.0035507
@@ -18138,6 +18319,7 @@ A. Troelsen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0003611,0.0003611
 S. Eng Strand,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0011472,0.0
 S. Eng Strand,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 L. Vigen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+L. Vigen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 K. Kristensen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 K. Kristensen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 K. Kristensen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0087006,0.0080258
@@ -18148,9 +18330,11 @@ L. Vigen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0003426,0.0
 M. Hansen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Troelsen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 S. Eng Strand,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+A. Troelsen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 S. Eng Strand,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 L. From,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 T. Stagaard,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+NaN,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 K. Kristensen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0103975,0.0096551
 J. Ankersen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0,-0.0103975
 J. Ankersen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
@@ -18175,6 +18359,7 @@ M. Hansen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0,0.0
 A. Skipper,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Troelsen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Troelsen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+A. Troelsen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 T. Stagaard,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 T. Freriks,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0004249,0.0004249
 A. Lausen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0,0.0
@@ -18188,8 +18373,10 @@ T. Stagaard,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 T. Stagaard,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Skipper,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 K. Kristensen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0011561,-0.0003719
+J. Ankersen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 L. Vigen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 L. Vigen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0012158,-0.0
+A. Skipper,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Skipper,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0004038,0.0004038
 S. Eng Strand,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 T. Stagaard,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0014471,-0.0017848
@@ -18201,6 +18388,7 @@ J. Buus,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 J. Buus,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0029741,0.0021724
 A. Skipper,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Skipper,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+A. Lausen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 M. Hansen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 NaN,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 K. Kristensen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
@@ -18213,6 +18401,8 @@ M. Hansen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 M. Hansen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0349408,-0.0119623
 A. Lausen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.001297,0.0
 M. Hansen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0009015,0.0009015
+L. Vigen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+L. Vigen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Lausen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0,-0.0
 S. Eng Strand,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 S. Eng Strand,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0112438,0.0112438
@@ -18255,10 +18445,14 @@ A. Lausen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 J. Buus,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.008744,0.0078996
 J. Ankersen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0014717,0.0
 T. Stagaard,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0040499,0.0040499
+A. Skipper,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Skipper,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,0.0013025,-0.0040499
+K. Kristensen,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 NaN,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 NaN,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 NaN,Esbjerg,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+NaN,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+NaN,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 M. Egho,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0002746,0.0002746
 D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0011159,-0.0002746
 M. Egho,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
@@ -18283,15 +18477,30 @@ F. Krogstad,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Ravn,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.000343,-5.33e-05
 D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0011948,-0.000343
 F. Krogstad,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.001297,0.0
+F. Krogstad,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+F. Krogstad,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+J. Adjei-Broni,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0005898,0.0005898
 M. Spelmann,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0020533,0.0014635
 M. Spelmann,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0002741,-0.0017792
 N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0003089,3.48e-05
 D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0003463,3.74e-05
 N. Jungvig,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0012849,0.0009386
+A. Iljazovski,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+A. Smed,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+M. Egho,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 NaN,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+A. Iljazovski,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+A. Smed,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+F. Krogstad,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+A. Smed,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+N. Jungvig,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+F. Krogstad,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+A. Iljazovski,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 NaN,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Smed,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0401402,0.0388553
+A. Smed,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Iljazovski,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0124069,0.0124069
 D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0041292,0.0041292
 F. Krogstad,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0,-0.0041292
@@ -18325,6 +18534,7 @@ F. Krogstad,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 F. Krogstad,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0012554,-0.0
 N. Jungvig,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 N. Jungvig,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+M. Spelmann,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Smed,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.005432,0.005432
 A. Smed,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 N. Jungvig,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0011442,-0.0
@@ -18378,7 +18588,7 @@ D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0041292,0.0041292
 N. Jungvig,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0003397,-0.0004027
 A. Ravn,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0004642,-0.0003397
-N. Jungvig,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.000902,-0.0
+A. Iljazovski,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.000902,-0.0
 A. Ravn,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Ravn,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Ravn,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
@@ -18391,13 +18601,15 @@ F. Krogstad,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0002779,-0.0005703
 D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0004711,0.0001932
 F. Krogstad,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0002681,-0.000203
 A. Ravn,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0004709,-0.0002681
+N. Jungvig,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Ravn,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0003417,-0.0004007
 A. Ravn,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0003425,8e-07
 D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.000479,0.0001365
+J. Adjei-Broni,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 M. Egho,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0005022,2.32e-05
 J. Adjei-Broni,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
-A. Smed,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0006915,-0.0008258
+M. Spelmann,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0006915,-0.0008258
 A. Iljazovski,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.000429,-0.0002625
 D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0015423,0.0011133
 F. Krogstad,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0039256,0.0023833
@@ -18510,6 +18722,7 @@ A. Smed,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0025266,-0.008744
 A. Smed,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 N. Jungvig,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 F. Krogstad,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+M. Spelmann,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Ravn,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0104052,0.0104052
 A. Ravn,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0003417,-0.0100635
@@ -18530,6 +18743,7 @@ N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0004279,0.0004279
 N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 F. Krogstad,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.01035,0.01035
 D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+M. Egho,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 N. Jungvig,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0004545,-0.0002879
 A. Ravn,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0003425,-0.000112
@@ -18580,7 +18794,7 @@ A. Ravn,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0003397,7.16e-05
 D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0004572,0.0001175
 M. Spelmann,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0013685,0.0009113
 N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0014664,-0.0013685
-J. Adjei-Broni,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+F. Krogstad,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 M. Spelmann,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.000271,0.000271
 A. Ravn,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0009158,0.0006448
 A. Ravn,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.000339,-0.0005768
@@ -18594,21 +18808,24 @@ N. Jungvig,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0004827,-9.6e-06
 D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0020783,0.0015956
 N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0080984,0.0060201
 J. Singh,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+J. Singh,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0271734,0.0193674
 N. Jungvig,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 N. Jungvig,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0009158,0.0009158
 N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0002769,-0.0006389
+A. Ravn,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Ravn,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0004464,0.0001695
 J. Singh,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0003424,-0.000104
 N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0002681,-7.43e-05
 A. Ravn,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0008607,0.0
 A. Ravn,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
-D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Ravn,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Iljazovski,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 F. Krogstad,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Smed,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0003491,0.0
+M. Spelmann,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 J. Singh,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0011099,0.0007608
 J. Singh,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0076759,0.006566
 A. Smed,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0239885,0.0163126
@@ -18617,9 +18834,8 @@ M. Egho,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 M. Egho,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 M. Egho,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 F. Krogstad,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
-M. Spelmann,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
-M. Spelmann,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0004632,0.0004632
-NaN,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+F. Krogstad,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+F. Krogstad,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0004632,0.0004632
 NaN,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Iljazovski,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 NaN,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
@@ -18635,6 +18851,7 @@ J. Adjei-Broni,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0173559,-0.0078102
 N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0237523,0.0063964
 J. Singh,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0031635,-0.0237523
 J. Singh,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0042209,-0.0031635
+D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0013391,0.0013391
 F. Krogstad,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0012043,-0.0001348
 M. Spelmann,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0013436,0.0001393
@@ -18649,11 +18866,11 @@ J. Singh,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 J. Singh,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 N. Jungvig,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 M. Spelmann,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0014664,-0.0012463
+A. Iljazovski,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Iljazovski,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0042373,0.0042373
 J. Adjei-Broni,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
-A. Iljazovski,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 J. Adjei-Broni,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
-N. Jungvig,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Ravn,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0009341,0.0
 J. Adjei-Broni,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 M. Egho,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0042373,0.0042373
@@ -18691,8 +18908,10 @@ N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0011921,-0.0
 N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0030069,0.0030069
 N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0014149,-0.001592
+F. Krogstad,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 F. Krogstad,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0005427,-0.0008722
 J. Singh,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0014164,0.0008737
+M. Egho,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Iljazovski,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Smed,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0042754,0.0042754
 A. Smed,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
@@ -18711,6 +18930,7 @@ M. Spelmann,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0104563,0.0
 M. Spelmann,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 J. Adjei-Broni,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+F. Krogstad,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 M. Spelmann,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 M. Spelmann,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Iljazovski,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
@@ -18724,7 +18944,7 @@ A. Smed,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0007698,-6.09e-05
 A. Iljazovski,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0004335,-0.0003363
 N. Jungvig,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0006114,0.0001779
 D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0009246,0.0003132
-N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0004702,-0.0004544
+M. Spelmann,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0004702,-0.0004544
 N. Jungvig,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0002681,-0.0002021
 A. Ravn,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0003463,7.82e-05
 N. Jungvig,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0014664,-0.0003463
@@ -18782,11 +19002,13 @@ A. Iljazovski,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.001296,0.001296
 A. Iljazovski,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0016626,0.0007337
 E. Aby,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+O. Kjærgaard,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Iljazovski,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0652127,-0.0
 N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0073239,-0.0
 N. Jungvig,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
-F. Krogstad,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 N. Jungvig,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+F. Krogstad,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+A. Smed,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Iljazovski,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Iljazovski,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.000444,-0.0002984
@@ -18807,6 +19029,8 @@ F. Krogstad,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0002708,-0.0003263
 N. Jungvig,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0003397,6.89e-05
 D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0003425,2.8e-06
 N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0002746,-6.79e-05
+D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 O. Kjærgaard,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0039832,0.0037086
 E. Aby,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0037118,-0.0043866
 D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0258083,-0.0037118
@@ -18818,9 +19042,11 @@ A. Smed,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0083183,0.0040352
 M. Egho,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0042373,-0.004081
 A. Smed,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 O. Kjærgaard,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0029913,-0.0077799
+M. Egho,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0030952,0.0023332
 E. Aby,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+M. Knudsen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 M. Knudsen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0040313,0.0040313
 D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0079567,0.0039254
 N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0251661,0.0172094
@@ -18846,8 +19072,8 @@ F. Krogstad,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0005807,0.0001163
 D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0042373,0.0036566
 E. Aby,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.001296,-0.0029413
 E. Aby,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
-M. Egho,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0058436,-0.0074734
 D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.008744,0.0029004
+M. Egho,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0058436,-0.0074734
 E. Aby,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0356307,0.0268867
 O. Kjærgaard,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0150828,-0.0205479
 N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0189463,0.0038635
@@ -18859,6 +19085,7 @@ N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0075754,-0.0217206
 N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 O. Kjærgaard,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.1069796,0.0776836
 F. Krogstad,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+M. Egho,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 F. Krogstad,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0005023,-0.0009763
 D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0007067,0.0002044
@@ -18875,7 +19102,9 @@ M. Knudsen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0133681,0.0051474
 A. Smed,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0143141,0.000946
 N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.00356,-0.0107541
 M. Knudsen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0103975,0.0068375
+O. Kjærgaard,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 O. Kjærgaard,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.1451866,0.1347891
+E. Aby,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 M. Knudsen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 M. Knudsen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 M. Knudsen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
@@ -18891,6 +19120,7 @@ O. Kjærgaard,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0011922,-0.0
 N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0042373,0.0042373
 E. Aby,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0,0.0
 D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0042373,0.0042373
+D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.001296,-0.0029413
 D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 M. Knudsen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0005462,-0.0
@@ -18903,6 +19133,7 @@ F. Høgh,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 F. Krogstad,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Johansen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0,-0.0017897
+E. Aby,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Iljazovski,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0020736,0.0020736
 A. Iljazovski,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Iljazovski,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
@@ -18919,7 +19150,7 @@ N. Jungvig,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.01035,0.01035
 A. Iljazovski,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0003452,-0.0003972
 A. Ravn,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0009445,-0.0003452
-A. Iljazovski,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+O. Kjærgaard,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Ravn,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.001319,-0.0005985
 M. Knudsen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0040481,0.0040481
@@ -18946,6 +19177,7 @@ A. Iljazovski,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0229534,0.0122654
 O. Kjærgaard,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0077622,-0.0229534
 A. Iljazovski,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Iljazovski,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0031893,0.0031893
+M. Knudsen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 F. Høgh,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0280133,0.024824
 O. Kjærgaard,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0495758,0.0215625
 F. Høgh,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0039304,-0.0456454
@@ -18953,7 +19185,9 @@ O. Kjærgaard,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.005427,0.0
 F. Høgh,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0008419,-0.0
 D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
-A. Iljazovski,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.000439,-0.0
+O. Kjærgaard,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+O. Kjærgaard,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+O. Kjærgaard,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.000439,-0.0
 A. Johansen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.01035,0.01035
 A. Johansen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0011941,0.0
 A. Johansen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0005963,-0.0005978
@@ -18962,6 +19196,7 @@ N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0258083,0.0210195
 F. Høgh,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 F. Høgh,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0132676,-0.0258083
 E. Aby,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0028693,0.0028693
+A. Johansen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 E. Aby,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0039453,0.0029985
 D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0018616,-0.0039453
@@ -18976,8 +19211,10 @@ N. Jungvig,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0657626,-0.0093659
 A. Johansen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0142467,-0.0515159
 N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0650712,0.0650712
 O. Kjærgaard,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+O. Kjærgaard,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 O. Kjærgaard,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0,-0.0650712
 N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0078055,-0.0
+A. Smed,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Smed,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.01035,0.01035
 N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
@@ -18994,6 +19231,7 @@ N. Jungvig,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0323258,-0.0040715
 D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.001548,0.0
 E. Aby,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
+O. Kjærgaard,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 O. Kjærgaard,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0014868,-0.0
 M. Knudsen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0011246,-0.0
@@ -19015,8 +19253,10 @@ A. Smed,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Iljazovski,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Ravn,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0012845,-0.0004852
+A. Smed,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 E. Aby,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.001296,0.0
 E. Aby,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0042373,0.0042373
+E. Aby,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 E. Aby,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0008328,-0.0034045
 D. Stenderup,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0013055,0.0004727
 N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0,-0.0013055
@@ -19050,6 +19290,7 @@ N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 M. Knudsen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 M. Knudsen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0005793,0.0005793
+A. Iljazovski,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Iljazovski,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0079561,0.0
 E. Aby,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0078787,-0.0079561
 N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
@@ -19062,6 +19303,7 @@ A. Smed,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 A. Smed,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0104052,0.0104052
 N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0010826,-0.0104052
+N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 N. Clausen,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,0.0018132,0.0
 NaN,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
 NaN,Hvidovre,Esbjerg vs Hvidovre,2025-07-26,NaN,NaN
@@ -19094,8 +19336,8 @@ M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0003822,0.0001141
 F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0010387,-0.0003822
 F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0014164,0.0
 L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
-O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0020156,0.0020156
 O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0107574,0.0107574
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0020156,0.0020156
 O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,0.0042926,0.0042926
 V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,0.0041464,-0.0001462
@@ -19178,6 +19420,7 @@ M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0042373,0.0001892
 M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0042373,0.0
 M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.001296,-0.0029413
 M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0042373,0.0042373
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.001296,0.0
 M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0040499,0.0026266
@@ -19190,12 +19433,12 @@ O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0042373,0.0042373
 M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.001393,0.0
 F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
-T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0004537,0.0004537
-F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.010421,0.010421
-F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0003518,-0.0100692
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.010421,0.010421
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0003518,-0.0100692
 L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0003262,-2.56e-05
 M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0479599,0.0476337
 O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0083183,-0.0396416
@@ -19322,6 +19565,7 @@ O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.008386,0.0071787
 S. Andreasen,Hobro,Hobro vs Middelfart,2025-07-27,0.0138207,0.0054347
 M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0029655,-0.0138207
 F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0077671,0.0077671
+M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,0.001296,0.0
 M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
@@ -19390,10 +19634,12 @@ T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0007982,-0.0032991
 E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0003314,-0.0004668
 M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0006807,0.0003493
 F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0011361,0.0
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,0.0107076,0.0107076
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.000618,-0.0100896
 S. Andreasen,Hobro,Hobro vs Middelfart,2025-07-27,0.0025143,0.0018963
 S. Andreasen,Hobro,Hobro vs Middelfart,2025-07-27,0.0011484,-0.0025143
@@ -19437,6 +19683,7 @@ O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0070255,-0.008386
 T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0042373,0.0042373
 E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0043835,0.0001462
 E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0008328,-0.0035507
+M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0013483,0.0005155
 F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0258083,0.02446
 O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.1351231,-0.0258083
@@ -19584,7 +19831,7 @@ M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0040481,0.0
 F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0,-0.0040481
 F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0040594,0.003106
-M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0036636,-0.0003958
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0036636,-0.0003958
 E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0008412,-0.0028224
 M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0013002,0.000459
 F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0038599,0.0025597
@@ -19635,7 +19882,7 @@ F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0007065,0.0
 M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,0.0025593,0.0018528
 M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,0.0005929,-0.0019664
 O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0006632,7.03e-05
-M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0015187,0.0
+V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,0.0015187,0.0
 M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0003582,-0.0004642
@@ -19653,6 +19900,7 @@ J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 J. Dakir,Hobro,Hobro vs Middelfart,2025-07-27,0.0003397,-0.0002722
 M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0009153,0.0
 S. Andreasen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+S. Andreasen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0013653,0.0013653
 M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
@@ -19660,9 +19908,9 @@ S. Andreasen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0004497,-0.000949
 M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0002843,-0.0001654
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0005958,-0.0029366
 L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0035324,0.0032481
 L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0005076,-0.0030248
-F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0005958,-0.0029366
 L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0013448,0.000749
 M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0013464,1.6e-06
 T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0083183,0.0069719
@@ -19682,7 +19930,8 @@ M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0040715,-7.49e-05
 M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0011254,-0.0029461
 E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0040715,0.0040715
-O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0040481,-2.34e-05
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0040481,-2.34e-05
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.00385,-0.0001981
 E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.000855,-0.002995
 M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.001229,0.000374
@@ -19692,12 +19941,14 @@ L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0083183,0.0045238
 V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,0.001296,-0.0070223
 M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0211373,0.0211373
 M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0153444,-0.0057929
+M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0409658,0.0256214
 O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0003797,0.0003797
 T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0011941,0.0008144
 T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0003856,-0.0008085
+F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0013912,0.0010056
 M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0003282,-0.001063
 M. Jacobsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0005958,0.0002676
@@ -19725,6 +19976,7 @@ M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,0.0106987,0.0106987
 V. Rasmussen,Hobro,Hobro vs Middelfart,2025-07-27,0.0014681,-0.0
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0006178,0.0006178
@@ -19762,6 +20014,7 @@ M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0004606,-0.0099957
 L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0006382,0.0001776
 O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0031888,0.0025506
 O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0004712,-0.0027176
+T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0021674,0.0016962
 M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,0.0041464,0.001979
 M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0550291,0.0508827
@@ -19821,6 +20074,7 @@ M. Bruhn,Hobro,Hobro vs Middelfart,2025-07-27,0.001297,-0.0012634
 O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0104052,0.0104052
 E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0013421,-0.0090631
 O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0002807,-0.0010614
@@ -19841,6 +20095,7 @@ M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0025143,0.0018724
 M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0002812,-0.0022331
 E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0008925,0.0006113
 M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0035275,0.002635
+NaN,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
 M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0008115,-0.002716
 E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0038599,0.0030484
 M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0040499,0.00019
@@ -19905,10 +20160,11 @@ F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0003688,9.74e-05
 L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0002736,-9.52e-05
 F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0010136,0.00074
 T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0011893,0.0001757
-L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.001297,0.001297
 O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0042373,0.0042373
 T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0008232,-0.0034141
-L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0040151,0.0031919
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0040151,0.0031919
+L. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.001297,0.001297
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.0,-0.0040151
 M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0258083,0.0217602
 T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,0.1079366,-0.0258083
@@ -19984,8 +20240,9 @@ M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 NaN,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0083183,0.0074517
 F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0028443,-0.0083183
-M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 Z. Hyltoft,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+Z. Hyltoft,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0042926,0.0042926
 F. Dietz,Hobro,Hobro vs Middelfart,2025-07-27,0.0031198,-0.0011728
 E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,0.0040973,0.0009775
@@ -20013,6 +20270,7 @@ Z. Hyltoft,Hobro,Hobro vs Middelfart,2025-07-27,0.0039817,-0.0043366
 M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0327374,0.0287557
 M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0102039,-0.0225335
 O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
+NaN,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
 M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 E. Søgaard,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 T. Hansen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
@@ -20027,6 +20285,7 @@ M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0042373,0.0042373
 M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0116391,0.0074018
 M. Boye,Hobro,Hobro vs Middelfart,2025-07-27,0.0,-0.0116391
 O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,0.0,-0.0
+O. Klitten,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0419868,0.0419868
 M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,0.0100192,-0.0319676
 M. Nielsen,Hobro,Hobro vs Middelfart,2025-07-27,0.0185947,0.0085755
@@ -20042,8 +20301,6 @@ M. Pedersen,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 NaN,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 NaN,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
 NaN,Hobro,Hobro vs Middelfart,2025-07-27,NaN,NaN
-NaN,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
-NaN,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
 J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0005125,0.0005125
 M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0014664,0.0
 J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
@@ -20074,8 +20331,8 @@ J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0005967,-0.0003017
 S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.000271,-0.0003257
 C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0009994,0.0
 J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0049183,0.0049183
-J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0245673,0.0245673
 J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0025413,-0.022026
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0245673,0.0245673
 J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0079567,0.0079567
 B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.0040481,-0.0039086
 J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012393,-0.0040481
@@ -20092,7 +20349,7 @@ J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0080984,0.000353
 B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.0054738,-0.0026246
 J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0008045,-0.0046693
 J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0011475,0.000343
-S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0039275,0.00278
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0039275,0.00278
 B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
 J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0031528,-0.0044332
 S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0040499,0.0008971
@@ -20232,6 +20489,7 @@ C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
 J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
 C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0011493,0.0
 J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
 B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,0.0,-0.0
 J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0041292,0.0041292
 C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
@@ -20326,13 +20584,15 @@ B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
 S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
 C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
 C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0005168,-0.0003152
-E. Andersen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0039508,0.0027351
 N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012157,0.0012157
 B. Zjajo,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+E. Andersen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0039508,0.0027351
 M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.01035,0.01035
 M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003584,0.0003584
 S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0009158,0.0005574
 S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012241,0.0
+E. Andersen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
 C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
 C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0104263,0.0
 B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
@@ -20522,6 +20782,7 @@ M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0002948,-0.003324
 S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0002681,-2.67e-05
 C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003362,6.81e-05
 J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.000813,0.0004768
+J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
 C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
 C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
 C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0105173,0.0
@@ -20587,7 +20848,7 @@ J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0010828,0.0
 N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
 C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.000354,-0.0003884
 S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003362,-1.78e-05
-M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0009001,-0.0003362
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0009001,-0.0003362
 J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
 M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0009527,-0.000611
 J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003829,0.0003829
@@ -20620,6 +20881,7 @@ N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0002904,-5.91e-05
 S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.000583,0.0002926
 J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012195,0.0006365
 B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.003968,0.0027485
+N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
 N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012114,-0.0027566
 B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
 J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0019448,0.0019448
@@ -20655,7 +20917,7 @@ J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003243,-3.39e-05
 J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0006618,0.0003375
 J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0020011,0.0013393
 B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0014681,-0.0020011
-J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.000418,0.000418
+J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.000418,0.000418
 J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0010033,0.0005853
 J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0009924,-1.09e-05
 M. Boesen,Middelfart,Hobro vs Middelfart,2025-07-27,0.001297,0.0
@@ -20673,6 +20935,7 @@ B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0,0.0
 N. Rasmussen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0004642,0.0
 S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
 S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
 C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
 J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
 J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
@@ -20735,7 +20998,7 @@ B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.003952,0.00296
 R. Kakeeto,Middelfart,Hobro vs Middelfart,2025-07-27,0.0041464,0.0001944
 B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0040132,-0.0001332
 J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0040481,3.49e-05
-B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0042831,0.000235
+R. Kakeeto,Middelfart,Hobro vs Middelfart,2025-07-27,0.0042831,0.000235
 M. Boesen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0079567,0.0036736
 S. Eg Pedersen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0251661,0.0172094
 J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.03632,0.0111539
@@ -20743,9 +21006,9 @@ J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
 J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0075128,-0.0217832
 R. Kakeeto,Middelfart,Hobro vs Middelfart,2025-07-27,0.0091366,0.0091366
 J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0063822,-0.0091366
-J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
-J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0034611,0.0034611
 J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0041292,0.0041292
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0034611,0.0034611
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
 M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
 C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,0.0009571,0.0002147
 M. Boesen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0040481,0.003091
@@ -20777,6 +21040,7 @@ S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012436,-0.0
 M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0008635,0.0008635
 M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003452,-0.0005183
 S. Eg Pedersen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003485,3.3e-06
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
 B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003991,5.06e-05
 R. Kakeeto,Middelfart,Hobro vs Middelfart,2025-07-27,0.0012964,0.0008973
 J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.001297,0.0
@@ -20812,6 +21076,7 @@ J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
 R. Kakeeto,Middelfart,Hobro vs Middelfart,2025-07-27,0.0006959,0.0006959
 J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0035823,0.0028864
 J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,0.0041087,0.0005264
+J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
 J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0002736,-0.0038351
 J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,0.0004675,0.0001939
 J. Vetter,Middelfart,Hobro vs Middelfart,2025-07-27,0.0003417,-0.0001258
@@ -20824,6 +21089,7 @@ M. Boesen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
 M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,0.0258083,0.0209063
 M. Boesen,Middelfart,Hobro vs Middelfart,2025-07-27,0.1349513,0.1349513
 S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0054766,0.0054766
+B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
 S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,0.0083183,0.0083183
 B. Bytyqi,Middelfart,Hobro vs Middelfart,2025-07-27,0.0074693,-0.000849
 J. Wielzen,Middelfart,Hobro vs Middelfart,2025-07-27,0.0076601,0.0
@@ -20861,6 +21127,7 @@ R. Kakeeto,Middelfart,Hobro vs Middelfart,2025-07-27,0.0,-0.0104563
 J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
 J. Villemoes,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
 M. Boesen,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
+M. Greve,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
 C. Radza,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
 J. Linnet,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
 S. Reese,Middelfart,Hobro vs Middelfart,2025-07-27,NaN,NaN
