@@ -2558,7 +2558,7 @@ def Opposition_analysis():
     ).reset_index()
 
     def plot_avg_positions(df):
-        pitch = Pitch(pitch_type='secondspectrum', pitch_length=105, pitch_width=55,
+        pitch = Pitch(pitch_type='secondspectrum', pitch_length=105, pitch_width=60,
                     pitch_color='grass', line_color='white')
 
         for match in df['label'].unique():
@@ -2575,7 +2575,7 @@ def Opposition_analysis():
                 end = start + (rows * cols)
                 current_bins = time_bins[start:end]
 
-                fig, axes = plt.subplots(rows, cols, figsize=(16, 8))
+                fig, axes = plt.subplots(rows, cols, figsize=(10, 6))
                 axes = axes.flatten()
 
                 for i, time_bin in enumerate(current_bins):
