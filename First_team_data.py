@@ -1661,6 +1661,7 @@ def Dashboard():
         on_ball_sequences = on_ball_sequences[on_ball_sequences['poss_player_name'] != on_ball_sequences['receiver_name']]
 
         filtered_df = on_ball_sequences[on_ball_sequences['Low base'] == True]
+        st.dataframe(filtered_df)
         st.write(f'Low base situations with time: {len(filtered_df)}')
         # For each sequence, does any receiver have time_on_ball True? (use the original df, not filtered)
         seq_has_time_on = (
