@@ -2574,7 +2574,7 @@ def Opposition_analysis():
             time_bins = sorted(match_df['time_bin'].unique())
 
             # Layout: 2 rows × 4 columns per page
-            rows, cols = 2, 4
+            rows, cols = 2, 3
             total_bins = len(time_bins)
             pages = math.ceil(total_bins / (rows * cols))
 
