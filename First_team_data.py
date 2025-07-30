@@ -2600,15 +2600,16 @@ def Opposition_analysis():
                     )
 
                     for _, row in subset.iterrows():
-                        ax.text(
-                            row['x'],
-                            row['y'],
-                            row['player_name'],
-                            fontsize=8,
+                        pitch.annotate(
+                            text=row['player_name'],
+                            xy=(row['x'], row['y']),
+                            ax=ax,
                             color='white',
-                            rotation=0,           # <- Horizontal orientation
-                            ha='center',
+                            fontsize=7,
+                            ha='left',         # Place label just right of the dot
                             va='center',
+                            xytext=(3, 0),     # Offset label 3 points to the right
+                            textcoords='offset points',
                             zorder=4
                         )
 
