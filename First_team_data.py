@@ -15,6 +15,7 @@ from matplotlib.path import Path
 import os
 import requests
 import glob
+import math
 
 
 st.set_page_config(layout='wide')
@@ -2556,26 +2557,47 @@ def Opposition_analysis():
         y=('y', 'mean')
     ).reset_index()
 
-
     def plot_avg_positions(df):
-        pitch = Pitch(pitch_type='secondspectrum', pitch_length=105, pitch_width=60,
+        pitch = Pitch(pitch_type='secondspectrum', pitch_length=105, pitch_width=55,
                     pitch_color='grass', line_color='white')
 
         for match in df['label'].unique():
             match_df = df[df['label'] == match]
-            for time_bin in sorted(match_df['time_bin'].unique()):
-                subset = match_df[match_df['time_bin'] == time_bin]
+            time_bins = sorted(match_df['time_bin'].unique())
 
-                fig, ax = pitch.draw(figsize=(10, 7))
+            # Calculate grid size: 2 rows, 4 columns
+            rows, cols = 2, 4
+            total_bins = len(time_bins)
+            pages = math.ceil(total_bins / (rows * cols))
 
-                pitch.scatter(subset['x'], subset['y'], ax=ax, color='blue', s=120, zorder=3)
-                for _, row in subset.iterrows():
-                    ax.text(row['x'], row['y'], row['player_name'], fontsize=8,
-                            color='white', ha='center', va='center', zorder=4)
+            for page in range(pages):
+                start = page * rows * cols
+                end = start + (rows * cols)
+                current_bins = time_bins[start:end]
 
-                plt.title(f"{match} – Avg Positions (Minutes {time_bin}-{time_bin+15})", fontsize=14)
-                plt.tight_layout()
+                fig, axes = plt.subplots(rows, cols, figsize=(16, 8))
+                axes = axes.flatten()
+
+                for i, time_bin in enumerate(current_bins):
+                    ax = axes[i]
+                    pitch.draw(ax=ax)
+                    subset = match_df[match_df['time_bin'] == time_bin]
+
+                    pitch.scatter(subset['x'], subset['y'], ax=ax, color='blue', s=80, zorder=3)
+                    for _, row in subset.iterrows():
+                        ax.text(row['x'], row['y'], row['player_name'], fontsize=6, color='white',
+                                ha='center', va='center', zorder=4)
+
+                    ax.set_title(f"{time_bin}-{time_bin+15} min", fontsize=10)
+
+                # Hide unused axes
+                for j in range(i + 1, len(axes)):
+                    axes[j].axis('off')
+
+                fig.suptitle(f"{match} – Avg Positions (Low Base, Possessor in Own Third)", fontsize=14)
                 st.pyplot(fig)
+
+
 
     plot_avg_positions(avg_positions)
 
