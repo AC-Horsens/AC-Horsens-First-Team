@@ -2574,7 +2574,7 @@ def Opposition_analysis():
             time_bins = sorted(match_df['time_bin'].unique())
 
             # Layout: 2 rows × 4 columns per page
-            rows, cols = 2, 4
+            rows, cols = 2, 3
             total_bins = len(time_bins)
             pages = math.ceil(total_bins / (rows * cols))
 
@@ -2583,7 +2583,7 @@ def Opposition_analysis():
                 end = start + (rows * cols)
                 current_bins = time_bins[start:end]
 
-                fig, axes = plt.subplots(rows, cols, figsize=(16, 9), constrained_layout=True)
+                fig, axes = plt.subplots(rows, cols, figsize=(20, 11), constrained_layout=True)
                 axes = axes.flatten()
 
                 for i, time_bin in enumerate(current_bins):
