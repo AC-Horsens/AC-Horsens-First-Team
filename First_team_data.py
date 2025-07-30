@@ -1216,6 +1216,7 @@ def Dashboard():
 
     df_possession = df_possession[df_possession['match_state'].isin(selected_states)]
     df_transitions = df_transitions[df_transitions['match_state'].isin(selected_states)]
+    df_set_pieces = df_set_pieces[df_set_pieces['match_state'].isin(selected_states)]
 
 
     Pass_per_possession = df_possession[df_possession['typeId'] == 1].groupby(['possessionId', 'label', 'team_name']).size().reset_index(name='Passes per possession')
@@ -1658,6 +1659,8 @@ def Dashboard():
         )
         on_ball_sequences = on_ball_sequences.drop(['date', 'timemin_last', 'timesec_last'], axis=1)
         on_ball_sequences['match_state'] = on_ball_sequences['match_state'].fillna('draw')
+        on_ball_sequences = on_ball_sequences[on_ball_sequences['match_state'].isin(selected_states)]
+
         on_ball_sequences = on_ball_sequences[on_ball_sequences['poss_player_name'] != on_ball_sequences['receiver_name']]
 
         filtered_df = on_ball_sequences[on_ball_sequences['Low base'] == True]
