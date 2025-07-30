@@ -2517,11 +2517,22 @@ def Opposition_analysis():
     else:
         st.write('No XML files found in this directory.')
     df_opponnent_on_ball = load_opponnent_on_ball_sequences(selected_team)
-    st.dataframe(df_opponnent_on_ball)
-    df_opponnent_on_ball['time_bin'] = (df_opponnent_on_ball['timemin_first'] // 15) * 15
+
+    df_opponnent_on_ball = load_opponnent_on_ball_sequences(selected_team)
+
+    # Filter: Low base and possessor in own third depending on attacking direction
+    filtered = df_opponnent_on_ball[
+        (df_opponnent_on_ball['Low base'] == True) &
+        (
+            ((df_opponnent_on_ball['att_dir'] == True) & (df_opponnent_on_ball['possessor_x'] < -22)) |
+            ((df_opponnent_on_ball['att_dir'] == False) & (df_opponnent_on_ball['possessor_x'] > 22))
+        )
+    ].copy()
+
+    filtered['time_bin'] = (filtered['timemin_first'] // 15) * 15
 
     # Receiver rows
-    receivers = df_opponnent_on_ball[['label', 'time_bin', 'receiver_name', 'receiver_x', 'receiver_y']].copy()
+    receivers = filtered[['label', 'time_bin', 'receiver_name', 'receiver_x', 'receiver_y']].copy()
     receivers = receivers.rename(columns={
         'receiver_name': 'player_name',
         'receiver_x': 'x',
@@ -2529,7 +2540,7 @@ def Opposition_analysis():
     })
 
     # Possessor rows
-    possessors = df_opponnent_on_ball[['label', 'time_bin', 'poss_player_name', 'possessor_x', 'possessor_y']].copy()
+    possessors = filtered[['label', 'time_bin', 'poss_player_name', 'possessor_x', 'possessor_y']].copy()
     possessors = possessors.rename(columns={
         'poss_player_name': 'player_name',
         'possessor_x': 'x',
@@ -2538,10 +2549,13 @@ def Opposition_analysis():
 
     # Combine
     all_players = pd.concat([receivers, possessors], ignore_index=True)
+
+    # Average positions
     avg_positions = all_players.groupby(['label', 'time_bin', 'player_name']).agg(
         x=('x', 'mean'),
         y=('y', 'mean')
     ).reset_index()
+
 
     def plot_avg_positions(df):
         pitch = Pitch(pitch_type='secondspectrum', pitch_length=105, pitch_width=55,
