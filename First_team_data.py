@@ -1448,6 +1448,7 @@ def Dashboard():
         st.dataframe(assistzone_summary, use_container_width=True, hide_index=True)
 
         tactical_concepts = ['All', 'High base', 'Width', 'Pocket']
+        selected_concept = st.selectbox("Choose tactical concept to analyze:", tactical_concepts)
 
 
         st.subheader(f'Analysis for: {selected_concept}')
