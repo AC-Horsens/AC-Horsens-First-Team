@@ -2518,7 +2518,54 @@ def Opposition_analysis():
         st.write('No XML files found in this directory.')
     df_opponnent_on_ball = load_opponnent_on_ball_sequences(selected_team)
     st.dataframe(df_opponnent_on_ball)
-    # Target ranks
+    df_opponnent_on_ball['time_bin'] = (df_opponnent_on_ball['timemin_first'] // 15) * 15
+
+    # Receiver rows
+    receivers = df_opponnent_on_ball[['label', 'time_bin', 'receiver_name', 'receiver_x', 'receiver_y']].copy()
+    receivers = receivers.rename(columns={
+        'receiver_name': 'player_name',
+        'receiver_x': 'x',
+        'receiver_y': 'y'
+    })
+
+    # Possessor rows
+    possessors = df_opponnent_on_ball[['label', 'time_bin', 'poss_player_name', 'possessor_x', 'possessor_y']].copy()
+    possessors = possessors.rename(columns={
+        'poss_player_name': 'player_name',
+        'possessor_x': 'x',
+        'possessor_y': 'y'
+    })
+
+    # Combine
+    all_players = pd.concat([receivers, possessors], ignore_index=True)
+    avg_positions = all_players.groupby(['label', 'time_bin', 'player_name']).agg(
+        x=('x', 'mean'),
+        y=('y', 'mean')
+    ).reset_index()
+
+    def plot_avg_positions(df):
+        pitch = Pitch(pitch_type='secondspectrum', pitch_length=105, pitch_width=55,
+                    pitch_color='grass', line_color='white')
+
+        for match in df['label'].unique():
+            match_df = df[df['label'] == match]
+            for time_bin in sorted(match_df['time_bin'].unique()):
+                subset = match_df[match_df['time_bin'] == time_bin]
+
+                fig, ax = pitch.draw(figsize=(10, 7))
+
+                pitch.scatter(subset['x'], subset['y'], ax=ax, color='blue', s=120, zorder=3)
+                for _, row in subset.iterrows():
+                    ax.text(row['x'], row['y'], row['player_name'], fontsize=8,
+                            color='white', ha='center', va='center', zorder=4)
+
+                plt.title(f"{match} – Avg Positions (Minutes {time_bin}-{time_bin+15})", fontsize=14)
+                plt.tight_layout()
+                plt.show()
+
+    plot_avg_positions(avg_positions)
+
+
     target_ranks = [1,1.5, 2,2.5, 3,3.5, 4,4.5, 9,9.5, 10,10.5, 11,11.5, 12,12.5]
 
     # Filter the selected team's ranks and values
