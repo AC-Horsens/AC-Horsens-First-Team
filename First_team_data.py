@@ -2533,7 +2533,7 @@ def Opposition_analysis():
     filtered['time_bin'] = (filtered['timemin_first'] // 15) * 15
 
     # Receiver rows
-    receivers = filtered[['label', 'time_bin', 'receiver_name', 'receiver_x', 'receiver_y']].copy()
+    receivers = filtered[['label', 'time_bin', 'receiver_name', 'receiver_x', 'receiver_y','att_dir']].copy()
     receivers = receivers.rename(columns={
         'receiver_name': 'player_name',
         'receiver_x': 'x',
@@ -2541,7 +2541,7 @@ def Opposition_analysis():
     })
 
     # Possessor rows
-    possessors = filtered[['label', 'time_bin', 'poss_player_name', 'possessor_x', 'possessor_y']].copy()
+    possessors = filtered[['label', 'time_bin', 'poss_player_name', 'possessor_x', 'possessor_y','att_dir']].copy()
     possessors = possessors.rename(columns={
         'poss_player_name': 'player_name',
         'possessor_x': 'x',
@@ -2552,10 +2552,13 @@ def Opposition_analysis():
     all_players = pd.concat([receivers, possessors], ignore_index=True)
 
     # Average positions
-    avg_positions = all_players.groupby(['label', 'time_bin', 'player_name']).agg(
+    avg_positions = all_players.groupby(['label', 'time_bin', 'player_name','att_dir']).agg(
         x=('x', 'mean'),
         y=('y', 'mean')
     ).reset_index()
+    flipped = avg_positions['att_dir'] == False
+    avg_positions.loc[flipped, 'x'] = 105 - avg_positions.loc[flipped, 'x']
+    avg_positions.loc[flipped, 'y'] = 55 - avg_positions.loc[flipped, 'y']
 
     def plot_avg_positions(df):
         pitch = VerticalPitch(
