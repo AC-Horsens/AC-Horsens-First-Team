@@ -2557,8 +2557,8 @@ def Opposition_analysis():
         y=('y', 'mean')
     ).reset_index()
     flipped = avg_positions['att_dir'] == False
-    avg_positions.loc[flipped, 'x'] = 105 - avg_positions.loc[flipped, 'x']
-    avg_positions.loc[flipped, 'y'] = 55 - avg_positions.loc[flipped, 'y']
+    avg_positions.loc[flipped, 'x'] = (105/2) - avg_positions.loc[flipped, 'x']
+    avg_positions.loc[flipped, 'y'] = (60/2) - avg_positions.loc[flipped, 'y']
 
     def plot_avg_positions(df):
         pitch = VerticalPitch(
