@@ -1399,15 +1399,18 @@ def Dashboard():
 
         unique_sequences = on_ball_sequences.drop_duplicates(subset=['label', 'sequence_id'])
 
-        # Step 2: Count how many times each concept appears
-        counts = {
-            'High base': unique_sequences['High base'].sum(),
-            'Width': unique_sequences['Width'].sum(),
-            'Pocket': unique_sequences['Pocket'].sum()
-        }
+        # Step 2: Count concept occurrences and deep runs
+        counts = []
+        for concept in ['High base', 'Width', 'Pocket']:
+            concept_df = unique_sequences[unique_sequences[concept] == True]
+            count_total = concept_df.shape[0]
+            deep_run_total = concept_df['deep_run'].sum()
+            counts.append({'Tactical Concept': concept, 'Count': count_total, 'Deep Runs': deep_run_total})
 
-        # Step 3: Format and display
-        tactical_counts = pd.DataFrame(list(counts.items()), columns=['Tactical Concept', 'Count'])
+        # Step 3: Format to DataFrame
+        tactical_counts = pd.DataFrame(counts)
+
+        # Step 4: Display
         st.dataframe(tactical_counts, use_container_width=True, hide_index=True)
 
         tactical_concepts = ['High base', 'Width', 'Pocket']
