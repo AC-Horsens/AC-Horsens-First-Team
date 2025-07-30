@@ -2558,7 +2558,7 @@ def Opposition_analysis():
 
 
     def plot_avg_positions(df):
-        pitch = Pitch(pitch_type='secondspectrum', pitch_length=105, pitch_width=55,
+        pitch = Pitch(pitch_type='secondspectrum', pitch_length=105, pitch_width=60,
                     pitch_color='grass', line_color='white')
 
         for match in df['label'].unique():
