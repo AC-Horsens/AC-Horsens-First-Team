@@ -1397,19 +1397,19 @@ def Dashboard():
 
         on_ball_sequences = on_ball_sequences[on_ball_sequences['poss_player_name'] != on_ball_sequences['receiver_name']]
 
-        filtered_df = on_ball_sequences[
-            (on_ball_sequences['High base'] == True) |
-            (on_ball_sequences['Width'] == True) |
-            (on_ball_sequences['Pocket'] == True)
-        ]
+        unique_sequences = on_ball_sequences.drop_duplicates(subset=['label', 'sequence_id'])
+
+        # Step 2: Count how many times each concept appears
         counts = {
-            'High base': on_ball_sequences['High base'].sum(),
-            'Width': on_ball_sequences['Width'].sum(),
-            'Pocket': on_ball_sequences['Pocket'].sum()
+            'High base': unique_sequences['High base'].sum(),
+            'Width': unique_sequences['Width'].sum(),
+            'Pocket': unique_sequences['Pocket'].sum()
         }
 
+        # Step 3: Format and display
         tactical_counts = pd.DataFrame(list(counts.items()), columns=['Tactical Concept', 'Count'])
         st.dataframe(tactical_counts)
+
 
         zone1_mask = (
             ((df_possession['x'] >= 66) & (df_possession['x'] <= 80) & (df_possession['y'] >= 40) & (df_possession['y'] <= 60)) |
