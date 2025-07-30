@@ -1535,8 +1535,8 @@ def Dashboard():
 
         zone1_mask = (
             ((df_possession['x'] >= 66) & (df_possession['x'] <= 80) & (df_possession['y'] >= 40) & (df_possession['y'] <= 60)) |
-            ((df_possession['x'] > 83) & (df_possession['y'] >= 63) & (df_possession['y'] <= 83)) |
-            ((df_possession['x'] > 83) & (df_possession['y'] >= 17) & (df_possession['y'] <= 37))
+            ((df_possession['x'] > 80) & (df_possession['y'] >= 63) & (df_possession['y'] <= 83)) |
+            ((df_possession['x'] > 80) & (df_possession['y'] >= 17) & (df_possession['y'] <= 37))
         )
 
         assist_zone_possessions = df_possession[zone1_mask]
