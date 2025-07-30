@@ -1408,7 +1408,7 @@ def Dashboard():
 
         # Step 3: Format and display
         tactical_counts = pd.DataFrame(list(counts.items()), columns=['Tactical Concept', 'Count'])
-        st.dataframe(tactical_counts)
+        st.dataframe(tactical_counts,hide_index=True)
 
 
         zone1_mask = (
