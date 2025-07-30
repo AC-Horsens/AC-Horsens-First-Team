@@ -2574,7 +2574,7 @@ def Opposition_analysis():
             time_bins = sorted(match_df['time_bin'].unique())
 
             # Layout: 2 rows × 4 columns per page
-            rows, cols = 2, 3
+            rows, cols = 2, 4
             total_bins = len(time_bins)
             pages = math.ceil(total_bins / (rows * cols))
 
@@ -2624,6 +2624,7 @@ def Opposition_analysis():
 
                 fig.suptitle(f"{match} – Avg Positions (Low Base, {height})", fontsize=14)
                 st.pyplot(fig)
+    avg_positions = avg_positions[avg_positions['time_bin'] < 90]
 
     plot_avg_positions(avg_positions,height="Low")
 
@@ -2664,6 +2665,7 @@ def Opposition_analysis():
     flipped = avg_positions['att_dir'] == False
     avg_positions.loc[flipped, 'x'] = -avg_positions.loc[flipped, 'x']
     avg_positions.loc[flipped, 'y'] = -avg_positions.loc[flipped, 'y']
+    avg_positions = avg_positions[avg_positions['time_bin'] < 90]
 
     plot_avg_positions(avg_positions,height="High")
 
