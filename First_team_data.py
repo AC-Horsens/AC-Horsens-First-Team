@@ -1447,15 +1447,24 @@ def Dashboard():
         # Display in Streamlit
         st.dataframe(assistzone_summary, use_container_width=True, hide_index=True)
 
-        tactical_concepts = ['High base', 'Width', 'Pocket']
-        selected_concept = st.selectbox("Choose tactical concept to analyze:", tactical_concepts)
+        tactical_concepts = ['All', 'High base', 'Width', 'Pocket']
+
 
         st.subheader(f'Analysis for: {selected_concept}')
 
         # Filter to only unique sequences for this concept
         concept_df = on_ball_sequences.copy()
-        concept_df = concept_df[concept_df[selected_concept] == True]
-
+        if selected_concept == 'All':
+            concept_df = on_ball_sequences.copy()
+            # Keep rows where any of the 3 concepts are True
+            concept_df = concept_df[
+                (concept_df['High base'] == True) |
+                (concept_df['Width'] == True) |
+                (concept_df['Pocket'] == True)
+            ]
+        else:
+            concept_df = on_ball_sequences.copy()
+            concept_df = concept_df[concept_df[selected_concept] == True]
         # ==== OPTIONS BETWEEN LINES ====
         options_count = (
             concept_df.groupby(['match_id','label', 'sequence_id','timeMin'])['option_between_lines'].sum()
