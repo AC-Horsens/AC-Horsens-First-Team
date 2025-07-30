@@ -1431,9 +1431,21 @@ def Dashboard():
 
         # Display in Streamlit
         st.dataframe(tactical_counts, use_container_width=True, hide_index=True)
-
+        
         assistzone = unique_sequences[unique_sequences['poss_in_assist_zone'] == True]
-        st.dataframe(assistzone)
+
+        # Compute metrics
+        assistzone_count = assistzone.shape[0]
+        avg_teammates_in_box = assistzone['num_teammates_in_box'].mean()
+
+        # Format into a one-row DataFrame
+        assistzone_summary = pd.DataFrame([{
+            'Assist Zone Sequences': assistzone_count,
+            'Avg Teammates in Box': round(avg_teammates_in_box, 2)
+        }])
+
+        # Display in Streamlit
+        st.dataframe(assistzone_summary, use_container_width=True, hide_index=True)
 
         tactical_concepts = ['High base', 'Width', 'Pocket']
         selected_concept = st.selectbox("Choose tactical concept to analyze:", tactical_concepts)
