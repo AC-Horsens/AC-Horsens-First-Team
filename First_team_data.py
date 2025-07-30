@@ -2584,12 +2584,11 @@ def Opposition_analysis():
                     subset = match_df[match_df['time_bin'] == time_bin]
 
                     pitch.scatter(subset['x'], subset['y'], ax=ax, color='red', s=80, zorder=3)
-                    for _, row in subset.iterrows():
-                        ax.annotate(subset['player_name'],
-                                    (subset['x'], subset['y']),
-                                    textcoords="offset points",
-                                    xytext=(0, 5),
-                                    ha='center', fontsize=7, rotation=90)
+                    ax.annotate(subset['player_name'],
+                                (subset['x'], subset['y']),
+                                textcoords="offset points",
+                                xytext=(0, 5),
+                                ha='center', fontsize=7, rotation=90)
 
 
                     ax.set_title(f"{time_bin}-{time_bin+15} min", fontsize=10)
