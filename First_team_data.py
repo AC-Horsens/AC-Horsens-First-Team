@@ -2561,7 +2561,7 @@ def Opposition_analysis():
 
                 plt.title(f"{match} – Avg Positions (Minutes {time_bin}-{time_bin+15})", fontsize=14)
                 plt.tight_layout()
-                plt.show()
+                st.pyplot(fig)
 
     plot_avg_positions(avg_positions)
 
