@@ -139,6 +139,15 @@ def load_on_ball_sequences():
     )
     return df_on_ball_sequences
 
+def load_opponnent_on_ball_sequences(selected_team):
+    url = f'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2025_2026/{selected_team}/{selected_team}_on_ball_sequences.csv'
+    df_on_ball_sequences = pd.read_csv(url)
+    df_on_ball_sequences['date'] = pd.to_datetime(df_on_ball_sequences['local_date'])
+    df_on_ball_sequences['label'] = (
+        df_on_ball_sequences['description'] + ' ' + df_on_ball_sequences['date'].astype(str)
+    )
+    return df_on_ball_sequences
+
 def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
 
     def calculate_score(df, column, score_column):
@@ -2507,7 +2516,8 @@ def Opposition_analysis():
             )
     else:
         st.write('No XML files found in this directory.')
-
+    df_opponnent_on_ball = load_opponnent_on_ball_sequences(selected_team)
+    st.dataframe(df_opponnent_on_ball)
     # Target ranks
     target_ranks = [1,1.5, 2,2.5, 3,3.5, 4,4.5, 9,9.5, 10,10.5, 11,11.5, 12,12.5]
 
