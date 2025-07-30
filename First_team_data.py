@@ -1662,11 +1662,22 @@ def Dashboard():
 
         filtered_df = on_ball_sequences[on_ball_sequences['Low base'] == True]
 
-        # Drop duplicate combinations of sequence_id and label
-        low_base_count = filtered_df.drop_duplicates(subset=['sequence_id', 'label'])
+        low_base_count = low_base_count.sort_values(['label', 'sequence_id']).reset_index(drop=True)
 
-        # Display the resulting DataFrame
-        st.dataframe(low_base_count)
+        # Shift to compare current row with previous row
+        prev_label = low_base_count['label'].shift()
+        prev_seq_id = low_base_count['sequence_id'].shift()
+
+        # Keep rows where label changes OR sequence_id is not +1
+        non_consecutive = (low_base_count['label'] != prev_label) | \
+                        (low_base_count['sequence_id'] != prev_seq_id + 1)
+
+        # Filter
+        filtered_single_instances = low_base_count[non_consecutive]
+
+        # Display
+        st.dataframe(filtered_single_instances)
+        st.write(f'Filtered unique sequences: {len(filtered_single_instances)}')
 
         # Show the count of unique low base situations
         st.write(f'Low base situations with time: {len(low_base_count)}')
