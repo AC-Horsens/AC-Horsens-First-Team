@@ -1432,6 +1432,9 @@ def Dashboard():
         # Display in Streamlit
         st.dataframe(tactical_counts, use_container_width=True, hide_index=True)
 
+        assistzone = unique_sequences[unique_sequences['poss_in_assist_zone'] == True]
+        st.dataframe(assistzone)
+
         tactical_concepts = ['High base', 'Width', 'Pocket']
         selected_concept = st.selectbox("Choose tactical concept to analyze:", tactical_concepts)
 
