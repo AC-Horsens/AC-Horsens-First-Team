@@ -2606,7 +2606,7 @@ def Opposition_analysis():
                             ax=ax,
                             color='white',
                             fontsize=7,
-                            ha='left',         # Place label just right of the dot
+                            ha='center',         # Place label just right of the dot
                             va='center',
                             xytext=(3, 0),     # Offset label 3 points to the right
                             textcoords='offset points',
