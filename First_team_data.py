@@ -1677,11 +1677,8 @@ def Dashboard():
         filtered_single_instances = low_base_count[non_consecutive]
 
         # Display
-        st.dataframe(filtered_single_instances)
-        st.write(f'Filtered unique sequences: {len(filtered_single_instances)}')
+        st.write(f'Low base situations with time: {len(filtered_single_instances)}')
 
-        # Show the count of unique low base situations
-        st.write(f'Low base situations with time: {len(low_base_count)}')
         # For each sequence, does any receiver have time_on_ball True? (use the original df, not filtered)
         seq_has_time_on = (
             filtered_df.groupby(['match_id','label', 'sequence_id','timeMin'])['time_on_ball'].any()
