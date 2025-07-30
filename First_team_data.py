@@ -2519,7 +2519,6 @@ def Opposition_analysis():
         st.write('No XML files found in this directory.')
     df_opponnent_on_ball = load_opponnent_on_ball_sequences(selected_team)
 
-    df_opponnent_on_ball = load_opponnent_on_ball_sequences(selected_team)
 
     # Filter: Low base and possessor in own third depending on attacking direction
     filtered = df_opponnent_on_ball[
@@ -2561,7 +2560,7 @@ def Opposition_analysis():
     avg_positions.loc[flipped, 'x'] = -avg_positions.loc[flipped, 'x']
     avg_positions.loc[flipped, 'y'] = -avg_positions.loc[flipped, 'y']
 
-    def plot_avg_positions(df):
+    def plot_avg_positions(df,height):
         pitch = VerticalPitch(
             pitch_type='secondspectrum',
             pitch_length=105,
@@ -2623,13 +2622,50 @@ def Opposition_analysis():
                 for j in range(i + 1, len(axes)):
                     axes[j].axis('off')
 
-                fig.suptitle(f"{match} – Avg Positions (Low Base, Possessor in Own Third)", fontsize=14)
+                fig.suptitle(f"{match} – Avg Positions (Low Base, {height})", fontsize=14)
                 st.pyplot(fig)
 
+    plot_avg_positions(avg_positions,height="Low")
 
+    filtered = df_opponnent_on_ball[
+        (df_opponnent_on_ball['Low base'] == True) &
+            ((df_opponnent_on_ball['att_dir'] == True) & (df_opponnent_on_ball['possessor_x'] > -10)) |
+            ((df_opponnent_on_ball['att_dir'] == False) & (df_opponnent_on_ball['possessor_x'] < 10)
+        )
+    ].copy()
 
-    plot_avg_positions(avg_positions)
+    filtered['time_bin'] = (filtered['timemin_first'] // 15) * 15
 
+    # Receiver rows
+    receivers = filtered[['label', 'time_bin', 'receiver_name', 'receiver_x', 'receiver_y','att_dir']].copy()
+    receivers = receivers.rename(columns={
+        'receiver_name': 'player_name',
+        'receiver_x': 'x',
+        'receiver_y': 'y'
+    })
+
+    # Possessor rows
+    possessors = filtered[['label', 'time_bin', 'poss_player_name', 'possessor_x', 'possessor_y','att_dir']].copy()
+    possessors = possessors.rename(columns={
+        'poss_player_name': 'player_name',
+        'possessor_x': 'x',
+        'possessor_y': 'y'
+    })
+
+    # Combine
+    all_players = pd.concat([receivers, possessors], ignore_index=True)
+
+    # Average positions
+    avg_positions = all_players.groupby(['label', 'time_bin', 'player_name','att_dir']).agg(
+        x=('x', 'mean'),
+        y=('y', 'mean')
+    ).reset_index()
+
+    flipped = avg_positions['att_dir'] == False
+    avg_positions.loc[flipped, 'x'] = -avg_positions.loc[flipped, 'x']
+    avg_positions.loc[flipped, 'y'] = -avg_positions.loc[flipped, 'y']
+
+    plot_avg_positions(avg_positions,height="High")
 
     target_ranks = [1,1.5, 2,2.5, 3,3.5, 4,4.5, 9,9.5, 10,10.5, 11,11.5, 12,12.5]
 
