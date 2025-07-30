@@ -1661,6 +1661,7 @@ def Dashboard():
         on_ball_sequences = on_ball_sequences[on_ball_sequences['poss_player_name'] != on_ball_sequences['receiver_name']]
 
         filtered_df = on_ball_sequences[on_ball_sequences['Low base'] == True]
+        low_base_count = filtered_df.drop_duplicates(subset=['sequence_id', 'label'])
 
         low_base_count = low_base_count.sort_values(['label', 'sequence_id']).reset_index(drop=True)
 
