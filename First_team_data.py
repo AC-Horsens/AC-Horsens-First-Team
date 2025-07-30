@@ -1433,89 +1433,89 @@ def Dashboard():
         st.dataframe(tactical_counts, use_container_width=True, hide_index=True)
 
         tactical_concepts = ['High base', 'Width', 'Pocket']
+        selected_concept = st.selectbox("Choose tactical concept to analyze:", tactical_concepts)
 
-        for concept in tactical_concepts:
-            st.subheader(f'Analysis for: {concept}')
-            
-            # Filter to only unique sequences for this concept
-            concept_df = on_ball_sequences.copy()
-            concept_df = concept_df[concept_df[concept] == True]
+        st.subheader(f'Analysis for: {selected_concept}')
 
-            # ==== OPTIONS BETWEEN LINES ====
-            options_count = (
-                concept_df.groupby(['match_id','label', 'sequence_id','timeMin'])['option_between_lines'].sum()
-                .reset_index()
-                .rename(columns={'option_between_lines': 'options_between_lines_count'})
+        # Filter to only unique sequences for this concept
+        concept_df = on_ball_sequences.copy()
+        concept_df = concept_df[concept_df[selected_concept] == True]
+
+        # ==== OPTIONS BETWEEN LINES ====
+        options_count = (
+            concept_df.groupby(['match_id','label', 'sequence_id','timeMin'])['option_between_lines'].sum()
+            .reset_index()
+            .rename(columns={'option_between_lines': 'options_between_lines_count'})
+        )
+
+        summary = options_count.copy()
+        summary['ten_min_bin'] = (summary['timeMin'] // 10) * 10
+
+        options_per_10min = (
+            summary.groupby(['match_id', 'label', 'ten_min_bin'])['options_between_lines_count']
+            .mean()
+            .reset_index()
+        )
+
+        st.markdown('**Options between lines per situation**')
+        for match in options_per_10min['label'].unique():
+            match_data = options_per_10min[options_per_10min['label'] == match]
+            fig = px.line(
+                match_data,
+                x='ten_min_bin',
+                y='options_between_lines_count',
+                range_y=[0, 5],
+                title=f"{selected_concept} – Match {match}",
+                labels={'ten_min_bin': 'Minute (10-min bin)', 'options_between_lines_count': 'Avg Options Between Lines'}
             )
+            st.plotly_chart(fig, use_container_width=True)
 
-            summary = options_count.copy()
-            summary['ten_min_bin'] = (summary['timeMin'] // 10) * 10
+        # ==== DEEP RUN CONVERSIONS ====
+        concept_df['ten_min_bin'] = (concept_df['timeMin'] // 10) * 10
 
-            options_per_10min = (
-                summary.groupby(['match_id', 'label', 'ten_min_bin'])['options_between_lines_count']
-                .mean()
-                .reset_index()
+        sequence_opportunity = (
+            concept_df.groupby(['match_id', 'label', 'ten_min_bin', 'sequence_id'])['deep_run_opportunity'].any()
+            .reset_index()
+            .rename(columns={'deep_run_opportunity': 'has_deep_run_opportunity'})
+        )
+
+        sequence_deep_runs = (
+            concept_df.groupby(['match_id', 'label', 'ten_min_bin', 'sequence_id'])['deep_run'].sum()
+            .reset_index()
+            .rename(columns={'deep_run': 'deep_runs'})
+        )
+
+        seq_summary = sequence_opportunity.merge(
+            sequence_deep_runs, on=['match_id', 'label', 'ten_min_bin', 'sequence_id']
+        )
+        seq_summary = seq_summary[seq_summary['has_deep_run_opportunity']]
+
+        deep_run_binned = (
+            seq_summary.groupby(['match_id', 'label', 'ten_min_bin'])
+            .agg(
+                deep_run_opportunities=('sequence_id', 'nunique'),
+                deep_runs=('deep_runs', 'sum')
             )
+            .reset_index()
+        )
 
-            st.markdown('**Options between lines per situation**')
-            for match in options_per_10min['label'].unique():
-                match_data = options_per_10min[options_per_10min['label'] == match]
-                fig = px.line(
-                    match_data,
-                    x='ten_min_bin',
-                    y='options_between_lines_count',
-                    range_y=[0, 5],
-                    title=f"{concept} – Match {match}",
-                    labels={'ten_min_bin': 'Minute (10-min bin)', 'options_between_lines_count': 'Avg Options Between Lines'}
-                )
-                st.plotly_chart(fig, use_container_width=True)
+        deep_run_binned['conversion_rate'] = deep_run_binned.apply(
+            lambda row: row['deep_runs'] / row['deep_run_opportunities'] if row['deep_run_opportunities'] > 0 else None,
+            axis=1
+        )
 
-            # ==== DEEP RUN CONVERSIONS ====
-            concept_df['ten_min_bin'] = (concept_df['timeMin'] // 10) * 10
-
-            sequence_opportunity = (
-                concept_df.groupby(['match_id', 'label', 'ten_min_bin', 'sequence_id'])['deep_run_opportunity'].any()
-                .reset_index()
-                .rename(columns={'deep_run_opportunity': 'has_deep_run_opportunity'})
+        st.markdown('**Deep run conversion rate**')
+        for match in deep_run_binned['label'].unique():
+            match_data = deep_run_binned[deep_run_binned['label'] == match]
+            fig = px.line(
+                match_data,
+                x='ten_min_bin',
+                y='conversion_rate',
+                range_y=[0, 1],
+                title=f"{selected_concept} – Match {match}",
+                labels={'ten_min_bin': 'Minute (10-min bin)', 'conversion_rate': 'Deep Run Conversion Rate'}
             )
-
-            sequence_deep_runs = (
-                concept_df.groupby(['match_id', 'label', 'ten_min_bin', 'sequence_id'])['deep_run'].sum()
-                .reset_index()
-                .rename(columns={'deep_run': 'deep_runs'})
-            )
-
-            seq_summary = sequence_opportunity.merge(
-                sequence_deep_runs, on=['match_id', 'label', 'ten_min_bin', 'sequence_id']
-            )
-            seq_summary = seq_summary[seq_summary['has_deep_run_opportunity']]
-
-            deep_run_binned = (
-                seq_summary.groupby(['match_id', 'label', 'ten_min_bin'])
-                .agg(
-                    deep_run_opportunities=('sequence_id', 'nunique'),
-                    deep_runs=('deep_runs', 'sum')
-                )
-                .reset_index()
-            )
-
-            deep_run_binned['conversion_rate'] = deep_run_binned.apply(
-                lambda row: row['deep_runs'] / row['deep_run_opportunities'] if row['deep_run_opportunities'] > 0 else None,
-                axis=1
-            )
-
-            st.markdown('**Deep run conversion rate**')
-            for match in deep_run_binned['label'].unique():
-                match_data = deep_run_binned[deep_run_binned['label'] == match]
-                fig = px.line(
-                    match_data,
-                    x='ten_min_bin',
-                    y='conversion_rate',
-                    range_y=[0, 1],
-                    title=f"{concept} – Match {match}",
-                    labels={'ten_min_bin': 'Minute (10-min bin)', 'conversion_rate': 'Deep Run Conversion Rate'}
-                )
-                st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, use_container_width=True)
 
 
         zone1_mask = (
