@@ -2599,19 +2599,18 @@ def Opposition_analysis():
                         zorder=3
                     )
 
-                    # Correctly placed vertical labels
-                    pitch.label(
-                        x=subset['x'],
-                        y=subset['y'],
-                        labels=subset['player_name'],
-                        ax=ax,
-                        color='white',
-                        fontsize=8,
-                        ha='center',
-                        va='center',
-                        rotation=90,
-                        zorder=4
-                    )
+                    for _, row in subset.iterrows():
+                        ax.text(
+                            row['x'],
+                            row['y'],
+                            row['player_name'],
+                            fontsize=8,
+                            color='white',
+                            rotation=0,           # <- Horizontal orientation
+                            ha='center',
+                            va='center',
+                            zorder=4
+                        )
 
                     ax.set_title(f"{time_bin}-{time_bin + 15} min", fontsize=10)
 
