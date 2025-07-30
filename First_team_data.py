@@ -1399,19 +1399,37 @@ def Dashboard():
 
         unique_sequences = on_ball_sequences.drop_duplicates(subset=['label', 'sequence_id'])
 
-        # Step 2: Count concept occurrences and deep runs
         counts = []
         for concept in ['High base', 'Width', 'Pocket']:
+            # Filter rows where this concept is True
             concept_df = unique_sequences[unique_sequences[concept] == True]
-            count_total = concept_df.shape[0]
-            deep_run_total = on_ball_sequences['deep_run'].sum()
-            deep_run_opportunity = concept_df['deep_run_opportunity'].sum()
-            counts.append({'Tactical Concept': concept, 'Count': count_total,'Deep run opportunities':deep_run_opportunity, 'Deep Runs': deep_run_total})
 
-        # Step 3: Format to DataFrame
+            # Total sequences with this concept
+            count_total = concept_df.shape[0]
+
+            # Count how many sequences had a deep run opportunity
+            deep_run_opportunity = concept_df['deep_run_opportunity'].sum()
+
+            # Count how many sequences had at least one deep run (convert to binary)
+            # Group by sequence and check if any deep_run == 1
+            deep_run_per_sequence = (
+                on_ball_sequences[on_ball_sequences[concept] == True]
+                .groupby(['label', 'sequence_id'])['deep_run']
+                .any()
+                .sum()
+            )
+
+            counts.append({
+                'Tactical Concept': concept,
+                'Count': count_total,
+                'Deep run opportunities': deep_run_opportunity,
+                'Deep Runs': deep_run_per_sequence
+            })
+
+        # Format to DataFrame
         tactical_counts = pd.DataFrame(counts)
 
-        # Step 4: Display
+        # Display in Streamlit
         st.dataframe(tactical_counts, use_container_width=True, hide_index=True)
 
         tactical_concepts = ['High base', 'Width', 'Pocket']
