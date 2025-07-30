@@ -2558,14 +2558,19 @@ def Opposition_analysis():
     ).reset_index()
 
     def plot_avg_positions(df):
-        pitch = VerticalPitch(pitch_type='secondspectrum', pitch_length=105, pitch_width=60,
-                    pitch_color='grass', line_color='white')
+        pitch = VerticalPitch(
+            pitch_type='secondspectrum',
+            pitch_length=105,
+            pitch_width=60,
+            pitch_color='grass',
+            line_color='white'
+        )
 
         for match in df['label'].unique():
             match_df = df[df['label'] == match]
             time_bins = sorted(match_df['time_bin'].unique())
 
-            # Calculate grid size: 2 rows, 4 columns
+            # Layout: 2 rows × 4 columns per page
             rows, cols = 2, 4
             total_bins = len(time_bins)
             pages = math.ceil(total_bins / (rows * cols))
@@ -2575,22 +2580,42 @@ def Opposition_analysis():
                 end = start + (rows * cols)
                 current_bins = time_bins[start:end]
 
-                fig, axes = plt.subplots(rows, cols, figsize=(16, 7),constrained_layout=True)
+                fig, axes = plt.subplots(rows, cols, figsize=(16, 9), constrained_layout=True)
                 axes = axes.flatten()
 
                 for i, time_bin in enumerate(current_bins):
                     ax = axes[i]
                     pitch.draw(ax=ax)
+
                     subset = match_df[match_df['time_bin'] == time_bin]
 
-                    pitch.scatter(subset['x'], subset['y'], ax=ax, color='red', s=100, zorder=3)
-                    for _, row in subset.iterrows():
-                        ax.text(row['x'], row['y'], row['player_name'], fontsize=8, color='white',
-                                ha='center', va='center', zorder=4)
+                    # Plot player positions
+                    pitch.scatter(
+                        x=subset['x'],
+                        y=subset['y'],
+                        ax=ax,
+                        color='red',
+                        s=100,
+                        zorder=3
+                    )
 
-                    ax.set_title(f"{time_bin}-{time_bin+15} min", fontsize=10)
+                    # Correctly placed vertical labels
+                    pitch.label(
+                        x=subset['x'],
+                        y=subset['y'],
+                        labels=subset['player_name'],
+                        ax=ax,
+                        color='white',
+                        fontsize=8,
+                        ha='center',
+                        va='center',
+                        rotation=90,
+                        zorder=4
+                    )
 
-                # Hide unused axes
+                    ax.set_title(f"{time_bin}-{time_bin + 15} min", fontsize=10)
+
+                # Hide any unused subplots
                 for j in range(i + 1, len(axes)):
                     axes[j].axis('off')
 
