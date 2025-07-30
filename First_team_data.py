@@ -1406,7 +1406,7 @@ def Dashboard():
             count_total = concept_df.shape[0]
             deep_run_total = concept_df['deep_run'].sum()
             deep_run_opportunity = concept_df['deep_run_opportunity'].sum()
-            counts.append({'Tactical Concept': concept, 'Count': count_total,,'Deep run opportunities':deep_run_opportunity 'Deep Runs': deep_run_total})
+            counts.append({'Tactical Concept': concept, 'Count': count_total,'Deep run opportunities':deep_run_opportunity 'Deep Runs': deep_run_total})
 
         # Step 3: Format to DataFrame
         tactical_counts = pd.DataFrame(counts)
