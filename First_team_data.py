@@ -1068,7 +1068,7 @@ number10_df = position_dataframes['Number 10']
 winger_df = position_dataframes['Winger']
 classic_striker_df = position_dataframes['Striker']
 def Dashboard():
-    xml_files = glob.glob('Horsens/XML files/*.xml')
+    xml_files = glob.glob('DNK_1_Division_2025_2026/Horsens/XML files/*.xml')
     if xml_files:
         selected_xml = st.selectbox('Select an XML file to download:', xml_files)
         with open(selected_xml, 'rb') as f:
