@@ -1696,9 +1696,7 @@ def Dashboard():
             .rename(columns={'option_between_lines': 'options_between_lines_count'})
         )
 
-        # Merge, and keep only sequences where time_on_ball is True
-        summary = options_count.merge(seq_has_time_on, on=['match_id','label','timeMin', 'sequence_id'])
-        summary = summary[summary['has_time_on_ball']]
+        summary = options_count
         summary['ten_min_bin'] = (summary['timeMin'] // 10) * 10
 
         # Group and get mean
@@ -1709,7 +1707,7 @@ def Dashboard():
         )
 
         import plotly.express as px
-        st.header('Options between lines')
+        st.title('Options between lines per low base situation')
         for match in options_per_5min['label'].unique():
             match_data = options_per_5min[options_per_5min['label'] == match]
             fig = px.line(
