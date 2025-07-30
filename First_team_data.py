@@ -2495,6 +2495,18 @@ def Opposition_analysis():
     sorted_teams = matchstats_df['team_name'].sort_values()
     selected_team = st.selectbox('Choose team', sorted_teams)
     team_df = matchstats_df.loc[matchstats_df['team_name'] == selected_team]
+    xml_files = glob.glob(f'DNK_1_Division_2025_2026/{selected_team}/XML files/*.xml')
+    if xml_files:
+        selected_xml = st.selectbox('Select an XML file to download:', xml_files)
+        with open(selected_xml, 'rb') as f:
+            st.download_button(
+                label="Download selected XML",
+                data=f,
+                file_name=selected_xml,
+                mime='application/xml'
+            )
+    else:
+        st.write('No XML files found in this directory.')
 
     # Target ranks
     target_ranks = [1,1.5, 2,2.5, 3,3.5, 4,4.5, 9,9.5, 10,10.5, 11,11.5, 12,12.5]
