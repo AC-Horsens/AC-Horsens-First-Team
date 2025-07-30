@@ -2558,7 +2558,7 @@ def Opposition_analysis():
     ).reset_index()
 
     def plot_avg_positions(df):
-        pitch = Pitch(pitch_type='secondspectrum', pitch_length=105, pitch_width=60,
+        pitch = VerticalPitch(pitch_type='secondspectrum', pitch_length=105, pitch_width=60,
                     pitch_color='grass', line_color='white')
 
         for match in df['label'].unique():
@@ -2583,9 +2583,9 @@ def Opposition_analysis():
                     pitch.draw(ax=ax)
                     subset = match_df[match_df['time_bin'] == time_bin]
 
-                    pitch.scatter(subset['x'], subset['y'], ax=ax, color='blue', s=80, zorder=3)
+                    pitch.scatter(subset['x'], subset['y'], ax=ax, color='red', s=100, zorder=3)
                     for _, row in subset.iterrows():
-                        ax.text(row['x'], row['y'], row['player_name'], fontsize=6, color='white',
+                        ax.text(row['x'], row['y'], row['player_name'], fontsize=8, color='white',
                                 ha='center', va='center', zorder=4)
 
                     ax.set_title(f"{time_bin}-{time_bin+15} min", fontsize=10)
