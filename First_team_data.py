@@ -1368,6 +1368,49 @@ def Dashboard():
             plot_heatmap_location(transitions_starts)
 
     def Breakthrough():
+        on_ball_sequences = load_on_ball_sequences()
+        labels_df = df_possession[['match_id','date', 'label']].drop_duplicates()
+        states_df = df_possession[['match_id','date','label', 'contestantId', 'timeMin', 'timeSec', 'match_state']]
+        # Merge only on match_id to get label
+        on_ball_sequences = on_ball_sequences.merge(labels_df, on=['match_id','date','label'], how='left')
+        # Merge on full key to get match_state
+        on_ball_sequences = on_ball_sequences.merge(states_df,left_on=['match_id','date','label', 'timemin_last', 'timesec_last'],right_on=['match_id','date','label', 'timeMin', 'timeSec'],how='left')
+        on_ball_sequences = on_ball_sequences[on_ball_sequences['label'].isin(match_choice)]
+
+        on_ball_sequences = on_ball_sequences.sort_values(['date', 'timemin_last', 'timesec_last'])
+        on_ball_sequences = on_ball_sequences.ffill()
+        mask_timeMin = on_ball_sequences['timeMin'].isna()
+        on_ball_sequences.loc[mask_timeMin, 'timeMin'] = (
+            0.5 * on_ball_sequences.loc[mask_timeMin, 'timemin_first'].astype(float) +
+            0.5 * on_ball_sequences.loc[mask_timeMin, 'timemin_last'].astype(float)
+        )
+
+        # Similarly for timeSec
+        mask_timeSec = on_ball_sequences['timeSec'].isna()
+        on_ball_sequences.loc[mask_timeSec, 'timeSec'] = (
+            0.5 * on_ball_sequences.loc[mask_timeSec, 'timesec_first'].astype(float) +
+            0.5 * on_ball_sequences.loc[mask_timeSec, 'timesec_last'].astype(float)
+        )
+        on_ball_sequences = on_ball_sequences.drop(['date', 'timemin_last', 'timesec_last'], axis=1)
+        on_ball_sequences['match_state'] = on_ball_sequences['match_state'].fillna('draw')
+        on_ball_sequences = on_ball_sequences[on_ball_sequences['match_state'].isin(selected_states)]
+
+        on_ball_sequences = on_ball_sequences[on_ball_sequences['poss_player_name'] != on_ball_sequences['receiver_name']]
+
+        filtered_df = on_ball_sequences[
+            (on_ball_sequences['High base'] == True) |
+            (on_ball_sequences['Width'] == True) |
+            (on_ball_sequences['Pocket'] == True)
+        ]
+        counts = {
+            'High base': on_ball_sequences['High base'].sum(),
+            'Width': on_ball_sequences['Width'].sum(),
+            'Pocket': on_ball_sequences['Pocket'].sum()
+        }
+
+        tactical_counts = pd.DataFrame(list(counts.items()), columns=['Tactical Concept', 'Count'])
+        st.dataframe(tactical_counts)
+
         zone1_mask = (
             ((df_possession['x'] >= 66) & (df_possession['x'] <= 80) & (df_possession['y'] >= 40) & (df_possession['y'] <= 60)) |
             ((df_possession['x'] > 83) & (df_possession['y'] >= 63) & (df_possession['y'] <= 83)) |
@@ -1707,7 +1750,7 @@ def Dashboard():
         )
 
         import plotly.express as px
-        st.title('Options between lines per low base situation')
+        st.header('Options between lines per low base situation')
         for match in options_per_5min['label'].unique():
             match_data = options_per_5min[options_per_5min['label'] == match]
             fig = px.line(
