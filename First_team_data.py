@@ -131,7 +131,7 @@ def load_transitions_data():
 
 @st.cache_data
 def load_on_ball_sequences():
-    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2025_2026/Horsens_on_ball_sequences.csv'
+    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2025_2026/Horsens/Horsens_on_ball_sequences.csv'
     df_on_ball_sequences = pd.read_csv(url)
     df_on_ball_sequences['date'] = pd.to_datetime(df_on_ball_sequences['local_date'])
     df_on_ball_sequences['label'] = (
