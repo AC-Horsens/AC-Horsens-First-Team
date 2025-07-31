@@ -2559,8 +2559,24 @@ def Opposition_analysis():
     flipped = avg_positions['att_dir'] == False
     avg_positions.loc[flipped, 'x'] = -avg_positions.loc[flipped, 'x']
     avg_positions.loc[flipped, 'y'] = -avg_positions.loc[flipped, 'y']
+    color_map = {
+        'AaB': 'red',
+        'Hvidovre': 'red',
+        'Aarhus_Fremad': 'yellow',
+        'Hobro': 'yellow',
+        'Horsens': 'yellow',
+        'B_93': 'white',
+        'Kolding': 'white',
+        'Esbjerg': 'blue',
+        'Middelfart': 'blue',
+        'Lyngby': 'blue',
+        'HB_Køge': 'black',
+        'Hillerød': 'orange'
+    }
 
-    def plot_avg_positions(df,height):
+    team_color = color_map.get(selected_team, 'gray')  # fallback to gray if unknown
+
+    def plot_avg_positions(df,height,color):
         pitch = VerticalPitch(
             pitch_type='secondspectrum',
             pitch_length=105,
@@ -2597,7 +2613,7 @@ def Opposition_analysis():
                         x=subset['x'],
                         y=subset['y'],
                         ax=ax,
-                        color='red',
+                        color=color,
                         s=100,
                         zorder=3
                     )
@@ -2626,7 +2642,7 @@ def Opposition_analysis():
                 st.pyplot(fig)
     avg_positions = avg_positions[avg_positions['time_bin'] < 90]
 
-    plot_avg_positions(avg_positions,height="Low")
+    plot_avg_positions(avg_positions,height="Low",color=team_color)
 
     filtered = df_opponnent_on_ball[
         (df_opponnent_on_ball['Low base'] == True) &
@@ -2667,7 +2683,7 @@ def Opposition_analysis():
     avg_positions.loc[flipped, 'y'] = -avg_positions.loc[flipped, 'y']
     avg_positions = avg_positions[avg_positions['time_bin'] < 90]
 
-    plot_avg_positions(avg_positions,height="High")
+    plot_avg_positions(avg_positions,height="High",color=team_color)
 
     target_ranks = [1,1.5, 2,2.5, 3,3.5, 4,4.5, 9,9.5, 10,10.5, 11,11.5, 12,12.5]
 
