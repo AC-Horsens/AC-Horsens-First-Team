@@ -12,7 +12,7 @@ from scipy.stats import linregress
 
 st.set_page_config(layout="wide")
 
-teams = ['B_93','Esbjerg','Fredericia','HB_Køge','Hillerød','Hobro','Horsens','Hvidovre','Kolding','OB','Roskilde','Vendsyssel']
+teams = ['AaB','Aarhus_Fremad','B_93','Esbjerg','HB_Køge','Hillerød','Hobro','Horsens','Hvidovre','Kolding','Lyngby','Middelfart']
 
 default_index = teams.index('Horsens')
 
