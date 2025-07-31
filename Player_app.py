@@ -58,7 +58,7 @@ def load_data(team_name):
     return df_xg, df_xA, df_pv, df_possession_stats, df_xa_agg, df_possession_data, df_xg_agg, df_pv_agg, df_xg_all, df_pv_all, df_match_stats, squads
 
 def plot_heatmap_location(data, title):
-    pitch = Pitch(pitch_type='opta', line_zorder=2, pitch_color='grass', line_color='white')
+    pitch = VerticalPitch(pitch_type='opta', line_zorder=2, pitch_color='grass', line_color='white')
     fig, ax = pitch.draw(figsize=(6.6, 4.125))
     fig.set_facecolor('#22312b')
     bin_statistic = pitch.bin_statistic(data['x'], data['y'], statistic='count', bins=(50, 25))
@@ -68,7 +68,7 @@ def plot_heatmap_location(data, title):
     st.pyplot(fig)
     
 def plot_heatmap_end_location(data, title):
-    pitch = Pitch(pitch_type='opta', line_zorder=2, pitch_color='grass', line_color='white')
+    pitch = VerticalPitch(pitch_type='opta', line_zorder=2, pitch_color='grass', line_color='white')
     fig, ax = pitch.draw(figsize=(6.6, 4.125))
     fig.set_facecolor('#22312b')
     bin_statistic = pitch.bin_statistic(data['140.0'], data['141.0'], statistic='count', bins=(50, 25))
