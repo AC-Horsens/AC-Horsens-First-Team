@@ -1105,6 +1105,7 @@ def plot_avg_positions(df, phase, selected_team):
             teams = match.split('vs')
             team1 = teams[0].strip()
             team2 = teams[1].strip().split()[0]
+
             opponent = team2 if selected_team in team1 else team1
         else:
             opponent = "Unknown"
@@ -1167,6 +1168,8 @@ def plot_avg_positions(df, phase, selected_team):
                 axes[j].axis('off')
 
             fig.suptitle(f"{match} – {phase}", fontsize=14)
+            st.write(team1)
+            st.write(team2)
             st.pyplot(fig)
 
 
