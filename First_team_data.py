@@ -149,6 +149,15 @@ def load_opponnent_on_ball_sequences(selected_team):
     )
     return df_on_ball_sequences
 
+def load_opponnent_off_ball_sequences(selected_team):
+    url = f'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2025_2026/{selected_team}/{selected_team}_off_ball_sequences.csv'
+    df_on_ball_sequences = pd.read_csv(url)
+    df_on_ball_sequences['date'] = pd.to_datetime(df_on_ball_sequences['local_date'])
+    df_on_ball_sequences['label'] = (
+        df_on_ball_sequences['description'] + ' ' + df_on_ball_sequences['date'].astype(str)
+    )
+    return df_on_ball_sequences
+
 def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
 
     def calculate_score(df, column, score_column):
@@ -1062,6 +1071,72 @@ def plot_heatmap_location(data):
     bin_statistic['statistic'] = gaussian_filter(bin_statistic['statistic'], 1)
     pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot')
     st.pyplot(fig)
+
+def plot_avg_positions(df,height,color):
+    pitch = VerticalPitch(
+        pitch_type='secondspectrum',
+        pitch_length=105,
+        pitch_width=60,
+        pitch_color='grass',
+        line_color='white'
+    )
+
+    for match in df['label'].unique():
+        match_df = df[df['label'] == match]
+        time_bins = sorted(match_df['time_bin'].unique())
+
+        # Layout: 2 rows × 4 columns per page
+        rows, cols = 2, 3
+        total_bins = len(time_bins)
+        pages = math.ceil(total_bins / (rows * cols))
+
+        for page in range(pages):
+            start = page * rows * cols
+            end = start + (rows * cols)
+            current_bins = time_bins[start:end]
+
+            fig, axes = plt.subplots(rows, cols, figsize=(20, 11), constrained_layout=True)
+            axes = axes.flatten()
+
+            for i, time_bin in enumerate(current_bins):
+                ax = axes[i]
+                pitch.draw(ax=ax)
+
+                subset = match_df[match_df['time_bin'] == time_bin]
+
+                # Plot player positions
+                pitch.scatter(
+                    x=subset['x'],
+                    y=subset['y'],
+                    ax=ax,
+                    color=color,
+                    s=100,
+                    zorder=3
+                )
+
+                for _, row in subset.iterrows():
+                    pitch.annotate(
+                        text=row['player_name'],
+                        xy=(row['x'], row['y']),
+                        ax=ax,
+                        color='white',
+                        fontsize=7,
+                        ha='center',         # Place label just right of the dot
+                        va='center',
+                        xytext=(3, 0),     # Offset label 3 points to the right
+                        textcoords='offset points',
+                        zorder=4
+                    )
+
+                ax.set_title(f"{time_bin}-{time_bin + 15} min", fontsize=10)
+
+            # Hide any unused subplots
+            for j in range(i + 1, len(axes)):
+                axes[j].axis('off')
+
+            fig.suptitle(f"{match} – Avg Positions (Low Base, {height})", fontsize=14)
+            st.pyplot(fig)
+
 
 df_xA = load_xA()
 df_pv = load_pv_all()
@@ -2517,9 +2592,68 @@ def Opposition_analysis():
             )
     else:
         st.write('No XML files found in this directory.')
+    color_map = {
+    'AaB': 'red',
+    'Hvidovre': 'red',
+    'Aarhus_Fremad': 'yellow',
+    'Hobro': 'yellow',
+    'Horsens': 'yellow',
+    'B_93': 'white',
+    'Kolding': 'white',
+    'Esbjerg': 'blue',
+    'Middelfart': 'blue',
+    'Lyngby': 'blue',
+    'HB_Køge': 'black',
+    'Hillerød': 'orange'
+}
+
+    team_color = color_map.get(selected_team, 'gray')  # fallback to gray if unknown
+
     df_opponnent_on_ball = load_opponnent_on_ball_sequences(selected_team)
+    df_opponnent_off_ball = load_opponnent_off_ball_sequences(selected_team)
+    for block_flag in ['High block', 'Low block']:
+        filtered = df_opponnent_off_ball[df_opponnent_off_ball[block_flag] == True].copy()
+        filtered['time_bin'] = (filtered['timemin_first'] // 15) * 15
 
+        # Collect all players from home and away
+        all_players = []
+        for _, row in filtered.iterrows():
+            label = row['label']
+            time_bin = row['time_bin']
+            att_dir = row['att_dir']
 
+            # Load player dicts from JSON string
+            home_players = eval(row['home_players'])
+            away_players = eval(row['away_players'])
+
+            for p in home_players + away_players:
+                player_id = p.get('playerId')
+                player_name = p.get('name', player_id)
+                x, y = p['xyz'][0], p['xyz'][1]
+                all_players.append({
+                    'label': label,
+                    'time_bin': time_bin,
+                    'player_name': player_name,
+                    'x': x,
+                    'y': y,
+                    'att_dir': att_dir
+                })
+
+        all_players_df = pd.DataFrame(all_players)
+
+        # Flip coordinates to normalize attacking direction
+        flipped = all_players_df['att_dir'] == False
+        all_players_df.loc[flipped, 'x'] = -all_players_df.loc[flipped, 'x']
+        all_players_df.loc[flipped, 'y'] = -all_players_df.loc[flipped, 'y']
+
+        # Average player positions
+        avg_positions = all_players_df.groupby(
+            ['label', 'time_bin', 'player_name', 'att_dir']
+        ).agg(x=('x', 'mean'), y=('y', 'mean')).reset_index()
+
+        # Only include first 90 minutes
+        avg_positions = avg_positions[avg_positions['time_bin'] < 90]
+        plot_avg_positions(avg_positions,'High',team_color)
     # Filter: Low base and possessor in own third depending on attacking direction
     filtered = df_opponnent_on_ball[
         (df_opponnent_on_ball['Low base'] == True) &
@@ -2559,87 +2693,7 @@ def Opposition_analysis():
     flipped = avg_positions['att_dir'] == False
     avg_positions.loc[flipped, 'x'] = -avg_positions.loc[flipped, 'x']
     avg_positions.loc[flipped, 'y'] = -avg_positions.loc[flipped, 'y']
-    color_map = {
-        'AaB': 'red',
-        'Hvidovre': 'red',
-        'Aarhus_Fremad': 'yellow',
-        'Hobro': 'yellow',
-        'Horsens': 'yellow',
-        'B_93': 'white',
-        'Kolding': 'white',
-        'Esbjerg': 'blue',
-        'Middelfart': 'blue',
-        'Lyngby': 'blue',
-        'HB_Køge': 'black',
-        'Hillerød': 'orange'
-    }
 
-    team_color = color_map.get(selected_team, 'gray')  # fallback to gray if unknown
-
-    def plot_avg_positions(df,height,color):
-        pitch = VerticalPitch(
-            pitch_type='secondspectrum',
-            pitch_length=105,
-            pitch_width=60,
-            pitch_color='grass',
-            line_color='white'
-        )
-
-        for match in df['label'].unique():
-            match_df = df[df['label'] == match]
-            time_bins = sorted(match_df['time_bin'].unique())
-
-            # Layout: 2 rows × 4 columns per page
-            rows, cols = 2, 3
-            total_bins = len(time_bins)
-            pages = math.ceil(total_bins / (rows * cols))
-
-            for page in range(pages):
-                start = page * rows * cols
-                end = start + (rows * cols)
-                current_bins = time_bins[start:end]
-
-                fig, axes = plt.subplots(rows, cols, figsize=(20, 11), constrained_layout=True)
-                axes = axes.flatten()
-
-                for i, time_bin in enumerate(current_bins):
-                    ax = axes[i]
-                    pitch.draw(ax=ax)
-
-                    subset = match_df[match_df['time_bin'] == time_bin]
-
-                    # Plot player positions
-                    pitch.scatter(
-                        x=subset['x'],
-                        y=subset['y'],
-                        ax=ax,
-                        color=color,
-                        s=100,
-                        zorder=3
-                    )
-
-                    for _, row in subset.iterrows():
-                        pitch.annotate(
-                            text=row['player_name'],
-                            xy=(row['x'], row['y']),
-                            ax=ax,
-                            color='white',
-                            fontsize=7,
-                            ha='center',         # Place label just right of the dot
-                            va='center',
-                            xytext=(3, 0),     # Offset label 3 points to the right
-                            textcoords='offset points',
-                            zorder=4
-                        )
-
-                    ax.set_title(f"{time_bin}-{time_bin + 15} min", fontsize=10)
-
-                # Hide any unused subplots
-                for j in range(i + 1, len(axes)):
-                    axes[j].axis('off')
-
-                fig.suptitle(f"{match} – Avg Positions (Low Base, {height})", fontsize=14)
-                st.pyplot(fig)
     avg_positions = avg_positions[avg_positions['time_bin'] < 90]
 
     plot_avg_positions(avg_positions,height="Low",color=team_color)
