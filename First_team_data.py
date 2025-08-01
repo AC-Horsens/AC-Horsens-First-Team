@@ -1072,95 +1072,42 @@ def plot_heatmap_location(data):
     pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot')
     st.pyplot(fig)
 
-def plot_avg_positions(df, phase, selected_team):
+def plot_avg_positions_on_ball(df, selected_team, phase):
     color_map = {
-        'AaB': 'red',
-        'Hvidovre': 'red',
-        'Aarhus_Fremad': 'yellow',
-        'Hobro': 'yellow',
-        'Horsens': 'yellow',
-        'B_93': 'white',
-        'Kolding': 'white',
-        'Esbjerg': 'blue',
-        'Middelfart': 'blue',
-        'Lyngby': 'blue',
-        'HB_Køge': 'black',
-        'Hillerød': 'orange'
+        'AaB': 'red', 'Hvidovre': 'red',
+        'Aarhus_Fremad': 'yellow', 'Hobro': 'yellow', 'Horsens': 'yellow',
+        'B_93': 'white', 'Kolding': 'white',
+        'Esbjerg': 'blue', 'Middelfart': 'blue', 'Lyngby': 'blue',
+        'HB_Køge': 'black', 'Hillerød': 'orange'
     }
+    color = color_map.get(selected_team, 'gray')
 
-    pitch = VerticalPitch(
-        pitch_type='secondspectrum',
-        pitch_length=105,
-        pitch_width=60,
-        pitch_color='grass',
-        line_color='white'
-    )
+    pitch = VerticalPitch(pitch_type='secondspectrum', pitch_length=105, pitch_width=60,
+                          pitch_color='grass', line_color='white')
 
     for match in df['label'].unique():
         match_df = df[df['label'] == match].copy()
         time_bins = sorted(match_df['time_bin'].unique())
 
-        # Determine opponent team
-        if 'vs' in match:
-            teams = match.split('vs')
-            team1 = teams[0].strip()
-            team2 = teams[1].strip().split()[0]
-
-            opponent = team2 if selected_team in team1 else team1
-        else:
-            opponent = "Unknown"
-
-        # Assign team column
-        match_df['team'] = match_df['player_name'].apply(
-            lambda name: selected_team if selected_team in name else (
-                opponent if opponent in name else 'Unknown')
-        )
-
-        # Layout
         rows, cols = 2, 3
-        total_bins = len(time_bins)
-        pages = math.ceil(total_bins / (rows * cols))
-
+        pages = math.ceil(len(time_bins) / (rows * cols))
         for page in range(pages):
-            start = page * rows * cols
-            end = start + (rows * cols)
-            current_bins = time_bins[start:end]
-
             fig, axes = plt.subplots(rows, cols, figsize=(20, 11), constrained_layout=True)
             axes = axes.flatten()
 
-            for i, time_bin in enumerate(current_bins):
+            bins_page = time_bins[page * rows * cols : (page + 1) * rows * cols]
+            for i, time_bin in enumerate(bins_page):
                 ax = axes[i]
                 pitch.draw(ax=ax)
 
                 subset = match_df[match_df['time_bin'] == time_bin]
 
-                # Scatter each team in correct color
-                for team_name in subset['team'].unique():
-                    team_subset = subset[subset['team'] == team_name]
-                    color = color_map.get(team_name, 'gray')
-                    pitch.scatter(
-                        x=team_subset['x'],
-                        y=team_subset['y'],
-                        ax=ax,
-                        color=color,
-                        s=100,
-                        zorder=3
-                    )
+                pitch.scatter(subset['x'], subset['y'], ax=ax, color=color, s=100, zorder=3)
 
                 for _, row in subset.iterrows():
-                    pitch.annotate(
-                        text=row['player_name'],
-                        xy=(row['x'], row['y']),
-                        ax=ax,
-                        color='white',
-                        fontsize=7,
-                        ha='center',
-                        va='center',
-                        xytext=(3, 0),
-                        textcoords='offset points',
-                        zorder=4
-                    )
+                    pitch.annotate(row['player_name'], (row['x'], row['y']), ax=ax, color='white',
+                                   fontsize=7, ha='center', va='center', xytext=(3, 0),
+                                   textcoords='offset points', zorder=4)
 
                 ax.set_title(f"{time_bin}-{time_bin + 15} min", fontsize=10)
 
@@ -1168,8 +1115,65 @@ def plot_avg_positions(df, phase, selected_team):
                 axes[j].axis('off')
 
             fig.suptitle(f"{match} – {phase}", fontsize=14)
-            st.write(team1)
-            st.write(team2)
+            st.pyplot(fig)
+
+def plot_avg_positions_off_ball(df, phase):
+    color_map = {
+        'AaB': 'red', 'Hvidovre': 'red',
+        'Aarhus_Fremad': 'yellow', 'Hobro': 'yellow', 'Horsens': 'yellow',
+        'B_93': 'white', 'Kolding': 'white',
+        'Esbjerg': 'blue', 'Middelfart': 'blue', 'Lyngby': 'blue',
+        'HB_Køge': 'black', 'Hillerød': 'orange'
+    }
+
+    pitch = VerticalPitch(pitch_type='secondspectrum', pitch_length=105, pitch_width=60,
+                          pitch_color='grass', line_color='white')
+
+    for match in df['label'].unique():
+        match_df = df[df['label'] == match].copy()
+        time_bins = sorted(match_df['time_bin'].unique())
+
+        # Parse teams
+        if 'vs' in match:
+            team1 = match.split('vs')[0].strip()
+            team2 = match.split('vs')[1].strip().split()[0]
+        else:
+            team1, team2 = "Unknown", "Unknown"
+
+        team_colors = {
+            'home': color_map.get(team1, 'gray'),
+            'away': color_map.get(team2, 'gray')
+        }
+
+        rows, cols = 2, 3
+        pages = math.ceil(len(time_bins) / (rows * cols))
+        for page in range(pages):
+            fig, axes = plt.subplots(rows, cols, figsize=(20, 11), constrained_layout=True)
+            axes = axes.flatten()
+
+            bins_page = time_bins[page * rows * cols : (page + 1) * rows * cols]
+            for i, time_bin in enumerate(bins_page):
+                ax = axes[i]
+                pitch.draw(ax=ax)
+
+                subset = match_df[match_df['time_bin'] == time_bin]
+
+                for team in ['home', 'away']:
+                    team_subset = subset[subset['team'] == team]
+                    pitch.scatter(team_subset['x'], team_subset['y'], ax=ax,
+                                  color=team_colors[team], s=100, zorder=3)
+
+                    for _, row in team_subset.iterrows():
+                        pitch.annotate(row['player_name'], (row['x'], row['y']), ax=ax, color='white',
+                                       fontsize=7, ha='center', va='center', xytext=(3, 0),
+                                       textcoords='offset points', zorder=4)
+
+                ax.set_title(f"{time_bin}-{time_bin + 15} min", fontsize=10)
+
+            for j in range(i + 1, len(axes)):
+                axes[j].axis('off')
+
+            fig.suptitle(f"{match} – {phase}", fontsize=14)
             st.pyplot(fig)
 
 
@@ -2672,7 +2676,7 @@ def Opposition_analysis():
 
         # Only include first 90 minutes
         avg_positions = avg_positions[avg_positions['time_bin'] < 90]
-        plot_avg_positions(avg_positions,'High Block',selected_team)
+        plot_avg_positions_off_ball(avg_positions,'High Block',selected_team)
     # Filter: Low base and possessor in own third depending on attacking direction
     filtered = df_opponnent_on_ball[
         (df_opponnent_on_ball['Low base'] == True) &
@@ -2715,7 +2719,7 @@ def Opposition_analysis():
 
     avg_positions = avg_positions[avg_positions['time_bin'] < 90]
 
-    plot_avg_positions(avg_positions,'Low base, low',selected_team)
+    plot_avg_positions_on_ball(avg_positions,'Low base, low',selected_team)
 
     filtered = df_opponnent_on_ball[
         (df_opponnent_on_ball['Low base'] == True) &
@@ -2756,7 +2760,7 @@ def Opposition_analysis():
     avg_positions.loc[flipped, 'y'] = -avg_positions.loc[flipped, 'y']
     avg_positions = avg_positions[avg_positions['time_bin'] < 90]
 
-    plot_avg_positions(avg_positions,'Low base, high',selected_team)
+    plot_avg_positions_on_ball(avg_positions,'Low base, high',selected_team)
 
     target_ranks = [1,1.5, 2,2.5, 3,3.5, 4,4.5, 9,9.5, 10,10.5, 11,11.5, 12,12.5]
 
