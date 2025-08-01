@@ -2817,6 +2817,7 @@ def Opposition_analysis():
     ].copy()
 
     filtered['time_bin'] = (filtered['timemin_first'] // 15) * 15
+    filtered = filtered[filtered['description'].isin(selected_match)]        
 
     # Receiver rows
     receivers = filtered[['label', 'time_bin', 'receiver_name', 'receiver_x', 'receiver_y','att_dir']].copy()
