@@ -1142,7 +1142,7 @@ def plot_avg_positions_on_ball(df, phase, selected_team):
             fig.suptitle(f"{match} – {phase}", fontsize=14)
             st.pyplot(fig)
 
-def plot_avg_positions_off_ball(df, phase):
+def plot_avg_positions_off_ball(df, phase, team_colors):
     color_map = {
         'AaB': 'red', 'Hvidovre': 'red',
         'Aarhus_Fremad': 'yellow', 'Hobro': 'yellow', 'Horsens': 'yellow',
