@@ -1160,8 +1160,14 @@ def plot_avg_positions_off_ball(df, phase):
 
                 for team in ['home', 'away']:
                     team_subset = subset[subset['team'] == team]
-                    pitch.scatter(team_subset['x'], team_subset['y'], ax=ax,
-                                  color=team_colors[team], s=100, zorder=3)
+                    pitch.scatter(
+                        x=team_subset['x'],
+                        y=team_subset['y'],
+                        ax=ax,
+                        color=team_colors[team],  # e.g. {'home': red, 'away': blue}
+                        s=100,
+                        zorder=3
+                    )
 
                     for _, row in team_subset.iterrows():
                         pitch.annotate(row['player_name'], (row['x'], row['y']), ax=ax, color='white',
@@ -2634,6 +2640,22 @@ def Opposition_analysis():
 
     df_opponnent_on_ball = load_opponnent_on_ball_sequences(selected_team)
     df_opponnent_off_ball = load_opponnent_off_ball_sequences(selected_team)
+    def assign_team_from_label(df):
+        def get_team(row):
+            label = row['description']
+            if 'vs' in label:
+                team1 = label.split('vs')[0].strip()
+                team2 = label.split('vs')[1].strip()
+                player_name = row['player_name']
+                if team1 in player_name:
+                    return 'home'
+                elif team2 in player_name:
+                    return 'away'
+            return 'unknown'
+        
+        df['team'] = df.apply(get_team, axis=1)
+        return df
+
     for block_flag in ['High block', 'Low block']:
         filtered = df_opponnent_off_ball[df_opponnent_off_ball[block_flag] == True].copy()
         filtered['time_bin'] = (filtered['timemin_first'] // 15) * 15
@@ -2668,10 +2690,11 @@ def Opposition_analysis():
         flipped = all_players_df['att_dir'] == False
         all_players_df.loc[flipped, 'x'] = -all_players_df.loc[flipped, 'x']
         all_players_df.loc[flipped, 'y'] = -all_players_df.loc[flipped, 'y']
+        avg_positions = assign_team_from_label(avg_positions)
 
         # Average player positions
         avg_positions = all_players_df.groupby(
-            ['label', 'time_bin', 'player_name', 'att_dir']
+            ['label', 'time_bin', 'player_name', 'att_dir','team']
         ).agg(x=('x', 'mean'), y=('y', 'mean')).reset_index()
 
         # Only include first 90 minutes
