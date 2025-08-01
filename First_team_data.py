@@ -2693,7 +2693,7 @@ def Opposition_analysis():
     col1, col2 = st.columns(2)
 
     with col1:
-        viz_type = st.multiselect("Select phase", ["On ball", "Off ball"])
+        viz_type = st.multiselect("Select phase", ["On ball", "Off ball"],default="On ball")
 
     with col2:
         matches = (
