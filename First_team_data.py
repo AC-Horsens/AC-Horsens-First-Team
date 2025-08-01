@@ -1072,7 +1072,7 @@ def plot_heatmap_location(data):
     pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot')
     st.pyplot(fig)
 
-def plot_avg_positions(df,height,color):
+def plot_avg_positions(df,phase,color):
     pitch = VerticalPitch(
         pitch_type='secondspectrum',
         pitch_length=105,
@@ -1134,7 +1134,7 @@ def plot_avg_positions(df,height,color):
             for j in range(i + 1, len(axes)):
                 axes[j].axis('off')
 
-            fig.suptitle(f"{match} – {height})", fontsize=14)
+            fig.suptitle(f"{match} – {phase})", fontsize=14)
             st.pyplot(fig)
 
 
@@ -2653,7 +2653,7 @@ def Opposition_analysis():
 
         # Only include first 90 minutes
         avg_positions = avg_positions[avg_positions['time_bin'] < 90]
-        plot_avg_positions(avg_positions,'High',team_color)
+        plot_avg_positions(avg_positions,'High Block',team_color)
     # Filter: Low base and possessor in own third depending on attacking direction
     filtered = df_opponnent_on_ball[
         (df_opponnent_on_ball['Low base'] == True) &
@@ -2696,7 +2696,7 @@ def Opposition_analysis():
 
     avg_positions = avg_positions[avg_positions['time_bin'] < 90]
 
-    plot_avg_positions(avg_positions,height="Low",color=team_color)
+    plot_avg_positions(avg_positions,'Low base, low',color=team_color)
 
     filtered = df_opponnent_on_ball[
         (df_opponnent_on_ball['Low base'] == True) &
@@ -2737,7 +2737,7 @@ def Opposition_analysis():
     avg_positions.loc[flipped, 'y'] = -avg_positions.loc[flipped, 'y']
     avg_positions = avg_positions[avg_positions['time_bin'] < 90]
 
-    plot_avg_positions(avg_positions,height="High",color=team_color)
+    plot_avg_positions(avg_positions,'Low base, high',color=team_color)
 
     target_ranks = [1,1.5, 2,2.5, 3,3.5, 4,4.5, 9,9.5, 10,10.5, 11,11.5, 12,12.5]
 
