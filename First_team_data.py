@@ -1141,57 +1141,67 @@ def plot_avg_positions_on_ball(df, phase, selected_team):
             st.pyplot(fig)
 
 def plot_avg_positions_off_ball(df, phase, team_colors):
-    color_map = {
-        'AaB': 'red', 'Hvidovre': 'red',
-        'Aarhus_Fremad': 'yellow', 'Hobro': 'yellow', 'Horsens': 'yellow',
-        'B_93': 'white', 'Kolding': 'white',
-        'Esbjerg': 'blue', 'Middelfart': 'blue', 'Lyngby': 'blue',
-        'HB_Køge': 'black', 'Hillerød': 'orange'
-    }
-
-    pitch = VerticalPitch(pitch_type='secondspectrum', pitch_length=105, pitch_width=60,
-                          pitch_color='grass', line_color='white')
+    pitch = VerticalPitch(
+        pitch_type='secondspectrum',
+        pitch_length=105,
+        pitch_width=60,
+        pitch_color='grass',
+        line_color='white'
+    )
 
     for match in df['label'].unique():
         match_df = df[df['label'] == match].copy()
         time_bins = sorted(match_df['time_bin'].unique())
 
-        # Parse teams
-        if 'vs' in match:
-            team1 = match.split('vs')[0].strip()
-            team2 = match.split('vs')[1].strip().split()[0]
-        else:
-            team1, team2 = "Unknown", "Unknown"
-
-        team_colors = {
-            'home': color_map.get(team1, 'gray'),
-            'away': color_map.get(team2, 'gray')
-        }
-
         rows, cols = 2, 3
-        pages = math.ceil(len(time_bins) / (rows * cols))
+        total_bins = len(time_bins)
+        pages = math.ceil(total_bins / (rows * cols))
+
         for page in range(pages):
+            start = page * rows * cols
+            end = start + (rows * cols)
+            current_bins = time_bins[start:end]
+
             fig, axes = plt.subplots(rows, cols, figsize=(20, 11), constrained_layout=True)
             axes = axes.flatten()
 
-            bins_page = time_bins[page * rows * cols : (page + 1) * rows * cols]
-            for i, time_bin in enumerate(bins_page):
+            for i, time_bin in enumerate(current_bins):
                 ax = axes[i]
                 pitch.draw(ax=ax)
 
                 subset = match_df[match_df['time_bin'] == time_bin]
 
+                # 👇 Loop per team ('home' and 'away') and assign color from team_colors
                 for team in ['home', 'away']:
                     team_subset = subset[subset['team'] == team]
-                    pitch.scatter(team_subset['x'], team_subset['y'], ax=ax, color=team_colors.get(team, 'gray'), s=100, zorder=3)
+                    color = team_colors.get(team, 'gray')  # <-- this must match team_colors = {'home': ..., 'away': ...}
+                    pitch.scatter(
+                        x=team_subset['x'],
+                        y=team_subset['y'],
+                        ax=ax,
+                        color=color,
+                        s=100,
+                        zorder=3
+                    )
 
-                    for _, row in team_subset.iterrows():
-                        pitch.annotate(row['player_name'], (row['x'], row['y']), ax=ax, color='white',
-                                       fontsize=7, ha='center', va='center', xytext=(3, 0),
-                                       textcoords='offset points', zorder=4)
+                # Annotate all players
+                for _, row in subset.iterrows():
+                    pitch.annotate(
+                        text=row['player_name'],
+                        xy=(row['x'], row['y']),
+                        ax=ax,
+                        color='white',
+                        fontsize=7,
+                        ha='center',
+                        va='center',
+                        xytext=(3, 0),
+                        textcoords='offset points',
+                        zorder=4
+                    )
 
                 ax.set_title(f"{time_bin}-{time_bin + 15} min", fontsize=10)
 
+            # Turn off unused subplots
             for j in range(i + 1, len(axes)):
                 axes[j].axis('off')
 
