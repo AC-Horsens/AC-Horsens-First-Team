@@ -2690,7 +2690,8 @@ def Opposition_analysis():
         
         df['team'] = df.apply(get_team, axis=1)
         return df
-
+    matches = df_opponnent_on_ball['description'].unique()
+    selected_match = st.selectbox(matches)
     for block_flag in ['High block', 'Low block']:
         filtered = df_opponnent_off_ball[
             (df_opponnent_off_ball[block_flag] == True) &
