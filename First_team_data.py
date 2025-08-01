@@ -1083,6 +1083,7 @@ def plot_avg_positions_on_ball(df, selected_team, phase):
 
     team_color = color_map.get(selected_team, 'gray')  # selected team's color
     st.write(team_color)
+    st.write(selected_team)
     pitch = VerticalPitch(
         pitch_type='secondspectrum',
         pitch_length=105,
