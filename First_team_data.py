@@ -2734,11 +2734,11 @@ def Opposition_analysis():
             team2 = sample_label.split('vs')[1].strip().replace(' ', '_')
         else:
             team1 = team2 = "Unknown"
-        print("Raw label:", sample_label)
-        print("Parsed team1:", team1)
-        print("Parsed team2:", team2)
-        print("Mapped color for team1:", color_map.get(team1, 'gray'))
-        print("Mapped color for team2:", color_map.get(team2, 'gray'))
+        st.write("Raw label:", sample_label)
+        st.write("Parsed team1:", team1)
+        st.write("Parsed team2:", team2)
+        st.write("Mapped color for team1:", color_map.get(team1, 'gray'))
+        st.write("Mapped color for team2:", color_map.get(team2, 'gray'))
 
         team_colors = {
             'home': color_map.get(team1, 'gray'),
