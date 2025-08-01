@@ -1072,7 +1072,7 @@ def plot_heatmap_location(data):
     pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot')
     st.pyplot(fig)
 
-def plot_avg_positions_on_ball(df, selected_team, phase):
+def plot_avg_positions_on_ball(df, phase, selected_team):
     color_map = {
         'AaB': 'red', 'Hvidovre': 'red',
         'Aarhus_Fremad': 'yellow', 'Hobro': 'yellow', 'Horsens': 'yellow',
