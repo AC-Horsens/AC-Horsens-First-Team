@@ -1134,7 +1134,7 @@ def plot_avg_positions(df,height,color):
             for j in range(i + 1, len(axes)):
                 axes[j].axis('off')
 
-            fig.suptitle(f"{match} – Avg Positions (Low Base, {height})", fontsize=14)
+            fig.suptitle(f"{match} – {height})", fontsize=14)
             st.pyplot(fig)
 
 
