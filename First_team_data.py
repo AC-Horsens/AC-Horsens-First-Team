@@ -1082,8 +1082,6 @@ def plot_avg_positions_on_ball(df, phase, selected_team):
     }
 
     team_color = color_map.get(selected_team, 'gray')  # selected team's color
-    st.write(team_color)
-    st.write(selected_team)
     pitch = VerticalPitch(
         pitch_type='secondspectrum',
         pitch_length=105,
@@ -2732,8 +2730,8 @@ def Opposition_analysis():
         # Determine team colors based on description
         sample_label = avg_positions['description'].iloc[0]
         if 'vs' in sample_label:
-            team1 = sample_label.split('vs')[0].strip()
-            team2 = sample_label.split('vs')[1].strip().split()[0].strip()
+            team1 = sample_label.split('vs')[0].strip().replace(' ', '_')
+            team2 = sample_label.split('vs')[1].strip().split()[0].strip().replace(' ', '_')
         else:
             team1 = team2 = "Unknown"
 
@@ -2744,7 +2742,7 @@ def Opposition_analysis():
 
         # Filter first 90 mins
         avg_positions = avg_positions[avg_positions['time_bin'] < 90]
-        st.write(avg_positions)
+
 
         # Plot using team_colors
         plot_avg_positions_off_ball(avg_positions, block_flag, team_colors)
