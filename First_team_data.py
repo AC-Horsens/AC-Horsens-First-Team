@@ -2728,29 +2728,27 @@ def Opposition_analysis():
         ).reset_index()
 
         # Determine team colors based on description
-        sample_label = avg_positions['description'].iloc[0]
-        if 'vs' in sample_label:
-            team1 = sample_label.split('vs')[0].strip().replace(' ', '_')
-            team2 = sample_label.split('vs')[1].strip().replace(' ', '_')
-        else:
-            team1 = team2 = "Unknown"
-        st.write("Raw label:", sample_label)
-        st.write("Parsed team1:", team1)
-        st.write("Parsed team2:", team2)
-        st.write("Mapped color for team1:", color_map.get(team1, 'gray'))
-        st.write("Mapped color for team2:", color_map.get(team2, 'gray'))
+        for match in avg_positions['label'].unique():
+            match_df = avg_positions[avg_positions['label'] == match].copy()
+            sample_label = match_df['description'].iloc[0]
 
-        team_colors = {
-            'home': color_map.get(team1, 'gray'),
-            'away': color_map.get(team2, 'gray')
-        }
+            # Parse teams
+            if 'vs' in sample_label:
+                team1 = sample_label.split('vs')[0].strip().replace(' ', '_')
+                team2 = sample_label.split('vs')[1].strip().replace(' ', '_')
+            else:
+                team1 = team2 = "Unknown"
 
-        # Filter first 90 mins
-        avg_positions = avg_positions[avg_positions['time_bin'] < 90]
+            team_colors = {
+                'home': color_map.get(team1, 'gray'),
+                'away': color_map.get(team2, 'gray')
+            }
 
+            # Filter first 90 mins
+            match_df = match_df[match_df['time_bin'] < 90]
 
-        # Plot using team_colors
-        plot_avg_positions_off_ball(avg_positions, block_flag, team_colors)
+            # Now plot per match using team_colors
+            plot_avg_positions_off_ball(match_df, block_flag, team_colors)
 
 
     filtered = df_opponnent_on_ball[
