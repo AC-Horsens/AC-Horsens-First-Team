@@ -2691,12 +2691,13 @@ def Opposition_analysis():
         df['team'] = df.apply(get_team, axis=1)
         return df
     matches = df_opponnent_on_ball['description'].unique()
-    selected_match = st.selectbox('Select matches',matches)
+    selected_match = st.multiselect('Select matches',matches)
     for block_flag in ['High block', 'Low block']:
         filtered = df_opponnent_off_ball[
             (df_opponnent_off_ball[block_flag] == True) &
             ~((df_opponnent_off_ball['period'] == 1) & (df_opponnent_off_ball['timemin_first'] > 44))
-        ].copy()        
+        ].copy()
+        filtered = filtered[filtered['description'].isin(selected_match)]        
         filtered['time_bin'] = (filtered['timemin_first'] // 15) * 15
 
         all_players = []
@@ -2773,6 +2774,7 @@ def Opposition_analysis():
     ].copy()
 
     filtered['time_bin'] = (filtered['timemin_first'] // 15) * 15
+    filtered = filtered[filtered['description'].isin(selected_match)]        
 
     # Receiver rows
     receivers = filtered[['label', 'time_bin', 'receiver_name', 'receiver_x', 'receiver_y','att_dir']].copy()
