@@ -2692,7 +2692,10 @@ def Opposition_analysis():
         return df
 
     for block_flag in ['High block', 'Low block']:
-        filtered = df_opponnent_off_ball[df_opponnent_off_ball[block_flag] == True].copy()
+        filtered = df_opponnent_off_ball[
+            (df_opponnent_off_ball[block_flag] == True) &
+            ~((df_opponnent_off_ball['period'] == 1) & (df_opponnent_off_ball['timemin_first'] > 44))
+        ].copy()        
         filtered['time_bin'] = (filtered['timemin_first'] // 15) * 15
 
         all_players = []
