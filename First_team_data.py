@@ -1080,10 +1080,16 @@ def plot_avg_positions_on_ball(df, selected_team, phase):
         'Esbjerg': 'blue', 'Middelfart': 'blue', 'Lyngby': 'blue',
         'HB_Køge': 'black', 'Hillerød': 'orange'
     }
-    color = color_map.get(selected_team, 'gray')
 
-    pitch = VerticalPitch(pitch_type='secondspectrum', pitch_length=105, pitch_width=60,
-                          pitch_color='grass', line_color='white')
+    team_color = color_map.get(selected_team, 'gray')  # selected team's color
+    st.write(team_color)
+    pitch = VerticalPitch(
+        pitch_type='secondspectrum',
+        pitch_length=105,
+        pitch_width=60,
+        pitch_color='grass',
+        line_color='white'
+    )
 
     for match in df['label'].unique():
         match_df = df[df['label'] == match].copy()
@@ -1091,26 +1097,44 @@ def plot_avg_positions_on_ball(df, selected_team, phase):
 
         rows, cols = 2, 3
         pages = math.ceil(len(time_bins) / (rows * cols))
+
         for page in range(pages):
             fig, axes = plt.subplots(rows, cols, figsize=(20, 11), constrained_layout=True)
             axes = axes.flatten()
 
             bins_page = time_bins[page * rows * cols : (page + 1) * rows * cols]
+
             for i, time_bin in enumerate(bins_page):
                 ax = axes[i]
                 pitch.draw(ax=ax)
 
                 subset = match_df[match_df['time_bin'] == time_bin]
 
-                pitch.scatter(subset['x'], subset['y'], ax=ax, color=color, s=100, zorder=3)
+                pitch.scatter(
+                    subset['x'], subset['y'],
+                    ax=ax,
+                    color=team_color,
+                    s=100,
+                    zorder=3
+                )
 
                 for _, row in subset.iterrows():
-                    pitch.annotate(row['player_name'], (row['x'], row['y']), ax=ax, color='white',
-                                   fontsize=7, ha='center', va='center', xytext=(3, 0),
-                                   textcoords='offset points', zorder=4)
+                    pitch.annotate(
+                        row['player_name'],
+                        (row['x'], row['y']),
+                        ax=ax,
+                        color='white',
+                        fontsize=7,
+                        ha='center',
+                        va='center',
+                        xytext=(3, 0),
+                        textcoords='offset points',
+                        zorder=4
+                    )
 
                 ax.set_title(f"{time_bin}-{time_bin + 15} min", fontsize=10)
 
+            # Hide unused subplots
             for j in range(i + 1, len(axes)):
                 axes[j].axis('off')
 
