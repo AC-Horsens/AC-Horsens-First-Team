@@ -2731,7 +2731,7 @@ def Opposition_analysis():
         sample_label = avg_positions['description'].iloc[0]
         if 'vs' in sample_label:
             team1 = sample_label.split('vs')[0].strip().replace(' ', '_')
-            team2 = sample_label.split('vs')[1].strip().split()[0].strip().replace(' ', '_')
+            team2 = sample_label.split('vs')[1].strip().replace(' ', '_')
         else:
             team1 = team2 = "Unknown"
 
