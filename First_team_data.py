@@ -1185,14 +1185,7 @@ def plot_avg_positions_off_ball(df, phase):
 
                 for team in ['home', 'away']:
                     team_subset = subset[subset['team'] == team]
-                    pitch.scatter(
-                        x=team_subset['x'],
-                        y=team_subset['y'],
-                        ax=ax,
-                        color=team_colors[team],  # e.g. {'home': red, 'away': blue}
-                        s=100,
-                        zorder=3
-                    )
+                    pitch.scatter(team_subset['x'], team_subset['y'], ax=ax, color=team_colors.get(team, 'gray'), s=100, zorder=3)
 
                     for _, row in team_subset.iterrows():
                         pitch.annotate(row['player_name'], (row['x'], row['y']), ax=ax, color='white',
@@ -2665,6 +2658,15 @@ def Opposition_analysis():
 
     df_opponnent_on_ball = load_opponnent_on_ball_sequences(selected_team)
     df_opponnent_off_ball = load_opponnent_off_ball_sequences(selected_team)
+
+    color_map = {
+        'AaB': 'red', 'Hvidovre': 'red',
+        'Aarhus_Fremad': 'yellow', 'Hobro': 'yellow', 'Horsens': 'yellow',
+        'B_93': 'white', 'Kolding': 'white',
+        'Esbjerg': 'blue', 'Middelfart': 'blue', 'Lyngby': 'blue',
+        'HB_Køge': 'black', 'Hillerød': 'orange'
+    }
+
     def assign_team_from_label(df):
         def get_team(row):
             label = row['description']
@@ -2690,7 +2692,7 @@ def Opposition_analysis():
             label = row['label']
             time_bin = row['time_bin']
             att_dir = row['att_dir']
-            description = row['description']  # Used for team assignment
+            description = row['description']
 
             home_players = eval(row['home_players'])
             away_players = eval(row['away_players'])
@@ -2699,6 +2701,8 @@ def Opposition_analysis():
                 player_id = p.get('playerId')
                 player_name = p.get('name', player_id)
                 x, y = p['xyz'][0], p['xyz'][1]
+                team_type = 'home' if p in home_players else 'away'
+
                 all_players.append({
                     'label': label,
                     'description': description,
@@ -2706,7 +2710,8 @@ def Opposition_analysis():
                     'player_name': player_name,
                     'x': x,
                     'y': y,
-                    'att_dir': att_dir
+                    'att_dir': att_dir,
+                    'team': team_type
                 })
 
         all_players_df = pd.DataFrame(all_players)
@@ -2716,23 +2721,34 @@ def Opposition_analysis():
         all_players_df.loc[flipped, 'x'] = -all_players_df.loc[flipped, 'x']
         all_players_df.loc[flipped, 'y'] = -all_players_df.loc[flipped, 'y']
 
-        # Assign team before grouping
-        all_players_df = assign_team_from_label(all_players_df)
-
-        # Average positions per player
+        # Compute average positions
         avg_positions = all_players_df.groupby(
-            ['label', 'time_bin', 'player_name', 'att_dir', 'team']
+            ['label', 'time_bin', 'player_name', 'att_dir', 'team', 'description']
         ).agg(
             x=('x', 'mean'),
             y=('y', 'mean')
         ).reset_index()
 
-        # Only include first 90 minutes
+        # Determine team colors based on description
+        sample_label = avg_positions['description'].iloc[0]
+        if 'vs' in sample_label:
+            team1 = sample_label.split('vs')[0].strip()
+            team2 = sample_label.split('vs')[1].strip().split()[0].strip()
+        else:
+            team1 = team2 = "Unknown"
+
+        team_colors = {
+            'home': color_map.get(team1, 'gray'),
+            'away': color_map.get(team2, 'gray')
+        }
+
+        # Filter first 90 mins
         avg_positions = avg_positions[avg_positions['time_bin'] < 90]
 
-        # Now plot
-        plot_avg_positions_off_ball(avg_positions, block_flag)
-    # Filter: Low base and possessor in own third depending on attacking direction
+        # Plot using team_colors
+        plot_avg_positions_off_ball(avg_positions, block_flag, team_colors)
+
+
     filtered = df_opponnent_on_ball[
         (df_opponnent_on_ball['Low base'] == True) &
         (
