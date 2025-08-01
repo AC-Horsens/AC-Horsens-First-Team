@@ -2676,7 +2676,7 @@ def Opposition_analysis():
 
         # Only include first 90 minutes
         avg_positions = avg_positions[avg_positions['time_bin'] < 90]
-        plot_avg_positions_off_ball(avg_positions,'High Block',selected_team)
+        plot_avg_positions_off_ball(avg_positions,block_flag)
     # Filter: Low base and possessor in own third depending on attacking direction
     filtered = df_opponnent_on_ball[
         (df_opponnent_on_ball['Low base'] == True) &
