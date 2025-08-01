@@ -1072,7 +1072,22 @@ def plot_heatmap_location(data):
     pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot')
     st.pyplot(fig)
 
-def plot_avg_positions(df,phase,color):
+def plot_avg_positions(df, phase, selected_team):
+    color_map = {
+        'AaB': 'red',
+        'Hvidovre': 'red',
+        'Aarhus_Fremad': 'yellow',
+        'Hobro': 'yellow',
+        'Horsens': 'yellow',
+        'B_93': 'white',
+        'Kolding': 'white',
+        'Esbjerg': 'blue',
+        'Middelfart': 'blue',
+        'Lyngby': 'blue',
+        'HB_Køge': 'black',
+        'Hillerød': 'orange'
+    }
+
     pitch = VerticalPitch(
         pitch_type='secondspectrum',
         pitch_length=105,
@@ -1085,7 +1100,17 @@ def plot_avg_positions(df,phase,color):
         match_df = df[df['label'] == match]
         time_bins = sorted(match_df['time_bin'].unique())
 
-        # Layout: 2 rows × 4 columns per page
+        # Determine which team is the opponent
+        if 'vs' in match:
+            team1, team2 = match.split('vs')[0].strip(), match.split('vs')[1].split()[0].strip()
+            opponent = team2 if selected_team in team1 else team1
+        else:
+            opponent = "Unknown"
+
+        selected_color = color_map.get(selected_team, 'gray')
+        opponent_color = color_map.get(opponent, 'gray')
+
+        # Layout: 2 rows × 3 columns per page
         rows, cols = 2, 3
         total_bins = len(time_bins)
         pages = math.ceil(total_bins / (rows * cols))
@@ -1104,37 +1129,38 @@ def plot_avg_positions(df,phase,color):
 
                 subset = match_df[match_df['time_bin'] == time_bin]
 
-                # Plot player positions
-                pitch.scatter(
-                    x=subset['x'],
-                    y=subset['y'],
-                    ax=ax,
-                    color=color,
-                    s=100,
-                    zorder=3
-                )
+                # Determine player color based on team name in player name (if available)
+                def get_color(name):
+                    if selected_team in name:
+                        return selected_color
+                    elif opponent in name:
+                        return opponent_color
+                    else:
+                        return 'gray'
 
                 for _, row in subset.iterrows():
+                    player_color = get_color(row['player_name'])
+                    pitch.scatter(row['x'], row['y'], ax=ax, color=player_color, s=100, zorder=3)
                     pitch.annotate(
                         text=row['player_name'],
                         xy=(row['x'], row['y']),
                         ax=ax,
                         color='white',
                         fontsize=7,
-                        ha='center',         # Place label just right of the dot
+                        ha='center',
                         va='center',
-                        xytext=(3, 0),     # Offset label 3 points to the right
+                        xytext=(3, 0),
                         textcoords='offset points',
                         zorder=4
                     )
 
                 ax.set_title(f"{time_bin}-{time_bin + 15} min", fontsize=10)
 
-            # Hide any unused subplots
+            # Hide unused subplots
             for j in range(i + 1, len(axes)):
                 axes[j].axis('off')
 
-            fig.suptitle(f"{match} – {phase})", fontsize=14)
+            fig.suptitle(f"{match} – {phase}", fontsize=14)
             st.pyplot(fig)
 
 
@@ -2592,22 +2618,6 @@ def Opposition_analysis():
             )
     else:
         st.write('No XML files found in this directory.')
-    color_map = {
-    'AaB': 'red',
-    'Hvidovre': 'red',
-    'Aarhus_Fremad': 'yellow',
-    'Hobro': 'yellow',
-    'Horsens': 'yellow',
-    'B_93': 'white',
-    'Kolding': 'white',
-    'Esbjerg': 'blue',
-    'Middelfart': 'blue',
-    'Lyngby': 'blue',
-    'HB_Køge': 'black',
-    'Hillerød': 'orange'
-}
-
-    team_color = color_map.get(selected_team, 'gray')  # fallback to gray if unknown
 
     df_opponnent_on_ball = load_opponnent_on_ball_sequences(selected_team)
     df_opponnent_off_ball = load_opponnent_off_ball_sequences(selected_team)
@@ -2653,7 +2663,7 @@ def Opposition_analysis():
 
         # Only include first 90 minutes
         avg_positions = avg_positions[avg_positions['time_bin'] < 90]
-        plot_avg_positions(avg_positions,'High Block',team_color)
+        plot_avg_positions(avg_positions,'High Block',selected_team)
     # Filter: Low base and possessor in own third depending on attacking direction
     filtered = df_opponnent_on_ball[
         (df_opponnent_on_ball['Low base'] == True) &
@@ -2696,7 +2706,7 @@ def Opposition_analysis():
 
     avg_positions = avg_positions[avg_positions['time_bin'] < 90]
 
-    plot_avg_positions(avg_positions,'Low base, low',color=team_color)
+    plot_avg_positions(avg_positions,'Low base, low',selected_team)
 
     filtered = df_opponnent_on_ball[
         (df_opponnent_on_ball['Low base'] == True) &
@@ -2737,7 +2747,7 @@ def Opposition_analysis():
     avg_positions.loc[flipped, 'y'] = -avg_positions.loc[flipped, 'y']
     avg_positions = avg_positions[avg_positions['time_bin'] < 90]
 
-    plot_avg_positions(avg_positions,'Low base, high',color=team_color)
+    plot_avg_positions(avg_positions,'Low base, high',selected_team)
 
     target_ranks = [1,1.5, 2,2.5, 3,3.5, 4,4.5, 9,9.5, 10,10.5, 11,11.5, 12,12.5]
 
