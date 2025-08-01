@@ -2660,14 +2660,13 @@ def Opposition_analysis():
         filtered = df_opponnent_off_ball[df_opponnent_off_ball[block_flag] == True].copy()
         filtered['time_bin'] = (filtered['timemin_first'] // 15) * 15
 
-        # Collect all players from home and away
         all_players = []
         for _, row in filtered.iterrows():
             label = row['label']
             time_bin = row['time_bin']
             att_dir = row['att_dir']
+            description = row['description']  # Used for team assignment
 
-            # Load player dicts from JSON string
             home_players = eval(row['home_players'])
             away_players = eval(row['away_players'])
 
@@ -2677,6 +2676,7 @@ def Opposition_analysis():
                 x, y = p['xyz'][0], p['xyz'][1]
                 all_players.append({
                     'label': label,
+                    'description': description,
                     'time_bin': time_bin,
                     'player_name': player_name,
                     'x': x,
@@ -2690,16 +2690,23 @@ def Opposition_analysis():
         flipped = all_players_df['att_dir'] == False
         all_players_df.loc[flipped, 'x'] = -all_players_df.loc[flipped, 'x']
         all_players_df.loc[flipped, 'y'] = -all_players_df.loc[flipped, 'y']
-        avg_positions = assign_team_from_label(avg_positions)
 
-        # Average player positions
+        # Assign team before grouping
+        all_players_df = assign_team_from_label(all_players_df)
+
+        # Average positions per player
         avg_positions = all_players_df.groupby(
-            ['label', 'time_bin', 'player_name', 'att_dir','team']
-        ).agg(x=('x', 'mean'), y=('y', 'mean')).reset_index()
+            ['label', 'time_bin', 'player_name', 'att_dir', 'team']
+        ).agg(
+            x=('x', 'mean'),
+            y=('y', 'mean')
+        ).reset_index()
 
         # Only include first 90 minutes
         avg_positions = avg_positions[avg_positions['time_bin'] < 90]
-        plot_avg_positions_off_ball(avg_positions,block_flag)
+
+        # Now plot
+        plot_avg_positions_off_ball(avg_positions, block_flag)
     # Filter: Low base and possessor in own third depending on attacking direction
     filtered = df_opponnent_on_ball[
         (df_opponnent_on_ball['Low base'] == True) &
