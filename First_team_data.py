@@ -2705,7 +2705,7 @@ def Opposition_analysis():
         )
         selected_match = st.multiselect('Select matches', matches,default=matches[0])
 
-    if viz_type == "Off-ball":
+    if viz_type == "Off ball":
 
         for block_flag in ['High block', 'Low block']:
             filtered = df_opponnent_off_ball[
@@ -2779,7 +2779,7 @@ def Opposition_analysis():
                 # Now plot per match using team_colors
                 plot_avg_positions_off_ball(match_df, block_flag, team_colors)
 
-    elif viz_type == "On-ball":
+    elif viz_type == "On ball":
 
         filtered = df_opponnent_on_ball[
             (df_opponnent_on_ball['Low base'] == True) &
