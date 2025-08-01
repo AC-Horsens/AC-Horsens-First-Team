@@ -2725,7 +2725,7 @@ def Opposition_analysis():
         all_players_df = pd.DataFrame(all_players)
 
         # Flip coordinates to normalize attacking direction
-        flipped = all_players_df['att_dir'] == False
+        flipped = all_players_df['att_dir'] == True
         all_players_df.loc[flipped, 'x'] = -all_players_df.loc[flipped, 'x']
         all_players_df.loc[flipped, 'y'] = -all_players_df.loc[flipped, 'y']
 
@@ -2756,9 +2756,6 @@ def Opposition_analysis():
 
             # Filter first 90 mins
             match_df = match_df[match_df['time_bin'] < 90]
-            st.write(f"Parsed teams: team1 = '{team1}', team2 = '{team2}'")
-            st.write(f"Color for team1 ({team1}):", color_map.get(team1, 'gray'))
-            st.write(f"Color for team2 ({team2}):", color_map.get(team2, 'gray'))
             # Now plot per match using team_colors
             plot_avg_positions_off_ball(match_df, block_flag, team_colors)
 
