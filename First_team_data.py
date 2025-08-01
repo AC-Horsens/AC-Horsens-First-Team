@@ -1097,20 +1097,25 @@ def plot_avg_positions(df, phase, selected_team):
     )
 
     for match in df['label'].unique():
-        match_df = df[df['label'] == match]
+        match_df = df[df['label'] == match].copy()
         time_bins = sorted(match_df['time_bin'].unique())
 
-        # Determine which team is the opponent
+        # Determine opponent team
         if 'vs' in match:
-            team1, team2 = match.split('vs')[0].strip(), match.split('vs')[1].split()[0].strip()
+            teams = match.split('vs')
+            team1 = teams[0].strip()
+            team2 = teams[1].strip().split()[0]
             opponent = team2 if selected_team in team1 else team1
         else:
             opponent = "Unknown"
 
-        selected_color = color_map.get(selected_team, 'gray')
-        opponent_color = color_map.get(opponent, 'gray')
+        # Assign team column
+        match_df['team'] = match_df['player_name'].apply(
+            lambda name: selected_team if selected_team in name else (
+                opponent if opponent in name else 'Unknown')
+        )
 
-        # Layout: 2 rows × 3 columns per page
+        # Layout
         rows, cols = 2, 3
         total_bins = len(time_bins)
         pages = math.ceil(total_bins / (rows * cols))
@@ -1129,18 +1134,20 @@ def plot_avg_positions(df, phase, selected_team):
 
                 subset = match_df[match_df['time_bin'] == time_bin]
 
-                # Determine player color based on team name in player name (if available)
-                def get_color(name):
-                    if selected_team in name:
-                        return selected_color
-                    elif opponent in name:
-                        return opponent_color
-                    else:
-                        return 'gray'
+                # Scatter each team in correct color
+                for team_name in subset['team'].unique():
+                    team_subset = subset[subset['team'] == team_name]
+                    color = color_map.get(team_name, 'gray')
+                    pitch.scatter(
+                        x=team_subset['x'],
+                        y=team_subset['y'],
+                        ax=ax,
+                        color=color,
+                        s=100,
+                        zorder=3
+                    )
 
                 for _, row in subset.iterrows():
-                    player_color = get_color(row['player_name'])
-                    pitch.scatter(row['x'], row['y'], ax=ax, color=player_color, s=100, zorder=3)
                     pitch.annotate(
                         text=row['player_name'],
                         xy=(row['x'], row['y']),
@@ -1156,7 +1163,6 @@ def plot_avg_positions(df, phase, selected_team):
 
                 ax.set_title(f"{time_bin}-{time_bin + 15} min", fontsize=10)
 
-            # Hide unused subplots
             for j in range(i + 1, len(axes)):
                 axes[j].axis('off')
 
