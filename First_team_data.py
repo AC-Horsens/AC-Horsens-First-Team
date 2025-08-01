@@ -2744,7 +2744,7 @@ def Opposition_analysis():
 
         # Filter first 90 mins
         avg_positions = avg_positions[avg_positions['time_bin'] < 90]
-        st.write(avg_positions.columns)
+        st.write(avg_positions['team'])
         # Plot using team_colors
         plot_avg_positions_off_ball(avg_positions, block_flag, team_colors)
 
