@@ -1411,6 +1411,23 @@ classic_striker_df = position_dataframes['Striker']
 #targetman_df = position_dataframes['Targetman']
 #box_striker_df = position_dataframes['Boxstriker']
 #horsens_df, merged_df, total_expected_points_combined = process_data()
+position_keys = ['Central defender', 'Wingback', 'Number 6', 'Number 8', 'Number 10', 'Winger', 'Striker']
+
+# Loop through each positional dataframe
+for key in position_keys:
+    df = position_dataframes[key]
+
+    # Step 1–2: Average Total score per label
+    label_avg = df.groupby('label')['Total score'].mean()
+
+    # Step 3: Rank labels (higher score = better rank)
+    label_rank = label_avg.rank(ascending=False, method='min')
+
+    # Step 4: Map rank back to original dataframe
+    df['rank'] = df['label'].map(label_rank)
+
+    # Optional: Update the original dictionary
+    position_dataframes[key] = df
 
 
 def create_pdf_game_report(game_data, df_xg_agg, df_xa_agg, merged_df, df_possession_stats, position_dataframes):
