@@ -725,8 +725,20 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         return df_balanced_central_defender
   
     def fullbacks():
-        df_backs = df_scouting[((df_scouting['player_position'] == 'Defender') | (df_scouting['player_position'] == 'Wing Back')| (df_scouting['player_position'] == 'Midfielder')) & 
-                            ((df_scouting['player_positionSide'] == 'Right') | (df_scouting['player_positionSide'] == 'Left'))]
+        mask = (
+            ((df_scouting['formationUsed'].isin(['532', '541'])) &
+            (df_scouting['player_position'] == 'Defender') &
+            (df_scouting['player_positionSide'].isin(['Right', 'Left'])))
+            |
+            ((df_scouting['formationUsed'].isin(['352', '343'])) &
+            (df_scouting['player_position'] == 'Midfielder') &
+            (df_scouting['player_positionSide'].isin(['Right', 'Left'])))
+            |
+            (df_scouting['player_position'] == 'Wing Back') &
+            (df_scouting['player_positionSide'].isin(['Right', 'Left'])))
+        
+
+        df_backs = df_scouting[mask].copy()
 
         df_backs['minsPlayed'] = df_backs['minsPlayed'].astype(int)
         df_backs = df_backs[df_backs['minsPlayed'] >= minutter_kamp]
@@ -1411,23 +1423,6 @@ classic_striker_df = position_dataframes['Striker']
 #targetman_df = position_dataframes['Targetman']
 #box_striker_df = position_dataframes['Boxstriker']
 #horsens_df, merged_df, total_expected_points_combined = process_data()
-position_keys = ['Central defender', 'Wingback', 'Number 6', 'Number 8', 'Number 10', 'Winger', 'Striker']
-
-# Loop through each positional dataframe
-for key in position_keys:
-    df = position_dataframes[key]
-
-    # Step 1–2: Average Total score per label
-    label_avg = df.groupby('label')['Total score'].mean()
-
-    # Step 3: Rank labels (higher score = better rank)
-    label_rank = label_avg.rank(ascending=False, method='min')
-
-    # Step 4: Map rank back to original dataframe
-    df['rank'] = df['label'].map(label_rank)
-
-    # Optional: Update the original dictionary
-    position_dataframes[key] = df
 
 
 def create_pdf_game_report(game_data, df_xg_agg, df_xa_agg, merged_df, df_possession_stats, position_dataframes):
@@ -1613,63 +1608,75 @@ def create_pdf_progress_report(horsens_df, total_expected_points_combined, posit
 
 
     for position, df in position_dataframes.items():
-        filtered_df = df[(df['team_name'] == 'Horsens')]
-        if 'player_position' in filtered_df.columns:
-            filtered_df = filtered_df.drop(columns=['label', 'team_name', 'player_position', 'age_today'])
-        else:
-            filtered_df = filtered_df.drop(columns=['label', 'team_name', 'age_today'])
+        df['Total score'] = pd.to_numeric(df['Total score'], errors='coerce')
+        df = df.dropna(subset=['Total score'])
 
-        if 'player_positionSide' in filtered_df.columns:
-            filtered_df = filtered_df.drop(columns=['player_positionSide'])
+        # 2. Group by player to get average Total score for rank
+        df_ranked = (
+            df.groupby('playerName', as_index=False)['Total score']
+            .mean()
+            .sort_values('Total score', ascending=False)
+            .reset_index(drop=True)
+        )
 
+        # 3. Assign Rank
+        df_ranked['Rank'] = df_ranked['Total score'].rank(ascending=False, method='min').astype(int)
+
+        # 4. Merge back to original df to inject rank
+        df = df.merge(df_ranked[['playerName', 'Rank']], on='playerName', how='left')
+
+        # Filter only Horsens players
+        filtered_df = df[df['team_name'] == 'Horsens'].copy()
+
+        # Drop unused columns
+        drop_cols = ['label', 'team_name', 'age_today', 'player_position', 'player_positionSide']
+        filtered_df.drop(columns=[col for col in drop_cols if col in filtered_df.columns], inplace=True)
+
+        # Select numeric columns for aggregation
         numeric_columns = filtered_df.select_dtypes(include='number').columns.tolist()
-        numeric_columns.remove('minsPlayed')
-        
-        # Sum minsPlayed and mean for the rest of the numeric columns
+        if 'minsPlayed' in numeric_columns:
+            numeric_columns.remove('minsPlayed')
+        if 'Rank' in numeric_columns:
+            numeric_columns.remove('Rank')
+
         aggregation_dict = {col: 'mean' for col in numeric_columns}
         aggregation_dict['minsPlayed'] = 'sum'
-        
+        aggregation_dict['Rank'] = 'min'  # keep original rank
+
         filtered_df = filtered_df.groupby('playerName').agg(aggregation_dict).reset_index()
-        filtered_df = filtered_df[filtered_df['minsPlayed'] > 0]
-        filtered_df = filtered_df.round(2)
-        filtered_df['Total score'] = filtered_df['Total score'].astype(float)        
-        reordered_columns = ['playerName', 'minsPlayed'] + numeric_columns
+        filtered_df = filtered_df[filtered_df['minsPlayed'] > 0].round(2)
+
+        # Final column order
+        reordered_columns = ['playerName', 'minsPlayed'] + numeric_columns + ['Rank']
         filtered_df = filtered_df[reordered_columns]
-        filtered_df = filtered_df.sort_values('Total score',ascending=False)
+        filtered_df.sort_values('Total score', ascending=False, inplace=True)
+
+        # Add to PDF
         pdf.set_font("Arial", size=6)
-        pdf.cell(190, 4, txt=convert_to_ascii(f"Position Report: {position}"), ln=True, align='C')
+        pdf.cell(190, 4, txt=convert_to_ascii(f"Position Report: {position} (Ranked)"), ln=True, align='C')
         pdf.ln(0)
 
-        # Add table headers
-        pdf.set_font("Arial", size=6)
-        headers = filtered_df.columns
-        col_width = 30  # Fixed width for all columns except the last one
-        last_col_width = 15  # Width for the last column
+        headers = filtered_df.columns.tolist()
+        col_widths = [min(max(len(h) * 2.2, 15), 35) for h in headers]  # dynamic width: between 15–35
 
-        for header in headers[:-1]:
-            pdf.cell(col_width, 4, txt=header, border=1)
-        pdf.cell(last_col_width, 4, txt=headers[-1], border=1)
+        # Header row
+        for i, h in enumerate(headers):
+            pdf.cell(col_widths[i], 4, txt=convert_to_ascii(h), border=1)
         pdf.ln(4)
 
-        # Add table content
-        for index, row in filtered_df.iterrows():
+        # Data rows
+        for _, row in filtered_df.iterrows():
             total_score = row['Total score']
-            if total_score < 4:
-                fill_color = (255, 0, 0)  # Red
-            elif 4 <= total_score <= 6:
-                fill_color = (255, 255, 0)  # Yellow
-            else:
-                fill_color = (0, 255, 0)  # Green
-
+            fill_color = (255, 0, 0) if total_score < 4 else (255, 255, 0) if total_score <= 6 else (0, 255, 0)
             pdf.set_fill_color(*fill_color)
+            for i, val in enumerate(row):
+                pdf.cell(col_widths[i], 4, txt=convert_to_ascii(str(val)), border=1, fill=True)
+            pdf.ln(4)
+        pdf.set_font("Arial", style='I', size=6)
+        pdf.set_text_color(100, 100, 100)  # Grey tone
+        pdf.cell(190, 5, txt="Note: Rank is measured comparing the player to all other players on the same position in the league.", ln=True, align='C')
 
-            # Add all cells for the row
-            for value in row.values[:-1]:
-                pdf.cell(col_width, 4, txt=convert_to_ascii(str(value)), border=1, fill=True)
-            pdf.cell(last_col_width, 4, txt=convert_to_ascii(str(row.values[-1])), border=1, fill=True)
-            pdf.ln(4)  # Move to next line for the next player's row
-
-        pdf.ln(0)  # Add some space between position reports
+        pdf.ln(0)
 
     pdf.output(f"Progress reports/Progress_report_{today}.pdf")
     print(f'{today} progress report created')
