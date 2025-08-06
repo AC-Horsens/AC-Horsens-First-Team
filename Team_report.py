@@ -726,11 +726,11 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
   
     def fullbacks():
         mask = (
-            ((df_scouting['formationUsed'].isin(['532', '541'])) &
+            ((df_scouting['formationUsed'].isin([532, 541])) &
             (df_scouting['player_position'] == 'Defender') &
             (df_scouting['player_positionSide'].isin(['Right', 'Left'])))
             |
-            ((df_scouting['formationUsed'].isin(['352', '343'])) &
+            ((df_scouting['formationUsed'].isin([352, 343,3421])) &
             (df_scouting['player_position'] == 'Midfielder') &
             (df_scouting['player_positionSide'].isin(['Right', 'Left'])))
             |
