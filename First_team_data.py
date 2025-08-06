@@ -456,11 +456,11 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
   
     def fullbacks():
         mask = (
-            ((df_scouting['formationUsed'].isin(['532', '541'])) &
+            ((df_scouting['formationUsed'].isin([532, 541])) &
             (df_scouting['player_position'] == 'Defender') &
             (df_scouting['player_positionSide'].isin(['Right', 'Left'])))
             |
-            ((df_scouting['formationUsed'].isin(['352', '343'])) &
+            ((df_scouting['formationUsed'].isin([352, 343])) &
             (df_scouting['player_position'] == 'Midfielder') &
             (df_scouting['player_positionSide'].isin(['Right', 'Left'])))
             |
@@ -469,7 +469,6 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         
 
         df_backs = df_scouting[mask].copy()
-        st.dataframe(df_backs)
         df_backs['minsPlayed'] = df_backs['minsPlayed'].astype(int)
         df_backs = df_backs[df_backs['minsPlayed'] >= minutter_kamp]
         df_backs = calculate_opposite_score(df_backs, 'opponents_pv', 'opponents pv score')
