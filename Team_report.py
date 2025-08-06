@@ -1673,10 +1673,10 @@ def create_pdf_progress_report(horsens_df, total_expected_points_combined, posit
                 pdf.cell(col_widths[i], 4, txt=convert_to_ascii(str(val)), border=1, fill=True)
             pdf.ln(4)
         pdf.set_font("Arial", style='I', size=6)
-        pdf.set_text_color(100, 100, 100)  # Grey tone
-        pdf.cell(190, 5, txt="Note: Rank is measured comparing the player to all other players on the same position in the league.", ln=True, align='C')
+    pdf.set_text_color(100, 100, 100)  # Grey tone
+    pdf.cell(190, 5, txt="Note: Rank is measured comparing the player to all other players on the same position in the league.", ln=True, align='C')
 
-        pdf.ln(0)
+    pdf.ln(0)
 
     pdf.output(f"Progress reports/Progress_report_{today}.pdf")
     print(f'{today} progress report created')
