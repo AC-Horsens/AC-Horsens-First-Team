@@ -469,7 +469,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         
 
         df_backs = df_scouting[mask].copy()
-
+        st.dataframe(df_backs)
         df_backs['minsPlayed'] = df_backs['minsPlayed'].astype(int)
         df_backs = df_backs[df_backs['minsPlayed'] >= minutter_kamp]
         df_backs = calculate_opposite_score(df_backs, 'opponents_pv', 'opponents pv score')
