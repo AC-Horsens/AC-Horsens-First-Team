@@ -2170,7 +2170,7 @@ def Dashboard():
                 count = 0
 
                 for seq_id in group['sequence_id']:
-                    if seq_id - prev_seq > 1:
+                    if seq_id - prev_seq > 4:
                         count += 1
                         prev_seq = seq_id  # Update only when we count a new cluster
 
