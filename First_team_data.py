@@ -1187,7 +1187,7 @@ def plot_avg_positions_off_ball(df, phase, team_colors):
             end = start + (rows * cols)
             current_bins = time_bins[start:end]
 
-            fig, axes = plt.subplots(rows, cols, figsize=(24, 14), constrained_layout=True)
+            fig, axes = plt.subplots(rows, cols, figsize=(24, 14))
             axes = axes.flatten()
 
             for i, time_bin in enumerate(current_bins):
