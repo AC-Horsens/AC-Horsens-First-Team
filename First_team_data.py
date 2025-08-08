@@ -2826,6 +2826,7 @@ def Opposition_analysis():
                         'description': description,
                         'time_bin': time_bin,
                         'player_name': player_name,
+                        'position':player_position,
                         'x': x,
                         'y': y,
                         'att_dir': att_dir,
@@ -2841,7 +2842,7 @@ def Opposition_analysis():
 
             # Compute average positions
             avg_positions = all_players_df.groupby(
-                ['label', 'time_bin', 'player_name', 'att_dir', 'team', 'description']
+                ['label', 'time_bin', 'player_name','position', 'att_dir', 'team', 'description']
             ).agg(
                 x=('x', 'mean'),
                 y=('y', 'mean')
