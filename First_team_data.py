@@ -927,9 +927,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         (df_scouting['player_positionSide'] == 'Centre'))
 
         df_striker = df_scouting[mask].copy()
-
-        df_striker = df_scouting[(df_scouting['player_position'] == 'Striker') & (df_scouting['player_positionSide']=='Centre')]
-
+        
         df_striker['minsPlayed'] = df_striker['minsPlayed'].astype(int)
         df_striker = df_striker[df_striker['minsPlayed'].astype(int) >= minutter_kamp]
 
