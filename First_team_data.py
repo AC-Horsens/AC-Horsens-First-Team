@@ -2817,7 +2817,7 @@ def Opposition_analysis():
                 for p in home_players + away_players:
                     player_id = p.get('playerId')
                     player_name = p.get('name', player_id)
-                    player_position = p.gret('position',player_id)
+                    player_position = p.get('position',player_id)
                     x, y = p['xyz'][0], p['xyz'][1]
                     team_type = 'home' if p in home_players else 'away'
 
