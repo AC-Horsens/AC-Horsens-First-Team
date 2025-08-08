@@ -2904,7 +2904,7 @@ def Opposition_analysis():
         all_players = pd.concat([receivers, possessors], ignore_index=True)
 
         # Average positions
-        avg_positions = all_players.groupby(['label', 'time_bin', 'player_name','att_dir']).agg(
+        avg_positions = all_players.groupby(['label', 'time_bin', 'player_name','position','att_dir']).agg(
             x=('x', 'mean'),
             y=('y', 'mean')
         ).reset_index()
@@ -2928,26 +2928,29 @@ def Opposition_analysis():
         filtered = filtered[filtered['description'].isin(selected_match)]        
 
         # Receiver rows
-        receivers = filtered[['label', 'time_bin', 'receiver_name', 'receiver_x', 'receiver_y','att_dir']].copy()
+        receivers = filtered[['label', 'time_bin', 'receiver_name','receiver_position', 'receiver_x', 'receiver_y','att_dir']].copy()
         receivers = receivers.rename(columns={
             'receiver_name': 'player_name',
+            'receiver_position': 'position',
             'receiver_x': 'x',
             'receiver_y': 'y'
         })
 
         # Possessor rows
-        possessors = filtered[['label', 'time_bin', 'poss_player_name', 'possessor_x', 'possessor_y','att_dir']].copy()
+        possessors = filtered[['label', 'time_bin', 'poss_player_name','poss_player_position', 'possessor_x', 'possessor_y','att_dir']].copy()
         possessors = possessors.rename(columns={
             'poss_player_name': 'player_name',
+            'poss_player_position': 'position',
             'possessor_x': 'x',
             'possessor_y': 'y'
         })
+
 
         # Combine
         all_players = pd.concat([receivers, possessors], ignore_index=True)
 
         # Average positions
-        avg_positions = all_players.groupby(['label', 'time_bin', 'player_name','att_dir']).agg(
+        avg_positions = all_players.groupby(['label', 'time_bin', 'player_name','position','att_dir']).agg(
             x=('x', 'mean'),
             y=('y', 'mean')
         ).reset_index()
