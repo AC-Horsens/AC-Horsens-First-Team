@@ -1140,8 +1140,11 @@ def plot_avg_positions_on_ball(df, phase, selected_team):
                 )
 
                 for _, row in subset.iterrows():
+                    # Annotate both player name and position
+                    player_position = f"{row['position']}"  # Get the player's position from the 'position' column
+                    player_info = f"{row['player_name']} ({player_position})"  # Combine name and position
                     pitch.annotate(
-                        row['player_name'],
+                        player_info,
                         (row['x'], row['y']),
                         ax=ax,
                         color='white',
