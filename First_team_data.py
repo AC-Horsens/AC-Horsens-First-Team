@@ -1135,8 +1135,8 @@ def plot_avg_positions_on_ball(df, phase, selected_team):
                     subset['x'], subset['y'],
                     ax=ax,
                     color=team_color,
-                    s=80,
-                    zorder=3
+                    s=70,
+                    zorder=2
                 )
 
                 for _, row in subset.iterrows():
@@ -1147,8 +1147,8 @@ def plot_avg_positions_on_ball(df, phase, selected_team):
                         player_info,
                         (row['x'], row['y']),
                         ax=ax,
-                        color='white',
-                        fontsize=7,
+                        color='black',
+                        fontsize=6,
                         ha='center',
                         va='center',
                         xytext=(3, 0),
@@ -1205,8 +1205,8 @@ def plot_avg_positions_off_ball(df, phase, team_colors):
                         y=team_subset['y'],
                         ax=ax,
                         color=color,
-                        s=80,
-                        zorder=3
+                        s=70,
+                        zorder=2
                     )
 
                 # Annotate all players
@@ -1218,8 +1218,8 @@ def plot_avg_positions_off_ball(df, phase, team_colors):
                         player_info,
                         xy=(row['x'], row['y']),
                         ax=ax,
-                        color='white',
-                        fontsize=7,
+                        color='black',
+                        fontsize=6,
                         ha='center',
                         va='center',
                         xytext=(3, 0),
