@@ -1135,7 +1135,7 @@ def plot_avg_positions_on_ball(df, phase, selected_team):
                     subset['x'], subset['y'],
                     ax=ax,
                     color=team_color,
-                    s=100,
+                    s=80,
                     zorder=3
                 )
 
@@ -1178,7 +1178,7 @@ def plot_avg_positions_off_ball(df, phase, team_colors):
         match_df = df[df['label'] == match].copy()
         time_bins = sorted(match_df['time_bin'].unique())
 
-        rows, cols = 3, 2
+        rows, cols = 2, 3
         total_bins = len(time_bins)
         pages = math.ceil(total_bins / (rows * cols))
 
@@ -1187,7 +1187,7 @@ def plot_avg_positions_off_ball(df, phase, team_colors):
             end = start + (rows * cols)
             current_bins = time_bins[start:end]
 
-            fig, axes = plt.subplots(rows, cols, figsize=(30, 18), constrained_layout=True)
+            fig, axes = plt.subplots(rows, cols, figsize=(20, 11), constrained_layout=True)
             axes = axes.flatten()
 
             for i, time_bin in enumerate(current_bins):
@@ -1205,7 +1205,7 @@ def plot_avg_positions_off_ball(df, phase, team_colors):
                         y=team_subset['y'],
                         ax=ax,
                         color=color,
-                        s=100,
+                        s=80,
                         zorder=3
                     )
 
