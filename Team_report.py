@@ -1177,8 +1177,15 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         return df_winger
 
     def Classic_striker():
-        df_striker = df_scouting[(df_scouting['player_position'] == 'Striker') & (df_scouting['player_positionSide']=='Centre')]
+        mask = (
+        ((df_scouting['formationUsed'].isin([532,442,352,3412])) &
+        (df_scouting['player_position'] == 'Striker') &
+        (df_scouting['player_positionSide'].str.contains('Centre')))
+        |
+        (df_scouting['player_position'] == 'Striker') &
+        (df_scouting['player_positionSide'] == 'Centre'))
 
+        df_striker = df_scouting[mask].copy()
         df_striker['minsPlayed'] = df_striker['minsPlayed'].astype(int)
         df_striker = df_striker[df_striker['minsPlayed'].astype(int) >= minutter_kamp]
 
