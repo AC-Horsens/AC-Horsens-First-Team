@@ -774,7 +774,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
             |
             (
                 (df_scouting['player_position'] == 'Attacking Midfielder') &
-                (df_scouting['player_positionSide'].isin(['Centre']))
+                (df_scouting['player_positionSide'].isin(['Centre','Centre/Right','Left/Centre']))
             )
         )
 
