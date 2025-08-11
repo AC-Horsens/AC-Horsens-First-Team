@@ -2940,8 +2940,9 @@ def Opposition_analysis():
 
         filtered = df_opponnent_on_ball[
             (df_opponnent_on_ball['Low base'] == True) &  ~((df_opponnent_on_ball['period'] == 1) & (df_opponnent_on_ball['timemin_first'] > 44)) &
+            (
                 ((df_opponnent_on_ball['att_dir'] == True) & (df_opponnent_on_ball['possessor_x'] > -10)) |
-                ((df_opponnent_on_ball['att_dir'] == False) & (df_opponnent_on_ball['possessor_x'] < 10)
+                ((df_opponnent_on_ball['att_dir'] == False) & (df_opponnent_on_ball['possessor_x'] < 10))
             )
         ].copy()
 
