@@ -2893,7 +2893,7 @@ def Opposition_analysis():
     elif viz_type == "On ball":
 
         filtered = df_opponnent_on_ball[
-            (df_opponnent_on_ball['Low base'] == True) &
+            (df_opponnent_on_ball['Low base'] == True) &  ~((df_opponnent_on_ball['period'] == 1) & (df_opponnent_on_ball['timemin_first'] > 44)) &
             (
                 ((df_opponnent_on_ball['att_dir'] == True) & (df_opponnent_on_ball['possessor_x'] < -22)) |
                 ((df_opponnent_on_ball['att_dir'] == False) & (df_opponnent_on_ball['possessor_x'] > 22))
@@ -2939,7 +2939,7 @@ def Opposition_analysis():
         plot_avg_positions_on_ball(avg_positions,'Low base, low',selected_team)
 
         filtered = df_opponnent_on_ball[
-            (df_opponnent_on_ball['Low base'] == True) &
+            (df_opponnent_on_ball['Low base'] == True) &  ~((df_opponnent_on_ball['period'] == 1) & (df_opponnent_on_ball['timemin_first'] > 44)) &
                 ((df_opponnent_on_ball['att_dir'] == True) & (df_opponnent_on_ball['possessor_x'] > -10)) |
                 ((df_opponnent_on_ball['att_dir'] == False) & (df_opponnent_on_ball['possessor_x'] < 10)
             )
