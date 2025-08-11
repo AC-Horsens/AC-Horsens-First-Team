@@ -765,12 +765,21 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         return df_otter
 
     def number10():
-        df_10 = df_scouting[
+        mask = (
             (
+                (df_scouting['formationUsed'].isin([343, 3421, 433, 541, 4231, 4321])) &
                 (df_scouting['player_position'].isin(['Attacking Midfielder', 'Striker'])) &
                 (df_scouting['player_positionSide'].isin(['Centre/Right', 'Left/Centre']))
             )
-        ]
+            |
+            (
+                (df_scouting['player_position'] == 'Attacking Midfielder') &
+                (df_scouting['player_positionSide'].isin(['Centre']))
+            )
+        )
+
+        df_10 = df_scouting[mask].copy()
+
 
         df_10['minsPlayed'] = df_10['minsPlayed'].astype(int)
         df_10 = df_10[df_10['minsPlayed'] >= minutter_kamp]
