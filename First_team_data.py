@@ -16,7 +16,7 @@ import os
 import requests
 import glob
 import math
-
+import re
 
 st.set_page_config(layout='wide')
 
@@ -2794,17 +2794,47 @@ def Opposition_analysis():
     selected_team = st.selectbox('Choose team', sorted_teams)
     team_df = matchstats_df.loc[matchstats_df['team_name'] == selected_team]
     xml_files = glob.glob(f'DNK_1_Division_2025_2026/{selected_team}/XML files/*.xml')
+
+    def build_file_info(path: str):
+        """Return {'display', 'path', 'date'} parsed from filename:
+        e.g. 'ACH - MID 2025-8-9_2560717_sportscode.xml'
+                display -> 'ACH - MID 2025-8-9'
+                date    -> datetime(2025,8,9)
+        """
+        filename = os.path.basename(path)
+        base = os.path.splitext(filename)[0]                 # 'ACH - MID 2025-8-9_2560717_sportscode'
+        name_part = base.split('_', 1)[0]                    # 'ACH - MID 2025-8-9'
+        # find YYYY-M-D anywhere in name_part (handles single-digit month/day)
+        m = re.search(r'(\d{4})-(\d{1,2})-(\d{1,2})', name_part)
+        file_date = datetime.min
+        if m:
+            y, mo, d = map(int, m.groups())
+            file_date = datetime(y, mo, d)
+        display = name_part.replace('_', ' ')
+        return {"display": display, "path": path, "date": file_date}
+
     if xml_files:
-        selected_xml = st.selectbox('Select an XML file to download:', xml_files)
-        with open(selected_xml, 'rb') as f:
+        file_info = [build_file_info(p) for p in xml_files]
+        # sort by date desc (newest first); fallback files w/o date go to bottom
+        file_info.sort(key=lambda x: x["date"], reverse=True)
+
+        # Use selectbox with a format_func so only the display name shows
+        selected_item = st.selectbox(
+            "Select an XML file to download:",
+            options=file_info,
+            format_func=lambda x: x["display"]
+        )
+        selected_xml = selected_item["path"]
+
+        with open(selected_xml, "rb") as f:
             st.download_button(
                 label="Download selected XML",
                 data=f,
-                file_name=selected_xml,
-                mime='application/xml'
+                file_name=os.path.basename(selected_xml),
+                mime="application/xml"
             )
     else:
-        st.write('No XML files found in this directory.')
+        st.write("No XML files found in this directory.")
 
     df_opponnent_on_ball = load_opponnent_on_ball_sequences(selected_team)
     df_opponnent_off_ball = load_opponnent_off_ball_sequences(selected_team)
