@@ -2872,11 +2872,16 @@ def Opposition_analysis():
             df_opponnent_on_ball
             .sort_values('local_date', ascending=False)
             .drop_duplicates(subset='description')
-            ['description']
+            .assign(
+                display=lambda x: x['description'] + ' ' + x['local_date'].astype(str)
+            )['display']
             .tolist()
         )
-        selected_match = st.multiselect('Select matches', matches,default=matches[0])
-
+        selected_match = st.multiselect(
+            'Select matches',
+            matches,
+            default=matches[0]
+        )
     if viz_type == "Off ball":
 
         for block_flag in ['High block', 'Low block']:
