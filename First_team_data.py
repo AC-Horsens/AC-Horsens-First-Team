@@ -1270,17 +1270,44 @@ winger_df = position_dataframes['Winger']
 classic_striker_df = position_dataframes['Striker']
 def Dashboard():
     xml_files = glob.glob('DNK_1_Division_2025_2026/Horsens/XML files/*.xml')
+
+    def extract_display_and_date(file_path):
+        filename = os.path.basename(file_path)
+        name_part = filename.split('_')[0]  # "ACH - MID 2025-8-9"
+        # Extract date from the end of name_part
+        date_str = name_part.rsplit(' ', 1)[-1]  # "2025-8-9"
+        file_date = datetime.strptime(date_str, "%Y-%m-%d")  # parse to datetime
+        return name_part, file_date
+
     if xml_files:
-        selected_xml = st.selectbox('Select an XML file to download:', xml_files)
+        # Build list of (display_name, file_path, file_date)
+        file_info = []
+        for f in xml_files:
+            display_name, file_date = extract_display_and_date(f)
+            file_info.append((display_name, f, file_date))
+
+        # Sort by date descending (most recent first)
+        file_info.sort(key=lambda x: x[2], reverse=True)
+
+        # Selectbox with sorted display names
+        selected_display = st.selectbox(
+            'Select an XML file to download:',
+            [info[0] for info in file_info]
+        )
+
+        # Find matching file path
+        selected_xml = next(path for name, path, date in file_info if name == selected_display)
+
         with open(selected_xml, 'rb') as f:
             st.download_button(
                 label="Download selected XML",
                 data=f,
-                file_name=selected_xml,
+                file_name=os.path.basename(selected_xml),
                 mime='application/xml'
             )
     else:
         st.write('No XML files found in this directory.')
+
     df_possession = load_possession_data()
     df_possession = df_possession[~df_possession['28.0'].astype(str).str.lower().eq('true')]
 
