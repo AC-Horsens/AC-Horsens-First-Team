@@ -1619,12 +1619,18 @@ def Dashboard():
                 .any()
                 .sum()
             )
+           
+            conversion_rate = (
+                (deep_run_per_sequence / deep_run_opportunity * 100)
+                if deep_run_opportunity > 0 else 0
+            )
 
             counts.append({
                 'Tactical Concept': concept,
                 'Count': count_total,
                 'Deep run opportunities': deep_run_opportunity,
-                'Deep Runs': deep_run_per_sequence
+                'Deep Runs': deep_run_per_sequence,
+                'Conversion Rate (%)': round(conversion_rate, 1)
             })
 
         # Format to DataFrame
