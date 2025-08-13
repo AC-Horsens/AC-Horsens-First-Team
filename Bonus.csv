@@ -1,81 +1,81 @@
 ,date,label,player_matchName,player_position,minsPlayed
-40,2025-07-19,Horsens vs Aarhus Fremad,M. Delač,Goalkeeper,90
-41,2025-07-19,Horsens vs Aarhus Fremad,F. Roslyng,Defender,80
-42,2025-07-19,Horsens vs Aarhus Fremad,O. Kolskogen,Defender,90
-43,2025-07-19,Horsens vs Aarhus Fremad,S. Hausner,Defender,90
-44,2025-07-19,Horsens vs Aarhus Fremad,I. Miličević,Midfielder,77
-45,2025-07-19,Horsens vs Aarhus Fremad,A. Moro,Midfielder,77
-46,2025-07-19,Horsens vs Aarhus Fremad,P. Olsen,Midfielder,90
-47,2025-07-19,Horsens vs Aarhus Fremad,S. Doua,Midfielder,90
-48,2025-07-19,Horsens vs Aarhus Fremad,K. Kirkegaard,Striker,66
-49,2025-07-19,Horsens vs Aarhus Fremad,S. Pingel,Striker,77
-50,2025-07-19,Horsens vs Aarhus Fremad,F. Brandhof,Striker,90
-51,2025-07-19,Horsens vs Aarhus Fremad,J. Batigi,Substitute,NaN
-52,2025-07-19,Horsens vs Aarhus Fremad,G. Guðmundsson,Substitute,13
-53,2025-07-19,Horsens vs Aarhus Fremad,A. Herdonsson,Substitute,NaN
-54,2025-07-19,Horsens vs Aarhus Fremad,F. Christensen,Substitute,13
-55,2025-07-19,Horsens vs Aarhus Fremad,A. Ludwig,Substitute,10
-56,2025-07-19,Horsens vs Aarhus Fremad,K. Lusavec,Substitute,NaN
-57,2025-07-19,Horsens vs Aarhus Fremad,Y. Ouorou,Substitute,15
-58,2025-07-19,Horsens vs Aarhus Fremad,A. Saine,Substitute,13
-59,2025-07-19,Horsens vs Aarhus Fremad,F. Đukić,Substitute,NaN
-399,2025-08-09,Horsens vs Middelfart,M. Delač,Goalkeeper,90
-400,2025-08-09,Horsens vs Middelfart,C. Tapé,Defender,82
-401,2025-08-09,Horsens vs Middelfart,O. Kolskogen,Defender,61
-402,2025-08-09,Horsens vs Middelfart,S. Hausner,Defender,90
-403,2025-08-09,Horsens vs Middelfart,I. Miličević,Midfielder,72
-404,2025-08-09,Horsens vs Middelfart,P. Olsen,Midfielder,90
-405,2025-08-09,Horsens vs Middelfart,A. Moro,Midfielder,90
-406,2025-08-09,Horsens vs Middelfart,S. Doua,Midfielder,73
-407,2025-08-09,Horsens vs Middelfart,K. Kirkegaard,Attacking Midfielder,90
-408,2025-08-09,Horsens vs Middelfart,F. Brandhof,Attacking Midfielder,90
-409,2025-08-09,Horsens vs Middelfart,S. Pingel,Striker,73
-410,2025-08-09,Horsens vs Middelfart,J. Batigi,Substitute,NaN
-411,2025-08-09,Horsens vs Middelfart,A. Ludwig,Substitute,9
-412,2025-08-09,Horsens vs Middelfart,K. Lusavec,Substitute,NaN
-413,2025-08-09,Horsens vs Middelfart,J. Madsen,Substitute,18
-414,2025-08-09,Horsens vs Middelfart,A. Hoff,Substitute,NaN
-415,2025-08-09,Horsens vs Middelfart,Y. Ouorou,Substitute,18
-416,2025-08-09,Horsens vs Middelfart,F. Roslyng,Substitute,30
-417,2025-08-09,Horsens vs Middelfart,A. Saine,Substitute,NaN
-418,2025-08-09,Horsens vs Middelfart,F. Sene,Substitute,18
-678,2025-07-25,Horsens vs Kolding,M. Delač,Goalkeeper,90
-679,2025-07-25,Horsens vs Kolding,F. Roslyng,Defender,64
-680,2025-07-25,Horsens vs Kolding,O. Kolskogen,Defender,89
-681,2025-07-25,Horsens vs Kolding,S. Hausner,Defender,84
-682,2025-07-25,Horsens vs Kolding,I. Miličević,Wing Back,90
-683,2025-07-25,Horsens vs Kolding,A. Saine,Wing Back,90
-684,2025-07-25,Horsens vs Kolding,P. Olsen,Midfielder,90
-685,2025-07-25,Horsens vs Kolding,A. Moro,Midfielder,90
-686,2025-07-25,Horsens vs Kolding,F. Brandhof,Midfielder,90
-687,2025-07-25,Horsens vs Kolding,K. Kirkegaard,Striker,84
-688,2025-07-25,Horsens vs Kolding,S. Pingel,Striker,90
-689,2025-07-25,Horsens vs Kolding,J. Batigi,Substitute,NaN
-690,2025-07-25,Horsens vs Kolding,S. Doua,Substitute,1
-691,2025-07-25,Horsens vs Kolding,G. Guðmundsson,Substitute,NaN
-692,2025-07-25,Horsens vs Kolding,F. Christensen,Substitute,NaN
-693,2025-07-25,Horsens vs Kolding,A. Ludwig,Substitute,6
-694,2025-07-25,Horsens vs Kolding,K. Lusavec,Substitute,NaN
-695,2025-07-25,Horsens vs Kolding,A. Hoff,Substitute,NaN
-696,2025-07-25,Horsens vs Kolding,F. Sene,Substitute,6
-697,2025-07-25,Horsens vs Kolding,C. Tapé,Substitute,26
-857,2025-08-04,Hvidovre vs Horsens,M. Delač,Goalkeeper,90
-858,2025-08-04,Hvidovre vs Horsens,C. Tapé,Defender,90
-859,2025-08-04,Hvidovre vs Horsens,O. Kolskogen,Defender,90
-860,2025-08-04,Hvidovre vs Horsens,S. Hausner,Defender,67
-861,2025-08-04,Hvidovre vs Horsens,I. Miličević,Midfielder,67
-862,2025-08-04,Hvidovre vs Horsens,P. Olsen,Midfielder,90
-863,2025-08-04,Hvidovre vs Horsens,A. Moro,Midfielder,90
-864,2025-08-04,Hvidovre vs Horsens,A. Saine,Midfielder,75
-865,2025-08-04,Hvidovre vs Horsens,K. Kirkegaard,Attacking Midfielder,67
-866,2025-08-04,Hvidovre vs Horsens,F. Brandhof,Attacking Midfielder,90
-867,2025-08-04,Hvidovre vs Horsens,S. Pingel,Striker,89
-868,2025-08-04,Hvidovre vs Horsens,S. Doua,Substitute,24
-869,2025-08-04,Hvidovre vs Horsens,A. Herdonsson,Substitute,NaN
-870,2025-08-04,Hvidovre vs Horsens,F. Christensen,Substitute,NaN
-871,2025-08-04,Hvidovre vs Horsens,A. Ludwig,Substitute,16
-872,2025-08-04,Hvidovre vs Horsens,J. Madsen,Substitute,24
-873,2025-08-04,Hvidovre vs Horsens,A. Hoff,Substitute,NaN
-874,2025-08-04,Hvidovre vs Horsens,Y. Ouorou,Substitute,24
-875,2025-08-04,Hvidovre vs Horsens,F. Roslyng,Substitute,NaN
-876,2025-08-04,Hvidovre vs Horsens,F. Sene,Substitute,2
+160,2025-07-19,Horsens vs Aarhus Fremad,M. Delač,Goalkeeper,90
+161,2025-07-19,Horsens vs Aarhus Fremad,F. Roslyng,Defender,80
+162,2025-07-19,Horsens vs Aarhus Fremad,O. Kolskogen,Defender,90
+163,2025-07-19,Horsens vs Aarhus Fremad,S. Hausner,Defender,90
+164,2025-07-19,Horsens vs Aarhus Fremad,I. Miličević,Midfielder,77
+165,2025-07-19,Horsens vs Aarhus Fremad,A. Moro,Midfielder,77
+166,2025-07-19,Horsens vs Aarhus Fremad,P. Olsen,Midfielder,90
+167,2025-07-19,Horsens vs Aarhus Fremad,S. Doua,Midfielder,90
+168,2025-07-19,Horsens vs Aarhus Fremad,K. Kirkegaard,Striker,66
+169,2025-07-19,Horsens vs Aarhus Fremad,S. Pingel,Striker,77
+170,2025-07-19,Horsens vs Aarhus Fremad,F. Brandhof,Striker,90
+171,2025-07-19,Horsens vs Aarhus Fremad,J. Batigi,Substitute,NaN
+172,2025-07-19,Horsens vs Aarhus Fremad,G. Guðmundsson,Substitute,13
+173,2025-07-19,Horsens vs Aarhus Fremad,A. Herdonsson,Substitute,NaN
+174,2025-07-19,Horsens vs Aarhus Fremad,F. Christensen,Substitute,13
+175,2025-07-19,Horsens vs Aarhus Fremad,A. Ludwig,Substitute,10
+176,2025-07-19,Horsens vs Aarhus Fremad,K. Lusavec,Substitute,NaN
+177,2025-07-19,Horsens vs Aarhus Fremad,Y. Ouorou,Substitute,15
+178,2025-07-19,Horsens vs Aarhus Fremad,A. Saine,Substitute,13
+179,2025-07-19,Horsens vs Aarhus Fremad,F. Đukić,Substitute,NaN
+280,2025-07-25,Horsens vs Kolding,M. Delač,Goalkeeper,90
+281,2025-07-25,Horsens vs Kolding,F. Roslyng,Defender,64
+282,2025-07-25,Horsens vs Kolding,O. Kolskogen,Defender,89
+283,2025-07-25,Horsens vs Kolding,S. Hausner,Defender,84
+284,2025-07-25,Horsens vs Kolding,I. Miličević,Wing Back,90
+285,2025-07-25,Horsens vs Kolding,A. Saine,Wing Back,90
+286,2025-07-25,Horsens vs Kolding,P. Olsen,Midfielder,90
+287,2025-07-25,Horsens vs Kolding,A. Moro,Midfielder,90
+288,2025-07-25,Horsens vs Kolding,F. Brandhof,Midfielder,90
+289,2025-07-25,Horsens vs Kolding,K. Kirkegaard,Striker,84
+290,2025-07-25,Horsens vs Kolding,S. Pingel,Striker,90
+291,2025-07-25,Horsens vs Kolding,J. Batigi,Substitute,NaN
+292,2025-07-25,Horsens vs Kolding,S. Doua,Substitute,1
+293,2025-07-25,Horsens vs Kolding,G. Guðmundsson,Substitute,NaN
+294,2025-07-25,Horsens vs Kolding,F. Christensen,Substitute,NaN
+295,2025-07-25,Horsens vs Kolding,A. Ludwig,Substitute,6
+296,2025-07-25,Horsens vs Kolding,K. Lusavec,Substitute,NaN
+297,2025-07-25,Horsens vs Kolding,A. Hoff,Substitute,NaN
+298,2025-07-25,Horsens vs Kolding,F. Sene,Substitute,6
+299,2025-07-25,Horsens vs Kolding,C. Tapé,Substitute,26
+699,2025-08-04,Hvidovre vs Horsens,M. Delač,Goalkeeper,90
+700,2025-08-04,Hvidovre vs Horsens,C. Tapé,Defender,90
+701,2025-08-04,Hvidovre vs Horsens,O. Kolskogen,Defender,90
+702,2025-08-04,Hvidovre vs Horsens,S. Hausner,Defender,67
+703,2025-08-04,Hvidovre vs Horsens,I. Miličević,Midfielder,67
+704,2025-08-04,Hvidovre vs Horsens,P. Olsen,Midfielder,90
+705,2025-08-04,Hvidovre vs Horsens,A. Moro,Midfielder,90
+706,2025-08-04,Hvidovre vs Horsens,A. Saine,Midfielder,75
+707,2025-08-04,Hvidovre vs Horsens,K. Kirkegaard,Attacking Midfielder,67
+708,2025-08-04,Hvidovre vs Horsens,F. Brandhof,Attacking Midfielder,90
+709,2025-08-04,Hvidovre vs Horsens,S. Pingel,Striker,89
+710,2025-08-04,Hvidovre vs Horsens,S. Doua,Substitute,24
+711,2025-08-04,Hvidovre vs Horsens,A. Herdonsson,Substitute,NaN
+712,2025-08-04,Hvidovre vs Horsens,F. Christensen,Substitute,NaN
+713,2025-08-04,Hvidovre vs Horsens,A. Ludwig,Substitute,16
+714,2025-08-04,Hvidovre vs Horsens,J. Madsen,Substitute,24
+715,2025-08-04,Hvidovre vs Horsens,A. Hoff,Substitute,NaN
+716,2025-08-04,Hvidovre vs Horsens,Y. Ouorou,Substitute,24
+717,2025-08-04,Hvidovre vs Horsens,F. Roslyng,Substitute,NaN
+718,2025-08-04,Hvidovre vs Horsens,F. Sene,Substitute,2
+838,2025-08-09,Horsens vs Middelfart,M. Delač,Goalkeeper,90
+839,2025-08-09,Horsens vs Middelfart,C. Tapé,Defender,82
+840,2025-08-09,Horsens vs Middelfart,O. Kolskogen,Defender,61
+841,2025-08-09,Horsens vs Middelfart,S. Hausner,Defender,90
+842,2025-08-09,Horsens vs Middelfart,I. Miličević,Midfielder,72
+843,2025-08-09,Horsens vs Middelfart,P. Olsen,Midfielder,90
+844,2025-08-09,Horsens vs Middelfart,A. Moro,Midfielder,90
+845,2025-08-09,Horsens vs Middelfart,S. Doua,Midfielder,73
+846,2025-08-09,Horsens vs Middelfart,K. Kirkegaard,Attacking Midfielder,90
+847,2025-08-09,Horsens vs Middelfart,F. Brandhof,Attacking Midfielder,90
+848,2025-08-09,Horsens vs Middelfart,S. Pingel,Striker,73
+849,2025-08-09,Horsens vs Middelfart,J. Batigi,Substitute,NaN
+850,2025-08-09,Horsens vs Middelfart,A. Ludwig,Substitute,9
+851,2025-08-09,Horsens vs Middelfart,K. Lusavec,Substitute,NaN
+852,2025-08-09,Horsens vs Middelfart,J. Madsen,Substitute,18
+853,2025-08-09,Horsens vs Middelfart,A. Hoff,Substitute,NaN
+854,2025-08-09,Horsens vs Middelfart,Y. Ouorou,Substitute,18
+855,2025-08-09,Horsens vs Middelfart,F. Roslyng,Substitute,30
+856,2025-08-09,Horsens vs Middelfart,A. Saine,Substitute,NaN
+857,2025-08-09,Horsens vs Middelfart,F. Sene,Substitute,18
