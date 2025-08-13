@@ -2836,9 +2836,21 @@ def Opposition_analysis():
     else:
         st.write("No XML files found in this directory.")
 
-    df_opponnent_on_ball = load_opponnent_on_ball_sequences(selected_team)
-    df_opponnent_off_ball = load_opponnent_off_ball_sequences(selected_team)
+    def add_date_to_description(df: pd.DataFrame) -> pd.DataFrame:
+        df = df.copy()
+        df['local_date'] = pd.to_datetime(df['local_date'], errors='coerce')
+        df['description'] = (
+            df['description'].astype(str) + ' ' +
+            df['local_date'].dt.strftime('%Y-%m-%d')
+        )
+        return df
 
+    df_opponnent_on_ball = add_date_to_description(
+        load_opponnent_on_ball_sequences(selected_team)
+    )
+    df_opponnent_off_ball = add_date_to_description(
+        load_opponnent_off_ball_sequences(selected_team)
+    )
     color_map = {
         'AaB': 'red', 'Hvidovre': 'red',
         'Aarhus_Fremad': 'yellow', 'Hobro': 'yellow', 'Horsens': 'yellow',
@@ -2872,16 +2884,16 @@ def Opposition_analysis():
             df_opponnent_on_ball
             .sort_values('local_date', ascending=False)
             .drop_duplicates(subset='description')
-            .assign(
-                display=lambda x: x['description'] + ' ' + x['local_date'].astype(str)
-            )['display']
+            ['description']  # already has date appended
             .tolist()
         )
+
         selected_match = st.multiselect(
             'Select matches',
             matches,
-            default=matches[0]
+            default=matches[0] if matches else None
         )
+
     if viz_type == "Off ball":
 
         for block_flag in ['High block', 'Low block']:
