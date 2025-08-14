@@ -2967,7 +2967,7 @@ def Opposition_analysis():
 
                 # Filter first 90 mins
                 match_df = match_df[match_df['time_bin'] < 90]
-                print(team_colors)
+                st.write(team_colors)
                 # Now plot per match using team_colors
                 plot_avg_positions_off_ball(match_df, block_flag, team_colors)
 
