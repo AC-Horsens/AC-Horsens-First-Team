@@ -2934,7 +2934,7 @@ def Opposition_analysis():
                     })
 
             all_players_df = pd.DataFrame(all_players)
-
+            st.write(all_players_df)
             # Flip coordinates to normalize attacking direction
             flipped = all_players_df['att_dir'] == True
             all_players_df.loc[flipped, 'x'] = -all_players_df.loc[flipped, 'x']
