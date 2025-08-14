@@ -2946,7 +2946,6 @@ def Opposition_analysis():
                 x=('x', 'mean'),
                 y=('y', 'mean')
             ).reset_index()
-            st.write(avg_positions)
 
             # Determine team colors based on description
             for match in avg_positions['label'].unique():
@@ -2956,7 +2955,7 @@ def Opposition_analysis():
                 # Parse teams
                 if 'vs' in sample_label:
                     team1 = sample_label.split('vs')[0].strip().replace(' ', '_')
-                    team2 = sample_label.split('vs')[1].strip().replace(' ', '_')
+                    team2 = re.sub(r'\s*\d{4}-\d{2}-\d{2}.*$', '', sample_label.split('vs', 1)[1]).strip().replace(' ', '_')
                 else:
                     team1 = team2 = "Unknown"
 
@@ -2967,9 +2966,7 @@ def Opposition_analysis():
 
                 # Filter first 90 mins
                 match_df = match_df[match_df['time_bin'] < 90]
-                st.write(team1)
                 st.write(team2)
-
                 # Now plot per match using team_colors
                 plot_avg_positions_off_ball(match_df, block_flag, team_colors)
 
