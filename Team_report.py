@@ -388,6 +388,35 @@ def create_holdsummary(df_possession_stats_summary, df_xg, df_xa, df_matchstats,
     df_post_shot_xg_hold = df_xg.groupby(['team_name','contestantId', 'label'])['322'].sum().reset_index().rename(columns={'322': 'Post shot xG'})
     df_cleaned_xg_hold = df_xg[df_xg['321'] > 0.1].groupby(['team_name','contestantId', 'label'])['321'].sum().reset_index().rename(columns={'321': 'Cleaned xG'})
     df_xa_hold = df_xa.groupby(['team_name','contestantId', 'label'])['318.0'].sum().reset_index().rename(columns={'318.0': 'xA'})
+    recoveries = possession_events[possession_events['typeId'].isin([49])]
+    recoveries['third'] = pd.cut(
+        recoveries['x'],
+        bins=[-1, 33, 66, 100],
+        labels=['Own third', 'Mid third', 'Final third']
+    )
+
+    # Count recoveries per team per third
+    recovery_counts = recoveries.groupby(['team_name', 'contestantId', 'label', 'third']).size().unstack(fill_value=0).reset_index()
+
+    # Total recoveries per team per label
+    recovery_counts['Total'] = recovery_counts[['Own third', 'Mid third', 'Final third']].sum(axis=1)
+
+    # Format each column as "count (percentage%)"
+    for third in ['Own third', 'Mid third', 'Final third']:
+        recovery_counts[f'{third}_formatted'] = recovery_counts.apply(
+            lambda row: f"{row[third]} ({(row[third] / row['Total'] * 100):.0f}%)" if row['Total'] > 0 else "0 (0%)",
+            axis=1
+        )
+
+    # Select only the formatted columns
+    recovery_stats = recovery_counts[[
+        'team_name', 'contestantId', 'label',
+        'Own third_formatted', 'Mid third_formatted', 'Final third_formatted'
+    ]].rename(columns={
+        'Own third_formatted': 'Recoveries own third',
+        'Mid third_formatted': 'Recoveries mid third',
+        'Final third_formatted': 'Recoveries final third'
+    })
 
     # --- Duels ---
     duels = possession_events[possession_events['typeId'].isin([3, 4, 7, 44, 45])]
@@ -407,7 +436,7 @@ def create_holdsummary(df_possession_stats_summary, df_xg, df_xa, df_matchstats,
     possession_events['inside_dangerzone'] = danger_path.contains_points(positions)
     dangerzone_actions = possession_events[possession_events['inside_dangerzone']]
     dangerzone_counts = dangerzone_actions.groupby(['team_name','contestantId', 'label']).size().reset_index(name='Dangerzone actions')
-    # --- Merge everything ---
+    
     df_holdsummary = df_xa_hold.merge(df_xg_hold, how='left')
     df_holdsummary = df_holdsummary.merge(df_post_shot_xg_hold, how='left')
     df_holdsummary = df_holdsummary.merge(df_cleaned_xg_hold, how='left')
@@ -417,6 +446,7 @@ def create_holdsummary(df_possession_stats_summary, df_xg, df_xa, df_matchstats,
     df_holdsummary = df_holdsummary.merge(df_ppda, how='left')
 
     df_holdsummary = df_holdsummary.merge(duels_team_percentage, how='left')
+    df_holdsummary = df_holdsummary.merge(recovery_stats, how='left')
 
     df_holdsummary = df_holdsummary.merge(assist_zone_counts, how='left')
 
@@ -424,9 +454,13 @@ def create_holdsummary(df_possession_stats_summary, df_xg, df_xa, df_matchstats,
 
     # --- Final tidy dataframe ---
     df_holdsummary = df_holdsummary[[
-        'team_name', 'label', 'xA', 'xG', 'Cleaned xG', 'Post shot xG', 
-        'terr_poss', 'Assist zone actions', 'Dangerzone actions', 'PPDA', 'duel_win_percentage'
+        'team_name', 'label', 'xG', 'xA', 'Cleaned xG', 'Post shot xG', 
+        'terr_poss', 
+        'Assist zone actions', 'Dangerzone actions', 
+        'Recoveries own third', 'Recoveries mid third', 'Recoveries final third',
+        'PPDA', 'duel_win_percentage'
     ]]
+
     print(df_holdsummary)
     return df_holdsummary
 
@@ -1489,31 +1523,37 @@ def create_pdf_game_report(game_data, df_xg_agg, df_xa_agg, merged_df, df_posses
     pdf.set_font("Arial", size=6)
 
     # Header row
-    pdf.cell(20, 5, 'Team', 1)
-    pdf.cell(10, 5, 'xA', 1)
-    pdf.cell(10, 5, 'xG', 1)
-    pdf.cell(20, 5, 'Cleaned xG', 1)
-    pdf.cell(20, 5, 'Post shot xG', 1)
-    pdf.cell(22, 5, 'Terr. possession', 1)
-    pdf.cell(18, 5, 'Assist zone', 1)
-    pdf.cell(20, 5, 'Dangerzone', 1)
+    pdf.cell(18, 5, 'Team', 1)
+    pdf.cell(7, 5, 'xA', 1)
+    pdf.cell(7, 5, 'xG', 1)
+    pdf.cell(15, 5, 'Cleaned xG', 1)
+    pdf.cell(15, 5, 'Post shot xG', 1)
+    pdf.cell(20, 5, 'Terr. possession', 1)
+    pdf.cell(15, 5, 'Assist zone', 1)
+    pdf.cell(15, 5, 'Dangerzone', 1)
+    pdf.cell(20, 5, 'Rec own third', 1)
+    pdf.cell(20, 5, 'Rec mid third', 1)
+    pdf.cell(20, 5, 'Rec. last third', 1)
     pdf.cell(10, 5, 'PPDA', 1)
-    pdf.cell(15, 5, 'Duels (%)', 1)
+    pdf.cell(13, 5, 'Duels (%)', 1)
     pdf.ln()
 
     # Data rows
     game_merged_df = merged_df[merged_df['label'] == label]
     for _, row in game_merged_df.iterrows():
-        pdf.cell(20, 5, str(row['team_name']), 1)
-        pdf.cell(10, 5, f"{row['xA']:.2f}", 1)
-        pdf.cell(10, 5, f"{row['xG']:.2f}", 1)
-        pdf.cell(20, 5, f"{row['Cleaned xG']:.2f}", 1)
-        pdf.cell(20, 5, f"{row['Post shot xG']:.2f}", 1)
-        pdf.cell(22, 5, f"{row['terr_poss']:.2f}", 1)
-        pdf.cell(18, 5, f"{row['Assist zone actions']:.0f}", 1)
-        pdf.cell(20, 5, f"{row['Dangerzone actions']:.0f}", 1)
+        pdf.cell(18, 5, str(row['team_name']), 1)
+        pdf.cell(7, 5, f"{row['xA']:.2f}", 1)
+        pdf.cell(7, 5, f"{row['xG']:.2f}", 1)
+        pdf.cell(15, 5, f"{row['Cleaned xG']:.2f}", 1)
+        pdf.cell(15, 5, f"{row['Post shot xG']:.2f}", 1)
+        pdf.cell(20, 5, f"{row['terr_poss']:.2f}", 1)
+        pdf.cell(15, 5, f"{row['Assist zone actions']:.0f}", 1)
+        pdf.cell(15, 5, f"{row['Dangerzone actions']:.0f}", 1)
+        pdf.cell(20, 5, f"{row['Recoveries own third']:.0f}", 1)
+        pdf.cell(20, 5, f"{row['Recoveries mid third']:.0f}", 1)
+        pdf.cell(20, 5, f"{row['Recoveries final third']:.0f}", 1)
         pdf.cell(10, 5, f"{row['PPDA']:.2f}", 1)
-        pdf.cell(15, 5, f"{row['duel_win_percentage']:.2f}", 1)
+        pdf.cell(13, 5, f"{row['duel_win_percentage']:.2f}", 1)
         pdf.ln()
         
     for position, df in position_dataframes.items():
