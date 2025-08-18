@@ -3916,7 +3916,7 @@ This dashboard breaks down players by position and role using in-game statistics
   - ⚡ **Possession Value Added:** 20%
 """)
 
-    with st.expander("Fullbacks"):
+    with st.expander("Wing Backs"):
         st.markdown("""
 - **Focus:** Supporting both defense and attack from wide areas  
 - **Rated on:**  
