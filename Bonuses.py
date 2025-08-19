@@ -6,7 +6,7 @@ st.set_page_config(layout='wide')
 
 # Load data from URLs
 matchstats_url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/Bonus.csv'
-possession_data_url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2024_2025/Horsens/Horsens_possession_data.csv'
+possession_data_url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2025_2026/Horsens/Horsens_possession_data.csv'
 
 matchstats_df = pd.read_csv(matchstats_url)
 possession_data_df = pd.read_csv(possession_data_url)
