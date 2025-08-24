@@ -213,7 +213,7 @@ def sliding_average_plot(df, window_size=3, filename=None):
         plt.savefig(filename, format='png', dpi=500, bbox_inches='tight')
     else:
         plt.show()
-        
+
 def simulate_goals(values, num_simulations=100000):
     return np.random.binomial(1, values[:, np.newaxis], (len(values), num_simulations)).sum(axis=0)
 
