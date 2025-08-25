@@ -17,6 +17,7 @@ import requests
 import glob
 import math
 import re
+import urllib.parse
 
 st.set_page_config(layout='wide')
 
@@ -151,7 +152,8 @@ def load_off_ball_sequences():
     return df_off_ball_sequences
 
 def load_opponnent_on_ball_sequences(selected_team):
-    url = f'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2025_2026/{selected_team}/{selected_team}_on_ball_sequences.csv'
+    team_encoded = urllib.parse.quote(selected_team)
+    url = f"https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/{team_encoded}_opponent_on_ball_sequences.csv"
     df_on_ball_sequences = pd.read_csv(url)
     df_on_ball_sequences['date'] = pd.to_datetime(df_on_ball_sequences['local_date'])
     df_on_ball_sequences['label'] = (
@@ -160,7 +162,8 @@ def load_opponnent_on_ball_sequences(selected_team):
     return df_on_ball_sequences
 
 def load_opponnent_off_ball_sequences(selected_team):
-    url = f'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2025_2026/{selected_team}/{selected_team}_off_ball_sequences.csv'
+    team_encoded = urllib.parse.quote(selected_team)
+    url = f"https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/{team_encoded}_opponent_off_ball_sequences.csv"
     df_on_ball_sequences = pd.read_csv(url)
     df_on_ball_sequences['date'] = pd.to_datetime(df_on_ball_sequences['local_date'])
     df_on_ball_sequences['label'] = (
