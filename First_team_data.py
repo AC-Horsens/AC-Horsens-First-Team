@@ -162,9 +162,10 @@ def load_opponent_on_ball_sequences(selected_team: str,
     rel_path_encoded = quote(rel_path, safe="/._-")
 
     url = f"https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/{rel_path_encoded}"
-    print("Fetcher:", url)  # god til debug
 
     df = pd.read_csv(url)
+    df['label'] = df['description'] + ' ' +df['date'].astype(str)
+
     return df
 
 def load_opponent_off_ball_sequences(selected_team: str,
@@ -177,9 +178,9 @@ def load_opponent_off_ball_sequences(selected_team: str,
     rel_path_encoded = quote(rel_path, safe="/._-")
 
     url = f"https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/{rel_path_encoded}"
-    print("Fetcher:", url)  # god til debug
 
     df = pd.read_csv(url)
+    df['label'] = df['description'] + ' ' +df['date'].astype(str)
     return df
 
 def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
