@@ -18,6 +18,7 @@ import glob
 import math
 import re
 import urllib.parse
+from urllib.parse import quote
 
 st.set_page_config(layout='wide')
 
@@ -2854,7 +2855,7 @@ def Opposition_analysis():
         return df
 
     df_opponnent_on_ball = add_date_to_description(
-        load_opponnent_on_ball_sequences(selected_team)
+        load_opponent_on_ball_sequences(selected_team)
     )
     df_opponnent_off_ball = add_date_to_description(
         load_opponnent_off_ball_sequences(selected_team)
