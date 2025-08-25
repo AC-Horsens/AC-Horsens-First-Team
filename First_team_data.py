@@ -167,15 +167,20 @@ def load_opponent_on_ball_sequences(selected_team: str,
     df = pd.read_csv(url)
     return df
 
-def load_opponnent_off_ball_sequences(selected_team):
-    team_encoded = urllib.parse.quote(selected_team)
-    url = f"https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/{team_encoded}_opponent_off_ball_sequences.csv"
-    df_on_ball_sequences = pd.read_csv(url)
-    df_on_ball_sequences['date'] = pd.to_datetime(df_on_ball_sequences['local_date'])
-    df_on_ball_sequences['label'] = (
-        df_on_ball_sequences['description'] + ' ' + df_on_ball_sequences['date'].astype(str)
-    )
-    return df_on_ball_sequences
+def load_opponent_off_ball_sequences(selected_team: str,
+                                    league_folder: str = "DNK_1_Division_2025_2026") -> pd.DataFrame:
+    # Filnavn matcher repo-struktur: <team>/<team>_on_ball_sequences.csv
+    file_name = f"{selected_team}_off_ball_sequences.csv"
+    rel_path = f"{league_folder}/{selected_team}/{file_name}"
+
+    # URL-encode path, men bevar /._-
+    rel_path_encoded = quote(rel_path, safe="/._-")
+
+    url = f"https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/{rel_path_encoded}"
+    print("Fetcher:", url)  # god til debug
+
+    df = pd.read_csv(url)
+    return df
 
 def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
 
@@ -2858,7 +2863,7 @@ def Opposition_analysis():
         load_opponent_on_ball_sequences(selected_team)
     )
     df_opponnent_off_ball = add_date_to_description(
-        load_opponnent_off_ball_sequences(selected_team)
+        load_opponent_off_ball_sequences(selected_team)
     )
     color_map = {
         'AaB': 'red', 'Hvidovre': 'red',
