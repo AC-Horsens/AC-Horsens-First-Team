@@ -164,7 +164,7 @@ def load_opponent_on_ball_sequences(selected_team: str,
     url = f"https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/{rel_path_encoded}"
 
     df = pd.read_csv(url)
-    df['date'] = pd.to_datetime(df['date'])
+    df['date'] = pd.to_datetime(df['local_date'])
     df['label'] = df['description'] + ' ' +df['date'].astype(str)
 
     return df
@@ -181,7 +181,7 @@ def load_opponent_off_ball_sequences(selected_team: str,
     url = f"https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/{rel_path_encoded}"
 
     df = pd.read_csv(url)
-    df['date'] = pd.to_datetime(df['date'])
+    df['date'] = pd.to_datetime(df['local_date'])
     df['label'] = df['description'] + ' ' + df['date'].astype(str)
     return df
 
