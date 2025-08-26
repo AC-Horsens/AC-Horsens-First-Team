@@ -3897,14 +3897,14 @@ def Tactical_breakdown():
         st.dataframe(width_pos, hide_index=True)
 
     with c3:
-        st.subheader("Options (Names)")
+        st.subheader("Options between lines (Names)")
         st.markdown("**Low Base**")
         st.dataframe(options_low_name, hide_index=True)
         st.markdown("**High Base**")
         st.dataframe(options_high_name, hide_index=True)
 
     with c4:
-        st.subheader("Options (Positions)")
+        st.subheader("Options between lines (Positions)")
         st.markdown("**Low Base**")
         st.dataframe(options_low_pos, hide_index=True)
         st.markdown("**High Base**")
