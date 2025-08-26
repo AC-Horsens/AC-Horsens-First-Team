@@ -3914,11 +3914,11 @@ def Tactical_breakdown():
     c5, c6, c7, c8 = st.columns(4)
 
     with c5:
-        st.subheader("Deep Run Receivers (Names)")
+        st.subheader("Deep Runners (Names)")
         st.dataframe(deep_run_name, hide_index=True)
 
     with c6:
-        st.subheader("Deep Run Receivers (Positions)")
+        st.subheader("Deep Runners (Positions)")
         st.dataframe(deep_run_pos, hide_index=True)
 
     with c7:
