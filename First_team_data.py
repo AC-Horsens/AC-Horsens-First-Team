@@ -3762,7 +3762,6 @@ def Opposition_analysis():
 def Tactical_breakdown():
     df = load_on_ball_sequences()
 
-    # Match filter
     df['label'] = df['description'] + ' ' + df['local_date']
     df = df.sort_values('local_date', ascending=False)
     matches = df['label'].unique()
