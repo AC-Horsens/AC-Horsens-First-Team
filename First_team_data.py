@@ -3759,6 +3759,176 @@ def Opposition_analysis():
     st.subheader('Total xG by Corner Type Across All Players')
     st.dataframe(total_xg_summary, hide_index=True)
 
+def Tactical_breakdown():
+    df = load_on_ball_sequences()
+
+    # Match filter
+    df['label'] = df['description'] + ' ' + df['local_date']
+    df = df.sort_values('local_date', ascending=False)
+    matches = df['label'].unique()
+    chosen_match = st.multiselect('Choose match', matches, default=matches[0])
+    df = df[df['label'].isin(chosen_match)]
+
+    # Filter out SUB positions
+    df = df[(df['poss_player_position'] != 'SUB') & (df['receiver_position'] != 'SUB')]
+
+    # -------------------------------
+    # Helper for possessor top-k (dedup by sequence)
+    # -------------------------------
+    def top_possessors(data, name_col='poss_player_name', pos_col='poss_player_position', topn=5):
+        data_unique = data.drop_duplicates('sequence_id')
+        by_name = (
+            data_unique[name_col]
+            .value_counts()
+            .reset_index()
+            .rename(columns={'index': 'Player', name_col: 'Count'})
+            .head(topn)
+        )
+        by_pos = (
+            data_unique[pos_col]
+            .value_counts()
+            .reset_index()
+            .rename(columns={'index': 'Position', pos_col: 'Count'})
+            .head(topn)
+        )
+        return by_name, by_pos
+
+    # -------------------------------
+    # Subsets
+    # -------------------------------
+    low_base  = df[df['Low base']  == True]
+    high_base = df[df['High base'] == True]
+    pocket    = df[df['Pocket']    == True]
+    width     = df[df['Width']     == True]
+
+    # Possessors (dedup per sequence)
+    low_name, low_pos       = top_possessors(low_base)
+    high_name, high_pos     = top_possessors(high_base)
+    pocket_name, pocket_pos = top_possessors(pocket)
+    width_name, width_pos   = top_possessors(width)
+
+    # Options (NO dedup)
+    options_low_base  = low_base[low_base['option_between_lines'] == True]
+    options_high_base = high_base[high_base['option_between_lines'] == True]
+
+    options_low_name = (
+        options_low_base['receiver_name']
+        .value_counts()
+        .reset_index()
+        .rename(columns={'index': 'Receiver', 'receiver_name': 'Count'})
+        .head(5)
+    )
+    options_high_name = (
+        options_high_base['receiver_name']
+        .value_counts()
+        .reset_index()
+        .rename(columns={'index': 'Receiver', 'receiver_name': 'Count'})
+        .head(5)
+    )
+    options_low_pos = (
+        options_low_base['receiver_position']
+        .value_counts()
+        .reset_index()
+        .rename(columns={'index': 'Position', 'receiver_position': 'Count'})
+        .head(5)
+    )
+    options_high_pos = (
+        options_high_base['receiver_position']
+        .value_counts()
+        .reset_index()
+        .rename(columns={'index': 'Position', 'receiver_position': 'Count'})
+        .head(5)
+    )
+
+    # -------------------------------
+    # Deep Run (receivers only, NO dedup)
+    # -------------------------------
+    deep_run = df[df['deep_run'] == True]
+    deep_run_name = (
+        deep_run['receiver_name']
+        .value_counts()
+        .reset_index()
+        .rename(columns={'index': 'Receiver', 'receiver_name': 'Count'})
+        .head(5)
+    )
+    deep_run_pos = (
+        deep_run['receiver_position']
+        .value_counts()
+        .reset_index()
+        .rename(columns={'index': 'Position', 'receiver_position': 'Count'})
+        .head(5)
+    )
+
+    # -------------------------------
+    # Deep Run Opportunity (possessors, DEDUP)
+    # -------------------------------
+    deep_run_opp = df[df['deep_run_opportunity'] == True]
+    deep_run_opp_name, deep_run_opp_pos = top_possessors(deep_run_opp)
+
+    # =====================================================
+    # LAYOUT
+    # =====================================================
+
+    st.title("Possessors & Options — Base/Pocket/Width + Deep Run")
+
+    # -------- Row 1 (original 4 columns) --------
+    c1, c2, c3, c4 = st.columns(4)
+
+    with c1:
+        st.subheader("Possessors (Names)")
+        st.markdown("**Low Base**")
+        st.dataframe(low_name, hide_index=True)
+        st.markdown("**High Base**")
+        st.dataframe(high_name, hide_index=True)
+        st.markdown("**Pocket**")
+        st.dataframe(pocket_name, hide_index=True)
+        st.markdown("**Width**")
+        st.dataframe(width_name, hide_index=True)
+
+    with c2:
+        st.subheader("Possessors (Positions)")
+        st.markdown("**Low Base**")
+        st.dataframe(low_pos, hide_index=True)
+        st.markdown("**High Base**")
+        st.dataframe(high_pos, hide_index=True)
+        st.markdown("**Pocket**")
+        st.dataframe(pocket_pos, hide_index=True)
+        st.markdown("**Width**")
+        st.dataframe(width_pos, hide_index=True)
+
+    with c3:
+        st.subheader("Options (Names)")
+        st.markdown("**Low Base**")
+        st.dataframe(options_low_name, hide_index=True)
+        st.markdown("**High Base**")
+        st.dataframe(options_high_name, hide_index=True)
+
+    with c4:
+        st.subheader("Options (Positions)")
+        st.markdown("**Low Base**")
+        st.dataframe(options_low_pos, hide_index=True)
+        st.markdown("**High Base**")
+        st.dataframe(options_high_pos, hide_index=True)
+
+    # -------- Row 2 (last row: Deep Run & Deep Run Opportunity) --------
+    c5, c6, c7, c8 = st.columns(4)
+
+    with c5:
+        st.subheader("Deep Run Receivers (Names)")
+        st.dataframe(deep_run_name, hide_index=True)
+
+    with c6:
+        st.subheader("Deep Run Receivers (Positions)")
+        st.dataframe(deep_run_pos, hide_index=True)
+
+    with c7:
+        st.subheader("Deep Run Opportunity — Possessors (Names)")
+        st.dataframe(deep_run_opp_name, hide_index=True)
+
+    with c8:
+        st.subheader("Deep Run Opportunity — Possessors (Positions)")
+        st.dataframe(deep_run_opp_pos, hide_index=True)
+
 def Physical_data():
     df = load_physical_data()
     df_matchstats = load_match_stats()
@@ -4034,6 +4204,7 @@ This dashboard breaks down players by position and role using in-game statistics
 Data_types = {
     'Dashboard': Dashboard,
     'Opposition analysis': Opposition_analysis,
+    'Tactical Breakdown' : Tactical_breakdown,
     'Physical data': Physical_data,
     'Vocabulary': vocabulary,
     'Player profiles': player_profiles
