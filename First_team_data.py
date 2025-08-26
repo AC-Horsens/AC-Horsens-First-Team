@@ -4209,7 +4209,6 @@ Data_types = {
     'Player profiles': player_profiles
 }
 
-
 st.cache_data()
 st.cache_resource()
 selected_data = st.sidebar.radio('Choose data type',list(Data_types.keys()))
