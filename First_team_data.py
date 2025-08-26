@@ -3768,8 +3768,7 @@ def Tactical_breakdown():
     chosen_match = st.multiselect('Choose match', matches, default=matches[0])
     df = df[df['label'].isin(chosen_match)]
 
-    # --- Position remap: CF->ST, LW->LAM, RW->RAM ---
-    pos_map = {'CF': 'ST', 'LW': 'LAM', 'RW': 'RAM','RDM':'RCM','LDM':'LCM'}
+    pos_map = {'CF': 'ST', 'LW': 'LAM', 'RW': 'RAM','RDM':'RCM','LDM':'LCM','RF':'RAM','LF':'LAM'}
     for col in ['poss_player_position', 'receiver_position']:
         # uppercase for robustness, then replace
         df[col] = df[col].str.upper().replace(pos_map)
