@@ -3769,8 +3769,15 @@ def Tactical_breakdown():
     chosen_match = st.multiselect('Choose match', matches, default=matches[0])
     df = df[df['label'].isin(chosen_match)]
 
-    # Filter out SUB positions
-    df = df[(df['poss_player_position'] != 'SUB') & (df['receiver_position'] != 'SUB')]
+    # --- Position remap: CF->ST, LW->LAM, RW->RAM ---
+    pos_map = {'CF': 'ST', 'LW': 'LAM', 'RW': 'RAM'}
+    for col in ['poss_player_position', 'receiver_position']:
+        # uppercase for robustness, then replace
+        df[col] = df[col].str.upper().replace(pos_map)
+
+    # Filter out SUB positions (case-insensitive)
+    df = df[(df['poss_player_position'].str.upper() != 'SUB') &
+            (df['receiver_position'].str.upper() != 'SUB')]
 
     # -------------------------------
     # Helper for possessor top-k (dedup by sequence)
@@ -3868,12 +3875,10 @@ def Tactical_breakdown():
     # =====================================================
     # LAYOUT
     # =====================================================
-
     st.title("Possessors & Options — Base/Pocket/Width + Deep Run")
 
-    # -------- Row 1 (original 4 columns) --------
+    # Row 1
     c1, c2, c3, c4 = st.columns(4)
-
     with c1:
         st.subheader("Possessors (Names)")
         st.markdown("**Low Base**")
@@ -3910,21 +3915,17 @@ def Tactical_breakdown():
         st.markdown("**High Base**")
         st.dataframe(options_high_pos, hide_index=True)
 
-    # -------- Row 2 (last row: Deep Run & Deep Run Opportunity) --------
+    # Row 2
     c5, c6, c7, c8 = st.columns(4)
-
     with c5:
         st.subheader("Deep Runners (Names)")
         st.dataframe(deep_run_name, hide_index=True)
-
     with c6:
         st.subheader("Deep Runners (Positions)")
         st.dataframe(deep_run_pos, hide_index=True)
-
     with c7:
         st.subheader("Deep Run Opportunity — Possessors (Names)")
         st.dataframe(deep_run_opp_name, hide_index=True)
-
     with c8:
         st.subheader("Deep Run Opportunity — Possessors (Positions)")
         st.dataframe(deep_run_opp_pos, hide_index=True)
