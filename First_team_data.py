@@ -2724,12 +2724,49 @@ def Opposition_analysis():
     xg_df_openplay = xg_df_openplay.drop(columns=['total match xG'])
     xg_df_openplay['label'] = np.where(xg_df_openplay['label'].notnull(), 1, xg_df_openplay['label'])
 
+
+    transition_df = load_transitions_data()
+
+    # Filter for xG
+    transition_df = transition_df[transition_df['321.0'] > 0]
+
+    # Aggregate xG by team and match (contestantId, team_name, label, date)
+    transition_df = (
+        transition_df.groupby(['contestantId', 'team_name', 'label', 'date'])['321.0']
+        .sum()
+        .reset_index()
+        .rename(columns={'321.0': 'Transition xG'})
+    )
+
+    # Ensure the date column is in datetime format
+    transition_df['date'] = pd.to_datetime(transition_df['date'])
+
+    # Calculate total xG for each match (grouping by label and date)
+    match_total_xg = (
+        transition_df.groupby(['label', 'date'])['Transition xG']
+        .sum()
+        .reset_index()
+        .rename(columns={'Transition xG': 'total match transition xG'})
+    )
+
+    # Merge the total match xG into the team-level data
+    transition_df = transition_df.merge(match_total_xg, on=['label', 'date'], how='left')
+
+    # Calculate xG against for each team
+    transition_df['Transition xG against'] = transition_df['total match transition xG'] - transition_df['xG']
+
+    # Optional: Drop intermediate columns if needed
+    transition_df = transition_df.drop(columns=['total match transition xG'])
+    transition_df['label'] = np.where(transition_df['label'].notnull(), 1, transition_df['label'])
+
+
     df_ppda = load_ppda()
     df_ppda = df_ppda.groupby(['team_name','date']).sum().reset_index()
     df_ppda['date'] = pd.to_datetime(df_ppda['date'])
     df_ppda['PPDA'] = df_ppda['PPDA'].astype(float).round(2)
     df_ppda = df_ppda[['team_name','date', 'PPDA']]
     matchstats_df = xg_df_openplay.merge(filtered_data,on=['contestantId','label','team_name','date'])
+    matchstats_df = transition_df.merge(matchstats_df)
     matchstats_df = df_ppda.merge(matchstats_df)
 
     matchstats_df = matchstats_df.drop(columns='date')
@@ -2739,6 +2776,8 @@ def Opposition_analysis():
         'penAreaEntries': 'sum',  # Example of another column to sum
         'xG': 'sum',
         'xG against' : 'sum',  # Example of a column to average
+        'Transition xG': 'sum',
+        'Transition xG against' : 'sum',  # Example of a column to average
         'duelLost': 'sum',
         'duelWon': 'sum',
         'openPlayPass': 'sum',
