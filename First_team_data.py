@@ -2830,36 +2830,13 @@ def Opposition_analysis():
     matchstats_df = matchstats_df.round(2)
 
     cols_to_rank = matchstats_df.drop(columns=['team_name']).columns
-#    ranked_df = matchstats_df.copy()
-#    for col in cols_to_rank:
-#        if col == ['PPDA per match','xG against per match','Transition xG against per match']:
-#            ranked_df[col + '_rank'] = matchstats_df[col].rank(axis=0, ascending=True)
-#        else:
-#            ranked_df[col + '_rank'] = matchstats_df[col].rank(axis=0, ascending=False)
-    lower_is_better = {
-        'PPDA per match',
-        'xG against per match',
-        'Transition xG against per match',
-    }
+    ranked_df = matchstats_df.copy()
+    for col in cols_to_rank:
+        if col == ['PPDA per match']:
+            ranked_df[col + '_rank'] = matchstats_df[col].rank(axis=0, ascending=True)
+        else:
+            ranked_df[col + '_rank'] = matchstats_df[col].rank(axis=0, ascending=False)
 
-    # choose which columns to rank (skip IDs/text)
-    cols_to_rank = [
-        c for c in matchstats_df.columns
-        if c not in ['team_name']  # add other non-metric columns here
-        and pd.api.types.is_numeric_dtype(matchstats_df[c])
-    ]
-
-    # build ranks in one go and attach
-    ranks = {
-        f'{col}_rank': matchstats_df[col].rank(
-            ascending=(col in lower_is_better),  # 1 = best
-            method='dense',                      # ties get same rank, next rank increments by 1
-            na_option='bottom'                   # NaNs get worst rank
-        )
-        for col in cols_to_rank
-    }
-
-    ranked_df = matchstats_df.assign(**ranks)
     matchstats_df = ranked_df.merge(matchstats_df)
     matchstats_df = matchstats_df.round(2)
 
