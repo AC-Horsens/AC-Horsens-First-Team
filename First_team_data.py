@@ -2753,7 +2753,7 @@ def Opposition_analysis():
     transition_df = transition_df.merge(match_total_xg, on=['label', 'date'], how='left')
 
     # Calculate xG against for each team
-    transition_df['Transition xG against'] = transition_df['total match transition xG'] - transition_df['xG']
+    transition_df['Transition xG against'] = transition_df['total match transition xG'] - transition_df['Transition xG']
 
     # Optional: Drop intermediate columns if needed
     transition_df = transition_df.drop(columns=['total match transition xG'])
@@ -2825,7 +2825,7 @@ def Opposition_analysis():
     matchstats_df['Crosses'] = matchstats_df['totalCrossNocorner'] / matchstats_df['matches']
     matchstats_df['Cross accuracy %'] = (matchstats_df['accurateCrossNocorner'] / matchstats_df['totalCrossNocorner'])*100
     matchstats_df['PPDA per match'] = matchstats_df['PPDA']
-    matchstats_df = matchstats_df[['team_name','matches','PenAreaEntries per match','xG per match','xG against per match','Duels per match','Duels won %','Passes per game','Pass accuracy %','Back zone pass accuracy %','Forward zone pass accuracy %','possWonDef3rd %','possWonMid3rd %','possWonAtt3rd %','Forward pass share %','Final third entries per match','Final third pass accuracy %','Open play shot assists share','PPDA per match','Long pass share %','Crosses','Cross accuracy %']]
+    matchstats_df = matchstats_df[['team_name','matches','PenAreaEntries per match','xG per match','xG against per match','Transition xG per match','Transition xG against per match','Duels per match','Duels won %','Passes per game','Pass accuracy %','Back zone pass accuracy %','Forward zone pass accuracy %','possWonDef3rd %','possWonMid3rd %','possWonAtt3rd %','Forward pass share %','Final third entries per match','Final third pass accuracy %','Open play shot assists share','PPDA per match','Long pass share %','Crosses','Cross accuracy %']]
     matchstats_df['team_name'] = matchstats_df['team_name'].str.replace(' ', '_')
     matchstats_df = matchstats_df.round(2)
 
