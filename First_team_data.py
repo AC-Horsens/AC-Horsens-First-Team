@@ -2832,7 +2832,7 @@ def Opposition_analysis():
     cols_to_rank = matchstats_df.drop(columns=['team_name']).columns
     ranked_df = matchstats_df.copy()
     for col in cols_to_rank:
-        if col == 'PPDA per match':
+        if col == ['PPDA per match','xG against per match','Transition xG against per match']:
             ranked_df[col + '_rank'] = matchstats_df[col].rank(axis=0, ascending=True)
         else:
             ranked_df[col + '_rank'] = matchstats_df[col].rank(axis=0, ascending=False)
