@@ -2725,6 +2725,40 @@ def Opposition_analysis():
     xg_df_openplay['label'] = np.where(xg_df_openplay['label'].notnull(), 1, xg_df_openplay['label'])
 
 
+    set_piece_df = load_set_piece_data()
+
+    # Filter for xG
+    set_piece_df = set_piece_df[set_piece_df['321.0'] > 0]
+
+    # Aggregate xG by team and match (contestantId, team_name, label, date)
+    set_piece_df = (
+        set_piece_df.groupby(['team_name', 'label', 'date'])['321.0']
+        .sum()
+        .reset_index()
+        .rename(columns={'321.0': 'Set piece xG'})
+    )
+
+    # Ensure the date column is in datetime format
+    set_piece_df['date'] = pd.to_datetime(set_piece_df['date'])
+
+    # Calculate total xG for each match (grouping by label and date)
+    match_total_xg = (
+        set_piece_df.groupby(['label', 'date'])['Set piece xG']
+        .sum()
+        .reset_index()
+        .rename(columns={'Set piece xG': 'total match set piece xG'})
+    )
+
+    # Merge the total match xG into the team-level data
+    set_piece_df = set_piece_df.merge(match_total_xg, on=['label', 'date'], how='left')
+
+    # Calculate xG against for each team
+    set_piece_df['Set piece xG against'] = set_piece_df['total match set piece xG'] - set_piece_df['Set piece xG']
+
+    # Optional: Drop intermediate columns if needed
+    set_piece_df = set_piece_df.drop(columns=['total match set piece xG'])
+    set_piece_df['label'] = np.where(set_piece_df['label'].notnull(), 1, set_piece_df['label'])
+
     transition_df = load_transitions_data()
 
     # Filter for xG
@@ -2767,6 +2801,7 @@ def Opposition_analysis():
     df_ppda = df_ppda[['team_name','date', 'PPDA']]
     matchstats_df = xg_df_openplay.merge(filtered_data,on=['contestantId','label','team_name','date'])
     matchstats_df = transition_df.merge(matchstats_df)
+    matchstats_df = set_piece_df.merge(matchstats_df)
     matchstats_df = df_ppda.merge(matchstats_df)
 
     matchstats_df = matchstats_df.drop(columns='date')
@@ -2778,6 +2813,8 @@ def Opposition_analysis():
         'xG against' : 'sum',  # Example of a column to average
         'Transition xG': 'sum',
         'Transition xG against' : 'sum',  # Example of a column to average
+        'Set piece xG': 'sum',
+        'Set piece xG against' : 'sum',  # Example of a column to average
         'duelLost': 'sum',
         'duelWon': 'sum',
         'openPlayPass': 'sum',
@@ -2808,6 +2845,8 @@ def Opposition_analysis():
     matchstats_df['xG against per match'] = matchstats_df['xG against'] / matchstats_df['matches']
     matchstats_df['Transition xG per match'] = matchstats_df['Transition xG'] / matchstats_df['matches']
     matchstats_df['Transition xG against per match'] = matchstats_df['Transition xG against'] / matchstats_df['matches']
+    matchstats_df['Set piece xG per match'] = matchstats_df['Set piece xG'] / matchstats_df['matches']
+    matchstats_df['Set piece xG against per match'] = matchstats_df['Set piece xG against'] / matchstats_df['matches']
     matchstats_df['Duels per match'] = (matchstats_df['duelLost'] + matchstats_df['duelWon']) /matchstats_df['matches']
     matchstats_df['Duels won %'] = (matchstats_df['duelWon'] / (matchstats_df['duelWon'] + matchstats_df['duelLost']))*100	
     matchstats_df['Passes per game'] = matchstats_df['openPlayPass'] / matchstats_df['matches']
@@ -2825,14 +2864,14 @@ def Opposition_analysis():
     matchstats_df['Crosses'] = matchstats_df['totalCrossNocorner'] / matchstats_df['matches']
     matchstats_df['Cross accuracy %'] = (matchstats_df['accurateCrossNocorner'] / matchstats_df['totalCrossNocorner'])*100
     matchstats_df['PPDA per match'] = matchstats_df['PPDA']
-    matchstats_df = matchstats_df[['team_name','matches','PenAreaEntries per match','xG per match','xG against per match','Transition xG per match','Transition xG against per match','Duels per match','Duels won %','Passes per game','Pass accuracy %','Back zone pass accuracy %','Forward zone pass accuracy %','possWonDef3rd %','possWonMid3rd %','possWonAtt3rd %','Forward pass share %','Final third entries per match','Final third pass accuracy %','Open play shot assists share','PPDA per match','Long pass share %','Crosses','Cross accuracy %']]
+    matchstats_df = matchstats_df[['team_name','matches','PenAreaEntries per match','xG per match','xG against per match','Transition xG per match','Transition xG against per match','Set piece xG per match','Set piece xG against per match','Duels per match','Duels won %','Passes per game','Pass accuracy %','Back zone pass accuracy %','Forward zone pass accuracy %','possWonDef3rd %','possWonMid3rd %','possWonAtt3rd %','Forward pass share %','Final third entries per match','Final third pass accuracy %','Open play shot assists share','PPDA per match','Long pass share %','Crosses','Cross accuracy %']]
     matchstats_df['team_name'] = matchstats_df['team_name'].str.replace(' ', '_')
     matchstats_df = matchstats_df.round(2)
 
     cols_to_rank = matchstats_df.drop(columns=['team_name']).columns
     ranked_df = matchstats_df.copy()
     for col in cols_to_rank:
-        if (col == 'PPDA per match') or (col =='xG against per match') or (col=='Transition xG against per match'):
+        if (col == 'PPDA per match') or (col =='xG against per match') or (col=='Transition xG against per match') or (col=='Set piece xG against per match'):
             ranked_df[col + '_rank'] = matchstats_df[col].rank(axis=0, ascending=True)
         else:
             ranked_df[col + '_rank'] = matchstats_df[col].rank(axis=0, ascending=False)
