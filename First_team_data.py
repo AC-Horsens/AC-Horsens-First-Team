@@ -2781,7 +2781,7 @@ def Opposition_analysis():
     matchstats_df['Final third pass accuracy %'] = (matchstats_df['successfulFinalThirdPasses'] / matchstats_df['totalFinalThirdPasses'])*100
     matchstats_df['Open play shot assists share'] = (matchstats_df['attAssistOpenplay'] / matchstats_df['totalAttAssist'])*100
     matchstats_df['Long pass share %'] = (matchstats_df['totalLongBalls'] / matchstats_df['openPlayPass'])*100
-    matchstats_df['Crosses'] = matchstats_df['totalCrossNocorner']
+    matchstats_df['Crosses'] = matchstats_df['totalCrossNocorner'] / matchstats_df['matches']
     matchstats_df['Cross accuracy %'] = (matchstats_df['accurateCrossNocorner'] / matchstats_df['totalCrossNocorner'])*100
     matchstats_df['PPDA per match'] = matchstats_df['PPDA']
     matchstats_df = matchstats_df[['team_name','matches','PenAreaEntries per match','xG per match','xG against per match','Duels per match','Duels won %','Passes per game','Pass accuracy %','Back zone pass accuracy %','Forward zone pass accuracy %','possWonDef3rd %','possWonMid3rd %','possWonAtt3rd %','Forward pass share %','Final third entries per match','Final third pass accuracy %','Open play shot assists share','PPDA per match','Long pass share %','Crosses','Cross accuracy %']]
