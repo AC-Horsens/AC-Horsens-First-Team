@@ -2732,7 +2732,7 @@ def Opposition_analysis():
 
     # Aggregate xG by team and match (contestantId, team_name, label, date)
     transition_df = (
-        transition_df.groupby(['contestantId', 'team_name', 'label', 'date'])['321.0']
+        transition_df.groupby(['team_name', 'label', 'date'])['321.0']
         .sum()
         .reset_index()
         .rename(columns={'321.0': 'Transition xG'})
@@ -2806,6 +2806,8 @@ def Opposition_analysis():
     matchstats_df['PenAreaEntries per match'] = matchstats_df['penAreaEntries'] / matchstats_df['matches']
     matchstats_df['xG per match'] = matchstats_df['xG'] / matchstats_df['matches']
     matchstats_df['xG against per match'] = matchstats_df['xG against'] / matchstats_df['matches']
+    matchstats_df['Transition xG per match'] = matchstats_df['Transition xG'] / matchstats_df['matches']
+    matchstats_df['Transition xG against per match'] = matchstats_df['Transition xG against'] / matchstats_df['matches']
     matchstats_df['Duels per match'] = (matchstats_df['duelLost'] + matchstats_df['duelWon']) /matchstats_df['matches']
     matchstats_df['Duels won %'] = (matchstats_df['duelWon'] / (matchstats_df['duelWon'] + matchstats_df['duelLost']))*100	
     matchstats_df['Passes per game'] = matchstats_df['openPlayPass'] / matchstats_df['matches']
