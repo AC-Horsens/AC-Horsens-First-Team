@@ -3970,7 +3970,7 @@ def Tactical_breakdown():
         st.markdown("**Width**")
         st.dataframe(width_name, hide_index=True)
         st.markdown("**Assistzone**")
-        st.dataframe(assist_zone_name)
+        st.dataframe(assist_zone_name,hide_index=True)
     with c2:
         st.subheader("Possessors (Positions)")
         st.markdown("**Low Base**")
@@ -3982,7 +3982,7 @@ def Tactical_breakdown():
         st.markdown("**Width**")
         st.dataframe(width_pos, hide_index=True)
         st.markdown("**Assistzone**")
-        st.dataframe(assist_zone_pos)
+        st.dataframe(assist_zone_pos,hide_index=True)
 
     with c3:
         st.subheader("Options between lines (Names)")
