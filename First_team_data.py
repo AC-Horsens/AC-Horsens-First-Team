@@ -3885,12 +3885,14 @@ def Tactical_breakdown():
     high_base = df[df['High base'] == True]
     pocket    = df[df['Pocket']    == True]
     width     = df[df['Width']     == True]
+    assist_zone = df[df['poss_in_assist_zone'] == True]
 
     # Possessors (dedup per sequence)
     low_name, low_pos       = top_possessors(low_base)
     high_name, high_pos     = top_possessors(high_base)
     pocket_name, pocket_pos = top_possessors(pocket)
     width_name, width_pos   = top_possessors(width)
+    assist_zone_name,assist_zone_pos = top_possessors(assist_zone)
 
     # Options (NO dedup)
     options_low_base  = low_base[low_base['option_between_lines'] == True]
@@ -3967,7 +3969,8 @@ def Tactical_breakdown():
         st.dataframe(pocket_name, hide_index=True)
         st.markdown("**Width**")
         st.dataframe(width_name, hide_index=True)
-
+        st.markdown("**Assistzone**")
+        st.dataframe(assist_zone_name)
     with c2:
         st.subheader("Possessors (Positions)")
         st.markdown("**Low Base**")
@@ -3978,6 +3981,8 @@ def Tactical_breakdown():
         st.dataframe(pocket_pos, hide_index=True)
         st.markdown("**Width**")
         st.dataframe(width_pos, hide_index=True)
+        st.markdown("**Assistzone**")
+        st.dataframe(assist_zone_pos)
 
     with c3:
         st.subheader("Options between lines (Names)")
