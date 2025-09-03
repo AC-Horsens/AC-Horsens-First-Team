@@ -682,9 +682,20 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         return df_otter
 
     def number10():
-        df_10 = df_scouting[
-            ((df_scouting['player_position'] == 'Attacking Midfielder') & df_scouting['player_positionSide'].str.contains('Centre'))
-        ]
+        mask = (
+            (
+                (df_scouting['formationUsed'].isin([343, 3421, 541, 4231, 4321])) &
+                (df_scouting['player_position'].isin(['Attacking Midfielder', 'Striker'])) &
+                (df_scouting['player_positionSide'].isin(['Centre/Right', 'Left/Centre']))
+            )
+            |
+            (
+                (df_scouting['player_position'] == 'Attacking Midfielder') &
+                (df_scouting['player_positionSide'].isin(['Centre','Centre/Right','Left/Centre']))
+            )
+        )
+
+        df_10 = df_scouting[mask].copy()
         df_10['minsPlayed'] = df_10['minsPlayed'].astype(int)
         df_10 = df_10[df_10['minsPlayed'] >= minutter_kamp]
 
@@ -759,16 +770,19 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         return df_10
 
     def winger():
-        df_winger = df_scouting[
-            (
-                (df_scouting['player_position'] == 'Midfielder') &
-                (df_scouting['player_positionSide'].isin(['Right', 'Left']))
-            ) |
-            (
-                (df_scouting['player_position'].isin(['Attacking Midfielder', 'Striker'])) &
-                (df_scouting['player_positionSide'].isin(['Right', 'Left']))
-            )
-        ]
+        mask = (
+            ((df_scouting['formationUsed'].isin([442,541,451,4141])) &
+            (df_scouting['player_position'] == 'Midfielder') &
+            (df_scouting['player_positionSide'].isin(['Right', 'Left'])))
+            |
+            ((df_scouting['formationUsed'].isin([433])) &
+            (df_scouting['player_position'] == 'Striker') &
+            (df_scouting['player_positionSide'].isin(['Left/Centre', 'Centre/Right'])))
+            |
+            (df_scouting['player_position'].isin(['Attacking Midfielder', 'Striker'])) &
+            (df_scouting['player_positionSide'].isin(['Right', 'Left'])))        
+
+        df_winger = df_scouting[mask].copy()
         df_winger['minsPlayed'] = df_winger['minsPlayed'].astype(int)
         df_winger = df_winger[df_winger['minsPlayed'] >= minutter_kamp]
 
@@ -837,7 +851,15 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         return df_winger
 
     def Classic_striker():
-        df_striker = df_scouting[(df_scouting['player_position'] == 'Striker') & (df_scouting['player_positionSide'].str.contains('Centre'))]
+        mask = (
+        ((df_scouting['formationUsed'].isin([532,442,352,3142,3412])) &
+        (df_scouting['player_position'] == 'Striker') &
+        (df_scouting['player_positionSide'].str.contains('Centre')))
+        |
+        (df_scouting['player_position'] == 'Striker') &
+        (df_scouting['player_positionSide'] == 'Centre'))
+
+        df_striker = df_scouting[mask].copy()
         df_striker['minsPlayed'] = df_striker['minsPlayed'].astype(int)
         df_striker = df_striker[df_striker['minsPlayed'].astype(int) >= minutter_kamp]
 
