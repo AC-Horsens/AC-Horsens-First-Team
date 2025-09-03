@@ -3840,7 +3840,9 @@ def Opposition_analysis():
     st.dataframe(total_xg_summary, hide_index=True)
 
 def Tactical_breakdown():
-    df = load_on_ball_sequences()
+    teams = ['B_93','Esbjerg','HB_Køge','Hillerød','Hobro','Horsens','Hvidovre','Kolding','Lyngby','Middelfart','Aab','Aarhus_Fremad']
+    selected_team = st.selectbox('Choose team',teams)
+    df = load_opponent_on_ball_sequences(selected_team)
 
     df['label'] = df['description'] + ' ' + df['local_date']
     df = df.sort_values('local_date', ascending=False)
