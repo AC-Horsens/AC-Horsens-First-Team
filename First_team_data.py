@@ -3245,6 +3245,7 @@ def Opposition_analysis():
     # Sort and clean up combined data
     combined_df = combined_df.sort_values(by='Total score', ascending=False)
     combined_df = combined_df.drop(columns=['match_date','player_position'])
+    combined_df = combined_df[combined_df['minsPlayed'] > 44]
     st.dataframe(combined_df,hide_index = True)
     combined_df = combined_df.drop(columns = ['label'])
     # Aggregate and sort by 'Total score    '
@@ -3285,6 +3286,7 @@ def Opposition_analysis():
     # Sort by 'Total score' and drop unnecessary columns
     combined_df = combined_df.sort_values(by='Total score', ascending=False)
     combined_df = combined_df.drop(columns=['match_date', 'player_position', 'player_positionSide'])
+    combined_df = combined_df[combined_df['minsPlayed'] > 44]
     combined_df = combined_df.round(2)
     # Display the combined DataFrame in Streamlit
     st.dataframe(combined_df, hide_index=True)
@@ -3330,6 +3332,7 @@ def Opposition_analysis():
     # Sort by 'Total score' and drop unnecessary columns
     combined_df = combined_df.sort_values(by='Total score', ascending=False)
     combined_df = combined_df.drop(columns=['match_date', 'player_position'])
+    combined_df = combined_df[combined_df['minsPlayed'] > 44]
     combined_df = combined_df.round(2)
 
     # Display the combined DataFrame in Streamlit
@@ -3374,6 +3377,7 @@ def Opposition_analysis():
     # Sort by 'Total score' and drop unnecessary columns
     combined_df = combined_df.sort_values(by='Total score', ascending=False)
     combined_df = combined_df.drop(columns=['match_date', 'player_position'])
+    combined_df = combined_df[combined_df['minsPlayed'] > 44]
     combined_df = combined_df.round(2)
 
     # Display the combined DataFrame in Streamlit
