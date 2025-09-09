@@ -3255,6 +3255,7 @@ def Opposition_analysis():
     }).reset_index()
 
     agg_df = agg_df.sort_values(by='Total score', ascending=False)
+    agg_df = agg_df[agg_df['minsPlayed'] > 100]
     agg_df = agg_df.round(2)
     st.dataframe(agg_df, hide_index=True)
     central_defender_df = agg_df.copy()
@@ -3302,6 +3303,7 @@ def Opposition_analysis():
 
     # Sort by 'Total score' in descending order
     agg_df = agg_df.sort_values(by='Total score', ascending=False)
+    agg_df = agg_df[agg_df['minsPlayed'] > 100]
     agg_df = agg_df.round(2)
 
     # Display the aggregated DataFrame in Streamlit
@@ -3349,6 +3351,7 @@ def Opposition_analysis():
 
     # Sort by 'Total score' in descending order
     agg_df = agg_df.sort_values(by='Total score', ascending=False)
+    agg_df = agg_df[agg_df['minsPlayed'] > 100]
     agg_df = agg_df.round(2)
 
     # Display the aggregated DataFrame in Streamlit
@@ -3394,6 +3397,7 @@ def Opposition_analysis():
 
     # Sort by 'Total score' in descending order
     agg_df = agg_df.sort_values(by='Total score', ascending=False)
+    agg_df = agg_df[agg_df['minsPlayed'] > 100]
     agg_df = agg_df.round(2)
 
     # Display the aggregated DataFrame in Streamlit
@@ -3422,6 +3426,7 @@ def Opposition_analysis():
     # Sort by 'Total score' and drop unnecessary columns
     combined_df = combined_df.sort_values(by='Total score', ascending=False)
     combined_df = combined_df.drop(columns=['match_date'])
+    combined_df = combined_df[combined_df['minsPlayed'] > 44]
     combined_df = combined_df.round(2)
 
     # Display the combined DataFrame in Streamlit
@@ -3438,6 +3443,7 @@ def Opposition_analysis():
 
     # Sort by 'Total score' in descending order
     agg_df = agg_df.sort_values(by='Total score', ascending=False)
+    agg_df = agg_df[agg_df['minsPlayed'] > 100]
     agg_df = agg_df.round(2)
 
     # Display the aggregated DataFrame in Streamlit
@@ -3466,6 +3472,7 @@ def Opposition_analysis():
     # Sort by 'Total score' and drop unnecessary columns
     combined_df = combined_df.sort_values(by='Total score', ascending=False)
     combined_df = combined_df.drop(columns=['match_date'])
+    combined_df = combined_df[combined_df['minsPlayed'] > 44]
     combined_df = combined_df.round(2)
 
     # Display the combined DataFrame in Streamlit
@@ -3482,6 +3489,7 @@ def Opposition_analysis():
 
     # Sort by 'Total score' in descending order
     agg_df = agg_df.sort_values(by='Total score', ascending=False)
+    agg_df = agg_df[agg_df['minsPlayed'] > 100]
     agg_df = agg_df.round(2)
 
     # Display the aggregated DataFrame in Streamlit
@@ -3511,6 +3519,7 @@ def Opposition_analysis():
     # Sort by 'Total score' and drop unnecessary columns
     combined_df = combined_df.sort_values(by='Total score', ascending=False)
     combined_df = combined_df.drop(columns=['match_date'])
+    combined_df = combined_df[combined_df['minsPlayed'] > 44]
     combined_df = combined_df.round(2)
 
     # Display the combined DataFrame in Streamlit
@@ -3527,6 +3536,8 @@ def Opposition_analysis():
 
     # Sort by 'Total score' in descending order
     agg_df = agg_df.sort_values(by='Total score', ascending=False)
+    agg_df = agg_df[agg_df['minsPlayed'] > 100]
+
     agg_df = agg_df.round(2)
 
     # Display the aggregated DataFrame in Streamlit
