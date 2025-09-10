@@ -963,7 +963,7 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         df_sekser['Total score'] = df_sekser.apply(
         lambda row: weighted_mean(
             [row['Defending_'], row['Passing_'],row['Progressive_ball_movement'],row['Possession_value_added']],
-            [3 if row['Defending_'] < 5 else 4, 2 if row['Passing_'] < 5 else 2, 3 if row['Progressive_ball_movement'] < 5 else 2, 1 if row['Possession_value_added'] < 5 else 1]
+            [3 if row['Defending_'] < 5 else 5, 3 if row['Passing_'] < 5 else 4, 3 if row['Progressive_ball_movement'] < 5 else 2, 1 if row['Possession_value_added'] < 5 else 1]
         ), axis=1
         )
 
@@ -1109,7 +1109,7 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
             lambda row: weighted_mean(
                 [row['Defending_'], row['Passing_'], row['Progressive_ball_movement'], row['Possession_value']],
                 [5 if row['Defending_'] > 5 else 1, 5 if row['Passing_'] > 5 else 1, 
-                1 if row['Progressive_ball_movement'] < 5 else 1, 1 if row['Possession_value'] < 5 else 1]
+                1 if row['Progressive_ball_movement'] < 5 else 3, 1 if row['Possession_value'] < 5 else 3]
             ), axis=1
         )
 
@@ -1753,7 +1753,7 @@ for index, row in horsens_df.iterrows():
 
 
 def create_pdf_progress_report(horsens_df, total_expected_points_combined, position_dataframes):
-    MIN_MINUTES = 150  # <-- set your threshold here
+    MIN_MINUTES = 300  # <-- set your threshold here
 
     today = date.today()
     pdf = FPDF()

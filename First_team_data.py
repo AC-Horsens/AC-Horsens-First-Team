@@ -609,7 +609,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         df_sekser['Total score'] = df_sekser.apply(
         lambda row: weighted_mean(
             [row['Defending_'], row['Passing_'],row['Progressive_ball_movement'],row['Possession_value_added']],
-            [3 if row['Defending_'] < 5 else 4, 2 if row['Passing_'] < 5 else 2, 3 if row['Progressive_ball_movement'] < 5 else 2, 1 if row['Possession_value_added'] < 5 else 1]
+            [3 if row['Defending_'] < 5 else 5, 3 if row['Passing_'] < 5 else 4, 3 if row['Progressive_ball_movement'] < 5 else 2, 1 if row['Possession_value_added'] < 5 else 1]
         ), axis=1
         )
 
@@ -755,7 +755,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
             lambda row: weighted_mean(
                 [row['Defending_'], row['Passing_'], row['Progressive_ball_movement'], row['Possession_value']],
                 [5 if row['Defending_'] > 5 else 1, 5 if row['Passing_'] > 5 else 1, 
-                1 if row['Progressive_ball_movement'] < 5 else 1, 1 if row['Possession_value'] < 5 else 1]
+                1 if row['Progressive_ball_movement'] < 5 else 3, 1 if row['Possession_value'] < 5 else 3]
             ), axis=1
         )
 
@@ -1285,6 +1285,7 @@ number8_df = position_dataframes['Number 8']
 number10_df = position_dataframes['Number 10']
 winger_df = position_dataframes['Winger']
 classic_striker_df = position_dataframes['Striker']
+
 def Dashboard():
     xml_files = glob.glob('DNK_1_Division_2025_2026/Horsens/XML files/*.xml')
 
