@@ -900,7 +900,7 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         df_backs['Total score'] = df_backs.apply(
             lambda row: weighted_mean(
                 [row['Defending_'], row['Passing_'], row['Chance_creation'], row['Possession_value_added']],
-                [3 if row['Defending_'] < 3 else 3, 3 if row['Passing_'] < 2 else 1, 6 if row['Chance_creation'] > 3 else 2, 3 if row['Possession_value_added'] < 3 else 2]
+                [3 if row['Defending_'] < 3 else 5, 1 if row['Passing_'] < 2 else 1, 6 if row['Chance_creation'] > 3 else 2, 3 if row['Possession_value_added'] < 3 else 2]
             ), axis=1
         )
 
@@ -911,13 +911,14 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
                                 'Total score']]
         
         df_backs = df_backs[['playerName', 'team_name', 'player_position', 'player_positionSide','age_today', 'minsPlayed','label', 'Defending_', 'Passing_', 'Chance_creation','Possession_value_added', 'Total score']]
-
+        
         df_backstotal = df_backstotal.groupby(['playerName', 'team_name', 'player_position', 'player_positionSide', 'age_today']).mean().reset_index()
 
         minutter = df_backs.groupby(['playerName', 'team_name', 'player_position', 'player_positionSide', 'age_today'])['minsPlayed'].sum().astype(float).reset_index()
         df_backstotal['minsPlayed total'] = minutter['minsPlayed']
 
         df_backs = df_backs.sort_values('Total score', ascending=False)
+        df_wingbacks = df_backs.copy()
         df_backstotal = df_backstotal[['playerName', 'team_name', 'player_position', 'player_positionSide', 'age_today',
                                     'minsPlayed total', 'Defending_', 'Passing_', 'Chance_creation',
                                     'Possession_value_added', 'Total score']]
@@ -925,7 +926,7 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
 
         df_backstotal = df_backstotal.sort_values('Total score', ascending=False)
 
-        return df_backs
+        return df_wingbacks
     
     def number6():
         df_sekser = df_scouting[
@@ -1647,6 +1648,9 @@ def create_pdf_game_report(game_data, df_xg_agg, df_xa_agg, merged_df, df_posses
         
     for position, df in position_dataframes.items():
         filtered_df = df[(df['team_name'] == 'Horsens') & (df['label'] == label)]
+        if filtered_df.empty:  # <-- skip if no rows
+            continue
+
         if 'player_position' in filtered_df.columns:
             filtered_df = filtered_df.drop(columns=['label', 'team_name', 'player_position', 'age_today'])
         else:
@@ -1698,7 +1702,8 @@ def create_pdf_game_report(game_data, df_xg_agg, df_xa_agg, merged_df, df_posses
 
     for position, df in position_dataframes.items():
         opp_df = df[(df['team_name'] != 'Horsens') & (df['label'] == label)]
-        # Drop unused
+        if opp_df.empty:  # <-- skip if no rows
+            continue
         drop_cols = ['label', 'team_name', 'age_today', 'player_position', 'player_positionSide']
         opp_df = opp_df.drop(columns=[c for c in drop_cols if c in opp_df.columns])
         opp_df = opp_df.round(2)
@@ -1790,6 +1795,7 @@ def create_pdf_progress_report(horsens_df, total_expected_points_combined, posit
         dfx['Total score'] = pd.to_numeric(dfx['Total score'], errors='coerce')
         dfx = dfx.dropna(subset=['Total score'])
 
+
         # 1) Eligible players by summed minutes across all rows
         if 'minsPlayed' in dfx.columns:
             mins_total = dfx.groupby('playerName', as_index=False)['minsPlayed'].sum()
@@ -1810,6 +1816,8 @@ def create_pdf_progress_report(horsens_df, total_expected_points_combined, posit
 
         # 3) Build Horsens table (also enforce minutes threshold)
         horsens = dfx[dfx['team_name'] == 'Horsens'].copy()
+        if horsens.empty:  # <-- skip if no rows
+            continue
         if eligible is not None:
             horsens = horsens[horsens['playerName'].isin(eligible)]
 
@@ -1874,12 +1882,12 @@ def create_pdf_progress_report(horsens_df, total_expected_points_combined, posit
     pdf.cell(190, 6, txt="Top 5 per Position (League)", ln=True, align='C')
     pdf.ln(2)
 
-    MIN_MINUTES = 150  # <-- set your threshold here
 
     for position, df in position_dataframes.items():
         dfx = df.copy()
         dfx['Total score'] = pd.to_numeric(dfx['Total score'], errors='coerce')
         dfx = dfx.dropna(subset=['Total score'])
+
 
         # Aggregate: mean for metrics, SUM minutes so we can filter
         num_cols = dfx.select_dtypes(include='number').columns.tolist()

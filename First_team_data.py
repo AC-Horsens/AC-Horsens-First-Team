@@ -203,7 +203,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
             expanded_scores.extend([score] * weight)
         return np.mean(expanded_scores)
 
-    minutter_kamp = 0
+    minutter_kamp = 45
     minutter_total = 300
         
     df_possession_xa = df_xA.rename(columns={'318.0': 'xA'})
@@ -545,9 +545,10 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
         df_backs['Total score'] = df_backs.apply(
             lambda row: weighted_mean(
                 [row['Defending_'], row['Passing_'], row['Chance_creation'], row['Possession_value_added']],
-                [3 if row['Defending_'] < 3 else 3, 3 if row['Passing_'] < 2 else 1, 6 if row['Chance_creation'] > 3 else 2, 3 if row['Possession_value_added'] < 3 else 2]
+                [3 if row['Defending_'] < 3 else 5, 1 if row['Passing_'] < 2 else 1, 6 if row['Chance_creation'] > 3 else 2, 3 if row['Possession_value_added'] < 3 else 2]
             ), axis=1
         )
+
 
 
         df_backs = df_backs.fillna(0)
