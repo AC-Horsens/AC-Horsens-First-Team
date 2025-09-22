@@ -1132,7 +1132,7 @@ def plot_heatmap_location(data):
 def plot_avg_positions_on_ball(df, phase, selected_team):
     color_map = {
         'AaB': 'red', 'Hvidovre': 'red',
-        'Aarhus_Fremad': 'yellow', 'Hobro': 'yellow', 'Horsens': 'yellow',
+        'Aarhus_Fremad': 'black', 'Hobro': 'yellow', 'Horsens': 'yellow',
         'B_93': 'white', 'Kolding': 'white',
         'Esbjerg': 'blue', 'Middelfart': 'blue', 'Lyngby': 'blue',
         'HB_Køge': 'black', 'Hillerød': 'orange'
@@ -2952,7 +2952,7 @@ def Opposition_analysis():
     )
     color_map = {
         'AaB': 'red', 'Hvidovre': 'red',
-        'Aarhus_Fremad': 'yellow', 'Hobro': 'yellow', 'Horsens': 'yellow',
+        'Aarhus_Fremad': 'black', 'Hobro': 'yellow', 'Horsens': 'yellow',
         'B_93': 'white', 'Kolding': 'white',
         'Esbjerg': 'blue', 'Middelfart': 'blue', 'Lyngby': 'blue',
         'HB_Køge': 'black', 'Hillerød': 'orange'
