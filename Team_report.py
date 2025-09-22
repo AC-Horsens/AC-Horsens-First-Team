@@ -843,14 +843,13 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
             (df_scouting['player_position'] == 'Defender') &
             (df_scouting['player_positionSide'].isin(['Right', 'Left'])))
             |
-            ((df_scouting['formationUsed'].isin([352, 343,3421])) &
+            ((df_scouting['formationUsed'].isin([352, 343,3421,3142])) &
             (df_scouting['player_position'] == 'Midfielder') &
             (df_scouting['player_positionSide'].isin(['Right', 'Left'])))
             |
             (df_scouting['player_position'] == 'Wing Back') &
             (df_scouting['player_positionSide'].isin(['Right', 'Left'])))
         
-
         df_backs = df_scouting[mask].copy()
 
         df_backs['minsPlayed'] = df_backs['minsPlayed'].astype(int)
