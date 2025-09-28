@@ -1271,7 +1271,6 @@ def plot_avg_positions_off_ball(df, phase, team_colors):
             fig.suptitle(f"{match} – {phase}", fontsize=14)
             st.pyplot(fig)
 
-
 df_xA = load_xA()
 df_pv = load_pv_all()
 df_match_stats = load_match_stats()
