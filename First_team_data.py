@@ -3859,7 +3859,6 @@ def Tactical_breakdown():
     teams = ['B_93','Esbjerg','HB_Køge','Hillerød','Hobro','Horsens','Hvidovre','Kolding','Lyngby','Middelfart','Aab','Aarhus_Fremad']
     selected_team = st.selectbox('Choose team',teams)
     df = load_opponent_on_ball_sequences(selected_team)
-
     df['label'] = df['description'] + ' ' + df['local_date']
     df = df.sort_values('local_date', ascending=False)
     matches = df['label'].unique()
@@ -4030,6 +4029,68 @@ def Tactical_breakdown():
     with c8:
         st.subheader("Deep Run Opportunity — Possessors (Positions)")
         st.dataframe(deep_run_opp_pos, hide_index=True)
+
+    off_ball_sequences = load_off_ball_sequences()
+    # Merge only on match_id to get label
+    off_ball_sequences = off_ball_sequences.merge(labels_df, on=['match_id','date','label'], how='left')
+    # Merge on full key to get match_state
+    off_ball_sequences = off_ball_sequences.merge(states_df,left_on=['match_id','date','label', 'timemin_last', 'timesec_last'],right_on=['match_id','date','label', 'timeMin', 'timeSec'],how='left')
+    off_ball_sequences = off_ball_sequences[off_ball_sequences['label'].isin(chosen_match)]
+
+    off_ball_sequences = off_ball_sequences.sort_values(['date', 'timemin_last', 'timesec_last'])
+    off_ball_sequences = off_ball_sequences.ffill()
+    mask_timeMin = off_ball_sequences['timeMin'].isna()
+    off_ball_sequences.loc[mask_timeMin, 'timeMin'] = (
+        0.5 * off_ball_sequences.loc[mask_timeMin, 'timemin_first'].astype(float) +
+        0.5 * off_ball_sequences.loc[mask_timeMin, 'timemin_last'].astype(float)
+    )
+
+    # Similarly for timeSec
+    mask_timeSec = off_ball_sequences['timeSec'].isna()
+    off_ball_sequences.loc[mask_timeSec, 'timeSec'] = (
+        0.5 * off_ball_sequences.loc[mask_timeSec, 'timesec_first'].astype(float) +
+        0.5 * off_ball_sequences.loc[mask_timeSec, 'timesec_last'].astype(float)
+    )
+    off_ball_sequences = off_ball_sequences.drop(['date', 'timemin_last', 'timesec_last'], axis=1)
+    off_ball_sequences['match_state'] = off_ball_sequences['match_state'].fillna('draw')
+    off_ball_sequences = off_ball_sequences[off_ball_sequences['match_state'].isin(selected_states)]
+
+    unique_sequences = off_ball_sequences.drop_duplicates(subset=['label', 'sequence_id'])
+
+
+    counts = []
+
+    for concept in ['Low block', 'High block']:
+        # Filter rows where this concept is True
+        concept_df = unique_sequences[unique_sequences[concept] == True]
+
+        # Ensure correct ordering
+        concept_df = concept_df.sort_values(by=['label', 'sequence_id'])
+
+        grouped_counts = []
+
+        # Process per match label
+        for label, group in concept_df.groupby('label'):
+            prev_seq = -100  # Initialize to a distant sequence_id
+            count = 0
+
+            for seq_id in group['sequence_id']:
+                if seq_id - prev_seq > 4:
+                    count += 1
+                    prev_seq = seq_id  # Update only when we count a new cluster
+
+            grouped_counts.append(count)
+
+        counts.append({
+            'Tactical Concept': concept,
+            'Count': sum(grouped_counts)
+        })
+
+    # Format to DataFrame
+    tactical_counts = pd.DataFrame(counts)
+
+    # Display in Streamlit
+    st.dataframe(tactical_counts, use_container_width=True, hide_index=True)
 
 def Physical_data():
     df = load_physical_data()
