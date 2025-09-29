@@ -22,7 +22,6 @@ from urllib.parse import quote
 
 st.set_page_config(layout='wide')
 
-
 @st.cache_data
 def load_subs():
     url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2025_2026/subs%20DNK_1_Division_2025_2026.csv'
