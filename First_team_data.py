@@ -4079,6 +4079,8 @@ def Tactical_breakdown():
 
     # Format to DataFrame
     tactical_counts = pd.DataFrame(counts)
+    total = tactical_counts['Count'].sum()
+    tactical_counts['Percentage'] = (tactical_counts['Count'] / total * 100).round(2)
 
     # Display in Streamlit
     st.dataframe(tactical_counts, use_container_width=True, hide_index=True)
