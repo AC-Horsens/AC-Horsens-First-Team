@@ -4030,11 +4030,8 @@ def Tactical_breakdown():
         st.subheader("Deep Run Opportunity — Possessors (Positions)")
         st.dataframe(deep_run_opp_pos, hide_index=True)
 
-    off_ball_sequences = load_off_ball_sequences()
+    off_ball_sequences = load_off_ball_sequences(selected_team)
     # Merge only on match_id to get label
-    off_ball_sequences = off_ball_sequences.merge(labels_df, on=['match_id','date','label'], how='left')
-    # Merge on full key to get match_state
-    off_ball_sequences = off_ball_sequences.merge(states_df,left_on=['match_id','date','label', 'timemin_last', 'timesec_last'],right_on=['match_id','date','label', 'timeMin', 'timeSec'],how='left')
     off_ball_sequences = off_ball_sequences[off_ball_sequences['label'].isin(chosen_match)]
 
     off_ball_sequences = off_ball_sequences.sort_values(['date', 'timemin_last', 'timesec_last'])
@@ -4052,8 +4049,6 @@ def Tactical_breakdown():
         0.5 * off_ball_sequences.loc[mask_timeSec, 'timesec_last'].astype(float)
     )
     off_ball_sequences = off_ball_sequences.drop(['date', 'timemin_last', 'timesec_last'], axis=1)
-    off_ball_sequences['match_state'] = off_ball_sequences['match_state'].fillna('draw')
-    off_ball_sequences = off_ball_sequences[off_ball_sequences['match_state'].isin(selected_states)]
 
     unique_sequences = off_ball_sequences.drop_duplicates(subset=['label', 'sequence_id'])
 
