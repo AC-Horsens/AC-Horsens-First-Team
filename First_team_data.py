@@ -4030,7 +4030,7 @@ def Tactical_breakdown():
         st.subheader("Deep Run Opportunity — Possessors (Positions)")
         st.dataframe(deep_run_opp_pos, hide_index=True)
 
-    off_ball_sequences = load_off_ball_sequences(selected_team)
+    off_ball_sequences = load_opponent_off_ball_sequences(selected_team)
     # Merge only on match_id to get label
     off_ball_sequences = off_ball_sequences[off_ball_sequences['label'].isin(chosen_match)]
 
