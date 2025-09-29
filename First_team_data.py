@@ -4033,7 +4033,7 @@ def Tactical_breakdown():
     off_ball_sequences = load_opponent_off_ball_sequences(selected_team)
     # Merge only on match_id to get label
     off_ball_sequences = off_ball_sequences[off_ball_sequences['label'].isin(chosen_match)]
-    st.write(off_ball_sequences.column)
+    st.write(off_ball_sequences.columns)
     off_ball_sequences = off_ball_sequences.sort_values(['date', 'timemin_last', 'timesec_last'])
     off_ball_sequences = off_ball_sequences.ffill()
     off_ball_sequences['timeMin'] = (
