@@ -1719,16 +1719,16 @@ def Dashboard():
             concept_df = concept_df[concept_df[selected_concept] == True]
         # ==== OPTIONS BETWEEN LINES ====
         options_count = (
-            concept_df.groupby(['match_id','label', 'sequence_id','timeMin'])['option_between_lines'].sum()
+            concept_df.groupby(['match_id','label', 'sequence_id','timeMin'])['option_pocket'].sum()
             .reset_index()
-            .rename(columns={'option_between_lines': 'options_between_lines_count'})
+            .rename(columns={'option_pocket': 'options_pocket'})
         )
 
         summary = options_count.copy()
         summary['ten_min_bin'] = (summary['timeMin'] // 10) * 10
 
         options_per_10min = (
-            summary.groupby(['match_id', 'label', 'ten_min_bin'])['options_between_lines_count']
+            summary.groupby(['match_id', 'label', 'ten_min_bin'])['options_pocket']
             .mean()
             .reset_index()
         )
@@ -1739,10 +1739,10 @@ def Dashboard():
             fig = px.line(
                 match_data,
                 x='ten_min_bin',
-                y='options_between_lines_count',
+                y='options_pocket',
                 range_y=[0, 5],
                 title=f"{selected_concept} – Match {match}",
-                labels={'ten_min_bin': 'Minute (10-min bin)', 'options_between_lines_count': 'Avg Options Between Lines'}
+                labels={'ten_min_bin': 'Minute (10-min bin)', 'options_pocket': 'Avg Options Between Lines'}
             )
             st.plotly_chart(fig, use_container_width=True)
 
