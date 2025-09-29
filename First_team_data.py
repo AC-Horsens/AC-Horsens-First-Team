@@ -4036,17 +4036,14 @@ def Tactical_breakdown():
 
     off_ball_sequences = off_ball_sequences.sort_values(['date', 'timemin_last', 'timesec_last'])
     off_ball_sequences = off_ball_sequences.ffill()
-    mask_timeMin = off_ball_sequences['timeMin'].isna()
-    off_ball_sequences.loc[mask_timeMin, 'timeMin'] = (
-        0.5 * off_ball_sequences.loc[mask_timeMin, 'timemin_first'].astype(float) +
-        0.5 * off_ball_sequences.loc[mask_timeMin, 'timemin_last'].astype(float)
+    off_ball_sequences['timeMin'] = (
+        0.5 * off_ball_sequences.loc['timemin_first'].astype(float) +
+        0.5 * off_ball_sequences.loc['timemin_last'].astype(float)
     )
 
-    # Similarly for timeSec
-    mask_timeSec = off_ball_sequences['timeSec'].isna()
-    off_ball_sequences.loc[mask_timeSec, 'timeSec'] = (
-        0.5 * off_ball_sequences.loc[mask_timeSec, 'timesec_first'].astype(float) +
-        0.5 * off_ball_sequences.loc[mask_timeSec, 'timesec_last'].astype(float)
+    off_ball_sequences['timeSec'] = (
+        0.5 * off_ball_sequences.loc['timesec_first'].astype(float) +
+        0.5 * off_ball_sequences.loc['timesec_last'].astype(float)
     )
     off_ball_sequences = off_ball_sequences.drop(['date', 'timemin_last', 'timesec_last'], axis=1)
 
