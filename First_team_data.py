@@ -1659,8 +1659,7 @@ def Dashboard():
             # Group by sequence and check if any deep_run == 1
             deep_run_per_sequence = (
                 on_ball_sequences[on_ball_sequences[concept] == True]
-                .groupby(['label', 'sequence_id'])['deep_run']
-                .any()
+                .groupby(['label'])['deep_run']
                 .sum()
             )
            
@@ -2104,10 +2103,10 @@ def Dashboard():
 
         # Filter
         filtered_single_instances = low_base_count[non_consecutive]
-
+        deep_runs = filtered_df[filtered_df['deep_run'] == True]
         # Display
         st.write(f'Low base situations with time: {len(filtered_single_instances)}')
-        st.write(filtered_single_instances)
+        st.write(f'Low base deep runs: {len(filtered_df)}')
         # For each sequence, does any receiver have time_on_ball True? (use the original df, not filtered)
         seq_has_time_on = (
             filtered_df.groupby(['match_id','label', 'sequence_id','timeMin'])['time_on_ball'].any()
