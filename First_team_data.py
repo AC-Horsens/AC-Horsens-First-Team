@@ -3925,7 +3925,7 @@ def Tactical_breakdown():
     assist_zone_name,assist_zone_pos = top_possessors(assist_zone)
 
     # Options (NO dedup)
-    options_low_base  = low_base[low_base['option_high_base'] == True | low_base['option_width'] | low_base['option_pocket']]
+    options_low_base  = low_base[low_base['option_high_base'] == True | low_base['option_width'] == True | low_base['option_pocket'] == True]
     options_high_base = high_base[high_base['option_width'] == True | high_base['option_pocket']]
 
     options_low_name = (
