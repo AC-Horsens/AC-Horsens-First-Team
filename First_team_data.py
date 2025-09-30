@@ -2111,19 +2111,23 @@ def Dashboard():
         deep_runs = filtered_df[filtered_df['deep_run'] == True]
         deep_run_opportunities = filtered_df[filtered_df['deep_run_opportunity'] == True]
         deep_run_opportunities = deep_run_opportunities.drop_duplicates(subset=['sequence_id','label'])
+        deep_runs_count = len(deep_runs)
+        deep_run_opps_count = len(deep_run_opportunities)
 
         st.write(f'Low base situations with time: {len(filtered_single_instances)}')
-        st.write(f'Low base deep run opportunities:{len(deep_run_opportunities)}')
-        st.write(f'Low base deep runs: {len(deep_runs)}')
-        if deep_run_opportunities > 0:
-            st.write(f"Deep run conversion rate: {deep_runs / deep_run_opportunities * 100:.1f}%")
+        st.write(f'Low base deep run opportunities: {deep_run_opps_count}')
+        st.write(f'Low base deep runs: {deep_runs_count}')
+
+        if deep_run_opps_count > 0:
+            st.write(f"Deep run conversion rate: {deep_runs_count / deep_run_opps_count * 100:.1f}%")
         else:
-            st.write("Deep run conversion rate: N/A")        # For each sequence, does any receiver have time_on_ball True? (use the original df, not filtered)
+            st.write("Deep run conversion rate: N/A")   
+
         seq_has_time_on = (
-            filtered_df.groupby(['match_id','label', 'sequence_id','timeMin'])['time_on_ball'].any()
-            .reset_index()
-            .rename(columns={'time_on_ball': 'has_time_on_ball'})
-        )
+                filtered_df.groupby(['match_id','label', 'sequence_id','timeMin'])['time_on_ball'].any()
+                .reset_index()
+                .rename(columns={'time_on_ball': 'has_time_on_ball'})
+            )
 
         # Count option_between_lines Trues per sequence/match (for has_opp_behind == False only)
         options_count = (
