@@ -1661,7 +1661,6 @@ def Dashboard():
                 on_ball_sequences[on_ball_sequences[concept] == True]
                 & on_ball_sequences[on_ball_sequences['deep_run'] == True]
             )
-            st.write(deep_run_per_sequence)
             conversion_rate = (
                 (deep_run_per_sequence / deep_run_opportunity * 100)
                 if deep_run_opportunity > 0 else 0
@@ -1677,6 +1676,7 @@ def Dashboard():
 
         # Format to DataFrame
         tactical_counts = pd.DataFrame(counts)
+        st.write(deep_run_per_sequence)
 
         # Display in Streamlit
         st.dataframe(tactical_counts, use_container_width=True, hide_index=True)
