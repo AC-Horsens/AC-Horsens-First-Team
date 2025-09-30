@@ -2115,8 +2115,10 @@ def Dashboard():
         st.write(f'Low base situations with time: {len(filtered_single_instances)}')
         st.write(f'Low base deep run opportunities:{len(deep_run_opportunities)}')
         st.write(f'Low base deep runs: {len(deep_runs)}')
-        st.write(f"Deep run conversion rate: {deep_runs / deep_run_opportunities * 100:.1f}%")
-        # For each sequence, does any receiver have time_on_ball True? (use the original df, not filtered)
+        if deep_run_opportunities > 0:
+            st.write(f"Deep run conversion rate: {deep_runs / deep_run_opportunities * 100:.1f}%")
+        else:
+            st.write("Deep run conversion rate: N/A")        # For each sequence, does any receiver have time_on_ball True? (use the original df, not filtered)
         seq_has_time_on = (
             filtered_df.groupby(['match_id','label', 'sequence_id','timeMin'])['time_on_ball'].any()
             .reset_index()
