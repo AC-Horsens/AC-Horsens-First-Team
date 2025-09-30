@@ -2117,9 +2117,9 @@ def Dashboard():
 
         # Count option_between_lines Trues per sequence/match (for has_opp_behind == False only)
         options_count = (
-            filtered_df.groupby(['match_id','label', 'sequence_id','timeMin'])['option_between_lines'].sum()
+            filtered_df.groupby(['match_id','label', 'sequence_id','timeMin'])['option_pocket'].sum()
             .reset_index()
-            .rename(columns={'option_between_lines': 'options_between_lines_count'})
+            .rename(columns={'option_pocket': 'options_pocket_count'})
         )
 
         summary = options_count
@@ -2127,7 +2127,7 @@ def Dashboard():
 
         # Group and get mean
         options_per_5min = (
-            summary.groupby(['match_id', 'label', 'ten_min_bin'])['options_between_lines_count']
+            summary.groupby(['match_id', 'label', 'ten_min_bin'])['options_pocket_count']
             .mean()
             .reset_index()
         )
@@ -2139,10 +2139,10 @@ def Dashboard():
             fig = px.line(
                 match_data,
                 x='ten_min_bin',
-                y='options_between_lines_count',
+                y='options_pocket_count',
                 range_y = [0,5],
                 title=f"Match {match}",
-                labels={'ten_min_bin': 'Minute (10-min bin)', 'options_between_lines_count': 'Avg Options Between Lines'}
+                labels={'ten_min_bin': 'Minute (10-min bin)', 'options_pocket_count': 'Avg Options Between Lines'}
             )
             st.plotly_chart(fig, use_container_width=True)
         
