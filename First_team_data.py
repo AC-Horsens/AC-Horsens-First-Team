@@ -1659,9 +1659,13 @@ def Dashboard():
             # Group by sequence and check if any deep_run == 1
             deep_run_per_sequence = (
                 on_ball_sequences[on_ball_sequences[concept] == True]
-                .groupby(['label'])['deep_run']
+                .groupby(['label','sequence_id'])['deep_run']
                 .any()
                 .sum()
+            )
+
+            deep_runs_total = (
+                on_ball_sequences[on_ball_sequences[concept] == True]['deep_run'].sum()
             )
            
             conversion_rate = (
@@ -1673,7 +1677,7 @@ def Dashboard():
                 'Tactical Concept': concept,
                 'Count': count_total,
                 'Deep run opportunities': deep_run_opportunity,
-                'Deep Runs': deep_run_per_sequence,
+                'Deep Runs': deep_runs_total,
                 'Conversion Rate (%)': round(conversion_rate, 1)
             })
 
