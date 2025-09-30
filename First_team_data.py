@@ -1659,8 +1659,7 @@ def Dashboard():
             # Group by sequence and check if any deep_run == 1
             deep_run_per_sequence = (
                 on_ball_sequences[on_ball_sequences[concept] == True]
-                .groupby(['label'])['deep_run']
-                .sum()
+                & on_ball_sequences[on_ball_sequences['deep_run'] == True]
             )
            
             conversion_rate = (
