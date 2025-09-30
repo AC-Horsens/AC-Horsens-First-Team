@@ -3870,8 +3870,8 @@ def Tactical_breakdown():
         df[col] = df[col].str.upper().replace(pos_map)
 
     # Filter out SUB positions (case-insensitive)
-    df = df[(df['poss_player_position'].str.upper() != 'SUB') &
-            (df['receiver_position'].str.upper() != 'SUB')]
+    #df = df[(df['poss_player_position'].str.upper() != 'SUB') &
+    #        (df['receiver_position'].str.upper() != 'SUB')]
 
     # -------------------------------
     # Helper for possessor top-k (dedup by sequence)
