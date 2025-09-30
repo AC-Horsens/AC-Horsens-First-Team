@@ -2107,7 +2107,7 @@ def Dashboard():
 
         # Display
         st.write(f'Low base situations with time: {len(filtered_single_instances)}')
-
+        st.write(filtered_single_instances)
         # For each sequence, does any receiver have time_on_ball True? (use the original df, not filtered)
         seq_has_time_on = (
             filtered_df.groupby(['match_id','label', 'sequence_id','timeMin'])['time_on_ball'].any()
