@@ -1,24 +1,4 @@
 team_name,timeMin,timeSec,playerName,label,date,typeId,44.0,292.0,293.0
-AaB,45,0,M. Kallesøe,AaB vs B 93,2025-09-21,18,Defender,NaN,NaN
-AaB,45,0,N. Arnórsson,AaB vs B 93,2025-09-21,19,Midfielder,5,2
-B 93,65,19,R. Arabaci,AaB vs B 93,2025-09-21,18,Forward,NaN,NaN
-B 93,65,19,A. Ahmad,AaB vs B 93,2025-09-21,19,Midfielder,6,2
-AaB,66,57,N. Helenius,AaB vs B 93,2025-09-21,18,Forward,NaN,NaN
-AaB,66,57,A. Jasson,AaB vs B 93,2025-09-21,19,Forward,9,3
-AaB,66,59,M. Kaasa,AaB vs B 93,2025-09-21,18,Midfielder,NaN,NaN
-AaB,66,59,O. Ross,AaB vs B 93,2025-09-21,19,Midfielder,6,4
-B 93,75,56,F. Isaki,AaB vs B 93,2025-09-21,18,Midfielder,NaN,NaN
-B 93,75,56,O. Addo,AaB vs B 93,2025-09-21,19,Midfielder,6,3
-B 93,76,6,N. Thomsen,AaB vs B 93,2025-09-21,18,Midfielder,NaN,NaN
-B 93,76,6,Y. Belhadj,AaB vs B 93,2025-09-21,19,Midfielder,7,5
-AaB,77,52,K. John,AaB vs B 93,2025-09-21,18,Forward,NaN,NaN
-AaB,77,52,V. Møller,AaB vs B 93,2025-09-21,19,Forward,8,2
-AaB,83,26,A. Håpnes,AaB vs B 93,2025-09-21,18,Midfielder,NaN,NaN
-AaB,83,26,F. Børsting,AaB vs B 93,2025-09-21,19,Midfielder,7,3
-B 93,85,5,L. Henriksen,AaB vs B 93,2025-09-21,18,Defender,NaN,NaN
-B 93,85,5,Muhammad Huzaifa,AaB vs B 93,2025-09-21,19,Defender,3,2
-B 93,85,15,C. Björk,AaB vs B 93,2025-09-21,18,Forward,NaN,NaN
-B 93,85,15,O. Thomassen,AaB vs B 93,2025-09-21,19,Forward,10,3
 Kolding,45,0,M. Saaby,Kolding vs AaB,2025-07-19,18,Midfielder,NaN,NaN
 Kolding,45,0,J. Vadstrup,Kolding vs AaB,2025-07-19,19,Midfielder,7,3
 AaB,63,10,F. Børsting,Kolding vs AaB,2025-07-19,18,Midfielder,NaN,NaN
@@ -199,6 +179,26 @@ AaB,86,10,N. Arnórsson,Lyngby vs AaB,2025-09-27,18,Defender,NaN,NaN
 AaB,86,10,A. Maarup,Lyngby vs AaB,2025-09-27,19,Defender,3,1
 Lyngby,90,25,G. Fraulo,Lyngby vs AaB,2025-09-27,18,Midfielder,NaN,NaN
 Lyngby,90,25,B. Blume,Lyngby vs AaB,2025-09-27,19,Midfielder,7,2
+AaB,45,0,M. Kallesøe,AaB vs B 93,2025-09-21,18,Defender,NaN,NaN
+AaB,45,0,N. Arnórsson,AaB vs B 93,2025-09-21,19,Midfielder,5,2
+B 93,65,19,R. Arabaci,AaB vs B 93,2025-09-21,18,Forward,NaN,NaN
+B 93,65,19,A. Ahmad,AaB vs B 93,2025-09-21,19,Midfielder,6,2
+AaB,66,57,N. Helenius,AaB vs B 93,2025-09-21,18,Forward,NaN,NaN
+AaB,66,57,A. Jasson,AaB vs B 93,2025-09-21,19,Forward,9,3
+AaB,66,59,M. Kaasa,AaB vs B 93,2025-09-21,18,Midfielder,NaN,NaN
+AaB,66,59,O. Ross,AaB vs B 93,2025-09-21,19,Midfielder,6,4
+B 93,75,56,F. Isaki,AaB vs B 93,2025-09-21,18,Midfielder,NaN,NaN
+B 93,75,56,O. Addo,AaB vs B 93,2025-09-21,19,Midfielder,6,3
+B 93,76,6,N. Thomsen,AaB vs B 93,2025-09-21,18,Midfielder,NaN,NaN
+B 93,76,6,Y. Belhadj,AaB vs B 93,2025-09-21,19,Midfielder,7,5
+AaB,77,52,K. John,AaB vs B 93,2025-09-21,18,Forward,NaN,NaN
+AaB,77,52,V. Møller,AaB vs B 93,2025-09-21,19,Forward,8,2
+AaB,83,26,A. Håpnes,AaB vs B 93,2025-09-21,18,Midfielder,NaN,NaN
+AaB,83,26,F. Børsting,AaB vs B 93,2025-09-21,19,Midfielder,7,3
+B 93,85,5,L. Henriksen,AaB vs B 93,2025-09-21,18,Defender,NaN,NaN
+B 93,85,5,Muhammad Huzaifa,AaB vs B 93,2025-09-21,19,Defender,3,2
+B 93,85,15,C. Björk,AaB vs B 93,2025-09-21,18,Forward,NaN,NaN
+B 93,85,15,O. Thomassen,AaB vs B 93,2025-09-21,19,Forward,10,3
 Aarhus Fremad,52,52,Magnus Kirchheiner,Horsens vs Aarhus Fremad,2025-07-19,18,Midfielder,NaN,NaN
 Aarhus Fremad,52,52,M. Berthelsen,Horsens vs Aarhus Fremad,2025-07-19,19,Midfielder,7,3
 Horsens,65,47,K. Kirkegaard,Horsens vs Aarhus Fremad,2025-07-19,18,Midfielder,NaN,NaN
@@ -713,46 +713,6 @@ Esbjerg,86,33,J. Buus,Horsens vs Esbjerg,2025-09-20,18,Defender,NaN,NaN
 Esbjerg,86,33,E. Larsen,Horsens vs Esbjerg,2025-09-20,19,Defender,3,2
 Esbjerg,86,34,S. Eng Strand,Horsens vs Esbjerg,2025-09-20,18,Defender,NaN,NaN
 Esbjerg,86,34,N. Blicher,Horsens vs Esbjerg,2025-09-20,19,Defender,3,1
-HB Køge,45,0,M. Schütt,Lyngby vs HB Køge,2025-09-21,18,Midfielder,NaN,NaN
-HB Køge,45,0,N. Jakobsen,Lyngby vs HB Køge,2025-09-21,19,Midfielder,6,4
-Lyngby,61,14,J. Cornelius,Lyngby vs HB Køge,2025-09-21,18,Forward,NaN,NaN
-Lyngby,61,14,Í. Þorvaldsson,Lyngby vs HB Køge,2025-09-21,19,Forward,9,1
-Lyngby,61,28,P. Langhoff,Lyngby vs HB Køge,2025-09-21,18,Midfielder,NaN,NaN
-Lyngby,61,28,L. Sandgrav,Lyngby vs HB Køge,2025-09-21,19,Midfielder,6,2
-HB Køge,72,24,B. Alkhoudari,Lyngby vs HB Køge,2025-09-21,18,Forward,NaN,NaN
-HB Køge,72,24,A. Gøthler,Lyngby vs HB Køge,2025-09-21,19,Forward,8,2
-Lyngby,73,7,F. Gytkjær,Lyngby vs HB Køge,2025-09-21,18,Forward,NaN,NaN
-Lyngby,73,7,B. Blume,Lyngby vs HB Køge,2025-09-21,19,Forward,9,2
-Lyngby,73,19,O. Buur,Lyngby vs HB Køge,2025-09-21,18,Defender,NaN,NaN
-Lyngby,73,19,W. Steindorsson,Lyngby vs HB Køge,2025-09-21,19,Midfielder,6,4
-HB Køge,80,42,C. Tue Jensen,Lyngby vs HB Køge,2025-09-21,18,Forward,NaN,NaN
-HB Køge,80,42,L. Schmidt,Lyngby vs HB Køge,2025-09-21,19,Forward,8,1
-Lyngby,80,55,G. Fraulo,Lyngby vs HB Køge,2025-09-21,18,Midfielder,NaN,NaN
-Lyngby,80,55,M. Kaarsbo,Lyngby vs HB Køge,2025-09-21,19,Midfielder,6,2
-HB Køge,88,18,Mohamad Al Naser,Lyngby vs HB Køge,2025-09-21,18,Forward,NaN,NaN
-HB Køge,88,18,E. Villumsen,Lyngby vs HB Køge,2025-09-21,19,Forward,9,3
-HB Køge,88,26,S. Hald,Lyngby vs HB Køge,2025-09-21,18,Defender,NaN,NaN
-HB Køge,88,26,I. Dorgu,Lyngby vs HB Køge,2025-09-21,19,Midfielder,6,2
-HB Køge,61,29,M. Rochester,HB Køge vs Hobro,2025-07-18,18,Midfielder,NaN,NaN
-HB Køge,61,29,A. Gøthler,HB Køge vs Hobro,2025-07-18,19,Forward,9,3
-HB Køge,61,33,L. Bust,HB Køge vs Hobro,2025-07-18,18,Defender,NaN,NaN
-HB Køge,61,33,S. Hald,HB Køge vs Hobro,2025-07-18,19,Defender,4,5
-HB Køge,61,36,M. Schütt,HB Køge vs Hobro,2025-07-18,18,Midfielder,NaN,NaN
-HB Køge,61,36,M. Jensen,HB Køge vs Hobro,2025-07-18,19,Midfielder,6,5
-Hobro,65,53,S. Andreasen,HB Køge vs Hobro,2025-07-18,18,Forward,NaN,NaN
-Hobro,65,53,M. Pedersen,HB Køge vs Hobro,2025-07-18,19,Forward,9,3
-Hobro,66,4,V. Rasmussen,HB Køge vs Hobro,2025-07-18,18,Midfielder,NaN,NaN
-Hobro,66,4,M. Boye,HB Køge vs Hobro,2025-07-18,19,Midfielder,6,1
-HB Køge,70,10,G. Çulhacı,HB Køge vs Hobro,2025-07-18,18,Defender,NaN,NaN
-HB Køge,70,10,Mohamad Al Naser,HB Køge vs Hobro,2025-07-18,19,Forward,9,2
-HB Køge,79,23,C. Tue Jensen,HB Køge vs Hobro,2025-07-18,18,Forward,NaN,NaN
-HB Køge,79,23,B. Alkhoudari,HB Køge vs Hobro,2025-07-18,19,Forward,8,1
-Hobro,79,27,M. Bruhn,HB Køge vs Hobro,2025-07-18,18,Forward,NaN,NaN
-Hobro,79,27,V. Schmølker,HB Køge vs Hobro,2025-07-18,19,Forward,9,1
-Hobro,79,31,L. Klitten,HB Køge vs Hobro,2025-07-18,18,Defender,NaN,NaN
-Hobro,79,31,O. Meedom,HB Køge vs Hobro,2025-07-18,19,Midfielder,5,1
-Hobro,87,52,T. Hansen,HB Køge vs Hobro,2025-07-18,18,Midfielder,NaN,NaN
-Hobro,87,52,A. Nathan,HB Køge vs Hobro,2025-07-18,19,Midfielder,6,3
 Kolding,40,35,S. Yatéké,Kolding vs HB Køge,2025-08-01,18,Forward,NaN,NaN
 Kolding,40,35,E. Voufack,Kolding vs HB Køge,2025-08-01,19,Forward,9,3
 Kolding,58,20,I. Tånnander,Kolding vs HB Køge,2025-08-01,18,Midfielder,NaN,NaN
@@ -827,6 +787,46 @@ Horsens,80,50,I. Miličević,HB Køge vs Horsens,2025-09-13,18,Defender,NaN,NaN
 Horsens,80,50,J. Madsen,HB Køge vs Horsens,2025-09-13,19,Forward,8,1
 HB Køge,86,45,M. Schütt,HB Køge vs Horsens,2025-09-13,18,Midfielder,NaN,NaN
 HB Køge,86,45,S. Hald,HB Køge vs Horsens,2025-09-13,19,Midfielder,6,5
+HB Køge,45,0,M. Schütt,Lyngby vs HB Køge,2025-09-21,18,Midfielder,NaN,NaN
+HB Køge,45,0,N. Jakobsen,Lyngby vs HB Køge,2025-09-21,19,Midfielder,6,4
+Lyngby,61,14,J. Cornelius,Lyngby vs HB Køge,2025-09-21,18,Forward,NaN,NaN
+Lyngby,61,14,Í. Þorvaldsson,Lyngby vs HB Køge,2025-09-21,19,Forward,9,1
+Lyngby,61,28,P. Langhoff,Lyngby vs HB Køge,2025-09-21,18,Midfielder,NaN,NaN
+Lyngby,61,28,L. Sandgrav,Lyngby vs HB Køge,2025-09-21,19,Midfielder,6,2
+HB Køge,72,24,B. Alkhoudari,Lyngby vs HB Køge,2025-09-21,18,Forward,NaN,NaN
+HB Køge,72,24,A. Gøthler,Lyngby vs HB Køge,2025-09-21,19,Forward,8,2
+Lyngby,73,7,F. Gytkjær,Lyngby vs HB Køge,2025-09-21,18,Forward,NaN,NaN
+Lyngby,73,7,B. Blume,Lyngby vs HB Køge,2025-09-21,19,Forward,9,2
+Lyngby,73,19,O. Buur,Lyngby vs HB Køge,2025-09-21,18,Defender,NaN,NaN
+Lyngby,73,19,W. Steindorsson,Lyngby vs HB Køge,2025-09-21,19,Midfielder,6,4
+HB Køge,80,42,C. Tue Jensen,Lyngby vs HB Køge,2025-09-21,18,Forward,NaN,NaN
+HB Køge,80,42,L. Schmidt,Lyngby vs HB Køge,2025-09-21,19,Forward,8,1
+Lyngby,80,55,G. Fraulo,Lyngby vs HB Køge,2025-09-21,18,Midfielder,NaN,NaN
+Lyngby,80,55,M. Kaarsbo,Lyngby vs HB Køge,2025-09-21,19,Midfielder,6,2
+HB Køge,88,18,Mohamad Al Naser,Lyngby vs HB Køge,2025-09-21,18,Forward,NaN,NaN
+HB Køge,88,18,E. Villumsen,Lyngby vs HB Køge,2025-09-21,19,Forward,9,3
+HB Køge,88,26,S. Hald,Lyngby vs HB Køge,2025-09-21,18,Defender,NaN,NaN
+HB Køge,88,26,I. Dorgu,Lyngby vs HB Køge,2025-09-21,19,Midfielder,6,2
+HB Køge,61,29,M. Rochester,HB Køge vs Hobro,2025-07-18,18,Midfielder,NaN,NaN
+HB Køge,61,29,A. Gøthler,HB Køge vs Hobro,2025-07-18,19,Forward,9,3
+HB Køge,61,33,L. Bust,HB Køge vs Hobro,2025-07-18,18,Defender,NaN,NaN
+HB Køge,61,33,S. Hald,HB Køge vs Hobro,2025-07-18,19,Defender,4,5
+HB Køge,61,36,M. Schütt,HB Køge vs Hobro,2025-07-18,18,Midfielder,NaN,NaN
+HB Køge,61,36,M. Jensen,HB Køge vs Hobro,2025-07-18,19,Midfielder,6,5
+Hobro,65,53,S. Andreasen,HB Køge vs Hobro,2025-07-18,18,Forward,NaN,NaN
+Hobro,65,53,M. Pedersen,HB Køge vs Hobro,2025-07-18,19,Forward,9,3
+Hobro,66,4,V. Rasmussen,HB Køge vs Hobro,2025-07-18,18,Midfielder,NaN,NaN
+Hobro,66,4,M. Boye,HB Køge vs Hobro,2025-07-18,19,Midfielder,6,1
+HB Køge,70,10,G. Çulhacı,HB Køge vs Hobro,2025-07-18,18,Defender,NaN,NaN
+HB Køge,70,10,Mohamad Al Naser,HB Køge vs Hobro,2025-07-18,19,Forward,9,2
+HB Køge,79,23,C. Tue Jensen,HB Køge vs Hobro,2025-07-18,18,Forward,NaN,NaN
+HB Køge,79,23,B. Alkhoudari,HB Køge vs Hobro,2025-07-18,19,Forward,8,1
+Hobro,79,27,M. Bruhn,HB Køge vs Hobro,2025-07-18,18,Forward,NaN,NaN
+Hobro,79,27,V. Schmølker,HB Køge vs Hobro,2025-07-18,19,Forward,9,1
+Hobro,79,31,L. Klitten,HB Køge vs Hobro,2025-07-18,18,Defender,NaN,NaN
+Hobro,79,31,O. Meedom,HB Køge vs Hobro,2025-07-18,19,Midfielder,5,1
+Hobro,87,52,T. Hansen,HB Køge vs Hobro,2025-07-18,18,Midfielder,NaN,NaN
+Hobro,87,52,A. Nathan,HB Køge vs Hobro,2025-07-18,19,Midfielder,6,3
 Hvidovre,66,8,M. Egho,HB Køge vs Hvidovre,2025-09-27,18,Forward,NaN,NaN
 Hvidovre,66,8,F. Høgh,HB Køge vs Hvidovre,2025-09-27,19,Forward,9,3
 HB Køge,72,0,Mohamad Al Naser,HB Køge vs Hvidovre,2025-09-27,18,Forward,NaN,NaN
@@ -893,6 +893,20 @@ Lyngby,79,0,G. Fraulo,Lyngby vs Hillerød,2025-08-19,18,Midfielder,NaN,NaN
 Lyngby,79,0,W. Steindorsson,Lyngby vs Hillerød,2025-08-19,19,Midfielder,6,2
 Hillerød,79,15,A. Justinussen,Lyngby vs Hillerød,2025-08-19,18,Forward,NaN,NaN
 Hillerød,79,15,P. Kallsberg,Lyngby vs Hillerød,2025-08-19,19,Forward,9,2
+Hillerød,61,33,P. Kallsberg,Kolding vs Hillerød,2025-08-29,18,Forward,NaN,NaN
+Hillerød,61,33,R. Møller,Kolding vs Hillerød,2025-08-29,19,Defender,4,4
+Kolding,65,58,C. Palm,Kolding vs Hillerød,2025-08-29,18,Midfielder,NaN,NaN
+Kolding,65,58,M. Ingebrigtsen,Kolding vs Hillerød,2025-08-29,19,Midfielder,6,4
+Hillerød,68,4,N. Schmidt,Kolding vs Hillerød,2025-08-29,18,Midfielder,NaN,NaN
+Hillerød,68,4,A. Alicino,Kolding vs Hillerød,2025-08-29,19,Midfielder,7,4
+Hillerød,68,16,S. Jalaei,Kolding vs Hillerød,2025-08-29,18,Forward,NaN,NaN
+Hillerød,68,16,S. Opoku,Kolding vs Hillerød,2025-08-29,19,Forward,9,1
+Hillerød,77,40,V. Dedes,Kolding vs Hillerød,2025-08-29,18,Defender,NaN,NaN
+Hillerød,77,40,L. Bøje-Larsen,Kolding vs Hillerød,2025-08-29,19,Midfielder,7,1
+Kolding,80,59,J. Vadstrup,Kolding vs Hillerød,2025-08-29,18,Defender,NaN,NaN
+Kolding,80,59,A. Leifsson,Kolding vs Hillerød,2025-08-29,19,Defender,4,3
+Kolding,81,17,C. Jørgensen,Kolding vs Hillerød,2025-08-29,18,Midfielder,NaN,NaN
+Kolding,81,17,J. Bjarnason,Kolding vs Hillerød,2025-08-29,19,Midfielder,6,5
 Hillerød,56,53,P. Kallsberg,Hvidovre vs Hillerød,2025-09-20,18,Forward,NaN,NaN
 Hillerød,56,53,S. Opoku,Hvidovre vs Hillerød,2025-09-20,19,Midfielder,7,2
 Hillerød,57,27,R. Møller,Hvidovre vs Hillerød,2025-09-20,18,Defender,NaN,NaN
@@ -911,20 +925,6 @@ Hillerød,78,34,S. Jalaei,Hvidovre vs Hillerød,2025-09-20,18,Forward,NaN,NaN
 Hillerød,78,34,N. Kretzschmar,Hvidovre vs Hillerød,2025-09-20,19,Midfielder,7,1
 Hvidovre,86,8,M. Egho,Hvidovre vs Hillerød,2025-09-20,18,Forward,NaN,NaN
 Hvidovre,86,8,F. Høgh,Hvidovre vs Hillerød,2025-09-20,19,Forward,10,3
-Hillerød,61,33,P. Kallsberg,Kolding vs Hillerød,2025-08-29,18,Forward,NaN,NaN
-Hillerød,61,33,R. Møller,Kolding vs Hillerød,2025-08-29,19,Defender,4,4
-Kolding,65,58,C. Palm,Kolding vs Hillerød,2025-08-29,18,Midfielder,NaN,NaN
-Kolding,65,58,M. Ingebrigtsen,Kolding vs Hillerød,2025-08-29,19,Midfielder,6,4
-Hillerød,68,4,N. Schmidt,Kolding vs Hillerød,2025-08-29,18,Midfielder,NaN,NaN
-Hillerød,68,4,A. Alicino,Kolding vs Hillerød,2025-08-29,19,Midfielder,7,4
-Hillerød,68,16,S. Jalaei,Kolding vs Hillerød,2025-08-29,18,Forward,NaN,NaN
-Hillerød,68,16,S. Opoku,Kolding vs Hillerød,2025-08-29,19,Forward,9,1
-Hillerød,77,40,V. Dedes,Kolding vs Hillerød,2025-08-29,18,Defender,NaN,NaN
-Hillerød,77,40,L. Bøje-Larsen,Kolding vs Hillerød,2025-08-29,19,Midfielder,7,1
-Kolding,80,59,J. Vadstrup,Kolding vs Hillerød,2025-08-29,18,Defender,NaN,NaN
-Kolding,80,59,A. Leifsson,Kolding vs Hillerød,2025-08-29,19,Defender,4,3
-Kolding,81,17,C. Jørgensen,Kolding vs Hillerød,2025-08-29,18,Midfielder,NaN,NaN
-Kolding,81,17,J. Bjarnason,Kolding vs Hillerød,2025-08-29,19,Midfielder,6,5
 Hillerød,57,41,P. Kallsberg,Hillerød vs Horsens,2025-09-27,18,Forward,NaN,NaN
 Hillerød,57,41,A. Sulemana,Hillerød vs Horsens,2025-09-27,19,Forward,9,3
 Horsens,66,51,F. Brandhof,Hillerød vs Horsens,2025-09-27,18,Midfielder,NaN,NaN
@@ -973,6 +973,24 @@ Hobro,72,21,M. Bruhn,Hobro vs Horsens,2025-08-20,18,Forward,NaN,NaN
 Hobro,72,21,S. Andreasen,Hobro vs Horsens,2025-08-20,19,Forward,9,3
 Hobro,83,47,T. Hansen,Hobro vs Horsens,2025-08-20,18,Midfielder,NaN,NaN
 Hobro,83,47,A. Bryld,Hobro vs Horsens,2025-08-20,19,Midfielder,7,1
+Hvidovre,57,39,S. Koch,Hvidovre vs Hobro,2025-08-29,18,Forward,NaN,NaN
+Hvidovre,57,39,F. Høgh,Hvidovre vs Hobro,2025-08-29,19,Forward,9,2
+Hobro,61,22,Z. Hyltoft,Hvidovre vs Hobro,2025-08-29,18,Midfielder,NaN,NaN
+Hobro,61,22,G. Bjerge,Hvidovre vs Hobro,2025-08-29,19,Midfielder,6,5
+Hobro,61,33,M. Bruhn,Hvidovre vs Hobro,2025-08-29,18,Forward,NaN,NaN
+Hobro,61,33,R. Hauge,Hvidovre vs Hobro,2025-08-29,19,Forward,10,3
+Hobro,61,55,V. Rasmussen,Hvidovre vs Hobro,2025-08-29,18,Midfielder,NaN,NaN
+Hobro,61,55,S. Andreasen,Hvidovre vs Hobro,2025-08-29,19,Midfielder,6,1
+Hvidovre,69,21,M. Elvius,Hvidovre vs Hobro,2025-08-29,18,Defender,NaN,NaN
+Hvidovre,69,21,M. Fredslund,Hvidovre vs Hobro,2025-08-29,19,Midfielder,6,2
+Hvidovre,80,20,O. Kjærgaard,Hvidovre vs Hobro,2025-08-29,18,Midfielder,NaN,NaN
+Hvidovre,80,20,A. Johansen,Hvidovre vs Hobro,2025-08-29,19,Midfielder,6,4
+Hvidovre,80,38,A. Smed,Hvidovre vs Hobro,2025-08-29,18,Forward,NaN,NaN
+Hvidovre,80,38,M. Spelmann,Hvidovre vs Hobro,2025-08-29,19,Midfielder,6,4
+Hobro,83,18,M. Jacobsen,Hvidovre vs Hobro,2025-08-29,18,Defender,NaN,NaN
+Hobro,83,18,M. Boye,Hvidovre vs Hobro,2025-08-29,19,Forward,10,3
+Hobro,90,46,L. Klitten,Hvidovre vs Hobro,2025-08-29,18,Defender,NaN,NaN
+Hobro,90,46,M. Kannegaard,Hvidovre vs Hobro,2025-08-29,19,Defender,3,1
 Lyngby,61,8,J. Cornelius,Hobro vs Lyngby,2025-09-11,18,Forward,NaN,NaN
 Lyngby,61,8,L. Sandgrav,Hobro vs Lyngby,2025-09-11,19,Forward,9,2
 Lyngby,61,20,G. Fraulo,Hobro vs Lyngby,2025-09-11,18,Midfielder,NaN,NaN
@@ -1011,24 +1029,6 @@ Hobro,86,14,T. Hansen,Hobro vs Kolding,2025-09-28,18,Midfielder,NaN,NaN
 Hobro,86,14,R. Hauge,Hobro vs Kolding,2025-09-28,19,Midfielder,6,4
 Hobro,86,20,L. Klitten,Hobro vs Kolding,2025-09-28,18,Defender,NaN,NaN
 Hobro,86,20,G. Bjerge,Hobro vs Kolding,2025-09-28,19,Midfielder,7,5
-Hvidovre,57,39,S. Koch,Hvidovre vs Hobro,2025-08-29,18,Forward,NaN,NaN
-Hvidovre,57,39,F. Høgh,Hvidovre vs Hobro,2025-08-29,19,Forward,9,2
-Hobro,61,22,Z. Hyltoft,Hvidovre vs Hobro,2025-08-29,18,Midfielder,NaN,NaN
-Hobro,61,22,G. Bjerge,Hvidovre vs Hobro,2025-08-29,19,Midfielder,6,5
-Hobro,61,33,M. Bruhn,Hvidovre vs Hobro,2025-08-29,18,Forward,NaN,NaN
-Hobro,61,33,R. Hauge,Hvidovre vs Hobro,2025-08-29,19,Forward,10,3
-Hobro,61,55,V. Rasmussen,Hvidovre vs Hobro,2025-08-29,18,Midfielder,NaN,NaN
-Hobro,61,55,S. Andreasen,Hvidovre vs Hobro,2025-08-29,19,Midfielder,6,1
-Hvidovre,69,21,M. Elvius,Hvidovre vs Hobro,2025-08-29,18,Defender,NaN,NaN
-Hvidovre,69,21,M. Fredslund,Hvidovre vs Hobro,2025-08-29,19,Midfielder,6,2
-Hvidovre,80,20,O. Kjærgaard,Hvidovre vs Hobro,2025-08-29,18,Midfielder,NaN,NaN
-Hvidovre,80,20,A. Johansen,Hvidovre vs Hobro,2025-08-29,19,Midfielder,6,4
-Hvidovre,80,38,A. Smed,Hvidovre vs Hobro,2025-08-29,18,Forward,NaN,NaN
-Hvidovre,80,38,M. Spelmann,Hvidovre vs Hobro,2025-08-29,19,Midfielder,6,4
-Hobro,83,18,M. Jacobsen,Hvidovre vs Hobro,2025-08-29,18,Defender,NaN,NaN
-Hobro,83,18,M. Boye,Hvidovre vs Hobro,2025-08-29,19,Forward,10,3
-Hobro,90,46,L. Klitten,Hvidovre vs Hobro,2025-08-29,18,Defender,NaN,NaN
-Hobro,90,46,M. Kannegaard,Hvidovre vs Hobro,2025-08-29,19,Defender,3,1
 Horsens,63,4,F. Roslyng,Horsens vs Kolding,2025-07-25,18,Defender,NaN,NaN
 Horsens,63,4,C. Tapé,Horsens vs Kolding,2025-07-25,19,Defender,4,4
 Kolding,77,25,I. Tånnander,Horsens vs Kolding,2025-07-25,18,Midfielder,NaN,NaN
