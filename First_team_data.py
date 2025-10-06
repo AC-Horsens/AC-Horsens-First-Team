@@ -2567,7 +2567,10 @@ def Dashboard():
         st.dataframe(df_set_pieces_sum)
 
         st.write('Freekicks')
-        Freekicks = df_set_pieces_matches1[(df_set_pieces_matches1['set_piece_type'] == 'freekick')]
+        Freekicks = df_set_pieces_matches1[
+            (df_set_pieces_matches1['set_piece_type'] == 'freekick') |
+            (df_set_pieces_matches1['set_piece_type'] == 'freekick_shot')
+        ]
         Freekicks['team_name'] = Freekicks['team_name'].apply(lambda x: 'Opponent' if x != 'Horsens' else x)
         Freekicks = Freekicks.groupby(['team_name','label']).agg({'321.0':'sum'}).reset_index()
         Freekicks['xG_match'] = Freekicks.groupby('label')['321.0'].transform('sum')
