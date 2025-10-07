@@ -1757,45 +1757,48 @@ for index, row in horsens_df.iterrows():
 
 
 def create_pdf_progress_report(horsens_df, total_expected_points_combined, position_dataframes):
-    MIN_MINUTES = 300  # <-- set your threshold here
+    MIN_MINUTES = 300  # threshold for season part
 
     today = date.today()
     pdf = FPDF()
     pdf.add_page()
     pdf.set_font("Arial", size=12)
     # Add the team logo
-    pdf.image('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/Logo.png', x=165, y=5, w=10, h=10)
+    pdf.image('C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/Logo.png', 
+              x=165, y=5, w=10, h=10)
     pdf.set_xy(5, 5)
     pdf.cell(140, 5, txt=f"Progress report: {today}", ln=True, align='L')
 
-    # Save the sliding average plot as an image
+    # --- Sliding average plot ---
     plt.figure(figsize=(12, 3))
     sliding_average_plot(horsens_df, window_size=3, filename='sliding_average_plot.png')
     plt.close()
     pdf.image("sliding_average_plot.png", x=5, y=15, w=200)
 
-    # Generate the DataFrame summary table for total expected points
+    # --- Total expected points table ---
     total_expected_points_combined = total_expected_points_combined.round(2)
-    total_expected_points_combined = total_expected_points_combined.sort_values(by='Expected points per game', ascending=False)
+    total_expected_points_combined = total_expected_points_combined.sort_values(
+        by='Expected points per game', ascending=False
+    )
     plt.figure(figsize=(12, 0.01), dpi=500)
     plt.axis('off')
-    plt.rc('font', size=6)  # Set font size
-    plt.table(cellText=total_expected_points_combined.values, colLabels=total_expected_points_combined.columns,colLoc='left', cellLoc='left', loc='center')
+    plt.rc('font', size=6)
+    plt.table(cellText=total_expected_points_combined.values,
+              colLabels=total_expected_points_combined.columns,
+              colLoc='left', cellLoc='left', loc='center')
     plt.savefig("total_expected_points_table.png", format="png", bbox_inches='tight')
     plt.close()
     pdf.image("total_expected_points_table.png", x=5, y=71, w=200)
-    
-    y_position = 130  # Initial y position after the table image
-    pdf.set_xy(5, y_position)
 
-    # --- KEEP: Horsens players ranked tables on first page ---
+    # --- Horsens tables (full season, with 300 min filter) ---
+    y_position = 130
+    pdf.set_xy(5, y_position)
     for position, df in position_dataframes.items():
         dfx = df.copy()
         dfx['Total score'] = pd.to_numeric(dfx['Total score'], errors='coerce')
         dfx = dfx.dropna(subset=['Total score'])
 
-
-        # 1) Eligible players by summed minutes across all rows
+        # Eligible players by minutes
         if 'minsPlayed' in dfx.columns:
             mins_total = dfx.groupby('playerName', as_index=False)['minsPlayed'].sum()
             eligible = set(mins_total.loc[mins_total['minsPlayed'] >= MIN_MINUTES, 'playerName'])
@@ -1804,7 +1807,7 @@ def create_pdf_progress_report(horsens_df, total_expected_points_combined, posit
             eligible = None
             dfx_eligible = dfx
 
-        # 2) Rank ONLY among eligible players (by mean Total score)
+        # Ranking
         df_ranked = (
             dfx_eligible.groupby('playerName', as_index=False)['Total score']
             .mean()
@@ -1813,16 +1816,18 @@ def create_pdf_progress_report(horsens_df, total_expected_points_combined, posit
         )
         df_ranked['Rank'] = df_ranked['Total score'].rank(ascending=False, method='min').astype(int)
 
-        # 3) Build Horsens table (also enforce minutes threshold)
+        # Horsens subset
         horsens = dfx[dfx['team_name'] == 'Horsens'].copy()
-        if horsens.empty:  # <-- skip if no rows
+        if horsens.empty:
             continue
         if eligible is not None:
             horsens = horsens[horsens['playerName'].isin(eligible)]
 
         # Drop unused columns
-        drop_cols = ['label', 'team_name', 'age_today', 'player_position', 'player_positionSide']
-        horsens.drop(columns=[c for c in drop_cols if c in horsens.columns], inplace=True, errors='ignore')
+        drop_cols = ['label', 'team_name', 'age_today', 
+                     'player_position', 'player_positionSide']
+        horsens.drop(columns=[c for c in drop_cols if c in horsens.columns], 
+                     inplace=True, errors='ignore')
 
         # Aggregate per player
         numeric_columns = horsens.select_dtypes(include='number').columns.tolist()
@@ -1833,102 +1838,85 @@ def create_pdf_progress_report(horsens_df, total_expected_points_combined, posit
             aggregation_dict['minsPlayed'] = 'sum'
 
         table = horsens.groupby('playerName').agg(aggregation_dict).reset_index()
-
-        # (Redundant but safe) enforce minutes threshold on table as well
         if 'minsPlayed' in table.columns:
             table = table[table['minsPlayed'] >= MIN_MINUTES]
 
-        # Merge Rank AFTER aggregation
-        table = table.merge(df_ranked[['playerName', 'Rank']], on='playerName', how='left')
+        table = table.merge(df_ranked[['playerName', 'Rank']], 
+                            on='playerName', how='left')
 
-        # Final column order
+        # Reorder and sort
         reordered_columns = ['playerName']
         if 'minsPlayed' in table.columns:
             reordered_columns += ['minsPlayed']
         reordered_columns += [c for c in numeric_columns if c in table.columns] + ['Rank']
         table = table[reordered_columns].round(2)
         table = table.sort_values('Total score', ascending=False)
-        # --- Render (same style as yours) ---
+
+        # Render
         pdf.set_font("Arial", size=6)
-        pdf.cell(190, 4, txt=convert_to_ascii(f"Position Report: {position} (Ranked, Horsens)"), ln=True, align='C')
-        pdf.ln(0)
-
+        pdf.cell(190, 4, 
+                 txt=convert_to_ascii(f"Position Report: {position} (Ranked, Horsens, Season)"), 
+                 ln=True, align='C')
         headers = table.columns.tolist()
-        col_widths = [min(max(len(h) * 2.2, 15), 35) for h in headers]  # 15–35 like your logic
-
-        # Header row
+        col_widths = [min(max(len(h)*2.2, 15), 35) for h in headers]
         for i, h in enumerate(headers):
             pdf.cell(col_widths[i], 4, txt=convert_to_ascii(h), border=1)
         pdf.ln(4)
 
-        # Data rows (keeps your color fill)
         for _, row in table.iterrows():
             total_score = row['Total score']
-            fill_color = (255, 0, 0) if total_score < 4 else (255, 255, 0) if total_score <= 6 else (0, 255, 0)
+            fill_color = (255,0,0) if total_score < 4 else (255,255,0) if total_score <= 6 else (0,255,0)
             pdf.set_fill_color(*fill_color)
             for i, val in enumerate(row):
                 pdf.cell(col_widths[i], 4, txt=convert_to_ascii(str(val)), border=1, fill=True)
             pdf.ln(4)
 
-    pdf.set_font("Arial", style='I', size=6)
-    pdf.set_text_color(100, 100, 100)  # Grey tone
-    pdf.cell(190, 5, txt="Note: Rank is measured comparing the player to all other players on the same position in the league.", ln=True, align='C')
-
-    # --- NEW PAGE: add Top 5 per position in the league ---
+    # --- Top 5 per position in league ---
     pdf.add_page()
     pdf.set_text_color(0, 0, 0)
     pdf.set_font("Arial", size=10)
     pdf.cell(190, 6, txt="Top 5 per Position (League)", ln=True, align='C')
     pdf.ln(2)
 
-
     for position, df in position_dataframes.items():
         dfx = df.copy()
         dfx['Total score'] = pd.to_numeric(dfx['Total score'], errors='coerce')
         dfx = dfx.dropna(subset=['Total score'])
 
-
-        # Aggregate: mean for metrics, SUM minutes so we can filter
         num_cols = dfx.select_dtypes(include='number').columns.tolist()
         agg = {c: 'mean' for c in num_cols}
         if 'minsPlayed' in dfx.columns:
-            agg['minsPlayed'] = 'sum'  # sum minutes across games
+            agg['minsPlayed'] = 'sum'
 
-        grouped = dfx.groupby(['playerName', 'team_name'], as_index=False).agg(agg)
-
-        # Minutes filter BEFORE ranking
+        grouped = dfx.groupby(['playerName','team_name'], as_index=False).agg(agg)
         if 'minsPlayed' in grouped.columns:
             grouped = grouped[grouped['minsPlayed'] >= MIN_MINUTES]
 
-        # Rank and take top 5 by Total score
         grouped['Rank'] = grouped['Total score'].rank(ascending=False, method='min').astype(int)
         top5 = grouped.sort_values('Total score', ascending=False).head(5)
-        top5 = top5[['playerName', 'team_name', 'Total score', 'Rank']].round(2)
+        top5 = top5[['playerName','team_name','Total score','Rank']].round(2)
 
-        # Section title
         pdf.set_font("Arial", size=7)
         pdf.cell(190, 4, txt=convert_to_ascii(f"Position: {position}"), ln=True, align='L')
 
-        # Headers
         headers = top5.columns.tolist()
-        col_widths = [min(max(len(h) * 2.2, 15), 35) for h in headers]
+        col_widths = [min(max(len(h)*2.2, 15), 35) for h in headers]
         pdf.set_font("Arial", size=6)
         for i, h in enumerate(headers):
             pdf.cell(col_widths[i], 4, txt=convert_to_ascii(h), border=1)
         pdf.ln(4)
 
-        # Rows (no colors)
         for _, r in top5.iterrows():
             for i, val in enumerate(r.tolist()):
                 pdf.cell(col_widths[i], 4, txt=convert_to_ascii(str(val)), border=1)
             pdf.ln(4)
         pdf.ln(1)
 
-
     pdf.output(f"Progress reports/Progress_report_{today}.pdf")
     print(f'{today} progress report created')
 
 create_pdf_progress_report(horsens_df, total_expected_points_combined, position_dataframes)
+
 
 folder_path = 'C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/'
 
