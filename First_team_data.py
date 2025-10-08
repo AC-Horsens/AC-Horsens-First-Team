@@ -3257,7 +3257,7 @@ def Opposition_analysis():
     unique_dates = balanced_central_defender_df['match_date'].unique()
 
     # Get the latest 3 match dates
-    latest_dates = pd.Series(unique_dates).nlargest(3)
+    latest_dates = pd.Series(unique_dates).nlargest(5)
     # Filter for rows with the latest match dates
     recent_matches_df = balanced_central_defender_df[balanced_central_defender_df['match_date'].isin(latest_dates)]
 
