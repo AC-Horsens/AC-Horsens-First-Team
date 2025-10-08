@@ -17,8 +17,8 @@ import requests
 import glob
 import math
 import re
-import urllib.parse
 from urllib.parse import quote
+from sklearn.neighbors import NearestNeighbors
 
 st.set_page_config(layout='wide')
 
@@ -3206,25 +3206,38 @@ def Opposition_analysis():
 
     rank_columns = [col for col in matchstats_df.columns if col.endswith('_rank')]
     weighted_columns = ['Passes per game_rank', 'Long pass share %_rank', 'Forward pass share %_rank', 'PPDA per match_rank']
+    weights = {col: 3 if col in weighted_columns else 1 for col in selected_columns}
+    weighted_df = matchstats_df[selected_columns].copy()
+
+    for col in selected_columns:
+        weighted_df[col] = weighted_df[col] * weights[col]
+    nn = NearestNeighbors(n_neighbors=4, metric="euclidean")  # 4 because 1 will be the team itself
+    nn.fit(weighted_df.fillna(0))
+
+    # Find the selected team index
+    selected_idx = matchstats_df.index[matchstats_df['team_name'] == selected_team][0]
+
+    # Get distances and indices of nearest neighbours
+    distances, indices = nn.kneighbors([weighted_df.iloc[selected_idx].values])
 
     # Update similarity score calculation by giving specific columns a weight of 3
-    matchstats_df['similarity_score'] = matchstats_df.apply(
-        lambda row: sum(
-            (3 if rank_col in weighted_columns else 1) * abs(row[rank_col] - team_df[rank_col].values[0])
-            for rank_col in selected_columns if not pd.isna(row[rank_col])
-        ),
-        axis=1
-    )
+    similar_team_indices = [i for i in indices[0] if i != selected_idx]
 
-    similar_teams = matchstats_df[matchstats_df['team_name'] != selected_team]
-    similar_teams = similar_teams[similar_teams['team_name'] != 'Horsens']
-    top_3_similar_teams = similar_teams.nsmallest(3, 'similarity_score')
-    top_3_similar_teams = top_3_similar_teams.sort_values(by='similarity_score', ascending=False)
+    similar_teams = matchstats_df.iloc[similar_team_indices].copy()
+    similar_teams["similarity_score"] = distances[0][1:]  # skip self-distance
+
+    # Filter out Horsens if needed
+    similar_teams = similar_teams[similar_teams["team_name"] != "Horsens"]
+
+    # Take top 3
+    top_3_similar_teams = similar_teams.nsmallest(3, "similarity_score")
 
     with col2:
         st.write("Teams similar to the selected team:")
-        st.dataframe(top_3_similar_teams[['team_name'] + rank_columns + ['similarity_score']], hide_index=True)
-
+        st.dataframe(
+            top_3_similar_teams[['team_name'] + rank_columns + ['similarity_score']],
+            hide_index=True
+        )
 
     st.header('Central defenders')    # ------------------------------------
 
