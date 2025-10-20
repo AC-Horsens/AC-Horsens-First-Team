@@ -338,6 +338,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
     df_scouting['possLost_per90'] = (df_scouting['possLostAll'].astype(float)/df_scouting['minsPlayed'].astype(float)) * 90
     df_scouting['Attempts conceded in box per 90'] = (df_scouting['attemptsConcededIbox'].astype(float)/df_scouting['minsPlayed'].astype(float)) * 90
 
+
     df_scouting[df_scouting.select_dtypes(include='number').columns] = \
     df_scouting.select_dtypes(include='number').fillna(0)    
 
@@ -2680,6 +2681,7 @@ def Opposition_analysis():
     matchstats_df = matchstats_df.rename(columns={'player_matchName': 'playerName'})
     matchstats_df = matchstats_df.groupby(['contestantId','team_name','label', 'date']).sum().reset_index()
     matchstats_df['label'] = np.where(matchstats_df['label'].notnull(), 1, matchstats_df['label'])
+
     date_format = '%Y-%m-%d'
     matchstats_df['date'] = pd.to_datetime(matchstats_df['date'], format=date_format)
     min_date = matchstats_df['date'].min()
@@ -2865,25 +2867,114 @@ def Opposition_analysis():
     matchstats_df['Set piece xG per match'] = matchstats_df['Set piece xG'] / matchstats_df['matches']
     matchstats_df['Set piece xG against per match'] = matchstats_df['Set piece xG against'] / matchstats_df['matches']
     matchstats_df['Duels per match'] = (matchstats_df['duelLost'] + matchstats_df['duelWon']) /matchstats_df['matches']
-    matchstats_df['Duels won %'] = (matchstats_df['duelWon'] / (matchstats_df['duelWon'] + matchstats_df['duelLost']))*100	
     matchstats_df['Passes per game'] = matchstats_df['openPlayPass'] / matchstats_df['matches']
-    matchstats_df['Pass accuracy %'] = (matchstats_df['successfulOpenPlayPass'] / matchstats_df['openPlayPass'])*100
-    matchstats_df['Back zone pass accuracy %'] = (matchstats_df['accurateBackZonePass'] / matchstats_df['totalBackZonePass'])*100
-    matchstats_df['Forward zone pass accuracy %'] = (matchstats_df['accurateFwdZonePass'] / matchstats_df['totalFwdZonePass'])*100
-    matchstats_df['possWonDef3rd %'] = (matchstats_df['possWonDef3rd'] / (matchstats_df['possWonDef3rd'] + matchstats_df['possWonMid3rd'] + matchstats_df['possWonAtt3rd']))*100    
-    matchstats_df['possWonMid3rd %'] = (matchstats_df['possWonMid3rd'] / (matchstats_df['possWonDef3rd'] + matchstats_df['possWonMid3rd'] + matchstats_df['possWonAtt3rd']))*100    
-    matchstats_df['possWonAtt3rd %'] = (matchstats_df['possWonAtt3rd'] / (matchstats_df['possWonDef3rd'] + matchstats_df['possWonMid3rd'] + matchstats_df['possWonAtt3rd']))*100   
-    matchstats_df['Forward pass share %'] = (matchstats_df['fwdPass'] / matchstats_df['openPlayPass'])*100
     matchstats_df['Final third entries per match'] = matchstats_df['finalThirdEntries'] / matchstats_df['matches']
-    matchstats_df['Final third pass accuracy %'] = (matchstats_df['successfulFinalThirdPasses'] / matchstats_df['totalFinalThirdPasses'])*100
-    matchstats_df['Open play shot assists share'] = (matchstats_df['attAssistOpenplay'] / matchstats_df['totalAttAssist'])*100
-    matchstats_df['Long pass share %'] = (matchstats_df['totalLongBalls'] / matchstats_df['openPlayPass'])*100
     matchstats_df['Crosses'] = matchstats_df['totalCrossNocorner'] / matchstats_df['matches']
     matchstats_df['Cross accuracy %'] = (matchstats_df['accurateCrossNocorner'] / matchstats_df['totalCrossNocorner'])*100
     matchstats_df['PPDA per match'] = matchstats_df['PPDA']
     matchstats_df = matchstats_df[['team_name','matches','PenAreaEntries per match','xG per match','xG against per match','Transition xG per match','Transition xG against per match','Set piece xG per match','Set piece xG against per match','Duels per match','Duels won %','Passes per game','Pass accuracy %','Back zone pass accuracy %','Forward zone pass accuracy %','possWonDef3rd %','possWonMid3rd %','possWonAtt3rd %','Forward pass share %','Final third entries per match','Final third pass accuracy %','Open play shot assists share','PPDA per match','Long pass share %','Crosses','Cross accuracy %']]
     matchstats_df['team_name'] = matchstats_df['team_name'].str.replace(' ', '_')
     matchstats_df = matchstats_df.round(2)
+    matchstats_df['duel_win_%'] = np.where(
+        (matchstats_df['duelWon'] + matchstats_df['duelLost']) > 0,
+        100 * matchstats_df['duelWon'] / (matchstats_df['duelWon'] + matchstats_df['duelLost']),
+        0
+    )
+
+    matchstats_df['pass_%'] = np.where(
+        matchstats_df['openPlayPass'] > 0,
+        100 * matchstats_df['succesfulOpenPlayPass'] / matchstats_df['openPlayPass'],
+        0
+    )
+
+    # --- Pasningsfordeling (zoner) ---
+    matchstats_df['own_half_pass_share_%'] = np.where(
+        matchstats_df['openPlayPass'] > 0,
+        100 * matchstats_df['totalBackZonePass'] / matchstats_df['openPlayPass'],
+        0
+    )
+
+    matchstats_df['opponent_half_pass_share_%'] = np.where(
+        matchstats_df['openPlayPass'] > 0,
+        100 * matchstats_df['totalFwdZonePass'] / matchstats_df['openPlayPass'],
+        0
+    )
+
+    matchstats_df['final_third_pass_share_%'] = np.where(
+        matchstats_df['openPlayPass'] > 0,
+        100 * matchstats_df['totalFinalThirdPasses'] / matchstats_df['openPlayPass'],
+        0
+    )
+
+    # --- Præcision pr. zone ---
+    matchstats_df['back_zone_pass_accuracy_%'] = np.where(
+        matchstats_df['totalBackZonePass'] > 0,
+        100 * matchstats_df['successfulBackZonePasses'] / matchstats_df['totalBackZonePass'],
+        0
+    )
+
+    matchstats_df['fwd_zone_pass_accuracy_%'] = np.where(
+        matchstats_df['totalFwdZonePass'] > 0,
+        100 * matchstats_df['successfulFwdZonePasses'] / matchstats_df['totalFwdZonePass'],
+        0
+    )
+
+    matchstats_df['final_third_pass_accuracy_%'] = np.where(
+        matchstats_df['totalFinalThirdPasses'] > 0,
+        100 * matchstats_df['successfulFinalThirdPasses'] / matchstats_df['totalFinalThirdPasses'],
+        0
+    )
+
+    # --- Forward og long pass share ---
+    matchstats_df['forward_pass_share_%'] = np.where(
+        matchstats_df['openPlayPass'] > 0,
+        100 * matchstats_df['fwdPass'] / matchstats_df['openPlayPass'],
+        0
+    )
+
+    matchstats_df['long_pass_share_%'] = np.where(
+        matchstats_df['openPlayPass'] > 0,
+        100 * matchstats_df['totalLongPass'] / matchstats_df['openPlayPass'],
+        0
+    )
+
+    # --- Cross metrics ---
+    matchstats_df['cross_per_final_third_pass_%'] = np.where(
+        matchstats_df['totalFinalThirdPasses'] > 0,
+        100 * matchstats_df['totalCrossNocorner'] / matchstats_df['totalFinalThirdPasses'],
+        0
+    )
+
+    matchstats_df['cross_per_final_third_entry_%'] = np.where(
+        matchstats_df['finalThirdEntries'] > 0,
+        100 * matchstats_df['totalCrossNocorner'] / matchstats_df['finalThirdEntries'],
+        0
+    )
+
+    # --- Generobringsfordeling ---
+    matchstats_df['total_poss_won'] = (
+        matchstats_df['possWonDef3rd'] +
+        matchstats_df['possWonMid3rd'] +
+        matchstats_df['possWonAtt3rd']
+    )
+
+    matchstats_df['poss_won_def3rd_%'] = np.where(
+        matchstats_df['total_poss_won'] > 0,
+        100 * matchstats_df['possWonDef3rd'] / matchstats_df['total_poss_won'],
+        0
+    )
+
+    matchstats_df['poss_won_mid3rd_%'] = np.where(
+        matchstats_df['total_poss_won'] > 0,
+        100 * matchstats_df['possWonMid3rd'] / matchstats_df['total_poss_won'],
+        0
+    )
+
+    matchstats_df['poss_won_att3rd_%'] = np.where(
+        matchstats_df['total_poss_won'] > 0,
+        100 * matchstats_df['possWonAtt3rd'] / matchstats_df['total_poss_won'],
+        0
+    )
 
     cols_to_rank = matchstats_df.drop(columns=['team_name']).columns
     ranked_df = matchstats_df.copy()
