@@ -2932,7 +2932,7 @@ def Opposition_analysis():
 
     matchstats_df['long_pass_share_%'] = np.where(
         matchstats_df['openPlayPass'] > 0,
-        100 * matchstats_df['totalLongPass'] / matchstats_df['openPlayPass'],
+        100 * matchstats_df['totalLongBalls'] / matchstats_df['openPlayPass'],
         0
     )
 
