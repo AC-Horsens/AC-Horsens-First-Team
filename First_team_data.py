@@ -3320,9 +3320,27 @@ def Opposition_analysis():
     # Similar Teams Section (Moved up)
     # Find similar teams
     selected_columns = [
-        'Duels per match_rank', 'Duels won %_rank', 'Passes per game_rank', 'Pass accuracy %_rank', 'possWonDef3rd %_rank',
-        'possWonMid3rd %_rank', 'possWonAtt3rd %_rank', 'Forward pass share %_rank', 'Open play shot assists share_rank',
-        'PPDA per match_rank', 'Long pass share %_rank', 'Crosses_rank', 'Cross accuracy %_rank'
+        'Duels per match',
+        'duel_win_%',
+        'Passes per game',
+        'pass_%',
+        'own_half_pass_share_%',
+        'opponent_half_pass_share_%',
+        'final_third_pass_share_%',
+        'back_zone_pass_accuracy_%',
+        'fwd_zone_pass_accuracy_%',
+        'final_third_pass_accuracy_%',
+        'forward_pass_share_%',
+        'long_pass_share_%',
+        'Final third entries per match',
+        'Crosses',
+        'Cross accuracy %',
+        'cross_per_final_third_pass_%',
+        'cross_per_final_third_entry_%',
+        'PPDA per match',
+        'poss_won_def3rd_%',
+        'poss_won_mid3rd_%',
+        'poss_won_att3rd_%'
     ]
 
     rank_columns = [col for col in matchstats_df.columns if col.endswith('_rank')]
