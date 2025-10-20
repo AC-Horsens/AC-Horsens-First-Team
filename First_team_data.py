@@ -2908,13 +2908,13 @@ def Opposition_analysis():
     # --- Præcision pr. zone ---
     matchstats_df['back_zone_pass_accuracy_%'] = np.where(
         matchstats_df['totalBackZonePass'] > 0,
-        100 * matchstats_df['successfulBackZonePasses'] / matchstats_df['totalBackZonePass'],
+        100 * matchstats_df['accurateBackZonePass'] / matchstats_df['totalBackZonePass'],
         0
     )
 
     matchstats_df['fwd_zone_pass_accuracy_%'] = np.where(
         matchstats_df['totalFwdZonePass'] > 0,
-        100 * matchstats_df['successfulFwdZonePasses'] / matchstats_df['totalFwdZonePass'],
+        100 * matchstats_df['accurateFwdZonePasses'] / matchstats_df['totalFwdZonePass'],
         0
     )
 
