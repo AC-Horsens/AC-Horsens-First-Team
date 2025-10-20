@@ -2850,7 +2850,6 @@ def Opposition_analysis():
         'successfulFinalThirdPasses': 'sum',
         'totalFinalThirdPasses': 'sum',
         'attAssistOpenplay': 'sum',
-        'totalAttAssist': 'sum',
         'totalCrossNocorner': 'sum',
         'accurateCrossNocorner': 'sum',
         'totalLongBalls': 'sum',
@@ -2914,7 +2913,7 @@ def Opposition_analysis():
 
     matchstats_df['fwd_zone_pass_accuracy_%'] = np.where(
         matchstats_df['totalFwdZonePass'] > 0,
-        100 * matchstats_df['accurateFwdZonePasses'] / matchstats_df['totalFwdZonePass'],
+        100 * matchstats_df['accurateFwdZonePass'] / matchstats_df['totalFwdZonePass'],
         0
     )
 
