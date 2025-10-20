@@ -2975,6 +2975,7 @@ def Opposition_analysis():
     )
     matchstats_df = matchstats_df[[
         'team_name',
+        'matches',
         'PenAreaEntries per match',
         'xG per match',
         'xG against per match',
