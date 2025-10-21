@@ -833,9 +833,9 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
     }
 
 df_xg, df_xa, df_pv, df_possession_stats, df_xa_agg, df_possession_data, df_xg_agg, df_pv_agg, df_xg_all, df_possession_xa, df_pv_all, df_matchstats, squads, possession_events = load_data()
-df_horsens_seneste = df_xg[df_xg['team_name'] == 'Horsens']
+df_horsens_seneste = df_xg[df_xg['team_name'] == 'B 93']
 dates = df_horsens_seneste['date'].drop_duplicates().sort_values()
-dates = dates[-4:]
+#dates = dates[-4:]
 position_dataframes = Process_data_spillere(df_possession_xa, df_pv, df_matchstats, df_xg_all, squads)
 
 #defending_central_defender_df = position_dataframes['defending_central_defender']
@@ -855,7 +855,7 @@ classic_striker_df = position_dataframes['Striker']
 #horsens_df, merged_df, total_expected_points_combined = process_data()
 
 def create_pdf_progress_report_4_matches(position_dataframes):
-    MIN_MINUTES = 0  # threshold for season part
+    MIN_MINUTES = 300  # threshold for season part
 
     today = date.today()
     pdf = FPDF()
@@ -885,7 +885,7 @@ def create_pdf_progress_report_4_matches(position_dataframes):
             dfx_eligible = dfx
 
         # Horsens subset
-        horsens = dfx[dfx['team_name'] == 'Horsens'].copy()
+        horsens = dfx[dfx['team_name'] == 'B 93'].copy()
         horsens = horsens[horsens['date'].isin(dates)]
         print(horsens)
         if horsens.empty:
