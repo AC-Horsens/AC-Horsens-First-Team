@@ -3369,7 +3369,7 @@ def Opposition_analysis():
     similar_teams = similar_teams[similar_teams["team_name"] != "Horsens"]
 
     # Take top 3
-    top_3_similar_teams = similar_teams.nsmallest(3, "similarity_score")
+    top_3_similar_teams = similar_teams.nsmallest(4, "similarity_score")
 
     with col2:
         st.write("Teams similar to the selected team:")
