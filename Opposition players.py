@@ -7,7 +7,7 @@ from datetime import datetime
 from datetime import date
 from matplotlib.path import Path
 import unicodedata
-team_name = 'B 93'
+team_name = 'HB Køge'
 
 def convert_to_ascii(text):
     if isinstance(text, str):
@@ -836,7 +836,7 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
 df_xg, df_xa, df_pv, df_possession_stats, df_xa_agg, df_possession_data, df_xg_agg, df_pv_agg, df_xg_all, df_possession_xa, df_pv_all, df_matchstats, squads, possession_events = load_data()
 df_horsens_seneste = df_xg[df_xg['team_name'] == team_name]
 dates = df_horsens_seneste['date'].drop_duplicates().sort_values()
-#dates = dates[-4:]
+dates = dates[-5:]
 position_dataframes = Process_data_spillere(df_possession_xa, df_pv, df_matchstats, df_xg_all, squads)
 
 #defending_central_defender_df = position_dataframes['defending_central_defender']
@@ -855,7 +855,7 @@ classic_striker_df = position_dataframes['Striker']
 #box_striker_df = position_dataframes['Boxstriker']
 #horsens_df, merged_df, total_expected_points_combined = process_data()
 def create_pdf_progress_report_4_matches(position_dataframes):
-    MIN_MINUTES = 300  # threshold for season part
+    MIN_MINUTES = 0  # threshold for season part
 
     today = date.today()
     pdf = FPDF()
@@ -922,7 +922,7 @@ def create_pdf_progress_report_4_matches(position_dataframes):
         # Render
         pdf.set_font("Arial", size=6)
         pdf.cell(190, 4, 
-                 txt=convert_to_ascii(f"Position Report: {position} (Ranked, Horsens, Season)"), 
+                 txt=convert_to_ascii(f"Position Report: {position} (Ranked, {team_name}, Season)"), 
                  ln=True, align='C')
         headers = table.columns.tolist()
         col_widths = [min(max(len(h)*2.2, 15), 35) for h in headers]
