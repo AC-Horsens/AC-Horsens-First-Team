@@ -3350,7 +3350,7 @@ def Opposition_analysis():
 
     for col in selected_columns:
         weighted_df[col] = weighted_df[col] * weights[col]
-    nn = NearestNeighbors(n_neighbors=4, metric="cosine")  # 4 because 1 will be the team itself
+    nn = NearestNeighbors(n_neighbors=5, metric="cosine")  # 4 because 1 will be the team itself
     nn.fit(weighted_df.fillna(0))
 
     # Find the selected team index
