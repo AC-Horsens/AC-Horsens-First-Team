@@ -1757,7 +1757,7 @@ for index, row in horsens_df.iterrows():
 
 
 def create_pdf_progress_report(horsens_df, total_expected_points_combined, position_dataframes):
-    MIN_MINUTES = 300  # threshold for season part
+    MIN_MINUTES = 500  # threshold for season part
 
     today = date.today()
     pdf = FPDF()
