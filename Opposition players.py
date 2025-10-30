@@ -7,7 +7,7 @@ from datetime import datetime
 from datetime import date
 from matplotlib.path import Path
 import unicodedata
-team_name = 'HB Køge'
+team_name = 'Kolding'
 
 def convert_to_ascii(text):
     if isinstance(text, str):
