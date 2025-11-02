@@ -2566,24 +2566,36 @@ def Dashboard():
         df_set_pieces_matches = df_set_pieces_matches.rename(columns={'321.0': 'xG'})
         st.write('All set pieces')
         st.dataframe(df_set_pieces_sum)
+        st.write('Freekick')
 
-        st.write('Freekicks')
-        Freekicks = df_set_pieces_matches1[
-            (df_set_pieces_matches1['set_piece_type'] == 'freekick') |
-            (df_set_pieces_matches1['set_piece_type'] == 'freekick_shot')
-        ]
-        Freekicks['team_name'] = Freekicks['team_name'].apply(lambda x: 'Opponent' if x != 'Horsens' else x)
+        Freekicks = df_set_pieces[df_set_pieces['set_piece_type'].isin(['freekick','freekick_shot'])]
+
+        # Goals per team per match (typeId == 16 = goal)
+        Freekicks_goals = Freekicks[Freekicks['typeId'] == 16].groupby(['team_name','label']).size().reset_index(name='Goals')
+
         Freekicks = Freekicks.groupby(['team_name','label']).agg({'321.0':'sum'}).reset_index()
         Freekicks['xG_match'] = Freekicks.groupby('label')['321.0'].transform('sum')
         Freekicks['xG_against'] = Freekicks['321.0'] - Freekicks['xG_match']
         Freekicks['xG_diff'] = Freekicks['321.0'] - Freekicks['xG_match'] + Freekicks['321.0']
-        Freekicks = Freekicks.rename(columns={'321.0': 'xG'})
+
+        # Add goals logic in same way as xG
+        Freekicks = Freekicks.merge(Freekicks_goals, on=['team_name','label'], how='left').fillna({'Goals':0})
+        Freekicks['Goals_match'] = Freekicks.groupby('label')['Goals'].transform('sum')
+        Freekicks['Goals_against'] = Freekicks['Goals'] - Freekicks['Goals_match']
+        Freekicks['Goals_diff'] = Freekicks['Goals'] - Freekicks['Goals_match'] + Freekicks['Goals']
+
+        # Aggregate
+        Freekicks = Freekicks.groupby('team_name').agg({
+            '321.0':'sum',
+            'xG_against':'sum',
+            'xG_diff':'sum',
+            'Goals':'sum',
+            'Goals_against':'sum',
+            'Goals_diff':'sum'
+        }).reset_index().rename(columns={'321.0':'xG'})
 
         Freekicks = Freekicks.sort_values(by='xG',ascending=False)
-        Freekicks_matches = Freekicks[['team_name','xG','xG_against','xG_diff']]
-        Freekicks_matches = Freekicks_matches.groupby('team_name').sum()
-        st.dataframe(Freekicks_matches)
-
+        st.dataframe(Freekicks)
         st.write('Corners')
         Corners = df_set_pieces_matches1[(df_set_pieces_matches1['set_piece_type'] == 'corner')]
         Corners['team_name'] = Corners['team_name'].apply(lambda x: 'Opponent' if x != 'Horsens' else x)
