@@ -2549,7 +2549,7 @@ def Dashboard():
         # --- Streamlit output ---
         st.header('Whole season')
         st.write('All set pieces')
-        st.dataframe(df_set_pieces_sum[['team_name', 'Goals', 'Goals_against', 'Goals_diff', 'xG', 'xG_against', 'xG_diff']], hide_index=True)
+        st.dataframe(df_set_pieces_sum[['team_name', 'xG', 'xG_against', 'xG_diff','Goals', 'Goals_against', 'Goals_diff']], hide_index=True)
         st.write('Freekick')
 
         Freekicks = df_set_pieces[df_set_pieces['set_piece_type'].isin(['freekick','freekick_shot'])]
