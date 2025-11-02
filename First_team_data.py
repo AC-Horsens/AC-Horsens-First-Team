@@ -2580,7 +2580,7 @@ def Dashboard():
 
         Freekicks = Freekicks.sort_values(by='xG',ascending=False)
         st.dataframe(Freekicks,hide_index=True)
-
+        st.write('Corners')
         Corners = df_set_pieces[df_set_pieces['set_piece_type'] == 'corner']
         Corners_goals = Corners[Corners['typeId'] == 16].groupby(['team_name','label']).size().reset_index(name='Goals')
 
