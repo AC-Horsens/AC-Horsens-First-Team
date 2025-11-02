@@ -2543,7 +2543,7 @@ def Dashboard():
         }).reset_index().rename(columns={'321.0':'xG'})
 
         Freekicks = Freekicks.sort_values(by='xG',ascending=False)
-        st.dataframe(Freekicks)
+        st.dataframe(Freekicks,hide_index=True)
 
         st.write('Corners')
         Corners = df_set_pieces[df_set_pieces['set_piece_type'] =='corner']
