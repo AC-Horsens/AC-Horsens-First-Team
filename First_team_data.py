@@ -2514,14 +2514,34 @@ def Dashboard():
         st.write('All set pieces')
         st.dataframe(df_set_pieces_goals,hide_index=True)
         st.dataframe(df_set_pieces_sum)
-        st.write('Freekicks')
-        Freekicks = df_set_pieces[(df_set_pieces['set_piece_type'] == 'freekick')]
+        st.write('Freekick')
+
+        Freekicks = df_set_pieces[df_set_pieces['set_piece_type'].isin(['freekick','freekick_shot'])]
+
+        # Goals per team per match (typeId == 16 = goal)
+        Freekicks_goals = Freekicks[Freekicks['typeId'] == 16].groupby(['team_name','label']).size().reset_index(name='Goals')
+
         Freekicks = Freekicks.groupby(['team_name','label']).agg({'321.0':'sum'}).reset_index()
         Freekicks['xG_match'] = Freekicks.groupby('label')['321.0'].transform('sum')
         Freekicks['xG_against'] = Freekicks['321.0'] - Freekicks['xG_match']
         Freekicks['xG_diff'] = Freekicks['321.0'] - Freekicks['xG_match'] + Freekicks['321.0']
-        Freekicks = Freekicks.groupby('team_name').agg({'321.0': 'sum', 'xG_against': 'sum', 'xG_diff': 'sum'})
-        Freekicks = Freekicks.rename(columns={'321.0': 'xG'})
+
+        # Add goals logic in same way as xG
+        Freekicks = Freekicks.merge(Freekicks_goals, on=['team_name','label'], how='left').fillna({'Goals':0})
+        Freekicks['Goals_match'] = Freekicks.groupby('label')['Goals'].transform('sum')
+        Freekicks['Goals_against'] = Freekicks['Goals'] - Freekicks['Goals_match']
+        Freekicks['Goals_diff'] = Freekicks['Goals'] - Freekicks['Goals_match'] + Freekicks['Goals']
+
+        # Aggregate
+        Freekicks = Freekicks.groupby('team_name').agg({
+            '321.0':'sum',
+            'xG_against':'sum',
+            'xG_diff':'sum',
+            'Goals':'sum',
+            'Goals_against':'sum',
+            'Goals_diff':'sum'
+        }).reset_index().rename(columns={'321.0':'xG'})
+
         Freekicks = Freekicks.sort_values(by='xG',ascending=False)
         st.dataframe(Freekicks)
 
