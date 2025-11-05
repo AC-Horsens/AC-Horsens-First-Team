@@ -3041,13 +3041,13 @@ def Opposition_analysis():
     # --- Pasningsfordeling (zoner) ---
     matchstats_df['own_half_pass_share_%'] = np.where(
         matchstats_df['openPlayPass'] > 0,
-        100 * matchstats_df['totalBackZonePass'] / matchstats_df['openPlayPass'],
+        100 * matchstats_df['totalBackZonePass'] / matchstats_df['successfulOpenPlayPass'],
         0
     )
 
     matchstats_df['opponent_half_pass_share_%'] = np.where(
         matchstats_df['openPlayPass'] > 0,
-        100 * matchstats_df['totalFwdZonePass'] / matchstats_df['openPlayPass'],
+        100 * matchstats_df['totalFwdZonePass'] / matchstats_df['successfulOpenPlayPass'],
         0
     )
 
