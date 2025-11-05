@@ -3034,7 +3034,7 @@ def Opposition_analysis():
 
     matchstats_df['pass_%'] = np.where(
         matchstats_df['openPlayPass'] > 0,
-        100 * matchstats_df['successfulOpenPlayPass'] / matchstats_df['openPlayPass'],
+        100 * (matchstats_df['totalBackZonePass'] + matchstats_df['totalFwdZonePass']) / matchstats_df['openPlayPass'],
         0
     )
 
