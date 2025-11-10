@@ -488,7 +488,7 @@ def Process_data_spillere(df_xA,df_pv_all,df_match_stats,df_xg_all,squads):
             (df_scouting['player_position'] == 'Defender') &
             (df_scouting['player_positionSide'].isin(['Right', 'Left'])))
             |
-            ((df_scouting['formationUsed'].isin([352, 343,3421,3142])) &
+            ((df_scouting['formationUsed'].isin([352, 343,3421,3412,3142])) &
             (df_scouting['player_position'] == 'Midfielder') &
             (df_scouting['player_positionSide'].isin(['Right', 'Left'])))
             |
