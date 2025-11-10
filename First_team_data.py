@@ -3953,57 +3953,60 @@ def Opposition_analysis():
     def get_first_contact_and_finisher(df):
         result = []
 
-        # Iterate over each unique possession and label combination
-        for possession_id, group in df.groupby(['possessionId','team_name', 'label']):
-            group = group.sort_values('set_piece_index')  # Sort by set_piece_index (time order)
+        # Ensure ordering is chronological
+        df = df.sort_values(['possessionId', 'set_piece_index'])
 
-            # Identify the row where 6.0 is True (corner taker)
+        for (possession_id, team_name, label), group in df.groupby(['possessionId', 'team_name', 'label'], sort=False):
+            # Corner taker row (6.0 == True)
             corner_taker_row = group[group['6.0'] == True]
+            if corner_taker_row.empty:
+                continue
 
-            if not corner_taker_row.empty:
-                corner_taker_index = corner_taker_row.index[0]
-                label = corner_taker_row['label'].values[0]  # Get the label for xG aggregation
+            corner_taker_index = corner_taker_row.index[0]
 
-                # Check if the outcome of the corner taker is 0 (indicating failed corner)
-                outcome = corner_taker_row['outcome'].values[0]
+            # ----- FIRST CONTACT -----
+            # If the taker’s outcome == 0 we call first contact 'opponent', else take next event after taker.
+            outcome = corner_taker_row['outcome'].values[0]
+            if outcome == 0:
+                first_contact_player = 'opponent'
+            else:
+                next_event_row = group[group.index > corner_taker_index].head(1)
+                first_contact_player = next_event_row['playerName'].values[0] if not next_event_row.empty else None
 
-                # First contact logic based on outcome
-                if outcome == 0:
-                    first_contact_player = 'opponent'  # If outcome is 0, first contact is by the opponent
-                else:
-                    # First contact: Always the player from the next event after the corner taker
-                    next_event_row = group[group.index > corner_taker_index].head(1)
-                    if not next_event_row.empty:
-                        first_contact_player = next_event_row['playerName'].values[0]
-                    else:
-                        first_contact_player = None
+            # ----- FINISHER (key change) -----
+            # Use xG>0 as proxy for a shot; pick the *last* such event as the finisher.
+            # Only consider events from this team_name (we're already grouped by team_name).
+            shot_mask = group['321.0'].fillna(0) > 0
+            shots = group[shot_mask]
 
-                # Finisher: The last player in the possession
-                finisher_player = group.iloc[-1]['playerName']
-                
-                # xG for the possession (sum of all xG for the same possessionId and label)
-                possession_xg = group['321.0'].sum()
+            if not shots.empty:
+                finisher_player = shots.iloc[-1]['playerName']
+                possession_xg = shots['321.0'].sum()  # sum xG from shots only
+            else:
+                # Fallback: last touch by this team after the taker (no shot recorded)
+                tail_team = group[group.index > corner_taker_index]
+                finisher_player = tail_team.iloc[-1]['playerName'] if not tail_team.empty else None
+                possession_xg = 0.0
 
-                # Determine the type of corner for the entire possession
-                inswinger = group['223.0'].any()  # Inswinger if any 223.0 is True within the possession
-                outswinger = group['224.0'].any()  # Outswinger if any 224.0 is True within the possession
-                straight = group['225.0'].any()  # Straight if any 225.0 is True within the possession
-                short = group['short'].any()  # Short corner if any 'short' is True within the possession
+            # Corner-type flags for this possession
+            inswinger = group['223.0'].any()
+            outswinger = group['224.0'].any()
+            straight = group['225.0'].any()
+            short = group['short'].any()
 
-                result.append({
-                    'possessionId': str(possession_id),  # Convert possessionId to string
-                    'first_contact_player': first_contact_player,
-                    'finisher_player': finisher_player,
-                    'xg': possession_xg,
-                    'label': str(label),  # Convert label to string
-                    'inswinger': inswinger,
-                    'outswinger': outswinger,
-                    'straight': straight,
-                    'short': short
-                })
+            result.append({
+                'possessionId': str(possession_id),
+                'first_contact_player': first_contact_player,
+                'finisher_player': finisher_player,
+                'xg': float(possession_xg),
+                'label': str(label),
+                'inswinger': bool(inswinger),
+                'outswinger': bool(outswinger),
+                'straight': bool(straight),
+                'short': bool(short),
+            })
 
         return pd.DataFrame(result)
-
     # Function to plot heatmaps for first contact using mplsoccer's VerticalPitch
     def plot_heatmap(df, title):
         pitch = VerticalPitch(pitch_type='opta', half=True, line_zorder=2, pitch_color='grass', line_color='white')
