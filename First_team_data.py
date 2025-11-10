@@ -4121,8 +4121,10 @@ def Opposition_analysis():
         elif row['outswinger']:
             row['straight'] = False
             row['short'] = False
+            row['inswinger'] = False
         # 'straight' is the lowest priority, so no further changes are needed if only it is True
         return row    # Summarize first contact and finisher for each corner type (inswingers, outswingers, shorts)
+    
     first_contact_finisher_df = first_contact_finisher_df = first_contact_finisher_df.apply(enforce_exclusivity, axis=1)
     first_contact_inswingers, finisher_inswingers = summarize_first_contact_and_finisher(first_contact_finisher_df, 'inswinger')
     first_contact_outswingers, finisher_outswingers = summarize_first_contact_and_finisher(first_contact_finisher_df, 'outswinger')
