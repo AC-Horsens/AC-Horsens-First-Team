@@ -3954,7 +3954,7 @@ def Opposition_analysis():
         result = []
 
         # Iterate over each unique possession and label combination
-        for possession_id, group in df.groupby(['possessionId', 'label']):
+        for possession_id, group in df.groupby(['possessionId','team_name', 'label']):
             group = group.sort_values('set_piece_index')  # Sort by set_piece_index (time order)
 
             # Identify the row where 6.0 is True (corner taker)
