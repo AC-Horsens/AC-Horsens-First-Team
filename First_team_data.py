@@ -2902,6 +2902,8 @@ def Opposition_analysis():
     # Filter for xG
     set_piece_df = set_piece_df[set_piece_df['321.0'] > 0]
     set_piece_df = set_piece_df[set_piece_df['9.0'] != True]
+    set_piece_df = set_piece_df[set_piece_df['9.0'] != 'true']
+
     # Aggregate xG by team and match (contestantId, team_name, label, date)
     set_piece_df = (
         set_piece_df.groupby(['team_name', 'label', 'date'])['321.0']
