@@ -2547,7 +2547,7 @@ def Dashboard():
             .rename(columns={'321.0': 'xG'})
         )
 
-        df_set_pieces_sum = df_set_pieces_sum.sort_values(by='xG', ascending=False)
+        df_set_pieces_sum = df_set_pieces_sum.sort_values(by='Goals_diff', ascending=False)
 
         # --- Streamlit output ---
         st.header('Whole season')
@@ -2581,7 +2581,7 @@ def Dashboard():
             'Goals_diff':'sum'
         }).reset_index().rename(columns={'321.0':'xG'})
 
-        Freekicks = Freekicks.sort_values(by='xG',ascending=False)
+        Freekicks = Freekicks.sort_values(by='Goals_diff',ascending=False)
         st.dataframe(Freekicks,hide_index=True)
         st.write('Corners')
         Corners = df_set_pieces[df_set_pieces['set_piece_type'] == 'corner']
@@ -2606,7 +2606,7 @@ def Dashboard():
             'Goals_diff':'sum'
         }).reset_index().rename(columns={'321.0':'xG'})
 
-        Corners = Corners.sort_values(by='xG',ascending=False)
+        Corners = Corners.sort_values(by='Goals_diff',ascending=False)
         st.dataframe(Corners,hide_index=True)
 
         st.write('Throw ins')
@@ -2632,7 +2632,7 @@ def Dashboard():
             'Goals_diff':'sum'
         }).reset_index().rename(columns={'321.0':'xG'})
 
-        Throw_ins = Throw_ins.sort_values(by='xG',ascending=False)
+        Throw_ins = Throw_ins.sort_values(by='Goals_diff',ascending=False)
         st.dataframe(Throw_ins,hide_index=True)
 
         st.header('Chosen matches')
@@ -2682,7 +2682,7 @@ def Dashboard():
             .rename(columns={'321.0': 'xG'})
         )
 
-        df_set_pieces_sum = df_set_pieces_sum.sort_values(by='xG', ascending=False)
+        df_set_pieces_sum = df_set_pieces_sum.sort_values(by='Goals_diff', ascending=False)
 
         # --- Streamlit output ---
         st.write('All set pieces')
@@ -2716,8 +2716,9 @@ def Dashboard():
             'Goals_diff':'sum'
         }).reset_index().rename(columns={'321.0':'xG'})
 
-        Freekicks = Freekicks.sort_values(by='xG',ascending=False)
+        Freekicks = Freekicks.sort_values(by='Goals_diff',ascending=False)
         st.dataframe(Freekicks,hide_index=True)
+        st.write('Corners')
         Corners = df_set_pieces[df_set_pieces['set_piece_type'] == 'corner']
         Corners_goals = Corners[Corners['typeId'] == 16].groupby(['team_name','label']).size().reset_index(name='Goals')
 
@@ -2740,7 +2741,7 @@ def Dashboard():
             'Goals_diff':'sum'
         }).reset_index().rename(columns={'321.0':'xG'})
 
-        Corners = Corners.sort_values(by='xG',ascending=False)
+        Corners = Corners.sort_values(by='Goals_diff',ascending=False)
         st.dataframe(Corners,hide_index=True)
         st.write('Throw ins')
         Throw_ins = df_set_pieces[df_set_pieces['set_piece_type'] == 'throw_in']
@@ -2765,7 +2766,7 @@ def Dashboard():
             'Goals_diff':'sum'
         }).reset_index().rename(columns={'321.0':'xG'})
 
-        Throw_ins = Throw_ins.sort_values(by='xG',ascending=False)
+        Throw_ins = Throw_ins.sort_values(by='Goals_diff',ascending=False)
         st.dataframe(Throw_ins,hide_index=True)
 
     Data_types = {
