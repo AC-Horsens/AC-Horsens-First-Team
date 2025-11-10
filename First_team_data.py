@@ -1129,16 +1129,14 @@ def plot_heatmap_location(data):
     pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot')
     st.pyplot(fig)
 
-def plot_avg_positions_on_ball(df, phase, selected_team):
-    color_map = {
-        'AaB': 'red', 'Hvidovre': 'red',
-        'Aarhus_Fremad': 'black', 'Hobro': 'yellow', 'Horsens': 'yellow',
-        'B_93': 'white', 'Kolding': 'white',
-        'Esbjerg': 'blue', 'Middelfart': 'blue', 'Lyngby': 'blue',
-        'HB_Køge': 'black', 'Hillerød': 'orange'
-    }
-
-    team_color = color_map.get(selected_team, 'gray')  # selected team's color
+def plot_avg_positions_on_ball(df, phase, team_colors):
+    """
+    Plots average on-ball positions for both teams across time bins.
+    Args:
+        df: DataFrame containing ['label', 'time_bin', 'team', 'x', 'y', 'player_name', 'position']
+        phase: str, e.g. 'Build-up', 'Final third', etc.
+        team_colors: dict like {'home': 'yellow', 'away': 'red'}
+    """
     pitch = VerticalPitch(
         pitch_type='secondspectrum',
         pitch_length=105,
@@ -1152,35 +1150,42 @@ def plot_avg_positions_on_ball(df, phase, selected_team):
         time_bins = sorted(match_df['time_bin'].unique())
 
         rows, cols = 2, 3
-        pages = math.ceil(len(time_bins) / (rows * cols))
+        total_bins = len(time_bins)
+        pages = math.ceil(total_bins / (rows * cols))
 
         for page in range(pages):
+            start = page * rows * cols
+            end = start + (rows * cols)
+            current_bins = time_bins[start:end]
+
             fig, axes = plt.subplots(rows, cols, figsize=(20, 11), constrained_layout=True)
             axes = axes.flatten()
 
-            bins_page = time_bins[page * rows * cols : (page + 1) * rows * cols]
-
-            for i, time_bin in enumerate(bins_page):
+            for i, time_bin in enumerate(current_bins):
                 ax = axes[i]
                 pitch.draw(ax=ax)
 
                 subset = match_df[match_df['time_bin'] == time_bin]
 
-                pitch.scatter(
-                    subset['x'], subset['y'],
-                    ax=ax,
-                    color=team_color,
-                    s=70,
-                    zorder=2
-                )
+                # 👇 Plot both teams with different colors
+                for team in ['home', 'away']:
+                    team_subset = subset[subset['team'] == team]
+                    color = team_colors.get(team, 'gray')
+                    pitch.scatter(
+                        x=team_subset['x'],
+                        y=team_subset['y'],
+                        ax=ax,
+                        color=color,
+                        s=70,
+                        zorder=2
+                    )
 
+                # Annotate players (name + position)
                 for _, row in subset.iterrows():
-                    # Annotate both player name and position
-                    player_position = f"{row['position']}"  # Get the player's position from the 'position' column
-                    player_info = f"{row['player_name']} ({player_position})"  # Combine name and position
+                    player_info = f"{row['player_name']} ({row['position']})"
                     pitch.annotate(
                         player_info,
-                        (row['x'], row['y']),
+                        xy=(row['x'], row['y']),
                         ax=ax,
                         color='black',
                         fontsize=6,
@@ -1197,7 +1202,7 @@ def plot_avg_positions_on_ball(df, phase, selected_team):
             for j in range(i + 1, len(axes)):
                 axes[j].axis('off')
 
-            fig.suptitle(f"{match} – {phase}", fontsize=14)
+            fig.suptitle(f"{match} – {phase} (On Ball)", fontsize=14)
             st.pyplot(fig)
 
 def plot_avg_positions_off_ball(df, phase, team_colors):
