@@ -70,6 +70,7 @@ merged_df['Starting_11_wins'] = merged_df.apply(
 merged_df['Subbed_in_wins'] = merged_df.apply(
     lambda row: 1 if row['Subbed_in'] > 0 and row['wins'] == True else 0, axis=1
 )
+merged_df = merged_df.sort_values(by=['playerName','date'],ascending=True)
 st.dataframe(merged_df,hide_index=True)
 # Print the filtered dataframe
 final_df = (
