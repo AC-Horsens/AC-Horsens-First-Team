@@ -3030,6 +3030,22 @@ def Opposition_analysis():
     matchstats_df['Crosses'] = matchstats_df['totalCrossNocorner'] / matchstats_df['matches']
     matchstats_df['Cross accuracy %'] = (matchstats_df['accurateCrossNocorner'] / matchstats_df['totalCrossNocorner'])*100
     matchstats_df['PPDA per match'] = matchstats_df['PPDA']
+    matchstats_df['Transition xG share %'] = (
+        matchstats_df['Transition xG per match'] / matchstats_df['xG per match']
+    ) * 100
+
+    matchstats_df['Set piece xG share %'] = (
+        matchstats_df['Set piece xG per match'] / matchstats_df['xG per match']
+    ) * 100
+
+    matchstats_df['Transition xG against share %'] = (
+        matchstats_df['Transition xG against per match'] / matchstats_df['xG against per match']
+    ) * 100
+
+    matchstats_df['Set piece xG against share %'] = (
+        matchstats_df['Set piece xG against per match'] / matchstats_df['xG against per match']
+    ) * 100
+
     matchstats_df['team_name'] = matchstats_df['team_name'].str.replace(' ', '_')
     matchstats_df = matchstats_df.round(2)
     matchstats_df['duel_win_%'] = np.where(
@@ -3140,8 +3156,12 @@ def Opposition_analysis():
         'xG against per match',
         'Transition xG per match',
         'Transition xG against per match',
+        'Transition xG share %'
+        'Transition xG against share %'
         'Set piece xG per match',
         'Set piece xG against per match',
+        'Set piece xG share %'
+        'Set piece xG against share %'
         'Duels per match',
         'duel_win_%',
         'Passes per game',
