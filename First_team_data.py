@@ -3156,12 +3156,12 @@ def Opposition_analysis():
         'xG against per match',
         'Transition xG per match',
         'Transition xG against per match',
-        'Transition xG share %'
+        'Transition xG share %',
         'Transition xG against share %'
         'Set piece xG per match',
         'Set piece xG against per match',
-        'Set piece xG share %'
-        'Set piece xG against share %'
+        'Set piece xG share %',
+        'Set piece xG against share %',
         'Duels per match',
         'duel_win_%',
         'Passes per game',
