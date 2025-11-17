@@ -3157,7 +3157,7 @@ def Opposition_analysis():
         'Transition xG per match',
         'Transition xG against per match',
         'Transition xG share %',
-        'Transition xG against share %'
+        'Transition xG against share %',
         'Set piece xG per match',
         'Set piece xG against per match',
         'Set piece xG share %',
