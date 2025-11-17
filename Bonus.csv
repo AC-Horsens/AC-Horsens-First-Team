@@ -218,66 +218,46 @@
 2448,2025-10-03,Horsens vs Hobro,J. Madsen,Substitute,21
 2449,2025-10-03,Horsens vs Hobro,F. Sene,Substitute,5
 2450,2025-10-03,Horsens vs Hobro,D. Smarsch,Substitute,NaN
-3008,2025-09-27,Hillerød vs Horsens,M. Delač,Goalkeeper,90
-3009,2025-09-27,Hillerød vs Horsens,C. Tapé,Defender,90
-3010,2025-09-27,Hillerød vs Horsens,V. Pálsson,Defender,90
-3011,2025-09-27,Hillerød vs Horsens,S. Hausner,Defender,73
-3012,2025-09-27,Hillerød vs Horsens,I. Miličević,Midfielder,90
-3013,2025-09-27,Hillerød vs Horsens,A. Herdonsson,Midfielder,90
-3014,2025-09-27,Hillerød vs Horsens,A. Moro,Midfielder,84
-3015,2025-09-27,Hillerød vs Horsens,A. Saine,Midfielder,90
-3016,2025-09-27,Hillerød vs Horsens,K. Kirkegaard,Attacking Midfielder,84
-3017,2025-09-27,Hillerød vs Horsens,F. Brandhof,Attacking Midfielder,67
-3018,2025-09-27,Hillerød vs Horsens,F. Sene,Striker,67
-3019,2025-09-27,Hillerød vs Horsens,J. Batigi,Substitute,6
-3020,2025-09-27,Hillerød vs Horsens,R. Baturina,Substitute,23
-3021,2025-09-27,Hillerød vs Horsens,S. Doua,Substitute,NaN
-3022,2025-09-27,Hillerød vs Horsens,O. Kolskogen,Substitute,17
-3023,2025-09-27,Hillerød vs Horsens,A. Ludwig,Substitute,NaN
-3024,2025-09-27,Hillerød vs Horsens,K. Lusavec,Substitute,6
-3025,2025-09-27,Hillerød vs Horsens,J. Madsen,Substitute,NaN
-3026,2025-09-27,Hillerød vs Horsens,S. Pingel,Substitute,23
-3027,2025-09-27,Hillerød vs Horsens,D. Smarsch,Substitute,NaN
-3286,2025-10-24,B 93 vs Horsens,M. Delač,Goalkeeper,90
-3287,2025-10-24,B 93 vs Horsens,V. Pálsson,Defender,90
-3288,2025-10-24,B 93 vs Horsens,O. Kolskogen,Defender,90
-3289,2025-10-24,B 93 vs Horsens,S. Hausner,Defender,65
-3290,2025-10-24,B 93 vs Horsens,I. Miličević,Midfielder,90
-3291,2025-10-24,B 93 vs Horsens,P. Olsen,Midfielder,90
-3292,2025-10-24,B 93 vs Horsens,A. Moro,Midfielder,58
-3293,2025-10-24,B 93 vs Horsens,A. Saine,Midfielder,90
-3294,2025-10-24,B 93 vs Horsens,A. Herdonsson,Attacking Midfielder,45
-3295,2025-10-24,B 93 vs Horsens,F. Brandhof,Attacking Midfielder,82
-3296,2025-10-24,B 93 vs Horsens,R. Baturina,Striker,58
-3297,2025-10-24,B 93 vs Horsens,S. Doua,Substitute,25
-3298,2025-10-24,B 93 vs Horsens,K. Kirkegaard,Substitute,45
-3299,2025-10-24,B 93 vs Horsens,A. Ludwig,Substitute,NaN
-3300,2025-10-24,B 93 vs Horsens,K. Lusavec,Substitute,32
-3301,2025-10-24,B 93 vs Horsens,J. Madsen,Substitute,NaN
-3302,2025-10-24,B 93 vs Horsens,Y. Ouorou,Substitute,8
-3303,2025-10-24,B 93 vs Horsens,S. Pingel,Substitute,32
-3304,2025-10-24,B 93 vs Horsens,F. Sene,Substitute,NaN
-3305,2025-10-24,B 93 vs Horsens,D. Smarsch,Substitute,NaN
-3406,2025-11-07,Kolding vs Horsens,M. Delač,Goalkeeper,90
-3407,2025-11-07,Kolding vs Horsens,C. Tapé,Defender,88
-3408,2025-11-07,Kolding vs Horsens,V. Pálsson,Defender,90
-3409,2025-11-07,Kolding vs Horsens,S. Hausner,Defender,90
-3410,2025-11-07,Kolding vs Horsens,J. Madsen,Midfielder,90
-3411,2025-11-07,Kolding vs Horsens,P. Olsen,Midfielder,90
-3412,2025-11-07,Kolding vs Horsens,A. Moro,Midfielder,26
-3413,2025-11-07,Kolding vs Horsens,A. Saine,Midfielder,74
-3414,2025-11-07,Kolding vs Horsens,F. Brandhof,Attacking Midfielder,90
-3415,2025-11-07,Kolding vs Horsens,K. Kirkegaard,Striker,74
-3416,2025-11-07,Kolding vs Horsens,R. Baturina,Striker,74
-3417,2025-11-07,Kolding vs Horsens,A. Bruus,Substitute,16
-3418,2025-11-07,Kolding vs Horsens,S. Doua,Substitute,NaN
-3419,2025-11-07,Kolding vs Horsens,A. Herdonsson,Substitute,64
-3420,2025-11-07,Kolding vs Horsens,A. Ludwig,Substitute,2
-3421,2025-11-07,Kolding vs Horsens,K. Lusavec,Substitute,NaN
-3422,2025-11-07,Kolding vs Horsens,Y. Ouorou,Substitute,16
-3423,2025-11-07,Kolding vs Horsens,S. Pingel,Substitute,16
-3424,2025-11-07,Kolding vs Horsens,F. Sene,Substitute,NaN
-3425,2025-11-07,Kolding vs Horsens,D. Smarsch,Substitute,NaN
+2968,2025-09-27,Hillerød vs Horsens,M. Delač,Goalkeeper,90
+2969,2025-09-27,Hillerød vs Horsens,C. Tapé,Defender,90
+2970,2025-09-27,Hillerød vs Horsens,V. Pálsson,Defender,90
+2971,2025-09-27,Hillerød vs Horsens,S. Hausner,Defender,73
+2972,2025-09-27,Hillerød vs Horsens,I. Miličević,Midfielder,90
+2973,2025-09-27,Hillerød vs Horsens,A. Herdonsson,Midfielder,90
+2974,2025-09-27,Hillerød vs Horsens,A. Moro,Midfielder,84
+2975,2025-09-27,Hillerød vs Horsens,A. Saine,Midfielder,90
+2976,2025-09-27,Hillerød vs Horsens,K. Kirkegaard,Attacking Midfielder,84
+2977,2025-09-27,Hillerød vs Horsens,F. Brandhof,Attacking Midfielder,67
+2978,2025-09-27,Hillerød vs Horsens,F. Sene,Striker,67
+2979,2025-09-27,Hillerød vs Horsens,J. Batigi,Substitute,6
+2980,2025-09-27,Hillerød vs Horsens,R. Baturina,Substitute,23
+2981,2025-09-27,Hillerød vs Horsens,S. Doua,Substitute,NaN
+2982,2025-09-27,Hillerød vs Horsens,O. Kolskogen,Substitute,17
+2983,2025-09-27,Hillerød vs Horsens,A. Ludwig,Substitute,NaN
+2984,2025-09-27,Hillerød vs Horsens,K. Lusavec,Substitute,6
+2985,2025-09-27,Hillerød vs Horsens,J. Madsen,Substitute,NaN
+2986,2025-09-27,Hillerød vs Horsens,S. Pingel,Substitute,23
+2987,2025-09-27,Hillerød vs Horsens,D. Smarsch,Substitute,NaN
+3088,2025-10-18,Middelfart vs Horsens,M. Delač,Goalkeeper,90
+3089,2025-10-18,Middelfart vs Horsens,V. Pálsson,Defender,90
+3090,2025-10-18,Middelfart vs Horsens,O. Kolskogen,Defender,90
+3091,2025-10-18,Middelfart vs Horsens,S. Hausner,Defender,90
+3092,2025-10-18,Middelfart vs Horsens,I. Miličević,Midfielder,75
+3093,2025-10-18,Middelfart vs Horsens,P. Olsen,Midfielder,90
+3094,2025-10-18,Middelfart vs Horsens,A. Moro,Midfielder,60
+3095,2025-10-18,Middelfart vs Horsens,A. Saine,Midfielder,61
+3096,2025-10-18,Middelfart vs Horsens,K. Kirkegaard,Attacking Midfielder,84
+3097,2025-10-18,Middelfart vs Horsens,A. Herdonsson,Attacking Midfielder,90
+3098,2025-10-18,Middelfart vs Horsens,R. Baturina,Striker,60
+3099,2025-10-18,Middelfart vs Horsens,F. Brandhof,Substitute,30
+3100,2025-10-18,Middelfart vs Horsens,S. Doua,Substitute,6
+3101,2025-10-18,Middelfart vs Horsens,A. Ludwig,Substitute,NaN
+3102,2025-10-18,Middelfart vs Horsens,K. Lusavec,Substitute,30
+3103,2025-10-18,Middelfart vs Horsens,J. Madsen,Substitute,15
+3104,2025-10-18,Middelfart vs Horsens,Y. Ouorou,Substitute,NaN
+3105,2025-10-18,Middelfart vs Horsens,S. Pingel,Substitute,29
+3106,2025-10-18,Middelfart vs Horsens,F. Sene,Substitute,NaN
+3107,2025-10-18,Middelfart vs Horsens,D. Smarsch,Substitute,NaN
 3426,2025-10-31,Horsens vs HB Køge,M. Delač,Goalkeeper,90
 3427,2025-10-31,Horsens vs HB Køge,C. Tapé,Defender,90
 3428,2025-10-31,Horsens vs HB Køge,O. Kolskogen,Defender,49
@@ -298,23 +278,43 @@
 3443,2025-10-31,Horsens vs HB Køge,V. Pálsson,Substitute,41
 3444,2025-10-31,Horsens vs HB Køge,F. Sene,Substitute,NaN
 3445,2025-10-31,Horsens vs HB Køge,D. Smarsch,Substitute,NaN
-3526,2025-10-18,Middelfart vs Horsens,M. Delač,Goalkeeper,90
-3527,2025-10-18,Middelfart vs Horsens,V. Pálsson,Defender,90
-3528,2025-10-18,Middelfart vs Horsens,O. Kolskogen,Defender,90
-3529,2025-10-18,Middelfart vs Horsens,S. Hausner,Defender,90
-3530,2025-10-18,Middelfart vs Horsens,I. Miličević,Midfielder,75
-3531,2025-10-18,Middelfart vs Horsens,P. Olsen,Midfielder,90
-3532,2025-10-18,Middelfart vs Horsens,A. Moro,Midfielder,60
-3533,2025-10-18,Middelfart vs Horsens,A. Saine,Midfielder,61
-3534,2025-10-18,Middelfart vs Horsens,K. Kirkegaard,Attacking Midfielder,84
-3535,2025-10-18,Middelfart vs Horsens,A. Herdonsson,Attacking Midfielder,90
-3536,2025-10-18,Middelfart vs Horsens,R. Baturina,Striker,60
-3537,2025-10-18,Middelfart vs Horsens,F. Brandhof,Substitute,30
-3538,2025-10-18,Middelfart vs Horsens,S. Doua,Substitute,6
-3539,2025-10-18,Middelfart vs Horsens,A. Ludwig,Substitute,NaN
-3540,2025-10-18,Middelfart vs Horsens,K. Lusavec,Substitute,30
-3541,2025-10-18,Middelfart vs Horsens,J. Madsen,Substitute,15
-3542,2025-10-18,Middelfart vs Horsens,Y. Ouorou,Substitute,NaN
-3543,2025-10-18,Middelfart vs Horsens,S. Pingel,Substitute,29
-3544,2025-10-18,Middelfart vs Horsens,F. Sene,Substitute,NaN
-3545,2025-10-18,Middelfart vs Horsens,D. Smarsch,Substitute,NaN
+3644,2025-10-24,B 93 vs Horsens,M. Delač,Goalkeeper,90
+3645,2025-10-24,B 93 vs Horsens,V. Pálsson,Defender,90
+3646,2025-10-24,B 93 vs Horsens,O. Kolskogen,Defender,90
+3647,2025-10-24,B 93 vs Horsens,S. Hausner,Defender,65
+3648,2025-10-24,B 93 vs Horsens,I. Miličević,Midfielder,90
+3649,2025-10-24,B 93 vs Horsens,P. Olsen,Midfielder,90
+3650,2025-10-24,B 93 vs Horsens,A. Moro,Midfielder,58
+3651,2025-10-24,B 93 vs Horsens,A. Saine,Midfielder,90
+3652,2025-10-24,B 93 vs Horsens,A. Herdonsson,Attacking Midfielder,45
+3653,2025-10-24,B 93 vs Horsens,F. Brandhof,Attacking Midfielder,82
+3654,2025-10-24,B 93 vs Horsens,R. Baturina,Striker,58
+3655,2025-10-24,B 93 vs Horsens,S. Doua,Substitute,25
+3656,2025-10-24,B 93 vs Horsens,K. Kirkegaard,Substitute,45
+3657,2025-10-24,B 93 vs Horsens,A. Ludwig,Substitute,NaN
+3658,2025-10-24,B 93 vs Horsens,K. Lusavec,Substitute,32
+3659,2025-10-24,B 93 vs Horsens,J. Madsen,Substitute,NaN
+3660,2025-10-24,B 93 vs Horsens,Y. Ouorou,Substitute,8
+3661,2025-10-24,B 93 vs Horsens,S. Pingel,Substitute,32
+3662,2025-10-24,B 93 vs Horsens,F. Sene,Substitute,NaN
+3663,2025-10-24,B 93 vs Horsens,D. Smarsch,Substitute,NaN
+3804,2025-11-07,Kolding vs Horsens,M. Delač,Goalkeeper,90
+3805,2025-11-07,Kolding vs Horsens,C. Tapé,Defender,88
+3806,2025-11-07,Kolding vs Horsens,V. Pálsson,Defender,90
+3807,2025-11-07,Kolding vs Horsens,S. Hausner,Defender,90
+3808,2025-11-07,Kolding vs Horsens,J. Madsen,Midfielder,90
+3809,2025-11-07,Kolding vs Horsens,P. Olsen,Midfielder,90
+3810,2025-11-07,Kolding vs Horsens,A. Moro,Midfielder,26
+3811,2025-11-07,Kolding vs Horsens,A. Saine,Midfielder,74
+3812,2025-11-07,Kolding vs Horsens,F. Brandhof,Attacking Midfielder,90
+3813,2025-11-07,Kolding vs Horsens,K. Kirkegaard,Striker,74
+3814,2025-11-07,Kolding vs Horsens,R. Baturina,Striker,74
+3815,2025-11-07,Kolding vs Horsens,A. Bruus,Substitute,16
+3816,2025-11-07,Kolding vs Horsens,S. Doua,Substitute,NaN
+3817,2025-11-07,Kolding vs Horsens,A. Herdonsson,Substitute,64
+3818,2025-11-07,Kolding vs Horsens,A. Ludwig,Substitute,2
+3819,2025-11-07,Kolding vs Horsens,K. Lusavec,Substitute,NaN
+3820,2025-11-07,Kolding vs Horsens,Y. Ouorou,Substitute,16
+3821,2025-11-07,Kolding vs Horsens,S. Pingel,Substitute,16
+3822,2025-11-07,Kolding vs Horsens,F. Sene,Substitute,NaN
+3823,2025-11-07,Kolding vs Horsens,D. Smarsch,Substitute,NaN
