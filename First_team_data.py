@@ -3266,7 +3266,7 @@ def Opposition_analysis():
         load_opponent_off_ball_sequences(selected_team)
     )
     color_map = {
-        'AaB': 'red', 'Hvidovre': 'red',
+        'AaB': 'navy', 'Hvidovre': 'red',
         'Aarhus_Fremad': 'black', 'Hobro': 'yellow', 'Horsens': 'yellow',
         'B_93': 'white', 'Kolding': 'white',
         'Esbjerg': 'blue', 'Middelfart': 'blue', 'Lyngby': 'blue',
