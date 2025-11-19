@@ -1,4 +1,312 @@
 playerName,playerId,contestantId,team_name,typeId,321,322,9,24,25,26,label,match_id,date
+M. Brajanac,4krwgfspxdgpq1pli11b04iga,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,15,0.1358308643102646,0.09684200584888458,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
+S. Andreasen,4qyfoq5fjiochtj89w426lm21,b2vft81kyjurzbmekvgrqwr64,Hobro,15,0.0588064007461071,0.1139908954501152,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
+O. Klitten,e19g5bz7s9wqcvj8mttztxi0a,b2vft81kyjurzbmekvgrqwr64,Hobro,15,0.47276729345321655,0.9837523698806763,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
+G. Bjerge,8uqsrzfe8mnhs8v3ii2v7b2tw,b2vft81kyjurzbmekvgrqwr64,Hobro,13,0.048652533441782,0.0,,NaN,true,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
+F. Dietz,ebd3uvtt54wkdsahc2127j02c,b2vft81kyjurzbmekvgrqwr64,Hobro,15,0.03182743489742279,0.3922940790653229,,true,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
+R. Gyamfi,efubck8twu1elbhlomltnjjtg,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,15,0.021754862740635872,0.0,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
+M. Brajanac,4krwgfspxdgpq1pli11b04iga,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,13,0.7332373857498169,0.0,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
+J. Kolawole,djm3hebvv79jo679zzd2b71g4,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,13,0.18258409202098846,0.0,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
+S. Andreasen,4qyfoq5fjiochtj89w426lm21,b2vft81kyjurzbmekvgrqwr64,Hobro,13,0.03332272917032242,0.0,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
+L. Vigen,8k4wwchytdstpn0yhrxd5nbv9,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,13,0.02804805524647236,0.0,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
+R. Gyamfi,efubck8twu1elbhlomltnjjtg,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,15,0.09399708360433578,0.08603258430957794,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
+S. Andreasen,4qyfoq5fjiochtj89w426lm21,b2vft81kyjurzbmekvgrqwr64,Hobro,15,0.3411504328250885,0.40447330474853516,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
+L. Vigen,8k4wwchytdstpn0yhrxd5nbv9,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,13,0.04019032046198845,0.0,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
+V. Rasmussen,dwuxps3jv2852642q000wep6,b2vft81kyjurzbmekvgrqwr64,Hobro,15,0.04694095626473427,0.0,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
+P. Tjørnelund,37mo55lynu3blqnb8k9ln8k16,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,13,0.032935768365859985,0.0,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
+M. Brajanac,4krwgfspxdgpq1pli11b04iga,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,15,0.1175461933016777,0.0,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
+M. Brajanac,4krwgfspxdgpq1pli11b04iga,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,15,0.017212681472301483,0.0,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
+J. Kolawole,djm3hebvv79jo679zzd2b71g4,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,15,0.01018470712006092,0.03560860455036163,,NaN,true,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
+S. Andreasen,4qyfoq5fjiochtj89w426lm21,b2vft81kyjurzbmekvgrqwr64,Hobro,15,0.12210562825202942,0.0,,NaN,NaN,true,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
+L. Klitten,ea2x4o6ufsqoz2zz7tqcnvo16,b2vft81kyjurzbmekvgrqwr64,Hobro,13,0.02320617437362671,0.0,,true,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
+J. Kolawole,djm3hebvv79jo679zzd2b71g4,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,15,0.17226289212703705,0.15197156369686127,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
+O. Klitten,e19g5bz7s9wqcvj8mttztxi0a,b2vft81kyjurzbmekvgrqwr64,Hobro,15,0.017064429819583893,0.17732547223567963,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
+R. Gyamfi,efubck8twu1elbhlomltnjjtg,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,16,0.3139037489891052,0.34721553325653076,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
+A. Skipper,aqc0qritba195wf770gyd1149,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,15,0.17471784353256226,0.0,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
+F. Dietz,ebd3uvtt54wkdsahc2127j02c,b2vft81kyjurzbmekvgrqwr64,Hobro,15,0.017766539007425308,0.018762586638331413,,true,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
+A. Skipper,aqc0qritba195wf770gyd1149,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,14,0.06382838636636734,0.0,,NaN,true,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
+M. Pedersen,9xub4z9b3bog8wqhn5yfihecp,b2vft81kyjurzbmekvgrqwr64,Hobro,15,0.03239654749631882,0.0,,NaN,NaN,true,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
+J. Ankersen,4mxciw9jsj9l437fd7bv78p91,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,13,0.02638443000614643,0.0,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
+M. Maden,15yli690oxmbr4dl1ksti2p9m,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,14,0.21605707705020905,0.0,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
+M. Bruhn,8gqvlydur0v4cpmz1ozqkejh0,b2vft81kyjurzbmekvgrqwr64,Hobro,16,0.2741767466068268,0.8454959988594055,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
+M. Maden,15yli690oxmbr4dl1ksti2p9m,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,13,0.08974223583936691,0.0,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
+A. Nørager,8ewvm6ux4yvpwgrzjkc1chqwa,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,13,0.0372614711523056,0.0,NaN,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
+R. Brodersen,14mwsmzsrmev2646t2gg22has,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,13,0.010918335989117622,0.0,NaN,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
+M. Olsen,4zpmxlmdfa5wx79cr0q14pfx1,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,15,0.04578215628862381,0.0,NaN,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
+C. Jørgensen,9fvf8z6p8ok0n5vu999ysfywa,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,15,0.020648138597607613,0.0445023849606514,NaN,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
+A. Gøthler,d2ukggo2v5jsw4pctznmaijo4,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.10062148422002792,0.0,NaN,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
+Mohamad Al Naser,abhfq12njxxutqjtb9zvcusyc,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,16,0.26440295577049255,0.8961460590362549,NaN,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
+M. Olsen,4zpmxlmdfa5wx79cr0q14pfx1,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,15,0.06551795452833176,0.17020055651664734,NaN,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
+A. Gøthler,d2ukggo2v5jsw4pctznmaijo4,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.48955151438713074,0.46751871705055237,NaN,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
+M. Jensen,619s1phj5bkgkug3aszc1y9cl,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.059641946107149124,0.08626273274421692,NaN,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
+C. Palm,b6l4m6bmqgil9bjjov4tnuivo,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,15,0.13164089620113373,0.0,NaN,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
+A. Gøthler,d2ukggo2v5jsw4pctznmaijo4,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,13,0.18016742169857025,0.0,NaN,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
+C. Tue Jensen,74m58jsznzu8l89b8h7rkh1bd,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.008763181045651436,0.03632006049156189,NaN,true,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
+C. Tue Jensen,74m58jsznzu8l89b8h7rkh1bd,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,13,0.0192182045429945,0.0,NaN,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
+C. Tue Jensen,74m58jsznzu8l89b8h7rkh1bd,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,13,0.01978110335767269,0.0,NaN,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
+C. Tue Jensen,74m58jsznzu8l89b8h7rkh1bd,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.013128368183970451,0.07269221544265747,NaN,NaN,true,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
+A. Gøthler,d2ukggo2v5jsw4pctznmaijo4,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,16,0.34785425662994385,0.9706057906150818,NaN,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
+C. Tue Jensen,74m58jsznzu8l89b8h7rkh1bd,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.02424098551273346,0.0,NaN,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
+L. Bust,6gmm4awyvlf9p7jr9dvnmp0tm,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,13,0.12673208117485046,0.0,NaN,true,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
+B. Alkhoudari,6orujbbswf771s9rv0dcd8kd0,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.012697619386017323,0.034078482538461685,NaN,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
+A. Nørager,8ewvm6ux4yvpwgrzjkc1chqwa,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,13,0.03422645479440689,0.0,NaN,NaN,true,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
+C. Palm,b6l4m6bmqgil9bjjov4tnuivo,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,13,0.02952977642416954,0.0,NaN,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
+A. Nørager,8ewvm6ux4yvpwgrzjkc1chqwa,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,16,0.7884,0.586936354637146,true,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
+A. Njai,f1ba9g771s0zeel0titcj3omi,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,15,0.052437759935855865,0.0,NaN,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
+A. Nørager,8ewvm6ux4yvpwgrzjkc1chqwa,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,13,0.010158417746424675,0.0,NaN,true,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
+V. Morozov,eh5vcpzxaze0ru5xdi1wbhoq2,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,15,0.11598619818687439,0.6079633831977844,NaN,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
+C. Palm,b6l4m6bmqgil9bjjov4tnuivo,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,15,0.03437544032931328,0.0,NaN,NaN,true,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
+N. Mouritsen,eyvv6b94feknnp1uew6n0ytat,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.04316967353224754,0.0,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
+C. Björk,x3ad9hfxts6jpfugy3kvq9d5,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.06395471841096878,0.0,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
+K. Grabovskis,3u184ybkonoa5ubxjzoy06ntg,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.04799678549170494,0.04577341675758362,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
+M. Wohlgemuth,e8vt8711wb40afht2v13omket,ajtb177oqwawkdwbqhldmq6mx,B 93,16,0.7884,0.7573322653770447,true,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
+N. Mouritsen,eyvv6b94feknnp1uew6n0ytat,ajtb177oqwawkdwbqhldmq6mx,B 93,13,0.036395926028490067,0.0,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
+K. John,5vrsflxiv2dgfa8199a2qxsve,36g6ifzjliec1jqnbtf7yesme,AaB,13,0.15762180089950562,0.0,NaN,NaN,true,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
+K. John,5vrsflxiv2dgfa8199a2qxsve,36g6ifzjliec1jqnbtf7yesme,AaB,15,0.08533110469579697,0.1988709270954132,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
+V. Møller,5521epytthhw9afm2r3jn3384,36g6ifzjliec1jqnbtf7yesme,AaB,15,0.058289784938097,0.0,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
+N. Arnórsson,brinkgys7026490q3ixx6h9uc,36g6ifzjliec1jqnbtf7yesme,AaB,15,0.03979458287358284,0.0,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
+K. John,5vrsflxiv2dgfa8199a2qxsve,36g6ifzjliec1jqnbtf7yesme,AaB,13,0.023953238502144814,0.0,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
+M. Bomholt,ejixz16616b7krftxyzv9yiac,36g6ifzjliec1jqnbtf7yesme,AaB,15,0.06933815032243729,0.0,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
+B. Hansen,9yb0exf35kl3avhdnlhv23glx,36g6ifzjliec1jqnbtf7yesme,AaB,13,0.04659963771700859,0.0,NaN,NaN,true,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
+O. Ross,5lz41celw55rz3zh8pohclw5w,36g6ifzjliec1jqnbtf7yesme,AaB,15,0.1735561341047287,0.7445159554481506,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
+K. Grabovskis,3u184ybkonoa5ubxjzoy06ntg,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.05240299180150032,0.047666557133197784,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
+F. Isaki,86mx27krl6c613x6e3t9g3cic,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.03459874168038368,0.0,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
+N. Mouritsen,eyvv6b94feknnp1uew6n0ytat,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.04221635311841965,0.026814358308911324,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
+M. Bomholt,ejixz16616b7krftxyzv9yiac,36g6ifzjliec1jqnbtf7yesme,AaB,15,0.04471210390329361,0.0,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
+O. Ross,5lz41celw55rz3zh8pohclw5w,36g6ifzjliec1jqnbtf7yesme,AaB,13,0.04471210390329361,0.0,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
+N. Arnórsson,brinkgys7026490q3ixx6h9uc,36g6ifzjliec1jqnbtf7yesme,AaB,15,0.04679517075419426,0.05645555630326271,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
+F. Isaki,86mx27krl6c613x6e3t9g3cic,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.05887538194656372,0.0,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
+M. Bomholt,ejixz16616b7krftxyzv9yiac,36g6ifzjliec1jqnbtf7yesme,AaB,15,0.055968355387449265,0.0,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
+M. Wohlgemuth,e8vt8711wb40afht2v13omket,ajtb177oqwawkdwbqhldmq6mx,B 93,16,0.7884,0.8471819162368774,true,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
+O. Addo,kqj7nh6pqmqbt0abyyu0fcpg,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.07407847046852112,0.0,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
+N. Helenius,rv6r0bwbl75er38wklyfpsr9,36g6ifzjliec1jqnbtf7yesme,AaB,16,0.404354065656662,0.5443444848060608,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
+L. Henriksen,6g671k5lvgoo2bgub2516q1w4,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.09088221192359924,0.0,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
+K. John,5vrsflxiv2dgfa8199a2qxsve,36g6ifzjliec1jqnbtf7yesme,AaB,15,0.07174663245677948,0.33362051844596863,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
+M. Kaasa,e0j0uakuzduvis9wqsocngwrt,36g6ifzjliec1jqnbtf7yesme,AaB,15,0.019726909697055817,0.0,NaN,true,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
+S. Leschly,ef2hrwtfvwripjcioi42zkowk,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.1779453605413437,0.0,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
+O. Thomassen,a8ccmy6j1xj2yvx324vws81lg,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.26166361570358276,0.20838895440101624,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
+N. Arnórsson,brinkgys7026490q3ixx6h9uc,36g6ifzjliec1jqnbtf7yesme,AaB,15,0.03454844653606415,0.0,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
+M. Kaasa,e0j0uakuzduvis9wqsocngwrt,36g6ifzjliec1jqnbtf7yesme,AaB,15,0.019277632236480713,0.0457555428147316,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
+N. Helenius,rv6r0bwbl75er38wklyfpsr9,36g6ifzjliec1jqnbtf7yesme,AaB,16,0.06731691211462021,0.5550587773323059,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
+A. Maarup,cf6zq49y8v1ekw07e7yi3uac,36g6ifzjliec1jqnbtf7yesme,AaB,15,0.18192285299301147,0.0,NaN,NaN,true,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
+I. Miličević,9cg2dx19fx5be3zewtmx97e95,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.09791306406259537,0.08565380424261093,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
+F. Isaki,86mx27krl6c613x6e3t9g3cic,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.04856966808438301,0.0,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
+A. Herdonsson,9dh7cnu4uzbraeck0t5iqlj4k,a9vw7ikerpr4cuweeeka5aneg,Horsens,13,0.12970580160617828,0.0,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
+A. Herdonsson,9dh7cnu4uzbraeck0t5iqlj4k,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.02469606325030327,0.0,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
+N. Mouritsen,eyvv6b94feknnp1uew6n0ytat,ajtb177oqwawkdwbqhldmq6mx,B 93,14,0.014890736900269985,0.0,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
+C. Björk,x3ad9hfxts6jpfugy3kvq9d5,ajtb177oqwawkdwbqhldmq6mx,B 93,13,0.6161484122276306,0.0,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
+R. Baturina,asg0277qek5q1z0m43bs8y415,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.4310937225818634,0.21577924489974976,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
+R. Baturina,asg0277qek5q1z0m43bs8y415,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.24792705476284027,0.21530959010124207,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
+A. Saine,7353ysa16qgg30b9z5qiagys4,a9vw7ikerpr4cuweeeka5aneg,Horsens,13,0.08408179134130478,0.0,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
+K. Grabovskis,3u184ybkonoa5ubxjzoy06ntg,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.15565654635429382,0.06815536320209503,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
+A. Saine,7353ysa16qgg30b9z5qiagys4,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.10833034664392471,0.19472022354602814,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
+P. Olsen,8jotzm26md7pzdy2gn474chqt,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.040301088243722916,0.0,,NaN,true,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
+A. Saine,7353ysa16qgg30b9z5qiagys4,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.08193424344062805,0.0,,NaN,true,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
+F. Brandhof,ca1b5707pdpx0ucug40ggnahh,a9vw7ikerpr4cuweeeka5aneg,Horsens,13,0.2637757658958435,0.0,,NaN,true,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
+R. Baturina,asg0277qek5q1z0m43bs8y415,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.06498999148607254,0.16460485756397247,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
+A. Saine,7353ysa16qgg30b9z5qiagys4,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.07100305706262589,0.0,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
+N. Mouritsen,eyvv6b94feknnp1uew6n0ytat,ajtb177oqwawkdwbqhldmq6mx,B 93,16,0.5525317192077637,0.9553288817405701,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
+R. Arabaci,7h02v4ymnko5fh01iylbh34es,ajtb177oqwawkdwbqhldmq6mx,B 93,13,0.019912580028176308,0.0,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
+F. Brandhof,ca1b5707pdpx0ucug40ggnahh,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.1306176334619522,0.0,,NaN,true,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
+N. Mouritsen,eyvv6b94feknnp1uew6n0ytat,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.027933649718761444,0.0,,true,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
+K. Kirkegaard,3ylgelxr6ssp42hidfnchqp2i,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.03091486357152462,0.04685401916503906,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
+P. Olsen,8jotzm26md7pzdy2gn474chqt,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.022300606593489647,0.03952595219016075,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
+S. Pingel,3epwf56ozg73hueacwmckk0r9,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.02354457974433899,0.0,,NaN,true,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
+I. Miličević,9cg2dx19fx5be3zewtmx97e95,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.09014513343572617,0.0,,NaN,NaN,true,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
+R. Arabaci,7h02v4ymnko5fh01iylbh34es,ajtb177oqwawkdwbqhldmq6mx,B 93,13,0.039441220462322235,0.0,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
+S. Pingel,3epwf56ozg73hueacwmckk0r9,a9vw7ikerpr4cuweeeka5aneg,Horsens,13,0.03199603036046028,0.0,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
+O. Addo,kqj7nh6pqmqbt0abyyu0fcpg,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.057467006146907806,0.09336227923631668,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
+S. Pingel,3epwf56ozg73hueacwmckk0r9,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.028322484344244003,0.0,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
+P. Olsen,8jotzm26md7pzdy2gn474chqt,a9vw7ikerpr4cuweeeka5aneg,Horsens,13,0.17143963277339935,0.0,,NaN,NaN,true,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
+O. Addo,kqj7nh6pqmqbt0abyyu0fcpg,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.1602482795715332,0.23805862665176392,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
+S. Doua,6qko3f8w2ap9ynbuq2g55i5n8,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.0375409796833992,0.0,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
+V. Pálsson,4braldrfw3y7g030lctguuuol,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.04103212058544159,0.0,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
+I. Miličević,9cg2dx19fx5be3zewtmx97e95,a9vw7ikerpr4cuweeeka5aneg,Horsens,13,0.0073000057600438595,0.0,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
+N. Mouritsen,eyvv6b94feknnp1uew6n0ytat,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.033932123333215714,0.0,,NaN,NaN,true,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
+A. Ahmad,4csz412vb3lquessbnf999ct0,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.05804360657930374,0.0,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
+F. Isaki,86mx27krl6c613x6e3t9g3cic,ajtb177oqwawkdwbqhldmq6mx,B 93,13,0.048325102776288986,0.0,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
+I. Miličević,9cg2dx19fx5be3zewtmx97e95,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.012288128957152367,0.0,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
+O. Kolskogen,4lxxyqy78jkglhv2w6crzcnsa,a9vw7ikerpr4cuweeeka5aneg,Horsens,13,0.0630708783864975,0.0,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
+A. Ahmad,4csz412vb3lquessbnf999ct0,ajtb177oqwawkdwbqhldmq6mx,B 93,13,0.04719996079802513,0.0,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
+M. Hansen,945m1ao4o1wvojbkckvdtjre2,eq2jaitwsokibzx3wy7kb5gqp,Middelfart,13,0.12040626257658005,0.0,,NaN,NaN,true,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
+M. Kristensen,1znq0m3xloag4frfu715yy8lw,eq2jaitwsokibzx3wy7kb5gqp,Middelfart,13,0.06766343116760254,0.0,,NaN,NaN,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
+C. Palm,b6l4m6bmqgil9bjjov4tnuivo,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,15,0.16679203510284424,0.0,,NaN,NaN,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
+M. Hansen,945m1ao4o1wvojbkckvdtjre2,eq2jaitwsokibzx3wy7kb5gqp,Middelfart,15,0.03919567912817001,0.0,,NaN,NaN,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
+I. Tånnander,6bajck5osvj7trnwt2a5mc3dg,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,15,0.059581514447927475,0.0,,NaN,NaN,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
+I. Tånnander,6bajck5osvj7trnwt2a5mc3dg,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,13,0.01657404750585556,0.0,,NaN,true,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
+I. Tånnander,6bajck5osvj7trnwt2a5mc3dg,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,13,0.3881770372390747,0.0,,NaN,NaN,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
+J. Linnet,19gornjqd7f2ugeg8mg0gs4q,eq2jaitwsokibzx3wy7kb5gqp,Middelfart,15,0.2759167551994324,0.0,,NaN,NaN,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
+Jesús Alfaro,3w7q1ecmus6kp32gxevgiqj11,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,15,0.03428439423441887,0.0,,NaN,NaN,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
+I. Tånnander,6bajck5osvj7trnwt2a5mc3dg,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,15,0.03367583826184273,0.0,,NaN,true,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
+L. Jensen,139g7ilwvcpl519v3scnweg2d,eq2jaitwsokibzx3wy7kb5gqp,Middelfart,13,0.03140677511692047,0.0,,NaN,true,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
+I. Tånnander,6bajck5osvj7trnwt2a5mc3dg,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,13,0.14199921488761902,0.0,,NaN,NaN,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
+J. Vadstrup,b55jtl3ixolidn6cvc4t90efo,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,13,0.08077563345432281,0.0,,true,NaN,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
+J. Villemoes,3yt6hqo1ayr093vpohg4kwufo,eq2jaitwsokibzx3wy7kb5gqp,Middelfart,13,0.019497841596603394,0.0,,NaN,true,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
+A. Akalé,d0ozf1itum1cvg6704dch7uac,eq2jaitwsokibzx3wy7kb5gqp,Middelfart,13,0.05050462484359741,0.0,,NaN,true,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
+C. Palm,b6l4m6bmqgil9bjjov4tnuivo,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,16,0.07626014202833176,0.30349865555763245,,NaN,true,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
+I. Tånnander,6bajck5osvj7trnwt2a5mc3dg,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,15,0.043814610689878464,0.0,,NaN,true,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
+C. Jørgensen,9fvf8z6p8ok0n5vu999ysfywa,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,13,0.09138691425323486,0.0,,NaN,NaN,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
+N. Perry,f3xbdt2opb6n1y13cqvug6zft,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,15,0.05489535257220268,0.0,,NaN,NaN,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
+M. Hansen,945m1ao4o1wvojbkckvdtjre2,eq2jaitwsokibzx3wy7kb5gqp,Middelfart,15,0.06924397498369217,0.0,,NaN,NaN,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
+V. Morozov,eh5vcpzxaze0ru5xdi1wbhoq2,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,13,0.06216278299689293,0.0,,NaN,NaN,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
+A. Akalé,d0ozf1itum1cvg6704dch7uac,eq2jaitwsokibzx3wy7kb5gqp,Middelfart,15,0.06242947652935982,0.0,NaN,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
+A. Akalé,d0ozf1itum1cvg6704dch7uac,eq2jaitwsokibzx3wy7kb5gqp,Middelfart,16,0.27850431203842163,0.5211928486824036,NaN,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
+M. Brajanac,4krwgfspxdgpq1pli11b04iga,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,15,0.1994819939136505,0.08266401290893555,NaN,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
+A. Akalé,d0ozf1itum1cvg6704dch7uac,eq2jaitwsokibzx3wy7kb5gqp,Middelfart,13,0.48219048976898193,0.0,NaN,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
+M. Maden,15yli690oxmbr4dl1ksti2p9m,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,15,0.16173973679542542,0.0,NaN,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
+P. Tjørnelund,37mo55lynu3blqnb8k9ln8k16,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,16,0.24230211973190308,0.8401120901107788,NaN,,true,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
+S. Eg Pedersen,bzwk6jaak6q2ak9u6o75v6ihg,eq2jaitwsokibzx3wy7kb5gqp,Middelfart,15,0.06040746718645096,0.0,NaN,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
+A. Troelsen,bmkwmf5f2ssnw2cq7uga7yd5g,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,15,0.03388763964176178,0.11572204530239105,NaN,,NaN,true,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
+M. Greve,ef7l91pb4w6yk7lijxjxlievp,eq2jaitwsokibzx3wy7kb5gqp,Middelfart,13,0.011169901117682457,0.0,NaN,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
+M. Brajanac,4krwgfspxdgpq1pli11b04iga,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,16,0.3213048577308655,0.8401705622673035,NaN,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
+R. Gyamfi,efubck8twu1elbhlomltnjjtg,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,15,0.027239413931965828,0.11286425590515137,NaN,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
+M. Hansen,945m1ao4o1wvojbkckvdtjre2,eq2jaitwsokibzx3wy7kb5gqp,Middelfart,15,0.04222822189331055,0.19319544732570648,NaN,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
+M. Maden,15yli690oxmbr4dl1ksti2p9m,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,13,0.08506511896848679,0.0,NaN,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
+A. Lausen,ate1ymumg2iwzn8uyyf3ts222,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,15,0.033408958464860916,0.06141512095928192,NaN,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
+L. Jensen,139g7ilwvcpl519v3scnweg2d,eq2jaitwsokibzx3wy7kb5gqp,Middelfart,16,0.027829093858599663,0.1544927954673767,NaN,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
+M. Brajanac,4krwgfspxdgpq1pli11b04iga,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,16,0.7884,0.8490785360336304,true,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
+J. Linnet,19gornjqd7f2ugeg8mg0gs4q,eq2jaitwsokibzx3wy7kb5gqp,Middelfart,15,0.10179569572210312,0.0,NaN,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
+M. Brajanac,4krwgfspxdgpq1pli11b04iga,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,16,0.7884,0.6233072280883789,true,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
+A. Akalé,d0ozf1itum1cvg6704dch7uac,eq2jaitwsokibzx3wy7kb5gqp,Middelfart,15,0.026521092280745506,0.0,NaN,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
+M. Brajanac,4krwgfspxdgpq1pli11b04iga,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,15,0.4289616644382477,0.2655448615550995,NaN,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
+J. Ankersen,4mxciw9jsj9l437fd7bv78p91,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,15,0.8788819909095764,0.0,NaN,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
+A. Lausen,ate1ymumg2iwzn8uyyf3ts222,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,15,0.07894133031368256,0.0,NaN,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
+M. Maden,15yli690oxmbr4dl1ksti2p9m,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,15,0.2129756063222885,0.28649240732192993,NaN,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
+K. Andersen,f1mn7hl9ythw3bblz9lguqtjo,bfwi3pjyg3whbn0tpsz19e8hq,Aarhus Fremad,14,0.15806713700294495,0.0,,NaN,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
+E. Egerton,8rqctff92ui8fanzbk6skyyac,bfwi3pjyg3whbn0tpsz19e8hq,Aarhus Fremad,15,0.10408003628253937,0.1297617256641388,,NaN,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
+V. Rasmussen,dwuxps3jv2852642q000wep6,b2vft81kyjurzbmekvgrqwr64,Hobro,13,0.018592800945043564,0.0,,NaN,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
+L. Callø,9delpquqv81o7ftrgefb0wpp0,bfwi3pjyg3whbn0tpsz19e8hq,Aarhus Fremad,13,0.015353715978562832,0.0,,NaN,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
+K. Andersen,f1mn7hl9ythw3bblz9lguqtjo,bfwi3pjyg3whbn0tpsz19e8hq,Aarhus Fremad,15,0.10807304084300995,0.0,,NaN,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
+S. Andreasen,4qyfoq5fjiochtj89w426lm21,b2vft81kyjurzbmekvgrqwr64,Hobro,15,0.035363927483558655,0.21272461116313934,,NaN,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
+F. Mortensen,1xcf8y3egy8j0g2c6xkcx6o6h,b2vft81kyjurzbmekvgrqwr64,Hobro,13,0.1092306599020958,0.0,,true,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
+Z. Hyltoft,b0yv1pcxifawqx6r1cfqq3otm,b2vft81kyjurzbmekvgrqwr64,Hobro,15,0.042852822691202164,0.3178512454032898,,true,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
+L. Callø,9delpquqv81o7ftrgefb0wpp0,bfwi3pjyg3whbn0tpsz19e8hq,Aarhus Fremad,13,0.03681914135813713,0.0,,NaN,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
+M. Kubel,az9olsp7tglzt73awei9a4cgk,bfwi3pjyg3whbn0tpsz19e8hq,Aarhus Fremad,15,0.021107515320181847,0.0401853546500206,,NaN,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
+K. Andersen,f1mn7hl9ythw3bblz9lguqtjo,bfwi3pjyg3whbn0tpsz19e8hq,Aarhus Fremad,15,0.03970160335302353,0.0,,NaN,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
+L. Klitten,ea2x4o6ufsqoz2zz7tqcnvo16,b2vft81kyjurzbmekvgrqwr64,Hobro,16,0.011566748842597008,0.431263267993927,,true,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
+M. Kubel,az9olsp7tglzt73awei9a4cgk,bfwi3pjyg3whbn0tpsz19e8hq,Aarhus Fremad,15,0.030685052275657654,0.0,,true,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
+S. Andreasen,4qyfoq5fjiochtj89w426lm21,b2vft81kyjurzbmekvgrqwr64,Hobro,15,0.22626982629299164,0.4824870228767395,,NaN,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
+O. Klitten,e19g5bz7s9wqcvj8mttztxi0a,b2vft81kyjurzbmekvgrqwr64,Hobro,15,0.03037104941904545,0.17860594391822815,,NaN,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
+S. Bækgård,5o1k2hd9rdooxpjgbnabuh94a,bfwi3pjyg3whbn0tpsz19e8hq,Aarhus Fremad,14,0.06119995191693306,0.0,,true,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
+O. Klitten,e19g5bz7s9wqcvj8mttztxi0a,b2vft81kyjurzbmekvgrqwr64,Hobro,15,0.04844517633318901,0.12678276002407074,,NaN,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
+M. Nielsen,8q8yol44e42o9hwttlopznvh0,b2vft81kyjurzbmekvgrqwr64,Hobro,15,0.03773796185851097,0.0,,NaN,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
+M. Nielsen,8q8yol44e42o9hwttlopznvh0,b2vft81kyjurzbmekvgrqwr64,Hobro,15,0.17940588295459747,0.0,,NaN,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
+M. Bruhn,8gqvlydur0v4cpmz1ozqkejh0,b2vft81kyjurzbmekvgrqwr64,Hobro,16,0.14700721204280853,0.2142736166715622,,NaN,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
+M. Kubel,az9olsp7tglzt73awei9a4cgk,bfwi3pjyg3whbn0tpsz19e8hq,Aarhus Fremad,15,0.037525638937950134,0.018317334353923798,,NaN,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
+J. Thorsen,3b8zmft8guvxlwfl1ystmjzkl,bfwi3pjyg3whbn0tpsz19e8hq,Aarhus Fremad,13,0.09838500618934631,0.0,,NaN,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
+J. Thorsen,3b8zmft8guvxlwfl1ystmjzkl,bfwi3pjyg3whbn0tpsz19e8hq,Aarhus Fremad,13,0.06640252470970154,0.0,,NaN,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
+O. Addo,kqj7nh6pqmqbt0abyyu0fcpg,ajtb177oqwawkdwbqhldmq6mx,B 93,13,0.046949904412031174,0.0,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
+W. Steindorsson,9kxm9u9x44fkygeh5xpag7pqs,anga7587r1zv4ey71ge9zxol3,Lyngby,15,0.09111504256725311,0.1795019954442978,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
+W. Steindorsson,9kxm9u9x44fkygeh5xpag7pqs,anga7587r1zv4ey71ge9zxol3,Lyngby,15,0.25940483808517456,0.0,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
+W. Steindorsson,9kxm9u9x44fkygeh5xpag7pqs,anga7587r1zv4ey71ge9zxol3,Lyngby,16,0.08575833588838577,0.48853790760040283,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
+O. Addo,kqj7nh6pqmqbt0abyyu0fcpg,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.26525792479515076,0.7638183236122131,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
+Í. Þorvaldsson,5k2hgogp2g5ivgdnq99ejp27e,anga7587r1zv4ey71ge9zxol3,Lyngby,15,0.0635935366153717,0.0,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
+T. Storm,4bstdc3zla1sn85ev3bcmw1lg,anga7587r1zv4ey71ge9zxol3,Lyngby,13,0.12661826610565186,0.0,,NaN,true,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
+W. Steindorsson,9kxm9u9x44fkygeh5xpag7pqs,anga7587r1zv4ey71ge9zxol3,Lyngby,13,0.11393706500530243,0.0,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
+C. Winther,d854rlweyk5wq6d2veyviukq2,anga7587r1zv4ey71ge9zxol3,Lyngby,13,0.031184999272227287,0.0,,NaN,NaN,true,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
+L. Sandgrav,6d0lxiep13vdv32bdb0xwyrys,anga7587r1zv4ey71ge9zxol3,Lyngby,15,0.19050949811935425,0.0,,NaN,true,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
+G. Fraulo,6zhj070huc77sl5o5bx6ey5g4,anga7587r1zv4ey71ge9zxol3,Lyngby,15,0.027631809934973717,0.20335446298122406,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
+W. Steindorsson,9kxm9u9x44fkygeh5xpag7pqs,anga7587r1zv4ey71ge9zxol3,Lyngby,15,0.03730953484773636,0.0,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
+V. Hammershøy-Mistrati,e3n8xatusmgu7ttqpfdjanp3p,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.04531179368495941,0.0,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
+O. Buur,8822s8ns7oyvjqade4oaxzg0l,anga7587r1zv4ey71ge9zxol3,Lyngby,13,0.04145054519176483,0.0,,NaN,true,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
+G. Fraulo,6zhj070huc77sl5o5bx6ey5g4,anga7587r1zv4ey71ge9zxol3,Lyngby,13,0.04019341245293617,0.0,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
+O. Addo,kqj7nh6pqmqbt0abyyu0fcpg,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.07686857879161835,0.0,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
+V. Hammershøy-Mistrati,e3n8xatusmgu7ttqpfdjanp3p,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.07678505033254623,0.0,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
+M. Ivančević,eq15hjcxpdrl5vca2q7s4tr3e,anga7587r1zv4ey71ge9zxol3,Lyngby,13,0.054358579218387604,0.0,,NaN,true,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
+M. Wohlgemuth,e8vt8711wb40afht2v13omket,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.027097880840301514,0.013097230345010757,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
+M. Ivančević,eq15hjcxpdrl5vca2q7s4tr3e,anga7587r1zv4ey71ge9zxol3,Lyngby,15,0.020419418811798096,0.0,,NaN,true,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
+L. Sandgrav,6d0lxiep13vdv32bdb0xwyrys,anga7587r1zv4ey71ge9zxol3,Lyngby,15,0.09083790332078934,0.0,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
+W. Steindorsson,9kxm9u9x44fkygeh5xpag7pqs,anga7587r1zv4ey71ge9zxol3,Lyngby,15,0.03041977621614933,0.09693843126296997,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
+L. Sandgrav,6d0lxiep13vdv32bdb0xwyrys,anga7587r1zv4ey71ge9zxol3,Lyngby,15,0.11106505990028381,0.10538550466299057,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
+O. Addo,kqj7nh6pqmqbt0abyyu0fcpg,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.022613152861595154,0.0,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
+V. Hammershøy-Mistrati,e3n8xatusmgu7ttqpfdjanp3p,ajtb177oqwawkdwbqhldmq6mx,B 93,14,0.2126483917236328,0.0,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
+Í. Þorvaldsson,5k2hgogp2g5ivgdnq99ejp27e,anga7587r1zv4ey71ge9zxol3,Lyngby,15,0.05084916949272156,0.1493246853351593,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
+J. Cornelius,8gdfn7j6xac9p4jh94hk40jdg,anga7587r1zv4ey71ge9zxol3,Lyngby,15,0.2026788741350174,0.1306876242160797,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
+L. Henriksen,6g671k5lvgoo2bgub2516q1w4,ajtb177oqwawkdwbqhldmq6mx,B 93,13,0.11510150879621506,0.0,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
+J. Cornelius,8gdfn7j6xac9p4jh94hk40jdg,anga7587r1zv4ey71ge9zxol3,Lyngby,15,0.08225833624601364,0.0,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
+M. Wohlgemuth,e8vt8711wb40afht2v13omket,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.05896604806184769,0.0,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
+O. Buur,8822s8ns7oyvjqade4oaxzg0l,anga7587r1zv4ey71ge9zxol3,Lyngby,16,0.023737752810120583,0.3686785399913788,,NaN,true,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
+S. Colyn,8npu0cbqjrhwv5km1w29kh016,anga7587r1zv4ey71ge9zxol3,Lyngby,15,0.02149674855172634,0.0,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
+C. Winther,d854rlweyk5wq6d2veyviukq2,anga7587r1zv4ey71ge9zxol3,Lyngby,15,0.032324809581041336,0.0,,NaN,NaN,true,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
+G. Fraulo,6zhj070huc77sl5o5bx6ey5g4,anga7587r1zv4ey71ge9zxol3,Lyngby,16,0.4865175783634186,0.9619890451431274,,true,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
+M. Wohlgemuth,e8vt8711wb40afht2v13omket,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.03587052598595619,0.012075063772499561,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
+T. Arndal,1n4eldqa7h9jvcx1693zqu06i,aqtkb4mgrz8c6iqfufj6qjbv9,Hillerød,13,0.03393787518143654,0.0,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
+A. Gøthler,d2ukggo2v5jsw4pctznmaijo4,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,14,0.0152835538610816,0.0,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
+S. Larsen,4m7gr5z6b40dj02yrmlwgeluc,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.022126417607069016,0.0,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
+L. Bust,6gmm4awyvlf9p7jr9dvnmp0tm,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.042412497103214264,0.0,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
+S. Larsen,4m7gr5z6b40dj02yrmlwgeluc,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.03406776487827301,0.09265313297510147,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
+C. Tue Jensen,74m58jsznzu8l89b8h7rkh1bd,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,13,0.03140675276517868,0.0,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
+T. Arndal,1n4eldqa7h9jvcx1693zqu06i,aqtkb4mgrz8c6iqfufj6qjbv9,Hillerød,13,0.10253236442804337,0.0,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
+A. Gøthler,d2ukggo2v5jsw4pctznmaijo4,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,13,0.15247637033462524,0.0,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
+M. Jensen,619s1phj5bkgkug3aszc1y9cl,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.05304337665438652,0.12336856126785278,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
+S. Larsen,4m7gr5z6b40dj02yrmlwgeluc,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.2572920322418213,0.26183265447616577,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
+S. Larsen,4m7gr5z6b40dj02yrmlwgeluc,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.035562556236982346,0.031743165105581284,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
+C. Allen,81gka3mi69fh8gyehyy8xo9as,aqtkb4mgrz8c6iqfufj6qjbv9,Hillerød,13,0.04713170602917671,0.0,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
+P. Kallsberg,9vdj7ooa6z62r1cfi1f44haay,aqtkb4mgrz8c6iqfufj6qjbv9,Hillerød,16,0.06277052313089371,0.07631497830152512,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
+S. Larsen,4m7gr5z6b40dj02yrmlwgeluc,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,13,0.3992679715156555,0.0,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
+A. Justinussen,uiyol728wan4mxco2foplknp,aqtkb4mgrz8c6iqfufj6qjbv9,Hillerød,15,0.28816109895706177,0.24098391830921173,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
+G. Larsen,3mgrufy83uhzs9liw8pwxi784,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,13,0.024123456329107285,0.0,,true,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
+C. Tue Jensen,74m58jsznzu8l89b8h7rkh1bd,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.01164226233959198,0.0,,true,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
+P. Kallsberg,9vdj7ooa6z62r1cfi1f44haay,aqtkb4mgrz8c6iqfufj6qjbv9,Hillerød,14,0.24758893251419067,0.0,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
+M. Mouritz,ezbixgm2km8iapnsl57bn4wkp,aqtkb4mgrz8c6iqfufj6qjbv9,Hillerød,15,0.14331257343292236,0.0,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
+A. Justinussen,uiyol728wan4mxco2foplknp,aqtkb4mgrz8c6iqfufj6qjbv9,Hillerød,15,0.03326784446835518,0.0,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
+A. Gøthler,d2ukggo2v5jsw4pctznmaijo4,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.488943487405777,0.2588619887828827,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
+G. Larsen,3mgrufy83uhzs9liw8pwxi784,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.052941903471946716,0.0,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
+M. Jensen,619s1phj5bkgkug3aszc1y9cl,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.030248964205384254,0.0,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
+G. Larsen,3mgrufy83uhzs9liw8pwxi784,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.04970475658774376,0.09921154379844666,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
+M. Jensen,619s1phj5bkgkug3aszc1y9cl,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,13,0.01751304417848587,0.0,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
+A. Gøthler,d2ukggo2v5jsw4pctznmaijo4,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,16,0.2980506122112274,0.693350613117218,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
+C. Tue Jensen,74m58jsznzu8l89b8h7rkh1bd,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,13,0.02574486844241619,0.0,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
+S. Hausner,5lu7bn7uec3zjqpoi1x81gbu1,a9vw7ikerpr4cuweeeka5aneg,Horsens,13,0.02072705514729023,0.0,,true,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
+J. Madsen,eso2tbbpnxu9qvx6zy07m5jx0,a9vw7ikerpr4cuweeeka5aneg,Horsens,16,0.13011384010314941,0.5642204284667969,,NaN,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
+F. Brandhof,ca1b5707pdpx0ucug40ggnahh,a9vw7ikerpr4cuweeeka5aneg,Horsens,13,0.024913504719734192,0.0,,NaN,true,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
+S. Hausner,5lu7bn7uec3zjqpoi1x81gbu1,a9vw7ikerpr4cuweeeka5aneg,Horsens,16,0.28410717844963074,0.7593244314193726,,true,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
+M. Saaby,423hv4unq5vvnp7kecv6wp3is,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,13,0.034890782088041306,0.0,,NaN,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
+V. Morozov,eh5vcpzxaze0ru5xdi1wbhoq2,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,16,0.47227388620376587,0.8780716061592102,,NaN,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
+R. Baturina,asg0277qek5q1z0m43bs8y415,a9vw7ikerpr4cuweeeka5aneg,Horsens,16,0.07750365883111954,0.46646592020988464,,NaN,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
+M. Olsen,4zpmxlmdfa5wx79cr0q14pfx1,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,15,0.03515419363975525,0.0,,NaN,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
+A. Nørager,8ewvm6ux4yvpwgrzjkc1chqwa,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,13,0.022823529317975044,0.0,,NaN,true,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
+A. Saine,7353ysa16qgg30b9z5qiagys4,a9vw7ikerpr4cuweeeka5aneg,Horsens,13,0.047268521040678024,0.0,,NaN,true,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
+Jesús Alfaro,3w7q1ecmus6kp32gxevgiqj11,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,13,0.03638631850481033,0.0,,NaN,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
+C. Jørgensen,9fvf8z6p8ok0n5vu999ysfywa,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,15,0.09861736744642258,0.0,,NaN,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
+F. Brandhof,ca1b5707pdpx0ucug40ggnahh,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.048587631434202194,0.3429766595363617,,NaN,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
+R. Baturina,asg0277qek5q1z0m43bs8y415,a9vw7ikerpr4cuweeeka5aneg,Horsens,13,0.17603114247322083,0.0,,NaN,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
+J. Madsen,eso2tbbpnxu9qvx6zy07m5jx0,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.07229132950305939,0.22727851569652557,,NaN,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
+C. Tapé,bdz03qovxerzrv12lgljae1p0,a9vw7ikerpr4cuweeeka5aneg,Horsens,13,0.021542267873883247,0.0,,NaN,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
+S. Pingel,3epwf56ozg73hueacwmckk0r9,a9vw7ikerpr4cuweeeka5aneg,Horsens,13,0.017294714227318764,0.0,,NaN,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
+Y. Ouorou,7hso2bszmf4qal560jhrg2904,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.06845864653587341,0.0,,NaN,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
+R. Baturina,asg0277qek5q1z0m43bs8y415,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.02839701808989048,0.0,,NaN,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
+M. Ingebrigtsen,autmfpgrt8z6sqtzk8j1ww82d,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,13,0.13333013653755188,0.0,,NaN,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
+M. Ingebrigtsen,autmfpgrt8z6sqtzk8j1ww82d,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,15,0.04061229154467583,0.0,,NaN,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
+Jesús Alfaro,3w7q1ecmus6kp32gxevgiqj11,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,15,0.030292941257357597,0.08212330937385559,,NaN,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
+J. Vadstrup,b55jtl3ixolidn6cvc4t90efo,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,13,0.1108139157295227,0.0,,NaN,true,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
+V. Morozov,eh5vcpzxaze0ru5xdi1wbhoq2,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,13,0.1809442788362503,0.0,,NaN,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
+M. Olsen,4zpmxlmdfa5wx79cr0q14pfx1,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,13,0.03825795277953148,0.0,,NaN,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
+M. Olsen,4zpmxlmdfa5wx79cr0q14pfx1,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,15,0.17032697796821594,0.0,,NaN,NaN,true,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
+B. Alkhoudari,6orujbbswf771s9rv0dcd8kd0,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.022951271384954453,0.0,NaN,NaN,NaN,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
+M. Jensen,619s1phj5bkgkug3aszc1y9cl,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.015353715978562832,0.008711462840437889,NaN,NaN,NaN,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
+S. Hausner,5lu7bn7uec3zjqpoi1x81gbu1,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.008932397700846195,0.17002995312213898,NaN,NaN,true,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
+A. Gøthler,d2ukggo2v5jsw4pctznmaijo4,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,13,0.4608548879623413,0.0,NaN,NaN,NaN,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
+F. Brandhof,ca1b5707pdpx0ucug40ggnahh,a9vw7ikerpr4cuweeeka5aneg,Horsens,13,0.03465256094932556,0.0,NaN,NaN,NaN,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
+M. Jensen,619s1phj5bkgkug3aszc1y9cl,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,16,0.7884,0.7449138164520264,true,NaN,NaN,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
+C. Tapé,bdz03qovxerzrv12lgljae1p0,a9vw7ikerpr4cuweeeka5aneg,Horsens,16,0.0888136774301529,0.24180831015110016,NaN,NaN,NaN,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
+B. Alkhoudari,6orujbbswf771s9rv0dcd8kd0,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,13,0.024318505078554153,0.0,NaN,NaN,NaN,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
+C. Tue Jensen,74m58jsznzu8l89b8h7rkh1bd,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.15400706231594086,0.0,NaN,NaN,NaN,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
+R. Baturina,asg0277qek5q1z0m43bs8y415,a9vw7ikerpr4cuweeeka5aneg,Horsens,16,0.16680973768234253,0.14497791230678558,NaN,NaN,NaN,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
+M. Jensen,619s1phj5bkgkug3aszc1y9cl,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.06208815053105354,0.0,NaN,NaN,NaN,true,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
+R. Brodersen,14mwsmzsrmev2646t2gg22has,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,13,0.008022395893931389,0.0,NaN,true,NaN,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
+S. Hausner,5lu7bn7uec3zjqpoi1x81gbu1,a9vw7ikerpr4cuweeeka5aneg,Horsens,13,0.0711565762758255,0.0,NaN,NaN,NaN,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
+I. Miličević,9cg2dx19fx5be3zewtmx97e95,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.09638169407844543,0.0,NaN,NaN,NaN,true,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
+A. Saine,7353ysa16qgg30b9z5qiagys4,a9vw7ikerpr4cuweeeka5aneg,Horsens,13,0.048291970044374466,0.0,NaN,true,NaN,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
+M. Jensen,619s1phj5bkgkug3aszc1y9cl,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,16,0.5877126455307007,0.7249353528022766,NaN,NaN,NaN,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
+K. Kirkegaard,3ylgelxr6ssp42hidfnchqp2i,a9vw7ikerpr4cuweeeka5aneg,Horsens,13,0.0570327527821064,0.0,NaN,NaN,true,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
+S. Hald,67p0s4o54xcmiustgy8k5gljo,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,16,0.044955477118492126,0.649898111820221,NaN,true,NaN,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
+C. Tapé,bdz03qovxerzrv12lgljae1p0,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.2380669265985489,0.39043766260147095,NaN,NaN,true,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
+A. Saine,7353ysa16qgg30b9z5qiagys4,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.15833218395709991,0.21268503367900848,NaN,NaN,true,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
+K. Kirkegaard,3ylgelxr6ssp42hidfnchqp2i,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.03651586174964905,0.0,NaN,true,NaN,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
+P. Olsen,8jotzm26md7pzdy2gn474chqt,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.038891810923814774,0.0,NaN,NaN,NaN,true,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
+J. Madsen,eso2tbbpnxu9qvx6zy07m5jx0,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.01883673295378685,0.0,NaN,true,NaN,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
+C. Tapé,bdz03qovxerzrv12lgljae1p0,a9vw7ikerpr4cuweeeka5aneg,Horsens,13,0.06005921587347984,0.0,NaN,true,NaN,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
 M. Bomholt,ejixz16616b7krftxyzv9yiac,36g6ifzjliec1jqnbtf7yesme,AaB,16,0.0340024009346962,0.21947892010211945,,,NaN,,AaB vs B 93,cc9l2gokl9ksda5v0gpbvdkwk,2025-09-21
 M. Wohlgemuth,e8vt8711wb40afht2v13omket,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.053215477615594864,0.0,,,NaN,,AaB vs B 93,cc9l2gokl9ksda5v0gpbvdkwk,2025-09-21
 M. Wohlgemuth,e8vt8711wb40afht2v13omket,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.018997404724359512,0.0,,,NaN,,AaB vs B 93,cc9l2gokl9ksda5v0gpbvdkwk,2025-09-21
@@ -2094,311 +2402,3 @@ C. Winther,d854rlweyk5wq6d2veyviukq2,anga7587r1zv4ey71ge9zxol3,Lyngby,16,0.07585
 S. Colyn,8npu0cbqjrhwv5km1w29kh016,anga7587r1zv4ey71ge9zxol3,Lyngby,13,0.03542674332857132,0.0,,NaN,NaN,NaN,Lyngby vs Aarhus Fremad,cky179wmiwuoe0fav4t15pj4k,2025-10-19
 W. Steindorsson,9kxm9u9x44fkygeh5xpag7pqs,anga7587r1zv4ey71ge9zxol3,Lyngby,15,0.01870325766503811,0.0,,NaN,NaN,NaN,Lyngby vs Aarhus Fremad,cky179wmiwuoe0fav4t15pj4k,2025-10-19
 J. Meyer,839pm7rmjp6q1bt52f7ek9vys,anga7587r1zv4ey71ge9zxol3,Lyngby,15,0.03449604660272598,0.0,,NaN,true,NaN,Lyngby vs Aarhus Fremad,cky179wmiwuoe0fav4t15pj4k,2025-10-19
-M. Brajanac,4krwgfspxdgpq1pli11b04iga,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,15,0.1358308643102646,0.09684200584888458,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
-S. Andreasen,4qyfoq5fjiochtj89w426lm21,b2vft81kyjurzbmekvgrqwr64,Hobro,15,0.0588064007461071,0.1139908954501152,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
-O. Klitten,e19g5bz7s9wqcvj8mttztxi0a,b2vft81kyjurzbmekvgrqwr64,Hobro,15,0.47276729345321655,0.9837523698806763,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
-G. Bjerge,8uqsrzfe8mnhs8v3ii2v7b2tw,b2vft81kyjurzbmekvgrqwr64,Hobro,13,0.048652533441782,0.0,,NaN,true,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
-F. Dietz,ebd3uvtt54wkdsahc2127j02c,b2vft81kyjurzbmekvgrqwr64,Hobro,15,0.03182743489742279,0.3922940790653229,,true,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
-R. Gyamfi,efubck8twu1elbhlomltnjjtg,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,15,0.021754862740635872,0.0,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
-M. Brajanac,4krwgfspxdgpq1pli11b04iga,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,13,0.7332373857498169,0.0,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
-J. Kolawole,djm3hebvv79jo679zzd2b71g4,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,13,0.18258409202098846,0.0,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
-S. Andreasen,4qyfoq5fjiochtj89w426lm21,b2vft81kyjurzbmekvgrqwr64,Hobro,13,0.03332272917032242,0.0,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
-L. Vigen,8k4wwchytdstpn0yhrxd5nbv9,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,13,0.02804805524647236,0.0,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
-R. Gyamfi,efubck8twu1elbhlomltnjjtg,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,15,0.09399708360433578,0.08603258430957794,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
-S. Andreasen,4qyfoq5fjiochtj89w426lm21,b2vft81kyjurzbmekvgrqwr64,Hobro,15,0.3411504328250885,0.40447330474853516,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
-L. Vigen,8k4wwchytdstpn0yhrxd5nbv9,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,13,0.04019032046198845,0.0,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
-V. Rasmussen,dwuxps3jv2852642q000wep6,b2vft81kyjurzbmekvgrqwr64,Hobro,15,0.04694095626473427,0.0,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
-P. Tjørnelund,37mo55lynu3blqnb8k9ln8k16,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,13,0.032935768365859985,0.0,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
-M. Brajanac,4krwgfspxdgpq1pli11b04iga,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,15,0.1175461933016777,0.0,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
-M. Brajanac,4krwgfspxdgpq1pli11b04iga,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,15,0.017212681472301483,0.0,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
-J. Kolawole,djm3hebvv79jo679zzd2b71g4,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,15,0.01018470712006092,0.03560860455036163,,NaN,true,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
-S. Andreasen,4qyfoq5fjiochtj89w426lm21,b2vft81kyjurzbmekvgrqwr64,Hobro,15,0.12210562825202942,0.0,,NaN,NaN,true,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
-L. Klitten,ea2x4o6ufsqoz2zz7tqcnvo16,b2vft81kyjurzbmekvgrqwr64,Hobro,13,0.02320617437362671,0.0,,true,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
-J. Kolawole,djm3hebvv79jo679zzd2b71g4,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,15,0.17226289212703705,0.15197156369686127,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
-O. Klitten,e19g5bz7s9wqcvj8mttztxi0a,b2vft81kyjurzbmekvgrqwr64,Hobro,15,0.017064429819583893,0.17732547223567963,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
-R. Gyamfi,efubck8twu1elbhlomltnjjtg,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,16,0.3139037489891052,0.34721553325653076,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
-A. Skipper,aqc0qritba195wf770gyd1149,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,15,0.17471784353256226,0.0,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
-F. Dietz,ebd3uvtt54wkdsahc2127j02c,b2vft81kyjurzbmekvgrqwr64,Hobro,15,0.017766539007425308,0.018762586638331413,,true,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
-A. Skipper,aqc0qritba195wf770gyd1149,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,14,0.06382838636636734,0.0,,NaN,true,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
-M. Pedersen,9xub4z9b3bog8wqhn5yfihecp,b2vft81kyjurzbmekvgrqwr64,Hobro,15,0.03239654749631882,0.0,,NaN,NaN,true,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
-J. Ankersen,4mxciw9jsj9l437fd7bv78p91,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,13,0.02638443000614643,0.0,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
-M. Maden,15yli690oxmbr4dl1ksti2p9m,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,14,0.21605707705020905,0.0,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
-M. Bruhn,8gqvlydur0v4cpmz1ozqkejh0,b2vft81kyjurzbmekvgrqwr64,Hobro,16,0.2741767466068268,0.8454959988594055,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
-M. Maden,15yli690oxmbr4dl1ksti2p9m,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,13,0.08974223583936691,0.0,,NaN,NaN,NaN,Esbjerg vs Hobro,cj1ilp8tkmw3wcmehknxnt4b8,2025-10-16
-A. Nørager,8ewvm6ux4yvpwgrzjkc1chqwa,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,13,0.0372614711523056,0.0,NaN,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
-R. Brodersen,14mwsmzsrmev2646t2gg22has,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,13,0.010918335989117622,0.0,NaN,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
-M. Olsen,4zpmxlmdfa5wx79cr0q14pfx1,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,15,0.04578215628862381,0.0,NaN,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
-C. Jørgensen,9fvf8z6p8ok0n5vu999ysfywa,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,15,0.020648138597607613,0.0445023849606514,NaN,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
-A. Gøthler,d2ukggo2v5jsw4pctznmaijo4,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.10062148422002792,0.0,NaN,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
-Mohamad Al Naser,abhfq12njxxutqjtb9zvcusyc,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,16,0.26440295577049255,0.8961460590362549,NaN,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
-M. Olsen,4zpmxlmdfa5wx79cr0q14pfx1,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,15,0.06551795452833176,0.17020055651664734,NaN,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
-A. Gøthler,d2ukggo2v5jsw4pctznmaijo4,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.48955151438713074,0.46751871705055237,NaN,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
-M. Jensen,619s1phj5bkgkug3aszc1y9cl,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.059641946107149124,0.08626273274421692,NaN,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
-C. Palm,b6l4m6bmqgil9bjjov4tnuivo,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,15,0.13164089620113373,0.0,NaN,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
-A. Gøthler,d2ukggo2v5jsw4pctznmaijo4,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,13,0.18016742169857025,0.0,NaN,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
-C. Tue Jensen,74m58jsznzu8l89b8h7rkh1bd,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.008763181045651436,0.03632006049156189,NaN,true,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
-C. Tue Jensen,74m58jsznzu8l89b8h7rkh1bd,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,13,0.0192182045429945,0.0,NaN,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
-C. Tue Jensen,74m58jsznzu8l89b8h7rkh1bd,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,13,0.01978110335767269,0.0,NaN,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
-C. Tue Jensen,74m58jsznzu8l89b8h7rkh1bd,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.013128368183970451,0.07269221544265747,NaN,NaN,true,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
-A. Gøthler,d2ukggo2v5jsw4pctznmaijo4,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,16,0.34785425662994385,0.9706057906150818,NaN,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
-C. Tue Jensen,74m58jsznzu8l89b8h7rkh1bd,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.02424098551273346,0.0,NaN,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
-L. Bust,6gmm4awyvlf9p7jr9dvnmp0tm,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,13,0.12673208117485046,0.0,NaN,true,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
-B. Alkhoudari,6orujbbswf771s9rv0dcd8kd0,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.012697619386017323,0.034078482538461685,NaN,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
-A. Nørager,8ewvm6ux4yvpwgrzjkc1chqwa,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,13,0.03422645479440689,0.0,NaN,NaN,true,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
-C. Palm,b6l4m6bmqgil9bjjov4tnuivo,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,13,0.02952977642416954,0.0,NaN,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
-A. Nørager,8ewvm6ux4yvpwgrzjkc1chqwa,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,16,0.7884,0.586936354637146,true,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
-A. Njai,f1ba9g771s0zeel0titcj3omi,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,15,0.052437759935855865,0.0,NaN,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
-A. Nørager,8ewvm6ux4yvpwgrzjkc1chqwa,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,13,0.010158417746424675,0.0,NaN,true,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
-V. Morozov,eh5vcpzxaze0ru5xdi1wbhoq2,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,15,0.11598619818687439,0.6079633831977844,NaN,NaN,NaN,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
-C. Palm,b6l4m6bmqgil9bjjov4tnuivo,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,15,0.03437544032931328,0.0,NaN,NaN,true,,HB Køge vs Kolding,cjgja3h4kur9uq9qy89iq62vo,2025-10-17
-N. Mouritsen,eyvv6b94feknnp1uew6n0ytat,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.04316967353224754,0.0,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
-C. Björk,x3ad9hfxts6jpfugy3kvq9d5,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.06395471841096878,0.0,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
-K. Grabovskis,3u184ybkonoa5ubxjzoy06ntg,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.04799678549170494,0.04577341675758362,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
-M. Wohlgemuth,e8vt8711wb40afht2v13omket,ajtb177oqwawkdwbqhldmq6mx,B 93,16,0.7884,0.7573322653770447,true,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
-N. Mouritsen,eyvv6b94feknnp1uew6n0ytat,ajtb177oqwawkdwbqhldmq6mx,B 93,13,0.036395926028490067,0.0,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
-K. John,5vrsflxiv2dgfa8199a2qxsve,36g6ifzjliec1jqnbtf7yesme,AaB,13,0.15762180089950562,0.0,NaN,NaN,true,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
-K. John,5vrsflxiv2dgfa8199a2qxsve,36g6ifzjliec1jqnbtf7yesme,AaB,15,0.08533110469579697,0.1988709270954132,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
-V. Møller,5521epytthhw9afm2r3jn3384,36g6ifzjliec1jqnbtf7yesme,AaB,15,0.058289784938097,0.0,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
-N. Arnórsson,brinkgys7026490q3ixx6h9uc,36g6ifzjliec1jqnbtf7yesme,AaB,15,0.03979458287358284,0.0,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
-K. John,5vrsflxiv2dgfa8199a2qxsve,36g6ifzjliec1jqnbtf7yesme,AaB,13,0.023953238502144814,0.0,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
-M. Bomholt,ejixz16616b7krftxyzv9yiac,36g6ifzjliec1jqnbtf7yesme,AaB,15,0.06933815032243729,0.0,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
-B. Hansen,9yb0exf35kl3avhdnlhv23glx,36g6ifzjliec1jqnbtf7yesme,AaB,13,0.04659963771700859,0.0,NaN,NaN,true,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
-O. Ross,5lz41celw55rz3zh8pohclw5w,36g6ifzjliec1jqnbtf7yesme,AaB,15,0.1735561341047287,0.7445159554481506,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
-K. Grabovskis,3u184ybkonoa5ubxjzoy06ntg,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.05240299180150032,0.047666557133197784,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
-F. Isaki,86mx27krl6c613x6e3t9g3cic,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.03459874168038368,0.0,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
-N. Mouritsen,eyvv6b94feknnp1uew6n0ytat,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.04221635311841965,0.026814358308911324,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
-M. Bomholt,ejixz16616b7krftxyzv9yiac,36g6ifzjliec1jqnbtf7yesme,AaB,15,0.04471210390329361,0.0,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
-O. Ross,5lz41celw55rz3zh8pohclw5w,36g6ifzjliec1jqnbtf7yesme,AaB,13,0.04471210390329361,0.0,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
-N. Arnórsson,brinkgys7026490q3ixx6h9uc,36g6ifzjliec1jqnbtf7yesme,AaB,15,0.04679517075419426,0.05645555630326271,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
-F. Isaki,86mx27krl6c613x6e3t9g3cic,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.05887538194656372,0.0,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
-M. Bomholt,ejixz16616b7krftxyzv9yiac,36g6ifzjliec1jqnbtf7yesme,AaB,15,0.055968355387449265,0.0,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
-M. Wohlgemuth,e8vt8711wb40afht2v13omket,ajtb177oqwawkdwbqhldmq6mx,B 93,16,0.7884,0.8471819162368774,true,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
-O. Addo,kqj7nh6pqmqbt0abyyu0fcpg,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.07407847046852112,0.0,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
-N. Helenius,rv6r0bwbl75er38wklyfpsr9,36g6ifzjliec1jqnbtf7yesme,AaB,16,0.404354065656662,0.5443444848060608,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
-L. Henriksen,6g671k5lvgoo2bgub2516q1w4,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.09088221192359924,0.0,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
-K. John,5vrsflxiv2dgfa8199a2qxsve,36g6ifzjliec1jqnbtf7yesme,AaB,15,0.07174663245677948,0.33362051844596863,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
-M. Kaasa,e0j0uakuzduvis9wqsocngwrt,36g6ifzjliec1jqnbtf7yesme,AaB,15,0.019726909697055817,0.0,NaN,true,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
-S. Leschly,ef2hrwtfvwripjcioi42zkowk,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.1779453605413437,0.0,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
-O. Thomassen,a8ccmy6j1xj2yvx324vws81lg,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.26166361570358276,0.20838895440101624,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
-N. Arnórsson,brinkgys7026490q3ixx6h9uc,36g6ifzjliec1jqnbtf7yesme,AaB,15,0.03454844653606415,0.0,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
-M. Kaasa,e0j0uakuzduvis9wqsocngwrt,36g6ifzjliec1jqnbtf7yesme,AaB,15,0.019277632236480713,0.0457555428147316,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
-N. Helenius,rv6r0bwbl75er38wklyfpsr9,36g6ifzjliec1jqnbtf7yesme,AaB,16,0.06731691211462021,0.5550587773323059,NaN,NaN,NaN,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
-A. Maarup,cf6zq49y8v1ekw07e7yi3uac,36g6ifzjliec1jqnbtf7yesme,AaB,15,0.18192285299301147,0.0,NaN,NaN,true,,B 93 vs AaB,ckkqr63g60ihwum4xrowu1mhg,2025-10-17
-I. Miličević,9cg2dx19fx5be3zewtmx97e95,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.09791306406259537,0.08565380424261093,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
-F. Isaki,86mx27krl6c613x6e3t9g3cic,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.04856966808438301,0.0,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
-A. Herdonsson,9dh7cnu4uzbraeck0t5iqlj4k,a9vw7ikerpr4cuweeeka5aneg,Horsens,13,0.12970580160617828,0.0,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
-A. Herdonsson,9dh7cnu4uzbraeck0t5iqlj4k,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.02469606325030327,0.0,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
-N. Mouritsen,eyvv6b94feknnp1uew6n0ytat,ajtb177oqwawkdwbqhldmq6mx,B 93,14,0.014890736900269985,0.0,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
-C. Björk,x3ad9hfxts6jpfugy3kvq9d5,ajtb177oqwawkdwbqhldmq6mx,B 93,13,0.6161484122276306,0.0,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
-R. Baturina,asg0277qek5q1z0m43bs8y415,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.4310937225818634,0.21577924489974976,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
-R. Baturina,asg0277qek5q1z0m43bs8y415,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.24792705476284027,0.21530959010124207,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
-A. Saine,7353ysa16qgg30b9z5qiagys4,a9vw7ikerpr4cuweeeka5aneg,Horsens,13,0.08408179134130478,0.0,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
-K. Grabovskis,3u184ybkonoa5ubxjzoy06ntg,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.15565654635429382,0.06815536320209503,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
-A. Saine,7353ysa16qgg30b9z5qiagys4,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.10833034664392471,0.19472022354602814,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
-P. Olsen,8jotzm26md7pzdy2gn474chqt,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.040301088243722916,0.0,,NaN,true,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
-A. Saine,7353ysa16qgg30b9z5qiagys4,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.08193424344062805,0.0,,NaN,true,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
-F. Brandhof,ca1b5707pdpx0ucug40ggnahh,a9vw7ikerpr4cuweeeka5aneg,Horsens,13,0.2637757658958435,0.0,,NaN,true,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
-R. Baturina,asg0277qek5q1z0m43bs8y415,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.06498999148607254,0.16460485756397247,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
-A. Saine,7353ysa16qgg30b9z5qiagys4,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.07100305706262589,0.0,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
-N. Mouritsen,eyvv6b94feknnp1uew6n0ytat,ajtb177oqwawkdwbqhldmq6mx,B 93,16,0.5525317192077637,0.9553288817405701,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
-R. Arabaci,7h02v4ymnko5fh01iylbh34es,ajtb177oqwawkdwbqhldmq6mx,B 93,13,0.019912580028176308,0.0,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
-F. Brandhof,ca1b5707pdpx0ucug40ggnahh,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.1306176334619522,0.0,,NaN,true,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
-N. Mouritsen,eyvv6b94feknnp1uew6n0ytat,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.027933649718761444,0.0,,true,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
-K. Kirkegaard,3ylgelxr6ssp42hidfnchqp2i,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.03091486357152462,0.04685401916503906,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
-P. Olsen,8jotzm26md7pzdy2gn474chqt,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.022300606593489647,0.03952595219016075,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
-S. Pingel,3epwf56ozg73hueacwmckk0r9,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.02354457974433899,0.0,,NaN,true,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
-I. Miličević,9cg2dx19fx5be3zewtmx97e95,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.09014513343572617,0.0,,NaN,NaN,true,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
-R. Arabaci,7h02v4ymnko5fh01iylbh34es,ajtb177oqwawkdwbqhldmq6mx,B 93,13,0.039441220462322235,0.0,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
-S. Pingel,3epwf56ozg73hueacwmckk0r9,a9vw7ikerpr4cuweeeka5aneg,Horsens,13,0.03199603036046028,0.0,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
-O. Addo,kqj7nh6pqmqbt0abyyu0fcpg,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.057467006146907806,0.09336227923631668,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
-S. Pingel,3epwf56ozg73hueacwmckk0r9,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.028322484344244003,0.0,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
-P. Olsen,8jotzm26md7pzdy2gn474chqt,a9vw7ikerpr4cuweeeka5aneg,Horsens,13,0.17143963277339935,0.0,,NaN,NaN,true,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
-O. Addo,kqj7nh6pqmqbt0abyyu0fcpg,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.1602482795715332,0.23805862665176392,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
-S. Doua,6qko3f8w2ap9ynbuq2g55i5n8,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.0375409796833992,0.0,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
-V. Pálsson,4braldrfw3y7g030lctguuuol,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.04103212058544159,0.0,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
-I. Miličević,9cg2dx19fx5be3zewtmx97e95,a9vw7ikerpr4cuweeeka5aneg,Horsens,13,0.0073000057600438595,0.0,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
-N. Mouritsen,eyvv6b94feknnp1uew6n0ytat,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.033932123333215714,0.0,,NaN,NaN,true,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
-A. Ahmad,4csz412vb3lquessbnf999ct0,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.05804360657930374,0.0,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
-F. Isaki,86mx27krl6c613x6e3t9g3cic,ajtb177oqwawkdwbqhldmq6mx,B 93,13,0.048325102776288986,0.0,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
-I. Miličević,9cg2dx19fx5be3zewtmx97e95,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.012288128957152367,0.0,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
-O. Kolskogen,4lxxyqy78jkglhv2w6crzcnsa,a9vw7ikerpr4cuweeeka5aneg,Horsens,13,0.0630708783864975,0.0,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
-A. Ahmad,4csz412vb3lquessbnf999ct0,ajtb177oqwawkdwbqhldmq6mx,B 93,13,0.04719996079802513,0.0,,NaN,NaN,NaN,B 93 vs Horsens,clbcg1zx22m40bygywjcpcw0k,2025-10-24
-M. Hansen,945m1ao4o1wvojbkckvdtjre2,eq2jaitwsokibzx3wy7kb5gqp,Middelfart,13,0.12040626257658005,0.0,,NaN,NaN,true,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
-M. Kristensen,1znq0m3xloag4frfu715yy8lw,eq2jaitwsokibzx3wy7kb5gqp,Middelfart,13,0.06766343116760254,0.0,,NaN,NaN,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
-C. Palm,b6l4m6bmqgil9bjjov4tnuivo,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,15,0.16679203510284424,0.0,,NaN,NaN,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
-M. Hansen,945m1ao4o1wvojbkckvdtjre2,eq2jaitwsokibzx3wy7kb5gqp,Middelfart,15,0.03919567912817001,0.0,,NaN,NaN,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
-I. Tånnander,6bajck5osvj7trnwt2a5mc3dg,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,15,0.059581514447927475,0.0,,NaN,NaN,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
-I. Tånnander,6bajck5osvj7trnwt2a5mc3dg,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,13,0.01657404750585556,0.0,,NaN,true,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
-I. Tånnander,6bajck5osvj7trnwt2a5mc3dg,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,13,0.3881770372390747,0.0,,NaN,NaN,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
-J. Linnet,19gornjqd7f2ugeg8mg0gs4q,eq2jaitwsokibzx3wy7kb5gqp,Middelfart,15,0.2759167551994324,0.0,,NaN,NaN,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
-Jesús Alfaro,3w7q1ecmus6kp32gxevgiqj11,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,15,0.03428439423441887,0.0,,NaN,NaN,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
-I. Tånnander,6bajck5osvj7trnwt2a5mc3dg,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,15,0.03367583826184273,0.0,,NaN,true,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
-L. Jensen,139g7ilwvcpl519v3scnweg2d,eq2jaitwsokibzx3wy7kb5gqp,Middelfart,13,0.03140677511692047,0.0,,NaN,true,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
-I. Tånnander,6bajck5osvj7trnwt2a5mc3dg,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,13,0.14199921488761902,0.0,,NaN,NaN,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
-J. Vadstrup,b55jtl3ixolidn6cvc4t90efo,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,13,0.08077563345432281,0.0,,true,NaN,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
-J. Villemoes,3yt6hqo1ayr093vpohg4kwufo,eq2jaitwsokibzx3wy7kb5gqp,Middelfart,13,0.019497841596603394,0.0,,NaN,true,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
-A. Akalé,d0ozf1itum1cvg6704dch7uac,eq2jaitwsokibzx3wy7kb5gqp,Middelfart,13,0.05050462484359741,0.0,,NaN,true,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
-C. Palm,b6l4m6bmqgil9bjjov4tnuivo,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,16,0.07626014202833176,0.30349865555763245,,NaN,true,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
-I. Tånnander,6bajck5osvj7trnwt2a5mc3dg,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,15,0.043814610689878464,0.0,,NaN,true,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
-C. Jørgensen,9fvf8z6p8ok0n5vu999ysfywa,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,13,0.09138691425323486,0.0,,NaN,NaN,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
-N. Perry,f3xbdt2opb6n1y13cqvug6zft,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,15,0.05489535257220268,0.0,,NaN,NaN,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
-M. Hansen,945m1ao4o1wvojbkckvdtjre2,eq2jaitwsokibzx3wy7kb5gqp,Middelfart,15,0.06924397498369217,0.0,,NaN,NaN,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
-V. Morozov,eh5vcpzxaze0ru5xdi1wbhoq2,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,13,0.06216278299689293,0.0,,NaN,NaN,NaN,Kolding vs Middelfart,cm334t07hbe3xgl2c6kzfv504,2025-10-24
-K. Andersen,f1mn7hl9ythw3bblz9lguqtjo,bfwi3pjyg3whbn0tpsz19e8hq,Aarhus Fremad,14,0.15806713700294495,0.0,,NaN,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
-E. Egerton,8rqctff92ui8fanzbk6skyyac,bfwi3pjyg3whbn0tpsz19e8hq,Aarhus Fremad,15,0.10408003628253937,0.1297617256641388,,NaN,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
-V. Rasmussen,dwuxps3jv2852642q000wep6,b2vft81kyjurzbmekvgrqwr64,Hobro,13,0.018592800945043564,0.0,,NaN,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
-L. Callø,9delpquqv81o7ftrgefb0wpp0,bfwi3pjyg3whbn0tpsz19e8hq,Aarhus Fremad,13,0.015353715978562832,0.0,,NaN,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
-K. Andersen,f1mn7hl9ythw3bblz9lguqtjo,bfwi3pjyg3whbn0tpsz19e8hq,Aarhus Fremad,15,0.10807304084300995,0.0,,NaN,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
-S. Andreasen,4qyfoq5fjiochtj89w426lm21,b2vft81kyjurzbmekvgrqwr64,Hobro,15,0.035363927483558655,0.21272461116313934,,NaN,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
-F. Mortensen,1xcf8y3egy8j0g2c6xkcx6o6h,b2vft81kyjurzbmekvgrqwr64,Hobro,13,0.1092306599020958,0.0,,true,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
-Z. Hyltoft,b0yv1pcxifawqx6r1cfqq3otm,b2vft81kyjurzbmekvgrqwr64,Hobro,15,0.042852822691202164,0.3178512454032898,,true,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
-L. Callø,9delpquqv81o7ftrgefb0wpp0,bfwi3pjyg3whbn0tpsz19e8hq,Aarhus Fremad,13,0.03681914135813713,0.0,,NaN,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
-M. Kubel,az9olsp7tglzt73awei9a4cgk,bfwi3pjyg3whbn0tpsz19e8hq,Aarhus Fremad,15,0.021107515320181847,0.0401853546500206,,NaN,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
-K. Andersen,f1mn7hl9ythw3bblz9lguqtjo,bfwi3pjyg3whbn0tpsz19e8hq,Aarhus Fremad,15,0.03970160335302353,0.0,,NaN,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
-L. Klitten,ea2x4o6ufsqoz2zz7tqcnvo16,b2vft81kyjurzbmekvgrqwr64,Hobro,16,0.011566748842597008,0.431263267993927,,true,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
-M. Kubel,az9olsp7tglzt73awei9a4cgk,bfwi3pjyg3whbn0tpsz19e8hq,Aarhus Fremad,15,0.030685052275657654,0.0,,true,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
-S. Andreasen,4qyfoq5fjiochtj89w426lm21,b2vft81kyjurzbmekvgrqwr64,Hobro,15,0.22626982629299164,0.4824870228767395,,NaN,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
-O. Klitten,e19g5bz7s9wqcvj8mttztxi0a,b2vft81kyjurzbmekvgrqwr64,Hobro,15,0.03037104941904545,0.17860594391822815,,NaN,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
-S. Bækgård,5o1k2hd9rdooxpjgbnabuh94a,bfwi3pjyg3whbn0tpsz19e8hq,Aarhus Fremad,14,0.06119995191693306,0.0,,true,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
-O. Klitten,e19g5bz7s9wqcvj8mttztxi0a,b2vft81kyjurzbmekvgrqwr64,Hobro,15,0.04844517633318901,0.12678276002407074,,NaN,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
-M. Nielsen,8q8yol44e42o9hwttlopznvh0,b2vft81kyjurzbmekvgrqwr64,Hobro,15,0.03773796185851097,0.0,,NaN,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
-M. Nielsen,8q8yol44e42o9hwttlopznvh0,b2vft81kyjurzbmekvgrqwr64,Hobro,15,0.17940588295459747,0.0,,NaN,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
-M. Bruhn,8gqvlydur0v4cpmz1ozqkejh0,b2vft81kyjurzbmekvgrqwr64,Hobro,16,0.14700721204280853,0.2142736166715622,,NaN,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
-M. Kubel,az9olsp7tglzt73awei9a4cgk,bfwi3pjyg3whbn0tpsz19e8hq,Aarhus Fremad,15,0.037525638937950134,0.018317334353923798,,NaN,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
-J. Thorsen,3b8zmft8guvxlwfl1ystmjzkl,bfwi3pjyg3whbn0tpsz19e8hq,Aarhus Fremad,13,0.09838500618934631,0.0,,NaN,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
-J. Thorsen,3b8zmft8guvxlwfl1ystmjzkl,bfwi3pjyg3whbn0tpsz19e8hq,Aarhus Fremad,13,0.06640252470970154,0.0,,NaN,,,Hobro vs Aarhus Fremad,crrr7h9tle1e50l37gg1fknbo,2025-11-07
-O. Addo,kqj7nh6pqmqbt0abyyu0fcpg,ajtb177oqwawkdwbqhldmq6mx,B 93,13,0.046949904412031174,0.0,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
-W. Steindorsson,9kxm9u9x44fkygeh5xpag7pqs,anga7587r1zv4ey71ge9zxol3,Lyngby,15,0.09111504256725311,0.1795019954442978,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
-W. Steindorsson,9kxm9u9x44fkygeh5xpag7pqs,anga7587r1zv4ey71ge9zxol3,Lyngby,15,0.25940483808517456,0.0,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
-W. Steindorsson,9kxm9u9x44fkygeh5xpag7pqs,anga7587r1zv4ey71ge9zxol3,Lyngby,16,0.08575833588838577,0.48853790760040283,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
-O. Addo,kqj7nh6pqmqbt0abyyu0fcpg,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.26525792479515076,0.7638183236122131,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
-Í. Þorvaldsson,5k2hgogp2g5ivgdnq99ejp27e,anga7587r1zv4ey71ge9zxol3,Lyngby,15,0.0635935366153717,0.0,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
-T. Storm,4bstdc3zla1sn85ev3bcmw1lg,anga7587r1zv4ey71ge9zxol3,Lyngby,13,0.12661826610565186,0.0,,NaN,true,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
-W. Steindorsson,9kxm9u9x44fkygeh5xpag7pqs,anga7587r1zv4ey71ge9zxol3,Lyngby,13,0.11393706500530243,0.0,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
-C. Winther,d854rlweyk5wq6d2veyviukq2,anga7587r1zv4ey71ge9zxol3,Lyngby,13,0.031184999272227287,0.0,,NaN,NaN,true,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
-L. Sandgrav,6d0lxiep13vdv32bdb0xwyrys,anga7587r1zv4ey71ge9zxol3,Lyngby,15,0.19050949811935425,0.0,,NaN,true,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
-G. Fraulo,6zhj070huc77sl5o5bx6ey5g4,anga7587r1zv4ey71ge9zxol3,Lyngby,15,0.027631809934973717,0.20335446298122406,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
-W. Steindorsson,9kxm9u9x44fkygeh5xpag7pqs,anga7587r1zv4ey71ge9zxol3,Lyngby,15,0.03730953484773636,0.0,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
-V. Hammershøy-Mistrati,e3n8xatusmgu7ttqpfdjanp3p,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.04531179368495941,0.0,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
-O. Buur,8822s8ns7oyvjqade4oaxzg0l,anga7587r1zv4ey71ge9zxol3,Lyngby,13,0.04145054519176483,0.0,,NaN,true,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
-G. Fraulo,6zhj070huc77sl5o5bx6ey5g4,anga7587r1zv4ey71ge9zxol3,Lyngby,13,0.04019341245293617,0.0,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
-O. Addo,kqj7nh6pqmqbt0abyyu0fcpg,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.07686857879161835,0.0,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
-V. Hammershøy-Mistrati,e3n8xatusmgu7ttqpfdjanp3p,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.07678505033254623,0.0,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
-M. Ivančević,eq15hjcxpdrl5vca2q7s4tr3e,anga7587r1zv4ey71ge9zxol3,Lyngby,13,0.054358579218387604,0.0,,NaN,true,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
-M. Wohlgemuth,e8vt8711wb40afht2v13omket,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.027097880840301514,0.013097230345010757,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
-M. Ivančević,eq15hjcxpdrl5vca2q7s4tr3e,anga7587r1zv4ey71ge9zxol3,Lyngby,15,0.020419418811798096,0.0,,NaN,true,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
-L. Sandgrav,6d0lxiep13vdv32bdb0xwyrys,anga7587r1zv4ey71ge9zxol3,Lyngby,15,0.09083790332078934,0.0,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
-W. Steindorsson,9kxm9u9x44fkygeh5xpag7pqs,anga7587r1zv4ey71ge9zxol3,Lyngby,15,0.03041977621614933,0.09693843126296997,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
-L. Sandgrav,6d0lxiep13vdv32bdb0xwyrys,anga7587r1zv4ey71ge9zxol3,Lyngby,15,0.11106505990028381,0.10538550466299057,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
-O. Addo,kqj7nh6pqmqbt0abyyu0fcpg,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.022613152861595154,0.0,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
-V. Hammershøy-Mistrati,e3n8xatusmgu7ttqpfdjanp3p,ajtb177oqwawkdwbqhldmq6mx,B 93,14,0.2126483917236328,0.0,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
-Í. Þorvaldsson,5k2hgogp2g5ivgdnq99ejp27e,anga7587r1zv4ey71ge9zxol3,Lyngby,15,0.05084916949272156,0.1493246853351593,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
-J. Cornelius,8gdfn7j6xac9p4jh94hk40jdg,anga7587r1zv4ey71ge9zxol3,Lyngby,15,0.2026788741350174,0.1306876242160797,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
-L. Henriksen,6g671k5lvgoo2bgub2516q1w4,ajtb177oqwawkdwbqhldmq6mx,B 93,13,0.11510150879621506,0.0,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
-J. Cornelius,8gdfn7j6xac9p4jh94hk40jdg,anga7587r1zv4ey71ge9zxol3,Lyngby,15,0.08225833624601364,0.0,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
-M. Wohlgemuth,e8vt8711wb40afht2v13omket,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.05896604806184769,0.0,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
-O. Buur,8822s8ns7oyvjqade4oaxzg0l,anga7587r1zv4ey71ge9zxol3,Lyngby,16,0.023737752810120583,0.3686785399913788,,NaN,true,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
-S. Colyn,8npu0cbqjrhwv5km1w29kh016,anga7587r1zv4ey71ge9zxol3,Lyngby,15,0.02149674855172634,0.0,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
-C. Winther,d854rlweyk5wq6d2veyviukq2,anga7587r1zv4ey71ge9zxol3,Lyngby,15,0.032324809581041336,0.0,,NaN,NaN,true,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
-G. Fraulo,6zhj070huc77sl5o5bx6ey5g4,anga7587r1zv4ey71ge9zxol3,Lyngby,16,0.4865175783634186,0.9619890451431274,,true,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
-M. Wohlgemuth,e8vt8711wb40afht2v13omket,ajtb177oqwawkdwbqhldmq6mx,B 93,15,0.03587052598595619,0.012075063772499561,,NaN,NaN,NaN,B 93 vs Lyngby,cpws9ljfyhjkckfv08udk70gk,2025-11-08
-T. Arndal,1n4eldqa7h9jvcx1693zqu06i,aqtkb4mgrz8c6iqfufj6qjbv9,Hillerød,13,0.03393787518143654,0.0,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
-A. Gøthler,d2ukggo2v5jsw4pctznmaijo4,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,14,0.0152835538610816,0.0,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
-S. Larsen,4m7gr5z6b40dj02yrmlwgeluc,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.022126417607069016,0.0,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
-L. Bust,6gmm4awyvlf9p7jr9dvnmp0tm,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.042412497103214264,0.0,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
-S. Larsen,4m7gr5z6b40dj02yrmlwgeluc,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.03406776487827301,0.09265313297510147,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
-C. Tue Jensen,74m58jsznzu8l89b8h7rkh1bd,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,13,0.03140675276517868,0.0,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
-T. Arndal,1n4eldqa7h9jvcx1693zqu06i,aqtkb4mgrz8c6iqfufj6qjbv9,Hillerød,13,0.10253236442804337,0.0,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
-A. Gøthler,d2ukggo2v5jsw4pctznmaijo4,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,13,0.15247637033462524,0.0,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
-M. Jensen,619s1phj5bkgkug3aszc1y9cl,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.05304337665438652,0.12336856126785278,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
-S. Larsen,4m7gr5z6b40dj02yrmlwgeluc,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.2572920322418213,0.26183265447616577,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
-S. Larsen,4m7gr5z6b40dj02yrmlwgeluc,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.035562556236982346,0.031743165105581284,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
-C. Allen,81gka3mi69fh8gyehyy8xo9as,aqtkb4mgrz8c6iqfufj6qjbv9,Hillerød,13,0.04713170602917671,0.0,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
-P. Kallsberg,9vdj7ooa6z62r1cfi1f44haay,aqtkb4mgrz8c6iqfufj6qjbv9,Hillerød,16,0.06277052313089371,0.07631497830152512,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
-S. Larsen,4m7gr5z6b40dj02yrmlwgeluc,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,13,0.3992679715156555,0.0,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
-A. Justinussen,uiyol728wan4mxco2foplknp,aqtkb4mgrz8c6iqfufj6qjbv9,Hillerød,15,0.28816109895706177,0.24098391830921173,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
-G. Larsen,3mgrufy83uhzs9liw8pwxi784,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,13,0.024123456329107285,0.0,,true,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
-C. Tue Jensen,74m58jsznzu8l89b8h7rkh1bd,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.01164226233959198,0.0,,true,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
-P. Kallsberg,9vdj7ooa6z62r1cfi1f44haay,aqtkb4mgrz8c6iqfufj6qjbv9,Hillerød,14,0.24758893251419067,0.0,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
-M. Mouritz,ezbixgm2km8iapnsl57bn4wkp,aqtkb4mgrz8c6iqfufj6qjbv9,Hillerød,15,0.14331257343292236,0.0,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
-A. Justinussen,uiyol728wan4mxco2foplknp,aqtkb4mgrz8c6iqfufj6qjbv9,Hillerød,15,0.03326784446835518,0.0,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
-A. Gøthler,d2ukggo2v5jsw4pctznmaijo4,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.488943487405777,0.2588619887828827,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
-G. Larsen,3mgrufy83uhzs9liw8pwxi784,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.052941903471946716,0.0,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
-M. Jensen,619s1phj5bkgkug3aszc1y9cl,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.030248964205384254,0.0,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
-G. Larsen,3mgrufy83uhzs9liw8pwxi784,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.04970475658774376,0.09921154379844666,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
-M. Jensen,619s1phj5bkgkug3aszc1y9cl,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,13,0.01751304417848587,0.0,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
-A. Gøthler,d2ukggo2v5jsw4pctznmaijo4,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,16,0.2980506122112274,0.693350613117218,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
-C. Tue Jensen,74m58jsznzu8l89b8h7rkh1bd,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,13,0.02574486844241619,0.0,,NaN,,,HB Køge vs Hillerød,cr0voad341ufutq5ri5hoff2s,2025-11-07
-B. Alkhoudari,6orujbbswf771s9rv0dcd8kd0,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.022951271384954453,0.0,NaN,NaN,NaN,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
-M. Jensen,619s1phj5bkgkug3aszc1y9cl,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.015353715978562832,0.008711462840437889,NaN,NaN,NaN,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
-S. Hausner,5lu7bn7uec3zjqpoi1x81gbu1,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.008932397700846195,0.17002995312213898,NaN,NaN,true,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
-A. Gøthler,d2ukggo2v5jsw4pctznmaijo4,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,13,0.4608548879623413,0.0,NaN,NaN,NaN,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
-F. Brandhof,ca1b5707pdpx0ucug40ggnahh,a9vw7ikerpr4cuweeeka5aneg,Horsens,13,0.03465256094932556,0.0,NaN,NaN,NaN,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
-M. Jensen,619s1phj5bkgkug3aszc1y9cl,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,16,0.7884,0.7449138164520264,true,NaN,NaN,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
-C. Tapé,bdz03qovxerzrv12lgljae1p0,a9vw7ikerpr4cuweeeka5aneg,Horsens,16,0.0888136774301529,0.24180831015110016,NaN,NaN,NaN,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
-B. Alkhoudari,6orujbbswf771s9rv0dcd8kd0,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,13,0.024318505078554153,0.0,NaN,NaN,NaN,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
-C. Tue Jensen,74m58jsznzu8l89b8h7rkh1bd,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.15400706231594086,0.0,NaN,NaN,NaN,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
-R. Baturina,asg0277qek5q1z0m43bs8y415,a9vw7ikerpr4cuweeeka5aneg,Horsens,16,0.16680973768234253,0.14497791230678558,NaN,NaN,NaN,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
-M. Jensen,619s1phj5bkgkug3aszc1y9cl,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,15,0.06208815053105354,0.0,NaN,NaN,NaN,true,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
-R. Brodersen,14mwsmzsrmev2646t2gg22has,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,13,0.008022395893931389,0.0,NaN,true,NaN,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
-S. Hausner,5lu7bn7uec3zjqpoi1x81gbu1,a9vw7ikerpr4cuweeeka5aneg,Horsens,13,0.0711565762758255,0.0,NaN,NaN,NaN,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
-I. Miličević,9cg2dx19fx5be3zewtmx97e95,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.09638169407844543,0.0,NaN,NaN,NaN,true,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
-A. Saine,7353ysa16qgg30b9z5qiagys4,a9vw7ikerpr4cuweeeka5aneg,Horsens,13,0.048291970044374466,0.0,NaN,true,NaN,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
-M. Jensen,619s1phj5bkgkug3aszc1y9cl,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,16,0.5877126455307007,0.7249353528022766,NaN,NaN,NaN,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
-K. Kirkegaard,3ylgelxr6ssp42hidfnchqp2i,a9vw7ikerpr4cuweeeka5aneg,Horsens,13,0.0570327527821064,0.0,NaN,NaN,true,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
-S. Hald,67p0s4o54xcmiustgy8k5gljo,8cfkisxf1fkxdqtt6tx1tup48,HB Køge,16,0.044955477118492126,0.649898111820221,NaN,true,NaN,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
-C. Tapé,bdz03qovxerzrv12lgljae1p0,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.2380669265985489,0.39043766260147095,NaN,NaN,true,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
-A. Saine,7353ysa16qgg30b9z5qiagys4,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.15833218395709991,0.21268503367900848,NaN,NaN,true,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
-K. Kirkegaard,3ylgelxr6ssp42hidfnchqp2i,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.03651586174964905,0.0,NaN,true,NaN,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
-P. Olsen,8jotzm26md7pzdy2gn474chqt,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.038891810923814774,0.0,NaN,NaN,NaN,true,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
-J. Madsen,eso2tbbpnxu9qvx6zy07m5jx0,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.01883673295378685,0.0,NaN,true,NaN,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
-C. Tapé,bdz03qovxerzrv12lgljae1p0,a9vw7ikerpr4cuweeeka5aneg,Horsens,13,0.06005921587347984,0.0,NaN,true,NaN,NaN,Horsens vs HB Køge,cnmie0qt69fxeyauuno24kopg,2025-10-31
-A. Akalé,d0ozf1itum1cvg6704dch7uac,eq2jaitwsokibzx3wy7kb5gqp,Middelfart,15,0.06242947652935982,0.0,NaN,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
-A. Akalé,d0ozf1itum1cvg6704dch7uac,eq2jaitwsokibzx3wy7kb5gqp,Middelfart,16,0.27850431203842163,0.5211928486824036,NaN,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
-M. Brajanac,4krwgfspxdgpq1pli11b04iga,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,15,0.1994819939136505,0.08266401290893555,NaN,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
-A. Akalé,d0ozf1itum1cvg6704dch7uac,eq2jaitwsokibzx3wy7kb5gqp,Middelfart,13,0.48219048976898193,0.0,NaN,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
-M. Maden,15yli690oxmbr4dl1ksti2p9m,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,15,0.16173973679542542,0.0,NaN,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
-P. Tjørnelund,37mo55lynu3blqnb8k9ln8k16,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,16,0.24230211973190308,0.8401120901107788,NaN,,true,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
-S. Eg Pedersen,bzwk6jaak6q2ak9u6o75v6ihg,eq2jaitwsokibzx3wy7kb5gqp,Middelfart,15,0.06040746718645096,0.0,NaN,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
-A. Troelsen,bmkwmf5f2ssnw2cq7uga7yd5g,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,15,0.03388763964176178,0.11572204530239105,NaN,,NaN,true,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
-M. Greve,ef7l91pb4w6yk7lijxjxlievp,eq2jaitwsokibzx3wy7kb5gqp,Middelfart,13,0.011169901117682457,0.0,NaN,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
-M. Brajanac,4krwgfspxdgpq1pli11b04iga,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,16,0.3213048577308655,0.8401705622673035,NaN,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
-R. Gyamfi,efubck8twu1elbhlomltnjjtg,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,15,0.027239413931965828,0.11286425590515137,NaN,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
-M. Hansen,945m1ao4o1wvojbkckvdtjre2,eq2jaitwsokibzx3wy7kb5gqp,Middelfart,15,0.04222822189331055,0.19319544732570648,NaN,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
-M. Maden,15yli690oxmbr4dl1ksti2p9m,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,13,0.08506511896848679,0.0,NaN,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
-A. Lausen,ate1ymumg2iwzn8uyyf3ts222,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,15,0.033408958464860916,0.06141512095928192,NaN,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
-L. Jensen,139g7ilwvcpl519v3scnweg2d,eq2jaitwsokibzx3wy7kb5gqp,Middelfart,16,0.027829093858599663,0.1544927954673767,NaN,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
-M. Brajanac,4krwgfspxdgpq1pli11b04iga,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,16,0.7884,0.8490785360336304,true,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
-J. Linnet,19gornjqd7f2ugeg8mg0gs4q,eq2jaitwsokibzx3wy7kb5gqp,Middelfart,15,0.10179569572210312,0.0,NaN,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
-M. Brajanac,4krwgfspxdgpq1pli11b04iga,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,16,0.7884,0.6233072280883789,true,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
-A. Akalé,d0ozf1itum1cvg6704dch7uac,eq2jaitwsokibzx3wy7kb5gqp,Middelfart,15,0.026521092280745506,0.0,NaN,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
-M. Brajanac,4krwgfspxdgpq1pli11b04iga,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,15,0.4289616644382477,0.2655448615550995,NaN,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
-J. Ankersen,4mxciw9jsj9l437fd7bv78p91,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,15,0.8788819909095764,0.0,NaN,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
-A. Lausen,ate1ymumg2iwzn8uyyf3ts222,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,15,0.07894133031368256,0.0,NaN,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
-M. Maden,15yli690oxmbr4dl1ksti2p9m,f1h34qp5zbfl489q8vnkhiq9s,Esbjerg,15,0.2129756063222885,0.28649240732192993,NaN,,NaN,NaN,Esbjerg vs Middelfart,cqa8gr721rvjejajadq6q0zkk,2025-11-10
-S. Hausner,5lu7bn7uec3zjqpoi1x81gbu1,a9vw7ikerpr4cuweeeka5aneg,Horsens,13,0.02072705514729023,0.0,,true,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
-J. Madsen,eso2tbbpnxu9qvx6zy07m5jx0,a9vw7ikerpr4cuweeeka5aneg,Horsens,16,0.13011384010314941,0.5642204284667969,,NaN,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
-F. Brandhof,ca1b5707pdpx0ucug40ggnahh,a9vw7ikerpr4cuweeeka5aneg,Horsens,13,0.024913504719734192,0.0,,NaN,true,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
-S. Hausner,5lu7bn7uec3zjqpoi1x81gbu1,a9vw7ikerpr4cuweeeka5aneg,Horsens,16,0.28410717844963074,0.7593244314193726,,true,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
-M. Saaby,423hv4unq5vvnp7kecv6wp3is,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,13,0.034890782088041306,0.0,,NaN,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
-V. Morozov,eh5vcpzxaze0ru5xdi1wbhoq2,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,16,0.47227388620376587,0.8780716061592102,,NaN,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
-R. Baturina,asg0277qek5q1z0m43bs8y415,a9vw7ikerpr4cuweeeka5aneg,Horsens,16,0.07750365883111954,0.46646592020988464,,NaN,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
-M. Olsen,4zpmxlmdfa5wx79cr0q14pfx1,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,15,0.03515419363975525,0.0,,NaN,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
-A. Nørager,8ewvm6ux4yvpwgrzjkc1chqwa,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,13,0.022823529317975044,0.0,,NaN,true,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
-A. Saine,7353ysa16qgg30b9z5qiagys4,a9vw7ikerpr4cuweeeka5aneg,Horsens,13,0.047268521040678024,0.0,,NaN,true,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
-Jesús Alfaro,3w7q1ecmus6kp32gxevgiqj11,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,13,0.03638631850481033,0.0,,NaN,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
-C. Jørgensen,9fvf8z6p8ok0n5vu999ysfywa,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,15,0.09861736744642258,0.0,,NaN,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
-F. Brandhof,ca1b5707pdpx0ucug40ggnahh,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.048587631434202194,0.3429766595363617,,NaN,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
-R. Baturina,asg0277qek5q1z0m43bs8y415,a9vw7ikerpr4cuweeeka5aneg,Horsens,13,0.17603114247322083,0.0,,NaN,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
-J. Madsen,eso2tbbpnxu9qvx6zy07m5jx0,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.07229132950305939,0.22727851569652557,,NaN,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
-C. Tapé,bdz03qovxerzrv12lgljae1p0,a9vw7ikerpr4cuweeeka5aneg,Horsens,13,0.021542267873883247,0.0,,NaN,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
-S. Pingel,3epwf56ozg73hueacwmckk0r9,a9vw7ikerpr4cuweeeka5aneg,Horsens,13,0.017294714227318764,0.0,,NaN,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
-Y. Ouorou,7hso2bszmf4qal560jhrg2904,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.06845864653587341,0.0,,NaN,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
-R. Baturina,asg0277qek5q1z0m43bs8y415,a9vw7ikerpr4cuweeeka5aneg,Horsens,15,0.02839701808989048,0.0,,NaN,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
-M. Ingebrigtsen,autmfpgrt8z6sqtzk8j1ww82d,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,13,0.13333013653755188,0.0,,NaN,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
-M. Ingebrigtsen,autmfpgrt8z6sqtzk8j1ww82d,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,15,0.04061229154467583,0.0,,NaN,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
-Jesús Alfaro,3w7q1ecmus6kp32gxevgiqj11,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,15,0.030292941257357597,0.08212330937385559,,NaN,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
-J. Vadstrup,b55jtl3ixolidn6cvc4t90efo,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,13,0.1108139157295227,0.0,,NaN,true,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
-V. Morozov,eh5vcpzxaze0ru5xdi1wbhoq2,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,13,0.1809442788362503,0.0,,NaN,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
-M. Olsen,4zpmxlmdfa5wx79cr0q14pfx1,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,13,0.03825795277953148,0.0,,NaN,NaN,NaN,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
-M. Olsen,4zpmxlmdfa5wx79cr0q14pfx1,b8oqgvx1ijeyn6y1cn6929ix4,Kolding,15,0.17032697796821594,0.0,,NaN,NaN,true,Kolding vs Horsens,cqnkim2skk2fcla8lchwhddec,2025-11-07
