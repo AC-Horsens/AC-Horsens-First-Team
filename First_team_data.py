@@ -2500,6 +2500,7 @@ def Dashboard():
         df_set_pieces = df_set_pieces[df_set_pieces['9.0'] != True]
         df_set_pieces = df_set_pieces[df_set_pieces['9.0'] != 'true']
 
+
         df_set_pieces = df_set_pieces.fillna(0)
         df_set_pieces = df_set_pieces.round(2)
 
