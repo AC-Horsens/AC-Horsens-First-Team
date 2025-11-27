@@ -2499,7 +2499,18 @@ def Dashboard():
         df_set_pieces = load_set_piece_data()
         df_set_pieces = df_set_pieces[df_set_pieces['9.0'] != True]
         df_set_pieces = df_set_pieces[df_set_pieces['9.0'] != 'true']
-
+        df_set_pieces[['home','away']] = df_set_pieces['label'].apply(
+            lambda x: pd.Series(extract_teams(x))
+        )
+        df_set_pieces['opponent'] = df_set_pieces.apply(
+            lambda r: r['away'] if r['team_name'] == r['home'] else r['home'],
+            axis=1
+        )
+        df_set_pieces['own_goal'] = df_set_pieces['28.0'].astype(str).str.lower().eq('true')
+        df_set_pieces.loc[
+            (df_set_pieces['typeId'] == 16) & (df_set_pieces['own_goal']),
+            'team_name'
+        ] = df_set_pieces['opponent']
         df_set_pieces = df_set_pieces.fillna(0)
         df_set_pieces = df_set_pieces.round(2)
 
