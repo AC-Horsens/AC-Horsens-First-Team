@@ -2499,6 +2499,8 @@ def Dashboard():
         df_set_pieces = load_set_piece_data()
         df_set_pieces = df_set_pieces[df_set_pieces['9.0'] != True]
         df_set_pieces = df_set_pieces[df_set_pieces['9.0'] != 'true']
+        df_set_pieces['own_goal'] = df_set_pieces['28.0'].astype(str).str.lower().eq('true')
+        st.dataframe(df_set_pieces['label'])
 
 
         df_set_pieces = df_set_pieces.fillna(0)
