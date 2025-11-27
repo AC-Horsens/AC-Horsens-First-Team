@@ -2495,64 +2495,47 @@ def Dashboard():
         # Display the full figure
         st.pyplot(fig)
 
-    import re
-    import pandas as pd
-    import streamlit as st
+    def set_pieces():
+        df_set_pieces = load_set_piece_data()
+        df_set_pieces = df_set_pieces[df_set_pieces['9.0'] != True]
+        df_set_pieces = df_set_pieces[df_set_pieces['9.0'] != 'true']
 
+        df_set_pieces = df_set_pieces.fillna(0)
+        df_set_pieces = df_set_pieces.round(2)
 
-    def extract_teams(label: str):
-        """
-        Example label: 'Hillerød vs AaB 2025-07-26'
-        Returns: (home_team, away_team)
-        """
-        home_raw, away_raw = label.split(" vs ", 1)
-        # Remove trailing date
-        away_clean = re.sub(r"\d{4}-\d{2}-\d{2}", "", away_raw).strip()
-        return home_raw.strip(), away_clean.strip()
+        # --- Base goals (all set pieces) ---
+        df_set_pieces_goals = df_set_pieces[df_set_pieces['typeId'] == 16]
+        df_set_pieces_goals = df_set_pieces_goals.groupby('team_name').size().reset_index(name='Goals')
+        df_set_pieces_goals = df_set_pieces_goals.sort_values(by='Goals', ascending=False)
 
-
-    def compute_team_match_stats(df: pd.DataFrame) -> pd.DataFrame:
-        """
-        Given a set-piece dataframe (already filtered to the scope you want,
-        e.g. all set pieces / only freekicks / only corners / only throw-ins),
-        compute per-team-per-match stats for xG and Goals, including correct
-        own-goal handling via 'goal_for'.
-        """
-        # --- xG per team per match ---
-        matches = (
-            df.groupby(['team_name', 'label'], as_index=False)
+        # --- xG per match ---
+        df_set_pieces_matches = (
+            df_set_pieces.groupby(['team_name', 'label'])
             .agg({'321.0': 'sum'})
+            .reset_index()
         )
 
-        matches['xG_match'] = matches.groupby('label')['321.0'].transform('sum')
-        matches['xG_against'] = matches['321.0'] - matches['xG_match']
-        matches['xG_diff'] = matches['321.0'] - matches['xG_match'] + matches['321.0']
+        df_set_pieces_matches['xG_match'] = df_set_pieces_matches.groupby('label')['321.0'].transform('sum')
+        df_set_pieces_matches['xG_against'] = df_set_pieces_matches['321.0'] - df_set_pieces_matches['xG_match']
+        df_set_pieces_matches['xG_diff'] = df_set_pieces_matches['321.0'] - df_set_pieces_matches['xG_match'] + df_set_pieces_matches['321.0']
 
-        # --- Goals per team per match (using goal_for, so own goals are correct) ---
+        # --- Goals per match (same logic as xG) ---
         goals_match = (
-            df[df['typeId'] == 16]
-            .groupby(['goal_for', 'label'])
+            df_set_pieces[df_set_pieces['typeId'] == 16]
+            .groupby(['team_name', 'label'])
             .size()
             .reset_index(name='Goals')
-            .rename(columns={'goal_for': 'team_name'})
         )
 
-        matches = matches.merge(goals_match, on=['team_name', 'label'], how='left').fillna({'Goals': 0})
-        matches['Goals'] = matches['Goals'].astype(int)
+        df_set_pieces_matches = df_set_pieces_matches.merge(goals_match, on=['team_name', 'label'], how='left').fillna({'Goals': 0})
 
-        matches['Goals_match'] = matches.groupby('label')['Goals'].transform('sum')
-        matches['Goals_against'] = matches['Goals'] - matches['Goals_match']
-        matches['Goals_diff'] = matches['Goals'] - matches['Goals_match'] + matches['Goals']
+        df_set_pieces_matches['Goals_match'] = df_set_pieces_matches.groupby('label')['Goals'].transform('sum')
+        df_set_pieces_matches['Goals_against'] = df_set_pieces_matches['Goals'] - df_set_pieces_matches['Goals_match']
+        df_set_pieces_matches['Goals_diff'] = df_set_pieces_matches['Goals'] - df_set_pieces_matches['Goals_match'] + df_set_pieces_matches['Goals']
 
-        return matches
-
-
-    def aggregate_season_totals(df_matches: pd.DataFrame) -> pd.DataFrame:
-        """
-        Aggregate per-team-per-match stats into season totals.
-        """
-        df_sum = (
-            df_matches.groupby('team_name', as_index=False)
+        # --- Aggregate per team (season totals) ---
+        df_set_pieces_sum = (
+            df_set_pieces_matches.groupby('team_name', as_index=False)
             .agg({
                 '321.0': 'sum',
                 'xG_against': 'sum',
@@ -2563,156 +2546,228 @@ def Dashboard():
             })
             .rename(columns={'321.0': 'xG'})
         )
-        df_sum = df_sum.sort_values(by='Goals_diff', ascending=False)
-        return df_sum
 
+        df_set_pieces_sum = df_set_pieces_sum.sort_values(by='Goals_diff', ascending=False)
 
-    def set_pieces():
-        # -------------------------
-        # Load & prepare base data
-        # -------------------------
-        df_set_pieces = load_set_piece_data()
-
-        # Filter out events where 9.0 is True / 'true'
-        df_set_pieces = df_set_pieces[df_set_pieces['9.0'] != True]
-        df_set_pieces = df_set_pieces[df_set_pieces['9.0'] != 'true']
-
-        # Extract home/away from label: 'Home vs Away YYYY-MM-DD'
-        df_set_pieces[['home', 'away']] = df_set_pieces['label'].apply(
-            lambda x: pd.Series(extract_teams(x))
-        )
-
-        # Opponent = the other team in the match
-        df_set_pieces['opponent'] = df_set_pieces.apply(
-            lambda r: r['away'] if r['team_name'] == r['home'] else r['home'],
-            axis=1
-        )
-
-        # Own-goal flag (column 28.0: True / 'true' means own goal)
-        df_set_pieces['own_goal'] = df_set_pieces['28.0'].astype(str).str.lower().eq('true')
-
-        # Team that should be credited with the goal (normal or own goal)
-        df_set_pieces['goal_for'] = df_set_pieces.apply(
-            lambda r: (r['opponent'] if r['own_goal'] else r['team_name'])
-            if r['typeId'] == 16 else None,
-            axis=1
-        )
-
-        # General cleaning
-        df_set_pieces = df_set_pieces.fillna(0)
-        df_set_pieces = df_set_pieces.round(2)
-
-        # -------------------------
-        # WHOLE SEASON (all teams)
-        # -------------------------
+        # --- Streamlit output ---
         st.header('Whole season')
-
-        # Base goals table (all set pieces, season total)
-        df_set_pieces_goals = (
-            df_set_pieces[df_set_pieces['typeId'] == 16]
-            .groupby('goal_for')
-            .size()
-            .reset_index(name='Goals')
-            .rename(columns={'goal_for': 'team_name'})
-            .sort_values(by='Goals', ascending=False)
-        )
-        # You can show this if you like:
-        # st.write('Total set-piece goals (season)')
-        # st.dataframe(df_set_pieces_goals, hide_index=True)
-
-        # --- All set pieces ---
-        df_all_matches = compute_team_match_stats(df_set_pieces)
-        df_all_sum = aggregate_season_totals(df_all_matches)
-
         st.write('All set pieces')
-        st.dataframe(
-            df_all_sum[['team_name', 'xG', 'xG_against', 'xG_diff',
-                        'Goals', 'Goals_against', 'Goals_diff']],
-            hide_index=True
-        )
-
-        # --- Freekicks (freekick + freekick_shot) ---
+        st.dataframe(df_set_pieces_sum[['team_name', 'xG', 'xG_against', 'xG_diff','Goals', 'Goals_against', 'Goals_diff']], hide_index=True)
         st.write('Freekick')
-        df_fk = df_set_pieces[df_set_pieces['set_piece_type'].isin(['freekick', 'freekick_shot'])]
-        df_fk_matches = compute_team_match_stats(df_fk)
-        df_fk_sum = aggregate_season_totals(df_fk_matches)
-        st.dataframe(df_fk_sum, hide_index=True)
 
-        # --- Corners ---
+        Freekicks = df_set_pieces[df_set_pieces['set_piece_type'].isin(['freekick','freekick_shot'])]
+
+        # Goals per team per match (typeId == 16 = goal)
+        Freekicks_goals = Freekicks[Freekicks['typeId'] == 16].groupby(['team_name','label']).size().reset_index(name='Goals')
+
+        Freekicks = Freekicks.groupby(['team_name','label']).agg({'321.0':'sum'}).reset_index()
+        Freekicks['xG_match'] = Freekicks.groupby('label')['321.0'].transform('sum')
+        Freekicks['xG_against'] = Freekicks['321.0'] - Freekicks['xG_match']
+        Freekicks['xG_diff'] = Freekicks['321.0'] - Freekicks['xG_match'] + Freekicks['321.0']
+
+        # Add goals logic in same way as xG
+        Freekicks = Freekicks.merge(Freekicks_goals, on=['team_name','label'], how='left').fillna({'Goals':0})
+        Freekicks['Goals_match'] = Freekicks.groupby('label')['Goals'].transform('sum')
+        Freekicks['Goals_against'] = Freekicks['Goals'] - Freekicks['Goals_match']
+        Freekicks['Goals_diff'] = Freekicks['Goals'] - Freekicks['Goals_match'] + Freekicks['Goals']
+
+        # Aggregate
+        Freekicks = Freekicks.groupby('team_name').agg({
+            '321.0':'sum',
+            'xG_against':'sum',
+            'xG_diff':'sum',
+            'Goals':'sum',
+            'Goals_against':'sum',
+            'Goals_diff':'sum'
+        }).reset_index().rename(columns={'321.0':'xG'})
+
+        Freekicks = Freekicks.sort_values(by='Goals_diff',ascending=False)
+        st.dataframe(Freekicks,hide_index=True)
         st.write('Corners')
-        df_corners = df_set_pieces[df_set_pieces['set_piece_type'] == 'corner']
-        df_corners_matches = compute_team_match_stats(df_corners)
-        df_corners_sum = aggregate_season_totals(df_corners_matches)
-        st.dataframe(df_corners_sum, hide_index=True)
+        Corners = df_set_pieces[df_set_pieces['set_piece_type'] == 'corner']
+        Corners_goals = Corners[Corners['typeId'] == 16].groupby(['team_name','label']).size().reset_index(name='Goals')
 
-        # --- Throw-ins ---
+        Corners = Corners.groupby(['team_name','label']).agg({'321.0':'sum'}).reset_index()
+        Corners['xG_match'] = Corners.groupby('label')['321.0'].transform('sum')
+        Corners['xG_against'] = Corners['321.0'] - Corners['xG_match']
+        Corners['xG_diff'] = Corners['321.0'] - Corners['xG_match'] + Corners['321.0']
+
+        Corners = Corners.merge(Corners_goals, on=['team_name','label'], how='left').fillna({'Goals':0})
+        Corners['Goals_match'] = Corners.groupby('label')['Goals'].transform('sum')
+        Corners['Goals_against'] = Corners['Goals'] - Corners['Goals_match']
+        Corners['Goals_diff'] = Corners['Goals'] - Corners['Goals_match'] + Corners['Goals']
+
+        Corners = Corners.groupby('team_name').agg({
+            '321.0':'sum',
+            'xG_against':'sum',
+            'xG_diff':'sum',
+            'Goals':'sum',
+            'Goals_against':'sum',
+            'Goals_diff':'sum'
+        }).reset_index().rename(columns={'321.0':'xG'})
+
+        Corners = Corners.sort_values(by='Goals_diff',ascending=False)
+        st.dataframe(Corners,hide_index=True)
+
         st.write('Throw ins')
-        df_throw = df_set_pieces[df_set_pieces['set_piece_type'] == 'throw_in']
-        df_throw_matches = compute_team_match_stats(df_throw)
-        df_throw_sum = aggregate_season_totals(df_throw_matches)
-        st.dataframe(df_throw_sum, hide_index=True)
+        Throw_ins = df_set_pieces[df_set_pieces['set_piece_type'] == 'throw_in']
+        Throw_ins_goals = Throw_ins[Throw_ins['typeId'] == 16].groupby(['team_name','label']).size().reset_index(name='Goals')
 
-        # -------------------------
-        # CHOSEN MATCHES (Horsens vs Opponent)
-        # -------------------------
+        Throw_ins = Throw_ins.groupby(['team_name','label']).agg({'321.0':'sum'}).reset_index()
+        Throw_ins['xG_match'] = Throw_ins.groupby('label')['321.0'].transform('sum')
+        Throw_ins['xG_against'] = Throw_ins['321.0'] - Throw_ins['xG_match']
+        Throw_ins['xG_diff'] = Throw_ins['321.0'] - Throw_ins['xG_match'] + Throw_ins['321.0']
+
+        Throw_ins = Throw_ins.merge(Throw_ins_goals, on=['team_name','label'], how='left').fillna({'Goals':0})
+        Throw_ins['Goals_match'] = Throw_ins.groupby('label')['Goals'].transform('sum')
+        Throw_ins['Goals_against'] = Throw_ins['Goals'] - Throw_ins['Goals_match']
+        Throw_ins['Goals_diff'] = Throw_ins['Goals'] - Throw_ins['Goals_match'] + Throw_ins['Goals']
+
+        Throw_ins = Throw_ins.groupby('team_name').agg({
+            '321.0':'sum',
+            'xG_against':'sum',
+            'xG_diff':'sum',
+            'Goals':'sum',
+            'Goals_against':'sum',
+            'Goals_diff':'sum'
+        }).reset_index().rename(columns={'321.0':'xG'})
+
+        Throw_ins = Throw_ins.sort_values(by='Goals_diff',ascending=False)
+        st.dataframe(Throw_ins,hide_index=True)
+
         st.header('Chosen matches')
 
-        # Filter to chosen matches
+        # Filter the dataset for chosen matches
         df_set_pieces_matches1 = df_set_pieces[df_set_pieces['label'].isin(match_choice)]
 
-        # --- All set pieces (chosen matches) ---
-        df_chosen_matches = compute_team_match_stats(df_set_pieces_matches1)
-
-        # Collapse to Horsens vs Opponent
-        df_chosen_matches['team_name'] = df_chosen_matches['team_name'].apply(
-            lambda x: 'Horsens' if x == 'Horsens' else 'Opponent'
+        # --- xG per match ---
+        df_set_pieces_matches = (
+            df_set_pieces_matches1.groupby(['team_name', 'label'])
+            .agg({'321.0': 'sum'})
+            .reset_index()
         )
 
-        df_chosen_sum = aggregate_season_totals(df_chosen_matches)
+        df_set_pieces_matches['xG_match'] = df_set_pieces_matches.groupby('label')['321.0'].transform('sum')
+        df_set_pieces_matches['xG_against'] = df_set_pieces_matches['321.0'] - df_set_pieces_matches['xG_match']
+        df_set_pieces_matches['xG_diff'] = df_set_pieces_matches['321.0'] - df_set_pieces_matches['xG_match'] + df_set_pieces_matches['321.0']
 
+        # --- Goals per match (same structure as xG) ---
+        goals_match = (
+            df_set_pieces_matches1[df_set_pieces_matches1['typeId'] == 16]
+            .groupby(['team_name', 'label'])
+            .size()
+            .reset_index(name='Goals')
+        )
+
+        df_set_pieces_matches = df_set_pieces_matches.merge(goals_match, on=['team_name', 'label'], how='left').fillna({'Goals': 0})
+
+        df_set_pieces_matches['Goals_match'] = df_set_pieces_matches.groupby('label')['Goals'].transform('sum')
+        df_set_pieces_matches['Goals_against'] = df_set_pieces_matches['Goals'] - df_set_pieces_matches['Goals_match']
+        df_set_pieces_matches['Goals_diff'] = df_set_pieces_matches['Goals'] - df_set_pieces_matches['Goals_match'] + df_set_pieces_matches['Goals']
+
+        # --- Merge Horsens vs Opponent logic ---
+        df_set_pieces_matches['team_name'] = df_set_pieces_matches['team_name'].apply(lambda x: 'Horsens' if x == 'Horsens' else 'Opponent')
+
+        # --- Aggregate to totals per side ---
+        df_set_pieces_sum = (
+            df_set_pieces_matches.groupby('team_name', as_index=False)
+            .agg({
+                '321.0': 'sum',
+                'xG_against': 'sum',
+                'xG_diff': 'sum',
+                'Goals': 'sum',
+                'Goals_against': 'sum',
+                'Goals_diff': 'sum'
+            })
+            .rename(columns={'321.0': 'xG'})
+        )
+
+        df_set_pieces_sum = df_set_pieces_sum.sort_values(by='Goals_diff', ascending=False)
+
+        # --- Streamlit output ---
         st.write('All set pieces')
-        st.dataframe(
-            df_chosen_sum[['team_name', 'xG', 'xG_against', 'xG_diff',
-                        'Goals', 'Goals_against', 'Goals_diff']],
-            hide_index=True
-        )
+        st.dataframe(df_set_pieces_sum[['team_name', 'xG', 'xG_against', 'xG_diff', 'Goals', 'Goals_against', 'Goals_diff',]], hide_index=True)
 
-        # --- Freekicks (chosen matches) ---
         st.write('Freekick')
-        df_fk_chosen = df_set_pieces_matches1[
-            df_set_pieces_matches1['set_piece_type'].isin(['freekick', 'freekick_shot'])
-        ]
-        df_fk_chosen_matches = compute_team_match_stats(df_fk_chosen)
-        df_fk_chosen_matches['team_name'] = df_fk_chosen_matches['team_name'].apply(
-            lambda x: 'Horsens' if x == 'Horsens' else 'Opponent'
-        )
-        df_fk_chosen_sum = aggregate_season_totals(df_fk_chosen_matches)
-        st.dataframe(df_fk_chosen_sum, hide_index=True)
 
-        # --- Corners (chosen matches) ---
+        Freekicks = df_set_pieces_matches1[df_set_pieces_matches1['set_piece_type'].isin(['freekick','freekick_shot'])]
+
+        # Goals per team per match (typeId == 16 = goal)
+        Freekicks_goals = Freekicks[Freekicks['typeId'] == 16].groupby(['team_name','label']).size().reset_index(name='Goals')
+
+        Freekicks = Freekicks.groupby(['team_name','label']).agg({'321.0':'sum'}).reset_index()
+        Freekicks['xG_match'] = Freekicks.groupby('label')['321.0'].transform('sum')
+        Freekicks['xG_against'] = Freekicks['321.0'] - Freekicks['xG_match']
+        Freekicks['xG_diff'] = Freekicks['321.0'] - Freekicks['xG_match'] + Freekicks['321.0']
+
+        # Add goals logic in same way as xG
+        Freekicks = Freekicks.merge(Freekicks_goals, on=['team_name','label'], how='left').fillna({'Goals':0})
+        Freekicks['Goals_match'] = Freekicks.groupby('label')['Goals'].transform('sum')
+        Freekicks['Goals_against'] = Freekicks['Goals'] - Freekicks['Goals_match']
+        Freekicks['Goals_diff'] = Freekicks['Goals'] - Freekicks['Goals_match'] + Freekicks['Goals']
+
+        # Aggregate
+        Freekicks = Freekicks.groupby('team_name').agg({
+            '321.0':'sum',
+            'xG_against':'sum',
+            'xG_diff':'sum',
+            'Goals':'sum',
+            'Goals_against':'sum',
+            'Goals_diff':'sum'
+        }).reset_index().rename(columns={'321.0':'xG'})
+
+        Freekicks = Freekicks.sort_values(by='Goals_diff',ascending=False)
+        st.dataframe(Freekicks,hide_index=True)
         st.write('Corners')
-        df_corners_chosen = df_set_pieces_matches1[
-            df_set_pieces_matches1['set_piece_type'] == 'corner'
-        ]
-        df_corners_chosen_matches = compute_team_match_stats(df_corners_chosen)
-        df_corners_chosen_matches['team_name'] = df_corners_chosen_matches['team_name'].apply(
-            lambda x: 'Horsens' if x == 'Horsens' else 'Opponent'
-        )
-        df_corners_chosen_sum = aggregate_season_totals(df_corners_chosen_matches)
-        st.dataframe(df_corners_chosen_sum, hide_index=True)
+        Corners = df_set_pieces_matches1[df_set_pieces_matches1['set_piece_type'] == 'corner']
+        Corners_goals = Corners[Corners['typeId'] == 16].groupby(['team_name','label']).size().reset_index(name='Goals')
 
-        # --- Throw-ins (chosen matches) ---
+        Corners = Corners.groupby(['team_name','label']).agg({'321.0':'sum'}).reset_index()
+        Corners['xG_match'] = Corners.groupby('label')['321.0'].transform('sum')
+        Corners['xG_against'] = Corners['321.0'] - Corners['xG_match']
+        Corners['xG_diff'] = Corners['321.0'] - Corners['xG_match'] + Corners['321.0']
+
+        Corners = Corners.merge(Corners_goals, on=['team_name','label'], how='left').fillna({'Goals':0})
+        Corners['Goals_match'] = Corners.groupby('label')['Goals'].transform('sum')
+        Corners['Goals_against'] = Corners['Goals'] - Corners['Goals_match']
+        Corners['Goals_diff'] = Corners['Goals'] - Corners['Goals_match'] + Corners['Goals']
+
+        Corners = Corners.groupby('team_name').agg({
+            '321.0':'sum',
+            'xG_against':'sum',
+            'xG_diff':'sum',
+            'Goals':'sum',
+            'Goals_against':'sum',
+            'Goals_diff':'sum'
+        }).reset_index().rename(columns={'321.0':'xG'})
+
+        Corners = Corners.sort_values(by='Goals_diff',ascending=False)
+        st.dataframe(Corners,hide_index=True)
         st.write('Throw ins')
-        df_throw_chosen = df_set_pieces_matches1[
-            df_set_pieces_matches1['set_piece_type'] == 'throw_in'
-        ]
-        df_throw_chosen_matches = compute_team_match_stats(df_throw_chosen)
-        df_throw_chosen_matches['team_name'] = df_throw_chosen_matches['team_name'].apply(
-            lambda x: 'Horsens' if x == 'Horsens' else 'Opponent'
-        )
-        df_throw_chosen_sum = aggregate_season_totals(df_throw_chosen_matches)
-        st.dataframe(df_throw_chosen_sum, hide_index=True)
+        Throw_ins = df_set_pieces_matches1[df_set_pieces_matches1['set_piece_type'] == 'throw_in']
+        Throw_ins_goals = Throw_ins[Throw_ins['typeId'] == 16].groupby(['team_name','label']).size().reset_index(name='Goals')
 
+        Throw_ins = Throw_ins.groupby(['team_name','label']).agg({'321.0':'sum'}).reset_index()
+        Throw_ins['xG_match'] = Throw_ins.groupby('label')['321.0'].transform('sum')
+        Throw_ins['xG_against'] = Throw_ins['321.0'] - Throw_ins['xG_match']
+        Throw_ins['xG_diff'] = Throw_ins['321.0'] - Throw_ins['xG_match'] + Throw_ins['321.0']
+
+        Throw_ins = Throw_ins.merge(Throw_ins_goals, on=['team_name','label'], how='left').fillna({'Goals':0})
+        Throw_ins['Goals_match'] = Throw_ins.groupby('label')['Goals'].transform('sum')
+        Throw_ins['Goals_against'] = Throw_ins['Goals'] - Throw_ins['Goals_match']
+        Throw_ins['Goals_diff'] = Throw_ins['Goals'] - Throw_ins['Goals_match'] + Throw_ins['Goals']
+
+        Throw_ins = Throw_ins.groupby('team_name').agg({
+            '321.0':'sum',
+            'xG_against':'sum',
+            'xG_diff':'sum',
+            'Goals':'sum',
+            'Goals_against':'sum',
+            'Goals_diff':'sum'
+        }).reset_index().rename(columns={'321.0':'xG'})
+
+        Throw_ins = Throw_ins.sort_values(by='Goals_diff',ascending=False)
+        st.dataframe(Throw_ins,hide_index=True)
 
     Data_types = {
         'Build up':Buildup,
