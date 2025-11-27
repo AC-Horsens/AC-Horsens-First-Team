@@ -2495,6 +2495,17 @@ def Dashboard():
         # Display the full figure
         st.pyplot(fig)
 
+    def extract_teams(label: str):
+        """
+        Example label: 'Hillerød vs AaB 2025-07-26'
+        Returns: (home_team, away_team)
+        """
+        home_raw, away_raw = label.split(" vs ", 1)
+        # Remove trailing date
+        away_clean = re.sub(r"\d{4}-\d{2}-\d{2}", "", away_raw).strip()
+        return home_raw.strip(), away_clean.strip()
+
+
     def set_pieces():
         df_set_pieces = load_set_piece_data()
         df_set_pieces = df_set_pieces[df_set_pieces['9.0'] != True]
