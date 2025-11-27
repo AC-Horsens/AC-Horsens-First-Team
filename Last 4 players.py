@@ -833,7 +833,7 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
     }
 
 df_xg, df_xa, df_pv, df_possession_stats, df_xa_agg, df_possession_data, df_xg_agg, df_pv_agg, df_xg_all, df_possession_xa, df_pv_all, df_matchstats, squads, possession_events = load_data()
-df_horsens_seneste = df_xg[df_xg['team_name'] == 'B 93']
+df_horsens_seneste = df_xg[df_xg['team_name'] == 'Horsens']
 dates = df_horsens_seneste['date'].drop_duplicates().sort_values()
 #dates = dates[-4:]
 position_dataframes = Process_data_spillere(df_possession_xa, df_pv, df_matchstats, df_xg_all, squads)
@@ -918,7 +918,7 @@ def create_pdf_progress_report_4_matches(position_dataframes):
         reordered_columns += [c for c in numeric_columns if c in table.columns]
         table = table[reordered_columns].round(2)
         table = table.sort_values('Total score', ascending=False)
-
+        table.to_csv('last 5.csv')
         # Render
         pdf.set_font("Arial", size=6)
         pdf.cell(190, 4, 
@@ -938,7 +938,7 @@ def create_pdf_progress_report_4_matches(position_dataframes):
                 pdf.cell(col_widths[i], 4, txt=convert_to_ascii(str(val)), border=1, fill=True)
             pdf.ln(4)
 
-
+    
     pdf.output(f"Progress reports/Progress_report_{today} 4 matches.pdf")
     print(f'{today} progress report created')
 

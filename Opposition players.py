@@ -7,7 +7,7 @@ from datetime import datetime
 from datetime import date
 from matplotlib.path import Path
 import unicodedata
-team_name = 'AaB'
+team_name = 'Horsens'
 
 def convert_to_ascii(text):
     if isinstance(text, str):
@@ -836,7 +836,7 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
 df_xg, df_xa, df_pv, df_possession_stats, df_xa_agg, df_possession_data, df_xg_agg, df_pv_agg, df_xg_all, df_possession_xa, df_pv_all, df_matchstats, squads, possession_events = load_data()
 df_horsens_seneste = df_xg[df_xg['team_name'] == team_name]
 dates = df_horsens_seneste['date'].drop_duplicates().sort_values()
-dates = dates[-5:]
+dates = dates[-1:]
 position_dataframes = Process_data_spillere(df_possession_xa, df_pv, df_matchstats, df_xg_all, squads)
 
 #defending_central_defender_df = position_dataframes['defending_central_defender']
@@ -870,6 +870,7 @@ def create_pdf_progress_report_4_matches(position_dataframes):
     # --- Horsens tables (full season, with 300 min filter) ---
     y_position = 30
     pdf.set_xy(5, y_position)
+    all_positions = []
     for position, df in position_dataframes.items():
         dfx = df.copy()
         dfx['Total score'] = pd.to_numeric(dfx['Total score'], errors='coerce')
@@ -918,7 +919,6 @@ def create_pdf_progress_report_4_matches(position_dataframes):
         reordered_columns += [c for c in numeric_columns if c in table.columns]
         table = table[reordered_columns].round(2)
         table = table.sort_values('Total score', ascending=False)
-
         # Render
         pdf.set_font("Arial", size=6)
         pdf.cell(190, 4, 
@@ -937,7 +937,11 @@ def create_pdf_progress_report_4_matches(position_dataframes):
             for i, val in enumerate(row):
                 pdf.cell(col_widths[i], 4, txt=convert_to_ascii(str(val)), border=1, fill=True)
             pdf.ln(4)
+        all_positions.append(table)
 
+    final_df = pd.concat(all_positions, ignore_index=True)
+    final_df = final_df[['playerName','Total score']]
+    final_df.to_csv("Last match.csv", index=False)
 
     pdf.output(f"Progress reports/Progress_report_{team_name}_{today}.pdf")
     print(f'{today} progress report created')
