@@ -2044,7 +2044,7 @@ def Dashboard():
         transitions_starts = df_transitions[
             (df_transitions['possession_index'] == 1) & 
             (df_transitions['team_name'] == 'Horsens') &
-            (df_transitions['sequence_duration'] >= 0) &
+            (df_transitions['sequence_duration'] > 0) &
             (df_transitions['sequence_xG'] > 0)
         ]
         action_count = transitions_starts['typeId'].value_counts()
