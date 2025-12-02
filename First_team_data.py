@@ -2534,10 +2534,18 @@ def Dashboard():
             .agg(team_xg=('321.0', 'sum'))
         )
 
-        df_set_pieces_matches['total_match_xg'] = df_set_pieces_matches.groupby(['label', 'date'])['team_xg'].transform('sum')
-        df_set_pieces_matches['xG_against'] = df_set_pieces_matches['total_match_xg'] - df_set_pieces_matches['team_xg']
-        df_set_pieces_matches['xG_diff'] = df_set_pieces_matches['321.0'] - df_set_pieces_matches['total_match_xg'] + df_set_pieces_matches['321.0']
+        df_set_pieces_matches['total_match_xg'] = (
+            df_set_pieces_matches.groupby(['label', 'date'])['team_xg'].transform('sum')
+        )
 
+        df_set_pieces_matches['xG_against'] = (
+            df_set_pieces_matches['total_match_xg'] - df_set_pieces_matches['team_xg']
+        )
+
+        # net set piece xG (for - against)
+        df_set_pieces_matches['xG_diff'] = (
+            df_set_pieces_matches['team_xg'] - df_set_pieces_matches['xG_against']
+        )
         # --- Goals per match (same logic as xG) ---
         goals_match = (
             df_set_pieces[df_set_pieces['typeId'] == 16]
