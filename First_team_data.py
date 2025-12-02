@@ -2925,12 +2925,18 @@ def Opposition_analysis():
 
     set_piece_df = load_set_piece_data()
     transition_df = load_transitions_data()
-    excluded_ids = set_piece_df['id'].dropna().unique()
 
-    # Remove transitions that are also in set pieces
-    transition_df = transition_df[~transition_df['id'].isin(excluded_ids)]
-    excluded_transition_id = transition_df['id'].dropna().unique()
+    excluded_ids = set_piece_df["id"].dropna().unique()
 
+    # IDs that will be excluded from transition_df (i.e., overlaps)
+    excluded_from_transition = (
+        transition_df.loc[transition_df["id"].isin(excluded_ids), "id"]
+        .dropna()
+        .unique()
+    )
+
+    st.write(f"Unique excluded IDs: {len(excluded_from_transition)}")
+    st.write(excluded_from_transition)
     set_piece_df = set_piece_df[set_piece_df['321.0'] > 0]
     set_piece_df = set_piece_df[set_piece_df['9.0'] != True]
     set_piece_df = set_piece_df[set_piece_df['9.0'] != 'true']
