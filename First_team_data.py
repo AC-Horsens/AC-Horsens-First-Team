@@ -3170,16 +3170,38 @@ def Opposition_analysis():
         100 * matchstats_df['possWonAtt3rd'] / matchstats_df['total_poss_won'],
         0
     )
+
+    matchstats_df['Organized attack xG per match'] = matchstats_df['xG per match'] - matchstats_df['Transition xG per match'] - matchstats_df['Set piece xG per match']
+    matchstats_df['Organized attack xG against per match'] = matchstats_df['xG against per match'] - matchstats_df['Transition xG against per match'] - matchstats_df['Set piece xG against per match']
+    matchstats_df['Organized attack xG share %'] = (
+        matchstats_df['Organized attack xG per match'] / matchstats_df['xG per match']
+    ) * 100
+
+    matchstats_df['Organized attack xG against share %'] = (
+        matchstats_df['Organized attack xG against per match'] / matchstats_df['xG against per match']
+    ) * 100
+
+    matchstats_df['Set piece xG difference'] = matchstats_df['Set piece xG per match'] - matchstats_df['Set piece xG against per match']
+    matchstats_df['Transition xG difference'] = matchstats_df['Transition xG per match'] - matchstats_df['Transition xG against per match']
+    matchstats_df['Organized attack xG difference'] = matchstats_df['Organized attack xG per match'] - matchstats_df[''Organized attack xG against' per match']
+
     matchstats_df = matchstats_df[[
         'team_name',
         'matches',
         'PenAreaEntries per match',
         'xG per match',
         'xG against per match',
+        'Organized attack xG per match',
+        'Organized attack xG against per match',
+        'Organized attack xG share %',
+        'Organized attack xG against share %',
+        'Organized attack xG difference',
         'Transition xG per match',
         'Transition xG against per match',
         'Transition xG share %',
         'Transition xG against share %',
+        'Transition xG difference',
+        'Set piece xG difference',
         'Set piece xG per match',
         'Set piece xG against per match',
         'Set piece xG share %',
@@ -3210,7 +3232,7 @@ def Opposition_analysis():
     cols_to_rank = matchstats_df.drop(columns=['team_name']).columns
     ranked_df = matchstats_df.copy()
     for col in cols_to_rank:
-        if (col == 'PPDA per match') or (col =='xG against per match') or (col=='Transition xG against per match') or (col=='Set piece xG against per match'):
+        if (col == 'PPDA per match') or (col =='xG against per match') or (col=='Transition xG against per match') or (col=='Set piece xG against per match') or (col=='Organized attack xG against'):
             ranked_df[col + '_rank'] = matchstats_df[col].rank(axis=0, ascending=True)
         else:
             ranked_df[col + '_rank'] = matchstats_df[col].rank(axis=0, ascending=False)
