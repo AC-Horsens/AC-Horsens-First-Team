@@ -2929,8 +2929,6 @@ def Opposition_analysis():
     transition_df = transition_df[~transition_df['id'].isin(excluded_ids)]
 
     set_piece_df = set_piece_df[set_piece_df['321.0'] > 0]
-    set_piece_df = set_piece_df[set_piece_df['9.0'] != True]
-    set_piece_df = set_piece_df[set_piece_df['9.0'] != 'true']
 
     # Aggregate xG by team and match (contestantId, team_name, label, date)
     set_piece_df = (
