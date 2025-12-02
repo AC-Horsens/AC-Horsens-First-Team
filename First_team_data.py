@@ -3183,7 +3183,7 @@ def Opposition_analysis():
 
     matchstats_df['Set piece xG difference'] = matchstats_df['Set piece xG per match'] - matchstats_df['Set piece xG against per match']
     matchstats_df['Transition xG difference'] = matchstats_df['Transition xG per match'] - matchstats_df['Transition xG against per match']
-    matchstats_df['Organized attack xG difference'] = matchstats_df['Organized attack xG per match'] - matchstats_df['Organized attack xG against' per match']
+    matchstats_df['Organized attack xG difference'] = matchstats_df['Organized attack xG per match'] - matchstats_df['Organized attack xG against per match']
 
     matchstats_df = matchstats_df[[
         'team_name',
