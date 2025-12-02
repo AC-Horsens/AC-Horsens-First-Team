@@ -2924,8 +2924,14 @@ def Opposition_analysis():
 
 
     set_piece_df = load_set_piece_data()
+    transition_df = load_transitions_data()
+    excluded_ids = set_piece_df['id'].dropna().unique()
 
-    # Filter for xG
+    # Remove transitions that are also in set pieces
+    transition_df = transition_df[~transition_df['id'].isin(excluded_ids)]
+    excluded_transition_id = transition_df['id'].dropna().unique()
+    df_possession = df_possession[~df_possession['id'].isin(excluded_transition_id)]
+
     set_piece_df = set_piece_df[set_piece_df['321.0'] > 0]
     set_piece_df = set_piece_df[set_piece_df['9.0'] != True]
     set_piece_df = set_piece_df[set_piece_df['9.0'] != 'true']
@@ -2959,7 +2965,6 @@ def Opposition_analysis():
     set_piece_df = set_piece_df.drop(columns=['total match set piece xG'])
     set_piece_df['label'] = np.where(set_piece_df['label'].notnull(), 1, set_piece_df['label'])
 
-    transition_df = load_transitions_data()
 
     # Filter for xG
     transition_df = transition_df[transition_df['321.0'] > 0]
