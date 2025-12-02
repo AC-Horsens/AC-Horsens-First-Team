@@ -2930,7 +2930,6 @@ def Opposition_analysis():
     # Remove transitions that are also in set pieces
     transition_df = transition_df[~transition_df['id'].isin(excluded_ids)]
     excluded_transition_id = transition_df['id'].dropna().unique()
-    df_possession = df_possession[~df_possession['id'].isin(excluded_transition_id)]
 
     set_piece_df = set_piece_df[set_piece_df['321.0'] > 0]
     set_piece_df = set_piece_df[set_piece_df['9.0'] != True]
