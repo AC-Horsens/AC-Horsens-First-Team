@@ -2535,7 +2535,7 @@ def Dashboard():
         )
 
         df_set_pieces_matches['total_match_xg'] = (
-            df_set_pieces_matches.groupby(['label', 'date'])['xGg'].transform('sum')
+            df_set_pieces_matches.groupby(['label', 'date'])['xG'].transform('sum')
         )
 
         df_set_pieces_matches['xG_against'] = (
