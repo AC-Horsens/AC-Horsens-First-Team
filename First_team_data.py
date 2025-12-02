@@ -2508,8 +2508,6 @@ def Dashboard():
 
     def set_pieces():
         df_set_pieces = load_set_piece_data()
-        df_set_pieces = df_set_pieces[df_set_pieces['9.0'] != True]
-        df_set_pieces = df_set_pieces[df_set_pieces['9.0'] != 'true']
         df_set_pieces[['home','away']] = df_set_pieces['label'].apply(
             lambda x: pd.Series(extract_teams(x))
         )
