@@ -4630,8 +4630,8 @@ def vocabulary():
 ### 🟢 **Defensive Line Success Rate**
 - We want to push our defensive line up to 25 meters in front of the goal whenever the ball is more than 40 meters away.
 
-### 🔵 **Set-Piece Efficiency**
-- Definition: 10 seconds after the set piece OR if the ball is cleared away from the final third.
+### 🔵 **Set-Pieces**
+- Definition: 10 seconds after the set piece.
 ---
 """)
 
