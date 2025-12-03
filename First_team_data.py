@@ -4570,47 +4570,62 @@ def Physical_data():
 
 def vocabulary():
     st.markdown("""
-    ## 🟡 **How to Understand This Dashboard**
+## 🟡 **How to Understand This Dashboard**
 
-    ### ⚽ **What You’ll Find Here**
+### ⚽ **What You’ll Find Here**
 
-    1. **Game State Analysis**
-       - Understand how much time the team spends in different match situations:
-         - Horsens (**Horsens ahead**)
-         - Draw (**equal score**)
-         - Opponent (**Opponent ahead**)
-       - This helps identify how well the team manages various match scenarios.
+1. **Game State Analysis**
+   - Horsens (**Horsens ahead**)
+   - Draw (**equal score**)
+   - Opponent (**Opponent ahead**)
 
-    2. **Key Performance Metrics**
-       - **xG (Expected Goals):** Measures the quality of chances created. A higher xG means the team is creating better chances.
-       - **xG Difference:** The balance between chances created and conceded.
-       - **xG Against:** Expected goals conceded — useful for evaluating defensive strength.
-       - **Passes per Possession:** Shows how many passes a team has per possession. Between 5 and 9 is the optimal for creating chances.
+2. **Key Performance Metrics**
+   - **xG (Expected Goals):** Measures the quality of chances created.
+   - **xG Difference:** Chances created minus chances conceded.
+   - **xG Against:** Expected goals conceded.
+   - **Passes per Possession:** Between 5 and 9 is often optimal.
 
-    3. **Per 90 Minutes Metrics**
-       - Standardizes the performance numbers to a per-game basis (per 90 minutes), making it easier to compare across matches or teams.
+3. **Per 90 Minutes Metrics**
+   - Standardizes performance to per 90 minutes.
+""")
 
-    ---
+    st.markdown("### 🧩 Pitch example (code)")
+    st.code(
+        """from mplsoccer import Pitch
+import matplotlib.pyplot as plt
 
+pitch = Pitch(pitch_type="custom", pitch_color='grass', line_color='white',
+              pitch_length=100, pitch_width=50)
+fig, ax = pitch.draw(figsize=(12, 7))
 
-    ### 🟠 **Team Mentality Score**
-       - Reflects how well the team controls space when defending.
-       - Focuses on **limiting dangerous actions** from the opponent in advanced areas.
-       - A higher score means better defensive discipline and mentality.
-       - We want to avoid box entries and dangerous shots. The team mentality score is measuring how many actions we can handle on our own third without the opponents threatening our goal
+goal_x, goal_y = 100, 25
+r1, r2 = 30, 60
 
-    ### 🟢 **Defensive Line Success Rate**
-       - Measures how effective the team is at holding a high defensive line.
-       - Indicates organization and the ability to limit opponent progress through compactness and positioning.
-       - We want to push our defensive line up to 25 meters in front of the goal whenever the ball is more than 40 meters away from our goal
-    ### 🔵 **Set-Piece Efficiency**
-       - Provides xG and actual goals from set-pieces like:
-         - Corners
-         - Free kicks
-         - Throw-ins
-        The definition of a set piece is 10 actions after the set piece or if the ball is cleared away from the final third
-    ---"""
-)
+ax.add_patch(plt.Circle((goal_x, goal_y), r1, fill=False, linewidth=3))
+ax.add_patch(plt.Circle((goal_x, goal_y), r2, fill=False, linewidth=3))
+
+ax.text(87, 25, "≤ 5s\\n(< 30m)", ha="center", va="center", fontsize=14, fontweight="bold")
+ax.text(55, 25, "≤ 8s\\n(30–60m)", ha="center", va="center", fontsize=14, fontweight="bold")
+ax.text(25, 25, "≤ 12s\\n(≥ 60m)", ha="center", va="center", fontsize=14, fontweight="bold")
+
+ax.set_title("Counterattack zones by start distance to goal (true meters)", fontsize=16)
+plt.show()
+""",
+        language="python",
+    )
+
+    st.markdown("""
+### 🟠 **Team Mentality Score**
+- Measuring how many actions we can handle in our own third without the opponents threatening our goal.
+
+### 🟢 **Defensive Line Success Rate**
+- We want to push our defensive line up to 25 meters in front of the goal whenever the ball is more than 40 meters away.
+
+### 🔵 **Set-Piece Efficiency**
+- Definition: 10 seconds after the set piece OR if the ball is cleared away from the final third.
+---
+""")
+
 
 def player_profiles():
     st.header("Player Profiles & Rating System")
