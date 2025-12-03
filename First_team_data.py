@@ -4568,6 +4568,10 @@ def Physical_data():
         # Display the plot in Streamlit
         st.plotly_chart(fig)
 
+import streamlit as st
+import matplotlib.pyplot as plt
+from mplsoccer import Pitch
+
 def vocabulary():
     st.markdown("""
 ## 🟡 **How to Understand This Dashboard**
@@ -4575,44 +4579,46 @@ def vocabulary():
 ### ⚽ **What You’ll Find Here**
 
 1. **Game State Analysis**
-   - Horsens (**Horsens ahead**)
-   - Draw (**equal score**)
-   - Opponent (**Opponent ahead**)
+- Horsens (**Horsens ahead**)
+- Draw (**equal score**)
+- Opponent (**Opponent ahead**)
 
 2. **Key Performance Metrics**
-   - **xG (Expected Goals):** Measures the quality of chances created.
-   - **xG Difference:** Chances created minus chances conceded.
-   - **xG Against:** Expected goals conceded.
-   - **Passes per Possession:** Between 5 and 9 is often optimal.
+- **xG (Expected Goals):** Measures the quality of chances created.
+- **xG Difference:** Chances created minus chances conceded.
+- **xG Against:** Expected goals conceded.
+- **Passes per Possession:** Between 5 and 9 is often optimal.
 
 3. **Per 90 Minutes Metrics**
-   - Standardizes performance to per 90 minutes.
+- Standardizes performance to per 90 minutes.
 """)
 
-    st.markdown("### 🧩 Pitch example (code)")
-    st.code(
-        """from mplsoccer import Pitch
-import matplotlib.pyplot as plt
+    # Optional: show a subtitle above the figure
+    st.markdown("### 🧩 Pitch example")
 
-pitch = Pitch(pitch_type="custom", pitch_color='grass', line_color='white',
-              pitch_length=100, pitch_width=50)
-fig, ax = pitch.draw(figsize=(12, 7))
-
-goal_x, goal_y = 100, 25
-r1, r2 = 30, 60
-
-ax.add_patch(plt.Circle((goal_x, goal_y), r1, fill=False, linewidth=3))
-ax.add_patch(plt.Circle((goal_x, goal_y), r2, fill=False, linewidth=3))
-
-ax.text(87, 25, "≤ 5s\\n(< 30m)", ha="center", va="center", fontsize=14, fontweight="bold")
-ax.text(55, 25, "≤ 8s\\n(30–60m)", ha="center", va="center", fontsize=14, fontweight="bold")
-ax.text(25, 25, "≤ 12s\\n(≥ 60m)", ha="center", va="center", fontsize=14, fontweight="bold")
-
-ax.set_title("Counterattack zones by start distance to goal (true meters)", fontsize=16)
-plt.show()
-""",
-        language="python",
+    # Draw the pitch (this actually executes and shows the pitch)
+    pitch = Pitch(
+        pitch_type="custom",
+        pitch_color="grass",
+        line_color="white",
+        pitch_length=100,
+        pitch_width=50,
     )
+    fig, ax = pitch.draw(figsize=(12, 7))
+
+    goal_x, goal_y = 100, 25
+    r1, r2 = 30, 60
+
+    ax.add_patch(plt.Circle((goal_x, goal_y), r1, fill=False, linewidth=3))
+    ax.add_patch(plt.Circle((goal_x, goal_y), r2, fill=False, linewidth=3))
+
+    ax.text(87, 25, "≤ 5s\n(< 30m)", ha="center", va="center", fontsize=14, fontweight="bold")
+    ax.text(55, 25, "≤ 8s\n(30–60m)", ha="center", va="center", fontsize=14, fontweight="bold")
+    ax.text(25, 25, "≤ 12s\n(≥ 60m)", ha="center", va="center", fontsize=14, fontweight="bold")
+
+    ax.set_title("Counterattack zones by start distance to goal (true meters)", fontsize=16)
+
+    st.pyplot(fig, clear_figure=True)
 
     st.markdown("""
 ### 🟠 **Team Mentality Score**
