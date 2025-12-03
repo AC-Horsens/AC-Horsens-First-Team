@@ -4574,27 +4574,30 @@ from mplsoccer import Pitch
 
 def vocabulary():
     st.markdown("""
-## 🟡 **How to Understand This Dashboard**
+    ## 🟡 **How to Understand This Dashboard**
 
-### ⚽ **What You’ll Find Here**
+    ### ⚽ **What You’ll Find Here**
 
-1. **Game State Analysis**
-- Horsens (**Horsens ahead**)
-- Draw (**equal score**)
-- Opponent (**Opponent ahead**)
+    1. **Game State Analysis**
+    - Horsens (**Horsens ahead**)
+    - Draw (**equal score**)
+    - Opponent (**Opponent ahead**)
 
-2. **Key Performance Metrics**
-- **xG (Expected Goals):** Measures the quality of chances created.
-- **xG Difference:** Chances created minus chances conceded.
-- **xG Against:** Expected goals conceded.
-- **Passes per Possession:** Between 5 and 9 is often optimal.
+    2. **Key Performance Metrics**
+    - **xG (Expected Goals):** Measures the quality of chances created.
+    - **xG Difference:** Chances created minus chances conceded.
+    - **xG Against:** Expected goals conceded.
+    - **Passes per Possession:** Between 5 and 9 is often optimal.
 
-3. **Per 90 Minutes Metrics**
-- Standardizes performance to per 90 minutes.
-""")
+    3. **Per 90 Minutes Metrics**
+    - Standardizes performance to per 90 minutes.
+    """
+
+
+)
 
     # Optional: show a subtitle above the figure
-    st.markdown("### 🧩 Pitch example")
+    st.markdown("### 🧩 Pitch example of transition definition")
 
     # Draw the pitch (this actually executes and shows the pitch)
     pitch = Pitch(
