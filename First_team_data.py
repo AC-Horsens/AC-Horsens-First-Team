@@ -2528,7 +2528,7 @@ def Dashboard():
         df_set_pieces_goals = df_set_pieces_goals.groupby('team_name').size().reset_index(name='Goals')
         df_set_pieces_goals = df_set_pieces_goals.sort_values(by='Goals', ascending=False)
         df_set_pieces['321.0'] = pd.to_numeric(df_set_pieces['321.0'], errors='coerce')
-        df_set_pieces = df_set_pieces[df_set_pieces['321.0'] > 0].copy()
+        df_set_pieces = df_set_pieces[(df_set_pieces['321.0'] > 0) | (df_set_pieces['own_goal'])].copy()
 
         # --- xG per match ---
         df_set_pieces_matches = (
