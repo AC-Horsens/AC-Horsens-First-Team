@@ -3187,7 +3187,8 @@ def Opposition_analysis():
     matchstats_df['Organized attack xG against share %'] = (
         matchstats_df['Organized attack xG against per match'] / matchstats_df['xG against per match']
     ) * 100
-
+    
+    matchstats_df['xG difference'] = matchstats_df['xG per match'] - matchstats_df['xG against per match']
     matchstats_df['Set piece xG difference'] = matchstats_df['Set piece xG per match'] - matchstats_df['Set piece xG against per match']
     matchstats_df['Transition xG difference'] = matchstats_df['Transition xG per match'] - matchstats_df['Transition xG against per match']
     matchstats_df['Organized attack xG difference'] = matchstats_df['Organized attack xG per match'] - matchstats_df['Organized attack xG against per match']
@@ -3198,6 +3199,7 @@ def Opposition_analysis():
         'PenAreaEntries per match',
         'xG per match',
         'xG against per match',
+        'xG difference',
         'Organized attack xG per match',
         'Organized attack xG against per match',
         'Organized attack xG share %',
@@ -4593,9 +4595,7 @@ def vocabulary():
     - Standardizes performance to per 90 minutes.
     """
 
-
 )
-
     # Optional: show a subtitle above the figure
     st.markdown("### 🧩 Pitch example of transition definition")
 
