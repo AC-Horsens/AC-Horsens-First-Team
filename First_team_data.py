@@ -2047,6 +2047,7 @@ def Dashboard():
             (df_transitions['sequence_duration'] > 0) &
             (df_transitions['sequence_xG'] > 0)
         ]
+        st.dataframe(transitions_starts)
         action_count = transitions_starts['typeId'].value_counts()
         st.dataframe(action_count)
         vis_type = st.selectbox("Choose visualization type", ["Pitch Scatter", "Heatmap"])
