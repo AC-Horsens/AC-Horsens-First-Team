@@ -482,7 +482,7 @@ def Process_data_spillere(df_possession_xa,df_pv,df_matchstats,df_xg_all,squads)
         return np.mean(expanded_scores)
 
     minutter_kamp = 45
-    minutter_total = 350
+    minutter_total = 0
         
     df_possession_xa = df_possession_xa.rename(columns={'318.0': 'xA'})
     df_possession_xa_summed = df_possession_xa.groupby(['playerName','label'])['xA'].sum().reset_index()
@@ -1757,7 +1757,7 @@ for index, row in horsens_df.iterrows():
 
 
 def create_pdf_progress_report(horsens_df, total_expected_points_combined, position_dataframes):
-    MIN_MINUTES = 500  # threshold for season part
+    MIN_MINUTES = 0  # threshold for season part
 
     today = date.today()
     pdf = FPDF()
