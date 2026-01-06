@@ -1548,7 +1548,7 @@ def Dashboard():
         goals = df_transitions[df_transitions['typeId'] == 16]
         goals_per_player = goals.groupby('playerName').size().reset_index(name='goals')
 
-        summary = df_transitions.groupby(['playerName','team_name'])[['assist', 'sequence_xG', '321.0', '322.0']].sum().reset_index()
+        summary = df_transitions.groupby(['playerName','team_name'])[['assist', 'sequence_xG','possession_xG', '321.0', '322.0']].sum().reset_index()
         summary = summary.rename(columns={'321.0':'xG','322.0': 'Post shot xG'})
         summary = summary.merge(goals_per_player, on='playerName', how='left')
         summary['goals'] = summary['goals'].fillna(0).astype(int)
