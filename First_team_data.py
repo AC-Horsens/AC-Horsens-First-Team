@@ -3437,99 +3437,103 @@ def Opposition_analysis():
                 # Now plot per match using team_colors
                 plot_avg_positions_off_ball(match_df, block_flag, team_colors)
 
-    elif viz_type == "On ball":
+elif viz_type == "On ball":
+
+    # Define your two on-ball “zones” (same criteria you already use)
+    on_ball_scenarios = [
+        {
+            "title": "Low base, low",
+            "mask": lambda d: (
+                ((d['att_dir'] == True) & (d['possessor_x'] < -22)) |
+                ((d['att_dir'] == False) & (d['possessor_x'] > 22))
+            )
+        },
+        {
+            "title": "Low base, high",
+            "mask": lambda d: (
+                ((d['att_dir'] == True) & (d['possessor_x'] > -10)) |
+                ((d['att_dir'] == False) & (d['possessor_x'] < 10))
+            )
+        }
+    ]
+
+    for sc in on_ball_scenarios:
 
         filtered = df_opponnent_on_ball[
-            (df_opponnent_on_ball['Low base'] == True) &  ~((df_opponnent_on_ball['period'] == 1) & (df_opponnent_on_ball['timemin_first'] > 44)) &
-            (
-                ((df_opponnent_on_ball['att_dir'] == True) & (df_opponnent_on_ball['possessor_x'] < -22)) |
-                ((df_opponnent_on_ball['att_dir'] == False) & (df_opponnent_on_ball['possessor_x'] > 22))
-            )
+            (df_opponnent_on_ball['Low base'] == True) &
+            ~((df_opponnent_on_ball['period'] == 1) & (df_opponnent_on_ball['timemin_first'] > 44)) &
+            sc["mask"](df_opponnent_on_ball)
         ].copy()
 
+        filtered = filtered[filtered['description'].isin(selected_match)]
         filtered['time_bin'] = (filtered['timemin_first'] // 15) * 15
-        filtered = filtered[filtered['description'].isin(selected_match)]        
 
-        # Receiver rows
-        receivers = filtered[['label', 'time_bin', 'receiver_name','receiver_position', 'receiver_x', 'receiver_y','att_dir']].copy()
-        receivers = receivers.rename(columns={
-            'receiver_name': 'player_name',
-            'receiver_position': 'position',
-            'receiver_x': 'x',
-            'receiver_y': 'y'
-        })
+        # === Build player rows EXACTLY like off-ball ===
+        all_players = []
+        for _, row in filtered.iterrows():
+            label = row['label']
+            time_bin = row['time_bin']
+            att_dir = row['att_dir']
+            description = row['description']
 
-        # Possessor rows
-        possessors = filtered[['label', 'time_bin', 'poss_player_name','poss_player_position', 'possessor_x', 'possessor_y','att_dir']].copy()
-        possessors = possessors.rename(columns={
-            'poss_player_name': 'player_name',
-            'poss_player_position': 'position',
-            'possessor_x': 'x',
-            'possessor_y': 'y'
-        })
+            # IMPORTANT: This assumes df_opponnent_on_ball has these columns too
+            home_players = eval(row['home_players'])
+            away_players = eval(row['away_players'])
 
-        # Combine
-        all_players = pd.concat([receivers, possessors], ignore_index=True)
+            for p in home_players + away_players:
+                player_id = p.get('playerId')
+                player_name = p.get('name', player_id)
+                player_position = p.get('position', player_id)
+                x, y = p['xyz'][0], p['xyz'][1]
+                team_type = 'home' if p in home_players else 'away'
 
-        # Average positions
-        avg_positions = all_players.groupby(['label', 'time_bin', 'player_name','position','att_dir']).agg(
+                all_players.append({
+                    'label': label,
+                    'description': description,
+                    'time_bin': time_bin,
+                    'player_name': player_name,
+                    'position': player_position,
+                    'x': x,
+                    'y': y,
+                    'att_dir': att_dir,
+                    'team': team_type
+                })
+
+        all_players_df = pd.DataFrame(all_players)
+
+        # Flip coordinates to normalize attacking direction (same as off-ball)
+        flipped = all_players_df['att_dir'] == True
+        all_players_df.loc[flipped, 'x'] = -all_players_df.loc[flipped, 'x']
+        all_players_df.loc[flipped, 'y'] = -all_players_df.loc[flipped, 'y']
+
+        # Compute average positions (same grouping keys as off-ball)
+        avg_positions = all_players_df.groupby(
+            ['label', 'time_bin', 'player_name', 'position', 'att_dir', 'team', 'description']
+        ).agg(
             x=('x', 'mean'),
             y=('y', 'mean')
         ).reset_index()
 
-        flipped = avg_positions['att_dir'] == False
-        avg_positions.loc[flipped, 'x'] = -avg_positions.loc[flipped, 'x']
-        avg_positions.loc[flipped, 'y'] = -avg_positions.loc[flipped, 'y']
+        # Determine team colors based on description (same as off-ball)
+        for match in avg_positions['label'].unique():
+            match_df = avg_positions[avg_positions['label'] == match].copy()
+            sample_label = match_df['description'].iloc[0]
 
-        avg_positions = avg_positions[avg_positions['time_bin'] < 90]
+            if 'vs' in sample_label:
+                team1 = sample_label.split('vs')[0].strip().replace(' ', '_')
+                team2 = re.sub(r'\s*\d{4}-\d{2}-\d{2}.*$', '', sample_label.split('vs', 1)[1]).strip().replace(' ', '_')
+            else:
+                team1 = team2 = "Unknown"
 
-        plot_avg_positions_on_ball(avg_positions,'Low base, low',selected_team)
+            team_colors = {
+                'home': color_map.get(team1, 'gray'),
+                'away': color_map.get(team2, 'gray')
+            }
 
-        filtered = df_opponnent_on_ball[
-            (df_opponnent_on_ball['Low base'] == True) &  ~((df_opponnent_on_ball['period'] == 1) & (df_opponnent_on_ball['timemin_first'] > 44)) &
-            (
-                ((df_opponnent_on_ball['att_dir'] == True) & (df_opponnent_on_ball['possessor_x'] > -10)) |
-                ((df_opponnent_on_ball['att_dir'] == False) & (df_opponnent_on_ball['possessor_x'] < 10))
-            )
-        ].copy()
+            # Filter first 90 mins
+            match_df = match_df[match_df['time_bin'] < 90]
 
-        filtered['time_bin'] = (filtered['timemin_first'] // 15) * 15
-        filtered = filtered[filtered['description'].isin(selected_match)]        
-
-        # Receiver rows
-        receivers = filtered[['label', 'time_bin', 'receiver_name','receiver_position', 'receiver_x', 'receiver_y','att_dir']].copy()
-        receivers = receivers.rename(columns={
-            'receiver_name': 'player_name',
-            'receiver_position': 'position',
-            'receiver_x': 'x',
-            'receiver_y': 'y'
-        })
-
-        # Possessor rows
-        possessors = filtered[['label', 'time_bin', 'poss_player_name','poss_player_position', 'possessor_x', 'possessor_y','att_dir']].copy()
-        possessors = possessors.rename(columns={
-            'poss_player_name': 'player_name',
-            'poss_player_position': 'position',
-            'possessor_x': 'x',
-            'possessor_y': 'y'
-        })
-
-
-        # Combine
-        all_players = pd.concat([receivers, possessors], ignore_index=True)
-
-        # Average positions
-        avg_positions = all_players.groupby(['label', 'time_bin', 'player_name','position','att_dir']).agg(
-            x=('x', 'mean'),
-            y=('y', 'mean')
-        ).reset_index()
-
-        flipped = avg_positions['att_dir'] == False
-        avg_positions.loc[flipped, 'x'] = -avg_positions.loc[flipped, 'x']
-        avg_positions.loc[flipped, 'y'] = -avg_positions.loc[flipped, 'y']
-        avg_positions = avg_positions[avg_positions['time_bin'] < 90]
-
-        plot_avg_positions_on_ball(avg_positions,'Low base, high',selected_team)
+            plot_avg_positions_off_ball(match_df, sc["title"], team_colors)
 
     target_ranks = [1,1.5, 2,2.5, 3,3.5, 4,4.5, 9,9.5, 10,10.5, 11,11.5, 12,12.5]
 
