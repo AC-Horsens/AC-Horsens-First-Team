@@ -277,7 +277,7 @@ def calculate_expected_points(df, value_column):
     return expected_points_df, total_expected_points_df
 
 def calculate_expected_points_top_6(df, value_column):
-    target_teams = {'Hvidovre', 'Horsens', 'Fredericia', 'Esbjerg', 'OB', 'Kolding'}
+    target_teams = {'Hvidovre', 'Horsens', 'Kolding', 'Esbjerg', 'AaB','Hillerød','Lyngby'}
     
     expected_points_list = []
     total_expected_points = {team: 0 for team in df['team_name'].unique()}
@@ -1499,27 +1499,27 @@ def process_data():
     merged_df = merged_df.merge(df_holdsummary,on=['label', 'team_name'],how='outer')
     label_counts_per_team = merged_df.groupby('team_name')['label'].count().reset_index()
 
-    #top_6_teams = ['Hvidovre', 'Horsens', 'Fredericia', 'Esbjerg', 'OB', 'Kolding']
+    top_6_teams = ['Hvidovre', 'Horsens', 'Kolding', 'Esbjerg', 'AaB','Hillerød','Lyngby']
 
-    # Find labels hvor mindst to af holdene er blandt top 6
-    #labels_with_two_or_more_top_6 = (
-    #    merged_df[merged_df['team_name'].isin(top_6_teams)]
-    #    .groupby('label')['team_name']
-    #    .nunique()
-    #    .reset_index()
-    #)
-    #labels_with_two_or_more_top_6 = labels_with_two_or_more_top_6[labels_with_two_or_more_top_6['team_name'] >= 2]['label']
+    #Find labels hvor mindst to af holdene er blandt top 6
+    labels_with_two_or_more_top_6 = (
+        merged_df[merged_df['team_name'].isin(top_6_teams)]
+        .groupby('label')['team_name']
+        .nunique()
+        .reset_index()
+    )
+    labels_with_two_or_more_top_6 = labels_with_two_or_more_top_6[labels_with_two_or_more_top_6['team_name'] >= 2]['label']
 
-    # Filtrer original dataframe til kun de labels
-    #filtered_df = merged_df[merged_df['label'].isin(labels_with_two_or_more_top_6)]
+    #Filtrer original dataframe til kun de labels
+    filtered_df = merged_df[merged_df['label'].isin(labels_with_two_or_more_top_6)]
 
-    # Tæl kampe per hold (kun de labels med to eller flere af de nævnte hold)
-    #label_counts_per_team_top_6 = (
-    #    filtered_df.groupby('team_name')['label']
-    #    .count()
-    #    .reset_index()
-    #    .rename(columns={'label': 'Top 6 match count'})
-    #)
+    #Tæl kampe per hold (kun de labels med to eller flere af de nævnte hold)
+    label_counts_per_team_top_6 = (
+        filtered_df.groupby('team_name')['label']
+        .count()
+        .reset_index()
+        .rename(columns={'label': 'Top 6 match count'})
+    )
     horsens_df = merged_df[merged_df['team_name'] == 'Horsens']
 
     total_expected_points_combined = total_expected_points_xg.merge(total_expected_points_xa, on='team_name', suffixes=('_xg', '_xa'))
@@ -1529,20 +1529,20 @@ def process_data():
     total_expected_points_combined ['Expected points per game'] = total_expected_points_combined['Total expected points'] / total_expected_points_combined['label']
     total_expected_points_combined = total_expected_points_combined.rename(columns={'label': 'matches'})
 
-    #total_expected_points_combined_top_6 = total_expected_points_xg_top_6.merge(total_expected_points_xa_top_6, on='team_name', suffixes=('_xg', '_xa'))
-    #total_expected_points_combined_top_6['Total expected points'] = (total_expected_points_combined_top_6['total_expected_points_xg'] + total_expected_points_combined_top_6['total_expected_points_xa']) / 2
-    #total_expected_points_combined_top_6 = total_expected_points_combined_top_6[['team_name', 'Total expected points']]
-    #total_expected_points_combined_top_6 = total_expected_points_combined_top_6[total_expected_points_combined_top_6['Total expected points'] > 0]
-    #total_expected_points_combined_top_6 = label_counts_per_team_top_6.merge(total_expected_points_combined_top_6)
-    #total_expected_points_combined_top_6 ['Expected points per game'] = total_expected_points_combined_top_6['Total expected points'] / total_expected_points_combined_top_6['Top 6 match count']
+    total_expected_points_combined_top_6 = total_expected_points_xg_top_6.merge(total_expected_points_xa_top_6, on='team_name', suffixes=('_xg', '_xa'))
+    total_expected_points_combined_top_6['Total expected points'] = (total_expected_points_combined_top_6['total_expected_points_xg'] + total_expected_points_combined_top_6['total_expected_points_xa']) / 2
+    total_expected_points_combined_top_6 = total_expected_points_combined_top_6[['team_name', 'Total expected points']]
+    total_expected_points_combined_top_6 = total_expected_points_combined_top_6[total_expected_points_combined_top_6['Total expected points'] > 0]
+    total_expected_points_combined_top_6 = label_counts_per_team_top_6.merge(total_expected_points_combined_top_6)
+    total_expected_points_combined_top_6 ['Expected points per game'] = total_expected_points_combined_top_6['Total expected points'] / total_expected_points_combined_top_6['Top 6 match count']
 
-    return horsens_df, merged_df, total_expected_points_combined
+    return horsens_df, merged_df, total_expected_points_combined, total_expected_points_combined_top_6
 
 df_xg, df_xa, df_pv, df_possession_stats, df_xa_agg, df_possession_data, df_xg_agg, df_pv_agg, df_xg_all, df_possession_xa, df_pv_all, df_matchstats, squads, possession_events = load_data()
 df_xg_agg, df_xa_agg, df_pv_agg, df_possession_stats, df_possession_stats_summary = preprocess_data(df_xg_agg, df_xa_agg, df_pv_agg, df_possession_stats)
 df_ppda = calculate_ppda(df_possession_data)
 
-horsens_df, merged_df, total_expected_points_combined = process_data()
+horsens_df, merged_df, total_expected_points_combined, total_expected_points_combined_top_6 = process_data()
 
 position_dataframes = Process_data_spillere(df_possession_xa, df_pv, df_matchstats, df_xg_all, squads)
 
@@ -1756,7 +1756,7 @@ for index, row in horsens_df.iterrows():
         print(f"Skipping creation for {label}, PDF already exists.")
 
 
-def create_pdf_progress_report(horsens_df, total_expected_points_combined, position_dataframes):
+def create_pdf_progress_report(horsens_df, total_expected_points_combined_top_6, position_dataframes):
     MIN_MINUTES = 0  # threshold for season part
 
     today = date.today()
@@ -1776,15 +1776,15 @@ def create_pdf_progress_report(horsens_df, total_expected_points_combined, posit
     pdf.image("sliding_average_plot.png", x=5, y=15, w=200)
 
     # --- Total expected points table ---
-    total_expected_points_combined = total_expected_points_combined.round(2)
-    total_expected_points_combined = total_expected_points_combined.sort_values(
+    total_expected_points_combined_top_6 = total_expected_points_combined_top_6.round(2)
+    total_expected_points_combined_top_6 = total_expected_points_combined_top_6.sort_values(
         by='Expected points per game', ascending=False
     )
     plt.figure(figsize=(12, 0.01), dpi=500)
     plt.axis('off')
     plt.rc('font', size=6)
-    plt.table(cellText=total_expected_points_combined.values,
-              colLabels=total_expected_points_combined.columns,
+    plt.table(cellText=total_expected_points_combined_top_6.values,
+              colLabels=total_expected_points_combined_top_6.columns,
               colLoc='left', cellLoc='left', loc='center')
     plt.savefig("total_expected_points_table.png", format="png", bbox_inches='tight')
     plt.close()
@@ -1915,7 +1915,7 @@ def create_pdf_progress_report(horsens_df, total_expected_points_combined, posit
     pdf.output(f"Progress reports/Progress_report_{today}.pdf")
     print(f'{today} progress report created')
 
-create_pdf_progress_report(horsens_df, total_expected_points_combined, position_dataframes)
+create_pdf_progress_report(horsens_df, total_expected_points_combined_top_6, position_dataframes)
 
 
 folder_path = 'C:/Users/Seamus-admin/Documents/GitHub/AC-Horsens-First-Team/'
