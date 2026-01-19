@@ -112,8 +112,8 @@ def load_squads():
     return squads
 
 @st.cache_data
-def load_physical_data():
-    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2025_2026/Physical%20data_all.csv'
+def load_team_physical_data():
+    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2025_2026/physical%20data/team_averages.csv'
     physical_data = pd.read_csv(url)
     return physical_data
 
@@ -4494,87 +4494,8 @@ def Tactical_breakdown():
     st.dataframe(tactical_counts, use_container_width=True, hide_index=True)
 
 def Physical_data():
-    df = load_physical_data()
-    df_matchstats = load_match_stats()
-    df_matchstats = df_matchstats[['player_matchName','minsPlayed','player_playerId','contestantId','label','match_id','date']]
-    df_matchstats = df_matchstats.rename(columns={'player_playerId': 'optaUuid', 'match_id': 'Opta match id'})
-    df = df.merge(df_matchstats,on=['Opta match id','optaUuid'])
-
-    total_df = df[['Team','label','High Speed Running Distance','High Speed Running Count','Sprinting Count','Sprinting Distance','Total Distance']]
-    total_df = total_df.groupby(['Team','label']).sum().reset_index()
-    total_df = total_df[['Team','High Speed Running Distance','High Speed Running Count','Sprinting Count','Sprinting Distance','Total Distance']]
-    total_df = total_df.groupby('Team').mean().reset_index()
-    total_df = total_df.round(2)
-
-    df = df[df['minsPlayed'].astype(int) > 30]
-    df = df[['Player','Team','label','minsPlayed','High Speed Running Distance','High Speed Running Count','Sprinting Count','Sprinting Distance','Total Distance']]
-    
-    metric_columns = ['High Speed Running Distance', 'High Speed Running Count', 'Sprinting Count', 
-                      'Sprinting Distance', 'Total Distance']
-    
-    # Adjust each metric column to be per 90 minutes
-    for col in metric_columns:
-        df[col] = (df[col].astype(float) / df['minsPlayed'].astype(float)) * 90
-    df = df.round(2)
-    team = sorted(df['Team'].unique())
-    col1,col2 = st.columns(2)
-    with col1:
-        teams = st.selectbox('Choose team',team)
-    team_df = df[df['Team'] == teams]
-    matches = team_df['label'].unique()
-    with col2:
-        match = st.multiselect('Choose match',matches,default=matches)
-
-    team_df = team_df[team_df['label'].isin(match)]
-
-    team_df = team_df[['Player','minsPlayed','High Speed Running Distance','High Speed Running Count','Sprinting Count','Sprinting Distance','Total Distance']]
-    sum_df = df[['Player','minsPlayed']]
-    sum_df = sum_df.groupby('Player').sum().reset_index()
-    sum_df = sum_df[sum_df['minsPlayed'] > 300]
-    df = df.merge(sum_df,on='Player',how='inner')
-    df = df[['Player','Team','High Speed Running Distance','High Speed Running Count','Sprinting Count','Sprinting Distance','Total Distance']]
-
-    df = df.groupby(['Player','Team']).mean().reset_index()
-    df = df.round(2)
-
-    st.write('All matches')
-    st.dataframe(df,hide_index=True)
-    team_df = team_df.merge(sum_df,on='Player',how='inner')
-    team_df = team_df[['Player','High Speed Running Distance','High Speed Running Count','Sprinting Count','Sprinting Distance','Total Distance']]
-
-    team_df = team_df.groupby(['Player']).mean().reset_index()
-    team_df = team_df.round(2)
-
-    st.write('Chosen matches')
-    st.dataframe(team_df, hide_index=True)
-
-    st.write("Team Total Metrics (Sorted by Metric)")
-    for metric in metric_columns:
-        # Sort data by the metric in descending order
-        sorted_df = total_df[['Team', metric]].sort_values(by=metric, ascending=False)
-        
-        # Create a bar chart with Plotly
-        fig = go.Figure(
-            data=[
-                go.Bar(
-                    x=sorted_df['Team'], 
-                    y=sorted_df[metric],
-                    orientation='v'
-                )
-            ]
-        )
-        
-        # Update layout for the chart
-        fig.update_layout(
-            title=f"{metric} by Team (Top to Bottom)",
-            xaxis_title="Team",
-            yaxis_title=metric,
-            xaxis=dict(categoryorder="total descending")  # Ensure x-axis is sorted from top to bottom
-        )
-        
-        # Display the plot in Streamlit
-        st.plotly_chart(fig)
-
+    df = load_team_physical_data()
+    print(df)
 import streamlit as st
 import matplotlib.pyplot as plt
 from mplsoccer import Pitch
@@ -4639,7 +4560,6 @@ def vocabulary():
 - Definition: 10 seconds after the set piece.
 ---
 """)
-
 
 def player_profiles():
     st.header("Player Profiles & Rating System")
