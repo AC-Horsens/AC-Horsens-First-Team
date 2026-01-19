@@ -1311,6 +1311,14 @@ def normalize_numeric_columns(df, cols):
         df[c] = df[c].apply(coerce_mixed_number)
     return df
 
+def format_eu(x, decimals=2):
+    """Return number formatted like 8.334,7544 (EU style)."""
+    if pd.isna(x):
+        return ""
+    s = f"{float(x):,.{decimals}f}"          # -> 8,334.7544 (US style)
+    return s.replace(",", "X").replace(".", ",").replace("X", ".")  # -> 8.334,7544
+
+
 df_xA = load_xA()
 df_pv = load_pv_all()
 df_match_stats = load_match_stats()
@@ -4535,31 +4543,39 @@ def Tactical_breakdown():
 
 def Physical_data():
     df = load_team_physical_data()
+
     df = df.rename(columns=lambda c: c.replace("No. ", "No ").replace(".", ""))
 
-    metrics = [
-        "Distance",
-        "High Speed Running",
-        "Sprinting",
+    metrics_km = ["Distance"]  # assuming Distance is already in km in your screenshot
+    metrics_m = ["High Speed Running", "Sprinting"]  # these look like meters
+    metrics_counts = [
         "No of High Intensity Runs",
         "No of High Intensity Runs OTIP",
         "No of High Intensity Runs TIP",
         "No of High Intensity Runs BOP",
     ]
+    metrics = metrics_km + metrics_m + metrics_counts
 
     df = df[["team"] + metrics].copy()
-
-    # Convert mixed-format numbers safely
     df = normalize_numeric_columns(df, metrics)
-    st.write(df.dtypes)
-    # Optional: nicer display
+
+    # ---- DISPLAY formatting (strings) ----
     df_display = df.copy()
-    df_display["Distance"] = (df_display["Distance"] / 1000).round(2)  # km
-    hir_cols = [c for c in metrics if "High Intensity Runs" in c]
-    df_display[hir_cols] = df_display[hir_cols].round(0).astype("Int64")
+
+    # Distance (km): show 3 decimals so 10 km -> 10,000 (EU)
+    df_display["Distance"] = df_display["Distance"].apply(lambda v: format_eu(v, decimals=3))
+
+    # HSR / Sprinting (meters): 4 decimals so 8334.7544 -> 8.334,7544
+    for c in metrics_m:
+        df_display[c] = df_display[c].apply(lambda v: format_eu(v, decimals=4))
+
+    # Counts: integers with thousands separator
+    for c in metrics_counts:
+        df_display[c] = df_display[c].apply(lambda v: format_eu(v, decimals=0))
 
     st.dataframe(df_display)
 
+    # ---- Chart uses numeric df ----
     metric = st.selectbox("Metric", metrics)
 
     chart_df = df[["team", metric]].dropna().sort_values(metric, ascending=False)
@@ -4569,8 +4585,8 @@ def Physical_data():
         .mark_bar()
         .encode(
             x=alt.X("team:N", sort="-y", title="Team"),
-            y=alt.Y(f"{metric}:Q", title=metric),
-            tooltip=["team", alt.Tooltip(metric, format=",.2f")]
+            y=alt.Y(metric, type="quantitative", title=metric),
+            tooltip=["team", alt.Tooltip(metric, type="quantitative", format=",.2f")]
         )
         .properties(height=420)
     )
