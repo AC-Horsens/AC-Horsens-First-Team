@@ -4495,6 +4495,7 @@ def Tactical_breakdown():
 
 def Physical_data():
     df = load_team_physical_data()
+    df = df[['team','Distance','High Speed Running','No. of High Intensity Runs','No. of High Intensity Runs OTIP','No. of High Intensity Runs TIP','No. of High Intensity Runs BOP']]
     st.write(df)
 import streamlit as st
 import matplotlib.pyplot as plt
