@@ -4495,8 +4495,37 @@ def Tactical_breakdown():
 
 def Physical_data():
     df = load_team_physical_data()
-    df = df[['team','Distance','High Speed Running','No. of High Intensity Runs','No. of High Intensity Runs OTIP','No. of High Intensity Runs TIP','No. of High Intensity Runs BOP']]
-    st.write(df)
+
+    metrics = [
+        "Distance",
+        "High Speed Running",
+        "Sprinting",
+        "No. of High Intensity Runs",
+        "No. of High Intensity Runs OTIP",
+        "No. of High Intensity Runs TIP",
+        "No. of High Intensity Runs BOP",
+    ]
+
+    df = df[["team"] + metrics].copy()
+    st.dataframe(df)
+
+    # dropdown to select metric
+    metric = st.selectbox("Metric", metrics)
+
+    chart_df = df[["team", metric]].dropna().sort_values(metric, ascending=False)
+
+    chart = (
+        alt.Chart(chart_df)
+        .mark_bar()
+        .encode(
+            x=alt.X("team:N", sort="-y", title="Team"),
+            y=alt.Y(f"{metric}:Q", title=metric),
+            tooltip=["team", alt.Tooltip(metric, format=",.2f")]
+        )
+        .properties(height=420)
+    )
+
+    st.altair_chart(chart, use_container_width=True)
 import streamlit as st
 import matplotlib.pyplot as plt
 from mplsoccer import Pitch
