@@ -4573,7 +4573,6 @@ def Physical_data():
     for c in metrics_counts:
         df_display[c] = df_display[c].apply(lambda v: format_eu(v, decimals=0))
 
-    st.dataframe(df_display)
 
     # ---- Chart uses numeric df ----
     metric = st.selectbox("Metric", metrics)
@@ -4593,6 +4592,7 @@ def Physical_data():
 
     st.altair_chart(chart, use_container_width=True)
 
+    st.dataframe(df_display)
 
 import streamlit as st
 import matplotlib.pyplot as plt
