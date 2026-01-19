@@ -4567,7 +4567,7 @@ def Physical_data():
 
     # HSR / Sprinting (meters): 4 decimals so 8334.7544 -> 8.334,7544
     for c in metrics_m:
-        df_display[c] = df_display[c].apply(lambda v: format_eu(v, decimals=4))
+        df_display[c] = df_display[c].apply(lambda v: format_eu(v, decimals=2))
 
     # Counts: integers with thousands separator
     for c in metrics_counts:
