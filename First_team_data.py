@@ -113,7 +113,7 @@ def load_squads():
 
 @st.cache_data
 def load_team_physical_data():
-    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2025_2026/physical%20data/team_averages.csv'
+    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/physical%20data/team_averages.csv'
     physical_data = pd.read_csv(url)
     return physical_data
 
