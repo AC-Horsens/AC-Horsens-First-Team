@@ -1273,23 +1273,37 @@ def plot_avg_positions_off_ball(df, phase, team_colors):
             st.pyplot(fig)
 
 def coerce_mixed_number(x):
-    """
-    Converts:
-      - '119.164,3227'  -> 119164.3227   (EU thousands+decimal)
-      - '11556.3193'    -> 11556.3193    (already OK)
-      - 1234.56 (float) -> 1234.56
-    """
     if pd.isna(x):
         return np.nan
 
-    s = str(x).strip()
+    s = str(x).strip().replace(" ", "")
+    if s == "":
+        return np.nan
 
-    # If it contains a comma, assume EU formatting: '.' thousands, ',' decimal
-    if "," in s:
-        s = s.replace(".", "").replace(",", ".")
+    has_comma = "," in s
+    has_dot = "." in s
+
+    # both comma and dot -> decide by which comes last
+    if has_comma and has_dot:
+        if s.rfind(",") > s.rfind("."):
+            # EU: 119.164,32 -> 119164.32
+            s = s.replace(".", "").replace(",", ".")
+        else:
+            # US: 1,234.56 -> 1234.56
+            s = s.replace(",", "")
         return pd.to_numeric(s, errors="coerce")
 
-    # Otherwise assume normal numeric string already
+    # only comma -> either thousands (1,179) or decimal (12,5)
+    if has_comma and not has_dot:
+        parts = s.split(",")
+        # if last chunk has 3 digits -> thousands separator
+        if len(parts[-1]) == 3 and all(p.isdigit() for p in parts):
+            s = s.replace(",", "")
+        else:
+            s = s.replace(",", ".")
+        return pd.to_numeric(s, errors="coerce")
+
+    # only dot or neither
     return pd.to_numeric(s, errors="coerce")
 
 def normalize_numeric_columns(df, cols):
