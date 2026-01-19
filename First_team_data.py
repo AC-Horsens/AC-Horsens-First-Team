@@ -4535,15 +4535,16 @@ def Tactical_breakdown():
 
 def Physical_data():
     df = load_team_physical_data()
+    df = df.rename(columns=lambda c: c.replace("No. ", "No ").replace(".", ""))
 
     metrics = [
         "Distance",
         "High Speed Running",
         "Sprinting",
-        "No. of High Intensity Runs",
-        "No. of High Intensity Runs OTIP",
-        "No. of High Intensity Runs TIP",
-        "No. of High Intensity Runs BOP",
+        "No of High Intensity Runs",
+        "No of High Intensity Runs OTIP",
+        "No of High Intensity Runs TIP",
+        "No of High Intensity Runs BOP",
     ]
 
     df = df[["team"] + metrics].copy()
@@ -4568,8 +4569,8 @@ def Physical_data():
         .mark_bar()
         .encode(
             x=alt.X("team:N", sort="-y", title="Team"),
-            y=alt.Y(alt.Field(field=metric, type="quantitative"), title=metric),
-            tooltip=["team", alt.Tooltip(alt.Field(field=metric, type="quantitative"), format=",.2f")]
+            y=alt.Y(f"{metric}:Q", title=metric),
+            tooltip=["team", alt.Tooltip(metric, format=",.2f")]
         )
         .properties(height=420)
     )
