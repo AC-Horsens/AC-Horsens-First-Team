@@ -4550,7 +4550,7 @@ def Physical_data():
 
     # Convert mixed-format numbers safely
     df = normalize_numeric_columns(df, metrics)
-
+    st.write(df.dtypes)
     # Optional: nicer display
     df_display = df.copy()
     df_display["Distance"] = (df_display["Distance"] / 1000).round(2)  # km
