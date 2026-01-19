@@ -19,6 +19,7 @@ import math
 import re
 from urllib.parse import quote
 from sklearn.neighbors import NearestNeighbors
+import altair as alt
 
 st.set_page_config(layout='wide')
 
