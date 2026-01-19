@@ -1272,15 +1272,29 @@ def plot_avg_positions_off_ball(df, phase, team_colors):
             fig.suptitle(f"{match} – {phase}", fontsize=14)
             st.pyplot(fig)
 
+def coerce_mixed_number(x):
+    """
+    Converts:
+      - '119.164,3227'  -> 119164.3227   (EU thousands+decimal)
+      - '11556.3193'    -> 11556.3193    (already OK)
+      - 1234.56 (float) -> 1234.56
+    """
+    if pd.isna(x):
+        return np.nan
+
+    s = str(x).strip()
+
+    # If it contains a comma, assume EU formatting: '.' thousands, ',' decimal
+    if "," in s:
+        s = s.replace(".", "").replace(",", ".")
+        return pd.to_numeric(s, errors="coerce")
+
+    # Otherwise assume normal numeric string already
+    return pd.to_numeric(s, errors="coerce")
+
 def normalize_numeric_columns(df, cols):
     for c in cols:
-        df[c] = (
-            df[c]
-            .astype(str)
-            .str.replace(".", "", regex=False)   # remove thousand sep
-            .str.replace(",", ".", regex=False)  # fix decimal
-            .astype(float)
-        )
+        df[c] = df[c].apply(coerce_mixed_number)
     return df
 
 df_xA = load_xA()
@@ -4520,10 +4534,16 @@ def Physical_data():
 
     df = df[["team"] + metrics].copy()
 
-    # 🔴 CRITICAL LINE
+    # Convert mixed-format numbers safely
     df = normalize_numeric_columns(df, metrics)
 
-    st.dataframe(df)
+    # Optional: nicer display
+    df_display = df.copy()
+    df_display["Distance"] = (df_display["Distance"] / 1000).round(2)  # km
+    hir_cols = [c for c in metrics if "High Intensity Runs" in c]
+    df_display[hir_cols] = df_display[hir_cols].round(0).astype("Int64")
+
+    st.dataframe(df_display)
 
     metric = st.selectbox("Metric", metrics)
 
@@ -4535,12 +4555,13 @@ def Physical_data():
         .encode(
             x=alt.X("team:N", sort="-y", title="Team"),
             y=alt.Y(f"{metric}:Q", title=metric),
-            tooltip=["team", alt.Tooltip(metric, format=",.0f")]
+            tooltip=["team", alt.Tooltip(metric, format=",.2f")]
         )
         .properties(height=420)
     )
 
     st.altair_chart(chart, use_container_width=True)
+
 
 import streamlit as st
 import matplotlib.pyplot as plt
