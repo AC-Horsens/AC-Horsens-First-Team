@@ -1272,6 +1272,17 @@ def plot_avg_positions_off_ball(df, phase, team_colors):
             fig.suptitle(f"{match} – {phase}", fontsize=14)
             st.pyplot(fig)
 
+def normalize_numeric_columns(df, cols):
+    for c in cols:
+        df[c] = (
+            df[c]
+            .astype(str)
+            .str.replace(".", "", regex=False)   # remove thousand sep
+            .str.replace(",", ".", regex=False)  # fix decimal
+            .astype(float)
+        )
+    return df
+
 df_xA = load_xA()
 df_pv = load_pv_all()
 df_match_stats = load_match_stats()
@@ -4508,9 +4519,12 @@ def Physical_data():
     ]
 
     df = df[["team"] + metrics].copy()
+
+    # 🔴 CRITICAL LINE
+    df = normalize_numeric_columns(df, metrics)
+
     st.dataframe(df)
-    st.write(df.dtypes)
-    # dropdown to select metric
+
     metric = st.selectbox("Metric", metrics)
 
     chart_df = df[["team", metric]].dropna().sort_values(metric, ascending=False)
@@ -4521,12 +4535,13 @@ def Physical_data():
         .encode(
             x=alt.X("team:N", sort="-y", title="Team"),
             y=alt.Y(f"{metric}:Q", title=metric),
-            tooltip=["team", alt.Tooltip(metric, format=",.2f")]
+            tooltip=["team", alt.Tooltip(metric, format=",.0f")]
         )
         .properties(height=420)
     )
 
     st.altair_chart(chart, use_container_width=True)
+
 import streamlit as st
 import matplotlib.pyplot as plt
 from mplsoccer import Pitch
