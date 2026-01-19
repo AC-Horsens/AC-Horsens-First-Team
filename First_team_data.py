@@ -4509,7 +4509,7 @@ def Physical_data():
 
     df = df[["team"] + metrics].copy()
     st.dataframe(df)
-
+    st.write(df.dtypes)
     # dropdown to select metric
     metric = st.selectbox("Metric", metrics)
 
