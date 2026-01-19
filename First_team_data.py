@@ -4563,7 +4563,7 @@ def Physical_data():
     df_display = df.copy()
 
     # Distance (km): show 3 decimals so 10 km -> 10,000 (EU)
-    df_display["Distance"] = df_display["Distance"].apply(lambda v: format_eu(v, decimals=3))
+    df_display["Distance"] = df_display["Distance"].apply(lambda v: format_eu(v, decimals=2))
 
     # HSR / Sprinting (meters): 4 decimals so 8334.7544 -> 8.334,7544
     for c in metrics_m:
