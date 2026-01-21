@@ -4612,6 +4612,7 @@ def Physical_data():
     )
 
     st.altair_chart(chart, use_container_width=True)
+    st.dataframe(df_display)
 
     st.markdown("---")
     st.subheader("Team development over time")
@@ -4695,7 +4696,6 @@ def Physical_data():
         st.info("Select at least one metric to show the development chart.")
 
 
-    st.dataframe(df_display)
 
 import streamlit as st
 import matplotlib.pyplot as plt
