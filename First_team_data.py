@@ -4544,7 +4544,7 @@ def Tactical_breakdown():
 def Physical_data():
     col1,col2 = st.columns(2)
     with col1:
-        league = st.selectbox('Select League',['1. Div','Superliga'])
+        league = st.selectbox('Select League',['1.Div','Superliga'])
     
     with col2:
         season = st.selectbox('Select Season',[2023,2024,2025])
