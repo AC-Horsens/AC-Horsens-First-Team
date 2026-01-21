@@ -113,8 +113,8 @@ def load_squads():
     return squads
 
 @st.cache_data
-def load_team_physical_data():
-    url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/physical%20data/team_averages.csv'
+def load_team_physical_data(league,season):
+    url = f'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/physical%20data/{league}/{season}_{league}_team_averages.csv'
     physical_data = pd.read_csv(url)
     return physical_data
 
@@ -4542,7 +4542,9 @@ def Tactical_breakdown():
     st.dataframe(tactical_counts, use_container_width=True, hide_index=True)
 
 def Physical_data():
-    df = load_team_physical_data()
+    league = st.selectbox('Select League',['1. Div','Superliga'])
+    season = st.selectbox('Select Season',[2023,2024,2025])
+    df = load_team_physical_data(league,season)
 
     df = df.rename(columns=lambda c: c.replace("No. ", "No ").replace(".", ""))
 
