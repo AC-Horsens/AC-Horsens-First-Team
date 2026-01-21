@@ -4549,6 +4549,13 @@ def Tactical_breakdown():
     st.dataframe(tactical_counts, use_container_width=True, hide_index=True)
 
 def Physical_data():
+
+    main_view = st.radio(
+        "Select module",
+        ["SS-Team", "SS-Player", "Wimu"],
+        horizontal=True
+    )
+
     def add_match_date(df: pd.DataFrame) -> pd.DataFrame:
         # match_description example: "HVI - HBK : 2024-7-19"
         df = df.copy()
@@ -4557,144 +4564,154 @@ def Physical_data():
             errors="coerce"
         )
         return df
-    col1,col2 = st.columns(2)
-    with col1:
-        league = st.selectbox('Select League',['1.Div','Superliga'])
     
-    with col2:
-        season = st.selectbox('Select Season',[2023,2024,2025],index=2)
-    df = load_team_physical_data(league,season)
+    if main_view == "SS-Team"
+        col1,col2 = st.columns(2)
+        with col1:
+            league = st.selectbox('Select League',['1.Div','Superliga'])
+        
+        with col2:
+            season = st.selectbox('Select Season',[2023,2024,2025],index=2)
+        df = load_team_physical_data(league,season)
 
-    df = df.rename(columns=lambda c: c.replace("No. ", "No ").replace(".", ""))
+        df = df.rename(columns=lambda c: c.replace("No. ", "No ").replace(".", ""))
 
-    metrics_km = ["Distance"]  # assuming Distance is already in km in your screenshot
-    metrics_m = ["High Speed Running", "Sprinting"]  # these look like meters
-    metrics_counts = [
-        "No of High Intensity Runs",
-        "No of High Intensity Runs OTIP",
-        "No of High Intensity Runs TIP",
-        "No of High Intensity Runs BOP",
-    ]
-    metrics = metrics_km + metrics_m + metrics_counts
+        metrics_km = ["Distance"]  # assuming Distance is already in km in your screenshot
+        metrics_m = ["High Speed Running", "Sprinting"]  # these look like meters
+        metrics_counts = [
+            "No of High Intensity Runs",
+            "No of High Intensity Runs OTIP",
+            "No of High Intensity Runs TIP",
+            "No of High Intensity Runs BOP",
+        ]
+        metrics = metrics_km + metrics_m + metrics_counts
 
-    df = df[["team"] + metrics].copy()
-    df = normalize_numeric_columns(df, metrics)
+        df = df[["team"] + metrics].copy()
+        df = normalize_numeric_columns(df, metrics)
 
-    # ---- DISPLAY formatting (strings) ----
-    df_display = df.copy()
+        # ---- DISPLAY formatting (strings) ----
+        df_display = df.copy()
 
-    # Distance (km): show 3 decimals so 10 km -> 10,000 (EU)
-    df_display["Distance"] = df_display["Distance"].apply(lambda v: format_eu(v, decimals=2))
+        # Distance (km): show 3 decimals so 10 km -> 10,000 (EU)
+        df_display["Distance"] = df_display["Distance"].apply(lambda v: format_eu(v, decimals=2))
 
-    # HSR / Sprinting (meters): 4 decimals so 8334.7544 -> 8.334,7544
-    for c in metrics_m:
-        df_display[c] = df_display[c].apply(lambda v: format_eu(v, decimals=2))
+        # HSR / Sprinting (meters): 4 decimals so 8334.7544 -> 8.334,7544
+        for c in metrics_m:
+            df_display[c] = df_display[c].apply(lambda v: format_eu(v, decimals=2))
 
-    # Counts: integers with thousands separator
-    for c in metrics_counts:
-        df_display[c] = df_display[c].apply(lambda v: format_eu(v, decimals=0))
+        # Counts: integers with thousands separator
+        for c in metrics_counts:
+            df_display[c] = df_display[c].apply(lambda v: format_eu(v, decimals=0))
 
 
-    # ---- Chart uses numeric df ----
-    metric = st.selectbox("Metric", metrics)
+        # ---- Chart uses numeric df ----
+        metric = st.selectbox("Metric", metrics)
 
-    chart_df = df[["team", metric]].dropna().sort_values(metric, ascending=False)
-
-    chart = (
-        alt.Chart(chart_df)
-        .mark_bar()
-        .encode(
-            x=alt.X("team:N", sort="-y", title="Team"),
-            y=alt.Y(metric, type="quantitative", title=metric),
-            tooltip=["team", alt.Tooltip(metric, type="quantitative", format=",.2f")]
-        )
-        .properties(height=420)
-    )
-
-    st.altair_chart(chart, use_container_width=True)
-    st.dataframe(df_display)
-
-    st.markdown("---")
-    st.subheader("Team development over time")
-
-    df_games = load_team_physical_data_games(league, season)
-
-    # same rename cleanup
-    df_games = df_games.rename(columns=lambda c: c.replace("No. ", "No ").replace(".", ""))
-
-    # keep consistent metric list with your ranking view
-    metrics_km = ["Distance"]
-    metrics_m = ["High Speed Running", "Sprinting"]
-    metrics_counts = [
-        "No of High Intensity Runs",
-        "No of High Intensity Runs OTIP",
-        "No of High Intensity Runs TIP",
-        "No of High Intensity Runs BOP",
-    ]
-    metrics = metrics_km + metrics_m + metrics_counts
-    metrics = [m for m in metrics if m in df_games.columns]  # only metrics that exist
-
-    # numeric normalization (same as your approach)
-    df_games = df_games[["team", "match_description"] + metrics].copy()
-    df_games = normalize_numeric_columns(df_games, metrics)
-
-    # add date + sort
-    df_games = add_match_date(df_games).dropna(subset=["match_date"]).sort_values("match_date")
-    df_games["match_label"] = (
-        df_games["match_description"]
-        .astype(str)
-        .str[:9]
-    )
-    # selectors
-    teams = sorted(df_games["team"].dropna().unique().tolist())
-    team_choice = st.selectbox(
-        "Team",
-        options=teams
-    )
-
-    metric_choices = st.multiselect(
-        "Metrics",
-        options=metrics,
-    )
-
-    if metric_choices:
-        df_team = df_games[df_games["team"] == team_choice].copy()
-
-        # ensure correct order
-        df_team = df_team.sort_values("match_date")
-
-        long_df = df_team.melt(
-            id_vars=["team", "match_date", "match_label", "match_description"],
-            value_vars=metric_choices,
-            var_name="metric",
-            value_name="value",
-        )
+        chart_df = df[["team", metric]].dropna().sort_values(metric, ascending=False)
 
         chart = (
-            alt.Chart(long_df)
-            .mark_line(point=True)
+            alt.Chart(chart_df)
+            .mark_bar()
             .encode(
-                x=alt.X(
-                    "match_label:N",
-                    title="Match",
-                    sort=None   # keeps the row order (already sorted by date)
-                ),
-                y=alt.Y("value:Q", title="Value"),
-                color=alt.Color("metric:N", title="Metric"),
-                tooltip=[
-                    alt.Tooltip("match_description:N", title="Match"),
-                    alt.Tooltip("metric:N", title="Metric"),
-                    alt.Tooltip("value:Q", title="Value", format=",.2f"),
-                ],
+                x=alt.X("team:N", sort="-y", title="Team"),
+                y=alt.Y(metric, type="quantitative", title=metric),
+                tooltip=["team", alt.Tooltip(metric, type="quantitative", format=",.2f")]
             )
             .properties(height=420)
         )
 
         st.altair_chart(chart, use_container_width=True)
-        # optional: show table
-    else:
-        st.info("Select at least one metric to show the development chart.")
+        st.dataframe(df_display)
 
+        st.markdown("---")
+        st.subheader("Team development over time")
+
+        df_games = load_team_physical_data_games(league, season)
+
+        # same rename cleanup
+        df_games = df_games.rename(columns=lambda c: c.replace("No. ", "No ").replace(".", ""))
+
+        # keep consistent metric list with your ranking view
+        metrics_km = ["Distance"]
+        metrics_m = ["High Speed Running", "Sprinting"]
+        metrics_counts = [
+            "No of High Intensity Runs",
+            "No of High Intensity Runs OTIP",
+            "No of High Intensity Runs TIP",
+            "No of High Intensity Runs BOP",
+        ]
+        metrics = metrics_km + metrics_m + metrics_counts
+        metrics = [m for m in metrics if m in df_games.columns]  # only metrics that exist
+
+        # numeric normalization (same as your approach)
+        df_games = df_games[["team", "match_description"] + metrics].copy()
+        df_games = normalize_numeric_columns(df_games, metrics)
+
+        # add date + sort
+        df_games = add_match_date(df_games).dropna(subset=["match_date"]).sort_values("match_date")
+        df_games["match_label"] = (
+            df_games["match_description"]
+            .astype(str)
+            .str[:9]
+        )
+        # selectors
+        teams = sorted(df_games["team"].dropna().unique().tolist())
+        team_choice = st.selectbox(
+            "Team",
+            options=teams
+        )
+
+        metric_choices = st.multiselect(
+            "Metrics",
+            options=metrics,
+        )
+
+        if metric_choices:
+            df_team = df_games[df_games["team"] == team_choice].copy()
+
+            # ensure correct order
+            df_team = df_team.sort_values("match_date")
+
+            long_df = df_team.melt(
+                id_vars=["team", "match_date", "match_label", "match_description"],
+                value_vars=metric_choices,
+                var_name="metric",
+                value_name="value",
+            )
+
+            chart = (
+                alt.Chart(long_df)
+                .mark_line(point=True)
+                .encode(
+                    x=alt.X(
+                        "match_label:N",
+                        title="Match",
+                        sort=None   # keeps the row order (already sorted by date)
+                    ),
+                    y=alt.Y("value:Q", title="Value"),
+                    color=alt.Color("metric:N", title="Metric"),
+                    tooltip=[
+                        alt.Tooltip("match_description:N", title="Match"),
+                        alt.Tooltip("metric:N", title="Metric"),
+                        alt.Tooltip("value:Q", title="Value", format=",.2f"),
+                    ],
+                )
+                .properties(height=420)
+            )
+
+            st.altair_chart(chart, use_container_width=True)
+            # optional: show table
+        else:
+            st.info("Select at least one metric to show the development chart.")
+
+    elif main_view == "SS-Player":
+        st.info("SS-Player module not added yet.")
+
+    # =========================
+    # WIMU (placeholder)
+    # =========================
+    elif main_view == "Wimu":
+        st.info("Wimu module not added yet.")
 
 
 import streamlit as st
