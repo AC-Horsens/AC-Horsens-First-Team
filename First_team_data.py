@@ -4642,12 +4642,15 @@ def Physical_data():
 
     # selectors
     teams = sorted(df_games["team"].dropna().unique().tolist())
-    team_choice = st.selectbox("Team (time series)", teams, index=teams.index("HBK") if "HBK" in teams else 0)
+    team_choice = st.selectbox(
+        "Team",
+        options=teams
+    )
 
     metric_choices = st.multiselect(
-        "Metrics (multiple)",
+        "Metrics",
         options=metrics,
-        default=["Distance", "High Speed Running"] if all(m in metrics for m in ["Distance", "High Speed Running"]) else metrics[:2],
+        default=metrics[:2]
     )
 
     if metric_choices:
