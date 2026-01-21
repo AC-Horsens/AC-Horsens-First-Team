@@ -4565,7 +4565,7 @@ def Physical_data():
         )
         return df
     
-    if main_view == "SS-Team"
+    if main_view == "SS-Team":
         col1,col2 = st.columns(2)
         with col1:
             league = st.selectbox('Select League',['1.Div','Superliga'])
