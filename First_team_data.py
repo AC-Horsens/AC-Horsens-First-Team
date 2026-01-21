@@ -4542,7 +4542,7 @@ def Tactical_breakdown():
     st.dataframe(tactical_counts, use_container_width=True, hide_index=True)
 
 def Physical_data():
-    st.columns = col1,col2
+    col1,col2 = st.columns(2)
     with col1:
         league = st.selectbox('Select League',['1. Div','Superliga'])
     
