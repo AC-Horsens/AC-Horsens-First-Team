@@ -4621,7 +4621,7 @@ def Physical_data():
         )
 
         st.altair_chart(chart, use_container_width=True)
-        st.dataframe(df_display)
+        st.dataframe(df_display,hide_index=True)
 
         st.markdown("---")
         st.subheader("Team development over time")
