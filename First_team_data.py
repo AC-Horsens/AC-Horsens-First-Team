@@ -4668,7 +4668,7 @@ def Physical_data():
             alt.Chart(long_df)
             .mark_line(point=True)
             .encode(
-                x=alt.X("match_date:T", title="Date"),
+                x=alt.X("match_description:T", title="Match"),
                 y=alt.Y("value:Q", title="Value"),
                 color=alt.Color("metric:N", title="Metric"),
                 tooltip=[
