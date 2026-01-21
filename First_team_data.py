@@ -4650,7 +4650,6 @@ def Physical_data():
     metric_choices = st.multiselect(
         "Metrics",
         options=metrics,
-        default=metrics[:2]
     )
 
     if metric_choices:
