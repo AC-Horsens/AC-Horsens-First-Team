@@ -119,6 +119,13 @@ def load_team_physical_data(league,season):
     return physical_data
 
 @st.cache_data
+def load_team_physical_data_games(league,season):
+    url = f'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/physical%20data/{league}/{season}_{league}_team_game_by_game.csv'
+    physical_data = pd.read_csv(url)
+    return physical_data
+
+
+@st.cache_data
 def load_set_piece_data():
     url = 'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/DNK_1_Division_2025_2026/set_piece_DNK_1_Division_2025_2026.csv'
     df_set_piece = pd.read_csv(url)
@@ -4542,6 +4549,14 @@ def Tactical_breakdown():
     st.dataframe(tactical_counts, use_container_width=True, hide_index=True)
 
 def Physical_data():
+    def add_match_date(df: pd.DataFrame) -> pd.DataFrame:
+        # match_description example: "HVI - HBK : 2024-7-19"
+        df = df.copy()
+        df["match_date"] = pd.to_datetime(
+            df["match_description"].astype(str).str.extract(r":\s*([0-9]{4}-[0-9]{1,2}-[0-9]{1,2})")[0],
+            errors="coerce"
+        )
+        return df
     col1,col2 = st.columns(2)
     with col1:
         league = st.selectbox('Select League',['1.Div','Superliga'])
@@ -4597,6 +4612,84 @@ def Physical_data():
     )
 
     st.altair_chart(chart, use_container_width=True)
+
+    st.markdown("---")
+    st.subheader("Team development over time")
+
+    df_games = load_team_physical_data_games(league, season)
+
+    # same rename cleanup
+    df_games = df_games.rename(columns=lambda c: c.replace("No. ", "No ").replace(".", ""))
+
+    # keep consistent metric list with your ranking view
+    metrics_km = ["Distance"]
+    metrics_m = ["High Speed Running", "Sprinting"]
+    metrics_counts = [
+        "No of High Intensity Runs",
+        "No of High Intensity Runs OTIP",
+        "No of High Intensity Runs TIP",
+        "No of High Intensity Runs BOP",
+    ]
+    metrics = metrics_km + metrics_m + metrics_counts
+    metrics = [m for m in metrics if m in df_games.columns]  # only metrics that exist
+
+    # numeric normalization (same as your approach)
+    df_games = df_games[["team", "match_description"] + metrics].copy()
+    df_games = normalize_numeric_columns(df_games, metrics)
+
+    # add date + sort
+    df_games = add_match_date(df_games).dropna(subset=["match_date"]).sort_values("match_date")
+
+    # selectors
+    teams = sorted(df_games["team"].dropna().unique().tolist())
+    team_choice = st.selectbox("Team (time series)", teams, index=teams.index("HBK") if "HBK" in teams else 0)
+
+    metric_choices = st.multiselect(
+        "Metrics (multiple)",
+        options=metrics,
+        default=["Distance", "High Speed Running"] if all(m in metrics for m in ["Distance", "High Speed Running"]) else metrics[:2],
+    )
+
+    if metric_choices:
+        df_team = df_games[df_games["team"] == team_choice].copy()
+
+        # long format for multi-metric lines
+        long_df = df_team.melt(
+            id_vars=["team", "match_date", "match_description"],
+            value_vars=metric_choices,
+            var_name="metric",
+            value_name="value",
+        )
+
+        # line chart: one line per metric
+        chart = (
+            alt.Chart(long_df)
+            .mark_line(point=True)
+            .encode(
+                x=alt.X("match_date:T", title="Date"),
+                y=alt.Y("value:Q", title="Value"),
+                color=alt.Color("metric:N", title="Metric"),
+                tooltip=[
+                    alt.Tooltip("match_date:T", title="Date"),
+                    alt.Tooltip("match_description:N", title="Match"),
+                    alt.Tooltip("metric:N", title="Metric"),
+                    alt.Tooltip("value:Q", title="Value", format=",.2f"),
+                ],
+            )
+            .properties(height=420)
+        )
+
+        st.altair_chart(chart, use_container_width=True)
+
+        # optional: show table
+        st.dataframe(
+            df_team[["match_date", "match_description"] + metric_choices]
+            .sort_values("match_date")
+            .reset_index(drop=True)
+        )
+    else:
+        st.info("Select at least one metric to show the development chart.")
+
 
     st.dataframe(df_display)
 
