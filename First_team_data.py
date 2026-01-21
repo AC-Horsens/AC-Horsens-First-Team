@@ -4691,11 +4691,6 @@ def Physical_data():
 
         st.altair_chart(chart, use_container_width=True)
         # optional: show table
-        st.dataframe(
-            df_team[["match_date", "match_description"] + metric_choices]
-            .sort_values("match_date")
-            .reset_index(drop=True)
-        )
     else:
         st.info("Select at least one metric to show the development chart.")
 
