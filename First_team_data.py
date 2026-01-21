@@ -4639,7 +4639,11 @@ def Physical_data():
 
     # add date + sort
     df_games = add_match_date(df_games).dropna(subset=["match_date"]).sort_values("match_date")
-
+    df_games["match_label"] = (
+        df_games["match_description"]
+        .astype(str)
+        .str[:9]
+    )
     # selectors
     teams = sorted(df_games["team"].dropna().unique().tolist())
     team_choice = st.selectbox(
@@ -4655,24 +4659,28 @@ def Physical_data():
     if metric_choices:
         df_team = df_games[df_games["team"] == team_choice].copy()
 
-        # long format for multi-metric lines
+        # ensure correct order
+        df_team = df_team.sort_values("match_date")
+
         long_df = df_team.melt(
-            id_vars=["team", "match_date", "match_description"],
+            id_vars=["team", "match_date", "match_label", "match_description"],
             value_vars=metric_choices,
             var_name="metric",
             value_name="value",
         )
 
-        # line chart: one line per metric
         chart = (
             alt.Chart(long_df)
             .mark_line(point=True)
             .encode(
-                x=alt.X("match_description:T", title="Match"),
+                x=alt.X(
+                    "match_label:N",
+                    title="Match",
+                    sort=None   # keeps the row order (already sorted by date)
+                ),
                 y=alt.Y("value:Q", title="Value"),
                 color=alt.Color("metric:N", title="Metric"),
                 tooltip=[
-                    alt.Tooltip("match_date:T", title="Date"),
                     alt.Tooltip("match_description:N", title="Match"),
                     alt.Tooltip("metric:N", title="Metric"),
                     alt.Tooltip("value:Q", title="Value", format=",.2f"),
@@ -4682,7 +4690,6 @@ def Physical_data():
         )
 
         st.altair_chart(chart, use_container_width=True)
-
         # optional: show table
         st.dataframe(
             df_team[["match_date", "match_description"] + metric_choices]
