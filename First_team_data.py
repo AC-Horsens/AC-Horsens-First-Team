@@ -4807,7 +4807,7 @@ def Physical_data():
 
         # Make sure metric is numeric (should be, but just in case)
         rank_df[selected_metric] = pd.to_numeric(rank_df[selected_metric], errors="coerce")
-        rank_df = rank_df[rank_df['position'] != 'SUB']
+        #rank_df = rank_df[rank_df['position'] != 'SUB']
 
         # Rank top 10 (descending)
         top10 = (
