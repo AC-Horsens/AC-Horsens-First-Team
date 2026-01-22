@@ -4725,13 +4725,13 @@ def Physical_data():
         df = load_player_physical_data(league,season)
         df = df.rename(columns=lambda c: c.replace("No. ", "No ").replace(".", ""))
 
-        metrics_km = ["Distance"]  # assuming Distance is already in km in your screenshot
-        metrics_m = ["High Speed Running", "Sprinting"]  # these look like meters
+        metrics_km = ["Distance_per90"]  # assuming Distance is already in km in your screenshot
+        metrics_m = ["High Speed Running_per90", "Sprinting_per90"]  # these look like meters
         metrics_counts = [
-            "No of High Intensity Runs",
-            "No of High Intensity Runs OTIP",
-            "No of High Intensity Runs TIP",
-            "No of High Intensity Runs BOP",
+            "No of High Intensity Runs_per90",
+            "No of High Intensity Runs OTIP_per90",
+            "No of High Intensity Runs TIP_per90",
+            "No of High Intensity Runs BOP_per90",
         ]
         metrics = metrics_km + metrics_m + metrics_counts
 
@@ -4742,7 +4742,7 @@ def Physical_data():
         df_display = df.copy()
 
         # Distance (km): show 3 decimals so 10 km -> 10,000 (EU)
-        df_display["Distance"] = df_display["Distance"].apply(lambda v: format_eu(v, decimals=2))
+        df_display["Distance_per90"] = df_display["Distance_per90"].apply(lambda v: format_eu(v, decimals=2))
 
         # HSR / Sprinting (meters): 4 decimals so 8334.7544 -> 8.334,7544
         for c in metrics_m:
