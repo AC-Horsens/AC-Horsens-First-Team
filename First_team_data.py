@@ -131,6 +131,12 @@ def load_player_physical_data(league,season):
     return physical_data
 
 @st.cache_data
+def load_player_physical_data_games(league,season):
+    url = f'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/physical%20data/{league}/{season}_{league}_player_game_by_game.csv'
+    physical_data = pd.read_csv(url)
+    return physical_data
+
+@st.cache_data
 def load_wimu_data():
     url = f'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/wimu_physical_data_from_2025-07-01.csv'
     wimu_data = pd.read_csv(url)
@@ -4790,12 +4796,12 @@ def Physical_data():
             top10_display[selected_metric] = top10_display[selected_metric].apply(lambda v: format_eu(v, decimals=2))
         else:  # metrics_km
             top10_display[selected_metric] = top10_display[selected_metric].apply(lambda v: format_eu(v, decimals=2))
-
+        top10_display = top10_display[top10_display['position'] != 'SUB']
         st.dataframe(top10_display, use_container_width=True, hide_index=True)
 
         st.divider()
         st.subheader("Player development over time")
-
+        df = load_player_physical_data_games()
         # ---- Add match_date using your existing helper ----
         df_ts_base = add_match_date(df)
         df_ts_base = df_ts_base.dropna(subset=["match_date"])
