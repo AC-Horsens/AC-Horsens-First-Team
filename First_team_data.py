@@ -4777,6 +4777,7 @@ def Physical_data():
 
         # Make sure metric is numeric (should be, but just in case)
         rank_df[selected_metric] = pd.to_numeric(rank_df[selected_metric], errors="coerce")
+        rank_df = rank_df[rank_df['position'] != 'SUB']
 
         # Rank top 10 (descending)
         top10 = (
@@ -4796,12 +4797,11 @@ def Physical_data():
             top10_display[selected_metric] = top10_display[selected_metric].apply(lambda v: format_eu(v, decimals=2))
         else:  # metrics_km
             top10_display[selected_metric] = top10_display[selected_metric].apply(lambda v: format_eu(v, decimals=2))
-        top10_display = top10_display[top10_display['position'] != 'SUB']
         st.dataframe(top10_display, use_container_width=True, hide_index=True)
 
         st.divider()
         st.subheader("Player development over time")
-        df = load_player_physical_data_games()
+        df = load_player_physical_data_games(league,season)
         # ---- Add match_date using your existing helper ----
         df_ts_base = add_match_date(df)
         df_ts_base = df_ts_base.dropna(subset=["match_date"])
