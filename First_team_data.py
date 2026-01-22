@@ -4724,7 +4724,6 @@ def Physical_data():
             season = st.selectbox('Select Season',[2023,2024,2025],index=2)
         df = load_player_physical_data(league,season)
         df = df.rename(columns=lambda c: c.replace("No. ", "No ").replace(".", ""))
-        st.dataframe(df)
         metrics_km = ["Distance_per90"]  # assuming Distance is already in km in your screenshot
         metrics_m = ["High Speed Running_per90", "Sprinting_per90"]  # these look like meters
         metrics_counts = [
@@ -4778,7 +4777,7 @@ def Physical_data():
             rank_df.dropna(subset=[selected_metric])
             .sort_values(selected_metric, ascending=False)
             .head(10)
-            .loc[:, ["team", "player_name", "position", selected_metric]]
+            .loc[:, ["player_name","team", "position", selected_metric]]
             .reset_index(drop=True)
         )
 
@@ -4793,6 +4792,77 @@ def Physical_data():
             top10_display[selected_metric] = top10_display[selected_metric].apply(lambda v: format_eu(v, decimals=2))
 
         st.dataframe(top10_display, use_container_width=True, hide_index=True)
+
+        st.divider()
+        st.subheader("Player development over time")
+
+        # ---- Detect date column ----
+        candidate_date_cols = ["date", "match_date", "matchDate", "localDate", "game_date", "GameDate", "fixture_date"]
+        date_col = next((c for c in candidate_date_cols if c in df.columns), None)
+
+        if date_col is None:
+            # fallback: find any column that can be parsed as datetime with a decent success rate
+            for c in df.columns:
+                parsed = pd.to_datetime(df[c], errors="coerce")
+                if parsed.notna().mean() > 0.7:  # 70% parse success threshold
+                    date_col = c
+                    df[c] = parsed
+                    break
+
+        if date_col is None:
+            st.warning(
+                "I can't find a date column to plot over time. "
+                "Add/rename a date column (e.g. 'date' or 'match_date') in the dataset."
+            )
+        else:
+            # Ensure datetime
+            df[date_col] = pd.to_datetime(df[date_col], errors="coerce")
+
+            # ---- Filters: team, player, metric ----
+            f1, f2, f3 = st.columns([1, 2, 2])
+
+            with f1:
+                team_options = sorted(df["team"].dropna().unique().tolist()) if "team" in df.columns else []
+                selected_team = st.selectbox("Team", options=team_options)
+
+            with f2:
+                player_options = (
+                    sorted(df.loc[df["team"] == selected_team, "player_name"].dropna().unique().tolist())
+                    if "player_name" in df.columns else []
+                )
+                selected_player = st.selectbox("Player", options=player_options)
+
+            with f3:
+                selected_metric = st.selectbox("Metric", options=metrics, index=0)
+
+            # ---- Build player time series ----
+            ts = df.copy()
+            ts = ts[(ts["team"] == selected_team) & (ts["player_name"] == selected_player)]
+            ts = ts[[date_col, selected_metric]].copy()
+
+            ts[selected_metric] = pd.to_numeric(ts[selected_metric], errors="coerce")
+            ts = ts.dropna(subset=[date_col, selected_metric]).sort_values(date_col)
+
+            # If multiple entries per day, aggregate (mean) per date
+            ts["day"] = ts[date_col].dt.date
+            ts_daily = ts.groupby("day", as_index=False)[selected_metric].mean()
+
+            # ---- Plot + table ----
+            if ts_daily.empty:
+                st.info("No data available for that selection.")
+            else:
+                st.line_chart(ts_daily.set_index("day")[selected_metric])
+
+                # Display table (EU formatting)
+                ts_display = ts_daily.copy()
+                ts_display["day"] = pd.to_datetime(ts_display["day"]).dt.strftime("%d/%m/%Y")
+
+                if selected_metric in metrics_counts:
+                    ts_display[selected_metric] = ts_display[selected_metric].apply(lambda v: format_eu(v, decimals=0))
+                else:
+                    ts_display[selected_metric] = ts_display[selected_metric].apply(lambda v: format_eu(v, decimals=2))
+
+                st.dataframe(ts_display, use_container_width=True, hide_index=True)
 
 
     # =========================
