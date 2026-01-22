@@ -4844,7 +4844,7 @@ def Physical_data():
 
             with f1:
                 team_options = sorted(df_ts_base["team"].dropna().unique().tolist())
-                selected_team = st.selectbox("Team", options=team_options)
+                selected_team = st.selectbox("Team", options=team_options, default='ACH')
 
             with f2:
                 player_options = sorted(
