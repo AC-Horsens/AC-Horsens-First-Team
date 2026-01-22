@@ -4716,7 +4716,6 @@ def Physical_data():
     # WIMU (placeholder)
     # =========================
     elif main_view == "Wimu":
-        st.set_page_config(page_title="WIMU Dashboard", layout="wide")
         st.title("WIMU Physical Dashboard")
 
         # 1) Load
