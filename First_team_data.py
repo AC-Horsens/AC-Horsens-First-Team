@@ -4755,7 +4755,6 @@ def Physical_data():
             selected_matchdays = st.multiselect(
                 "matchDay",
                 options=matchday_options,
-                default=matchday_options,
             )
 
         with f3:
@@ -4767,7 +4766,7 @@ def Physical_data():
             selected_tasks = st.multiselect(
                 "Task",
                 options=task_options,
-                default=task_options,
+                default='Session'
             )
 
         # Apply filters
@@ -4778,6 +4777,8 @@ def Physical_data():
 
         if selected_matchdays:
             filtered = filtered[filtered["matchDay"].isin(selected_matchdays)]
+        if selected_tasks:
+            filtered = filtered[filtered["task"].isin(selected_tasks)]
 
         # ---- Aggregation ----
         cols_to_avg = [
