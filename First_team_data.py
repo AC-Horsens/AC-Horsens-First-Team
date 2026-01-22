@@ -4720,7 +4720,6 @@ def Physical_data():
 
         # 1) Load
         wimu_df = load_wimu_data().copy()
-
         # 2) Convert localTime (ms) -> date
         # localTime like 1751367724911 (epoch milliseconds)
         wimu_df["date"] = pd.to_datetime(wimu_df["localTime"], unit="ms", errors="coerce").dt.date
@@ -4737,7 +4736,7 @@ def Physical_data():
         max_date = wimu_df["date"].max()
 
         # Put filters in a neat row
-        f1, f2 = st.columns([1, 2])
+        f1, f2, f3 = st.columns([1, 1, 2])
 
         with f1:
             start_date = st.date_input(
@@ -4749,7 +4748,7 @@ def Physical_data():
 
         with f2:
             matchday_options = (
-                sorted(wimu_df["matchDay"].dropna().unique().tolist())
+                sorted(wimu_df["matchDay"].dropna().unique())
                 if "matchDay" in wimu_df.columns
                 else []
             )
@@ -4757,6 +4756,18 @@ def Physical_data():
                 "matchDay",
                 options=matchday_options,
                 default=matchday_options,
+            )
+
+        with f3:
+            task_options = (
+                sorted(wimu_df["task"].dropna().unique())
+                if "task" in wimu_df.columns
+                else []
+            )
+            selected_tasks = st.multiselect(
+                "Task",
+                options=task_options,
+                default=task_options,
             )
 
         # Apply filters
@@ -4796,7 +4807,7 @@ def Physical_data():
 
 
         st.subheader("Average by username")
-        st.dataframe(avg_by_user, use_container_width=True)
+        st.dataframe(avg_by_user, use_container_width=True,hide_index=True)
 
         st.divider()
         st.subheader("Raw (filtered) preview")
