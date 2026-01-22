@@ -4789,8 +4789,6 @@ def Physical_data():
         for c in metrics_counts:
             df_display[c] = df_display[c].apply(lambda v: format_eu(v, decimals=0))
 
-        st.dataframe(df_display)
-
         st.subheader("Top 10 players by position")
 
         c1, c2 = st.columns([1, 2])
@@ -4886,7 +4884,6 @@ def Physical_data():
                     ts_display[selected_metric] = ts_display[selected_metric].apply(lambda v: format_eu(v, decimals=2))
 
                 st.dataframe(ts_display, use_container_width=True, hide_index=True)
-
 
     # =========================
     # WIMU (placeholder)
@@ -5094,13 +5091,6 @@ def Physical_data():
 
             st.caption("Daily values within the selected date/matchDay/task filters.")
             st.dataframe(ts_display, use_container_width=True, hide_index=True)
-
-
-
-
-
-
-
 
 
 import streamlit as st
