@@ -4814,30 +4814,42 @@ def Physical_data():
             .reset_index()
             .sort_values("username")
         )
+        team_reference = pd.DataFrame({
+            "Statistic": ["Average", "Min", "Max"]
+        })
 
+        for col in metric_cols:
+            team_reference[col] = [
+                summary_by_user[col].mean(),
+                summary_by_user[col].min(),
+                summary_by_user[col].max(),
+            ]
         # ---------- EU number formatting for display ----------
         def format_eu_wimu(x):
             if pd.isna(x):
                 return ""
             return f"{x:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
 
+        team_reference_display = team_reference.copy()
+
+        for col in metric_cols:
+            team_reference_display[col] = team_reference_display[col].apply(format_eu_wimu)
+
+
         summary_display = summary_by_user.copy()
         for col in metric_cols:
             summary_display[col] = summary_display[col].apply(format_eu_wimu)
-        team_avg = summary_display[metric_cols].mean().to_frame().T
-        team_min = summary_display[metric_cols].min().to_frame().T
-        team_max = summary_display[metric_cols].max().to_frame().T
-        team_avg.insert(0, "username", "TEAM – Average")
-        team_min.insert(0, "username", "TEAM – Min")
-        team_max.insert(0, "username", "TEAM – Max")
 
-        summary_display = pd.concat(
-            [summary_display, team_avg, team_min, team_max],
-            ignore_index=True,
-        )
         # ---------- Output ----------
         st.subheader("Summary")
         st.dataframe(summary_display, use_container_width=True, hide_index=True)
+
+        st.subheader("Team reference (based on player summary)")
+        st.dataframe(
+            team_reference_display,
+            use_container_width=True,
+            hide_index=True,
+        )
 
         st.divider()
         st.subheader("Player development over time")
