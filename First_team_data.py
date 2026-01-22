@@ -4887,7 +4887,7 @@ def Physical_data():
                         x=alt.X(
                             "match_description:N",
                             sort=None,  # keeps the order from sort_values("match_date")
-                            axis=alt.Axis(labelAngle=-90, title="Match")
+                            axis=alt.Axis(labelAngle=0, title="Match")
                         ),
                         y=alt.Y(f"{selected_metric}:Q", title=selected_metric),
                         tooltip=["match_description:N", "match_date:T", alt.Tooltip(selected_metric, format=".2f")],
