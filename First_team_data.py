@@ -4730,23 +4730,34 @@ def Physical_data():
         # 3) Convert duration (ms) -> minutes
         wimu_df["duration"] = pd.to_numeric(wimu_df["duration"], errors="coerce") / 60000
 
-        # ---- Sidebar filters ----
-        st.sidebar.header("Filters")
+        # ---- Filters (NOT in sidebar) ----
+        st.subheader("Filters")
 
-        # Start-date filter (only start date, as requested)
         min_date = wimu_df["date"].min()
         max_date = wimu_df["date"].max()
 
-        start_date = st.sidebar.date_input(
-            "Start date",
-            value=min_date if pd.notna(min_date) else None,
-            min_value=min_date if pd.notna(min_date) else None,
-            max_value=max_date if pd.notna(max_date) else None,
-        )
+        # Put filters in a neat row
+        f1, f2 = st.columns([1, 2])
 
-        # matchDay filter
-        matchday_options = sorted(wimu_df["matchDay"].dropna().unique().tolist()) if "matchDay" in wimu_df.columns else []
-        selected_matchdays = st.sidebar.multiselect("matchDay", options=matchday_options, default=matchday_options)
+        with f1:
+            start_date = st.date_input(
+                "Start date",
+                value=min_date if pd.notna(min_date) else None,
+                min_value=min_date if pd.notna(min_date) else None,
+                max_value=max_date if pd.notna(max_date) else None,
+            )
+
+        with f2:
+            matchday_options = (
+                sorted(wimu_df["matchDay"].dropna().unique().tolist())
+                if "matchDay" in wimu_df.columns
+                else []
+            )
+            selected_matchdays = st.multiselect(
+                "matchDay",
+                options=matchday_options,
+                default=matchday_options,
+            )
 
         # Apply filters
         filtered = wimu_df.copy()
@@ -4782,7 +4793,7 @@ def Physical_data():
         )
 
         # ---- Layout ----
-        c1, c2 = st.columns([1, 2], vertical_alignment="top")
+        c1, c2 = st.columns([1, 2])  # removed vertical_alignment kwarg
 
         with c1:
             st.subheader("Filtered rows")
@@ -4799,10 +4810,10 @@ def Physical_data():
 
         st.divider()
         st.subheader("Raw (filtered) preview")
-        st.dataframe(
-            filtered[["date_str", "matchDay", "username"] + existing_cols].head(200),
-            use_container_width=True,
-        )
+
+        preview_cols = [c for c in ["date_str", "matchDay", "username"] if c in filtered.columns] + existing_cols
+        st.dataframe(filtered[preview_cols].head(200), use_container_width=True)
+
 
 
 import streamlit as st
