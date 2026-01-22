@@ -4794,7 +4794,15 @@ def Physical_data():
         c1, c2 = st.columns([1, 2])
 
         with c1:
-            position_options = ["All"] + sorted(df["position"].dropna().unique().tolist())
+            position_order = ["GK", "CB", "RB", "LB", "RWB", "LWB", "CM", "AM", "WR", "ST"]
+
+            # Positions actually present in the data
+            positions_in_data = set(df["position"].dropna().unique())
+
+            # Keep order, only include those that exist
+            ordered_positions = [p for p in position_order if p in positions_in_data]
+
+            position_options = ["All"] + ordered_positions
             selected_position = st.selectbox("Select position", position_options, index=0)
 
         with c2:
