@@ -4753,6 +4753,48 @@ def Physical_data():
             df_display[c] = df_display[c].apply(lambda v: format_eu(v, decimals=0))
 
         st.dataframe(df_display)
+
+        st.subheader("Top 10 players by position")
+
+        c1, c2 = st.columns([1, 2])
+
+        with c1:
+            position_options = ["All"] + sorted(df["position"].dropna().unique().tolist())
+            selected_position = st.selectbox("Select position", position_options, index=0)
+
+        with c2:
+            selected_metric = st.selectbox("Select metric", metrics, index=0)
+
+        # Filter by position (if chosen)
+        rank_df = df.copy()
+        if selected_position != "All":
+            rank_df = rank_df[rank_df["position"] == selected_position]
+
+        # Make sure metric is numeric (should be, but just in case)
+        rank_df[selected_metric] = pd.to_numeric(rank_df[selected_metric], errors="coerce")
+
+        # Rank top 10 (descending)
+        top10 = (
+            rank_df.dropna(subset=[selected_metric])
+            .sort_values(selected_metric, ascending=False)
+            .head(10)
+            .loc[:, ["team", "player_name", "position", selected_metric]]
+            .reset_index(drop=True)
+        )
+
+        # Format for display (EU formatting based on metric type)
+        top10_display = top10.copy()
+
+        if selected_metric in metrics_counts:
+            top10_display[selected_metric] = top10_display[selected_metric].apply(lambda v: format_eu(v, decimals=0))
+        elif selected_metric in metrics_m:
+            top10_display[selected_metric] = top10_display[selected_metric].apply(lambda v: format_eu(v, decimals=2))
+        else:  # metrics_km
+            top10_display[selected_metric] = top10_display[selected_metric].apply(lambda v: format_eu(v, decimals=2))
+
+        st.dataframe(top10_display, use_container_width=True, hide_index=True)
+
+
     # =========================
     # WIMU (placeholder)
     # =========================
