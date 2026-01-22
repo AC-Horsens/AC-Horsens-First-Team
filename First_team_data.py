@@ -4842,7 +4842,7 @@ def Physical_data():
                 st.info("No data available for that selection.")
             else:
                 # ---- Plot ----
-                st.line_chart(ts.set_index("match_date")[selected_metric])
+                st.line_chart(ts.set_index("match_description")[selected_metric])
 
                 # ---- Table (EU formatting) ----
                 ts_display = ts.copy()
