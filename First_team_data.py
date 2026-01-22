@@ -4762,7 +4762,6 @@ def Physical_data():
             selected_matchdays = st.multiselect(
                 "matchDay",
                 options=matchday_options,
-                default=matchday_options,
             )
 
         with f4:
@@ -4774,7 +4773,6 @@ def Physical_data():
             selected_tasks = st.multiselect(
                 "Task",
                 options=task_options,
-                default=task_options,
             )
 
         # Apply filters
