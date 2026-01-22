@@ -4791,49 +4791,55 @@ def Physical_data():
         if selected_tasks:
             filtered = filtered[filtered["task"].isin(selected_tasks)]
 
-        # ---- Aggregation ----
-        cols_to_avg = [
-            "duration",
-            "distance_distance",
-            "distance_distanceMin",
-            "distance_HSRAbsDistance",
-            "sprint_distance",
-            "sprint_abs",
-            "accelerations_highIntensityAccAbsCounter",
-            "accelerations_highIntensityDecAbsCounter",
-            "load_Player_Load",
-            "sprint_maxSpeed",
-        ]
+        agg_dict = {
+            "duration": "mean",
+            "distance_distance": "mean",
+            "distance_distanceMin": "mean",
+            "distance_HSRAbsDistance": "mean",
+            "sprint_distance": "mean",
+            "sprint_abs": "mean",
+            "accelerations_highIntensityAccAbsCounter": "mean",
+            "accelerations_highIntensityDecAbsCounter": "mean",
+            "load_Player_Load": "mean",
+            "sprint_maxSpeed": "max",
+        }
 
-        # keep only columns that exist (prevents crashes if a column is missing)
-        existing_cols = [c for c in cols_to_avg if c in filtered.columns]
+        # Keep only columns that exist in the data
+        agg_dict = {k: v for k, v in agg_dict.items() if k in filtered.columns}
+        metric_cols = list(agg_dict.keys())  # <- use this later for formatting + previews
 
-        avg_by_user = (
-            filtered.groupby("username", dropna=False)[existing_cols]
-            .mean(numeric_only=True)
+        summary_by_user = (
+            filtered.groupby("username", dropna=False)
+            .agg(agg_dict)
             .reset_index()
             .sort_values("username")
         )
 
-        def format_eu(x):
+        # ---------- EU number formatting for display ----------
+        def format_eu_wimu(x):
             if pd.isna(x):
                 return ""
             return f"{x:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
 
-        avg_by_user_display = avg_by_user.copy()
+        summary_display = summary_by_user.copy()
+        for col in metric_cols:
+            summary_display[col] = summary_display[col].apply(format_eu_wimu)
 
-        for col in existing_cols:
-            avg_by_user_display[col] = avg_by_user_display[col].apply(format_eu)
-
-
-        st.subheader("Average by username")
-        st.dataframe(avg_by_user_display, use_container_width=True,hide_index=True)
+        # ---------- Output ----------
+        st.subheader("Summary")
+        st.dataframe(summary_display, use_container_width=True, hide_index=True)
 
         st.divider()
         st.subheader("Raw (filtered) preview")
 
-        preview_cols = [c for c in ["date_str", "matchDay", "username"] if c in filtered.columns] + existing_cols
-        st.dataframe(filtered[preview_cols].head(200), use_container_width=True)
+        preview_cols = [c for c in ["date_str", "matchDay", "task", "username"] if c in filtered.columns] + metric_cols
+        st.dataframe(filtered[preview_cols].head(200), use_container_width=True, hide_index=True)
+
+
+
+
+
+
 
 
 
