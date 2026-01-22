@@ -4723,7 +4723,36 @@ def Physical_data():
         with col2:
             season = st.selectbox('Select Season',[2023,2024,2025],index=2)
         df = load_player_physical_data(league,season)
-        st.dataframe(df)
+        df = df.rename(columns=lambda c: c.replace("No. ", "No ").replace(".", ""))
+
+        metrics_km = ["Distance"]  # assuming Distance is already in km in your screenshot
+        metrics_m = ["High Speed Running", "Sprinting"]  # these look like meters
+        metrics_counts = [
+            "No of High Intensity Runs",
+            "No of High Intensity Runs OTIP",
+            "No of High Intensity Runs TIP",
+            "No of High Intensity Runs BOP",
+        ]
+        metrics = metrics_km + metrics_m + metrics_counts
+
+        df = df[["team"] + metrics].copy()
+        df = normalize_numeric_columns(df, metrics)
+
+        # ---- DISPLAY formatting (strings) ----
+        df_display = df.copy()
+
+        # Distance (km): show 3 decimals so 10 km -> 10,000 (EU)
+        df_display["Distance"] = df_display["Distance"].apply(lambda v: format_eu(v, decimals=2))
+
+        # HSR / Sprinting (meters): 4 decimals so 8334.7544 -> 8.334,7544
+        for c in metrics_m:
+            df_display[c] = df_display[c].apply(lambda v: format_eu(v, decimals=2))
+
+        # Counts: integers with thousands separator
+        for c in metrics_counts:
+            df_display[c] = df_display[c].apply(lambda v: format_eu(v, decimals=0))
+
+        st.dataframe(df_display)
     # =========================
     # WIMU (placeholder)
     # =========================
