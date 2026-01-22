@@ -4716,8 +4716,94 @@ def Physical_data():
     # WIMU (placeholder)
     # =========================
     elif main_view == "Wimu":
-        wimu_df = load_wimu_data()
-        st.dataframe(wimu_df.head(10))
+        st.set_page_config(page_title="WIMU Dashboard", layout="wide")
+        st.title("WIMU Physical Dashboard")
+
+        # 1) Load
+        wimu_df = load_wimu_data().copy()
+
+        # 2) Convert localTime (ms) -> date
+        # localTime like 1751367724911 (epoch milliseconds)
+        wimu_df["date"] = pd.to_datetime(wimu_df["localTime"], unit="ms", errors="coerce").dt.date
+        # for display as dd/mm/yyyy (string)
+        wimu_df["date_str"] = pd.to_datetime(wimu_df["localTime"], unit="ms", errors="coerce").dt.strftime("%d/%m/%Y")
+
+        # 3) Convert duration (ms) -> minutes
+        wimu_df["duration"] = pd.to_numeric(wimu_df["duration"], errors="coerce") / 60000
+
+        # ---- Sidebar filters ----
+        st.sidebar.header("Filters")
+
+        # Start-date filter (only start date, as requested)
+        min_date = wimu_df["date"].min()
+        max_date = wimu_df["date"].max()
+
+        start_date = st.sidebar.date_input(
+            "Start date",
+            value=min_date if pd.notna(min_date) else None,
+            min_value=min_date if pd.notna(min_date) else None,
+            max_value=max_date if pd.notna(max_date) else None,
+        )
+
+        # matchDay filter
+        matchday_options = sorted(wimu_df["matchDay"].dropna().unique().tolist()) if "matchDay" in wimu_df.columns else []
+        selected_matchdays = st.sidebar.multiselect("matchDay", options=matchday_options, default=matchday_options)
+
+        # Apply filters
+        filtered = wimu_df.copy()
+
+        if start_date:
+            filtered = filtered[filtered["date"] >= start_date]
+
+        if selected_matchdays:
+            filtered = filtered[filtered["matchDay"].isin(selected_matchdays)]
+
+        # ---- Aggregation ----
+        cols_to_avg = [
+            "duration",
+            "distance_distance",
+            "distance_distanceMin",
+            "distance_HSRAbsDistance",
+            "sprint_distance",
+            "sprint_abs",
+            "accelerations_highIntensityAccAbsCounter",
+            "accelerations_highIntensityDecAbsCounter",
+            "load_Player_Load",
+            "sprint_maxSpeed",
+        ]
+
+        # keep only columns that exist (prevents crashes if a column is missing)
+        existing_cols = [c for c in cols_to_avg if c in filtered.columns]
+
+        avg_by_user = (
+            filtered.groupby("username", dropna=False)[existing_cols]
+            .mean(numeric_only=True)
+            .reset_index()
+            .sort_values("username")
+        )
+
+        # ---- Layout ----
+        c1, c2 = st.columns([1, 2], vertical_alignment="top")
+
+        with c1:
+            st.subheader("Filtered rows")
+            st.write(f"{len(filtered):,}")
+            st.subheader("Date range in filtered data")
+            if len(filtered) > 0:
+                st.write(f"{filtered['date_str'].min()} → {filtered['date_str'].max()}")
+            else:
+                st.write("-")
+
+        with c2:
+            st.subheader("Average by username")
+            st.dataframe(avg_by_user, use_container_width=True)
+
+        st.divider()
+        st.subheader("Raw (filtered) preview")
+        st.dataframe(
+            filtered[["date_str", "matchDay", "username"] + existing_cols].head(200),
+            use_container_width=True,
+        )
 
 
 import streamlit as st
