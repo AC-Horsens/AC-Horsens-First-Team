@@ -4722,6 +4722,31 @@ def Physical_data():
             st.info("Select at least one metric to show the development chart.")
 
     elif main_view == "SS-Player":
+        def standardize_position(pos):
+            if pd.isna(pos):
+                return pos
+            p = str(pos).strip().upper()
+
+            mapping = {
+                # CB group
+                "LCB": "CB", "RCB": "CB", "CB": "CB",
+
+                # CM group (all DMs + CMs)
+                "CDM": "CM", "LDM": "CM", "RDM": "CM",
+                "LCM": "CM", "CM": "CM",
+
+                # AM group
+                "CAM": "AM", "LAM": "AM", "RAM": "AM",
+
+                # WR group
+                "RF": "WR", "RW": "WR", "LF": "WR", "LW": "WR",
+
+                # ST group
+                "CF": "ST", "ST": "ST",
+            }
+
+            return mapping.get(p, p)  # keep unchanged if not in mapping
+
         col1,col2 = st.columns(2)
         with col1:
             league = st.selectbox('Select League',['1.Div','Superliga'])
@@ -4730,6 +4755,8 @@ def Physical_data():
             season = st.selectbox('Select Season',[2023,2024,2025],index=2)
         df = load_player_physical_data(league,season)
         df = df.rename(columns=lambda c: c.replace("No. ", "No ").replace(".", ""))
+        df["position"] = df["position"].apply(standardize_position)
+
         metrics_km = ["Distance_per90"]  # assuming Distance is already in km in your screenshot
         metrics_m = ["High Speed Running_per90", "Sprinting_per90"]  # these look like meters
         metrics_counts = [
@@ -4802,7 +4829,7 @@ def Physical_data():
         st.divider()
         st.subheader("Player development over time")
         df = load_player_physical_data_games(league,season)
-        # ---- Add match_date using your existing helper ----
+        df["position"] = df["position"].apply(standardize_position)
         df_ts_base = add_match_date(df)
         df_ts_base = df_ts_base.dropna(subset=["match_date"])
 
