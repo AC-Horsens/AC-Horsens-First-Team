@@ -4836,7 +4836,7 @@ def Physical_data():
             ].copy()
 
             ts[selected_metric] = pd.to_numeric(ts[selected_metric], errors="coerce")
-            ts = ts.dropna(subset=["match_date", selected_metric]).sort_values("match_date")
+            ts = ts.dropna(subset=["match_date", "match_description", selected_metric]).sort_values("match_date")
 
             if ts.empty:
                 st.info("No data available for that selection.")
