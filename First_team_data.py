@@ -4717,7 +4717,7 @@ def Physical_data():
     # =========================
     elif main_view == "Wimu":
         wimu_df = load_wimu_data()
-        st.dataframe(wimu_df)
+        st.dataframe(wimu_df.head(10))
 
 
 import streamlit as st
