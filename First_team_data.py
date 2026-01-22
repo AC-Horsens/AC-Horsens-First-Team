@@ -4724,7 +4724,7 @@ def Physical_data():
             season = st.selectbox('Select Season',[2023,2024,2025],index=2)
         df = load_player_physical_data(league,season)
         df = df.rename(columns=lambda c: c.replace("No. ", "No ").replace(".", ""))
-
+        st.dataframe(df)
         metrics_km = ["Distance_per90"]  # assuming Distance is already in km in your screenshot
         metrics_m = ["High Speed Running_per90", "Sprinting_per90"]  # these look like meters
         metrics_counts = [
@@ -4735,7 +4735,7 @@ def Physical_data():
         ]
         metrics = metrics_km + metrics_m + metrics_counts
 
-        df = df[["team"] + metrics].copy()
+        df = df[["team","player_name","position"] + metrics].copy()
         df = normalize_numeric_columns(df, metrics)
 
         # ---- DISPLAY formatting (strings) ----
