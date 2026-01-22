@@ -4773,6 +4773,7 @@ def Physical_data():
             selected_tasks = st.multiselect(
                 "Task",
                 options=task_options,
+                default = 'Drills'
             )
 
         # Apply filters
@@ -4826,7 +4827,7 @@ def Physical_data():
 
 
         st.subheader("Average by username")
-        st.dataframe(avg_by_user, use_container_width=True,hide_index=True)
+        st.dataframe(avg_by_user_display, use_container_width=True,hide_index=True)
 
         st.divider()
         st.subheader("Raw (filtered) preview")
