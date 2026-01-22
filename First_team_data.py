@@ -4879,8 +4879,22 @@ def Physical_data():
             if ts.empty:
                 st.info("No data available for that selection.")
             else:
-                # ---- Plot ----
-                st.line_chart(ts.set_index("match_description")[selected_metric])
+                # ---- Plot (tilted match_description labels) ----
+                chart = (
+                    alt.Chart(ts)
+                    .mark_line(point=True)
+                    .encode(
+                        x=alt.X(
+                            "match_description:N",
+                            sort=None,  # keeps the order from sort_values("match_date")
+                            axis=alt.Axis(labelAngle=-45, title="Match")
+                        ),
+                        y=alt.Y(f"{selected_metric}:Q", title=selected_metric),
+                        tooltip=["match_description:N", "match_date:T", alt.Tooltip(selected_metric, format=".2f")],
+                    )
+                    .properties(height=350)
+                )
+                st.altair_chart(chart, use_container_width=True)
 
                 # ---- Table (EU formatting) ----
                 ts_display = ts.copy()
