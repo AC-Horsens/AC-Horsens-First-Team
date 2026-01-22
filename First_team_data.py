@@ -4735,8 +4735,7 @@ def Physical_data():
         min_date = wimu_df["date"].min()
         max_date = wimu_df["date"].max()
 
-        # Put filters in a neat row
-        f1, f2, f3 = st.columns([1, 1, 2])
+        f1, f2, f3, f4 = st.columns([1, 1, 1, 2])
 
         with f1:
             start_date = st.date_input(
@@ -4747,6 +4746,14 @@ def Physical_data():
             )
 
         with f2:
+            end_date = st.date_input(
+                "End date",
+                value=max_date if pd.notna(max_date) else None,
+                min_value=min_date if pd.notna(min_date) else None,
+                max_value=max_date if pd.notna(max_date) else None,
+            )
+
+        with f3:
             matchday_options = (
                 sorted(wimu_df["matchDay"].dropna().unique())
                 if "matchDay" in wimu_df.columns
@@ -4755,9 +4762,10 @@ def Physical_data():
             selected_matchdays = st.multiselect(
                 "matchDay",
                 options=matchday_options,
+                default=matchday_options,
             )
 
-        with f3:
+        with f4:
             task_options = (
                 sorted(wimu_df["task"].dropna().unique())
                 if "task" in wimu_df.columns
@@ -4766,7 +4774,7 @@ def Physical_data():
             selected_tasks = st.multiselect(
                 "Task",
                 options=task_options,
-                default='Session'
+                default=task_options,
             )
 
         # Apply filters
@@ -4774,9 +4782,13 @@ def Physical_data():
 
         if start_date:
             filtered = filtered[filtered["date"] >= start_date]
+        
+        if end_date:
+            filtered = filtered[filtered["date"] <= end_date]
 
         if selected_matchdays:
             filtered = filtered[filtered["matchDay"].isin(selected_matchdays)]
+        
         if selected_tasks:
             filtered = filtered[filtered["task"].isin(selected_tasks)]
 
