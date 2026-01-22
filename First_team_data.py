@@ -4768,7 +4768,11 @@ def Physical_data():
         metrics = metrics_km + metrics_m + metrics_counts
 
         df = df[["team","player_name","position"] + metrics].copy()
-        df = df.groupby(["team","player_name","position"]).mean()
+        df = (
+            df
+            .groupby(["team", "player_name", "position"], as_index=False)
+            .mean(numeric_only=True)
+        )
         df = normalize_numeric_columns(df, metrics)
 
         # ---- DISPLAY formatting (strings) ----
