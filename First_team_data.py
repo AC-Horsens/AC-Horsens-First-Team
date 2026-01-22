@@ -125,6 +125,12 @@ def load_team_physical_data_games(league,season):
     return physical_data
 
 @st.cache_data
+def load_player_physical_data(league,season):
+    url = f'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/physical%20data/{league}/{season}_{league}_player_averages.csv'
+    physical_data = pd.read_csv(url)
+    return physical_data
+
+@st.cache_data
 def load_wimu_data():
     url = f'https://raw.githubusercontent.com/AC-Horsens/AC-Horsens-First-Team/main/wimu_physical_data_from_2025-07-01.csv'
     wimu_data = pd.read_csv(url)
@@ -4710,8 +4716,14 @@ def Physical_data():
             st.info("Select at least one metric to show the development chart.")
 
     elif main_view == "SS-Player":
-        st.info("SS-Player module not added yet.")
-
+        col1,col2 = st.columns(2)
+        with col1:
+            league = st.selectbox('Select League',['1.Div','Superliga'])
+        
+        with col2:
+            season = st.selectbox('Select Season',[2023,2024,2025],index=2)
+        df = load_player_physical_data(league,season)
+        st.dataframe(df)
     # =========================
     # WIMU (placeholder)
     # =========================
