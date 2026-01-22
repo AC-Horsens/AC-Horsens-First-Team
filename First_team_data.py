@@ -4796,39 +4796,26 @@ def Physical_data():
         st.divider()
         st.subheader("Player development over time")
 
-        # ---- Detect date column ----
-        candidate_date_cols = ["date", "match_date", "matchDate", "localDate", "game_date", "GameDate", "fixture_date"]
-        date_col = next((c for c in candidate_date_cols if c in df.columns), None)
+        # ---- Add match_date using your existing helper ----
+        df_ts_base = add_match_date(df)
+        df_ts_base = df_ts_base.dropna(subset=["match_date"])
 
-        if date_col is None:
-            # fallback: find any column that can be parsed as datetime with a decent success rate
-            for c in df.columns:
-                parsed = pd.to_datetime(df[c], errors="coerce")
-                if parsed.notna().mean() > 0.7:  # 70% parse success threshold
-                    date_col = c
-                    df[c] = parsed
-                    break
-
-        if date_col is None:
-            st.warning(
-                "I can't find a date column to plot over time. "
-                "Add/rename a date column (e.g. 'date' or 'match_date') in the dataset."
-            )
+        if df_ts_base.empty:
+            st.warning("No match dates could be extracted from match_description.")
         else:
-            # Ensure datetime
-            df[date_col] = pd.to_datetime(df[date_col], errors="coerce")
-
             # ---- Filters: team, player, metric ----
             f1, f2, f3 = st.columns([1, 2, 2])
 
             with f1:
-                team_options = sorted(df["team"].dropna().unique().tolist()) if "team" in df.columns else []
+                team_options = sorted(df_ts_base["team"].dropna().unique().tolist())
                 selected_team = st.selectbox("Team", options=team_options)
 
             with f2:
-                player_options = (
-                    sorted(df.loc[df["team"] == selected_team, "player_name"].dropna().unique().tolist())
-                    if "player_name" in df.columns else []
+                player_options = sorted(
+                    df_ts_base.loc[df_ts_base["team"] == selected_team, "player_name"]
+                    .dropna()
+                    .unique()
+                    .tolist()
                 )
                 selected_player = st.selectbox("Player", options=player_options)
 
@@ -4836,26 +4823,24 @@ def Physical_data():
                 selected_metric = st.selectbox("Metric", options=metrics, index=0)
 
             # ---- Build player time series ----
-            ts = df.copy()
-            ts = ts[(ts["team"] == selected_team) & (ts["player_name"] == selected_player)]
-            ts = ts[[date_col, selected_metric]].copy()
+            ts = df_ts_base.loc[
+                (df_ts_base["team"] == selected_team) &
+                (df_ts_base["player_name"] == selected_player),
+                ["match_date", selected_metric]
+            ].copy()
 
             ts[selected_metric] = pd.to_numeric(ts[selected_metric], errors="coerce")
-            ts = ts.dropna(subset=[date_col, selected_metric]).sort_values(date_col)
+            ts = ts.dropna(subset=["match_date", selected_metric]).sort_values("match_date")
 
-            # If multiple entries per day, aggregate (mean) per date
-            ts["day"] = ts[date_col].dt.date
-            ts_daily = ts.groupby("day", as_index=False)[selected_metric].mean()
-
-            # ---- Plot + table ----
-            if ts_daily.empty:
+            if ts.empty:
                 st.info("No data available for that selection.")
             else:
-                st.line_chart(ts_daily.set_index("day")[selected_metric])
+                # ---- Plot ----
+                st.line_chart(ts.set_index("match_date")[selected_metric])
 
-                # Display table (EU formatting)
-                ts_display = ts_daily.copy()
-                ts_display["day"] = pd.to_datetime(ts_display["day"]).dt.strftime("%d/%m/%Y")
+                # ---- Table (EU formatting) ----
+                ts_display = ts.copy()
+                ts_display["match_date"] = ts_display["match_date"].dt.strftime("%d/%m/%Y")
 
                 if selected_metric in metrics_counts:
                     ts_display[selected_metric] = ts_display[selected_metric].apply(lambda v: format_eu(v, decimals=0))
