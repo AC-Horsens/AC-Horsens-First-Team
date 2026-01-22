@@ -4793,20 +4793,10 @@ def Physical_data():
         )
 
         # ---- Layout ----
-        c1, c2 = st.columns([1, 2])  # removed vertical_alignment kwarg
 
-        with c1:
-            st.subheader("Filtered rows")
-            st.write(f"{len(filtered):,}")
-            st.subheader("Date range in filtered data")
-            if len(filtered) > 0:
-                st.write(f"{filtered['date_str'].min()} → {filtered['date_str'].max()}")
-            else:
-                st.write("-")
 
-        with c2:
-            st.subheader("Average by username")
-            st.dataframe(avg_by_user, use_container_width=True)
+        st.subheader("Average by username")
+        st.dataframe(avg_by_user, use_container_width=True)
 
         st.divider()
         st.subheader("Raw (filtered) preview")
