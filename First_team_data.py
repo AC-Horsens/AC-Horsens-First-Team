@@ -4830,10 +4830,72 @@ def Physical_data():
         st.dataframe(summary_display, use_container_width=True, hide_index=True)
 
         st.divider()
-        st.subheader("Raw (filtered) preview")
+        st.subheader("Player development over time")
 
-        preview_cols = [c for c in ["date_str", "matchDay", "task", "username"] if c in filtered.columns] + metric_cols
-        st.dataframe(filtered[preview_cols].head(200), use_container_width=True, hide_index=True)
+        # --- Player + metric selectors ---
+        p1, p2 = st.columns([1, 2])
+
+        with p1:
+            player_options = sorted(filtered["username"].dropna().unique().tolist()) if "username" in filtered.columns else []
+            selected_player = st.selectbox("Choose player", options=player_options)
+
+        with p2:
+            # Choose metrics from the same list used in the team table
+            selected_metrics = st.multiselect(
+                "Choose metric(s) to plot",
+                options=metric_cols,
+                default=["duration"] if "duration" in metric_cols else (metric_cols[:1] if metric_cols else []),
+            )
+
+        # --- Build player time series (daily) ---
+        player_df = filtered.copy()
+        player_df = player_df[player_df["username"] == selected_player] if selected_player else player_df.iloc[0:0]
+
+        # Ensure we have a date we can group by
+        # (date_dt exists in your rewritten code)
+        if "date_dt" in player_df.columns:
+            player_df["day"] = player_df["date_dt"].dt.date
+        else:
+            player_df["day"] = player_df["date"]
+
+        # Aggregation logic per metric (match your team-table logic):
+        # - sprint_maxSpeed should be MAX
+        # - all others should be MEAN
+        agg_ts = {}
+        for m in selected_metrics:
+            if m == "sprint_maxSpeed":
+                agg_ts[m] = "max"
+            else:
+                agg_ts[m] = "mean"
+
+        # Create a daily time series
+        ts = (
+            player_df.groupby("day", dropna=False)
+            .agg(agg_ts)
+            .reset_index()
+            .sort_values("day")
+        )
+
+        # --- Show results ---
+        if ts.empty:
+            st.info("No data for the selected player in the current filter range.")
+        else:
+            # Chart(s)
+            if len(selected_metrics) == 1:
+                st.line_chart(ts.set_index("day")[selected_metrics[0]])
+            else:
+                # multiple metrics: either multi-line chart or separate charts
+                st.line_chart(ts.set_index("day")[selected_metrics])
+
+            # Optional: show the table as well (EU formatting)
+            ts_display = ts.copy()
+            ts_display["day"] = pd.to_datetime(ts_display["day"]).dt.strftime("%d/%m/%Y")
+
+            for col in selected_metrics:
+                ts_display[col] = ts_display[col].apply(format_eu_wimu)
+
+            st.caption("Daily values within the selected date/matchDay/task filters.")
+            st.dataframe(ts_display, use_container_width=True, hide_index=True)
 
 
 
