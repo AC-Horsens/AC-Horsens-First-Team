@@ -4814,7 +4814,15 @@ def Physical_data():
             .sort_values("username")
         )
 
-        # ---- Layout ----
+        def format_eu(x):
+            if pd.isna(x):
+                return ""
+            return f"{x:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
+
+        avg_by_user_display = avg_by_user.copy()
+
+        for col in existing_cols:
+            avg_by_user_display[col] = avg_by_user_display[col].apply(format_eu)
 
 
         st.subheader("Average by username")
