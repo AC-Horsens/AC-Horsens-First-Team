@@ -4824,7 +4824,17 @@ def Physical_data():
         summary_display = summary_by_user.copy()
         for col in metric_cols:
             summary_display[col] = summary_display[col].apply(format_eu_wimu)
+        team_avg = summary_display[metric_cols].mean().to_frame().T
+        team_min = summary_display[metric_cols].min().to_frame().T
+        team_max = summary_display[metric_cols].max().to_frame().T
+        team_avg.insert(0, "username", "TEAM – Average")
+        team_min.insert(0, "username", "TEAM – Min")
+        team_max.insert(0, "username", "TEAM – Max")
 
+        summary_display = pd.concat(
+            [summary_display, team_avg, team_min, team_max],
+            ignore_index=True,
+        )
         # ---------- Output ----------
         st.subheader("Summary")
         st.dataframe(summary_display, use_container_width=True, hide_index=True)
