@@ -4733,13 +4733,13 @@ def Physical_data():
 
                 # CM group (all DMs + CMs)
                 "CDM": "CM", "LDM": "CM", "RDM": "CM",
-                "LCM": "CM", "CM": "CM",
+                "LCM": "CM", "CM": "CM", "RCM":"CM",
 
                 # AM group
                 "CAM": "AM", "LAM": "AM", "RAM": "AM",
 
                 # WR group
-                "RF": "WR", "RW": "WR", "LF": "WR", "LW": "WR",
+                "RF": "WR", "RW": "WR", "LF": "WR", "LW": "WR", "RM":"WR","LM":"WR",
 
                 # ST group
                 "CF": "ST", "ST": "ST",
