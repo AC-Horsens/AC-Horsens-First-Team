@@ -5122,9 +5122,6 @@ def Physical_data():
             ts_display = ts.copy()
             ts_display["day"] = pd.to_datetime(ts_display["day"]).dt.strftime("%d/%m/%Y")
 
-            for col in selected_metrics:
-                ts_display[col] = ts_display[col].apply(format_eu_wimu)
-
             st.caption("Daily values within the selected date/matchDay/task filters.")
             st.dataframe(ts_display, use_container_width=True, hide_index=True)
 
