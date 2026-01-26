@@ -4944,7 +4944,7 @@ def Physical_data():
             end_date = st.date_input(
                 "End date",
                 value=max_date if pd.notna(max_date) else None,
-                min_value=max_date - timedelta(days=7) if pd.notna(max_date) else None,
+                min_value=max_date if pd.notna(max_date) else None,
                 max_value=max_date if pd.notna(max_date) else None,
             )
 
