@@ -5040,16 +5040,13 @@ def Physical_data():
         metric_labels = [DISPLAY_NAMES.get(c, c) for c in metric_cols]
         label_to_col = {DISPLAY_NAMES.get(c, c): c for c in metric_cols}  # reverse map
 
-        #summary_display = summary_by_user.copy()
-        #for col in metric_cols:
-        #    summary_display[col] = summary_display[col].apply(format_eu_wimu)
-
+        summary_display = summary_by_user.rename(columns=DISPLAY_NAMES)
 
         # ---------- Output ----------
         st.subheader("Summary")
         
         st.dataframe(
-            summary_by_user,
+            summary_display,
             column_config={
                 DISPLAY_NAMES.get(col, col): st.column_config.NumberColumn(
                     DISPLAY_NAMES.get(col, col),
@@ -5096,7 +5093,7 @@ def Physical_data():
             default=["Duration"] if "duration" in metric_cols else (metric_labels[:1] if metric_labels else []),
             )
 
-            selected_metrics = [label_to_col[x] for x in selected_metric_labels]
+            selected_metrics = [label_to_col[x] for x in selected_metrics]
 
         # --- Build player time series (daily) ---
         player_df = filtered.copy()
