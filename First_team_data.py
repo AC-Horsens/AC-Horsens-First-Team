@@ -5027,8 +5027,8 @@ def Physical_data():
 
         team_reference_display = team_reference.copy()
 
-        for col in metric_cols:
-            team_reference_display[col] = team_reference_display[col].apply(format_eu_wimu)
+        #for col in metric_cols:
+        #    team_reference_display[col] = team_reference_display[col].apply(format_eu_wimu)
 
 
         #summary_display = summary_by_user.copy()
@@ -5038,7 +5038,7 @@ def Physical_data():
 
         # ---------- Output ----------
         st.subheader("Summary")
-
+        
         st.dataframe(
             summary_by_user,
             column_config={
@@ -5047,16 +5047,22 @@ def Physical_data():
                     format="%.2f"
                 )
                 for col in metric_cols
-            }
+            },hide_index=True
         )
 
 
         st.subheader("Team reference (based on player summary)")
         st.dataframe(
             team_reference_display,
-            use_container_width=True,
-            hide_index=True,
+            column_config={
+                col: st.column_config.NumberColumn(
+                    col,
+                    format="%.2f"
+                )
+                for col in metric_cols
+            },hide_index=True,use_container_width=True,
         )
+
 
         st.divider()
         st.subheader("Player development over time")
