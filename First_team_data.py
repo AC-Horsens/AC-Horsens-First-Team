@@ -5025,7 +5025,20 @@ def Physical_data():
 
         #for col in metric_cols:
         #    team_reference_display[col] = team_reference_display[col].apply(format_eu_wimu)
-
+        DISPLAY_NAMES = {
+            "duration": "Duration",
+            "distance_distance": "Total Distance",
+            "distance_distanceMin": "Distance per min",
+            "distance_HSRAbsDistance": "High speed running Distance",
+            "sprint_distance": "Sprint Distance",
+            "sprint_abs": "# of Sprints",
+            "accelerations_highIntensityAccAbsCounter": "High Intensity Accelerations",
+            "accelerations_highIntensityDecAbsCounter": "High Intensity Decelerations",
+            "load_Player_Load": "Player Load",
+            "sprint_maxSpeed": "Max speed",
+        }
+        metric_labels = [DISPLAY_NAMES.get(c, c) for c in metric_cols]
+        label_to_col = {DISPLAY_NAMES.get(c, c): c for c in metric_cols}  # reverse map
 
         #summary_display = summary_by_user.copy()
         #for col in metric_cols:
@@ -5038,25 +5051,30 @@ def Physical_data():
         st.dataframe(
             summary_by_user,
             column_config={
-                col: st.column_config.NumberColumn(
-                    col,
+                DISPLAY_NAMES.get(col, col): st.column_config.NumberColumn(
+                    DISPLAY_NAMES.get(col, col),
                     format="%.2f"
                 )
                 for col in metric_cols
-            },hide_index=True
+            },
+            hide_index=True
         )
 
 
         st.subheader("Team reference (based on player summary)")
+        team_reference_display = team_reference.rename(columns=DISPLAY_NAMES)
+
         st.dataframe(
             team_reference_display,
             column_config={
-                col: st.column_config.NumberColumn(
-                    col,
+                DISPLAY_NAMES.get(col, col): st.column_config.NumberColumn(
+                    DISPLAY_NAMES.get(col, col),
                     format="%.2f"
                 )
                 for col in metric_cols
-            },hide_index=True,use_container_width=True,
+            },
+            hide_index=True,
+            use_container_width=True,
         )
 
 
@@ -5073,10 +5091,12 @@ def Physical_data():
         with p2:
             # Choose metrics from the same list used in the team table
             selected_metrics = st.multiselect(
-                "Choose metric(s) to plot",
-                options=metric_cols,
-                default=["duration"] if "duration" in metric_cols else (metric_cols[:1] if metric_cols else []),
+            "Choose metric(s) to plot",
+            options=metric_labels,
+            default=["Duration"] if "duration" in metric_cols else (metric_labels[:1] if metric_labels else []),
             )
+
+            selected_metrics = [label_to_col[x] for x in selected_metric_labels]
 
         # --- Build player time series (daily) ---
         player_df = filtered.copy()
