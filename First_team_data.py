@@ -5143,7 +5143,6 @@ def Physical_data():
             st.caption("Daily values within the selected date/matchDay/task filters.")
             st.dataframe(ts_display, use_container_width=True, hide_index=True)
 
-
 import streamlit as st
 import matplotlib.pyplot as plt
 from mplsoccer import Pitch
