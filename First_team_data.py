@@ -5138,6 +5138,7 @@ def Physical_data():
             # Optional: show the table as well (EU formatting)
             ts_display = ts.copy()
             ts_display["day"] = pd.to_datetime(ts_display["day"]).dt.strftime("%d/%m/%Y")
+            ts_display = ts_display.rename(columns=DISPLAY_NAMES)
 
             st.caption("Daily values within the selected date/matchDay/task filters.")
             st.dataframe(ts_display, use_container_width=True, hide_index=True)
