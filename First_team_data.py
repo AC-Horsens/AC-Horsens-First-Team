@@ -5031,13 +5031,25 @@ def Physical_data():
             team_reference_display[col] = team_reference_display[col].apply(format_eu_wimu)
 
 
-        summary_display = summary_by_user.copy()
-        for col in metric_cols:
-            summary_display[col] = summary_display[col].apply(format_eu_wimu)
+        #summary_display = summary_by_user.copy()
+        #for col in metric_cols:
+        #    summary_display[col] = summary_display[col].apply(format_eu_wimu)
+
 
         # ---------- Output ----------
         st.subheader("Summary")
-        st.dataframe(summary_display, use_container_width=True, hide_index=True)
+
+        st.dataframe(
+            summary_by_user,
+            column_config={
+                col: st.column_config.NumberColumn(
+                    col,
+                    format="%.2f"
+                )
+                for col in metric_cols
+            }
+        )
+
 
         st.subheader("Team reference (based on player summary)")
         st.dataframe(
