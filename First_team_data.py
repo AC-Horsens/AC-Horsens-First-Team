@@ -4935,7 +4935,7 @@ def Physical_data():
         with f1:
             start_date = st.date_input(
                 "Start date",
-                value=min_date if pd.notna(min_date) else None,
+                value=max_date if pd.notna(max_date) else None,
                 min_value=min_date if pd.notna(min_date) else None,
                 max_value=max_date if pd.notna(max_date) else None,
             )
