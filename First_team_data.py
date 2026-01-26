@@ -5020,10 +5020,6 @@ def Physical_data():
                 summary_by_user[col].max(),
             ]
         # ---------- EU number formatting for display ----------
-        def format_eu_wimu(x):
-            if pd.isna(x):
-                return ""
-            return f"{x:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
 
         team_reference_display = team_reference.copy()
 
