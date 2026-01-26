@@ -4938,6 +4938,7 @@ def Physical_data():
                 value=min_date if pd.notna(min_date) else None,
                 min_value=min_date if pd.notna(min_date) else None,
                 max_value=max_date if pd.notna(max_date) else None,
+                first_day_of_week=1,
             )
 
         with f2:
@@ -4946,6 +4947,7 @@ def Physical_data():
                 value=max_date if pd.notna(max_date) else None,
                 min_value=min_date if pd.notna(min_date) else None,
                 max_value=max_date if pd.notna(max_date) else None,
+                first_day_of_week=1,
             )
 
         with f3:
