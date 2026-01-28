@@ -5057,66 +5057,66 @@ def Physical_data():
             hide_index=True
         )
 
-    def df_to_pdf_bytes(df: pd.DataFrame, title: str = "WIMU Summary") -> bytes:
-        # Make a copy for nice formatting in the PDF (keep your UI df unchanged)
-        df_pdf = df.copy()
+        def df_to_pdf_bytes(df: pd.DataFrame, title: str = "WIMU Summary") -> bytes:
+            # Make a copy for nice formatting in the PDF (keep your UI df unchanged)
+            df_pdf = df.copy()
 
-        # If you want EU decimal comma in the PDF, uncomment:
-        # df_pdf = df_pdf.applymap(lambda x: f"{x:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".") if isinstance(x, (int, float)) else x)
+            # If you want EU decimal comma in the PDF, uncomment:
+            # df_pdf = df_pdf.applymap(lambda x: f"{x:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".") if isinstance(x, (int, float)) else x)
 
-        # Try WeasyPrint first (best)
-        try:
-            from weasyprint import HTML  # pip install weasyprint
+            # Try WeasyPrint first (best)
+            try:
+                from weasyprint import HTML  # pip install weasyprint
 
-            css = """
-            @page { size: A4 landscape; margin: 14mm; }
-            body { font-family: Arial, sans-serif; font-size: 10pt; }
-            h1 { font-size: 14pt; margin: 0 0 10px 0; }
-            table { width: 100%; border-collapse: collapse; }
-            th, td { border: 1px solid #ddd; padding: 6px; }
-            th { background: #f3f3f3; text-align: left; }
-            tr:nth-child(even) { background: #fafafa; }
-            """
+                css = """
+                @page { size: A4 landscape; margin: 14mm; }
+                body { font-family: Arial, sans-serif; font-size: 10pt; }
+                h1 { font-size: 14pt; margin: 0 0 10px 0; }
+                table { width: 100%; border-collapse: collapse; }
+                th, td { border: 1px solid #ddd; padding: 6px; }
+                th { background: #f3f3f3; text-align: left; }
+                tr:nth-child(even) { background: #fafafa; }
+                """
 
-            html = f"""
-            <html>
-            <head><style>{css}</style></head>
-            <body>
-                <h1>{title}</h1>
-                {df_pdf.to_html(index=False, escape=False)}
-            </body>
-            </html>
-            """
-            return HTML(string=html).write_pdf()
+                html = f"""
+                <html>
+                <head><style>{css}</style></head>
+                <body>
+                    <h1>{title}</h1>
+                    {df_pdf.to_html(index=False, escape=False)}
+                </body>
+                </html>
+                """
+                return HTML(string=html).write_pdf()
 
-        except Exception:
-            # Fallback: ReportLab (no extra deps, but simpler look)
-            from reportlab.lib.pagesizes import landscape, A4
-            from reportlab.lib import colors
-            from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, Spacer
-            from reportlab.lib.styles import getSampleStyleSheet
+            except Exception:
+                # Fallback: ReportLab (no extra deps, but simpler look)
+                from reportlab.lib.pagesizes import landscape, A4
+                from reportlab.lib import colors
+                from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, Spacer
+                from reportlab.lib.styles import getSampleStyleSheet
 
-            buffer = io.BytesIO()
-            doc = SimpleDocTemplate(buffer, pagesize=landscape(A4), leftMargin=20, rightMargin=20, topMargin=20, bottomMargin=20)
+                buffer = io.BytesIO()
+                doc = SimpleDocTemplate(buffer, pagesize=landscape(A4), leftMargin=20, rightMargin=20, topMargin=20, bottomMargin=20)
 
-            styles = getSampleStyleSheet()
-            elements = [Paragraph(title, styles["Title"]), Spacer(1, 12)]
+                styles = getSampleStyleSheet()
+                elements = [Paragraph(title, styles["Title"]), Spacer(1, 12)]
 
-            data = [list(df_pdf.columns)] + df_pdf.astype(str).values.tolist()
-            table = Table(data, repeatRows=1)
+                data = [list(df_pdf.columns)] + df_pdf.astype(str).values.tolist()
+                table = Table(data, repeatRows=1)
 
-            table.setStyle(TableStyle([
-                ("BACKGROUND", (0, 0), (-1, 0), colors.lightgrey),
-                ("GRID", (0, 0), (-1, -1), 0.25, colors.grey),
-                ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
-                ("FONTSIZE", (0, 0), (-1, -1), 8),
-                ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
-                ("ROWBACKGROUNDS", (0, 1), (-1, -1), [colors.whitesmoke, colors.white]),
-            ]))
+                table.setStyle(TableStyle([
+                    ("BACKGROUND", (0, 0), (-1, 0), colors.lightgrey),
+                    ("GRID", (0, 0), (-1, -1), 0.25, colors.grey),
+                    ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
+                    ("FONTSIZE", (0, 0), (-1, -1), 8),
+                    ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
+                    ("ROWBACKGROUNDS", (0, 1), (-1, -1), [colors.whitesmoke, colors.white]),
+                ]))
 
-            elements.append(table)
-            doc.build(elements)
-            return buffer.getvalue()
+                elements.append(table)
+                doc.build(elements)
+                return buffer.getvalue()
 
         pdf_bytes = df_to_pdf_bytes(
             summary_display,
