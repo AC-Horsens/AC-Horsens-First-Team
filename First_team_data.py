@@ -20,6 +20,7 @@ import re
 from urllib.parse import quote
 from sklearn.neighbors import NearestNeighbors
 import altair as alt
+import io
 
 st.set_page_config(layout='wide')
 
@@ -5117,17 +5118,17 @@ def Physical_data():
             doc.build(elements)
             return buffer.getvalue()
 
-    pdf_bytes = df_to_pdf_bytes(
-        summary_display,
-        title=f"WIMU Summary ({start_date} to {end_date})"
-    )
+        pdf_bytes = df_to_pdf_bytes(
+            summary_display,
+            title=f"WIMU Summary ({start_date} to {end_date})"
+        )
 
-    st.download_button(
-        label="Download Summary as PDF",
-        data=pdf_bytes,
-        file_name="wimu_summary.pdf",
-        mime="application/pdf",
-    )
+        st.download_button(
+            label="Download Summary as PDF",
+            data=pdf_bytes,
+            file_name="wimu_summary.pdf",
+            mime="application/pdf",
+        )
 
         st.subheader("Team reference (based on player summary)")
         team_reference_display = team_reference.rename(columns=DISPLAY_NAMES)
