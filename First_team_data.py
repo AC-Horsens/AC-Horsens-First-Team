@@ -5069,7 +5069,7 @@ def Physical_data():
                 from weasyprint import HTML  # pip install weasyprint
 
                 css = """
-                @page { size: A4 landscape; margin: 6mm; }
+                @page { size: 297mm 210mm; margin: 6mm; }
                 body { font-family: Arial, sans-serif; font-size: 9pt; }
                 h1 { font-size: 12pt; margin: 0 0 8px 0; }
                 table { width: 100%; border-collapse: collapse; table-layout: fixed; }
