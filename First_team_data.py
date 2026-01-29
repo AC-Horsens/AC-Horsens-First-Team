@@ -5094,15 +5094,15 @@ def Physical_data():
             table = Table(data, colWidths=col_widths, repeatRows=1)
 
             table.setStyle(TableStyle([
-                ("BACKGROUND", (0, 0), (-1, 0), colors.lightgrey),
-                ("GRID", (0, 0), (-1, -1), 0.25, colors.blue),
+                ("BACKGROUND", (0, 0), (-1, 0), colors.skyblue),
+                ("GRID", (0, 0), (-1, -1), 0.25, colors.grey),
                 ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
                 ("FONTSIZE", (0, 0), (-1, -1), 8),
                 ("ALIGN", (0, 0), (0, -1), "LEFT"),      # first column left
                 ("ALIGN", (1, 1), (-1, -1), "RIGHT"),    # numbers right
                 ("ALIGN", (1, 0), (-1, 0), "CENTER"),    # header center (except first col)
                 ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
-                ("ROWBACKGROUNDS", (0, 1), (-1, -1), [colors.lightskyblue, colors.white]),
+                ("ROWBACKGROUNDS", (0, 1), (-1, -1), [colors.lightblue, colors.white]),
             ]))
 
             elements.append(table)
