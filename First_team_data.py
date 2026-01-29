@@ -5141,7 +5141,7 @@ def Physical_data():
                 usable_width = page_width - doc.leftMargin - doc.rightMargin
 
                 n_cols = len(df_pdf.columns)
-                first_col_ratio = 0.20  # 20% width for first column
+                first_col_ratio = 0.18  # 20% width for first column
                 first_w = usable_width * first_col_ratio
                 rest_w = (usable_width - first_w) / max(n_cols - 1, 1)
                 col_widths = [first_w] + [rest_w] * (n_cols - 1)
