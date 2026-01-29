@@ -5094,8 +5094,8 @@ def Physical_data():
             table = Table(data, colWidths=col_widths, repeatRows=1)
 
             table.setStyle(TableStyle([
-                ("BACKGROUND", (0, 0), (-1, 0), colors.skyblue),
-                ("GRID", (0, 0), (-1, -1), 0.25, colors.grey),
+                ("BACKGROUND", (0, 0), (-1, 0), colors.blue),
+                ("GRID", (0, 0), (-1, -1), 0.25, colors.black),
                 ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
                 ("FONTSIZE", (0, 0), (-1, -1), 8),
                 ("ALIGN", (0, 0), (0, -1), "LEFT"),      # first column left
