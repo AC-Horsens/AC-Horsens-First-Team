@@ -5070,10 +5070,10 @@ def Physical_data():
                 st.caption("PDF engine: WeasyPrint (landscape)")
 
                 css = """
-                @page { size: 297mm 210mm; margin: 6mm; }
+                @page { size: 297mm 210mm; margin: 2mm; }
 
-                body { font-family: Arial, sans-serif; font-size: 8pt; }
-                h1 { font-size: 9pt; margin: 0 0 8px 0; }
+                body { font-family: Arial, sans-serif; font-size: 9pt; }
+                h1 { font-size: 10pt; margin: 0 0 9px 0; }
 
                 .table-wrap { width: 100%; }
                 .table-wrap table {
