@@ -5109,9 +5109,15 @@ def Physical_data():
             doc.build(elements)
             return buffer.getvalue()
 
+        if start_date == end_date:
+            title = f"Summary ({start_date})"
+        else:
+            title = f"Summary ({start_date} to {end_date})"
+
+
         pdf_bytes = df_to_pdf_bytes(
             summary_display,
-            title=f"WIMU Summary ({start_date} to {end_date})"
+            title=title
         )
 
         st.download_button(
