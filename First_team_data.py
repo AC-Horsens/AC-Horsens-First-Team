@@ -5083,7 +5083,11 @@ def Physical_data():
                 transform: scale(0.90);
                 transform-origin: top left;
                 }
-
+                .table-wrap th:first-child,
+                .table-wrap td:first-child {
+                width: 18%;              /* try 16–25% depending on username length */
+                white-space: nowrap;     /* prevents wrapping names */
+                }
                 th, td {
                 border: 1px solid #ddd;
                 padding: 2px 3px;
