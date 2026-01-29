@@ -5129,9 +5129,13 @@ def Physical_data():
                 data = [list(df_pdf.columns)] + df_pdf.astype(str).values.tolist()
                 page_width, page_height = landscape(A4)
                 usable_width = page_width - doc.leftMargin - doc.rightMargin
-                n_cols = len(df_pdf.columns)
-                col_widths = [usable_width / n_cols] * n_cols
+n_cols = len(df_pdf.columns)
 
+first_col_ratio = 0.20  # 20% of usable width to the first column (tweak 0.18–0.30)
+first_w = usable_width * first_col_ratio
+rest_w = (usable_width - first_w) / max(n_cols - 1, 1)
+
+col_widths = [first_w] + [rest_w] * (n_cols - 1)
                 table = Table(data, colWidths=col_widths, repeatRows=1)
 
                 table.setStyle(TableStyle([
