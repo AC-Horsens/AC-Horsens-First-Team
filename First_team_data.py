@@ -5041,7 +5041,7 @@ def Physical_data():
         label_to_col = {DISPLAY_NAMES.get(c, c): c for c in metric_cols}  # reverse map
 
         summary_display = summary_by_user.rename(columns=DISPLAY_NAMES)
-
+        summary_display = summary_display.round(2)
         # ---------- Output ----------
         st.subheader("Summary")
         
@@ -5070,10 +5070,10 @@ def Physical_data():
 
                 css = """
                 @page { size: A4 landscape; margin: 14mm; }
-                body { font-family: Arial, sans-serif; font-size: 10pt; }
-                h1 { font-size: 14pt; margin: 0 0 10px 0; }
-                table { width: 100%; border-collapse: collapse; }
-                th, td { border: 1px solid #ddd; padding: 6px; }
+                body { font-family: Arial, sans-serif; font-size: 9pt; }
+                h1 { font-size: 12pt; margin: 0 0 8px 0; }
+                table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+                th, td { border: 1px solid #ddd; padding: 3px 4px; vertical-align: top; word-wrap: break-word; overflow-wrap: break-word;}
                 th { background: #f3f3f3; text-align: left; }
                 tr:nth-child(even) { background: #fafafa; }
                 """
