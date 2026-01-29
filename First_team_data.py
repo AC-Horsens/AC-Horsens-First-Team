@@ -5110,9 +5110,9 @@ def Physical_data():
             return buffer.getvalue()
 
         if start_date == end_date:
-            title = f"Summary ({start_date})"
+            title = f"Summary {start_date}"
         else:
-            title = f"Summary ({start_date} to {end_date})"
+            title = f"Summary {start_date} to {end_date}"
 
 
         pdf_bytes = df_to_pdf_bytes(
@@ -5123,7 +5123,7 @@ def Physical_data():
         st.download_button(
             label="Download Summary as PDF",
             data=pdf_bytes,
-            file_name="wimu_summary.pdf",
+            file_name=f"{title}.pdf",
             mime="application/pdf",
         )
 
