@@ -5067,6 +5067,7 @@ def Physical_data():
             # Try WeasyPrint first (best)
             try:
                 from weasyprint import HTML  # pip install weasyprint
+                st.caption("PDF engine: WeasyPrint (landscape)")
 
                 css = """
                 @page { size: 297mm 210mm; margin: 6mm; }
@@ -5122,7 +5123,12 @@ def Physical_data():
                 elements = [Paragraph(title, styles["Title"]), Spacer(1, 12)]
 
                 data = [list(df_pdf.columns)] + df_pdf.astype(str).values.tolist()
-                table = Table(data, repeatRows=1)
+                page_width, page_height = landscape(A4)
+                usable_width = page_width - doc.leftMargin - doc.rightMargin
+                n_cols = len(df_pdf.columns)
+                col_widths = [usable_width / n_cols] * n_cols
+
+                table = Table(data, colWidths=col_widths, repeatRows=1)
 
                 table.setStyle(TableStyle([
                     ("BACKGROUND", (0, 0), (-1, 0), colors.lightgrey),
