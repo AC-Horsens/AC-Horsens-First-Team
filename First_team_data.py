@@ -5102,7 +5102,7 @@ def Physical_data():
                 ("ALIGN", (1, 1), (-1, -1), "RIGHT"),    # numbers right
                 ("ALIGN", (1, 0), (-1, 0), "CENTER"),    # header center (except first col)
                 ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
-                ("ROWBACKGROUNDS", (0, 1), (-1, -1), [colors.blue, colors.white]),
+                ("ROWBACKGROUNDS", (0, 1), (-1, -1), [colors.whitesmoke, colors.white]),
             ]))
 
             elements.append(table)
