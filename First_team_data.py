@@ -5135,7 +5135,7 @@ def Physical_data():
                     ("GRID", (0, 0), (-1, -1), 0.25, colors.grey),
                     ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
                     ("FONTSIZE", (0, 0), (-1, -1), 6),
-                    ("VALIGN", (0, 0), (-1, -1), "Left"),
+                    ("ALIGN", (0, 0), (-1, -1), "LEFT"),
                     ("ROWBACKGROUNDS", (0, 1), (-1, -1), [colors.whitesmoke, colors.white]),
                 ]))
 
