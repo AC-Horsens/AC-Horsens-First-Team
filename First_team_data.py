@@ -5072,8 +5072,8 @@ def Physical_data():
                 css = """
                 @page { size: 297mm 210mm; margin: 6mm; }
 
-                body { font-family: Arial, sans-serif; font-size: 9pt; }
-                h1 { font-size: 12pt; margin: 0 0 8px 0; }
+                body { font-family: Arial, sans-serif; font-size: 8pt; }
+                h1 { font-size: 9pt; margin: 0 0 8px 0; }
 
                 .table-wrap { width: 100%; }
                 .table-wrap table {
@@ -5134,8 +5134,8 @@ def Physical_data():
                     ("BACKGROUND", (0, 0), (-1, 0), colors.lightgrey),
                     ("GRID", (0, 0), (-1, -1), 0.25, colors.grey),
                     ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
-                    ("FONTSIZE", (0, 0), (-1, -1), 8),
-                    ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
+                    ("FONTSIZE", (0, 0), (-1, -1), 6),
+                    ("VALIGN", (0, 0), (-1, -1), "Left"),
                     ("ROWBACKGROUNDS", (0, 1), (-1, -1), [colors.whitesmoke, colors.white]),
                 ]))
 
