@@ -5061,9 +5061,6 @@ def Physical_data():
             # Make a copy for nice formatting in the PDF (keep your UI df unchanged)
             df_pdf = df.copy()
 
-            # If you want EU decimal comma in the PDF, uncomment:
-            # df_pdf = df_pdf.applymap(lambda x: f"{x:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".") if isinstance(x, (int, float)) else x)
-
             # Try WeasyPrint first (best)
             try:
                 from weasyprint import HTML  # pip install weasyprint
@@ -5072,8 +5069,8 @@ def Physical_data():
                 css = """
                 @page { size: 297mm 210mm; margin: 2mm; }
 
-                body { font-family: Arial, sans-serif; font-size: 10pt; }
-                h1 { font-size: 11pt; margin: 0 0 11px 0; }
+                body { font-family: Arial, sans-serif; font-size: 9pt; line-height: 1.15; }
+                h1 { font-size: 11pt; margin: 0 0 8px 0; }
 
                 .table-wrap { width: 100%; }
                 .table-wrap table {
@@ -5083,11 +5080,14 @@ def Physical_data():
                 transform: scale(0.90);
                 transform-origin: top left;
                 }
+
+                /* First column wider (e.g. usernames) */
                 .table-wrap th:first-child,
                 .table-wrap td:first-child {
-                width: 18%;              /* try 16–25% depending on username length */
-                white-space: nowrap;     /* prevents wrapping names */
+                width: 18%;
+                white-space: nowrap;
                 }
+
                 th, td {
                 border: 1px solid #ddd;
                 padding: 2px 3px;
@@ -5106,7 +5106,7 @@ def Physical_data():
                 <body>
                     <h1>{title}</h1>
                     <div class="table-wrap">
-                        {df_pdf.to_html(index=False, escape=False)}
+                    {df_pdf.to_html(index=False, escape=False)}
                     </div>
                 </body>
                 </html>
@@ -5114,28 +5114,38 @@ def Physical_data():
                 return HTML(string=html).write_pdf()
 
             except Exception:
-                # Fallback: ReportLab (no extra deps, but simpler look)
+                # Fallback: ReportLab
                 from reportlab.lib.pagesizes import landscape, A4
                 from reportlab.lib import colors
                 from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, Spacer
                 from reportlab.lib.styles import getSampleStyleSheet
 
+                st.caption("PDF engine: ReportLab fallback (landscape)")
+
                 buffer = io.BytesIO()
-                doc = SimpleDocTemplate(buffer, pagesize=landscape(A4), leftMargin=10, rightMargin=10, topMargin=10, bottomMargin=10)
+                doc = SimpleDocTemplate(
+                    buffer,
+                    pagesize=landscape(A4),
+                    leftMargin=10,
+                    rightMargin=10,
+                    topMargin=10,
+                    bottomMargin=10,
+                )
 
                 styles = getSampleStyleSheet()
                 elements = [Paragraph(title, styles["Title"]), Spacer(1, 12)]
 
                 data = [list(df_pdf.columns)] + df_pdf.astype(str).values.tolist()
-                page_width, page_height = landscape(A4)
+
+                page_width, _ = landscape(A4)
                 usable_width = page_width - doc.leftMargin - doc.rightMargin
-n_cols = len(df_pdf.columns)
 
-first_col_ratio = 0.20  # 20% of usable width to the first column (tweak 0.18–0.30)
-first_w = usable_width * first_col_ratio
-rest_w = (usable_width - first_w) / max(n_cols - 1, 1)
+                n_cols = len(df_pdf.columns)
+                first_col_ratio = 0.20  # 20% width for first column
+                first_w = usable_width * first_col_ratio
+                rest_w = (usable_width - first_w) / max(n_cols - 1, 1)
+                col_widths = [first_w] + [rest_w] * (n_cols - 1)
 
-col_widths = [first_w] + [rest_w] * (n_cols - 1)
                 table = Table(data, colWidths=col_widths, repeatRows=1)
 
                 table.setStyle(TableStyle([
@@ -5143,7 +5153,10 @@ col_widths = [first_w] + [rest_w] * (n_cols - 1)
                     ("GRID", (0, 0), (-1, -1), 0.25, colors.grey),
                     ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
                     ("FONTSIZE", (0, 0), (-1, -1), 8),
-                    ("ALIGN", (0, 0), (-1, -1), "LEFT"),
+                    ("ALIGN", (0, 0), (0, -1), "LEFT"),      # first column left
+                    ("ALIGN", (1, 1), (-1, -1), "RIGHT"),    # numbers right
+                    ("ALIGN", (1, 0), (-1, 0), "CENTER"),    # header center (except first col)
+                    ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
                     ("ROWBACKGROUNDS", (0, 1), (-1, -1), [colors.whitesmoke, colors.white]),
                 ]))
 
