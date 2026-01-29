@@ -5061,108 +5061,55 @@ def Physical_data():
             # Make a copy for nice formatting in the PDF (keep your UI df unchanged)
             df_pdf = df.copy()
 
-            # Try WeasyPrint first (best)
-            try:
-                from weasyprint import HTML  # pip install weasyprint
-                st.caption("PDF engine: WeasyPrint (landscape)")
+            # Fallback: ReportLab
+            from reportlab.lib.pagesizes import landscape, A4
+            from reportlab.lib import colors
+            from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, Spacer
+            from reportlab.lib.styles import getSampleStyleSheet
 
-                css = """
-                @page { size: 297mm 210mm; margin: 2mm; }
+            st.caption("PDF engine: ReportLab fallback (landscape)")
 
-                body { font-family: Arial, sans-serif; font-size: 9pt; line-height: 1.15; }
-                h1 { font-size: 11pt; margin: 0 0 8px 0; }
+            buffer = io.BytesIO()
+            doc = SimpleDocTemplate(
+                buffer,
+                pagesize=landscape(A4),
+                leftMargin=10,
+                rightMargin=10,
+                topMargin=10,
+                bottomMargin=10,
+            )
 
-                .table-wrap { width: 100%; }
-                .table-wrap table {
-                width: 100%;
-                border-collapse: collapse;
-                table-layout: fixed;
-                transform: scale(0.90);
-                transform-origin: top left;
-                }
+            styles = getSampleStyleSheet()
+            elements = [Paragraph(title, styles["Title"]), Spacer(1, 12)]
 
-                /* First column wider (e.g. usernames) */
-                .table-wrap th:first-child,
-                .table-wrap td:first-child {
-                width: 18%;
-                white-space: nowrap;
-                }
+            data = [list(df_pdf.columns)] + df_pdf.astype(str).values.tolist()
 
-                th, td {
-                border: 1px solid #ddd;
-                padding: 2px 3px;
-                vertical-align: top;
-                word-wrap: break-word;
-                overflow-wrap: break-word;
-                }
+            page_width, _ = landscape(A4)
+            usable_width = page_width - doc.leftMargin - doc.rightMargin
 
-                th { background: #f3f3f3; text-align: left; }
-                tr:nth-child(even) { background: #fafafa; }
-                """
+            n_cols = len(df_pdf.columns)
+            first_col_ratio = 0.18  # 20% width for first column
+            first_w = usable_width * first_col_ratio
+            rest_w = (usable_width - first_w) / max(n_cols - 1, 1)
+            col_widths = [first_w] + [rest_w] * (n_cols - 1)
 
-                html = f"""
-                <html>
-                <head><style>{css}</style></head>
-                <body>
-                    <h1>{title}</h1>
-                    <div class="table-wrap">
-                    {df_pdf.to_html(index=False, escape=False)}
-                    </div>
-                </body>
-                </html>
-                """
-                return HTML(string=html).write_pdf()
+            table = Table(data, colWidths=col_widths, repeatRows=1)
 
-            except Exception:
-                # Fallback: ReportLab
-                from reportlab.lib.pagesizes import landscape, A4
-                from reportlab.lib import colors
-                from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, Spacer
-                from reportlab.lib.styles import getSampleStyleSheet
+            table.setStyle(TableStyle([
+                ("BACKGROUND", (0, 0), (-1, 0), colors.lightgrey),
+                ("GRID", (0, 0), (-1, -1), 0.25, colors.grey),
+                ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
+                ("FONTSIZE", (0, 0), (-1, -1), 8),
+                ("ALIGN", (0, 0), (0, -1), "LEFT"),      # first column left
+                ("ALIGN", (1, 1), (-1, -1), "RIGHT"),    # numbers right
+                ("ALIGN", (1, 0), (-1, 0), "CENTER"),    # header center (except first col)
+                ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
+                ("ROWBACKGROUNDS", (0, 1), (-1, -1), [colors.whitesmoke, colors.white]),
+            ]))
 
-                st.caption("PDF engine: ReportLab fallback (landscape)")
-
-                buffer = io.BytesIO()
-                doc = SimpleDocTemplate(
-                    buffer,
-                    pagesize=landscape(A4),
-                    leftMargin=10,
-                    rightMargin=10,
-                    topMargin=10,
-                    bottomMargin=10,
-                )
-
-                styles = getSampleStyleSheet()
-                elements = [Paragraph(title, styles["Title"]), Spacer(1, 12)]
-
-                data = [list(df_pdf.columns)] + df_pdf.astype(str).values.tolist()
-
-                page_width, _ = landscape(A4)
-                usable_width = page_width - doc.leftMargin - doc.rightMargin
-
-                n_cols = len(df_pdf.columns)
-                first_col_ratio = 0.18  # 20% width for first column
-                first_w = usable_width * first_col_ratio
-                rest_w = (usable_width - first_w) / max(n_cols - 1, 1)
-                col_widths = [first_w] + [rest_w] * (n_cols - 1)
-
-                table = Table(data, colWidths=col_widths, repeatRows=1)
-
-                table.setStyle(TableStyle([
-                    ("BACKGROUND", (0, 0), (-1, 0), colors.lightgrey),
-                    ("GRID", (0, 0), (-1, -1), 0.25, colors.grey),
-                    ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
-                    ("FONTSIZE", (0, 0), (-1, -1), 8),
-                    ("ALIGN", (0, 0), (0, -1), "LEFT"),      # first column left
-                    ("ALIGN", (1, 1), (-1, -1), "RIGHT"),    # numbers right
-                    ("ALIGN", (1, 0), (-1, 0), "CENTER"),    # header center (except first col)
-                    ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
-                    ("ROWBACKGROUNDS", (0, 1), (-1, -1), [colors.whitesmoke, colors.white]),
-                ]))
-
-                elements.append(table)
-                doc.build(elements)
-                return buffer.getvalue()
+            elements.append(table)
+            doc.build(elements)
+            return buffer.getvalue()
 
         pdf_bytes = df_to_pdf_bytes(
             summary_display,
