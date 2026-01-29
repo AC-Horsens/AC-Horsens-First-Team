@@ -5070,10 +5070,27 @@ def Physical_data():
 
                 css = """
                 @page { size: 297mm 210mm; margin: 6mm; }
+
                 body { font-family: Arial, sans-serif; font-size: 9pt; }
                 h1 { font-size: 12pt; margin: 0 0 8px 0; }
-                table { width: 100%; border-collapse: collapse; table-layout: fixed; }
-                th, td { border: 1px solid #ddd; padding: 3px 4px; vertical-align: top; word-wrap: break-word; overflow-wrap: break-word;}
+
+                .table-wrap { width: 100%; }
+                .table-wrap table {
+                width: 100%;
+                border-collapse: collapse;
+                table-layout: fixed;
+                transform: scale(0.90);
+                transform-origin: top left;
+                }
+
+                th, td {
+                border: 1px solid #ddd;
+                padding: 2px 3px;
+                vertical-align: top;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+                }
+
                 th { background: #f3f3f3; text-align: left; }
                 tr:nth-child(even) { background: #fafafa; }
                 """
@@ -5083,7 +5100,9 @@ def Physical_data():
                 <head><style>{css}</style></head>
                 <body>
                     <h1>{title}</h1>
-                    {df_pdf.to_html(index=False, escape=False)}
+                    <div class="table-wrap">
+                        {df_pdf.to_html(index=False, escape=False)}
+                    </div>
                 </body>
                 </html>
                 """
