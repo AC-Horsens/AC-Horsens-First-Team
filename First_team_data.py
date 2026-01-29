@@ -5117,7 +5117,7 @@ def Physical_data():
                 from reportlab.lib.styles import getSampleStyleSheet
 
                 buffer = io.BytesIO()
-                doc = SimpleDocTemplate(buffer, pagesize=landscape(A4), leftMargin=20, rightMargin=20, topMargin=20, bottomMargin=20)
+                doc = SimpleDocTemplate(buffer, pagesize=landscape(A4), leftMargin=10, rightMargin=10, topMargin=10, bottomMargin=10)
 
                 styles = getSampleStyleSheet()
                 elements = [Paragraph(title, styles["Title"]), Spacer(1, 12)]
