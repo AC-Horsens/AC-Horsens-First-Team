@@ -5193,7 +5193,7 @@ def Physical_data():
         p1, p2 = st.columns([1, 2])
 
         with p1:
-            player_options = sorted(filtered["username"].dropna().unique().tolist()) if "username" in filtered.columns else []
+            player_options = sorted(base_filtered["username"].dropna().unique().tolist()) if "username" in base_filtered.columns else []
             selected_player = st.selectbox("Choose player", options=player_options)
 
         with p2:
@@ -5207,7 +5207,7 @@ def Physical_data():
             selected_metrics = [label_to_col[x] for x in selected_metrics]
 
         # --- Build player time series (daily) ---
-        player_df = filtered.copy()
+        player_df = base_filtered.copy()
         player_df = player_df[player_df["username"] == selected_player] if selected_player else player_df.iloc[0:0]
 
         # Ensure we have a date we can group by
