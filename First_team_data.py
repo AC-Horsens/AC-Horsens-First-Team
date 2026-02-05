@@ -4915,14 +4915,61 @@ def Physical_data():
 
         # 1) Load
         wimu_df = load_wimu_data().copy()
+
         # 2) Convert localTime (ms) -> date
-        # localTime like 1751367724911 (epoch milliseconds)
         wimu_df["date"] = pd.to_datetime(wimu_df["localTime"], unit="ms", errors="coerce").dt.date
-        # for display as dd/mm/yyyy (string)
         wimu_df["date_str"] = pd.to_datetime(wimu_df["localTime"], unit="ms", errors="coerce").dt.strftime("%d/%m/%Y")
 
         # 3) Convert duration (ms) -> minutes
         wimu_df["duration"] = pd.to_numeric(wimu_df["duration"], errors="coerce") / 60000
+
+        # ---------- Display names ----------
+        DISPLAY_NAMES = {
+            "duration": "Duration",
+            "distance_distance": "Total Distance",
+            "distance_distanceMin": "Distance per min",
+            "distance_HSRAbsDistance": "High speed Dist",
+            "sprint_distance": "Sprint Distance",
+            "sprint_abs": "# of Sprints",
+            "accelerations_highIntensityAccAbsCounter": "H. Int Accel",
+            "accelerations_highIntensityDecAbsCounter": "H. Int Dec",
+            "load_Player_Load": "Player Load",
+            "sprint_maxSpeed": "Max speed",
+        }
+
+        # ---------- Helper: summary + team reference ----------
+        def make_summary(df_: pd.DataFrame):
+            agg_dict = {
+                "duration": "mean",
+                "distance_distance": "mean",
+                "distance_distanceMin": "mean",
+                "distance_HSRAbsDistance": "mean",
+                "sprint_distance": "mean",
+                "sprint_abs": "mean",
+                "accelerations_highIntensityAccAbsCounter": "mean",
+                "accelerations_highIntensityDecAbsCounter": "mean",
+                "load_Player_Load": "mean",
+                "sprint_maxSpeed": "max",
+            }
+            agg_dict = {k: v for k, v in agg_dict.items() if k in df_.columns}
+            metric_cols = list(agg_dict.keys())
+
+            summary_by_user = (
+                df_.groupby("username", dropna=False)
+                .agg(agg_dict)
+                .reset_index()
+                .sort_values("username")
+            )
+
+            team_reference = pd.DataFrame({"Statistic": ["Average", "Min", "Max"]})
+            for col in metric_cols:
+                team_reference[col] = [
+                    summary_by_user[col].mean(),
+                    summary_by_user[col].min(),
+                    summary_by_user[col].max(),
+                ]
+
+            return summary_by_user, team_reference, metric_cols
 
         # ---- Filters (NOT in sidebar) ----
         st.subheader("Filters")
@@ -4944,7 +4991,6 @@ def Physical_data():
             end_date = st.date_input(
                 "End date",
                 value=max_date if pd.notna(max_date) else None,
-                # vigtig: end_date bør mindst være start_date (ikke max_date)
                 min_value=start_date if start_date else (min_date if pd.notna(min_date) else None),
                 max_value=max_date if pd.notna(max_date) else None,
             )
@@ -4980,89 +5026,78 @@ def Physical_data():
             else []
         )
 
+        # ---- smart defaults baseret på matchDay ----
+        md_selected = "MD" in (selected_matchdays or [])
+        default_tasks = ["Drills", "First Half", "Second Half"] if md_selected else ["Drills"]
+
+        if "prev_matchdays_wimu" not in st.session_state:
+            st.session_state.prev_matchdays_wimu = None
+        if "selected_tasks_wimu" not in st.session_state:
+            st.session_state.selected_tasks_wimu = None
+
+        # reset tasks hvis matchDay ændrer sig (og respekter task_options)
+        if st.session_state.prev_matchdays_wimu != selected_matchdays:
+            st.session_state.prev_matchdays_wimu = list(selected_matchdays)
+            st.session_state.selected_tasks_wimu = [t for t in default_tasks if t in task_options]
+
         with f4:
             selected_tasks = st.multiselect(
                 "Task",
                 options=task_options,
-                default=["Drills"] if "Drills" in task_options else None
+                default=st.session_state.selected_tasks_wimu,
+                key="selected_tasks_wimu",
             )
 
-        # 3) Til sidst: dit “rigtige” filtered df (dato + matchDay + task)
-        filtered = df_date_matchday.copy()
-        if selected_tasks:
-            filtered = filtered[filtered["task"].isin(selected_tasks)]
+        # ---------- Output: én tabel pr. task ----------
+        st.subheader("Summary pr. Task")
+
+        base_filtered = df_date_matchday.copy()
+
+        for task_name in (selected_tasks or []):
+            df_task = base_filtered[base_filtered["task"] == task_name].copy()
+
+            st.markdown(f"### {task_name}")
+
+            if df_task.empty:
+                st.info("Ingen data for denne task i det valgte filter.")
+                st.divider()
+                continue
+
+            summary_by_user, team_reference, metric_cols = make_summary(df_task)
+
+            summary_display = summary_by_user.rename(columns=DISPLAY_NAMES).round(2)
+            team_reference_display = team_reference.rename(columns=DISPLAY_NAMES).round(2)
+
+            st.dataframe(
+                summary_display,
+                column_config={
+                    DISPLAY_NAMES.get(col, col): st.column_config.NumberColumn(
+                        DISPLAY_NAMES.get(col, col),
+                        format="%.2f"
+                    )
+                    for col in metric_cols
+                },
+                hide_index=True,
+                use_container_width=True
+            )
+
+            st.caption("Team reference (baseret på player summary)")
+            st.dataframe(
+                team_reference_display,
+                column_config={
+                    DISPLAY_NAMES.get(col, col): st.column_config.NumberColumn(
+                        DISPLAY_NAMES.get(col, col),
+                        format="%.2f"
+                    )
+                    for col in metric_cols
+                },
+                hide_index=True,
+                use_container_width=True
+            )
+
+            st.divider()
 
 
-        agg_dict = {
-            "duration": "mean",
-            "distance_distance": "mean",
-            "distance_distanceMin": "mean",
-            "distance_HSRAbsDistance": "mean",
-            "sprint_distance": "mean",
-            "sprint_abs": "mean",
-            "accelerations_highIntensityAccAbsCounter": "mean",
-            "accelerations_highIntensityDecAbsCounter": "mean",
-            "load_Player_Load": "mean",
-            "sprint_maxSpeed": "max",
-        }
-
-        # Keep only columns that exist in the data
-        agg_dict = {k: v for k, v in agg_dict.items() if k in filtered.columns}
-        metric_cols = list(agg_dict.keys())  # <- use this later for formatting + previews
-
-        summary_by_user = (
-            filtered.groupby("username", dropna=False)
-            .agg(agg_dict)
-            .reset_index()
-            .sort_values("username")
-        )
-        team_reference = pd.DataFrame({
-            "Statistic": ["Average", "Min", "Max"]
-        })
-
-        for col in metric_cols:
-            team_reference[col] = [
-                summary_by_user[col].mean(),
-                summary_by_user[col].min(),
-                summary_by_user[col].max(),
-            ]
-        # ---------- EU number formatting for display ----------
-
-        team_reference_display = team_reference.copy()
-
-        #for col in metric_cols:
-        #    team_reference_display[col] = team_reference_display[col].apply(format_eu_wimu)
-        DISPLAY_NAMES = {
-            "duration": "Duration",
-            "distance_distance": "Total Distance",
-            "distance_distanceMin": "Distance per min",
-            "distance_HSRAbsDistance": "High speed Dist",
-            "sprint_distance": "Sprint Distance",
-            "sprint_abs": "# of Sprints",
-            "accelerations_highIntensityAccAbsCounter": "H. Int Accel",
-            "accelerations_highIntensityDecAbsCounter": "H. Int Dec",
-            "load_Player_Load": "Player Load",
-            "sprint_maxSpeed": "Max speed",
-        }
-        metric_labels = [DISPLAY_NAMES.get(c, c) for c in metric_cols]
-        label_to_col = {DISPLAY_NAMES.get(c, c): c for c in metric_cols}  # reverse map
-
-        summary_display = summary_by_user.rename(columns=DISPLAY_NAMES)
-        summary_display = summary_display.round(2)
-        # ---------- Output ----------
-        st.subheader("Summary")
-        
-        st.dataframe(
-            summary_display,
-            column_config={
-                DISPLAY_NAMES.get(col, col): st.column_config.NumberColumn(
-                    DISPLAY_NAMES.get(col, col),
-                    format="%.2f"
-                )
-                for col in metric_cols
-            },
-            hide_index=True
-        )
 
         def df_to_pdf_bytes(df: pd.DataFrame, title: str = "WIMU Summary") -> bytes:
             # Make a copy for nice formatting in the PDF (keep your UI df unchanged)
