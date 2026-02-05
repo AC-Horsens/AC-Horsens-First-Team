@@ -4944,47 +4944,54 @@ def Physical_data():
             end_date = st.date_input(
                 "End date",
                 value=max_date if pd.notna(max_date) else None,
-                min_value=max_date if pd.notna(max_date) else None,
+                # vigtig: end_date bør mindst være start_date (ikke max_date)
+                min_value=start_date if start_date else (min_date if pd.notna(min_date) else None),
                 max_value=max_date if pd.notna(max_date) else None,
             )
 
+        # 1) Først: filtrér kun på dato (bruges til matchDay options)
+        df_date = wimu_df.copy()
+        if start_date:
+            df_date = df_date[df_date["date"] >= start_date]
+        if end_date:
+            df_date = df_date[df_date["date"] <= end_date]
+
+        # MatchDay options afhænger af datospænd
+        matchday_options = (
+            sorted(df_date["matchDay"].dropna().unique())
+            if "matchDay" in df_date.columns
+            else []
+        )
+
         with f3:
-            matchday_options = (
-                sorted(wimu_df["matchDay"].dropna().unique())
-                if "matchDay" in wimu_df.columns
-                else []
-            )
             selected_matchdays = st.multiselect(
                 "matchDay",
                 options=matchday_options,
             )
 
+        # 2) Næste: filtrér på dato + matchDay (bruges til task options)
+        df_date_matchday = df_date.copy()
+        if selected_matchdays:
+            df_date_matchday = df_date_matchday[df_date_matchday["matchDay"].isin(selected_matchdays)]
+
+        task_options = (
+            sorted(df_date_matchday["task"].dropna().unique())
+            if "task" in df_date_matchday.columns
+            else []
+        )
+
         with f4:
-            task_options = (
-                sorted(wimu_df["task"].dropna().unique())
-                if "task" in wimu_df.columns
-                else []
-            )
             selected_tasks = st.multiselect(
                 "Task",
                 options=task_options,
-                default = 'Drills'
+                default=["Drills"] if "Drills" in task_options else None
             )
 
-        # Apply filters
-        filtered = wimu_df.copy()
-
-        if start_date:
-            filtered = filtered[filtered["date"] >= start_date]
-        
-        if end_date:
-            filtered = filtered[filtered["date"] <= end_date]
-
-        if selected_matchdays:
-            filtered = filtered[filtered["matchDay"].isin(selected_matchdays)]
-        
+        # 3) Til sidst: dit “rigtige” filtered df (dato + matchDay + task)
+        filtered = df_date_matchday.copy()
         if selected_tasks:
             filtered = filtered[filtered["task"].isin(selected_tasks)]
+
 
         agg_dict = {
             "duration": "mean",
