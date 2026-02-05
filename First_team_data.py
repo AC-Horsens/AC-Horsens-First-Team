@@ -4971,133 +4971,7 @@ def Physical_data():
 
             return summary_by_user, team_reference, metric_cols
 
-        # ---- Filters (NOT in sidebar) ----
-        st.subheader("Filters")
-
-        min_date = wimu_df["date"].min()
-        max_date = wimu_df["date"].max()
-
-        f1, f2, f3, f4 = st.columns([1, 1, 1, 2])
-
-        with f1:
-            start_date = st.date_input(
-                "Start date",
-                value=max_date if pd.notna(max_date) else None,
-                min_value=min_date if pd.notna(min_date) else None,
-                max_value=max_date if pd.notna(max_date) else None,
-            )
-
-        with f2:
-            end_date = st.date_input(
-                "End date",
-                value=max_date if pd.notna(max_date) else None,
-                min_value=start_date if start_date else (min_date if pd.notna(min_date) else None),
-                max_value=max_date if pd.notna(max_date) else None,
-            )
-
-        # 1) Først: filtrér kun på dato (bruges til matchDay options)
-        df_date = wimu_df.copy()
-        if start_date:
-            df_date = df_date[df_date["date"] >= start_date]
-        if end_date:
-            df_date = df_date[df_date["date"] <= end_date]
-
-        # MatchDay options afhænger af datospænd
-        matchday_options = (
-            sorted(df_date["matchDay"].dropna().unique())
-            if "matchDay" in df_date.columns
-            else []
-        )
-
-        with f3:
-            selected_matchdays = st.multiselect(
-                "matchDay",
-                options=matchday_options,
-            )
-
-        # 2) Næste: filtrér på dato + matchDay (bruges til task options)
-        df_date_matchday = df_date.copy()
-        if selected_matchdays:
-            df_date_matchday = df_date_matchday[df_date_matchday["matchDay"].isin(selected_matchdays)]
-
-        task_options = (
-            sorted(df_date_matchday["task"].dropna().unique())
-            if "task" in df_date_matchday.columns
-            else []
-        )
-
-        # ---- smart defaults baseret på matchDay ----
-        md_selected = "MD" in (selected_matchdays or [])
-        default_tasks = ["Drills", "First Half", "Second Half"] if md_selected else ["Drills"]
-
-        if "prev_matchdays_wimu" not in st.session_state:
-            st.session_state.prev_matchdays_wimu = None
-        if "selected_tasks_wimu" not in st.session_state:
-            st.session_state.selected_tasks_wimu = None
-
-        # reset tasks hvis matchDay ændrer sig (og respekter task_options)
-        if st.session_state.prev_matchdays_wimu != selected_matchdays:
-            st.session_state.prev_matchdays_wimu = list(selected_matchdays)
-            st.session_state.selected_tasks_wimu = [t for t in default_tasks if t in task_options]
-
-        with f4:
-            selected_tasks = st.multiselect(
-                "Task",
-                options=task_options,
-                default=st.session_state.selected_tasks_wimu,
-                key="selected_tasks_wimu",
-            )
-
-        # ---------- Output: én tabel pr. task ----------
-        st.subheader("Summary pr. Task")
-
-        base_filtered = df_date_matchday.copy()
-        task_summaries_for_pdf = []
-
-        for task_name in (selected_tasks or []):
-            df_task = base_filtered[base_filtered["task"] == task_name].copy()
-
-            st.markdown(f"### {task_name}")
-
-            if df_task.empty:
-                st.info("Ingen data for denne task i det valgte filter.")
-                st.divider()
-                continue
-
-            summary_by_user, team_reference, metric_cols = make_summary(df_task)
-
-            summary_display = summary_by_user.rename(columns=DISPLAY_NAMES).round(2)
-            team_reference_display = team_reference.rename(columns=DISPLAY_NAMES).round(2)
-
-            st.dataframe(
-                summary_display,
-                column_config={
-                    DISPLAY_NAMES.get(col, col): st.column_config.NumberColumn(
-                        DISPLAY_NAMES.get(col, col),
-                        format="%.2f"
-                    )
-                    for col in metric_cols
-                },
-                hide_index=True,
-                use_container_width=True
-            )
-
-            st.caption("Team reference (baseret på player summary)")
-            st.dataframe(
-                team_reference_display,
-                column_config={
-                    DISPLAY_NAMES.get(col, col): st.column_config.NumberColumn(
-                        DISPLAY_NAMES.get(col, col),
-                        format="%.2f"
-                    )
-                    for col in metric_cols
-                },
-                hide_index=True,
-                use_container_width=True
-            )
-
-            st.divider()
-
+        # ---------- PDF helpers (multi-page; 1 page per task) ----------
         from reportlab.lib.pagesizes import landscape, A4
         from reportlab.lib import colors
         from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, Spacer, PageBreak
@@ -5167,29 +5041,163 @@ def Physical_data():
             doc.build(elements)
             return buffer.getvalue()
 
-        # ---- Build PDF from all tasks (collect these inside your task loop) ----
-        # task_summaries_for_pdf = []
-        # inside loop after creating summary_display + team_reference_display:
-        # task_summaries_for_pdf.append({"task": task_name, "summary": summary_display, "team_ref": team_reference_display})
+        # ---- Filters (NOT in sidebar) ----
+        st.subheader("Filters")
 
+        min_date = wimu_df["date"].min()
+        max_date = wimu_df["date"].max()
+
+        f1, f2, f3, f4 = st.columns([1, 1, 1, 2])
+
+        with f1:
+            start_date = st.date_input(
+                "Start date",
+                value=max_date if pd.notna(max_date) else None,
+                min_value=min_date if pd.notna(min_date) else None,
+                max_value=max_date if pd.notna(max_date) else None,
+            )
+
+        with f2:
+            end_date = st.date_input(
+                "End date",
+                value=max_date if pd.notna(max_date) else None,
+                min_value=start_date if start_date else (min_date if pd.notna(min_date) else None),
+                max_value=max_date if pd.notna(max_date) else None,
+            )
+
+        # 1) Date filter (for matchDay options)
+        df_date = wimu_df.copy()
+        if start_date:
+            df_date = df_date[df_date["date"] >= start_date]
+        if end_date:
+            df_date = df_date[df_date["date"] <= end_date]
+
+        matchday_options = (
+            sorted(df_date["matchDay"].dropna().unique())
+            if "matchDay" in df_date.columns
+            else []
+        )
+
+        with f3:
+            selected_matchdays = st.multiselect(
+                "matchDay",
+                options=matchday_options,
+            )
+
+        # 2) Date + matchDay filter (for task options + rest of page)
+        df_date_matchday = df_date.copy()
+        if selected_matchdays:
+            df_date_matchday = df_date_matchday[df_date_matchday["matchDay"].isin(selected_matchdays)]
+
+        task_options = (
+            sorted(df_date_matchday["task"].dropna().unique())
+            if "task" in df_date_matchday.columns
+            else []
+        )
+
+        # ---- smart defaults based on matchDay ----
+        md_selected = "MD" in (selected_matchdays or [])
+        default_tasks = ["Drills", "First Half", "Second Half"] if md_selected else ["Drills"]
+        default_tasks = [t for t in default_tasks if t in task_options]
+
+        if "prev_matchdays_wimu" not in st.session_state:
+            st.session_state.prev_matchdays_wimu = []
+        if "selected_tasks_wimu" not in st.session_state:
+            st.session_state.selected_tasks_wimu = default_tasks
+
+        # reset tasks only when matchDay selection changes
+        if st.session_state.prev_matchdays_wimu != list(selected_matchdays):
+            st.session_state.prev_matchdays_wimu = list(selected_matchdays)
+            st.session_state.selected_tasks_wimu = default_tasks
+
+        # also drop tasks that no longer exist (e.g., date range change)
+        st.session_state.selected_tasks_wimu = [t for t in st.session_state.selected_tasks_wimu if t in task_options]
+
+        with f4:
+            selected_tasks = st.multiselect(
+                "Task",
+                options=task_options,
+                key="selected_tasks_wimu",
+            )
+
+        # ---------- Output: one table per task ----------
+        st.subheader("Summary pr. Task")
+
+        base_filtered = df_date_matchday.copy()
+
+        task_summaries_for_pdf = []
+
+        for task_name in (selected_tasks or []):
+            df_task = base_filtered[base_filtered["task"] == task_name].copy()
+
+            st.markdown(f"### {task_name}")
+
+            if df_task.empty:
+                st.info("Ingen data for denne task i det valgte filter.")
+                st.divider()
+                continue
+
+            summary_by_user, team_reference, metric_cols = make_summary(df_task)
+
+            summary_display = summary_by_user.rename(columns=DISPLAY_NAMES).round(2)
+            team_reference_display = team_reference.rename(columns=DISPLAY_NAMES).round(2)
+
+            # collect for PDF
+            task_summaries_for_pdf.append({
+                "task": task_name,
+                "summary": summary_display,
+                "team_ref": team_reference_display
+            })
+
+            st.dataframe(
+                summary_display,
+                column_config={
+                    DISPLAY_NAMES.get(col, col): st.column_config.NumberColumn(
+                        DISPLAY_NAMES.get(col, col),
+                        format="%.2f"
+                    )
+                    for col in metric_cols
+                },
+                hide_index=True,
+                use_container_width=True
+            )
+
+            st.caption("Team reference (baseret på player summary)")
+            st.dataframe(
+                team_reference_display,
+                column_config={
+                    DISPLAY_NAMES.get(col, col): st.column_config.NumberColumn(
+                        DISPLAY_NAMES.get(col, col),
+                        format="%.2f"
+                    )
+                    for col in metric_cols
+                },
+                hide_index=True,
+                use_container_width=True
+            )
+
+            st.divider()
+
+        # ---------- PDF download (multi-page; 1 page per task) ----------
         if start_date == end_date:
             title = f"Summary {start_date}"
         else:
             title = f"Summary {start_date} to {end_date}"
 
-        pdf_bytes = tasks_to_pdf_bytes(
-            task_summaries_for_pdf,
-            title=title
-        )
+        if task_summaries_for_pdf:
+            pdf_bytes = tasks_to_pdf_bytes(task_summaries_for_pdf, title=title)
 
-        st.download_button(
-            label="Download Summary as PDF",
-            data=pdf_bytes,
-            file_name=f"{title}.pdf",
-            mime="application/pdf",
-        )
+            st.download_button(
+                label="Download Summary as PDF",
+                data=pdf_bytes,
+                file_name=f"{title}.pdf",
+                mime="application/pdf",
+            )
+        else:
+            st.info("No task summaries to export in the current filter selection.")
 
-        # ---------- Fix metric_labels / label_to_col for player section ----------
+        # ---------- Player development ----------
+        # metrics available in current base filter
         available_metric_cols = [c for c in DISPLAY_NAMES.keys() if c in base_filtered.columns]
         metric_labels = [DISPLAY_NAMES[c] for c in available_metric_cols]
         label_to_col = {DISPLAY_NAMES[c]: c for c in available_metric_cols}
@@ -5197,33 +5205,37 @@ def Physical_data():
         st.divider()
         st.subheader("Player development over time")
 
-        # --- Player + metric selectors ---
         p1, p2 = st.columns([1, 2])
 
         with p1:
-            player_options = sorted(base_filtered["username"].dropna().unique().tolist()) if "username" in base_filtered.columns else []
+            player_options = (
+                sorted(base_filtered["username"].dropna().unique().tolist())
+                if "username" in base_filtered.columns
+                else []
+            )
             selected_player = st.selectbox("Choose player", options=player_options)
 
         with p2:
-            selected_metrics = st.multiselect(
+            selected_metrics_labels = st.multiselect(
                 "Choose metric(s) to plot",
                 options=metric_labels,
-                default=["Duration"] if "duration" in available_metric_cols else (metric_labels[:1] if metric_labels else []),
+                default=["Duration"] if "Duration" in metric_labels else (metric_labels[:1] if metric_labels else []),
             )
-            selected_metrics = [label_to_col[x] for x in selected_metrics]
+            selected_metrics = [label_to_col[x] for x in selected_metrics_labels]
 
-        # --- Build player time series (daily) ---
+        # if you want player series ONLY for selected tasks, uncomment:
+        # player_df = base_filtered[base_filtered["task"].isin(selected_tasks)].copy() if selected_tasks else base_filtered.copy()
+
         player_df = base_filtered.copy()
         player_df = player_df[player_df["username"] == selected_player] if selected_player else player_df.iloc[0:0]
 
+        # group by day
         if "date_dt" in player_df.columns:
             player_df["day"] = player_df["date_dt"].dt.date
         else:
             player_df["day"] = player_df["date"]
 
-        agg_ts = {}
-        for m in selected_metrics:
-            agg_ts[m] = "max" if m == "sprint_maxSpeed" else "mean"
+        agg_ts = {m: ("max" if m == "sprint_maxSpeed" else "mean") for m in selected_metrics}
 
         ts = (
             player_df.groupby("day", dropna=False)
@@ -5246,6 +5258,7 @@ def Physical_data():
 
             st.caption("Daily values within the selected date/matchDay/task filters.")
             st.dataframe(ts_display, use_container_width=True, hide_index=True)
+
 
 import streamlit as st
 import matplotlib.pyplot as plt
