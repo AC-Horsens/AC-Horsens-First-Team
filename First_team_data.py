@@ -5052,6 +5052,7 @@ def Physical_data():
         st.subheader("Summary pr. Task")
 
         base_filtered = df_date_matchday.copy()
+        task_summaries_for_pdf = []
 
         for task_name in (selected_tasks or []):
             df_task = base_filtered[base_filtered["task"] == task_name].copy()
