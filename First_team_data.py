@@ -5166,14 +5166,18 @@ def Physical_data():
             doc.build(elements)
             return buffer.getvalue()
 
+        # ---- Build PDF from all tasks (collect these inside your task loop) ----
+        # task_summaries_for_pdf = []
+        # inside loop after creating summary_display + team_reference_display:
+        # task_summaries_for_pdf.append({"task": task_name, "summary": summary_display, "team_ref": team_reference_display})
+
         if start_date == end_date:
             title = f"Summary {start_date}"
         else:
             title = f"Summary {start_date} to {end_date}"
 
-
-        pdf_bytes = df_to_pdf_bytes(
-            summary_display,
+        pdf_bytes = tasks_to_pdf_bytes(
+            task_summaries_for_pdf,
             title=title
         )
 
@@ -5184,22 +5188,10 @@ def Physical_data():
             mime="application/pdf",
         )
 
-        st.subheader("Team reference (based on player summary)")
-        team_reference_display = team_reference.rename(columns=DISPLAY_NAMES)
-
-        st.dataframe(
-            team_reference_display,
-            column_config={
-                DISPLAY_NAMES.get(col, col): st.column_config.NumberColumn(
-                    DISPLAY_NAMES.get(col, col),
-                    format="%.2f"
-                )
-                for col in metric_cols
-            },
-            hide_index=True,
-            use_container_width=True,
-        )
-
+        # ---------- Fix metric_labels / label_to_col for player section ----------
+        available_metric_cols = [c for c in DISPLAY_NAMES.keys() if c in base_filtered.columns]
+        metric_labels = [DISPLAY_NAMES[c] for c in available_metric_cols]
+        label_to_col = {DISPLAY_NAMES[c]: c for c in available_metric_cols}
 
         st.divider()
         st.subheader("Player development over time")
@@ -5212,37 +5204,26 @@ def Physical_data():
             selected_player = st.selectbox("Choose player", options=player_options)
 
         with p2:
-            # Choose metrics from the same list used in the team table
             selected_metrics = st.multiselect(
-            "Choose metric(s) to plot",
-            options=metric_labels,
-            default=["Duration"] if "duration" in metric_cols else (metric_labels[:1] if metric_labels else []),
+                "Choose metric(s) to plot",
+                options=metric_labels,
+                default=["Duration"] if "duration" in available_metric_cols else (metric_labels[:1] if metric_labels else []),
             )
-
             selected_metrics = [label_to_col[x] for x in selected_metrics]
 
         # --- Build player time series (daily) ---
         player_df = base_filtered.copy()
         player_df = player_df[player_df["username"] == selected_player] if selected_player else player_df.iloc[0:0]
 
-        # Ensure we have a date we can group by
-        # (date_dt exists in your rewritten code)
         if "date_dt" in player_df.columns:
             player_df["day"] = player_df["date_dt"].dt.date
         else:
             player_df["day"] = player_df["date"]
 
-        # Aggregation logic per metric (match your team-table logic):
-        # - sprint_maxSpeed should be MAX
-        # - all others should be MEAN
         agg_ts = {}
         for m in selected_metrics:
-            if m == "sprint_maxSpeed":
-                agg_ts[m] = "max"
-            else:
-                agg_ts[m] = "mean"
+            agg_ts[m] = "max" if m == "sprint_maxSpeed" else "mean"
 
-        # Create a daily time series
         ts = (
             player_df.groupby("day", dropna=False)
             .agg(agg_ts)
@@ -5250,18 +5231,14 @@ def Physical_data():
             .sort_values("day")
         )
 
-        # --- Show results ---
         if ts.empty:
             st.info("No data for the selected player in the current filter range.")
         else:
-            # Chart(s)
             if len(selected_metrics) == 1:
                 st.line_chart(ts.set_index("day")[selected_metrics[0]])
             else:
-                # multiple metrics: either multi-line chart or separate charts
                 st.line_chart(ts.set_index("day")[selected_metrics])
 
-            # Optional: show the table as well (EU formatting)
             ts_display = ts.copy()
             ts_display["day"] = pd.to_datetime(ts_display["day"]).dt.strftime("%d/%m/%Y")
             ts_display = ts_display.rename(columns=DISPLAY_NAMES)
