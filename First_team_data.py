@@ -5012,13 +5012,13 @@ def Physical_data():
             doc = SimpleDocTemplate(
                 buffer,
                 pagesize=landscape(A4),
-                leftMargin=10,
-                rightMargin=10,
-                topMargin=10,
-                bottomMargin=10,
+                leftMargin=5,
+                rightMargin=5,
+                topMargin=5,
+                bottomMargin=5,
             )
             styles = getSampleStyleSheet()
-            elements = [Paragraph(title, styles["Title"]), Spacer(1, 10)]
+            elements = [Paragraph(title, styles["Title"]), Spacer(1, 5)]
 
             for i, item in enumerate(task_summaries):
                 task_name = item["task"]
@@ -5026,11 +5026,11 @@ def Physical_data():
                 team_df = item["team_ref"]
 
                 elements.append(Paragraph(task_name, styles["Heading1"]))
-                elements.append(Spacer(1, 6))
+                elements.append(Spacer(1, 3))
 
                 elements.append(Paragraph("Summary", styles["Heading2"]))
                 elements.append(_df_to_rl_table(summary_df, doc))
-                elements.append(Spacer(1, 10))
+                elements.append(Spacer(1, 5))
 
                 elements.append(Paragraph("Team reference", styles["Heading2"]))
                 elements.append(_df_to_rl_table(team_df, doc, first_col_ratio=0.22))
