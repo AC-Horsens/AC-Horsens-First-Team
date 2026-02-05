@@ -5097,18 +5097,42 @@ def Physical_data():
 
             st.divider()
 
+        from reportlab.lib.pagesizes import landscape, A4
+        from reportlab.lib import colors
+        from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, Spacer, PageBreak
+        from reportlab.lib.styles import getSampleStyleSheet
+        import io
 
+        def _df_to_rl_table(df: pd.DataFrame, doc, first_col_ratio=0.18):
+            data = [list(df.columns)] + df.astype(str).values.tolist()
 
-        def df_to_pdf_bytes(df: pd.DataFrame, title: str = "WIMU Summary") -> bytes:
-            # Make a copy for nice formatting in the PDF (keep your UI df unchanged)
-            df_pdf = df.copy()
+            page_width, _ = landscape(A4)
+            usable_width = page_width - doc.leftMargin - doc.rightMargin
 
-            # Fallback: ReportLab
-            from reportlab.lib.pagesizes import landscape, A4
-            from reportlab.lib import colors
-            from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, Spacer
-            from reportlab.lib.styles import getSampleStyleSheet
+            n_cols = len(df.columns)
+            first_w = usable_width * first_col_ratio
+            rest_w = (usable_width - first_w) / max(n_cols - 1, 1)
+            col_widths = [first_w] + [rest_w] * (n_cols - 1)
 
+            t = Table(data, colWidths=col_widths, repeatRows=1)
+            t.setStyle(TableStyle([
+                ("BACKGROUND", (0, 0), (-1, 0), colors.skyblue),
+                ("GRID", (0, 0), (-1, -1), 0.25, colors.black),
+                ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
+                ("FONTSIZE", (0, 0), (-1, -1), 8),
+                ("ALIGN", (0, 0), (0, -1), "LEFT"),
+                ("ALIGN", (1, 1), (-1, -1), "RIGHT"),
+                ("ALIGN", (1, 0), (-1, 0), "CENTER"),
+                ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
+                ("ROWBACKGROUNDS", (0, 1), (-1, -1), [colors.lightblue, colors.white]),
+            ]))
+            return t
+
+        def tasks_to_pdf_bytes(task_summaries, title: str) -> bytes:
+            """
+            task_summaries: list of dicts:
+            [{"task": str, "summary": df, "team_ref": df}, ...]
+            """
             buffer = io.BytesIO()
             doc = SimpleDocTemplate(
                 buffer,
@@ -5118,36 +5142,27 @@ def Physical_data():
                 topMargin=10,
                 bottomMargin=10,
             )
-
             styles = getSampleStyleSheet()
-            elements = [Paragraph(title, styles["Title"]), Spacer(1, 12)]
+            elements = [Paragraph(title, styles["Title"]), Spacer(1, 10)]
 
-            data = [list(df_pdf.columns)] + df_pdf.astype(str).values.tolist()
+            for i, item in enumerate(task_summaries):
+                task_name = item["task"]
+                summary_df = item["summary"]
+                team_df = item["team_ref"]
 
-            page_width, _ = landscape(A4)
-            usable_width = page_width - doc.leftMargin - doc.rightMargin
+                elements.append(Paragraph(task_name, styles["Heading1"]))
+                elements.append(Spacer(1, 6))
 
-            n_cols = len(df_pdf.columns)
-            first_col_ratio = 0.18  # 20% width for first column
-            first_w = usable_width * first_col_ratio
-            rest_w = (usable_width - first_w) / max(n_cols - 1, 1)
-            col_widths = [first_w] + [rest_w] * (n_cols - 1)
+                elements.append(Paragraph("Summary", styles["Heading2"]))
+                elements.append(_df_to_rl_table(summary_df, doc))
+                elements.append(Spacer(1, 10))
 
-            table = Table(data, colWidths=col_widths, repeatRows=1)
+                elements.append(Paragraph("Team reference", styles["Heading2"]))
+                elements.append(_df_to_rl_table(team_df, doc, first_col_ratio=0.22))
 
-            table.setStyle(TableStyle([
-                ("BACKGROUND", (0, 0), (-1, 0), colors.skyblue),
-                ("GRID", (0, 0), (-1, -1), 0.25, colors.black),
-                ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
-                ("FONTSIZE", (0, 0), (-1, -1), 8),
-                ("ALIGN", (0, 0), (0, -1), "LEFT"),      # first column left
-                ("ALIGN", (1, 1), (-1, -1), "RIGHT"),    # numbers right
-                ("ALIGN", (1, 0), (-1, 0), "CENTER"),    # header center (except first col)
-                ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
-                ("ROWBACKGROUNDS", (0, 1), (-1, -1), [colors.lightblue, colors.white]),
-            ]))
+                if i < len(task_summaries) - 1:
+                    elements.append(PageBreak())
 
-            elements.append(table)
             doc.build(elements)
             return buffer.getvalue()
 
